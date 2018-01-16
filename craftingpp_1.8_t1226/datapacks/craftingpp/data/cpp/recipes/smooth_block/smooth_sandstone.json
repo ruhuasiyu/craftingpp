@@ -1,0 +1,19 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "#",
+    "*",
+    "#"
+  ],
+  "key": {
+    "*": {
+      "item": "minecraft:slime_ball"
+    },
+    "#": {
+      "item": "minecraft:sandstone_slab"
+    }
+  },
+  "result": {
+    "item": "minecraft:smooth_sandstone"
+  }
+}

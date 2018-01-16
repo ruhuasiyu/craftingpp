@@ -1,0 +1,11 @@
+{"pools": [
+{"rolls": 12, "entries": [{
+	"type": "item", "name": "minecraft:string", "weight": 1
+}]},
+{"rolls": 1, "entries": [{
+	"type": "item", "name": "minecraft:cyan_dye", "weight": 1,
+	"conditions": [
+		{"condition": "random_chance", "chance": 0.15}
+	]
+}]}
+]}

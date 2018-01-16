@@ -1,0 +1,37 @@
+{
+    "pools": [
+        {
+            "conditions": [
+				{
+					"condition": "entity_properties",
+					"entity": "this",
+					"properties": {
+						"on_fire": false
+					}
+				},
+                {
+                    "condition": "killed_by_player"
+                },
+                {
+                    "condition": "random_chance_with_looting",
+                    "chance": 0.025,
+                    "looting_multiplier": 0.01
+                }
+            ],
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:feather",
+                    "weight": 1,
+                    "functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{display:{LocName:\"cpp.item.wing_of_fly\"},ench:[{id:999s}]}"
+						}
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+  "parent": "cpp:recipes/root",
+  "rewards": {
+    "recipes": [
+      "cpp:smooth_quartz",
+      "cpp:smooth_red_sandstone",
+      "cpp:smooth_sandstone",
+      "cpp:smooth_stone"
+    ]
+  },
+  "criteria": {
+    "has_log2": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:slime_ball"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:white_wool"
+        },
+        "title":{
+            "translate": "cpp.advancements.sheep.title"
+		},
+        "description": {
+            "translate": "cpp.advancements.sheep.description"
+		}
+    },
+    "parent": "cpp:gene_technology",
+    "criteria": {
+        "sheep": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "rewards": {
+		"function": "cpp:adv/sheep"
+    }
+}

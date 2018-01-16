@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:emerald"
+        },
+        "title":{
+            "translate": "cpp.advancements.robber.title"
+		},
+        "description": {
+            "translate": "cpp.advancements.robber.description"
+		}
+    },
+    "parent": "cpp:root",
+    "criteria": {
+        "robber": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+					"type": "minecraft:villager"
+                }
+            }
+        }
+    },
+	"rewards":{
+		"function": "cpp:adv/robber"
+	}
+}

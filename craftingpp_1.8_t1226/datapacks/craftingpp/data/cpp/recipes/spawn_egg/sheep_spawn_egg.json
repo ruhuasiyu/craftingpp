@@ -1,0 +1,19 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "###",
+    "#*#",
+    "###"
+  ],
+  "key": {
+    "*": {
+      "item": "minecraft:egg"
+    },
+    "#": {
+		"tag": "cpp:wools"
+	}
+  },
+  "result": {
+    "item": "minecraft:sheep_spawn_egg"
+  }
+}

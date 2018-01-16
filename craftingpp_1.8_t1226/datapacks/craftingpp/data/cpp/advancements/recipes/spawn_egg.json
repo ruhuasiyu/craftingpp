@@ -1,0 +1,41 @@
+{
+  "parent": "cpp:recipes/root",
+  "rewards": {
+    "recipes": [
+      "cpp:llama_spawn_egg",
+      "cpp:magma_cube_spawn_egg",
+      "cpp:mooshroom_spawn_egg",
+      "cpp:ocelot_spawn_egg",
+      "cpp:parrot_spawn_egg",
+      "cpp:pig_spawn_egg",
+      "cpp:polar_bear_spawn_egg",
+      "cpp:rabbit_spawn_egg",
+      "cpp:sheep_spawn_egg",
+      "cpp:shulker_spawn_egg",
+      "cpp:silverfish_spawn_egg",
+      "cpp:skeleton_spawn_egg",
+      "cpp:slime_spawn_egg",
+      "cpp:spider_spawn_egg",
+      "cpp:squid_spawn_egg",
+      "cpp:villager_spawn_egg",
+      "cpp:vindication_illager_spawn_egg",
+      "cpp:witch_spawn_egg",
+      "cpp:wither_skeleton_spawn_egg",
+      "cpp:wolf_spawn_egg",
+      "cpp:zombie_pigman_spawn_egg",
+      "cpp:zombie_spawn_egg"
+    ]
+  },
+  "criteria": {
+    "has_egg": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:egg"
+          }
+        ]
+      }
+    }
+  }
+}

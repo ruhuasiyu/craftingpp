@@ -1,0 +1,28 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:iron_axe"
+        },
+        "title":{
+            "translate": "cpp.advancements.shining.title"
+		},
+        "description": {
+            "translate": "cpp.advancements.shining.description"
+		},
+        "frame": "challenge"
+    },
+    "parent": "cpp:need_weight_loss",
+    "criteria": {
+        "shining": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+					"type": "minecraft:vindication_illager"
+                }
+            }
+        }
+    },
+	"rewards":{
+		"experience": 100
+	}
+}

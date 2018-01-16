@@ -1,0 +1,11 @@
+{"pools": [
+{"rolls": 4, "entries": [{
+	"type": "item", "name": "minecraft:spruce_log", "weight": 1
+}]},
+{"rolls": 1, "entries": [{
+	"type": "item", "name": "minecraft:spruce_sapling", "weight": 1,
+	"functions": [
+		{"function": "set_count", "count": {"min": 0, "max": 3}}
+	]
+}]}
+]}

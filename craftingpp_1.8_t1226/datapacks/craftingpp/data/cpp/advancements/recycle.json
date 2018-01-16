@@ -1,0 +1,22 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:rabbit_hide"
+		},
+		"title":{
+			"translate": "cpp.advancements.recycle.title"
+		},
+		"description": {
+			"translate": "cpp.advancements.recycle.description"
+		}
+	},
+	"parent": "cpp:root",
+	"criteria": {
+		"recycle": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "cpp:recycle_leather"
+			}
+		}
+	}
+}

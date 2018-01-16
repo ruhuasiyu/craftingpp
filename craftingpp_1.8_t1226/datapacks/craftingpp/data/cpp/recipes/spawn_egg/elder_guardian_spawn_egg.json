@@ -1,0 +1,30 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "###",
+    "#*#",
+    "###"
+  ],
+  "key": {
+    "*": {
+      "item": "minecraft:egg"
+    },
+    "#": [
+		{
+			"item": "minecraft:cod"
+		},
+		{
+			"item": "minecraft:salmon"
+		},
+		{
+			"item": "minecraft:clownfish"
+		},
+		{
+			"item": "minecraft:pufferfish"
+		}
+	]
+  },
+  "result": {
+    "item": "minecraft:elder_guardian_spawn_egg"
+  }
+}
