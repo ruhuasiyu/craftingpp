@@ -1,0 +1,23 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:end_rod"
+        },
+        "title":{
+            "translate": "cpp.advancements.dragonboy.title"
+		},
+        "description": {
+            "translate": "cpp.advancements.dragonboy.description"
+		}
+    },
+    "parent": "cpp:root",
+    "criteria": {
+        "dragonboy": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "rewards": {
+        "experience": 100,
+        "function": "cpp:adv/dragonboy"
+    }
+}

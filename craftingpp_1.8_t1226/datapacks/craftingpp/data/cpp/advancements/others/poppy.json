@@ -1,0 +1,17 @@
+{
+	"parent": "cpp:others/root",
+	"criteria": {
+	   "example": {
+		   "trigger": "minecraft:consume_item",
+		   "conditions": {
+			   "item": {
+				   "item": "minecraft:potion",
+				   "nbt": "{display:{LocName:\"cpp.item.abirritant\"}}"
+				}
+			}
+		}
+	},
+	"rewards":{
+		"function": "cpp:sys/food/poppy"
+	}
+}

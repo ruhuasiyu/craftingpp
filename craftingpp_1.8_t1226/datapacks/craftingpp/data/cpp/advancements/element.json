@@ -1,0 +1,21 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:blaze_powder"
+        },
+        "title":{
+            "translate": "cpp.advancements.element.title"
+		},
+        "description": {
+            "translate": "cpp.advancements.element.description"
+		}
+    },
+    "parent": "cpp:root",
+    "criteria": {
+        "element": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+	"rewards":{
+	}
+}

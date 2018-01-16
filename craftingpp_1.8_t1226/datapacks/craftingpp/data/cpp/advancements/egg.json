@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:egg"
+        },
+        "title":{
+            "translate": "cpp.advancements.egg.title"
+		},
+        "description": {
+            "translate": "cpp.advancements.egg.description"
+		}
+    },
+    "parent": "cpp:root",
+    "criteria": {
+        "egg": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:egg"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+		"function": "cpp:adv/egg"
+    }
+}

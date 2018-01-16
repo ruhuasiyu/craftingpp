@@ -1,0 +1,17 @@
+{
+	"parent": "cpp:others/root",
+	"criteria": {
+	   "example": {
+		   "trigger": "minecraft:consume_item",
+		   "conditions": {
+			   "item": {
+				   "item": "minecraft:apple",
+				   "nbt": "{display:{LocName:\"cpp.item.toffee_apple\"}}"
+				}
+			}
+		}
+	},
+	"rewards":{
+		"function": "cpp:sys/food/apple"
+	}
+}

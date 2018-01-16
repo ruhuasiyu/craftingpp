@@ -1,0 +1,21 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:wheat"
+        },
+        "title":{
+            "translate": "cpp.advancements.no_dirt.title"
+		},
+        "description": {
+            "translate": "cpp.advancements.no_dirt.description"
+		}
+    },
+    "parent": "cpp:smelt_ore",
+    "criteria": {
+        "ocelot": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+	"rewards":{
+	}
+}

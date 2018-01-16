@@ -1,0 +1,459 @@
+<!doctype html>
+<!-- saved from url=(0030)http://home.ustc.edu.cn/~zsxqq -->
+<html lang="zh-Hans">
+<head>
+<meta charset='utf-8'>
+<meta name="author" content="张神星" />
+<script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+
+<title>自定义合成表制作器</title>
+<style>
+@font-face{
+	font-family:Minecraft;
+	src:url("http://hydra-media.cursecdn.com/hydra/fonts/minecraft.eot?#iefix"),url(http://hydra-media.cursecdn.com/hydra/fonts/minecraft.woff) format('woff'),url(http://hydra-media.cursecdn.com/hydra/fonts/minecraft.ttf) format('truetype');
+}
+html{
+	font-family:"Liberation Sans",Arial,Helvetica,FreeSans,sans-serif;
+	background-image:url(http://zsx.blog.ustc.edu.cn/wp-content/uploads/2016/08/options_background.png);
+}
+body{
+	width:92%;
+	margin:25px auto;
+	background:#ddd;
+	border:6px solid green;
+	font-family: Tahoma, "Microsoft Yahei", Simsun;
+}
+div.main{
+	padding:2% 3%;
+}
+table{
+	margin:0 auto;
+	text-align:center;
+	background-color:#f2f2f2;
+	border-collapse:collapse;
+}
+table th, table td{
+	border:1px solid #aaa;
+	padding:0.2em 0.4em;
+}
+
+.invslot{
+	position:relative;
+	display:inline-block;
+	background:#8B8B8B no-repeat center center  32px 32px;
+	border:2px solid;
+	border-color:#373737 #FFF #FFF #373737;
+	width:32px;
+	height:32px;
+	font-size:16px;
+	line-height:1;
+	text-align:left;
+	vertical-align:bottom;
+}
+.mcui{
+	display:inline-block;
+	position:relative;
+	background-color:#C6C6C6;
+	border:2px solid;
+	border-color:#DBDBDB #5B5B5B #5B5B5B #DBDBDB;
+	padding:6px;
+	text-align:left;
+	white-space:nowrap;
+	vertical-align:bottom;
+}
+.mcui > *{
+	display:inline-block;
+	vertical-align:top;
+}
+.mcui-row{
+	display:block;
+}
+.mcui-arrow{
+	background:url(http://zsx.blog.ustc.edu.cn/wp-content/uploads/2016/08/Grid_layout_Arrow_small.png) no-repeat;
+	width:32px;
+	height:26px;
+	margin:40px 4px 0;
+}
+.mcui-output{
+	margin-top:28px;
+	padding:8px;
+}
+.sprite{
+	display:inline-block;
+	vertical-align:text-top;
+	background-image:url(http://zsx.blog.ustc.edu.cn/wp-content/uploads/2016/10/InvSprite.png);
+	width:32px;
+	height:32px;
+	background-repeat:no-repeat;
+}
+.invslot-stacksize{
+	position:absolute;
+	right:0;
+	bottom:0;
+	font-family:Minecraft,sans-serif !important;
+	color:#FFF !important;
+	text-shadow:2px 2px 0 #3F3F3F;
+	filter:dropshadow(color=#3F3F3F,offx=2,offy=2);
+	z-index:2;
+}
+span.lore{
+	color:purple;
+}
+
+h1{
+	text-align:center;
+	color:gold;
+}
+article{
+	padding:0 2em;
+}
+a{
+	color:#228897;
+}
+a:hover{
+	color:#d25349;
+}
+code{
+	font-size:100%;
+	margin:2em 2em 2em 2.3em;
+	padding:2em;
+	background-color:#ECE3B8;
+	display:block;
+	color:black;
+}
+li{
+	margin: 5px 0;
+}
+h2{
+	color:blue;
+	border-bottom:solid 1px grey;
+	padding:5px 3em;
+}
+
+td{
+	text-align:left;
+	background-color:white;
+}
+input,button{
+	font-size:15px;
+	height:30px;
+	text-align:center;
+	vertical-align:middle;
+}
+form{
+	margin:10px;
+	text-align:center;
+}
+.hidef{
+	display:none;
+}
+</style>
+<script>
+//var numofcraft=0;
+var listall=[
+'空','锁链靴子','锁链胸甲','锁链头盔','锁链裤子','损坏的锁链靴子','损坏的锁链胸甲','损坏的锁链头盔','损坏的锁链裤子','损坏的钻石靴子','损坏的钻石胸甲','损坏的钻石头盔','损坏的钻石裤子','损坏的金靴子','损坏的金胸甲','损坏的金头盔','损坏的金裤子','损坏的铁靴子','损坏的铁胸甲','损坏的铁头盔','损坏的铁裤子','损坏的皮靴子','损坏的皮头盔','损坏的皮裤子','损坏的皮胸甲','钻石靴子','钻石胸甲','钻石头盔','钻石马铠','钻石裤子','金靴子','金胸甲','金头盔','金马铠','金裤子','铁靴子','铁胸甲','铁头盔','铁马铠','铁裤子','皮靴子','皮头盔','皮裤子','皮胸甲',
+'右底黑方旗帜','黑色下半方形旗帜','黑色自下渐淡旗帜','黑色底波纹旗帜','左底黑方旗帜','右黑色斜条旗帜','左黑色斜条旗帜','黑色方框边旗帜','黑色波纹边旗帜','底黑三角旗帜','右顶黑方旗帜','顶黑横条旗帜','黑色顶波纹旗帜','左顶黑方旗帜','黑色爬行者盾徽旗帜','黑正十字旗帜','中黑横条旗帜','黑色砖纹旗帜','黑色花朵盾徽旗帜','黑色自上渐淡旗帜','顶黑三角旗帜','黑色菱形旗帜','黑色Mojang徽标旗帜','中黑竖条旗帜','左黑横条旗帜','右黑横条旗帜','黑竖条纹旗帜','黑色左上三角旗帜','黑色右下三角旗帜','黑色右上三角旗帜','黑色左下三角旗帜','黑色上半方形旗帜','黑色下半方形旗帜','黑色左半方形旗帜','黑色右半方形旗帜','黑色圆形旗帜','黑斜十字旗帜','黑色头颅盾徽旗帜',
+'右底蓝方旗帜','蓝色下半方形旗帜','蓝色自下渐淡旗帜','蓝色底波纹旗帜','左底蓝方旗帜','右蓝色斜条旗帜','左蓝色斜条旗帜','蓝色方框边旗帜','蓝色波纹边旗帜','底蓝三角旗帜','右顶蓝方旗帜','顶蓝横条旗帜','蓝色顶波纹旗帜','左顶蓝方旗帜','蓝色爬行者盾徽旗帜','蓝正十字旗帜','中蓝横条旗帜','蓝色砖纹旗帜','蓝色花朵盾徽旗帜','蓝色自上渐淡旗帜','顶蓝三角旗帜','蓝色菱形旗帜','蓝色Mojang徽标旗帜','中蓝竖条旗帜','左蓝横条旗帜','右蓝横条旗帜','蓝竖条纹旗帜','蓝色左上三角旗帜','蓝色右下三角旗帜','蓝色右上三角旗帜','蓝色左下三角旗帜','蓝色上半方形旗帜','蓝色下半方形旗帜','蓝色左半方形旗帜','蓝色右半方形旗帜','蓝色圆形旗帜','蓝斜十字旗帜','蓝色头颅盾徽旗帜',
+'右底褐方旗帜','褐色下半方形旗帜','褐色自下渐淡旗帜','褐色底波纹旗帜','左底褐方旗帜','右褐色斜条旗帜','左褐色斜条旗帜','褐色方框边旗帜','褐色波纹边旗帜','底褐三角旗帜','右顶褐方旗帜','顶褐横条旗帜','褐色顶波纹旗帜','左顶褐方旗帜','褐色爬行者盾徽旗帜','褐正十字旗帜','中褐横条旗帜','褐色砖纹旗帜','褐色花朵盾徽旗帜','褐色自上渐淡旗帜','顶褐三角旗帜','褐色菱形旗帜','褐色Mojang徽标旗帜','中褐竖条旗帜','左褐横条旗帜','右褐横条旗帜','褐竖条纹旗帜','褐色左上三角旗帜','褐色右下三角旗帜','褐色右上三角旗帜','褐色左下三角旗帜','褐色上半方形旗帜','褐色下半方形旗帜','褐色左半方形旗帜','褐色右半方形旗帜','褐色圆形旗帜','褐斜十字旗帜','褐色头颅盾徽旗帜',
+'右底青方旗帜','青色下半方形旗帜','青色自下渐淡旗帜','青色底波纹旗帜','左底青方旗帜','右青色斜条旗帜','左青色斜条旗帜','青色方框边旗帜','青色波纹边旗帜','底青三角旗帜','右顶青方旗帜','顶青横条旗帜','青色顶波纹旗帜','左顶青方旗帜','青色爬行者盾徽旗帜','青正十字旗帜','中青横条旗帜','青色砖纹旗帜','青色花朵盾徽旗帜','青色自上渐淡旗帜','顶青三角旗帜','青色菱形旗帜','青色Mojang徽标旗帜','中青竖条旗帜','左青横条旗帜','右青横条旗帜','青竖条纹旗帜','青色左上三角旗帜','青色右下三角旗帜','青色右上三角旗帜','青色左下三角旗帜','青色上半方形旗帜','青色下半方形旗帜','青色左半方形旗帜','青色右半方形旗帜','青色圆形旗帜','青斜十字旗帜','青色头颅盾徽旗帜',
+'右底灰方旗帜','灰色下半方形旗帜','灰色自下渐淡旗帜','灰色底波纹旗帜','左底灰方旗帜','右灰色斜条旗帜','左灰色斜条旗帜','灰色方框边旗帜','灰色波纹边旗帜','底灰三角旗帜','右顶灰方旗帜','顶灰横条旗帜','灰色顶波纹旗帜','左顶灰方旗帜','灰色爬行者盾徽旗帜','灰正十字旗帜','中灰横条旗帜','灰色砖纹旗帜','灰色花朵盾徽旗帜','灰色自上渐淡旗帜','顶灰三角旗帜','灰色菱形旗帜','灰色Mojang徽标旗帜','中灰竖条旗帜','左灰横条旗帜','右灰横条旗帜','灰竖条纹旗帜','灰色左上三角旗帜','灰色右下三角旗帜','灰色右上三角旗帜','灰色左下三角旗帜','灰色上半方形旗帜','灰色下半方形旗帜','灰色左半方形旗帜','灰色右半方形旗帜','灰色圆形旗帜','灰斜十字旗帜','灰色头颅盾徽旗帜',
+'右底绿方旗帜','绿色下半方形旗帜','绿色自下渐淡旗帜','绿色底波纹旗帜','左底绿方旗帜','右绿色斜条旗帜','左绿色斜条旗帜','绿色方框边旗帜','绿色波纹边旗帜','底绿三角旗帜','右顶绿方旗帜','顶绿横条旗帜','绿色顶波纹旗帜','左顶绿方旗帜','绿色爬行者盾徽旗帜','绿正十字旗帜','中绿横条旗帜','绿色砖纹旗帜','绿色花朵盾徽旗帜','绿色自上渐淡旗帜','顶绿三角旗帜','绿色菱形旗帜','绿色Mojang徽标旗帜','中绿竖条旗帜','左绿横条旗帜','右绿横条旗帜','绿竖条纹旗帜','绿色左上三角旗帜','绿色右下三角旗帜','绿色右上三角旗帜','绿色左下三角旗帜','绿色上半方形旗帜','绿色下半方形旗帜','绿色左半方形旗帜','绿色右半方形旗帜','绿色圆形旗帜','绿斜十字旗帜','绿色头颅盾徽旗帜',
+'右底淡蓝方旗帜','淡蓝色下半方形旗帜','淡蓝色自下渐淡旗帜','淡蓝色底波纹旗帜','左底淡蓝方旗帜','右淡蓝色斜条旗帜','左淡蓝色斜条旗帜','淡蓝色方框边旗帜','淡蓝色波纹边旗帜','底淡蓝三角旗帜','右顶淡蓝方旗帜','顶淡蓝横条旗帜','淡蓝色顶波纹旗帜','左顶淡蓝方旗帜','淡蓝色爬行者盾徽旗帜','淡蓝正十字旗帜','中淡蓝横条旗帜','淡蓝色砖纹旗帜','淡蓝色花朵盾徽旗帜','淡蓝色自上渐淡旗帜','顶淡蓝三角旗帜','淡蓝色菱形旗帜','淡蓝色Mojang徽标旗帜','中淡蓝竖条旗帜','左淡蓝横条旗帜','右淡蓝横条旗帜','淡蓝竖条纹旗帜','淡蓝色左上三角旗帜','淡蓝色右下三角旗帜','淡蓝色右上三角旗帜','淡蓝色左下三角旗帜','淡蓝色上半方形旗帜','淡蓝色下半方形旗帜','淡蓝色左半方形旗帜','淡蓝色右半方形旗帜','淡蓝色圆形旗帜','淡蓝斜十字旗帜','淡蓝色头颅盾徽旗帜',
+'右底淡灰方旗帜','淡灰色下半方形旗帜','淡灰色自下渐淡旗帜','淡灰色底波纹旗帜','左底淡灰方旗帜','右淡灰色斜条旗帜','左淡灰色斜条旗帜','淡灰色方框边旗帜','淡灰色波纹边旗帜','底淡灰三角旗帜','右顶淡灰方旗帜','顶淡灰横条旗帜','淡灰色顶波纹旗帜','左顶淡灰方旗帜','淡灰色爬行者盾徽旗帜','淡灰正十字旗帜','中淡灰横条旗帜','淡灰色砖纹旗帜','淡灰色花朵盾徽旗帜','淡灰色自上渐淡旗帜','顶淡灰三角旗帜','淡灰色菱形旗帜','淡灰色Mojang徽标旗帜','中淡灰竖条旗帜','左淡灰横条旗帜','右淡灰横条旗帜','淡灰竖条纹旗帜','淡灰色左上三角旗帜','淡灰色右下三角旗帜','淡灰色右上三角旗帜','淡灰色左下三角旗帜','淡灰色上半方形旗帜','淡灰色下半方形旗帜','淡灰色左半方形旗帜','淡灰色右半方形旗帜','淡灰色圆形旗帜','淡灰斜十字旗帜','淡灰色头颅盾徽旗帜',
+'右底黄绿方旗帜','黄绿色下半方形旗帜','黄绿色自下渐淡旗帜','黄绿色底波纹旗帜','左底黄绿方旗帜','右黄绿色斜条旗帜','左黄绿色斜条旗帜','黄绿色方框边旗帜','黄绿色波纹边旗帜','底黄绿三角旗帜','右顶黄绿方旗帜','顶黄绿横条旗帜','黄绿色顶波纹旗帜','左顶黄绿方旗帜','黄绿色爬行者盾徽旗帜','黄绿正十字旗帜','中黄绿横条旗帜','黄绿色砖纹旗帜','黄绿色花朵盾徽旗帜','黄绿色自上渐淡旗帜','顶黄绿三角旗帜','黄绿色菱形旗帜','黄绿色Mojang徽标旗帜','中黄绿竖条旗帜','左黄绿横条旗帜','右黄绿横条旗帜','黄绿竖条纹旗帜','黄绿色左上三角旗帜','黄绿色右下三角旗帜','黄绿色右上三角旗帜','黄绿色左下三角旗帜','黄绿色上半方形旗帜','黄绿色下半方形旗帜','黄绿色左半方形旗帜','黄绿色右半方形旗帜','黄绿色圆形旗帜','黄绿斜十字旗帜','黄绿色头颅盾徽旗帜',
+'右底品红方旗帜','品红色下半方形旗帜','品红色自下渐淡旗帜','品红色底波纹旗帜','左底品红方旗帜','右品红色斜条旗帜','左品红色斜条旗帜','品红色方框边旗帜','品红色波纹边旗帜','底品红三角旗帜','右顶品红方旗帜','顶品红横条旗帜','品红色顶波纹旗帜','左顶品红方旗帜','品红色爬行者盾徽旗帜','品红正十字旗帜','中品红横条旗帜','品红色砖纹旗帜','品红色花朵盾徽旗帜','品红色自上渐淡旗帜','顶品红三角旗帜','品红色菱形旗帜','品红色Mojang徽标旗帜','中品红竖条旗帜','左品红横条旗帜','右品红横条旗帜','品红竖条纹旗帜','品红色左上三角旗帜','品红色右下三角旗帜','品红色右上三角旗帜','品红色左下三角旗帜','品红色上半方形旗帜','品红色下半方形旗帜','品红色左半方形旗帜','品红色右半方形旗帜','品红色圆形旗帜','品红斜十字旗帜','品红色头颅盾徽旗帜',
+'右底橙方旗帜','橙色下半方形旗帜','橙色自下渐淡旗帜','橙色底波纹旗帜','左底橙方旗帜','右橙色斜条旗帜','左橙色斜条旗帜','橙色方框边旗帜','橙色波纹边旗帜','底橙三角旗帜','右顶橙方旗帜','顶橙横条旗帜','橙色顶波纹旗帜','左顶橙方旗帜','橙色爬行者盾徽旗帜','橙正十字旗帜','中橙横条旗帜','橙色砖纹旗帜','橙色花朵盾徽旗帜','橙色自上渐淡旗帜','顶橙三角旗帜','橙色菱形旗帜','橙色Mojang徽标旗帜','中橙竖条旗帜','左橙横条旗帜','右橙横条旗帜','橙竖条纹旗帜','橙色左上三角旗帜','橙色右下三角旗帜','橙色右上三角旗帜','橙色左下三角旗帜','橙色上半方形旗帜','橙色下半方形旗帜','橙色左半方形旗帜','橙色右半方形旗帜','橙色圆形旗帜','橙斜十字旗帜','橙色头颅盾徽旗帜',
+'右底粉红方旗帜','粉红色下半方形旗帜','粉红色自下渐淡旗帜','粉红色底波纹旗帜','左底粉红方旗帜','右粉红色斜条旗帜','左粉红色斜条旗帜','粉红色方框边旗帜','粉红色波纹边旗帜','底粉红三角旗帜','右顶粉红方旗帜','顶粉红横条旗帜','粉红色顶波纹旗帜','左顶粉红方旗帜','粉红色爬行者盾徽旗帜','粉红正十字旗帜','中粉红横条旗帜','粉红色砖纹旗帜','粉红色花朵盾徽旗帜','粉红色自上渐淡旗帜','顶粉红三角旗帜','粉红色菱形旗帜','粉红色Mojang徽标旗帜','中粉红竖条旗帜','左粉红横条旗帜','右粉红横条旗帜','粉红竖条纹旗帜','粉红色左上三角旗帜','粉红色右下三角旗帜','粉红色右上三角旗帜','粉红色左下三角旗帜','粉红色上半方形旗帜','粉红色下半方形旗帜','粉红色左半方形旗帜','粉红色右半方形旗帜','粉红色圆形旗帜','粉红斜十字旗帜','粉红色头颅盾徽旗帜',
+'右底紫方旗帜','紫色下半方形旗帜','紫色自下渐淡旗帜','紫色底波纹旗帜','左底紫方旗帜','右紫色斜条旗帜','左紫色斜条旗帜','紫色方框边旗帜','紫色波纹边旗帜','底紫三角旗帜','右顶紫方旗帜','顶紫横条旗帜','紫色顶波纹旗帜','左顶紫方旗帜','紫色爬行者盾徽旗帜','紫正十字旗帜','中紫横条旗帜','紫色砖纹旗帜','紫色花朵盾徽旗帜','紫色自上渐淡旗帜','顶紫三角旗帜','紫色菱形旗帜','紫色Mojang徽标旗帜','中紫竖条旗帜','左紫横条旗帜','右紫横条旗帜','紫竖条纹旗帜','紫色左上三角旗帜','紫色右下三角旗帜','紫色右上三角旗帜','紫色左下三角旗帜','紫色上半方形旗帜','紫色下半方形旗帜','紫色左半方形旗帜','紫色右半方形旗帜','紫色圆形旗帜','紫斜十字旗帜','紫色头颅盾徽旗帜',
+'右底红方旗帜','红色下半方形旗帜','红色自下渐淡旗帜','红色底波纹旗帜','左底红方旗帜','右红色斜条旗帜','左红色斜条旗帜','红色方框边旗帜','红色波纹边旗帜','底红三角旗帜','右顶红方旗帜','顶红横条旗帜','红色顶波纹旗帜','左顶红方旗帜','红色爬行者盾徽旗帜','红正十字旗帜','中红横条旗帜','红色砖纹旗帜','红色花朵盾徽旗帜','红色自上渐淡旗帜','顶红三角旗帜','红色菱形旗帜','红色Mojang徽标旗帜','中红竖条旗帜','左红横条旗帜','右红横条旗帜','红竖条纹旗帜','红色左上三角旗帜','红色右下三角旗帜','红色右上三角旗帜','红色左下三角旗帜','红色上半方形旗帜','红色下半方形旗帜','红色左半方形旗帜','红色右半方形旗帜','红色圆形旗帜','红斜十字旗帜','红色头颅盾徽旗帜',
+'右底白方旗帜','白色下半方形旗帜','白色自下渐淡旗帜','白色底波纹旗帜','左底白方旗帜','右白色斜条旗帜','左白色斜条旗帜','白色方框边旗帜','白色波纹边旗帜','底白三角旗帜','右顶白方旗帜','顶白横条旗帜','白色顶波纹旗帜','左顶白方旗帜','白色爬行者盾徽旗帜','白正十字旗帜','中白横条旗帜','白色砖纹旗帜','白色花朵盾徽旗帜','白色自上渐淡旗帜','顶白三角旗帜','白色菱形旗帜','白色Mojang徽标旗帜','中白竖条旗帜','左白横条旗帜','右白横条旗帜','白竖条纹旗帜','白色左上三角旗帜','白色右下三角旗帜','白色右上三角旗帜','白色左下三角旗帜','白色上半方形旗帜','白色下半方形旗帜','白色左半方形旗帜','白色右半方形旗帜','白色圆形旗帜','白斜十字旗帜','白色头颅盾徽旗帜',
+'右底黄方旗帜','黄色下半方形旗帜','黄色自下渐淡旗帜','黄色底波纹旗帜','左底黄方旗帜','右黄色斜条旗帜','左黄色斜条旗帜','黄色方框边旗帜','黄色波纹边旗帜','底黄三角旗帜','右顶黄方旗帜','顶黄横条旗帜','黄色顶波纹旗帜','左顶黄方旗帜','黄色爬行者盾徽旗帜','黄正十字旗帜','中黄横条旗帜','黄色砖纹旗帜','黄色花朵盾徽旗帜','黄色自上渐淡旗帜','顶黄三角旗帜','黄色菱形旗帜','黄色Mojang徽标旗帜','中黄竖条旗帜','左黄横条旗帜','右黄横条旗帜','黄竖条纹旗帜','黄色左上三角旗帜','黄色右下三角旗帜','黄色右上三角旗帜','黄色左下三角旗帜','黄色上半方形旗帜','黄色下半方形旗帜','黄色左半方形旗帜','黄色右半方形旗帜','黄色圆形旗帜','黄斜十字旗帜','黄色头颅盾徽旗帜',
+'烤马铃薯','烈焰粉','烈焰棒','胡萝卜','发酵蛛眼','恶魂之泪','闪烁的西瓜','金粒','金胡萝卜','岩浆膏','地狱疣','毒马铃薯','马铃薯','兔子腿','蜘蛛眼','桶','熔岩桶','牛奶桶','水桶','11','13','盔甲架','blocks','cat','chirp','far','花盆','物品展示框','mall','mallohi','画','stal','strad','wait','ward',
+'骨粉','仙人掌绿','可可豆','青色染料','蒲公英黄','灰色染料','墨囊','青金石','淡蓝色染料','淡灰色染料','黄绿色染料','品红色染料','橙色染料','粉红色染料','紫色染料','玫瑰红',
+'黑色旗帜','黑色地毯','黑色硬化粘土','黑色玻璃','黑色玻璃板','黑色羊毛',
+'蓝色旗帜','蓝色地毯','蓝色硬化粘土','蓝色玻璃','蓝色玻璃板','蓝色羊毛',
+'褐色旗帜','褐色地毯','褐色硬化粘土','褐色玻璃','褐色玻璃板','褐色羊毛',
+'青色旗帜','青色地毯','青色硬化粘土','青色玻璃','青色玻璃板','青色羊毛',
+'灰色旗帜','灰色地毯','灰色硬化粘土','灰色玻璃','灰色玻璃板','灰色羊毛',
+'绿色旗帜','绿色地毯','绿色硬化粘土','绿色玻璃','绿色玻璃板','绿色羊毛',
+'淡蓝色旗帜','淡蓝色地毯','淡蓝色硬化粘土','淡蓝色玻璃','淡蓝色玻璃板','淡蓝色羊毛',
+'淡灰色旗帜','淡灰色地毯','淡灰色硬化粘土','淡灰色玻璃','淡灰色玻璃板','淡灰色羊毛',
+'黄绿色旗帜','黄绿色地毯','黄绿色硬化粘土','黄绿色玻璃','黄绿色玻璃板','黄绿色羊毛',
+'品红色旗帜','品红色地毯','品红色硬化粘土','品红色玻璃','品红色玻璃板','品红色羊毛',
+'橙色旗帜','橙色地毯','橙色硬化粘土','橙色玻璃','橙色玻璃板','橙色羊毛',
+'粉红色旗帜','粉红色地毯','粉红色硬化粘土','粉红色玻璃','粉红色玻璃板','粉红色羊毛',
+'紫色旗帜','紫色地毯','紫色硬化粘土','紫色玻璃','紫色玻璃板','紫色羊毛',
+'红色旗帜','红色地毯','红色硬化粘土','红色玻璃','红色玻璃板','红色羊毛',
+'白色旗帜','白色地毯','白色硬化粘土','白色玻璃','白色玻璃板','白色羊毛',
+'黄色旗帜','黄色地毯','黄色硬化粘土','黄色玻璃','黄色玻璃板','黄色羊毛',
+'龙蛋','末地传送门框架','末地烛','末地石','黑色烟火之星','蓝色烟火之星','褐色烟火之星','青色烟火之星','烟花火箭','烟火之星','灰色烟火之星','绿色烟火之星','淡蓝色烟火之星','淡灰色烟火之星','黄绿色烟火之星','品红色烟火之星','橙色烟火之星','粉红色烟火之星','紫色烟火之星','红色烟火之星','白色烟火之星','黄色烟火之星',
+'苹果','面包','紫颂果','小丑鱼','熟鸡肉','熟鱼','熟羊肉','熟猪肉','熟兔肉','熟鲑鱼','曲奇','鸡蛋','金苹果','西瓜片','蘑菇煲','河豚','南瓜派','兔肉煲','生牛肉','鸡肉','生鱼','生羊肉','生猪肉','生兔肉','生鲑鱼','腐肉','牛排','糖','小麦','水',
+'金合欢栅栏','金合欢栅栏门','金合欢木板','金合欢台阶','金合欢楼梯',
+'白桦栅栏','白桦栅栏门','白桦木板','白桦台阶','白桦楼梯',
+'煤炭块','钻石块','绿宝石块','金块','铁块','石英块','书架','砖块楼梯','砖块','砖块台阶','錾制石英块','錾制红沙石','錾制沙石','圆石','圆石台阶','圆石楼梯','圆石墙',
+'深色橡木栅栏','深色橡木栅栏门','深色橡木木板','深色橡木台阶','深色橡木楼梯',
+'双石台阶','末地砖','耕地',
+'橡木栅栏','橡木栅栏门','玻璃','玻璃板','干草块','铁栏杆','南瓜灯',
+'丛林栅栏','丛林栅栏门','丛林木板','丛林台阶','丛林楼梯',
+'楼梯','青金石块','苔石墙','地狱砖台阶',
+'橡木木板','橡木台阶','橡木楼梯',
+'竖纹石英块','磨制安山岩','磨制闪长岩','磨制花岗岩','紫珀块','竖纹紫珀块','紫珀块台阶','紫珀块楼梯','石英台阶','石英楼梯','红沙石台阶','红沙石楼梯','沙石台阶','沙石楼梯','粘液块','光滑双红沙石台阶','光滑双沙石台阶','光滑双石台阶',
+'平滑红沙石','平滑沙石','雪块',
+'云杉栅栏','云杉栅栏门','云杉木板','云杉台阶','云杉楼梯','石砖楼梯','石砖台阶','石台阶','金合欢木门','激活铁轨','白桦木门','红石块','深色橡木门','探测铁轨','铁门','铁活板门','丛林木门','拉杆','橡木木门','活塞','一坨石头','动力铁轨','铁轨','红石比较器','红石灯','红石中继器','红石火把','云杉木门','粘性活塞','石质按钮','石质压力板','木活板门','拌线钩','测重压力板 (重质)',
+'测重压力板 (轻质)','木质按钮','木质压力板','爬行者的头','末影龙头','头','骷髅头颅','凋灵骷髅头颅','僵尸的头','安山岩','基岩','錾制石砖','粘土块','砂土','蜘蛛网','裂石砖','暗海晶石','闪长岩','泥土','花岗岩','草方块','砂砾','硬化粘土','冰','刷怪笼','苔石','苔石砖','菌丝','黑曜石','浮冰','灰化土','盾牌',
+'海晶砖','红沙','红沙石','沙子','沙石','破损的鞘翅','雪','石头','石砖','萤石','地狱砖块','地狱砖栅栏','地狱砖楼梯','下界石英矿石','地狱疣作物','地狱岩','灵魂沙','末地传送门','下界传送门','告示牌','火把','煤矿石','钻石矿石','绿宝石矿石','金矿石','铁矿石','青金石矿石','红石矿石','金合欢树叶','金合欢树苗','金合欢木','绒球葱',
+'茜草花','白桦树叶','白桦树苗','白桦木','兰花','棕色蘑菇','蘑菇方块','仙人掌','紫松花','紫松树','蒲公英','深色橡树树叶','深色橡树树苗','深色橡木','草丛 (灌木)','草丛','蕨','高草丛','丛林树叶','丛林树苗','丛林木','大型蕨','欧丁香','睡莲','西瓜','西瓜种子','棕色蘑菇','橡树树叶','橡树树苗','橡木','橙色郁金香','滨菊',
+'牡丹','粉红色郁金香','罂粟','南瓜','南瓜种子','红色蘑菇','红色蘑菇','红色郁金香','玫瑰','玫瑰丛','小麦种子','枯死的灌木','云杉树叶','云杉树苗','云杉木','甘蔗','向日葵','藤蔓','白色郁金香','甜菜根','甜菜根种子','甜菜汤','青花','发光的黑曜石','下界反应核','切石机',
+'水瓶','龙息','抗火药水','伤害药水','治疗药水','隐身药水','跳跃药水','夜视药水','剧毒药水','再生药水','迟缓药水','力量药水','迅捷药水','虚弱药水','滞留药水','滞留抗火药水','附魔之瓶','喷溅药水','喷溅抗火药水','喷溅伤害药水','喷溅治疗药水','喷溅隐身药水','喷溅跳跃药水','喷溅夜视药水','喷溅剧毒药水','喷溅再生药水','喷溅迟缓药水','喷溅力量药水','喷溅迅捷药水','喷溅水肺药水','喷溅虚弱药水','骨头','书','砖块','木炭','粘土','煤炭','钻石',
+'绿宝石','末影珍珠','羽毛','燧石','萤石粉','金锭','火药','铁锭','皮革','地狱砖','下界石英','下界之星','纸','爆裂紫颂果','海晶砂粒','海晶碎片','兔子皮','红石粉','粘液球','木棍','线','生成 蝙蝠','生成 烈焰人','生成 洞穴蜘蛛','生成 鸡','生成 牛','生成 爬行者','生成 末影人','生成 末影螨','生成 恶魂','生成 守卫者','生成 马','生成 岩浆怪','生成 哞菇','生成 豹猫','生成 猪','生成 兔子','生成 羊','生成 潜影贝','生成 蠹虫','生成 骷髅','生成 史莱姆','生成 蜘蛛','生成 鱿鱼','生成 村民','生成 女巫','生成 狼','生成 僵尸','生成 僵尸猪人','笔和书','碗','胡萝卜钓竿','钟','指南针','损坏的胡萝卜钓竿','损坏的钻石斧','损坏的钻石锄','损坏的钻石镐','损坏的钻石锹','损坏的钓鱼竿','损坏的打火石','损坏的金斧','损坏的金锄','损坏的金镐','损坏的金锹','损坏的铁斧','损坏的铁锄','损坏的铁镐','损坏的铁锹','损坏的剪刀','损坏的石斧','损坏的石锄','损坏的石镐','损坏的石锹','损坏的木斧','损坏的木锄','损坏的木镐','损坏的木锹','钻石斧','钻石锄','钻石镐','钻石锹','空地图','附魔书','末影之眼','火焰弹','钓鱼竿','打火石','玻璃瓶','金斧','金锄','金镐','金锹','铁斧','铁锄','铁镐','铁锹','栓绳','地图','命名牌','鞍','剪刀','石斧','石锄','石镐','石锹','木斧','木锄','木镐','木锹','成书','铁砧','屏障','信标','床','酿造台','蛋糕','炼药锅','箱子','命令方块','工作台','阳光传感器','发射器','投掷器','附魔台','末影箱','熔炉','漏斗',
+'反向阳光传感器','唱片机','陷阱箱','音乐盒','轻微受损的铁砧','海绵','TNT','朝左的箱子','严重受损的铁砧','湿海绵','船','矿车','传输矿车','命令方块矿车','动力矿车','漏斗矿车','TNT矿车','药箭','箭','抗火之箭','伤害之箭','治疗之箭','隐身之箭','跳跃之箭','夜视之箭','剧毒之箭','再生之箭','迟缓之箭','力量之箭','迅捷之箭','虚弱之箭','弓','损坏的弓','损坏的钻石剑','损坏的金剑','损坏的铁剑','损坏的石剑','损坏的木剑','钻石剑','金剑','铁剑','雪球','光灵箭','石剑','木剑',
+'?','?','?','?','?','?','?','wip','?','?','?','?','材质丢失','?','?','?','?','?','?','红宝石','?','?','伸出的活塞臂','?','熄灭的红石火把',
+'滞留伤害药水','滞留治疗药水','滞留隐身药水','滞留跳跃药水','滞留夜视药水','滞留剧毒药水','滞留再生药水','滞留迟缓药水','滞留力量药水','滞留迅捷药水','滞留水肺药水','滞留虚弱药水',
+'黑色盾牌','蓝色盾牌','褐色盾牌','青色盾牌','灰色盾牌','绿色盾牌','淡蓝色盾牌','淡灰色盾牌','黄绿色盾牌','品红色盾牌','橙色盾牌','粉红色盾牌','紫色盾牌','红色盾牌','白色盾牌','黄色盾牌','水肺药水',
+'草径','生成 僵尸村民','蓝色刷怪蛋',
+'橡木船','云杉船','白桦船','丛林船','金合欢船','黑色橡木船','鞘翅','损坏的鞘翅','?','幸运药水','喷溅幸运药水','幸运之箭','滞留幸运药水','损坏的盾牌','相机','地狱疣块','红色地狱砖','骨块','又一个蓝色刷怪蛋','生成 猫','生成 驴','生成 远古守卫者','生成 尸壳','生成 骡','生成 北极熊','生成 骷髅马','生成 流髑','生成 凋灵骷髅','生成 僵尸马','结构方块','结构空位','皮马铠','观察者','?','?','?','?','?','?','?','?','?','?','?','?','?','?','?','?','?','?','黑色药水','粉色药水','黑色喷溅药水','粉色喷溅药水','黑色滞留药水','粉色滞留药水','黑色之箭','粉色之箭','潜影壳','生成 唤魔者','生成 羊驼','生成 猥傀','生成 卫道士','不死图腾','黑色潜影箱','蓝色潜影箱','褐色潜影箱','青色潜影箱','灰色潜影箱','绿色潜影箱','淡蓝色潜影箱','淡灰色潜影箱','黄绿色潜影箱','品红色潜影箱','橙色潜影箱','粉红色潜影箱','紫色潜影箱','红色潜影箱','白色潜影箱','黄色潜影箱','','','','','','抗性药水','饱和药水','生命提升药水','急迫药水'
+
+
+];
+
+var MAX=listall.length;
+
+function change(){
+
+var i,k;
+
+var cftlist=[$('#cft0').val(),$('#cft1').val(),$('#cft2').val(),$('#cft3').val(),$('#cft4').val(),$('#cft5').val(),$('#cft6').val(),$('#cft7').val(),$('#cft8').val(),$('#cft9').val()];
+
+var szlist=[$('#sz0').val(),$('#sz1').val(),$('#sz2').val(),$('#sz3').val(),$('#sz4').val(),$('#sz5').val(),$('#sz6').val(),$('#sz7').val(),$('#sz8').val(),$('#sz9').val()];
+
+var titlelist=[$('#title0').val(),$('#title1').val(),$('#title2').val(),$('#title3').val(),$('#title4').val(),$('#title5').val(),$('#title6').val(),$('#title7').val(),$('#title8').val(),$('#title9').val()];
+
+var str;
+
+/*var starti=10;
+var oocitem;
+
+listall
+{id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~5 minecraft:repeating_command_block 2 replace {Command:scoreboard players tag @a add polar_bear {Inventory:[{Slot:15b,id:minecraft:ice,Count:1b},{Slot:16b,id:minecraft:ice,Count:1b},{Slot:17b,id:minecraft:ice,Count:1b},{Slot:24b,id:minecraft:ice,Count:1b},{Slot:25b,id:minecraft:egg,Count:1b},{Slot:26b,id:minecraft:ice,Count:1b},{Slot:33b,id:minecraft:ice,Count:1b},{Slot:34b,id:minecraft:ice,Count:1b},{Slot:35b,id:minecraft:ice,Count:1b}]}}"},
+{id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~4 minecraft:chain_command_block 10 replace {auto:1,Command:scoreboard players set @a[tag=polar_bear] clearSlot 495}"},
+{id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~3 minecraft:chain_command_block 10 replace {auto:1,Command:replaceitem entity @a[tag=polar_bear] slot.inventory.16 minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:polar_bear}}}"},
+{id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~2 minecraft:chain_command_block 10 replace {auto:1,Command:scoreboard players tag @a remove polar_bear}"},
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+for(i=0;i<=9;i++) if(titlelist[i]=='')titlelist[i]=cftlist[i];
+
+for(k=0;k<9;k++) if(titlelist[k]!='')break;
+var strmat=titlelist[k];
+for(k++;k<9;k++){
+	for(i=0;i<k;i++) if(titlelist[i]==titlelist[k])break;
+	if(i==k&&titlelist[k]!='')strmat+='+'+titlelist[k];
+}
+
+str="<tr><th>"+titlelist[9]+"<span class='lore'><br>"+$('#cft9p').val()+"</span></th><td>"+strmat+"</td><td><div><span class='mcui'><span>";
+
+for(k=0;k<9;k++){
+	if(cftlist[k]==''){
+		if(k==0||k==3||k==6)str+="<span class='mcui-row'>";
+		str+="<span class='invslot'>";
+		if(szlist[k]!='1'&&szlist[k]!='')str+="<span class='invslot-stacksize' title='"+titlelist[k]+"'>"+szlist[k]+"</span>";
+		str+="</span>";
+		if(k==2||k==5||k==8)str+="</span>";
+	}
+	else{
+		for(i=0;i<MAX;i++){if(cftlist[k]==listall[i]) break;}
+		if(i==MAX)i=0;
+		if(k==0||k==3||k==6)str+="<span class='mcui-row'>";
+		str+="<span class='invslot sprite' title='"+titlelist[k]+"' style='background-position:-"+((i%32)*32)+"px -"+(parseInt(i/32)*32)+"px'>";
+		if(szlist[k]!='1'&&szlist[k]!='')str+="<span class='invslot-stacksize' title='"+titlelist[k]+"'>"+szlist[k]+"</span>";
+		str+="</span>";
+		if(k==2||k==5||k==8)str+="</span>";
+		
+	}
+}
+
+if(cftlist[9]!='') for(i=0;i<MAX;i++){if(cftlist[9]==listall[i]) break;}
+else i=MAX;
+if(i==MAX)i=0;
+
+str+="</span><span class='mcui-arrow'><br></span>";
+str+="<span class='mcui-output invslot'><span class='sprite' title='"+titlelist[9]+"' style='background-position:-"+(parseInt(i%32)*32)+"px -"+(parseInt(i/32)*32)+"px'>";
+if(szlist[9]!='1'&&szlist[9]!='')str+="<span class='invslot-stacksize' title='"+titlelist[9]+"'>"+szlist[9]+"</span>";
+str+="</span></span></span></span></span></div></td><td>"+$('#title10').val()+"</td></tr>";
+$('tbody').append(str);
+
+}
+
+
+function dellast(){
+	$('tbody tr:last').remove();
+	//$('#ooc span:last').remove();
+	//if(numofcraft>0)numofcraft=numofcraft-1;
+}
+
+function clean(){
+	$('#cft0').val('');		$('#cft1').val('');		$('#cft2').val('');
+	$('#cft3').val('');		$('#cft4').val('');		$('#cft5').val('');
+	$('#cft6').val('');		$('#cft7').val('');		$('#cft8').val('');
+	$('#cft9').val('');		$('#cft9p').val('');
+	$('#sz0').val('');		$('#sz1').val('');		$('#sz2').val('');
+	$('#sz3').val('');		$('#sz4').val('');		$('#sz5').val('');
+	$('#sz6').val('');		$('#sz7').val('');		$('#sz8').val('');
+	$('#sz9').val('');
+	$('#title0').val('');	$('#title1').val('');	$('#title2').val('');
+	$('#title3').val('');	$('#title4').val('');	$('#title5').val('');
+	$('#title6').val('');	$('#title7').val('');	$('#title8').val('');
+	$('#title9').val('');
+	$('#title10').val('');
+}
+
+var focusterm;
+$(document).ready(function(){
+	$('#cft0').focus(function(){focusterm=$('#cft0');});
+	$('#cft1').focus(function(){focusterm=$('#cft1');});
+	$('#cft2').focus(function(){focusterm=$('#cft2');});
+	$('#cft3').focus(function(){focusterm=$('#cft3');});
+	$('#cft4').focus(function(){focusterm=$('#cft4');});
+	$('#cft5').focus(function(){focusterm=$('#cft5');});
+	$('#cft6').focus(function(){focusterm=$('#cft6');});
+	$('#cft7').focus(function(){focusterm=$('#cft7');});
+	$('#cft8').focus(function(){focusterm=$('#cft8');});
+	$('#cft9').focus(function(){focusterm=$('#cft9');});
+
+});
+
+
+function showall(){
+	var str="<button onclick='focusterm.val(\"\")' class='invslot sprite'></button>";
+	for(var i=1;i<MAX;i++){
+		if(i%32==0)str+="<span class='mcui-row'>";
+		str+="<button onclick='focusterm.val(listall["+i+"])' class='invslot sprite' title='"+listall[i]+"' style='background-position:-"+((i%32)*32)+"px -"+(parseInt(i/32)*32)+"px'></button>";
+		if(i%32==31)str+="</span>";
+	}
+	$('#showall').append(str);
+}
+
+function justify_Let(){
+    var obj=$(".t1");
+    var lengths=[];
+    obj.each(function(){
+        lengths.push($(this).text().length);
+ 
+    });
+    //var smax=Math.max(lengths);
+    if(lengths.length==0){return;}
+    for(var i=0,smax=lengths[0],len=lengths.length;i<len;i++){
+        if(lengths[i]>smax){
+            smax=lengths[i];
+        }
+    }
+ 
+    for(var i=0,len=lengths.length;i<len;i++){
+        var currlen=lengths[i];
+        if(currlen==smax){continue;}
+        obj.eq(i).css({"letter-spacing": ((smax-currlen)/(currlen-1))+"em"});
+    }
+}
+
+</script>
+</head>
+
+<body onload="change();showall();clean();justify_Let()">
+<header style="background:purple; padding:3px 60px; margin-top:0;">
+	<h1>自定义合成表制作器</h1>
+	<h1 style='font-size:100%'>ruhuasiyu@mcbbs</h1>
+</header>
+<p id='aaa'></p>
+<div class='main'>
+
+<div style="width:533px;margin:0 auto;">
+<p class='t1'>在下方输入自定义合成表并点击添加即可，最后请用截图工具保存至本地。</p>
+<p class='t1'>你也可以将样式表和相应的表格代码复制到你自己的网页。</p>
+</div>
+
+<form>
+<input type="text" id='cft0' value='' size='10' autofocus /><input type="text" id='sz0' class='hidef' placeholder='1' size='1' /><input type="text" id='title0' class='hidef' placeholder="自定义名称"  size='10' />
+<input type="text" id='cft1' value='红石粉' size='10' /><input type="text" id='sz1' class='hidef' placeholder='1' size='1' /><input type="text" id='title1' class='hidef' placeholder="自定义名称"  size='10' />
+<input type="text" id='cft2' value='' size='10' /><input type="text" id='sz2' class='hidef' placeholder='1' size='1' /><input type="text" id='title2' class='hidef' placeholder="自定义名称"  size='10' /><br>
+<input type="text" id='cft3' value='红石粉' size='10' /><input type="text" id='sz3' class='hidef' placeholder='1' size='1' /><input type="text" id='title3' class='hidef' placeholder="自定义名称"  size='10' />
+<input type="text" id='cft4' value='铁锭' size='10' /><input type="text" id='sz4' class='hidef' placeholder='1' size='1' /><input type="text" id='title4' class='hidef' value="精制铁锭" placeholder="自定义名称"  size='10' />
+<input type="text" id='cft5' value='红石粉' size='10' /><input type="text" id='sz5' class='hidef' placeholder='1' size='1' /><input type="text" id='title5' class='hidef' placeholder="自定义名称"  size='10' /><br>
+<input type="text" id='cft6' value='' size='10' /><input type="text" id='sz6' class='hidef' placeholder='1' size='1' /><input type="text" id='title6' class='hidef' placeholder="自定义名称"  size='10' />
+<input type="text" id='cft7' value='红石粉' size='10' /><input type="text" id='sz7' class='hidef' placeholder='1' size='1' /><input type="text" id='title7' class='hidef' placeholder="自定义名称"  size='10' />
+<input type="text" id='cft8' value='' size='10' /><input type="text" id='sz8' class='hidef' placeholder='1' size='1' /><input type="text" id='title8' class='hidef' placeholder="自定义名称"  size='10' /><br>
+
+<input type="text" id='cft9' value='指南针' size='10' /><input type="text" id='sz9' class='hidef' placeholder='9' size='1' /><input type="text" id='title9' class='hidef' value="强力磁铁" placeholder="自定义名称" size='10' /><br>
+
+<input type="text" id='cft9p' class='hidef' value='磁力 MAX' placeholder='Lore' size='30' /><br>
+<input type="text" id='title10' class='hidef' value="手持强力磁铁可将掉落<br>物吸引过来。<br><span class='lore'>来自更多的合成</span>" placeholder='自定义描述, 可以用<br>来断行' size='30' /><br>
+</form>
+<form>
+<button type="button" onclick='change()'>添加该配方</button>
+<button type="button" onclick="clean()">清空</button>
+<button type="button" onclick='dellast()'>删除最后一个合成配方</button>
+<button type="button" onclick="$('.hidef').toggle()">显示/隐藏更多</button>
+</form>
+
+<table>
+<thead><tr><th>名称</th><th>材料</th><th>合成配方</th><th>描述</th></tr></thead>
+<tbody></tbody>
+</table>
+
+<div id="showall" style="width:88%;margin:30px auto"></div>
+<!-- <p>
+
+summon falling_block ~ ~2 ~ {Time:1,Block:"minecraft:redstone_block",Passengers:[
+{id:"falling_block",Time:1,Block:"minecraft:activator_rail",Passengers:[
+{id:"commandblock_minecart",Command:"scoreboard objectives add clearSlot dummy"},
+{id:"commandblock_minecart",Command:"setblock ~7 ~9 ~5 minecraft:repeating_command_block 2 replace {Command:replaceitem entity @a[score_clearSlot_min=256] slot.inventory.26 minecraft:air}"},
+{id:"commandblock_minecart",Command:"setblock ~7 ~9 ~4 minecraft:chain_command_block 2 replace {auto:1,Command:scoreboard players remove @a[score_clearSlot_min=256] clearSlot 256}"},
+{id:"commandblock_minecart",Command:"setblock ~7 ~9 ~3 minecraft:chain_command_block 2 replace {auto:1,Command:replaceitem entity @a[score_clearSlot_min=128] slot.inventory.25 minecraft:air}"},
+{id:"commandblock_minecart",Command:"setblock ~7 ~9 ~2 minecraft:chain_command_block 5 replace {auto:1,Command:scoreboard players remove @a[score_clearSlot_min=128] clearSlot 128}"},
+{id:"commandblock_minecart",Command:"setblock ~8 ~9 ~2 minecraft:chain_command_block 3 replace {auto:1,Command:replaceitem entity @a[score_clearSlot_min=64] slot.inventory.24 minecraft:air}"},
+{id:"commandblock_minecart",Command:"setblock ~8 ~9 ~3 minecraft:chain_command_block 3 replace {auto:1,Command:scoreboard players remove @a[score_clearSlot_min=64] clearSlot 64}"},
+{id:"commandblock_minecart",Command:"setblock ~8 ~9 ~4 minecraft:chain_command_block 3 replace {auto:1,Command:replaceitem entity @a[score_clearSlot_min=32] slot.inventory.17 minecraft:air}"},
+{id:"commandblock_minecart",Command:"setblock ~8 ~9 ~5 minecraft:chain_command_block 5 replace {auto:1,Command:scoreboard players remove @a[score_clearSlot_min=32] clearSlot 32}"},
+{id:"commandblock_minecart",Command:"setblock ~9 ~9 ~5 minecraft:chain_command_block 2 replace {auto:1,Command:replaceitem entity @a[score_clearSlot_min=16] slot.inventory.16 minecraft:air}"},
+{id:"commandblock_minecart",Command:"setblock ~9 ~9 ~4 minecraft:chain_command_block 2 replace {auto:1,Command:scoreboard players remove @a[score_clearSlot_min=16] clearSlot 16}"},
+{id:"commandblock_minecart",Command:"setblock ~9 ~9 ~3 minecraft:chain_command_block 2 replace {auto:1,Command:replaceitem entity @a[score_clearSlot_min=8] slot.inventory.15 minecraft:air}"},
+{id:"commandblock_minecart",Command:"setblock ~9 ~9 ~2 minecraft:chain_command_block 5 replace {auto:1,Command:scoreboard players remove @a[score_clearSlot_min=8] clearSlot 8}"},
+{id:"commandblock_minecart",Command:"setblock ~10 ~9 ~2 minecraft:chain_command_block 3 replace {auto:1,Command:replaceitem entity @a[score_clearSlot_min=4] slot.inventory.8 minecraft:air}"},
+{id:"commandblock_minecart",Command:"setblock ~10 ~9 ~3 minecraft:chain_command_block 3 replace {auto:1,Command:scoreboard players remove @a[score_clearSlot_min=4] clearSlot 4}"},
+{id:"commandblock_minecart",Command:"setblock ~10 ~9 ~4 minecraft:chain_command_block 3 replace {auto:1,Command:replaceitem entity @a[score_clearSlot_min=2] slot.inventory.7 minecraft:air}"},
+{id:"commandblock_minecart",Command:"setblock ~10 ~9 ~5 minecraft:chain_command_block 5 replace {auto:1,Command:scoreboard players remove @a[score_clearSlot_min=2] clearSlot 2}"},
+{id:"commandblock_minecart",Command:"setblock ~11 ~9 ~5 minecraft:chain_command_block 2 replace {auto:1,Command:replaceitem entity @a[score_clearSlot_min=1] slot.inventory.6 minecraft:air}"},
+{id:"commandblock_minecart",Command:"setblock ~11 ~9 ~4 minecraft:chain_command_block 2 replace {auto:1,Command:scoreboard players remove @a[score_clearSlot_min=1] clearSlot 1}"},
+<span id="ooc">
+{id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~5 minecraft:repeating_command_block 2 replace {Command:scoreboard players tag @a add polar_bear {Inventory:[{Slot:15b,id:minecraft:ice,Count:1b},{Slot:16b,id:minecraft:ice,Count:1b},{Slot:17b,id:minecraft:ice,Count:1b},{Slot:24b,id:minecraft:ice,Count:1b},{Slot:25b,id:minecraft:egg,Count:1b},{Slot:26b,id:minecraft:ice,Count:1b},{Slot:33b,id:minecraft:ice,Count:1b},{Slot:34b,id:minecraft:ice,Count:1b},{Slot:35b,id:minecraft:ice,Count:1b}]}}"},
+{id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~4 minecraft:chain_command_block 10 replace {auto:1,Command:scoreboard players set @a[tag=polar_bear] clearSlot 495}"},
+{id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~3 minecraft:chain_command_block 10 replace {auto:1,Command:replaceitem entity @a[tag=polar_bear] slot.inventory.16 minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:polar_bear}}}"},
+{id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~2 minecraft:chain_command_block 10 replace {auto:1,Command:scoreboard players tag @a remove polar_bear}"},
+</span>
+{id:"commandblock_minecart",Command:"setblock ~ ~-1 ~ minecraft:lava 7 replace"},
+{id:"commandblock_minecart",Command:"fill ~ ~ ~ ~ ~-1 ~ minecraft:air 0 replace"}]}]}
+</p> -->
+</div></body></html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

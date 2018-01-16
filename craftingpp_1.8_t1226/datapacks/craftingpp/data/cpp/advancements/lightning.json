@@ -1,0 +1,22 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:barrier"
+        },
+        "title":{
+            "translate": "cpp.advancements.lightning.title"
+		},
+        "description": {
+            "translate": "cpp.advancements.lightning.description"
+		}
+    },
+    "parent": "cpp:no_dirt",
+    "criteria": {
+        "lightning": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+	"rewards":{
+		"function": "cpp:adv/lightning"
+	}
+}

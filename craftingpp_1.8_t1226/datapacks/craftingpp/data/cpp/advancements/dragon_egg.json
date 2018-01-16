@@ -1,0 +1,23 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:dragon_egg"
+        },
+        "title":{
+            "translate": "cpp.advancements.dragon_egg.title"
+		},
+        "description": {
+            "translate": "cpp.advancements.dragon_egg.description"
+		},
+        "frame": "challenge"
+    },
+    "parent": "cpp:ocelot",
+    "criteria": {
+        "dragon_egg": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+	"rewards":{
+        "experience": 500
+	}
+}

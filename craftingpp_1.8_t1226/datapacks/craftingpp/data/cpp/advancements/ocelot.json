@@ -1,0 +1,22 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:cod"
+        },
+        "title":{
+            "translate": "cpp.advancements.ocelot.title"
+		},
+        "description": {
+            "translate": "cpp.advancements.ocelot.description"
+		}
+    },
+    "parent": "cpp:zombie",
+    "criteria": {
+        "ocelot": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+	"rewards":{
+		"function": "cpp:adv/ocelot"
+	}
+}

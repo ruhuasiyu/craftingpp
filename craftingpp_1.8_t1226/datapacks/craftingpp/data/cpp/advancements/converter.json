@@ -1,0 +1,21 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:diamond_ore"
+        },
+        "title":{
+            "translate": "cpp.advancements.converter.title"
+		},
+        "description": {
+            "translate": "cpp.advancements.converter.description"
+		}
+    },
+    "parent": "cpp:gardener",
+    "criteria": {
+        "converter": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "rewards": {
+    }
+}

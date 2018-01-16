@@ -1,0 +1,22 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:painting"
+        },
+        "title":{
+            "translate": "cpp.advancements.artist.title"
+		},
+        "description": {
+            "translate": "cpp.advancements.artist.description"
+		}
+    },
+    "parent": "cpp:dragonboy",
+    "criteria": {
+        "artist": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "rewards": {
+        "function": "cpp:adv/artist"
+    }
+}

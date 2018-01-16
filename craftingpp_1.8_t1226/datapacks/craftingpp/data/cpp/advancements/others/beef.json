@@ -1,0 +1,17 @@
+{
+	"parent": "cpp:others/root",
+	"criteria": {
+	   "example": {
+		   "trigger": "minecraft:consume_item",
+		   "conditions": {
+			   "item": {
+				   "item": "minecraft:cooked_beef",
+				   "nbt": "{display:{LocName:\"cpp.item.braised_beef_with_potatoes\"}}"
+				}
+			}
+		}
+	},
+	"rewards":{
+		"function": "cpp:sys/food/beef"
+	}
+}

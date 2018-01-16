@@ -1,0 +1,21 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:enchanted_book"
+        },
+        "title":{
+            "translate": "cpp.advancements.enchant.title"
+		},
+        "description": {
+            "translate": "cpp.advancements.enchant.description"
+		}
+    },
+    "parent": "cpp:recycle",
+    "criteria": {
+        "enchant": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "rewards": {
+    }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "cpp:recipes/root",
+  "rewards": {
+    "recipes": [
+      "cpp:acacia_planks_from_stairs"
+    ]
+  },
+  "criteria": {
+    "has_log2": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:acacia_stairs"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "acacia_planks_from_stairs"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_log2",
+      "has_the_recipe"
+    ]
+  ]
+}
