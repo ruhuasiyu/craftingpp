@@ -1,0 +1,3116 @@
+<!doctype html>
+<!-- saved from url=(0030)http://home.ustc.edu.cn/~zsxqq -->
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="author" content="张神星" />
+<script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+<link rel="shortcut icon" href="http://home.ustc.edu.cn/~zsxqq/pic/favicon.ico" />
+<title>更多的合成 Crafting++ v1.7.4</title>
+<style>
+@font-face{
+	font-family:Minecraft;	src:url("http://hydra-media.cursecdn.com/hydra/fonts/minecraft.eot?#iefix"),url(http://hydra-media.cursecdn.com/hydra/fonts/minecraft.woff) format("woff"),url(http://hydra-media.cursecdn.com/hydra/fonts/minecraft.ttf) format("truetype");
+}
+html{
+	font-family:"Liberation Sans",Arial,Helvetica,FreeSans,sans-serif;
+	background-image:url(items/bg.png);
+}
+body{
+	width:90%;
+	margin:25px auto;
+	background:#ddd;
+	border:6px solid #99876c;
+	font-family: Tahoma, "Microsoft Yahei", Simsun;
+}
+div.main{
+	padding:2% 3%;
+}
+table{
+	margin:0 auto;
+	background-color:#f2f2f2;
+	border-collapse:collapse;
+}
+table th, table td{
+	border:1px solid #aaa;
+	padding:0.2em 0.4em;
+	vertical-align:middle;
+}
+thead th{
+	background: #505050;
+	color: white;
+}
+.invslot{
+	position:relative;
+	display:inline-block;
+	background-color:#8B8B8B;
+	border:2px solid;
+	border-color:#373737 #FFF #FFF #373737;
+	width:32px;
+	height:32px;
+	font-size:16px;
+	line-height:1;
+	text-align:left;
+	vertical-align:bottom;
+}
+.mcui-row .invslot{
+	border-color:#373737 #f5ea39 #f5ea39 #373737;
+}
+.invslot-large{
+	padding:8px;
+}
+.mcui{
+	display:inline-block;
+	position:relative;
+	background-color:#C6C6C6;
+	border:2px solid;
+	border-color:#DBDBDB #5B5B5B #5B5B5B #DBDBDB;
+	padding:6px;
+	text-align:left;
+	white-space:nowrap;
+	vertical-align:bottom;
+}
+.mcui > *{
+	display:inline-block;
+	vertical-align:top;
+}
+.mcui-row{
+	display:block;
+}
+.mcui-arrow{
+	background:url("items/arrow.png") no-repeat;
+	width:32px;
+	height:26px;
+	margin:40px 4px 0;
+}
+.mcui-output{
+	margin-top:28px;
+	padding:8px;
+}
+.mcui-icons{
+	position:absolute;
+	top:6px;
+	right:6px;
+}
+.mcui-shapeless{
+	display:block;
+	width:19px;
+	height:15px;
+	background-image:url("http://hydra-media.cursecdn.com/minecraft.gamepedia.com/a/a9/Grid_layout_Shapeless.png")
+}
+.sprite{
+	display:inline-block;
+	vertical-align:text-top;
+	background-image:url("items/InvSprite.png");
+	width:32px;
+	height:32px;
+	background-repeat:no-repeat;
+}
+.invslot-stacksize{
+	position:absolute;
+	right:0;
+	bottom:0;
+	font-family:Minecraft,sans-serif !important;
+	color:#FFF !important;
+	text-shadow:2px 2px 0 #3F3F3F;
+	filter: DropShadow (color="#3F3F3F",offx="2",offy="2");
+	-webkit-filter: DropShadow (color="#3F3F3F",offx="2",offy="2");
+	z-index:2;
+}
+.mcui-row:first-child .invslot{
+	border-top-color:#f5ea39;
+}
+.mcui-row .invslot:first-child{
+	border-left-color:#f5ea39;
+}
+article{
+	padding:0 2em 1em;
+}
+h1{
+	text-align:center;
+	color:gold;
+}
+h2{
+	color:blue;
+	border-bottom:solid 1px grey;
+	padding:0 0 5px;
+	text-align:center;
+}
+a{
+	color:#228897;
+}
+a:hover{
+	color:#d25349;
+}
+code{
+	font-family: Monaco,Consolas,"Lucida Console","Courier New",serif;
+	font-size:100%;
+	margin:1em 0;
+	padding:1em 2em;
+	background-color:#ECE3B8;
+	background-color:#F7F7F7;
+	display:block;
+	color:black;
+	border:1px solid #C5A97A;
+}
+li{
+	margin: 5px 0;
+}
+.center{
+	text-align:center;
+}
+.left{
+	text-align:left;
+}
+.lore{
+	color:purple;
+}
+.center img{
+	height:210px;
+}
+
+.mcicons img{
+	height:24px;
+}
+#oreseed tbody tr td:first-child{
+	background-color:#eee;
+}
+.advancement tbody td:first-child{
+	display:inline-block;
+	position:relative;
+	padding:6px;
+	white-space:nowrap;
+	vertical-align:bottom;
+}
+.piston:nth-child(odd){background:hsl(80,100%,80%);}
+.piston:nth-child(even){background:hsl(80,100%,90%);}
+.bio_med:nth-child(odd){background:hsl(120,100%,80%);}
+.bio_med:nth-child(even){background:hsl(120,100%,90%);}
+.painting:nth-child(odd){background:hsl(160,100%,80%);}
+.painting:nth-child(even){background:hsl(160,100%,90%);}
+.magic:nth-child(odd){background:hsl(200,100%,80%);}
+.magic:nth-child(even){background:hsl(200,100%,90%);}
+.traffic:nth-child(odd){background:hsl(240,100%,80%);}
+.traffic:nth-child(even){background:hsl(240,100%,90%);}
+
+.v1-0{background:hsl(0,100%,70%);}
+.v1-1{background:hsl(30,100%,70%);}
+.v1-2{background:hsl(60,100%,70%);}
+.v1-3{background:hsl(90,100%,70%);}
+.v1-4{background:hsl(120,100%,70%);}
+.v1-5{background:hsl(150,100%,70%);}
+.v1-6{background:hsl(180,100%,70%);}
+.v1-7{background:hsl(200,100%,70%);}
+.v1-8{background:hsl(300,100%,70%);}
+
+
+
+.mccolor0{background-color:#000;color:white}
+.mccolor1{background-color:#00a;color:white}
+.mccolor2{background-color:#0a0;color:white}
+.mccolor3{background-color:#0aa;color:white}
+.mccolor4{background-color:#a00;color:white}
+.mccolor5{background-color:#a0a;color:white}
+.mccolor6{background-color:#fa0}
+.mccolor7{background-color:#aaa}
+.mccolor8{background-color:#555;color:white}
+.mccolor9{background-color:#55f;color:white}
+.mccolora{background-color:#5f5}
+.mccolorb{background-color:#5ff}
+.mccolorc{background-color:#f55}
+.mccolord{background-color:#f5f}
+.mccolore{background-color:#ff5}
+.mccolorf{background-color:#fff}
+</style>
+</head>
+
+<body>
+<header style="background:purple; padding:3px 60px; margin-top:0;">
+<h1>更多的合成 Crafting++ v1.7.4</h1>
+<h1 style="font-size:120%">Minecraft 原版模组</h1>
+<h1 style="font-size:90%">2017年06月16日</h1>
+</header>
+
+<div class="main">
+<header><h2 onclick="$('#mainpart').toggle(1000)">主要内容与使用方法</h2></header>
+<article id="mainpart">
+<p>本模组</a>支持的 Minecraft 版本为1.12，作者 <a href="http://www.mcbbs.net/home.php?mod=spacecp&ac=pm&touid=975525">ruhuasiyu@mcbbs</a>。</p>
+<ul><li>官网链接：<a href="https://craftingpp.neocities.org/1.7/">https://craftingpp.neocities.org/1.7/</a></li>
+<li>mcbbs帖子：<a href="http://www.mcbbs.net/thread-696861-1-1.html">http://www.mcbbs.net/thread-696861-1-1.html</a></li>
+</ul>
+<p>内容包括：活塞工艺、生物制药、绘画雕塑、强化系统、交通设施、生物雷达、角色装饰、进度，并修改了部分生物掉落和生成。</p>
+<p>所有内容均使用<strong>背包合成</strong>：将材料放入背包右上角对应的3×3的格子里，即可自动得到产物。数量和位置必须完全吻合方可，部分支持一次性合成至多1组物品，这依赖于原材料和产物的最大堆叠数。</p>
+<p class="center"><img src="https://public.lightpic.info/image/15EA_59153D760.jpg" /></p>
+
+<h3>A <a href="#piston"><strong>活塞工艺</strong></a></h3>
+<p><strong>A-1</strong> 回收盔甲、铁金钻石剑镐斧锹锄、鞍、矿车、马铠、花岗岩、闪长岩、安山岩、石英块、木炭、地狱疣块。</p>
+<p><strong>A-2</strong> 制作钻石、鞍、马铠、粘土、浮冰、蜘蛛网以及
+<ul>
+	<li>渔网：将渔网扔入水中，每隔20秒可以获得一件物品；</li>
+	<li>矿物探测器：右击地面会将附近10米内的矿物高亮显示5秒；</li>
+	<li>强力磁铁：主手持有时，可将附近20米的掉落物吸引过来，有5秒的冷却；</li>
+	<li>时间调节器：放置在物品展示框时，植物生长会加速；</li>
+	<li>闹钟：放置在物品展示框时会向附近玩家报时；</li>
+	<li>传送球：右击地面会将玩家向指定方向传送200米。</li>
+</ul></p>
+<p class="center"><img src="https://ooo.0o0.ooo/2017/05/30/592d6ddc4441b.png" /> <img src="https://ooo.0o0.ooo/2017/06/07/5937f7532166d.png" /> <img src="https://ooo.0o0.ooo/2017/05/30/592d6ddd04e94.png" />  <img src="https://ooo.0o0.ooo/2017/06/07/5937f5225c244.png" /></p>
+
+<h3>B <a href="#bio_med"><strong>生物制药</strong></a></h3>
+<p><strong>B-1</strong> 38种刷怪蛋的合成。</p>
+<p><strong>B-2</strong> 6种树种的合成，树种用于植树：沿竖直方向依次放置主色方块、副色方块、树种即可自动种下。主副色方块需为羊毛或树叶。</p>
+<p><strong>B-3</strong> 8种矿石种子的合成，平均每隔5分钟会用矿石替换顶部的牺牲品，每个种子大约可以生产25颗矿石。矿石种子很脆弱，击打、着火或溺水均会导致种子消失。</p>
+<table class="center mcicons" id="oreseed">
+<thead><tr><th colspan="2">矿石种类</th><th>矿石种子颜色</th><th>顶部所需牺牲品</th>
+</tr></thead>
+<tbody>
+<tr class='mccolorf'>
+<td><img title="下界石英矿石" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/3/39/Nether_Quartz_Ore.png"></td>
+<td>下界石英矿石</td>
+<td>白色</td>
+<td>地狱岩</td>
+</tr>
+<tr class='mccolor0'>
+<td><img title="煤矿石" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/f/fe/Coal_Ore.png"></td>
+<td>煤矿石</td>
+<td>黑色</td>
+<td>石头</td>
+</tr>
+<tr class='mccolor7'>
+<td><img title="铁矿石" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/8/87/Iron_Ore.png"></td>
+<td>铁矿石</td>
+<td>浅灰色</td>
+<td>煤矿石</td>
+</tr>
+<tr class='mccolore'>
+<td><img title="金矿石" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/f/f7/Gold_Ore.png"></td>
+<td>金矿石</td>
+<td>黄色</td>
+<td>铁矿石</td>
+</tr>
+<tr class='mccolor9'>
+<td><img title="钻石矿石" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/9/97/Diamond_Ore.png"></td>
+<td>钻石矿石</td>
+<td>淡蓝色</td>
+<td>金矿石</td>
+</tr>
+<tr class='mccolor1'>
+<td><img title="青金石矿石" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/c/c3/Lapis_Lazuli_Ore.png"></td>
+<td>青金石矿石</td>
+<td>蓝色</td>
+<td>粘土</td>
+</tr>
+<tr class='mccolor4'>
+<td><img title="红石矿石" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/5/56/Redstone_Ore.png"></td>
+<td>红石矿石</td>
+<td>红色</td>
+<td>青金石矿石</td>
+</tr>
+<tr class='mccolor2'>
+<td><img title="绿宝石矿石" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/9/9f/Emerald_Ore.png"></td>
+<td>绿宝石矿石</td>
+<td>黄绿色</td>
+<td>红石矿石</td>
+</tr>
+</tbody></table>
+
+<p><strong>B-4</strong> 附魔金苹果和12种高级药水的合成。</p>
+<p class="center"><img src="https://public.lightpic.info/image/7704_590D66A30.jpg" /> <img src="https://public.lightpic.info/image/9AAC_590D66A30.jpg" /> <img src="https://ooo.0o0.ooo/2017/05/30/592d6fe349268.png" /> <img src="https://ooo.0o0.ooo/2017/05/30/592d6f5fae89f.png" />
+<img style="height:483px;width:900px" src="https://public.lightpic.info/image/2CB7_5913F6590.jpg" />
+<img src="https://public.lightpic.info/image/3A5B_590D66A50.jpg" /> <img src="https://ooo.0o0.ooo/2017/06/06/5936bf458d6eb.png" /> <img src="https://ooo.0o0.ooo/2017/05/30/592d722397679.png" /> </p>
+
+<h3>C <a href="#painting"><strong>绘画雕塑</strong></a></h3>
+<p>16种高级画的合成，请将画放置在物品展示框上。</p>
+<p class="center"><img src="https://public.lightpic.info/image/28CC_590DB9130.jpg" /></p>
+
+<h3>D <a href="#magic"><strong>强化系统</strong></a></h3>
+<p>可强化的物品有盔甲、剑锹斧镐、弓、钓鱼竿。
+强化从最基础的皮革盔甲、木制品、弓、钓鱼竿出发，按指定次序依次消耗8个指定的牺牲品来升级，共20个等级。
+不同等级物品拥有不同的名称、材质、魔咒和属性加成。升级后的物品只有30点耐久，需要消耗经验值来回复耐久度。</p>
+<p class="center"><img src="https://ooo.0o0.ooo/2017/05/30/592d75c8c5bb1.png" /> <img src="https://ooo.0o0.ooo/2017/05/30/592d75c86c8a4.png" /> <a href="https://ooo.0o0.ooo/2017/06/03/5932a5b396357.png"><img style="height:300px" src="https://ooo.0o0.ooo/2017/06/03/5932a5b396357.png" /></a></p>
+
+<h3>E <a href="#traffic"><strong>交通设施</strong></a></h3>
+<p>玩家可以铺设道路，一共四个等级，基础道路为红石块，依次在其上使用不同的固化剂可以得到不同等级的道路。玩家在道路上可以获得相应等级的加速效果。</p>
+<p class="center"><img src="https://ooo.0o0.ooo/2017/05/30/592d75c8beaee.png" /> </p>
+
+<h3>F <a href="#traffic"><strong>生物雷达</strong></a><sup>1.8 即将到来</sup></h3>
+<p>玩家主手/副手持有地图时，可以显示附近的生物信息。</p>
+
+<table class="center mcicons" id="radar">
+<thead><tr><th>类别</th><th>生物清单</th><th>显示的颜色</th></tr></thead>
+<tbody>
+<tr class="mccolor1">
+<th>被动型生物</th>
+<td>牛/猪/羊/兔子/鸡<br/> <img title="牛" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/9/93/CowFace.png" /> <img title="猪" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/0/03/PigFace.png" /> <img title="羊" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/b/b1/SheepFace.png" /> <img title="兔子" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/9/9f/Rabbiticon.png" /> <img title="鸡" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/5/53/ChickenFace.png" /></td>
+<td>蓝色</td></tr>
+
+<tr class="mccolore">
+<th>可驯服生物</th>
+<td>豹猫/狼/鹦鹉/马/驴/骡/羊驼<br/> <img title="豹猫" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/6/60/OcelotFace.png" /> <img title="狼" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/6/68/WolfFace.png" /> <img title="鹦鹉" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/0/06/Blue_Parrot_Face.png" /> <img title="马" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/1/17/HorseHead.png" /> <img title="驴" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/5/54/DonkeyHead.png" /> <img title="骡" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/9/90/MuleHead.png" /> <img title="羊驼" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/c/cf/Llama_Head.png" /></td>
+<td>黄色</td></tr>
+
+<tr class="mccolorf">
+<th>稀有生物</th>
+<td>北极熊/铁傀儡/骷髅马/高压爬行者<br/> <img title="北极熊" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/0/07/PolarBearFace.png" /> <img title="铁傀儡" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/1/13/Vg_face.png" /> <img title="骷髅马" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/8/86/SkeletonHorseHead.png" /> <img title="高压爬行者" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/5/5e/CreeperFace.png" /></td>
+<td>白色</td></tr>
+
+<tr class="mccolora">
+<th>史莱姆</th>
+<td>史莱姆 <img title="史莱姆" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/c/ca/SlimeFace.png" /></td>
+<td rowspan=1">绿色</td></tr>
+
+<tr class="mccolor4">
+<th>攻击性生物</th>
+<td>僵尸/僵尸村民/骷髅/爬行者/女巫/蜘蛛/尸壳/流髑<br/> <img title="僵尸" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/b/b2/ZombieFace.png" /> <img title="僵尸村民" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/d/d5/ZombieVillagerHead.png" /> <img title="骷髅" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/d/dc/SkeletonFace.png" /> <img title="爬行者" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/5/5e/CreeperFace.png" /> <img title="女巫" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/6/65/Witchface2.png" /> <img title="蜘蛛" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/0/05/SpiderFace.png" /> <img title="尸壳" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/0/05/HuskFace.png" /> <img title="流髑" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/0/0f/StrayFace.png" /></td>
+<td>红色</td></tr>
+
+<tr class="mccolor0">
+<th>末影人</th>
+<td>末影人 <img title="末影人" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/2/2d/EndermanFace.png" /></td>
+<td>黑色</td></tr>
+</tbody></table>
+
+
+<h3>G <strong>角色装饰</strong></h3>
+<p><strong>G-1</strong> 玩家杀死生物或进行背包合成玩家可以提高功力，根据功力的不同获得不同的前缀称号，一共50种。</p>
+<table><tbody style="background-color:#ddd;"><tr><td style="border-style:none;">
+<table><thead><tr><th>操作</th><th>增加功力</th>
+</tr></thead><tbody>
+<tr><td>杀死生物</td><td>0.1</td>
+</tr>
+<tr><td>回收物品</td><td>0.1</td>
+</tr>
+<tr><td>合成活塞工艺物品</td><td>0.2</td>
+</tr>
+<tr><td>合成普通刷怪蛋</td><td>0.2</td>
+</tr>
+<tr><td>合成村民、刌民刷怪蛋</td><td>0.5</td>
+</tr>
+<tr><td>合成药水、树种、矿物种子</td><td>0.5</td>
+</tr>
+<tr><td>合成道路固化剂</td><td>0.5</td>
+</tr>
+<tr><td>合成高级画</td><td>0.5</td>
+</tr>
+<tr><td>升级武器、装备、工具</td><td>0.8</td>
+</tr>
+<tr><td>完成模组进度</td><td>0.9</td>
+</tr>
+</tbody></table></td><td style="border-style:none;">
+<table><thead><tr><th colspan="6">称号一览</th>
+</tr></thead>
+<tbody>
+<tr class='mccolor2'><th>0+</th><td>不堪一击</td><td>毫不足虑</td><td>不足挂齿</td><td>初学乍练</td><td>勉勉强强</td>
+</tr>
+<tr class='mccolor3'><th>50+</th><td>初窥门径</td><td>初出茅庐</td><td>略知一二</td><td>普普通通</td><td>平平常常</td>
+</tr>
+<tr class='mccolor4'><th>100+</th><td>平淡无奇</td><td>粗懂皮毛</td><td>半生不熟</td><td>登堂入室</td><td>略有小成</td>
+</tr>
+<tr class='mccolor9'><th>200+</th><td>已有小成</td><td>鹤立鸡群</td><td>驾轻就熟</td><td>青出於蓝</td><td>融会贯通</td>
+</tr>
+<tr class='mccolor6'><th>300+</th><td>心领神会</td><td>炉火纯青</td><td>了然於胸</td><td>略有大成</td><td>已有大成</td>
+</tr>
+<tr class='mccolord'><th>450+</th><td>豁然贯通</td><td>非比寻常</td><td>出类拔萃</td><td>罕有敌手</td><td>技冠群雄</td>
+</tr>
+<tr class='mccolorb'><th>600+</th><td>神乎其技</td><td>出神入化</td><td>傲视群雄</td><td>登峰造极</td><td>无与伦比</td>
+</tr>
+<tr class='mccolora'><th>800+</th><td>所向披靡</td><td>一代宗师</td><td>精深奥妙</td><td>神功盖世</td><td>举世无双</td>
+</tr>
+<tr class='mccolor1'><th>1000+</th><td>惊世骇俗</td><td>撼天动地</td><td>震古铄今</td><td>超凡入圣</td><td>威镇寰宇</td>
+</tr>
+<tr class='mccolor5'><th>1350+</th><td>空前绝后</td><td>天人合一</td><td>深藏不露</td><td>深不可测</td><td>返璞归真</td>
+</tr>
+</tbody></table>
+</tr></tbody></table>
+
+<p><strong>G-2</strong> 当玩家头盔位置放置了一个南瓜，而副手为指定的一个物品时，会自动佩戴该物品。一共56款样式。</p>
+<table class="center mcicons"><thead><tr><th></th><th colspan="2">物品</th><th>头饰</th></tr></thead>
+<tbody>
+<tr><td rowspan="5">帽子</td>
+<td><img src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/1/15/Glass.png"></td>
+<td>玻璃</td>
+<td>空气头盔</td>
+</tr>
+<tr>
+<td><img src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/d/dd/Anvil.png"></td>
+<td>铁砧</td>
+<td>矿工帽</td>
+</tr>
+<tr>
+<td><img src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/0/0e/Stone_Slab.png"></td>
+<td>石台阶</td>
+<td>绷带</td>
+</tr>
+<tr>
+<td><img src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/0/0b/Dragon_Egg.png"></td>
+<td>龙蛋</td>
+<td>绅士帽</td>
+</tr>
+<tr>
+<td><img src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/thumb/7/76/White_Bed.png/225px-White_Bed.png"></td>
+<td>白色床</td>
+<td>长冠</td>
+</tr>
+<tr><td rowspan="3">围脖</td>
+<td><img src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/thumb/8/8a/White_Carpet.png/225px-White_Carpet.png"></td>
+<td>地毯</td>
+<td>围脖</td>
+</tr>
+<tr>
+<td><img src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/e/ee/Snow2.png"></td>
+<td>雪</td>
+<td>厚围脖</td>
+</tr>
+<tr>
+<td><img src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/d/d0/Iron_Trapdoor.png"></td>
+<td>铁活板门</td>
+<td>超厚围脖</td>
+</tr>
+<tr><td rowspan="2">花饰</td>
+<td><img src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/3/37/Poppy.png"></td>
+<td>花</td>
+<td>花</td>
+</tr>
+<tr>
+<td><img src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/3/34/TallGrass.gif"></td>
+<td>草、厥</td>
+<td>头上长草</td>
+</tr>
+<tr><td rowspan="4">其它装饰</td>
+<td><img src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/c/ca/Oak_Fence_Gate_%28Closed%29.png"></td>
+<td>栅栏门</td>
+<td>眼镜</td>
+</tr>
+<tr>
+<td><img src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/6/6f/Daylight_Sensor.png"></td>
+<td>阳光传感器</td>
+<td>口罩</td>
+</tr>
+<tr>
+<td><img src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/0/0b/End_Rod.png"></td>
+<td>末地烛</td>
+<td>犄角</td>
+</tr>
+<tr>
+<td><img src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/2/29/Fence.png"></td>
+<td>栅栏</td>
+<td>奥特曼</td>
+</tr>
+</tbody></table>
+<p>部分头饰源自<a href="http://www.mcbbs.net/thread-289646-1-1.html">贰逼的帖子</a>，已获得授权。</p>
+<p class="center"><img src="https://ooo.0o0.ooo/2017/05/30/592d75c810dba.png" /></p>
+
+<h3>H <a href="#advancement"><strong>进度</strong></a></h3>
+<p>新增26项进度，完成进度会给予玩家经验、物品、状态效果奖励。</p>
+<p class="center"><img src="https://ooo.0o0.ooo/2017/06/01/592f1d14a6f35.png" /></p>
+
+<h3>I 其它</h3>
+<p>修改了生物的掉落物、箱子战利品、钓鱼的物品、文字内容、以及高压爬行者的生成。</p>
+<table class="center mcicons">
+<thead><tr><th colspan="2">来源</th><th>增加的物品</th></tr></thead>
+<tbody>
+<tr>
+<td><img title="牛" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/9/93/CowFace.png" /></td>
+<td>牛</td>
+<td><strong>牛头<img title="牛头" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/9/93/CowFace.png" /></strong></td>
+</tr>
+<tr>
+<td><img title="猪" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/0/03/PigFace.png" /></td>
+<td>猪</td>
+<td><strong>猪头<img title="猪头" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/0/03/PigFace.png" /></strong></td>
+</tr>
+<tr>
+<td><img title="羊" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/b/b1/SheepFace.png" /></td>
+<td>羊</td>
+<td><strong>羊头<img title="羊头" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/b/b1/SheepFace.png" /></strong></td>
+</tr>
+<tr>
+<td><img title="哞菇" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/3/32/MooshroomFace.png" /></td>
+<td>哞菇</td>
+<td>3-5红蘑菇<img title="红蘑菇" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/e/e1/Red_Mushroom.png" />、<strong>哞菇的头<img title="哞菇的头" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/3/32/MooshroomFace.png" /></strong></td>
+</tr>
+<tr>
+<td><img title="兔子" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/9/9f/Rabbiticon.png" /></td>
+<td>兔子</td>
+<td><strong>生物之肢<img title="生物之肢" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/c/ca/Rabbit%27s_Foot.png" />、兔头<img title="兔头" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/9/9f/Rabbiticon.png" /></strong></td>
+</tr>
+<tr>
+<td><img title="鸡" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/5/53/ChickenFace.png" /></td>
+<td>鸡</td>
+<td><strong>飞翔之翼<img title="飞翔之翼" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/3/33/Feather.png" />、鸡头<img title="鸡头" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/5/53/ChickenFace.png" /></strong></td>
+</tr>
+<tr>
+<td><img title="鹦鹉" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/0/06/Blue_Parrot_Face.png" /></td>
+<td>鹦鹉</td>
+<td>1-2生鹦鹉肉<img title="生鹦鹉肉" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/f/fb/Raw_Chicken.png" />、<strong>飞翔之翼<img title="飞翔之翼" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/3/33/Feather.png" />、鹦鹉的头<img title="鹦鹉的头" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/0/06/Blue_Parrot_Face.png" /></strong></td>
+</tr>
+<tr>
+<td><img title="蝙蝠" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/2/2d/BatFace.png" /></td>
+<td>蝙蝠</td>
+<td><strong>飞翔之翼<img title="飞翔之翼" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/3/33/Feather.png" /></strong></td>
+</tr>
+<tr>
+<td><img title="鱿鱼" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/1/14/Squidface.png" /></td>
+<td>鱿鱼</td>
+<td><strong>海洋之心<img title="海洋之心" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/a/ab/Prismarine_Crystals.png" />、鱿鱼的头<img title="鱿鱼的头" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/1/14/Squidface.png" /></strong></td>
+</tr>
+<tr>
+<td><img title="马" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/1/17/HorseHead.png" /></td>
+<td>马</td>
+<td>1-3生马肉<img title="生马肉" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/f/f4/Raw_Mutton.png" />、<strong>马头<img title="马头" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/1/17/HorseHead.png" /></strong></td>
+</tr>
+<tr>
+<td><img title="驴" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/5/54/DonkeyHead.png" /></td>
+<td>驴</td>
+<td>1-3生驴肉<img title="生驴肉" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/f/f4/Raw_Mutton.png" />、<strong>驴头<img title="驴头" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/5/54/DonkeyHead.png" /></strong></td>
+</tr>
+<tr>
+<td><img title="骡" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/9/90/MuleHead.png" /></td>
+<td>骡</td>
+<td>1-3生骡肉<img title="生骡肉" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/f/f4/Raw_Mutton.png" />、<strong>骡头<img title="骡头" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/9/90/MuleHead.png" /></strong></td>
+</tr>
+<tr>
+<td><img title="羊驼" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/c/cf/Llama_Head.png" /></td>
+<td>羊驼</td>
+<td>1-3生羊驼肉<img title="生羊驼肉" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/f/f4/Raw_Mutton.png" />、<strong>羊驼头<img title="羊驼头" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/c/cf/Llama_Head.png" /></strong></td>
+</tr>
+<tr>
+<td><img title="北极熊" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/0/07/PolarBearFace.png" /></td>
+<td>北极熊</td>
+<td>1-4生熊肉<img title="生熊肉" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/9/9a/Raw_Beef.png" />、<strong>北极熊的头<img title="北极熊的头" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/0/07/PolarBearFace.png" /></strong></td>
+</tr>
+<tr>
+<td><img title="豹猫" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/6/60/OcelotFace.png" /></td>
+<td>豹猫</td>
+<td><strong>猫头<img title="猫头" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/6/60/OcelotFace.png" /></strong></td>
+</tr>
+<tr>
+<td><img title="狼" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/6/68/WolfFace.png" /></td>
+<td>狼</td>
+<td><strong>狗头<img title="狗头" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/6/68/WolfFace.png" /></strong></td>
+</tr>
+<tr>
+<td><img title="僵尸" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/b/b2/ZombieFace.png" /></td>
+<td>僵尸</td>
+<td><strong>亡灵之魂<img title="亡灵之魂" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/9/9b/Poisonous_Potato.png" />、僵尸的头<img title="僵尸的头" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/f/f8/Zombie_Head.png" /></strong></td>
+</tr>
+<tr>
+<td><img title="僵尸村民" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/d/d5/ZombieVillagerHead.png" /></td>
+<td>僵尸村民</td>
+<td><strong>亡灵之魂<img title="亡灵之魂" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/9/9b/Poisonous_Potato.png" />、居民之证<img title="居民之证" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/6/6a/Emerald.png" />、僵尸村民的头<img title="僵尸村民的头" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/d/d5/ZombieVillagerHead.png" /></strong></td>
+</tr>
+<tr>
+<td><img title="骷髅" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/d/dc/SkeletonFace.png" /></td>
+<td>骷髅</td>
+<td><strong>亡灵之魂<img title="亡灵之魂" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/9/9b/Poisonous_Potato.png" />、骷髅头颅<img title="骷髅头颅" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/9/9c/Skeleton_Skull.png" /></strong></td>
+</tr>
+<tr>
+<td><img title="爬行者" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/5/5e/CreeperFace.png" /></td>
+<td>爬行者</td>
+<td><strong>硝火之烬<img title="硝火之烬" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/3/3a/Blaze_powder.png" />、爬行者的头<img title="爬行者的头" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/9/97/Creeper_Head.png" /></strong></td>
+</tr>
+<tr>
+<td><img title="女巫" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/6/65/Witchface2.png" /></td>
+<td>女巫</td>
+<td><strong>女巫的头<img title="女巫的头" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/6/65/Witchface2.png" /></strong></td>
+</tr>
+<tr>
+<td><img title="蜘蛛" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/0/05/SpiderFace.png" /></td>
+<td>蜘蛛</td>
+<td><strong>生物之肢<img title="生物之肢" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/c/ca/Rabbit%27s_Foot.png" />、蜘蛛的头<img title="蜘蛛的头" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/0/05/SpiderFace.png" /></strong>
+</tr>
+<tr>
+<td><img title="洞穴蜘蛛" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/6/6b/CaveSpiderFace.png" /></td>
+<td>洞穴蜘蛛</td>
+<td><strong>生物之肢<img title="生物之肢" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/c/ca/Rabbit%27s_Foot.png" />、洞穴蜘蛛的头<img title="洞穴蜘蛛的头" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/6/6b/CaveSpiderFace.png" /></strong></td>
+</tr>
+<tr>
+<td><img title="蠹虫" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/4/41/SilverfishFace.png" /></td></td>
+<td>蠹虫
+<td><strong>生物之肢<img title="生物之肢" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/c/ca/Rabbit%27s_Foot.png" /></strong></td>
+</tr>
+<tr>
+<td><img title="史莱姆" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/c/ca/SlimeFace.png" /></td>
+<td>史莱姆</td>
+<td><strong>史莱姆的头<img title="史莱姆的头" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/c/ca/SlimeFace.png" /></strong></td>
+</tr>
+<tr>
+<td><img title="尸壳" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/0/05/HuskFace.png" /></td>
+<td>尸壳</td>
+<td><strong>亡灵之魂<img title="亡灵之魂" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/9/9b/Poisonous_Potato.png" />、尸壳的头<img title="尸壳的头" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/0/05/HuskFace.png" /></strong></td>
+</tr>
+<tr>
+<td><img title="流髑" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/0/0f/StrayFace.png" /></td>
+<td>流髑</td>
+<td><strong>亡灵之魂<img title="亡灵之魂" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/9/9b/Poisonous_Potato.png" />、流髑的头<img title="流髑的头" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/0/0f/StrayFace.png" /></strong></td>
+</tr>
+<tr>
+<td><img title="凋灵骷髅" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/1/1d/WitherSkeletonHead.png" /></td>
+<td>凋灵骷髅</td>
+<td><strong>亡灵之魂<img title="亡灵之魂" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/9/9b/Poisonous_Potato.png" /></strong></td>
+</tr>
+<tr>
+<td><img title="骷髅马" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/8/86/SkeletonHorseHead.png" /></td>
+<td>骷髅马</td>
+<td><strong>亡灵之魂<img title="亡灵之魂" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/9/9b/Poisonous_Potato.png" />、骷髅马头<img title="骷髅马头" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/8/86/SkeletonHorseHead.png" /></strong></td>
+</tr>
+<tr>
+<td><img title="守卫者" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/e/e6/GuardianFace.png" /></td>
+<td>守卫者</td>
+<td><strong>海洋之心<img title="海洋之心" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/a/ab/Prismarine_Crystals.png" />、守卫者的头<img title="守卫者的头" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/e/e6/GuardianFace.png" /></strong></td>
+</tr>
+<tr>
+<td><img title="远古守卫者" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/e/e8/Elder_GuardianFace.png" /></td>
+<td>远古守卫者</td>
+<td><strong>海洋之心<img title="海洋之心" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/a/ab/Prismarine_Crystals.png" />、远古守卫者的头<img title="远古守卫者的头" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/e/e8/Elder_GuardianFace.png" /></strong></td>
+</tr>
+<tr>
+<td><img title="村民" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/d/d3/Villagerhead.png" /></td>
+<td>村民</td>
+<td>0-4绿宝石<img title="绿宝石" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/6/6a/Emerald.png" />、3经验值<img title="经验值" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/c/cd/XP_orb_animation.gif" />、<strong>居民之证<img title="居民之证" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/6/6a/Emerald.png" />、村民的头<img title="村民的头" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/d/d3/Villagerhead.png" /></strong></td>
+</tr>
+<tr>
+<td><img title="卫道士" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/e/e3/Vindicator_Head.png" /></td>
+<td>卫道士</td>
+<td><strong>居民之证<img title="居民之证" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/6/6a/Emerald.png" />、卫道士的头<img title="卫道士的头" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/e/e3/Vindicator_Head.png" /></strong></td>
+</tr>
+<tr>
+<td><img title="唤魔者" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/5/58/Evoker_Head.png" /></td>
+<td>唤魔者</td>
+<td><strong>居民之证<img title="居民之证" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/6/6a/Emerald.png" /></strong></td>
+</tr>
+<tr>
+<td><img title="恼鬼" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/1/1b/Vex_Head.png" /></td>
+<td>恼鬼</td>
+<td><strong>恼鬼的头<img title="恼鬼的头" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/1/1b/Vex_Head.png" /></strong></td>
+</tr>
+<!--<tr>
+<td>幻术师<img title="幻术师" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/e/e0/Illusioner_Head.png" /></td>
+</tr>-->
+<tr>
+<td><img title="铁傀儡" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/1/13/Vg_face.png" /></td>
+<td>铁傀儡</td>
+<td><strong>铁傀儡的头<img title="铁傀儡的头" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/1/13/Vg_face.png" /></strong></td>
+</tr>
+<tr>
+<td><img title="雪傀儡" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/5/50/SnowGolemFace.png" /></td>
+<td>雪傀儡</td>
+<td><strong>雪傀儡的头<img title="雪傀儡的头" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/5/50/SnowGolemFace.png" /></strong></td>
+</tr>
+<tr>
+<td><img title="僵尸猪人" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/d/d1/ZombiePigmanFace.png" /></td>
+<td>僵尸猪人</td>
+<td>0-1生猪排<img title="生猪排" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/2/28/Raw_Porkchop.png" />、<strong>亡灵之魂<img title="亡灵之魂" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/9/9b/Poisonous_Potato.png" />、僵尸猪人的头<img title="僵尸猪人的头" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/d/d1/ZombiePigmanFace.png" /></strong></td>
+</tr>
+<tr>
+<td><img title="烈焰人" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/e/e3/BlazeFace.png" /></td>
+<td>烈焰人</td>
+<td><strong>硝火之烬<img title="硝火之烬" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/3/3a/Blaze_powder.png" />、烈焰人的头<img title="烈焰人的头" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/e/e3/BlazeFace.png" /></strong></td>
+</tr>
+<tr>
+<td><img title="恶魂" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/7/70/GhastFace.png" /></td>
+<td>恶魂</td>
+<td><strong>硝火之烬<img title="硝火之烬" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/3/3a/Blaze_powder.png" />、恶魂的头<img title="恶魂的头" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/7/70/GhastFace.png" /></strong></td>
+</tr>
+<tr>
+<td><img title="岩浆怪" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/6/69/MagmaCubeFace.png" /></td>
+<td>岩浆怪</td>
+<td><strong>硝火之烬<img title="硝火之烬" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/3/3a/Blaze_powder.png" />、岩浆怪的头<img title="岩浆怪的头" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/6/69/MagmaCubeFace.png" /></strong></td>
+</tr>
+<tr>
+<td><img title="末影人" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/2/2d/EndermanFace.png" /></td>
+<td>末影人</td>
+<td><strong>末影之灵<img title="末影之灵" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/5/5a/Ender_Pearl.png" />、末影人的头<img title="末影人的头" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/2/2d/EndermanFace.png" /></strong></td>
+</tr>
+<tr>
+<td><img title="末影螨" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/8/83/EndermiteFace.png" /></td>
+<td>末影螨</td>
+<td><strong>生物之肢<img title="生物之肢" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/c/ca/Rabbit%27s_Foot.png" />、末影之灵<img title="末影之灵" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/5/5a/Ender_Pearl.png" /></strong></td>
+</tr>
+<tr>
+<td><img title="潜影贝" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/e/e4/ShulkerisReallyFeelingIt.png" /></td>
+<td>潜影贝</td>
+<td><strong>生物之肢<img title="生物之肢" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/c/ca/Rabbit%27s_Foot.png" />、末影之灵<img title="末影之灵" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/5/5a/Ender_Pearl.png" />、潜影贝的头<img title="潜影贝的头" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/e/e4/ShulkerisReallyFeelingIt.png" /></strong></td>
+</tr>
+<tr>
+<td><img title="末影龙" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/4/48/Enderdragon_Face.png" /></td>
+<td>末影龙</td>
+<td>龙首<img title="龙首" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/b/b6/Dragon_Head.png" /></td>
+</tr>
+<tr>
+<td><img title="沙漠神殿" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/thumb/6/6e/Desert_Temple.png/375px-Desert_Temple.png" /></td>
+<td>沙漠神殿</td>
+<td rowspan="3">亡灵之魂<img title="亡灵之魂" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/9/9b/Poisonous_Potato.png" /></td>
+</tr>
+<tr>
+<td><img title="地牢" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/thumb/1/18/Minecraft_Dungeon.png/225px-Minecraft_Dungeon.png" /></td>
+<td>地牢</td>
+</tr>
+<tr>
+<td><img title="丛林神庙" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/thumb/8/86/Jungle_Temple.png/225px-Jungle_Temple.png" /></td>
+<td>丛林神庙</td>
+</tr>
+<tr>
+<td><img title="村庄" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/thumb/e/e5/Village.png/225px-Village.png" /></td>
+<td>村庄</td>
+<td rowspan="3">居民之证<img title="居民之证" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/6/6a/Emerald.png" /></td>
+</tr>
+<tr>
+<td><img title="林地府邸" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/thumb/5/5d/Woodland_Mansion.png/435px-Woodland_Mansion.png" /></td>
+<td>林地府邸</td>
+</tr>
+<tr>
+<td><img title="雪屋" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/thumb/3/3d/Igloo.png/225px-Igloo.png" /></td>
+<td>雪屋</td>
+</tr>
+<tr>
+<td><img title="要塞祭坛" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/thumb/a/ae/StrongholdPortalRoom.png/150px-StrongholdPortalRoom.png" /></td>
+<td>要塞祭坛</td>
+<td rowspan="3">生物之肢<img title="生物之肢" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/c/ca/Rabbit%27s_Foot.png" /></td>
+</tr>
+<tr>
+<td><img title="要塞储藏室" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/thumb/a/ae/StrongholdPortalRoom.png/150px-StrongholdPortalRoom.png" /></td>
+<td>要塞储藏室</td>
+</tr>
+<tr>
+<td><img title="废弃矿井" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/thumb/1/11/Minecraft_Mineshaft.png/225px-Minecraft_Mineshaft.png" /></td>
+<td>废弃矿井</td>
+</tr>
+<tr>
+<td><img title="下界要塞" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/thumb/1/1c/Nether_Castle.png/225px-Nether_Castle.png" /></td>
+<td>下界要塞</td>
+<td>硝火之烬<img title="火焰之烬" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/3/3a/Blaze_powder.png" /></td>
+</tr>
+<tr>
+<td><img title="钓鱼" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/c/c7/Fishing_Rod.png"></td>
+<td>钓鱼</td>
+<td>火药<img title="火药" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/a/ae/Gunpowder.png" />、<strong>湿海绵<img title="湿海绵" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/4/4d/Wet_Sponge.png" />、鱼头<img title="鱼头" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/f/fb/Fish.png" />、鲑鱼头<img title="鲑鱼头" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/4/40/Raw_Salmon.png" />、小丑鱼头<img title="小丑鱼头" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/c/ca/Clownfish.png" />、河豚头<img title="河豚头" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/b/ba/Pufferfish.png" /></strong></td>
+</tr>
+<tr>
+<td colspan="3" class="left">备注：<br/>
+1. 粗体为稀有掉落物/宝藏。<br/>
+2. 生物死亡时若着火，掉落对应熟肉<img src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/1/15/Cookedchicken.png" /><img src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/0/02/Cooked_Mutton.png" /><img src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/6/66/Steak.png" />，且不掉落羽毛<img title="飞翔之翼" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/3/33/Feather.png" />和飞翔之翼<img title="飞翔之翼" src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/3/33/Feather.png" /></td>
+</tr>
+</tbody></table>
+<p class="center"><img src="https://ooo.0o0.ooo/2017/05/30/592d776f5ca67.png" /> <img src="https://public.lightpic.info/image/7FA1_590DB9130.jpg" /></p>
+</article>
+
+<header><h2 onclick="$('#install').toggle(1000)">安装</h2></header>
+<article id="install">
+<p>新建一个世界，下载 <a href="http://www.mcbbs.net/forum.php?mod=attachment&aid=MTA4NDIzM3wxYzQ5MjhhNXwxNTE2NjI5NDI5fDk3NTUyNXw2OTY4NjE%3D">release.zip</a> ，然后将解压缩后的data、structures、resources.zip一并放入 .minecraft/saves 中对应的存档文件夹，然后退出世界重进即可。</p>
+<p><strong>材质说明</strong>：由于加入了模组专用材质，因此加载世界会比较慢。如果希望加快加载速度，可将存档文件夹中resources.zip移动到.minecraft/resourcepacks文件夹，然后从菜单中选择该材质。
+该材质对游戏的GUI和文字做了一些修改，如果不使用该材质，会导致模组物品名称无法正常显示！</p>
+<p><strong>配置要求</strong>：尽管该模组内容较多，但是并不会占用太多电脑资源。如果你仍然感受到卡顿，请尝试通过减少视距来提高帧率。</p>
+<p><strong>版权声明</strong>：你可以转载该贴，但需在遵守<a href="https://creativecommons.org/licenses/by-nc-nd/2.5/cn/">知识共享署名-非商业性使用-禁止演绎 2.5 中国大陆许可协议</a>下使用。</p>
+<p><strong>欢迎回复本帖或私信我反馈意见、建议、脑洞和特性(BUG)！</strong></p>
+
+<!--<h3>旧版本</h3>
+<p><a href="http://mcbbs.tvt.im/forum.php?mod=attachment&aid=MTA4NDIzM3w3MmYzYmQwNnwxNDk2ODQyNzgzfDk3NTUyNXw2OTY4NjE%3D">release v1.7.2.zip</a></p>-->
+</article>
+
+<header id="advancement"><h2 onclick="$('#advancementtable').toggle(1000)">进度一览</h2></header>
+<table class="advancement" id="advancementtable">
+<thead><tr><th>图标</th><th>进度</th><th>游戏内描述</th>
+<th>奖励</th><th>上游进度</th><th>内部ID</th>
+</tr></thead><tbody>
+<tr class="advancement"><td><img src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/f/fa/Achievement-plain.png">
+<span style="position:absolute; left:15px; top:15px; line-height:0">
+<span class="sprite" style="background-position:-768px -1216px"><br/></span></span></td>
+<th class="lore">开启模组！</th><td class="lore">感谢您的使用</td><td>石剑、石斧、石镐、石锹、石锄</td><td>—</td>
+<td>cpp:root</td>
+</tr>
+<tr class="advancement"><td><img src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/f/fa/Achievement-plain.png">
+<span style="position:absolute; left:15px; top:15px; line-height:0">
+<span class="sprite" style="background-position:-544px -928px"><br/></span></span></td>
+<th>废物利用</th><td>回收任意物品</td><td>100点经验</td><td>开启模组！</td>
+<td>cpp:recycle</td>
+</tr>
+<tr class="advancement"><td><img src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/f/fa/Achievement-plain.png">
+<span style="position:absolute; left:15px; top:15px; line-height:0">
+<span class="sprite" style="background-position:-992px -1088px"><br/></span></span></td>
+<th>18个大气压</th><td>制作钻石</td><td>100点经验</td><td>废物利用</td>
+<td>cpp:diamond</td>
+</tr>
+<tr class="advancement"><td><img src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/f/fa/Achievement-plain.png">
+<span style="position:absolute; left:15px; top:15px; line-height:0">
+<span class="sprite" style="background-position:-256px -32px"><br/></span></span></td>
+<th>传送</th><td>使用传送球</td><td>100点经验</td><td>18个大气压</td>
+<td>cpp:tp</td>
+</tr>
+<tr class="advancement"><td><img src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/f/fa/Achievement-plain.png">
+<span style="position:absolute; left:15px; top:15px; line-height:0">
+<span class="sprite" style="background-position:-640px -1152px"><br/></span></span></td>
+<th>香港记者</th><td>跑的比谁都快！</td><td style="color:red">红色皮革套装</td><td>传送</td>
+<td>cpp:hongkong_reporter</td>
+</tr>
+<tr class="advancement"><td><img src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/4/41/Advancement-oval-raw.png">
+<span style="position:absolute; left:15px; top:15px; line-height:0">
+<span class="sprite" style="background-position:-448px -1216px"><br/></span></span></td>
+<th>渔樵耕读</th><td>制作渔网、铁斧、铁锄、成书</td><td>一组纸</td><td>香港记者</td>
+<td>cpp:fisher_axer_farmer_reader</td>
+</tr>
+<tr class="advancement"><td><img src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/f/fa/Achievement-plain.png">
+<span style="position:absolute; left:15px; top:15px; line-height:0">
+<span class="sprite" style="background-position:-320px -1120px"><br/></span></span></td>
+<th>强化</th><td>强化你的盔甲、武器或工具</td><td>100点经验</td><td>开启模组！</td>
+<td>cpp:upgrade</td>
+</tr>
+<tr class="advancement"><td><img src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/9/96/Advancement-fancy-raw.png">
+<span style="position:absolute; left:15px; top:15px; line-height:0">
+<span class="sprite" style="background-position:-192px -1280px"><br/></span></span></td>
+<th>尚方斩马剑</th><td>将你的剑强化到顶级</td><td>8分钟的力量 IV</td><td>强化</td>
+<td>cpp:best_sword</td>
+</tr>
+<tr class="advancement"><td><img src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/9/96/Advancement-fancy-raw.png">
+<span style="position:absolute; left:15px; top:15px; line-height:0">
+<span class="sprite" style="background-position:-832px -0px"><br/></span></span></td>
+<th>刀枪不入</th><td>将你的全套盔甲强化到顶级</td><td>8分钟的抗性 IV</td><td>尚方斩马剑</td>
+<td>cpp:best_defence</td>
+</tr>
+<tr class="advancement"><td><img src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/9/96/Advancement-fancy-raw.png">
+<span style="position:absolute; left:15px; top:15px; line-height:0">
+<span class="sprite" style="background-position:-160px -960px"><br/></span></span></td>
+<th>返璞归真</th><td>将你的功力提升到顶级</td><td>100点经验</td><td>刀枪不入</td>
+<td>cpp:master</td>
+</tr>
+<tr class="advancement"><td><img src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/f/fa/Achievement-plain.png">
+<span style="position:absolute; left:15px; top:15px; line-height:0">
+<span class="sprite" style="background-position:-0px -832px"><br/></span></span></td>
+<th>先有鸡还是先有蛋？</th><td>是先有蛋</td><td>100点经验</td><td>开启模组！</td>
+<td>cpp:egg</td>
+</tr>
+<tr class="advancement"><td><img src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/f/fa/Achievement-plain.png">
+<span style="position:absolute; left:15px; top:15px; line-height:0">
+<img src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/3/3a/Spawn_Null.png" style="width:32px"/></span></td>
+<th>基因技术</th><td>制作刷怪蛋</td><td>100点经验</td><td>先有鸡还是先有蛋？</td>
+<td>cpp:gene_technology</td>
+</tr>
+<tr class="advancement"><td><img src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/f/fa/Achievement-plain.png">
+<span style="position:absolute; left:15px; top:15px; line-height:0">
+<span class="sprite" style="background-position:-0px -1120px"><br/></span></span></td>
+<th>强盗</th><td>杀死村民</td><td>15秒的缓慢</td><td>基因技术</td>
+<td>cpp:robber</td>
+</tr>
+<tr class="advancement"><td><img src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/f/fa/Achievement-plain.png">
+<span style="position:absolute; left:15px; top:15px; line-height:0">
+<span class="sprite" style="background-position:-0px -1536px"><br/></span></span></td>
+<th>羊村村长</th><td>制作羊刷怪蛋</td><td>100点经验</td><td>强盗</td>
+<td>cpp:sheep</td>
+</tr>
+<tr class="advancement"><td><img src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/f/fa/Achievement-plain.png">
+<span style="position:absolute; left:15px; top:15px; line-height:0">
+<span class="sprite" style="background-position:-928px -1184px"><br/></span></span></td>
+<th>闪灵</th><td>杀死Johnny</td><td>命名牌</td><td>羊村村长</td>
+<td>cpp:shining</td>
+</tr>
+<tr class="advancement"><td><img src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/f/fa/Achievement-plain.png">
+<span style="position:absolute; left:15px; top:15px; line-height:0">
+<span class="sprite" style="background-position:-448px -832px"><br/></span></span></td>
+<th>僵尸博士的复仇</th><td>制作僵尸刷怪蛋</td><td>100点经验</td><td>闪灵</td>
+<td>cpp:zombie</td>
+</tr>
+<tr class="advancement"><td><img src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/4/41/Advancement-oval-raw.png">
+<span style="position:absolute; left:15px; top:15px; line-height:0">
+<span class="sprite" style="background-position:-192px -1408px"><br/></span></span></td>
+<th>不朽</th><td>获得不死图腾</td><td>15秒的再生 V</td><td>僵尸博士的复仇</td>
+<td>cpp:undead</td>
+</tr>
+<tr class="advancement"><td><img src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/f/fa/Achievement-plain.png">
+<span style="position:absolute; left:15px; top:15px; line-height:0">
+<span class="sprite" style="background-position:-256px -960px"><br/></span></span></td>
+<th>已经没什么好害怕的了</th><td>获得僵尸、骷髅、爬行者和凋零骷髅的头颅</td><td>500点经验+15秒的漂浮</td><td>不朽</td>
+<td>cpp:blow_up</td>
+</tr>
+<tr class="advancement"><td><img src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/4/41/Advancement-oval-raw.png">
+<span style="position:absolute; left:15px; top:15px; line-height:0">
+<span class="sprite" style="background-position:-288px -832px"><br/></span></span></td>
+<th>铲屎官</th><td>制作豹猫刷怪蛋</td><td>8条鱼</td><td>已经没什么好害怕的了</td>
+<td>cpp:ocelot</td>
+</tr>
+<tr class="advancement"><td><img src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/4/41/Advancement-oval-raw.png">
+<span style="position:absolute; left:15px; top:15px; line-height:0">
+<span class="sprite" style="background-position:-224px -832px"><br/></span></span></td>
+<th>战斗民族</th><td>打死一头熊</td><td>100点经验</td><td>开启模组！</td>
+<td>cpp:fighter</td>
+</tr>
+<tr class="advancement"><td><img src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/f/fa/Achievement-plain.png">
+<span style="position:absolute; left:15px; top:15px; line-height:0">
+<span class="sprite" style="background-position:-288px -1248px"><br/></span></span></td>
+<th>海绵宝宝</th><td>钓鱼或者杀死远古守卫者，得到湿海绵</td><td>一只鱿鱼</td><td>战斗民族</td>
+<td>cpp:sponge</td>
+</tr>
+<tr class="advancement"><td><img src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/f/fa/Achievement-plain.png">
+<span style="position:absolute; left:15px; top:15px; line-height:0">
+<span class="sprite" style="background-position:-960px -1056px"><br/></span></span></td>
+<th>我是不是该减肥了？</th><td>喝下提升药水</td><td>200点经验</td><td>海绵宝宝</td>
+<td>cpp:need_weight_loss</td>
+</tr>
+<tr class="advancement"><td><img src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/f/fa/Achievement-plain.png">
+<span style="position:absolute; left:15px; top:15px; line-height:0">
+<span class="sprite" style="background-position:-32px -800px"><br/></span></span></td>
+<th>小龙人</th><td>我头上有犄角</td><td>100点经验</td><td>我是不是该减肥了？</td>
+<td>cpp:dragonboy</td>
+</tr>
+<tr class="advancement"><td><img src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/f/fa/Achievement-plain.png">
+<span style="position:absolute; left:15px; top:15px; line-height:0">
+<span class="sprite" style="background-position:-320px -672px"><br/></span></span></td>
+<th>艺术家</th><td>制作高级画作</td><td>16色羊毛</td><td>小龙人</td>
+<td>cpp:artist</td>
+</tr>
+<tr class="advancement"><td><img src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/f/fa/Achievement-plain.png">
+<span style="position:absolute; left:15px; top:15px; line-height:0">
+<span class="sprite" style="background-position:-896px -1024px"><br/></span></span></td>
+<th>园林师</th><td>种下树种</td><td>6种树苗</td><td>艺术家</td>
+<td>cpp:gardener</td>
+</tr>
+<tr class="advancement"><td><img src="https://hydra-media.cursecdn.com/minecraft-zh.gamepedia.com/f/fa/Achievement-plain.png">
+<span style="position:absolute; left:15px; top:15px; line-height:0">
+<span class="sprite" style="background-position:-704px -992px"><br/></span></span></td>
+<th>可再生</th><td>合成矿石种子</td><td>200点经验</td><td>园林师</td>
+<td>cpp:oreseed</td>
+</tr>
+</tbody>
+</table>
+
+<header class="center"><h2 onclick="$('#craftingtable').toggle(1000)">合成表</h2></header>
+<table id="craftingtable">
+<thead><tr><th style="width:217px">名称</th><th style="width:275px">材料</th><th>合成配方</th><th>描述</th>
+</tr></thead>
+<tbody>
+<tr class="piston" id="piston"><th colspan="4">活塞工艺</th>
+</tr>
+<tr class="piston"><th>皮革</th><td>皮革帽子/皮革外套/皮革裤子/皮革靴子<br/>鞍<td><div><span class="mcui">
+	<span>
+	<span class="mcui-row"><span class="invslot">
+</span><span class="invslot sprite" title="活塞" style="background-position:-544px -928px"><span class="invslot-stacksize" title="活塞">0</span>	
+</span><span class="invslot">
+</span></span><span class="mcui-row">
+	<span class="invslot"></span><span class="invslot sprite" title="皮革帽子" style="background-position:-288px -32px">
+</span><span class="invslot"></span>	
+</span><span class="mcui-row">
+	<span class="invslot"></span><span class="invslot"></span><span class="invslot"></span>	
+</span>	
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="invslot-item"><span class="sprite" title="皮革" style="background-position:-256px -1120px">
+</span><span class="invslot-stacksize" title="皮革">
+</span>	
+</span>	
+</span>	
+</span></div></td><td></td>
+</tr>
+<tr class="piston"><th>铁锭</th><td>
+锁链头盔/锁链胸甲/锁链护腿/锁链靴子<br/>铁头盔/铁胸甲/铁护腿/铁靴子<br/>铁剑/铁镐/铁斧/铁锹/铁锄<br/>铁马铠<br/>矿车
+</td><td><div><span class="mcui"><span><span class="mcui-row">
+	<span class="invslot">
+</span><span class="invslot sprite" title="活塞" style="background-position:-544px -928px"><span class="invslot-stacksize" title="活塞">0</span></span><span class="invslot">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot">
+</span><span class="invslot sprite" title="铁剑" style="background-position:-256px -1280px">
+</span><span class="invslot">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot">
+</span><span class="invslot">
+</span><span class="invslot">
+</span>
+</span></span><span class="mcui-arrow"></span><span class="mcui-output invslot">
+	<span class="invslot-item"><span class="sprite" title="铁锭" style="background-position:-224px -1120px">
+</span></span></span></span></div></td><td></td>
+</tr>
+<tr class="piston"><th>金锭</th><td>
+金剑/金镐/金斧/金锹/金锄<br/>金头盔/金胸甲/金护腿/金靴子<br/>金马铠
+</td><td><div><span class="mcui">
+<span>
+	<span class="mcui-row"><span class="invslot">
+</span><span class="invslot sprite" title="活塞" style="background-position:-544px -928px"><span class="invslot-stacksize" title="活塞">0</span>	
+</span><span class="invslot">
+</span></span><span class="mcui-row">
+<span class="invslot">
+</span><span class="invslot sprite" title="金马铠" style="background-position:-32px -32px">
+</span><span class="invslot">
+</span></span>
+	<span class="mcui-row">
+		<span class="invslot">
+</span><span class="invslot">
+</span><span class="invslot">
+</span></span>	
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="invslot-item"><span class="sprite" title="金锭" style="background-position:-160px -1120px">
+</span>	
+</span>	
+</span>	
+</span></div></td><td></td>
+</tr>
+<tr class="piston"><th>钻石</th><td>
+钻石头盔/钻石胸甲/钻石护腿/钻石靴子<br/>钻石剑/钻石镐/钻石斧/钻石锹/钻石锄<br/>钻石马铠
+</td><td><div><span class="mcui">
+<span>
+	<span class="mcui-row"><span class="invslot">
+</span><span class="invslot sprite" title="活塞" style="background-position:-544px -928px"><span class="invslot-stacksize" title="活塞">0</span>	
+</span><span class="invslot">
+</span></span><span class="mcui-row">
+<span class="invslot">
+</span><span class="invslot sprite" title="钻石护腿" style="background-position:-928px -0px">
+</span><span class="invslot">
+</span></span>
+	<span class="mcui-row">
+		<span class="invslot">
+</span><span class="invslot">
+</span><span class="invslot">
+</span></span>	
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="invslot-item"><span class="sprite" title="钻石" style="background-position:-992px -1088px">
+</span>	
+</span>	
+</span>	
+</span></div></td><td></td>
+</tr>
+<tr class="piston"><th>下界石英</th><td>石英块</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row"><span class="invslot">
+</span><span class="invslot sprite" title="活塞" style="background-position:-544px -928px"><span class="invslot-stacksize" title="活塞">0</span>	
+</span><span class="invslot">
+</span></span><span class="mcui-row">
+	<span class="invslot"></span><span class="invslot sprite" title="石英块" style="background-position:-64px -864px">
+</span><span class="invslot"></span>	
+</span><span class="mcui-row">
+	<span class="invslot"></span><span class="invslot"></span><span class="invslot"></span>	
+</span>	
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="invslot-item"><span class="sprite" title="下界石英" style="background-position:-320px -1120px">
+</span><span class="invslot-stacksize" title="下界石英">4</span>
+</span>	
+</span>	
+</span></div></td><td>可一次回收16个。</td>
+</tr>
+<tr class="piston" rowspan=2><th>下界石英</th><td>花岗岩</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row"><span class="invslot">
+</span><span class="invslot sprite" title="活塞" style="background-position:-544px -928px"><span class="invslot-stacksize" title="活塞">0</span>	
+</span><span class="invslot">
+</span></span><span class="mcui-row">
+	<span class="invslot"></span><span class="invslot sprite" title="花岗岩" style="background-position:-608px -960px">
+</span><span class="invslot"></span>	
+</span><span class="mcui-row">
+	<span class="invslot"></span><span class="invslot"></span><span class="invslot"></span>	
+</span>	
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="invslot-item"><span class="sprite" title="下界石英" style="background-position:-320px -1120px">
+</span>	
+</span>	
+</span>	
+</span></td><td>可一次回收64个。</td>
+</tr>
+<tr class="piston"><th>下界石英</th><td>闪长岩</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row"><span class="invslot">
+</span><span class="invslot sprite" title="活塞" style="background-position:-544px -928px"><span class="invslot-stacksize" title="活塞">0</span>	
+</span><span class="invslot">
+</span></span><span class="mcui-row">
+	<span class="invslot"></span><span class="invslot sprite" title="闪长岩" style="background-position:-544px -960px">
+	<span class="invslot-stacksize" title="闪长岩">2</span>
+</span><span class="invslot"></span>	
+</span><span class="mcui-row">
+	<span class="invslot"></span><span class="invslot"></span><span class="invslot"></span>	
+</span>	
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="invslot-item"><span class="sprite" title="下界石英" style="background-position:-320px -1120px">
+</span>
+</span>
+</span>
+</span></div></td><td>可一次回收64个。</td>
+</tr>
+<tr class="piston"><th>下界石英</th><td>安山岩</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row"><span class="invslot">
+</span><span class="invslot sprite" title="活塞" style="background-position:-544px -928px"><span class="invslot-stacksize" title="活塞">0</span>	
+</span><span class="invslot">
+</span></span><span class="mcui-row">
+	<span class="invslot"></span><span class="invslot sprite" title="安山岩" style="background-position:-288px -960px">
+	<span class="invslot-stacksize" title="安山岩">4</span>
+</span><span class="invslot"></span>	
+</span><span class="mcui-row">
+	<span class="invslot"></span><span class="invslot"></span><span class="invslot"></span>	
+</span>	
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="invslot-item"><span class="sprite" title="下界石英" style="background-position:-320px -1120px">
+</span>	
+</span>	
+</span>
+</span></div></td><td>可一次回收64个。</td>
+</tr>
+<tr class="piston"><th>煤炭</th><td>木炭</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row"><span class="invslot">
+</span><span class="invslot sprite" title="活塞" style="background-position:-544px -928px"><span class="invslot-stacksize" title="活塞">0</span>	
+</span><span class="invslot">
+</span></span><span class="mcui-row">
+	<span class="invslot">
+</span><span class="invslot sprite" title="木炭" style="background-position:-896px -1088px">
+<span class="invslot-stacksize" title="木炭">2</span>
+</span><span class="invslot"></span>	
+</span><span class="mcui-row">
+	<span class="invslot"></span><span class="invslot"></span><span class="invslot"></span>	
+</span>	
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="invslot-item"><span class="sprite" title="煤炭" style="background-position:-960px -1088px">
+</span>	
+</span>	
+</span>
+</span></div></td><td>可一次回收64个。</td>
+</tr>
+<tr class="piston"><th>地狱疣</th><td>地狱疣块</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row"><span class="invslot">
+</span><span class="invslot sprite" title="活塞" style="background-position:-544px -928px"><span class="invslot-stacksize" title="活塞">0</span>	
+</span><span class="invslot">
+</span></span><span class="mcui-row">
+	<span class="invslot">
+</span><span class="invslot sprite" title="地狱疣块" style="background-position:-672px -1344px">
+</span><span class="invslot"></span>	
+</span><span class="mcui-row">
+	<span class="invslot"></span><span class="invslot"></span><span class="invslot"></span>	
+</span>	
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="invslot-item"><span class="sprite" title="地狱疣" style="background-position:-704px -640px">
+	<span class="invslot-stacksize" title="地狱疣">9
+</span>
+</span>	
+</span>	
+</span>
+</span></div></td><td>可一次回收7个。</td>
+</tr>
+<tr class="piston"><th>钻石</th><td>活塞+岩浆桶+煤炭</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row">
+	<span class="invslot sprite" title="活塞" style="background-position:-544px -928px">
+</span><span class="invslot sprite" title="岩浆桶" style="background-position:-896px -640px">
+</span><span class="invslot sprite" title="活塞" style="background-position:-544px -928px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="岩浆桶" style="background-position:-896px -640px">
+</span><span class="invslot sprite" title="煤炭" style="background-position:-960px -1088px">
+</span><span class="invslot sprite" title="岩浆桶" style="background-position:-896px -640px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="活塞" style="background-position:-544px -928px">
+</span><span class="invslot sprite" title="岩浆桶" style="background-position:-896px -640px">
+</span><span class="invslot sprite" title="活塞" style="background-position:-544px -928px">
+</span>
+</span>
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="钻石" style="background-position:-992px -1088px">
+</span>
+</span>
+</span></div></td><td>合成后，岩浆桶将会变回桶。</td>
+</tr>
+<tr class="piston"><th>鞍</th><td>活塞+皮革+铁锭</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row">
+	<span class="invslot sprite" title="活塞" style="background-position:-544px -928px">
+</span><span class="invslot sprite" title="皮革" style="background-position:-256px -1120px">
+</span><span class="invslot sprite" title="活塞" style="background-position:-544px -928px">
+</span></span><span class="mcui-row">
+	<span class="invslot sprite" title="皮革" style="background-position:-256px -1120px">
+</span><span class="invslot sprite" title="铁锭" style="background-position:-224px -1120px">
+</span><span class="invslot sprite" title="皮革" style="background-position:-256px -1120px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="活塞" style="background-position:-544px -928px">
+</span><span class="invslot sprite" title="皮革" style="background-position:-256px -1120px">
+</span><span class="invslot sprite" title="活塞" style="background-position:-544px -928px">
+</span>
+</span>	
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="鞍" style="background-position:-128px -1216px">
+</span>
+</span>	
+</span></div></td><td></td>
+</tr>
+<tr class="piston"><th>铁马铠<br/>金马铠<br/>钻石马铠</th><td>活塞+铁锭+羊毛<br/>活塞+金锭+羊毛<br/>活塞+钻石+羊毛</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row"><span class="invslot sprite" title="活塞" style="background-position:-544px -928px">
+</span><span class="invslot sprite" title="铁锭" style="background-position:-224px -1120px">
+</span><span class="invslot sprite" title="活塞" style="background-position:-544px -928px">
+</span></span><span class="mcui-row">
+	<span class="invslot sprite" title="铁锭" style="background-position:-224px -1120px">
+</span><span class="invslot sprite" title="羊毛" style="background-position:-768px -768px">
+</span><span class="invslot sprite" title="铁锭" style="background-position:-224px -1120px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="活塞" style="background-position:-544px -928px">
+</span><span class="invslot sprite" title="铁锭" style="background-position:-224px -1120px">
+</span><span class="invslot sprite" title="活塞" style="background-position:-544px -928px">
+</span>	
+</span>	
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="铁马铠" style="background-position:-192px -32px">
+</span>	
+</span>	
+</span>	
+</span></div></td><td>羊毛颜色任意。</td>
+</tr>
+<tr class="piston"><th>粘土</th><td>活塞+粘液球+泥土</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row"><span class="invslot sprite" title="活塞" style="background-position:-544px -928px">
+</span><span class="invslot sprite" title="粘液球" style="background-position:-576px -1120px">
+</span><span class="invslot sprite" title="活塞" style="background-position:-544px -928px">
+</span></span><span class="mcui-row">
+	<span class="invslot sprite" title="粘液球" style="background-position:-576px -1120px">
+</span><span class="invslot sprite" title="泥土" style="background-position:-576px -960px">
+</span><span class="invslot sprite" title="粘液球" style="background-position:-576px -1120px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="活塞" style="background-position:-544px -928px">
+</span><span class="invslot sprite" title="粘液球" style="background-position:-576px -1120px">
+</span><span class="invslot sprite" title="活塞" style="background-position:-544px -928px">
+</span>
+</span>	
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="粘土" style="background-position:-384px -960px">
+</span>	
+</span>	
+</span></div></td><td>可一次合成64个。</td>
+</tr>
+<tr class="piston"><th>浮冰</th><td>活塞+冰+雪块</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row"><span class="invslot sprite" title="活塞" style="background-position:-544px -928px">
+</span><span class="invslot sprite" title="冰" style="background-position:-736px -960px">
+</span><span class="invslot sprite" title="活塞" style="background-position:-544px -928px">
+</span></span><span class="mcui-row">
+	<span class="invslot sprite" title="冰" style="background-position:-736px -960px">
+</span><span class="invslot sprite" title="雪块" style="background-position:-928px -896px">
+</span><span class="invslot sprite" title="冰" style="background-position:-736px -960px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="活塞" style="background-position:-544px -928px">
+</span><span class="invslot sprite" title="冰" style="background-position:-736px -960px">
+</span><span class="invslot sprite" title="活塞" style="background-position:-544px -928px">
+</span>
+</span>	
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="浮冰" style="background-position:-928px -960px">
+</span>	
+</span>	
+</span></div></td><td>可一次合成64个。</td>
+</tr>
+<tr class="piston"><th>蜘蛛网</th><td>活塞+线+粘液球</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row"><span class="invslot sprite" title="活塞" style="background-position:-544px -928px">
+</span><span class="invslot sprite" title="线" style="background-position:-640px -1120px">
+</span><span class="invslot sprite" title="活塞" style="background-position:-544px -928px">
+</span></span><span class="mcui-row">
+	<span class="invslot sprite" title="线" style="background-position:-640px -1120px">
+</span><span class="invslot sprite" title="粘液球" style="background-position:-576px -1120px">
+</span><span class="invslot sprite" title="线" style="background-position:-640px -1120px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="活塞" style="background-position:-544px -928px">
+</span><span class="invslot sprite" title="线" style="background-position:-640px -1120px">
+</span><span class="invslot sprite" title="活塞" style="background-position:-544px -928px">
+</span>
+</span>	
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="蜘蛛网" style="background-position:-448px -960px">
+</span>	
+</span>	
+</span></div></td><td>可一次合成64个。</td>
+</tr>
+<tr class="piston"><th>渔网</th><td>活塞+蜘蛛网+粘液球</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row">
+	<span class="invslot sprite" title="活塞" style="background-position:-544px -928px">
+</span><span class="invslot sprite" title="蜘蛛网" style="background-position:-448px -960px">
+</span><span class="invslot sprite" title="活塞" style="background-position:-544px -928px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="蜘蛛网" style="background-position:-448px -960px">
+</span><span class="invslot sprite" title="粘液球" style="background-position:-576px -1120px">
+</span><span class="invslot sprite" title="蜘蛛网" style="background-position:-448px -960px">
+</span>
+</span>	<span class="mcui-row">
+	<span class="invslot sprite" title="活塞" style="background-position:-544px -928px">
+</span><span class="invslot sprite" title="蜘蛛网" style="background-position:-448px -960px">
+</span><span class="invslot sprite" title="活塞" style="background-position:-544px -928px">
+</span>
+</span>
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="渔网" style="background-position:-448px -960px">
+</span>
+</span>
+</span></div></td><td>可一次合成64个。<br/>将渔网扔入水中，每隔20秒可以获得一件物品。</td>
+</tr>
+<tr class="piston"><th>矿物探测器</th><td>活塞+煤炭+末影之眼</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row">
+	<span class="invslot sprite" title="活塞" style="background-position:-544px -928px">
+</span><span class="invslot sprite" title="煤炭" style="background-position:-960px -1088px">
+</span><span class="invslot sprite" title="活塞" style="background-position:-544px -928px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="煤炭" style="background-position:-960px -1088px">
+</span><span class="invslot sprite" title="末影之眼" style="background-position:-640px -1184px">
+</span><span class="invslot sprite" title="煤炭" style="background-position:-960px -1088px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="活塞" style="background-position:-544px -928px">
+</span><span class="invslot sprite" title="煤炭" style="background-position:-960px -1088px">
+</span><span class="invslot sprite" title="活塞" style="background-position:-544px -928px">
+</span>
+</span>
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="矿物探测器" style="background-position:-352px -1152px">
+	</span><span class="invslot-stacksize" title="矿物探测器">8
+</span>
+</span>
+</span></div></td><td>可一次合成64个。<br/>右击地面会将附近10米内的矿物高亮显示5秒。</td>
+</tr>
+<tr class="piston"><th>强力磁铁</th><td>活塞+铁锭+红石粉</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row">
+	<span class="invslot sprite" title="活塞" style="background-position:-544px -928px">
+</span><span class="invslot sprite" title="铁锭" style="background-position:-224px -1120px">
+</span><span class="invslot sprite" title="活塞" style="background-position:-544px -928px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="铁锭" style="background-position:-224px -1120px">
+</span><span class="invslot sprite" title="红石粉" style="background-position:-544px -1120px">
+</span><span class="invslot sprite" title="铁锭" style="background-position:-224px -1120px">
+</span>
+</span>	<span class="mcui-row">
+	<span class="invslot sprite" title="活塞" style="background-position:-544px -928px">
+</span><span class="invslot sprite" title="铁锭" style="background-position:-224px -1120px">
+</span><span class="invslot sprite" title="活塞" style="background-position:-544px -928px">
+</span>
+</span>
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="强力磁铁" style="background-position:-672px -1152px">
+</span>
+</span>
+</span></div></td><td>主手持有时，可将附近20米的掉落物吸引过来，有5秒的冷却。</td>
+</tr>
+<tr class="piston"><th>时间调节器</th><td>活塞+金锭+红石粉</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row">
+	<span class="invslot sprite" title="活塞" style="background-position:-544px -928px">
+</span><span class="invslot sprite" title="金锭" style="background-position:-160px -1120px">
+</span><span class="invslot sprite" title="活塞" style="background-position:-544px -928px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="金锭" style="background-position:-160px -1120px">
+</span><span class="invslot sprite" title="红石粉" style="background-position:-544px -1120px">
+</span><span class="invslot sprite" title="金锭" style="background-position:-160px -1120px">
+</span>
+</span>	<span class="mcui-row">
+	<span class="invslot sprite" title="活塞" style="background-position:-544px -928px">
+</span><span class="invslot sprite" title="金锭" style="background-position:-160px -1120px">
+</span><span class="invslot sprite" title="活塞" style="background-position:-544px -928px">
+</span>
+</span>
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="钟" style="background-position:-640px -1152px"></span>
+</span>
+</span></div></td><td>放置在物品在展示框时，植物生长会加速。</td>
+</tr>
+<tr class="piston"><th>闹钟</th><td>活塞+金锭+音符盒</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row">
+	<span class="invslot sprite" title="活塞" style="background-position:-544px -928px">
+</span><span class="invslot sprite" title="金锭" style="background-position:-160px -1120px">
+</span><span class="invslot sprite" title="活塞" style="background-position:-544px -928px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="金锭" style="background-position:-160px -1120px">
+</span><span class="invslot sprite" title="音符盒" style="background-position:-96px -1248px">
+</span><span class="invslot sprite" title="金锭" style="background-position:-160px -1120px">
+</span>
+</span>	<span class="mcui-row">
+	<span class="invslot sprite" title="活塞" style="background-position:-544px -928px">
+</span><span class="invslot sprite" title="金锭" style="background-position:-160px -1120px">
+</span><span class="invslot sprite" title="活塞" style="background-position:-544px -928px">
+</span>
+</span>
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="钟" style="background-position:-640px -1152px"></span>
+</span>
+</span></div></td><td>放置在物品在展示框时会向附近玩家报时。</td>
+</tr>
+<tr class="piston"><th>传送球 (东)</th><td>活塞+末影珍珠</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row">
+	<span class="invslot">
+</span><span class="invslot">
+</span><span class="invslot">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot">
+</span><span class="invslot sprite" title="活塞" style="background-position:-544px -928px">
+</span><span class="invslot sprite" title="末影珍珠" style="background-position:-32px -1120px">
+</span>
+</span>	<span class="mcui-row">
+	<span class="invslot">
+</span><span class="invslot">
+</span><span class="invslot">
+</span>
+</span>
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="向东移动 200米" style="background-position:-672px -1120px">
+</span>
+</span>
+</span></div></td><td>可一次合成16个。<br/>右击地面会将玩家向东传送200米。</td>
+</tr>
+<tr class="piston"><th>传送球 (西)</th><td>活塞+末影珍珠</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row">
+	<span class="invslot">
+</span><span class="invslot">
+</span><span class="invslot">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="末影珍珠" style="background-position:-32px -1120px">
+</span><span class="invslot sprite" title="活塞" style="background-position:-544px -928px">
+</span><span class="invslot">
+</span>
+</span>	<span class="mcui-row">
+	<span class="invslot">
+</span><span class="invslot">
+</span><span class="invslot">
+</span>
+</span>
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="向西移动 200米" style="background-position:-672px -1120px">
+</span>
+</span>
+</span></div></td><td>可一次合成16个。<br/>右击地面会将玩家向西传送200米。</td>
+</tr>
+<tr class="piston"><th>传送球 (南)</th><td>活塞+末影珍珠</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row">
+	<span class="invslot">
+</span><span class="invslot">
+</span><span class="invslot">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot">
+</span><span class="invslot sprite" title="活塞" style="background-position:-544px -928px">
+</span><span class="invslot">
+</span>
+</span>	<span class="mcui-row">
+	<span class="invslot">
+</span><span class="invslot sprite" title="末影珍珠" style="background-position:-32px -1120px">
+</span><span class="invslot">
+</span>
+</span>
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="向南移动 200米" style="background-position:-672px -1120px">
+</span>
+</span>
+</span></div></td><td>可一次合成16个。<br/>右击地面会将玩家向南传送200米。</td>
+</tr>
+<tr class="piston"><th>传送球 (北)</th><td>活塞+末影珍珠</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row">
+	<span class="invslot">
+</span><span class="invslot sprite" title="末影珍珠" style="background-position:-32px -1120px">
+</span><span class="invslot">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot">
+</span><span class="invslot sprite" title="活塞" style="background-position:-544px -928px">
+</span><span class="invslot">
+</span>
+</span>	<span class="mcui-row">
+	<span class="invslot">
+</span><span class="invslot">
+</span><span class="invslot">
+</span>
+</span>
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="向北移动 200米" style="background-position:-672px -1120px">
+</span>
+</span>
+</span></div></td><td>可一次合成16个。<br/>右击地面会将玩家向北传送200米。</td>
+</tr>
+<tr class="bio_med" id="bio_med"><th colspan="4">生物制药</th>
+</tr>
+<tr class="bio_med"><th class="left">生成 羊<br/>
+生成 牛<br/>
+生成 猪<br/>
+生成 鸡<br/>
+生成 兔子<br/>
+生成 哞菇<br/>
+生成 蝙蝠<br/>
+生成 鱿鱼<br/>
+生成 北极熊</th><td>鸡蛋+羊毛<br/>
+鸡蛋+皮革<br/>
+鸡蛋+生猪排<br/>
+鸡蛋+羽毛<br/>
+鸡蛋+兔子皮<br/>
+鸡蛋+红色蘑菇<br/>
+鸡蛋+木炭<br/>
+鸡蛋+墨囊<br/>
+鸡蛋+冰</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row">
+	<span class="invslot sprite" title="羊毛" style="background-position:-768px -768px">
+</span><span class="invslot sprite" title="羊毛" style="background-position:-768px -768px">
+</span><span class="invslot sprite" title="羊毛" style="background-position:-768px -768px">
+</span>	
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="羊毛" style="background-position:-768px -768px">
+</span><span class="invslot sprite" title="鸡蛋" style="background-position:-0px -832px">
+</span><span class="invslot sprite" title="羊毛" style="background-position:-768px -768px">
+</span>	
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="羊毛" style="background-position:-768px -768px">
+</span><span class="invslot sprite" title="羊毛" style="background-position:-768px -768px">
+</span><span class="invslot sprite" title="羊毛" style="background-position:-768px -768px">
+</span>	
+</span>	
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="生成 羊" style="background-position:-160px -1152px">
+</span>	
+</span>	
+</span></div><div><span class="mcui">
+	<span>
+	<span class="mcui-row">
+	<span class="invslot sprite" title="红色蘑菇" style="background-position:-160px -1056px">
+</span><span class="invslot sprite" title="红色蘑菇" style="background-position:-160px -1056px">
+</span><span class="invslot sprite" title="红色蘑菇" style="background-position:-160px -1056px">
+</span>	
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="红色蘑菇" style="background-position:-160px -1056px">
+</span><span class="invslot sprite" title="鸡蛋" style="background-position:-0px -832px">
+</span><span class="invslot sprite" title="红色蘑菇" style="background-position:-160px -1056px">
+</span>	
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="红色蘑菇" style="background-position:-160px -1056px">
+</span><span class="invslot sprite" title="红色蘑菇" style="background-position:-160px -1056px">
+</span><span class="invslot sprite" title="红色蘑菇" style="background-position:-160px -1056px">
+</span>	
+</span>	
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="生成 哞菇" style="background-position:-32px -1152px">
+</span>	
+</span>	
+</span></div></td><td>可一次合成16个。<br/>羊毛颜色任意。</td>
+</tr>
+<tr class="bio_med"><th class="left">
+生成 村民<br/>
+生成 卫道士<br/>
+生成 唤魔者<br/>
+生成 幻术师</th><td>鸡蛋+绿宝石<br/>
+鸡蛋+铁斧<br/>
+鸡蛋+治疗药水<br/>
+鸡蛋+隐身药水</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row">
+	<span class="invslot sprite" title="铁斧" style="background-position:-928px -1184px">
+</span><span class="invslot sprite" title="铁斧" style="background-position:-928px -1184px">
+</span><span class="invslot sprite" title="铁斧" style="background-position:-928px -1184px">
+</span>	
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="铁斧" style="background-position:-928px -1184px">
+</span><span class="invslot sprite" title="鸡蛋" style="background-position:-0px -832px">
+</span><span class="invslot sprite" title="铁斧" style="background-position:-928px -1184px">
+</span>	
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="铁斧" style="background-position:-928px -1184px">
+</span><span class="invslot sprite" title="铁斧" style="background-position:-928px -1184px">
+</span><span class="invslot sprite" title="铁斧" style="background-position:-928px -1184px">
+</span>	
+</span>	
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="生成 卫道士" style="background-position:-160px -1408px">
+</span>	
+</span>	
+</span></div></td><td>可一次合成16个村民刷怪蛋。<br/>治疗药水必须是最初级的。<br/>
+隐身药水必须是最初级的。</td>
+</tr>
+<tr class="bio_med"><th class="left">生成 爬行者<br/>
+生成 僵尸<br/>
+生成 骷髅<br/>
+生成 蜘蛛<br/>
+生成 女巫<br/>
+生成 末影人<br/>
+生成 高压爬行者<br/>
+生成 史莱姆<br/>
+生成 洞穴蜘蛛<br/>
+生成 蠹虫</th><td>鸡蛋+火药<br/>
+鸡蛋+腐肉<br/>
+鸡蛋+骨头<br/>
+鸡蛋+线<br/>
+鸡蛋+红石粉<br/>
+鸡蛋+末影珍珠<br/>
+鸡蛋+TNT<br/>
+鸡蛋+粘液球<br/>
+鸡蛋+蜘蛛眼<br/>
+鸡蛋+石砖</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row">
+	<span class="invslot sprite" title="骨头" style="background-position:-800px -1088px">
+</span><span class="invslot sprite" title="骨头" style="background-position:-800px -1088px">
+</span><span class="invslot sprite" title="骨头" style="background-position:-800px -1088px">
+</span>	
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="骨头" style="background-position:-800px -1088px">
+</span><span class="invslot sprite" title="鸡蛋" style="background-position:-0px -832px">
+</span><span class="invslot sprite" title="骨头" style="background-position:-800px -1088px">
+</span>	
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="骨头" style="background-position:-800px -1088px">
+</span><span class="invslot sprite" title="骨头" style="background-position:-800px -1088px">
+</span><span class="invslot sprite" title="骨头" style="background-position:-800px -1088px">
+</span>
+</span>	
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="生成 骷髅" style="background-position:-256px -1152px">
+</span>	
+</span>	
+</span></div><div><span class="mcui">
+	<span>
+	<span class="mcui-row">
+	<span class="invslot sprite" title="粘液球" style="background-position:-576px -1120px">
+</span><span class="invslot sprite" title="粘液球" style="background-position:-576px -1120px">
+</span><span class="invslot sprite" title="粘液球" style="background-position:-576px -1120px">
+</span>	
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="粘液球" style="background-position:-576px -1120px">
+</span><span class="invslot sprite" title="鸡蛋" style="background-position:-0px -832px">
+</span><span class="invslot sprite" title="粘液球" style="background-position:-576px -1120px">
+</span>	
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="粘液球" style="background-position:-576px -1120px">
+</span><span class="invslot sprite" title="粘液球" style="background-position:-576px -1120px">
+</span><span class="invslot sprite" title="粘液球" style="background-position:-576px -1120px">
+</span>	
+</span>	
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="生成 史莱姆" style="background-position:-288px -1152px">
+</span>	
+</span>	
+</span></div></td><td>可一次合成16个。<br/>石砖类型任意。</td>
+</tr>
+<tr class="bio_med"><th class="left">生成 守卫者<br/>
+生成 远古守卫者<br/>
+生成 僵尸猪人<br/>
+生成 恶魂<br/>
+生成 岩浆怪<br/>
+生成 凋灵骷髅<br/>
+生成 烈焰人<br/>
+生成 末影螨<br/>
+生成 潜影贝</th>
+<td>鸡蛋+水桶<br/>
+鸡蛋+生鱼<br/>
+鸡蛋+金粒<br/>
+鸡蛋+恶魂之泪<br/>
+鸡蛋+岩浆膏<br/>
+鸡蛋+煤炭<br/>
+鸡蛋+烈焰粉<br/>
+鸡蛋+末地石<br/>
+鸡蛋+紫颂果</td><td>
+<div><span class="mcui">
+	<span>
+	<span class="mcui-row">
+	<span class="invslot sprite" title="水桶" style="background-position:-960px -640px">
+</span><span class="invslot sprite" title="水桶" style="background-position:-960px -640px">
+</span><span class="invslot sprite" title="水桶" style="background-position:-960px -640px">
+</span>	
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="水桶" style="background-position:-960px -640px">
+</span><span class="invslot sprite" title="鸡蛋" style="background-position:-0px -832px">
+</span><span class="invslot sprite" title="水桶" style="background-position:-960px -640px">
+</span>	
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="水桶" style="background-position:-960px -640px">
+</span><span class="invslot sprite" title="水桶" style="background-position:-960px -640px">
+</span><span class="invslot sprite" title="水桶" style="background-position:-960px -640px">
+</span>	
+</span>	
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="生成 守卫者" style="background-position:-960px -1120px">
+</span>	
+</span>	
+</span></div><div><span class="mcui">
+	<span>
+	<span class="mcui-row">
+	<span class="invslot sprite" title="煤炭" style="background-position:-960px -1088px">
+</span><span class="invslot sprite" title="煤炭" style="background-position:-960px -1088px">
+</span><span class="invslot sprite" title="煤炭" style="background-position:-960px -1088px">
+</span>	
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="煤炭" style="background-position:-960px -1088px">
+</span><span class="invslot sprite" title="鸡蛋" style="background-position:-0px -832px">
+</span><span class="invslot sprite" title="煤炭" style="background-position:-960px -1088px">
+</span>	
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="煤炭" style="background-position:-960px -1088px">
+</span><span class="invslot sprite" title="煤炭" style="background-position:-960px -1088px">
+</span><span class="invslot sprite" title="煤炭" style="background-position:-960px -1088px">
+</span>	
+</span>	
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="生成 凋灵骷髅" style="background-position:-32px -1376px">
+</span>	
+</span>	
+</span></div></td><td>除守卫者外，其余可一次合成16个。<br/>合成后，八桶水将会变回桶。<br/>
+生鱼类型任意。</td>
+</tr>
+
+<tr class="bio_med"><th class="left">生成 狼<br/>
+生成 豹猫<br/>
+生成 马<br/>
+生成 驴<br/>
+生成 羊驼<br/>
+生成 鹦鹉
+</th><td>骨头+头颅+鸡蛋<br/>
+生鱼+头颅+鸡蛋<br/>
+皮革+头颅+鸡蛋<br/>
+箱子+头颅+鸡蛋<br/>
+地毯+头颅+鸡蛋<br/>
+羽毛+头颅+鸡蛋</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row">
+	<span class="invslot sprite" title="骨头" style="background-position:-800px -1088px">
+</span><span class="invslot sprite" title="头颅" style="background-position:-160px -960px">
+</span><span class="invslot sprite" title="骨头" style="background-position:-800px -1088px">
+</span>	
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="骨头" style="background-position:-800px -1088px">
+</span><span class="invslot sprite" title="鸡蛋" style="background-position:-0px -832px">
+</span><span class="invslot sprite" title="骨头" style="background-position:-800px -1088px">
+</span>	
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="骨头" style="background-position:-800px -1088px">
+</span><span class="invslot sprite" title="骨头" style="background-position:-800px -1088px">
+</span><span class="invslot sprite" title="骨头" style="background-position:-800px -1088px">
+</span>	
+</span>	
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="生成 狼" style="background-position:-448px -1152px">
+</span>	
+</span>	
+</span></div></td><td>可一次合成16个。<br/>头颅类型任意。<br/>
+生鱼类型任意。<br/>
+地毯类型任意。
+</td>
+</tr>
+<tr class="bio_med"><th class="left">橡树树种<br/>
+云杉树种<br/>
+白桦树种<br/>
+丛林树种<br/>
+金合欢树种<br/>
+深色橡树树种</th><td>绿宝石块+骨块+橡树树苗<br/>
+绿宝石块+骨块+云杉树苗<br/>
+绿宝石块+骨块+白桦树苗<br/>
+绿宝石块+骨块+丛林树苗<br/>
+绿宝石块+骨块+金合欢树苗<br/>
+绿宝石块+骨块+深色橡树树种</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row">
+	<span class="invslot sprite" title="绿宝石块" style="background-position:-992px -832px">
+</span><span class="invslot sprite" title="骨块" style="background-position:-736px -1344px">
+</span><span class="invslot sprite" title="绿宝石块" style="background-position:-992px -832px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="骨块" style="background-position:-736px -1344px">
+</span><span class="invslot sprite" title="橡树树苗" style="background-position:-896px -1024px">
+</span><span class="invslot sprite" title="骨块" style="background-position:-736px -1344px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="绿宝石块" style="background-position:-992px -832px">
+</span><span class="invslot sprite" title="骨块" style="background-position:-736px -1344px">
+</span><span class="invslot sprite" title="绿宝石块" style="background-position:-992px -832px">
+</span>
+</span>
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="橡树树种" style="background-position:-224px -1536px">
+</span></span></span></div></td><td>可一次合成64个。</td>
+</tr>
+<tr class="bio_med"><th class="left">煤炭种子<br/>
+铁种子<br/>
+金种子<br/>
+红石种子<br/>
+钻石种子<br/>
+青金石种子<br/>
+绿宝石种子<br/>
+石英种子</th><td>煤矿石+种子<br/>
+铁矿石+种子<br/>
+金矿石+种子<br/>
+红石矿石+种子<br/>
+钻石矿石+种子<br/>
+青金石矿石+种子<br/>
+绿宝石矿石+种子<br/>
+下界石英矿石+种子</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row">
+	<span class="invslot sprite" title="钻石块" style="background-position:-960px -832px">
+</span><span class="invslot sprite" title="钻石块" style="background-position:-960px -832px">
+</span><span class="invslot sprite" title="钻石块" style="background-position:-960px -832px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="钻石块" style="background-position:-960px -832px">
+</span><span class="invslot sprite" title="种子" style="background-position:-320px -1056px">
+</span><span class="invslot sprite" title="钻石块" style="background-position:-960px -832px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="钻石块" style="background-position:-960px -832px">
+</span><span class="invslot sprite" title="钻石块" style="background-position:-960px -832px">
+</span><span class="invslot sprite" title="钻石块" style="background-position:-960px -832px">
+</span>
+</span>
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="钻石种子" style="background-position:-192px -1152px">
+</span></span></span></div></td><td></td>
+</tr>
+
+<tr class="bio_med"><th>附魔金苹果</th><td>金块+苹果</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row"><span class="invslot sprite" title="金块" style="background-position:-0px -864px">
+</span><span class="invslot sprite" title="金块" style="background-position:-0px -864px">
+</span><span class="invslot sprite" title="金块" style="background-position:-0px -864px">
+</span></span><span class="mcui-row">
+	<span class="invslot sprite" title="金块" style="background-position:-0px -864px">
+</span><span class="invslot sprite" title="苹果" style="background-position:-672px -800px">
+</span><span class="invslot sprite" title="金块" style="background-position:-0px -864px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="金块" style="background-position:-0px -864px">
+</span><span class="invslot sprite" title="金块" style="background-position:-0px -864px">
+</span><span class="invslot sprite" title="金块" style="background-position:-0px -864px">
+</span>
+</span>	
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="附魔金苹果" style="background-position:-32px -832px">
+</span>	
+</span>	
+</span></div></td><td>可一次合成64个。<br/></td>
+</tr>
+<tr class="bio_med"><th class="left">抗火药水 <span class="lore">防火 (16:00)</span><br/>
+夜视药水 <span class="lore">夜视 (16:00)</span><br/>
+隐身药水 <span class="lore">隐身 (16:00)</span><br/>
+水肺药水 <span class="lore">水下呼吸 (16:00)</span><br/>
+迅捷药水 <span class="lore">速度 II (8:00)</span><br/>
+急迫药水 <span class="lore">急迫 II (8:00)</span><br/>
+跳跃药水 <span class="lore">跳跃提升 II (8:00)</span><br/>
+再生药水 <span class="lore">生命恢复 II (8:00)</span><br/>
+力量药水 <span class="lore">力量 III (8:00)</span><br/>
+抗性药水 <span class="lore">抗性提升 III (8:00)</span><br/>
+提升药水 <span class="lore">生命提升 III (8:00)</span><br/>
+治疗药水 <span class="lore">瞬间治疗 III</span></th><td>水瓶+岩浆膏<br/>
+水瓶+金胡萝卜<br/>
+水瓶+末影珍珠<br/>
+水瓶+河豚<br/>
+水瓶+糖<br/>
+水瓶+铁锭<br/>
+水瓶+兔子脚<br/>
+水瓶+恶魂之泪<br/>
+水瓶+烈焰粉<br/>
+水瓶+钻石<br/>
+水瓶+金苹果<br/>
+水瓶+闪烁的西瓜</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row">
+	<span class="invslot sprite" title="岩浆膏" style="background-position:-672px -640px">
+</span><span class="invslot sprite" title="岩浆膏" style="background-position:-672px -640px">		
+</span><span class="invslot sprite" title="岩浆膏" style="background-position:-672px -640px">		
+</span>	
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="岩浆膏" style="background-position:-672px -640px">
+</span><span class="invslot sprite" title="水瓶" style="background-position:-832px -1056px">		
+</span><span class="invslot sprite" title="岩浆膏" style="background-position:-672px -640px">		
+</span>	
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="岩浆膏" style="background-position:-672px -640px">
+</span><span class="invslot sprite" title="岩浆膏" style="background-position:-672px -640px">
+</span><span class="invslot sprite" title="岩浆膏" style="background-position:-672px -640px">
+</span>	
+</span>	
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="防火药水" style="background-position:-896px -1056px">
+</span>	
+</span>	
+</span></div><div><span class="mcui">
+	<span>
+	<span class="mcui-row">
+	<span class="invslot sprite" title="钻石" style="background-position:-992px -1088px">
+</span><span class="invslot sprite" title="钻石" style="background-position:-992px -1088px">
+</span><span class="invslot sprite" title="钻石" style="background-position:-992px -1088px">		
+</span>	
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="钻石" style="background-position:-992px -1088px">
+</span><span class="invslot sprite" title="水瓶" style="background-position:-832px -1056px">		
+</span><span class="invslot sprite" title="钻石" style="background-position:-992px -1088px">
+</span>	
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="钻石" style="background-position:-992px -1088px">
+</span><span class="invslot sprite" title="钻石" style="background-position:-992px -1088px">
+</span><span class="invslot sprite" title="钻石" style="background-position:-992px -1088px">
+</span>	
+</span>	
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="急迫药水" style="background-position:-992px -1536px">
+</span>	
+</span>	
+</span></div></td><td>金苹果类型任意。</td>
+</tr>
+<tr class="painting" id="painting"><th colspan="4">绘画雕塑</th>
+</tr>
+<tr class="painting"><th>呐喊<br /><span class="lore">4×3</span></th><td>画+红色羊毛+黄色羊毛+蓝色羊毛</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row">
+	<span class="invslot sprite" title="红色羊毛" style="background-position:-992px -1504px">
+</span><span class="invslot sprite" title="红色羊毛" style="background-position:-992px -1504px">
+</span><span class="invslot sprite" title="红色羊毛" style="background-position:-992px -1504px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="黄色羊毛" style="background-position:-32px -1536px">
+</span><span class="invslot sprite" title="画" style="background-position:-320px -672px">
+</span><span class="invslot sprite" title="黄色羊毛" style="background-position:-32px -1536px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="蓝色羊毛" style="background-position:-608px -1504px">
+</span><span class="invslot sprite" title="蓝色羊毛" style="background-position:-608px -1504px">
+</span><span class="invslot sprite" title="蓝色羊毛" style="background-position:-608px -1504px">
+</span>
+</span>
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="呐喊" style="background-position:-64px -1216px">
+</span><span class="invslot-stacksize" title="呐喊">12
+</span></span></span></div></td><td style="text-align:center"><img src="http://pic.58pic.com/58pic/16/88/78/59858PICtBc_1024.jpg" style="height:128px"/></td>
+</tr>
+<tr class="painting"><th>蒙娜丽莎<br /><span class="lore">3×2</span></th><td>画+黄色羊毛+棕色羊毛+黑色羊毛</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row">
+	<span class="invslot sprite" title="黄色羊毛" style="background-position:-32px -1536px">
+</span><span class="invslot sprite" title="黄色羊毛" style="background-position:-32px -1536px">
+</span><span class="invslot sprite" title="黄色羊毛" style="background-position:-32px -1536px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="棕色羊毛" style="background-position:-640px -1504px">
+</span><span class="invslot sprite" title="画" style="background-position:-320px -672px">
+</span><span class="invslot sprite" title="棕色羊毛" style="background-position:-640px -1504px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="黑色羊毛" style="background-position:-576px -1504px">
+</span><span class="invslot sprite" title="黑色羊毛" style="background-position:-576px -1504px">
+</span><span class="invslot sprite" title="黑色羊毛" style="background-position:-576px -1504px">
+</span>
+</span>
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="黑色羊毛" style="background-position:-64px -1216px">
+</span><span class="invslot-stacksize" title="黑色羊毛">6
+</span></span></span></div></td><td style="text-align:center"><img src="http://mh50.com/uploads/10/mengnalisha.jpg" style="height:128px"/></td>
+</tr>
+<tr class="painting"><th>最后的晚餐<br /><span class="lore">1×2</span></th><td>画+黑色羊毛+白色羊毛+红色羊毛+淡蓝色羊毛</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row">
+	<span class="invslot sprite" title="黑色羊毛" style="background-position:-576px -1504px">
+</span><span class="invslot sprite" title="黑色羊毛" style="background-position:-576px -1504px">
+</span><span class="invslot sprite" title="白色羊毛" style="background-position:-0px -1536px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="红色羊毛" style="background-position:-992px -1504px">
+</span><span class="invslot sprite" title="画" style="background-position:-320px -672px">
+</span><span class="invslot sprite" title="淡蓝色羊毛" style="background-position:-768px -1504px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="白色羊毛" style="background-position:-0px -1536px">
+</span><span class="invslot sprite" title="白色羊毛" style="background-position:-0px -1536px">
+</span><span class="invslot sprite" title="白色羊毛" style="background-position:-0px -1536px">
+</span>
+</span>
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="最后的晚餐" style="background-position:-64px -1216px">
+</span><span class="invslot-stacksize" title="最后的晚餐">2
+</span></span></span></div></td><td style="text-align:center"><img src="http://mh50.com/uploads/10/zuihoudewancan.jpg" style="height:128px"/></td>
+</tr>
+
+<tr class="painting"><th>落霞孤鹜图<br /><span class="lore">2×1</span></th><td>画+黄色羊毛+黑色羊毛+白色羊毛</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row">
+	<span class="invslot sprite" title="黄色羊毛" style="background-position:-32px -1536px">
+</span><span class="invslot sprite" title="黑色羊毛" style="background-position:-576px -1504px">
+</span><span class="invslot sprite" title="白色羊毛" style="background-position:-0px -1536px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="白色羊毛" style="background-position:-0px -1536px">
+</span><span class="invslot sprite" title="画" style="background-position:-320px -672px">
+</span><span class="invslot sprite" title="白色羊毛" style="background-position:-0px -1536px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="黄色羊毛" style="background-position:-32px -1536px">
+</span><span class="invslot sprite" title="白色羊毛" style="background-position:-0px -1536px">
+</span><span class="invslot sprite" title="黑色羊毛" style="background-position:-576px -1504px">
+</span>
+</span>
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="落霞孤鹜图" style="background-position:-64px -1216px">
+</span><span class="invslot-stacksize" title="落霞孤鹜图">2
+</span></span></span></div></td><td style="text-align:center"><img src="http://a2.att.hudong.com/84/25/01200000002101114112544238584.jpg" style="height:128px"/></td>
+</tr>
+<tr class="painting"><th>竹石图<br /><span class="lore">2×1</span></th><td>画+白色羊毛+黑色羊毛</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row">
+	<span class="invslot sprite" title="白色羊毛" style="background-position:-0px -1536px">
+</span><span class="invslot sprite" title="白色羊毛" style="background-position:-0px -1536px">
+</span><span class="invslot sprite" title="黑色羊毛" style="background-position:-576px -1504px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="黑色羊毛" style="background-position:-576px -1504px">
+</span><span class="invslot sprite" title="画" style="background-position:-320px -672px">
+</span><span class="invslot sprite" title="白色羊毛" style="background-position:-0px -1536px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="黑色羊毛" style="background-position:-576px -1504px">
+</span><span class="invslot sprite" title="黑色羊毛" style="background-position:-576px -1504px">
+</span><span class="invslot sprite" title="白色羊毛" style="background-position:-0px -1536px">
+</span>
+</span>
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="竹石图" style="background-position:-64px -1216px">
+</span><span class="invslot-stacksize" title="竹石图">2
+</span></span></span></div></td><td style="text-align:center"><img src="http://img.itc.cn/photo/jfHf2J2xK2k" style="height:128px"/></td>
+</tr>
+<tr class="painting"><th>向日葵<br /><span class="lore">4×3</span></th><td>画+淡蓝色羊毛+黄色羊毛+橙色羊毛</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row">
+	<span class="invslot sprite" title="淡蓝色羊毛" style="background-position:-768px -1504px">
+</span><span class="invslot sprite" title="黄色羊毛" style="background-position:-32px -1536px">
+</span><span class="invslot sprite" title="淡蓝色羊毛" style="background-position:-768px -1504px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="橙色羊毛" style="background-position:-896px -1504px">
+</span><span class="invslot sprite" title="画" style="background-position:-320px -672px">
+</span><span class="invslot sprite" title="橙色羊毛" style="background-position:-896px -1504px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="黄色羊毛" style="background-position:-32px -1536px">
+</span><span class="invslot sprite" title="黄色羊毛" style="background-position:-32px -1536px">
+</span><span class="invslot sprite" title="黄色羊毛" style="background-position:-32px -1536px">
+</span>
+</span>
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="向日葵" style="background-position:-64px -1216px">
+</span><span class="invslot-stacksize" title="向日葵">12
+</span></span></span></div></td><td style="text-align:center"><img src="http://mh50.com/uploads/10/xiangrikui.jpg" style="height:128px"/></td>
+</tr>
+<tr class="painting"><th>印象·日出<br /><span class="lore">3×4</span></th><td>画+红色羊毛+棕色羊毛</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row">
+	<span class="invslot sprite" title="红色羊毛" style="background-position:-992px -1504px">
+</span><span class="invslot sprite" title="红色羊毛" style="background-position:-992px -1504px">
+</span><span class="invslot sprite" title="红色羊毛" style="background-position:-992px -1504px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="棕色羊毛" style="background-position:-640px -1504px">
+</span><span class="invslot sprite" title="画" style="background-position:-320px -672px">
+</span><span class="invslot sprite" title="棕色羊毛" style="background-position:-640px -1504px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="棕色羊毛" style="background-position:-640px -1504px">
+</span><span class="invslot sprite" title="棕色羊毛" style="background-position:-640px -1504px">
+</span><span class="invslot sprite" title="棕色羊毛" style="background-position:-640px -1504px">
+</span>
+</span>
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="日出·印象" style="background-position:-64px -1216px">
+</span><span class="invslot-stacksize" title="日出·印象">12
+</span></span></span></div></td><td style="text-align:center"><img src="http://mh50.com/uploads/10/richuyinxiang.jpg" style="height:128px"/></td>
+</tr>
+<tr class="painting"><th>莫奈花园<br /><span class="lore">3×4</span></th><td>画+红色羊毛+白色羊毛+黄绿色羊毛+淡灰色羊毛+青色羊毛+黄色羊毛</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row">
+	<span class="invslot sprite" title="红色羊毛" style="background-position:-992px -1504px">
+</span><span class="invslot sprite" title="白色羊毛" style="background-position:-0px -1536px">
+</span><span class="invslot sprite" title="红色羊毛" style="background-position:-992px -1504px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="黄绿色羊毛" style="background-position:-832px -1504px">
+</span><span class="invslot sprite" title="画" style="background-position:-320px -672px">
+</span><span class="invslot sprite" title="黄绿色羊毛" style="background-position:-832px -1504px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="淡灰色羊毛" style="background-position:-800px -1504px">
+</span><span class="invslot sprite" title="青色羊毛" style="background-position:-672px -1504px">
+</span><span class="invslot sprite" title="黄色羊毛" style="background-position:-32px -1536px">
+</span>
+</span>
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="莫奈花园" style="background-position:-64px -1216px">
+</span><span class="invslot-stacksize" title="莫奈花园">12
+</span></span></span></div></td><td style="text-align:center"><img src="http://pan.xici.com/d34100149.0/load.jpg?tb=dm&h=7ACF1C2F2A8E205A9CC405144BD4AC12" style="height:128px"/></td>
+</tr>
+<tr class="painting"><th>岩间圣母<br /><span class="lore">3×2</span></th><td>画+白色羊毛+黑色羊毛+棕色羊毛+红色羊毛</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row">
+	<span class="invslot sprite" title="白色羊毛" style="background-position:-0px -1536px">
+</span><span class="invslot sprite" title="黑色羊毛" style="background-position:-576px -1504px">
+</span><span class="invslot sprite" title="白色羊毛" style="background-position:-0px -1536px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="黑色羊毛" style="background-position:-576px -1504px">
+</span><span class="invslot sprite" title="画" style="background-position:-320px -672px">
+</span><span class="invslot sprite" title="黑色羊毛" style="background-position:-576px -1504px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="棕色羊毛" style="background-position:-640px -1504px">
+</span><span class="invslot sprite" title="棕色羊毛" style="background-position:-640px -1504px">
+</span><span class="invslot sprite" title="红色羊毛" style="background-position:-992px -1504px">
+</span>
+</span>
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="岩间圣母" style="background-position:-64px -1216px">
+</span><span class="invslot-stacksize" title="岩间圣母">6
+</span></span></span></div></td><td style="text-align:center"><img src="http://christianimagesource.com/blog/images/archangels-3-4.jpg" style="height:128px"/></td>
+</tr>
+<tr class="painting"><th>创造亚当<br /><span class="lore">1×2</span></th><td>画+白色羊毛+棕色羊毛+黄色羊毛</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row">
+	<span class="invslot sprite" title="白色羊毛" style="background-position:-0px -1536px">
+</span><span class="invslot sprite" title="棕色羊毛" style="background-position:-640px -1504px">
+</span><span class="invslot sprite" title="棕色羊毛" style="background-position:-640px -1504px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="黄色羊毛" style="background-position:-32px -1536px">
+</span><span class="invslot sprite" title="画" style="background-position:-320px -672px">
+</span><span class="invslot sprite" title="棕色羊毛" style="background-position:-640px -1504px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="黄色羊毛" style="background-position:-32px -1536px">
+</span><span class="invslot sprite" title="黄色羊毛" style="background-position:-32px -1536px">
+</span><span class="invslot sprite" title="白色羊毛" style="background-position:-0px -1536px">
+</span>
+</span>
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="创造亚当" style="background-position:-64px -1216px">
+</span><span class="invslot-stacksize" title="创造亚当">2
+</span></span></span></div></td><td style="text-align:center"><img src="http://mh50.com/uploads/10/chuangzaoyadang.jpg" style="height:128px"/></td>
+</tr>
+<tr class="painting"><th>伏尔加河上的纤夫<br /><span class="lore">1×2</span></th><td>画+淡蓝色羊毛+白色羊毛+黄色羊毛+黑色羊毛</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row">
+	<span class="invslot sprite" title="淡蓝色羊毛" style="background-position:-768px -1504px">
+</span><span class="invslot sprite" title="淡蓝色羊毛" style="background-position:-768px -1504px">
+</span><span class="invslot sprite" title="淡蓝色羊毛" style="background-position:-768px -1504px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="白色羊毛" style="background-position:-0px -1536px">
+</span><span class="invslot sprite" title="画" style="background-position:-320px -672px">
+</span><span class="invslot sprite" title="白色羊毛" style="background-position:-0px -1536px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="黄色羊毛" style="background-position:-32px -1536px">
+</span><span class="invslot sprite" title="黑色羊毛" style="background-position:-576px -1504px">
+</span><span class="invslot sprite" title="黄色羊毛" style="background-position:-32px -1536px">
+</span>
+</span>
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="伏尔加河上的纤夫" style="background-position:-64px -1216px">
+</span><span class="invslot-stacksize" title="伏尔加河上的纤夫">2
+</span></span></span></div></td><td style="text-align:center"><img src="http://www.youhuaaa.com/UploadFiles/images/Painting_Pic_Big/103/51448.jpg" style="height:128px"/></td>
+</tr>
+<tr class="painting"><th>开国大典<br /><span class="lore">1×2</span></th><td>画+红色羊毛+白色羊毛+蓝色羊毛+棕色羊毛+黄色羊毛</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row">
+	<span class="invslot sprite" title="红色羊毛" style="background-position:-992px -1504px">
+</span><span class="invslot sprite" title="白色羊毛" style="background-position:-0px -1536px">
+</span><span class="invslot sprite" title="蓝色羊毛" style="background-position:-608px -1504px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="红色羊毛" style="background-position:-992px -1504px">
+</span><span class="invslot sprite" title="画" style="background-position:-320px -672px">
+</span><span class="invslot sprite" title="白色羊毛" style="background-position:-0px -1536px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="棕色羊毛" style="background-position:-640px -1504px">
+</span><span class="invslot sprite" title="黄色羊毛" style="background-position:-32px -1536px">
+</span><span class="invslot sprite" title="黄色羊毛" style="background-position:-32px -1536px">
+</span>
+</span>
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="开国大典" style="background-position:-64px -1216px">
+</span><span class="invslot-stacksize" title="开国大典">2
+</span></span></span></div></td><td style="text-align:center"><img src="http://upload.art.ifeng.com/2015/0523/1432346261577.jpg" style="height:128px"/></td>
+</tr>
+<tr class="painting"><th>无名女郎<br /><span class="lore">3×4</span></th><td>画+黄绿色羊毛+黑色羊毛+青色羊毛+黄色羊毛</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row">
+	<span class="invslot sprite" title="黄绿色羊毛" style="background-position:-832px -1504px">
+</span><span class="invslot sprite" title="黑色羊毛" style="background-position:-576px -1504px">
+</span><span class="invslot sprite" title="黄绿色羊毛" style="background-position:-832px -1504px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="黄绿色羊毛" style="background-position:-832px -1504px">
+</span><span class="invslot sprite" title="画" style="background-position:-320px -672px">
+</span><span class="invslot sprite" title="黄绿色羊毛" style="background-position:-832px -1504px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="青色羊毛" style="background-position:-672px -1504px">
+</span><span class="invslot sprite" title="黑色羊毛" style="background-position:-576px -1504px">
+</span><span class="invslot sprite" title="黄色羊毛" style="background-position:-32px -1536px">
+</span>
+</span>
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="无名女郎" style="background-position:-64px -1216px">
+</span><span class="invslot-stacksize" title="无名女郎">12
+</span></span></span></div></td><td style="text-align:center"><img src="http://mh50.com/uploads/10/wumingnvlang.jpg" style="height:128px"/></td>
+</tr>
+<tr class="painting"><th>星夜<br /><span class="lore">3×4</span></th><td>画+蓝色羊毛+黄绿色羊毛+黑色羊毛</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row">
+	<span class="invslot sprite" title="蓝色羊毛" style="background-position:-608px -1504px">
+</span><span class="invslot sprite" title="蓝色羊毛" style="background-position:-608px -1504px">
+</span><span class="invslot sprite" title="黄绿色羊毛" style="background-position:-832px -1504px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="蓝色羊毛" style="background-position:-608px -1504px">
+</span><span class="invslot sprite" title="画" style="background-position:-320px -672px">
+</span><span class="invslot sprite" title="蓝色羊毛" style="background-position:-608px -1504px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="黑色羊毛" style="background-position:-576px -1504px">
+</span><span class="invslot sprite" title="蓝色羊毛" style="background-position:-608px -1504px">
+</span><span class="invslot sprite" title="蓝色羊毛" style="background-position:-608px -1504px">
+</span>
+</span>
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="星夜" style="background-position:-64px -1216px">
+</span><span class="invslot-stacksize" title="星夜">12
+</span></span></span></div></td><td style="text-align:center"><img src="http://scihi.org//wp-content/uploads/2012/07/VanGogh-starry_night3.jpg" style="height:128px"/></td>
+</tr>
+<tr class="painting"><th>自由引导人民<br /><span class="lore">2×3</span></th><td>画+淡灰色羊毛+红色羊毛+黑色羊毛+橙色羊毛</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row">
+	<span class="invslot sprite" title="淡灰色羊毛" style="background-position:-800px -1504px">
+</span><span class="invslot sprite" title="红色羊毛" style="background-position:-992px -1504px">
+</span><span class="invslot sprite" title="淡灰色羊毛" style="background-position:-800px -1504px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="黑色羊毛" style="background-position:-576px -1504px">
+</span><span class="invslot sprite" title="画" style="background-position:-320px -672px">
+</span><span class="invslot sprite" title="橙色羊毛" style="background-position:-896px -1504px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="红色羊毛" style="background-position:-992px -1504px">
+</span><span class="invslot sprite" title="橙色羊毛" style="background-position:-896px -1504px">
+</span><span class="invslot sprite" title="橙色羊毛" style="background-position:-896px -1504px">
+</span>
+</span>
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="自由引导人民" style="background-position:-64px -1216px">
+</span><span class="invslot-stacksize" title="自由引导人民">6
+</span></span></span></div></td><td style="text-align:center"><img src="http://i.ebayimg.com/images/g/TGsAAOSwGvhUD10b/s-l1600.jpg" style="height:128px"/></td>
+</tr>
+<tr class="painting"><th>拾穗者<br /><span class="lore">2×3</span></th><td>画+白色羊毛+黄色羊毛+橙色羊毛</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row">
+	<span class="invslot sprite" title="白色羊毛" style="background-position:-0px -1536px">
+</span><span class="invslot sprite" title="白色羊毛" style="background-position:-0px -1536px">
+</span><span class="invslot sprite" title="白色羊毛" style="background-position:-0px -1536px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="黄色羊毛" style="background-position:-32px -1536px">
+</span><span class="invslot sprite" title="画" style="background-position:-320px -672px">
+</span><span class="invslot sprite" title="黄色羊毛" style="background-position:-32px -1536px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="橙色羊毛" style="background-position:-896px -1504px">
+</span><span class="invslot sprite" title="橙色羊毛" style="background-position:-896px -1504px">
+</span><span class="invslot sprite" title="橙色羊毛" style="background-position:-896px -1504px">
+</span>
+</span>
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="拾穗者" style="background-position:-64px -1216px">
+</span><span class="invslot-stacksize" title="拾穗者">6
+</span></span></span></div></td><td style="text-align:center"><img src="https://uploads8.wikiart.org/images/jean-francois-millet/the-gleaners-1857.jpg" style="height:128px"/></td>
+</tr>
+<tr id="magic" class="magic"><th colspan="4">强化（仅以剑为例）</th>
+</tr>
+<tr class="magic"><th>橡木剑<br/><span class="lore">经验修补</span></th><td>木剑+燧石</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row">
+	<span class="invslot sprite" title="燧石" style="background-position:-96px -1120px">
+</span><span class="invslot sprite" title="燧石" style="background-position:-96px -1120px">
+</span><span class="invslot sprite" title="燧石" style="background-position:-96px -1120px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="燧石" style="background-position:-96px -1120px">
+</span><span class="invslot sprite" title="木剑" style="background-position:-384px -1280px">
+</span><span class="invslot sprite" title="燧石" style="background-position:-96px -1120px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="燧石" style="background-position:-96px -1120px">
+</span><span class="invslot sprite" title="燧石" style="background-position:-96px -1120px">
+</span><span class="invslot sprite" title="燧石" style="background-position:-96px -1120px">
+</span>
+</span>
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="橡木剑" style="background-position:-160px -1280px">
+</span>
+</span>
+</span></div></td><td><span class="lore">等级 1<br/>使用粘土升级</span></td>
+</tr>
+<tr class="magic"><th>桦木剑<br/><span class="lore">经验修补<br/>+5% 攻击速度</span></th><td>橡木剑+粘土</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row">
+	<span class="invslot sprite" title="粘土" style="background-position:-928px -1088px">
+</span><span class="invslot sprite" title="粘土" style="background-position:-928px -1088px">
+</span><span class="invslot sprite" title="粘土" style="background-position:-928px -1088px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="粘土" style="background-position:-928px -1088px">
+</span><span class="invslot sprite" title="橡木剑" style="background-position:-384px -1280px">
+</span><span class="invslot sprite" title="粘土" style="background-position:-928px -1088px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="粘土" style="background-position:-928px -1088px">
+</span><span class="invslot sprite" title="粘土" style="background-position:-928px -1088px">
+</span><span class="invslot sprite" title="粘土" style="background-position:-928px -1088px">
+</span>
+</span>
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="桦木剑" style="background-position:-160px -1280px">
+</span>
+</span>
+</span></div></td><td><span class="lore">等级 2<br/>使用火药升级</span></td>
+</tr>
+<tr class="magic"><th>槐木剑<br/><span class="lore">耐久 I<br/>经验修补<br/>+5% 攻击速度</span></th><td>桦木剑+火药</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row">
+	<span class="invslot sprite" title="火药" style="background-position:-192px -1120px">
+</span><span class="invslot sprite" title="火药" style="background-position:-192px -1120px">
+</span><span class="invslot sprite" title="火药" style="background-position:-192px -1120px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="火药" style="background-position:-192px -1120px">
+</span><span class="invslot sprite" title="桦木剑" style="background-position:-384px -1280px">
+</span><span class="invslot sprite" title="火药" style="background-position:-192px -1120px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="火药" style="background-position:-192px -1120px">
+</span><span class="invslot sprite" title="火药" style="background-position:-192px -1120px">
+</span><span class="invslot sprite" title="火药" style="background-position:-192px -1120px">
+</span>
+</span>
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="槐木剑" style="background-position:-160px -1280px">
+</span>
+</span>
+</span></div></td><td><span class="lore">等级 3<br/>使用荧石粉升级</span></td>
+</tr>
+<tr class="magic"><th>乌木剑<br/><span class="lore">耐久 I<br/>经验修补<br/>+10% 攻击速度</span></th><td>槐木剑+荧石粉</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row">
+	<span class="invslot sprite" title="荧石粉" style="background-position:-128px -1120px">
+</span><span class="invslot sprite" title="荧石粉" style="background-position:-128px -1120px">
+</span><span class="invslot sprite" title="荧石粉" style="background-position:-128px -1120px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="荧石粉" style="background-position:-128px -1120px">
+</span><span class="invslot sprite" title="槐木剑" style="background-position:-384px -1280px">
+</span><span class="invslot sprite" title="荧石粉" style="background-position:-128px -1120px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="荧石粉" style="background-position:-128px -1120px">
+</span><span class="invslot sprite" title="荧石粉" style="background-position:-128px -1120px">
+</span><span class="invslot sprite" title="荧石粉" style="background-position:-128px -1120px">
+</span>
+</span>
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="乌木剑" style="background-position:-160px -1280px">
+</span>
+</span>
+</span></div></td><td><span class="lore">等级 4<br/>使用粘液球升级</span></td>
+</tr>
+<tr class="magic"><th>桃木剑<br/><span class="lore">横扫之刃 I<br/>耐久 I<br/>经验修补<br/>+10% 攻击速度<br/>+5 攻击伤害</span></th><td>乌木剑+粘液球</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row">
+	<span class="invslot sprite" title="粘液球" style="background-position:-576px -1120px">
+</span><span class="invslot sprite" title="粘液球" style="background-position:-576px -1120px">
+</span><span class="invslot sprite" title="粘液球" style="background-position:-576px -1120px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="粘液球" style="background-position:-576px -1120px">
+</span><span class="invslot sprite" title="乌木剑" style="background-position:-384px -1280px">
+</span><span class="invslot sprite" title="粘液球" style="background-position:-576px -1120px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="粘液球" style="background-position:-576px -1120px">
+</span><span class="invslot sprite" title="粘液球" style="background-position:-576px -1120px">
+</span><span class="invslot sprite" title="粘液球" style="background-position:-576px -1120px">
+</span>
+</span>
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="桃木剑" style="background-position:-160px -1280px">
+</span>
+</span>
+</span></div></td><td><span class="lore">等级 5<br/>使用皮革升级</span></td>
+</tr>
+<tr class="magic"><th>鹅卵石剑<br/><span class="lore">横扫之刃 I<br/>耐久 II<br/>经验修补<br/>+10% 攻击速度<br/>+5 攻击伤害</span></th><td>桃木剑+皮革</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row">
+	<span class="invslot sprite" title="皮革" style="background-position:-256px -1120px">
+</span><span class="invslot sprite" title="皮革" style="background-position:-256px -1120px">
+</span><span class="invslot sprite" title="皮革" style="background-position:-256px -1120px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="皮革" style="background-position:-256px -1120px">
+</span><span class="invslot sprite" title="桃木剑" style="background-position:-384px -1280px">
+</span><span class="invslot sprite" title="皮革" style="background-position:-256px -1120px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="皮革" style="background-position:-256px -1120px">
+</span><span class="invslot sprite" title="皮革" style="background-position:-256px -1120px">
+</span><span class="invslot sprite" title="皮革" style="background-position:-256px -1120px">
+</span>
+</span>
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="鹅卵石剑" style="background-position:-128px -1280px">
+</span>
+</span>
+</span></div></td><td><span class="lore">等级 6<br/>使用煤炭升级</span></td>
+</tr>
+<tr class="magic"><th>孔雀石剑<br/><span class="lore">横扫之刃 I<br/>耐久 II<br/>经验修补<br/>+15% 攻击速度<br/>+5 攻击伤害</span></th><td>鹅卵石剑+煤炭</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row">
+	<span class="invslot sprite" title="煤炭" style="background-position:-960px -1088px">
+</span><span class="invslot sprite" title="煤炭" style="background-position:-960px -1088px">
+</span><span class="invslot sprite" title="煤炭" style="background-position:-960px -1088px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="煤炭" style="background-position:-960px -1088px">
+</span><span class="invslot sprite" title="鹅卵石剑" style="background-position:-352px -1280px">
+</span><span class="invslot sprite" title="煤炭" style="background-position:-960px -1088px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="煤炭" style="background-position:-960px -1088px">
+</span><span class="invslot sprite" title="煤炭" style="background-position:-960px -1088px">
+</span><span class="invslot sprite" title="煤炭" style="background-position:-960px -1088px">
+</span>
+</span>
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="孔雀石剑" style="background-position:-128px -1280px">
+</span>
+</span>
+</span></div></td><td><span class="lore">等级 7<br/>使用红石升级</span></td>
+</tr>
+<tr class="magic"><th>太湖石剑<br/><span class="lore">横扫之刃 II<br/>耐久 II<br/>经验修补<br/>+15% 攻击速度<br/>+10 攻击伤害</span></th><td>孔雀石剑+红石</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row">
+	<span class="invslot sprite" title="红石" style="background-position:-544px -1120px">
+</span><span class="invslot sprite" title="红石" style="background-position:-544px -1120px">
+</span><span class="invslot sprite" title="红石" style="background-position:-544px -1120px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="红石" style="background-position:-544px -1120px">
+</span><span class="invslot sprite" title="孔雀石剑" style="background-position:-352px -1280px">
+</span><span class="invslot sprite" title="红石" style="background-position:-544px -1120px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="红石" style="background-position:-544px -1120px">
+</span><span class="invslot sprite" title="红石" style="background-position:-544px -1120px">
+</span><span class="invslot sprite" title="红石" style="background-position:-544px -1120px">
+</span>
+</span>
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="太湖石剑" style="background-position:-128px -1280px">
+</span>
+</span>
+</span></div></td><td><span class="lore">等级 8<br/>使用青金石升级</span></td>
+</tr>
+<tr class="magic"><th>昆山石剑<br/><span class="lore">抢夺 I<br/>横扫之刃 II<br/>耐久 II<br/>经验修补<br/>+15% 攻击速度<br/>+10 攻击伤害</span></th><td>太湖石剑+青金石</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row">
+	<span class="invslot sprite" title="青金石" style="background-position:-702px -672px">
+</span><span class="invslot sprite" title="青金石" style="background-position:-702px -672px">
+</span><span class="invslot sprite" title="青金石" style="background-position:-702px -672px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="青金石" style="background-position:-702px -672px">
+</span><span class="invslot sprite" title="太湖石剑" style="background-position:-352px -1280px">
+</span><span class="invslot sprite" title="青金石" style="background-position:-702px -672px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="青金石" style="background-position:-702px -672px">
+</span><span class="invslot sprite" title="青金石" style="background-position:-702px -672px">
+</span><span class="invslot sprite" title="青金石" style="background-position:-702px -672px">
+</span>
+</span>
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="昆山石剑" style="background-position:-128px -1280px">
+</span>
+</span>
+</span></div></td><td><span class="lore">等级 9<br/>使用下界石英升级</span></td>
+</tr>
+<tr class="magic"><th>灵璧石剑<br/><span class="lore">抢夺 I<br/>横扫之刃 II<br/>耐久 II<br/>经验修补<br/>+20% 攻击速度<br/>+10 攻击伤害</span></th><td>昆山石剑+下界石英</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row">
+	<span class="invslot sprite" title="下界石英" style="background-position:-320px -1120px">
+</span><span class="invslot sprite" title="下界石英" style="background-position:-320px -1120px">
+</span><span class="invslot sprite" title="下界石英" style="background-position:-320px -1120px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="下界石英" style="background-position:-320px -1120px">
+</span><span class="invslot sprite" title="昆山石剑" style="background-position:-352px -1280px">
+</span><span class="invslot sprite" title="下界石英" style="background-position:-320px -1120px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="下界石英" style="background-position:-320px -1120px">
+</span><span class="invslot sprite" title="下界石英" style="background-position:-320px -1120px">
+</span><span class="invslot sprite" title="下界石英" style="background-position:-320px -1120px">
+</span>
+</span>
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="灵璧石剑" style="background-position:-128px -1280px">
+</span>
+</span>
+</span></div></td><td><span class="lore">等级 10<br/>使用铁锭升级</span></td>
+</tr>
+<tr class="magic"><th>七星剑<br/><span class="lore">抢夺 I<br/>横扫之刃 III<br/>耐久 II<br/>经验修补<br/>+20% 攻击速度<br/>+15 攻击伤害</span></th><td>灵璧石剑+铁锭</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row">
+	<span class="invslot sprite" title="铁锭" style="background-position:-224px -1120px">
+</span><span class="invslot sprite" title="铁锭" style="background-position:-224px -1120px">
+</span><span class="invslot sprite" title="铁锭" style="background-position:-224px -1120px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="铁锭" style="background-position:-224px -1120px">
+</span><span class="invslot sprite" title="灵璧石剑" style="background-position:-352px -1280px">
+</span><span class="invslot sprite" title="铁锭" style="background-position:-224px -1120px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="铁锭" style="background-position:-224px -1120px">
+</span><span class="invslot sprite" title="铁锭" style="background-position:-224px -1120px">
+</span><span class="invslot sprite" title="铁锭" style="background-position:-224px -1120px">
+</span>
+</span>
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="七星剑" style="background-position:-96px -1280px">
+</span>
+</span>
+</span></div></td><td><span class="lore">等级 11<br/>使用金锭升级</span></td>
+</tr>
+<tr class="magic"><th>君子剑<br/><span class="lore">抢夺 II<br/>横扫之刃 III<br/>耐久 II<br/>经验修补<br/>+20% 攻击速度<br/>+15 攻击伤害</span></th><td>七星剑+金锭</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row">
+	<span class="invslot sprite" title="金锭" style="background-position:-160px -1120px">
+</span><span class="invslot sprite" title="金锭" style="background-position:-160px -1120px">
+</span><span class="invslot sprite" title="金锭" style="background-position:-160px -1120px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="金锭" style="background-position:-160px -1120px">
+</span><span class="invslot sprite" title="七星剑" style="background-position:-256px -1280px">
+</span><span class="invslot sprite" title="金锭" style="background-position:-160px -1120px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="金锭" style="background-position:-160px -1120px">
+</span><span class="invslot sprite" title="金锭" style="background-position:-160px -1120px">
+</span><span class="invslot sprite" title="金锭" style="background-position:-160px -1120px">
+</span>
+</span>
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="君子剑" style="background-position:-96px -1280px">
+</span>
+</span>
+</span></div></td><td><span class="lore">等级 12<br/>使用钻石升级</span></td>
+</tr>
+<tr class="magic"><th>碧血剑<br/><span class="lore">抢夺 II<br/>横扫之刃 IV<br/>耐久 II<br/>经验修补<br/>+20% 攻击速度<br/>+20 攻击伤害</span></th><td>君子剑+钻石</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row">
+	<span class="invslot sprite" title="钻石" style="background-position:-992px -1088px">
+</span><span class="invslot sprite" title="钻石" style="background-position:-992px -1088px">
+</span><span class="invslot sprite" title="钻石" style="background-position:-992px -1088px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="钻石" style="background-position:-992px -1088px">
+</span><span class="invslot sprite" title="君子剑" style="background-position:-256px -1280px">
+</span><span class="invslot sprite" title="钻石" style="background-position:-992px -1088px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="钻石" style="background-position:-992px -1088px">
+</span><span class="invslot sprite" title="钻石" style="background-position:-992px -1088px">
+</span><span class="invslot sprite" title="钻石" style="background-position:-992px -1088px">
+</span>
+</span>
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="碧血剑" style="background-position:-96px -1280px">
+</span>
+</span>
+</span></div></td><td><span class="lore">等级 13<br/>使用绿宝石升级</span></td>
+</tr>
+<tr class="magic"><th>轩辕剑<br/><span class="lore">抢夺 III<br/>横扫之刃 IV<br/>耐久 II<br/>经验修补<br/>+20% 攻击速度<br/>+20 攻击伤害</span></th><td>碧血剑+绿宝石</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row">
+	<span class="invslot sprite" title="绿宝石" style="background-position:-0px -1120px">
+</span><span class="invslot sprite" title="绿宝石" style="background-position:-0px -1120px">
+</span><span class="invslot sprite" title="绿宝石" style="background-position:-0px -1120px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="绿宝石" style="background-position:-0px -1120px">
+</span><span class="invslot sprite" title="碧血剑" style="background-position:-256px -1280px">
+</span><span class="invslot sprite" title="绿宝石" style="background-position:-0px -1120px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="绿宝石" style="background-position:-0px -1120px">
+</span><span class="invslot sprite" title="绿宝石" style="background-position:-0px -1120px">
+</span><span class="invslot sprite" title="绿宝石" style="background-position:-0px -1120px">
+</span>
+</span>
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="轩辕剑" style="background-position:-96px -1280px">
+</span>
+</span>
+</span></div></td><td><span class="lore">等级 14<br/>使用不死图腾升级</span></td>
+</tr>
+<tr class="magic"><th>倚天剑<br/><span class="lore">抢夺 III<br/>横扫之刃 IV<br/>耐久 III<br/>经验修补<br/>+20% 攻击速度<br/>+20 攻击伤害</span></th><td>轩辕剑+不死图腾</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row">
+	<span class="invslot sprite" title="不死图腾" style="background-position:-192px -1408px">
+</span><span class="invslot sprite" title="不死图腾" style="background-position:-192px -1408px">
+</span><span class="invslot sprite" title="不死图腾" style="background-position:-192px -1408px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="不死图腾" style="background-position:-192px -1408px">
+</span><span class="invslot sprite" title="轩辕剑" style="background-position:-256px -1280px">
+</span><span class="invslot sprite" title="不死图腾" style="background-position:-192px -1408px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="不死图腾" style="background-position:-192px -1408px">
+</span><span class="invslot sprite" title="不死图腾" style="background-position:-192px -1408px">
+</span><span class="invslot sprite" title="不死图腾" style="background-position:-192px -1408px">
+</span>
+</span>
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="倚天剑" style="background-position:-96px -1280px">
+</span>
+</span>
+</span></div></td><td><span class="lore">等级 15<br/>使用亡灵之魂升级</span></td>
+</tr>
+
+
+<tr class="magic"><th>雌雄双股剑<br/><span class="lore">抢夺 III<br/>横扫之刃 IV<br/>耐久 III<br/>经验修补<br/>+25% 攻击速度<br/>+20 攻击伤害</span></th><td>倚天剑+亡灵之魂</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row">
+	<span class="invslot sprite" title="亡灵之魂" style="background-position:-736px -640px">
+</span><span class="invslot sprite" title="亡灵之魂" style="background-position:-736px -640px">
+</span><span class="invslot sprite" title="亡灵之魂" style="background-position:-736px -640px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="亡灵之魂" style="background-position:-736px -640px">
+</span><span class="invslot sprite" title="倚天剑" style="background-position:-256px -1280px">
+</span><span class="invslot sprite" title="亡灵之魂" style="background-position:-736px -640px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="亡灵之魂" style="background-position:-736px -640px">
+</span><span class="invslot sprite" title="亡灵之魂" style="background-position:-736px -640px">
+</span><span class="invslot sprite" title="亡灵之魂" style="background-position:-736px -640px">
+</span>
+</span>
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="雌雄双股剑" style="background-position:-32px -1280px">
+</span>
+</span>
+</span></div></td><td><span class="lore">等级 16<br/>使用生物之肢升级</span></td>
+</tr>
+<tr class="magic"><th>子母鸳鸯剑<br/><span class="lore">抢夺 III<br/>横扫之刃 V<br/>耐久 III<br/>经验修补<br/>+25% 攻击速度<br/>+25 攻击伤害</span></th><td>雌雄双股剑+生物之肢</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row">
+	<span class="invslot sprite" title="生物之肢" style="background-position:-800px -640px">
+</span><span class="invslot sprite" title="生物之肢" style="background-position:-800px -640px">
+</span><span class="invslot sprite" title="生物之肢" style="background-position:-800px -640px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="生物之肢" style="background-position:-800px -640px">
+</span><span class="invslot sprite" title="雌雄双股剑" style="background-position:-192px -1280px">
+</span><span class="invslot sprite" title="生物之肢" style="background-position:-800px -640px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="生物之肢" style="background-position:-800px -640px">
+</span><span class="invslot sprite" title="生物之肢" style="background-position:-800px -640px">
+</span><span class="invslot sprite" title="生物之肢" style="background-position:-800px -640px">
+</span>
+</span>
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="子母鸳鸯剑" style="background-position:-32px -1280px">
+</span>
+</span>
+</span></div></td><td><span class="lore">等级 17<br/>使用海洋之心升级</span></td>
+</tr>
+<tr class="magic"><th>流星蝴蝶剑<br/><span class="lore">抢夺 IV<br/>横扫之刃 V<br/>耐久 III<br/>经验修补<br/>+25% 攻击速度<br/>+25 攻击伤害</span></th><td>子母鸳鸯剑+海洋之心</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row">
+	<span class="invslot sprite" title="海洋之心" style="background-position:-448px -1120px">
+</span><span class="invslot sprite" title="海洋之心" style="background-position:-448px -1120px">
+</span><span class="invslot sprite" title="海洋之心" style="background-position:-448px -1120px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="海洋之心" style="background-position:-448px -1120px">
+</span><span class="invslot sprite" title="子母鸳鸯剑" style="background-position:-192px -1280px">
+</span><span class="invslot sprite" title="海洋之心" style="background-position:-448px -1120px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="海洋之心" style="background-position:-448px -1120px">
+</span><span class="invslot sprite" title="海洋之心" style="background-position:-448px -1120px">
+</span><span class="invslot sprite" title="海洋之心" style="background-position:-448px -1120px">
+</span>
+</span>
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="流星蝴蝶剑" style="background-position:-32px -1280px">
+</span>
+</span>
+</span></div></td><td><span class="lore">等级 18<br/>使用末影之灵升级</span></td>
+</tr>
+<tr class="magic"><th>干将莫邪剑<br/><span class="lore">抢夺 V<br/>横扫之刃 V<br/>耐久 III<br/>经验修补<br/>+25% 攻击速度<br/>+25 攻击伤害</span></th><td>流星蝴蝶剑+末影之灵</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row">
+	<span class="invslot sprite" title="末影之灵" style="background-position:-32px -1120px">
+</span><span class="invslot sprite" title="末影之灵" style="background-position:-32px -1120px">
+</span><span class="invslot sprite" title="末影之灵" style="background-position:-32px -1120px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="末影之灵" style="background-position:-32px -1120px">
+</span><span class="invslot sprite" title="流星蝴蝶剑" style="background-position:-192px -1280px">
+</span><span class="invslot sprite" title="末影之灵" style="background-position:-32px -1120px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="末影之灵" style="background-position:-32px -1120px">
+</span><span class="invslot sprite" title="末影之灵" style="background-position:-32px -1120px">
+</span><span class="invslot sprite" title="末影之灵" style="background-position:-32px -1120px">
+</span>
+</span>
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="干将莫邪剑" style="background-position:-32px -1280px">
+</span>
+</span>
+</span></div></td><td><span class="lore">等级 19<br/>使用下界之星升级</span></td>
+</tr>
+<tr class="magic"><th>尚方斩马剑<br/><span class="lore">抢夺 V<br/>横扫之刃 V<br/>+25% 攻击速度<br/>+25 攻击伤害<br/>无法破坏</span></th><td>干将莫邪剑+下界之星</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row">
+	<span class="invslot sprite" title="下界之星" style="background-position:-352px -1120px">
+</span><span class="invslot sprite" title="下界之星" style="background-position:-352px -1120px">
+</span><span class="invslot sprite" title="下界之星" style="background-position:-352px -1120px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="下界之星" style="background-position:-352px -1120px">
+</span><span class="invslot sprite" title="干将莫邪剑" style="background-position:-192px -1280px">
+</span><span class="invslot sprite" title="下界之星" style="background-position:-352px -1120px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="下界之星" style="background-position:-352px -1120px">
+</span><span class="invslot sprite" title="下界之星" style="background-position:-352px -1120px">
+</span><span class="invslot sprite" title="下界之星" style="background-position:-352px -1120px">
+</span>
+</span>
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="尚方斩马剑" style="background-position:-192px -1280px">
+</span>
+</span>
+</span></div></td><td><span class="lore">等级 20</span></td>
+</tr>
+<tr class="traffic" id="traffic"><th colspan="4">交通</th>
+</tr>
+<tr class="traffic"><th class="left">一级道路强化剂<br/>
+二级道路强化剂<br/>
+三级道路强化剂<br/>
+四级道路强化剂</th><td>浮冰+石台阶<br/>
+浮冰+砂岩台阶<br/>
+浮冰+石英台阶<br/>
+浮冰+红砂岩台阶</td><td><div><span class="mcui">
+	<span>
+	<span class="mcui-row">
+	<span class="invslot sprite" title="红砂岩台阶" style="background-position:-608px -896px">
+</span><span class="invslot sprite" title="红砂岩台阶" style="background-position:-608px -896px">
+</span><span class="invslot sprite" title="红砂岩台阶" style="background-position:-608px -896px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="红砂岩台阶" style="background-position:-608px -896px">
+</span><span class="invslot sprite" title="浮冰" style="background-position:-928px -960px">
+</span><span class="invslot sprite" title="红砂岩台阶" style="background-position:-608px -896px">
+</span>
+</span><span class="mcui-row">
+	<span class="invslot sprite" title="红砂岩台阶" style="background-position:-608px -896px">
+</span><span class="invslot sprite" title="红砂岩台阶" style="background-position:-608px -896px">
+</span><span class="invslot sprite" title="红砂岩台阶" style="background-position:-608px -896px">
+</span>
+</span>
+</span><span class="mcui-arrow">
+</span><span class="mcui-output invslot">
+	<span class="sprite" title="四级道路强化剂" style="background-position:-672px -1120px">
+</span></span></span></div></td><td>可一次合成64个。</td>
+</tr>
+</tbody></table>
+
+<header><h2 onclick="$('#update').toggle(1000)">版本记录</h2></header>
+<table id="update">
+<thead><tr>
+	<th width="150px">模组版本与名称</th>
+	<th width="150px">更新时间与大小</th>
+	<th width="880px">更新内容</th>
+</tr></thead>
+<tbody>
+<!--1.0-->
+<tr class="v1-0">
+	<th rowspan="4">1.0</th>
+	<th rowspan="4">2016年08月05日</th>
+	<td>新增羊、牛、鸡、猪、兔子、哞菇、蝙蝠、鱿鱼、村民、北极熊、蠹虫、
+潜影贝、骷髅、凋灵骷髅、女巫、僵尸、僵尸猪人、史莱姆、岩浆怪、恶魂、烈焰人、蜘蛛、洞穴蜘蛛、爬行者、高压爬行者、末影人、末影螨、远古守卫者、
+守卫者、马、驴、豹猫、狼共33种怪物蛋的合成。</td></tr>
+<tr class="v1-0"><td>现在活塞可以回收剑、镐、盔甲、矿车、马铠，制作煤炭、钻石。</td></tr>
+<tr class="v1-0"><td>新增“放置 地标”和“回到 地标”，可用于在主世界传送。</td></tr>
+<tr class="v1-0"><td>新增物品松散的石头、疏松的石头、普通的石头、紧密的石头、致密的石头，可以用来制作剑、镐、盔甲和地标。</td></tr>
+<!--1.1-->
+<tr class="v1-1">
+	<th rowspan="5">1.1<br/><span class="lore">美化更新</span></th>
+	<th rowspan="5">2016年08月05日<br/><span class='lore'>18×6×11</span></th>
+	<td>现在活塞可以回收花岗岩、闪长岩、安山岩以得到下界石英。</td></tr>
+<tr class="v1-1"><td>将松散的石头、疏松的石头、普通的石头、紧密的石头、致密的石头更改为精制煤、精制铁锭、精制金锭、精制钻石、精制下界之星，去掉所有关于密度的描述。</td></tr>
+<tr class="v1-1"><td>修改“回到 地标”合成配方，种类数由9减少为8。</td></tr>
+<tr class="v1-1"><td>模组更改为相对坐标，合成方式由投掷器修改为玩家背包。</td></tr>
+<tr class="v1-1"><td>精简代码，增加了封装和开关。</td></tr>
+<!--1.2-->
+<tr class="v1-2">
+	<th rowspan="2">1.2<br /><span class="lore">实体更新</span></th>
+	<th rowspan="2">2016年10月02日<br/><span class='lore'>18×6×11</span></th>
+	<td>游戏本体版本升级为1.11，不再支持1.11之前的版本。</td></tr>
+<tr class="v1-2"><td>新增唤魔者和羊驼刷怪蛋的合成。</td></tr>
+<!--1.3-->
+<tr class="v1-3">
+	<th rowspan="4">1.3<br /><span class="lore">效率更新</span></th>
+	<th rowspan="4">2016年10月08日<br/><span class='lore'>13×10×13</span></th>
+	<td>新增精制矿物合成锹、斧、传送球。</td></tr>
+<tr class="v1-3"><td>删除地标。</td></tr>
+<tr class="v1-3"><td>新增高级药水的合成。</td></tr>
+<tr class="v1-3"><td>模组名称更改为“更多的合成”。</td></tr>
+<!--1.4-->
+<tr class="v1-4">
+	<th rowspan="4">1.4<br /><span class="lore">工具更新</span></th>
+	<th rowspan="4">2016年10月13日<br/><span class='lore'>13×11×12</span></th>
+	<td>现在活塞可以回收鞍。</td></tr>
+<tr class="v1-4"><td>新增物品强力磁铁、矿物探测、渔网。</td></tr>
+<tr class="v1-4"><td>精简代码。</td></tr>
+<tr class="v1-4"><td>现在模组开关被破坏后可恢复。</td></tr>
+<tr class="v1-4"><th rowspan="2">1.4.1</th>
+	<th rowspan="2">2016年10月17日<br/><span class="lore">13×11×12</span></th>
+	<td>添加模组专用材质，包含背包合成区域GUI的修改、标语等。</td></tr>
+<tr class="v1-4"><td>修复bug。</td></tr>
+<!--1.5-->
+<tr class="v1-5">
+	<th rowspan="9">1.5<br /><span class="lore">结构更新</span></th>
+	<th rowspan="9">2016年10月24日<br/><span class="lore">13×13×12</span></th>
+	<td>新增生物鸟和鸟刷怪蛋的合成。</td></tr>
+<tr class="v1-5"><td>现在粘性活塞可以代替活塞参与回收。</td></tr>
+<tr class="v1-5"><td>新增建筑：铁匠铺、沙漠神庙、末地船、遗迹、图书馆。</td></tr>
+<tr class="v1-5"><td>新增植物：橡树、云杉树、白桦树、金合欢树、灌木。</td></tr>
+<tr class="v1-5"><td>新增画：呐喊、蒙娜丽莎、最后的晚餐、向日葵、日出·印象、阿让特伊莫奈花园里的卡美伊·莫奈和孩子、春、夏、秋、冬。</td></tr>
+<tr class="v1-5"><td>修改药水名称和颜色。</td></tr>
+<tr class="v1-5"><td>矿物探测时长由8秒修改为5秒。</td></tr>
+<tr class="v1-5"><td>修改盔甲合成配方。</td></tr>
+<tr class="v1-5"><td>精简合成代码。</td></tr>
+<tr class="v1-5"><th rowspan="3">1.5.1</th>
+	<th rowspan="3">2016年10月25日<br/><span class='lore'>13×13×12</span></th>
+	<td>修改精制矿物、矿物探测器、遗迹的合成配方。</td></tr>
+<tr class="v1-5"><td>调整命令方块的循环方式，通过降低合成速度来减少卡顿。</td></tr>
+<tr class="v1-5"><td>修复bug。</td></tr>
+<tr class="v1-5"><th rowspan="6">1.5.2</th>
+	<th rowspan="6">2016年11月12日<br/><span class='lore'>13×13×12</span></th>
+	<td>修改精制矿物合成的工具附魔次序。</td></tr>
+<tr class="v1-5"><td>修复盔甲不能正确提供护甲的bug。</td></tr>
+<tr class="v1-5"><td>取消精制靴子的速度效果。</td></tr>
+<tr class="v1-5"><td>新增物品强力时钟，增加100%的速度。</td></tr>
+<tr class="v1-5"><td>新增画：星夜、自由引导人民、拾穗者、落霞孤鹜图、竹石图。</td></tr>
+<tr class="v1-5"><td>增减了材质的一些标语。</td></tr>
+<!--1.6-->
+<tr class="v1-6">
+	<th rowspan="33">1.6<br /><span class="lore">科学更新</span></th>
+	<th rowspan="33">2017年05月12日<br/><span class='lore'>681 KB</span></th>
+	<td>游戏本体版本升级为1.12 pre，不再支持1.12之前的版本。</td></tr>
+<tr class="v1-6"><td>不再支持使用粘性活塞回收。</td></tr>
+<tr class="v1-6"><td>新增回收斧锹锄。</td></tr>
+<tr class="v1-6"><td>调整所有回收产物为1。</td></tr>
+<tr class="v1-6"><td>修改压制钻石配方。</td></tr>
+<tr class="v1-6"><td>新增压制鞍、蜘蛛网、马铠、粘土、浮冰。</td></tr>
+<tr class="v1-6"><td>删除鸟刷怪蛋，增加鹦鹉、卫道士、幻术师刷怪蛋的合成。</td></tr>
+<tr class="v1-6"><td>恢复精制矿物合成材料为需要使用低一级的精制矿物。</td></tr>
+<tr class="v1-6"><td>修复了精制煤炭的名称。</td></tr>
+<tr class="v1-6"><td>调整锹的合成形状为通常形状。</td></tr>
+<tr class="v1-6"><td>修复了剑和护腿不在对应槽位也有属性加成和护腿的盔甲错误。</td></tr>
+<tr class="v1-6"><td>为精制矿物合成的剑添加了横扫之刃魔咒。</td></tr>
+<tr class="v1-6"><td>调整传送的距离为200米。</td></tr>
+<tr class="v1-6"><td>为强力磁铁加入冷却，时间为5秒。</td></tr>
+<tr class="v1-6"><td>修复矿物探测器和传送球的漏洞。</td></tr>
+<tr class="v1-6"><td>新增附魔金苹果的合成。</td></tr>
+<tr class="v1-6"><td>删除了建筑和植物的合成。</td></tr>
+<tr class="v1-6"><td>新增树种的合成，放置在羊毛/树叶可以得到不同的树。</td></tr>
+<tr class="v1-6"><td>修改画的合成配方。</td></tr>
+<tr class="v1-6"><td>删除了画：春夏秋冬；增加了画：岩间圣母、创造亚当、伏尔加河上的纤夫、开国大典、无名女郎。</td></tr>
+<tr class="v1-6"><td>增加24种进度。</td></tr>
+<tr class="v1-6"><td>有几率天然生成高压爬行者。</td></tr>
+<tr class="v1-6"><td>增加僵尸猪掉落物0-1猪肉。</td></tr>
+<tr class="v1-6"><td>增加僵尸村民被玩家杀死时掉落0-1绿宝石，不受抢夺附魔影响。</td></tr>
+<tr class="v1-6"><td>增加村民掉落物0-4绿宝石。</td></tr>
+<tr class="v1-6"><td>增加驴、骡、马、羊驼掉落物1-3生驴、骡、马、羊驼肉（属性同羊肉）、鹦鹉掉落物1-2生鹦鹉肉（属性同鸡肉）、北极熊掉落物1-4生熊肉（属性同牛肉），着火时掉落对应熟肉。</td></tr>
+<tr class="v1-6"><td>增加哞菇掉落物3-5红蘑菇。</td></tr>
+<tr class="v1-6"><td>鸡、鹦鹉着火时死亡将不掉落羽毛。</td></tr>
+<tr class="v1-6"><td>唤魔者掉落物不死图腾修改为金色。</td></tr>
+<tr class="v1-6"><td>新增钓鱼宝藏湿海绵；新增钓鱼垃圾火药，和腐肉等权重。</td></tr>
+<tr class="v1-6"><td>移除了模组所需的命令方块，改为使用函数实现。</td></tr>
+<tr class="v1-6"><td>修改了材质的文字部分。</td></tr>
+<tr class="v1-6"><td>修复了GUI材质透明错误。</td></tr>
+<tr class="v1-6"><th rowspan="4">1.6.1</th>
+	<th rowspan="4">2017年05月13日<br/><span class='lore'>681 KB</span></th>
+	<td>现在可以一次性回收64个安山岩、闪长岩、花岗岩，16个石英块，64个木炭。</td></tr>
+<tr class="v1-6"><td>现在可以一次性合成8或64个精制矿物。</td></tr>
+<tr class="v1-6"><td>修复无法回收石英块的错误。</td></tr>
+<tr class="v1-6"><td>修复了仍能使用粘性活塞回收的错误。</td></tr>
+<!--1.7-->
+<tr class="v1-7">
+	<th rowspan="34">1.7<br/><span class="lore">重组更新</span></th>
+	<th rowspan="34">2017年06月07日<br/><span class='lore'>861 KB</span></th>
+	<td>游戏本体版本升级为1.12，不再支持1.12之前的版本。</td></tr>
+<tr class="v1-7"><td>移除精制矿物系统。</td></tr>
+<tr class="v1-7"><td>将模组划分为活塞工艺、生物制药、绘画雕塑、强化系统、交通设施、角色装饰、进度和其它共8个部分。</td></tr>
+<tr class="v1-7"><td>移除木制品和石制品的回收。</td></tr>
+<tr class="v1-7"><td>新增回收地狱疣块。</td></tr>
+<tr class="v1-7"><td>修改钻石、强力时钟、强力磁铁、矿物探测器、渔网、传送球的合成配方。</td></tr>
+<tr class="v1-7"><td>移除强力时钟。</td></tr>
+<tr class="v1-7"><td>新增时间调节器，放置在物品在展示框时，随机刻由3增加至6。</td></tr>
+<tr class="v1-7"><td>新增闹钟，放置在物品在展示框时会每小时（实际时间每50秒）字幕报时。</td></tr>
+<tr class="v1-7"><td>移除饱和药水。</td></tr>
+<tr class="v1-7"><td>交换急迫药水和抗性药水配方。</td></tr>
+<tr class="v1-7"><td>修改抗火药水、夜视药水、隐身药水、水肺药水的持续时间为16分钟。
+</td></tr>
+<tr class="v1-7"><td>新增8种矿石种子的合成，种下后生成一个生命值为1的潜影贝，平均每隔5分钟会用矿石替换顶部的牺牲品，每个种子大约可以生产25颗矿石。煤矿石、铁矿石、金矿石、钻石矿石、下界石英矿石、青金石矿石、红石矿石和绿宝石矿石所需的牺牲品分别为石头、煤矿石、铁矿石、金矿石、地狱岩、粘土、青金石矿石、红石矿石。</td></tr>
+<tr class="v1-7"><td>修改画“日出·印象”的名称为“印象·日出”。</td></tr>
+<tr class="v1-7"><td>新增强化系统，可强化的物品有盔甲、剑锹斧镐、弓、钓鱼竿，从皮革盔甲、木制品、弓、钓鱼竿出发，按指定次序依次消耗8个指定的牺牲品来升级，共20个等级。
+不同等级物品拥有不同的名称、材质、魔咒和属性加成。
+升级后的物品只有30点耐久，需要消耗经验值来回复耐久度。
+各等级牺牲品为燧石、粘土、火药、荧石粉、粘液球、皮革、煤炭、红石、青金石、下界石英、铁锭、金锭、钻石、绿宝石、不死图腾、亡灵之魂、生物之肢、海洋之心、末影之眼、下界之星。
+</td></tr>
+<tr class="v1-7"><td>新增四个等级的道路固化剂的合成，依次在红石块上使用可以得到不同等级的道路，玩家在道路上可以获得相应等级的加速效果。</td></tr>
+<tr class="v1-7"><td>新增称号系统，每次杀死生物或进行背包合成玩家可以提高功力，根据功力的不同获得不同的前缀称号。</td></tr>
+<tr class="v1-7"><td>新增头饰系统。当头盔位置放置了一个南瓜，而副手为指定的一个物品时，会自动佩戴该物品。一共56款样式，包括空气头盔、矿工帽、绷带、绅士帽、长冠、围脖(16款)、厚围脖、超厚围脖、花(14款)、头上长草(4款)、眼镜(6款)、口罩、犄角、奥特曼(7款)。</td></tr>
+<tr class="v1-7"><td>删除、修改、新增了一些进度，修复了一些bug。</td></tr>
+<tr class="v1-7"><td>新增村民掉落物0-2绿宝石和3经验值。</td></tr>
+<tr class="v1-7"><td>移除僵尸村民的掉落物绿宝石。</td></tr>
+<tr class="v1-7"><td>新增物品亡灵之魂，属性同毒马铃薯，为僵尸、僵尸村民、僵尸猪人、僵尸马、尸壳、骷髅、流髑、凋灵骷髅和骷髅马的稀有掉落物，天然出现在沙漠神殿、地牢和丛林神庙箱子战利品。</td></tr>
+<tr class="v1-7"><td>新增物品生物之肢，属性同兔子脚，为蜘蛛、洞穴蜘蛛、蠹虫、末影螨和潜影贝的稀有掉落物，天然出现在要塞祭坛、要塞储藏室、废弃矿井箱子战利品。</td></tr>
+<tr class="v1-7"><td>新增物品海洋之心，属性同海晶砂粒，为鱿鱼、守卫者和远古守卫者的稀有掉落物；</td></tr>
+<tr class="v1-7"><td>新增物品飞翔之翼，属性同羽毛，为鸡、鹦鹉和蝙蝠未着火时的稀有掉落物；</td></tr>
+<tr class="v1-7"><td>新增物品居民之证，属性同绿宝石，为僵尸村民、村民、卫道士和唤魔者的稀有掉落物，天然出现在村庄、林地府邸、雪屋箱子战利品。</td></tr>
+<tr class="v1-7"><td>新增物品末影之灵，属性同末影珍珠，为末影螨、末影人和潜影贝的稀有掉落物；</td></tr>
+<tr class="v1-7"><td>新增物品硝火之烬，属性同烈焰粉，为烈焰人、爬行者、恶魂和岩浆怪的稀有掉落物，天然出现在下界要塞箱子战利品。</td></tr>
+<tr class="v1-7"><td>
+新增牛、猪、羊、哞菇、兔子、鸡、鹦鹉、鱿鱼、马、驴、骡、羊驼、北极熊、豹猫、狼、僵尸、僵尸村民、骷髅、爬行者、女巫、蜘蛛、洞穴蜘蛛、史莱姆、尸壳、流髑、骷髅马、守卫者、远古守卫者、村民、卫道士、恼鬼、铁傀儡、雪傀儡、僵尸猪人、烈焰人、恶魂、岩浆怪、末影人、潜影贝和末影龙稀有掉落物为对应生物的头。</td></tr>
+<tr class="v1-7"><td>增加钓鱼宝藏鱼头、鲑鱼头、小丑鱼头和河豚头。</td></tr>
+<tr class="v1-7"><td>为模组物品和进度添加了英文支持。</td></tr>
+<tr class="v1-7"><td>修改终末之诗为海绵宝宝主题曲。</td></tr>
+<tr class="v1-7"><td>添加了一个彩蛋：传送球一次可以合成四个。</td></tr>
+<tr class="v1-7"><td>调整了函数的分布，大幅度降低了卡顿。</td></tr>
+<tr class="v1-7">
+	<th rowspan="4">1.7.1</th>
+	<th rowspan="4">2017年06月08日<br/><span class='lore'>861 KB</span></th>
+	<td>修复了材质中的文字错误。</td></tr>
+<tr class="v1-7"><td>修复了称号系统的数据与描述不符。</td></tr>
+<tr class="v1-7"><td>修复了强化物品的耐久值错误。</td></tr>
+<tr class="v1-7"><td>调整了时间调节器对于随机刻加成由+3变为+1。</td></tr>
+<tr class="v1-7">
+	<th rowspan="2">1.7.2</th>
+	<th rowspan="2">2017年06月09日<br/><span class='lore'>862 KB</span></th>
+	<td>精简了时间调节器、闹钟的代码。</td></tr>
+<tr class="v1-7"><td>增加了闹钟的音效，清晨和傍晚会报时，音效为entity.player.levelup，音量20，音调1.5。</td></tr>
+<tr class="v1-7">
+	<th rowspan="2">1.7.3</th>
+	<th rowspan="2">2017年06月15日<br/><span class='lore'>863 KB</span></th>
+	<td>修复了制作钻石的配方中错误，应为煤炭却为煤炭块。</td></tr>
+<tr class="v1-7"><td>为安装包添加了安装说明。</td></tr>
+<tr class="v1-7">
+	<th rowspan="1">1.7.4</th>
+	<th rowspan="1">2017年06月16日<br/><span class='lore'>863 KB</span></th>
+	<td>修复了《最后的晚餐》和《落霞孤鹜图》合成后缺少一张的问题。</td></tr>
+<!--1.8-->
+</tbody>
+</table>
+</div>
+<div style="cursor:pointer;position:fixed;bottom:80px;left:95%;background:url(http://www.mcbbs.net/template/mcbbs/img/mc_creeper.gif) no-repeat; visibility: visible;height:200px;width:80px" id="scrolltop" onclick="window.scrollTo('0','0')"></div>
+
+<body><html>
+<!--<span class="mcui-icons"><span class="mcui-shapeless" title="此配方是无形的，材料可以以任何排列方式放置在合成格内。"></span></span>-->
+
+
+
+
+
