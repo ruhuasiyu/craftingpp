@@ -10,6 +10,9 @@ In namespace cpp, please note that the scoreboards and teams are named as cppCra
 
 The version 1.8 for minecraft java 1.13 is still in developing (even not started yet). Welcome to contribute codes!
 
+This project is licensed under the terms of the GNU General Public License v3.0.
+
+
 # 更多的合成
 这是Minecraft原版模组，添加了大量的合成表、食物、建筑等内容。浏览 https://ruhuasiyu.github.io/craftingpp 以获得更多信息。
 
@@ -19,3 +22,5 @@ minecraft 修改了原版的战利品表、合成配方，以及添加了tick/lo
 namespace中，记分板和组命名类似于 cppCraft, cppClearslot 等, 标签命类似于 cpp_sth。不同的合成配方采用了 cppCraft 记分板的不同区间。
 
 版本1.8（支持Minecraft Java 1.13）还在开发中，欢迎大家贡献代码！
+
+该项目采用 GNU General Public License v3.0 协议。
