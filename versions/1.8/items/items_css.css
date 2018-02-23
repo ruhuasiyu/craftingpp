@@ -434,7 +434,11 @@ span.green_bed{	background-position: -320px -1568px;}
 span.white_bed{	background-position: -608px -1568px;}
 
 span.white_carpet{	background-position: -64px -1632px;}
-span.empty{	background-position: -992px -1632px;}
+span.empty{	background-position: -992px -1664px;}
+span.turtle_helmet{	background-position:-512px -1664px;}
+
+span.turtle_spawn_egg{background-image:url("https://d1u5p3l4wpay3k.cloudfront.net/minecraft_zh_gamepedia/9/92/Grid_Spawn_Turtle.png");}
+
 
 span.wheat_plant{	background-position: -480px -160px;}
 span.beetroot_plant{	background-position: -320px -608px;}

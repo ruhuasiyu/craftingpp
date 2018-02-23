@@ -315,7 +315,7 @@ function change(str){
 <body onload="change('intro')">
 
 <div class="banner">
-<a href="../index.html"><img src="items/screenshots/banner.png" style="width:100%;height:200px"/></a>
+<a href="../index.html"><img src="items/screenshots/banner.png" style="width:100%;"/></a>
 </div>
 
 <!--<header style="background:purple; padding:3px 60px; margin-top:0;">
@@ -375,7 +375,7 @@ function change(str){
 
 <tr><td><span class="mcui-row"><span id="wing_of_fly" class="feather" title="飞翔之翼"><span class="enchant">*</span></span></span></td>
 <th><strong>飞翔之翼</strong></th>
-<td>鸡/鹦鹉/蝙蝠</td></tr>
+<td>鸡/鹦鹉/蝙蝠/幻影鳐</td></tr>
 
 <tr><td><span class="mcui-row"><span id="arm_of_mob" class="rabbit_foot" title="生物之肢"><span class="enchant">*</span></span></span></td>
 <th><strong>生物之肢</strong></th>
@@ -384,7 +384,7 @@ function change(str){
 
 <tr><td><span class="mcui-row"><span id="heart_of_ocean" class="prismarine_crystals" title="海洋之心"><span class="enchant">*</span></span></span></td>
 <th><strong>海洋之心</strong></th>
-<td>鱿鱼/守卫者/远古守卫者</td></tr>
+<td>鱿鱼/守卫者/远古守卫者/鱼/河豚/海龟</td></tr>
 
 <tr><td><span class="mcui-row"><span id="soul_of_undead" class="poisonous_potato" title="亡灵之魂"><span class="enchant">*</span></span></span></td>
 <th><strong>亡灵之魂</strong></th>
@@ -1796,7 +1796,7 @@ function change(str){
 <span class="lava_bucket" title="焚毁器"><span class="enchant">*</span>
 </span></span></span></td><td></td></tr>
 
-<tr><th id="converter_core"><strong>转化器核心 (Converter Core)</strong></th>
+<tr><th id="block_converter"><strong>方块转化器 (Block Converter)</strong></th>
 <td>烈焰粉+<a href="#red_force_of_fire">红色火之力</a>+附魔之瓶+岩浆块+<a href="#enchanted_diamond">附魔钻石</a></td><td><div><span class="mcui">
 <span><span class="mcui-row"><span class="experience_bottle" title="附魔之瓶">
 </span><span class="colorful_items red_force_of_fire" title="红色火之力"><span class="stacksize">0</span>
@@ -1808,8 +1808,8 @@ function change(str){
 </span><span class="heavy_weighted_pressure_plate" title="硅板"><span class="enchant">*</span>
 </span><span class="iron_ingot" title="附魔铁锭"><span class="enchant">*</span>
 </span></span></span><span class="mcui-arrow"></span><span class="mcui-output">
-<span class="magma_block" title="转化器核心"><span class="enchant">*</span>
-</span></span></span></td><td></td></tr>
+<span class="shulker_spawn_egg" title="方块转化器"><span class="enchant">*</span>
+</span></span></span></td><td>顶部放置待转换的方块，水平方向放置转换后的方块即可，水平方向越多速度越快（最多4个）。所需时间最快为2分钟×次数。可转换的方块为石头→煤矿石→铁矿石→金矿石→钻石矿石，粘土→青金石矿石→红石矿石→绿宝石矿石，地狱岩→石英矿石，红石块→荧石块。破坏后无掉落。</td></tr>
 
 <tr id="elders_words"><th><strong>年长者之教诲 (Elder's Words)</strong></th><td>附魔之瓶+<a href="#blue_force_of_sky">蓝色天之力</a>+<a href="#enchanted_gold">附魔金锭</a>+书+<a href="#enchanted_iron">附魔铁锭</a>+<a href="#enchanted_diamond">附魔钻石</a></td>
 <td><span class="mcui"><span><span class="mcui-row"><span class="experience_bottle" title="附魔之瓶">
@@ -1952,7 +1952,7 @@ function change(str){
 </span></span></span></td><td></td></tr>
 
 </tbody></table>
-
+<!-- 
 <h3>方块转化器</h3>
 <p>放置后，每隔一段时间可转化顶部指定方块，所需时间为2分钟×次数。破坏后无掉落。</p>
 <table style="width:100%;"><thead><tr><th>方块转化器类型</th><th style="width:220px">材料</th><th>合成配方</th><th>矿石种子颜色</th><th>转化前的方块</th></tr></thead>
@@ -2003,7 +2003,7 @@ function change(str){
 红石矿石<br/>
 地狱岩<br/>
 红石块</td></tr></tbody></table>
-
+ -->
 </article>
 
 
@@ -2134,7 +2134,7 @@ function change(str){
 <tr><td><span class="mcui-row"><span class="diamond_leggings" title="钻石胸甲">
 </span><span class="blaze_rod" title="经验释放器"><span class="enchant">*</span>
 </span><span class="pink_tulip" title="粉色郁金香">
-</span><span class="diamond" title="钻石">
+</span><span class="turtle_helmet" title="海龟壳">
 </span></span></td><td><span class="mcui-row"><span class="redstone_torch" title="小火">
 </td><td><span class="mcui-row"><span class="water_bottle" title="大量">
 </span><span class="water_bottle" title="大量">
@@ -2999,7 +2999,7 @@ function change(str){
 <p>玩家在平滑石头、平滑砂岩、平滑红砂岩、平滑石英块上可以获得速度I、速度II、速度III、速度IV的状态效果。</p>
 
 <h3>掷骰子</h3>
-<p>输入 /trigger cppDice set 1 即可掷一次骰子。</p>
+<p>输入 /trigger cppRoll set 1 即可掷一次骰子。</p>
 
 <h3 id="powered_creeper">高压爬行者</h3>
 <p>可天然生成，几率约为10%。</p>
@@ -3013,8 +3013,22 @@ function change(str){
 </article>
 
 <article>
+<h3>烧小块皮革</h3>
+<table class="full-width"><thead><tr><th>名称</th><th>材料</th><th>烧炼配方</th><th>时长</th></tr></thead><tbody>
+
+<tr><th>小块皮革</th><td>腐肉<br/>
+皮革盔甲<br/>
+鞍</td><td>
+<span class="mcui"><span><span class="mcui-row"><span class="rotten_flesh" title="腐肉">
+</span></span><span class="mcui-row"><span style="width:32px;height:32px;background-image:url(items/smelting.png);border-style:none;background-color:#c6c6c6;"></span></span><span class="mcui-row"><span class="coal" title="燃料"></span></span></span><span class="mcui-arrow"></span><span class="mcui-output">
+<span class="rabbit_hide" title="小块皮革">
+</span></span></span>
+</td><td>10秒</td></tr>
+
+</tbody></table>
+
 <h3>楼梯与台阶</h3>
-<p>修改合成得到的楼梯数量为8；新增15种台阶和14种楼梯回收为原方块。</p>
+<p>修改合成得到的楼梯数量为8；新增18种台阶和17种楼梯回收为原方块。</p>
 
 <table class="full-width"><thead><tr><th>名称</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
 <tr><th>任何木楼梯<br/>
@@ -3025,7 +3039,10 @@ function change(str){
 砂岩楼梯<br/>
 石英楼梯<br/>
 红砂岩楼梯<br/>
-紫珀块楼梯</th><td>对应的木板<br/>
+紫珀块楼梯<br/>
+海晶石楼梯<br/>
+海晶石砖楼梯<br/>
+暗海晶石楼梯</th><td>对应的木板<br/>
 圆石/苔石<br/>
 砖块<br/>
 任何石砖<br/>
@@ -3033,7 +3050,10 @@ function change(str){
 任何砂岩<br/>
 任何石英<br/>
 任何红砂岩<br/>
-任何紫珀块</td><td>
+任何紫珀块<br/>
+海晶石<br/>
+海晶石砖<br/>
+暗海晶石</td><td>
 <span class="mcui"><span><span class="mcui-row"><span class="sandstone" title="方块">
 </span><span class="empty">
 </span><span class="empty">
@@ -3077,11 +3097,15 @@ function change(str){
 </tbody></table>
 
 <h3>合成与分解</h3>
-<p>修改合成石英块所需的石英数量为9；新增9个线合成为蜘蛛网；新增石英块、粘土块、荧石、雪块、西瓜、地狱疣块、蜘蛛网的分解。</p>
+<p>修改合成石英块/皮革所需的石英/小块皮革数量为9；新增9个线/冰合成为蜘蛛网/浮冰；新增粘土块、荧石、雪块、西瓜、地狱疣块、蜘蛛网、石英块、皮革的分解。</p>
 <table class="full-width"><thead><tr><th>名称</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
 <tr><th>石英块<br />
-蜘蛛网</th><td>石英<br />
-线</td><td>
+皮革<br />
+蜘蛛网<br />
+浮冰</th><td>石英<br />
+小块皮革<br />
+线<br />
+冰</td><td>
 <span class="mcui"><span><span class="mcui-row"><span class="quartz" title="石英">
 </span><span class="quartz" title="石英">
 </span><span class="quartz" title="石英">
@@ -3097,11 +3121,9 @@ function change(str){
 
 <tr><th>粘土<br />
 荧石粉<br />
-雪球<br />
-石英</th><td>粘土块<br />
+雪球</th><td>粘土块<br />
 荧石<br />
-雪块<br />
-石英块</td><td>
+雪块</td><td>
 <span class="mcui"><span><span class="mcui-row"><span class="empty">
 </span><span class="empty">
 </span><span class="empty">
@@ -3115,11 +3137,15 @@ function change(str){
 <span class="clay_ball" title="粘土"><span class="stacksize">4</span>
 </span></span></span></td></tr>
 
-<tr><th>西瓜<br />
-地狱疣块<br />
-蜘蛛网</th><td>西瓜片<br />
+<tr><th>西瓜片<br />
 地狱疣<br />
-线</td><td>
+线<br />
+石英<br />
+小块皮革</th><td>西瓜<br />
+地狱疣块<br />
+蜘蛛网<br />
+石英块<br />
+皮革</td><td>
 <span class="mcui"><span><span class="mcui-row"><span class="empty">
 </span><span class="empty">
 </span><span class="empty">
@@ -3322,14 +3348,16 @@ function change(str){
 生成 马<br />
 生成 驴<br />
 生成 羊驼<br />
-生成 鹦鹉</th><td>骨头+任意头颅+鸡蛋<br />
-任意生鱼+任意头颅+鸡蛋<br />
-皮革+任意头颅+鸡蛋<br />
-箱子+任意头颅+鸡蛋<br />
-任意地毯+任意头颅+鸡蛋<br />
-羽毛+任意头颅+鸡蛋</td><td>
+生成 鹦鹉<br />
+生成 海龟</th><td>骨头+凋零骷髅头颅+鸡蛋<br />
+任意生鱼+凋零骷髅头颅+鸡蛋<br />
+皮革+凋零骷髅头颅+鸡蛋<br />
+箱子+凋零骷髅头颅+鸡蛋<br />
+任意地毯+凋零骷髅头颅+鸡蛋<br />
+羽毛+凋零骷髅头颅+鸡蛋<br />
+海草+凋零骷髅头颅+鸡蛋</td><td>
 <span class="mcui"><span><span class="mcui-row"><span class="bone" title="骨头">
-</span><span class="wither_skeleton_skull" title="头颅">
+</span><span class="wither_skeleton_skull" title="凋零骷髅头颅">
 </span><span class="bone" title="骨头">
 </span></span><span class="mcui-row"><span class="bone" title="骨头">
 </span><span class="egg" title="鸡蛋">
@@ -3342,7 +3370,7 @@ function change(str){
 </span></span></span></br>
 
 <span class="mcui"><span><span class="mcui-row"><span class="feather" title="羽毛">
-</span><span class="wither_skeleton_skull" title="头颅">
+</span><span class="wither_skeleton_skull" title="凋零骷髅头颅">
 </span><span class="feather" title="羽毛">
 </span></span><span class="mcui-row"><span class="feather" title="羽毛">
 </span><span class="egg" title="鸡蛋">
@@ -3376,58 +3404,6 @@ function change(str){
 </span><span class="empty">
 </span></span></span><span class="mcui-arrow"></span><span class="mcui-output">
 <span class="smooth_stone" title="平滑石头">
-</span></span></span></td></tr>
-</tbody></table>
-
-<h3>小块皮革</h3>
-<p>腐肉和附魔之瓶、皮革盔甲、鞍可回收为小块皮革；皮革可分解为4块小块皮革。</p>
-<table class="full-width"><thead><tr><th>名称</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
-<tr><th>小块皮革</th><td>腐肉+附魔之瓶</td><td>
-<span class="mcui"><span><span class="mcui-row"><span class="rotten_flesh" title="腐肉">
-</span><span class="experience_bottle" title="附魔之瓶">
-</span><span class="empty">
-</span></span><span class="mcui-row"><span class="empty">
-</span><span class="empty">
-</span><span class="empty">
-</span></span><span class="mcui-row"><span class="empty">
-</span><span class="empty">
-</span><span class="empty">
-</span></span></span><span class="mcui-arrow"></span><span class="mcui-output">
-<span class="rabbit_hide" title="小块皮革">
-</span></span><span class="mcui-icons"><span class="mcui-shapeless" title="此配方是无形的，材料可以以任何排列方式放置在合成格内。">
-</span></span></span></td></tr>
-
-<tr><th>小块皮革</th><td>
-皮革头盔<br />
-皮革胸甲<br />
-皮革护腿<br />
-皮革靴子<br />
-鞍</td><td>
-<span class="mcui"><span><span class="mcui-row"><span class="empty">
-</span><span class="empty">
-</span><span class="empty">
-</span></span><span class="mcui-row"><span class="empty">
-</span><span class="broken_leather_helmet" title="皮革盔甲/鞍">
-</span><span class="empty">
-</span></span><span class="mcui-row"><span class="empty">
-</span><span class="empty">
-</span><span class="empty">
-</span></span></span><span class="mcui-arrow"></span><span class="mcui-output">
-<span class="rabbit_hide" title="小块皮革">
-</span></span></span></td></tr>
-
-<tr><th>小块皮革</th><td>皮革</td><td>
-<span class="mcui"><span><span class="mcui-row"><span class="empty">
-</span><span class="empty">
-</span><span class="empty">
-</span></span><span class="mcui-row"><span class="empty">
-</span><span class="leather" title="皮革">
-</span><span class="empty">
-</span></span><span class="mcui-row"><span class="empty">
-</span><span class="empty">
-</span><span class="empty">
-</span></span></span><span class="mcui-arrow"></span><span class="mcui-output">
-<span class="rabbit_hide" title="小块皮革"><span class="stacksize">4</span>
 </span></span></span></td></tr>
 </tbody></table>
 
@@ -3499,7 +3475,7 @@ function change(str){
 <article>
 <!--1.8-->
 <h3>1.8</h3>
-<p>发布时间：预计3月底 大小：1080 KB</p>
+<p>发布时间：预计5月底 大小：1080 KB</p>
 <ul>
 <li>游戏本体版本升级为1.13，不再支持1.13之前的版本。</li>
 <li>修改资源包文字的代码名称、记分板、标签前缀为cpp，修改资源包以适应1.13。</li>
