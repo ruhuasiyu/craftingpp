@@ -1,6 +1,6 @@
 span.chainmail_boots{	background-position: -32px -0px;}
 span.chainmail_chestplate{	background-position: -64px -0px;}
-span.chainmail_helmet{	background-position: -96x -0px;}
+span.chainmail_helmet{	background-position: -96px -0px;}
 span.chainmail_leggings{	background-position: -128px -0px;}
 span.broken_chainmail_boots{	background-position: -160px -0px;}
 span.broken_chainmail_chestplate{	background-position: -192px -0px;}
@@ -139,6 +139,7 @@ span.emerald_block{	background-position: -992px -832px;}
 span.gold_block{	background-position: -0px -864px;}
 span.iron_block{	background-position: -32px -864px;}
 span.quartz_block{	background-position: -64px -864px;}
+span.bookshelf{	background-position: -96px -864px;}
 span.brickBlock{	background-position: -160px -864px;}
 span.cobblestone{	background-position: -320px -864px;}
 span.dark_oak_planks{	background-position: -504px -864px;}
@@ -363,6 +364,7 @@ span.chest{	background-position: -704px -1216px;}
 span.command_block{	background-position: -736px -1216px;}
 span.crafting_table{	background-position: -768px -1216px;}
 span.daylight_detector{	background-position: -800px -1216px;}
+span.dispenser{	background-position: -832px -1216px;}
 span.enchanting_table{	background-position: -896px -1216px;}
 span.furnace{	background-position: -960px -1216px;}
 span.hopper{	background-position: -992px -1216px;}

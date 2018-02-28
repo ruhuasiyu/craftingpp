@@ -1,0 +1,30 @@
+§2Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.
+§2Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated, can long endure. We are met on a great battle-field of that war. We have come to dedicate a portion of that field, as a final resting place for those who here gave their lives that nation might live. It is altogether fitting and proper that we should do this.
+§2But, in a larger sense, we can not dedicate -- we can not consecrate -- we can not hallow -- this ground. The brave men, living and dead, who struggled here, have consecrated it, far above our poor power to add or detract. The world will little note, nor long remember what we say here, but it can never forget what they did here. It is for us the living, rather, to be dedicated here to the unfinished work which they who fought here have thus far so nobly advanced. It is rather for us to be here dedicated to the great task remaining before us -- that from these honored dead we take increased devotion to that cause for which they gave the last full measure of devotion -- that we here highly resolve that these dead shall not have died in vain -- that this nation, under God, shall have a new birth of freedom -- and that government of the people, by the people, for the people, shall not perish from the earth.
+
+[C]§f=======================
+[C]§e更多的合成/Crafting++
+[C]§eversion 1.8
+[C]§7Created by: §f ruhuasiyu@mcbbs.com
+
+[C]§7 Acknowledgement/感谢
+[C]§7 pinapple (加载结构)
+[C]§7 the Eternal Celestial Star (连环砍树)
+[C]§7 2b (头饰)
+[C]§7 pca
+[C]§7 chyx
+[C]§7 zzzz_ustc
+[C]§7 乙烯_中国
+[C]§7 Santa西月
+[C]§7 beback
+[C]§7 不伸手党
+[C]§7 怪蜀黍GSS
+[C]§7 浅荣时光
+[C]§7 小藩
+[C]§7 shuaohao38
+[C]§7 MCMod百科群
+[C]§7 CBL外群
+[C]§7 TCP群
+[C]§7 部分灵感参考了热力膨胀、植物魔法、深渊国度、潘马斯农场、盐等模组
+[C]§7 部分名称参考了dota、英雄联盟、三国志等游戏
+[C]§f=======================
