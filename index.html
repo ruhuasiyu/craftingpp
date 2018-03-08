@@ -1,10 +1,526 @@
-<html>
+<!doctype html>
+<!-- saved from url=(0038)https://ruhuasiyu.github.io/craftingpp -->
+<html lang="zh-cmn-Hans">
 <head>
 <meta charset="utf-8" />
-<meta http-equiv="refresh" content="1;url=versions/index.html">
-<title>跳转中……</title>
+<title>更多的合成 Crafting++</title>
+<meta name='author' content='ruhuasiyu@mcbbs' />
+<meta name='keywords' content='minecraft, 原版模组, mod, Crafting++' />
+<meta name='description' content='Minecraft 原版模组 更多的合成' />
+<meta name='revised' content='ruhuasiyu@mcbbs' />
+<base href="" />
+<script src="https://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+<link rel="shortcut icon" href="1.8/items/favicon.ico" />
+<style>
+<!--table style-->
+.thead, thead th{
+	background: #505050;
+	color: white;
+}
+table th, table td{
+	border:1px solid #aaa;
+	padding:0.2em 0.4em;
+	vertical-align:middle;
+}
+table{
+	margin: 20px 0px;
+	background-color:#fff;
+	border-collapse:collapse;
+}
+<!--text style-->
+html{
+	font-family:"Liberation Sans",Arial,Helvetica,FreeSans,sans-serif;
+}
+body{
+	width:80%;
+	background-color:#ddd;
+	margin:0 auto;
+	font-family: Tahoma, "Microsoft Yahei", Simsun;
+}
+nav ul{
+	width:100%;
+	margin:4px auto 2px;
+	text-align:center;
+	list-style-type:none;
+	padding:0;
+}
+nav li{
+	display: inline-block;
+	vertical-align: middle;
+	border-bottom-color:red;
+	border-bottom-width:2px;
+}
+nav li:first-child{
+	border-bottom-style:solid;
+	color:red;
+}
+nav a{
+	cursor:pointer;
+	padding: 8px 8px;
+	display: block;
+}
+article{
+	padding:0.5em 2em 1em;
+	background-color:#eee;
+}
+footer{
+	margin:20px auto;
+}
+footer p{
+	text-align:center;
+	font-size:85%;
+}
+h1{
+	text-align:center;
+	color:gold;
+}
+h2{
+	color:blue;
+	border-bottom:solid 1px grey;
+	padding:0 0 5px;
+	text-align:center;
+}
+h3{
+	font-size: 120%;
+}
+h4{
+	font-size: 110%;
+}
+code{
+	font-size:100%;
+	background-color:white;
+	font-family: Courier New, 楷体;
+}
+a{
+	color: hsl(126,90%,19%);
+	text-decoration:none;
+	font-weight:bold;
+}
+a:hover{
+	color:#d25349;
+}
+blockquote{
+	font-family:KaiTi;
+}
+li{
+	margin: 5px 0;
+}
+strong{
+	color:blue;
+}
+.center{
+	text-align:center;
+}
+.center img{
+	height:210px;
+}
+.v1-0{background:hsl(0,100%,70%);}
+.v1-1{background:hsl(30,100%,70%);}
+.v1-2{background:hsl(60,100%,70%);}
+.v1-3{background:hsl(90,100%,70%);}
+.v1-4{background:hsl(120,100%,70%);}
+.v1-5{background:hsl(150,100%,70%);}
+.v1-6{background:hsl(180,100%,70%);}
+.v1-7{background:hsl(200,100%,70%);}
+.v1-8{background:hsl(300,100%,70%);}
+</style>
+
+<script>
+function change(str){
+	var i;
+	if(str=="intro")		i=0;
+	if(str=="versions")		i=1;
+	if(str=="log")			i=2;
+	
+	var sec=$('article');
+	var length=sec.length;
+	for(var j=0;j<length;j++){
+		sec.eq(j).hide();
+		$("nav li").eq(j).css("color","black");
+		$("nav li").eq(j).css("border-bottom-style","none");
+	}
+		sec.eq(i).show();
+		$("nav li").eq(i).css("color","red");
+		$("nav li").eq(i).css("border-bottom-style","solid");
+}
+</script>
 </head>
-<body>
-跳转中……
-</body>
-</html>  
+
+<body onload="change('intro')">
+
+<div class="banner">
+<a href=""><img src="versions/1.8/items/screenshots/banner.png" style="width:100%;"/></a>
+</div>
+
+<nav id="content">
+<ul>
+	<li><a onclick="change('intro')">简介</a></li>
+	<li><a onclick="change('versions')">版本列表</a></li>
+	<li><a onclick="change('log')">更新日志</a></li>
+</ul>
+</nav>
+
+<!--简介-->
+<article>
+<h3 id="intro">简介</h3>
+<p>原版模组一般是指在不修改Minecraft游戏本体的前提下，通过命令方块、ooc或数据包等方式对游戏的可玩性做出修改。</p>
+<p>
+本模组原名“刷怪蛋、高压、石头工艺”，自1.3版本起更名为“更多的合成”。目前模组更新至1.7.4，支持的Minecraft版本为Java 1.12。1.8版本将于2018年5月份左右制作完成，该版本将开始支持Java 1.13。</p>
+
+<h3 id="bagcraft">背包合成</h3>
+<p>涉及模组新增物品的合成均采用背包合成，方式如下：将材料放入背包右上角对应的3×3的格子里即可自动得到产物，数量和位置须完全吻合。</p>
+<p class="center"><img src="https://public.lightpic.info/image/15EA_59153D760.jpg" /></p>
+
+<h3 id="declaration">声明</h3>
+<p>转载本文须需遵守<strong><a href="https://creativecommons.org/licenses/by-nc-nd/2.5/cn/">CC BY-NC-ND 2.5 CN 许可协议</a></strong>——列出作者(<a href="http://www.mcbbs.net/home.php?mod=spacecp&ac=pm&touid=975525">ruhuasiyu@mcbbs</a>)、来源、原始下载链接以及相同的许可协议。模组代码需遵守GPL协议。</p>
+<p>不可转载至网盘或文件存储平台。公益服务器可直接使用；非公益服务器需联系我获得授权。通讯类工具可下载后分享。</p>
+
+</article>
+<article>
+<h3 id="versions">版本列表</h3>
+<table><thead><tr><th>支持的minecraft版本</th><th>模组版本及下载链接</th><th>简介</th></tr></thead>
+<tbody>
+<tr><td>Minecraft Java版 1.13</td><td>
+<a href="">craftingpp-1.8</a></td><td><a href="1.8/index.html">网站链接</a></td></tr>
+<tr><td>Minecraft Java版 1.12</td><td>
+<a href="http://www.mcbbs.net/forum.php?mod=attachment&aid=MTA4NDIzM3xhYjM4MDU1NnwxNTExNjI3NjYwfDk3NTUyNXw2OTY4NjE%3D">craftingpp-1.7.4</a></td><td><a href="1.7/index.html">网站链接</a></td></tr>
+<tr><td>Minecraft Java版 1.12 pre</td><td>
+<a href="http://www.mcbbs.net/thread-614296-1-1.html">craftingpp-1.6.1</a></td><td><a href="http://www.mcbbs.net/thread-614296-1-1.html">网站链接</a></td></tr>
+<tr><td>Minecraft Java版 1.11</td><td>craftingpp-1.5</td><td>不再提供</td></tr>
+<tr><td>Minecraft Java版 1.11</td><td>craftingpp-1.4</td><td>不再提供</td></tr>
+<tr><td>Minecraft Java版 1.11</td><td>craftingpp-1.3</td><td>不再提供</td></tr>
+<tr><td>Minecraft Java版 1.11</td><td>SpawnEggPressureStoneMod-1.2</td><td>不再提供</td></tr>
+<tr><td>Minecraft Java版 1.10</td><td>SpawnEggPressureStoneMod-1.1</td><td>不再提供</td></tr>
+<tr><td>Minecraft Java版 1.10</td><td>SpawnEggPressureStoneMod-1.0</td><td>不再提供</td></tr>
+</tbody></table>
+<p>自1.6版本起，将解压后的文件放入世界存档内即可。之前的版本安装则较为繁琐，且卡顿也较严重，因此我不建议使用旧版本。如确实需要，可直接联系我。此外，新版本放出后，旧版本一律不再更新。</p>
+</article>
+<article>
+
+<h3 id="log">更新日志</h3>
+<table id="update">
+<thead><tr>
+	<th width="150px">模组版本与名称</th>
+	<th width="150px">更新时间与大小</th>
+	<th width="880px">更新内容</th>
+</tr></thead>
+<tbody>
+<!--1.0-->
+<tr class="v1-0">
+	<th rowspan="4">1.0</th>
+	<th rowspan="4">2016年08月05日</th>
+	<td>新增羊、牛、鸡、猪、兔子、哞菇、蝙蝠、鱿鱼、村民、北极熊、蠹虫、
+潜影贝、骷髅、凋灵骷髅、女巫、僵尸、僵尸猪人、史莱姆、岩浆怪、恶魂、烈焰人、蜘蛛、洞穴蜘蛛、爬行者、高压爬行者、末影人、末影螨、远古守卫者、
+守卫者、马、驴、豹猫、狼共33种怪物蛋的合成。</td></tr>
+<tr class="v1-0"><td>现在活塞可以回收剑、镐、盔甲、矿车、马铠，制作煤炭、钻石。</td></tr>
+<tr class="v1-0"><td>新增“放置 地标”和“回到 地标”，可用于在主世界传送。</td></tr>
+<tr class="v1-0"><td>新增物品松散的石头、疏松的石头、普通的石头、紧密的石头、致密的石头，可以用来制作剑、镐、盔甲和地标。</td></tr>
+<!--1.1-->
+<tr class="v1-1">
+	<th rowspan="5">1.1<br/><span class="lore">美化更新</span></th>
+	<th rowspan="5">2016年08月05日<br/><span class='lore'>18×6×11</span></th>
+	<td>现在活塞可以回收花岗岩、闪长岩、安山岩以得到下界石英。</td></tr>
+<tr class="v1-1"><td>将松散的石头、疏松的石头、普通的石头、紧密的石头、致密的石头更改为精制煤、精制铁锭、精制金锭、精制钻石、精制下界之星，去掉所有关于密度的描述。</td></tr>
+<tr class="v1-1"><td>修改“回到 地标”合成配方，种类数由9减少为8。</td></tr>
+<tr class="v1-1"><td>模组更改为相对坐标，合成方式由投掷器修改为玩家背包。</td></tr>
+<tr class="v1-1"><td>精简代码，增加了封装和开关。</td></tr>
+<!--1.2-->
+<tr class="v1-2">
+	<th rowspan="2">1.2<br /><span class="lore">实体更新</span></th>
+	<th rowspan="2">2016年10月02日<br/><span class='lore'>18×6×11</span></th>
+	<td>游戏本体版本升级为1.11，不再支持1.11之前的版本。</td></tr>
+<tr class="v1-2"><td>新增唤魔者和羊驼刷怪蛋的合成。</td></tr>
+<!--1.3-->
+<tr class="v1-3">
+	<th rowspan="4">1.3<br /><span class="lore">效率更新</span></th>
+	<th rowspan="4">2016年10月08日<br/><span class='lore'>13×10×13</span></th>
+	<td>新增精制矿物合成锹、斧、传送球。</td></tr>
+<tr class="v1-3"><td>删除地标。</td></tr>
+<tr class="v1-3"><td>新增高级药水的合成。</td></tr>
+<tr class="v1-3"><td>模组名称更改为“更多的合成”。</td></tr>
+<!--1.4-->
+<tr class="v1-4">
+	<th rowspan="4">1.4<br /><span class="lore">工具更新</span></th>
+	<th rowspan="4">2016年10月13日<br/><span class='lore'>13×11×12</span></th>
+	<td>现在活塞可以回收鞍。</td></tr>
+<tr class="v1-4"><td>新增物品强力磁铁、矿物探测、渔网。</td></tr>
+<tr class="v1-4"><td>精简代码。</td></tr>
+<tr class="v1-4"><td>现在模组开关被破坏后可恢复。</td></tr>
+<tr class="v1-4"><th rowspan="2">1.4.1</th>
+	<th rowspan="2">2016年10月17日<br/><span class="lore">13×11×12</span></th>
+	<td>添加模组专用材质，包含背包合成区域GUI的修改、标语等。</td></tr>
+<tr class="v1-4"><td>修复bug。</td></tr>
+<!--1.5-->
+<tr class="v1-5">
+	<th rowspan="9">1.5<br /><span class="lore">结构更新</span></th>
+	<th rowspan="9">2016年10月24日<br/><span class="lore">13×13×12</span></th>
+	<td>新增生物鸟和鸟刷怪蛋的合成。</td></tr>
+<tr class="v1-5"><td>现在粘性活塞可以代替活塞参与回收。</td></tr>
+<tr class="v1-5"><td>新增建筑：铁匠铺、沙漠神庙、末地船、遗迹、图书馆。</td></tr>
+<tr class="v1-5"><td>新增植物：橡树、云杉树、白桦树、金合欢树、灌木。</td></tr>
+<tr class="v1-5"><td>新增画：呐喊、蒙娜丽莎、最后的晚餐、向日葵、日出·印象、阿让特伊莫奈花园里的卡美伊·莫奈和孩子、春、夏、秋、冬。</td></tr>
+<tr class="v1-5"><td>修改药水名称和颜色。</td></tr>
+<tr class="v1-5"><td>矿物探测时长由8秒修改为5秒。</td></tr>
+<tr class="v1-5"><td>修改盔甲合成配方。</td></tr>
+<tr class="v1-5"><td>精简合成代码。</td></tr>
+<tr class="v1-5"><th rowspan="3">1.5.1</th>
+	<th rowspan="3">2016年10月25日<br/><span class='lore'>13×13×12</span></th>
+	<td>修改精制矿物、矿物探测器、遗迹的合成配方。</td></tr>
+<tr class="v1-5"><td>调整命令方块的循环方式，通过降低合成速度来减少卡顿。</td></tr>
+<tr class="v1-5"><td>修复bug。</td></tr>
+<tr class="v1-5"><th rowspan="6">1.5.2</th>
+	<th rowspan="6">2016年11月12日<br/><span class='lore'>13×13×12</span></th>
+	<td>修改精制矿物合成的工具附魔次序。</td></tr>
+<tr class="v1-5"><td>修复盔甲不能正确提供护甲的bug。</td></tr>
+<tr class="v1-5"><td>取消精制靴子的速度效果。</td></tr>
+<tr class="v1-5"><td>新增物品强力时钟，增加100%的速度。</td></tr>
+<tr class="v1-5"><td>新增画：星夜、自由引导人民、拾穗者、落霞孤鹜图、竹石图。</td></tr>
+<tr class="v1-5"><td>增减了材质的一些标语。</td></tr>
+<!--1.6-->
+<tr class="v1-6">
+	<th rowspan="33">1.6<br /><span class="lore">科学更新</span></th>
+	<th rowspan="33">2017年05月12日<br/><span class='lore'>681 KB</span></th>
+	<td>游戏本体版本升级为1.12 pre，不再支持1.12之前的版本。</td></tr>
+<tr class="v1-6"><td>不再支持使用粘性活塞回收。</td></tr>
+<tr class="v1-6"><td>新增回收斧锹锄。</td></tr>
+<tr class="v1-6"><td>调整所有回收产物为1。</td></tr>
+<tr class="v1-6"><td>修改压制钻石配方。</td></tr>
+<tr class="v1-6"><td>新增压制鞍、蜘蛛网、马铠、粘土、浮冰。</td></tr>
+<tr class="v1-6"><td>删除鸟刷怪蛋，增加鹦鹉、卫道士、幻术师刷怪蛋的合成。</td></tr>
+<tr class="v1-6"><td>恢复精制矿物合成材料为需要使用低一级的精制矿物。</td></tr>
+<tr class="v1-6"><td>修复了精制煤炭的名称。</td></tr>
+<tr class="v1-6"><td>调整锹的合成形状为通常形状。</td></tr>
+<tr class="v1-6"><td>修复了剑和护腿不在对应槽位也有属性加成和护腿的盔甲错误。</td></tr>
+<tr class="v1-6"><td>为精制矿物合成的剑添加了横扫之刃魔咒。</td></tr>
+<tr class="v1-6"><td>调整传送的距离为200米。</td></tr>
+<tr class="v1-6"><td>为强力磁铁加入冷却，时间为5秒。</td></tr>
+<tr class="v1-6"><td>修复矿物探测器和传送球的漏洞。</td></tr>
+<tr class="v1-6"><td>新增附魔金苹果的合成。</td></tr>
+<tr class="v1-6"><td>删除了建筑和植物的合成。</td></tr>
+<tr class="v1-6"><td>新增树种的合成，放置在羊毛/树叶可以得到不同的树。</td></tr>
+<tr class="v1-6"><td>修改画的合成配方。</td></tr>
+<tr class="v1-6"><td>删除了画：春夏秋冬；增加了画：岩间圣母、创造亚当、伏尔加河上的纤夫、开国大典、无名女郎。</td></tr>
+<tr class="v1-6"><td>增加24种进度。</td></tr>
+<tr class="v1-6"><td>有几率天然生成高压爬行者。</td></tr>
+<tr class="v1-6"><td>增加僵尸猪掉落物0-1猪肉。</td></tr>
+<tr class="v1-6"><td>增加僵尸村民被玩家杀死时掉落0-1绿宝石，不受抢夺附魔影响。</td></tr>
+<tr class="v1-6"><td>增加村民掉落物0-4绿宝石。</td></tr>
+<tr class="v1-6"><td>增加驴、骡、马、羊驼掉落物1-3生驴、骡、马、羊驼肉（属性同羊肉）、鹦鹉掉落物1-2生鹦鹉肉（属性同鸡肉）、北极熊掉落物1-4生熊肉（属性同牛肉），着火时掉落对应熟肉。</td></tr>
+<tr class="v1-6"><td>增加哞菇掉落物3-5红蘑菇。</td></tr>
+<tr class="v1-6"><td>鸡、鹦鹉着火时死亡将不掉落羽毛。</td></tr>
+<tr class="v1-6"><td>唤魔者掉落物不死图腾修改为金色。</td></tr>
+<tr class="v1-6"><td>新增钓鱼宝藏湿海绵；新增钓鱼垃圾火药，和腐肉等权重。</td></tr>
+<tr class="v1-6"><td>移除了模组所需的命令方块，改为使用函数实现。</td></tr>
+<tr class="v1-6"><td>修改了材质的文字部分。</td></tr>
+<tr class="v1-6"><td>修复了GUI材质透明错误。</td></tr>
+<tr class="v1-6"><th rowspan="4">1.6.1</th>
+	<th rowspan="4">2017年05月13日<br/><span class='lore'>681 KB</span></th>
+	<td>现在可以一次性回收64个安山岩、闪长岩、花岗岩，16个石英块，64个木炭。</td></tr>
+<tr class="v1-6"><td>现在可以一次性合成8或64个精制矿物。</td></tr>
+<tr class="v1-6"><td>修复无法回收石英块的错误。</td></tr>
+<tr class="v1-6"><td>修复了仍能使用粘性活塞回收的错误。</td></tr>
+<!--1.7-->
+<tr class="v1-7">
+	<th rowspan="34">1.7<br/><span class="lore">重组更新</span></th>
+	<th rowspan="34">2017年06月07日<br/><span class='lore'>861 KB</span></th>
+	<td>游戏本体版本升级为1.12，不再支持1.12之前的版本。</td></tr>
+<tr class="v1-7"><td>移除精制矿物系统。</td></tr>
+<tr class="v1-7"><td>将模组划分为活塞工艺、生物制药、绘画雕塑、强化系统、交通设施、角色装饰、进度和其它共8个部分。</td></tr>
+<tr class="v1-7"><td>移除木制品和石制品的回收。</td></tr>
+<tr class="v1-7"><td>新增回收地狱疣块。</td></tr>
+<tr class="v1-7"><td>修改钻石、强力时钟、强力磁铁、矿物探测器、渔网、传送球的合成配方。</td></tr>
+<tr class="v1-7"><td>移除强力时钟。</td></tr>
+<tr class="v1-7"><td>新增时间调节器，放置在物品在展示框时，随机刻由3增加至6。</td></tr>
+<tr class="v1-7"><td>新增闹钟，放置在物品在展示框时会每小时（实际时间每50秒）字幕报时。</td></tr>
+<tr class="v1-7"><td>移除饱和药水。</td></tr>
+<tr class="v1-7"><td>交换急迫药水和抗性药水配方。</td></tr>
+<tr class="v1-7"><td>修改抗火药水、夜视药水、隐身药水、水肺药水的持续时间为16分钟。
+</td></tr>
+<tr class="v1-7"><td>新增8种矿石种子的合成，种下后生成一个生命值为1的潜影贝，平均每隔5分钟会用矿石替换顶部的牺牲品，每个种子大约可以生产25颗矿石。煤矿石、铁矿石、金矿石、钻石矿石、下界石英矿石、青金石矿石、红石矿石和绿宝石矿石所需的牺牲品分别为石头、煤矿石、铁矿石、金矿石、地狱岩、粘土、青金石矿石、红石矿石。</td></tr>
+<tr class="v1-7"><td>修改画“日出·印象”的名称为“印象·日出”。</td></tr>
+<tr class="v1-7"><td>新增强化系统，可强化的物品有盔甲、剑锹斧镐、弓、钓鱼竿，从皮革盔甲、木制品、弓、钓鱼竿出发，按指定次序依次消耗8个指定的牺牲品来升级，共20个等级。
+不同等级物品拥有不同的名称、材质、魔咒和属性加成。
+升级后的物品只有30点耐久，需要消耗经验值来回复耐久度。
+各等级牺牲品为燧石、粘土、火药、荧石粉、粘液球、皮革、煤炭、红石、青金石、下界石英、铁锭、金锭、钻石、绿宝石、不死图腾、亡灵之魂、生物之肢、海洋之心、末影之眼、下界之星。
+</td></tr>
+<tr class="v1-7"><td>新增四个等级的道路固化剂的合成，依次在红石块上使用可以得到不同等级的道路，玩家在道路上可以获得相应等级的加速效果。</td></tr>
+<tr class="v1-7"><td>新增称号系统，每次杀死生物或进行背包合成玩家可以提高功力，根据功力的不同获得不同的前缀称号。</td></tr>
+<tr class="v1-7"><td>新增头饰系统。当头盔位置放置了一个南瓜，而副手为指定的一个物品时，会自动佩戴该物品。一共56款样式，包括空气头盔、矿工帽、绷带、绅士帽、长冠、围脖(16款)、厚围脖、超厚围脖、花(14款)、头上长草(4款)、眼镜(6款)、口罩、犄角、奥特曼(7款)。</td></tr>
+<tr class="v1-7"><td>删除、修改、新增了一些进度，修复了一些bug。</td></tr>
+<tr class="v1-7"><td>新增村民掉落物0-2绿宝石和3经验值。</td></tr>
+<tr class="v1-7"><td>移除僵尸村民的掉落物绿宝石。</td></tr>
+<tr class="v1-7"><td>新增物品亡灵之魂，属性同毒马铃薯，为僵尸、僵尸村民、僵尸猪人、僵尸马、尸壳、骷髅、流髑、凋灵骷髅和骷髅马的稀有掉落物，天然出现在沙漠神殿、地牢和丛林神庙箱子战利品。</td></tr>
+<tr class="v1-7"><td>新增物品生物之肢，属性同兔子脚，为蜘蛛、洞穴蜘蛛、蠹虫、末影螨和潜影贝的稀有掉落物，天然出现在要塞祭坛、要塞储藏室、废弃矿井箱子战利品。</td></tr>
+<tr class="v1-7"><td>新增物品海洋之心，属性同海晶砂粒，为鱿鱼、守卫者和远古守卫者的稀有掉落物；</td></tr>
+<tr class="v1-7"><td>新增物品飞翔之翼，属性同羽毛，为鸡、鹦鹉和蝙蝠未着火时的稀有掉落物；</td></tr>
+<tr class="v1-7"><td>新增物品居民之证，属性同绿宝石，为僵尸村民、村民、卫道士和唤魔者的稀有掉落物，天然出现在村庄、林地府邸、雪屋箱子战利品。</td></tr>
+<tr class="v1-7"><td>新增物品末影之灵，属性同末影珍珠，为末影螨、末影人和潜影贝的稀有掉落物；</td></tr>
+<tr class="v1-7"><td>新增物品硝火之烬，属性同烈焰粉，为烈焰人、爬行者、恶魂和岩浆怪的稀有掉落物，天然出现在下界要塞箱子战利品。</td></tr>
+<tr class="v1-7"><td>
+新增牛、猪、羊、哞菇、兔子、鸡、鹦鹉、鱿鱼、马、驴、骡、羊驼、北极熊、豹猫、狼、僵尸、僵尸村民、骷髅、爬行者、女巫、蜘蛛、洞穴蜘蛛、史莱姆、尸壳、流髑、骷髅马、守卫者、远古守卫者、村民、卫道士、恼鬼、铁傀儡、雪傀儡、僵尸猪人、烈焰人、恶魂、岩浆怪、末影人、潜影贝和末影龙稀有掉落物为对应生物的头。</td></tr>
+<tr class="v1-7"><td>增加钓鱼宝藏鱼头、鲑鱼头、小丑鱼头和河豚头。</td></tr>
+<tr class="v1-7"><td>为模组物品和进度添加了英文支持。</td></tr>
+<tr class="v1-7"><td>修改终末之诗为海绵宝宝主题曲。</td></tr>
+<tr class="v1-7"><td>添加了一个彩蛋：传送球一次可以合成四个。</td></tr>
+<tr class="v1-7"><td>调整了函数的分布，大幅度降低了卡顿。</td></tr>
+<tr class="v1-7">
+	<th rowspan="4">1.7.1</th>
+	<th rowspan="4">2017年06月08日<br/><span class='lore'>861 KB</span></th>
+	<td>修复了材质中的文字错误。</td></tr>
+<tr class="v1-7"><td>修复了称号系统的数据与描述不符。</td></tr>
+<tr class="v1-7"><td>修复了强化物品的耐久值错误。</td></tr>
+<tr class="v1-7"><td>调整了时间调节器对于随机刻加成由+3变为+1。</td></tr>
+<tr class="v1-7">
+	<th rowspan="2">1.7.2</th>
+	<th rowspan="2">2017年06月09日<br/><span class='lore'>862 KB</span></th>
+	<td>精简了时间调节器、闹钟的代码。</td></tr>
+<tr class="v1-7"><td>增加了闹钟的音效，清晨和傍晚会报时，音效为entity.player.levelup，音量20，音调1.5。</td></tr>
+<tr class="v1-7">
+	<th rowspan="2">1.7.3</th>
+	<th rowspan="2">2017年06月15日<br/><span class='lore'>863 KB</span></th>
+	<td>修复了制作钻石的配方中错误，应为煤炭却为煤炭块。</td></tr>
+<tr class="v1-7"><td>为安装包添加了安装说明。</td></tr>
+<tr class="v1-7">
+	<th rowspan="1">1.7.4</th>
+	<th rowspan="1">2017年06月16日<br/><span class='lore'>863 KB</span></th>
+	<td>修复了《最后的晚餐》和《落霞孤鹜图》合成后缺少一张的问题。</td></tr>
+<!--1.8-->
+
+<tr class="v1-8">
+	<th rowspan="99">1.8<br/><span class="lore">元素更新</span></th>
+	<th rowspan="99">2018年4月31日<br/><span class='lore'>1080 KB</span></th>
+	<td>游戏本体版本升级为1.13，不再支持1.13之前的版本。</td></tr>
+<tr class="v1-8"><td>修改资源包文字的代码名称、记分板、标签前缀为cpp，修改资源包以适应1.13。</td></tr>
+<tr class="v1-8"><td>移除标语“www.excitedfrog.com”、“高温+高压+碳=钻石”。</td></tr>
+<tr class="v1-8"><td>新增标语“一起蛤啤！”、“Ass ♂ we ♂ can”、“Deep ♂ Dark ♂ Fantasy”、“帕秋莉 ♂ Go!”、“Release!”、“Secure!”。</td></tr>
+<tr class="v1-8"><td>修改终末之诗为葛底斯堡演说并在结尾添加鸣谢。</td></tr>
+<tr class="v1-8"><td>修改下界石英名称为石英，兔子皮为小块皮革。</td></tr>
+
+<tr class="v1-8"><td>移除活塞工艺。</td></tr>
+<tr class="v1-8"><td>新增蓝色天之力，右键消耗玩家20点经验切换为晴天。</td></tr>
+<tr class="v1-8"><td>新增绿色水之力，右键消耗玩家1点经验并放置一格水。</td></tr>
+<tr class="v1-8"><td>新增青色山之力，当玩家高度大于62时，右键消耗玩家40点经验并整地5×5区域至海平面高度。</td></tr>
+<tr class="v1-8"><td>新增橙色土之力，右键消耗玩家1点经验并破坏前方土质方块。</td></tr>
+<tr class="v1-8"><td>新增黄色地之力，右键消耗玩家80点经验并清除附近15×3×15区域中的水和岩浆。</td></tr>
+<tr class="v1-8"><td>新增红色火之力，右键消耗玩家1点经验并烧炼前方方块成物品。</td></tr>
+<tr class="v1-8"><td>新增紫色木之力，右键转换地面的物品：树苗、种子/甘蔗/仙人掌/可可豆和花，转化比率为2:1。</td></tr>
+<tr class="v1-8"><td>新增白色电之力，右键去除地面的物品附魔。</td></tr>
+<tr class="v1-8"><td>新增黑色月之力，右键消耗玩家80点经验并在前方铺设3米宽的泥土道路。</td></tr>
+<tr class="v1-8"><td>当发射器发射的物品可以种植在前方位置时，会自动种植。</td></tr>
+
+<tr class="v1-8"><td>新增压缩机：沿竖直方向依次摆放漏斗、向下的活塞、漏斗，然后将相应物品放入顶部漏斗的第一格即可压缩。支持所有可重新分解的合成。</td></tr>
+<tr class="v1-8"><td>
+新增制造机：沿竖直方向依次摆放漏斗、工作台、漏斗，然后将相应物品放入顶部漏斗即可。支持造石、造冰雪、造矿物。</td></tr>
+<tr class="v1-8"><td>新增粉碎机：沿竖直方向依次摆放漏斗、砂砾、漏斗，然后将相应物品放入顶部漏斗即可。支持碎石、碎矿。</td></tr>
+<tr class="v1-8"><td>新增熔炼机：沿竖直方向依次摆放漏斗、岩浆块、漏斗，然后将相应物品放入顶部漏斗，可使用红沙代替沙子。支持炼矿、制盐。</td></tr>
+<tr class="v1-8"><td>新增生长机：沿竖直方向依次摆放漏斗、泥土、漏斗，然后将相应物品放入顶部漏斗。支持各种植物。</td></tr>
+<tr class="v1-8"><td>新增繁殖机：沿竖直方向依次摆放漏斗、黑曜石、漏斗，然后将相应物品放入顶部漏斗。支持各种怪物。</td></tr>
+
+<tr class="v1-8"><td>新增附魔之瓶的制作。</td></tr>
+<tr class="v1-8"><td>新增矿物粉、钢粉、盐瓶、月之碎片、日之碎片。</td></tr>
+<tr class="v1-8"><td>新增生物酸、生物碱、粗硅、空气瓶、硅粉、硅板、稀土盐、碱性稀土、稀土粉。</td></tr>
+<tr class="v1-8"><td>新增圆石堆、石头堆、泥土堆、沙子堆，右键恢复。</td></tr>
+<tr class="v1-8"><td>新增附魔铁锭、附魔金锭、附魔钻石、钢化玻璃、稀土玻璃。</td></tr>
+<tr class="v1-8"><td>新增磁铁，将附近10米内掉落物吸引过来。按Q关闭。</td></tr>
+<tr class="v1-8"><td>新增时间调节器，放置于物品展示框后，若下方为金块：植物生长加速；钻石块：开启永昼；黑曜石：开启永夜。若世界已存在生效的时间调节器，则无法再合成。</td></tr>
+<tr class="v1-8"><td>新增报时器，放置于物品展示框后可报时。</td></tr>
+<tr class="v1-8"><td>新增世界之源，	右击消耗20点经验返回世界原点。</td></tr>
+<tr class="v1-8"><td>新增经验释放器、触发器、压缩器、焚毁器。</td></tr>
+<tr class="v1-8"><td>新增压缩器，当玩家背包中有一整组的指定方块时，压缩器会自动将其压缩为1个方块堆。包括：泥土、沙子、红沙、砂砾、圆石、石头、粘土块、陶瓦。按Q复原。</td></tr>
+<tr class="v1-8"><td>新增方块转化器，顶部放置待转换的方块，水平方向放置转换后的方块即可，水平方向越多速度越快（最多4个）。破坏后无掉落。</td></tr>
+<tr class="v1-8"><td>方块转化器所需时间最快为2分钟×次数。可在配置文件中修改冷却时间。</td></tr>
+<tr class="v1-8"><td>新增方块转化器可转换的方块红石块→荧石块。</td></tr>
+<tr class="v1-8"><td>新增年长者之教诲，每6秒给予拥有者1点经验。可在配置文件中修改冷却时间。</td></tr>
+<tr class="v1-8"><td>新增传送球，右键将玩家传送至前方指针处，不超过100米。</td></tr>
+<tr class="v1-8"><td>新增破坏之手，	放置在物品展示框时，会破坏正上方的方块。</td></tr>
+<tr class="v1-8"><td>新增农场核心、疣场核心、林场核心、牧场核心、渔场核心、猎场核心，用于自动化。</td></tr>
+<tr class="v1-8"><td>新增方块转化器，替代原矿石种子新增荧石块转化器。</td></tr>
+<tr class="v1-8"><td>移除矿物探测器。</td></tr>
+
+<tr class="v1-8"><td>移除附魔金苹果和药水的合成。</td></tr>
+<tr class="v1-8"><td>玩家需要荤素搭配以保持营养均衡。</td></tr>
+<tr class="v1-8"><td>如果玩家食肉过多会行走缓慢，食肉过多会变得虚弱。</td></tr>
+<tr class="v1-8"><td>使用测重压力板可以测量出你的体重指数。</td></tr>
+<tr class="v1-8"><td>新增生缤纷菜蔬、生土豆排骨、生土豆牛肉、肉松面包的制作，以及鸡蛋羹、缤纷菜蔬、土豆排骨、土豆牛肉的烧炼。</td></tr>
+<tr class="v1-8"><td>新增附魔金苹果和拔丝苹果的熬制，将原材料扔进炼药锅内，放入适量的水，并在控制好下方的火候，即可熬制。</td></tr>
+<tr class="v1-8"><td>生缤纷菜蔬、生土豆排骨、生土豆牛肉、肉松面包提供10点饥饿值，鸡蛋羹提供6点饥饿值，缤纷菜蔬提供14点饥饿值，土豆排骨、土豆牛肉提供16点饥饿值。</td></tr>
+<tr class="v1-8"><td>肉松面包、鸡蛋羹、拔丝苹果提供30秒的迅捷，缤纷菜蔬提供提供30秒的跳跃提升，土豆排骨、土豆牛肉提供30秒的力量II。</td></tr>
+<tr class="v1-8"><td>玩家完成进度“附魔师”后，可以合成出魔杖/星之魔杖。</td></tr>
+<tr class="v1-8"><td>将四个书架、四个附魔台、一个向上的发射器摆放成八边形，在发射器中放入特定物品，手持魔杖右击发射器，然后等待发射器上符文粒子消失即可执行仪式。</td></tr>
+<tr class="v1-8"><td>仪式可以为盔甲或工具附加特殊效果。每种物品只能附加一种效果，且会清除原有的一切效果。</td></tr>
+<tr class="v1-8"><td>仪式还可以得到一本随机的满级附魔书。不同的物品对应不同的附魔书，这种对应关系在世界生成时才被确定下来。如果使用的是星之魔杖，则附魔书等级还会额外+1。</td></tr>
+<tr class="v1-8"><td>新增附加效果：夜视、隐身、抗性、抗火、力量、迅捷、跳跃、急迫。在相应槽位即可自动生效，同时消耗玩家经验值。</td></tr>
+<tr class="v1-8"><td>新增附加效果：漂浮——副手持有时生效。</td></tr>
+<tr class="v1-8"><td>新增附加效果：水肺——仅在水中生效。</td></tr>
+<tr class="v1-8"><td>新增附加效果：反刍——仅在饥饿时生效，每点饥饿值消耗20xp。</td></tr>
+<tr class="v1-8"><td>新增附加效果：再生——仅在受伤时生效，每秒消耗20xp。</td></tr>
+<tr class="v1-8"><td>新增附加效果：连锁——对应斧、镐、锹为连锁砍树/瓜、连锁挖矿、连锁挖沙砾/粘土/沙子。</td></tr>
+<tr class="v1-8"><td>新增附加效果最大生命值+10/最大生命值+20。</td></tr>
+
+<tr class="v1-8"><td>新增荧光帽，使玩家发光，但是并不提供照明。</td></tr>
+<tr class="v1-8"><td>新增非酋帽，自带霉运效果。</td></tr>
+<tr class="v1-8"><td>新增红色外套，可加速时间1.67%。</td></tr>
+<tr class="v1-8"><td>新增雪地靴，玩家在雪上会跑得更快。</td></tr>
+<tr class="v1-8"><td>新增原谅帽、护士帽、小红帽、皮夹克、紧身皮裤、牛仔裤。</td></tr>
+<tr class="v1-8"><td>佩戴头饰使用的需要的南瓜修改为雕刻南瓜。</td></tr>
+<tr class="v1-8"><td>新增头饰海草。</td></tr>
+
+<tr class="v1-8"><td>不再给予玩家初始工具和食物。</td></tr>
+<tr class="v1-8"><td>移除强化系统。</td></tr>
+<tr class="v1-8"><td>删除功力系统。</td></tr>
+<tr class="v1-8"><td>进度系统重新调整。</td></tr>
+
+<tr class="v1-8"><td>炼药锅可用于漂白染色玻璃和染色陶瓦。</td></tr>
+<tr class="v1-8"><td>新增爬行者地牢，由圆石和苔石构成的小房间，包含苦力怕刷怪箱和地牢宝箱。生成于沙漠、平顶山或黑森林。</td></tr>
+<tr class="v1-8"><td>新增图腾柱，由圆石构成的柱子，包含矿石、熔岩和宝箱。生成于草原、森林、针叶林或丛林。</td></tr>
+<tr class="v1-8"><td>新增桃树、苹果树、橘树、樱树、常青树、银杏、红叶李、紫叶李。生成于草原、森林、针叶林或丛林。</td></tr>
+
+<tr class="v1-8"><td>新增烧炼腐肉、皮革盔甲、鞍得到小块皮革。</td></tr>
+<tr class="v1-8"><td>修改合成得到的楼梯数量为8。</td></tr>
+<tr class="v1-8"><td>新增18种台阶和17种楼梯回收为原方块。</td></tr>
+<tr class="v1-8"><td>修改合成石英块/皮革所需的石英/小块皮革数量为9。</td></tr>
+<tr class="v1-8"><td>新增9个线/冰合成为蜘蛛网/浮冰。</td></tr>
+<tr class="v1-8"><td>新增粘土块、荧石、雪块、西瓜、地狱疣块、蜘蛛网、石英块、皮革的分解。</td></tr>
+<tr class="v1-8"><td>现在任意颜色的床均可被染色。</td></tr>
+<tr class="v1-8"><td>新增锁链盔甲的合成。</td></tr>
+<tr class="v1-8"><td>修改刷怪蛋的合成为原版合成。</td></tr>
+<tr class="v1-8"><td>修改凋灵骷髅刷怪蛋的配方中的煤炭为煤炭块。</td></tr>
+<tr class="v1-8"><td>修改唤魔者的合成配方为鸡蛋+闪烁的西瓜。</td></tr>
+<tr class="v1-8"><td>修改可驯服生物合成所需头颅为凋零骷髅头颅。</td></tr>
+<tr class="v1-8"><td>移除幻术师、高压爬行者刷怪蛋的合成。</td></tr>
+<tr class="v1-8"><td>移除道路固化剂的合成。</td></tr>
+<tr class="v1-8"><td>新增4种平滑方块的合成。</td></tr>
+<tr class="v1-8"><td>玩家在平滑石头、平滑砂岩、平滑红砂岩、平滑石英块上可以获得不同的加速效果。</td></tr>
+<tr class="v1-8"><td>新增9个任意耐久的钻石制品可回收为钻石。</td></tr>
+<tr class="v1-8"><td>新增龙蛋、红沙、粘土的合成。</td></tr>
+
+<tr class="v1-8"><td>图腾柱宝箱含亡灵之魂/硝火之烬/生物之肢/附魔金苹果/附魔铁锭/附魔金锭/肉松面包/拔丝苹果/煤炭/骨头/火药/腐肉/线。</td></tr>
+<tr class="v1-8"><td>新增钓鱼垃圾海晶碎片。</td></tr>
+
+<tr class="v1-8"><td>新增掷骰子，输入/trigger cppRoll set 1即可。</td></tr>
+<tr class="v1-8"><td>下界之星、不死图腾、龙蛋掉落物将不会被破坏。</td></tr>
+</tbody></table>
+
+<!--1.9
+<tr class="even">
+	<th rowspan="40">未来<br /><span class="lore"></span></th></th>
+	<th rowspan="40"><br /><span class='lore'></span></th>
+	<td>新增boss。</td></tr>
+<tr class="even"><td>新增悬浮符文：扔出5秒后，将附近15×15区域移动至100米的高空，厚度自符文向下8米。</td></tr>
+<tr class="even"><td>新增爆炸符文：扔出5秒后，造成一次爆炸。</td></tr>
+<tr class="even"><td>新增生命符文：扔出后破坏下方的刷怪笼，掉落破损的笼子。</td></tr>
+<tr class="even"><td>新增破损的笼子，和龙蛋、下界之星、刷怪蛋合成自动刷怪笼，每6秒生成一只。</td></tr>
+<tr class="even"><td>新增画：CBL，TRP，TCP。</td></tr>
+<tr class="even"><td>新增双向传送器。</td></tr>
+
+
+<div style="cursor:pointer;position:fixed;bottom:80px;left:95%;background:url(http://www.mcbbs.net/template/mcbbs/img/mc_creeper.gif) no-repeat; visibility: visible;height:200px;width:80px" id="scrolltop" onclick="window.scrollTo('0','0')"></div>
+-->
+
+
+</article>
+
+<footer>
+<p><a href="https://ruhuasiyu.github.io/craftingpp/">官网</a> | <a href="http://www.mcbbs.net/thread-696861-1-1.html">mcbbs帖子</a> | 联系作者：<a href="http://www.mcbbs.net/home.php?mod=spacecp&ac=pm&touid=975525">ruhuasiyu@mcbbs</a> | 最后更新 2018-03-08</p>
+</footer>
+<body><html>

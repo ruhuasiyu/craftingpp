@@ -1,11 +1,11 @@
 <!doctype html>
-<!-- saved from url=(0030)http://home.ustc.edu.cn/~zsxqq -->
+<!-- saved from url=(0038)https://ruhuasiyu.github.io/craftingpp -->
 <html lang="zh-cmn-Hans">
 <head>
 <meta charset="utf-8" />
 <title>更多的合成 Crafting++ v1.8</title>
 <meta name='author' content='ruhuasiyu@mcbbs' />
-<meta name='keywords' content='minecraft, 原版模组, mod' />
+<meta name='keywords' content='minecraft, 原版模组, mod, Crafting++' />
 <meta name='description' content='Minecraft 原版模组 更多的合成' />
 <meta name='revised' content='ruhuasiyu@mcbbs' />
 <base href="" />
@@ -296,7 +296,6 @@ function change(str){
 	if(str=="title")		i=8;
 	if(str=="world")		i=9;
 	if(str=="vanil")		i=10;
-	if(str=="chang")		i=11;
 	
 	var sec=$('article');
 	var length=sec.length;
@@ -318,11 +317,6 @@ function change(str){
 <a href="../index.html"><img src="items/screenshots/banner.png" style="width:100%;"/></a>
 </div>
 
-<!--<header style="background:purple; padding:3px 60px; margin-top:0;">
-<h1>更多的合成 1.8-t1226 (测试版) </h1>
-</header>
--->
-
 <nav id="content">
 <ul>
 	<li><a onclick="change('intro')">简介</a></li>
@@ -336,22 +330,19 @@ function change(str){
 	<li><a onclick="change('title')">进度</a></li>
 	<li><a onclick="change('world')">世界修改</a></li>
 	<li><a onclick="change('vanil')">原版合成</a></li>
-	<li><a onclick="change('chang')">更新日志</a></li>
 </ul>
 </nav>
 
 <!--简介-->
 <article>
-<p>本次更新为元素更新，模组版本1.8，支持 <strong>Minecraft Java 1.13</strong>。本次更新引入了元素之力，增加了经验值在多方面的用途，包括方块处理、饰品制作、状态效果释放和附魔书的制作，同时在原版的世界生成、交易、合成上也添加了很多新内容。</p>
+<p>本次更新为元素更新，模组版本1.8，支持 <strong>Minecraft Java 1.13</strong>。本次更新引入了元素之力，增加了经验值在多方面的用途，包括方块处理、饰品制作、状态效果释放和附魔书的制作，同时在原版的世界生成、合成、烧炼上也添加了很多新内容。</p>
 
 <h3>背包合成</h3>
 <p>涉及模组新增物品的合成均采用背包合成，方式如下：将材料放入背包右上角对应的3×3的格子里即可自动得到产物，数量和位置须完全吻合。</p>
 <p class="center"><img src="https://public.lightpic.info/image/15EA_59153D760.jpg" /></p>
 
 <h3 id="download">下载与安装</h3>
-<p><a href="">点此下载</a>，<a href="http://www.mcbbs.net/thread-696861-1-1.html">点此查看mcbbs介绍帖</a>。</p>
-
-<p>将解压缩后的 <code>datapacks</code>, <code>data</code>, <code>resources.zip</code> 放入 <code>.minecraft/saves/世界名称</code> 文件夹，然后退出世界重进即可。</p>
+<p><a href="">下载后</a>，将解压缩后的 <code>datapacks</code>, <code>data</code>, <code>resources.zip</code> 放入 <code>.minecraft/saves/世界名称</code> 文件夹，然后退出世界重进即可。</p>
 <p>部分内容支持自定义参数，请打开datapacks/craftingpp/data/cpp/config.mcfunction修改。</p>
 
 <h3 id="declaration">声明</h3>
@@ -359,7 +350,7 @@ function change(str){
 <p>不可转载至网盘或文件存储平台。公益服务器可直接使用；非公益服务器需联系我获得授权。通讯类工具可下载后分享。</p>
 
 <h3 id="international">国际化</h3>
-<p>模组大部分文字支持英文，如需其它语言，可自行修改材质中相应文字。如您乐意提供其它语言版本，欢迎<a href="http://www.mcbbs.net/thread-696861-1-1.html">回复原帖</a>、<a href="https://github.com/ruhuasiyu/craftingpp/issues/new">发起issue</a>或<a href="http://www.mcbbs.net/home.php?mod=spacecp&ac=pm&touid=975525">私信我</a>。</p>
+<p>模组大部分文字支持英文，如需其它语言，可自行修改资源包中相应文件。如您乐意提供其它语言版本，欢迎<a href="http://www.mcbbs.net/thread-696861-1-1.html">在论坛回复</a>、<a href="https://github.com/ruhuasiyu/craftingpp/issues/new">发起issue</a>或<a href="http://www.mcbbs.net/home.php?mod=spacecp&ac=pm&touid=975525">私信我</a>。</p>
 
 <h3 id="develop">开发者注意</h3>
 <p>本模组命名空间为cpp，记分板、标签、组等均以cpp为前缀。为便于他人整合使用，烦请避开此前缀。</p>
@@ -435,19 +426,6 @@ function change(str){
 <tr><td>肉松面包/拔丝苹果/煤炭</td></tr>
 <tr><td style="color:red;">骨头/火药/腐肉/线</td></tr>
 
-<tr><td rowspan="4"><span class="mcui-row"><span class="chest"></span></span></td>
-<th rowspan="4">圣诞礼物</th>
-<td style="color:blue;">鞘翅/附魔钻石头盔/附魔钻石胸甲/附魔钻石护腿/附魔钻石靴子<br />
-附魔钻石剑/附魔钻石镐/附魔钻石斧/附魔钻石锹</td></tr>
-
-<tr><td style="color:#40a">附魔铁头盔/附魔铁胸甲/附魔铁护腿/附魔铁靴子<br />
-附魔铁剑/附魔铁镐/附魔铁斧/附魔铁锹</td></tr>
-
-<tr><td>钻石/金锭/铁锭/绿宝石/煤炭/青金石/红石<br />
-金苹果/附魔金苹果/鞍/铁马铠/金马凯/钻石马铠</td></tr>
-
-<tr><td style="color:red;">面包/苹果/甜菜种子/西瓜种子/南瓜种子</td></tr>
-
 <tr><td rowspan="2"><span class="mcui-row"><span class="fishing_rod" title="钓鱼"></span></span></td>
 <th rowspan="2">钓鱼</th>
 <td style="color:blue;">湿海绵/鱼头/鲑鱼头/小丑鱼头/河豚头</td></tr>
@@ -458,8 +436,7 @@ function change(str){
 </article>
 
 <article>
-<p>通过搭配不同的染料、矿物和生物的稀有掉落物，我们可以合成不同的元素之力。元素之力可通过消耗经验发挥不同的效果，也是参与方块自动化处理的必需品，同时还可用于制作各种材料和实用品。</p>
-<p>表格中右下角0表示需要放入相应物品，但是自身不会被消耗。</p>
+<p>通过搭配不同的染料、矿物和生物的稀有掉落物，我们可以合成不同的元素之力。元素之力可通过消耗经验发挥不同的效果，也是参与<a href="#machine" onclick="change('autom');">自动化</a>处理的必需品，同时还可用于制作各种<a onclick="change('tools');">材料和工具</a>。</p>
 <table>
 <thead><tr><th>产物</th><th style="width:15em;">材料</th><th>合成配方</th><th>说明</th></tr></thead>
 <tbody>
@@ -594,23 +571,27 @@ function change(str){
 </article>
 
 <article>
-<h3>自动种植</h3>
+<h3 id="auto_plant">自动种植</h3>
 <p>当发射器发射的物品可以种植在前方位置时，会自动种植。</p>
 <table><thead><tr><th>方块</th><th>作物</th></tr></thead><tbody>
+<tr><td>泥土等</td><td>树苗</td></tr>
 <tr><td>耕地</td><td>小麦种子、甜菜种子、南瓜种子、西瓜种子、胡萝卜、马铃薯</td></tr>
 <tr><td>灵魂沙</td><td>地狱疣</td></tr>
 <tr><td>末地石</td><td>紫颂花</td></tr>
 <tr><td>菌丝</td><td>蘑菇</td></tr>
 <tr><td>丛林木</td><td>可可豆</td></tr>
 </tbody></table>
+<p>已知的bug: 发射器附近的作物无法被破坏。</p>
 
-<h3>机械</h3>
+<h3 id="machine">机械</h3>
 <p><strong>压缩机</strong>：沿竖直方向依次摆放漏斗、向下的活塞、漏斗，然后将相应物品放入顶部漏斗的第一格即可压缩。支持铁粒、金粒、矿物、粘土球、荧石粉、雪球、西瓜、地狱疣、线、小麦、粘液球、干海草。</p>
 <p><strong>制造机</strong>：沿竖直方向依次摆放漏斗、工作台、漏斗，然后将相应物品放入顶部漏斗即可。支持造石、造冰雪、造矿物。</p>
 <p><strong>粉碎机</strong>：沿竖直方向依次摆放漏斗、砂砾、漏斗，然后将相应物品放入顶部漏斗即可。支持碎石、碎矿。</p>
 <p><strong>熔炼机</strong>：沿竖直方向依次摆放漏斗、岩浆块、漏斗，然后将相应物品放入顶部漏斗，可使用红沙代替沙子。支持炼矿、制盐。</p>
 <p><strong>生长机</strong>：沿竖直方向依次摆放漏斗、泥土、漏斗，然后将相应物品放入顶部漏斗。支持各种植物。</p>
 <p><strong>繁殖机</strong>：沿竖直方向依次摆放漏斗、黑曜石、漏斗，然后将相应物品放入顶部漏斗。支持各种怪物。</p>
+<p>表格中右下角0表示需要放入相应物品，但是自身不会被消耗。</p>
+
 <!--<p class="center"><img src="items/screenshots/auto.png" /></p>-->
 
 <table><thead><tr><th style="width:30px">机器</th><th style="width:181px">输入</th><th style="width:288px">输出</th><th style="width:34px">耗时</th><th style="width:300px">备注</th></tr></thead><tbody>
@@ -1951,73 +1932,60 @@ function change(str){
 <p>玩家需要保持适当的体重以避免过于肥胖或过于瘦弱，这可以通过荤素搭配来实现。如果玩家身体超重(Fat>100)会行走缓慢，而体重过轻(Fat<-100)则会变得虚弱。使用测重压力板可以测量出你的体重指数。</p>
 
 <h3>烹饪</h3>
-<p>如需烹饪食物，需先制作菜刀和砧板，然后可用来处理食材，最后可用熔炉为烹制食材。</p>
+<p>如需烹饪食物，需先处理食材，然后可用熔炉烹制。</p>
 
 <table>
 <thead><tr><th>产物</th><th style="width:15em;">材料</th><th>合成配方</th></tr></thead>
 <tbody>
 
-<tr><th><strong id="knife_and_chopping">菜刀和砧板 (Knife and Chopping)</strong></th><td>铁锭+木棍+橡木木板</td><td><span class="mcui"><span>
-<span class="mcui-row"><span class="iron_ingot" title="铁锭">
-</span><span class="iron_ingot" title="铁锭">
-</span><span class="stick" title="木棍">
-</span></span><span class="mcui-row"><span class="iron_ingot" title="铁锭">
-</span><span class="iron_ingot" title="盐瓶">
-</span><span class="empty">
-</span></span><span class="mcui-row"><span class="oak_planks" title="橡木木板">
-</span><span class="oak_planks" title="橡木木板">
-</span><span class="oak_planks" title="橡木木板">
-</span></span></span><span class="mcui-arrow"></span><span class="mcui-output">
-<span class="iron_axe" title="菜刀和砧板"><span class="enchant">*</span></span></span></span></td></tr>
-
 <tr><th><strong id="raw_colorful_vegetable">生缤纷菜蔬 (Raw Colorful Vegetable)</strong><br /><img src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_zh_gamepedia/6/65/Hunger.svg" style="width:18px;height:18px;" title="10" /><img src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_zh_gamepedia/6/65/Hunger.svg" style="width:18px;height:18px;" title="10" /><img src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_zh_gamepedia/6/65/Hunger.svg" style="width:18px;height:18px;" title="10" /><img src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_zh_gamepedia/6/65/Hunger.svg" style="width:18px;height:18px;" title="10" /><img src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_zh_gamepedia/6/65/Hunger.svg" style="width:18px;height:18px;" title="10" /></th><td>南瓜+<a href="#knife_and_chopping">菜刀和砧板</a>+棕色蘑菇+胡萝卜+<a href="#bottle_of_salt" onclick="change('autom');">盐瓶</a>+马铃薯</td><td><span class="mcui"><span>
-<span class="mcui-row"><span class="pumpkin" title="南瓜">
-</span><span class="iron_axe" title="菜刀和砧板"><span class="enchant">*</span><span class="stacksize">0</span>
-</span><span class="brown_mushroom" title="棕色蘑菇">
-</span></span><span class="mcui-row"><span class="carrot" title="胡萝卜">
+<span class="mcui-row"><span class="empty">
 </span><span class="colorful_items bottle_of_salt" title="盐瓶">
+</span><span class="empty">
+</span></span><span class="mcui-row"><span class="carrot" title="胡萝卜">
+</span><span class="pumpkin" title="南瓜">
 </span><span class="potato" title="马铃薯">
 </span></span><span class="mcui-row"><span class="empty">
-</span><span class="empty">
+</span><span class="bowl" title="碗">
 </span><span class="empty">
 </span></span></span><span class="mcui-arrow"></span><span class="mcui-output">
 <span class="rabbit_stew" title="生土豆排骨"><span class="enchant">*</span></span></span></span></td></tr>
 
 <tr><th><strong id="raw_braised_pork_with_potatoes">生土豆排骨 (Raw Braised Pork with Potato)</strong><br /><img src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_zh_gamepedia/6/65/Hunger.svg" style="width:18px;height:18px;" title="10" /><img src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_zh_gamepedia/6/65/Hunger.svg" style="width:18px;height:18px;" title="10" /><img src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_zh_gamepedia/6/65/Hunger.svg" style="width:18px;height:18px;" title="10" /><img src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_zh_gamepedia/6/65/Hunger.svg" style="width:18px;height:18px;" title="10" /><img src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_zh_gamepedia/6/65/Hunger.svg" style="width:18px;height:18px;" title="10" /></th><td>生猪排+<a href="#knife_and_chopping">菜刀和砧板</a>+骨头+胡萝卜+<a href="#bottle_of_salt" onclick="change('autom');">盐瓶</a>+马铃薯</td><td><span class="mcui"><span>
-<span class="mcui-row"><span class="porkchop" title="生猪排">
-</span><span class="iron_axe" title="菜刀和砧板"><span class="enchant">*</span><span class="stacksize">0</span>
-</span><span class="bone" title="骨头">
-</span></span><span class="mcui-row"><span class="carrot" title="胡萝卜">
+<span class="mcui-row"><span class="empty">
 </span><span class="colorful_items bottle_of_salt" title="盐瓶">
+</span><span class="empty">
+</span></span><span class="mcui-row"><span class="carrot" title="胡萝卜">
+</span><span class="porkchop" title="生猪排">
 </span><span class="potato" title="马铃薯">
 </span></span><span class="mcui-row"><span class="empty">
-</span><span class="empty">
+</span><span class="bowl" title="碗">
 </span><span class="empty">
 </span></span></span><span class="mcui-arrow"></span><span class="mcui-output">
 <span class="rabbit_stew" title="生土豆排骨"><span class="enchant">*</span></span></span></span></td></tr>
 
 <tr><th><strong id="raw_braised_beef_with_potatoes">生土豆牛肉 (Raw Braised Beef with Potato)</strong><br /><img src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_zh_gamepedia/6/65/Hunger.svg" style="width:18px;height:18px;" title="10" /><img src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_zh_gamepedia/6/65/Hunger.svg" style="width:18px;height:18px;" title="10" /><img src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_zh_gamepedia/6/65/Hunger.svg" style="width:18px;height:18px;" title="10" /><img src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_zh_gamepedia/6/65/Hunger.svg" style="width:18px;height:18px;" title="10" /><img src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_zh_gamepedia/6/65/Hunger.svg" style="width:18px;height:18px;" title="10" /></th><td>生牛肉+<a href="#knife_and_chopping">菜刀和砧板</a>+苹果+胡萝卜+<a href="#bottle_of_salt" onclick="change('autom');">盐瓶</a>+马铃薯</td><td><span class="mcui"><span>
-<span class="mcui-row"><span class="beef" title="生牛肉">
-</span><span class="iron_axe" title="菜刀和砧板"><span class="enchant">*</span><span class="stacksize">0</span>
-</span><span class="apple" title="苹果">
-</span></span><span class="mcui-row"><span class="carrot" title="胡萝卜">
+<span class="mcui-row"><span class="empty">
 </span><span class="colorful_items bottle_of_salt" title="盐瓶">
+</span><span class="empty">
+</span></span><span class="mcui-row"><span class="carrot" title="胡萝卜">
+</span><span class="beef" title="生牛肉">
 </span><span class="potato" title="马铃薯">
 </span></span><span class="mcui-row"><span class="empty">
-</span><span class="empty">
+</span><span class="bowl" title="碗">
 </span><span class="empty">
 </span></span></span><span class="mcui-arrow"></span><span class="mcui-output">
 <span class="rabbit_stew" title="生土豆牛肉"><span class="enchant">*</span></span></span></span></td></tr>
 
 <tr><th><strong id="meat_floss_bread">肉松面包 (Meat Floss Bread)</strong><br /><img src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_zh_gamepedia/6/65/Hunger.svg" style="width:18px;height:18px;" title="10" /><img src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_zh_gamepedia/6/65/Hunger.svg" style="width:18px;height:18px;" title="10" /><img src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_zh_gamepedia/6/65/Hunger.svg" style="width:18px;height:18px;" title="10" /><img src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_zh_gamepedia/6/65/Hunger.svg" style="width:18px;height:18px;" title="10" /><img src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_zh_gamepedia/6/65/Hunger.svg" style="width:18px;height:18px;" title="10" /><br /><span class="effect speed"></span> <span class="lore">迅捷 30秒</span></th><td>小麦+熟鸡肉+<a href="#bottle_of_salt" onclick="change('autom');">盐瓶</a></td><td><span class="mcui"><span>
-<span class="mcui-row"><span class="wheat" title="小麦">
-</span><span class="wheat" title="小麦">
-</span><span class="wheat" title="小麦">
-</span></span><span class="mcui-row"><span class="cooked_chicken" title="熟鸡肉">
+<span class="mcui-row"><span class="empty">
 </span><span class="colorful_items bottle_of_salt" title="盐瓶">
-</span><span class="cooked_chicken" title="熟鸡肉">
-</span></span><span class="mcui-row"><span class="empty">
 </span><span class="empty">
+</span></span><span class="mcui-row"><span class="wheat" title="小麦">
+</span><span class="wheat" title="小麦">
+</span><span class="wheat" title="小麦">
+</span></span><span class="mcui-row"><span class="empty">
+</span><span class="cooked_chicken" title="熟鸡肉">
 </span><span class="empty">
 </span></span></span><span class="mcui-arrow"></span><span class="mcui-output">
 <span class="bread" title="肉松面包"><span class="enchant">*</span></span></span></span></td></tr>
@@ -2494,7 +2462,7 @@ function change(str){
 <table class="craft"><thead><tr><th style="width:336px;">名称</th><th style="width:150px;">材料</th><th>合成配方</th><th style="width:250px;">描述</th></tr></thead>
 <tbody>
 <tr id="coal_helmet"><th><strong>荧光帽 (Glow Hat)</strong><br />
-<strong id="redstone_helmet">原谅帽 (Forgive Hat)</strong><br />
+<strong id="redstone_helmet">原谅帽 (Green Hat)</strong><br />
 <strong id="quartz_helmet">非酋帽 (Black Hat)</strong><br />
 <strong>护士帽 (Nurse Hat)</strong><br />
 <strong>小红帽 (Red Hat)</strong></th>
@@ -2561,7 +2529,7 @@ function change(str){
 </tbody></table>
 
 <h3>头饰</h3>
-<p>玩家未佩戴头盔或帽子，且副手持有指定的1个物品时，会自动佩戴该物品。共56款样式。</p>
+<p>玩家未佩戴头盔或帽子，且副手持有指定的1个物品时，会自动佩戴该物品。共57款样式。</p>
 <table class="center"><thead><tr><th colspan="4">帽子</th><th colspan="3">围脖</th><th colspan="2">花饰</th><th colspan="5">其它装饰</th></tr></thead>
 <tbody>
 <tr><td>玻璃</td><td>铁砧</td><td>石台阶</td><td>龙蛋</td><td>白色床</td><td>各色地毯</td><td>雪</td><td>铁活板门</td><td>各种花</td><td>草、厥</td><td>栅栏门</td><td>阳光传感器</td><td>末地烛</td><td>栅栏</td></tr>
@@ -2858,7 +2826,7 @@ function change(str){
 
 <article>
 
-<p>新增28项进度，完成进度会给予玩家经验、物品或状态效果。</p>
+<p>新增27项进度，完成进度会给予玩家经验、物品或状态效果。</p>
 				  
 <table id="advancements" style="font-size:90%">
 <thead><tr><th>图标</th><th>进度</th><th>游戏内描述</th><th>奖励</th><th>上游进度</th><th>内部ID</th></tr></thead><tbody>
@@ -2866,28 +2834,34 @@ function change(str){
 <th class="lore">开启模组！</th><td class="lore">感谢您的使用</td><td>—</td><td>—</td><td>cpp:root</td></tr>
 
 <tr><td><img class="normal" /><span><span class="blaze_powder"><br /></span></span></td>
-<th>元素之力</th><td>制作元素之力</td><td>—</td><td>开启模组！</td><td>cpp:element</td></tr>
+<th>元素之力</th><td>这是大自然的鬼斧神工</td><td>—</td><td>开启模组！</td><td>cpp:element</td></tr>
 <tr><td><img class="normal" /><span><span class="experience_bottle"><br /></span></span></td>
 <th>人生经验</th><td>不在书里，而在瓶子里</td><td>—</td><td>元素之力</td><td>cpp:xp_bottle</td></tr>
 <tr><td><img class="goal" /><span><span class="potion_healing"><br /></span></span></td>
-<th>这佐料不错</th><td>是盐啦！</td><td>—</td><td>人生经验</td><td>cpp:salt</td></tr>
+<th>白雪纷纷何所似</th><td>撒盐空中差可拟</td><td>—</td><td>人生经验</td><td>cpp:salt</td></tr>
 <tr><td><img class="normal" /><span><span class="rabbit_stew"><br /></span></span></td>
-<th>心急吃不了热……饭菜</th><td>生的也能吃啊</td><td>—</td><td>这佐料不错</td><td>cpp:raw_meal</td></tr>
+<th>心急吃不了热饭菜</th><td>醒醒，这不是寿司</td><td>—</td><td>白雪纷纷何所似</td><td>cpp:raw_meal</td></tr>
 <tr><td><img class="normal" /><span><span class="piston"><br /></span></span></td>
-<th>叮当猫的口袋</th><td>把物品压一压，还能装得下</td><td>—</td><td>心急吃不了热……饭菜</td><td>cpp:doraemon</td></tr>
+<th>叮当猫的口袋</th><td>再多石头也能装得下</td><td>—</td><td>心急吃不了热……饭菜</td><td>cpp:doraemon</td></tr>
 <tr><td><img class="normal" /><span><span class="book"><br /></span></span></td>
-<th>提高姿势水平</th><td>还是得看书</td><td>—</td><td>叮当猫的口袋</td><td>cpp:knowledge</td></tr>
+<th>提高姿势水平</th><td>还是得学习一个</td><td>—</td><td>叮当猫的口袋</td><td>cpp:knowledge</td></tr>
 <tr><td><img class="challenge" /><span><span class="stick"><br /></span></span></td>
 <th>成为马猴烧酒</th><td>魔杖可是标配</td><td>100点经验</td><td>提高姿势水平</td><td>cpp:mahoushoujo</td></tr>
 <tr><td><img class="challenge" /><span><span class="blaze_rod"><br /></span></span></td>
-<th>Secure!</th><td>这是小樱自己制造出的魔杖</td><td>500点经验</td><td>成为马猴烧酒</td><td>cpp:sakura</td></tr>
+<th>Release!</th><td>星之魔杖</td><td>500点经验</td><td>成为马猴烧酒</td><td>cpp:sakura</td></tr>
 
 <tr><td><img class="normal" /><span><span class="leather_helmet"><br /></span></span></td>
 <th>当然是选择原谅她啦！</th><td>戴上你的原谅帽</td><td>—</td><td>开启模组！</td><td>cpp:forgive</td></tr>
 <tr><td><img class="normal" /><span><span class="leather_chestplate"><br /></span></span></td>
 <th>阿瓦达索命</th><td>据说和红色有关</td><td>—</td><td>当然是选择原谅她啦！</td><td>cpp:get_life</td></tr>
+<tr><td><img class="normal" /><span><span class="end_rod"><br /></span></span></td>
+<th>小龙人</th><td>我头上有犄角</td><td>—</td><td>阿瓦达索命</td><td>cpp:dragonboy</td></tr>
+<tr><td><img class="normal" /><span><span class="painting"><br /></span></span></td>
+<th>艺术家</th><td>My name is Van</td><td>—</td><td>小龙人</td><td>cpp:artist</td></tr>
+<tr><td><img class="normal" /><span><span class="oak_sapling"><br /></span></span></td>
+<th>园林师</th><td>要想富，少生孩子多种树</td><td>—</td><td>艺术家</td><td>cpp:gardener</td></tr>
 <tr><td><img class="challenge" /><span><span class="smooth_stone"><br /></span></span></td>
-<th>红色有角</th><td>跑的比谁都快</td><td>100点经验</td><td>阿瓦达索命</td><td>cpp:red_horn</td></tr>
+<th>红色有角</th><td>跑的比谁都快</td><td>100点经验</td><td>园林师</td><td>cpp:red_horn</td></tr>
 
 <tr><td><img class="normal" /><span><span class="emerald"><br /></span></span></td>
 <th>装完逼还想跑？</th><td>土著的愤怒</td><td>15秒的缓慢</td><td>开启模组！</td><td>cpp:robber</td></tr>
@@ -2895,21 +2869,19 @@ function change(str){
 <th>战斗民族</th><td>打死一头熊</td><td>—</td><td>装完逼还想跑？</td><td>cpp:fighter</td></tr>
 <tr><td><img class="normal" /><span><span class="wet_sponge"><br /></span></span></td>
 <th>海绵宝宝</th><td>我们去抓水母吧</td><td>章鱼哥</td><td>战斗民族</td><td>cpp:sponge</td></tr>
-<tr><td><img class="challenge" /><span><span class="potion_healing"><br /></span></span></td>
-<th>我是不是该减肥了？</th><td>体重翻倍了</td><td>500点经验</td><td>海绵宝宝</td><td>cpp:need_weight_loss</td></tr>
 <tr><td><img class="goal" /><span><span class="iron_axe"><br /></span></span></td>
-<th>闪灵</th><td>杀死卫道士</td><td>100点经验</td><td>我是不是该减肥了？</td><td>cpp:shining</td></tr>
+<th>闪灵</th><td>杀死卫道士</td><td>100点经验</td><td>海绵宝宝</td><td>cpp:shining</td></tr>
 <tr><td><img class="goal" /><span><span class="undying_totem"><br /></span></span></td>
-<th>不朽</th><td>肉山大魔王</td><td>—</td><td>闪灵</td><td>cpp:undead</td></tr>
+<th>不朽</th><td>肉山大魔王</td><td>100点经验</td><td>闪灵</td><td>cpp:undead</td></tr>
+<tr><td><img class="challenge" /><span><span class="potion_healing"><br /></span></span></td>
+<th>我是不是该减肥了？</th><td>体重翻倍了</td><td>500点经验</td><td>不朽</td><td>cpp:fat</td></tr>
 <tr><td><img class="challenge" /><span><span class="zombie_head"><br /></span></span></td>
-<th>已经没什么好害怕的了</th><td>学姐，你的头掉了</td><td>500点经验</td><td>不朽</td><td>cpp:all_head</td></tr>
+<th>已经没什么好害怕的了</th><td>学姐，你的头掉了</td><td>500点经验</td><td>我是不是该减肥了？</td><td>cpp:all_head</td></tr>
 
 <tr><td><img class="normal" /><span><span class="egg"><br /></span></span></td>
 <th>先有鸡还是先有蛋？</th><td>是先有蛋</td><td>—</td><td>开启模组！</td><td>cpp:egg</td></tr>
 <tr><td><img class="normal" /><span><span class="chicken_spawn_egg"><br /></span></span></td>
-<th>基因技术</th><td>绝对的黑科技</td><td>—</td><td>先有鸡还是先有蛋？</td><td>cpp:gene_technology</td></tr>
-<tr><td><img class="normal" /><span><span class="white_wool"><br /></span></span></td>
-<th>羊村村长</th><td>我一定会回来的</td><td>—</td><td>基因技术</td><td>cpp:sheep</td></tr>
+<th>羊村村长</th><td>我一定会回来的</td><td>—</td><td>先有鸡还是先有蛋？</td><td>cpp:sheep</td></tr>
 <tr><td><img class="normal" /><span><span class="rotten_flesh"><br /></span></span></td>
 <th>僵尸博士的复仇</th><td>没有豌豆了，用你的剑吧</td><td>—</td><td>羊村村长</td><td>cpp:zombie</td></tr>
 <tr><td><img class="normal" /><span><span class="cod"><br /></span></span></td>
@@ -2917,12 +2889,6 @@ function change(str){
 <tr><td><img class="challenge" /><span><span class="dragon_egg"><br /></span></span></td>
 <th>然而这并没有什么卵用</th><td>然而这却有蛋用</td><td>500点经验</td><td>铲屎官</td><td>cpp:dragon_egg</td></tr>
 
-<tr><td><img class="normal" /><span><span class="end_rod"><br /></span></span></td>
-<th>小龙人</th><td>我头上有犄角</td><td>—</td><td>开启模组！</td><td>cpp:dragonboy</td></tr>
-<tr><td><img class="normal" /><span><span class="painting"><br /></span></span></td>
-<th>艺术家</th><td>My name is Van</td><td>—</td><td>小龙人</td><td>cpp:artist</td></tr>
-<tr><td><img class="normal" /><span><span class="oak_sapling"><br /></span></span></td>
-<th>园林师</th><td>要想富，少生孩子多种树</td><td>—</td><td>艺术家</td><td>cpp:gardener</td></tr>
 
 </tbody></table>
 
@@ -2945,32 +2911,6 @@ function change(str){
 <p>新增桃树、苹果树、橘树、樱树、常青树、银杏、红叶李、紫叶李。生成于草原、森林、针叶林或丛林。</p>
 
 <p><img style="height:483px;width:900px" src="https://public.lightpic.info/image/2CB7_5913F6590.jpg" /></p>
-
-<h3 id="villager">村民</h3>
-<p>新增三种村民。</p>
-
-<table>
-<thead><tr><th colspan="2">职业</th><th style="width:40px;">层级</th><th>买</th><th>卖</th></tr></thead>
-<tbody>
-<tr><th style="width:50px;"><img src="https://i.loli.net/2017/12/21/5a3abc5599036.png" style="height:100px;"/></th><th style="width:70px;">圣诞老人</th><th>-</th><td style="text-align:center">皮革靴子+48-64 绿宝石</td><td style="text-align:center">圣诞礼物<sup>[1]</sup></td></tr>
-
-<tr><th rowspan="4"><img src="https://i.loli.net/2017/12/21/5a3abc5597869.png" style="height:100px;"/></th><th rowspan="4" style="width:50px">烟花师</th><th rowspan="2" style="width:20px">1</th><td style="text-align:center">24-36 纸</td><td style="text-align:center">绿宝石</td></tr>
-<tr><td style="text-align:center">36-40 火药</td><td style="text-align:center">绿宝石</td></tr>
-<tr><th rowspan="2">2</th><td style="text-align:center">1 绿宝石</td><td style="text-align:center">3-5烟花火箭<sup>[2]</sup></td></tr>
-<tr><td style="text-align:center">1 绿宝石</td><td style="text-align:center">3-5烟花火箭<sup>[2]</sup></td></tr>
-
-<tr><th rowspan="7"><img src="https://i.loli.net/2017/12/21/5a3abc559610c.png" style="height:100px;"/></th><th rowspan="7">书画师</th><th rowspan="3">1</th><td style="text-align:center">28-35 纸</td><td style="text-align:center">绿宝石</td></tr>
-<tr><td style="text-align:center">16-24 玫瑰红</td><td style="text-align:center">绿宝石</td></tr>
-<tr><td style="text-align:center">16-24 墨囊</td><td style="text-align:center">绿宝石</td></tr>
-<tr><th rowspan="4">2</th><td style="text-align:center">6 绿宝石</td><td style="text-align:center">福字</td></tr>
-<tr><td style="text-align:center">7-11 绿宝石</td><td style="text-align:center">春字</td></tr>
-<tr><td style="text-align:center">28-44 绿宝石</td><td style="text-align:center">对联<sup>[3]</sup></td></tr>
-<tr><td style="text-align:center">1 绿宝石</td><td style="text-align:center">TCP logo</td></tr>
-<tr><td colspan="5">
-[1] 打开后可随机获得附魔钻石或铁盔甲/工具/剑，或矿物/种子/食物等。<br />
-[2] 为双层球状，颜色随机。<br />
-[3] 共四种样式：日出江花红胜火 春来江水绿如蓝/爆竹声声辞旧岁 春联户户迎新春/一年四季行好运 八方财宝进家门/迎新春平安如意 贺佳节富贵平安。</td></tr>
-</tbody></table>
 
 <h3>平滑加速</h3>
 <p>玩家在平滑石头、平滑砂岩、平滑红砂岩、平滑石英块上可以获得速度I、速度II、速度III、速度IV的状态效果。</p>
@@ -3526,140 +3466,6 @@ function change(str){
 </tbody></table>
 
 </article>
-
-<article>
-<!--1.8-->
-<h3>1.8</h3>
-<p>发布时间：预计5月底 大小：1080 KB</p>
-<ul>
-<li>游戏本体版本升级为1.13，不再支持1.13之前的版本。</li>
-<li>修改资源包文字的代码名称、记分板、标签前缀为cpp，修改资源包以适应1.13。</li>
-<li>移除标语“www.excitedfrog.com”、“高温+高压+碳=钻石”。</li>
-<li>新增标语“一起蛤啤！”、“Ass ♂ we ♂ can”、“Deep ♂ Dark ♂ Fantasy”、“帕秋莉 ♂ Go!”。</li>
-<li>修改终末之诗为葛底斯堡演说并在结尾添加鸣谢。</li>
-<li>修改下界石英名称为石英，兔子皮为小块皮革。</li>
-
-<li>移除活塞工艺。</li>
-<li>新增蓝色天之力，右键消耗玩家20点经验切换为晴天。</li>
-<li>新增绿色水之力，右键消耗玩家1点经验并放置一格水。</li>
-<li>新增青色山之力，当玩家高度大于62时，右键消耗玩家40点经验并整地至海平面高度。</li>
-<li>新增橙色土之力，右键消耗玩家1点经验并破坏前方土质方块。</li>
-<li>新增黄色地之力，右键消耗玩家80点经验并清除附近15×3×15区域中的水和岩浆。</li>
-<li>新增红色火之力，右键消耗玩家1点经验并烧炼前方方块成物品。</li>
-<li>新增紫色木之力，右键转换地面的物品：树苗、种子/甘蔗/仙人掌/可可豆和花，转化比率为2:1。</li>
-<li>新增白色电之力，右键去除地面的物品附魔。</li>
-<li>新增黑色月之力，右键消耗玩家80点经验并在前方铺设3米宽的泥土道路。</li>
-
-<li>新增自动化，将指定物品放入漏斗矿车并经过一段时间后即可在其下方0.5米处产出物品。</li>
-<li>新增矿物粉。</li>
-<li>新增圆石堆、石头堆、泥土堆、沙子堆，右键恢复。</li>
-<li>新增附魔之瓶。</li>
-<li>新增钢粉。</li>
-<li>新增磁铁，将附近20米内掉落物吸引过来。按Q关闭。</li>
-<li>新增时间调节器，放置于物品展示框后可调整作物生长速度和日夜循环。</li>
-<li>新增报时器，放置于物品展示框后可报时。</li>
-<li>新增世界之源，右击消耗10点经验返回世界原点。</li>
-<li>新增生物酸、生物碱、粗硅、空气瓶、硅粉、硅板。</li>
-<li>新增稀土盐、碱性稀土、稀土粉。</li>
-<li>新增附魔铁锭、附魔金锭、附魔钻石。</li>
-<li>新增钢化玻璃、稀土玻璃。</li>
-<li>新增经验释放器、触发器、压缩器、焚毁器。</li>
-<li>新增转化器核心。</li>
-<li>新增年长者之教诲，每6秒给予拥有者1点经验。</li>
-<li>新增传送球，右键将玩家向前传送200米。</li>
-<li>新增磁化球，替代原强力磁铁，将附近20米内掉落物吸引过来。按Q关闭。</li>
-<li>新增破坏之手、农场核心、疣场核心、林场核心、牧场核心、渔场核心、猎场核心，用于自动化。</li>
-<li>新增日之碎片。</li>
-<li>新增方块转化器，替代原矿石种子新增荧石块转化器。</li>
-<li>方块转化器放置后，每隔一段时间可转化顶部指定方块，所需时间为2分钟×次数。破坏后无掉落。</li>
-<li>移除矿物探测器。</li>
-
-<li>炼药锅可用于漂白染色玻璃和染色陶瓦。</li>
-<li>炼药锅可用于烹饪，将物品扔进炼药锅内，放入适量的水，并在控制好下方的火候，然后等待即可。</li>
-<li>新增食物：肉松面包、烤馍、土豆牛肉、鸡蛋羹、烤全羊、拔丝苹果、附魔金苹果。</li>
-<li>移除附魔金苹果和药水的合成。</li>
-<li>炼药锅可用于为盔甲或工具附加效果，方式与烹饪类似。每种物品只能附加一种效果，后附加的会直接覆盖先附加的，但连锁与挼心除外。</li>
-<li>新增附加效果：夜视、隐身、抗性、抗火、力量、迅捷、跳跃、急迫。在相应槽位即可自动生效，同时消耗玩家经验值。</li>
-<li>新增附加效果：漂浮——副手持有时生效。</li>
-<li>新增附加效果：水肺——仅在水中生效。</li>
-<li>新增附加效果：反刍——仅在饥饿时生效，每点饥饿值消耗20xp。</li>
-<li>新增附加效果：再生——仅在受伤时生效，每点饥饿值消耗20xp。</li>
-<li>新增附加效果：连锁——对应斧、镐、锹为连锁砍树/瓜、连锁挖矿、连锁挖沙砾/粘土/沙子。</li>
-<li>新增附加效果：挼心——最大生命值+10。</li>
-<li>新增附加效果：大挼心——最大生命值+20。</li>
-
-<li>新增附魔书制作，玩家完成进度“附魔师”后，将八个书架摆成八边形，中间放置青金石块，然后将1本书和若干材料扔上去。接着便会按7xp/s的速度消耗玩家的经验值直到达到额定的要求，便可得到相应的附魔书。</li>
-<li>新增高级附魔书的制作。</li>
-
-<li>新增荧光帽、原谅帽、混乱帽、非酋帽、护士帽、小红帽。</li>
-<li>新增皮夹克、红色外套。</li>
-<li>新增紧身皮裤、牛仔裤。</li>
-<li>新增雪地靴。</li>
-<li>佩戴头饰使用的需要的南瓜修改为雕刻南瓜。</li>
-
-<li>不再给予玩家初始工具和食物。</li>
-<li>移除强化系统。</li>
-<li>删除功力系统。</li>
-<li>进度系统重新调整并添加称号奖励。</li>
-<li>获得称号后将具有对应名称的南瓜佩戴在头上即可生效，佩戴名称为“无称号”的南瓜即可卸下。</li>
-
-<li>新增爬行者地牢，由圆石和苔石构成的小房间，包含苦力怕刷怪箱和地牢宝箱。生成于沙漠、平顶山或黑森林。</li>
-<li>新增图腾柱，由圆石构成的柱子，包含矿石、熔岩和宝箱。生成于草原、森林、针叶林或丛林。</li>
-<li>新增桃树、苹果树、橘树、樱树、常青树、银杏、红叶李、紫叶李。生成于草原、森林、针叶林或丛林。</li>
-
-<li>新增村民圣诞老人，出售圣诞礼物。</li>
-<li>新增村民烟花师，收购纸、火药，出售烟花火箭。</li>
-<li>新增村民书画师，收购纸、玫瑰红、墨囊，出售福字、春字、对联和TCP logo。</li>
-
-<li>修改合成得到的楼梯数量为8。</li>
-<li>修改合成石英块所需的石英数量为9。</li>
-<li>修改羊毛的染色为一次染色8个。</li>
-<li>任意颜色的床均可被染色。</li>
-<li>修改刷怪蛋的合成原版合成。</li>
-<li>修改凋灵骷髅刷怪蛋的配方中的煤炭为煤炭块。</li>
-<li>修改唤魔者的合成配方为鸡蛋+闪烁的西瓜。</li>
-<li>移除幻术师、高压爬行者刷怪蛋的合成。</li>
-<li>移除道路固化剂的合成。</li>
-<li>新增4种平滑方块的合成，玩家在平滑石头、平滑砂岩、平滑红砂岩、平滑石英块上可以获得速度I、速度II、速度III、速度IV的状态效果。</li>
-<li>新增15种台阶和14种楼梯返回为原方块。</li>
-<li>新增石英块、粘土块、荧石、雪块、西瓜、地狱疣块的分解。</li>
-<li>新增蜘蛛网和9个线的相互转化。</li>
-<li>新增龙蛋、红沙的合成。</li>
-<li>新增腐肉+附魔之瓶、皮革盔甲、鞍回收为小块皮革；新增皮革分解为4块小块皮革。</li>
-<li>新增9个任意耐久的钻石制品可回收为钻石。</li>
-
-<li>北极熊不再掉落鱼。</li>
-<li>生物头颅、元素和其它稀有掉落物不再分享掉落几率。</li>
-<li>恼鬼/幻影鳐增加稀有掉落物飞翔之翼。</li>
-<li>海龟/海豚增加稀有掉落物海洋之心。</li>
-
-
-<li>图腾柱宝箱含亡灵之魂/硝火之烬/生物之肢/附魔金苹果/附魔铁锭/附魔金锭/肉松面包/拔丝苹果/煤炭/骨头/火药/腐肉/线。</li>
-<li>圣诞礼物含附魔钻石头盔/附魔钻石胸甲/附魔钻石护腿/附魔钻石靴子/附魔钻石剑/附魔钻石镐/附魔钻石斧/附魔钻石锹/附魔铁头盔/附魔铁胸甲/附魔铁护腿/附魔铁靴子/附魔铁剑/附魔铁镐/附魔铁斧/附魔铁锹/钻石/金锭/铁锭/绿宝石/煤炭/青金石/红石/鞘翅/鞍/铁马铠/金马凯/钻石马铠/甜菜种子/西瓜种子/南瓜种子/面包/苹果/金苹果/附魔金苹果。</li>
-<li>新增钓鱼垃圾海晶碎片。</li>
-
-<li>新增发射器种植作物。</li>
-<li>新增掷骰子，输入/trigger cppDice set 1即可。</li>
-<li>下界之星、不死图腾、龙蛋掉落物将不会被破坏。</li>
-</ul>
-
-
-<!--1.9
-<tr class="even">
-	<th rowspan="40">未来<br /><span class="lore"></span></th></th>
-	<th rowspan="40"><br /><span class='lore'></span></th>
-	<td>新增boss。</td></tr>
-<tr class="even"><td>新增悬浮符文：扔出5秒后，将附近15×15区域移动至100米的高空，厚度自符文向下8米。</td></tr>
-<tr class="even"><td>新增爆炸符文：扔出5秒后，造成一次爆炸。</td></tr>
-<tr class="even"><td>新增生命符文：扔出后破坏下方的刷怪笼，掉落破损的笼子。</td></tr>
-<tr class="even"><td>新增破损的笼子，和龙蛋、下界之星、刷怪蛋合成自动刷怪笼，每6秒生成一只。</td></tr>
-<tr class="even"><td>新增画：CBL，TRP，TCP。</td></tr>
-<tr class="even"><td>新增双向传送器。</td></tr>
-
-
-<div style="cursor:pointer;position:fixed;bottom:80px;left:95%;background:url(http://www.mcbbs.net/template/mcbbs/img/mc_creeper.gif) no-repeat; visibility: visible;height:200px;width:80px" id="scrolltop" onclick="window.scrollTo('0','0')"></div>
--->
-</article>
 <script>
 $(document).ready(function(){
 	$("img.normal").attr("src","items/normal.png");
@@ -3669,14 +3475,8 @@ $(document).ready(function(){
 </script>
 
 <footer>
-<p>联系作者：<a href="http://www.mcbbs.net/home.php?mod=spacecp&ac=pm&touid=975525">ruhuasiyu@mcbbs</a> | 最后更新 2018-01-31</p>
+<p><a href="https://ruhuasiyu.github.io/craftingpp/">官网</a> | <a href="http://www.mcbbs.net/thread-696861-1-1.html">mcbbs帖子</a> | 联系作者：<a href="http://www.mcbbs.net/home.php?mod=spacecp&ac=pm&touid=975525">ruhuasiyu@mcbbs</a> | 最后更新 2018-03-08</p>
 </footer>
-
-
-
-
-
-
 <body><html>
 <!--<span class="mcui-icons"><span class="mcui-shapeless" title="此配方是无形的，材料可以以任何排列方式放置在合成格内。"></span></span>
 lapis 6*2.2=13.2	6*3.14=18.84
