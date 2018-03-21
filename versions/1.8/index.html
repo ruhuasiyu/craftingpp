@@ -426,7 +426,7 @@ function change(str){
 <th>海绵宝宝</th><td>我们去抓水母吧</td><td>章鱼哥</td><td>战斗民族</td><td>cpp:sponge</td></tr>
 <tr><td><img class="goal" /><span><span class="iron_axe"><br /></span></span></td>
 <th>闪灵</th><td>杀死卫道士</td><td>100点经验</td><td>海绵宝宝</td><td>cpp:shining</td></tr>
-<tr><td><img class="goal" /><span><span class="undying_totem"><br /></span></span></td>
+<tr><td><img class="goal" /><span><span class="totem_of_undying"><br /></span></span></td>
 <th>不朽</th><td>肉山大魔王</td><td>100点经验</td><td>闪灵</td><td>cpp:undead</td></tr>
 <tr><td><img class="challenge" /><span><span class="potion_healing"><br /></span></span></td>
 <th>我是不是该减肥了？</th><td>体重翻倍了</td><td>500点经验</td><td>不朽</td><td>cpp:fat</td></tr>
@@ -895,6 +895,20 @@ function change(str){
 <thead><tr><th width="320px">产物</th><th width="240px">材料</th><th width="100px">合成配方</th><th width="180px">说明</th></tr></thead>
 <tbody>
 
+<tr><th><strong id="machine_core">机械核心 (Machine Core)</strong></th><td><a href="#enchanted_iron">附魔铁锭</a>+红石</a></td>
+<td><span class="mcui"><span><span class="mcui-row"><span class="iron_ingot" title="附魔铁锭"><span class="enchant">*</span>
+</span><span class="iron_ingot" title="附魔铁锭"><span class="enchant">*</span>
+</span><span class="iron_ingot" title="附魔铁锭"><span class="enchant">*</span>
+</span></span><span class="mcui-row"><span class="iron_ingot" title="附魔铁锭"><span class="enchant">*</span>
+</span><span class="redstone" title="红石">
+</span><span class="iron_ingot" title="附魔铁锭"><span class="enchant">*</span>
+</span></span><span class="mcui-row"><span class="iron_ingot" title="附魔铁锭"><span class="enchant">*</span>
+</span><span class="iron_ingot" title="附魔铁锭"><span class="enchant">*</span>
+</span><span class="iron_ingot" title="附魔铁锭"><span class="enchant">*</span>
+</span></span></span><span class="mcui-arrow"></span><span class="mcui-output">
+<span class="dropper" title="机械核心"><span class="enchant">*</span>
+</span></span></span></td><td></td></tr>
+
 <tr><th><strong id="steel_dust">钢粉 (Steel Dust)</strong></th><td><a href="#carbon_dust">碳粉</a>+<a href="#iron_dust">铁粉</a></td>
 <td><span class="mcui"><span><span class="mcui-row"><span class="empty">
 </span><span class="colorful_items carbon_dust" title="碳粉">
@@ -1259,7 +1273,7 @@ function change(str){
 
 <table><thead><tr><th>名称</th><th>材料</th><th>烧炼/酿造配方</th><th>时长</th></tr></thead><tbody>
 
-<tr><th><strong id="egg_stew">鸡蛋羹 (Egg Stew)</strong><br /><img src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_zh_gamepedia/6/65/Hunger.svg" style="width:18px;height:18px;" title="6" /><img src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_zh_gamepedia/6/65/Hunger.svg" style="width:18px;height:18px;" title="6" /><img src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_zh_gamepedia/6/65/Hunger.svg" style="width:18px;height:18px;" title="6" /><br /><span class="effect speed"></span> <span class="lore">速度 00:30</span></th><td>鸡蛋</td><td>
+<tr><th><strong id="egg_stew">鸡蛋羹 (Egg Stew)</strong><br /><img src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_zh_gamepedia/6/65/Hunger.svg" style="width:18px;height:18px;" title="6" /><img src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_zh_gamepedia/6/65/Hunger.svg" style="width:18px;height:18px;" title="6" /><img src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_zh_gamepedia/6/65/Hunger.svg" style="width:18px;height:18px;" title="6" /></th><td>鸡蛋</td><td>
 <span class="mcui"><span><span class="mcui-row"><span class="egg" title="鸡蛋">
 </span></span><span class="mcui-row"><span style="width:32px;height:32px;background-image:url(items/smelting.png);border-style:none;background-color:#c6c6c6;"></span></span><span class="mcui-row"><span class="coal" title="燃料"></span></span></span><span class="mcui-arrow"></span><span class="mcui-output">
 <span class="mushroom_stew" title="鸡蛋羹"><span class="enchant">*</span>
@@ -1427,9 +1441,9 @@ function change(str){
 </span><span class="empty">
 </span><span class="empty">
 </span></span></span></span>
-<p>在发射器中放入特定物品，手持魔杖右击发射器，然后等待发射器上符文粒子消失即可。</p>
+<p>在发射器中放入特定物品，然后扔上一个待添加效果的物品，手持魔杖右击发射器，然后等待发射器上符文粒子消失即可。</p>
 
-<p>这种仪式可以为盔甲或工具附加特殊效果。每种物品只能附加一种效果，且会清除原有的一切效果。后附加的会直接覆盖先附加的，但连锁与挼心除外。某些效果在相应槽位即可自动生效，某些则需要玩家满足相应条件才会生效，同时消耗玩家经验值。</p>
+<p>这种仪式可以为盔甲或工具附加特殊效果。每种物品只能附加一种效果，后附加的会直接覆盖先附加的，但挼心除外。某些效果在相应槽位即可自动生效，某些则需要玩家满足相应条件才会生效，同时消耗玩家经验值。</p>
 <p>这种仪式还可以得到一本随机的满级附魔书。<span style='color:red'>不同的物品对应不同的附魔书，这种对应关系在世界生成时才被确定下来。</span>如果使用的是星之魔杖，则附魔书等级还会额外+1。</p>
 
 <table><thead><tr><th colspan="2">材料</th><th>时长</th><th>效果</th></tr></thead><tbody>
@@ -1438,7 +1452,7 @@ function change(str){
 </span><span class="colorful_items potion_of_ninja" title="忍者药水">
 </span><span class="lapis_lazuli" title="青金石">
 </span></span><span class="mcui-row"><span class="colorful_items potion_of_ninja" title="忍者药水">
-</span><span class="diamond_helmet" title="钻石头盔">
+</span><span class="lapis_lazuli" title="青金石">
 </span><span class="colorful_items potion_of_ninja" title="忍者药水">
 </span></span><span class="mcui-row"><span class="lapis_lazuli" title="青金石">
 </span><span class="colorful_items potion_of_ninja" title="忍者药水">
@@ -1449,7 +1463,7 @@ function change(str){
 </span><span class="colorful_items potion_of_reckless" title="鲁莽药水">
 </span><span class="lapis_lazuli" title="青金石">
 </span></span><span class="mcui-row"><span class="colorful_items potion_of_reckless" title="鲁莽药水">
-</span><span class="diamond_helmet" title="钻石头盔">
+</span><span class="lapis_lazuli" title="青金石">
 </span><span class="colorful_items potion_of_reckless" title="鲁莽药水">
 </span></span><span class="mcui-row"><span class="lapis_lazuli" title="青金石">
 </span><span class="colorful_items potion_of_reckless" title="鲁莽药水">
@@ -1460,7 +1474,7 @@ function change(str){
 </span><span class="diamond" title="附魔钻石"><span class="enchant">*</span>
 </span><span class="lapis_lazuli" title="青金石">
 </span></span><span class="mcui-row"><span class="diamond" title="附魔钻石"><span class="enchant">*</span>
-</span><span class="diamond_sword" title="钻石剑">
+</span><span class="lapis_lazuli" title="青金石">
 </span><span class="diamond" title="附魔钻石"><span class="enchant">*</span>
 </span></span><span class="mcui-row"><span class="lapis_lazuli" title="青金石">
 </span><span class="diamond" title="附魔钻石"><span class="enchant">*</span>
@@ -1471,40 +1485,40 @@ function change(str){
 </span><span class="golden_apple" title="附魔金苹果"><span class="enchant">*</span>
 </span><span class="lapis_lazuli" title="青金石">
 </span></span><span class="mcui-row"><span class="golden_apple" title="附魔金苹果"><span class="enchant">*</span>
-</span><span class="diamond_helmet" title="钻石头盔">
+</span><span class="lapis_lazuli" title="青金石">
 </span><span class="golden_apple" title="附魔金苹果"><span class="enchant">*</span>
 </span></span><span class="mcui-row"><span class="lapis_lazuli" title="青金石">
 </span><span class="golden_apple" title="附魔金苹果"><span class="enchant">*</span>
 </span><span class="lapis_lazuli" title="青金石">
 </span></span></td><td>青金石+附魔金苹果</td><td>60秒</td><td>钻石头盔——反刍(仅在饥饿时生效，每点饥饿值消耗20xp)<br/>钻石斧/锹/镐——连锁(砍树/瓜、挖矿、挖沙砾/粘土/沙子)<br/>书——漂浮(副手持有时生效)</td></tr>
 
-<tr><td><span class="mcui-row"><span class="undying_totem" title="不死图腾">
+<tr><td><span class="mcui-row"><span class="totem_of_undying" title="不死图腾">
 </span><span class="diamond" title="附魔钻石"><span class="enchant">*</span>
-</span><span class="undying_totem" title="不死图腾">
+</span><span class="totem_of_undying" title="不死图腾">
 </span></span><span class="mcui-row"><span class="diamond" title="附魔钻石"><span class="enchant">*</span>
-</span><span class="diamond_chestplate" title="钻石胸甲">
+</span><span class="totem_of_undying" title="不死图腾">
 </span><span class="diamond" title="附魔钻石"><span class="enchant">*</span>
-</span></span><span class="mcui-row"><span class="undying_totem" title="不死图腾">
+</span></span><span class="mcui-row"><span class="totem_of_undying" title="不死图腾">
 </span><span class="diamond" title="附魔钻石"><span class="enchant">*</span>
-</span><span class="undying_totem" title="不死图腾">
-</span></span></td><td>不死图腾+<a onclick="change('machines_and_tools')" href="#enchanted_diamond">附魔钻石</a>+钻石胸甲</td><td>60秒</td><td>钻石胸甲——挼心(最大生命值+10)</td></tr>
+</span><span class="totem_of_undying" title="不死图腾">
+</span></span></td><td>不死图腾+<a onclick="change('machines_and_tools')" href="#enchanted_diamond">附魔钻石</a></td><td>60秒</td><td>钻石胸甲——挼心(最大生命值+10)</td></tr>
 
 <tr><td><span class="mcui-row"><span class="nether_star" title="下界之星">
 </span><span class="dragon_egg" title="龙蛋">
 </span><span class="nether_star" title="下界之星">
 </span></span><span class="mcui-row"><span class="dragon_egg" title="龙蛋">
-</span><span class="diamond_chestplate" title="钻石胸甲(挼心)"><span class="enchant">*</span>
+</span><span class="nether_star" title="下界之星">
 </span><span class="dragon_egg" title="龙蛋">
 </span></span><span class="mcui-row"><span class="nether_star" title="下界之星">
 </span><span class="dragon_egg" title="龙蛋">
 </span><span class="nether_star" title="下界之星">
-</span></span></td><td>下界之星+龙蛋+钻石胸甲(挼心)</td><td>60秒</td><td>钻石胸甲——大挼心(最大生命值+10)</td></tr>
+</span></span></td><td>下界之星+龙蛋</td><td>60秒</td><td>钻石胸甲(挼心)——大挼心(最大生命值+20)</td></tr>
 
 <tr><td><span class="mcui-row"><span class="lapis_lazuli" title="青金石">
 </span><span class="experience_bottle" title="附魔之瓶"><span class="stacksize">64</span>
 </span><span class="lapis_lazuli" title="青金石">
 </span></span><span class="mcui-row"><span class="experience_bottle" title="附魔之瓶"><span class="stacksize">64</span>
-</span><span class="book" title="书">
+</span><span class="feather" title="飞翔之翼"><span class="enchant">*</span>
 </span><span class="experience_bottle" title="附魔之瓶"><span class="stacksize">64</span>
 </span></span><span class="mcui-row"><span class="lapis_lazuli" title="青金石">
 </span><span class="experience_bottle" title="附魔之瓶"><span class="stacksize">64</span>
@@ -1893,7 +1907,7 @@ function change(str){
 <!--更多的树-->
 <article>
 <h3>树种</h3>
-<p>融合骨块、绿宝石、树苗得到，可一次合成64个。使用时，沿竖直方向依次放置主色方块、副色方块、树种即可自动种下。主副色方块需为羊毛或树叶。</p>
+<p>融合骨块、绿宝石、树苗得到。使用时，沿竖直方向依次放置主色方块、副色方块、树种即可自动种下。主副色方块需为羊毛或树叶。</p>
 
 <table class="craft"><thead><tr><th>材料</th><th>合成配方</th></tr></thead>
 <tbody>
