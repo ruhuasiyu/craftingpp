@@ -292,16 +292,12 @@ function change(str){
 	if(str=="machines_and_tools")	i=4;
 	if(str=="cook_and_brew")		i=5;
 	if(str=="rituals")				i=6;
-	if(str=="cloth")				i=7;
-	if(str=="head_decorations")		i=8;
-	if(str=="paitings")				i=9;
-	if(str=="auto_plant")			i=10;
-	if(str=="more_trees")			i=11;
-	if(str=="more_structures")		i=12;
-	if(str=="craft_spawn_eggs")		i=13;
-	if(str=="improve_vanilla_recipes")		i=14;
-	if(str=="trade")				i=15;
-	if(str=="island")				i=16;
+	if(str=="decorations")			i=7;
+	if(str=="conventions")			i=8;
+	if(str=="more_structures")		i=9;
+	if(str=="improve_vanilla_recipes")	i=10;
+	if(str=="trade")				i=11;
+	if(str=="island")				i=12;
 	
 	var sec=$('article');
 	var length=sec.length;
@@ -332,13 +328,9 @@ function change(str){
 	<li><a onclick="change('machines_and_tools')">机械工具</a></li>
 	<li><a onclick="change('cook_and_brew')">饮食</a></li>
 	<li><a onclick="change('rituals')">仪式</a></li>
-	<li><a onclick="change('cloth')">服饰</a></li>
-	<li><a onclick="change('head_decorations')">头饰</a></li>
-	<li><a onclick="change('paitings')">画作</a></li>
-	<li><a onclick="change('auto_plant')">种植和漂白</a></li>
-	<li><a onclick="change('more_trees')">树</a></li>
+	<li><a onclick="change('decorations')">装饰品</a></li>
+	<li><a onclick="change('conventions')">便捷式功能</a></li>
 	<li><a onclick="change('more_structures')">结构</a></li>
-	<li><a onclick="change('craft_spawn_eggs')">刷怪蛋</a></li>
 	<li><a onclick="change('improve_vanilla_recipes')">原版合成</a></li>
 	<li><a onclick="change('trade')">交易</a></li>
 	<li><a onclick="change('island')">空岛</a></li>
@@ -382,7 +374,7 @@ function change(str){
 <!--进度-->
 <article>
 <h3>进度</h3>
-<p>新增27项进度，完成进度会给予玩家经验、物品或状态效果。</p>
+<p>新增26项进度，完成进度会给予玩家经验、物品或状态效果。</p>
 <table id="advancements" style="font-size:90%">
 <thead><tr><th>图标</th><th>进度</th><th>游戏内描述</th><th>奖励</th><th>上游进度</th><th>内部ID</th></tr></thead><tbody>
 <tr><td><img class="normal" /><span><span class="crafting_table"><br /></span></span></td>
@@ -406,11 +398,9 @@ function change(str){
 <th>Release!</th><td>星之魔杖</td><td>500点经验</td><td>成为马猴烧酒</td><td>cpp:sakura</td></tr>
 
 <tr><td><img class="normal" /><span><span class="leather_helmet"><br /></span></span></td>
-<th>当然是选择原谅她啦！</th><td>戴上你的原谅帽</td><td>—</td><td>开启模组！</td><td>cpp:forgive</td></tr>
-<tr><td><img class="normal" /><span><span class="leather_chestplate"><br /></span></span></td>
-<th>阿瓦达索命</th><td>据说和红色有关</td><td>—</td><td>当然是选择原谅她啦！</td><td>cpp:get_life</td></tr>
+<th style="color:green;">当然是选择原谅她啦！</th><td>戴上你的原谅帽</td><td>—</td><td>开启模组！</td><td>cpp:forgive</td></tr>
 <tr><td><img class="normal" /><span><span class="end_rod"><br /></span></span></td>
-<th>小龙人</th><td>我头上有犄角</td><td>—</td><td>阿瓦达索命</td><td>cpp:dragonboy</td></tr>
+<th>小龙人</th><td>我头上有犄角</td><td>—</td><td>当然是选择原谅她啦！</td><td>cpp:dragonboy</td></tr>
 <tr><td><img class="normal" /><span><span class="painting"><br /></span></span></td>
 <th>艺术家</th><td>My name is Van</td><td>—</td><td>小龙人</td><td>cpp:artist</td></tr>
 <tr><td><img class="normal" /><span><span class="oak_sapling"><br /></span></span></td>
@@ -1531,11 +1521,7 @@ function change(str){
 <!--服饰-->
 <article>
 <h3>服饰</h3>
-<ul>
-<li>荧光帽——使玩家发光，但是并不提供照明。</li>
-<li>非酋帽——自带霉运效果。</li>
-<li>雪地靴——玩家在雪上会跑得更快。</li>
-</ul>
+<p>新增若干服饰，其中荧光帽可使玩家发光，但是并不提供照明；非酋帽自带霉运效果；雪地靴会使玩家在雪上会跑得更快。</p>
 
 <table class="craft"><thead><tr><th style="width:336px;">名称</th><th style="width:150px;">材料</th><th>合成配方</th><th style="width:250px;">描述</th></tr></thead>
 <tbody>
@@ -1544,60 +1530,60 @@ function change(str){
 <strong id="quartz_helmet">非酋帽 (Black Hat)</strong><br />
 <strong>护士帽 (Nurse Hat)</strong><br />
 <strong>小红帽 (Red Hat)</strong></th>
-<td>荧石粉+小块皮革<br />绿宝石+小块皮革<br />煤炭+小块皮革<br />石英+小块皮革<br />红石+小块皮革</td>
-<td><span class="mcui"><span><span class="mcui-row"><span class="coal" title="煤炭">
-</span><span class="coal" title="煤炭">
-</span><span class="coal" title="煤炭">
-</span></span><span class="mcui-row"><span class="coal" title="煤炭">
-</span><span class="rabbit_hide" title="小块皮革">
-</span><span class="coal" title="煤炭">
+<td>荧石粉+皮革<br />绿宝石+皮革<br />煤炭+皮革<br />石英+皮革<br />玫瑰红+皮革</td>
+<td><span class="mcui"><span><span class="mcui-row"><span class="emerald" title="绿宝石">
+</span><span class="leather" title="皮革">
+</span><span class="emerald" title="绿宝石">
+</span></span><span class="mcui-row"><span class="emerald" title="绿宝石">
+</span><span class="empty">
+</span><span class="emerald" title="绿宝石">
 </span></span><span class="mcui-row"><span class="empty">
 </span><span class="empty">
 </span><span class="empty">
 </span></span></span><span class="mcui-arrow"></span><span class="mcui-output">
-<span class="colorful_items coal_helmet" title="煤炭头盔">
+<span class="colorful_items green_hat" title="原谅帽">
 </span></span></span></td><td>提供1点盔甲</td></tr>
 
 <tr><th><strong>皮夹克 (Jacket)</strong><br />
 <strong>红色外套 (Red Coat)</strong></th>
-<td>可可豆+小块皮革<br />红石+小块皮革</td>
-<td><span class="mcui"><span><span class="mcui-row"><span class="redstone" title="红石">
+<td>可可豆+皮革<br />玫瑰红+皮革</td>
+<td><span class="mcui"><span><span class="mcui-row"><span class="cocoa_beans" title="可可豆">
 </span><span class="empty">
-</span><span class="redstone" title="红石">
-</span></span><span class="mcui-row"><span class="redstone" title="红石">
-</span><span class="rabbit_hide" title="小块皮革">
-</span><span class="redstone" title="红石">
-</span></span><span class="mcui-row"><span class="redstone" title="红石">
-</span><span class="redstone" title="红石">
-</span><span class="redstone" title="红石">
+</span><span class="cocoa_beans" title="可可豆">
+</span></span><span class="mcui-row"><span class="leather" title="皮革">
+</span><span class="leather" title="皮革">
+</span><span class="leather" title="皮革">
+</span></span><span class="mcui-row"><span class="leather" title="皮革">
+</span><span class="leather" title="皮革">
+</span><span class="leather" title="皮革">
 </span></span></span><span class="mcui-arrow"></span><span class="mcui-output">
-<span class="colorful_items red_coat" title="红色外套">
+<span class="colorful_items jacket" title="皮夹克">
 </span></span></span></td><td>提供2点盔甲</td></tr>
 
 <tr id="coal_leggings"><th><strong>紧身皮裤 (Tight Leather Leggings)</strong><br />
 <strong id="redstone_leggings">牛仔裤 (Blue Jeans)</strong></th>
-<td>煤炭+小块皮革<br />青金石+小块皮革</td>
-<td><span class="mcui"><span><span class="mcui-row"><span class="emerald" title="绿宝石">
-</span><span class="emerald" title="绿宝石">
-</span><span class="emerald" title="绿宝石">
-</span></span><span class="mcui-row"><span class="emerald" title="绿宝石">
-</span><span class="rabbit_hide" title="小块皮革">
-</span><span class="emerald" title="绿宝石">
-</span></span><span class="mcui-row"><span class="emerald" title="绿宝石">
+<td>煤炭+皮革<br />青金石+皮革</td>
+<td><span class="mcui"><span><span class="mcui-row"><span class="coal" title="煤炭">
+</span><span class="coal" title="煤炭">
+</span><span class="coal" title="煤炭">
+</span></span><span class="mcui-row"><span class="leather" title="皮革">
 </span><span class="empty">
-</span><span class="emerald" title="绿宝石">
+</span><span class="leather" title="皮革">
+</span></span><span class="mcui-row"><span class="coal" title="煤炭">
+</span><span class="empty">
+</span><span class="coal" title="煤炭">
 </span></span></span><span class="mcui-arrow"></span><span class="mcui-output">
-<span class="colorful_items emerald_leggings" title="绿宝石护腿">
+<span class="colorful_items tight_leather_leggings" title="紧身皮裤">
 </span></span></span></td><td>提供2点盔甲</td></tr>
 
 <tr id="coal_boots"><th><strong>雪地靴 (Snow Boots)</strong></th>
-<td>可可豆+小块皮革</td>
+<td>皮革</td>
 <td><span class="mcui"><span><span class="mcui-row"><span class="empty">
 </span><span class="empty">
 </span><span class="empty">
-</span></span><span class="mcui-row"><span class="cocoa_beans" title="可可豆">
-</span><span class="rabbit_hide" title="小块皮革">
-</span><span class="cocoa_beans" title="可可豆">
+</span></span><span class="mcui-row"><span class="leather" title="皮革">
+</span><span class="empty">
+</span><span class="leather" title="皮革">
 </span></span><span class="mcui-row"><span class="cocoa_beans" title="可可豆">
 </span><span class="empty">
 </span><span class="cocoa_beans" title="可可豆">
@@ -1605,10 +1591,8 @@ function change(str){
 <span class="colorful_items snow_boots" title="雪地靴">
 </span></span></span></td><td>提供1点盔甲</td></tr>
 </tbody></table>
-</article>
 
 <!--头饰-->
-<article>
 <h3>头饰</h3>
 <p>玩家未佩戴头盔或帽子，且副手持有指定的1个物品时，会自动佩戴该物品。共57款样式。</p>
 <table class="center"><thead><tr><th colspan="4">帽子</th><th colspan="3">围脖</th><th colspan="2">花饰</th><th colspan="5">其它装饰</th></tr></thead>
@@ -1631,10 +1615,8 @@ function change(str){
 <tr><td><strong>空气头盔</strong></td><td><strong>矿工帽</strong></td><td><strong>绷带</strong></td><td><strong>绅士帽</strong></td><td><strong>长冠</strong></td><td><strong>围脖</strong></td><td><strong>厚围脖</strong></td><td><strong>超厚围脖</strong></td><td><strong>花</strong></td><td><strong>头上长草</strong></td><td><strong>眼镜</strong></td><td><strong>口罩</strong></td><td><strong>犄角</strong></td><td><strong>奥特曼</strong></td></tr>
 </tbody></table>
 <p class="center"><img src="items/screenshots/head.png" /></p>
-</article>
 
 <!--画作-->
-<article>
 <h3>画作</h3>
 <p>新增了16种画的合成。根据画的尺寸，将画放置在物品展示框上以拼成完整的画。</p>
 
@@ -1902,6 +1884,12 @@ function change(str){
 <!--漂白-->
 <h3>漂白</h3>
 <p>将染色玻璃、染色陶瓦扔进炼药锅可将其漂白为玻璃、陶瓦，并减少炼药锅一级水位。</p>
+
+<h3>随机方块</h3>
+<p>当玩家快捷栏依次为石砖、苔石砖、裂石砖、圆石、石头时，玩家放置的石砖会变成这五种方块的随机一种。</p>
+
+<h3>箱子整理</h3>
+<p>当玩家使用魔杖/星之魔杖右击箱子后，箱子内的物品会按照物品id的长度/物品数量从小到大排序。</p>
 </article>
 
 <!--更多的树-->
@@ -1929,15 +1917,13 @@ function change(str){
 
 <h3>树木</h3>
 <p>新增桃树、苹果树、橘树、樱树、常青树、银杏、红叶李、紫叶李，天然生成在主世界。</p>
-</article>
 
 <!--更多的结构-->
-<article>
 <h3 id="creeper_dungeon">爬行者地牢</h4>
 <p>一个由圆石和苔石构成的小房间，包含苦力怕刷怪箱和地牢宝箱，天然生成在主世界地下。</p>
 
 <h3 id="totem_pillar">图腾柱</h4>
-<p>一个由圆石构成的柱子，包含矿石、熔岩和宝箱，天然生成在主世界。宝箱含亡灵之魂/硝火之烬/生物之肢/附魔金苹果/附魔铁锭/附魔金锭/肉松面包/拔丝苹果/煤炭/骨头/火药/腐肉/线。</p>
+<p>一个由各种石砖构成的柱子，包含矿石、熔岩和宝箱，天然生成在主世界。宝箱含亡灵之魂/硝火之烬/生物之肢/附魔金苹果/附魔铁锭/附魔金锭/肉松面包/拔丝苹果/煤炭/骨头/火药/腐肉/线。</p>
 
 <p><img style="width:90%" src="items/screenshots/build.png" /></p>
 </article>
@@ -2133,10 +2119,8 @@ function change(str){
 <span class="parrot_spawn_egg" title="生成 鹦鹉">
 </span></span></span></td></tr>
 </tbody></table>
-</article>
 
 <!--其它原版合成-->
-<article>
 <h3>烧小块皮革</h3>
 <table><thead><tr><th>名称</th><th>材料</th><th>烧炼配方</th><th>时长</th></tr></thead><tbody>
 
@@ -2484,7 +2468,7 @@ function change(str){
 <tr><td style="text-align:center">36-40 丛林木</td><td style="text-align:center">绿宝石</td></tr>
 <tr><td style="text-align:center">36-40 金合欢木</td><td style="text-align:center">绿宝石</td></tr>
 <tr><td style="text-align:center">36-40 深色橡木</td><td style="text-align:center">绿宝石</td></tr>
-<tr><th rowspan="6">6</th><td style="text-align:center">2-4 绿宝石</td><td style="text-align:center">橡树树苗</td></tr>
+<tr><th rowspan="6">2</th><td style="text-align:center">2-4 绿宝石</td><td style="text-align:center">橡树树苗</td></tr>
 <tr><td style="text-align:center">2-4 绿宝石</td><td style="text-align:center">云杉树苗</td></tr>
 <tr><td style="text-align:center">2-4 绿宝石</td><td style="text-align:center">白桦树苗</td></tr>
 <tr><td style="text-align:center">2-4 绿宝石</td><td style="text-align:center">丛林树苗</td></tr>
