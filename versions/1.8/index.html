@@ -323,10 +323,10 @@ function change(str){
 <ul>
 	<li><a onclick="change('introduction')">简介</a></li>
 	<li><a onclick="change('advancements')">进度</a></li>
-	<li><a onclick="change('modify_entities')">生物战利品</a></li>
+	<li><a onclick="change('modify_entities')">实体与战利品</a></li>
 	<li><a onclick="change('element_forces')">元素之力</a></li>
 	<li><a onclick="change('machines_and_tools')">机械工具</a></li>
-	<li><a onclick="change('cook_and_brew')">饮食</a></li>
+	<li><a onclick="change('cook_and_brew')">饮食与烧炼</a></li>
 	<li><a onclick="change('rituals')">仪式</a></li>
 	<li><a onclick="change('decorations')">装饰品</a></li>
 	<li><a onclick="change('conventions')">便捷式功能</a></li>
@@ -441,6 +441,9 @@ function change(str){
 <article>
 <h3 id="powered_creeper">高压爬行者</h3>
 <p>高压爬行者可天然生成，几率约为10%。</p>
+
+<h3 id="villager">村民</h3>
+<p>现在村民可被手持绿宝石块的玩家吸引。</p>
 
 <h3 id="invulnerable_items">稀有物无敌</h3>
 <p>下界之星、不死图腾、龙蛋的掉落物形式将不会被火焰或仙人掌破坏。</p>
@@ -1305,6 +1308,23 @@ function change(str){
 </span></span></span>
 </td><td>10秒</td></tr>
 
+<tr><th>小块皮革</th><td>腐肉<br/>
+皮革盔甲<br/>
+鞍</td><td>
+<span class="mcui"><span><span class="mcui-row"><span class="rotten_flesh" title="腐肉">
+</span></span><span class="mcui-row"><span style="width:32px;height:32px;background-image:url(items/smelting.png);border-style:none;background-color:#c6c6c6;"></span></span><span class="mcui-row"><span class="coal" title="燃料"></span></span></span><span class="mcui-arrow"></span><span class="mcui-output">
+<span class="rabbit_hide" title="小块皮革">
+</td><td>10秒</td></tr>
+
+<tr><th>钻石 (1/9的几率)</th><td>钻石剑<br/>
+任何钻石工具<br/>
+任何钻石盔甲<br/>
+钻石马铠</td><td>
+<span class="mcui"><span><span class="mcui-row"><span class="diamond_sword" title="钻石剑">
+</span></span><span class="mcui-row"><span style="width:32px;height:32px;background-image:url(items/smelting.png);border-style:none;background-color:#c6c6c6;"></span></span><span class="mcui-row"><span class="coal" title="燃料"></span></span></span><span class="mcui-arrow"></span><span class="mcui-output">
+<span class="diamond" title="钻石"><span class="stacksize">0.11</span>
+</td><td>10秒</td></tr>
+
 <tr><th><strong id="potion_of_reckless">鲁莽药水 (Potion of Reckless)</strong><br /><span class="effect speed"></span> <span class="lore">速度 2:00</span><br /><span class="effect resistance"></span> <span class="lore">抗性 2:00</span><br /><span class="effect fire_resistance"></span> <span class="lore">防火 2:00</span><br /><span class="effect night_vision"></span> <span class="lore">夜视 2:00</span></th><td><a onclick="change('more_drops')" href="#ash_of_fire">硝火之烬</a>+粗制的药水</td><td><span class="mcui" style="background-image:url(items/brew.png);width:127px;height:109px;">
 <span style="position: absolute;top:6px; left:28px;"><span style="display:block;width:24px;height:57px;background-image:url(items/bubble.gif)"></span></span>
 <span class="mcui-row" style="position: absolute;top:10px; left:52px;"><span class="blaze_powder" title="硝火之烬"><span class="enchant">*</span></span></span>
@@ -1431,10 +1451,11 @@ function change(str){
 </span><span class="empty">
 </span><span class="empty">
 </span></span></span></span>
-<p>在发射器中放入特定物品，然后扔上一个待添加效果的物品，手持魔杖右击发射器，然后等待发射器上符文粒子消失即可。</p>
-
-<p>这种仪式可以为盔甲或工具附加特殊效果。每种物品只能附加一种效果，后附加的会直接覆盖先附加的，但挼心除外。某些效果在相应槽位即可自动生效，某些则需要玩家满足相应条件才会生效，同时消耗玩家经验值。</p>
-<p>这种仪式还可以得到一本随机的满级附魔书。<span style='color:red'>不同的物品对应不同的附魔书，这种对应关系在世界生成时才被确定下来。</span>如果使用的是星之魔杖，则附魔书等级还会额外+1。</p>
+<p>在发射器中放入特定物品，然后扔上一个待添加效果的物品，手持魔杖右击发射器，然后等待发射器上符文粒子消失即可。仪式有多种用途：</p>
+<ul>
+<li>为盔甲或工具附加特殊效果。每种物品只能附加一种效果，后附加的会直接覆盖先附加的，但挼心除外。某些效果在相应槽位即可自动生效，某些则需要玩家满足相应条件才会生效，同时消耗玩家经验值。</li>
+<li>制作满级附魔书。<span style='color:red'>不同的物品对应不同的附魔书，这种对应关系在世界生成时才被确定下来。</span>如果使用的是星之魔杖，则附魔书等级还会额外+1。</li>
+<li>改变热带鱼的颜色。放入小丑鱼桶和染料即可，这种操作不会改变小丑鱼的花纹类别和大小。</li></ul>
 
 <table><thead><tr><th colspan="2">材料</th><th>时长</th><th>效果</th></tr></thead><tbody>
 
@@ -1514,6 +1535,17 @@ function change(str){
 </span><span class="experience_bottle" title="附魔之瓶"><span class="stacksize">64</span>
 </span><span class="lapis_lazuli" title="青金石">
 </span></span></td><td>青金石+附魔之瓶</td><td>10秒</td><td>飞翔之翼/海洋之心/生物之肢/亡灵之魂/居民之证/硝火之烬/<br/>末影之灵/下界之星各对应4种特定的顶级附魔书。</td></tr>
+
+<tr><td><span class="mcui-row"><span class="dandelion_yellow" title="蒲公英黄">
+</span><span class="rose_red" title="玫瑰红">
+</span><span class="dandelion_yellow" title="蒲公英黄">
+</span></span><span class="mcui-row"><span class="rose_red" title="玫瑰红">
+</span><span class="clownfish_bucket" title="热带鱼桶">
+</span><span class="rose_red" title="玫瑰红">
+</span></span><span class="mcui-row"><span class="dandelion_yellow" title="蒲公英黄">
+</span><span class="rose_red" title="玫瑰红">
+</span><span class="dandelion_yellow" title="蒲公英黄">
+</span></span></td><td>染料+染料+热带鱼桶</td><td>-</td><td>对应颜色的热带鱼桶。</td></tr>
 
 </tbody></table>
 </article>
@@ -1889,7 +1921,7 @@ function change(str){
 <p>当玩家快捷栏依次为石砖、苔石砖、裂石砖、圆石、石头时，玩家放置的石砖会变成这五种方块的随机一种。</p>
 
 <h3>箱子整理</h3>
-<p>当玩家使用魔杖/星之魔杖右击箱子后，箱子内的物品会按照物品id的长度/物品数量从小到大排序。</p>
+<p>当玩家使用魔杖/星之魔杖右击箱子后，箱子内的物品会按照物品id的长度/物品数量从小到大排序。只能对不是满的单个箱子排序。</p>
 </article>
 
 <!--更多的树-->
@@ -2121,20 +2153,6 @@ function change(str){
 </tbody></table>
 
 <!--其它原版合成-->
-<h3>烧小块皮革</h3>
-<table><thead><tr><th>名称</th><th>材料</th><th>烧炼配方</th><th>时长</th></tr></thead><tbody>
-
-<tr><th>小块皮革</th><td>腐肉<br/>
-皮革盔甲<br/>
-鞍</td><td>
-<span class="mcui"><span><span class="mcui-row"><span class="rotten_flesh" title="腐肉">
-</span></span><span class="mcui-row"><span style="width:32px;height:32px;background-image:url(items/smelting.png);border-style:none;background-color:#c6c6c6;"></span></span><span class="mcui-row"><span class="coal" title="燃料"></span></span></span><span class="mcui-arrow"></span><span class="mcui-output">
-<span class="rabbit_hide" title="小块皮革">
-</span></span></span>
-</td><td>10秒</td></tr>
-
-</tbody></table>
-
 <h3>楼梯与台阶</h3>
 <p>修改合成得到的楼梯数量为8；新增18种台阶和17种楼梯回收为原方块。</p>
 
@@ -2369,34 +2387,6 @@ function change(str){
 </span><span class="empty">
 </span></span></span><span class="mcui-arrow"></span><span class="mcui-output">
 <span class="smooth_stone" title="平滑石头">
-</span></span></span></td></tr>
-</tbody></table>
-
-<h3>钻石制品回收</h3>
-<p>9个任意耐久的钻石制品可回收为钻石。</p>
-<table><thead><tr><th>名称</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
-<tr><th>钻石</th><td>
-钻石头盔<br />
-钻石胸甲<br />
-钻石护腿<br />
-钻石靴子<br />
-钻石剑<br />
-钻石镐<br />
-钻石斧<br />
-钻石锹<br />
-钻石锄<br />
-钻石马铠</td><td>
-<span class="mcui"><span><span class="mcui-row"><span class="broken_diamond_axe" title="钻石斧">
-</span><span class="broken_diamond_hoe" title="钻石锄">
-</span><span class="broken_diamond_shovel" title="钻石锹">
-</span></span><span class="mcui-row"><span class="broken_diamond_pickaxe" title="钻石镐">
-</span><span class="diamond_horse_armor" title="钻石马铠">
-</span><span class="broken_diamond_helmet" title="钻石头盔">
-</span></span><span class="mcui-row"><span class="broken_diamond_chestplate" title="钻石胸甲">
-</span><span class="broken_diamond_leggings" title="钻石护腿">
-</span><span class="broken_diamond_boots" title="钻石靴子">
-</span></span></span><span class="mcui-arrow"></span><span class="mcui-output">
-<span class="diamond" title="钻石">
 </span></span></span></td></tr>
 </tbody></table>
 
