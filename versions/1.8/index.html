@@ -349,7 +349,7 @@ function change(str){
 -->
 
 <h3 id="download">下载与安装</h3>
-<p>正式版目前尚未制作完成，<a href="https://github.com/ruhuasiyu/CraftingPlusPlus/blob/master/versions/1.8/v1.8-m03d30.zip">点此可下载最新的预览版 v1.8-m03d30</a>。下载后，将解压缩后的所有文件和文件夹(<code>datapacks</code>, <code>data</code>, <code>resources.zip</code>) 放入 <code>.minecraft/saves/世界名称</code> 文件夹，然后退出世界重进或按下F3+T即可。</p>
+<p>正式版目前尚未制作完成，<a href="https://github.com/ruhuasiyu/CraftingPlusPlus/blob/master/versions/1.8">点此可下载最新的预览版</a>。下载后，将解压缩后的所有文件和文件夹(<code>datapacks</code>, <code>data</code>, <code>resources.zip</code>) 放入 <code>.minecraft/saves/世界名称</code> 文件夹，然后退出世界重进或按下F3+T即可。</p>
 
 <h4>背包合成</h4>
 <p>所有涉及模组特有物品的合成均采用背包合成，方式如下：将材料放入背包右上角对应的3×3的格子里即可自动得到产物，数量和位置须完全吻合。</p>
@@ -358,7 +358,7 @@ function change(str){
 <h4 id="develop">技术性提醒</h4>
 <p>技术上，该版本分为18个数据包模块，玩家如需要移除部分功能可将其对应的数据包删除即可。不过，模块之间有依赖关系，请根据内容保留必要的模块。</p>
 <p>部分内容支持自定义参数，请打开<code>datapacks/cpp_bag_craft/data/cpp/functions/bag_craft/config.mcfunction</code>修改。</p>
-<p>本模组命名空间为cpp，记分板、标签、组等均以cpp为前缀。为便于他人整合使用，烦请避开此前缀。</p>
+<p>本模组命名空间为cpp，记分板、标签、组等均以cpp为前缀。为便于他人整合使用，烦请避开此前缀。此外，材质已占用胡萝卜钓竿0-25耐久值区段、木剑1-2耐久值区段。</p>
 <p>模组大部分文字支持英文，如需其它语言，可自行修改资源包中相应文件。如您乐意提供其它语言版本，修改resources.zip中的语言文件为相应版本，然后发送给我即可。如有任何意见建议，欢迎<a href="http://www.mcbbs.net/thread-696861-1-1.html">在论坛回复</a>、<a href="https://github.com/ruhuasiyu/craftingpp/issues/new">发起issue</a>或<a href="http://www.mcbbs.net/home.php?mod=spacecp&ac=pm&touid=975525">私信我</a>。</p>
 
 <h4 id="declaration">声明</h4>
@@ -518,7 +518,7 @@ function change(str){
 <!--元素之力-->
 <article>
 <h3>元素之力</h3>
-<p>通过搭配不同的染料、矿物和生物的稀有掉落物，我们可以合成不同的元素之力。元素之力可通过消耗经验发挥不同的效果，也是参与<a href="#machine" onclick="change('machines_and_tools');">自动化</a>处理的必需品，同时还可用于合成各种<a onclick="change('machines_and_tools');">材料和工具</a>。元素之力参与合成时自身不会被消耗。</p>
+<p>通过搭配不同的染料、矿物和生物的稀有掉落物，我们可以合成不同的元素之力。元素之力可通过消耗经验发挥不同的效果，也是参与<a href="#machine" onclick="change('machines_and_tools');">自动化</a>处理的必需品，同时还可用于合成各种<a onclick="change('machines_and_tools');" href="#machine">材料和工具</a>。元素之力参与合成时自身不会被消耗。</p>
 <table>
 <thead><tr><th>产物</th><th style="width:15em;">材料</th><th>合成配方</th><th>说明</th></tr></thead>
 <tbody>
@@ -1918,7 +1918,7 @@ function change(str){
 <p>将染色玻璃、染色陶瓦扔进炼药锅可将其漂白为玻璃、陶瓦，并减少炼药锅一级水位。</p>
 
 <h3>随机方块</h3>
-<p>当玩家快捷栏依次为石砖、苔石砖、裂石砖、圆石、石头时，玩家放置的石砖会变成这五种方块的随机一种。</p>
+<p>在机械核心上方放置一个石制按钮，然后在机械核心内放入方块，之后玩家副手持有魔杖且主手为空时，将会从机械核心中随机选择方块到玩家手中。</p>
 
 <h3>箱子整理</h3>
 <p>当玩家使用魔杖/星之魔杖右击箱子后，箱子内的物品会按照物品id的长度/物品数量从小到大排序。只能对不是满的单个箱子排序。</p>
@@ -1962,6 +1962,9 @@ function change(str){
 
 <!--刷怪蛋合成-->
 <article>
+<h3>移除</h3>
+<p>移除了木剑的合成，以赋予模组物品材质。</p>
+
 <h3>刷怪蛋合成</h3>
 <p>原版36种刷怪蛋的合成。</p>
 <table><thead><tr><th>名称</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
@@ -2469,10 +2472,10 @@ function change(str){
 <tr><td style="text-align:center">36-40 玫瑰红</td><td style="text-align:center">绿宝石</td></tr>
 <tr><td style="text-align:center">36-40 墨囊</td><td style="text-align:center">绿宝石</td></tr>
 <tr><th rowspan="3">2</th><td style="text-align:center">7-11 绿宝石</td><td style="text-align:center">福字或春字</td></tr>
-<tr><td style="text-align:center">28-44 绿宝石</td><td style="text-align:center">对联<sup>[3]</sup></td></tr>
+<tr><td style="text-align:center">28-44 绿宝石</td><td style="text-align:center">对联<sup>[1]</sup></td></tr>
 <tr><td style="text-align:center">7-11 绿宝石</td><td style="text-align:center">TCP logo</td></tr>
 
-<tr><th style="width:50px;"><img src="items/villager/santa_claus.png" style="height:100px;"/></th><th style="width:70px;">圣诞老人</th><th>-</th><td style="text-align:center">皮革靴子+1-64 绿宝石</td><td style="text-align:center">圣诞礼物<sup>[1]</sup></td></tr>
+<tr><th style="width:50px;"><img src="items/villager/santa_claus.png" style="height:100px;"/></th><th style="width:70px;">圣诞老人</th><th>-</th><td style="text-align:center">皮革靴子+1-64 绿宝石</td><td style="text-align:center">圣诞礼物<sup>[2]</sup></td></tr>
 
 <tr><th rowspan="6"><img src="items/villager/pharmacist.png" style="height:100px;"/></th><th rowspan="6">药剂师</th><th rowspan="4">1</th><td style="text-align:center">15-19 地狱疣</td><td style="text-align:center">绿宝石</td></tr>
 <tr><td style="text-align:center">15-19 蜘蛛眼</td><td style="text-align:center">绿宝石</td></tr>
@@ -2489,7 +2492,7 @@ function change(str){
 <tr><td style="text-align:center">36-40 火药</td><td style="text-align:center">绿宝石</td></tr>
 <tr><td style="text-align:center">16-24 青金石</td><td style="text-align:center">绿宝石</td></tr>
 <tr><td style="text-align:center">16-24 荧石粉</td><td style="text-align:center">绿宝石</td></tr>
-<tr><th>2</th><td style="text-align:center">1 绿宝石</td><td style="text-align:center">3-5烟花火箭<sup>[2]</sup></td></tr>
+<tr><th>2</th><td style="text-align:center">1 绿宝石</td><td style="text-align:center">3-5烟花火箭<sup>[3]</sup></td></tr>
 
 <tr><th rowspan="9"><img src="items/villager/gardener.png" style="height:100px;"/></th><th rowspan="9">园丁</th><th rowspan="1">1</th><td style="text-align:center">36-40 骨粉</td><td style="text-align:center">绿宝石</td></tr>
 <tr><th rowspan="8">2</th><td style="text-align:center">3-5 绿宝石</td><td style="text-align:center">红色郁金香</td></tr>
@@ -2520,26 +2523,25 @@ function change(str){
 <tr><td style="text-align:center">河鲀+12-20 绿宝石</td><td style="text-align:center">河鲀桶</td></tr>
 
 <tr><td colspan="5">
-[1] 打开后可随机获得鞘翅、附魔钻石盔甲/工具/剑、铁盔甲/工具/剑、矿物、食物、鞍、马铠、种子。<br />
-[2] 为双层球状，颜色随机。<br />
-[3] 对联分为四个部分出售，共四种样式。<br />
+[1] 对联分为四个部分出售，共四种样式。<br />
 <img src="items/image/20101.png" style="width:80px;" />
 <img src="items/image/20102.png" style="width:80px;" />
 <img src="items/image/20099.png" style="width:80px;" /><br />
 <img src="items/image/20028-20031.png" style="width:80px;" /><img src="items/image/20024-20027.png" style="width:80px;" />
 <img src="items/image/20020-20023.png" style="width:80px;" /><img src="items/image/20016-20019.png" style="width:80px;" />
 <img src="items/image/20012-20015.png" style="width:80px;" /><img src="items/image/20008-20011.png" style="width:80px;" />
-<img src="items/image/20004-20007.png" style="width:80px;" /><img src="items/image/20000-20003.png" style="width:80px;" />
+<img src="items/image/20004-20007.png" style="width:80px;" /><img src="items/image/20000-20003.png" style="width:80px;" /><br />
+[2] 打开后可随机获得鞘翅、附魔钻石盔甲/工具/剑、铁盔甲/工具/剑、矿物、食物、鞍、马铠、种子。<br />
+[3] 为双层球状，颜色随机。<br />
 </td></tr>
 </tbody></table>
 </article>
 
 <article>
 <h3>空岛</h3>
-<p>该模块旨在为原版空岛玩家提供从泥土到末地的完整科技链。如果玩家不是处在空岛模式，该模块不会启用。玩家可以通过空无一物的超平坦进入，然后会在海平面高度生成一个5*5*2的平台。</p>
-<p>玩家破坏<a href="#power_dirt">蕴能泥土</a>会获得树苗(各10%)或骨粉(40%)，破坏树叶会掉落<strong id="branch">树枝</strong>(25%)或骨粉(25%)。</p>
-<p>沿竖直方向放置熔炉和坩埚，然后向扔入坩埚4个圆石或4个<a href="#power_snowball">蕴能雪球</a>，可以制作岩浆或水。</p>
-<p>在<a href="#power_dispenser">蕴能发射器</a>上方放置泥土/砂砾/圆石/石头/沙子/灵魂沙，然后右击蕴能发射器可以打碎该方块。掉落物如下：</p>
+<p>该模块旨在为原版空岛玩家提供从泥土到末地的完整科技链。如果玩家不是处在空岛或超平坦等资源匮乏的地图，不建议使用。玩家可以通过空无一物的超平坦进入，然后会在海平面高度生成一个5*5*2的平台。</p>
+<p>玩家破坏泥土会获得树苗(各1%)或骨粉(4%)，破坏树叶会掉落线(5%)或骨粉(20%)。</p>
+<p>在熔炉上方放置雪块可将其变成方块粉碎机，之后在其上方放置泥土/砂砾/圆石/石头/沙子/灵魂沙，然后右击方块粉碎机可以打碎该方块。掉落物如下：</p>
 <table style="font-size:88%;"><thead><tr><th>方块</th><th colspan="13">掉落物</th></tr></thead><tbody>
 <tr><th rowspan="2">泥土</th>
 	<td>橡树树苗</td><td>云杉树苗</td><td>白桦树苗</td><td>丛林树苗</td><td>金合欢树苗</td><td>深色橡树树苗</td>
@@ -2568,14 +2570,16 @@ function change(str){
 <tr><td>90%</td><td>9%</td><td>1%</td><td></td><td></td><td></td><td></td><td></td>
 	<td></td><td></td><td></td><td></td><td></td></tr>
 </tbody></table>
-<p>将12个绿宝石块摆成末地传送门框架的形状，然后在正中间放置蕴能雪块即可得到末地传送门。</p>
+<p>当玩家背包含有4个矿石碎片会自动合成为对应的矿石。</p>
+<p>在方块粉碎机上方放置坩埚，然后向坩埚扔入4个圆石或4个雪球，可以制作岩浆或水。</p>
+<p>将12个绿宝石块摆成末地传送门框架的形状，然后在正中间放置雪块即可得到末地传送门。</p>
 
 <h3>合成表</h3>
 <table>
-<thead><tr><th>产物</th><th style="width:15em;">材料</th><th>合成配方</th><th>说明</th></tr></thead>
+<thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead>
 <tbody>
 
-<tr><th><strong id="power_snowball">蕴能雪球 (Power Snowball)</strong></th><td>木棍+线</td><td><span class="mcui"><span>
+<tr><th>雪球</th><td>木棍+线</td><td><span class="mcui"><span>
 <span class="mcui-row"><span class="stick" title="木棍">
 </span><span class="stick" title="木棍">
 </span><span class="stick" title="木棍">
@@ -2586,126 +2590,41 @@ function change(str){
 </span><span class="stick" title="木棍">
 </span><span class="stick" title="木棍">
 </span></span></span><span class="mcui-arrow"></span><span class="mcui-output">
-<span class="snowball" title="蕴能雪球"><span class="enchant">*</span>
-</span></span></span></td><td>背包合成</td></tr>
+<span class="snowball" title="雪球">
+</span></span></span></td></tr>
 
-<tr><th>圆石<br />泥土</th><td>泥土+<a href="#power_snowball">蕴能雪球</a><br />
-圆石+<a href="#power_snowball">蕴能雪球</a></td><td><span class="mcui"><span>
+<tr><th>圆石<br />泥土</th><td>泥土+雪球<br />
+圆石+雪球</td><td><span class="mcui"><span>
 <span class="mcui-row"><span class="dirt" title="泥土">
 </span><span class="dirt" title="泥土">
 </span><span class="dirt" title="泥土">
 </span></span><span class="mcui-row"><span class="dirt" title="泥土">
-</span><span class="snowball" title="蕴能雪球"><span class="enchant">*</span>
+</span><span class="snowball" title="雪球">
 </span><span class="dirt" title="泥土">
 </span></span><span class="mcui-row"><span class="dirt" title="泥土">
 </span><span class="dirt" title="泥土">
 </span><span class="dirt" title="泥土">
 </span></span></span><span class="mcui-arrow"></span><span class="mcui-output">
 <span class="cobblestone" title="圆石"><span class="stacksize">8</span>
-</span></span></span></td><td>背包合成</td></tr>
+</span></span></span></td></tr>
 
-<tr><th><strong id="power_dispenser">蕴能发射器 (Power Dispenser)<strong></th><td>圆石+弓+<a href="#power_snowball">蕴能雪球</a></td><td><span class="mcui"><span>
-<span class="mcui-row"><span class="cobblestone" title="圆石">
-</span><span class="cobblestone" title="圆石">
-</span><span class="cobblestone" title="圆石">
-</span></span><span class="mcui-row"><span class="cobblestone" title="圆石">
-</span><span class="bow" title="弓">
-</span><span class="cobblestone" title="圆石">
-</span></span><span class="mcui-row"><span class="cobblestone" title="圆石">
-</span><span class="snowball" title="蕴能雪球"><span class="enchant">*</span>
-</span><span class="cobblestone" title="圆石">
-</span></span></span><span class="mcui-arrow"></span><span class="mcui-output">
-<span class="dispenser" title="发射器"><span class="enchant">*</span>
-</span></span></span></td><td>背包合成</td></tr>
-
-<tr><th>矿石</th><td><a href="#iron_ore_shard">矿石碎片</a>+<a href="#power_snowball">蕴能雪球</a></td><td><span class="mcui"><span>
-<span class="mcui-row"><span class="wheat_seeds" title="矿石碎片"><span class="enchant">*</span>
-</span><span class="wheat_seeds" title="矿石碎片"><span class="enchant">*</span>
-</span><span class="wheat_seeds" title="矿石碎片"><span class="enchant">*</span>
-</span></span><span class="mcui-row"><span class="wheat_seeds" title="矿石碎片"><span class="enchant">*</span>
-</span><span class="snowball" title="蕴能雪球"><span class="enchant">*</span>
-</span><span class="wheat_seeds" title="矿石碎片"><span class="enchant">*</span>
-</span></span><span class="mcui-row"><span class="wheat_seeds" title="矿石碎片"><span class="enchant">*</span>
-</span><span class="wheat_seeds" title="矿石碎片"><span class="enchant">*</span>
-</span><span class="wheat_seeds" title="矿石碎片"><span class="enchant">*</span>
-</span></span></span><span class="mcui-arrow"></span><span class="mcui-output">
-<span class="diamond_ore" title="矿石">
-</span></span></span></td><td>背包合成</td></tr>
-
-<tr><th>鸡蛋</th><td><a href="#power_snowball">蕴能雪球</a>+绿宝石</td><td><span class="mcui"><span>
-<span class="mcui-row"><span class="snowball" title="蕴能雪球"><span class="enchant">*</span>
-</span><span class="snowball" title="蕴能雪球"><span class="enchant">*</span>
-</span><span class="snowball" title="蕴能雪球"><span class="enchant">*</span>
-</span></span><span class="mcui-row"><span class="snowball" title="蕴能雪球"><span class="enchant">*</span>
+<tr><th>鸡蛋</th><td>雪球+绿宝石</td><td><span class="mcui"><span>
+<span class="mcui-row"><span class="snowball" title="雪球">
+</span><span class="snowball" title="雪球">
+</span><span class="snowball" title="雪球">
+</span></span><span class="mcui-row"><span class="snowball" title="雪球">
 </span><span class="emerald" title="绿宝石">
-</span><span class="snowball" title="蕴能雪球"><span class="enchant">*</span>
-</span></span><span class="mcui-row"><span class="snowball" title="蕴能雪球"><span class="enchant">*</span>
-</span><span class="snowball" title="蕴能雪球"><span class="enchant">*</span>
-</span><span class="snowball" title="蕴能雪球"><span class="enchant">*</span>
+</span><span class="snowball" title="雪球">
+</span></span><span class="mcui-row"><span class="snowball" title="雪球">
+</span><span class="snowball" title="雪球">
+</span><span class="snowball" title="雪球">
 </span></span></span><span class="mcui-arrow"></span><span class="mcui-output">
 <span class="egg" title="鸡蛋"><span class="stacksize">8</span>
-</span></span></span></td><td>背包合成</td></tr>
+</span></span></span></td></tr>
 
-<tr><th><strong id="power_dirt">蕴能泥土 (Power Dirt)</strong></th><td>泥土</td><td><span class="mcui"><span>
-<span class="mcui-row"><span class="dirt" title="泥土">
-</span><span class="dirt" title="泥土">
-</span><span class="empty">
-</span></span><span class="mcui-row"><span class="dirt" title="泥土">
-</span><span class="dirt" title="泥土">
-</span><span class="empty">
-</span></span><span class="mcui-row"><span class="empty">
-</span><span class="empty">
-</span><span class="empty">
-</span></span></span><span class="mcui-arrow"></span><span class="mcui-output">
-<span class="dirt" title="蕴能泥土"><span class="enchant">*</span><span class="stacksize">2</span>
-</span></span></span></td><td>背包合成</td></tr>
-
-<tr><th>线</th><td><a href="#branch">树枝</a</td><td><span class="mcui"><span>
-<span class="mcui-row"><span class="stick" title="树枝"><span class="enchant">*</span>
-</span><span class="stick" title="树枝"><span class="enchant">*</span>
-</span><span class="empty">
-</span></span><span class="mcui-row"><span class="stick" title="树枝"><span class="enchant">*</span>
-</span><span class="stick" title="树枝"><span class="enchant">*</span>
-</span><span class="empty">
-</span></span><span class="mcui-row"><span class="empty">
-</span><span class="empty">
-</span><span class="empty">
-</span></span></span><span class="mcui-arrow"></span><span class="mcui-output">
-<span class="string" title="线">
-</span></span></span></td><td>背包合成</td></tr>
-
-<tr><th><strong id="power_snow_block">蕴能雪块 (Power Snow Block)</strong></th><td><a href="#power_snowball">蕴能雪球</a></td><td><span class="mcui"><span>
-<span class="mcui-row"><span class="snowball" title="蕴能雪球"><span class="enchant">*</span>
-</span><span class="snowball" title="蕴能雪球"><span class="enchant">*</span>
-</span><span class="empty">
-</span></span><span class="mcui-row"><span class="snowball" title="蕴能雪球"><span class="enchant">*</span>
-</span><span class="snowball" title="蕴能雪球"><span class="enchant">*</span>
-</span><span class="empty">
-</span></span><span class="mcui-row"><span class="empty">
-</span><span class="empty">
-</span><span class="empty">
-</span></span></span><span class="mcui-arrow"></span><span class="mcui-output">
-<span class="snow_block" title="蕴能雪块"><span class="enchant">*</span>
-</span></span></span></td><td>背包合成</td></tr>
-
-<tr><th>泥土</th><td>泥土+树苗</td><td><span class="mcui"><span>
+<tr><th>泥土</th><td>泥土+树苗+骨粉</td><td><span class="mcui"><span>
 <span class="mcui-row"><span class="dirt" title="泥土">
 </span><span class="oak_sapling" title="树苗">
-</span><span class="oak_sapling" title="树苗">
-</span></span><span class="mcui-row"><span class="empty">
-</span><span class="empty">
-</span><span class="empty">
-</span></span><span class="mcui-row"><span class="empty">
-</span><span class="empty">
-</span><span class="empty">
-</span></span></span><span class="mcui-arrow"></span><span class="mcui-output">
-<span class="dirt" title="泥土"><span class="stacksize">2</span>
-</span></span><span class="mcui-icons"><span class="mcui-shapeless" title="此配方是无形的，材料可以以任何排列方式放置在合成格内。">
-</span></span></span></td><td>原版合成</td></tr>
-
-<tr><th>泥土</th><td>泥土+骨粉</td><td><span class="mcui"><span>
-<span class="mcui-row"><span class="dirt" title="泥土">
-</span><span class="bone_meal" title="骨粉">
 </span><span class="bone_meal" title="骨粉">
 </span></span><span class="mcui-row"><span class="empty">
 </span><span class="empty">
@@ -2714,9 +2633,9 @@ function change(str){
 </span><span class="empty">
 </span><span class="empty">
 </span></span></span><span class="mcui-arrow"></span><span class="mcui-output">
-<span class="dirt" title="泥土"><span class="stacksize">2</span>
+<span class="dirt" title="泥土"><span class="stacksize">3</span>
 </span></span><span class="mcui-icons"><span class="mcui-shapeless" title="此配方是无形的，材料可以以任何排列方式放置在合成格内。">
-</span></span></span></td><td>原版合成</td></tr>
+</span></span></span></td></tr>
 
 <tr><th>砂砾</th><td>石头+沙子</td><td>
 <span class="mcui"><span><span class="mcui-row"><span class="stone" title="石头">
@@ -2731,8 +2650,7 @@ function change(str){
 </span></span></span><span class="mcui-arrow"></span><span class="mcui-output">
 <span class="gravel" title="砂砾"><span class="stacksize">2</span>
 </span></span><span class="mcui-icons"><span class="mcui-shapeless" title="此配方是无形的，材料可以以任何排列方式放置在合成格内。">
-</span></span></span></td><td>原版合成</td></tr>
-
+</span></span></span></td></tr>
 
 <tr><th>石制工具</th><td>燧石+木棍</td><td><span class="mcui"><span>
 <span class="mcui-row"><span class="flint" title="燧石">
@@ -2746,7 +2664,7 @@ function change(str){
 </span><span class="empty">
 </span></span></span><span class="mcui-arrow"></span><span class="mcui-output">
 <span class="stone_pickaxe" title="石镐">
-</span></span></span></td><td>原版合成</td></tr>
+</span></span></span></td></tr>
 
 </tbody></table>
 
