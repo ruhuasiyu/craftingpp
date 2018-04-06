@@ -8,6 +8,11 @@ execute @e[tag=bird] ~ ~ ~ summon bat ~ ~ ~ {Silent:1,ActiveEffects:[{Id:14,Show
 =====	新手礼包
 scoreboard objectives add onceGive dummy 新手奖励
 setblock ~ ~ ~ wall_sign 4 replace {Text1:"{\"text\":\"\"}",Text2:"{\"text\":\"右击领取新手礼包\",\"color\":\"dark_blue\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/setblock ~ ~-4 ~ redstone_torch\"}}",Text3:"{\"text\":\"共 $100\",\"color\":\"dark_blue\"}",Text4:"{\"text\":\"\"}"}
+
+
+setblock ~ ~ ~ wall_sign 4 replace {Text1:"{\"text\":\"\"}",Text2:"{\"text\":\"右击领取新手礼包\",\"color\":\"dark_blue\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/kill @s\"}}",Text3:"{\"text\":\"共 100 钻石\",\"color\":\"dark_blue\"}",Text4:"{\"text\":\"\"}"}
+
+
 scoreboard players add @a onceGive 0
 scoreboard players add @p[score_onceGive=0] CK 100
 scoreboard players add @p[score_onceGive=0] onceGive 1
