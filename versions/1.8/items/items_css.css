@@ -486,7 +486,7 @@ span.cyan_force_of_mountain{	background-position: -64px -0px;}
 span.orange_force_of_dirt{	background-position: -96px -0px;}
 span.yellow_force_of_earth{	background-position: -128px -0px;}
 span.red_force_of_fire{	background-position: -160px -0px;}
-span.purple_force_of_wood{	background-position: -192px -0px;}
+span.purple_force_of_life{	background-position: -192px -0px;}
 span.white_force_of_lightning{	background-position: -224px -0px;}
 span.black_force_of_moon{	background-position: -256px -0px;}
 
@@ -580,18 +580,26 @@ span.villager_head{	background-position: -192px -288px;}
 span.vindication_illager_head{	background-position: -224px -288px;}
 span.witch_head{	background-position: -256px -288px;}
 
-span.wolf_head{	background-position: -0px -352px;}
-span.zombie_pigman_head{	background-position: -32px -352px;}
-span.zombie_villager_head{	background-position: -64px -352px;}
-span.zombie_villager_head2{	background-position: -96px -352px;}
-span.zombie_villager_head3{	background-position: -128px -352px;}
-span.zombie_villager_head4{	background-position: -160px -352px;}
-span.cod_head{	background-position: -192px -352px;}
-span.salmon_head{	background-position: -224px -352px;}
-span.clownfish_head{	background-position: -256px -352px;}
+span.wolf_head{	background-position: -0px -320px;}
+span.zombie_pigman_head{	background-position: -32px -320px;}
+span.zombie_villager_head{	background-position: -64px -320px;}
+span.zombie_villager_head2{	background-position: -96px -320px;}
+span.zombie_villager_head3{	background-position: -128px -320px;}
+span.zombie_villager_head4{	background-position: -160px -320px;}
+span.cod_head{	background-position: -192px -320px;}
+span.salmon_head{	background-position: -224px -320px;}
+span.clownfish_head{	background-position: -256px -320px;}
+
+span.wing_of_sky{	background-position: -0px -352px;}
+span.heart_of_ocean{	background-position: -32px -352px;}
+span.limb_of_ridge{	background-position: -64px -352px;}
+span.soul_of_dirt{	background-position: -96px -352px;}
+span.certification_of_earth{	background-position: -128px -352px;}
+span.nova_of_fire{	background-position: -160px -352px;}
+span.spirit_of_life{	background-position: -192px -352px;}
 
 span.effect{
-	background-image:url(items/EffectsCSS.png);
+	background-image:url("items/EffectsCSS.png");
 	width:18px;
 	height:18px;
 	display:inline-block;
