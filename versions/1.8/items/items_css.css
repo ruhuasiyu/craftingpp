@@ -597,6 +597,13 @@ span.soul_of_dirt{	background-position: -96px -352px;}
 span.certification_of_earth{	background-position: -128px -352px;}
 span.nova_of_fire{	background-position: -160px -352px;}
 span.spirit_of_life{	background-position: -192px -352px;}
+span.temperancer{	background-position: -224px -352px;}
+span.temperancer_closed{	background-position: -256px -352px;}
+
+span.shard_of_the_darkness{	background-position: -0px -384px;}
+span.clay_bucket{	background-position: -32px -384px;}
+span.tainted_dirt{	background-position: -64px -384px;}
+span.broken_mob_spawner{	background-position: -96px -384px;}
 
 span.effect{
 	background-image:url("items/EffectsCSS.png");
