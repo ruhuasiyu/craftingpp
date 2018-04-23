@@ -7,7 +7,7 @@ This project is licensed under the terms of the GNU General Public License v3.0.
 
 该项目采用 GNU General Public License v3.0 协议。
 
-# 已占用的物品材质
+## 已占用的物品材质
 carrot_on_a_stick
 
 0	carrot_on_a_stick
@@ -43,6 +43,8 @@ carrot_on_a_stick
 15	temperancer
 
 16	temperancer_closed
+
+17	coordinate_recorder
 
 wooden_sword
 
@@ -90,4 +92,4 @@ wooden_sword
 
 21	broken_mob_spawner
 
-22	wand_of_the_darkness
+22	broom

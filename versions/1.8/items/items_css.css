@@ -110,7 +110,7 @@ span.firework_charge_black{	background-position: -96px -800px;}
 span.firework_charge_blue{	background-position: -128px -800px;}
 span.firework_charge_brown{	background-position: -160px -800px;}
 span.firework_charge_cyan{	background-position: -192px -800px;}
-span.firework_charge_gray{	background-position: -228px -800px;}
+span.firework_rocket{	background-position: -224px -800px;}
 span.firework_charge_green{	background-position: -320px -800px;}
 span.firework_charge_lightblue{	background-position: -352px -800px;}
 span.firework_charge_lightgray{	background-position: -384px -800px;}
@@ -162,6 +162,7 @@ span.oak_fence{	background-position: -704px -864px;}
 span.oak_fence_door{	background-position: -736px -864px;}
 span.glass{	background-position: -768px -864px;}
 span.glass_pane{	background-position: -800px -864px;}
+span.hay_block{	background-position: -832px -864px;}
 span.iron_bars{	background-position: -864px -864px;}
 span.jungle_planks{	background-position: -992px -864px;}
 
@@ -205,6 +206,7 @@ span.granite{	background-position: -608px -960px;}
 span.grass_block{	background-position: -640px -960px;}
 span.gravel{	background-position: -672px -960px;}
 span.ice{	background-position: -736px -960px;}
+span.mob_spawner{	background-position: -768px -960px;}
 span.mycelium{	background-position: -864px -960px;}
 span.obsidian{	background-position: -896px -960px;}
 span.packed_ice{	background-position: -928px -960px;}
@@ -604,6 +606,8 @@ span.shard_of_the_darkness{	background-position: -0px -384px;}
 span.clay_bucket{	background-position: -32px -384px;}
 span.tainted_dirt{	background-position: -64px -384px;}
 span.broken_mob_spawner{	background-position: -96px -384px;}
+span.broom{	background-position: -128px -384px;}
+span.coordinate_recorder{	background-position: -160px -384px;}
 
 span.effect{
 	background-image:url("items/EffectsCSS.png");
