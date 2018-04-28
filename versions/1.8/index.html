@@ -288,20 +288,21 @@ abbr{
 <script>
 function change(str){
 	var i;
-	if(str=="introduction")			i=0;
-	if(str=="advancements")			i=1;
-	if(str=="entities")		i=2;
-	if(str=="elements")		i=3;
-	if(str=="machines")	i=4;
-	if(str=="cook_and_brew")		i=5;
-	if(str=="rituals")				i=6;
-	if(str=="dark_rituals")			i=7;
-	if(str=="decorations")			i=8;
-	if(str=="conventions")			i=9;
-	if(str=="more_structures")		i=10;
-	if(str=="vanilla_recipes")		i=11;
-	if(str=="trade")				i=12;
-	if(str=="island")				i=13;
+	if(str=="introduction")		i=0;
+	if(str=="advancements")		i=1;
+	if(str=="entities")			i=2;
+	if(str=="elements")			i=3;
+	if(str=="machines")			i=4;
+	if(str=="foods")			i=5;
+	if(str=="plants")			i=6;
+	if(str=="rituals")			i=7;
+	if(str=="dark_rituals")		i=8;
+	if(str=="decorations")		i=9;
+	if(str=="conventions")		i=10;
+	if(str=="more_structures")	i=11;
+	if(str=="vanilla_recipes")	i=12;
+	if(str=="trade")			i=13;
+	if(str=="island")			i=14;
 	
 	var sec=$('article');
 	var length=sec.length;
@@ -330,11 +331,12 @@ function change(str){
 	<li><a onclick="change('entities')">实体</a></li>
 	<li><a onclick="change('elements')">元素之力</a></li>
 	<li><a onclick="change('machines')">机械工具</a></li>
-	<li><a onclick="change('cook_and_brew')">饮食与烧炼</a></li>
+	<li><a onclick="change('foods')">饮食与烧炼</a></li>
+	<li><a onclick="change('plants')">植物</a></li>
 	<li><a onclick="change('rituals')">仪式</a></li>
 	<li><a onclick="change('dark_rituals')">黑暗仪式</a></li>
 	<li><a onclick="change('decorations')">装饰品</a></li>
-	<li><a onclick="change('conventions')">便捷化</a></li>
+	<li><a onclick="change('conventions')">便捷化</a></li>	
 	<li><a onclick="change('more_structures')">结构</a></li>
 	<li><a onclick="change('vanilla_recipes')">原版合成</a></li>
 	<li><a onclick="change('trade')">交易</a></li>
@@ -960,7 +962,7 @@ function change(str){
 </span></span>
 <p>机械核心部件为<a onclick="change('elements')" href="#purple_force_of_life">紫色命之力</a>。底部漏斗下方需再放置一个漏斗，否则会堵塞机器。</p>
 <table><thead><tr><th>方块槽</th><th>插件槽</th><th colspan="2">消耗</th><th>产物</th><th>备注</th></tr></thead><tbody>		
-<tr><td rowspan="3">耕地</td><td rowspan="4"><a href="#farm_core">农场核心</a></td><td>小麦种子/甜菜种子</td><td rowspan="36">附魔之瓶</td><td>3 小麦/甜菜根、0~3 种子</td><td rowspan="14">10秒</td></tr>
+<tr><td rowspan="3">耕地</td><td rowspan="5"><a href="#farm_core">农场核心</a></td><td>小麦种子/甜菜种子</td><td rowspan="36">附魔之瓶</td><td>3 小麦/甜菜根、0~3 种子</td><td rowspan="14">10秒</td></tr>
 <tr><td>胡萝卜/马铃薯</td><td>9 胡萝卜/马铃薯</td></tr>
 <tr><td>南瓜种子/西瓜种子</td><td>3 南瓜/西瓜</td></tr>
 <tr><td>沙子/红沙</td><td>甘蔗</td><td>6 甘蔗</td></tr>
@@ -1216,7 +1218,7 @@ function change(str){
 </span><span class="iron_ingot" title="附魔铁锭"><span class="enchant">*</span>
 </span></span></span><span class="mcui-arrow"></span><span class="mcui-output">
 <span class="magma_block" title="方块转化器"><span class="enchant">*</span>
-</span></span></span></td><td>顶部放置待转换的方块，水平方向放置转换后的方块即可，水平方向越多速度越快（最多4个）。所需时间最快为2分钟×次数。可转换的方块为石头→煤矿石→铁矿石→金矿石→钻石矿石，粘土→青金石矿石→红石矿石→绿宝石矿石，地狱岩→石英矿石，红石块→荧石块。破坏后无掉落。可在配置文件中修改冷却时间。</td></tr>
+</span></span></span></td><td>顶部放置待转化的方块，底部留空。首次转化所需时间为2分钟，可转换的方块为石头→煤矿石→铁矿石→金矿石→钻石矿石，粘土→青金石矿石→红石矿石→绿宝石矿石，地狱岩→石英矿石，红石块→荧石块。</td></tr>
 
 <tr><th><strong id="elder_s_words">年长者之教诲 (Elder's Words)</strong></th><td>附魔之瓶+<a href="#cyan_force_of_mountain" onclick="change('elements')">青色山之力</a>+<a href="#enchanted_gold">附魔金锭</a>+书+<a href="#enchanted_iron">附魔铁锭</a>+<a href="#enchanted_diamond">附魔钻石</a></td>
 <td><span class="mcui"><span><span class="mcui-row"><span class="experience_bottle" title="附魔之瓶">
@@ -1587,6 +1589,116 @@ function change(str){
 </td><td><span class="mcui-row"><span class="clock" title="15秒">
 </span></span></td></tr>
 </tbody></table>
+</article>
+
+<!--植物-->
+<article>
+<code>数据包 cpp_plants</code>
+<h3>植物</h3>
+<table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>	
+
+<tr><th id="magic_wheat_seeds"><strong>魔法小麦种子 (Magic Wheat Seeds)</strong><br />
+<strong>魔法甜菜种子 (Magic Beetroot Seeds)</strong><br />
+<strong>魔法南瓜种子 (Magic Pumpkin Seeds)</strong><br />
+<strong>魔法西瓜种子 (Magic Melon Seeds)</strong></th><td>钻石+8 小麦种子<br />
+魔法小麦种子+4 甜菜种子+4 煤炭<br />
+魔法甜菜种子+4 南瓜种子+4 铁锭<br />
+魔法南瓜种子+4 西瓜种子+4 金锭</td>
+<td><span class="mcui"><span><span class="mcui-row"><span class="iron_ingot" title="铁锭">
+</span><span class="pumpkin_seeds" title="南瓜种子">
+</span><span class="iron_ingot" title="铁锭">
+</span></span><span class="mcui-row"><span class="pumpkin_seeds" title="南瓜种子">
+</span><span class="beetroot_seeds" title="魔法甜菜种子"><span class="enchant">*</span>
+</span><span class="pumpkin_seeds" title="南瓜种子">
+</span></span><span class="mcui-row"><span class="iron_ingot" title="铁锭">
+</span><span class="pumpkin_seeds" title="南瓜种子">
+</span><span class="iron_ingot" title="铁锭">
+</span></span></span><span class="mcui-arrow"></span><span class="mcui-output">
+<span class="pumpkin_seeds" title="魔法南瓜种子"><span class="enchant">*</span>
+</span></span></span></td></tr>
+
+<tr><th id="feather_seeds">
+羽毛种子<br />
+腐肉种子<br />
+火药种子<br />
+燧石种子<br />
+木炭种子<br />
+煤炭种子<br />
+线种子<br />
+骨粉种子<br />
+蜘蛛眼种子<br />
+铁种子<br />
+青金石种子<br />
+海晶砂粒种子<br />
+粘液球种子<br />
+烈焰粉种子<br />
+末影珍珠种子<br />
+红石种子<br />
+石英种子<br />
+金锭种子<br />
+恶魂之泪种子<br />
+潜影壳种子<br />
+幻翼膜种子<br />
+荧石粉种子<br />
+钻石种子<br />
+绿宝石种子</th><td>魔法小麦种子+8 羽毛<br />
+魔法小麦种子+8 腐肉<br />
+魔法小麦种子+8 火药<br />
+魔法小麦种子+8 燧石<br />
+魔法小麦种子+8 木炭<br />
+魔法小麦种子+8 煤炭<br />
+魔法甜菜种子+8 线<br />
+魔法甜菜种子+8 骨粉<br />
+魔法甜菜种子+8 蜘蛛眼<br />
+魔法甜菜种子+8 铁锭<br />
+魔法甜菜种子+8 青金石<br />
+魔法甜菜种子+8 海晶砂粒<br />
+魔法南瓜种子+8 粘液球<br />
+魔法南瓜种子+8 烈焰粉<br />
+魔法南瓜种子+8 末影珍珠<br />
+魔法南瓜种子+8 红石<br />
+魔法南瓜种子+8 石英<br />
+魔法南瓜种子+8 金锭<br />
+魔法西瓜种子+8 恶魂之泪<br />
+魔法西瓜种子+8 潜影壳<br />
+魔法西瓜种子+8 幻翼膜<br />
+魔法西瓜种子+8 荧石粉<br />
+魔法西瓜种子+8 钻石<br />
+魔法西瓜种子+8 绿宝石</td>
+<td><span class="mcui"><span><span class="mcui-row"><span class="feather" title="羽毛">
+</span><span class="feather" title="羽毛">
+</span><span class="feather" title="羽毛">
+</span></span><span class="mcui-row"><span class="feather" title="羽毛">
+</span><span class="wheat_seeds" title="魔法小麦种子"><span class="enchant">*</span>
+</span><span class="feather" title="羽毛">
+</span></span><span class="mcui-row"><span class="feather" title="羽毛">
+</span><span class="feather" title="羽毛">
+</span><span class="feather" title="羽毛">
+</span></span></span><span class="mcui-arrow"></span><span class="mcui-output">
+<span class="wheat_seeds" title="羽毛种子"><span class="enchant">*</span>
+</span></span></span></td></tr>
+
+<tr><th id="wool_sapling"><strong>羊毛树 (Wool Sapling)</strong><br /><strong>水果树 (Fruit Sapling)</strong></th>
+<td>树苗+8 白色羊毛<br />
+树苗+8 苹果</td>
+<td><span class="mcui"><span><span class="mcui-row"><span class="white_wool" title="白色羊毛">
+</span><span class="white_wool" title="白色羊毛">
+</span><span class="white_wool" title="白色羊毛">
+</span></span><span class="mcui-row"><span class="white_wool" title="白色羊毛">
+</span><span class="oak_sapling" title="树苗">
+</span><span class="white_wool" title="白色羊毛">
+</span></span><span class="mcui-row"><span class="white_wool" title="白色羊毛">
+</span><span class="white_wool" title="白色羊毛">
+</span><span class="white_wool" title="白色羊毛">
+</span></span></span><span class="mcui-arrow"></span><span class="mcui-output">
+<span class="oak_sapling" title="羊毛树"><span class="enchant">*</span>
+</span></span></span></td></tr>
+
+</tbody></table>
+
+<p>魔法种子成熟后破坏可得到1-4的相应种子，其它的种子成熟后破坏可得到0-3的种子和相应产物。种子数量受时运影响，可以用骨粉催熟。</p>
+<p>羊毛树的树叶为不同的羊毛搭配树叶而成，水果树的树叶破坏后会掉落水果树树苗或水果，水果可用于制作果汁。二者均可用骨粉催熟。</p>
+
 </article>
 
 <!--仪式-->
@@ -2299,42 +2411,18 @@ function change(str){
 
 </article>
 
-<!--更多的树-->
+<!--更多的结构-->
 <article>
 <code>数据包 cpp_generate</code>
-<h3>树种</h3>
-<p>融合骨块、绿宝石、树苗得到。使用时，沿竖直方向依次放置主色方块、副色方块、树种即可自动种下。主副色方块需为羊毛或树叶。</p>
 
-<table class="craft"><thead><tr><th>材料</th><th>合成配方</th></tr></thead>
-<tbody>
-<tr><td>绿宝石块+骨块+橡树树苗<br />绿宝石块+骨块+云杉树苗<br />绿宝石块+骨块+白桦树苗<br />
-绿宝石块+骨块+丛林树苗<br />绿宝石块+骨块+金合欢树苗<br />绿宝石块+骨块+深色橡树树种</td><td><span class="mcui">
-<span><span class="mcui-row"><span class="emerald_block" title="绿宝石块">
-</span><span class="bone_block" title="骨块">
-</span><span class="emerald_block" title="绿宝石块">
-</span></span><span class="mcui-row"><span class="bone_block" title="骨块">
-</span><span class="oak_sapling" title="橡树树苗">
-</span><span class="bone_block" title="骨块">
-</span></span><span class="mcui-row"><span class="emerald_block" title="绿宝石块">
-</span><span class="bone_block" title="骨块">
-</span><span class="emerald_block" title="绿宝石块">
-</span></span></span><span class="mcui-arrow"></span><span class="mcui-output">
-<span class="parrot_spawn_egg" title="橡树树种"><span class="enchant">*</span>
-</span></span></span></td></tr>
-</tbody></table>
-
-<h3>树木</h3>
-<p>新增桃树、苹果树、橘树、樱树、常青树、银杏、红叶李、紫叶李，天然生成在主世界。</p>
-
-<!--更多的结构-->
-<h3 id="creeper_dungeon">爬行者地牢</h4>
-<p>一个由圆石和苔石构成的小房间，包含苦力怕刷怪箱和地牢宝箱，天然生成在主世界地下。</p>
-
-<h3>附魔室</h4>
-<p>一个由黑曜石、荧石、书架、淡蓝色玻璃、地狱砖、附魔台构成的小房间，天然生成在主世界地表。</p>
-
-<h3 id="totem_pillar">图腾柱</h4>
-<p>一个由各种石砖构成的柱子，包含矿石、熔岩和宝箱，天然生成在主世界。宝箱含泥土之魂/火焰之星/山脉之肢/附魔金苹果/附魔铁锭/附魔金锭/肉松面包/拔丝苹果/煤炭/骨头/火药/腐肉/线。</p>
+<h3>更多的结构</h3>
+<p>新增
+<ul>
+<li>羊毛树——天然生成在主世界。</li>
+<li>爬行者地牢——由圆石和苔石构成的小房间，包含苦力怕刷怪箱和地牢宝箱，天然生成在主世界地下。</li>
+<li>附魔室——由黑曜石、荧石、书架、淡蓝色玻璃、地狱砖、附魔台构成的小房间，天然生成在主世界地表。</li>
+<li>图腾柱——由各种石砖构成的柱子，包含矿石、熔岩和宝箱，天然生成在主世界。宝箱含泥土之魂/火焰之星/山脉之肢/附魔金苹果/附魔铁锭/附魔金锭/肉松面包/拔丝苹果/煤炭/骨头/火药/腐肉/线。</li>
+</ul></p>
 
 <p><img style="width:90%" src="items/screenshots/generate.png" /></p>
 </article>
