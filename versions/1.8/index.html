@@ -815,7 +815,7 @@ function change(str){
 </tbody></table>
 
 <h4>造石机</h4>
-<p>机械核心部件为<a onclick="change('elements')" href="#cyan_force_of_mountain">青色山之力</a>。</p>
+<p>机械核心部件为<a onclick="change('elements')" href="#cyan_force_of_mountain">青色山之力</a>。可以使用绿色水之力代替水桶以避免消耗水。</p>
 <table><thead><tr><th colspan="2">模式</th><th colspan="2">消耗</th><th>产物</th><th>时长</th></tr></thead><tbody>
 <tr><td><span class="mcui-row"><span class="cyan_stained_glass_pane" title="青色玻璃板">
 </span><span class="colorful_items cyan_force_of_mountain" title="青色山之力">
@@ -962,7 +962,7 @@ function change(str){
 </span></span>
 <p>机械核心部件为<a onclick="change('elements')" href="#purple_force_of_life">紫色命之力</a>。底部漏斗下方需再放置一个漏斗，否则会堵塞机器。</p>
 <table><thead><tr><th>方块槽</th><th>插件槽</th><th colspan="2">消耗</th><th>产物</th><th>备注</th></tr></thead><tbody>		
-<tr><td rowspan="3">耕地</td><td rowspan="5"><a href="#farm_core">农场核心</a></td><td>小麦种子/甜菜种子</td><td rowspan="36">附魔之瓶</td><td>3 小麦/甜菜根、0~3 种子</td><td rowspan="14">10秒</td></tr>
+<tr><td rowspan="3">耕地</td><td rowspan="5"><a href="#farm_core">农场核心</a></td><td>小麦种子/甜菜种子</td><td rowspan="35">附魔之瓶</td><td>3 小麦/甜菜根、0~3 种子</td><td rowspan="14">10秒</td></tr>
 <tr><td>胡萝卜/马铃薯</td><td>9 胡萝卜/马铃薯</td></tr>
 <tr><td>南瓜种子/西瓜种子</td><td>3 南瓜/西瓜</td></tr>
 <tr><td>沙子/红沙</td><td>甘蔗</td><td>6 甘蔗</td></tr>
@@ -1018,7 +1018,7 @@ function change(str){
 </span><span class="white_stained_glass_pane" title="白色玻璃板">
 </span></span>
 <p>机械核心部件为<a onclick="change('elements')" href="#white_force_of_lightning">白色电之力</a>。</p>
-<table class="center"><thead><tr><th>消耗</th><th>产物</th><th>备注</th></tr></thead><tbody>
+<table class="center"><thead><tr><th>消耗</th><th>产物</th><th>耗时</th></tr></thead><tbody>
 <tr><td>钻石</td><td>附魔之瓶、4 绿宝石</td><td>2秒</td></tr>
 <tr><td>指南针</td><td>附魔之瓶、绿宝石</td><td>2秒</td></tr>
 <tr><td>2 成书</td><td>附魔之瓶、绿宝石</td><td>2秒</td></tr>
@@ -1204,21 +1204,6 @@ function change(str){
 </span></span></span><span class="mcui-arrow"></span><span class="mcui-output">
 <span class="colorful_items compressor" title="压缩器">
 </span></span></span></td><td>右键将地面的64个物品压缩，重新扔出可复原压缩的物品。最高可进行八重压缩。如果将压缩后的方块放置将只能得到1个原有的物品。</td></tr>
-
-<tr><th><strong id="block_converter">方块转化器 (Block Converter)</strong></th>
-<td>烈焰粉+<a href="#red_force_of_fire" onclick="change('elements')">红色火之力</a>+附魔之瓶+岩浆块+<a href="#enchanted_diamond">附魔钻石</a></td><td><div><span class="mcui">
-<span><span class="mcui-row"><span class="experience_bottle" title="附魔之瓶">
-</span><span class="colorful_items red_force_of_fire" title="红色火之力">
-</span><span class="experience_bottle" title="附魔之瓶">
-</span></span><span class="mcui-row"><span class="gold_ingot" title="附魔金锭"><span class="enchant">*</span>
-</span><span class="magma_block" title="岩浆块">
-</span><span class="gold_ingot" title="附魔金锭"><span class="enchant">*</span>
-</span></span><span class="mcui-row"><span class="iron_ingot" title="附魔铁锭"><span class="enchant">*</span>
-</span><span class="heavy_weighted_pressure_plate" title="硅板"><span class="enchant">*</span>
-</span><span class="iron_ingot" title="附魔铁锭"><span class="enchant">*</span>
-</span></span></span><span class="mcui-arrow"></span><span class="mcui-output">
-<span class="magma_block" title="方块转化器"><span class="enchant">*</span>
-</span></span></span></td><td>顶部放置待转化的方块，底部留空。首次转化所需时间为2分钟，可转换的方块为石头→煤矿石→铁矿石→金矿石→钻石矿石，粘土→青金石矿石→红石矿石→绿宝石矿石，地狱岩→石英矿石，红石块→荧石块。</td></tr>
 
 <tr><th><strong id="elder_s_words">年长者之教诲 (Elder's Words)</strong></th><td>附魔之瓶+<a href="#cyan_force_of_mountain" onclick="change('elements')">青色山之力</a>+<a href="#enchanted_gold">附魔金锭</a>+书+<a href="#enchanted_iron">附魔铁锭</a>+<a href="#enchanted_diamond">附魔钻石</a></td>
 <td><span class="mcui"><span><span class="mcui-row"><span class="experience_bottle" title="附魔之瓶">
@@ -1696,7 +1681,7 @@ function change(str){
 
 </tbody></table>
 
-<p>魔法种子成熟后破坏可得到1-4的相应种子，其它的种子成熟后破坏可得到0-3的种子和相应产物。种子数量受时运影响，可以用骨粉催熟。</p>
+<p>魔法种子成熟后破坏可得到1-4的相应种子，其它的种子成熟后破坏可得到0-3的种子和相应产物。种子数量受时运影响，可以用骨粉催熟。魔法作物有一定几率退化成普通的作物。</p>
 <p>羊毛树的树叶为不同的羊毛搭配树叶而成，水果树的树叶破坏后会掉落水果树树苗或水果，水果可用于制作果汁。二者均可用骨粉催熟。</p>
 
 </article>
@@ -1803,16 +1788,16 @@ function change(str){
 <p>在发射器中放入特定物品，在上方放置一个物品展示框并放入待添加效果的物品。手持魔杖右击发射器，然后等待发射器上符文粒子消失即可。仪式有多种用途。</p>
 
 <h4>属性附加</h4>
-<p>消耗：金锭+附魔之瓶+<a onclick="change('entities')" href="#wing_of_sky">天空之翼</a>/<a onclick="change('entities')" href="#heart_of_ocean">海洋之心</a>/<a onclick="change('entities')" href="#limb_of_ridge">山脉之肢</a>/<a onclick="change('entities')" href="#soul_of_dirt">泥土之魂</a>/<a onclick="change('entities')" href="#certification_of_earth">大地之证</a>/<a onclick="change('entities')" href="#nova_of_fire">火焰之星</a>/下界之星
+<p>消耗：金锭+附魔之瓶+<a onclick="change('entities')" href="#wing_of_sky">天空之翼</a>/<a onclick="change('entities')" href="#heart_of_ocean">海洋之心</a>/<a onclick="change('entities')" href="#limb_of_ridge">山脉之肢</a>/<a onclick="change('entities')" href="#soul_of_dirt">泥土之魂</a>/<a onclick="change('entities')" href="#certification_of_earth">大地之证</a>/<a onclick="change('entities')" href="#nova_of_fire">火焰之星</a>/<a onclick="change('entities')" href="#spirit_of_life">生命之灵</a>/下界之星
 
 <span class="mcui-row"><span class="gold_ingot" title="金锭">
-</span><span class="experience_bottle" title="附魔之瓶"><span class="stacksize">64</span>
+</span><span class="experience_bottle" title="附魔之瓶"><span class="stacksize">20</span>
 </span><span class="gold_ingot" title="金锭">
-</span></span><span class="mcui-row"><span class="experience_bottle" title="附魔之瓶"><span class="stacksize">64</span>
+</span></span><span class="mcui-row"><span class="experience_bottle" title="附魔之瓶"><span class="stacksize">20</span>
 </span><span class="colorful_items wing_of_sky" title="稀有物">
-</span><span class="experience_bottle" title="附魔之瓶"><span class="stacksize">64</span>
+</span><span class="experience_bottle" title="附魔之瓶"><span class="stacksize">20</span>
 </span></span><span class="mcui-row"><span class="gold_ingot" title="金锭">
-</span><span class="experience_bottle" title="附魔之瓶"><span class="stacksize">64</span>
+</span><span class="experience_bottle" title="附魔之瓶"><span class="stacksize">20</span>
 </span><span class="gold_ingot" title="金锭">
 </span></span></p>
 <p>附加物：钻石剑、钻石盔甲。时长：10秒</p>
@@ -1838,15 +1823,15 @@ function change(str){
 <p>属性可重新附加，之前的属性将会被覆盖。与效果附加、附魔独立。</p>
 
 <h4>效果附加</h4>
-<p>消耗：金锭+附魔之瓶+<a onclick="change('entities')" href="#wing_of_sky">天空之翼</a>/<a onclick="change('entities')" href="#heart_of_ocean">海洋之心</a>/<a onclick="change('entities')" href="#limb_of_ridge">山脉之肢</a>/<a onclick="change('entities')" href="#soul_of_dirt">泥土之魂</a>/<a onclick="change('entities')" href="#certification_of_earth">大地之证</a>/<a onclick="change('entities')" href="#nova_of_fire">火焰之星</a>/下界之星
+<p>消耗：金锭+附魔之瓶+<a onclick="change('entities')" href="#wing_of_sky">天空之翼</a>/<a onclick="change('entities')" href="#heart_of_ocean">海洋之心</a>/<a onclick="change('entities')" href="#limb_of_ridge">山脉之肢</a>/<a onclick="change('entities')" href="#soul_of_dirt">泥土之魂</a>/<a onclick="change('entities')" href="#certification_of_earth">大地之证</a>/<a onclick="change('entities')" href="#nova_of_fire">火焰之星</a>/<a onclick="change('entities')" href="#spirit_of_life">生命之灵</a>/下界之星
 <span class="mcui-row"><span class="emerald" title="绿宝石">
-</span><span class="experience_bottle" title="附魔之瓶"><span class="stacksize">64</span>
+</span><span class="experience_bottle" title="附魔之瓶"><span class="stacksize">20</span>
 </span><span class="emerald" title="绿宝石">
-</span></span><span class="mcui-row"><span class="experience_bottle" title="附魔之瓶"><span class="stacksize">64</span>
+</span></span><span class="mcui-row"><span class="experience_bottle" title="附魔之瓶"><span class="stacksize">20</span>
 </span><span class="colorful_items wing_of_sky" title="稀有物">
-</span><span class="experience_bottle" title="附魔之瓶"><span class="stacksize">64</span>
+</span><span class="experience_bottle" title="附魔之瓶"><span class="stacksize">20</span>
 </span></span><span class="mcui-row"><span class="emerald" title="绿宝石">
-</span><span class="experience_bottle" title="附魔之瓶"><span class="stacksize">64</span>
+</span><span class="experience_bottle" title="附魔之瓶"><span class="stacksize">20</span>
 </span><span class="emerald" title="绿宝石">
 </span></span></p>
 <p>附加物：钻石剑、钻石盔甲、钻石工具。时长：10秒</p>
@@ -1869,15 +1854,15 @@ function change(str){
 <p>效果可重新附加，之前的效果将会被覆盖。与属性附加、附魔独立。</p>
 
 <h4>附魔书制作</h4>
-<p>消耗：金锭+附魔之瓶+<a onclick="change('entities')" href="#wing_of_sky">天空之翼</a>/<a onclick="change('entities')" href="#heart_of_ocean">海洋之心</a>/<a onclick="change('entities')" href="#limb_of_ridge">山脉之肢</a>/<a onclick="change('entities')" href="#soul_of_dirt">泥土之魂</a>/<a onclick="change('entities')" href="#certification_of_earth">大地之证</a>/<a onclick="change('entities')" href="#nova_of_fire">火焰之星</a>/下界之星
+<p>消耗：金锭+附魔之瓶+<a onclick="change('entities')" href="#wing_of_sky">天空之翼</a>/<a onclick="change('entities')" href="#heart_of_ocean">海洋之心</a>/<a onclick="change('entities')" href="#limb_of_ridge">山脉之肢</a>/<a onclick="change('entities')" href="#soul_of_dirt">泥土之魂</a>/<a onclick="change('entities')" href="#certification_of_earth">大地之证</a>/<a onclick="change('entities')" href="#nova_of_fire">火焰之星</a>/<a onclick="change('entities')" href="#spirit_of_life">生命之灵</a>/下界之星
 <span class="mcui-row"><span class="lapis_lazuli" title="青金石">
-</span><span class="experience_bottle" title="附魔之瓶"><span class="stacksize">64</span>
+</span><span class="experience_bottle" title="附魔之瓶"><span class="stacksize">20</span>
 </span><span class="lapis_lazuli" title="青金石">
-</span></span><span class="mcui-row"><span class="experience_bottle" title="附魔之瓶"><span class="stacksize">64</span>
+</span></span><span class="mcui-row"><span class="experience_bottle" title="附魔之瓶"><span class="stacksize">20</span>
 </span><span class="colorful_items wing_of_sky" title="稀有物">
-</span><span class="experience_bottle" title="附魔之瓶"><span class="stacksize">64</span>
+</span><span class="experience_bottle" title="附魔之瓶"><span class="stacksize">20</span>
 </span></span><span class="mcui-row"><span class="lapis_lazuli" title="青金石">
-</span><span class="experience_bottle" title="附魔之瓶"><span class="stacksize">64</span>
+</span><span class="experience_bottle" title="附魔之瓶"><span class="stacksize">20</span>
 </span><span class="lapis_lazuli" title="青金石">
 </span></span></p>
 <p>附加物：书。时长：10秒</p>
@@ -3035,14 +3020,14 @@ function change(str){
 <tr><td>20%</td><td>20%</td><td>20%</td><td>12%</td><td>10%</td><td>6%</td><td>4%</td><td>4%</td>
 	<td>2%</td><td>2%</td><td></td><td></td><td></td></tr>
 <tr><th rowspan="2">灵魂沙</th>
-	<td>石英</td><td>地狱疣</td><td>恶魂之泪</td><td></td><td></td><td></td><td></td><td></td>
+	<td>石英</td><td>粘土球</td><td>地狱疣</td>恶魂之泪<td></td><td></td><td></td><td></td><td></td>
 	<td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>90%</td><td>9%</td><td>1%</td><td></td><td></td><td></td><td></td><td></td>
+<tr><td>70%</td><td>20%</td><td>9%</td><td>1%</td><td></td><td></td><td></td><td></td>
 	<td></td><td></td><td></td><td></td><td></td></tr>
 </tbody></table>
 <p>当玩家背包含有4个矿石碎片会自动合成为对应的矿石。</p>
 <p>在方块粉碎机上方放置坩埚，然后向坩埚扔入4个圆石或4个雪球，可以制作岩浆或水。</p>
-<p>将12个绿宝石块摆成末地传送门框架的形状，然后在正中间放置雪块即可得到末地传送门。</p>
+<p>将12个绿宝石块摆成末地传送门框架的形状，然后在正中间放置雪块即可得到末地传送门框架。</p>
 
 <h3>合成表</h3>
 <table>
