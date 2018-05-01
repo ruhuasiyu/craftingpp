@@ -7,6 +7,10 @@ This project is licensed under the terms of the GNU General Public License v3.0.
 
 该项目采用 GNU General Public License v3.0 协议。
 
+# 最新版本内容
+[https://ruhuasiyu.github.io/CraftingPlusPlus/versions/1.8/index.html](https://ruhuasiyu.github.io/CraftingPlusPlus/versions/1.8/index.html)
+
+
 ## 已占用的物品材质
 carrot_on_a_stick
 
