@@ -1,25 +1,33 @@
 [postbg]2.jpg[/postbg]
 [index]
 [#1]模组简介
-[#2]v1.7 重组更新
-[#3]v1.6 科学更新 (以及更早版本)
+[#2]v1.8 元素更新(预览版)
+[#3]v1.7 重组更新
+[#4]v1.6 科学更新 (以及更早版本)
 [/index]
 
-[table][tr=SandyBrown][td][table][tr=purple][td][b][color=gold][align=center][size=3]
+[table]
+[tr=SandyBrown][td][table]
+[tr=purple][td][b][color=gold][align=center][size=3]
 [/size][size=5]更多的合成 | Crafting++[/size]
 [size=3]Minecraft 原版模组 by ruhuasiyu@mcbbs
 [/size]
-[/align][/color][/b][/td][/tr][/table][table][tr=PaleTurquoise][td][align=center][color=Indigo][b][size=4]简介[/size][/b][/color][/align][/td][/tr][/table][table][tr=Wheat][td][size=3]原版模组是指在不修改Minecraft游戏本体的前提下，通过命令方块、ooc或数据包等方式对游戏的可玩性做出修改。
+[/align][/color][/b][/td][/tr]
+[/table]
+[align=center][img]https://ruhuasiyu.github.io/CraftingPlusPlus/items/screenshots/banner.png[/img][/align]
+[table]
+[tr=PaleTurquoise][td][align=center][color=Indigo][b][size=4]简介[/size][/b][/color][/align][/td][/tr]
+[/table][table]
+[tr=Wheat][td][size=3]原版模组一般是指在不修改Minecraft游戏本体的前提下，通过命令方块、ooc或数据包等方式对游戏的可玩性做出修改。
 
-本模组添加了数百种合成、工具、饰品、装饰、进度、称号等内容，旨在为丰富原版生存的内容。点击目录可查看各版本内容。
-
-本模组原名“刷怪蛋、高压、石头工艺”，自1.3版本起更名为“更多的合成”。目前模组更新至1.7.4，支持的Minecraft版本为Java 1.12。1.8版本将于2018年5月份左右制作完成，该版本将开始支持Java 1.13。[/size][/td][/tr][/table][hr][table][tr=PaleTurquoise][td][align=center][color=Indigo][b][size=4]背包合成[/size][/b][/color][/align][/td][/tr][/table][table][tr=Wheat][td][size=3]涉及模组新增物品的合成均采用背包合成，方式如下：将材料放入背包右上角对应的3×3的格子里即可自动得到产物，数量和位置须完全吻合。
-[align=center][img=350,330]https://public.lightpic.info/image/15EA_59153D760.jpg[/img][/align][/size][/td][/tr][/table][hr][table][tr=PaleTurquoise][td][align=center][color=Indigo][b][size=4]声明[/size][/b][/color][/align][/td][/tr][/table][table][tr=Wheat][td][size=3]转载本文须需遵守CC BY-NC-ND 2.5 CN 许可协议——列出作者(ruhuasiyu@mcbbs)、来源、原始下载链接以及相同的许可协议。模组代码需遵守GPL协议。
-
-不可转载至网盘或文件存储平台。公益服务器可直接使用；非公益服务器需联系我获得授权。通讯类工具可下载后分享。[/size][/td][/tr][/table][hr][table][tr=PaleTurquoise][td][align=center][color=Indigo][b][size=4]版本列表[/size][/b][/color][/align][/td][/tr][/table][table][tr=Wheat][td][size=3][table]
+本模组原名“刷怪蛋、高压、石头工艺”，自1.3版本起更名为“更多的合成”。目前模组更新至1.8(元素更新)预览版，支持的Minecraft版本为 Minecraft Java 1.13。本次更新为该模组最大的一次更新，引入了元素之力，以经验值为能量进行方块处理、工具制作、效果释放、属性附加等，同时在世界生成、交易、合成、烧炼、酿造、种植等方面添加了很多新的内容。[/size][/td][/tr]
+[/table][hr][table]
+[tr=PaleTurquoise][td][align=center][color=Indigo][b][size=4]版本列表[/size][/b][/color][/align][/td][/tr]
+[/table][table]
+[tr=Wheat][td][size=3][table]
 [tr=#505050][td][color=white][b][align=center]支持的minecraft版本[/align][/b][/color][/td][td][color=white][b][align=center]模组版本及下载链接[/align][/b][/color][/td][td][color=white][b][align=center]简介[/align][/b][/color][/td][/tr]
-[tr=#ffffff][td]Minecraft Java版 1.13[/td][td]craftingpp-1.8(尚未发布)[/td][td][url=https://ruhuasiyu.github.io/craftingpp/versions/1.8/index.html]网站链接[/url][/td][/tr]
-[tr=#ffffff][td]Minecraft Java版 1.12[/td][td][url=http://www.mcbbs.net/forum.php?mod=attachment&aid=MTA4NDIzM3xhYjM4MDU1NnwxNTExNjI3NjYwfDk3NTUyNXw2OTY4NjE%3D]craftingpp-1.7.4[/url][/td][td][url=https://ruhuasiyu.github.io/craftingpp/versions/1.7/index.html]网站链接[/url][/td][/tr]
+[tr=#ffffff][td]Minecraft Java版 1.13[/td][td][url=https://github.com/ruhuasiyu/CraftingPlusPlus/blob/master/versions/1.8]craftingpp-1.8 预览版 m05d01[/url][/td][td][url=https://ruhuasiyu.github.io/CraftingPlusPlus/index.html]网站链接[/url][/td][/tr]
+[tr=#ffffff][td]Minecraft Java版 1.12[/td][td][url=http://www.mcbbs.net/forum.php?mod=attachment&aid=MTA4NDIzM3xhYjM4MDU1NnwxNTExNjI3NjYwfDk3NTUyNXw2OTY4NjE%3D]craftingpp-1.7.4[/url][/td][td][url=https://ruhuasiyu.github.io/CraftingPlusPlus/versions/1.7/index.html]网站链接[/url][/td][/tr]
 [tr=#ffffff][td]Minecraft Java版 1.12 pre2[/td][td][url=http://www.mcbbs.net/thread-614296-1-1.html]craftingpp-1.6.1[/url][/td][td][url=http://www.mcbbs.net/thread-614296-1-1.html]网站链接[/url][/td][/tr]
 [tr=#ffffff][td]Minecraft Java版 1.11[/td][td]craftingpp-1.5[/td][td]不再提供[/td][/tr]
 [tr=#ffffff][td]Minecraft Java版 1.11[/td][td]craftingpp-1.4[/td][td]不再提供[/td][/tr]
@@ -27,20 +35,315 @@
 [tr=#ffffff][td]Minecraft Java版 1.11[/td][td]SpawnEggPressureStoneMod-1.2[/td][td]不再提供[/td][/tr]
 [tr=#ffffff][td]Minecraft Java版 1.10[/td][td]SpawnEggPressureStoneMod-1.1[/td][td]不再提供[/td][/tr]
 [tr=#ffffff][td]Minecraft Java版 1.10[/td][td]SpawnEggPressureStoneMod-1.0[/td][td]不再提供[/td][/tr]
-[/table]
-自1.6版本起，将解压后的文件放入世界存档内即可。之前的版本安装则较为繁琐，且卡顿也较严重，因此我不建议使用旧版本。如确实需要，可直接联系我。此外，新版本放出后，旧版本一律不再更新。
+[/table]自1.6版本起，将解压后的文件放入世界存档内即可。之前的版本安装则较为繁琐，且卡顿也较严重，因此我不建议使用旧版本。如确实需要，可直接联系我。此外，新版本放出后，旧版本一律不再更新。
 
-此外，待1.8更新后，我会对部分原理加以讲解说明，对于原版模组开发有兴趣的玩家可以进行参考。[/size][/td][/tr][/table][/td][/tr][/table]
+下载后，将解压缩后的所有文件和文件夹(datapacks, dat, resources.zip) 放入".minecraft/saves/世界名称"文件夹，然后进入游戏并按下F3+T即可。
+[/size][/td][/tr]
+[/table][hr][table]
+[tr=PaleTurquoise][td][align=center][color=Indigo][b][size=4]背包合成[/size][/b][/color][/align][/td][/tr]
+[/table][table]
+[tr=Wheat][td][size=3]所有涉及模组特有物品的合成均采用背包合成，方式如下：将材料放入背包右上角对应的3×3的格子里即可自动得到产物，数量和位置须完全吻合。
+[align=center][img=350,330]https://ruhuasiyu.github.io/CraftingPlusPlus/items/screenshots/craft.png[/img][/align][/size][/td][/tr]
+[/table][hr][table]
+[tr=PaleTurquoise][td][align=center][color=Indigo][b][size=4]技术性提醒[/size][/b][/color][/align][/td][/tr]
+[/table][table]
+[tr=Wheat][td][size=3]
+该版本分为18个数据包模块，玩家如需要移除部分功能可将其对应的数据包删除即可。不过，模块之间有依赖关系，请根据内容保留必要的模块。
+本模组命名空间和记分板、标签、组名称前缀为cpp，为便于他人整合使用，烦请避开此前缀。此外，材质已占用胡萝卜钓竿0-17和木剑0-22耐久值区段。
+模组大部分文字支持中英双语。如有任何意见建议，欢迎在论坛回复、发起issue或私信我。[/size][/td][/tr]
+[/table][hr][table]
+[tr=PaleTurquoise][td][align=center][color=Indigo][b][size=4]声明[/size][/b][/color][/align][/td][/tr]
+[/table][table]
+[tr=Wheat][td][size=3]转载本文须需遵守CC BY-NC-ND 2.5 CN 许可协议——列出作者(ruhuasiyu@mcbbs)、来源、原始下载链接以及相同的许可协议。模组代码需遵守[url=https://www.gnu.org/licenses/gpl.html]GNU GENERAL PUBLIC LICENSE v3.0[/url]协议。请勿转载至网盘或文件存储平台。公益服务器可直接使用；非公益服务器请联系我。通讯类工具可下载后分享。
+
+感谢pinapple, the Eternal Celestial Star, 2b, pca, 玄素, chyx, zzzz_ustc, 乙烯_中国, switefaster, Santa西月, beback, 不伸手党, 怪蜀黍GSS, 浅荣时光, 小藩, shuaohao38等人和MCMOD-MC百科主群, CBL技术交流群, The Command's Power等群提供的意见和建议等, 感谢热力膨胀、植物魔法、深渊国度、潘马斯农场、盐等模组提供的灵感。
+
+[url=http://www.mcbbs.net/thread-784662-1-2.html]这里有我开发整个过程的一些思路以及一些原理的讲解[/url]，欢迎提出意见和建议。也欢迎关注[url=https://github.com/ruhuasiyu/CraftingPlusPlus]Github上的及时更新[/url]。
+[/size][/td][/tr]
+[/table][/td][/tr]
+[/table]
 
 [page]
-[table][tr=SandyBrown][td][table][tr=purple][td][b][color=gold][align=center][size=5] v1.7.4 重组更新[/size]
-[/align][/color][/b][/td][/tr][/table][table][tr=PaleTurquoise][td][align=center][color=Indigo][b][size=4]主要内容与使用方法[/size][/b][/color][/align][/td][/tr][/table][table][tr=Wheat][td][size=3]该版本模组支持的游戏本体版本为 Minecraft Java 1.12。本次更新主要将原来的内容重新划分，同时将指令升级为函数实现，以提高执行效率。内容包括：活塞工艺、生物制药、绘画雕塑、强化系统、交通设施、角色装饰、模组进度，并修改了部分生物掉落和生成。
+[table]
+[tr=SandyBrown][td][table]
+[tr=purple][td][b][color=gold][align=center][size=5] v1.8 元素更新(预览版)[/size]
+[/align][/color][/b][/td][/tr]
+[/table][table]
+[tr=Wheat][td][size=3]更多详细内容和合成表请点击[url=https://ruhuasiyu.github.io/CraftingPlusPlus/]github页面[/url]查看，这里仅做简要介绍。[/size][/td][/tr]
+[/table][hr][table]
+[tr=PaleTurquoise][td][align=center][color=Indigo][b][size=4]进度[/size][/b][/color][/align][/td][/tr]
+[/table][table]
+[tr=Wheat][td][size=3]新增26项进度，完成进度会给予玩家经验、物品或状态效果。[/size][/td][/tr]
+[/table][hr][table]
+[tr=PaleTurquoise][td][align=center][color=Indigo][b][size=4]实体变动[/size][/b][/color][/align][/td][/tr]
+[/table][table]
+[tr=Wheat][td][size=3][b]生物修改[/b]
+[list]
+[*]僵尸——有更高的几率生成时手持武器或身穿盔甲的几率。
+[*]骷髅——有更高的几率生成时身穿盔甲，同时有几率射出药箭。
+[*]爬行者——爆炸前的引线时间更短。高压爬行者可天然生成，几率约为5%。
+[*]村民——可被手持绿宝石块的玩家吸引。
+[/list]
+[align=center][img]https://ruhuasiyu.github.io/CraftingPlusPlus/items/screenshots/1_zombie.png[/img][/align]
+[b]异变生物[/b]
+生成生物时有一定几率生成，或在黑暗仪式失败时生成。异变生物和通常的动物外观无差异，但是会主攻靠近并攻击玩家。
+[list]
+[*]异变牛——对玩家造成饥饿效果，掉落皮革和腐肉。
+[*]异变哞菇——对玩家造成饥饿效果，掉落红色蘑菇和腐肉。
+[*]异变羊——对玩家造成缓慢效果，掉落黑色羊毛和骨头。
+[*]异变猪——靠近后直接爆炸，掉落腐肉和火药。
+[*]异变鸡——对玩家造成中毒效果，掉落羽毛和线。
+[*]异变兔子——不会主动靠近玩家。对玩家造成凋零效果，掉落小块皮革和骨头。
+[/list]
+[align=center][img]https://ruhuasiyu.github.io/CraftingPlusPlus/items/screenshots/1_dark_animal.png[/img][/align]
+
+[b]稀有物无敌[/b]
+下界之星、不死图腾、龙蛋的掉落物形式将不会被火焰或仙人掌破坏。
+[b]破损的刷怪箱[/b]
+现在破坏刷怪箱可以获得[b][color=blue]破损的刷怪箱[/color][/b]。
+[align=center][img]https://ruhuasiyu.github.io/CraftingPlusPlus/items/screenshots/1_mob_spawner.png[/img][/align]
+[b]附魔之瓶[/b]
+附魔之瓶将固定掉落4点经验值。玩家在背包合成区域中间放置一个漏斗而其余8格为空时，会自动将4点经验值转化为附魔之瓶。
+[align=center][img]https://ruhuasiyu.github.io/CraftingPlusPlus/items/screenshots/1_xp_bottle.png[/img][/align]
+[b]掉落物和宝箱[/b]
+不同的生物和怪物将会掉落天空之翼/海洋之心/山脉之肢/泥土之魂/大地之证/火焰之星/生命之灵，以及头颅、肉。同时村民会掉落绿宝石和经验。钓鱼可以钓到鱼头和火药、海晶碎片。
+[align=center][img]https://ruhuasiyu.github.io/CraftingPlusPlus/items/screenshots/1_drops.png[/img][/align]
+[align=center][img]https://ruhuasiyu.github.io/CraftingPlusPlus/items/screenshots/1_drops2.png[/img][/align]
+[/size][/td][/tr]
+[/table][hr][table]
+[tr=PaleTurquoise][td][align=center][color=Indigo][b][size=4]元素之力[/size][/b][/color][/align][/td][/tr]
+[/table][table]
+[tr=Wheat][td][size=3]通过搭配不同的染料、矿物和生物的稀有掉落物，我们可以合成不同的元素之力。元素之力可通过消耗经验发挥不同的效果，也是参与自动化处理的必需品，同时还可用于合成各种材料和工具。元素之力参与合成时自身不会被消耗。
+[align=center][img]https://ruhuasiyu.github.io/CraftingPlusPlus/items/screenshots/2_blue.png[/img][/align]
+[align=center][img]https://ruhuasiyu.github.io/CraftingPlusPlus/items/screenshots/2_red.png[/img][/align]
+[/size][/td][/tr]
+[/table][hr][table]
+[tr=PaleTurquoise][td][align=center][color=Indigo][b][size=4]机械和工具[/size][/b][/color][/align][/td][/tr]
+[/table][table]
+[tr=Wheat][td][size=3][b]机械[/b]
+沿竖直方向从下往上依次摆放漏斗、相应玻璃、机器核心即可。然后将材料按特定形状放入即可，一般正上槽为机械核心部件，正下槽为附魔之瓶，其余为材料或玻璃板。机械有冷冻机、压缩机、反应釜、阅读台、造石机、粉碎机、熔炼机、孵化器、微型市场、造物机。
+[b]工具[/b]
+包括钢粉、磁铁、时间调节器、报时器、世界之源、附魔矿物、机械核心、压缩器、年长者之教诲、坐标记录仪、破坏之手以及各种        自动化核心的合成。[/size][/td][/tr]
+[/table][hr][table]
+[tr=PaleTurquoise][td][align=center][color=Indigo][b][size=4]饮食与烧炼[/size][/b][/color][/align][/td][/tr]
+[/table][table]
+[tr=Wheat][td][size=3][b]营养均衡[/b]
+玩家需要保持适当的体重以避免过于肥胖或过于瘦弱，这可以通过荤素搭配来实现。如果玩家身体超重(Fat>100)会行走缓慢，而体重过轻(Fat<-100)则会变得虚弱。使用测重压力板(重质)可以测量出你的体重指数。
+[b]食物和药水[/b]
+移除了原有的兔肉煲配方。新增粘土桶、生缤纷菜蔬、生土豆排骨、生土豆牛肉、生兔肉煲、炸鱼薯条、肉松面包的制作，以及鸡蛋羹、烤胡萝卜、缤纷菜蔬、土豆排骨、土豆牛肉、兔肉煲、小块皮革（从腐肉和皮革制品）、钻石（从钻石制品）、桶（从粘土桶）、神秘烈焰粉、神秘兔子腿的烧炼。神秘烈焰粉、神秘兔子腿用于酿造鲁莽药水和忍者药水，提供多种状态效果，支持喷溅、滞留、延长、加强版的酿造。
+[align=center][img]https://ruhuasiyu.github.io/CraftingPlusPlus/items/screenshots/5_egg.png[/img][/align]
+[align=center][img]https://ruhuasiyu.github.io/CraftingPlusPlus/items/screenshots/5_potion.png[/img][/align]
+[b]熬制[/b]
+将物品扔进炼药锅内，放入适量的水，并在控制好下方的火候，可以熬制特别的食物。支持熬制金苹果+附魔铁锭+附魔金锭+附魔钻石+附魔书+附魔之瓶=附魔金苹果(火把、少量水)和苹果+糖=拔丝苹果(火焰、少量水)。[/size]
+[/td][/tr]
+[/table][hr][table]
+[tr=PaleTurquoise][td][align=center][color=Indigo][b][size=4]植物[/size][/b][/color][/align][/td][/tr]
+[/table][table]
+[tr=Wheat][td][size=3]添加了4种魔法种子、24种材料种子（腐肉、羽毛、燧石、金锭、钻石等等）、羊毛树和水果树。魔法种子成熟后破坏可得到1-4的相应种子，其它的种子成熟后破坏可得到0-3的种子和相应产物。种子数量受时运影响，可以用骨粉催熟。魔法作物有一定几率退化成普通的作物。
+羊毛树的树叶为不同的羊毛搭配树叶而成，水果树的树叶破坏后会掉落水果树树苗或水果。二者均可用骨粉催熟。[/size][/td][/tr]
+[/table][hr][table]
+[tr=PaleTurquoise][td][align=center][color=Indigo][b][size=4]仪式[/size][/b][/color][/align][/td][/tr]
+[/table][table]
+[tr=Wheat][td][size=3]制作好魔杖之后，将附魔台和书架摆放成合适的形状（八边形），中间放朝上的发射器，放入消耗品，上面放物品展示框和物品，然后用魔杖右击，然后等待发射器上符文粒子消失即可。仪式有多种用途，包括属性附加、效果附加、附魔书制作、热带鱼染色等。效果附加包括潮涌能量/水下呼吸/夜视/抗性提升/隐身/饱和/生命恢复/防火/缓落/速度/跳跃提升/力量/急迫/连锁。
+[align=center][img]https://ruhuasiyu.github.io/CraftingPlusPlus/items/screenshots/6_rituals.png[/img][/align]
+[align=center][img]https://ruhuasiyu.github.io/CraftingPlusPlus/items/screenshots/6_attr.png[/img][/align]
+[/size][/td][/tr]
+[/table][hr][table]
+[tr=PaleTurquoise][td][align=center][color=Indigo][b][size=4]黑暗仪式[/size][/b][/color][/align][/td][/tr]
+[/table][table]
+[tr=Wheat][td][size=3]使用熔岩块和黑曜石以及黑暗权杖可执行黑暗仪式，包括腐化仪式、生物增殖、黑暗召唤。[size][/size][/td][/tr]
+[/table][hr][table]
+[tr=PaleTurquoise][td][align=center][color=Indigo][b][size=4]装饰[/size][/b][/color][/align][/td][/tr]
+[/table][table]
+[tr=Wheat][td][size=3][b]生物修改[/b]
+新增荧光帽，使玩家发光，但是并不提供照明。
+新增非酋帽，自带霉运效果。
+新增护士帽，自带幸运效果。
+新增雪地靴，玩家在雪上会跑得更快。
+新增原谅帽、小红帽、皮夹克、红色外套、紧身皮裤、牛仔裤。
+新增扫帚，在副手时提供漂浮效果。
+[b]头饰[/b]
+玩家未佩戴头盔或帽子，且副手持有指定的1个物品时，会自动佩戴该物品。共57款样式。
+[b]画作[/b]
+新增了16种画的合成。根据画的尺寸，将画放置在物品展示框上以拼成完整的画。[/size][/td][/tr]
+[/table][hr][table]
+[tr=PaleTurquoise][td][align=center][color=Indigo][b][size=4]便捷化[/size][/b][/color][/align][/td][/tr]
+[/table][table]
+[tr=Wheat][td][size=3][b]自动种植[/b]
+当发射器发射的物品可以种植在前方位置时，会自动种植。
+[align=center][img]https://ruhuasiyu.github.io/CraftingPlusPlus/items/screenshots/8_plant.png[/img][/align]
+[b]漂白[/b]
+将染色玻璃、染色陶瓦扔进炼药锅可将其漂白为玻璃、陶瓦，并减少炼药锅一级水位。
+[b]随机方块[/b]
+在机械核心上方放置一个石制按钮，然后在机械核心内放入方块，之后玩家副手持有魔杖且主手为空时，将会从机械核心中随机选择方块到玩家手中。
+[align=center][img]https://ruhuasiyu.github.io/CraftingPlusPlus/items/screenshots/8_random_block.png[/img][/align]
+[b]箱子整理[/b]
+当玩家使用魔杖右击箱子后，箱子内的物品会按照物品id的长度/物品数量从小到大排序。只能对不是满的单个箱子排序。
+[/size][/td][/tr]
+[/table][hr][table]
+[tr=PaleTurquoise][td][align=center][color=Indigo][b][size=4]更多的结构[/size][/b][/color][/align][/td][/tr]
+[/table][table]
+[tr=Wheat][td][size=3]新增
+[list]
+[*]羊毛树——天然生成在主世界。
+[*]爬行者地牢——由圆石和苔石构成的小房间，包含苦力怕刷怪箱和地牢宝箱，天然生成在主世界地下。
+[*]附魔室——由黑曜石、荧石、书架、淡蓝色玻璃、地狱砖、附魔台构成的小房间，天然生成在主世界地表。
+[*]图腾柱——由各种石砖构成的柱子，包含矿石、熔岩和宝箱，天然生成在主世界。宝箱含泥土之魂/火焰之星/山脉之肢/附魔金苹果/附魔铁锭/附魔金锭/肉松面包/拔丝苹果/煤炭/骨头/火药/腐肉/线。
+[/list][/size][/td][/tr]
+[/table][hr][table]
+[tr=PaleTurquoise][td][align=center][color=Indigo][b][size=4]原版合成[/size][/b][/color][/align][/td][/tr]
+[/table][table]
+[tr=Wheat][td][size=3]新增原版36种刷怪蛋的合成。
+修改合成得到的楼梯数量为8；新增18种台阶和17种楼梯回收为原方块。
+修改合成石英块/皮革所需的石英/小块皮革数量为9；新增9个线合成为蜘蛛网；新增粘土块、荧石、雪块、西瓜、地狱疣块、蜘蛛网、石英块、皮革的分解。
+现在任意颜色的床均可被染色。
+新增锁链盔甲的合成。
+新增4种平滑方块的合成。玩家在平滑石头、平滑砂岩、平滑红砂岩、平滑石英块上可以获得速度I、速度II、速度III、速度IV的状态效果。
+新增龙蛋、红沙、草径、耕地、草方块、菌丝、粘土的合成。
+移除了木制工具的合成。
+燧石可代替石制工具合成中的圆石。
+[/size][/td][/tr]
+[/table][hr][table]
+[tr=PaleTurquoise][td][align=center][color=Indigo][b][size=4]交易[/size][/b][/color][/align][/td][/tr]
+[/table][table]
+[tr=Wheat][td][size=3]新增村民：林业员、书画师、圣诞老人、药剂师、末地使、烟花师、园丁、机械工、潜水员。修改牧师出售附魔之瓶的价格为1绿宝石。其中书画师出售对联、福字，圣诞老人出售圣诞礼物，烟花师出售随机颜色的烟花等。[/size][/td][/tr]
+[/table][hr][table]
+[tr=PaleTurquoise][td][align=center][color=Indigo][b][size=4]空岛[/size][/b][/color][/align][/td][/tr]
+[/table][table]
+[tr=Wheat][td][size=3]玩家在空岛模式下会开启空岛模块。
+破坏泥土会获得树苗(各1%)或骨粉(4%)，破坏树叶会掉落线(5%)或骨粉(20%)。
+在熔炉上方放置雪块可得到方块粉碎机，可以粉碎其上方放置材料。
+在方块粉碎机上方放置坩埚，然后向坩埚扔入4个圆石或4个雪球，可以制作岩浆或水。
+可使用绿宝石块和雪块制作末地传送门框架。
+添加雪球、鸡蛋、泥土、砂砾的合成，泥土和圆石的转化。
+[/size][/td][/tr]
+[/table][hr][table]
+[tr=PaleTurquoise][td][align=center][color=Indigo][b][size=4]更新内容一览[/size][/b][/color][/align][/td][/tr]
+[/table][table]
+[tr=Wheat][td][size=3]v 1.8 （未发布）
+[list]
+[*]游戏本体版本升级为1.13，不再支持1.13之前的版本。
+[*]修改资源包文字的代码名称、记分板、标签前缀为cpp，修改资源包以适应1.13，添加材质。
+[*]移除闪烁标语。
+[*]修改终末之诗为葛底斯堡演说并在结尾添加鸣谢。
+[*]修改下界石英/兔子皮/玫瑰红/蒲公英黄名称为石英/小块皮革/红色染料/黄色染料，并修改了红色染料/黄色染料材质。
+[*]不再给予玩家初始工具和食物。
+[*]移除强化系统。
+[*]删除功力系统。
+[*]进度系统重新调整。
+[*]增强僵尸、骷髅和爬行者。
+[*]村民可被手持绿宝石块的玩家吸引。
+[*]动物有几率变成黑暗生物，会主动攻击玩家。
+[*]下界之星、不死图腾、龙蛋的掉落物形式现在是无敌的。
+[*]在破坏刷怪箱可以获得破损的刷怪箱。
+[*]附魔之瓶将固定掉落4点经验值。玩家在背包合成区域中间放置一个漏斗而其余8格为空时，会自动将4点经验值转化为附魔之瓶。
+[*]调整稀有掉落物的来源。
+[*]新增钓鱼垃圾海晶碎片。
+[*]北极熊不再掉落鱼。
+[*]新增蓝色天之力，右键消耗玩家10点经验依次切换为晴天/下雨天/雷雨天。
+[*]新增绿色水之力，右键放置一格水。
+[*]新增青色山之力，右键消耗玩家25点经验并整地5×5区域。
+[*]新增橙色土之力，右键破坏土质方块。
+[*]新增黄色地之力，右键消耗玩家25点经验并清除附近15×3×15区域中的水和岩浆。
+[*]新增红色火之力，右键烧炼方块成物品。
+[*]新增紫色木之力，右键转换地面的树苗、种子和花，转化比率为2:1。
+[*]新增白色电之力，右键去除地面的物品附魔。
+[*]新增黑色月之力，右键消耗玩家40点经验并在前方铺设泥土道路。
+[*]移除活塞工艺。
+[*]新增机械，沿竖直方向从下往上依次摆放漏斗、相应玻璃、机器核心即可。
+[*]新增压缩机，核心部件为压缩器，可压缩荧石粉、雪球、粘土球、月之碎片、日之碎片、铁粒、金粒、矿物、小块皮革、西瓜片、地狱疣、线、小麦、干海带、粘液球。
+[*]新增阅读台，核心部件为蓝色天之力，消耗各种书产出附魔之瓶。
+[*]新增冷冻机，核心部件为绿色水之力，可制作雪、冰、浮冰、蓝冰。
+[*]新增造石机，核心部件为青色山之力，可制作圆石、石头、黑曜石。
+[*]新增粉碎机，核心部件为橙色土之力，可粉碎矿石、矿物块和一些建材。
+[*]新增反应釜，核心部件为黄色地之力，可制作生物酸、生物碱、粗硅、空气瓶、硅粉、硅板、稀土盐、碱性稀土、稀土粉。
+[*]新增熔炼机，核心部件为红色火之力，可烧炼矿石、钢化玻璃、稀土玻璃、制盐。
+[*]新增孵化器，核心部件为紫色命之力，可繁殖农作物和生物掉落物以及钓鱼。
+[*]新增微型市场，核心部件为白色电之力，可出售物品获得绿宝石和附魔之瓶。
+[*]新增造物机，核心部件为黑色月之力，可制作矿物、附魔矿物、恶魂之泪、月之碎片。
+[*]新增钢粉、附魔铁锭、附魔金锭、附魔钻石、机械核心的制作。
+[*]新增农场核心、疣场核心、林场核心、牧场核心、渔场核心、猎场核心，用于自动化。
+[*]新增破坏之手，放置在物品展示框时，会破坏正上方的方块。
+[*]新增磁铁，右键切换，将附近0/8/16米内掉落物吸引过来。
+[*]新增时间调节器，右键依次切换模式为作物生长速度加倍/作物生长速度恢复/停止日夜循环/开启日夜循环。
+[*]新增报时器，放置于物品展示框后可报时。右键可通过消耗经验自由控制时间。
+[*]新增世界之源，右键消耗20点经验返回世界原点。
+[*]新增压缩器，右键将地面的64个物品压缩，重新扔出可复原压缩的物品。
+[*]新增年长者之教诲，每2.5秒给予拥有者1点经验，放置在末影箱亦可生效。
+[*]新增坐标记录仪，右击记录当前位置，再次右击方块可建立单向传送门。注意一次只能记录一个坐标。
+[*]移除矿石种子、矿物探测器。
+[*]移除附魔金苹果和药水的合成。
+[*]如果玩家食肉过多会行走缓慢，食肉过多会变得虚弱。使用测重压力板可以测量出你的体重指数。
+[*]新增粘土桶、生缤纷菜蔬、生土豆排骨、生土豆牛肉、生兔肉煲、炸鱼薯条、肉松面包的制作。
+[*]新增鸡蛋羹、烤胡萝卜、缤纷菜蔬、土豆排骨、土豆牛肉、兔肉煲、小块皮革、钻石、桶、神秘烈焰粉、神秘兔子腿的烧炼。
+[*]新增鲁莽药水、忍者药水的酿造。
+[*]新增附魔金苹果和拔丝苹果的熬制。
+[*]新增魔法种子和各种矿物和材料种子，可种植。
+[*]新增羊毛树和水果树。
+[*]新增魔杖、星之魔杖、节制器、黑暗权杖。
+[*]将特定方块摆放成八边形作为仪式基座，手持魔杖右击发射器，然后等待发射器上符文粒子消失即可执行仪式。
+[*]仪式可用于属性附加、效果附加、附魔书制作、热带鱼染色、腐化仪式、生物增殖、黑暗召唤。
+[*]新增效果附加：潮涌能量/水下呼吸/夜视/抗性提升/隐身/饱和/生命恢复/防火/缓落/速度/跳跃提升/力量/急迫/连锁。
+[*]新增荧光帽，使玩家发光，但是并不提供照明。
+[*]新增非酋帽，自带霉运效果。
+[*]新增护士帽，自带幸运效果。
+[*]新增雪地靴，玩家在雪上会跑得更快。
+[*]新增原谅帽、小红帽、皮夹克、红色外套、紧身皮裤、牛仔裤。
+[*]新增扫帚，在副手时提供漂浮效果。
+[*]佩戴头饰使用的需要的南瓜修改为空。
+[*]新增头饰海草、珊瑚。
+[*]当发射器发射的物品可以种植在前方位置时，会自动种植。
+[*]可使用炼药锅漂白玻璃和陶土。
+[*]使用机械核心和魔杖可实现随机方块。
+[*]新增羊毛树、爬行者地牢、图腾柱、附魔室的生成。
+[*]图腾柱宝箱含亡灵之魂/硝火之烬/生物之肢/附魔金苹果/附魔铁锭/附魔金锭/肉松面包/拔丝苹果/煤炭/骨头/火药/腐肉/线。
+[*]修改刷怪蛋的合成为原版合成。
+[*]修改凋灵骷髅刷怪蛋的配方中的煤炭为煤炭块。
+[*]修改唤魔者/卫道士的合成配方为鸡蛋+闪烁的西瓜/铁锭。
+[*]修改可驯服生物合成所需头颅为骷髅头颅。
+[*]移除幻术师、高压爬行者刷怪蛋的合成。
+[*]新增幻翼、海龟的合成。
+[*]修改合成得到的楼梯数量为8。
+[*]新增18种台阶和17种楼梯回收为原方块。
+[*]修改合成石英块/皮革所需的石英/小块皮革数量为9。
+[*]新增9个线/冰合成为蜘蛛网/浮冰。
+[*]新增粘土块、荧石、雪块、西瓜、地狱疣块、蜘蛛网、石英块、皮革的分解。
+[*]现在任意颜色的床均可被染色。
+[*]新增锁链盔甲的合成。
+[*]移除道路固化剂的合成。
+[*]新增4种平滑方块的合成，玩家在平滑方块上可以获得不同的加速效果。
+[*]新增龙蛋、红沙、草径、耕地、草方块、菌丝、粘土的合成。
+[*]移除了木制工具的合成。
+[*]燧石可代替石制工具合成中的圆石。
+[*]新增村民：林业员、书画师、圣诞老人、药剂师、末地使、烟花师、园丁、机械工、潜水员。
+[*]修改牧师出售附魔之瓶的价格为1绿宝石。
+[*]玩家在空岛模式下会开启空岛模块。
+[*]空岛模块下破坏泥土会获得树苗(各1%)或骨粉(4%)，破坏树叶会掉落线(5%)或骨粉(20%)。
+[*]空岛模块下在熔炉上方放置雪块可得到方块粉碎机，可以粉碎其上方放置材料。
+[*]空岛模块下在方块粉碎机上方放置坩埚，然后向坩埚扔入4个圆石或4个雪球，可以制作岩浆或水。
+[*]空岛模块下可使用绿宝石块和雪块制作末地传送门框架。
+[*]空岛模块下添加雪球、鸡蛋、泥土、砂砾的合成，泥土和圆石的转化。
+[/list][/size][/td][/tr]
+[/table][/td][/tr]
+[/table][page]
+[table]
+[tr=SandyBrown][td][table]
+[tr=purple][td][b][color=gold][align=center][size=5] v1.7.4 重组更新[/size]
+[/align][/color][/b][/td][/tr]
+[/table][table]
+[tr=PaleTurquoise][td][align=center][color=Indigo][b][size=4]主要内容与使用方法[/size][/b][/color][/align][/td][/tr]
+[/table][table]
+[tr=Wheat][td][size=3]该版本模组支持的游戏本体版本为 Minecraft Java 1.12。本次更新主要将原来的内容重新划分，同时将指令升级为函数实现，以提高执行效率。内容包括：活塞工艺、生物制药、绘画雕塑、强化系统、交通设施、角色装饰、模组进度，并修改了部分生物掉落和生成。
 
 所有内容均使用[b]背包合成[/b]：将材料放入背包右上角对应的3×3的格子里，即可自动得到产物。数量和位置必须完全吻合方可，部分支持一次性合成至多1组物品，这依赖于原材料和产物的最大堆叠数。
 
 该版本合成表及完整内容请查看：[url=https://ruhuasiyu.github.io/craftingpp/versions/1.7/index.html]https://ruhuasiyu.github.io/craftingpp/versions/1.7/index.html[/url]
 
-[align=center][img=350,330]https://public.lightpic.info/image/15EA_59153D760.jpg[/img][/align][/size][/td][/tr][/table][hr][table][tr=PaleTurquoise][td][align=center][color=Indigo][b][size=4]A 活塞工艺[/size][/b][/color][/align][/td][/tr][/table][table][tr=Wheat][td][size=3][b]A-1[/b] 回收盔甲、铁金钻石剑镐斧锹锄、鞍、矿车、马铠、花岗岩、闪长岩、安山岩、石英块、木炭、地狱疣块。
+[align=center][img=350,330]https://public.lightpic.info/image/15EA_59153D760.jpg[/img][/align][/size][/td][/tr]
+[/table][hr][table]
+[tr=PaleTurquoise][td][align=center][color=Indigo][b][size=4]A 活塞工艺[/size][/b][/color][/align][/td][/tr]
+[/table][table]
+[tr=Wheat][td][size=3][b]A-1[/b] 回收盔甲、铁金钻石剑镐斧锹锄、鞍、矿车、马铠、花岗岩、闪长岩、安山岩、石英块、木炭、地狱疣块。
 
 [b]A-2[/b] 制作[color=#0000ff][b]钻石[/b][/color]、[color=#0000ff][b]鞍[/b][/color]、[color=#0000ff][b]马铠[/b][/color]、[color=#0000ff][b]粘土[/b][/color]、[color=#0000ff][b]浮冰[/b][/color]、[b][color=#0000ff]蜘蛛网[/color][/b]以及
 [list]
@@ -51,7 +354,9 @@
 [*][color=#0000ff][b]闹钟[/b][/color]：放置在物品展示框时会报时；
 [*][color=#0000ff][b]传送球[/b][/color]：右击地面会将玩家向指定方向传送200米。
 [/list]
-[align=center][img=484,272]https://ooo.0o0.ooo/2017/05/30/592d6ddd04e94.png[/img] [img=216,272]https://ooo.0o0.ooo/2017/06/07/5937f5225c244.png[/img][/align][/size][/td][/tr][/table][hr][table][tr=PaleTurquoise][td][align=center][color=Indigo][b][size=4]B 生物制药[/size][/b][/color][/align][/td][/tr]
+[align=center][img=484,272]https://ooo.0o0.ooo/2017/05/30/592d6ddd04e94.png[/img] [img=216,272]https://ooo.0o0.ooo/2017/06/07/5937f5225c244.png[/img][/align][/size][/td][/tr]
+[/table][hr][table]
+[tr=PaleTurquoise][td][align=center][color=Indigo][b][size=4]B 生物制药[/size][/b][/color][/align][/td][/tr]
 [/table][table]
 [tr=Wheat][td][size=3][b]B-1[/b] 38种[color=#0000ff][b]刷怪蛋[/b][/color]的合成。
 [b]B-2[/b] 6种[b][color=#0000ff]树种[/color][/b]的合成，树种用于植树：沿竖直方向依次放置主色方块、副色方块、树种即可自动种下。主副色方块需为羊毛或树叶。
@@ -60,30 +365,49 @@
 [align=center][img=302,245]https://ooo.0o0.ooo/2017/06/07/5937f69d4b097.png[/img][/align]
 [b]B-4[/b] [b][color=#0000ff]附魔金苹果[/color][/b]和12种[color=#0000ff][b]高级药水[/b][/color]的合成。
 [/size][align=center][img=484,272]https://ooo.0o0.ooo/2017/06/06/5936bf458d6eb.png[/img][/align][/td][/tr]
-[/table][hr][table][tr=PaleTurquoise][td][align=center][color=Indigo][b][size=4]C 绘画雕塑[/size][/b][/color][/align][/td][/tr][/table]
-[table][tr=Wheat][td][size=3]16种高级画的合成，请将画放置在物品展示框上。[/size]
+[/table][hr][table]
+[tr=PaleTurquoise][td][align=center][color=Indigo][b][size=4]C 绘画雕塑[/size][/b][/color][/align][/td][/tr]
+[/table]
+[table]
+[tr=Wheat][td][size=3]16种高级画的合成，请将画放置在物品展示框上。[/size]
 [align=center][img]https://public.lightpic.info/image/28CC_590DB9130.jpg[/img]
-[/align][/td][/tr][/table][hr][table][tr=PaleTurquoise][td][align=center][color=Indigo][b][size=4]D 强化系统[/size][/b][/color][/align][/td][/tr][/table][table][tr=Wheat][td][size=3]可强化的物品有[color=#0000ff][b]盔甲、剑锹斧镐、弓、钓鱼竿[/b][/color]。 强化从最基础的皮革盔甲、木制品、弓、钓鱼竿出发，按指定次序依次消耗8个指定的牺牲品来升级，共20个等级。 不同等级物品拥有不同的名称、材质、魔咒和属性加成。升级后的物品只有30点耐久，需要消耗经验值来回复耐久度。[/size]
+[/align][/td][/tr]
+[/table][hr][table]
+[tr=PaleTurquoise][td][align=center][color=Indigo][b][size=4]D 强化系统[/size][/b][/color][/align][/td][/tr]
+[/table][table]
+[tr=Wheat][td][size=3]可强化的物品有[color=#0000ff][b]盔甲、剑锹斧镐、弓、钓鱼竿[/b][/color]。 强化从最基础的皮革盔甲、木制品、弓、钓鱼竿出发，按指定次序依次消耗8个指定的牺牲品来升级，共20个等级。 不同等级物品拥有不同的名称、材质、魔咒和属性加成。升级后的物品只有30点耐久，需要消耗经验值来回复耐久度。[/size]
 [align=center][img=350,197]https://ooo.0o0.ooo/2017/05/30/592d75c8c5bb1.png[/img] [img=350,197]https://ooo.0o0.ooo/2017/05/30/592d75c86c8a4.png[/img]
 [url=https://ooo.0o0.ooo/2017/06/03/5932a5b396357.png][img]https://ooo.0o0.ooo/2017/06/03/5932a5b396357.png[/img][/url][/align][/td][/tr]
-[/table][hr][table][tr=PaleTurquoise][td][align=center][color=Indigo][b][size=4]E 交通设施[/size][/b][/color][/align][/td][/tr][/table][table][tr=Wheat][td][size=3]玩家可以铺设[b][color=#0000ff]道路[/color][/b]，一共四个等级，基础道路为红石块，依次在其上使用不同的固化剂可以得到不同等级的道路。玩家在道路上可以获得相应等级的加速效果。
+[/table][hr][table]
+[tr=PaleTurquoise][td][align=center][color=Indigo][b][size=4]E 交通设施[/size][/b][/color][/align][/td][/tr]
+[/table][table]
+[tr=Wheat][td][size=3]玩家可以铺设[b][color=#0000ff]道路[/color][/b]，一共四个等级，基础道路为红石块，依次在其上使用不同的固化剂可以得到不同等级的道路。玩家在道路上可以获得相应等级的加速效果。
 [align=center][img=350,197]https://ooo.0o0.ooo/2017/05/30/592d75c8beaee.png[/img][/align][/size][/td][/tr]
-[/table][hr][table][tr=PaleTurquoise][td][align=center][color=Indigo][b][size=4]F 角色装饰[/size][/b][/color][/align][/td][/tr]
+[/table][hr][table]
+[tr=PaleTurquoise][td][align=center][color=Indigo][b][size=4]F 角色装饰[/size][/b][/color][/align][/td][/tr]
 [/table][table]
 [tr=Wheat][td][size=3][b]F-1[/b] 玩家杀死生物或进行背包合成玩家可以提高[color=#0000ff][b]功力[/b][/color]，根据功力的不同获得不同的[b][color=#0000ff]前缀称号[/color][/b]，一共50种。
 [/size][align=center][img=265,302]https://ooo.0o0.ooo/2017/06/01/592f17c745c55.png[/img] [img=435,302]https://ooo.0o0.ooo/2017/06/08/5938243c82d39.png[/img][/align][size=3]
 [b]F-2[/b] 当玩家头盔位置放置了一个南瓜，而副手为指定的一个物品时，会自动佩戴该物品。一共56款样式。
 [/size][align=center][img=174,296]https://ooo.0o0.ooo/2017/06/07/5937fb9c879dd.png[/img] [img=526,296]https://ooo.0o0.ooo/2017/05/30/592d75c810dba.png[/img][size=3]
 [/size]
-[/align][size=3]部分头饰源自贰逼的[url=http://mcbbs.tvt.im/thread-289646-1-1.html]帖子[/url]，已获得授权。[/size][/td][/tr][/table][hr][table][tr=PaleTurquoise][td][align=center][color=Indigo][b][size=4]G 进度[/size][/b][/color][/align][/td][/tr][/table][table][tr=Wheat][td][size=3]新增26项进度，完成进度会给予玩家经验、物品、状态效果奖励。
+[/align][size=3]部分头饰源自贰逼的[url=http://www.mcbbs.net/thread-289646-1-1.html]帖子[/url]，已获得授权。[/size][/td][/tr]
+[/table][hr][table]
+[tr=PaleTurquoise][td][align=center][color=Indigo][b][size=4]G 进度[/size][/b][/color][/align][/td][/tr]
+[/table][table]
+[tr=Wheat][td][size=3]新增26项进度，完成进度会给予玩家经验、物品、状态效果奖励。
 [/size][align=center][img]https://ooo.0o0.ooo/2017/06/01/592f1d14a6f35.png[/img][/align][/td][/tr]
-[/table][hr][table][tr=PaleTurquoise][td][color=Indigo][b][size=4][align=center]H 其它[/align][/size][/b][/color][/td][/tr][/table][table][tr=Wheat][td][size=3]修改了生物的掉落物、箱子战利品、钓鱼的物品、文字内容、以及高压爬行者的生成。
+[/table][hr][table]
+[tr=PaleTurquoise][td][color=Indigo][b][size=4][align=center]H 其它[/align][/size][/b][/color][/td][/tr]
+[/table][table]
+[tr=Wheat][td][size=3]修改了生物的掉落物、箱子战利品、钓鱼的物品、文字内容、以及高压爬行者的生成。
 大部分文字已支持英文。[/size]
-[img=255,250]https://ooo.0o0.ooo/2017/05/30/592d776f5ca67.png[/img] [img=445,250]https://public.lightpic.info/image/7FA1_590DB9130.jpg[/img][/align] [/td][/tr]
-[/table][hr][table][tr=PaleTurquoise][td][align=center][b][size=4][color=Indigo]安装[/color][/size]
+[img=255,250]https://ooo.0o0.ooo/2017/05/30/592d776f5ca67.png[/img] [img=445,250]https://public.lightpic.info/image/7FA1_590DB9130.jpg[/img] [/td][/tr]
+[/table][hr][table]
+[tr=PaleTurquoise][td][align=center][b][size=4][color=Indigo]安装[/color][/size]
 [/b][/align][/td][/tr]
 [/table][table]
-[tr=Wheat][td][size=3]新建一个世界，下载 [attach]1084233[/attach] ，然后将解压缩后的data、structures、resources.zip一并放入 .minecraft/saves 中对应的存档文件夹，然后退出世界重进即可。
+[tr=Wheat][td][size=3]新建一个世界，下载 [attach]1084233[/attach]，然后将解压缩后的data、structures、resources.zip一并放入 .minecraft/saves 中对应的存档文件夹，然后退出世界重进即可。
 
 [b]材质说明[/b]：由于加入了模组专用材质，因此加载世界会比较慢。如果希望加快加载速度，可将resources.zip移动至.minecraft/resourcepacks文件夹，然后从菜单中选择该材质。该材质对游戏的GUI和文字做了一些修改，如果不使用该材质，会导致[b]模组物品名称无法正常显示[/b]！
 
@@ -151,14 +475,26 @@ v 1.7.3 （2017年6月15日）[list]
 [/list]
 v 1.7.4 （2017年6月16日）[list]
 [*]修复了《最后的晚餐》和《落霞孤鹜图》合成后缺少一张的问题。
-[/list][/td][/tr][/table][/td][/tr][/table]
+[/list][/align][/align][/td][/tr]
+[/table][/td][/tr]
+[/table]
 
 [page]
-[table][tr=SandyBrown][td][table][tr=purple][td][b][color=gold][align=center][size=5] v1.6.1 科学更新[/size]
-[/align][/color][/b][/td][/tr][/table][table][tr=PaleTurquoise][td][align=center][color=Indigo][b][size=4]主要内容与使用方法[/size][/b][/color][/align][/td][/tr][/table][table][tr=Wheat][td][size=3]该版本模组支持的游戏本体版本为 Minecraft Java 1.12 pre2。本次更新主要调整内容的平衡性，同时将指令升级为函数实现，以支持1.12预览版本。
+[table]
+[tr=SandyBrown][td][table]
+[tr=purple][td][b][color=gold][align=center][size=5] v1.6.1 科学更新[/size]
+[/align][/color][/b][/td][/tr]
+[/table][table]
+[tr=PaleTurquoise][td][align=center][color=Indigo][b][size=4]主要内容与使用方法[/size][/b][/color][/align][/td][/tr]
+[/table][table]
+[tr=Wheat][td][size=3]该版本模组支持的游戏本体版本为 Minecraft Java 1.12 pre2。本次更新主要调整内容的平衡性，同时将指令升级为函数实现，以支持1.12预览版本。
 
 该版本以及更早版本已停止更新。
-[/size][/td][/tr][/table][hr][table][tr=PaleTurquoise][td][align=center][color=Indigo][b][size=4]A 背包合成[/size][/b][/color][/align][/td][/tr][/table][table][tr=Wheat][td][size=3]将材料放入背包右上角对应的3×3的格子里，即可自动得到产物。不参与合成的格子内物品不受影响，有的合成表有包含关系，注意放置的次序以免合成了不需要的物品。包括
+[/size][/td][/tr]
+[/table][hr][table]
+[tr=PaleTurquoise][td][align=center][color=Indigo][b][size=4]A 背包合成[/size][/b][/color][/align][/td][/tr]
+[/table][table]
+[tr=Wheat][td][size=3]将材料放入背包右上角对应的3×3的格子里，即可自动得到产物。不参与合成的格子内物品不受影响，有的合成表有包含关系，注意放置的次序以免合成了不需要的物品。包括
 [b]A-1[/b] 回收剑镐斧锹锄、盔甲、马铠、鞍、矿车、花岗岩、闪长岩、安山岩、石英块、木炭。
 [align=center][img=400,377]https://public.lightpic.info/image/85A5_59153D760.jpg[/img] [img=300,377]https://public.lightpic.info/image/9845_591540A10.jpg[/img][/align]
 
@@ -187,16 +523,33 @@ v 1.7.4 （2017年6月16日）[list]
 
 [b]A-7[/b] 16种[b]高级画[/b]的合成。
 [align=center][img=700,240]https://public.lightpic.info/image/28CC_590DB9130.jpg[/img][/align]
-[/size][/td][/tr][/table][hr][table][tr=PaleTurquoise][td][align=center][color=Indigo][b][size=4]B 战利品修改[/size][/b][/color][/align][/td][/tr][/table][table][tr=Wheat][td][size=3]修改了部分生物的掉落物、钓鱼的物品、少量文字内容、以及高压爬行者的生成。
+[/size][/td][/tr]
+[/table][hr][table]
+[tr=PaleTurquoise][td][align=center][color=Indigo][b][size=4]B 战利品修改[/size][/b][/color][/align][/td][/tr]
+[/table][table]
+[tr=Wheat][td][size=3]修改了部分生物的掉落物、钓鱼的物品、少量文字内容、以及高压爬行者的生成。
 [align=center][img=242,306]https://public.lightpic.info/image/F1D6_590D5F630.jpg[/img] [img=458,306]https://public.lightpic.info/image/7FA1_590DB9130.jpg[/img][/align]
-[/size][/td][/tr][/table][hr][table][tr=PaleTurquoise][td][align=center][color=Indigo][b][size=4]C 进度[/size][/b][/color][/align][/td][/tr][/table][table][tr=Wheat][td][size=3]新增24种模组专有[b]进度[/b]，完成进度会给予经验、物品、状态效果奖励。
-[align=center][img=700,386]https://public.lightpic.info/image/58F6_5913F76A0.jpg[/img][/align][/size][/td][/tr][/table][hr][table][tr=PaleTurquoise][td][align=center][color=Indigo][b][size=4]D 安装[/size][/b][/color][/align][/td][/tr][/table][table][tr=Wheat][td][size=3]新建一个世界，下载 [url=http://www.mcbbs.net/forum.php?mod=attachment&aid=MTAwNTg2MXw2OTkyYzVlOHwxNTE5NDY0MTM5fDk3NTUyNXw2MTQyOTY%3D]strutures_n_data.rar[/url]，然后将解压缩后的data和structures文件夹一并放入 .minecraft/saves 中对应的存档文件夹，然后退出世界重进即可。
+[/size][/td][/tr]
+[/table][hr][table]
+[tr=PaleTurquoise][td][align=center][color=Indigo][b][size=4]C 进度[/size][/b][/color][/align][/td][/tr]
+[/table][table]
+[tr=Wheat][td][size=3]新增24种模组专有[b]进度[/b]，完成进度会给予经验、物品、状态效果奖励。
+[align=center][img=700,386]https://public.lightpic.info/image/58F6_5913F76A0.jpg[/img][/align][/size][/td][/tr]
+[/table][hr][table]
+[tr=PaleTurquoise][td][align=center][color=Indigo][b][size=4]D 安装[/size][/b][/color][/align][/td][/tr]
+[/table][table]
+[tr=Wheat][td][size=3]新建一个世界，下载 [url=http://www.mcbbs.net/forum.php?mod=attachment&aid=MTAwNTg2MXw2OTkyYzVlOHwxNTE5NDY0MTM5fDk3NTUyNXw2MTQyOTY%3D]strutures_n_data.rar[/url]，然后将解压缩后的data和structures文件夹一并放入 .minecraft/saves 中对应的存档文件夹，然后退出世界重进即可。
 
 [b]模组专用材质[/b]：本模组专用材质 [url=http://www.mcbbs.net/forum.php?mod=attachment&aid=MTAwNDQyMHwzY2JmYmZiZXwxNTE5NDY0MTM5fDk3NTUyNXw2MTQyOTY%3D]gui_for_crafting_mod.zip[/url]，对游戏的GUI、标语和台词做了一些修改，下载到resourcepacks文件夹即可，可自行选择是否使用。
 
 [b]已知的漏洞[/b]：偶尔会出现由于背包未能更新以致无法合成的情形，此时退出重进即可。
-[/size][/td][/tr][/table][hr][table][tr=PaleTurquoise][td][align=center][color=Indigo][b][size=4]手册[/size][/b][/color][/align][/td][/tr][/table][table][tr=Wheat][td][size=3][b]进度一览[/b][/size][color=Red][spoiler][img]https://public.lightpic.info/image/CA59_5915470B0.jpg[/img][/spoiler][/color][size=3][b]合成表一览[/b][/size][color=Green][spoiler][img]https://public.lightpic.info/image/16F2_5915470C0.jpg[/img][/spoiler][/color]
-[/td][/tr][/table][hr][table]
+[/size][/td][/tr]
+[/table][hr][table]
+[tr=PaleTurquoise][td][align=center][color=Indigo][b][size=4]手册[/size][/b][/color][/align][/td][/tr]
+[/table][table]
+[tr=Wheat][td][size=3][b]进度一览[/b][/size][color=Red][spoiler][img]https://public.lightpic.info/image/CA59_5915470B0.jpg[/img][/spoiler][/color][size=3][b]合成表一览[/b][/size][color=Green][spoiler][img]https://public.lightpic.info/image/16F2_5915470C0.jpg[/img][/spoiler][/color]
+[/td][/tr]
+[/table][hr][table]
 [tr=PaleTurquoise][td][align=center][b][size=4][color=Indigo]更新内容一览[/color][/size]
 [/b][/align][/td][/tr]
 [/table][table]
@@ -266,8 +619,6 @@ v 1.7.4 （2017年6月16日）[list]
 [*]新增“放置 地标”和“回到 地标”，可用于在主世界传送。
 [*]新增物品松散的石头、疏松的石头、普通的石头、紧密的石头、致密的石头，可以用来制作剑、镐、盔甲和地标。
 [/list][/td][/tr]
-[/table][/align][/td][/tr]
-[/table][/align]
-
-
+[/table][/td][/tr]
+[/table]
 

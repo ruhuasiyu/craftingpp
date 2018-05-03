@@ -738,7 +738,7 @@ function change(str){
 <article>
 <code>数据包 cpp_machines</code>
 <h3 id="machines">机械</h3>
-沿竖直方向从下往上依次摆放漏斗、相应玻璃、<a href="#machine_core">机器核心</a>即可。然后将材料按特定形状放入即可，一般正上槽为机械核心部件，正下槽为附魔之瓶，其余为材料或玻璃板。插件槽仅用于控制机械工作的类别而不会被消耗。
+<p>沿竖直方向从下往上依次摆放漏斗、相应玻璃、<a href="#machine_core">机器核心</a>即可。然后将材料按特定形状放入即可，一般正上槽为机械核心部件，正下槽为附魔之瓶，其余为材料或玻璃板。</p>
 
 <h4>压缩机</h4>
 <span class="mcui-row"><span class="glass_pane" title="玻璃板">
@@ -1380,7 +1380,7 @@ function change(str){
 <p>玩家需要保持适当的体重以避免过于肥胖或过于瘦弱，这可以通过荤素搭配来实现。如果玩家身体超重(Fat>100)会行走缓慢，而体重过轻(Fat<-100)则会变得虚弱。使用测重压力板(重质)可以测量出你的体重指数。</p>
 
 <h3>食物和药水</h3>
-<p>移除了原有的兔肉煲配方。现在需先制作生的食物，然后再使用熔炉烹饪方可。同时，鸡蛋和胡萝卜也可以再熔炉加热了。同时还添加了两种药水的酿造。</p>
+<p>移除了原有的兔肉煲配方。现在需先制作生的食物，然后再使用熔炉烹饪方可。同时，鸡蛋和胡萝卜也可以在熔炉加热了。同时还添加了两种药水的酿造。</p>
 
 <table>
 <thead><tr><th>产物</th><th style="width:15em;">材料</th><th>合成配方</th></tr></thead>
@@ -2439,8 +2439,6 @@ function change(str){
 <!--刷怪蛋合成-->
 <article>
 <code>数据包 cpp_spawn_eggs</code>
-<h3>移除</h3>
-<p>移除了木剑的合成，以赋予模组物品材质。</p>
 
 <h3>刷怪蛋合成</h3>
 <p>原版36种刷怪蛋的合成。</p>
@@ -2491,7 +2489,7 @@ function change(str){
 <tr><th>生成 村民<br />
 生成 卫道士<br />
 生成 唤魔者</th><td>绿宝石+鸡蛋<br />
-铁斧+鸡蛋<br />
+铁锭+鸡蛋<br />
 闪烁的西瓜+鸡蛋</td><td>
 <span class="mcui"><span><span class="mcui-row"><span class="emerald" title="绿宝石">
 </span><span class="emerald" title="绿宝石">
@@ -2923,6 +2921,24 @@ function change(str){
 </span></span></span></td></tr>
 </tbody></table>
 
+<h3>工具</h3>
+<p>移除了木制工具的合成。</p>
+<table><thead><tr><th>名称</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
+<tr><th>石斧、镐、剑、锹、锄</th><td>燧石+木棍</td><td><span class="mcui"><span>
+<span class="mcui-row"><span class="flint" title="燧石">
+</span><span class="flint" title="燧石">
+</span><span class="flint" title="燧石">
+</span></span><span class="mcui-row"><span class="empty">
+</span><span class="stick" title="木棍">
+</span><span class="empty">
+</span></span><span class="mcui-row"><span class="empty">
+</span><span class="stick" title="木棍">
+</span><span class="empty">
+</span></span></span><span class="mcui-arrow"></span><span class="mcui-output">
+<span class="stone_pickaxe" title="石镐">
+</span></span></span></td></tr>
+</tbody></table>
+
 </article>
 
 <!--交易-->
@@ -3130,20 +3146,6 @@ function change(str){
 </span></span></span><span class="mcui-arrow"></span><span class="mcui-output">
 <span class="gravel" title="砂砾"><span class="stacksize">2</span>
 </span></span><span class="mcui-icons"><span class="mcui-shapeless" title="此配方是无形的，材料可以以任何排列方式放置在合成格内。">
-</span></span></span></td></tr>
-
-<tr><th>石制工具</th><td>燧石+木棍</td><td><span class="mcui"><span>
-<span class="mcui-row"><span class="flint" title="燧石">
-</span><span class="flint" title="燧石">
-</span><span class="flint" title="燧石">
-</span></span><span class="mcui-row"><span class="empty">
-</span><span class="stick" title="木棍">
-</span><span class="empty">
-</span></span><span class="mcui-row"><span class="empty">
-</span><span class="stick" title="木棍">
-</span><span class="empty">
-</span></span></span><span class="mcui-arrow"></span><span class="mcui-output">
-<span class="stone_pickaxe" title="石镐">
 </span></span></span></td></tr>
 
 </tbody></table>
@@ -3388,7 +3390,7 @@ function change(str){
 
 <tr class="v1-8"><td>新增钢粉、附魔铁锭、附魔金锭、附魔钻石、机械核心的制作。</td></tr>
 <tr class="v1-8"><td>新增农场核心、疣场核心、林场核心、牧场核心、渔场核心、猎场核心，用于自动化。</td></tr>
-<tr class="v1-8"><td>新增破坏之手，	放置在物品展示框时，会破坏正上方的方块。</td></tr>
+<tr class="v1-8"><td>新增破坏之手，放置在物品展示框时，会破坏正上方的方块。</td></tr>
 <tr class="v1-8"><td>新增磁铁，右键切换，将附近0/8/16米内掉落物吸引过来。</td></tr>
 <tr class="v1-8"><td>新增时间调节器，右键依次切换模式为作物生长速度加倍/作物生长速度恢复/停止日夜循环/开启日夜循环。</td></tr>
 <tr class="v1-8"><td>新增报时器，放置于物品展示框后可报时。右键可通过消耗经验自由控制时间。</td></tr>
@@ -3411,7 +3413,6 @@ function change(str){
 <tr class="v1-8"><td>新增魔杖、星之魔杖、节制器、黑暗权杖。</td></tr>
 <tr class="v1-8"><td>将特定方块摆放成八边形作为仪式基座，手持魔杖右击发射器，然后等待发射器上符文粒子消失即可执行仪式。</td></tr>
 <tr class="v1-8"><td>仪式可用于属性附加、效果附加、附魔书制作、热带鱼染色、腐化仪式、生物增殖、黑暗召唤。</td></tr>
-<tr class="v1-8"><td>新增附加效果：夜视、隐身、抗性、抗火、力量、迅捷、跳跃、急迫。在相应槽位即可自动生效，同时消耗玩家经验值。</td></tr>
 <tr class="v1-8"><td>新增效果附加：潮涌能量/水下呼吸/夜视/抗性提升/隐身/饱和/生命恢复/防火/缓落/速度/跳跃提升/力量/急迫/连锁。</td></tr>
 
 <tr class="v1-8"><td>新增荧光帽，使玩家发光，但是并不提供照明。</td></tr>
@@ -3420,7 +3421,7 @@ function change(str){
 <tr class="v1-8"><td>新增雪地靴，玩家在雪上会跑得更快。</td></tr>
 <tr class="v1-8"><td>新增原谅帽、小红帽、皮夹克、红色外套、紧身皮裤、牛仔裤。</td></tr>
 <tr class="v1-8"><td>新增扫帚，在副手时提供漂浮效果。</td></tr>
-<tr class="v1-8"><td>佩戴头饰使用的需要的南瓜修改为雕刻南瓜。</td></tr>
+<tr class="v1-8"><td>佩戴头饰使用的需要的南瓜修改为空。</td></tr>
 <tr class="v1-8"><td>新增头饰海草、珊瑚。</td></tr>
 
 <tr class="v1-8"><td>当发射器发射的物品可以种植在前方位置时，会自动种植。</td></tr>
@@ -3430,11 +3431,10 @@ function change(str){
 <tr class="v1-8"><td>新增羊毛树、爬行者地牢、图腾柱、附魔室的生成。</td></tr>
 <tr class="v1-8"><td>图腾柱宝箱含亡灵之魂/硝火之烬/生物之肢/附魔金苹果/附魔铁锭/附魔金锭/肉松面包/拔丝苹果/煤炭/骨头/火药/腐肉/线。</td></tr>
 
-<tr class="v1-8"><td>移除了木剑的合成，以赋予模组物品材质。</td></tr>
 <tr class="v1-8"><td>修改刷怪蛋的合成为原版合成。</td></tr>
 <tr class="v1-8"><td>修改凋灵骷髅刷怪蛋的配方中的煤炭为煤炭块。</td></tr>
-<tr class="v1-8"><td>修改唤魔者的合成配方为鸡蛋+闪烁的西瓜。</td></tr>
-<tr class="v1-8"><td>修改可驯服生物合成所需头颅为凋零骷髅头颅。</td></tr>
+<tr class="v1-8"><td>修改唤魔者/卫道士的合成配方为鸡蛋+闪烁的西瓜/铁锭。</td></tr>
+<tr class="v1-8"><td>修改可驯服生物合成所需头颅为骷髅头颅。</td></tr>
 <tr class="v1-8"><td>移除幻术师、高压爬行者刷怪蛋的合成。</td></tr>
 <tr class="v1-8"><td>新增幻翼、海龟的合成。</td></tr>
 <tr class="v1-8"><td>修改合成得到的楼梯数量为8。</td></tr>
@@ -3447,6 +3447,8 @@ function change(str){
 <tr class="v1-8"><td>移除道路固化剂的合成。</td></tr>
 <tr class="v1-8"><td>新增4种平滑方块的合成，玩家在平滑方块上可以获得不同的加速效果。</td></tr>
 <tr class="v1-8"><td>新增龙蛋、红沙、草径、耕地、草方块、菌丝、粘土的合成。</td></tr>
+<tr class="v1-8"><td>移除了木制工具的合成。</td></tr>
+<tr class="v1-8"><td>燧石可代替石制工具合成中的圆石。</td></tr>
 
 <tr class="v1-8"><td>新增村民：林业员、书画师、圣诞老人、药剂师、末地使、烟花师、园丁、机械工、潜水员。</td></tr>
 <tr class="v1-8"><td>修改牧师出售附魔之瓶的价格为1绿宝石。</td></tr>
@@ -3456,7 +3458,7 @@ function change(str){
 <tr class="v1-8"><td>空岛模块下在熔炉上方放置雪块可得到方块粉碎机，可以粉碎其上方放置材料。</td></tr>
 <tr class="v1-8"><td>空岛模块下在方块粉碎机上方放置坩埚，然后向坩埚扔入4个圆石或4个雪球，可以制作岩浆或水。</td></tr>
 <tr class="v1-8"><td>空岛模块下可使用绿宝石块和雪块制作末地传送门框架。</td></tr>
-<tr class="v1-8"><td>空岛模块下添加雪球、鸡蛋、泥土、砂砾、石制工具的合成，泥土和圆石的转化。</td></tr>
+<tr class="v1-8"><td>空岛模块下添加雪球、鸡蛋、泥土、砂砾的合成，泥土和圆石的转化。</td></tr>
 
 </tbody></table>
 
