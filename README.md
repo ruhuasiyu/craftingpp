@@ -62,6 +62,7 @@ This project is licensed under the terms of the GNU General Public License v3.0.
 <tr><td>dropper</td><td>machine_core</td><td>机械核心</td></tr>
 <tr><td>blaze_powder</td><td>mystery_blaze_powder</td><td>神秘烈焰粉</td></tr>
 <tr><td>rabbit_foot</td><td>mystery_rabbit_foot</td><td>神秘兔子腿</td></tr>
+<tr><td>blaze_rod</td><td>wand_of_the_darkness</td><td>黑暗魔杖</td></tr>
 
 <tr><td>bread</td><td>meat_floss_bread</td><td>肉松面包</td></tr>
 <tr><td>mushroom_steam</td><td>egg_stew</td><td>鸡蛋羹</td></tr>
@@ -102,6 +103,22 @@ This project is licensed under the terms of the GNU General Public License v3.0.
 <tr><td>钢粉</td><td>13158600</td></tr>
 <tr><td>忍者药水</td><td>6786184</td></tr>
 <tr><td>鲁莽药水</td><td>8809335</td></tr>
+</table>
+
+# 皮革盔甲颜色
+
+<table>
+<tr><td>物品</td><td>color</td></tr>
+<tr><td>荧光帽</td><td>16776960</td></tr>
+<tr><td>原谅帽</td><td>2545212</td></tr>
+<tr><td>非酋帽</td><td>460551</td></tr>
+<tr><td>护士帽</td><td>15000804</td></tr>
+<tr><td>小红帽</td><td>16711680</td></tr>
+<tr><td>皮夹克</td><td>8404992</td></tr>
+<tr><td>红色外套</td><td>16711680</td></tr>
+<tr><td>紧身皮裤</td><td>460551</td></tr>
+<tr><td>牛仔裤</td><td>2246336</td></tr>
+<tr><td>雪地靴</td><td>8404992</td></tr>
 </table>
 
 # 地图map值
