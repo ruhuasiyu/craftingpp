@@ -46,7 +46,7 @@ This project is licensed under the terms of the GNU General Public License v3.0.
 <tr><td>wooden_sword:16</td><td>nova_of_fire</td><td>火焰之星</td></tr>
 <tr><td>wooden_sword:17</td><td>spirit_of_life</td><td>生命之灵</td></tr>
 <tr><td>wooden_sword:18</td><td>shard_of_the_darkness</td><td>黑暗碎片</td></tr>
-<tr><td>wooden_sword:19</td><td>clay_bucket</td><td></td><td>粘土桶</td></tr>
+<tr><td>wooden_sword:19</td><td>clay_bucket</td><td>粘土桶</td></tr>
 <tr><td>wooden_sword:20</td><td>tainted_dirt</td><td>腐化土</td></tr>
 <tr><td>wooden_sword:21</td><td>broken_mob_spawner</td><td>破损刷怪箱</td></tr>
 <tr><td>wooden_sword:22</td><td>broom</td><td>扫帚</td></tr>
@@ -60,38 +60,28 @@ This project is licensed under the terms of the GNU General Public License v3.0.
 <tr><td>black_stained_glass</td><td>reinforced_glass</td><td>钢化玻璃</td></tr>
 <tr><td>heavy_weighted_pressure_plate</td><td>silicon_plate</td><td>硅板</td></tr>
 <tr><td>dropper</td><td>machine_core</td><td>机械核心</td></tr>
+<tr><td>blaze_powder</td><td>mystery_blaze_powder</td><td>神秘烈焰粉</td></tr>
+<tr><td>rabbit_foot</td><td>mystery_rabbit_foot</td><td>神秘兔子腿</td></tr>
 
-<tr><td>bread</td><td>面包</td><td>肉松面包</td></tr>
-<tr><td>cooked_potato</td><td>烤土豆</td><td>烤馍</td></tr>
-<tr><td>cooked_beef</td><td>牛排</td><td>土豆牛肉</td></tr>
-<tr><td>mushroom_steam</td><td>蘑菇煲</td><td>鸡蛋羹</td></tr>
-<tr><td>cooked_mutton</td><td>熟羊肉</td><td>烤全羊</td></tr>
-<tr><td>apple</td><td>苹果</td><td>拔丝苹果</td></tr>
-
-<tr><td>diamond_pickaxe</td><td>钻石镐</td><td>破坏之手</td></tr>
-<tr><td>diamond_hoe</td><td>钻石锄</td><td>农场核心</td></tr>
-<tr><td>diamond_axe</td><td>钻石斧</td><td>林场核心</td></tr>
-<tr><td>diamond_sword</td><td>钻石剑</td><td>牧场核心 </td></tr>
-<tr><td>fishing_rod</td><td>钓鱼竿</td><td>渔场核心</td></tr>
-<tr><td>bow</td><td>弓</td><td>猎场核心</td></tr>
-<tr><td>diamond_shovel</td><td>钻石锹</td><td>疣场核心</td></tr>
-<tr><td>compass</td><td>指南针</td><td>磁铁 </td></tr>
-<tr><td>clock</td><td>时钟</td><td>时间调节器 </td></tr>
-<tr><td>note_block</td><td>音符盒</td><td>闹钟</td></tr>
-
-<tr><td>blaze_powder</td><td>烈焰粉</td><td>硝火之烬</td></tr>
-<tr><td>poisonous_potato</td><td>毒马铃薯</td><td>亡灵之魂</td></tr>
-<tr><td>rabbit_foot</td><td>兔子腿</td><td>生物之肢</td></tr>
-<tr><td>prismarian_crystal</td><td>海晶砂粒</td><td>海洋之心</td></tr>
-<tr><td>feather</td><td>羽毛</td><td>飞翔之翼</td></tr>
-<tr><td>ender_pearl</td><td>末影珍珠</td><td>末影之灵</td></tr>
-<tr><td>emerald</td><td>绿宝石</td><td>居民之证</td></tr>
+<tr><td>bread</td><td>meat_floss_bread</td><td>肉松面包</td></tr>
+<tr><td>mushroom_steam</td><td>egg_stew</td><td>鸡蛋羹</td></tr>
+<tr><td>baked_potato</td><td>cooked_potato</td><td>烤馍</td></tr>
+<tr><td>apple</td><td>toffee_apple</td><td>拔丝苹果</td></tr>
+<tr><td>rabbit_stew</td><td>raw_colorful_vegetable</td><td>生缤纷菜蔬</td></tr>
+<tr><td>rabbit_stew</td><td>raw_braised_pork_with_potatoes</td><td>生土豆排骨</td></tr>
+<tr><td>rabbit_stew</td><td>raw_braised_beef_with_potatoes</td><td>生土豆牛肉</td></tr>
+<tr><td>rabbit_stew</td><td>raw_rabbit_stew</td><td>生兔肉煲</td></tr>
+<tr><td>rabbit_stew</td><td>colorful_vegetable</td><td>缤纷菜蔬</td></tr>
+<tr><td>rabbit_stew</td><td>braised_pork_with_potatoes</td><td>土豆排骨</td></tr>
+<tr><td>rabbit_stew</td><td>braised_beef_with_potatoes</td><td>土豆牛肉</td></tr>
+<tr><td>rabbit_stew</td><td>rabbit_stew</td><td>兔肉煲</td></tr>
+<tr><td>rabbit_stew</td><td>fish_and_chips</td><td>炸鱼薯条</td></tr>
 </table>
 
 # 药水颜色
 
 <table>
-<tr><td>瓶装物品</td><td>颜色long</td></tr>
+<tr><td>物品</td><td>CustomPotionColor</td></tr>
 <tr><td>铁粉</td><td>14803425</td></tr>
 <tr><td>金粉</td><td>15790146</td></tr>
 <tr><td>碳粉</td><td>460551</td></tr>
@@ -117,7 +107,7 @@ This project is licensed under the terms of the GNU General Public License v3.0.
 # 地图map值
 
 <table>
-<tr><td>map值</td><td>名称</td><td>大小</td></tr>
+<tr><td>map</td><td>名称</td><td>大小</td></tr>
 <tr><td>10000-10011</td><td>呐喊</td><td>4*3</td></tr>
 <tr><td>10012-10017</td><td>蒙娜丽莎</td><td>3*2</td></tr>
 <tr><td>10018-10019</td><td>最后的晚餐</td><td>1*2</td></tr>
