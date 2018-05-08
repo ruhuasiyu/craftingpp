@@ -51,13 +51,18 @@ This project is licensed under the terms of the GNU General Public License v3.0.
 <tr><td>wooden_sword:21</td><td>broken_mob_spawner</td><td>破损刷怪箱</td></tr>
 <tr><td>wooden_sword:22</td><td>broom</td><td>扫帚</td></tr>
 
-<tr><td>player_head</td><td>*_head</td><td>生物头颅</td></tr>
-<tr><td>chicken</td><td>parrot</td><td>鹦鹉肉</td></tr>
-<tr><td>mutton</td><td>horse</td><td>马肉</td></tr>
 <tr><td>mutton</td><td>donkey</td><td>驴肉</td></tr>
+<tr><td>cooked_mutton</td><td>cooked_donkey</td><td>熟驴肉</td></tr>
 <tr><td>mutton</td><td>mule</td><td>骡肉</td></tr>
+<tr><td>cooked_mutton</td><td>cooked_mule</td><td>熟骡肉</td></tr>
+<tr><td>mutton</td><td>horse</td><td>马肉</td></tr>
+<tr><td>cooked_mutton</td><td>cooked_horse</td><td>熟马肉</td></tr>
 <tr><td>mutton</td><td>llama</td><td>羊驼肉</td></tr>
+<tr><td>cooked_mutton</td><td>cooked_llama</td><td>熟羊驼肉</td></tr>
 <tr><td>beef</td><td>bear</td><td>熊肉</td></tr>
+<tr><td>cooked_beef</td><td>cooked_bear</td><td>熟熊肉</td></tr>
+<tr><td>chicken</td><td>parrot</td><td>鹦鹉肉</td></tr>
+<tr><td>cooked_chicken</td><td>cooked_parrot</td><td>熟鹦鹉肉</td></tr>
 <tr><td>player_head</td><td>*_head</td><td>生物头颅</td></tr>
 <tr><td>iron_ingot</td><td>enchanted_iron_ingot</td><td>附魔铁锭</td></tr>
 <tr><td>gold_ingot</td><td>enchanted_gold_ingot</td><td>附魔金锭</td></tr>
@@ -78,8 +83,8 @@ This project is licensed under the terms of the GNU General Public License v3.0.
 <tr><td>mob_spawner</td><td>cave_spider_mob_spawner</td><td>洞穴蜘蛛刷怪箱</td></tr>
 <tr><td>mob_spawner</td><td>blaze_mob_spawner</td><td>烈焰人刷怪箱</td></tr>
 <tr><td>bread</td><td>meat_floss_bread</td><td>肉松面包</td></tr>
-<tr><td>mushroom_steam</td><td>egg_stew</td><td>鸡蛋羹</td></tr>
-<tr><td>baked_potato</td><td>cooked_potato</td><td>烤馍</td></tr>
+<tr><td>mushroom_stew</td><td>egg_stew</td><td>鸡蛋羹</td></tr>
+<tr><td>carrot</td><td>cooked_carrot</td><td>烤胡萝卜</td></tr>
 <tr><td>apple</td><td>toffee_apple</td><td>拔丝苹果</td></tr>
 <tr><td>rabbit_stew</td><td>raw_colorful_vegetable</td><td>生缤纷菜蔬</td></tr>
 <tr><td>rabbit_stew</td><td>raw_braised_pork_with_potatoes</td><td>生土豆排骨</td></tr>
@@ -92,6 +97,14 @@ This project is licensed under the terms of the GNU General Public License v3.0.
 <tr><td>rabbit_stew</td><td>fish_and_chips</td><td>炸鱼薯条</td></tr>
 <tr><td>chest</td><td>santa_gift</td><td>圣诞礼物</td></tr>
 <tr><td>dispenser</td><td>block_breaker</td><td>方块破坏器</td></tr>
+
+<tr><td>flint</td><td>iron_shard</td><td>铁碎片</td></tr>
+<tr><td>flint</td><td>gold_shard</td><td>金碎片</td></tr>
+<tr><td>flint</td><td>coal_shard</td><td>煤碎片</td></tr>
+<tr><td>beetroot_seeds</td><td>redstone_shard</td><td>红石碎片</td></tr>
+<tr><td>beetroot_seeds</td><td>lapis_shard</td><td>青金石碎片</td></tr>
+<tr><td>wheat_seeds</td><td>diamond_shard</td><td>钻石碎片</td></tr>
+<tr><td>wheat_seeds</td><td>emerald_shard</td><td>绿宝石碎片</td></tr>
 
 <tr><td>wheat_seeds</td><td>magic_wheat_seeds</td><td>魔法小麦种子</td></tr>
 <tr><td>beetroot_seeds</td><td>magic_beetroot_seeds</td><td>魔法甜菜种子</td></tr>
