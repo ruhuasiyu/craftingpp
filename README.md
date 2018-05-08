@@ -196,14 +196,14 @@ This project is licensed under the terms of the GNU General Public License v3.0.
 <tr><td>filled_map{map:10084-10095}</td><td>the_starry_night</td><td>星夜</td></tr>
 <tr><td>filled_map{map:10096-10101}</td><td>liberty_leading_the_people</td><td>自由引导人民</td></tr>
 <tr><td>filled_map{map:10102-10107}</td><td>the_gleaners</td><td>拾穗者</td></tr>
-<tr><td>filled_map{map:20000-20003}</td><td rowspan="8">spring_couplets</td><td>日出江花红胜火</td></tr>
-<tr><td>filled_map{map:20004-20007}</td><td>春来江水绿如蓝</td></tr>
-<tr><td>filled_map{map:20008-20011}</td><td>爆竹声声辞旧岁</td></tr>
-<tr><td>filled_map{map:20012-20015}</td><td>春联户户迎新春</td></tr>
-<tr><td>filled_map{map:20016-20019}</td><td>一年四季行好运</td></tr>
-<tr><td>filled_map{map:20020-20023}</td><td>八方财宝进家门</td></tr>
-<tr><td>filled_map{map:20024-20027}</td><td>迎新春平安如意</td></tr>
-<tr><td>filled_map{map:20028-20031}</td><td>贺佳节富贵平安</td></tr>
+<tr><td>filled_map{map:20000-20003}</td><td>spring_couplets</td><td>日出江花红胜火</td></tr>
+<tr><td>filled_map{map:20004-20007}</td><td>spring_couplets</td><td>春来江水绿如蓝</td></tr>
+<tr><td>filled_map{map:20008-20011}</td><td>spring_couplets</td><td>爆竹声声辞旧岁</td></tr>
+<tr><td>filled_map{map:20012-20015}</td><td>spring_couplets</td><td>春联户户迎新春</td></tr>
+<tr><td>filled_map{map:20016-20019}</td><td>spring_couplets</td><td>一年四季行好运</td></tr>
+<tr><td>filled_map{map:20020-20023}</td><td>spring_couplets</td><td>八方财宝进家门</td></tr>
+<tr><td>filled_map{map:20024-20027}</td><td>spring_couplets</td><td>迎新春平安如意</td></tr>
+<tr><td>filled_map{map:20028-20031}</td><td>spring_couplets</td><td>贺佳节富贵平安</td></tr>
 <tr><td>filled_map{map:20101}</td><td>-</td><td>春</td></tr>
 <tr><td>filled_map{map:20102}</td><td>-</td><td>福</td></tr>
 <tr><td>filled_map{map:20099}</td><td>-</td><td>TCP logo</td></tr>
