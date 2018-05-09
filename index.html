@@ -2634,6 +2634,41 @@ function change(str){
 
 <!--其它原版合成-->
 <code>数据包 cpp_vanilla_craft</code>
+<h3>工具</h3>
+<p>移除了木制工具的合成。</p>
+<table><thead><tr><th>名称</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
+<tr><th>石斧、镐、剑、锹、锄</th><td>燧石+木棍</td><td><span class="mcui"><span>
+<span class="mcui-row"><span class="flint" title="燧石">
+</span><span class="flint" title="燧石">
+</span><span class="flint" title="燧石">
+</span></span><span class="mcui-row"><span class="empty">
+</span><span class="stick" title="木棍">
+</span><span class="empty">
+</span></span><span class="mcui-row"><span class="empty">
+</span><span class="stick" title="木棍">
+</span><span class="empty">
+</span></span></span><span class="mcui-arrow"></span><span class="mcui-output">
+<span class="stone_pickaxe" title="石镐">
+</span></span></span></td></tr>
+</tbody></table>
+
+<h3>泥土处理</h3>
+<table><thead><tr><th>名称</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
+<tr><th>草径<br />耕地<br />草方块<br />菌丝<br />粘土</th><td>锹+草方块<br />锄+泥土<br />草+泥土<br />蘑菇+泥土<br />粘液球+泥土</td><td>
+<span class="mcui"><span><span class="mcui-row"><span class="grass" title="草">
+</span><span class="empty">
+</span><span class="empty">
+</span></span><span class="mcui-row"><span class="dirt" title="泥土">
+</span><span class="empty">
+</span><span class="empty">
+</span></span><span class="mcui-row"><span class="empty">
+</span><span class="empty">
+</span><span class="empty">
+</span></span></span><span class="mcui-arrow"></span><span class="mcui-output">
+<span class="grass_block" title="草方块">
+</span></span></span></td></tr>
+</tbody></table>
+
 <h3>楼梯与台阶</h3>
 <p>修改合成得到的楼梯数量为8；新增18种台阶和17种楼梯回收为原方块。</p>
 
@@ -2901,41 +2936,6 @@ function change(str){
 </span></span></span><span class="mcui-arrow"></span><span class="mcui-output">
 <span class="red_sand" title="红沙">
 </span></span><span class="mcui-icons"><span class="mcui-shapeless" title="此配方是无形的，材料可以以任何排列方式放置在合成格内。">
-</span></span></span></td></tr>
-</tbody></table>
-
-<h3>泥土处理</h3>
-<table><thead><tr><th>名称</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
-<tr><th>草径<br />耕地<br />草方块<br />菌丝<br />粘土</th><td>锹+草方块<br />锄+泥土<br />草+泥土<br />蘑菇+泥土<br />粘液球+泥土</td><td>
-<span class="mcui"><span><span class="mcui-row"><span class="grass" title="草">
-</span><span class="empty">
-</span><span class="empty">
-</span></span><span class="mcui-row"><span class="dirt" title="泥土">
-</span><span class="empty">
-</span><span class="empty">
-</span></span><span class="mcui-row"><span class="empty">
-</span><span class="empty">
-</span><span class="empty">
-</span></span></span><span class="mcui-arrow"></span><span class="mcui-output">
-<span class="grass_block" title="草方块">
-</span></span></span></td></tr>
-</tbody></table>
-
-<h3>工具</h3>
-<p>移除了木制工具的合成。</p>
-<table><thead><tr><th>名称</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
-<tr><th>石斧、镐、剑、锹、锄</th><td>燧石+木棍</td><td><span class="mcui"><span>
-<span class="mcui-row"><span class="flint" title="燧石">
-</span><span class="flint" title="燧石">
-</span><span class="flint" title="燧石">
-</span></span><span class="mcui-row"><span class="empty">
-</span><span class="stick" title="木棍">
-</span><span class="empty">
-</span></span><span class="mcui-row"><span class="empty">
-</span><span class="stick" title="木棍">
-</span><span class="empty">
-</span></span></span><span class="mcui-arrow"></span><span class="mcui-output">
-<span class="stone_pickaxe" title="石镐">
 </span></span></span></td></tr>
 </tbody></table>
 
@@ -3357,7 +3357,7 @@ function change(str){
 
 <tr class="v1-8"><td>增强僵尸、骷髅和爬行者。</td></tr>
 <tr class="v1-8"><td>村民可被手持绿宝石块的玩家吸引。</td></tr>
-<tr class="v1-8"><td>动物有几率变成黑暗生物，会主动攻击玩家。</td></tr>
+<tr class="v1-8"><td>动物有几率变成黑暗生物，会主动攻击玩家，掉落黑暗碎片。</td></tr>
 <tr class="v1-8"><td>下界之星、不死图腾、龙蛋的掉落物形式现在是无敌的。</td></tr>
 <tr class="v1-8"><td>在破坏刷怪箱可以获得破损的刷怪箱。</td></tr>
 <tr class="v1-8"><td>附魔之瓶将固定掉落4点经验值。玩家在背包合成区域中间放置一个漏斗而其余8格为空时，会自动将4点经验值转化为附魔之瓶。</td></tr>
@@ -3440,7 +3440,7 @@ function change(str){
 <tr class="v1-8"><td>修改合成得到的楼梯数量为8。</td></tr>
 <tr class="v1-8"><td>新增18种台阶和17种楼梯回收为原方块。</td></tr>
 <tr class="v1-8"><td>修改合成石英块/皮革所需的石英/小块皮革数量为9。</td></tr>
-<tr class="v1-8"><td>新增9个线/冰合成为蜘蛛网/浮冰。</td></tr>
+<tr class="v1-8"><td>新增9个线合成为蜘蛛网。</td></tr>
 <tr class="v1-8"><td>新增粘土块、荧石、雪块、西瓜、地狱疣块、蜘蛛网、石英块、皮革的分解。</td></tr>
 <tr class="v1-8"><td>现在任意颜色的床均可被染色。</td></tr>
 <tr class="v1-8"><td>新增锁链盔甲的合成。</td></tr>
@@ -3479,23 +3479,4 @@ $(document).ready(function(){
 <!--<span class="mcui-icons"><span class="mcui-shapeless" title="此配方是无形的，材料可以以任何排列方式放置在合成格内。"></span></span>
 lapis 6*2.2=13.2	6*3.14=18.84
 redstone 4.5+f/2=6、7
-矿物倍增原则：前期（红火）应当比时运3略高，后期（橙土和黑月）应当比时运5略低。
-
-发展路线：
-村民->下界->红火->种矿->末地->紫木->凋零->白电->黄地->黑月
-
-
-蓝天	天空之翼	容易
-青山	山脉之肢	容易
-绿水	海洋之心	容易
-橙土	泥土之魂	略难
-黄地	大地之证	略难
-红火	火焰之星	难
-紫木	生命之灵	很难
-
-未来：更多的村民
-未来：更多的技能
-未来：更多的作物 Crops Plus Plus
-未来：魔法牌 Magic Cards
-
 -->

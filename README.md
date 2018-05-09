@@ -1,5 +1,5 @@
 # Crafting++
-This is a vanilla mod of minecraft by using functions/datapack. 
+This is a vanilla mod of minecraft by using functions/datapacks. 
 This project is licensed under the terms of the GNU General Public License v3.0.
 
 # 更多的合成
@@ -50,6 +50,7 @@ This project is licensed under the terms of the GNU General Public License v3.0.
 <tr><td>wooden_sword:20</td><td>tainted_dirt</td><td>腐化土</td></tr>
 <tr><td>wooden_sword:21</td><td>broken_mob_spawner</td><td>破损刷怪箱</td></tr>
 <tr><td>wooden_sword:22</td><td>broom</td><td>扫帚</td></tr>
+<tr><td>wooden_sword:23</td><td>silicon_plate</td><td>硅板</td></tr>
 
 <tr><td>mutton</td><td>donkey</td><td>驴肉</td></tr>
 <tr><td>cooked_mutton</td><td>cooked_donkey</td><td>熟驴肉</td></tr>
@@ -63,7 +64,7 @@ This project is licensed under the terms of the GNU General Public License v3.0.
 <tr><td>cooked_beef</td><td>cooked_bear</td><td>熟熊肉</td></tr>
 <tr><td>chicken</td><td>parrot</td><td>鹦鹉肉</td></tr>
 <tr><td>cooked_chicken</td><td>cooked_parrot</td><td>熟鹦鹉肉</td></tr>
-<tr><td>player_head</td><td>*_head</td><td>生物头颅</td></tr>
+<tr><td>player_head</td><td>*_head, *_skull</td><td>生物头颅</td></tr>
 <tr><td>iron_ingot</td><td>enchanted_iron_ingot</td><td>附魔铁锭</td></tr>
 <tr><td>gold_ingot</td><td>enchanted_gold_ingot</td><td>附魔金锭</td></tr>
 <tr><td>diamond</td><td>enchanted_diamond</td><td>附魔钻石</td></tr>
@@ -71,7 +72,6 @@ This project is licensed under the terms of the GNU General Public License v3.0.
 <tr><td>gold_nugget</td><td>sun_shard</td><td>日之碎片</td></tr>
 <tr><td>light_blue_stained_glass</td><td>rare_earth_glass</td><td>稀土玻璃</td></tr>
 <tr><td>black_stained_glass</td><td>reinforced_glass</td><td>钢化玻璃</td></tr>
-<tr><td>heavy_weighted_pressure_plate</td><td>silicon_plate</td><td>硅板</td></tr>
 <tr><td>dropper</td><td>machine_core</td><td>机械核心</td></tr>
 <tr><td>blaze_powder</td><td>mystery_blaze_powder</td><td>神秘烈焰粉</td></tr>
 <tr><td>rabbit_foot</td><td>mystery_rabbit_foot</td><td>神秘兔子腿</td></tr>
@@ -180,6 +180,7 @@ This project is licensed under the terms of the GNU General Public License v3.0.
 <tr><td>leather_leggings{color:2246336}</td><td>blue_jeans</td><td>牛仔裤</td></tr>
 <tr><td>leather_boots{color:8404992}</td><td>snow_boots</td><td>雪地靴</td></tr>
 
+<tr><td colspan="3">filled_map only has display name tag, no id tag</td></tr>
 <tr><td>filled_map{map:10000-10011}</td><td>skrik</td><td>呐喊</td></tr>
 <tr><td>filled_map{map:10012-10017}</td><td>mona_lisa</td><td>蒙娜丽莎</td></tr>
 <tr><td>filled_map{map:10018-10019}</td><td>the_last_supper</td><td>最后的晚餐</td></tr>
@@ -204,7 +205,7 @@ This project is licensed under the terms of the GNU General Public License v3.0.
 <tr><td>filled_map{map:20020-20023}</td><td>spring_couplets</td><td>八方财宝进家门</td></tr>
 <tr><td>filled_map{map:20024-20027}</td><td>spring_couplets</td><td>迎新春平安如意</td></tr>
 <tr><td>filled_map{map:20028-20031}</td><td>spring_couplets</td><td>贺佳节富贵平安</td></tr>
-<tr><td>filled_map{map:20101}</td><td>-</td><td>春</td></tr>
-<tr><td>filled_map{map:20102}</td><td>-</td><td>福</td></tr>
-<tr><td>filled_map{map:20099}</td><td>-</td><td>TCP logo</td></tr>
+<tr><td>filled_map{map:20101}</td><td>spring</td><td>春</td></tr>
+<tr><td>filled_map{map:20102}</td><td>happiness</td><td>福</td></tr>
+<tr><td>filled_map{map:20099}</td><td>TCP_logo</td><td>TCP logo</td></tr>
 </table>
