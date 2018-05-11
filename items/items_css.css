@@ -608,6 +608,7 @@ span.tainted_dirt{	background-position: -64px -384px;}
 span.broken_mob_spawner{	background-position: -96px -384px;}
 span.broom{	background-position: -128px -384px;}
 span.coordinate_recorder{	background-position: -160px -384px;}
+span.silicon_plate{	background-position: -192px -384px;}
 
 span.effect{
 	background-image:url("items/EffectsCSS.png");
