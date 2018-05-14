@@ -387,7 +387,7 @@ function change(str){
 <p class="center"><img src="items/screenshots/craft.png" /></p>
 
 <h4 id="develop">技术性提醒</h4>
-<p>该版本分为18个数据包模块，玩家如需要移除部分功能可将其对应的数据包删除即可。不过，模块之间有依赖关系，请根据内容保留必要的模块。</p>
+<p>该版本分为19个数据包模块，玩家如需要移除部分功能可将其对应的数据包删除即可。不过，模块之间有依赖关系，请根据内容保留必要的模块。</p>
 <p>本模组命名空间和记分板、标签、组名称前缀为cpp，为便于他人整合使用，烦请避开此前缀。此外，材质已占用胡萝卜钓竿0-17和木剑0-22耐久值区段。</p>
 <p>模组大部分文字支持中英双语。如有任何意见建议，欢迎<a href="http://www.mcbbs.net/thread-696861-1-1.html">在论坛回复</a>、<a href="https://github.com/ruhuasiyu/craftingpp/issues/new">发起issue</a>或<a href="http://www.mcbbs.net/home.php?mod=spacecp&ac=pm&touid=975525">私信我</a>。</p>
 
@@ -2430,6 +2430,24 @@ function change(str){
 <code>数据包 cpp_sort_chest</code>
 <h3>箱子整理</h3>
 <p>当玩家使用<a onclick="change('rituals')" href="#magicka_wand">魔杖</a>右击箱子后，箱子内的物品会按照物品id的长度/物品数量从小到大排序。只能对不是满的单个箱子排序。</p>
+
+
+<code>数据包 cpp_beacon</code>
+<h3>生物信标</h3>
+<p>在信标上放置含有<a onclick="change('rituals')" href="#temperancer">节制器</a>的物品展示框后，根据信标的增益效果，会给予附近非玩家的实体减益效果，对应关系为：</p>
+<table>
+<thead>
+<tr><th>信标效果</th><th>生物效果</th></tr>
+</thead>
+<tbody>
+<tr><td>速度</td><td>缓慢</td></tr>
+<tr><td>急迫</td><td>发光</td></tr>
+<tr><td>抗性提升</td><td>中毒</td></tr>
+<tr><td>跳跃提升</td><td>漂浮</td></tr>
+<tr><td>力量</td><td>虚弱</td></tr>
+<tr><td>生命恢复</td><td>凋灵</td></tr>
+</tbody>
+</table>
 
 </article>
 
