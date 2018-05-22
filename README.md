@@ -86,7 +86,7 @@ This project is licensed under the terms of the GNU General Public License v3.0.
 <tr><td>mob_spawner</td><td>blaze_mob_spawner</td><td>烈焰人刷怪箱</td></tr>
 <tr><td>bread</td><td>meat_floss_bread</td><td>肉松面包</td></tr>
 <tr><td>mushroom_stew</td><td>egg_stew</td><td>鸡蛋羹</td></tr>
-<tr><td>carrot</td><td>cooked_carrot</td><td>烤胡萝卜</td></tr>
+<tr><td>carrot</td><td>baked_carrot</td><td>烤胡萝卜</td></tr>
 <tr><td>apple</td><td>toffee_apple</td><td>拔丝苹果</td></tr>
 <tr><td>rabbit_stew</td><td>raw_colorful_vegetable</td><td>生缤纷菜蔬</td></tr>
 <tr><td>rabbit_stew</td><td>raw_braised_pork_with_potatoes</td><td>生土豆排骨</td></tr>

@@ -500,12 +500,12 @@ function change(str){
 <h3>异变生物</h3>
 <p>生成生物时有5%几率生成，或在黑暗仪式失败时生成。异变生物和通常的动物外观无差异，但是会主攻靠近并攻击玩家。异变生物会掉落<strong id="shade_of_the_darkness">黑暗碎片</strong>。</p>
 <ul>
-<li>异变牛——对玩家造成饥饿效果，掉落皮革和腐肉。</li>
-<li>异变哞菇——对玩家造成饥饿效果，掉落红色蘑菇和腐肉。</li>
-<li>异变羊——对玩家造成缓慢效果，掉落黑色羊毛和骨头。</li>
+<li>异变牛——对玩家造成凋零和饥饿效果，掉落皮革和腐肉。</li>
+<li>异变哞菇——对玩家造成凋零和饥饿效果，掉落红色蘑菇和腐肉。</li>
+<li>异变羊——对玩家造成凋零和缓慢效果，掉落黑色羊毛和骨头。</li>
 <li>异变猪——靠近后直接爆炸，掉落腐肉和火药。</li>
-<li>异变鸡——对玩家造成中毒效果，掉落羽毛和线。</li>
-<li>异变兔子——对玩家造成凋零效果，掉落小块皮革和骨头。</li>
+<li>异变鸡——对玩家造成凋零和中毒效果，掉落羽毛和线。</li>
+<li>异变兔子——对玩家造成凋零II效果，掉落小块皮革和骨头。</li>
 </ul>
 
 <p><img style="width:48%" src="items/screenshots/1_zombie.png" /> <img style="width:48%" src="items/screenshots/1_dark_animal.png" /></p>
@@ -532,7 +532,7 @@ function change(str){
 
 <tr><td><span class="mcui-row"><span id="heart_of_ocean" class="colorful_items heart_of_ocean" title="海洋之心"></span></span></td>
 <th><strong>海洋之心</strong></th>
-<td>浮尸/远古守卫者/守卫者/鱿鱼/海龟/海豚</td></tr>
+<td>溺尸/远古守卫者/守卫者/鱿鱼/海龟/海豚</td></tr>
 
 <tr><td><span class="mcui-row"><span id="limb_of_ridge" class="colorful_items limb_of_ridge" title="山脉之肢"></span></span></td>
 <th><strong>山脉之肢</strong></th>
@@ -540,7 +540,7 @@ function change(str){
 
 <tr><td><span class="mcui-row"><span id="soul_of_dirt" class="colorful_items soul_of_dirt" title="泥土之魂"></span></span></td>
 <th><strong>泥土之魂</strong></th>
-<td>僵尸/僵尸村民/尸壳/骷髅/流髑/凋灵骷髅/骷髅马/僵尸猪人/幻翼/水鬼</td></tr>
+<td>僵尸/僵尸村民/尸壳/骷髅/流髑/凋灵骷髅/骷髅马/僵尸猪人/幻翼/溺尸</td></tr>
 
 <tr><td><span class="mcui-row"><span id="certification_of_earth" class="colorful_items certification_of_earth" title="大地之证"></span></span></td>
 <th><strong>大地之证</strong></th>
@@ -753,12 +753,12 @@ function change(str){
 </span></span>
 <p>机械核心部件为<a href="#compressor">压缩器</a>，正中槽放入待压缩的物品即可。</p>
 
-<table class="center"><thead><tr><th>消耗</th><th>产物</th></tr></thead><tbody>
+<table><thead><tr><th>消耗</th><th>产物</th></tr></thead><tbody>
 <tr><td>4 荧石粉</td><td>荧石块</td></tr>
 <tr><td>4 雪球</td><td>雪块</td></tr>
 <tr><td>4 粘土球</td><td>粘土块</td></tr>
 <tr><td>4 <a href="#moon_shard">月之碎片</a></td><td><strong id="sun_shard">日之碎片 (Sun Shard)</a></td></tr>
-<tr><td>9 <a href="#sun_shard">日之碎片</a></td><td>下界之星</td></tr>
+<tr><td>4 <a href="#sun_shard">日之碎片</a></td><td>下界之星</td></tr>
 <tr><td>9 铁粒</td><td>铁锭</td></tr>
 <tr><td>9 金粒</td><td>金锭</td></tr>
 <tr><td>9 矿物</td><td>矿物块</td></tr>
@@ -784,12 +784,12 @@ function change(str){
 </span></span>
 <p>机械核心部件为<a href="#blue_force_of_sky" onclick="change('elements');">蓝色天之力</a>。</p>
 <table class="center"><thead><tr><th>消耗</th><th>产物</th><th>时长</th></tr></thead><tbody>
-<tr><td>书</td><td>附魔之瓶</td><td>10秒</td></tr>
-<tr><td>书与笔</td><td>2 附魔之瓶</td><td>10秒</td></tr>
-<tr><td>成书</td><td>3 附魔之瓶</td><td>10秒</td></tr>
-<tr><td>附魔书</td><td>4 附魔之瓶</td><td>10秒</td></tr>
-<tr><td>书架</td><td>3 附魔之瓶</td><td>30秒</td></tr>
-<tr><td><a href="#elder_s_words">年长者之教诲</a>(不消耗)</td><td>附魔之瓶</td><td>10秒</td></tr>
+<tr><td>书</td><td>附魔之瓶</td><td>10 秒</td></tr>
+<tr><td>书与笔</td><td>2 附魔之瓶</td><td>10 秒</td></tr>
+<tr><td>成书</td><td>3 附魔之瓶</td><td>10 秒</td></tr>
+<tr><td>附魔书</td><td>4 附魔之瓶</td><td>10 秒</td></tr>
+<tr><td>书架</td><td>3 附魔之瓶</td><td>30 秒</td></tr>
+<tr><td><a href="#elder_s_words">年长者之教诲</a>(不消耗)</td><td>附魔之瓶</td><td>10 秒</td></tr>
 </tbody></table>
 
 <h4>冷冻机</h4>
@@ -804,7 +804,7 @@ function change(str){
 </span></span><span class="mcui-row"><span class="green_stained_glass_pane" title="绿色玻璃板">
 </span><span class="experience_bottle" title="附魔之瓶">
 </span><span class="green_stained_glass_pane" title="绿色玻璃板">
-</span></span></td><td>附魔之瓶</td><td>水</td></td><td>8 雪</td><td>10秒</td></tr>	
+</span></span></td><td>附魔之瓶</td><td>水</td></td><td>8 雪</td><td>10 秒</td></tr>	
 <tr><td><span class="mcui-row"><span class="water_bucket" title="水槽">
 </span><span class="colorful_items green_force_of_water" title="绿色水之力">
 </span><span class="green_stained_glass_pane" title="绿色玻璃板">
@@ -814,7 +814,7 @@ function change(str){
 </span></span><span class="mcui-row"><span class="green_stained_glass_pane" title="绿色玻璃板">
 </span><span class="experience_bottle" title="附魔之瓶">
 </span><span class="green_stained_glass_pane" title="绿色玻璃板">
-</span></span></td><td>附魔之瓶</td><td>水</td></td><td>4 冰</td><td>10秒</td></tr>	
+</span></span></td><td>附魔之瓶</td><td>水</td></td><td>4 冰</td><td>10 秒</td></tr>	
 <tr><td><span class="mcui-row"><span class="green_stained_glass_pane" title="绿色玻璃板">
 </span><span class="colorful_items green_force_of_water" title="绿色水之力">
 </span><span class="green_stained_glass_pane" title="绿色玻璃板">
@@ -824,7 +824,7 @@ function change(str){
 </span></span><span class="mcui-row"><span class="green_stained_glass_pane" title="绿色玻璃板">
 </span><span class="experience_bottle" title="附魔之瓶">
 </span><span class="green_stained_glass_pane" title="绿色玻璃板">
-</span></span></td><td>附魔之瓶</td><td>水</td></td><td>2 浮冰</td><td>10秒</td></tr>	
+</span></span></td><td>附魔之瓶</td><td>水</td></td><td>2 浮冰</td><td>10 秒</td></tr>	
 <tr><td><span class="mcui-row"><span class="green_stained_glass_pane" title="绿色玻璃板">
 </span><span class="colorful_items green_force_of_water" title="绿色水之力">
 </span><span class="green_stained_glass_pane" title="绿色玻璃板">
@@ -834,7 +834,7 @@ function change(str){
 </span></span><span class="mcui-row"><span class="water_bucket" title="水槽">
 </span><span class="experience_bottle" title="附魔之瓶">
 </span><span class="green_stained_glass_pane" title="绿色玻璃板">
-</span></span></td><td>附魔之瓶</td><td>水</td></td><td>蓝冰</td><td>10秒</td></tr>
+</span></span></td><td>附魔之瓶</td><td>水</td></td><td>蓝冰</td><td>10 秒</td></tr>
 </tbody></table>
 
 <h4>造石机</h4>
@@ -869,7 +869,7 @@ function change(str){
 </span></span><span class="mcui-row"><span class="cyan_stained_glass_pane" title="青色玻璃板">
 </span><span class="experience_bottle" title="附魔之瓶">
 </span><span class="cyan_stained_glass_pane" title="青色玻璃板">
-</span></span></td><td>附魔之瓶</td><td>岩浆</td></td><td>黑曜石</td><td>10秒</td></tr>
+</span></span></td><td>附魔之瓶</td><td>岩浆</td></td><td>黑曜石</td><td>10 秒</td></tr>
 </tbody></table>
 
 <h4>粉碎机</h4>
@@ -885,28 +885,28 @@ function change(str){
 </span></span>
 <p>机械核心部件为<a onclick="change('elements')" href="#orange_force_of_dirt">橙色土之力</a>。</p>
 <table><thead><tr><th colspan="2">消耗</th><th>产物</th><th>时长</th></tr></thead><tbody>		
-<tr><td>铁矿石</td><td rowspan="8">1/2附魔之瓶</td><td><strong id="iron_dust">铁粉 (Iron Dust)</strong></td><td rowspan="8">耗时10秒</td></tr>
+<tr><td>铁矿石</td><td rowspan="8">1/2 附魔之瓶</td><td><strong id="iron_dust">铁粉 (Iron Dust)</strong></td><td rowspan="8">10 秒</td></tr>
 <tr><td>金矿石</td><td><strong id="gold_dust">金粉 (Gold Dust)</strong></td></tr>
 <tr><td>煤矿石</td><td><strong id="carbon_dust">碳粉 (Carbon Dust)</strong></td></tr>
 <tr><td>钻石矿石</td><td><strong id="diamond_dust">钻石粉 (Diamond Dust)</strong></td></tr>
 <tr><td>绿宝石矿石</td><td><strong id="emerald_dust">绿宝石粉 (Emerald Dust)</strong></td></tr>
 <tr><td>红石矿石</td><td>红石块</td></tr>
-<tr><td>青金石矿石</td><td>5<strong id="lapis_dust">青金石粉 (Lapis Dust)</strong></td></tr>
+<tr><td>青金石矿石</td><td>5 <strong id="lapis_dust">青金石粉 (Lapis Dust)</strong></td></tr>
 <tr><td>石英矿石</td><td><strong id="quartz_dust">石英粉 (Quartz Dust)</strong></td></tr>
 
-<tr><td>铁块</td><td rowspan="7">附魔之瓶</td><td>3铁粉</td><td rowspan="7">耗时10秒</td></tr>
-<tr><td>金块</td><td>3金粉</td></tr>
-<tr><td>煤炭块</td><td>3碳粉</td></tr>
-<tr><td>钻石块</td><td>3钻石粉</td></tr>
-<tr><td>绿宝石块</td><td>3绿宝石粉</td></tr>
-<tr><td>青金石块</td><td>3青金石粉</td></tr>
-<tr><td>石英块</td><td>3石英粉</td></tr>
+<tr><td>铁块</td><td rowspan="7">附魔之瓶</td><td>3 铁粉</td><td rowspan="7">10 秒</td></tr>
+<tr><td>金块</td><td>3 金粉</td></tr>
+<tr><td>煤炭块</td><td>3 碳粉</td></tr>
+<tr><td>钻石块</td><td>3 钻石粉</td></tr>
+<tr><td>绿宝石块</td><td>3 绿宝石粉</td></tr>
+<tr><td>青金石块</td><td>3 青金石粉</td></tr>
+<tr><td>石英块</td><td>3 石英粉</td></tr>
 
-<tr><td>圆石</td><td rowspan="8">1/4附魔之瓶</td><td>沙子、0~1砂砾</td><td rowspan="8">耗时3秒</td></tr>
-<tr><td>石头</td><td>砂砾、0~1沙子</td></tr>
-<tr><td>砂砾</td><td>燧石、0~1沙子</td></tr>
-<tr><td>海晶石/海晶石砖/暗海晶石</td><td>3海晶碎片、海晶砂粒</td></tr>
-<tr><td>羊毛</td><td>4线、5%染料</td></tr>
+<tr><td>圆石</td><td rowspan="8">1/4 附魔之瓶</td><td>沙子、0~1 砂砾</td><td rowspan="8">3 秒</td></tr>
+<tr><td>石头</td><td>砂砾、0~1 沙子</td></tr>
+<tr><td>砂砾</td><td>燧石、0~1 沙子</td></tr>
+<tr><td>海晶石/海晶石砖/暗海晶石</td><td>3 海晶碎片、海晶砂粒</td></tr>
+<tr><td>羊毛</td><td>4 线、5% 染料</td></tr>
 <tr><td>粘土</td><td>粘液球</td></tr>
 <tr><td>木炭</td><td>33% 碳粉</strong></td></tr>
 <tr><td>花岗岩/安山岩/闪长岩</td><td>33% 石英粉</strong></td></tr>
@@ -948,7 +948,7 @@ function change(str){
 </span></span><span class="mcui-row"><span class="red_stained_glass_pane" title="红色玻璃板">
 </span><span class="experience_bottle" title="附魔之瓶">
 </span><span class="red_stained_glass_pane" title="红色玻璃板">
-</span></span></td><td rowspan="4">1/2附魔之瓶</td><td rowspan="4">沙/红沙</td><td>两种不同的矿石</td><td>对应矿物<sup>[1]</sup></td><td rowspan="4">10秒</td></tr>
+</span></span></td><td rowspan="4">1/2 附魔之瓶</td><td rowspan="4">沙/红沙</td><td>两种不同的矿石</td><td>对应矿物<sup>[1]</sup></td><td rowspan="4">10秒</td></tr>
 <tr rowspan="2"><td rowspan="2"><span class="mcui-row"><span class="red_stained_glass_pane" title="红色玻璃板">
 </span><span class="colorful_items red_force_of_fire" title="红色火之力">
 </span><span class="red_stained_glass_pane" title="红色玻璃板">
@@ -986,7 +986,8 @@ function change(str){
 </span></span>
 <p>机械核心部件为<a onclick="change('elements')" href="#purple_force_of_life">紫色命之力</a>。底部漏斗下方需再放置一个漏斗，否则会堵塞机器。</p>
 <table><thead><tr><th>方块槽</th><th>插件槽</th><th colspan="2">消耗</th><th>产物</th><th>备注</th></tr></thead><tbody>		
-<tr><td rowspan="3">耕地</td><td rowspan="5"><a href="#farm_core">农场核心</a></td><td>小麦种子/甜菜种子</td><td rowspan="34">附魔之瓶</td><td>3 小麦/甜菜根、0~3 种子</td><td rowspan="14">10秒</td></tr>
+<tr><td rowspan="4">耕地</td><td rowspan="6"><a href="#farm_core">农场核心</a></td><td>小麦种子/甜菜种子/<abbr title="羽毛种子、腐肉种子、火药种子、木炭种子、燧石种子、线种子、骨粉种子、蜘蛛眼种子、海晶砂粒种子、粘液球种子、烈焰粉种子、末影珍珠种子、恶魂之泪种子、潜影壳种子、幻翼膜种子、荧石粉种子">羽毛种子等</abbr></td><td rowspan="19">附魔之瓶</td><td>3 小麦/甜菜根/<abbr title="羽毛、腐肉、火药、木炭、燧石、线、骨粉、蜘蛛眼、海晶砂粒、粘液球、烈焰粉、末影珍珠、恶魂之泪、潜影壳、幻翼膜、荧石粉">羽毛等</abbr>、0~3 种子</td><td rowspan="16">10秒</td></tr>
+<tr><td><abbr title="魔法小麦种子、魔法甜菜种子、魔法南瓜种子、魔法西瓜种子">魔法小麦种子等</abbr></td><td>2-5 魔法小麦种子等</td></tr>
 <tr><td>胡萝卜/马铃薯</td><td>9 胡萝卜/马铃薯</td></tr>
 <tr><td>南瓜种子/西瓜种子</td><td>3 南瓜/西瓜</td></tr>
 <tr><td>沙子/红沙</td><td>甘蔗</td><td>6 甘蔗</td></tr>
@@ -997,37 +998,14 @@ function change(str){
 <tr><td>菌丝</td><td>蘑菇</td><td>6 蘑菇</td></tr>
 <tr><td>灵魂沙</td><td>地狱疣</td><td>6 地狱疣</td></tr>
 <tr><td>水桶</td><td>睡莲</td><td>6 睡莲</td></tr>
-<tr><td rowspan="2">泥土</td><td>花</td><td>6 花</td></tr>
-<tr><td rowspan="2"><a href="#forestry_core">林场核心</a></td><td>树苗</td><td>3木头、0~3树苗</td></tr>
-<tr><td>末地石</td><td>紫颂花</td><td>3紫颂果、0~3紫颂花</td></tr>
+<tr><td rowspan="3">泥土</td><td>花</td><td>6 花</td></tr>
+<tr><td rowspan="3"><a href="#forestry_core">林场核心</a></td><td>树苗</td><td>3 木头、0~3 树苗</td></tr>
+<tr><td>水果树树苗/矿石树树苗/羊毛树树苗</td><td>2 水果/矿石/羊毛、0~3 树苗</td></tr>
+<tr><td>末地石</td><td>紫颂花</td><td>3 紫颂果、0~3 紫颂花</td></tr>
 
-<tr><td rowspan="6">草方块</td><td rowspan="6"><a href="#ranch_core">牧场核心</a></td><td>1/16 <a onclick="change('vanil')" href="#spawn_egg">牛刷怪蛋</a></td><td>2 皮革、4 牛肉</td><td rowspan="21">15秒</td></tr>
-<tr><td>1/16 <a onclick="change('vanil')" href="#spawn_egg">哞菇刷怪蛋</a></td><td>皮革、4 牛肉、2 红色蘑菇</td></tr>
-<tr><td>1/16 <a onclick="change('vanil')" href="#spawn_egg">羊刷怪蛋</a></td><td>白色羊毛、3 羊肉</td></tr>
-<tr><td>1/16 <a onclick="change('vanil')" href="#spawn_egg">猪刷怪蛋</a></td><td>4 猪肉</td></tr>
-<tr><td>1/16 <a onclick="change('vanil')" href="#spawn_egg">鸡刷怪蛋</a></td><td>2 羽毛、4 鸡肉、2 鸡蛋</td></tr>
-<tr><td>1/16 <a onclick="change('vanil')" href="#spawn_egg">兔子刷怪蛋</a></td><td>小块皮革、兔子肉、0.2 兔子脚</td></tr>
-
-<tr><td rowspan="13"><a onclick="change('dark_rituals')" href="#tainted_dirt">腐化土</td><td rowspan="12"><a href="#hunting_core">猎场核心</a></td><td>1/16 <a onclick="change('vanil')" href="#spawn_egg">僵尸刷怪蛋</a></td><td>1/2 附魔之瓶、2 腐肉</td></tr>
-<tr><td>1/16 <a onclick="change('vanil')" href="#spawn_egg">骷髅刷怪蛋</a></td><td>1/2 附魔之瓶、2 骨头、2 弓箭</td></tr>
-<tr><td>1/16 <a onclick="change('vanil')" href="#spawn_egg">蜘蛛刷怪蛋</a></td><td>1/2 附魔之瓶、2 线</td></tr>
-<tr><td>1/16 <a onclick="change('vanil')" href="#spawn_egg">爬行者刷怪蛋</a></td><td>1/2 附魔之瓶、2 火药</td></tr>
-
-<!--<tr><td>1/16 <a onclick="change('vanil')" href="#spawn_egg">凋零骷髅刷怪蛋</a></td><td>1/2 附魔之瓶、2 骨头、2 煤炭</td></tr>-->
-<tr><td>1/16 <a onclick="change('vanil')" href="#spawn_egg">僵尸猪人刷怪蛋</a></td><td>1/2 附魔之瓶、腐肉、金粒</td></tr>
-<tr><td>1/16 <a onclick="change('vanil')" href="#spawn_egg">烈焰人刷怪蛋</a></td><td>1/2 附魔之瓶、烈焰棒</td></tr>
-<tr><td>1/16 <a onclick="change('vanil')" href="#spawn_egg">恶魂刷怪蛋</a></td><td>1/2 附魔之瓶、恶魂之泪</td></tr>
-
-<tr><td>1/16 <a onclick="change('vanil')" href="#spawn_egg">潜影贝刷怪蛋</a></td><td>潜影壳</td></tr>
-<tr><td>1/16 <a onclick="change('vanil')" href="#spawn_egg">史莱姆刷怪蛋</a></td><td>粘液球</td></tr>
-<tr><td>1/16 <a onclick="change('vanil')" href="#spawn_egg">末影人刷怪蛋</a></td><td>末影珍珠</td></tr>
-<tr><td>1/16 <a onclick="change('vanil')" href="#spawn_egg">幻翼刷怪蛋</a></td><td>幻翼膜</td></tr>
-<tr><td>1/16 <a onclick="change('vanil')" href="#spawn_egg">女巫刷怪蛋</a></td><td>荧石粉、糖、红石、蜘蛛眼、火药</td></tr>
-
-<tr><td rowspan="3">水桶</td><td rowspan="3"><a href="#fishery_core">渔场核心</a></td><td>1/16 <a onclick="change('vanil')" href="#spawn_egg">鱿鱼刷怪蛋</a></td><td>1/2 附魔之瓶、2 墨囊</td></tr>
-<tr><td>1/16 <a onclick="change('vanil')" href="#spawn_egg">守卫者刷怪蛋</a></td><td>1/2 附魔之瓶、2 海晶碎片、2 海晶砂粒、3 鳕鱼</td></tr>
-<tr><td colspan="2">鱼竿(-1耐久)</td><td>钓鱼物品</td></tr>
-
+<tr><td>草方块</td><td><a href="#ranch_core">牧场核心</a></td><td>石剑/铁剑/钻石剑</td><td><abbr title="羊、牛、猪、鸡、兔子、驴、马、骡、羊驼、北极熊、哞菇">动物</abbr>掉落物</td><td rowspan="3">15秒</td></tr>
+<tr><td><a onclick="change('dark_rituals')" href="#tainted_dirt">腐化土</td><td><a href="#hunting_core">猎场核心</a></td><td>弓</td><td><abbr title="僵尸、骷髅、爬行者、蜘蛛、末影人、史莱姆、僵尸猪人、岩浆怪、凋零骷髅、恶魂、幻翼、潜影贝、女巫">怪物</abbr>掉落物</td></tr>
+<tr><td>水桶</td><td><a href="#fishery_core">渔场核心</a></td><td>鱼竿</td><td>鱿鱼/守卫者/溺尸掉落物/钓鱼物品</td></tr>
 </tbody></table>
 
 <h4>微型市场</h4>
@@ -1042,17 +1020,17 @@ function change(str){
 </span><span class="white_stained_glass_pane" title="白色玻璃板">
 </span></span>
 <p>机械核心部件为<a onclick="change('elements')" href="#white_force_of_lightning">白色电之力</a>。</p>
-<table class="center"><thead><tr><th>消耗</th><th>产物</th><th>耗时</th></tr></thead><tbody>
-<tr><td>钻石</td><td>附魔之瓶、4 绿宝石</td><td>2秒</td></tr>
-<tr><td>指南针</td><td>附魔之瓶、绿宝石</td><td>2秒</td></tr>
-<tr><td>2 成书</td><td>附魔之瓶、绿宝石</td><td>2秒</td></tr>
-<tr><td>8 南瓜/西瓜/书/金锭/铁锭/皮革</td><td>附魔之瓶、绿宝石</td><td>2秒</td></tr>
+<table><thead><tr><th>消耗</th><th>产物</th><th>耗时</th></tr></thead><tbody>
+<tr><td>钻石</td><td>附魔之瓶、4 绿宝石</td><td rowspan="8">2秒</td></tr>
+<tr><td>指南针</td><td>附魔之瓶、绿宝石</td></tr>
+<tr><td>2 成书</td><td>附魔之瓶、绿宝石</td></tr>
+<tr><td>8 南瓜/西瓜/书/金锭/铁锭/皮革</td><td>附魔之瓶、绿宝石</td></tr>
 <tr><td>16 小麦/马铃薯/胡萝卜/海草/海带/紫颂果<br />
 16 蜘蛛眼/末影珍珠/生猪排/生鸡肉/地狱疣<br />
-16 线/煤炭/白色羊毛/青金石/荧石粉/红石</td><td>附魔之瓶、绿宝石</td><td>2秒</td></tr>
-<tr><td>32 纸/木炭/玫瑰红/墨囊</td><td>附魔之瓶、绿宝石</td><td>2秒</td></tr>
-<tr><td>36 腐肉/火药/骨粉/烈焰粉/粘液球/箭/海晶砂粒</td><td>附魔之瓶、绿宝石</td><td>2秒</td></tr>
-<tr><td>绿宝石</td><td>2 附魔之瓶</td><td>2秒</td></tr>
+16 线/煤炭/白色羊毛/青金石/荧石粉/红石</td><td>附魔之瓶、绿宝石</td></tr>
+<tr><td>32 纸/木炭/玫瑰红/墨囊</td><td>附魔之瓶、绿宝石</td></tr>
+<tr><td>36 腐肉/火药/骨粉/烈焰粉/粘液球/箭/海晶砂粒</td><td>附魔之瓶、绿宝石</td></tr>
+<tr><td>绿宝石</td><td>2 附魔之瓶</td></tr>
 </tbody></table>
 
 <h4>造物机</h4>
@@ -1068,7 +1046,7 @@ function change(str){
 </span></span>
 <p>机械核心部件为<a onclick="change('elements')" href="#black_force_of_moon">黑色月之力</a>。</p>
 <table class="center"><thead><tr><th colspan="3">消耗</th><th>产物</th><th>时长</th></tr></thead><tbody>
-<tr></td><td><a href="#iron_dust">铁粉</a></td><td><a href="#iron_dust">铁粉</a></td><td><a href="#iron_dust">铁粉</a></td><td>铁块</td><td rowspan="7">10秒</td></tr>
+<tr></td><td><a href="#iron_dust">铁粉</a></td><td><a href="#iron_dust">铁粉</a></td><td><a href="#iron_dust">铁粉</a></td><td>铁块</td><td rowspan="7">10 秒</td></tr>
 <tr><td><a href="#gold_dust">金粉</a></td><td><a href="#gold_dust">金粉</a></td><td><a href="#gold_dust">金粉</a></td><td>金块</td></tr>
 <tr><td><a href="#carbon_dust">煤炭粉</a></td><td><a href="#carbon_dust">煤炭粉</a></td><td><a href="#carbon_dust">煤炭粉</a></td><td>煤炭块</td></tr>
 <tr><td><a href="#diamond_dust">钻石粉</a></td><td><a href="#diamond_dust">钻石粉</a></td><td><a href="#diamond_dust">钻石粉</a></td><td>钻石块</td></tr>
@@ -1076,7 +1054,7 @@ function change(str){
 <tr><td><a href="#lapis_dust">青金石粉</a></td><td><a href="#lapis_dust">青金石粉</a></td><td><a href="#lapis_dust">青金石粉</a></td><td>青金石块</td></tr>
 <tr><td><a href="#quartz_dust">石英粉</a></td><td><a href="#quartz_dust">石英粉</a></td><td><a href="#quartz_dust">石英粉</a></td><td>石英块</td></tr>
 
-<tr><td><a href="#iron_dust">铁粉</a></td><td colspan="2" rowspan="3">附魔之瓶</td><td>3 附魔铁锭</td><td rowspan="5">20秒</td></tr>
+<tr><td><a href="#iron_dust">铁粉</a></td><td colspan="2" rowspan="3">附魔之瓶</td><td>3 附魔铁锭</td><td rowspan="5">20 秒</td></tr>
 <tr><td><a href="#gold_dust">金粉</a></td><td>3 附魔金锭</td></tr>
 <tr><td><a href="#diamond_dust">钻石粉</a></td><td>3 附魔钻石</td></tr>
 <tr><td>烈焰粉</td><td><a href="#bionic_acid">生物酸</a></td><td><a href="#alkaloid">生物碱</a></td><td>恶魂之泪</td></tr>
@@ -1671,7 +1649,7 @@ function change(str){
 <span class="wheat_seeds" title="羽毛种子"><span class="enchant">*</span>
 </span></span></span></td></tr>
 
-<tr><th id="fruit_sapling"><strong>水果树 (Fruit Sapling)</strong></th>
+<tr><th id="fruit_sapling"><strong>水果树树苗 (Fruit Sapling)</strong></th>
 <td>任意树苗+8 苹果</td>
 <td><span class="mcui"><span><span class="mcui-row"><span class="apple" title="苹果">
 </span><span class="apple" title="苹果">
@@ -1683,10 +1661,10 @@ function change(str){
 </span><span class="apple" title="苹果">
 </span><span class="apple" title="苹果">
 </span></span></span><span class="mcui-arrow"></span><span class="mcui-output">
-<span class="oak_sapling" title="水果树"><span class="enchant">*</span>
+<span class="oak_sapling" title="水果树树苗"><span class="enchant">*</span>
 </span></span></span></td></tr>
 
-<tr><th id="wool_sapling"><strong>矿石树 (Ore Sapling)</strong></th>
+<tr><th id="wool_sapling"><strong>矿石树树苗 (Ore Sapling)</strong></th>
 <td>煤炭+钻石+红石+铁锭+任意树苗<br />+金锭+青金石+绿宝石+石英</td>
 <td><span class="mcui"><span><span class="mcui-row"><span class="coal" title="煤炭">
 </span><span class="diamond" title="钻石">
@@ -1698,10 +1676,10 @@ function change(str){
 </span><span class="emerald" title="绿宝石">
 </span><span class="quartz" title="石英">
 </span></span></span><span class="mcui-arrow"></span><span class="mcui-output">
-<span class="spruce_sapling" title="矿石树"><span class="enchant">*</span>
+<span class="spruce_sapling" title="矿石树树苗"><span class="enchant">*</span>
 </span></span></span></td></tr>
 
-<tr><th id="wool_sapling"><strong>羊毛树 (Wool Sapling)</strong></th>
+<tr><th id="wool_sapling"><strong>羊毛树树苗 (Wool Sapling)</strong></th>
 <td>任意树苗+8 白色羊毛</td>
 <td><span class="mcui"><span><span class="mcui-row"><span class="white_wool" title="白色羊毛">
 </span><span class="white_wool" title="白色羊毛">
@@ -1713,7 +1691,7 @@ function change(str){
 </span><span class="white_wool" title="白色羊毛">
 </span><span class="white_wool" title="白色羊毛">
 </span></span></span><span class="mcui-arrow"></span><span class="mcui-output">
-<span class="birch_sapling" title="羊毛树"><span class="enchant">*</span>
+<span class="birch_sapling" title="羊毛树树苗"><span class="enchant">*</span>
 </span></span></span></td></tr>
 
 </tbody></table>
@@ -2408,8 +2386,8 @@ function change(str){
 <h3>自动种植</h3>
 <p>当发射器发射的物品可以种植在前方位置时，会自动种植。</p>
 <table><thead><tr><th>方块</th><th>作物</th></tr></thead><tbody>
-<tr><td>泥土等</td><td>树苗</td></tr>
-<tr><td>耕地</td><td>小麦种子、甜菜种子、南瓜种子、西瓜种子、胡萝卜、马铃薯</td></tr>
+<tr><td>泥土等</td><td>树苗、魔法树苗</td></tr>
+<tr><td>耕地</td><td>小麦种子、甜菜种子、南瓜种子、西瓜种子、胡萝卜、马铃薯、魔法作物种子</td></tr>
 <tr><td>灵魂沙</td><td>地狱疣</td></tr>
 <tr><td>末地石</td><td>紫颂花</td></tr>
 <tr><td>菌丝</td><td>蘑菇</td></tr>
