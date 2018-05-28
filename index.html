@@ -925,15 +925,15 @@ function change(str){
 </span></span>
 <p>机械核心部件为<a href="#yellow_force_of_earth" onclick="change('elements');">黄色地之力</a>。</p>
 <table class="center"><thead><tr><th colspan="6">消耗</th><th>产物</th></tr></thead><tbody>
-<tr><td>糖</td><td>闪烁的西瓜</td><td>腐肉</td><td>火药</td><td rowspan="9">地狱疣</td><td rowspan="9">附魔之瓶</td><td><strong id="bionic_acid">生物酸 (Bionic Acid)</strong></td></tr>
+<tr><td>糖</td><td rowspan="9">地狱疣</td><td>闪烁的西瓜</td><td>腐肉</td><td rowspan="9">附魔之瓶</td><td>火药</td><td><strong id="bionic_acid">生物酸 (Bionic Acid)</strong></td></tr>
 <tr><td>可可豆</td><td>南瓜</td><td>骨粉</td><td>发酵蛛眼</td><td><strong id="alkaloid">生物碱 (Alkaloid)</strong></td></tr>
-<tr><td colspan="2"><a href="#quartz_dust">石英粉</a></td><td colspan="2">燧石</td><td><strong id="course_silicon">粗硅 (Course Silicon)<strong></td></tr>
-<tr><td colspan="2">玻璃瓶</td><td colspan="2">活塞</td><td><strong id="bottle_of_air">空气瓶 (Bottle of Air)</strong></td></tr>
-<tr><td colspan="2"><a href="#course_silicon">粗硅</a></td><td colspan="2"><a href="#bottle_of_air">空气瓶</a></td><td><strong id="silicon_dust">硅粉 (Silicon Dust)</strong></td></tr>
-<tr><td colspan="2"><a href="#silicon_dust">硅粉</a></td><td colspan="2">活塞</td><td><strong id="silicon_plate">硅板 (Silicon Plate)</strong></td></tr>
-<tr><td colspan="2">粘土</td><td colspan="2"><a href="#bottle_of_salt">盐瓶</a></td><td><strong id="rare_earth_salt">稀土盐 (Rare Earth Salt)</strong></td></tr>
-<tr><td colspan="2"><a href="#rare_earth_salt">稀土盐</a></td><td colspan="2"><a href="#alkaloid">生物碱</a></td><td><strong id="alkaline_rare_earth">碱性稀土 (Alkaline Rare Earth)</strong></td></tr>
-<tr><td colspan="2"><a href="#alkaline_rare_earth">碱性稀土</a></td><td colspan="2"><a href="#bionic_acid">生物酸</a></td><td><strong id="rare_earth_dust">稀土粉 (Rare Earth Dust)</strong></td></tr>
+<tr><td><a href="#quartz_dust">石英粉</a></td><td><a href="#quartz_dust">石英粉</a></td><td>燧石</td><td>燧石</td><td><strong id="course_silicon">粗硅 (Course Silicon)<strong></td></tr>
+<tr><td>玻璃瓶</td><td>玻璃瓶</td><td>活塞</td><td>活塞</td><td><strong id="bottle_of_air">空气瓶 (Bottle of Air)</strong></td></tr>
+<tr><td><a href="#course_silicon">粗硅</a></td><td><a href="#course_silicon">粗硅</a></td><td><a href="#bottle_of_air">空气瓶</a></td><td><a href="#bottle_of_air">空气瓶</a></td><td><strong id="silicon_dust">硅粉 (Silicon Dust)</strong></td></tr>
+<tr><td><a href="#silicon_dust">硅粉</a></td><td><a href="#silicon_dust">硅粉</a></td><td>活塞</td><td>活塞</td><td><strong id="silicon_plate">硅板 (Silicon Plate)</strong></td></tr>
+<tr><td>粘土</td><td>粘土</td><td><a href="#bottle_of_salt">盐瓶</a></td><td><a href="#bottle_of_salt">盐瓶</a></td><td><strong id="rare_earth_salt">稀土盐 (Rare Earth Salt)</strong></td></tr>
+<tr><td><a href="#rare_earth_salt">稀土盐</a></td><td><a href="#rare_earth_salt">稀土盐</a></td><td><a href="#alkaloid">生物碱</a></td><td><a href="#alkaloid">生物碱</a></td><td><strong id="alkaline_rare_earth">碱性稀土 (Alkaline Rare Earth)</strong></td></tr>
+<tr><td><a href="#alkaline_rare_earth">碱性稀土</a></td><td><a href="#alkaline_rare_earth">碱性稀土</a></td><td><a href="#bionic_acid">生物酸</a></td><td><a href="#bionic_acid">生物酸</a></td><td><strong id="rare_earth_dust">稀土粉 (Rare Earth Dust)</strong></td></tr>
 </tbody></table>
 
 <h4>熔炼机</h4>
@@ -3379,7 +3379,7 @@ function change(str){
 <tr class="v1-8"><td>修改下界石英/兔子皮/玫瑰红/蒲公英黄名称为石英/小块皮革/红色染料/黄色染料，并修改了红色染料/黄色染料材质。</td></tr>
 <tr class="v1-8"><td>不再给予玩家初始工具和食物。</td></tr>
 <tr class="v1-8"><td>移除强化系统。</td></tr>
-<tr class="v1-8"><td>删除功力系统。</td></tr>
+<tr class="v1-8"><td>删除功力系统，重做称号系统。</td></tr>
 <tr class="v1-8"><td>进度系统重新调整。</td></tr>
 
 <tr class="v1-8"><td>增强僵尸、骷髅和爬行者。</td></tr>
@@ -3454,6 +3454,7 @@ function change(str){
 <tr class="v1-8"><td>当发射器发射的物品可以种植在前方位置时，会自动种植。</td></tr>
 <tr class="v1-8"><td>可使用炼药锅漂白玻璃和陶土。</td></tr>
 <tr class="v1-8"><td>使用机械核心和魔杖可实现随机方块。</td></tr>
+<tr class="v1-8"><td>信标可用于对生物产生减益效果</td></tr>
 
 <tr class="v1-8"><td>新增羊毛树、爬行者地牢、图腾柱、附魔室的生成。</td></tr>
 <tr class="v1-8"><td>图腾柱宝箱含亡灵之魂/硝火之烬/生物之肢/附魔金苹果/附魔铁锭/附魔金锭/肉松面包/拔丝苹果/煤炭/骨头/火药/腐肉/线。</td></tr>
