@@ -360,13 +360,13 @@ function change(str){
 <h3>简介</h3>
 <p>原版模组一般是指在不修改Minecraft游戏本体的前提下，通过命令方块、ooc或数据包等方式对游戏的可玩性做出修改。</p>
 <p>
-本模组原名“刷怪蛋、高压、石头工艺”，自1.3版本起更名为“更多的合成”。目前模组更新至1.8(元素更新)，支持的Minecraft版本为<strong>Minecraft Java 1.13</strong>。本次更新为该模组最大的一次更新，引入了元素之力，以经验值为能量进行方块处理、工具制作、效果释放、属性附加等，同时在世界生成、交易、合成、烧炼、酿造、种植等方面添加了很多新的内容。</p>
+本模组原名“刷怪蛋、高压、石头工艺”，自1.3版本起更名为“更多的合成”。目前模组更新至1.8(元素更新)，支持的Minecraft版本为<strong>Minecraft Java 1.13</strong>。本次更新为该模组最大的一次更新，引入了元素之力，以经验值为能量进行方块处理、工具制作、效果释放、属性附加等，同时在世界生成、交易、合成、烧炼、酿造、种植、称号等方面添加了很多新的内容。</p>
 
 <h3 id="download">下载与安装</h3>
 <table><thead><tr><th>支持的minecraft版本</th><th>模组版本及下载链接</th><th>简介</th></tr></thead>
 <tbody>
 <tr><td>Minecraft Java版 18w16a</td><td>
-<a href="https://github.com/ruhuasiyu/CraftingPlusPlus/blob/master/versions/1.8">craftingpp-1.8 m05d10(预览版)</a></td><td><a href="">网站链接</a></td></tr>
+<a href="https://github.com/ruhuasiyu/CraftingPlusPlus/blob/master/versions/1.8">craftingpp-1.8 m05d29(预览版)</a></td><td><a href="">网站链接</a></td></tr>
 <tr><td>Minecraft Java版 1.12</td><td>
 <a href="http://www.mcbbs.net/forum.php?mod=attachment&aid=MTA4NDIzM3xhYjM4MDU1NnwxNTExNjI3NjYwfDk3NTUyNXw2OTY4NjE%3D">craftingpp-1.7.4</a></td><td><a href="http://www.mcbbs.net/forum.php?mod=viewthread&tid=696861&cp=2">网站链接</a></td></tr>
 <tr><td>Minecraft Java版 1.12 pre</td><td>
@@ -378,7 +378,8 @@ function change(str){
 <tr><td>Minecraft Java版 1.10</td><td>SpawnEggPressureStoneMod-1.1</td><td>不再提供</td></tr>
 <tr><td>Minecraft Java版 1.10</td><td>SpawnEggPressureStoneMod-1.0</td><td>不再提供</td></tr>
 </tbody></table>
-<p>自1.6版本起，将解压后的文件放入世界存档内即可。之前的版本安装则较为繁琐，且卡顿也较严重，因此我不建议使用旧版本。如确实需要，可直接联系我。此外，新版本放出后，旧版本一律不再更新。</p>
+<p>
+注意本网页所列内容均为最新版本之内容，与旧版有较大差异。自1.6版本起，将解压后的文件放入世界存档内即可。之前的版本安装则较为繁琐，且卡顿也较严重，因此我不建议使用旧版本。如确实需要，可直接联系我。此外，新版本放出后，旧版本一律不再更新。</p>
 
 <p>下载后，将解压缩后的所有文件和文件夹(<code>datapacks</code>, <code>data</code>, <code>resources.zip</code>) 放入 <code>.minecraft/saves/世界名称</code> 文件夹，然后进入游戏并按下F3+T即可。</p>
 
@@ -387,7 +388,7 @@ function change(str){
 <p class="center"><img src="items/screenshots/craft.png" /></p>
 
 <h4 id="develop">技术性提醒</h4>
-<p>该版本分为19个数据包模块，玩家如需要移除部分功能可将其对应的数据包删除即可。不过，模块之间有依赖关系，请根据内容保留必要的模块。</p>
+<p>该版本分为19个数据包模块，玩家如需要移除部分功能可将其对应的数据包删除或禁用即可。不过，模块之间有依赖关系，请根据内容保留必要的模块。</p>
 <p>本模组命名空间和记分板、标签、组名称前缀为cpp，为便于他人整合使用，烦请避开此前缀。此外，材质已占用胡萝卜钓竿0-17和木剑0-22耐久值区段。</p>
 <p>模组大部分文字支持中英双语。如有任何意见建议，欢迎<a href="http://www.mcbbs.net/thread-696861-1-1.html">在论坛回复</a>、<a href="https://github.com/ruhuasiyu/craftingpp/issues/new">发起issue</a>或<a href="http://www.mcbbs.net/home.php?mod=spacecp&ac=pm&touid=975525">私信我</a>。</p>
 
@@ -1205,7 +1206,7 @@ function change(str){
 </span><span class="iron_ingot" title="附魔铁锭"><span class="enchant">*</span>
 </span></span></span><span class="mcui-arrow"></span><span class="mcui-output">
 <span class="colorful_items compressor" title="压缩器">
-</span></span></span></td><td>右键将地面的64个物品压缩，重新扔出可复原压缩的物品。最高可进行八重压缩。如果将压缩后的方块放置将只能得到1个原有的物品。</td></tr>
+</span></span></span></td><td>右键将地面的64个物品压缩，重新扔出可复原压缩的物品。最高可进行八重压缩，相当于1格可存储至多18014398509481984个物品。如果将压缩后的方块放置将只能得到1个原有的物品。</td></tr>
 
 <tr><th><strong id="elder_s_words">年长者之教诲 (Elder's Words)</strong></th><td>附魔之瓶+<a href="#cyan_force_of_mountain" onclick="change('elements')">青色山之力</a>+<a href="#enchanted_gold">附魔金锭</a>+书+<a href="#enchanted_iron">附魔铁锭</a>+<a href="#silicon_plate">硅板</a></td>
 <td><span class="mcui"><span><span class="mcui-row"><span class="experience_bottle" title="附魔之瓶">
@@ -3062,7 +3063,7 @@ function change(str){
 <article>
 <code>数据包 cpp_island</code>
 <h3>空岛</h3>
-<p>该模块旨在为原版空岛玩家提供从泥土到末地的完整科技链。如果玩家不是处在空岛或超平坦等资源匮乏的地图，不建议使用。玩家可以通过空无一物的超平坦进入，然后会在海平面高度生成一个5*5*2的平台。</p>
+<p>该模块仅在空岛模式（无基岩）下启用。该模块旨在为空岛玩家提供从泥土到末地的完整科技链。玩家可以通过空无一物的超平坦进入，然后会在海平面高度生成一个5*5*2的平台。</p>
 <p>玩家破坏泥土会获得树苗(各1%)或骨粉(4%)，破坏树叶会掉落线(5%)或骨粉(20%)。</p>
 <p>在熔炉上方放置雪块可将其变成方块粉碎机，之后在其上方放置泥土/砂砾/圆石/石头/沙子/灵魂沙，然后右击方块粉碎机可以打碎该方块。掉落物如下：</p>
 <table style="font-size:88%;"><thead><tr><th>方块</th><th colspan="13">掉落物</th></tr></thead><tbody>
@@ -3370,8 +3371,8 @@ function change(str){
 <!--1.8-->
 
 <tr class="v1-8">
-	<th rowspan="101">1.8<br/><span class="lore">元素更新</span></th>
-	<th rowspan="101">2018年5月20日<br/><span class='lore'>1.33 MB</span></th>
+	<th rowspan="102">1.8<br/><span class="lore">元素更新</span></th>
+	<th rowspan="102">2018年5月20日<br/><span class='lore'>1.33 MB</span></th>
 	<td>游戏本体版本升级为1.13，不再支持1.13之前的版本。</td></tr>
 <tr class="v1-8"><td>修改资源包文字的代码名称、记分板、标签前缀为cpp，修改资源包以适应1.13，添加材质。</td></tr>
 <tr class="v1-8"><td>移除闪烁标语。</td></tr>
@@ -3428,18 +3429,19 @@ function change(str){
 <tr class="v1-8"><td>移除矿石种子、矿物探测器。</td></tr>
 
 <tr class="v1-8"><td>移除附魔金苹果和药水的合成。</td></tr>
-<tr class="v1-8"><td>如果玩家食肉过多会行走缓慢，食肉过多会变得虚弱。使用测重压力板可以测量出你的体重指数。</td></tr>
+<tr class="v1-8"><td>如果玩家食肉过多会行走缓慢，食肉过少会变得虚弱。使用测重压力板可以测量出你的体重指数。</td></tr>
 <tr class="v1-8"><td>新增粘土桶、生缤纷菜蔬、生土豆排骨、生土豆牛肉、生兔肉煲、炸鱼薯条、肉松面包的制作。</td></tr>
 <tr class="v1-8"><td>新增鸡蛋羹、烤胡萝卜、缤纷菜蔬、土豆排骨、土豆牛肉、兔肉煲、小块皮革、钻石、桶、神秘烈焰粉、神秘兔子腿的烧炼。</td></tr>
 <tr class="v1-8"><td>新增鲁莽药水、忍者药水的酿造。</td></tr>
 <tr class="v1-8"><td>新增附魔金苹果和拔丝苹果的熬制。</td></tr>
 
-<tr class="v1-8"><td>新增魔法种子和各种矿物和材料种子，可种植。</td></tr>
+<tr class="v1-8"><td>新增魔法种子和材料种子，可种植。</td></tr>
 <tr class="v1-8"><td>新增羊毛树和水果树。</td></tr>
 
 <tr class="v1-8"><td>新增魔杖、星之魔杖、节制器、黑暗权杖。</td></tr>
 <tr class="v1-8"><td>将特定方块摆放成八边形作为仪式基座，手持魔杖右击发射器，然后等待发射器上符文粒子消失即可执行仪式。</td></tr>
-<tr class="v1-8"><td>仪式可用于属性附加、效果附加、附魔书制作、热带鱼染色、腐化仪式、生物增殖、黑暗召唤。</td></tr>
+<tr class="v1-8"><td>仪式可用于属性附加、效果附加、附魔书制作、热带鱼染色。</td></tr>
+<tr class="v1-8"><td>黑暗仪式可用于腐化仪式、生物增殖、黑暗召唤。</td></tr>
 <tr class="v1-8"><td>新增效果附加：潮涌能量/水下呼吸/夜视/抗性提升/隐身/饱和/生命恢复/防火/缓落/速度/跳跃提升/力量/急迫/连锁。</td></tr>
 
 <tr class="v1-8"><td>新增荧光帽，使玩家发光，但是并不提供照明。</td></tr>
@@ -3448,13 +3450,13 @@ function change(str){
 <tr class="v1-8"><td>新增雪地靴，玩家在雪上会跑得更快。</td></tr>
 <tr class="v1-8"><td>新增原谅帽、小红帽、皮夹克、红色外套、紧身皮裤、牛仔裤。</td></tr>
 <tr class="v1-8"><td>新增扫帚，在副手时提供漂浮效果。</td></tr>
-<tr class="v1-8"><td>佩戴头饰使用的需要的南瓜修改为空。</td></tr>
+<tr class="v1-8"><td>移除佩戴头饰所需的南瓜。</td></tr>
 <tr class="v1-8"><td>新增头饰海草、珊瑚。</td></tr>
 
 <tr class="v1-8"><td>当发射器发射的物品可以种植在前方位置时，会自动种植。</td></tr>
 <tr class="v1-8"><td>可使用炼药锅漂白玻璃和陶土。</td></tr>
 <tr class="v1-8"><td>使用机械核心和魔杖可实现随机方块。</td></tr>
-<tr class="v1-8"><td>信标可用于对生物产生减益效果</td></tr>
+<tr class="v1-8"><td>信标可用于对生物产生减益效果。</td></tr>
 
 <tr class="v1-8"><td>新增羊毛树、爬行者地牢、图腾柱、附魔室的生成。</td></tr>
 <tr class="v1-8"><td>图腾柱宝箱含亡灵之魂/硝火之烬/生物之肢/附魔金苹果/附魔铁锭/附魔金锭/肉松面包/拔丝苹果/煤炭/骨头/火药/腐肉/线。</td></tr>
