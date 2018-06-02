@@ -1,4 +1,4 @@
-<!doctype html>
+<!doctype html> 
 <!-- saved from url=(0038)https://ruhuasiyu.github.io/craftingpp -->
 <html lang="zh-cmn-Hans">
 <head>
@@ -1582,74 +1582,40 @@ function change(str){
 <!--植物-->
 <article>
 <code>数据包 cpp_plants</code>
-<h3>植物</h3>
+<h3>作物与杂交</h3>
+<p>
+新增20种作物，需种植在耕地上，成熟后使用右键收割，获得相应作物。当作物与相邻的作物可杂交时，有5%的几率会产生新品种的种子，其中小麦/甜菜根/马铃薯/胡萝卜在收割时决定，其它作物则在生长成熟时直接变异。</p>
+
+<table><thead><tr><th>种子</th><th>杂交来源</th><th>作物</th></tr></thead><tbody>
+<tr><td><strong>彼岸花种子 (Lycoris Radiata Seeds)</strong></td><td>小麦种子+甜菜根种子</td><td>玫瑰红</td></tr>
+<tr><td rowspan="2"><strong>白车轴种子 (Trifolium Seeds)</strong></td><td>小麦种子+马铃薯种子</td><td rowspan="2">骨粉</td></tr>
+<tr><td>小麦种子+胡萝卜种子</td></tr>
+<tr><td><strong>黑荆棘种子 (Blackthorn Seeds)</strong></td><td>甜菜根种子+胡萝卜种子</td><td>墨囊</td></tr>
+<tr><td rowspan="2"><strong>香蒲草种子 (Cattail Seeds)</strong></td><td>甜菜根种子+马铃薯种子</td><td rowspan="2">蒲公英黄</td></tr>
+<tr><td>小麦种子+金盏花种子</td></tr>
+<tr><td rowspan="2"><strong>金盏花种子 (Marigold Seeds)</strong></td><td>马铃薯种子+彼岸花种子</td><td rowspan="2">橙色染料</td></tr>
+<tr><td>甜菜根种子+香蒲草种子</td></tr>
+<tr><td><strong>木槿花种子 (Hibiscus Seeds)</strong></td><td>小麦种子+彼岸花种子</td><td>粉红色染料</td></tr>
+<tr><td><strong>风信子种子 (Hyacinth Seeds)</strong></td><td>小麦种子+黑荆棘种子</td><td>青金石</td></tr>
+<tr><td rowspan="2"><strong>菖蒲草种子 (Calamus Seeds)</strong></td><td>甜菜根种子+风信子种子</td><td rowspan="2">紫色染料</td></tr>
+<tr><td>彼岸花种子+风信子种子</td></tr>
+<tr><td><strong>滇百合种子 (Wild Lilium Seeds)</strong></td><td>小麦种子+香蒲草种子</td><td>黄绿色染料</td></tr>
+<tr><td><strong>紫荆花种子 (Bauhinia Seeds)</strong></td><td>木槿花种子+菖蒲草种子</td><td>品红色染料</td></tr>
+<tr><td><strong>蓬蓬草种子 (Fluffy Grass Seeds)</strong></td><td>白车轴种子+香蒲草种子</td><td>羽毛</td></tr>
+<tr><td><strong>大丁草种子 (Gerbera Seeds)</strong></td><td>黑荆棘种子+香蒲草种子</td><td>火药</td></tr>
+<tr><td><strong>芦苇草种子 (Esparto Seeds)</strong></td><td>白车轴种子+风信子种子</td><td>线</td></tr>
+<tr><td><strong>亮连翘种子 (Glow Forsythia Seeds)</strong></td><td>香蒲草种子+风信子种子</td><td>荧石粉</td></tr>
+<tr><td><strong>碎璃草种子 (Glazed Shade Seeds)</strong></td><td>滇百合种子+紫荆花种子</td><td>海晶砂粒</td></tr>
+<tr><td><strong>狼毒花种子 (Stelera Seeds)</strong></td><td>彼岸花种子+菖蒲草种子</td><td>蜘蛛眼</td></tr>
+<tr><td><strong>牧晶花种子 (Forage Crystal Seeds)</strong></td><td>白车轴种子+滇百合种子</td><td>恶魂之泪</td></tr>
+<tr><td><strong>异绒兰种子 (Isorchid Seeds)</strong></td><td>彼岸花种子+紫荆花种子</td><td>末影珍珠</td></tr>
+<tr><td><strong>焰光菊种子 (Burning Chrysanthe Seeds)</strong></td><td>香蒲草种子+滇百合种子</td><td>烈焰粉</td></tr>
+<tr><td><strong>酢浆草种子 (Oxalis Seeds)</strong></td><td>菖蒲草种子+紫荆花种子</td><td>粘液球</td></tr>
+</tbody></table>
+<p><img style="width:48%" src="items/screenshots/5.5.png" /></p>
+
+<h3>树</h3>
 <table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>	
-
-<tr><th id="magic_wheat_seeds"><strong>魔法小麦种子 (Magic Wheat Seeds)</strong><br />
-<strong>魔法甜菜种子 (Magic Beetroot Seeds)</strong><br />
-<strong>魔法南瓜种子 (Magic Pumpkin Seeds)</strong><br />
-<strong>魔法西瓜种子 (Magic Melon Seeds)</strong></th><td>钻石+8 小麦种子<br />
-魔法小麦种子+4 甜菜种子+4 煤炭<br />
-魔法甜菜种子+4 南瓜种子+4 铁锭<br />
-魔法南瓜种子+4 西瓜种子+4 金锭</td>
-<td><span class="mcui"><span><span class="mcui-row"><span class="iron_ingot" title="铁锭">
-</span><span class="pumpkin_seeds" title="南瓜种子">
-</span><span class="iron_ingot" title="铁锭">
-</span></span><span class="mcui-row"><span class="pumpkin_seeds" title="南瓜种子">
-</span><span class="beetroot_seeds" title="魔法甜菜种子"><span class="enchant">*</span>
-</span><span class="pumpkin_seeds" title="南瓜种子">
-</span></span><span class="mcui-row"><span class="iron_ingot" title="铁锭">
-</span><span class="pumpkin_seeds" title="南瓜种子">
-</span><span class="iron_ingot" title="铁锭">
-</span></span></span><span class="mcui-arrow"></span><span class="mcui-output">
-<span class="pumpkin_seeds" title="魔法南瓜种子"><span class="enchant">*</span>
-</span></span></span></td></tr>
-
-<tr><th id="feather_seeds">
-<strong>羽毛种子 (Feather Seeds)</strong><br />
-<strong>腐肉种子 (Rotten Flesh Seeds)</strong><br />
-<strong>火药种子 (Gunpowder Seeds)</strong><br />
-<strong>木炭种子 (Charcoal Seeds)</strong><br />
-<strong>燧石种子 (Flint Seeds)</strong><br />
-<strong>线种子 (String Seeds)</strong><br />
-<strong>骨粉种子 (Bone Meal Seeds)</strong><br />
-<strong>蜘蛛眼种子 (Spider Eye Seeds)</strong><br />
-<strong>海晶砂粒种子 (Prismarine Crystal Seeds)</strong><br />
-<strong>粘液球种子 (Slime Ball Seeds)</strong><br />
-<strong>烈焰粉种子 (Blaze Powder Seeds)</strong><br />
-<strong>末影珍珠种子 (Ender Pearl Seeds)</strong><br />
-<strong>恶魂之泪种子 (Ghast Tear Seeds)</strong><br />
-<strong>潜影壳种子 (Shulker Shell Seeds)</strong><br />
-<strong>幻翼膜种子 (Phantom Membrane Seeds)</strong><br />
-<strong>荧石粉种子 (Glowstone Dust Seeds)</strong></th><td>魔法小麦种子+8 羽毛<br />
-魔法小麦种子+8 腐肉<br />
-魔法小麦种子+8 火药<br />
-魔法小麦种子+8 木炭<br />
-魔法甜菜种子+8 燧石<br />
-魔法甜菜种子+8 线<br />
-魔法甜菜种子+8 骨粉<br />
-魔法甜菜种子+8 蜘蛛眼<br />
-魔法南瓜种子+8 海晶砂粒<br />
-魔法南瓜种子+8 粘液球<br />
-魔法南瓜种子+8 烈焰粉<br />
-魔法南瓜种子+8 末影珍珠<br />
-魔法西瓜种子+8 恶魂之泪<br />
-魔法西瓜种子+8 潜影壳<br />
-魔法西瓜种子+8 幻翼膜<br />
-魔法西瓜种子+8 荧石粉<br />
-<td><span class="mcui"><span><span class="mcui-row"><span class="feather" title="羽毛">
-</span><span class="feather" title="羽毛">
-</span><span class="feather" title="羽毛">
-</span></span><span class="mcui-row"><span class="feather" title="羽毛">
-</span><span class="wheat_seeds" title="魔法小麦种子"><span class="enchant">*</span>
-</span><span class="feather" title="羽毛">
-</span></span><span class="mcui-row"><span class="feather" title="羽毛">
-</span><span class="feather" title="羽毛">
-</span><span class="feather" title="羽毛">
-</span></span></span><span class="mcui-arrow"></span><span class="mcui-output">
-<span class="wheat_seeds" title="羽毛种子"><span class="enchant">*</span>
-</span></span></span></td></tr>
-
 <tr><th id="fruit_sapling"><strong>水果树树苗 (Fruit Sapling)</strong></th>
 <td>任意树苗+8 苹果</td>
 <td><span class="mcui"><span><span class="mcui-row"><span class="apple" title="苹果">
@@ -1696,9 +1662,7 @@ function change(str){
 </span></span></span></td></tr>
 
 </tbody></table>
-
-<p>魔法种子成熟后破坏可得到1-4的相应种子，其它的种子成熟后破坏可得到0-3的种子和相应产物。种子数量受时运影响，可以用骨粉催熟。魔法作物有一定几率退化成普通的作物。</p>
-<p>羊毛树的树叶为不同的羊毛搭配树叶而成，水果树的树叶破坏后会掉落水果树树苗或水果<!--，水果可用于制作果汁-->。二者均可用骨粉催熟。</p>
+<p>羊毛树的树叶为不同的羊毛搭配树叶而成，水果树的树叶破坏后会掉落水果树树苗或水果<!--，水果可用于制作果汁-->，矿石树会掉落矿石。二者均可用骨粉催熟。</p>
 
 </article>
 
@@ -1992,7 +1956,7 @@ function change(str){
 </span><span class="potato" title="马铃薯">
 </span></span></p>
 <p>消耗施法者生命：6点。时长：30秒</p>
-<p>仪式完成后，36米内可繁殖的<abbr title="牛、羊、猪、鸡、兔子、哞菇">动物</abbr>会开始寻找配偶。然而，仪式有10%的几率失败，一旦失败，所有这些动物都会变成黑暗生物。</p>
+<p>仪式完成后，36米内可繁殖的<abbr title="牛、羊、猪、鸡、兔子、哞菇">动物</abbr>会开始寻找配偶。然而，仪式有5%的几率失败，一旦失败，所有这些动物都会变成黑暗生物。</p>
 
 <h4>黑暗召唤</h4>
 <p>消耗：<a onclick="change('entities')" href="#shard_of_the_darkness">黑暗碎片</a>+刷怪蛋+<a onclick="change('entities')" href="#shard_of_the_darkness">破损刷怪箱</a>
@@ -2108,10 +2072,10 @@ function change(str){
 
 <!--头饰-->
 <h3>头饰</h3>
-<p>玩家未佩戴头盔或帽子，且副手持有指定的1个物品时，会自动佩戴该物品。共57款样式。</p>
-<table class="center"><thead><tr><th colspan="4">帽子</th><th colspan="3">围脖</th><th colspan="2">花饰</th><th colspan="5">其它装饰</th></tr></thead>
+<p>玩家未佩戴头盔或帽子，且副手持有指定的1个物品时，会自动佩戴该物品，共67款样式。</p>
+<table class="center"><thead><tr><th colspan="4">帽子</th><th colspan="3">围脖</th><th colspan="5">植物装饰</th><th colspan="4">其它装饰</th></tr></thead>
 <tbody>
-<tr><td>玻璃</td><td>铁砧</td><td>石台阶</td><td>龙蛋</td><td>白色床</td><td>各色地毯</td><td>雪</td><td>铁活板门</td><td>各种花</td><td>草、厥</td><td>栅栏门</td><td>阳光传感器</td><td>末地烛</td><td>栅栏</td></tr>
+<tr><td>玻璃</td><td>铁砧</td><td>石台阶</td><td>龙蛋</td><td>白色床</td><td>各色地毯</td><td>雪</td><td>铁活板门</td><td>各种花</td><td>珊瑚</td><td>珊瑚扇</td><td>草、厥</td><td>栅栏门</td><td>阳光传感器</td><td>末地烛</td><td>栅栏</td></tr>
 <tr><td><span class="mcui-row"><span class="glass"></span></span></td>
 <td><span class="mcui-row"><span class="anvil"></span></span></td>
 <td><span class="mcui-row"><span class="stone_slab"></span></span></td>
@@ -2121,12 +2085,13 @@ function change(str){
 <td><span class="mcui-row"><span class="snow"></span></span></td>
 <td><span class="mcui-row"><span class="iron_trapdoor"></span></span></td>
 <td><span class="mcui-row"><span class="poppy"></span></span></td>
+<td><span class="mcui-row"><span class="tube_coral"></span></span></td>
+<td><span class="mcui-row"><span class="brain_coral_fan"></span></span></td>
 <td><span class="mcui-row"><span class="grass"></span></span></td>
 <td><span class="mcui-row"><span class="oak_fence_door"></span></span></td>
 <td><span class="mcui-row"><span class="daylight_detector"></span></span></td>
 <td><span class="mcui-row"><span class="end_rod"></span></span></td>
 <td><span class="mcui-row"><span class="oak_fence"></span></span></td></tr>
-<tr><td><strong>空气头盔</strong></td><td><strong>矿工帽</strong></td><td><strong>绷带</strong></td><td><strong>绅士帽</strong></td><td><strong>长冠</strong></td><td><strong>围脖</strong></td><td><strong>厚围脖</strong></td><td><strong>超厚围脖</strong></td><td><strong>花</strong></td><td><strong>头上长草</strong></td><td><strong>眼镜</strong></td><td><strong>口罩</strong></td><td><strong>犄角</strong></td><td><strong>奥特曼</strong></td></tr>
 </tbody></table>
 <p class="center"><img src="items/screenshots/head.png" /></p>
 
@@ -2471,20 +2436,20 @@ function change(str){
 <h3>刷怪蛋合成</h3>
 <p>原版36种刷怪蛋的合成。</p>
 <table><thead><tr><th>名称</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
-<tr><th>羊刷怪蛋
-牛刷怪蛋
-猪刷怪蛋
-鸡刷怪蛋
-兔子刷怪蛋
-哞菇刷怪蛋
-蝙蝠刷怪蛋
-鱿鱼刷怪蛋
+<tr><th>羊刷怪蛋<br />
+牛刷怪蛋<br />
+猪刷怪蛋<br />
+鸡刷怪蛋<br />
+兔子刷怪蛋<br />
+哞菇刷怪蛋<br />
+蝙蝠刷怪蛋<br />
+鱿鱼刷怪蛋<br />
 北极熊刷怪蛋</th><td>任意羊毛+鸡蛋<br />
 皮革+鸡蛋<br />
 生猪排+鸡蛋<br />
 羽毛+鸡蛋<br />
 小块皮革+鸡蛋<br />
-红色蘑菇+鸡蛋<br />
+红色蘑菇+皮革+鸡蛋<br />
 木炭+鸡蛋<br />
 墨囊+鸡蛋<br />
 冰+鸡蛋</td><td>
@@ -2498,27 +2463,27 @@ function change(str){
 </span><span class="white_wool" title="羊毛">
 </span><span class="white_wool" title="羊毛">
 </span></span></span><span class="mcui-arrow"></span><span class="mcui-output">
-<span class="sheep_spawn_egg" title="羊">
+<span class="sheep_spawn_egg" title="羊刷怪蛋">
 </span></span></span><br/>
 
-<span class="mcui"><span><span class="mcui-row"><span class="ice" title="冰">
-</span><span class="ice" title="冰">
-</span><span class="ice" title="冰">
-</span></span><span class="mcui-row"><span class="ice" title="冰">
+<span class="mcui"><span><span class="mcui-row"><span class="red_mushroom" title="红色蘑菇">
+</span><span class="leather" title="皮革">
+</span><span class="red_mushroom" title="红色蘑菇">
+</span></span><span class="mcui-row"><span class="leather" title="皮革">
 </span><span class="egg" title="鸡蛋">
-</span><span class="ice" title="冰">
-</span></span><span class="mcui-row"><span class="ice" title="冰">
-</span><span class="ice" title="冰">
-</span><span class="ice" title="冰">
+</span><span class="leather" title="皮革">
+</span></span><span class="mcui-row"><span class="red_mushroom" title="红色蘑菇">
+</span><span class="leather" title="皮革">
+</span><span class="red_mushroom" title="红色蘑菇">
 </span></span></span><span class="mcui-arrow"></span><span class="mcui-output">
-<span class="polar_bear_spawn_egg" title="北极熊">
+<span class="mooshroom_spawn_egg" title="哞菇刷怪蛋">
 </span></span></span></td></tr>
 
 <tr><th>村民刷怪蛋<br />
 卫道士刷怪蛋<br />
 唤魔者刷怪蛋</th><td>绿宝石+鸡蛋<br />
-铁锭+鸡蛋<br />
-闪烁的西瓜+鸡蛋</td><td>
+铁块+鸡蛋<br />
+金块+鸡蛋</td><td>
 <span class="mcui"><span><span class="mcui-row"><span class="emerald" title="绿宝石">
 </span><span class="emerald" title="绿宝石">
 </span><span class="emerald" title="绿宝石">
@@ -2529,17 +2494,17 @@ function change(str){
 </span><span class="emerald" title="绿宝石">
 </span><span class="emerald" title="绿宝石">
 </span></span></span><span class="mcui-arrow"></span><span class="mcui-output">
-<span class="villager_spawn_egg" title="村民">
+<span class="villager_spawn_egg" title="村民刷怪蛋">
 </span></span></span></td></tr>
 
-<tr><th>爬行者刷怪蛋
-僵尸刷怪蛋
-骷髅刷怪蛋
-蜘蛛刷怪蛋
-女巫刷怪蛋
-末影人刷怪蛋
-史莱姆刷怪蛋
-洞穴蜘蛛刷怪蛋
+<tr><th>爬行者刷怪蛋<br />
+僵尸刷怪蛋<br />
+骷髅刷怪蛋<br />
+蜘蛛刷怪蛋<br />
+女巫刷怪蛋<br />
+末影人刷怪蛋<br />
+史莱姆刷怪蛋<br />
+洞穴蜘蛛刷怪蛋<br />
 蠹虫刷怪蛋</th><td>火药+鸡蛋<br />
 腐肉+鸡蛋<br />
 骨头+鸡蛋<br />
@@ -2559,7 +2524,7 @@ function change(str){
 </span><span class="gunpowder" title="火药">
 </span><span class="gunpowder" title="火药">
 </span></span></span><span class="mcui-arrow"></span><span class="mcui-output">
-<span class="creeper_spawn_egg" title="爬行者">
+<span class="creeper_spawn_egg" title="爬行者刷怪蛋">
 </span></span></span><br/>
 
 <span class="mcui"><span><span class="mcui-row"><span class="stone_bricks" title="石砖">
@@ -2575,15 +2540,15 @@ function change(str){
 <span class="silverfish_spawn_egg" title="蠹虫">
 </span></span></span></td></tr>
 
-<tr><th>守卫者刷怪蛋
-远古守卫者刷怪蛋
-僵尸猪人刷怪蛋
-恶魂刷怪蛋
-岩浆怪刷怪蛋
-凋灵骷髅刷怪蛋
-烈焰人刷怪蛋
-末影螨刷怪蛋
-潜影贝刷怪蛋
+<tr><th>守卫者刷怪蛋<br />
+远古守卫者刷怪蛋<br />
+僵尸猪人刷怪蛋<br />
+恶魂刷怪蛋<br />
+岩浆怪刷怪蛋<br />
+凋灵骷髅刷怪蛋<br />
+烈焰人刷怪蛋<br />
+末影螨刷怪蛋<br />
+潜影贝刷怪蛋<br />
 幻翼刷怪蛋</th><td>水桶+鸡蛋<br />
 任意生鱼+鸡蛋<br />
 金粒+鸡蛋<br />
@@ -2620,12 +2585,12 @@ function change(str){
 <span class="shulker_spawn_egg" title="潜影贝">
 </span></span></span></td></tr>
 
-<tr><th>狼刷怪蛋
-豹猫刷怪蛋
-马刷怪蛋
-驴刷怪蛋
-羊驼刷怪蛋
-鹦鹉刷怪蛋
+<tr><th>狼刷怪蛋<br />
+豹猫刷怪蛋<br />
+马刷怪蛋<br />
+驴刷怪蛋<br />
+羊驼刷怪蛋<br />
+鹦鹉刷怪蛋<br />
 海龟刷怪蛋</th><td>骨头+骷髅头颅+鸡蛋<br />
 任意生鱼+骷髅头颅+鸡蛋<br />
 皮革+骷髅头颅+鸡蛋<br />
@@ -3371,8 +3336,8 @@ function change(str){
 <!--1.8-->
 
 <tr class="v1-8">
-	<th rowspan="102">1.8<br/><span class="lore">元素更新</span></th>
-	<th rowspan="102">2018年5月20日<br/><span class='lore'>1.33 MB</span></th>
+	<th rowspan="103">1.8<br/><span class="lore">元素更新</span></th>
+	<th rowspan="103">2018年5月20日<br/><span class='lore'>1.33 MB</span></th>
 	<td>游戏本体版本升级为1.13，不再支持1.13之前的版本。</td></tr>
 <tr class="v1-8"><td>修改资源包文字的代码名称、记分板、标签前缀为cpp，修改资源包以适应1.13，添加材质。</td></tr>
 <tr class="v1-8"><td>移除闪烁标语。</td></tr>
@@ -3462,8 +3427,8 @@ function change(str){
 <tr class="v1-8"><td>图腾柱宝箱含亡灵之魂/硝火之烬/生物之肢/附魔金苹果/附魔铁锭/附魔金锭/肉松面包/拔丝苹果/煤炭/骨头/火药/腐肉/线。</td></tr>
 
 <tr class="v1-8"><td>修改刷怪蛋的合成为原版合成。</td></tr>
-<tr class="v1-8"><td>修改凋灵骷髅刷怪蛋的配方中的煤炭为煤炭块。</td></tr>
-<tr class="v1-8"><td>修改唤魔者/卫道士的合成配方为鸡蛋+闪烁的西瓜/铁锭。</td></tr>
+<tr class="v1-8"><td>修改哞菇刷怪蛋的配方为红色蘑菇+皮革+鸡蛋。</td></tr>
+<tr class="v1-8"><td>修改凋灵骷髅/唤魔者/卫道士刷怪蛋的合成配方为鸡蛋+煤炭块/金块/铁块。</td></tr>
 <tr class="v1-8"><td>修改可驯服生物合成所需头颅为骷髅头颅。</td></tr>
 <tr class="v1-8"><td>移除幻术师、高压爬行者刷怪蛋的合成。</td></tr>
 <tr class="v1-8"><td>新增幻翼、海龟的合成。</td></tr>
