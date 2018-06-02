@@ -612,6 +612,24 @@ span.broken_mob_spawner{	background-position: -96px -384px;}
 span.broom{	background-position: -128px -384px;}
 span.coordinate_recorder{	background-position: -160px -384px;}
 span.silicon_plate{	background-position: -192px -384px;}
+span.skrik{	background-position: -224px -384px;}
+span.mona_lisa{	background-position: -256px -384px;}
+
+span.the_last_supper{	background-position: -0px -416px;}
+span.luoxia_guwu{	background-position: -32px -416px;}
+span.bamboo_and_stone{	background-position: -64px -416px;}
+span.sunflower{	background-position: -96px -416px;}
+span.soleil_levant{	background-position: -128px -416px;}
+span.monet_in_garden{	background-position: -160px -416px;}
+span.virgin_of_the_rocks{	background-position: -192px -416px;}
+span.the_creation_of_adam{	background-position: -224px -416px;}
+span.barge_haulers_on_the_volga{	background-position: -256px -416px;}
+
+span.founding_ceremony{	background-position: -0px -448px;}
+span.the_unknown_girl{	background-position: -32px -448px;}
+span.the_starry_night{	background-position: -64px -448px;}
+span.liberty_leading_the_people{	background-position: -96px -448px;}
+span.the_gleaners{	background-position: -128px -448px;}
 
 span.effect{
 	background-image:url("items/EffectsCSS.png");
