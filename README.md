@@ -316,22 +316,4 @@ This project is licensed under the terms of the GNU General Public License v3.0.
 <tr><td>leather_leggings{color:460551}</td><td>tight_leather_leggings</td><td>紧身皮裤</td></tr>
 <tr><td>leather_leggings{color:2246336}</td><td>blue_jeans</td><td>牛仔裤</td></tr>
 <tr><td>leather_boots{color:8404992}</td><td>snow_boots</td><td>雪地靴</td></tr>
-
-<tr><td colspan="3">filled_map only has display name tag, no id tag</td></tr>
-<tr><td>filled_map{map:10000-10011}</td><td>skrik</td><td>呐喊</td></tr>
-<tr><td>filled_map{map:10012-10017}</td><td>mona_lisa</td><td>蒙娜丽莎</td></tr>
-<tr><td>filled_map{map:10018-10019}</td><td>the_last_supper</td><td>最后的晚餐</td></tr>
-<tr><td>filled_map{map:10020-10021}</td><td>luoxia_guwu</td><td>落霞孤鹜图</td></tr>
-<tr><td>filled_map{map:10022-10023}</td><td>bamboo_and_stone</td><td>竹石图</td></tr>
-<tr><td>filled_map{map:10024-10035}</td><td>sunflower</td><td>向日葵</td></tr>
-<tr><td>filled_map{map:10036-10047}</td><td>soleil_levant</td><td>日出·印象</td></tr>
-<tr><td>filled_map{map:10048-10059}</td><td>monet_in_garden</td><td>莫奈花园</td></tr>
-<tr><td>filled_map{map:10060-10065}</td><td>virgin_of_the_rocks</td><td>岩间圣母</td></tr>
-<tr><td>filled_map{map:10066-10067}</td><td>the_creation_of_adam</td><td>创造亚当</td></tr>
-<tr><td>filled_map{map:10068-10069}</td><td>barge_haulers_on_the_volga</td><td>伏尔加河上的纤夫</td></tr>
-<tr><td>filled_map{map:10070-10071}</td><td>founding_ceremony</td><td>开国大典</td></tr>
-<tr><td>filled_map{map:10072-10083}</td><td>the_unknown_girl</td><td>无名女郎</td></tr>
-<tr><td>filled_map{map:10084-10095}</td><td>the_starry_night</td><td>星夜</td></tr>
-<tr><td>filled_map{map:10096-10101}</td><td>liberty_leading_the_people</td><td>自由引导人民</td></tr>
-<tr><td>filled_map{map:10102-10107}</td><td>the_gleaners</td><td>拾穗者</td></tr>
 </table>
