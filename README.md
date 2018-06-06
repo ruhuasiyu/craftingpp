@@ -6,7 +6,6 @@ This project is licensed under the terms of the GNU General Public License v3.0.
 
 # 更多的合成
 这是Minecraft原版模组，添加了大量的合成表、食物、建筑等内容。
-
 该项目采用 GNU General Public License v3.0 协议。
 
 # 原版id与模组id对应表
@@ -53,7 +52,6 @@ This project is licensed under the terms of the GNU General Public License v3.0.
 <tr><td>wooden_sword:21</td><td>broken_mob_spawner</td><td>破损刷怪箱</td></tr>
 <tr><td>wooden_sword:22</td><td>broom</td><td>扫帚</td></tr>
 <tr><td>wooden_sword:23</td><td>silicon_plate</td><td>硅板</td></tr>
-
 <tr><td>wooden_axe:1</td><td>lycoris_radiata[age=0]</td><td>彼岸花作物</td></tr>
 <tr><td>wooden_axe:2</td><td>trifolium[age=0]</td><td>白车轴作物</td></tr>
 <tr><td>wooden_axe:3</td><td>blackthorn[age=0]</td><td>黑荆棘作物</td></tr>
@@ -103,7 +101,6 @@ This project is licensed under the terms of the GNU General Public License v3.0.
 <tr><td>wooden_axe:56</td><td>happiness</td><td>福</td></tr>
 <tr><td>wooden_axe:57</td><td>harvest</td><td>五谷丰登</td></tr>
 <tr><td>wooden_axe:58</td><td>prosperous</td><td>六畜兴旺</td></tr>
-
 <tr><td>wooden_hoe:1</td><td>lycoris_radiata[age=1]</td><td>彼岸花作物</td></tr>
 <tr><td>wooden_hoe:2</td><td>trifolium[age=1]</td><td>白车轴作物</td></tr>
 <tr><td>wooden_hoe:3</td><td>blackthorn[age=1]</td><td>黑荆棘作物</td></tr>
@@ -140,7 +137,6 @@ This project is licensed under the terms of the GNU General Public License v3.0.
 <tr><td>wooden_hoe:43</td><td>the_starry_night</td><td>星夜</td></tr>
 <tr><td>wooden_hoe:44</td><td>liberty_leading_the_people</td><td>自由引导人民</td></tr>
 <tr><td>wooden_hoe:45</td><td>the_gleaners</td><td>拾穗者</td></tr>
-
 <tr><td>wooden_pickaxe:1</td><td>lycoris_radiata[age=2]</td><td>彼岸花作物</td></tr>
 <tr><td>wooden_pickaxe:2</td><td>trifolium[age=2]</td><td>白车轴作物</td></tr>
 <tr><td>wooden_pickaxe:3</td><td>blackthorn[age=2]</td><td>黑荆棘作物</td></tr>
@@ -161,7 +157,6 @@ This project is licensed under the terms of the GNU General Public License v3.0.
 <tr><td>wooden_pickaxe:18</td><td>isorchid[age=2]</td><td>异绒兰作物</td></tr>
 <tr><td>wooden_pickaxe:19</td><td>burning_chrysanthe[age=2]</td><td>焰光菊作物</td></tr>
 <tr><td>wooden_pickaxe:20</td><td>oxalis[age=2]</td><td>酢浆草作物</td></tr>
-
 <tr><td>wooden_shovel:1</td><td>lycoris_radiata[age=3]</td><td>彼岸花作物</td></tr>
 <tr><td>wooden_shovel:2</td><td>trifolium[age=3]</td><td>白车轴作物</td></tr>
 <tr><td>wooden_shovel:3</td><td>blackthorn[age=3]</td><td>黑荆棘作物</td></tr>
@@ -181,8 +176,7 @@ This project is licensed under the terms of the GNU General Public License v3.0.
 <tr><td>wooden_shovel:17</td><td>forage_crystal[age=3]</td><td>牧晶花作物</td></tr>
 <tr><td>wooden_shovel:18</td><td>isorchid[age=3]</td><td>异绒兰作物</td></tr>
 <tr><td>wooden_shovel:19</td><td>burning_chrysanthe[age=3]</td><td>焰光菊作物</td></tr>
-<tr><td>wooden_shovel:20</td><td>oxalis[age=0]</td><td>酢浆草作物</td></tr>
-
+<tr><td>wooden_shovel:20</td><td>oxalis[age=3]</td><td>酢浆草作物</td></tr>
 <tr><td>mutton</td><td>donkey</td><td>驴肉</td></tr>
 <tr><td>cooked_mutton</td><td>cooked_donkey</td><td>熟驴肉</td></tr>
 <tr><td>mutton</td><td>mule</td><td>骡肉</td></tr>
@@ -228,7 +222,6 @@ This project is licensed under the terms of the GNU General Public License v3.0.
 <tr><td>rabbit_stew</td><td>fish_and_chips</td><td>炸鱼薯条</td></tr>
 <tr><td>chest</td><td>santa_gift</td><td>圣诞礼物</td></tr>
 <tr><td>dispenser</td><td>block_breaker</td><td>方块破坏器</td></tr>
-
 <tr><td>flint</td><td>iron_shard</td><td>铁碎片</td></tr>
 <tr><td>flint</td><td>gold_shard</td><td>金碎片</td></tr>
 <tr><td>flint</td><td>coal_shard</td><td>煤碎片</td></tr>
@@ -236,28 +229,26 @@ This project is licensed under the terms of the GNU General Public License v3.0.
 <tr><td>beetroot_seeds</td><td>lapis_shard</td><td>青金石碎片</td></tr>
 <tr><td>wheat_seeds</td><td>diamond_shard</td><td>钻石碎片</td></tr>
 <tr><td>wheat_seeds</td><td>emerald_shard</td><td>绿宝石碎片</td></tr>
-
-<tr><td>wheat</td><td>lycoris_radiata_seeds</td><td>彼岸花种子</td></tr>
-<tr><td>wheat</td><td>trifolium_seeds</td><td>白车轴种子</td></tr>
-<tr><td>wheat</td><td>blackthorn_seeds</td><td>黑荆棘种子</td></tr>
-<tr><td>wheat</td><td>cattail_seeds</td><td>香蒲草种子</td></tr>
-<tr><td>wheat</td><td>marigold_seeds</td><td>金盏花种子</td></tr>
-<tr><td>wheat</td><td>hibiscus_seeds</td><td>木槿花种子</td></tr>
-<tr><td>wheat</td><td>hyacinth_seeds</td><td>风信子种子</td></tr>
-<tr><td>wheat</td><td>calamus_seeds</td><td>菖蒲草种子</td></tr>
-<tr><td>wheat</td><td>wild_lilium_seeds</td><td>滇百合种子</td></tr>
-<tr><td>wheat</td><td>bauhinia_seeds</td><td>紫荆花种子</td></tr>
-<tr><td>wheat</td><td>fluffy_grass_seeds</td><td>蓬蓬草种子</td></tr>
-<tr><td>wheat</td><td>gerbera_seeds</td><td>大丁草种子</td></tr>
-<tr><td>wheat</td><td>esparto_seeds</td><td>芦苇草种子</td></tr>
-<tr><td>wheat</td><td>glow_forsythia_seeds</td><td>亮连翘种子</td></tr>
-<tr><td>wheat</td><td>glazed_shade_seeds</td><td>碎璃草种子</td></tr>
-<tr><td>wheat</td><td>stelera_seeds</td><td>狼毒花种子</td></tr>
-<tr><td>wheat</td><td>forage_crystal_seeds</td><td>牧晶花种子</td></tr>
-<tr><td>wheat</td><td>isorchid_seeds</td><td>异绒兰种子</td></tr>
-<tr><td>wheat</td><td>burning_chrysanthe_seeds</td><td>焰光菊种子</td></tr>
-<tr><td>wheat</td><td>oxalis_seeds</td><td>酢浆草种子</td></tr>
-
+<tr><td>wheat_seeds</td><td>lycoris_radiata_seeds</td><td>彼岸花种子</td></tr>
+<tr><td>wheat_seeds</td><td>trifolium_seeds</td><td>白车轴种子</td></tr>
+<tr><td>wheat_seeds</td><td>blackthorn_seeds</td><td>黑荆棘种子</td></tr>
+<tr><td>wheat_seeds</td><td>cattail_seeds</td><td>香蒲草种子</td></tr>
+<tr><td>wheat_seeds</td><td>marigold_seeds</td><td>金盏花种子</td></tr>
+<tr><td>wheat_seeds</td><td>hibiscus_seeds</td><td>木槿花种子</td></tr>
+<tr><td>wheat_seeds</td><td>hyacinth_seeds</td><td>风信子种子</td></tr>
+<tr><td>wheat_seeds</td><td>calamus_seeds</td><td>菖蒲草种子</td></tr>
+<tr><td>wheat_seeds</td><td>wild_lilium_seeds</td><td>滇百合种子</td></tr>
+<tr><td>wheat_seeds</td><td>bauhinia_seeds</td><td>紫荆花种子</td></tr>
+<tr><td>wheat_seeds</td><td>fluffy_grass_seeds</td><td>蓬蓬草种子</td></tr>
+<tr><td>wheat_seeds</td><td>gerbera_seeds</td><td>大丁草种子</td></tr>
+<tr><td>wheat_seeds</td><td>esparto_seeds</td><td>芦苇草种子</td></tr>
+<tr><td>wheat_seeds</td><td>glow_forsythia_seeds</td><td>亮连翘种子</td></tr>
+<tr><td>wheat_seeds</td><td>glazed_shade_seeds</td><td>碎璃草种子</td></tr>
+<tr><td>wheat_seeds</td><td>stelera_seeds</td><td>狼毒花种子</td></tr>
+<tr><td>wheat_seeds</td><td>forage_crystal_seeds</td><td>牧晶花种子</td></tr>
+<tr><td>wheat_seeds</td><td>isorchid_seeds</td><td>异绒兰种子</td></tr>
+<tr><td>wheat_seeds</td><td>burning_chrysanthe_seeds</td><td>焰光菊种子</td></tr>
+<tr><td>wheat_seeds</td><td>oxalis_seeds</td><td>酢浆草种子</td></tr>
 <tr><td>oak_sapling</td><td>fruit_sapling</td><td>水果树</td></tr>
 <tr><td>spruce_sapling</td><td>ore_sapling</td><td>矿石树</td></tr>
 <tr><td>birch_sapling</td><td>wool_sapling</td><td>羊毛树</td></tr>
@@ -281,7 +272,6 @@ This project is licensed under the terms of the GNU General Public License v3.0.
 <tr><td>player_head</td><td>apple</td><td>苹果</td></tr>
 <tr><td>player_head</td><td>olive</td><td>橄榄</td></tr>
 <tr><td>player_head</td><td>mango</td><td>芒果</td></tr>
-
 <tr><td>potion{CustomPotionColor:14803425}</td><td>iron_dust</td><td>铁粉</td></tr>
 <tr><td>potion{CustomPotionColor:15790146}</td><td>gold_dust</td><td>金粉</td></tr>
 <tr><td>potion{CustomPotionColor:460551}</td><td>carbon_dust</td><td>碳粉</td></tr>
@@ -305,7 +295,6 @@ This project is licensed under the terms of the GNU General Public License v3.0.
 <tr><td>potion{CustomPotionColor:8809335}</td><td>potion_of_reckless</td><td>鲁莽药水</td></tr>
 <tr><td>splash_potion{CustomPotionColor:8809335}</td><td>splash_potion_of_reckless</td><td>喷溅型鲁莽药水</td></tr>
 <tr><td>lingering_potion{CustomPotionColor:8809335}</td><td>lingering_potion_of_reckless</td><td>滞留型鲁莽药水</td></tr>
-
 <tr><td>leather_helmet{color:16776960}</td><td>glow_hat</td><td>荧光帽</td></tr>
 <tr><td>leather_helmet{color:2545212}</td><td>green_hat</td><td>原谅帽</td></tr>
 <tr><td>leather_helmet{color:460551}</td><td>black_hat</td><td>非酋帽</td></tr>

@@ -365,8 +365,8 @@ function change(str){
 <h3 id="download">下载与安装</h3>
 <table><thead><tr><th>支持的minecraft版本</th><th>模组版本及下载链接</th><th>简介</th></tr></thead>
 <tbody>
-<tr><td>Minecraft Java版 18w16a</td><td>
-<a href="https://github.com/ruhuasiyu/CraftingPlusPlus/blob/master/versions/1.8">craftingpp-1.8 m05d29(预览版)</a></td><td><a href="">网站链接</a></td></tr>
+<tr><td>Minecraft Java版 1.13 pre-1</td><td>
+<a href="https://github.com/ruhuasiyu/CraftingPlusPlus/blob/master/versions/1.8">craftingpp-1.8 m06d06(预览版)</a></td><td><a href="">网站链接</a></td></tr>
 <tr><td>Minecraft Java版 1.12</td><td>
 <a href="http://www.mcbbs.net/forum.php?mod=attachment&aid=MTA4NDIzM3xhYjM4MDU1NnwxNTExNjI3NjYwfDk3NTUyNXw2OTY4NjE%3D">craftingpp-1.7.4</a></td><td><a href="http://www.mcbbs.net/forum.php?mod=viewthread&tid=696861&cp=2">网站链接</a></td></tr>
 <tr><td>Minecraft Java版 1.12 pre</td><td>
@@ -1584,22 +1584,18 @@ function change(str){
 <code>数据包 cpp_plants</code>
 <h3>作物与杂交</h3>
 <p>
-新增20种作物，需种植在耕地上，成熟后收割可获得相应作物。作物不受时运影响，且不可用骨粉催熟。当作物与相邻的作物可杂交时，有5%的几率会产生新品种的种子，其中小麦/甜菜根/马铃薯/胡萝卜在收割时决定，其它作物则在生长成熟时直接变异。</p>
+新增20种作物，需种植在耕地上，成熟后收割可获得相应作物。作物不受时运影响，且不可用骨粉催熟。前5种作物在收割小麦等作物时有几率获得，后面15种需杂交获得。当作物与相邻的作物可杂交时，有5%的几率会产生新品种。</p>
 
-<table><thead><tr><th>种子</th><th>杂交来源</th><th>作物</th></tr></thead><tbody>
-<tr><td><strong>彼岸花种子 (Lycoris Radiata Seeds)</strong></td><td>小麦种子+甜菜根种子</td><td>玫瑰红</td></tr>
-<tr><td rowspan="2"><strong>白车轴种子 (Trifolium Seeds)</strong></td><td>小麦种子+马铃薯种子</td><td rowspan="2">骨粉</td></tr>
-<tr><td>小麦种子+胡萝卜种子</td></tr>
-<tr><td><strong>黑荆棘种子 (Blackthorn Seeds)</strong></td><td>甜菜根种子+胡萝卜种子</td><td>墨囊</td></tr>
-<tr><td rowspan="2"><strong>香蒲草种子 (Cattail Seeds)</strong></td><td>甜菜根种子+马铃薯种子</td><td rowspan="2">蒲公英黄</td></tr>
-<tr><td>小麦种子+金盏花种子</td></tr>
-<tr><td rowspan="2"><strong>金盏花种子 (Marigold Seeds)</strong></td><td>马铃薯种子+彼岸花种子</td><td rowspan="2">橙色染料</td></tr>
-<tr><td>甜菜根种子+香蒲草种子</td></tr>
-<tr><td><strong>木槿花种子 (Hibiscus Seeds)</strong></td><td>小麦种子+彼岸花种子</td><td>粉红色染料</td></tr>
-<tr><td><strong>风信子种子 (Hyacinth Seeds)</strong></td><td>小麦种子+黑荆棘种子</td><td>青金石</td></tr>
-<tr><td rowspan="2"><strong>菖蒲草种子 (Calamus Seeds)</strong></td><td>甜菜根种子+风信子种子</td><td rowspan="2">紫色染料</td></tr>
-<tr><td>彼岸花种子+风信子种子</td></tr>
-<tr><td><strong>滇百合种子 (Wild Lilium Seeds)</strong></td><td>小麦种子+香蒲草种子</td><td>黄绿色染料</td></tr>
+<table><thead><tr><th>种子</th><th>收割/杂交来源</th><th>作物</th></tr></thead><tbody>
+<tr><td><strong>彼岸花种子 (Lycoris Radiata Seeds)</strong></td><td>小麦种子、甜菜根种子</td><td>玫瑰红</td></tr>
+<tr><td><strong>白车轴种子 (Trifolium Seeds)</strong></td><td>小麦种子、马铃薯种子</td><td>骨粉</td></tr>
+<tr><td><strong>黑荆棘种子 (Blackthorn Seeds)</strong></td><td>甜菜根种子、胡萝卜种子</td><td>墨囊</td></tr>
+<tr><td><strong>香蒲草种子 (Cattail Seeds)</strong></td><td>甜菜根种子、马铃薯种子</td><td>蒲公英黄</td></tr>
+<tr><td><strong>金盏花种子 (Marigold Seeds)</strong></td><td>胡萝卜种子、马铃薯种子</td><td>橙色染料</td></tr>
+<tr><td><strong>木槿花种子 (Hibiscus Seeds)</strong></td><td>小麦种子、胡萝卜种子</td><td>粉红色染料</td></tr>
+<tr><td><strong>风信子种子 (Hyacinth Seeds)</strong></td><td>彼岸花种子+黑荆棘种子</td><td>青金石</td></tr>
+<tr><td><strong>菖蒲草种子 (Calamus Seeds)</strong></td><td>彼岸花种子+风信子种子</td><td>紫色染料</td></tr>
+<tr><td><strong>滇百合种子 (Wild Lilium Seeds)</strong></td><td>香蒲草种子+金盏花种子</td><td>黄绿色染料</td></tr>
 <tr><td><strong>紫荆花种子 (Bauhinia Seeds)</strong></td><td>木槿花种子+菖蒲草种子</td><td>品红色染料</td></tr>
 <tr><td><strong>蓬蓬草种子 (Fluffy Grass Seeds)</strong></td><td>白车轴种子+香蒲草种子</td><td>羽毛</td></tr>
 <tr><td><strong>大丁草种子 (Gerbera Seeds)</strong></td><td>黑荆棘种子+香蒲草种子</td><td>火药</td></tr>
@@ -2361,6 +2357,7 @@ function change(str){
 <!--<td class="original_paintings"><img src="items/paintings/10102-10107.jpg" /></td>-->
 </tr>
 </tbody></table>
+<p><img style="width:90%" src="items/screenshots/5.6.png" /></p>
 
 </article>
 
@@ -3345,8 +3342,8 @@ function change(str){
 <!--1.8-->
 
 <tr class="v1-8">
-	<th rowspan="103">1.8<br/><span class="lore">元素更新</span></th>
-	<th rowspan="103">2018年5月20日<br/><span class='lore'>1.33 MB</span></th>
+	<th rowspan="104">1.8<br/><span class="lore">元素更新</span></th>
+	<th rowspan="104">2018年5月20日<br/><span class='lore'>1109 KB</span></th>
 	<td>游戏本体版本升级为1.13，不再支持1.13之前的版本。</td></tr>
 <tr class="v1-8"><td>修改资源包文字的代码名称、记分板、标签前缀为cpp，修改资源包以适应1.13，添加材质。</td></tr>
 <tr class="v1-8"><td>移除闪烁标语。</td></tr>
@@ -3426,6 +3423,7 @@ function change(str){
 <tr class="v1-8"><td>新增扫帚，在副手时提供漂浮效果。</td></tr>
 <tr class="v1-8"><td>移除佩戴头饰所需的南瓜。</td></tr>
 <tr class="v1-8"><td>新增头饰海草、珊瑚。</td></tr>
+<tr class="v1-8"><td>修改画作实现方式。</td></tr>
 
 <tr class="v1-8"><td>当发射器发射的物品可以种植在前方位置时，会自动种植。</td></tr>
 <tr class="v1-8"><td>可使用炼药锅漂白玻璃和陶土。</td></tr>
