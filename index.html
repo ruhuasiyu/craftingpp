@@ -1524,13 +1524,13 @@ function change(str){
 <span class="bucket" title="桶">
 </td><td>耗时10秒</td></tr>
 
-<tr><th><strong id="mystery_blaze_powder">神秘烈焰粉</strong></th><td><a onclick="change('entities')" href="#nova_of_fire">火焰之星</a><td>
+<tr><th><strong id="mystery_blaze_powder">神秘烈焰粉 (Mystery Blaze Powder)</strong></th><td><a onclick="change('entities')" href="#nova_of_fire">火焰之星</a><td>
 <span class="mcui"><span><span class="mcui-row"><span class="colorful_items nova_of_fire" title="火焰之星">
 </span></span><span class="mcui-row"><span style="width:32px;height:32px;background-image:url(items/smelting.png);border-style:none;background-color:#c6c6c6;"></span></span><span class="mcui-row"><span class="coal" title="燃料"></span></span></span><span class="mcui-arrow"></span><span class="mcui-output">
 <span class="blaze_powder" title="神秘烈焰粉"><span class="enchant">*</span>
 </td><td>耗时10秒</td></tr>
 
-<tr><th><strong id="mystery_rabbit_foot">神秘兔子腿</strong></th><td><a onclick="change('entities')" href="#limb_of_ridge">山脉之肢</a><td>
+<tr><th><strong id="mystery_rabbit_foot">神秘兔子腿 (Mystery Rabbit Foot)</strong></th><td><a onclick="change('entities')" href="#limb_of_ridge">山脉之肢</a><td>
 <span class="mcui"><span><span class="mcui-row"><span class="colorful_items limb_of_ridge" title="山脉之肢">
 </span></span><span class="mcui-row"><span style="width:32px;height:32px;background-image:url(items/smelting.png);border-style:none;background-color:#c6c6c6;"></span></span><span class="mcui-row"><span class="coal" title="燃料"></span></span></span><span class="mcui-arrow"></span><span class="mcui-output">
 <span class="rabbit_foot" title="神秘兔子腿"><span class="enchant">*</span>
@@ -1584,10 +1584,10 @@ function change(str){
 <code>数据包 cpp_plants</code>
 <h3>作物与杂交</h3>
 <p>
-新增20种作物，需种植在耕地上，成熟后收割可获得相应作物。作物不受时运影响，且不可用骨粉催熟。前5种作物在收割小麦等作物时有几率获得，后面15种需杂交获得。当作物与相邻的作物可杂交时，有5%的几率会产生新品种。</p>
+新增20种作物，需种植在耕地上，成熟后收割可获得相应作物。作物不受时运影响，且不可用骨粉催熟。前5种作物在收割小麦等作物时各有2%几率获得，后面15种需杂交获得。当作物与相邻的作物可杂交时，有5%的几率会产生新品种。</p>
 
-<table><thead><tr><th>种子</th><th>收割/杂交来源</th><th>作物</th></tr></thead><tbody>
-<tr><td><strong>彼岸花种子 (Lycoris Radiata Seeds)</strong></td><td>小麦种子、甜菜根种子</td><td>玫瑰红</td></tr>
+<table><thead><tr><th>种子</th><th>收割/杂交来源</th><th colspan="2">作物</th></tr></thead><tbody>
+<tr><td><strong>彼岸花种子 (Lycoris Radiata Seeds)</strong></td><td>小麦种子、甜菜根种子</td><td>玫瑰红</td><td rowspan="10">0~3种子</td></tr>
 <tr><td><strong>白车轴种子 (Trifolium Seeds)</strong></td><td>小麦种子、马铃薯种子</td><td>骨粉</td></tr>
 <tr><td><strong>黑荆棘种子 (Blackthorn Seeds)</strong></td><td>甜菜根种子、胡萝卜种子</td><td>墨囊</td></tr>
 <tr><td><strong>香蒲草种子 (Cattail Seeds)</strong></td><td>甜菜根种子、马铃薯种子</td><td>蒲公英黄</td></tr>
@@ -1597,7 +1597,7 @@ function change(str){
 <tr><td><strong>菖蒲草种子 (Calamus Seeds)</strong></td><td>彼岸花种子+风信子种子</td><td>紫色染料</td></tr>
 <tr><td><strong>滇百合种子 (Wild Lilium Seeds)</strong></td><td>香蒲草种子+金盏花种子</td><td>黄绿色染料</td></tr>
 <tr><td><strong>紫荆花种子 (Bauhinia Seeds)</strong></td><td>木槿花种子+菖蒲草种子</td><td>品红色染料</td></tr>
-<tr><td><strong>蓬蓬草种子 (Fluffy Grass Seeds)</strong></td><td>白车轴种子+香蒲草种子</td><td>羽毛</td></tr>
+<tr><td><strong>蓬蓬草种子 (Fluffy Grass Seeds)</strong></td><td>白车轴种子+香蒲草种子</td><td>羽毛</td><td rowspan="10">0~2种子</td></tr>
 <tr><td><strong>大丁草种子 (Gerbera Seeds)</strong></td><td>黑荆棘种子+香蒲草种子</td><td>火药</td></tr>
 <tr><td><strong>芦苇草种子 (Esparto Seeds)</strong></td><td>白车轴种子+风信子种子</td><td>线</td></tr>
 <tr><td><strong>亮连翘种子 (Glow Forsythia Seeds)</strong></td><td>香蒲草种子+风信子种子</td><td>荧石粉</td></tr>
@@ -1822,9 +1822,9 @@ function change(str){
 </ul></p>
 <p>对于盔甲，每种效果几率为1/3。如果仪式使用的是星之魔杖，则有1/6×3的几率附加一种效果，有1/6×3的几率附加两种效果。</p>
 <p>对于工具，每种效果几率为1/2。如果仪式使用的是星之魔杖，则有1/3×2的几率附加一种效果，有1/3的几率附加两种效果。</p>
-<p>盔甲效果在对应槽位生效，剑和工具在主手生效，漂浮在副手生效，同时玩家背包需有烈焰粉。海洋之力/水下呼吸仅在水中生效，缓落仅在空中生效，饱和仅在饥饿时生效，生命恢复仅当生命值低于20时生效。可通过<code>/trigger cppMaxHealth set 数值</code>来改变阈值，建议设置为最大生命值。</p>
+<p>盔甲效果在对应槽位生效，剑和工具在主手生效，同时玩家背包需有烈焰粉。海洋之力/水下呼吸仅在水中生效，缓落仅在空中生效，饱和仅在饥饿时生效，生命恢复仅当生命值低于20时生效。可通过<code>/trigger cppMaxHealth set 数值</code>来改变阈值，建议设置为最大生命值。</p>
 <p>多个生命恢复/抗性/幸运效果可提升效果等级。</p>
-<p>生命恢复(2.5秒)每恢复1点生命值、饱和每恢复1点饥饿值、潮涌能量/抗性II每3秒、其余效果每6秒，消耗1点经验值，并有1/60几率消耗烈焰粉。连锁无消耗。</p>
+<p>生命恢复(2.5秒)每恢复1点生命值、饱和每恢复1点饥饿值、潮涌能量/抗性II每3秒、其余效果每6秒，消耗1点经验值，每隔6秒有1/64几率消耗烈焰粉。连锁无消耗。</p>
 <p>使用<a href="#temperancer">节制器</a>可开启/关闭所有效果。</p>
 <p>连锁钻石斧可一次性破坏相连的树、瓜、成熟的农作物，连锁钻石镐可一次性破坏相连的矿石和黑曜石，连锁钻石锹可一次性8米内破坏相连的沙砾、粘土、沙子和灵魂沙。该效果不受精准采集和时运影响。</p>
 <p>效果可重新附加，之前的效果将会被覆盖。与属性附加、附魔独立。</p>
