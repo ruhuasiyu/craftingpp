@@ -1,3 +1,300 @@
+@font-face{
+	font-family:Minecraft;
+	src:url("items/minecraft.eot"),url("items/minecraft.woff") format("woff");
+}
+.mcui{
+	display:inline-block;
+	position:relative;
+	background-color:#C6C6C6;
+	border:2px solid;
+	border-color:#DBDBDB #5B5B5B #5B5B5B #DBDBDB;
+	padding:6px;
+	text-align:left;
+	white-space:nowrap;
+	vertical-align:bottom;
+}
+.mcui > *{
+	display:inline-block;
+	vertical-align:top;
+}
+.mcui_row{
+	display:block;
+	height:36px;
+}
+.mcui_row>span{
+	position:relative;
+	display:inline-block;
+	background-color:#8B8B8B;
+	border:2px solid;
+	width:32px;
+	height:32px;
+	font-size:16px;
+	line-height:1;
+	text-align:left;
+}
+.mcui_arrow{
+	background:url("Arrow.png") no-repeat;
+	width:32px;
+	height:26px;
+	margin:40px 4px 0;
+}
+.mcui_output{
+	position:relative;
+	background-color:#8B8B8B;
+	border:2px solid;
+	width:32px;
+	height:32px;
+	padding:8px;
+}
+.mcui_row>span, .mcui_output{
+	border-color:#373737 #FFF #FFF #373737;
+}
+.mcui_output{
+	margin-top:28px;
+}
+.mcui_output>span{
+	position:relative;
+	display:inline-block;
+	width:32px;
+	height:32px;
+	font-size:16px;
+	line-height:1;
+	vertical-align:bottom;
+}
+.mcui_row>span, .mcui_output>span, #advancements td>span>span{
+	background-image:url("InvSprite.png");
+	background-repeat:no-repeat;
+}
+.mcui_icons{
+	position: absolute;
+	top:6px; right:6px;
+}
+.mcui_icons2{
+	position: absolute;
+	bottom:6px; right:6px;
+}
+.mcui_shapeless{
+	display:block;
+	width:19px;
+	height:15px;
+	background-image:url("Grid_layout_Shapeless.png");
+}
+.mcui_crafting_machine{
+	display:block;
+	background-image:url(crafting_machine.png);
+	background-size: 24px 24px;
+	width:24px;
+	height:24px;
+}
+.stacksize, .enchant{
+	position:absolute;
+	color:#FFF !important;
+	text-shadow:2px 2px 0 #3F3F3F;
+	filter: DropShadow (color="#3F3F3F",offx="2",offy="2");
+	-webkit-filter: DropShadow (color="#3F3F3F",offx="2",offy="2");
+	z-index:2;
+}
+.stacksize{
+	font-family:Minecraft, sans-serif !important;
+	right:0;
+	bottom:0;
+}
+.enchant{
+	font-size:150%;
+	font-family:sans-serif;
+	left:0;
+	top:0;
+}
+.require{
+	position: absolute;
+	top:6px; right:6px;
+	color: red;
+	line-height:2px;
+	text-align:right;
+	width:24px;
+	height:24px;
+	background-size: 768px 1272px;
+}
+span.colorful_items{
+	background-image: url(colorful_items.png);
+	background-size: 288px 384px;
+}
+span.magma_block{
+	background-image: url(magma_block.gif);
+}
+span.prismarine{
+	background-image: url(prismarine.gif);
+}
+span.xp_orb{
+	background-image: url(xp_orb.gif);
+	background-size: 32px 32px;
+}
+span.fire{
+	background-image: url("fire.gif");
+	background-size: 32px 32px;
+}
+
+table.full-width{
+	width:100%;
+}
+.thead, thead th{
+	background: #505050;
+	color: white;
+}
+table th, table td{
+	border:1px solid #aaa;
+	padding:0.2em 0.4em;
+	vertical-align:middle;
+}
+td.original_paintings{
+	text-align:center;
+}
+td.original_paintings img{
+	height:128px;
+}	
+#advancements tbody td:first-child{
+	display:inline-block;
+	position:relative;
+	padding:6px;
+	white-space:nowrap;
+	vertical-align:bottom;
+}
+#advancements td>span{
+	position:absolute;
+	left:15px;
+	top:15px;
+	line-height:0;
+}
+#advancements td>span>span{
+	display:inline-block;
+	vertical-align:text-top;
+	width:32px;
+	height:32px;
+	background-repeat:no-repeat;
+}
+table{
+	margin: 20px 0px;
+	background-color:#fff;
+	border-collapse:collapse;
+}
+html{
+	font-family:"Liberation Sans",Arial,Helvetica,FreeSans,sans-serif;
+}
+body{
+	width:80%;
+	background-color:#ddd;
+	margin:0 auto;
+	font-family: Tahoma, "Microsoft Yahei", Simsun;
+}
+nav{
+	position:fixed;
+	top:0;
+	background-color: #ccccff;
+	margin: 0 auto;
+	z-index:5;
+}
+nav ul{
+	width:100%;
+	margin:0px auto 0px;
+	text-align:center;
+	list-style-type:none;
+	padding:0;
+}
+nav li{
+	display: inline-block;
+	vertical-align: middle;
+	border-bottom-color:red;
+	border-bottom-width:2px;
+}
+nav li{
+	border-bottom-style:none;
+	color:red;
+}
+nav a{
+	cursor:pointer;
+	padding: 6px 2px 6px;
+	display: block;
+}
+article{
+	padding:0.5em 2em 1em;
+	background-color:#eee;
+}
+footer{
+	margin:20px auto;
+}
+footer p{
+	text-align:center;
+	font-size:85%;
+}
+h1{
+	text-align:center;
+	color:gold;
+}
+h2{
+	color:blue;
+	border-bottom:solid 1px grey;
+	padding:0 0 5px;
+	text-align:center;
+}
+h3{
+	color:blue;
+	font-size: 120%;
+}
+h4{
+	font-size: 110%;
+	margin-bottom: 0;
+	display: inline;
+}
+p{
+	margin-top:0;
+}
+code{
+	font-size:100%;
+	background-color:white;
+	font-family: Courier New, 楷体;
+}
+a{
+	color: hsl(126,90%,19%);
+	text-decoration:none;
+	font-weight:bold;
+}
+a:hover{
+	color:#d25349;
+}
+blockquote{
+	font-family:KaiTi;
+}
+li{
+	margin: 5px 0;
+}
+strong{
+	color:blue;
+}
+abbr{
+	cursor:help;
+}
+.center{
+	text-align:center;
+}
+.center img{
+	height:210px;
+}
+.lore{
+	color:purple;
+}
+.left{
+	text-align:left;
+}
+.v1-0{background:hsl(0,100%,70%);}
+.v1-1{background:hsl(30,100%,70%);}
+.v1-2{background:hsl(60,100%,70%);}
+.v1-3{background:hsl(90,100%,70%);}
+.v1-4{background:hsl(120,100%,70%);}
+.v1-5{background:hsl(150,100%,70%);}
+.v1-6{background:hsl(180,100%,70%);}
+.v1-7{background:hsl(200,100%,70%);}
+.v1-8{background:hsl(300,100%,70%);}
+
 span.chainmail_boots{	background-position: -32px -0px;}
 span.chainmail_chestplate{	background-position: -64px -0px;}
 span.chainmail_helmet{	background-position: -96px -0px;}
@@ -48,7 +345,7 @@ span.blaze_rod{	background-position: -448px -640px;}
 span.carrot{	background-position: -480px -640px;}
 span.fermented_spider_eye{	background-position: -512px -640px;}
 span.ghast_tear{	background-position: -544px -640px;}
-span.speckled_melon{	background-position: -576px -640px;}
+span.glistering_melon_slice{	background-position: -576px -640px;}
 span.gold_nugget{	background-position: -608px -640px;}
 span.golden_carrot{	background-position: -640px -640px;}
 span.magma_cream{	background-position: -672px -640px;}
@@ -271,9 +568,15 @@ span.white_tulip{	background-position: -576px -1056px;}
 span.beetroot{	background-position: -608px -1056px;}
 span.beetroot_seeds{	background-position: -640px -1056px;}
 span.water_bottle{	background-position: -832px -1056px;}
-span.potion_fire_resistence{	background-position: -896px -1056px;}
-span.potion_healing{	background-position: -960px -1056px;}
+span.potion_of_fire_resistance{	background-position: -896px -1056px;}
+span.potion_of_healing{	background-position: -960px -1056px;}
+span.potion_of_invisibility{	background-position: -992px -1056px;}
 
+span.potion_of_leaping{	background-position: -0px -1088px;}
+span.potion_of_night_vision{	background-position: -32px -1088px;}
+span.potion_of_regeneration{	background-position: -96px -1088px;}
+span.potion_of_strength{	background-position: -160px -1088px;}
+span.potion_of_swiftness{	background-position: -192px -1088px;}
 
 span.experience_bottle{	background-position: -320px -1088px;}
 span.bone{	background-position: -800px -1088px;}
@@ -406,6 +709,7 @@ span.snowball{	background-position: -288px -1280px;}
 span.stone_sword{	background-position: -352px -1280px;}
 span.wooden_sword{	background-position: -384px -1280px;}
 
+span.potion_of_water_breathing{	background-position: -64px -1344px;}
 span.elytra{	background-position: -384px -1344px;}
 span.nether_wart_block{	background-position: -672px -1344px;}
 span.bone_block{	background-position: -736px -1344px;}
@@ -421,6 +725,9 @@ span.llama_spawn_egg{	background-position: -96px -1408px;}
 span.vindication_illager_spawn_egg{	background-position: -160px -1408px;}
 span.totem_of_undying{	background-position: -192px -1408px;}
 span.iron_nugget{	background-position: -896px -1408px;}
+
+span.blaze_head{	background-position: -64px -1440px;}
+span.enderman_head{	background-position: -352px -1440px;}
 
 span.black_concrete{	background-position: -64px -1472px;}
 span.black_concrete_powder{	background-position: -96px -1472px;}
@@ -458,7 +765,7 @@ span.turtle_helmet{	background-position:-512px -1664px;}
 span.dried_kelp{	background-position:-544px -1664px;}
 span.kelp_top{	background-position:-576px -1664px;}
 span.scute{	background-position:-608px -1664px;}
-span.clownfish_bucket{	background-position:-640px -1664px;}
+span.tropical_fish_bucket{	background-position:-640px -1664px;}
 span.cod_bucket{	background-position:-672px -1664px;}
 span.pufferfish_bucket{	background-position:-704px -1664px;}
 span.salmon_bucket{	background-position:-736px -1664px;}
@@ -473,7 +780,8 @@ span.tube_coral{	background-position:-448px -1696px;}
 span.trident{	background-position:-608px -1696px;}
 span.brain_coral_fan{	background-position:-832px -1696px;}
 
-span.empty{	background-position: -992px -1728px;}
+span.potion_of_slow_falling{	background-position: -64px -1728px;}
+span.empty{	background-position: -992px -2336px;}
 
 span.turtle_spawn_egg{background-image:url("https://d1u5p3l4wpay3k.cloudfront.net/minecraft_zh_gamepedia/9/92/Grid_Spawn_Turtle.png");}
 
@@ -485,151 +793,125 @@ span.potato_plant{	background-position: -384px -384px;}
 span.carrot_plant{	background-position: -352px -384px;}
 
 
-span.blue_force_of_sky{	background-position: -0px -0px;}
-span.green_force_of_water{	background-position: -32px -0px;}
-span.cyan_force_of_mountain{	background-position: -64px -0px;}
-span.orange_force_of_dirt{	background-position: -96px -0px;}
-span.yellow_force_of_earth{	background-position: -128px -0px;}
-span.red_force_of_fire{	background-position: -160px -0px;}
-span.purple_force_of_life{	background-position: -192px -0px;}
-span.white_force_of_lightning{	background-position: -224px -0px;}
-span.black_force_of_moon{	background-position: -256px -0px;}
+span.wing_of_sky{	background-position: -0px -0px;}
+span.heart_of_ocean{	background-position: -32px -0px;}
+span.limb_of_ridge{	background-position: -64px -0px;}
+span.soul_of_dirt{	background-position: -96px -0px;}
+span.certification_of_earth{	background-position: -128px -0px;}
+span.nova_of_fire{	background-position: -160px -0px;}
+span.spirit_of_life{	background-position: -192px -0px;}
+span.shard_of_the_darkness{	background-position: -224px -0px;}
+span.broken_spawner{	background-position: -256px -0px;}
 
-span.iron_dust{	background-position: -0px -32px;}
-span.gold_dust{	background-position: -32px -32px;}
-span.carbon_dust{	background-position: -64px -32px;}
-span.quartz_dust{	background-position: -96px -32px;}
-span.diamond_dust{	background-position: -128px -32px;}
-span.emerald_dust{	background-position: -160px -32px;}
-span.lapis_dust{	background-position: -192px -32px;}
-span.bottle_of_salt{	background-position: -224px -32px;}
-span.steel_dust{	background-position: -256px -32px;}
+span.blue_force_of_sky{	background-position: -0px -32px;}
+span.green_force_of_water{	background-position: -32px -32px;}
+span.cyan_force_of_mountain{	background-position: -64px -32px;}
+span.orange_force_of_dirt{	background-position: -96px -32px;}
+span.yellow_force_of_earth{	background-position: -128px -32px;}
+span.red_force_of_fire{	background-position: -160px -32px;}
+span.purple_force_of_life{	background-position: -192px -32px;}
+span.white_force_of_lightning{	background-position: -224px -32px;}
+span.black_force_of_moon{	background-position: -256px -32px;}
 
-span.bionic_acid{	background-position: -0px -32px;}
-span.alkaloid{	background-position: -32px -32px;}
-span.rare_earth_salt{	background-position: -64px -32px;}
-span.rare_earth_dust{	background-position: -96px -32px;}
-span.alkaloid_rare_earth{	background-position: -128px -32px;}
-span.bottle_of_air{	background-position: -160px -64px;}
-span.course_silicon{	background-position: -192px -64px;}
-span.silicon_dust{	background-position: -224px -64px;}
-span.elder_s_words{	background-position: -256px -64px;}
+span.crafting_machine{	background-position: -0px -64px;}
+span.all_in_one_machine{	background-position: -32px -64px;}
+span.recipe_shower{	background-position: -64px -64px;}
+span.trade_machine{	background-position: -96px -64px;}
+span.empty_plugin{	background-position: -128px -64px;}
+span.low_pressure_plugin{	background-position: -160px -64px;}
+span.high_pressure_plugin{	background-position: -192px -64px;}
+span.low_temperature_plugin{	background-position: -224px -64px;}
+span.high_temperature_plugin{	background-position: -256px -64px;}
 
-span.sakura_wand{	background-position: -0px -96px;}
-span.magicka_wand{	background-position: -32px -96px;}
-span.compressor{	background-position: -64px -96px;}
-span.origin_of_the_world{	background-position: -96px -96px;}
-span.magnet{	background-position: -128px -96px;}
-span.time_conditioner{	background-position: -160px -96px;}
-span.time_checker{	background-position: -192px -96px;}
-span.farm_core{	background-position: -224px -96px;}
-span.wart_core{	background-position: -256px -96px;}
+span.cobblestone_plugin{	background-position: -0px -96px;}
+span.stone_plugin{	background-position: -32px -96px;}
+span.obsidian_plugin{	background-position: -64px -96px;}
+span.iron_dust{	background-position: -96px -96px;}
+span.gold_dust{	background-position: -128px -96px;}
+span.carbon_dust{	background-position: -160px -96px;}
+span.emerald_dust{	background-position: -192px -96px;}
+span.diamond_dust{	background-position: -224px -96px;}
+span.quartz_dust{	background-position: -256px -96px;}
 
-span.forestry_core{	background-position: -0px -128px;}
-span.ranch_core{	background-position: -32px -128px;}
-span.fishery_core{	background-position: -64px -128px;}
-span.hunting_core{	background-position: -96px -128px;}
-span.break_hand{	background-position: -128px -128px;}
-span.nurse_hat{	background-position: -160px -128px;}
-span.black_hat{	background-position: -192px -128px;}
-span.glow_hat{	background-position: -224px -128px;}
-span.green_hat{	background-position: -256px -128px;}
+span.silicon_dust{	background-position: -0px -128px;}
+span.rare_earth_dust{	background-position: -32px -128px;}
+span.steel_dust{	background-position: -64px -128px;}
+span.acid{	background-position: -96px -128px;}
+span.soda_water{	background-position: -128px -128px;}
+span.bionic_acid{	background-position: -160px -128px;}
+span.alkaloid{	background-position: -192px -128px;}
+span.bottle_of_air{	background-position: -224px -128px;}
+span.course_silicon{	background-position: -128px -128px;}
 
-span.red_hat{	background-position: -0px -160px;}
-span.red_coat{	background-position: -32px -160px;}
-span.jacket{	background-position: -64px -160px;}
-span.blue_jeans{	background-position: -96px -160px;}
-span.tight_leather_leggings{	background-position: -128px -160px;}
-span.snow_boots{	background-position: -160px -160px;}
-span.potion_of_reckless{	background-position: -192px -160px;}
-span.potion_of_ninja{	background-position: -224px -160px;}
-span.horse_head{	background-position: -256px -160px;}
+span.bottle_of_salt{	background-position: -0px -160px;}
+span.rare_earth_salt{	background-position: -32px -160px;}
+span.alkaloid_rare_earth{	background-position: -64px -160px;}
+span.ammonia_refrigerant{	background-position: -96px -160px;}
+span.silicon_plate{	background-position: -128px -160px;}
+span.clay_bucket{	background-position: -160px -160px;}
+span.magnet{	background-position: -192px -160px;}
+span.time_conditioner{	background-position: -224px -160px;}
+span.time_checker{	background-position: -256px -160px;}
 
-span.blaze_head{	background-position: -0px -192px;}
-span.cave_spider_head{	background-position: -32px -192px;}
-span.chicken_head{	background-position: -64px -192px;}
-span.cow_head{	background-position: -96px -192px;}
-span.donkey_head{	background-position: -128px -192px;}
-span.elder_guardian_head{	background-position: -160px -192px;}
-span.enderman_head{	background-position: -192px -192px;}
-span.ghast_head{	background-position: -224px -192px;}
-span.guardian_head{	background-position: -256px -192px;}
+span.origin_of_the_world{	background-position: -0px -192px;}
+span.compressor{	background-position: -32px -192px;}
+span.elder_s_words{	background-position: -64px -192px;}
+span.coordinate_recorder{	background-position: -96px -192px;}
+span.industrious_hand{	background-position: -128px -192px;}
+span.break_hand{	background-position: -160px -192px;}
+span.smart_hand{	background-position: -192px -192px;}
+span.angry_hand{	background-position: -224px -192px;}
+span.toughen_hand{	background-position: -256px -192px;}
 
-span.pufferfish_head{	background-position: -0px -224px;}
-span.stray_head{	background-position: -32px -224px;}
-span.villager_golem_head{	background-position: -64px -224px;}
-span.llama_head{	background-position: -96px -224px;}
-span.magma_cube_head{	background-position: -128px -224px;}
-span.mule_head{	background-position: -160px -224px;}
-span.mooshroom_head{	background-position: -192px -224px;}
-span.ocelot_head{	background-position: -224px -224px;}
-span.ocelot_head2{	background-position: -256px -224px;}
+span.sealing_wand{	background-position: -0px -224px;}
+span.star_wand{	background-position: -32px -224px;}
+span.dream_wand{	background-position: -64px -224px;}
+span.wand_of_the_darkness{	background-position: -96px -224px;}
+span.broom{	background-position: -128px -224px;}
+span.temperancer{	background-position: -160px -224px;}
+span.temperancer_closed{	background-position: -192px -224px;}
+span.golem{	background-position: -224px -224px;}
+span.empty_bookshelf{	background-position: -256px -224px;}
 
-span.parrot_head{	background-position: -0px -256px;}
-span.parrot_head2{	background-position: -32px -256px;}
-span.parrot_head3{	background-position: -64px -256px;}
-span.pig_head{	background-position: -96px -256px;}
-span.polar_bear_head{	background-position: -128px -256px;}
-span.rabbit_head{	background-position: -160px -256px;}
-span.sheep_head{	background-position: -192px -256px;}
-span.shulker_head{	background-position: -224px -256px;}
-span.skeleton_horse_skull{	background-position: -256px -256px;}
+span.glow_hat{	background-position: -0px -256px;}
+span.green_hat{	background-position: -32px -256px;}
+span.black_hat{	background-position: -64px -256px;}
+span.nurse_hat{	background-position: -96px -256px;}
+span.red_hat{	background-position: -128px -256px;}
+span.jacket{	background-position: -160px -256px;}
+span.red_coat{	background-position: -192px -256px;}
+span.tight_leather_leggings{	background-position: -224px -256px;}
+span.blue_jeans{	background-position: -256px -256px;}
 
-span.slime_head{	background-position: -0px -288px;}
-span.snowman_head{	background-position: -32px -288px;}
-span.spider_head{	background-position: -64px -288px;}
-span.squid_head{	background-position: -96px -288px;}
-span.stray_head{	background-position: -128px -288px;}
-span.vex_head{	background-position: -160px -288px;}
-span.villager_head{	background-position: -192px -288px;}
-span.vindication_illager_head{	background-position: -224px -288px;}
-span.witch_head{	background-position: -256px -288px;}
+span.snow_boots{	background-position: -0px -288px;}
+span.skrik{	background-position: -32px -288px;}
+span.mona_lisa{	background-position: -64px -288px;}
+span.the_last_supper{	background-position: -96px -288px;}
+span.luoxia_guwu{	background-position: -128px -288px;}
+span.bamboo_and_stone{	background-position: -160px -288px;}
+span.sun_flower{	background-position: -192px -288px;}
+span.impression_soleil_levant{	background-position: -224px -288px;}
+span.monet_in_garden{	background-position: -256px -288px;}
 
-span.wolf_head{	background-position: -0px -320px;}
-span.zombie_pigman_head{	background-position: -32px -320px;}
-span.zombie_villager_head{	background-position: -64px -320px;}
-span.zombie_villager_head2{	background-position: -96px -320px;}
-span.zombie_villager_head3{	background-position: -128px -320px;}
-span.zombie_villager_head4{	background-position: -160px -320px;}
-span.cod_head{	background-position: -192px -320px;}
-span.salmon_head{	background-position: -224px -320px;}
-span.clownfish_head{	background-position: -256px -320px;}
+span.virgin_of_the_rocks{	background-position: -0px -320px;}
+span.the_creation_of_adam{	background-position: -32px -320px;}
+span.barge_haulers_on_the_volga{	background-position: -64px -320px;}
+span.the_founding_ceremony_of_the_nation{	background-position: -96px -320px;}
+span.the_unknown_girl{	background-position: -128px -320px;}
+span.the_starry_night{	background-position: -160px -320px;}
+span.liberty_leading_the_people{	background-position: -192px -320px;}
+span.the_gleaners{	background-position: -224px -320px;}
+span.potion_of_reckless{	background-position: -256px -320px;}
 
-span.wing_of_sky{	background-position: -0px -352px;}
-span.heart_of_ocean{	background-position: -32px -352px;}
-span.limb_of_ridge{	background-position: -64px -352px;}
-span.soul_of_dirt{	background-position: -96px -352px;}
-span.certification_of_earth{	background-position: -128px -352px;}
-span.nova_of_fire{	background-position: -160px -352px;}
-span.spirit_of_life{	background-position: -192px -352px;}
-span.temperancer{	background-position: -224px -352px;}
-span.temperancer_closed{	background-position: -256px -352px;}
+span.potion_of_ninja{	background-position: -0px -352px;}
+span.potion_of_resistance{	background-position: -32px -352px;}
+span.potion_of_haste{	background-position: -64px -352px;}
+span.potion_of_chain{	background-position: -96px -352px;}
+span.potion_of_tide{	background-position: -128px -352px;}
+span.potion_of_invulnerable{	background-position: -160px -352px;}
+span.cold_drink{	background-position: -192px -352px;}
 
-span.shard_of_the_darkness{	background-position: -0px -384px;}
-span.clay_bucket{	background-position: -32px -384px;}
-span.tainted_dirt{	background-position: -64px -384px;}
-span.broken_mob_spawner{	background-position: -96px -384px;}
-span.broom{	background-position: -128px -384px;}
-span.coordinate_recorder{	background-position: -160px -384px;}
-span.silicon_plate{	background-position: -192px -384px;}
-span.skrik{	background-position: -224px -384px;}
-span.mona_lisa{	background-position: -256px -384px;}
 
-span.the_last_supper{	background-position: -0px -416px;}
-span.luoxia_guwu{	background-position: -32px -416px;}
-span.bamboo_and_stone{	background-position: -64px -416px;}
-span.sunflower{	background-position: -96px -416px;}
-span.impression_soleil_levant{	background-position: -128px -416px;}
-span.monet_in_garden{	background-position: -160px -416px;}
-span.virgin_of_the_rocks{	background-position: -192px -416px;}
-span.the_creation_of_adam{	background-position: -224px -416px;}
-span.barge_haulers_on_the_volga{	background-position: -256px -416px;}
-
-span.the_founding_ceremony_of_the_nation{	background-position: -0px -448px;}
-span.the_unknown_girl{	background-position: -32px -448px;}
-span.the_starry_night{	background-position: -64px -448px;}
-span.liberty_leading_the_people{	background-position: -96px -448px;}
-span.the_gleaners{	background-position: -128px -448px;}
 
 span.effect{
 	background-image:url("items/EffectsCSS.png");
