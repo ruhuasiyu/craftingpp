@@ -33,7 +33,7 @@
 	text-align:left;
 }
 .mcui_arrow{
-	background:url("Arrow.png") no-repeat;
+	background:url("arrow.png") no-repeat;
 	width:32px;
 	height:26px;
 	margin:40px 4px 0;
@@ -62,7 +62,7 @@
 	vertical-align:bottom;
 }
 .mcui_row>span, .mcui_output>span, #advancements td>span>span{
-	background-image:url("InvSprite.png");
+	background-image:url("invsprite.png");
 	background-repeat:no-repeat;
 }
 .mcui_icons{
@@ -77,11 +77,11 @@
 	display:block;
 	width:19px;
 	height:15px;
-	background-image:url("Grid_layout_Shapeless.png");
+	background-image:url("grid_layout_shapeless.png");
 }
 .mcui_crafting_machine{
 	display:block;
-	background-image:url(crafting_machine.png);
+	background-image:url("crafting_machine.png");
 	background-size: 24px 24px;
 	width:24px;
 	height:24px;
@@ -116,17 +116,17 @@
 	background-size: 768px 1272px;
 }
 span.colorful_items{
-	background-image: url(colorful_items.png);
+	background-image: url("colorful_items.png");
 	background-size: 288px 384px;
 }
 span.magma_block{
-	background-image: url(magma_block.gif);
+	background-image: url("magma_block.gif");
 }
 span.prismarine{
-	background-image: url(prismarine.gif);
+	background-image: url("prismarine.gif");
 }
 span.xp_orb{
-	background-image: url(xp_orb.gif);
+	background-image: url("xp_orb.gif");
 	background-size: 32px 32px;
 }
 span.fire{
@@ -914,7 +914,7 @@ span.cold_drink{	background-position: -192px -352px;}
 
 
 span.effect{
-	background-image:url("items/EffectsCSS.png");
+	background-image:url("items/effectscss.png");
 	width:18px;
 	height:18px;
 	display:inline-block;
