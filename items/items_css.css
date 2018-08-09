@@ -61,7 +61,7 @@
 	line-height:1;
 	vertical-align:bottom;
 }
-.mcui_row>span, .mcui_output>span, #advancements td>span>span{
+.mcui_row>span, .mcui_output>span, #advancements span.normal_items{
 	background-image:url("invsprite.png");
 	background-repeat:no-repeat;
 }
@@ -796,8 +796,8 @@ span.carrot_plant{	background-position: -352px -384px;}
 span.wing_of_sky{	background-position: -0px -0px;}
 span.heart_of_ocean{	background-position: -32px -0px;}
 span.limb_of_ridge{	background-position: -64px -0px;}
-span.soul_of_dirt{	background-position: -96px -0px;}
-span.certification_of_earth{	background-position: -128px -0px;}
+span.certification_of_earth{	background-position: -96px -0px;}
+span.soul_of_dirt{	background-position: -128px -0px;}
 span.nova_of_fire{	background-position: -160px -0px;}
 span.spirit_of_life{	background-position: -192px -0px;}
 span.shard_of_the_darkness{	background-position: -224px -0px;}
@@ -806,8 +806,8 @@ span.broken_spawner{	background-position: -256px -0px;}
 span.blue_force_of_sky{	background-position: -0px -32px;}
 span.green_force_of_water{	background-position: -32px -32px;}
 span.cyan_force_of_mountain{	background-position: -64px -32px;}
-span.orange_force_of_dirt{	background-position: -96px -32px;}
-span.yellow_force_of_earth{	background-position: -128px -32px;}
+span.yellow_force_of_earth{	background-position: -96px -32px;}
+span.orange_force_of_dirt{	background-position: -128px -32px;}
 span.red_force_of_fire{	background-position: -160px -32px;}
 span.purple_force_of_life{	background-position: -192px -32px;}
 span.white_force_of_lightning{	background-position: -224px -32px;}
@@ -910,6 +910,7 @@ span.potion_of_chain{	background-position: -96px -352px;}
 span.potion_of_tide{	background-position: -128px -352px;}
 span.potion_of_invulnerable{	background-position: -160px -352px;}
 span.cold_drink{	background-position: -192px -352px;}
+span.beethoven{	background-position: -224px -352px;}
 
 
 
