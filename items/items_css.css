@@ -248,6 +248,9 @@ h4{
 p{
 	margin-top:0;
 }
+p.small{
+	font-size:80%;
+}
 code{
 	font-size:100%;
 	background-color:white;
@@ -503,7 +506,7 @@ span.granite{	background-position: -608px -960px;}
 span.grass_block{	background-position: -640px -960px;}
 span.gravel{	background-position: -672px -960px;}
 span.ice{	background-position: -736px -960px;}
-span.mob_spawner{	background-position: -768px -960px;}
+span.spawner{	background-position: -768px -960px;}
 span.mycelium{	background-position: -864px -960px;}
 span.obsidian{	background-position: -896px -960px;}
 span.packed_ice{	background-position: -928px -960px;}

@@ -87,7 +87,7 @@
 如果你想要对本模组进行支持，可进入<a href="https://afdian.net/@ruhuasiyu">爱发电页面</a>对我们进行赞助。您的赞助对我们至关重要，非常感谢您的支持！</p>
 <table><thead><tr><th>支持的minecraft版本</th><th>模组版本及下载链接</th></tr></thead>
 <tbody>
-<tr><td>Minecraft Java版 18w32a</td><td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/raw/master/versions/1.8/v1.8-m08d09.zip">craftingpp-1.8-m08d09</a> | <a href="home.ustc.edu.cn/~zsxqq/craftingpp/v1.8-m08d09.zip">备用链接</a></li></td></tr>
+<tr><td>Minecraft Java版 18w32a</td><td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/raw/master/versions/1.8/v1.8-m08d12.zip">craftingpp-1.8-m08d12</a> | <a href="home.ustc.edu.cn/~zsxqq/craftingpp/v1.8-m08d12.zip">备用链接</a></li></td></tr>
 <tr><td>Minecraft Java版 1.12</td><td>
 <a href="http://www.mcbbs.net/forum.php?mod=attachment&aid=MTA4NDIzM3xhYjM4MDU1NnwxNTExNjI3NjYwfDk3NTUyNXw2OTY4NjE%3D">craftingpp-1.7.4</a></td></tr>
 <tr><td>Minecraft Java版 1.12 pre</td><td>
@@ -109,7 +109,7 @@
 
 <p>模组特有物品均需使用<a href="#crafting_machine">合成器</a>来合成。模组移除了木制工具，可使用燧石来合成<a href="#stone_tools">石制工具</a>。模组部分参数可通过文件<code>datapacks/craftingpp/data/cpp/functions/config.mcfunction</code>修改。</p>
 
-<p>模组大部分文字支持中英双语。如有任何意见建议，欢迎<a href="http://www.mcbbs.net/thread-696861-1-1.html">在论坛回复</a>、<a href="https://github.com/ruhuasiyu/craftingpp/issues/new">发起issue</a>或<a href="http://www.mcbbs.net/home.php?mod=spacecp&ac=pm&touid=975525">私信我</a>。</p>
+<p>模组大部分文字支持英文、简体中文、繁体中文。如有任何意见建议，欢迎<a href="http://www.mcbbs.net/thread-696861-1-1.html">在论坛回复</a>、<a href="https://github.com/ruhuasiyu/craftingpp/issues/new">发起issue</a>或<a href="http://www.mcbbs.net/home.php?mod=spacecp&ac=pm&touid=975525">私信我</a>。</p>
 
 <p>转载本文需遵守<strong><a href="https://creativecommons.org/licenses/by-nc-nd/2.5/cn/">CC BY-NC-ND 2.5 CN 许可协议</a></strong>——列出作者(<a href="http://www.mcbbs.net/home.php?mod=spacecp&ac=pm&touid=975525">ruhuasiyu@mcbbs</a>)、来源、原始下载链接以及相同的许可协议。模组代码使用需遵守<a href="https://www.gnu.org/licenses/gpl.html">GNU GENERAL PUBLIC LICENSE v3.0</a>协议。请勿转载至网盘或文件存储平台。公益服务器可直接使用；非公益服务器请联系我。通讯类工具可下载后分享。</p>
 
@@ -130,6 +130,7 @@
 
 <h3 id="creeper_dungeon">爬行者地牢 (Creeper Dungeon)</h3>
 <p>天然生成在主世界的地下y=20附近。与其它地牢类似，爬行者地牢是一个由圆石和苔石构成的小房间，包含苦力怕刷怪箱和地牢宝箱。</p>
+<p class="small">与通常地牢不同，爬行者地牢是全封闭的。注意爬行者的爆炸可能会破坏刷怪箱。</p>
 
 <h3 id="enchanting_room">附魔室 (Enchanting Room)</h3>
 <p>天然生成在主世界的陆地地表。附魔室是一个由黑曜石、荧石、书架、淡蓝色玻璃、地狱砖、附魔台构成的小房间，书架内含有纸、书、附魔书、指南针或空地图。</p>
@@ -163,11 +164,13 @@
 
 <h3 id="villager">村民</h3>
 <p>村民可被手持绿宝石块的玩家吸引，村民被玩家杀死时掉落3点经验值。</p>
+<p class="small">村民被玩家吸引不会自动爬升方块，使用台阶或楼梯来辅助之。</p>
 
 <img style="height:250px" src="items/screenshots/improved_mob.png" /> <img style="height:250px" src="items/screenshots/dark_animals.png" />
 
 <h3 id="loots">战利品</h3>
 <p>生物死亡时若着火不会掉落羽毛。表格中左上角*表示易和原版混淆的物品。</p>
+<p class="small">若一种生物可掉落多种稀有掉落物，则掉落几率会被平均分配。</p>
 <table><thead><tr><th colspan="2">掉落物</th><th>掉落几率/数量</th><th>来源</th></tr></thead><tbody>
 
 <tr><td><span class="mcui_row"><span class="colorful_items wing_of_sky" title="天空之翼"></span></span></td>
@@ -265,6 +268,7 @@
 <h3 id="crafting_machine">合成器 (Crafting Machine)</h3>
 <p>合成器可使用或者不使用工具进行开采，但用斧是最快的。</p>
 <p>放置后打开，将材料放入左侧3×3的合成方格，若右侧为空，则会自动合成出产物。关闭后，界面里的东西会保留，可以使用漏斗输入。</p>
+<p class="small">强行放入背景的物品会消失。</p>
 <table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
 <tr><th>合成器</th>
 <td><a href="#experience_bottle">附魔之瓶</a>+工作台</td><td><span class="mcui"><span>
@@ -302,6 +306,7 @@
 <p>多功能一体机可使用或者不使用工具进行开采，但用斧是最快的。关闭后，界面里的东西会保留，可以使用漏斗输入。</p>
 <p>上方若有固体方块阻挡将无法打开。默认情形下，多功能一体机只能使用常压常温模式。对机器使用相应的插件后即可升级，解锁相应模式，包括：<a href="#low_temperature_plugin">低温插件</a>、<a href="#low_pressure_plugin">低压插件</a>、<a href="#high_temperature_plugin">高温插件</a>、<a href="#high_pressure_plugin">高压插件</a>。</p>
 <p>多功能一体机包括上方两个输入槽，下方两个输出槽。右上方为附魔之瓶槽位和经验槽。左侧三个槽位控制压力、温度和输出方向，按Q或Shift+左键切换模式。若输出方向有箱子/潜影箱/陷阱箱则会自动输出到箱子内。多功能一体机可以存储至多8点经验，当经验不超过4点会自动消耗附魔之瓶来装填，将<a href="#experience_bottle">附魔之瓶</a>放入右上方槽位即可。</p>
+<p class="small">强行放入背景的物品会消失。</p>
 
 <h4>高温高压</h4>
 矿石的倍率在模组加载时被确定，玩家可自行测量参数。产出1.6~3.5个对应矿物，红石×5，青金石×6。
@@ -487,7 +492,7 @@
 </tbody></table>
 
 
-<h3 id="recipe_shower">配方显示器 (Recipe Shower) WIP</h3>
+<h3 id="recipe_shower">配方显示器 (Recipe Shower) (未完成)</h3>
 <table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
 <tr><th>配方显示器</th>
 <td><a href="#experience_bottle">附魔之瓶</a>+书+工作台</td><td><span class="mcui"><span>
@@ -507,6 +512,7 @@
 <p>配方显示器可使用或者不使用工具进行开采，但用斧是最快的。</p>
 <p>
 上方若有固体方块阻挡将无法打开。按Q或Shift+左键切换物品，切换左侧物品将会显示其配方，切换右侧物品将会循环显示所有配方。</p>
+<p class="small">强行放入背景的物品会消失。</p>
 
 <h3 id="empty_plugin">空白插件 (Empty Plugin)</h3>
 <table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
@@ -692,14 +698,15 @@
 
 
 <h3 id="broken_spawner">破损的刷怪箱 (Broken Spawner)</h3>
-<p>使用精准采集附魔破坏刷怪箱获得，可在<a href="#rituals">仪式</a>中修复。</p>
+<p>使用精准采集附魔的镐子破坏刷怪箱获得，可在<a href="#rituals">仪式</a>中修复。</p>
 <img style="height:300px" src="items/screenshots/broken_spawner.png" />
 
 <!-------------------------------------------------------------------------------------------------->
 <h2 id="materials">材料</h2>
 <h3 id="experience_bottle">附魔之瓶 (Experience Bottle)</h3>
 <p>附魔之瓶固定掉落4点经验值，而不是7-11 点。
-当你扔出附魔之瓶(64×)时，掉落256点经验值，如果通过发射器扔出则仍然是4点经验值。</p>
+当你扔出附魔之瓶(64×)时，掉落256点经验值。</p>
+<p class="small">通过发射器发射附魔之瓶(64×)或是扔出更高压缩等级的附魔之瓶仍然只掉落4点经验值。</p>
 
 <p>当你副手持有漏斗时，你的经验会以每刻4点的速度转化为附魔之瓶。如果此时你主手还持有<a href="#compressor">压缩器</a>，你的经验会以每刻256点的速度转化为<a href="#compressor">附魔之瓶(64×)</a>。附魔之瓶(64×)也可以通过对地面的64个附魔之瓶使用<a href="#compressor">压缩器</a>得到。</p>
 
@@ -712,6 +719,7 @@
 
 <h3 id="enchanted_iron">附魔铁锭 (Enchanted Iron)</h3>
 <p>附魔铁锭可用于合成<a href="#all_in_one_machine">多功能一体机</a>、<a href="#trade_machine">交易机</a>、<a href="#magnet">磁铁</a>、<a href="#compressor">压缩器</a>、<a href="#elder_s_words">年长者之教诲</a>、<a href="#coordinate_recorder">坐标记录仪</a>、<a href="#enchanted_golden_apple">附魔金苹果</a>、<a href="#sealing_wand">封印之杖</a>、<a href="#cobblestone_plugin">圆石插件</a>、<a href="#stone_plugin">石头插件</a>、<a href="#obsidian_plugin">黑曜石插件</a>，以及<a href="#all_in_one_machine">多功能一体机</a>常温低压模式下酿造<a href="#potions">连环药水</a>。</p>
+<p class="small">可以像普通铁锭般参与合成。</p>
 <table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
 <tr><th>附魔铁锭</th><td>附魔之瓶+铁锭</td>
 <td><span class="mcui"><span><span class="mcui_row"><span class="experience_bottle" title="附魔之瓶">
@@ -731,6 +739,7 @@
 
 <h3 id="enchanted_gold">附魔金锭 (Enchanted Gold)</h3>
 <p>附魔金锭可用于合成<a href="#all_in_one_machine">多功能一体机</a>、<a href="#time_conditioner">时间调节器</a>、<a href="#compressor">压缩器</a>、<a href="#elder_s_words">年长者之教诲</a>、<a href="#coordinate_recorder">坐标记录仪</a>、<a href="#enchanted_golden_apple">附魔金苹果</a>、<a href="#sealing_wand">封印之杖</a>，以及<a href="#all_in_one_machine">多功能一体机</a>常温低压模式下酿造<a href="#potions">急迫药水</a>。</p>
+<p class="small">可以像普通金锭般参与合成。</p>
 <table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
 <tr><th>附魔金锭</th><td>附魔之瓶+金锭</td>
 <td><span class="mcui"><span><span class="mcui_row"><span class="experience_bottle" title="附魔之瓶">
@@ -750,6 +759,7 @@
 
 <h3 id="enchanted_diamond">附魔钻石 (Enchanted Diamond)</h3>
 <p>附魔钻石可用于合成<a href="#time_checker">报时器</a>、<a href="#compressor">压缩器</a>、<a href="#elder_s_words">年长者之教诲</a>、<a href="#coordinate_recorder">坐标记录仪</a>、<a href="#enchanted_golden_apple">附魔金苹果</a>，以及<a href="#all_in_one_machine">多功能一体机</a>常温低压模式下酿造<a href="#potions">抗性药水</a>。</p>
+<p class="small">可以像普通钻石般参与合成。</p>
 <table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
 <tr><th>附魔钻石</th><td>附魔之瓶+钻石</td>
 <td><span class="mcui"><span><span class="mcui_row"><span class="experience_bottle" title="附魔之瓶">
@@ -769,6 +779,7 @@
 
 <h3 id="iron_dust">铁粉 (Iron Dust)</h3>
 <p>铁粉由<a href="#all_in_one_machine">多功能一体机</a>常温高压下处理铁矿石/2铁锭+燧石得到，处理金矿石+燧石有10%几率得到。在<a href="#all_in_one_machine">多功能一体机</a>高温常压与沙子/<a href="#red_sand">红沙</a>可熔炼成2铁锭。还可用于合成<a href="#moon_shard">月之碎片</a>。</p>
+<p class="small">各类粉末均可食用，食用后无效果且会留下空瓶。</p>
 
 
 <h3 id="gold_dust">金粉 (Gold Dust)</h3>
@@ -888,16 +899,17 @@
 
 
 <h3 id="alkaloid_rare_earth">碱性稀土 (Alkaloid Rare Earth)</h3>
-<p>碱性稀土由<a href="#all_in_one_machine">多功能一体机</a>高温低压下处理<a href="#fertilizer">肥料</a>和<a href="#alkaloid">生物碱</a>得到。在<a href="#all_in_one_machine">多功能一体机</a>低温高压下将水瓶变为冰，低温低压下将水瓶变为雪块。</p>
+<p>碱性稀土由<a href="#all_in_one_machine">多功能一体机</a>高温低压下处理<a href="#rare_earth_salt">稀土盐</a>和<a href="#alkaloid">生物碱</a>得到。在<a href="#all_in_one_machine">多功能一体机</a>低温高压下将水瓶变为冰，低温低压下将水瓶变为雪块。</p>
 
 
 <h3 id="ammonia_refrigerant">氨制冷剂 (Ammonia Refrigerant)</h3>
-<p>氨制冷剂由<a href="#all_in_one_machine">多功能一体机</a>高温低压下处理<a href="#rare_earth_salt">稀土盐</a>和<a href="#alkaloid">生物碱</a>得到。在<a href="#all_in_one_machine">多功能一体机</a>高温低压与<a href="#bionic_acid">生物酸</a>处理得到<a href="#rare_earth_dust">稀土粉</a>。</p>
+<p>氨制冷剂由<a href="#all_in_one_machine">多功能一体机</a>高温低压下处理<a href="#fertilizer">肥料</a>和<a href="#alkaloid">生物碱</a>得到。在<a href="#all_in_one_machine">多功能一体机</a>高温低压与<a href="#bionic_acid">生物酸</a>处理得到<a href="#rare_earth_dust">稀土粉</a>。</p>
 <p>饮用后获得15秒的中毒效果。</p>
 
 
 <h3 id="cinder">煤渣 (Cinder)</h3>
 <p>煤渣由<a href="#all_in_one_machine">多功能一体机</a>高温常压下处理矿物粉+沙子/<a href="#red_sand">红沙</a>有20%几率得到，高温低压下处理<a href="#alkaloid">生物碱</a>+<a href="#fertilizer">肥料</a>得到。在<a href="#all_in_one_machine">多功能一体机</a>常温高压与燧石得到<a href="#carbon_dust">碳粉</a>。还可用于合成<a href="#fertilizer">肥料</a>。</p>
+<p class="small">可替代木炭用于合成或熔炼。</p>
 
 
 <h3 id="fertilizer">肥料 (Fertilizer)</h3>
@@ -918,14 +930,17 @@
 </span></span></span></td></tr>
 </tbody></table>
 <p>肥料在<a href="#all_in_one_machine">多功能一体机</a>高温低压下与<a href="#alkaloid">生物碱</a>处理得到<a href="#ammonia_refrigerant">氨制冷剂</a>，常温常压下与种子/树苗处理得到相应作物。</p>
+<p class="small">可替代糖用于合成或酿造。</p>
 
 
 <h3 id="rare_earth_glass">稀土玻璃 (Rare Earth Glass)</h3>
 <p>稀土玻璃由<a href="#all_in_one_machine">多功能一体机</a>高温常压下处理<a href="#rare_earth_dust">稀土粉</a>+沙子/<a href="#red_sand">红沙</a>得到。可用于合成<a href="#hands">勤劳之手</a>、<a href="#hands">破坏之手</a>、<a href="#hands">灵巧之手</a>、<a href="#hands">愤怒之手</a>、<a href="#hands">历练之手</a>。</p>
+<p class="small">放置后退化成普通玻璃。</p>
 
 
 <h3 id="reinforced_glass">钢化玻璃 (Reinforced Glass)</h3>
 <p>钢化玻璃由<a href="#all_in_one_machine">多功能一体机</a>高温常压下处理<a href="#steel_dust">钢粉</a>+沙子/<a href="#red_sand">红沙</a>得到。可用于合成<a href="#hands">勤劳之手</a>、<a href="#hands">破坏之手</a>、<a href="#hands">灵巧之手</a>、<a href="#hands">愤怒之手</a>、<a href="#hands">历练之手</a>。</p>
+<p class="small">放置后退化成普通玻璃。</p>
 
 
 <h3 id="silicon_plate">硅板 (Silicon Plate)</h3>
@@ -934,7 +949,7 @@
 
 <h3 id="moon_shard">月之碎片 (Moon Shard)</h3>
 <table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
-<tr><th>肥料</th><td><a href="#iron_dust">铁粉</a>+<a href="#gold_dust">金粉</a>+<a href="#diamond_dust">钻石粉</a>+<a href="#emerald_dust">绿宝石粉</a>+<a href="#quartz_dust">石英粉</a>+<a href="#carbon_dust">煤粉</a>+<a href="#enchanted_golden_apple">附魔金苹果</a>+<a href="#ghast_tear">恶魂之泪</a>+末影珍珠</td>
+<tr><th>月之碎片</th><td><a href="#iron_dust">铁粉</a>+<a href="#gold_dust">金粉</a>+<a href="#diamond_dust">钻石粉</a>+<a href="#emerald_dust">绿宝石粉</a>+<a href="#quartz_dust">石英粉</a>+<a href="#carbon_dust">煤粉</a>+<a href="#enchanted_golden_apple">附魔金苹果</a>+<a href="#ghast_tear">恶魂之泪</a>+末影珍珠</td>
 <td><span class="mcui"><span><span class="mcui_row"><span class="colorful_items iron_dust" title="铁粉">
 </span><span class="colorful_items gold_dust" title="金粉">
 </span><span class="colorful_items diamond_dust" title="钻石粉">
@@ -950,10 +965,12 @@
 </span></span></span></td></tr>
 </tbody></table>
 <p>月之碎片在<a href="#all_in_one_machine">多功能一体机</a>常温高压下压缩得到<a href="#sun_shard">日之碎片</a>。还可用于合成<a href="#star_wand">星之杖</a>。</p>
+<p class="small">可替代铁粒参与合成。</p>
 
 
 <h3 id="sun_shard">日之碎片 (Sun Shard)</h3>
 <p>日之碎片由<a href="#all_in_one_machine">多功能一体机</a>常温高压下压缩<a href="#moon_shard">月之碎片</a>得到。在<a href="#all_in_one_machine">多功能一体机</a>常温高压下压缩得到<a href="#nether_star">下界之星</a>。可用于合成<a href="#star_wand">星之杖</a>。</p>
+<p class="small">可替代金粒参与合成。</p>
 
 
 <h3 id="clay_bucket">粘土桶 (Clay Bucket)</h3>
@@ -983,17 +1000,18 @@
 </td></tr>
 </tbody></table>
 <p>神秘烈焰粉可用于酿造<a href="#potion_of_reckless">鲁莽药水</a>。</p>
+<p class="small">可替代烈焰粉参与合成。</p>
 
 
-<h3 id="mystery_rabbit_foot">神秘兔子腿 (Mystery Rabbit Foot)</h3>
+<h3 id="mystery_rabbit_foot">神秘兔子脚 (Mystery Rabbit Foot)</h3>
 <table><thead><tr><th>产物</th><th colspan="2">烧炼配方</th></tr></thead><tbody>
-<tr><th>神秘兔子腿</th><td><a href="#limb_of_ridge">山脉之肢</a><td>
+<tr><th>神秘兔子脚</th><td><a href="#limb_of_ridge">山脉之肢</a><td>
 <span class="mcui"><span><span class="mcui_row"><span class="colorful_items limb_of_ridge" title="山脉之肢">
 </span></span><span class="mcui_row"><span style="width:32px;height:32px;background-image:url(items/smelting.png);border-style:none;background-color:#c6c6c6;"></span></span><span class="mcui_row"><span class="coal" title="燃料"></span></span></span><span class="mcui_arrow"></span><span class="mcui_output">
-<span class="rabbit_foot" title="神秘兔子腿"><span class="enchant">*</span>
+<span class="rabbit_foot" title="神秘兔子脚"><span class="enchant">*</span>
 </td></tr>
 </tbody></table>
-<p>神秘兔子腿可用于酿造<a href="#potion_of_ninja">忍者药水</a>。</p>
+<p>神秘兔子脚可用于酿造<a href="#potion_of_ninja">忍者药水</a>。</p>
 
 <h3 id="ghast_tear">恶魂之泪 (Ghast Tear)</h3>
 <table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
@@ -1012,7 +1030,7 @@
 </span></span><span class="mcui_icons2"><span class="mcui_crafting_machine" title="使用合成器合成"></span></span><span class="mcui_icons"><span class="mcui_shapeless" title="此配方是无形的，材料可以以任何排列方式放置在合成格内。">
 </span></span></span></td></tr>
 </tbody></table>
-<p>恶魂之泪还可通过收获<a href="#crops_and_hybrid">牧晶花作物</a>得到。</p>
+<p>恶魂之泪还可通过收获成熟的<a href="#crops_and_hybrid">牧晶花作物</a>得到。</p>
 
 <h3 id="nether_star">下界之星 (Nether Star)</h3>
 <p>下界之星由<a href="#all_in_one_machine">多功能一体机</a>常温高压下压缩<a href="#sun_shard">日之碎片</a>得到。可用于合成<a href="#white_force_of_lightning">白色电之力</a>、<a href="#dream_wand">梦之杖</a>。</p>
@@ -1108,6 +1126,7 @@
 <h2 id="tools">工具</h2>
 <h3 id="blue_force_of_sky">蓝色天之力 (Blue Force of Sky)</h3>
 <p>右键消耗玩家10点经验依次切换为晴天/下雨天/雷雨天。</p>
+<p class="small">每次使用切换为上一次使用后的下一个状态，这与当前天气无关。</p>
 <table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
 <tr><th>蓝色天之力</th><td>青金石+煤炭+<a href="#wing_of_sky">天空之翼</a></td><td><span class="mcui"><span>
 <span class="mcui_row"><span class="lapis_lazuli" title="青金石">
@@ -1128,6 +1147,7 @@
 <h3 id="green_force_of_water">绿色水之力 (Green Force of Water)</h3>
 <p>右键放置一格水，在下界亦可正常使用。<span style="font-style:itapc;">Surrare Lilpana!</span></p>
 <p>绿色水之力可以在<a href="#all_in_one_machine">多功能一体机</a>低温高压下将水瓶变为冰，低温低压下将水瓶变为雪块。</p>
+<p class="small">所指的方块不可被火把、栅栏等不完整方块阻挡，下同。</p>
 <table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
 <tr><th>绿色水之力</th><td>仙人掌绿+红石+<a href="#heart_of_ocean">海洋之心</a></td><td><span class="mcui"><span>
 <span class="mcui_row"><span class="cactus_green" title="仙人掌绿">
@@ -1186,7 +1206,7 @@
 <h3 id="yellow_force_of_earth">黄色地之力 (Yellow Force of Earth)</h3>
 <p>右键消耗玩家25点经验并清除附近15×3×15区域中的水和岩浆。</p>
 <table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
-<tr><th>橙色土之力</th><td>蒲公英黄+金锭+<a href="#certification_of_earth">大地之证</a></td><td><span class="mcui"><span>
+<tr><th>黄色地之力</th><td>蒲公英黄+金锭+<a href="#certification_of_earth">大地之证</a></td><td><span class="mcui"><span>
 <span class="mcui_row"><span class="dandelion_yellow" title="蒲公英黄">
 </span><span class="gold_ingot" title="金锭">
 </span><span class="dandelion_yellow" title="蒲公英黄">
@@ -1223,6 +1243,7 @@
 
 <h3 id="purple_force_of_pfe">紫色命之力 (Purple Force of Life)</h3>
 <p>右键转换地面的树苗、种子和花，转化比率为2:1。</p>
+<p class="small">数量必须恰好为2。</p>
 <table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
 <tr><th>紫色命之力</th><td>紫色染料+钻石+<a href="#spirit_of_life">生命之灵</a></td><td><span class="mcui"><span>
 <span class="mcui_row"><span class="purple_dye" title="紫色染料">
@@ -1242,6 +1263,7 @@
 
 <h3 id="white_force_of_pghtning">白色电之力 (White Force of Lightning)</h3>
 <p>右键去除地面的物品附魔。</p>
+<p class="small">亦可去除模组的各种物品的光泽。</p>
 <table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
 <tr><th>白色电之力</th><td>骨粉+绿宝石+<a href="#nether_star">下界之星</a></td><td><span class="mcui"><span>
 <span class="mcui_row"><span class="bone_meal" title="骨粉">
@@ -1281,6 +1303,7 @@
 
 <h3 id="magnet">磁铁 (Magnet)</h3>
 <p>自动将附近物品吸引过来。右键依次切换范围为0/8/16米。若放置放物品展示框，可吸引附近16米的物品到所在处。</p>
+<p class="small">切换会导致改名或移除光泽的磁铁恢复为默认名称和光泽。</p>
 <table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
 <tr><th>磁铁</th><td><a href="#enchanted_iron">附魔铁锭</a>+红石</td>
 <td><span class="mcui"><span><span class="mcui_row"><span class="empty">
@@ -1299,6 +1322,7 @@
 
 <h3 id="time_conditioner">时间调节器 (Time Conditioner)</h3>
 <p>右键依次切换模式为作物生长速度加倍/作物生长速度恢复/停止日夜循环/开启日夜循环。</p>
+<p class="small">即便是多个时间调节器也无法同时实现作物生长速度加倍和停止日夜循环。</p>
 <table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
 <tr><th>时间调节器</th><td><a href="#enchanted_gold">附魔金锭</a>+红石</td>
 <td><span class="mcui"><span><span class="mcui_row"><span class="empty">
@@ -1317,6 +1341,7 @@
 
 <h3 id="time_checker">报时器 (Time Checker)</h3>
 <p>放置于物品展示框后可报时。右键可通过消耗经验自由控制时间。</p>
+<p class="small">自由控制时间是指将时间增加1200刻(60秒)。</p>
 <table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
 <tr><th>报时器</th><td><a href="#enchanted_diamond">附魔钻石</a>+红石</td>
 <td><span class="mcui"><span><span class="mcui_row"><span class="empty">
@@ -1335,6 +1360,7 @@
 
 <h3 id="origin_of_the_world">世界之源 (Origin of the World)</h3>
 <p>右键消耗20点经验返回世界原点。<em>Slonhon Ral!</em></p>
+<p class="small">世界原点是指X与Z为(0,0)的附近。</p>
 <table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
 <tr><th>世界之源</th><td><a href="#wing_of_sky">天空之翼</a>+<a href="#limb_of_ridge">山脉之肢</a>+红石<td><span class="mcui"><span>
 <span class="mcui_row"><span class="empty">
@@ -1352,7 +1378,8 @@
 </tbody></table>
 
 <h3 id="compressor">压缩器 (Comperessor)</h3>
-<p>手持压缩器右键可将地面的64个物品压缩，重新扔出压缩后的物品可复原。最高可进行八重压缩，相当于1格可存储至多18014398509481984个物品。如果将压缩后的方块放置将只能得到1个原有的物品。</p>
+<p>手持压缩器右键可将地面的64个物品压缩，重新扔出压缩后的物品可复原。最高可进行八重压缩，相当于1格可存储至多18014398509481984个物品。</p>
+<p class="small">放置压缩后的方块将会导致其退化为普通方块。</p>
 <table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
 <tr><th>压缩器</th><td>附魔之瓶+<a href="#enchanted_diamond">附魔钻石</a>+<a href="#enchanted_gold">附魔金锭</a>+活塞+<a href="#enchanted_iron">附魔铁锭</a>+<a href="#silicon_plate">硅板</a></td>
 <td><span class="mcui"><span><span class="mcui_row"><span class="experience_bottle" title="附魔之瓶">
@@ -1371,6 +1398,7 @@
 
 <h3 id="elder_s_words">年长者之教诲 (Elder's Words)</h3>
 <p>每2.5秒给予拥有者1点经验，放置在末影箱亦可生效。</p>
+<p class="small">效果无法叠加。</p>
 <table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
 <tr><th>年长者之教诲</th><td>附魔之瓶+<a href="#enchanted_diamond">附魔钻石</a>+<a href="#enchanted_gold">附魔金锭</a>+书+<a href="#enchanted_iron">附魔铁锭</a>+<a href="#silicon_plate">硅板</a></td>
 <td><span class="mcui"><span><span class="mcui_row"><span class="experience_bottle" title="附魔之瓶">
@@ -1388,7 +1416,7 @@
 </tbody></table>
 
 <h3 id="coordinate_recorder">坐标记录仪 (Coordinate Recorder)</h3>
-<p>在A处右击记录坐标，然后右击方块B可建立B到A的单向传送门。注意每名玩家一次只能记录一个坐标。</p>
+<p>在A处右击记录玩家坐标，然后Shift右击B处，即可在B处建立到A的单向传送门。</p>
 <table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
 <tr><th>坐标记录仪</th><td>附魔之瓶+<a href="#enchanted_diamond">附魔钻石</a>+<a href="#enchanted_gold">附魔金锭</a>+纸+<a href="#enchanted_iron">附魔铁锭</a>+<a href="#silicon_plate">硅板</a></td>
 <td><span class="mcui"><span><span class="mcui_row"><span class="experience_bottle" title="附魔之瓶">
@@ -1497,6 +1525,7 @@
 
 <h3 id="empty_bookshelf">空书架 (Empty Bookshelf)</h3>
 <p>拥有三格槽位，外观会随着内部物品数量而变化。</p>
+<p class="small">强行放入背景的物品会消失。</p>
 <table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
 <tr><th>空书架</th><td>橡木木板+箱子</td>
 <td><span class="mcui"><span><span class="mcui_row"><span class="oak_planks" title="橡木木板">
@@ -1660,6 +1689,7 @@
 
 <h3 id="rabbit_stew">兔肉煲 (Rabbit Stew)</h3>
 <p>食用后恢复16点饥饿值并获得30秒的力量II效果。</p>
+<p class="small">原兔肉煲的配方已被移除。</p>
 <table><thead><tr><th>产物</th><th colspan="2">烧炼配方</th></tr></thead><tbody>
 <tr><th>兔肉煲<br /><img src="items/hunger.svg" style="width:18px;height:18px;" title="16" /><img src="items/hunger.svg" style="width:18px;height:18px;" title="16" /><img src="items/hunger.svg" style="width:18px;height:18px;" title="16" /><img src="items/hunger.svg" style="width:18px;height:18px;" title="16" /><img src="items/hunger.svg" style="width:18px;height:18px;" title="16" /><img src="items/hunger.svg" style="width:18px;height:18px;" title="16" /><img src="items/hunger.svg" style="width:18px;height:18px;" title="16" /><img src="items/hunger.svg" style="width:18px;height:18px;" title="16" /><br /><span class="effect strength"></span> <span class="lore">力量II 00:30</span></th><td><a href="#cooked_rabbit_stew">生兔肉煲</a></td><td>
 <span class="mcui"><span><span class="mcui_row"><span class="rabbit_stew" title="生兔肉煲"><span class="enchant">*</span>
@@ -1715,6 +1745,7 @@
 
 <h3 id="baked_carrot">烤胡萝卜 (Baked Carrot)</h3>
 <p>食用后恢复6点饥饿值。</p>
+<p class="small">若输出槽有物品烧炼会停止。</p>
 <table><thead><tr><th>产物</th><th colspan="2">烧炼配方</th></tr></thead><tbody>
 <tr><th>烤胡萝卜<br /><img src="items/hunger.svg" style="width:18px;height:18px;" title="5" /><img src="items/hunger.svg" style="width:18px;height:18px;" title="5" /><img src="items/hunger_half.svg" style="width:18px;height:18px;" title="5" /></th><td>胡萝卜</td><td>
 <span class="mcui"><span><span class="mcui_row"><span class="carrot" title="胡萝卜">
@@ -1766,7 +1797,7 @@
 
 <h3 id="potion_of_chain">连环药水 (Potion of Chain)</h3>
 <p>连环药水由<a href="#all_in_one_machine">多功能一体机</a>常温低压下酿造<a href="#enchanted_iron">附魔铁锭</a>+粗制的药水得到。</p>
-<p>饮用后获得8分钟的<a href="#rituals">连锁</a>效果。</p>
+<p>饮用后获得8分钟的<span id="#chain_effect">连锁</span>效果：不显示状态效果图标，玩家使用斧可一次性破坏相连的树、瓜、蘑菇方块、成熟的农作物，使用镐可一次性破坏10米内相连的矿石、黑曜石、变种石头，使用锹可一次性破坏10米内相连的沙砾、粘土、沙子、灵魂沙。该效果受精准采集和时运影响，每次使用仅消耗1点耐久值。</p>
 
 <h3 id="potion_of_regeneration">再生药水 (Potion of Regeneration)</h3>
 <p>再生药水由<a href="#all_in_one_machine">多功能一体机</a>常温低压下酿造<a href="#ghast_tear">恶魂之泪</a>+粗制的药水得到。</p>
@@ -1800,11 +1831,11 @@
 <img style="height:300px;" src="items/screenshots/potion_of_reckless.png" />
 
 <h3 id="potion_of_ninja">忍者药水 (Potion of Ninja)</h3>
-<p>通过酿造<a href="#mystery_rabbit_foot">神秘兔子腿</a>和粗制的药水得到，耗时15秒，支持喷溅、滞留、延长、加强版的酿造。饮用后获得3分钟的跳跃提升、3分钟的生命恢复、3分钟的水下呼吸和3分钟的隐身效果。</p>
+<p>通过酿造<a href="#mystery_rabbit_foot">神秘兔子脚</a>和粗制的药水得到，耗时15秒，支持喷溅、滞留、延长、加强版的酿造。饮用后获得3分钟的跳跃提升、3分钟的生命恢复、3分钟的水下呼吸和3分钟的隐身效果。</p>
 <table><thead><tr><th>产物</th><th colspan="2">酿造配方</th></tr></thead><tbody>
-<tr><th>忍者药水<br /><span class="effect jump_boost"></span> <span class="lore">跳跃提升 3:00</span><br /><span class="effect regeneration"></span> <span class="lore">生命恢复 3:00</span><br /><span class="effect water_breathing"></span> <span class="lore">水下呼吸 3:00</span><br /><span class="effect invisibility"></span> <span class="lore">隐身 3:00</span></th><td><a href="#mystery_rabbit_foot">神秘兔子腿</a>+粗制的药水</td><td><span class="mcui" style="background-image:url(items/brew.png);width:127px;height:109px;">
+<tr><th>忍者药水<br /><span class="effect jump_boost"></span> <span class="lore">跳跃提升 3:00</span><br /><span class="effect regeneration"></span> <span class="lore">生命恢复 3:00</span><br /><span class="effect water_breathing"></span> <span class="lore">水下呼吸 3:00</span><br /><span class="effect invisibility"></span> <span class="lore">隐身 3:00</span></th><td><a href="#mystery_rabbit_foot">神秘兔子脚</a>+粗制的药水</td><td><span class="mcui" style="background-image:url(items/brew.png);width:127px;height:109px;">
 <span style="position: absolute;top:6px; left:28px;"><span style="display:block;width:24px;height:57px;background-image:url(items/bubble.gif)"></span></span>
-<span class="mcui_row" style="position: absolute;top:10px; left:52px;"><span class="rabbit_foot" title="神秘兔子腿"><span class="enchant">*</span></span></span>
+<span class="mcui_row" style="position: absolute;top:10px; left:52px;"><span class="rabbit_foot" title="神秘兔子脚"><span class="enchant">*</span></span></span>
 <span class="mcui_row" style="position: absolute;top:80px; left:52px;"><span class="colorful_items potion_of_ninja" title="忍者药水"></span></span>
 </span></td></tr>
 </tbody></table>
@@ -1813,8 +1844,10 @@
 <h2 id="plants">植物</h2>
 <h3 id="crops_and_hybrid">农作物与杂交</h3>
 <p>
-新增20种作物，需种植在耕地上，成熟后收割可获得相应作物。作物不受时运影响，且不可用骨粉催熟。</p>
+新增20种作物，需种植在耕地上，成熟后收割可获得相应作物，否则只能获得种子。作物不受时运影响，且不可用骨粉催熟。</p>
 <p>所有作物均需杂交获得。当作物与相邻的作物可杂交时，有5%的几率会产生新品种。</p>
+<p>作物共4个生长阶段，每个阶段平均需要800秒，共需2400秒。</p>
+<p class="small">少见的情况下，种子会退化为普通小麦种子。生长速度不受耕地等因素影响，受时间调节器影响。</p>
 
 <table><thead><tr><th>种子</th><th>收割/杂交来源</th><th colspan="2">作物</th></tr></thead><tbody>
 <tr><td><strong>彼岸花 (Lycoris Radiata)</strong></td><td>小麦、甜菜根</td><td>玫瑰红</td><td rowspan="10">0~3</td></tr>
@@ -1841,8 +1874,8 @@
 <img style="width:48%" src="items/screenshots/crops.png" />
 
 <h3 id="fruit_sapling">水果树树苗 (Fruit Sapling)</h3>
-<p>水果树树苗种下并长大后，每隔一段时间会长出一个<strong id="fruits">水果</strong>，水果可用于<a href="#all_in_one_machine">多功能一体机</a>低温高压下制作<a href="#cold_drink">冷饮</a>。可用骨粉催熟。</p>
-
+<p>水果树树苗种下并长大后，每隔一段时间会长出一个<strong id="fruits">水果</strong>，水果可用于<a href="#all_in_one_machine">多功能一体机</a>低温高压下制作<a href="#cold_drink">冷饮</a>。可用骨粉催熟。水果长出平均需要1600秒，受时间调节器影响。</p>
+<p class="small">水果生长空间不可被方块阻挡，非底部树叶不会长出水果。破坏水果附着的树叶水果会掉落。</p>
 <table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>	
 <tr><th>水果树树苗</th>
 <td>橡树树苗+8 苹果</td>
@@ -1861,7 +1894,8 @@
 </tbody></table>
 
 <h3 id="ore_sapling">矿石树树苗 (Ore Sapling)</h3>
-<p>矿石树树苗种下并长大后，每隔一段时间树叶会转化为一种矿石。可用骨粉催熟。</p>
+<p>矿石树树苗种下并长大后，每隔一段时间树叶会转化为一种矿石。可用骨粉催熟。树叶转化平均需要1600秒，受时间调节器影响。</p>
+<p class="small">若矿石分离了树叶和树干，树叶可能会腐烂。</p>
 
 <table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>	
 <tr><th>矿石树树苗</th>
@@ -1881,7 +1915,8 @@
 </tbody></table>
 
 <h3 id="wool_sapling">羊毛树树苗 (Wool Sapling)</h3>
-<p>羊毛树树苗种下并长大后，每隔一段时间树叶会转化为一种羊毛，和<a href="#wool_tree">天然生成</a>的一样。可用骨粉催熟。</p>
+<p>羊毛树树苗种下并长大后，每隔一段时间树叶会转化为一种羊毛，和<a href="#wool_tree">天然生成</a>的一样。可用骨粉催熟。树叶转化平均需要1600秒，受时间调节器影响。</p>
+<p class="small">若羊毛分离了树叶和树干，树叶可能会腐烂。</p>
 
 <table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>	
 <tr><th>羊毛树树苗</th>
@@ -2047,8 +2082,7 @@
 </tbody></table>
 
 <p>每件物品只可附加一种效果。效果可重复附加，之前的效果将会被覆盖。</p>
-<p>盔甲效果在对应槽位生效，剑和工具在主手生效，每秒消耗1点经验值，重复的效果不会叠加但消耗的经验值会叠加。使用<a href="#temperancer">节制器</a>可开启/关闭所有效果。</p>
-<p>连锁无消耗且不显示状态效果。玩家拥有连锁效果时，使用斧可一次性破坏相连的树、瓜、成熟的农作物，使用镐可一次性破坏10米内相连的矿石和黑曜石，使用锹可一次性10米内破坏相连的沙砾、粘土、沙子和灵魂沙。该效果不受精准采集和时运影响。</p>
+<p>盔甲效果在对应槽位生效，剑和工具在主手生效，每秒消耗1点经验值，重复的效果不会叠加但消耗的经验值会叠加。使用<a href="#temperancer">节制器</a>可开启/关闭所有效果。<a href="#chain_effect">连锁效果</a>无消耗。</p>
 
 <h4 id="attribute_adding">属性附加</h4>
 <ul>
@@ -2111,7 +2145,7 @@
 </span><span class="blaze_spawn_egg" title="烈焰人刷怪蛋">
 </span><span class="colorful_items shard_of_the_darkness" title="黑暗碎片">
 </span></span><span class="mcui_row"><span class="blaze_spawn_egg" title="烈焰人刷怪蛋">
-</span><span class="colorful_items broken_spawner" title="破损刷怪箱">
+</span><span class="colorful_items wing_of_sky" title="稀有物">
 </span><span class="blaze_spawn_egg" title="烈焰人刷怪蛋">
 </span></span><span class="mcui_row"><span class="colorful_items shard_of_the_darkness" title="黑暗碎片">
 </span><span class="blaze_spawn_egg" title="烈焰人刷怪蛋">
@@ -2124,6 +2158,7 @@
 <h2 id="decorations">装饰</h3>
 <h3 id="head_decorations">头饰</h3>
 <p>玩家未佩戴头盔或帽子，且副手持有指定的1个物品时，会自动佩戴该物品，共67款样式。</p>
+<p class="small">佩戴会移除物品的nbt，包括名称等内容。</p>
 <table class="center"><thead><tr><th colspan="4">帽子</th><th colspan="3">围脖</th><th colspan="5">植物装饰</th><th colspan="4">其它装饰</th></tr></thead>
 <tbody>
 <tr><td>玻璃</td><td>铁砧</td><td>石台阶</td><td>龙蛋</td><td>白色床</td><td>各色地毯</td><td>雪</td><td>铁活板门</td><td>各种花</td><td>珊瑚</td><td>珊瑚扇</td><td>草、厥</td><td>栅栏门</td><td>阳光传感器</td><td>末地烛</td><td>栅栏</td></tr>
@@ -2148,10 +2183,11 @@
 
 
 <h3>称号</h3>
-玩家手持<a href="#enchanted_diamond">附魔钻石</a>并根据下表的数字输入 <code>/trigger title set 数值</code> 即可获得相应称号。
+玩家手持绿宝石并根据下表的数字输入 <code>/trigger title set 数值</code> 即可获得相应称号。
 <table class="center">
+<thead>
+<tr><th></th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th></tr></thead>
 <tbody>
-<tr><th></th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th></tr>
 <tr><th>0</th><td>傲视群雄</td><td>八面威风</td><td>闭月羞花</td><td>冰肌玉骨</td><td>冰清玉洁</td><td>绰约多姿</td><td>超凡入圣</td><td>超凡脱俗</td><td>沉鱼落雁</td><td>齿白唇红
 </td></tr>
 <tr><th>10</th><td>出类拔萃</td><td>出神入化</td><td>出水芙蓉</td><td>打酱油的</td><td>大家闺秀</td><td>淡妆浓抹</td><td>道貌岸然</td><td>登峰造极</td><td>登堂入室</td><td>婀娜多姿
@@ -2646,6 +2682,7 @@
 
 <h3 id="bleach">漂白</h3>
 <p>将染色玻璃、染色陶瓦扔进炼药锅可将其漂白为玻璃、陶瓦，并减少炼药锅一级水位。</p>
+<p class="small">可以一次性扔入多个物品。</p>
 
 <h3 id="random_block">随机方块</h3>
 <p>将投掷器重命名为<code>qwerty</code>，然后放置在地面上并放入方块。之后玩家副手持有木棍且主手为空时，将会从最近的名称为<code>qwerty</code>的投掷器中随机选择一个给予玩家。</p>
@@ -3425,7 +3462,7 @@
 <tr><td><img class="normal" /><span><span class="colorful_items wand_of_the_darkness"><br /></span></span></td>
 <th>成为库洛缺德</th><td>黑暗权杖</td><td>-</td><td>Release</td><td>cpp:dark_wand</td></tr>
 <tr><td><img class="challenge" /><span><span class="colorful_items star_wand"><br /></span></span></td>
-<th>Release!</th><td>星之杖</td><td>500点经验</td><td>成为马猴烧酒</td><td>cpp:star_wand</td></tr>
+<th>Release!</th><td>星之杖</td><td>500点经验，若玩家无头盔或帽子，则会绑定小樱头。</td><td>成为马猴烧酒</td><td>cpp:star_wand</td></tr>
 <tr><td><img class="challenge" /><span><span class="colorful_items dream_wand"><br /></span></span></td>
 <th>膜法少女!</th><td>梦之杖</td><td>500点经验</td><td>星之杖</td><td>cpp:dream_wand</td></tr>
 
@@ -3468,7 +3505,7 @@
 <tr><td><img class="goal" /><span><span class="colorful_items bottle_of_salt"><br /></span></span></td>
 <th>白雪纷纷何所似</th><td>撒盐空中差可拟</td><td>—</td><td>红宝书</td><td>cpp:salt</td></tr>
 <tr><td><img class="goal" /><span><span class="colorful_items all_in_one_machine"><br /></span></span></td>
-<th>参数测定</th><td>使用熔炼机熔炼矿石</td><td>—</td><td>白雪纷纷何所似</td><td>cpp:arguments</td></tr>
+<th>参数测定</th><td>使用多功能一体机熔炼矿石</td><td>—</td><td>白雪纷纷何所似</td><td>cpp:arguments</td></tr>
 <tr><td><img class="challenge" /><span><span class="colorful_items compressor"><br /></span></span></td>
 <th>叮当猫的口袋</th><td>八重……算了，两重吧</td><td>—</td><td>参数测定</td><td>cpp:doraemon</td></tr>
 <tr><td><img class="normal" /><span><span class="normal_items rabbit_stew"><br /></span></span></td>
@@ -3717,7 +3754,7 @@
 <tr class="v1-8"><td>新增附魔铁锭、附魔金锭、附魔钻石。</td></tr>
 <tr class="v1-8"><td>新增铁粉、金粉、碳粉、绿宝石粉、钻石粉、石英粉、硅粉、稀土粉、钢粉。</td></tr>
 <tr class="v1-8"><td>新增酸水、碱水、生物酸、生物碱、空气瓶、粗硅、盐瓶、稀土盐、碱性稀土、氨制冷剂。</td></tr>
-<tr class="v1-8"><td>新增煤渣、肥料、稀土玻璃、钢化玻璃、硅板、月之碎片、日之碎片、神秘烈焰粉、神秘兔子腿、粘土桶。</td></tr>
+<tr class="v1-8"><td>新增煤渣、肥料、稀土玻璃、钢化玻璃、硅板、月之碎片、日之碎片、神秘烈焰粉、神秘兔子脚、粘土桶。</td></tr>
 <tr class="v1-8"><td>新增恶魂之泪、下界之星的合成与制作。</td></tr>
 <tr class="v1-8"><td>新增磁铁、时间调节器、报时器、世界之源、压缩器、年长者之教诲、坐标记录仪。</td></tr>
 <tr class="v1-8"><td>新增勤劳之手、破坏之手、灵巧之手、愤怒之手、历练之手。</td></tr>
@@ -3727,7 +3764,7 @@
 <tr class="v1-8"><td>移除附魔金苹果和药水的合成。</td></tr>
 <tr class="v1-8"><td>如果玩家食肉过多会行走缓慢，食肉过少会变得虚弱。使用测重压力板可以测量出你的体重指数。</td></tr>
 <tr class="v1-8"><td>新增生缤纷菜蔬、生土豆排骨、生土豆牛肉、生兔肉煲、炸鱼薯条、肉松面包的制作。</td></tr>
-<tr class="v1-8"><td>新增鸡蛋羹、烤胡萝卜、缤纷菜蔬、土豆排骨、土豆牛肉、兔肉煲、兔子皮、钻石、桶、神秘烈焰粉、神秘兔子腿的烧炼。</td></tr>
+<tr class="v1-8"><td>新增鸡蛋羹、烤胡萝卜、缤纷菜蔬、土豆排骨、土豆牛肉、兔肉煲、兔子皮、钻石、桶、神秘烈焰粉、神秘兔子脚的烧炼。</td></tr>
 <tr class="v1-8"><td>新增加强型缓降药水、夜视药水、抗火药水、水肺药水、隐身药水、跳跃药水、迅捷药水、力量药水、抗性药水、急迫药水、连环药水、再生药水、潮汐药水、治疗药水、无敌药水、冷饮、鲁莽药水、忍者药水的酿造与制作。</td></tr>
 <tr class="v1-8"><td>新增附魔金苹果和拔丝苹果的制作。</td></tr>
 
@@ -3867,7 +3904,7 @@
 · <a href="#sun_shard"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -304px -320px;"></span>日之碎片</a>
 · <a href="#clay_bucket"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -80px -80px;" class="colorful_items"></span>粘土桶</a>
 · <a href="#mystery_blaze_powder"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -208px -320px;"></span>神秘烈焰粉</a>
-· <a href="#mystery_rabbit_foot"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -400px -320px;"></span>神秘兔子腿</a>
+· <a href="#mystery_rabbit_foot"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -400px -320px;"></span>神秘兔子脚</a>
 · <a href="#ghast_tear"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -272px -320px;"></span>恶魂之泪</a>
 · <a href="#nether_star"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -176px -560px;"></span>下界之星</a>
 · <a href="#rabbit_hide"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -256px -560px;"></span>兔子皮</a>
@@ -4038,7 +4075,7 @@
 </article>
 
 <footer>
-<p><a href="../">官网</a> | <a href="https://github.com/ruhuasiyu/CraftingPlusPlus">GitHub</a> | <a href="http://www.mcbbs.net/thread-696861-1-1.html">Mcbbs</a> | <a href="http://www.mcbbs.net/home.php?mod=spacecp&ac=pm&touid=975525">联系作者</a> | 最后更新 2018-07-27</p>
+<p><a href="../">官网</a> | <a href="https://github.com/ruhuasiyu/CraftingPlusPlus">GitHub</a> | <a href="http://www.mcbbs.net/thread-696861-1-1.html">Mcbbs</a> | <a href="http://www.mcbbs.net/home.php?mod=spacecp&ac=pm&touid=975525">联系作者</a> | 最后更新 2018-08-12</p>
 </footer>
 </body></html>
 <!--<span class="mcui_icons"><span class="mcui_shapeless" title="此配方是无形的，材料可以以任何排列方式放置在合成格内。"></span></span>
