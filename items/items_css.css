@@ -216,11 +216,11 @@ nav a{
 	display: block;
 }
 article{
-	padding:0.5em 2em 1em;
+	padding:0.5em 2em 0.5em;
 	background-color:#eee;
 }
 footer{
-	margin:20px auto;
+	margin:10px auto 5px;
 }
 footer p{
 	text-align:center;

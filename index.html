@@ -50,7 +50,7 @@
 
 <p><strong>什么是原版模组？</strong>原版模组一般是指在不修改Minecraft游戏本体的前提下，通过命令方块、ooc或数据包等方式，而非forge或liteloader等api来对游戏的可玩性做出修改。</p>
 
-<p><strong>什么是《更多的合成》？</strong>《更多的合成》是一个大型的原版模组，目前已更新至<em>1.8版本</em>，支持<em>Minecraft Java 18w30b</em>。本次更新为<em>元素更新</em>，内容包括：</p>
+<p><strong>什么是《更多的合成》？</strong>《更多的合成》是一个大型的原版模组，目前已更新至<em>1.8版本</em>，支持<em>Minecraft Java 18w32a</em>。本次更新为<em>元素更新</em>，内容包括：</p>
 <ul>
 <li>经验值处理：你可以将经验存储为附魔之瓶，附魔之瓶可用来为你的矿物增产、自动捕鱼、造石造冰、酿药等，甚至可以用来强化你的盔甲和武器；</li>
 <li>十几种实用性的工具，这些工具可以用来：吸取物品、切换时间、切换天气、整地、铺路、祛魔、飞行等；</li>
@@ -87,7 +87,7 @@
 如果你想要对本模组进行支持，可进入<a href="https://afdian.net/@ruhuasiyu">爱发电页面</a>对我们进行赞助。您的赞助对我们至关重要，非常感谢您的支持！</p>
 <table><thead><tr><th>支持的minecraft版本</th><th>模组版本及下载链接</th></tr></thead>
 <tbody>
-<tr><td>Minecraft Java版 18w32a</td><td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/raw/master/versions/1.8/v1.8-m08d12.zip">craftingpp-1.8-m08d12</a> | <a href="home.ustc.edu.cn/~zsxqq/craftingpp/v1.8-m08d12.zip">备用链接</a></li></td></tr>
+<tr><td>Minecraft Java版 18w32a</td><td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/raw/master/versions/1.8/v1.8-m08d14.zip">craftingpp-1.8-m08d14</a> | <a href="home.ustc.edu.cn/~zsxqq/craftingpp/v1.8-m08d14.zip">备用链接</a></li></td></tr>
 <tr><td>Minecraft Java版 1.12</td><td>
 <a href="http://www.mcbbs.net/forum.php?mod=attachment&aid=MTA4NDIzM3xhYjM4MDU1NnwxNTExNjI3NjYwfDk3NTUyNXw2OTY4NjE%3D">craftingpp-1.7.4</a></td></tr>
 <tr><td>Minecraft Java版 1.12 pre</td><td>
@@ -1540,6 +1540,102 @@
 </span></span></span><span class="mcui_arrow"></span><span class="mcui_output">
 <span class="colorful_items empty_bookshelf" title="空书架">
 </span></span><span class="mcui_icons2"><span class="mcui_crafting_machine" title="使用合成器合成"></span></span></span></td><td></td></tr>
+</tbody></table>
+
+<h3 id="golem">傀儡 (Golem)</h3>
+<p>傀儡用于合成</p>
+<ul>
+<li><strong id="golem_farmer">傀儡农民 (Golem Farmer)</strong>：破坏接触的树叶、木头、西瓜、南瓜、蘑菇方块、甘蔗、成熟的作物。</li>
+<li><strong id="golem_miner">傀儡矿工 (Golem Miner)</strong>：破坏接触的除控制方块和无法破坏的方块以外的所有方块。</li>
+<li><strong id="golem_fisher">傀儡渔夫 (Golem Fisher)</strong>：接触水时会开始钓鱼，时长5-45秒。</li>
+<li><strong id="golem_warrior">傀儡战士 (Golem Warrior)</strong>：对接触的非玩家生物造成伤害。</li>
+<li><strong id="golem_herder">傀儡牧民 (Golem Herder)</strong>：繁殖接触的动物。</li>
+</ul>
+<p>这些傀儡放置时默认向东方移动，接触控制方块后会转向。</p>
+
+<table><thead>
+<tr><th>方向</th><th>控制方块</th></tr>
+</thead><tbody>
+<tr><td>东</td><td>红色羊毛</td></tr>
+<tr><td>南</td><td>黄色羊毛</td></tr>
+<tr><td>西</td><td>蓝色羊毛</td></tr>
+<tr><td>北</td><td>绿色羊毛</td></tr>
+<tr><td>上</td><td>青色羊毛</td></tr>
+<tr><td>下</td><td>品红色羊毛</td></tr>
+<tr><td>终止并掉落</td><td>白色羊毛</td></tr>
+</tbody></table>
+
+<table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
+<tr><th>傀儡农民</th><td>傀儡+<a href="#industrious_hand">勤劳之手</a></td>
+<td><span class="mcui"><span><span class="mcui_row"><span class="colorful_items golem" title="傀儡">
+</span><span class="colorful_items industrious_hand" title="勤劳之手">
+</span><span class="empty">
+</span></span><span class="mcui_row"><span class="empty">
+</span><span class="empty">
+</span><span class="empty">
+</span></span><span class="mcui_row"><span class="empty">
+</span><span class="empty">
+</span><span class="empty">
+</span></span></span><span class="mcui_arrow"></span><span class="mcui_output">
+<span class="colorful_items golem" title="傀儡农民">
+</span></span><span class="mcui_icons2"><span class="mcui_crafting_machine" title="使用合成器合成"></span></span><span class="mcui_icons"><span class="mcui_shapeless" title="此配方是无形的，材料可以以任何排列方式放置在合成格内。"></span></span></span></td><td></td></tr>
+
+<tr><th>傀儡矿工</th><td>傀儡+<a href="#break_hand">破坏之手</a></td>
+<td><span class="mcui"><span><span class="mcui_row"><span class="colorful_items golem" title="傀儡">
+</span><span class="colorful_items break_hand" title="破坏之手">
+</span><span class="empty">
+</span></span><span class="mcui_row"><span class="empty">
+</span><span class="empty">
+</span><span class="empty">
+</span></span><span class="mcui_row"><span class="empty">
+</span><span class="empty">
+</span><span class="empty">
+</span></span></span><span class="mcui_arrow"></span><span class="mcui_output">
+<span class="colorful_items golem" title="傀儡矿工">
+</span></span><span class="mcui_icons2"><span class="mcui_crafting_machine" title="使用合成器合成"></span></span><span class="mcui_icons"><span class="mcui_shapeless" title="此配方是无形的，材料可以以任何排列方式放置在合成格内。"></span></span></span></td><td></td></tr>
+
+<tr><th>傀儡渔夫</th><td>傀儡+<a href="#smart_hand">灵巧之手</a></td>
+<td><span class="mcui"><span><span class="mcui_row"><span class="colorful_items golem" title="傀儡">
+</span><span class="colorful_items smart_hand" title="灵巧之手">
+</span><span class="empty">
+</span></span><span class="mcui_row"><span class="empty">
+</span><span class="empty">
+</span><span class="empty">
+</span></span><span class="mcui_row"><span class="empty">
+</span><span class="empty">
+</span><span class="empty">
+</span></span></span><span class="mcui_arrow"></span><span class="mcui_output">
+<span class="colorful_items golem" title="傀儡渔夫">
+</span></span><span class="mcui_icons2"><span class="mcui_crafting_machine" title="使用合成器合成"></span></span><span class="mcui_icons"><span class="mcui_shapeless" title="此配方是无形的，材料可以以任何排列方式放置在合成格内。"></span></span></span></td><td></td></tr>
+
+<tr><th>傀儡战士</th><td>傀儡+<a href="#angry_hand">愤怒之手</a></td>
+<td><span class="mcui"><span><span class="mcui_row"><span class="colorful_items golem" title="傀儡">
+</span><span class="colorful_items angry_hand" title="愤怒之手">
+</span><span class="empty">
+</span></span><span class="mcui_row"><span class="empty">
+</span><span class="empty">
+</span><span class="empty">
+</span></span><span class="mcui_row"><span class="empty">
+</span><span class="empty">
+</span><span class="empty">
+</span></span></span><span class="mcui_arrow"></span><span class="mcui_output">
+<span class="colorful_items golem" title="傀儡战士">
+</span></span><span class="mcui_icons2"><span class="mcui_crafting_machine" title="使用合成器合成"></span></span><span class="mcui_icons"><span class="mcui_shapeless" title="此配方是无形的，材料可以以任何排列方式放置在合成格内。"></span></span></span></td><td></td></tr>
+
+<tr><th>傀儡牧民</th><td>傀儡+<a href="#toughen_hand">历练之手</a></td>
+<td><span class="mcui"><span><span class="mcui_row"><span class="colorful_items golem" title="傀儡">
+</span><span class="colorful_items toughen_hand" title="历练之手">
+</span><span class="empty">
+</span></span><span class="mcui_row"><span class="empty">
+</span><span class="empty">
+</span><span class="empty">
+</span></span><span class="mcui_row"><span class="empty">
+</span><span class="empty">
+</span><span class="empty">
+</span></span></span><span class="mcui_arrow"></span><span class="mcui_output">
+<span class="colorful_items golem" title="傀儡牧民">
+</span></span><span class="mcui_icons2"><span class="mcui_crafting_machine" title="使用合成器合成"></span></span><span class="mcui_icons"><span class="mcui_shapeless" title="此配方是无形的，材料可以以任何排列方式放置在合成格内。"></span></span></span></td><td></td></tr>
+
 </tbody></table>
 
 
@@ -4070,13 +4166,10 @@
 </tbody></table>
 
 
-
-
-</article>
-
 <footer>
 <p><a href="../">官网</a> | <a href="https://github.com/ruhuasiyu/CraftingPlusPlus">GitHub</a> | <a href="http://www.mcbbs.net/thread-696861-1-1.html">Mcbbs</a> | <a href="http://www.mcbbs.net/home.php?mod=spacecp&ac=pm&touid=975525">联系作者</a> | 最后更新 2018-08-12</p>
 </footer>
+</article>
 </body></html>
 <!--<span class="mcui_icons"><span class="mcui_shapeless" title="此配方是无形的，材料可以以任何排列方式放置在合成格内。"></span></span>
 lapis 6*2.2=13.2	6*3.14=18.84
