@@ -10,5 +10,5 @@ This project is licensed under the terms of the GNU General Public License v3.0.
 # 更多的合成
 這是Minecraft原版模組，添加了大量的合成表、食物、建築等內容。該項目采用 GNU General Public License v3.0 協議。
 
-主页：[https://ruhuasiyu.github.io/CraftingPlusPlus/]
-[http://home.ustc.edu.cn/~zsxqq/craftingpp/]
+主页：[https://ruhuasiyu.github.io/CraftingPlusPlus/](https://ruhuasiyu.github.io/CraftingPlusPlus/)
+[http://home.ustc.edu.cn/~zsxqq/craftingpp/](http://home.ustc.edu.cn/~zsxqq/craftingpp/)

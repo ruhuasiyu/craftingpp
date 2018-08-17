@@ -19,6 +19,7 @@
 <nav>
 <ul>
 	<li><a href="#introduction">简介</a></li>
+	<li><a href="#index">索引</a></li>
 	<li><a href="#generation">自然</a></li>
 	<li><a href="#entities_and_loots">实体</a></li>
 	<li><a href="#machines">机器</a></li>
@@ -34,8 +35,8 @@
 	<li><a href="#trade">交易</a></li>
 	<li><a href="#island">空岛</a></li>
 	<li><a href="#advancements">进度</a></li>
+	<li><a href="#config">配置</a></li>	
 	<li><a href="#changlog">日志</a></li>
-	<li><a href="#index">索引</a></li>
 </ul>
 </nav>
 <div class="banner" style="margin-top:44px">
@@ -50,7 +51,7 @@
 
 <p><strong>什么是原版模组？</strong>原版模组一般是指在不修改Minecraft游戏本体的前提下，通过命令方块、ooc或数据包等方式，而非forge或liteloader等api来对游戏的可玩性做出修改。</p>
 
-<p><strong>什么是《更多的合成》？</strong>《更多的合成》是一个大型的原版模组，目前已更新至<em>1.8版本</em>，支持<em>Minecraft Java 18w32a</em>。本次更新为<em>元素更新</em>，内容包括：</p>
+<p><strong>什么是《更多的合成》？</strong>《更多的合成》是国内论坛最大的原版模组，目前已更新至<em>1.8版本</em>，支持<em>Minecraft Java 18w32a</em>。本次更新为<em>元素更新</em>，内容包括：</p>
 <ul>
 <li>经验值处理：你可以将经验存储为附魔之瓶，附魔之瓶可用来为你的矿物增产、自动捕鱼、造石造冰、酿药等，甚至可以用来强化你的盔甲和武器；</li>
 <li>十几种实用性的工具，这些工具可以用来：吸取物品、切换时间、切换天气、整地、铺路、祛魔、飞行等；</li>
@@ -70,8 +71,7 @@
 <li>原版从树苗到末地的空岛系统。</li>
 </ul>
 
-
-本系列模组包括
+本系列模组分为以下5个部分：
 <table>
 <thead><tr><th>模组名称</th><th>版本</th><th>内容</th></tr></thead>
 <tbody>
@@ -87,7 +87,7 @@
 如果你想要对本模组进行支持，可进入<a href="https://afdian.net/@ruhuasiyu">爱发电页面</a>对我们进行赞助。您的赞助对我们至关重要，非常感谢您的支持！</p>
 <table><thead><tr><th>支持的minecraft版本</th><th>模组版本及下载链接</th></tr></thead>
 <tbody>
-<tr><td>Minecraft Java版 18w32a</td><td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/raw/master/versions/1.8/v1.8-m08d14.zip">craftingpp-1.8-m08d14</a> | <a href="home.ustc.edu.cn/~zsxqq/craftingpp/v1.8-m08d14.zip">备用链接</a></li></td></tr>
+<tr><td>Minecraft Java版 18w32a</td><td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/raw/master/versions/1.8/v1.8-m08d17.zip">craftingpp-1.8-m08d17</a> | <a href="home.ustc.edu.cn/~zsxqq/craftingpp/v1.8-m08d17.zip">备用链接</a></li></td></tr>
 <tr><td>Minecraft Java版 1.12</td><td>
 <a href="http://www.mcbbs.net/forum.php?mod=attachment&aid=MTA4NDIzM3xhYjM4MDU1NnwxNTExNjI3NjYwfDk3NTUyNXw2OTY4NjE%3D">craftingpp-1.7.4</a></td></tr>
 <tr><td>Minecraft Java版 1.12 pre</td><td>
@@ -107,11 +107,11 @@
 <h3 id="how_to_start">如何开始</h3>
 <p>下载后，将解压缩后的<code>datapacks</code>文件夹和<code>resources.zip</code>放入<code>.minecraft/saves/世界名</code>文件夹，然后进入游戏并按下F3+T或退出世界重进即可。<a href="#block_sky_domain">空岛模块</a>默认不开启，玩家可新建自定义超平坦，如<code>minecraft:air;minecraft:mountains;</code>，然后重复上述操作即可。</p>
 
-<p>模组特有物品均需使用<a href="#crafting_machine">合成器</a>来合成。模组移除了木制工具，可使用燧石来合成<a href="#stone_tools">石制工具</a>。模组部分参数可通过文件<code>datapacks/craftingpp/data/cpp/functions/config.mcfunction</code>修改。</p>
+<p>涉及模组特有物品均需使用<a href="#crafting_machine">合成器</a>来合成。模组部分参数可通过修改<a href="#config">配置文件</a>来修改。</p>
 
 <p>模组大部分文字支持英文、简体中文、繁体中文。如有任何意见建议，欢迎<a href="http://www.mcbbs.net/thread-696861-1-1.html">在论坛回复</a>、<a href="https://github.com/ruhuasiyu/craftingpp/issues/new">发起issue</a>或<a href="http://www.mcbbs.net/home.php?mod=spacecp&ac=pm&touid=975525">私信我</a>。</p>
 
-<p>转载本文需遵守<strong><a href="https://creativecommons.org/licenses/by-nc-nd/2.5/cn/">CC BY-NC-ND 2.5 CN 许可协议</a></strong>——列出作者(<a href="http://www.mcbbs.net/home.php?mod=spacecp&ac=pm&touid=975525">ruhuasiyu@mcbbs</a>)、来源、原始下载链接以及相同的许可协议。模组代码使用需遵守<a href="https://www.gnu.org/licenses/gpl.html">GNU GENERAL PUBLIC LICENSE v3.0</a>协议。请勿转载至网盘或文件存储平台。公益服务器可直接使用；非公益服务器请联系我。通讯类工具可下载后分享。</p>
+<p>转载本文需遵守<strong><a href="https://creativecommons.org/licenses/by-nc-nd/2.5/cn/">CC BY-NC-ND 2.5 CN 许可协议</a></strong>——列出作者(<a href="http://www.mcbbs.net/home.php?mod=spacecp&ac=pm&touid=975525">ruhuasiyu@mcbbs</a>)、来源、原始下载链接以及相同的许可协议。模组代码使用需遵守<a href="https://www.gnu.org/licenses/gpl.html">GNU GENERAL PUBLIC LICENSE v3.0</a>协议。请勿转载至网盘或文件存储平台，通讯类工具允许下载后分享。公益服务器可直接使用；非公益服务器需先联系我。</p>
 
 <h3 id="acknowledge">制作者名单</h3>
 <p><strong>数据包设计</strong>：ruhuasiyu</p>
@@ -119,12 +119,257 @@
 <p><strong>指令参考</strong>：<a href="http://www.mcbbs.net/?1963599">pineapple_</a> <a href="http://www.mcbbs.net/?160123">贰逼</a> the Eternal Celestial Star <a href="https://github.com/pca006132">pca</a> <a href="http://www.mcbbs.net/?720449">玄素</a> <a href="http://www.mcbbs.net/?582040">chyx</a> <a href="https://github.com/ustc-zzzz">zzzz_ustc</a> <a href="http://www.mcbbs.net/?1073223">乙烯_中国</a> <a href="https://github.com/switefaster">switefaster</a> 折君 <a href="http://www.mcbbs.net/?725858">⊙v⊙</a></p>
 <p><strong>灵感参考</strong>：<a href="http://teamcofh.com/">热力膨胀</a> <a href="https://botaniamod.net/">植物魔法</a> <a href="http://www.abyssalcraft.com/">深渊国度</a> <a href="https://minecraft.curseforge.com/projects/pams-harvestcraft">潘马斯农场</a> 盐</p>
 <p><strong>平台支持</strong>：<a href="https://www.mcbbs.net/">mcbbs中文论坛</a> <a href="https://www.mcmod.cn/">MCMOD百科</a> <a href="http://www.mcbbs.net/group-546-1.html">CBL</a>(Command Block Logic) <a href="http://www.mcbbs.net/group-1009-1.html">TCP</a>(The Command's Power) <a href="http://www.mcbbs.net/group-1474-1.html">CBV</a>(Cherry Blossom V) <a href="http://www.mcbbs.net/group-1478-1.html">MAG</a>(Magic Amateur Group)</p>
-<p><strong><a href="https://afdian.net/@ruhuasiyu">经费支持</a></strong>：落天望月 switefaster chyx</p>
+<p><strong>经费支持</strong>：落天望月 <a href="https://github.com/switefaster">switefaster</a> <a href="http://www.mcbbs.net/?582040">chyx</a></p>
 <p>感谢以上所有玩家，特别感谢对我们给予经费支持的玩家！</p>
 
-<!-------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------->
+<h2 id="index">索引</h2>
+<table><tbody>
+
+<tr><td style="text-align:right;background-color:#ddd;font-weight:bold;">机制</td><td>
+<a href="#introduction">简介</a>
+· <a href="#utility">便捷化</a> 
+ (<a href="#bleach">漂白</a>
+· <a href="#random_block">随机方块</a>
+· <a href="#sort_chest">箱子整理</a>
+· <a href="#auto_plant">自动种植</a>
+· <a href="#mix_slabs">复合台阶</a> 
+· <a href="#vertical_slabs">竖台阶</a> )
+· <a href="#balance_food">营养均衡</a>
+· <a href="#rituals">仪式</a>
+ (<a href="#enchanted_book_making">附魔书制作</a>
+· <a href="#effect_adding">效果附加</a>
+· <a href="#attribute_adding">属性附加</a>
+· <a href="#dark_rituals">黑暗仪式</a>)
+· <a href="#block_sky_domain">空域开端</a>
+· <a href="#advancements">进度</a>
+</td></tr>
+
+<tr><td style="width:90px;text-align:right;background-color:#ddd;font-weight:bold;"><a href="#generation">自然生成</a> </td><td>
+  <a href="#wool_tree">羊毛树</a> 
+· <a href="#creeper_dungeon">爬行者地牢</a> 
+· <a href="#enchanting_room">附魔室</a> 
+· <a href="#totem_pillar">图腾柱</a> 
+</td></tr>
+
+<tr><td style="width:90px;text-align:right;background-color:#ddd;font-weight:bold;"><a href="#entities_and_loots">实体</a></td><td>
+  <a href="#improved_mob">怪物加强</a> 
+· <a href="#dark_animals">黑暗动物</a> 
+· <a href="#villager">村民</a> 
+· <a href="#loots">战利品</a>
+· <a href="#trade">交易</a>
+</td></tr>
+
+<tr><td style="width:90px;text-align:right;background-color:#ddd;font-weight:bold;">机器</td><td>
+  <a href="#crafting_machine"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -0px -32px;" class="colorful_items"></span>合成器</a> 
+· <a href="#all_in_one_machine"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -16px -32px;" class="colorful_items"></span>多功能一体机</a> 
+· <a href="#trade_machine"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -32px -32px;" class="colorful_items"></span>交易机</a> 
+· <a href="#recipe_shower"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -48px -32px;" class="colorful_items"></span>配方显示器</a> </td></tr>
+
+<tr><td style="width:90px;text-align:right;background-color:#ddd;font-weight:bold;">插件</td><td>
+  <a href="#empty_plugin"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -64px -32px;" class="colorful_items"></span>空白插件</a> 
+· <a href="#low_temperature_plugin"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -80px -32px;" class="colorful_items"></span>低温插件</a> 
+· <a href="#low_pressure_plugin"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -96px -32px;" class="colorful_items"></span>低压插件</a> 
+· <a href="#high_temperature_plugin"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -112px -32px;" class="colorful_items"></span>高温插件</a> 
+· <a href="#high_pressure_plugin"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -128px -32px;" class="colorful_items"></span>高压插件</a>
+· <a href="#cobblestone_plugin"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -0px -48px;" class="colorful_items"></span>圆石插件</a> 
+· <a href="#stone_plugin"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -16px -48px;" class="colorful_items"></span>石头插件</a> 
+· <a href="#obsidian_plugin"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -32px -48px;" class="colorful_items"></span>黑曜石插件</a>
+</td></tr>
+
+<tr><td style="width:90px;text-align:right;background-color:#ddd;font-weight:bold;">掉落物</td><td>
+  <a href="#rare_drops">稀有掉落物</a> 
+ (<a href="#wing_of_sky"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -0px -0px;" class="colorful_items"></span>天空之翼</a> 
+· <a href="#heart_of_ocean"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -16px -0px;" class="colorful_items"></span>海洋之心</a> 
+· <a href="#limb_of_ridge"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -32px -0px;" class="colorful_items"></span>山脉之肢</a> 
+· <a href="#soul_of_dirt"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -64px -0px;" class="colorful_items"></span>泥土之魂</a> 
+· <a href="#certification_of_earth"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -48px -0px;" class="colorful_items"></span>居民之证</a> 
+· <a href="#nova_of_fire"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -80px -0px;" class="colorful_items"></span>火焰之星</a> 
+· <a href="#spirit_of_life"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -96px -0px;" class="colorful_items"></span>生命之灵</a>) 
+· <a href="#heads"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -32px -720px;"></span>头</a>
+· <a href="#shard_of_the_darkness"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -112px -0px;" class="colorful_items"></span>黑暗碎片</a>
+· <a href="#broken_spawner"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -128px -0px;" class="colorful_items"></span>破损的刷怪箱</a></td></tr>
+
+<tr><td style="width:90px;text-align:right;background-color:#ddd;font-weight:bold;">材料</td><td>
+  <a href="#introduction"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -160px -544px;"></span>附魔之瓶</a>
+· <a href="#enchanted_iron"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -112px -560px;"></span>附魔铁锭</a>
+· <a href="#enchanted_gold"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -80px -560px;"></span>附魔金锭</a>
+· <a href="#enchanted_diamond"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -496px -544px;"></span>附魔钻石</a>
+· <a href="#cinder"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -448px -544px;"></span>煤渣</a>
+· <a href="#fertilizer"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -256px -416px;"></span>肥料</a>
+· <a href="#rare_earth_glass"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -96px -368px;"></span>稀土玻璃</a>
+· <a href="#reinforced_glass"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -32px -352px;"></span>钢化玻璃</a>
+· <a href="#silicon_plate"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -64px -80px;" class="colorful_items"></span>硅板</a>
+· <a href="#moon_shard"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -448px -704px;"></span>月之碎片</a>
+· <a href="#sun_shard"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -304px -320px;"></span>日之碎片</a>
+· <a href="#clay_bucket"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -80px -80px;" class="colorful_items"></span>粘土桶</a>
+· <a href="#mystery_blaze_powder"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -208px -320px;"></span>神秘烈焰粉</a>
+· <a href="#mystery_rabbit_foot"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -400px -320px;"></span>神秘兔子脚</a>
+· <a href="#ghast_tear"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -272px -320px;"></span>恶魂之泪</a>
+· <a href="#nether_star"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -176px -560px;"></span>下界之星</a>
+· <a href="#rabbit_hide"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -256px -560px;"></span>兔子皮</a>
+· <a href="#diamond"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -496px -544px;"></span>钻石</a>
+· <a href="#bucket"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -432px -320px;"></span>桶</a>
+· <a href="#mycelium"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -432px -480px;"></span>菌丝</a>
+· <a href="#grass_block"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -320px -480px;"></span>草方块</a>
+· <a href="#tropical_fish_bucket"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -320px -832px;"></span>热带鱼桶</a>
+</td></tr>
+
+<tr><td style="width:90px;text-align:right;background-color:#ddd;font-weight:bold;">瓶装粉末</td><td>
+  <a href="#iron_dust"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -48px -48px;" class="colorful_items"></span>铁粉</a>
+· <a href="#gold_dust"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -64px -48px;" class="colorful_items"></span>金粉</a>
+· <a href="#carbon_dust"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -80px -48px;" class="colorful_items"></span>碳粉</a>
+· <a href="#emerald_dust"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -96px -48px;" class="colorful_items"></span>绿宝石粉</a>
+· <a href="#diamond_dust"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -112px -48px;" class="colorful_items"></span>钻石粉</a>
+· <a href="#quartz_dust"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -128px -48px;" class="colorful_items"></span>石英粉</a>
+· <a href="#silicon_dust"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -0px -64px;" class="colorful_items"></span>硅粉</a>
+· <a href="#rare_earth_dust"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -16px -64px;" class="colorful_items"></span>稀土粉</a>
+· <a href="#steel_dust"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -32px -64px;" class="colorful_items"></span>钢粉</a>
+· <a href="#course_silicon"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -128px -64px;" class="colorful_items"></span>粗硅</a>
+· <a href="#bottle_of_salt"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -0px -80px;" class="colorful_items"></span>盐瓶</a>
+· <a href="#rare_earth_salt"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -16px -80px;" class="colorful_items"></span>稀土盐</a>
+· <a href="#alkaloid_rare_earth"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -32px -64px;" class="colorful_items"></span>碱性稀土</a>
+</td></tr>
+
+<tr><td style="width:90px;text-align:right;background-color:#ddd;font-weight:bold;">瓶装流体</td><td>
+  <a href="#acid"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -48px -64px;" class="colorful_items"></span>酸水</a>
+· <a href="#soda_water"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -64px -64px;" class="colorful_items"></span>碱水</a>
+· <a href="#bionic_acid"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -80px -64px;" class="colorful_items"></span>生物酸</a>
+· <a href="#alkaloid"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -96px -64px;" class="colorful_items"></span>生物碱</a>
+· <a href="#bottle_of_air"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -112px -64px;" class="colorful_items"></span>空气瓶</a>
+· <a href="#ammonia_refrigerant"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -48px -80px;" class="colorful_items"></span>氨制冷剂</a>
+</td></tr>
+
+<tr><td style="width:90px;text-align:right;background-color:#ddd;font-weight:bold;">元素之力</td><td>
+  <a href="#blue_force_of_sky"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -0px -16px;" class="colorful_items"></span>蓝色天之力</a>
+· <a href="#green_force_of_water"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -16px -16px;" class="colorful_items"></span>绿色水之力</a>
+· <a href="#cyan_force_of_mountain"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -32px -16px;" class="colorful_items"></span>青色山之力</a>
+· <a href="#orange_force_of_dirt"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -48px -16px;" class="colorful_items"></span>橙色土之力</a>
+· <a href="#yellow_force_of_earth"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -64px -16px;" class="colorful_items"></span>黄色地之力</a>
+· <a href="#red_force_of_fire"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -80px -16px;" class="colorful_items"></span>红色火之力</a>
+· <a href="#purple_force_of_life"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -96px -16px;" class="colorful_items"></span>紫色命之力</a>
+· <a href="#white_force_of_lightning"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -112px -16px;" class="colorful_items"></span>白色电之力</a>
+· <a href="#black_force_of_moon"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -128px -16px;" class="colorful_items"></span>黑色月之力</a> 
+</td></tr>
+
+<tr><td style="width:90px;text-align:right;background-color:#ddd;font-weight:bold;">实用工具</td><td>
+  <a href="#magnet"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -96px -80px;" class="colorful_items"></span>磁铁</a> 
+· <a href="#time_conditioner"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -112px -80px;" class="colorful_items"></span>时间调节器</a> 
+· <a href="#time_checker"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -128px -80px;" class="colorful_items"></span>报时器</a> 
+· <a href="#origin_of_the_world"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -0px -96px;" class="colorful_items"></span>世界之源</a> 
+· <a href="#compressor"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -16px -96px;" class="colorful_items"></span>压缩器</a> 
+· <a href="#elder_s_words"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -32px -96px;" class="colorful_items"></span>年长者之教诲</a> 
+· <a href="#coordinate_recorder"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -48px -96px;" class="colorful_items"></span>坐标记录仪</a> 
+· <a href="#empty_bookshelf"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -128px -112px;" class="colorful_items"></span>空书架</a> 
+</td></tr>
+
+<tr><td style="width:90px;text-align:right;background-color:#ddd;font-weight:bold;">手</td><td>
+  <a href="#industrious_hand"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -64px -96px;" class="colorful_items"></span>勤劳之手</a> 
+· <a href="#break_hand"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -80px -96px;" class="colorful_items"></span>破坏之手</a>
+· <a href="#smart_hand"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -96px -96px;" class="colorful_items"></span>灵巧之手</a> 
+· <a href="#angry_hand"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -112px -96px;" class="colorful_items"></span>愤怒之手</a> 
+· <a href="#toughen_hand"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -128px -96px;" class="colorful_items"></span>历练之手</a> 
+</td></tr>
+
+<tr><td style="width:90px;text-align:right;background-color:#ddd;font-weight:bold;">傀儡</td><td>
+  <a href="#golem"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -112px -112px;" class="colorful_items"></span>傀儡</a> 
+· <a href="#golem_farmer">傀儡农民</a> 
+· <a href="#golem_fisher">傀儡矿工</a> 
+· <a href="#golem_fisher">傀儡渔夫</a> 
+· <a href="#golem_warrior">傀儡战士</a> 
+· <a href="#golem_herder">傀儡牧民</a> 
+</td></tr>
+
+<tr><td style="width:90px;text-align:right;background-color:#ddd;font-weight:bold;">魔法</td><td>
+  <a href="#sealing_wand"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -0px -112px;" class="colorful_items"></span>封印之杖</a> 
+· <a href="#star_wand"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -16px -112px;" class="colorful_items"></span>星之杖</a> 
+· <a href="#dream_wand"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -32px -112px;" class="colorful_items"></span>梦之杖</a> 
+· <a href="#wand_of_the_darkness"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -48px -112px;" class="colorful_items"></span>黑暗魔杖</a> 
+· <a href="#temperancer"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -80px -112px;" class="colorful_items"></span>节制器</a> 
+· <a href="#broom"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -64px -112px;" class="colorful_items"></span>扫帚</a> 
+</td></tr>
+
+<tr><td style="width:90px;text-align:right;background-color:#ddd;font-weight:bold;">食物</td><td>
+  <a href="#raw_colorful_vegetable"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -96px -416px;"></span>生缤纷菜蔬</a>
+· <a href="#raw_braised_beef_with_potatoes"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -96px -416px;"></span>生土豆牛肉</a>
+· <a href="#raw_braised_pork_with_potatoes"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -96px -416px;"></span>生土豆排骨</a>
+· <a href="#raw_rabbit_stew"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -96px -416px;"></span>生兔肉煲</a>
+· <a href="#colorful_vegetable"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -96px -416px;"></span>缤纷菜蔬</a>
+· <a href="#braised_beef_with_potatoes"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -96px -416px;"></span>土豆牛肉</a>
+· <a href="#braised_pork_with_potatoes"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -96px -416px;"></span>土豆排骨</a>
+· <a href="#rabbit_stew"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -96px -416px;"></span>兔肉煲</a>
+· <a href="#fish_and_chips"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -96px -416px;"></span>炸鱼薯条</a>
+· <a href="#meat_floss_bread"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -352px -400px;"></span>肉松面包</a>
+· <a href="#egg_stew"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -48px -416px;"></span>鸡蛋羹</a>
+· <a href="#baked_carrot"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -240px -320px;"></span>烤胡萝卜</a>
+· <a href="#toffee_apple"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -336px -400px;"></span>拔丝苹果</a>
+· <a href="#enchanted_golden_apple"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -16px -416px;"></span>附魔金苹果</a>
+</td></tr>
+
+<tr><td style="width:90px;text-align:right;background-color:#ddd;font-weight:bold;">药水</td><td>
+  <a href="#potion_of_slow_falling"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -32px -864px;"></span>缓降药水</a> 
+· <a href="#potion_of_night_vision"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -16px -544px;"></span>夜视药水</a> 
+· <a href="#potion_of_fire_resistance"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -448px -528px;"></span>抗火药水</a> 
+· <a href="#potion_of_water_breathing"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -32px -864px;"></span>水肺药水</a> 
+· <a href="#potion_of_invisibility"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -496px -528px;"></span>隐身药水</a> 
+· <a href="#potion_of_leaping"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -0px -544px;"></span>跳跃药水</a> 
+· <a href="#potion_of_swiftness"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -96px -544px;"></span>迅捷药水</a> 
+· <a href="#potion_of_strength"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -80px -544px;"></span>力量药水</a> 
+· <a href="#potion_of_resistance"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -16px -176px;" class="colorful_items"></span>抗性药水</a> 
+· <a href="#potion_of_haste"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -32px -176px;" class="colorful_items"></span>急迫药水</a> 
+· <a href="#potion_of_chain"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -48px -176px;" class="colorful_items"></span>连环药水</a> 
+· <a href="#potion_of_regeneration"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -48px -544px;"></span>再生药水</a> 
+· <a href="#potion_of_tide"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -64px -176px;" class="colorful_items"></span>潮汐药水</a> 
+· <a href="#potion_of_healing"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -480px -528px;"></span>治疗药水</a> 
+· <a href="#potion_of_invulnerable"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -80px -176px;" class="colorful_items"></span>无敌药水</a> 
+· <a href="#cold_drink"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -96px -176px;" class="colorful_items"></span>冷饮</a> 
+· <a href="#introduction"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -128px -160px;" class="colorful_items"></span>鲁莽药水</a>
+· <a href="#introduction"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -0px -176px;" class="colorful_items"></span>忍者药水</a>
+
+</td></tr>
+
+
+<tr><td style="width:90px;text-align:right;background-color:#ddd;font-weight:bold;">植物</td><td>
+  <a href="#crops_and_hybrid">农作物与杂交</a>
+· <a href="#fruit_sapling">水果树树苗</a> 
+· <a href="#ore_sapling">矿石树树苗</a> 
+· <a href="#wool_sapling">羊毛树树苗</a>
+</td></tr>
+
+<tr><td style="width:90px;text-align:right;background-color:#ddd;font-weight:bold;">装饰品</td><td>
+  <a href="#head_decorations">头饰</a> 
+· <a href="#title">称号</a> 
+· <a href="#glow_hat"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -0px -128px;" class="colorful_items"></span>荧光帽</a> 
+· <a href="#green_hat"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -16px -128px;" class="colorful_items"></span>原谅帽</a> 
+· <a href="#black_hat"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -32px -128px;" class="colorful_items"></span>非酋帽</a> 
+· <a href="#nurse_hat"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -48px -128px;" class="colorful_items"></span>护士帽</a> 
+· <a href="#red_hat"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -64px -128px;" class="colorful_items"></span>小红帽</a> 
+· <a href="#jacket"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -80px -128px;" class="colorful_items"></span>皮夹克</a> 
+· <a href="#red_coat"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -96px -128px;" class="colorful_items"></span>红色外套</a> 
+· <a href="#tight_leather_leggings"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -112px -128px;" class="colorful_items"></span>紧身皮裤</a> 
+· <a href="#blue_jeans"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -128px -128px;" class="colorful_items"></span>牛仔裤</a> 
+· <a href="#snow_boots"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -0px -144px;" class="colorful_items"></span>雪地靴</a> 
+· <a href="#paintings"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -16px -144px;" class="colorful_items"></span>画作</a> 
+</td></tr>
+
+<tr><td style="width:90px;text-align:right;background-color:#ddd;font-weight:bold;">原版配方</td><td>
+  <a href="#fuel"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -272px -512px;"></span>燃料</a>  
+· <a href="#spawn_egg"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -384px -560px;"></span>刷怪蛋</a> 
+· <a href="#stairs"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -352px -448px;"></span>楼梯</a> 
+· <a href="#slabs"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -80px -464px;"></span>台阶</a> 
+· <a href="#decomposition_and_composition"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -64px -864px;"></span>合成与分解</a> 
+· <a href="#bed_dying"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -160px -784px;"></span>床染色</a> 
+· <a href="#chainmail_armor"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -16px -0px;"></span>锁链盔甲</a> 
+· <a href="#smooth_block"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -400px -448px;"></span>平滑方块</a> 
+· <a href="#dragon_egg"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -496px -384px;"></span>龙蛋</a>
+· <a href="#clay"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -464px -544px;"></span>粘土</a>
+· <a href="#red_sand"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -16px -496px;"></span>红沙</a>
+</td></tr>
+
+</tbody></table>
+
+<!------------------------------------------------------------------------------------------------->
 <h2 id="generation">自然生成</h2>
-<p>新增26项进度，完成进度会给予玩家经验、物品或状态效果。</p>
 <h3 id="wool_tree">羊毛树 (Wool Tree)</h3>
 <p>天然生成在主世界的任意有草方块的群系的地表。羊毛树的形状与桦树相同，树干为桦木，树叶为16种羊毛的任意组合。</p>
 
@@ -133,7 +378,7 @@
 <p class="small">与通常地牢不同，爬行者地牢是全封闭的。注意爬行者的爆炸可能会破坏刷怪箱。</p>
 
 <h3 id="enchanting_room">附魔室 (Enchanting Room)</h3>
-<p>天然生成在主世界的陆地地表。附魔室是一个由黑曜石、荧石、书架、淡蓝色玻璃、地狱砖、附魔台构成的小房间，书架内含有纸、书、附魔书、指南针或空地图。</p>
+<p>天然生成在主世界的陆地地表。附魔室是一个由黑曜石、荧石、<a href="#empty_bookshelf">空书架</a>、淡蓝色玻璃、地狱砖、附魔台构成的小房间，空书架内含有纸、书、附魔书、指南针或空地图。</p>
 
 <h3 id="totem_pillar">图腾柱 (Totem Pillar)</h3>
 <p>天然生成在主世界的陆地地表。图腾柱是一根由各种石砖构成的柱子，中间包含包含矿石、熔岩和宝箱。宝箱含<a href="#soul_of_dirt">泥土之魂</a>/<a href="#nova_of_fire">火焰之星/<a href="#limb_of_ridge">山脉之肢</a>/<a href="#enchanted_golden_apple">附魔金苹果</a>/<a href="#enchanted_iron">附魔铁锭</a>/<a href="#enchanted_gold">附魔金锭</a>/<a href="#meat_floss_bread">肉松面包</a>/<a href="#toffee_apple">拔丝苹果</a>/煤炭/骨头/火药/腐肉/线。</p>
@@ -147,11 +392,11 @@
 <ul>
 <li>僵尸：有更高的几率生成时身穿盔甲、手持武器。</li>
 <li>骷髅：有更高的几率生成时身穿盔甲、射出药箭。</li>
-<li>爬行者：爆炸前的引线时间更短。高压爬行者可天然生成，几率约3.13%。</li>
+<li>爬行者：爆炸前的引线时间更短。高压爬行者可天然生成，几率约3.125%。</li>
 </ul>
 
 <h3 id="dark_animals">黑暗动物</h3>
-<p>生成动物时有3.125%几率生成。黑暗动物和通常的动物外观无差异，但是会主攻靠近并攻击玩家。黑暗动物有几率掉落<a href="#shard_of_the_darkness">黑暗碎片</a>。</p>
+<p>生成动物时有3.125%几率生成。黑暗动物顶部会冒黑烟，会主攻靠近并攻击玩家(搜寻范围16米)。黑暗动物有几率掉落<a href="#shard_of_the_darkness">黑暗碎片</a>。</p>
 
 <ul>
 <li>黑暗牛：对玩家造成凋零和饥饿效果，掉落皮革和腐肉。</li>
@@ -163,7 +408,7 @@
 </ul>
 
 <h3 id="villager">村民</h3>
-<p>村民可被手持绿宝石块的玩家吸引，村民被玩家杀死时掉落3点经验值。</p>
+<p>村民可被手持绿宝石块的玩家吸引(搜寻范围10米)，村民被玩家杀死时掉落3点经验值。</p>
 <p class="small">村民被玩家吸引不会自动爬升方块，使用台阶或楼梯来辅助之。</p>
 
 <img style="height:250px" src="items/screenshots/improved_mob.png" /> <img style="height:250px" src="items/screenshots/dark_animals.png" />
@@ -301,7 +546,7 @@
 </span><span class="gold_ingot" title="附魔金锭"><span class="enchant">*</span>
 </span></span></span><span class="mcui_arrow"></span><span class="mcui_output">
 <span class="colorful_items all_in_one_machine" title="多功能一体机">
-</span></span></span></td></tr>
+</span></span><span class="mcui_icons2"><span class="mcui_crafting_machine" title="使用合成器合成"></span></span></span></td></tr>
 </tbody></table>
 <p>多功能一体机可使用或者不使用工具进行开采，但用斧是最快的。关闭后，界面里的东西会保留，可以使用漏斗输入。</p>
 <p>上方若有固体方块阻挡将无法打开。默认情形下，多功能一体机只能使用常压常温模式。对机器使用相应的插件后即可升级，解锁相应模式，包括：<a href="#low_temperature_plugin">低温插件</a>、<a href="#low_pressure_plugin">低压插件</a>、<a href="#high_temperature_plugin">高温插件</a>、<a href="#high_pressure_plugin">高压插件</a>。</p>
@@ -472,7 +717,7 @@
 </span><span class="emerald" title="绿宝石">
 </span></span></span><span class="mcui_arrow"></span><span class="mcui_output">
 <span class="colorful_items trade_machine" title="交易机">
-</span></span></span></td></tr>
+</span></span><span class="mcui_icons2"><span class="mcui_crafting_machine" title="使用合成器合成"></span></span></span></td></tr>
 </tbody></table>
 <p>交易机可使用或者不使用工具进行开采，但用斧是最快的。关闭后，界面里的东西会保留，可以使用漏斗输入。</p>
 <p>
@@ -507,7 +752,7 @@
 </span><span class="experience_bottle" title="附魔之瓶">
 </span></span></span><span class="mcui_arrow"></span><span class="mcui_output">
 <span class="colorful_items recipe_shower" title="配方显示器">
-</span></span></span></td></tr>
+</span></span><span class="mcui_icons2"><span class="mcui_crafting_machine" title="使用合成器合成"></span></span></span></td></tr>
 </tbody></table>
 <p>配方显示器可使用或者不使用工具进行开采，但用斧是最快的。</p>
 <p>
@@ -529,7 +774,7 @@
 </span><span class="paper" title="纸">
 </span></span></span><span class="mcui_arrow"></span><span class="mcui_output">
 <span class="colorful_items empty_plugin" title="空白插件">
-</span></span></span></td></tr>
+</span></span><span class="mcui_icons2"><span class="mcui_crafting_machine" title="使用合成器合成"></span></span></span></td></tr>
 </tbody></table>
 <p>空白插件可用于合成<a href="#low_temperature_plugin">低温插件</a>、<a href="#low_pressure_plugin">低压插件</a>、<a href="#high_temperature_plugin">高温插件</a>、<a href="#high_pressure_plugin">高压插件</a>、<a href="#cobblestone_plugin">圆石插件</a>、<a href="#stone_plugin">石头插件</a>、<a href="#obsidian_plugin">黑曜石插件</a>。</p>
 
@@ -549,7 +794,7 @@
 </span><span class="snow_block" title="雪块">
 </span></span></span><span class="mcui_arrow"></span><span class="mcui_output">
 <span class="colorful_items low_temperature_plugin" title="低温插件">
-</span></span></span></td></tr>
+</span></span><span class="mcui_icons2"><span class="mcui_crafting_machine" title="使用合成器合成"></span></span></span></td></tr>
 </tbody></table>
 
 <h3 id="low_pressure_plugin">低压插件 (Low Pressure Plugin)</h3>
@@ -568,7 +813,7 @@
 </span><span class="glass" title="玻璃">
 </span></span></span><span class="mcui_arrow"></span><span class="mcui_output">
 <span class="colorful_items low_pressure_plugin" title="低压插件">
-</span></span></span></td></tr>
+</span></span><span class="mcui_icons2"><span class="mcui_crafting_machine" title="使用合成器合成"></span></span></span></td></tr>
 </tbody></table>
 
 <h3 id="high_temperature_plugin">高温插件 (High Temperature Plugin)</h3>
@@ -587,7 +832,7 @@
 </span><span class="lava_bucket" title="熔岩桶">
 </span></span></span><span class="mcui_arrow"></span><span class="mcui_output">
 <span class="colorful_items high_temperature_plugin" title="高温插件">
-</span></span></span></td></tr>
+</span></span><span class="mcui_icons2"><span class="mcui_crafting_machine" title="使用合成器合成"></span></span></span></td></tr>
 </tbody></table>
 
 <h3 id="high_pressure_plugin">高压插件 (High Pressure Plugin)</h3>
@@ -606,7 +851,7 @@
 </span><span class="piston" title="活塞">
 </span></span></span><span class="mcui_arrow"></span><span class="mcui_output">
 <span class="colorful_items high_pressure_plugin" title="高压插件">
-</span></span></span></td></tr>
+</span></span><span class="mcui_icons2"><span class="mcui_crafting_machine" title="使用合成器合成"></span></span></span></td></tr>
 
 </tbody></table>
 
@@ -628,7 +873,7 @@
 </span><span class="iron_ingot" title="附魔铁锭"><span class="enchant">*</span>
 </span></span></span><span class="mcui_arrow"></span><span class="mcui_output">
 <span class="colorful_items cobblestone_plugin" title="圆石插件">
-</span></span></span></td></tr>
+</span></span><span class="mcui_icons2"><span class="mcui_crafting_machine" title="使用合成器合成"></span></span></span></td></tr>
 </tbody></table>
 
 <h3 id="stone_plugin">石头插件 (Stone Plugin)</h3>
@@ -648,7 +893,7 @@
 </span><span class="iron_ingot" title="附魔铁锭"><span class="enchant">*</span>
 </span></span></span><span class="mcui_arrow"></span><span class="mcui_output">
 <span class="colorful_items stone_plugin" title="石头插件">
-</span></span></span></td></tr>
+</span></span><span class="mcui_icons2"><span class="mcui_crafting_machine" title="使用合成器合成"></span></span></span></td></tr>
 </tbody></table>
 
 <h3 id="obsidian_plugin">黑曜石插件 (Obsidian Plugin)</h3>
@@ -668,7 +913,7 @@
 </span><span class="iron_ingot" title="附魔铁锭"><span class="enchant">*</span>
 </span></span></span><span class="mcui_arrow"></span><span class="mcui_output">
 <span class="colorful_items obsidian_plugin" title="圆石插件">
-</span></span></span></td></tr>
+</span></span><span class="mcui_icons2"><span class="mcui_crafting_machine" title="使用合成器合成"></span></span></span></td></tr>
 </tbody></table>
 
 
@@ -1340,8 +1585,7 @@
 </tbody></table>
 
 <h3 id="time_checker">报时器 (Time Checker)</h3>
-<p>放置于物品展示框后可报时。右键可通过消耗经验自由控制时间。</p>
-<p class="small">自由控制时间是指将时间增加1200刻(60秒)。</p>
+<p>放置于物品展示框后可报时。右键消耗4点经验将时间增加1200刻(60秒)。</p>
 <table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
 <tr><th>报时器</th><td><a href="#enchanted_diamond">附魔钻石</a>+红石</td>
 <td><span class="mcui"><span><span class="mcui_row"><span class="empty">
@@ -1566,6 +1810,20 @@
 </tbody></table>
 
 <table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
+<tr><th>傀儡</th><td><a href="#experience_bottle">附魔之瓶+<a href="#heads">僵尸的头+<a href="#silicon_plate">硅板</a>+<a href="#enchanted_golden_apple">附魔金苹果</a>+盔甲架+钻石靴子</td>
+<td><span class="mcui"><span><span class="mcui_row"><span class="experience_bottle" title="附魔之瓶">
+</span><span class="zombie_head" title="僵尸的头">
+</span><span class="experience_bottle" title="附魔之瓶">
+</span></span><span class="mcui_row"><span class="colorful_items silicon_plate" title="硅板">
+</span><span class="golden_apple" title="附魔金苹果"><span class="enchant">*</span>
+</span><span class="colorful_items silicon_plate" title="硅板">
+</span></span><span class="mcui_row"><span class="armor_stand" title="盔甲架">
+</span><span class="diamond_boots" title="钻石靴子">
+</span><span class="armor_stand" title="盔甲架">
+</span></span></span><span class="mcui_arrow"></span><span class="mcui_output">
+<span class="colorful_items golem" title="傀儡">
+</span></span><span class="mcui_icons2"><span class="mcui_crafting_machine" title="使用合成器合成"></span></span></span></span></td></tr>
+
 <tr><th>傀儡农民</th><td>傀儡+<a href="#industrious_hand">勤劳之手</a></td>
 <td><span class="mcui"><span><span class="mcui_row"><span class="colorful_items golem" title="傀儡">
 </span><span class="colorful_items industrious_hand" title="勤劳之手">
@@ -1893,7 +2151,7 @@
 
 <h3 id="potion_of_chain">连环药水 (Potion of Chain)</h3>
 <p>连环药水由<a href="#all_in_one_machine">多功能一体机</a>常温低压下酿造<a href="#enchanted_iron">附魔铁锭</a>+粗制的药水得到。</p>
-<p>饮用后获得8分钟的<span id="#chain_effect">连锁</span>效果：不显示状态效果图标，玩家使用斧可一次性破坏相连的树、瓜、蘑菇方块、成熟的农作物，使用镐可一次性破坏10米内相连的矿石、黑曜石、变种石头，使用锹可一次性破坏10米内相连的沙砾、粘土、沙子、灵魂沙。该效果受精准采集和时运影响，每次使用仅消耗1点耐久值。</p>
+<p>饮用后获得8分钟的<span id="#chain_effect">连锁</span>效果：不显示状态效果图标，显示赭色粒子效果，时间显示在快捷栏上方。玩家使用斧可一次性破坏相连的树、瓜、蘑菇方块、成熟的农作物，使用镐可一次性破坏15米内相连的矿石、黑曜石、变种石头，使用锹可一次性破坏10米内相连的沙砾、粘土、沙子、灵魂沙。该效果受精准采集和时运影响，每次使用仅消耗1点耐久值。</p>
 
 <h3 id="potion_of_regeneration">再生药水 (Potion of Regeneration)</h3>
 <p>再生药水由<a href="#all_in_one_machine">多功能一体机</a>常温低压下酿造<a href="#ghast_tear">恶魂之泪</a>+粗制的药水得到。</p>
@@ -1940,13 +2198,12 @@
 <h2 id="plants">植物</h2>
 <h3 id="crops_and_hybrid">农作物与杂交</h3>
 <p>
-新增20种作物，需种植在耕地上，成熟后收割可获得相应作物，否则只能获得种子。作物不受时运影响，且不可用骨粉催熟。</p>
-<p>所有作物均需杂交获得。当作物与相邻的作物可杂交时，有5%的几率会产生新品种。</p>
-<p>作物共4个生长阶段，每个阶段平均需要800秒，共需2400秒。</p>
-<p class="small">少见的情况下，种子会退化为普通小麦种子。生长速度不受耕地等因素影响，受时间调节器影响。</p>
+新增20种作物，需种植在耕地上，成熟后收割可获得相应作物，否则只能获得种子。作物不受时运影响，可用骨粉催熟。</p>
+<p>所有作物均需杂交获得。当作物与相邻的作物可杂交时，有5%的几率会杂交出新品种。</p>
+<p class="small">少见的情况下，种子会退化为普通小麦种子。生长速度同小麦，但是只有4个生长阶段。每个作物都对应一个实体，大面积种植可能会卡顿。</p>
 
-<table><thead><tr><th>种子</th><th>收割/杂交来源</th><th colspan="2">作物</th></tr></thead><tbody>
-<tr><td><strong>彼岸花 (Lycoris Radiata)</strong></td><td>小麦、甜菜根</td><td>玫瑰红</td><td rowspan="10">0~3</td></tr>
+<table><thead><tr><th>作物</th><th>收割/杂交来源</th><th colspan="2">成熟后掉落</th></tr></thead><tbody>
+<tr><td><strong>彼岸花 (Lycoris Radiata)</strong></td><td>小麦+甜菜根</td><td>玫瑰红</td><td rowspan="10">0~3</td></tr>
 <tr><td><strong>白车轴 (Trifolium)</strong></td><td>小麦+马铃薯</td><td>骨粉</td></tr>
 <tr><td><strong>黑荆棘 (Blackthorn)</strong></td><td>甜菜根+胡萝卜</td><td>墨囊</td></tr>
 <tr><td><strong>香蒲草 (Cattail)</strong></td><td>甜菜根+马铃薯</td><td>蒲公英黄</td></tr>
@@ -1971,7 +2228,7 @@
 
 <h3 id="fruit_sapling">水果树树苗 (Fruit Sapling)</h3>
 <p>水果树树苗种下并长大后，每隔一段时间会长出一个<strong id="fruits">水果</strong>，水果可用于<a href="#all_in_one_machine">多功能一体机</a>低温高压下制作<a href="#cold_drink">冷饮</a>。可用骨粉催熟。水果长出平均需要1600秒，受时间调节器影响。</p>
-<p class="small">水果生长空间不可被方块阻挡，非底部树叶不会长出水果。破坏水果附着的树叶水果会掉落。</p>
+<p class="small">水果生长空间不可被方块阻挡，非底部树叶不会长出水果。破坏水果附着的树叶水果会掉落。每个树叶都对应一个实体，大面积种植可能会卡顿。</p>
 <table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>	
 <tr><th>水果树树苗</th>
 <td>橡树树苗+8 苹果</td>
@@ -1991,7 +2248,7 @@
 
 <h3 id="ore_sapling">矿石树树苗 (Ore Sapling)</h3>
 <p>矿石树树苗种下并长大后，每隔一段时间树叶会转化为一种矿石。可用骨粉催熟。树叶转化平均需要1600秒，受时间调节器影响。</p>
-<p class="small">若矿石分离了树叶和树干，树叶可能会腐烂。</p>
+<p class="small">若矿石分离了树叶和树干，树叶可能会腐烂。每个树叶都对应一个实体，大面积种植可能会卡顿。</p>
 
 <table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>	
 <tr><th>矿石树树苗</th>
@@ -2012,7 +2269,7 @@
 
 <h3 id="wool_sapling">羊毛树树苗 (Wool Sapling)</h3>
 <p>羊毛树树苗种下并长大后，每隔一段时间树叶会转化为一种羊毛，和<a href="#wool_tree">天然生成</a>的一样。可用骨粉催熟。树叶转化平均需要1600秒，受时间调节器影响。</p>
-<p class="small">若羊毛分离了树叶和树干，树叶可能会腐烂。</p>
+<p class="small">若羊毛分离了树叶和树干，树叶可能会腐烂。每个树叶都对应一个实体，大面积种植可能会卡顿。</p>
 
 <table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>	
 <tr><th>羊毛树树苗</th>
@@ -2279,7 +2536,7 @@
 
 
 <h3>称号</h3>
-玩家手持绿宝石并根据下表的数字输入 <code>/trigger title set 数值</code> 即可获得相应称号。
+玩家手持绿宝石并根据下表的数字输入 <code>/trigger title set 数值</code> 即可消耗绿宝石并获得相应称号。
 <table class="center">
 <thead>
 <tr><th></th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th></tr></thead>
@@ -2817,25 +3074,6 @@
 <li>新增燃料：末地烛、干海带块、各种书、盔甲架、钓鱼竿、元素之力、磁铁、时间调节器、计时器、世界之源、节制器、坐标记录仪、傀儡、空书架、合成器、多功能一体机、交易机、配方显示器，可燃烧15秒或1个物品。</li>
 <li>木楼梯可燃烧10秒或1个物品，而不是15秒或1个物品。</li>
 </ul>
-
-<h3 id="stone_tools">石制工具</h3>
-本段落内容隶属模组《合成器》。
-<p>移除了木制工具的合成。</p>
-<table><thead><tr><th>名称</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
-<tr><th>石斧、镐、剑、锹、锄</th><td>燧石+木棍</td><td><span class="mcui"><span>
-<span class="mcui_row"><span class="flint" title="燧石">
-</span><span class="flint" title="燧石">
-</span><span class="flint" title="燧石">
-</span></span><span class="mcui_row"><span class="empty">
-</span><span class="stick" title="木棍">
-</span><span class="empty">
-</span></span><span class="mcui_row"><span class="empty">
-</span><span class="stick" title="木棍">
-</span><span class="empty">
-</span></span></span><span class="mcui_arrow"></span><span class="mcui_output">
-<span class="stone_pickaxe" title="石镐">
-</span></span></span></td></tr>
-</tbody></table>
 
 <h3 id="spawn_egg">刷怪蛋</h3>
 <p>原版36种刷怪蛋的合成。</p>
@@ -3424,7 +3662,7 @@
 
 <!------------------------------------------------------------------------------------------------->
 <h2 id="block_sky_domain">空域开端</h2>
-<p>该模块仅在空岛模式（无基岩）下启用。该模块旨在为空岛玩家提供从泥土到末地的完整科技链。玩家可以通过空无一物的超平坦进入，然后会在海平面高度生成一个5*5*2的平台。</p>
+<p>该模块仅在空岛模式(y=0无基岩)下启用。该模块旨在为空岛玩家提供从泥土到末地的完整科技链。玩家可以通过空无一物的超平坦进入，然后会在海平面高度生成一个5*5*2的平台。</p>
 <p>玩家破坏泥土会获得树苗(各1%)或骨粉(4%)，破坏树叶会掉落线(5%)或骨粉(20%)。</p>
 <p>在熔炉上方放置雪块可将其变成方块粉碎机，之后在其上方放置泥土/砂砾/圆石/石头/沙子/灵魂沙，然后右击方块粉碎机可以打碎该方块。掉落物如下：</p>
 <table style="font-size:88%;"><thead><tr><th>方块</th><th colspan="13">掉落物</th></tr></thead><tbody>
@@ -3541,7 +3779,7 @@
 
 
 
-<!------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------>
 <h2 id="advancements">进度</h2>
 <p>新增26项进度，完成进度会给予玩家经验、物品或状态效果。</p>
 <table id="advancements" style="font-size:90%">
@@ -3619,8 +3857,65 @@
 <th>红色有角</th><td>跑的比谁都快</td><td>100点经验</td><td>铲屎官</td><td>cpp:red_horn</td></tr>
 </tbody></table>
 
+<!------------------------------------------------------------------------------------------------>
+<h2 id="config">配置文件</h2>
+<p>模组参数位于文件<code>datapacks/craftingpp/data/cpp/functions/config.mcfunction</code>，玩家可自行调整。</p>
+<pre style="display:block;background-color:#e0e0e0;padding:20px 20px;">
+# 僵尸武器加强基数，几率=3/基数，钻石剑:铁锹:铁剑=1:1:1
+scoreboard players set #improve_zombie_weapon cppValue 25
 
-<!------------------------------------------------------------------------------------------------->
+# 僵尸/骷髅盔甲加强基数，几率=12/基数，锁链:铁:金:钻石=3:6:2:1
+scoreboard players set #improve_mob_armor cppValue 16
+
+# 骷髅持有药箭基数，几率=15/基数
+scoreboard players set #potion_arrow_base cppValue 128
+
+# 高压爬行者生成基数，几率=1/基数
+scoreboard players set #powered_creeper_base cppValue 32
+
+# 黑暗动物生成基数，几率=1/基数
+scoreboard players set #dark_animal_base cppValue 32
+
+# 附魔之瓶存储的经验值
+scoreboard players set #xp_in_bottle cppValue 4
+
+# 牧师出售附魔之瓶价格(绿宝石)
+scoreboard players set #price_of_xp_bottle cppValue 1
+
+# 作物变异基数(若小于20将导致部分作物无法杂交)，变异率=1/基数
+scoreboard players set #plants_hybrid cppValue 20
+
+# 魔法树树叶转化基数，期望时间=基数/6(秒)
+scoreboard players set #leaves_grow_threshold cppValue 7200
+
+# 元素之力消耗经验值
+scoreboard players set #blue_force_of_sky_xp cppValue 10
+scoreboard players set #green_force_of_water_xp cppValue 0
+scoreboard players set #cyan_force_of_mountain_xp cppValue 25
+scoreboard players set #orange_force_of_dirt_xp cppValue 0
+scoreboard players set #yellow_force_of_earth_xp cppValue 25
+scoreboard players set #red_force_of_fire_xp cppValue 0
+scoreboard players set #purple_force_of_life_xp cppValue 0
+scoreboard players set #white_force_of_lightning_xp cppValue 0
+scoreboard players set #black_force_of_moon_xp cppValue 40
+
+# 多功能一体机时长基数
+scoreboard players set #all_in_one_machine_cd cppValue 1200
+
+# 世界之源消耗经验值
+scoreboard players set #origin_of_the_world_xp cppValue 40
+
+# 报时器消耗经验值
+scoreboard players set #time_checker_xp cppValue 4
+
+# 年长者之教诲冷却时间(刻)
+scoreboard players set #elder_s_words_cool_down cppValue 50
+
+# 仪式耗时(刻)
+scoreboard players set #rituals_time cppValue 1200
+</pre>
+
+<!------------------------------------------------------------------------------------------------>
 <h2 id="changlog">更新日志</h2>
 <table id="update">
 <thead><tr>
@@ -3811,8 +4106,8 @@
 <!--1.8-->
 
 <tr class="v1-8">
-	<th rowspan="90">1.8<br/><span class="lore">元素更新</span></th>
-	<th rowspan="90">2018年8月20日<br/><span class='lore'>1490 KB</span></th>
+	<th rowspan="92">1.8<br/><span class="lore">元素更新</span></th>
+	<th rowspan="92">2018年8月20日<br/><span class='lore'>1490 KB</span></th>
 	<td>游戏本体版本升级为1.13，不再支持1.13之前的版本。</td></tr>
 <tr class="v1-8"><td>修改资源包文字的代码名称、记分板、标签前缀为cpp，修改资源包以适应1.13，添加材质。</td></tr>
 <tr class="v1-8"><td>移除闪烁标语。</td></tr>
@@ -3868,7 +4163,7 @@
 <tr class="v1-8"><td>新增羊毛树、水果树、矿石树。</td></tr>
 
 <tr class="v1-8"><td>将特定方块摆放成正方形作为仪式基座，手持魔杖右击发射器，然后等待发射器上符文粒子消失即可执行仪式。</td></tr>
-<tr class="v1-8"><td>仪式可用于附魔书制作、效果附加、属性附加、热带鱼染色、刷怪箱修复。</td></tr>
+<tr class="v1-8"><td>仪式可用于附魔书制作、效果附加、属性附加、刷怪箱修复。</td></tr>
 <tr class="v1-8"><td>新增连锁效果，可一次性挖掘大面积方块。</td></tr>
 
 <tr class="v1-8"><td>新增荧光帽，使玩家发光，但是并不提供照明。</td></tr>
@@ -3880,6 +4175,7 @@
 <tr class="v1-8"><td>移除佩戴头饰所需的南瓜。</td></tr>
 <tr class="v1-8"><td>新增头饰海草、珊瑚。</td></tr>
 <tr class="v1-8"><td>修改画作实现方式。</td></tr>
+<tr class="v1-8"><td>新增空书架，可以放入物品改变外观。</td></tr>
 
 <tr class="v1-8"><td>当发射器发射的物品可以种植在前方位置时，会自动种植。</td></tr>
 <tr class="v1-8"><td>可使用炼药锅漂白玻璃和陶土。</td></tr>
@@ -3901,9 +4197,8 @@
 <tr class="v1-8"><td>新增锁链盔甲的合成。</td></tr>
 <tr class="v1-8"><td>移除道路固化剂的合成。</td></tr>
 <tr class="v1-8"><td>新增4种平滑方块的合成，玩家在平滑方块上可以获得不同的加速效果。</td></tr>
-<tr class="v1-8"><td>新增龙蛋、红沙、草径、耕地、草方块、菌丝、粘土的合成。</td></tr>
-<tr class="v1-8"><td>移除了木制工具的合成。</td></tr>
-<tr class="v1-8"><td>燧石可代替石制工具合成中的圆石。</td></tr>
+<tr class="v1-8"><td>新增龙蛋、红沙、草方块、菌丝、粘土的合成。</td></tr>
+<tr class="v1-8"><td>新增热带鱼染色的合成。</td></tr>
 
 <tr class="v1-8"><td>新增村民：林业员、书画师、圣诞老人、药剂师、末地使、烟花师、园丁、机械工、潜水员。</td></tr>
 <tr class="v1-8"><td>修改牧师出售附魔之瓶的价格为1绿宝石。</td></tr>
@@ -3917,253 +4212,6 @@
 
 </tbody></table>
 
-
-<!------------------------------------------------------------------------------------------------->
-<h2 id="index">索引</h2>
-<table><tbody>
-
-<tr><td style="text-align:right;background-color:#ddd;font-weight:bold;">机制</td><td>
-<a href="#introduction">简介</a>
-· <a href="#utility">便捷化</a> 
- (<a href="#bleach">漂白</a>
-· <a href="#random_block">随机方块</a>
-· <a href="#sort_chest">箱子整理</a>
-· <a href="#auto_plant">自动种植</a>
-· <a href="#mix_slabs">复合台阶</a> 
-· <a href="#vertical_slabs">竖台阶</a> )
-· <a href="#balance_food">营养均衡</a>
-· <a href="#rituals">仪式</a>
- (<a href="#enchanted_book_making">附魔书制作</a>
-· <a href="#effect_adding">效果附加</a>
-· <a href="#attribute_adding">属性附加</a>
-· <a href="#dark_rituals">黑暗仪式</a>)
-· <a href="#block_sky_domain">空域开端</a>
-· <a href="#advancements">进度</a>
-</td></tr>
-
-<tr><td style="width:90px;text-align:right;background-color:#ddd;font-weight:bold;"><a href="#generation">自然生成</a> </td><td>
-  <a href="#wool_tree">羊毛树</a> 
-· <a href="#creeper_dungeon">爬行者地牢</a> 
-· <a href="#enchanting_room">附魔室</a> 
-· <a href="#totem_pillar">图腾柱</a> 
-</td></tr>
-
-<tr><td style="width:90px;text-align:right;background-color:#ddd;font-weight:bold;"><a href="#entities_and_loots">实体</a></td><td>
-  <a href="#improved_mob">怪物加强</a> 
-· <a href="#dark_animals">黑暗动物</a> 
-· <a href="#villager">村民</a> 
-· <a href="#loots">战利品</a>
-· <a href="#trade">交易</a>
-</td></tr>
-
-<tr><td style="width:90px;text-align:right;background-color:#ddd;font-weight:bold;">机器</td><td>
-  <a href="#crafting_machine"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -0px -32px;" class="colorful_items"></span>合成器</a> 
-· <a href="#all_in_one_machine"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -16px -32px;" class="colorful_items"></span>多功能一体机</a> 
-· <a href="#trade_machine"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -32px -32px;" class="colorful_items"></span>交易机</a> 
-· <a href="#recipe_shower"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -48px -32px;" class="colorful_items"></span>配方显示器</a> </td></tr>
-
-<tr><td style="width:90px;text-align:right;background-color:#ddd;font-weight:bold;">插件</td><td>
-  <a href="#empty_plugin"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -64px -32px;" class="colorful_items"></span>空白插件</a> 
-· <a href="#low_temperature_plugin"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -80px -32px;" class="colorful_items"></span>低温插件</a> 
-· <a href="#low_pressure_plugin"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -96px -32px;" class="colorful_items"></span>低压插件</a> 
-· <a href="#high_temperature_plugin"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -112px -32px;" class="colorful_items"></span>高温插件</a> 
-· <a href="#high_pressure_plugin"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -128px -32px;" class="colorful_items"></span>高压插件</a>
-· <a href="#cobblestone_plugin"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -0px -48px;" class="colorful_items"></span>圆石插件</a> 
-· <a href="#stone_plugin"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -16px -48px;" class="colorful_items"></span>石头插件</a> 
-· <a href="#obsidian_plugin"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -32px -48px;" class="colorful_items"></span>黑曜石插件</a>
-</td></tr>
-
-<tr><td style="width:90px;text-align:right;background-color:#ddd;font-weight:bold;">掉落物</td><td>
-  <a href="#rare_drops">稀有掉落物</a> 
- (<a href="#wing_of_sky"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -0px -0px;" class="colorful_items"></span>天空之翼</a> 
-· <a href="#heart_of_ocean"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -16px -0px;" class="colorful_items"></span>海洋之心</a> 
-· <a href="#limb_of_ridge"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -32px -0px;" class="colorful_items"></span>山脉之肢</a> 
-· <a href="#soul_of_dirt"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -64px -0px;" class="colorful_items"></span>泥土之魂</a> 
-· <a href="#certification_of_earth"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -48px -0px;" class="colorful_items"></span>居民之证</a> 
-· <a href="#nova_of_fire"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -80px -0px;" class="colorful_items"></span>火焰之星</a> 
-· <a href="#spirit_of_life"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -96px -0px;" class="colorful_items"></span>生命之灵</a>) 
-· <a href="#heads"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -32px -720px;"></span>头</a>
-· <a href="#shard_of_the_darkness"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -112px -0px;" class="colorful_items"></span>黑暗碎片</a>
-· <a href="#broken_spawner"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -128px -0px;" class="colorful_items"></span>破损的刷怪箱</a></td></tr>
-
-<tr><td style="width:90px;text-align:right;background-color:#ddd;font-weight:bold;">材料</td><td>
-  <a href="#introduction"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -160px -544px;"></span>附魔之瓶</a>
-· <a href="#enchanted_iron"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -112px -560px;"></span>附魔铁锭</a>
-· <a href="#enchanted_gold"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -80px -560px;"></span>附魔金锭</a>
-· <a href="#enchanted_diamond"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -496px -544px;"></span>附魔钻石</a>
-· <a href="#cinder"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -448px -544px;"></span>煤渣</a>
-· <a href="#fertilizer"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -256px -416px;"></span>肥料</a>
-· <a href="#rare_earth_glass"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -96px -368px;"></span>稀土玻璃</a>
-· <a href="#reinforced_glass"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -32px -352px;"></span>钢化玻璃</a>
-· <a href="#silicon_plate"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -64px -80px;" class="colorful_items"></span>硅板</a>
-· <a href="#moon_shard"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -448px -704px;"></span>月之碎片</a>
-· <a href="#sun_shard"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -304px -320px;"></span>日之碎片</a>
-· <a href="#clay_bucket"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -80px -80px;" class="colorful_items"></span>粘土桶</a>
-· <a href="#mystery_blaze_powder"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -208px -320px;"></span>神秘烈焰粉</a>
-· <a href="#mystery_rabbit_foot"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -400px -320px;"></span>神秘兔子脚</a>
-· <a href="#ghast_tear"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -272px -320px;"></span>恶魂之泪</a>
-· <a href="#nether_star"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -176px -560px;"></span>下界之星</a>
-· <a href="#rabbit_hide"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -256px -560px;"></span>兔子皮</a>
-· <a href="#diamond"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -496px -544px;"></span>钻石</a>
-· <a href="#bucket"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -432px -320px;"></span>桶</a>
-· <a href="#mycelium"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -432px -480px;"></span>菌丝</a>
-· <a href="#grass_block"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -320px -480px;"></span>草方块</a>
-· <a href="#tropical_fish_bucket"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -320px -832px;"></span>热带鱼桶</a>
-</td></tr>
-
-<tr><td style="width:90px;text-align:right;background-color:#ddd;font-weight:bold;">瓶装粉末</td><td>
-  <a href="#iron_dust"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -48px -48px;" class="colorful_items"></span>铁粉</a>
-· <a href="#gold_dust"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -64px -48px;" class="colorful_items"></span>金粉</a>
-· <a href="#carbon_dust"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -80px -48px;" class="colorful_items"></span>碳粉</a>
-· <a href="#emerald_dust"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -96px -48px;" class="colorful_items"></span>绿宝石粉</a>
-· <a href="#diamond_dust"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -112px -48px;" class="colorful_items"></span>钻石粉</a>
-· <a href="#quartz_dust"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -128px -48px;" class="colorful_items"></span>石英粉</a>
-· <a href="#silicon_dust"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -0px -64px;" class="colorful_items"></span>硅粉</a>
-· <a href="#rare_earth_dust"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -16px -64px;" class="colorful_items"></span>稀土粉</a>
-· <a href="#steel_dust"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -32px -64px;" class="colorful_items"></span>钢粉</a>
-· <a href="#course_silicon"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -128px -64px;" class="colorful_items"></span>粗硅</a>
-· <a href="#bottle_of_salt"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -0px -80px;" class="colorful_items"></span>盐瓶</a>
-· <a href="#rare_earth_salt"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -16px -80px;" class="colorful_items"></span>稀土盐</a>
-· <a href="#alkaloid_rare_earth"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -32px -64px;" class="colorful_items"></span>碱性稀土</a>
-</td></tr>
-
-<tr><td style="width:90px;text-align:right;background-color:#ddd;font-weight:bold;">瓶装流体</td><td>
-  <a href="#acid"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -48px -64px;" class="colorful_items"></span>酸水</a>
-· <a href="#soda_water"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -64px -64px;" class="colorful_items"></span>碱水</a>
-· <a href="#bionic_acid"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -80px -64px;" class="colorful_items"></span>生物酸</a>
-· <a href="#alkaloid"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -96px -64px;" class="colorful_items"></span>生物碱</a>
-· <a href="#bottle_of_air"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -112px -64px;" class="colorful_items"></span>空气瓶</a>
-· <a href="#ammonia_refrigerant"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -48px -80px;" class="colorful_items"></span>氨制冷剂</a>
-</td></tr>
-
-<tr><td style="width:90px;text-align:right;background-color:#ddd;font-weight:bold;">元素之力</td><td>
-  <a href="#blue_force_of_sky"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -0px -16px;" class="colorful_items"></span>蓝色天之力</a>
-· <a href="#green_force_of_water"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -16px -16px;" class="colorful_items"></span>绿色水之力</a>
-· <a href="#cyan_force_of_mountain"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -32px -16px;" class="colorful_items"></span>青色山之力</a>
-· <a href="#orange_force_of_dirt"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -48px -16px;" class="colorful_items"></span>橙色土之力</a>
-· <a href="#yellow_force_of_earth"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -64px -16px;" class="colorful_items"></span>黄色地之力</a>
-· <a href="#red_force_of_fire"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -80px -16px;" class="colorful_items"></span>红色火之力</a>
-· <a href="#purple_force_of_life"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -96px -16px;" class="colorful_items"></span>紫色命之力</a>
-· <a href="#white_force_of_lightning"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -112px -16px;" class="colorful_items"></span>白色电之力</a>
-· <a href="#black_force_of_moon"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -128px -16px;" class="colorful_items"></span>黑色月之力</a> 
-</td></tr>
-
-<tr><td style="width:90px;text-align:right;background-color:#ddd;font-weight:bold;">实用工具</td><td>
-  <a href="#magnet"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -96px -80px;" class="colorful_items"></span>磁铁</a> 
-· <a href="#time_conditioner"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -112px -80px;" class="colorful_items"></span>时间调节器</a> 
-· <a href="#time_checker"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -128px -80px;" class="colorful_items"></span>报时器</a> 
-· <a href="#origin_of_the_world"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -0px -96px;" class="colorful_items"></span>世界之源</a> 
-· <a href="#compressor"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -16px -96px;" class="colorful_items"></span>压缩器</a> 
-· <a href="#elder_s_words"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -32px -96px;" class="colorful_items"></span>年长者之教诲</a> 
-· <a href="#coordinate_recorder"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -48px -96px;" class="colorful_items"></span>坐标记录仪</a> 
-· <a href="#empty_bookshelf"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -128px -112px;" class="colorful_items"></span>空书架</a> 
-</td></tr>
-
-<tr><td style="width:90px;text-align:right;background-color:#ddd;font-weight:bold;">手</td><td>
-  <a href="#industrious_hand"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -64px -96px;" class="colorful_items"></span>勤劳之手</a> 
-· <a href="#break_hand"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -80px -96px;" class="colorful_items"></span>破坏之手</a>
-· <a href="#smart_hand"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -96px -96px;" class="colorful_items"></span>灵巧之手</a> 
-· <a href="#angry_hand"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -112px -96px;" class="colorful_items"></span>愤怒之手</a> 
-· <a href="#toughen_hand"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -128px -96px;" class="colorful_items"></span>历练之手</a> 
-</td></tr>
-
-<tr><td style="width:90px;text-align:right;background-color:#ddd;font-weight:bold;">傀儡</td><td>
-  <a href="#golem"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -112px -112px;" class="colorful_items"></span>傀儡</a> 
-· <a href="#golem_farmer">傀儡农民</a> 
-· <a href="#golem_fisher">傀儡矿工</a> 
-· <a href="#golem_fisher">傀儡渔夫</a> 
-· <a href="#golem_warrior">傀儡战士</a> 
-· <a href="#golem_herder">傀儡牧民</a> 
-</td></tr>
-
-<tr><td style="width:90px;text-align:right;background-color:#ddd;font-weight:bold;">魔法</td><td>
-  <a href="#sealing_wand"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -0px -112px;" class="colorful_items"></span>封印之杖</a> 
-· <a href="#star_wand"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -16px -112px;" class="colorful_items"></span>星之杖</a> 
-· <a href="#dream_wand"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -32px -112px;" class="colorful_items"></span>梦之杖</a> 
-· <a href="#wand_of_the_darkness"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -48px -112px;" class="colorful_items"></span>黑暗魔杖</a> 
-· <a href="#temperancer"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -80px -112px;" class="colorful_items"></span>节制器</a> 
-· <a href="#broom"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -64px -112px;" class="colorful_items"></span>扫帚</a> 
-</td></tr>
-
-<tr><td style="width:90px;text-align:right;background-color:#ddd;font-weight:bold;">食物</td><td>
-  <a href="#raw_colorful_vegetable"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -96px -416px;"></span>生缤纷菜蔬</a>
-· <a href="#raw_braised_beef_with_potatoes"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -96px -416px;"></span>生土豆牛肉</a>
-· <a href="#raw_braised_pork_with_potatoes"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -96px -416px;"></span>生土豆排骨</a>
-· <a href="#raw_rabbit_stew"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -96px -416px;"></span>生兔肉煲</a>
-· <a href="#colorful_vegetable"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -96px -416px;"></span>缤纷菜蔬</a>
-· <a href="#braised_beef_with_potatoes"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -96px -416px;"></span>土豆牛肉</a>
-· <a href="#braised_pork_with_potatoes"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -96px -416px;"></span>土豆排骨</a>
-· <a href="#rabbit_stew"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -96px -416px;"></span>兔肉煲</a>
-· <a href="#fish_and_chips"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -96px -416px;"></span>炸鱼薯条</a>
-· <a href="#meat_floss_bread"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -352px -400px;"></span>肉松面包</a>
-· <a href="#egg_stew"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -48px -416px;"></span>鸡蛋羹</a>
-· <a href="#baked_carrot"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -240px -320px;"></span>烤胡萝卜</a>
-· <a href="#toffee_apple"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -336px -400px;"></span>拔丝苹果</a>
-· <a href="#enchanted_golden_apple"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -16px -416px;"></span>附魔金苹果</a>
-</td></tr>
-
-<tr><td style="width:90px;text-align:right;background-color:#ddd;font-weight:bold;">药水</td><td>
-  <a href="#potion_of_slow_falling"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -32px -864px;"></span>缓降药水</a> 
-· <a href="#potion_of_night_vision"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -16px -544px;"></span>夜视药水</a> 
-· <a href="#potion_of_fire_resistance"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -448px -528px;"></span>抗火药水</a> 
-· <a href="#potion_of_water_breathing"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -32px -864px;"></span>水肺药水</a> 
-· <a href="#potion_of_invisibility"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -496px -528px;"></span>隐身药水</a> 
-· <a href="#potion_of_leaping"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -0px -544px;"></span>跳跃药水</a> 
-· <a href="#potion_of_swiftness"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -96px -544px;"></span>迅捷药水</a> 
-· <a href="#potion_of_strength"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -80px -544px;"></span>力量药水</a> 
-· <a href="#potion_of_resistance"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -16px -176px;" class="colorful_items"></span>抗性药水</a> 
-· <a href="#potion_of_haste"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -32px -176px;" class="colorful_items"></span>急迫药水</a> 
-· <a href="#potion_of_chain"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -48px -176px;" class="colorful_items"></span>连环药水</a> 
-· <a href="#potion_of_regeneration"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -48px -544px;"></span>再生药水</a> 
-· <a href="#potion_of_tide"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -64px -176px;" class="colorful_items"></span>潮汐药水</a> 
-· <a href="#potion_of_healing"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -480px -528px;"></span>治疗药水</a> 
-· <a href="#potion_of_invulnerable"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -80px -176px;" class="colorful_items"></span>无敌药水</a> 
-· <a href="#cold_drink"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -96px -176px;" class="colorful_items"></span>冷饮</a> 
-· <a href="#introduction"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -128px -160px;" class="colorful_items"></span>鲁莽药水</a>
-· <a href="#introduction"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -0px -176px;" class="colorful_items"></span>忍者药水</a>
-
-</td></tr>
-
-
-<tr><td style="width:90px;text-align:right;background-color:#ddd;font-weight:bold;">植物</td><td>
-  <a href="#crops_and_hybrid">农作物与杂交</a>
-· <a href="#fruit_sapling">水果树树苗</a> 
-· <a href="#ore_sapling">矿石树树苗</a> 
-· <a href="#wool_sapling">羊毛树树苗</a>
-</td></tr>
-
-<tr><td style="width:90px;text-align:right;background-color:#ddd;font-weight:bold;">装饰品</td><td>
-  <a href="#head_decorations">头饰</a> 
-· <a href="#title">称号</a> 
-· <a href="#glow_hat"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -0px -128px;" class="colorful_items"></span>荧光帽</a> 
-· <a href="#green_hat"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -16px -128px;" class="colorful_items"></span>原谅帽</a> 
-· <a href="#black_hat"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -32px -128px;" class="colorful_items"></span>非酋帽</a> 
-· <a href="#nurse_hat"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -48px -128px;" class="colorful_items"></span>护士帽</a> 
-· <a href="#red_hat"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -64px -128px;" class="colorful_items"></span>小红帽</a> 
-· <a href="#jacket"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -80px -128px;" class="colorful_items"></span>皮夹克</a> 
-· <a href="#red_coat"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -96px -128px;" class="colorful_items"></span>红色外套</a> 
-· <a href="#tight_leather_leggings"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -112px -128px;" class="colorful_items"></span>紧身皮裤</a> 
-· <a href="#blue_jeans"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -128px -128px;" class="colorful_items"></span>牛仔裤</a> 
-· <a href="#snow_boots"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -0px -144px;" class="colorful_items"></span>雪地靴</a> 
-· <a href="#paintings"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -16px -144px;" class="colorful_items"></span>画作</a> 
-</td></tr>
-
-<tr><td style="width:90px;text-align:right;background-color:#ddd;font-weight:bold;">原版配方</td><td>
-  <a href="#fuel"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -272px -512px;"></span>燃料</a>  
-· <a href="#stone_tools"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -128px -608px;"></span>石制工具</a>  
-· <a href="#spawn_egg"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -384px -560px;"></span>刷怪蛋</a> 
-· <a href="#stairs"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -352px -448px;"></span>楼梯</a> 
-· <a href="#slabs"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -80px -464px;"></span>台阶</a> 
-· <a href="#decomposition_and_composition"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -64px -864px;"></span>合成与分解</a> 
-· <a href="#bed_dying"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -160px -784px;"></span>床染色</a> 
-· <a href="#chainmail_armor"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -16px -0px;"></span>锁链盔甲</a> 
-· <a href="#smooth_block"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -400px -448px;"></span>平滑方块</a> 
-· <a href="#dragon_egg"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -496px -384px;"></span>龙蛋</a>
-· <a href="#clay"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -464px -544px;"></span>粘土</a>
-· <a href="#red_sand"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -16px -496px;"></span>红沙</a>
-</td></tr>
-
-</tbody></table>
 
 
 <footer>
