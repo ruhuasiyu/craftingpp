@@ -188,7 +188,10 @@ body{
 }
 nav{
 	position:fixed;
+	width:80%;
 	top:0;
+	left:0;
+	right:0;
 	background-color: #ccccff;
 	margin: 0 auto;
 	z-index:5;
@@ -225,6 +228,9 @@ footer{
 footer p{
 	text-align:center;
 	font-size:85%;
+}
+footer img{
+	height:30px;
 }
 h1{
 	text-align:center;
@@ -914,6 +920,7 @@ span.potion_of_tide{	background-position: -128px -352px;}
 span.potion_of_invulnerable{	background-position: -160px -352px;}
 span.cold_drink{	background-position: -192px -352px;}
 span.beethoven{	background-position: -224px -352px;}
+span.bauhinia{	background-position: -256px -352px;}
 
 
 
