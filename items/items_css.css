@@ -368,6 +368,7 @@ span.lava_bucket{	background-position: -896px -640px;}
 span.milk_bucket{	background-position: -928px -640px;}
 span.water_bucket{	background-position: -960px -640px;}
 
+span.armor_stand{	background-position: -32px -672px;}
 span.painting{	background-position: -320px -672px;}
 span.bone_meal{	background-position: -480px -672px;}
 span.cactus_green{	background-position: -512px -672px;}
@@ -563,7 +564,7 @@ span.oxeye_daisy{	background-position: -992px -1024px;}
 span.peony{	background-position: -0px -1056px;}
 span.pink_tulip{	background-position: -32px -1056px;}
 span.poppy{	background-position: -64px -1056px;}
-span.pumpkin{	background-position: -96px -1056px;}
+span.carved_pumpkin{	background-position: -96px -1056px;}
 span.pumpkin_seeds{	background-position: -128px -1056px;}
 span.red_mushroom{	background-position: -160px -1056px;}
 span.red_tulip{	background-position: -224px -1056px;}
@@ -770,6 +771,7 @@ span.white_bed{	background-position: -608px -1568px;}
 
 span.white_carpet{	background-position: -64px -1632px;}
 
+span.pumpkin{	background-position:-352px -1664px;}
 span.turtle_helmet{	background-position:-512px -1664px;}
 span.dried_kelp{	background-position:-544px -1664px;}
 span.kelp_top{	background-position:-576px -1664px;}
