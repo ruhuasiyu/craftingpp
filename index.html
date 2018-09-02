@@ -3,7 +3,7 @@
 <html lang="zh-cmn-Hans">
 <head>
 <meta charset="utf-8" />
-<title>更多的合成 Crafting++ v1.8</title>
+<title>更多的合成 Crafting++ v1.8.1</title>
 <meta name='author' content='ruhuasiyu@mcbbs' />
 <meta name='keywords' content='minecraft, 原版模组, vanilla mod, datapacks, Crafting++' />
 <meta name='description' content='Minecraft 原版模组 更多的合成' />
@@ -51,7 +51,7 @@
 
 <p><strong>什么是原版模组？</strong>原版模组一般是指在不修改Minecraft游戏本体的前提下，通过命令方块、ooc或数据包等方式，而非forge或liteloader等api来对游戏的可玩性做出修改。</p>
 
-<p><strong>什么是《更多的合成》？</strong>《更多的合成》是国内论坛最大的原版模组，目前已更新至<em>1.8版本</em>，支持<em>Minecraft Java版 1.13.1</em>。本次更新为<em>元素更新</em>，内容包括：</p>
+<p><strong>什么是《更多的合成》？</strong>《更多的合成》是国内论坛最大的原版模组，目前已更新至<em>1.8.1 m09d02</em>，支持<em>Minecraft Java版 1.13.1</em>。本次更新为<em>元素更新</em>，内容包括：</p>
 <ul>
 <li>17种实用性的工具，帮你更好地改造大自然，更有超强压缩能力的压缩器，可压缩上亿个同类物品；</li>
 <li>5种不同的傀儡，替你钓鱼、种菜、挖矿、杀怪、喂食；</li>
@@ -77,6 +77,8 @@
 
 <table><thead><tr><th>支持的minecraft版本</th><th>模组版本及下载链接</th></tr></thead>
 <tbody>
+<tr><td>Minecraft Java版 1.13.1</td><td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/raw/master/versions/1.8/v1.8.1-m09d02.zip">craftingpp-1.8.1-m09d02</a> | <a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.8.1-m09d02.zip
+">备用链接</a></li></td></tr>
 <tr><td>Minecraft Java版 1.13.1</td><td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/raw/master/versions/1.8/v1.8.zip">craftingpp-1.8</a> | <a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.8.zip
 ">备用链接</a></li></td></tr>
 <tr><td>Minecraft Java版 1.12</td><td>
@@ -116,13 +118,13 @@
 <h3 id="tips">🔧 技术性</h3>
 本系列模组分为以下5个部分，专业玩家可根据自身需要选择相应的内容。
 <table>
-<thead><tr><th>模组名称</th><th>版本</th><th>内容</th></tr></thead>
+<thead><tr><th>模组名称</th><th>数据包名称</th><th>内容</th></tr></thead>
 <tbody>
-<tr><td>合成器</td><td>crafting_machine 1.0</td><td>合成器和材质配方更改</td></tr>
-<tr><td>更多的合成</td><td>craftingpp 1.8</td><td>生物修改|元素之力|机器|工具|饮食|熔炼|酿造|农业|仪式|装饰|原版</td></tr>
-<tr><td>更多的交易</td><td>tradepp 1.1</td><td>村民交易</td></tr>
-<tr><td>更多实用功能</td><td>utilitypp 1.1</td><td>自动种植|漂白|随机方块|箱子整理|混合台阶|竖台阶</td></tr>
-<tr><td>空域开端</td><td>block_sky_domain 1.0</td><td>空岛基础进展</td></tr>
+<tr><td>合成器</td><td>crafting_machine</td><td>合成器与机械处理(更多的合成前置)</td></tr>
+<tr><td>更多的合成</td><td>craftingpp</td><td>生物修改|元素之力|机器|工具|饮食|熔炼|酿造|农业|仪式|装饰|原版</td></tr>
+<tr><td>更多的交易</td><td>tradepp</td><td>村民交易</td></tr>
+<tr><td>更多实用功能</td><td>utilitypp</td><td>自动种植|炼药锅|随机方块|箱子整理|混合台阶|竖台阶</td></tr>
+<tr><td>空域开端</td><td>block_sky_domain</td><td>空岛基础进展</td></tr>
 </tbody></table>
 
 
@@ -133,7 +135,7 @@
 <tr><td style="text-align:right;background-color:#ddd;font-weight:bold;">机制</td><td>
 <a href="#introduction">简介</a>
 · <a href="#utility">便捷化</a> 
- (<a href="#bleach">漂白</a>
+ (<a href="#cauldon">炼药锅</a>
 · <a href="#random_block">随机方块</a>
 · <a href="#sort_chest">箱子整理</a>
 · <a href="#auto_plant">自动种植</a>
@@ -167,7 +169,8 @@
 <tr><td style="width:90px;text-align:right;background-color:#ddd;font-weight:bold;">机器</td><td>
   <a href="#crafting_machine"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -0px -32px;" class="colorful_items"></span>合成器</a> 
 · <a href="#all_in_one_machine"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -16px -32px;" class="colorful_items"></span>多功能一体机</a> 
-· <a href="#trade_machine"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -32px -32px;" class="colorful_items"></span>交易机</a></td></tr>
+· <a href="#trade_machine"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -48px -32px;" class="colorful_items"></span>交易机</a>
+· <a href="#mob_projector"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -32px -32px;" class="colorful_items"></span>生物投影仪</a></td></tr>
 
 <tr><td style="width:90px;text-align:right;background-color:#ddd;font-weight:bold;">插件</td><td>
   <a href="#empty_plugin"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -64px -32px;" class="colorful_items"></span>空白插件</a> 
@@ -334,9 +337,9 @@
 
 <tr><td style="width:90px;text-align:right;background-color:#ddd;font-weight:bold;">植物</td><td>
   <a href="#crops_and_hybrid"><span style="display:inline-block;width:16px;height:16px;background-size:144px 192px;background-position: -128px -176px;" class="colorful_items"></span>农作物与杂交</a>
-· <a href="#fruit_sapling">水果树树苗</a> 
-· <a href="#ore_sapling">矿石树树苗</a> 
-· <a href="#wool_sapling">羊毛树树苗</a>
+· <a href="#fruit_sapling"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -448px -512px;"></span>水果树树苗</a> 
+· <a href="#ore_sapling"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -208px -528px;"></span>矿石树树苗</a> 
+· <a href="#wool_sapling"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -32px -512px;"></span>羊毛树树苗</a>
 </td></tr>
 
 <tr><td style="width:90px;text-align:right;background-color:#ddd;font-weight:bold;">装饰品</td><td>
@@ -360,12 +363,13 @@
 · <a href="#spawn_egg"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -384px -560px;"></span>刷怪蛋</a> 
 · <a href="#stairs"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -352px -448px;"></span>楼梯</a> 
 · <a href="#slabs"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -80px -464px;"></span>台阶</a> 
-· <a href="#decomposition_and_composition"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -64px -864px;"></span>合成与分解</a> 
+· <a href="#decomposition_and_composition"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -32px -432px;"></span>合成与分解</a> 
+· <a href="#stone_tools"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -96px -608px;"></span>石制工具</a>
 · <a href="#bed_dying"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -160px -784px;"></span>床染色</a> 
 · <a href="#chainmail_armor"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -16px -0px;"></span>锁链盔甲</a> 
 · <a href="#smooth_block"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -400px -448px;"></span>平滑方块</a> 
 · <a href="#dragon_egg"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -496px -384px;"></span>龙蛋</a>
-· <a href="#clay"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -464px -544px;"></span>粘土</a>
+· <a href="#clay"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -464px -544px;"></span>粘土块</a>
 · <a href="#red_sand"><span style="display:inline-block;width:16px;height:16px;background-image:url('items/InvSprite.png');background-size:512px 1184px;background-position: -16px -496px;"></span>红沙</a>
 </td></tr>
 
@@ -516,7 +520,7 @@
 <h3 id="crafting_machine">合成器 (Crafting Machine)</h3>
 <p>合成器可使用或者不使用工具进行开采，但用斧是最快的。</p>
 <p>主手持有右键放置。放置后右键打开并将材料放入左侧3×3的合成方格，若右侧为空，则会自动合成出产物。关闭后，界面里的东西会保留，可以使用漏斗输入。</p>
-<p class="small">强行放入背景的物品会消失。</p>
+<p class="small">强行将物品放入背景会导致停机。</p>
 <table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
 <tr><th>合成器</th>
 <td><a href="#experience_bottle">附魔之瓶</a>+工作台</td><td><span class="mcui"><span>
@@ -551,10 +555,11 @@
 <span class="colorful_items all_in_one_machine" title="多功能一体机">
 </span></span><span class="mcui_icons2"><span class="mcui_crafting_machine" title="使用合成器合成"></span></span></span></td></tr>
 </tbody></table>
+<img style="height:200px" src="items/screenshots/all_in_one_machine.png" />
 <p>主手持有右键放置。多功能一体机可使用或者不使用工具进行开采，但用斧是最快的。关闭后，界面里的东西会保留，可以使用漏斗输入。</p>
 <p>上方若有固体方块阻挡将无法打开。默认情形下，多功能一体机只能使用常压常温模式。主手持有相应的插件右键即可升级，解锁相应模式，包括：<a href="#low_temperature_plugin">低温插件</a>、<a href="#low_pressure_plugin">低压插件</a>、<a href="#high_temperature_plugin">高温插件</a>、<a href="#high_pressure_plugin">高压插件</a>。</p>
-<p>多功能一体机包括上方两个输入槽，下方两个输出槽。右上方为附魔之瓶槽位和经验槽。左侧三个槽位控制压力、温度和输出方向，按Q或Shift+左键切换模式。若输出方向有箱子/潜影箱/陷阱箱则会自动输出到箱子内。多功能一体机可以存储至多8点经验，当经验不超过4点会自动消耗附魔之瓶来装填，将<a href="#experience_bottle">附魔之瓶</a>放入右上方槽位即可。</p>
-<p class="small">强行放入背景的物品会消失。</p>
+<p>多功能一体机包括上方两个输入槽，下方两个输出槽。右上方为附魔之瓶槽位和经验槽。左侧三个槽位控制压力、温度和输出方向，按Q或Shift+左键切换模式。若输出方向有箱子/潜影箱/陷阱箱则会自动输出到箱子内。多功能一体机可以存储至多48点经验，当经验空缺部分达到附魔之瓶经验存储量时，会自动消耗附魔之瓶来装填，将<a href="#experience_bottle">附魔之瓶</a>放入右上方槽位即可。</p>
+<p class="small">强行将物品放入背景会导致停机。</p>
 
 <h4>高温高压</h4>
 矿石的倍率在模组加载时被确定，玩家可自行测量参数。产出1.6~3.5个对应矿物，红石×5，青金石×6。
@@ -584,7 +589,7 @@
 <tr><td><a href="#quartz_dust">石英粉</a></td><td>燧石</td><td><a href="#course_silicon">粗硅</a></td><td>-</td><td>4</td><td>10</td></tr>
 <tr><td>玻璃瓶</td><td>活塞</td><td><a href="#bottle_of_air">空气瓶</a></td><td>-</td><td>4</td><td>10</td></tr>
 <tr><td><a href="#course_silicon">粗硅</a></td><td><a href="#bottle_of_air">空气瓶</a></td><td><a href="#silicon_dust">硅粉</a></td><td>-</td><td>4</td><td>10</td></tr>
-<tr><td>粘土</td><td><a href="#bottle_of_salt">盐瓶</a></td><td><a href="#rare_earth_salt">稀土盐</a></td><td>-</td><td>4</td><td>10</td></tr>
+<tr><td>粘土块</td><td><a href="#bottle_of_salt">盐瓶</a></td><td><a href="#rare_earth_salt">稀土盐</a></td><td>-</td><td>4</td><td>10</td></tr>
 <tr><td><a href="#rare_earth_salt">稀土盐</a></td><td><a href="#alkaloid">生物碱</a></td><td><a href="#alkaloid_rare_earth">碱性稀土</a></td><td>-</td><td>4</td><td>10</td></tr>
 <tr><td><a href="#alkaloid_rare_earth">碱性稀土</a></td><td><a href="#bionic_acid">生物酸</a></td><td><a href="#rare_earth_dust">稀土粉</a></td><td>-</td><td>4</td><td>10</td></tr>
 <tr><td><a href="#alkaloid">生物碱</a></td><td><a href="#fertilizer">肥料</a></td><td><a href="#ammonia_refrigerant">氨制冷剂</a></td><td><a href="#cinder">煤渣</a></td><td>4</td><td>10</td></tr>
@@ -617,7 +622,7 @@
 <tr><td>海晶石砖</td><td>燧石</td><td>6 海晶碎片</td><td>2 海晶砂粒</td><td>1</td><td>2.5</td></tr>
 <tr><td>暗海晶石</td><td>燧石</td><td>6 海晶碎片</td><td>2 海晶砂粒</td><td>1</td><td>2.5</td></tr>
 <tr><td>羊毛</td><td>燧石</td><td>4 线</td><td>5% 染料</td><td>1</td><td>2.5</td></tr>
-<tr><td>粘土</td><td>燧石</td><td>粘液球</td><td>-</td><td>1</td><td>2.5</td></tr>
+<tr><td>粘土块</td><td>燧石</td><td>粘液球</td><td>-</td><td>1</td><td>2.5</td></tr>
 <tr><td>4 圆石</td><td>燧石</td><td>4 沙子</td><td>砂砾</td><td>1</td><td>1</td></tr>
 <tr><td>4 石头</td><td>燧石</td><td>4 砂砾</td><td>沙子</td><td>1</td><td>1</td></tr>
 <tr><td>4 砂砾</td><td>燧石</td><td>4 燧石</td><td>沙子</td><td>1</td><td>1</td></tr>
@@ -722,22 +727,94 @@
 <span class="colorful_items trade_machine" title="交易机">
 </span></span><span class="mcui_icons2"><span class="mcui_crafting_machine" title="使用合成器合成"></span></span></span></td></tr>
 </tbody></table>
+
+<img style="height:200px" src="items/screenshots/trade_machine.png" />
+
 <p>主手持有右键放置。交易机可使用或者不使用工具进行开采，但用斧是最快的。关闭后，界面里的东西会保留，可以使用漏斗输入。</p>
 <p>
 上方若有固体方块阻挡将无法打开。交易机包括左侧1个输入槽，右侧2个输出槽。左侧槽位控制输出方向，按Q或Shift+左键切换模式，若输出方向有箱子/潜影箱/陷阱箱则会自动输出到箱子内。</p>
-<table><thead><tr><th>输入槽</th><th colspan="2">输出</th></tr></thead><tbody>
-<tr><td>钻石</td><td>附魔之瓶</td><td>4 绿宝石</td></tr>
-<tr><td>附魔书</td><td>附魔之瓶</td><td>绿宝石</td></tr>
-<tr><td>指南针</td><td>附魔之瓶</td><td>绿宝石</td></tr>
-<tr><td>2 成书</td><td>附魔之瓶</td><td>绿宝石</td></tr>
-<tr><td>8 南瓜/西瓜/书/金锭/铁锭/皮革</td><td>附魔之瓶</td><td>绿宝石</td></tr>
+<p>
+每次交易获得7点经验值，若输入绿宝石则额外产生7点。当存储的经验值达到附魔之瓶的存储量时，会转化为附魔之瓶输出。</p>
+<table><thead><tr><th>输入槽</th><th>输出</th></tr></thead><tbody>
+<tr><td>钻石</td><td>4 绿宝石</td></tr>
+<tr><td>附魔书</td><td>绿宝石</td></tr>
+<tr><td>指南针</td><td>绿宝石</td></tr>
+<tr><td>2 成书</td><td>绿宝石</td></tr>
+<tr><td>8 南瓜/西瓜/书/金锭/铁锭/皮革</td><td>绿宝石</td></tr>
 <tr><td>16 小麦/马铃薯/胡萝卜/海草/海带/紫颂果<br />
 16 蜘蛛眼/末影珍珠/生猪排/生鸡肉/地狱疣<br />
-16 线/煤炭/白色羊毛/青金石/荧石粉/红石</td><td>附魔之瓶</td><td>绿宝石</td></tr>
-<tr><td>32 纸/木炭/玫瑰红/墨囊</td><td>附魔之瓶</td><td>绿宝石</td></tr>
-<tr><td>36 腐肉/火药/骨粉/烈焰粉/粘液球/箭/海晶砂粒</td><td>附魔之瓶</td><td>绿宝石</td></tr>
-<tr><td>绿宝石</td><td>2 附魔之瓶</td><td>-</td></tr>
+16 线/煤炭/白色羊毛/青金石/荧石粉/红石</td><td>绿宝石</td></tr>
+<tr><td>32 纸/木炭/玫瑰红/墨囊</td><td>绿宝石</td></tr>
+<tr><td>36 腐肉/火药/骨粉/烈焰粉/粘液球/箭/海晶砂粒</td><td>绿宝石</td></tr>
+<tr><td>绿宝石</td><td>+7经验值</td></tr>
 </tbody></table>
+
+<h3 id="mob_projector">生物投影仪 (Mob Projector)</h3>
+<table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
+<tr><th>生物投影仪</th>
+<td><a href="#enchanted_iron">附魔铁锭</a>+<a href="#rituals">刷怪箱</a>+箱子+<a href="#enchanted_diamond">附魔钻石</a>+<a href="#spirit_of_life">生命之灵</a></td><td><span class="mcui"><span>
+<span class="mcui_row"><span class="iron_ingot" title="附魔铁锭"><span class="enchant">*</span>
+</span><span class="spawner" title="刷怪箱">
+</span><span class="iron_ingot" title="附魔铁锭"><span class="enchant">*</span>
+</span></span><span class="mcui_row"><span class="iron_ingot" title="附魔铁锭"><span class="enchant">*</span>
+</span><span class="chest" title="箱子">
+</span><span class="iron_ingot" title="附魔铁锭"><span class="enchant">*</span>
+</span></span><span class="mcui_row"><span class="diamond" title="附魔钻石"><span class="enchant">*</span>
+</span><span class="colorful_items spirit_of_life" title="生命之灵">
+</span><span class="diamond" title="附魔钻石"><span class="enchant">*</span>
+</span></span></span><span class="mcui_arrow"></span><span class="mcui_output">
+<span class="colorful_items mob_projector" title="生物投影仪">
+</span></span><span class="mcui_icons2"><span class="mcui_crafting_machine" title="使用合成器合成"></span></span></span></td></tr>
+</tbody></table>
+
+<img style="height:200px" src="items/screenshots/mob_projector.png" />
+
+<p>主手持有右键放置。生物投影仪可使用或者不使用工具进行开采，但用斧是最快的。关闭后，界面里的东西会保留，可以使用漏斗输入。</p>
+<p>
+上方若有固体方块阻挡将无法打开。生物投影仪包括4个输入槽，上方为鸡蛋槽，右上方为附魔之瓶槽。当材料合适时，每隔10秒会在下方两米处生成相应生物。</p>
+<table><thead><tr><th colspan="2">输入材料</th><th>所需经验值</th><th>生成生物</th></tr></thead><tbody>
+
+<tr><td>羊毛</td><td>小麦</td><td rowspan="12">4</td><td>羊</td></tr>
+<tr><td>皮革</td><td>小麦</td><td>牛</td></tr>
+<tr><td>猪排</td><td>胡萝卜/土豆</td><td>猪</td></tr>
+<tr><td>羽毛</td><td>种子</td><td>鸡</td></tr>
+<tr><td>兔子皮</td><td>胡萝卜/蒲公英</td><td>兔子</td></tr>
+<tr><td>羽毛</td><td>木炭</td><td>蝙蝠</td></tr>
+<tr><td>墨囊</td><td>鳕鱼/鲑鱼</td><td>鱿鱼</td></tr>
+<tr><td>火药</td><td>沙子/红沙</td><td>爬行者</td></tr>
+<tr><td>腐肉</td><td>铁粒</td><td>僵尸(68.75%)/僵尸村民(12.5%)/尸壳(12.5%)/溺尸(6.25%)</td></tr>
+<tr><td>骨头</td><td>箭</td><td>骷髅(93.75%)/流浪者(6.25%)</td></tr>
+<tr><td>线</td><td>蜘蛛眼</td><td>蜘蛛(93.75%)/洞穴蜘蛛(6.25%)</td></tr>
+<tr><td>石砖</td><td>铁粒</td><td>蠹虫</td></tr>
+
+<tr><td>红石</td><td>荧石粉</td><td rowspan="11">8</td><td>女巫</td></tr>
+<tr><td>粘液球</td><td>粘土球</td><td>史莱姆</td></tr>
+<tr><td>幻翼膜</td><td>羽毛</td><td>幻翼</td></tr>
+<tr><td>冰</td><td>鳕鱼/鲑鱼</td><td>北极熊</td></tr>
+<tr><td>金粒</td><td>腐肉</td><td>僵尸猪人</td></tr>
+<tr><td>恶魂之泪</td><td>火药</td><td>恶魂</td></tr>
+<tr><td>岩浆膏</td><td>地狱砖</td><td>岩浆怪</td></tr>
+<tr><td>烈焰粉</td><td>地狱砖</td><td>烈焰人</td></tr>
+<tr><td>末影珍珠</td><td>末地石</td><td>末影人</td></tr>
+<tr><td>末地石</td><td>金粒</td><td>末影螨</td></tr>
+<tr><td>绿宝石</td><td>书</td><td>村民</td></tr>
+
+<tr><td>绿宝石</td><td>铁块</td><td rowspan="12">32</td><td>卫道士</td></tr>
+<tr><td>绿宝石</td><td>金块</td><td>唤魔者</td></tr>
+<tr><td>鳕鱼/鲑鱼</td><td></td><td>守卫者(93.75%)/远古守卫者(6.25%)</td></tr>
+<tr><td>紫颂果</td><td>末影珍珠</td><td>潜影贝</td></tr>
+<tr><td>骨头</td><td>煤炭块</td><td>凋灵骷髅</td></tr>
+<tr><td>骨头</td><td>骷髅头颅</td><td>狼</td></tr>
+<tr><td>鳕鱼/鲑鱼</td><td>骷髅头颅</td><td>豹猫</td></tr>
+<tr><td>皮革</td><td>骷髅头颅</td><td>马</td></tr>
+<tr><td>箱子</td><td>骷髅头颅</td><td>驴</td></tr>
+<tr><td>任意地毯</td><td>骷髅头颅</td><td>羊驼</td></tr>
+<tr><td>羽毛</td><td>骷髅头颅</td><td>鹦鹉</td></tr>
+<tr><td>海草</td><td>骷髅头颅</td><td>海龟</td></tr>
+
+</tbody></table>
+
+
 
 <h3 id="empty_plugin">空白插件 (Empty Plugin)</h3>
 <table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
@@ -905,7 +982,7 @@
 <li><strong id="wing_of_sky">天空之翼 (Wing of Sky)</strong>：蝙蝠、恶魂、幻翼、鸡、烈焰人、恼鬼、鹦鹉</li>
 <li><strong id="heart_of_ocean">海洋之心 (Heart of Ocean)</strong>：溺尸/远古守卫者/守卫者/鱿鱼/海龟/海豚</li>
 <li><strong id="limb_of_ridge">山脉之肢 (Limb of Ridge)</strong>：牛/驴/马/骡/哞菇/猪/北极熊/兔子/羊</li>
-<li><strong id="soul_of_dirt">泥土之魂 (Soul of Dirt)</strong>：僵尸/僵尸村民/尸壳/骷髅/流髑/凋灵骷髅/骷髅马/僵尸猪人/幻翼/溺尸</li>
+<li><strong id="soul_of_dirt">泥土之魂 (Soul of Dirt)</strong>：僵尸/僵尸村民/尸壳/骷髅/流浪者/凋灵骷髅/骷髅马/僵尸猪人/幻翼/溺尸</li>
 <li><strong id="certification_of_earth">大地之证 (Certification of Earth)</strong>：僵尸村民/村民/卫道士/唤魔者</li>
 <li><strong id="nova_of_fire">火焰之星 (Nova of Fire)</strong>：爬行者/烈焰人/恶魂/岩浆怪</li>
 <li><strong id="spirit_of_life">生命之灵 (Spirit of Life)</strong>：末影人/末影螨/潜影贝</li>
@@ -929,13 +1006,14 @@
 <!-------------------------------------------------------------------------------------------------->
 <h2 id="materials">材料</h2>
 <h3 id="experience_bottle">附魔之瓶 (Experience Bottle)</h3>
-<p>附魔之瓶固定掉落4点经验值，而不是7-11 点。
-当你扔出附魔之瓶(64×)时，掉落256点经验值。</p>
-<p class="small">通过发射器发射附魔之瓶(64×)或是扔出更高压缩等级的附魔之瓶仍然只掉落4点经验值。</p>
+<p>附魔之瓶固定掉落9点经验值，而不是7-11 点。
+当你扔出附魔之瓶(64×)时，掉落576点经验值。</p>
+<p class="small">通过发射器发射附魔之瓶(64×)或是扔出更高压缩等级的附魔之瓶仍然只掉落9点经验值。</p>
 
-<p>当你副手持有漏斗时，你的经验会以每刻4点的速度转化为附魔之瓶。如果此时你主手还持有<a href="#compressor">压缩器</a>，你的经验会以每刻256点的速度转化为<a href="#compressor">附魔之瓶(64×)</a>。附魔之瓶(64×)也可以通过对地面的64个附魔之瓶使用<a href="#compressor">压缩器</a>得到。</p>
+<p>当你副手持有漏斗时，你的经验会以每刻9点的速度转化为附魔之瓶。如果此时你主手还持有<a href="#compressor">压缩器</a>，你的经验会以每刻576点的速度转化为<a href="#compressor">附魔之瓶(64×)</a>。附魔之瓶(64×)也可以通过对地面的64个附魔之瓶使用<a href="#compressor">压缩器</a>得到。</p>
 
-<p>同时修改牧师出售附魔之瓶的价格为1绿宝石。</p>
+<p>同时修改牧师出售附魔之瓶的价格为2绿宝石。</p>
+<p class="small">实际为附魔之瓶经验存储量除以4(向下取整)。</p>
 
 <p>附魔之瓶可用于合成<a href="#enchanted_iron">附魔铁锭</a>、<a href="#enchanted_gold">附魔金锭</a>、<a href="#enchanted_diamond">附魔钻石</a>、<a href="#crafting_machine">合成器</a>、<a href="#low_pressure_plugin">低压插件</a>、<a href="#low_temperature_plugin">低温插件</a>、<a href="#high_pressure_plugin">高压插件</a>、<a href="#high_temperature_plugin">高温插件</a>、<a href="#cobblestone_plugin">圆石插件</a>、<a href="#stone_plugin">石头插件</a>、<a href="#obsidian_plugin">黑曜石插件</a>、<a href="#compressor">压缩器</a>、<a href="#elder_s_words">年长者之教诲</a>、<a href="#coordinate_recorder">坐标记录仪</a>、<a href="#enchanted_golden_apple">附魔金苹果</a>、<a href="#mycelium">菌丝</a>、<a href="#grass_block">草方块</a>，还可用于<a href="#all_in_one_machine">多功能一体机</a>和<a href="#rituals">仪式</a>。</p>
 
@@ -1749,7 +1827,7 @@
 
 <h3 id="empty_bookshelf">空书架 (Empty Bookshelf)</h3>
 <p>主手持有右键放置。拥有三格槽位，外观会随着内部物品数量而变化。</p>
-<p class="small">强行放入背景的物品会消失。</p>
+<p class="small">强行将物品放入背景会导致停机。</p>
 <table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
 <tr><th>空书架</th><td>橡木木板+箱子</td>
 <td><span class="mcui"><span><span class="mcui_row"><span class="oak_planks" title="橡木木板">
@@ -2367,13 +2445,13 @@
 <li>消耗材料：青金石+附魔之瓶+<a href="#rare_drops">稀有掉落物</a>/下界之星</li>
 </ul>
 <span class="mcui_row"><span class="lapis_lazuli" title="青金石">
-</span><span class="experience_bottle" title="附魔之瓶"><span class="stacksize">20</span>
+</span><span class="experience_bottle" title="附魔之瓶"><span class="stacksize">16</span>
 </span><span class="lapis_lazuli" title="青金石">
-</span></span><span class="mcui_row"><span class="experience_bottle" title="附魔之瓶"><span class="stacksize">20</span>
+</span></span><span class="mcui_row"><span class="experience_bottle" title="附魔之瓶"><span class="stacksize">16</span>
 </span><span class="colorful_items wing_of_sky" title="稀有物">
-</span><span class="experience_bottle" title="附魔之瓶"><span class="stacksize">20</span>
+</span><span class="experience_bottle" title="附魔之瓶"><span class="stacksize">16</span>
 </span></span><span class="mcui_row"><span class="lapis_lazuli" title="青金石">
-</span><span class="experience_bottle" title="附魔之瓶"><span class="stacksize">20</span>
+</span><span class="experience_bottle" title="附魔之瓶"><span class="stacksize">16</span>
 </span><span class="lapis_lazuli" title="青金石">
 </span></span></p>
 <p>可制作除诅咒外的32种魔咒的最高等级附魔书。每种消耗品对应四种魔咒，该对应关系在模组首次载入时被决定。</p>
@@ -2387,13 +2465,13 @@
 </ul>
 
 <span class="mcui_row"><span class="potion_of_fire_resistance" title="抗火药水">
-</span><span class="experience_bottle" title="附魔之瓶"><span class="stacksize">20</span>
+</span><span class="experience_bottle" title="附魔之瓶"><span class="stacksize">16</span>
 </span><span class="potion_of_fire_resistance" title="抗火药水">
-</span></span><span class="mcui_row"><span class="experience_bottle" title="附魔之瓶"><span class="stacksize">20</span>
+</span></span><span class="mcui_row"><span class="experience_bottle" title="附魔之瓶"><span class="stacksize">16</span>
 </span><span class="colorful_items wing_of_sky" title="稀有物">
-</span><span class="experience_bottle" title="附魔之瓶"><span class="stacksize">20</span>
+</span><span class="experience_bottle" title="附魔之瓶"><span class="stacksize">16</span>
 </span></span><span class="mcui_row"><span class="potion_of_fire_resistance" title="抗火药水">
-</span><span class="experience_bottle" title="附魔之瓶"><span class="stacksize">20</span>
+</span><span class="experience_bottle" title="附魔之瓶"><span class="stacksize">16</span>
 </span><span class="potion_of_fire_resistance" title="抗火药水">
 </span></span>
 
@@ -2425,13 +2503,13 @@
 <li>消耗材料：金锭+附魔之瓶+<a href="#rare_drops">稀有掉落物</a>/下界之星</li>
 </ul>
 <span class="mcui_row"><span class="gold_ingot" title="金锭">
-</span><span class="experience_bottle" title="附魔之瓶"><span class="stacksize">20</span>
+</span><span class="experience_bottle" title="附魔之瓶"><span class="stacksize">16</span>
 </span><span class="gold_ingot" title="金锭">
-</span></span><span class="mcui_row"><span class="experience_bottle" title="附魔之瓶"><span class="stacksize">20</span>
+</span></span><span class="mcui_row"><span class="experience_bottle" title="附魔之瓶"><span class="stacksize">16</span>
 </span><span class="colorful_items wing_of_sky" title="稀有物">
-</span><span class="experience_bottle" title="附魔之瓶"><span class="stacksize">20</span>
+</span><span class="experience_bottle" title="附魔之瓶"><span class="stacksize">16</span>
 </span></span><span class="mcui_row"><span class="gold_ingot" title="金锭">
-</span><span class="experience_bottle" title="附魔之瓶"><span class="stacksize">20</span>
+</span><span class="experience_bottle" title="附魔之瓶"><span class="stacksize">16</span>
 </span><span class="gold_ingot" title="金锭">
 </span></span></p>
 <p>剑(木制除外)、斧(木制除外)、三叉戟可附加属性：
@@ -3013,8 +3091,11 @@
 <h2 id="utilitypp">更多实用功能</h2>
 <p>该部分隶属模组《更多实用功能》。</p>
 
-<h3 id="bleach">漂白</h3>
-<p>将染色玻璃、染色陶瓦扔进炼药锅可将其漂白为玻璃、陶瓦，并减少炼药锅一级水位。</p>
+<h3 id="cauldon">炼药锅</h3>
+<p>将染色玻璃扔进炼药锅可将其变为玻璃，并减少炼药锅一级水位。</p>
+<p>将染色陶瓦扔进炼药锅可将其变为陶瓦，并减少炼药锅一级水位。</p>
+<p>将海绵扔进炼药锅可将其变为湿海绵，并减少炼药锅一级水位。</p>
+<p>将熔岩桶扔进炼药锅可将其变为桶和黑曜石，并减少炼药锅一级水位。</p>
 <p class="small">可以一次性扔入多个物品。</p>
 
 <h3 id="random_block">随机方块</h3>
@@ -3049,92 +3130,28 @@
 
 <h3 id="fuel">燃料</h3>
 <ul>
-<li>新增燃料：树叶、草、蕨、枯死的灌木、藤蔓、线、纸、羽毛、画作、春联、横幅、稀有掉落物、插件、手、黑暗碎片、扫帚、魔杖、年长者之教诲、硅板、粘土桶、破损刷怪笼，可燃烧5秒或0.5个物品。</li>
+<li>新增燃料：树叶、草、蕨、枯死的灌木、藤蔓、线、纸、羽毛、稀有掉落物、插件、手、黑暗碎片、扫帚、魔杖、年长者之教诲、硅板、粘土桶、破损刷怪笼，可燃烧5秒或0.5个物品。</li>
 <li>新增燃料：火把、高草丛、大型蕨、物品展示框，可燃烧10秒或1个物品。</li>
 <li>新增燃料：末地烛、干海带块、各种书、盔甲架、钓鱼竿、元素之力、磁铁、时间调节器、计时器、世界之源、节制器、坐标记录仪、傀儡、空书架、合成器、多功能一体机、交易机，可燃烧15秒或1个物品。</li>
-<li>木楼梯可燃烧10秒或1个物品，而不是15秒或1个物品。</li>
+<li>木楼梯可燃烧10秒或1个物品，而不是15秒或1.5个物品。</li>
 </ul>
 
 <h3 id="spawn_egg">刷怪蛋</h3>
-<p>原版38种刷怪蛋的合成。</p>
+<p>原版7种刷怪蛋的合成。</p>
+
 <table><thead><tr><th>名称</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
-<tr><th>羊刷怪蛋<br />
-牛刷怪蛋<br />
-猪刷怪蛋<br />
-鸡刷怪蛋<br />
-兔子刷怪蛋<br />
-哞菇刷怪蛋<br />
-蝙蝠刷怪蛋<br />
-鱿鱼刷怪蛋<br />
-北极熊刷怪蛋</th><td>任意羊毛+龙蛋<br />
-皮革+龙蛋<br />
-生猪排+龙蛋<br />
-羽毛+龙蛋<br />
-兔子皮+龙蛋<br />
-红色蘑菇+皮革+龙蛋<br />
-木炭+龙蛋<br />
-墨囊+龙蛋<br />
-冰+龙蛋</td><td>
-<span class="mcui"><span><span class="mcui_row"><span class="white_wool" title="羊毛">
-</span><span class="white_wool" title="羊毛">
-</span><span class="white_wool" title="羊毛">
-</span></span><span class="mcui_row"><span class="white_wool" title="羊毛">
-</span><span class="dragon_egg" title="龙蛋">
-</span><span class="white_wool" title="羊毛">
-</span></span><span class="mcui_row"><span class="white_wool" title="羊毛">
-</span><span class="white_wool" title="羊毛">
-</span><span class="white_wool" title="羊毛">
-</span></span></span><span class="mcui_arrow"></span><span class="mcui_output">
-<span class="sheep_spawn_egg" title="羊刷怪蛋">
-</span></span></span><br/>
-
-<span class="mcui"><span><span class="mcui_row"><span class="red_mushroom" title="红色蘑菇">
-</span><span class="leather" title="皮革">
-</span><span class="red_mushroom" title="红色蘑菇">
-</span></span><span class="mcui_row"><span class="leather" title="皮革">
-</span><span class="dragon_egg" title="龙蛋">
-</span><span class="leather" title="皮革">
-</span></span><span class="mcui_row"><span class="red_mushroom" title="红色蘑菇">
-</span><span class="leather" title="皮革">
-</span><span class="red_mushroom" title="红色蘑菇">
-</span></span></span><span class="mcui_arrow"></span><span class="mcui_output">
-<span class="mooshroom_spawn_egg" title="哞菇刷怪蛋">
-</span></span></span></td></tr>
-
-<tr><th>村民刷怪蛋<br />
-卫道士刷怪蛋<br />
-唤魔者刷怪蛋</th><td>绿宝石+龙蛋<br />
-铁块+龙蛋<br />
-金块+龙蛋</td><td>
-<span class="mcui"><span><span class="mcui_row"><span class="emerald" title="绿宝石">
-</span><span class="emerald" title="绿宝石">
-</span><span class="emerald" title="绿宝石">
-</span></span><span class="mcui_row"><span class="emerald" title="绿宝石">
-</span><span class="dragon_egg" title="龙蛋">
-</span><span class="emerald" title="绿宝石">
-</span></span><span class="mcui_row"><span class="emerald" title="绿宝石">
-</span><span class="emerald" title="绿宝石">
-</span><span class="emerald" title="绿宝石">
-</span></span></span><span class="mcui_arrow"></span><span class="mcui_output">
-<span class="villager_spawn_egg" title="村民刷怪蛋">
-</span></span></span></td></tr>
-
 <tr><th>爬行者刷怪蛋<br />
 僵尸刷怪蛋<br />
 骷髅刷怪蛋<br />
 蜘蛛刷怪蛋<br />
-女巫刷怪蛋<br />
-末影人刷怪蛋<br />
-史莱姆刷怪蛋<br />
 洞穴蜘蛛刷怪蛋<br />
+烈焰人刷怪蛋<br />
 蠹虫刷怪蛋</th><td>火药+龙蛋<br />
 腐肉+龙蛋<br />
 骨头+龙蛋<br />
 线+龙蛋<br />
-红石粉+龙蛋<br />
-末影珍珠+龙蛋<br />
-粘液球+龙蛋<br />
 蜘蛛眼+龙蛋<br />
+烈焰粉+龙蛋<br />
 任意石砖+龙蛋<br /></td><td>
 <span class="mcui"><span><span class="mcui_row"><span class="gunpowder" title="火药">
 </span><span class="gunpowder" title="火药">
@@ -3161,91 +3178,8 @@
 </span></span></span><span class="mcui_arrow"></span><span class="mcui_output">
 <span class="silverfish_spawn_egg" title="蠹虫">
 </span></span></span></td></tr>
-
-<tr><th>守卫者刷怪蛋<br />
-远古守卫者刷怪蛋<br />
-僵尸猪人刷怪蛋<br />
-恶魂刷怪蛋<br />
-岩浆怪刷怪蛋<br />
-凋灵骷髅刷怪蛋<br />
-烈焰人刷怪蛋<br />
-末影螨刷怪蛋<br />
-潜影贝刷怪蛋<br />
-幻翼刷怪蛋</th><td>水桶+龙蛋<br />
-任意生鱼+龙蛋<br />
-金粒+龙蛋<br />
-恶魂之泪+龙蛋<br />
-岩浆膏+龙蛋<br />
-煤炭块+龙蛋<br />
-烈焰粉+龙蛋<br />
-末地石+龙蛋<br />
-紫颂果+龙蛋<br />
-幻翼膜+龙蛋</td><td>
-<span class="mcui"><span><span class="mcui_row"><span class="water_bucket" title="水桶">
-</span><span class="water_bucket" title="水桶">
-</span><span class="water_bucket" title="水桶">
-</span></span><span class="mcui_row"><span class="water_bucket" title="水桶">
-</span><span class="dragon_egg" title="龙蛋">
-</span><span class="water_bucket" title="水桶">
-</span></span><span class="mcui_row"><span class="water_bucket" title="水桶">
-</span><span class="water_bucket" title="水桶">
-</span><span class="water_bucket" title="水桶">
-</span></span></span><span class="mcui_arrow"></span><span class="mcui_output">
-<span class="guardian_spawn_egg" title="守卫者">
-</span></span></span><br/>
-
-<span class="mcui"><span><span class="mcui_row"><span class="chorus_fruit" title="紫颂果">
-</span><span class="chorus_fruit" title="紫颂果">
-</span><span class="chorus_fruit" title="紫颂果">
-</span></span><span class="mcui_row"><span class="chorus_fruit" title="紫颂果">
-</span><span class="dragon_egg" title="龙蛋">
-</span><span class="chorus_fruit" title="紫颂果">
-</span></span><span class="mcui_row"><span class="chorus_fruit" title="紫颂果">
-</span><span class="chorus_fruit" title="紫颂果">
-</span><span class="chorus_fruit" title="紫颂果">
-</span></span></span><span class="mcui_arrow"></span><span class="mcui_output">
-<span class="shulker_spawn_egg" title="潜影贝">
-</span></span></span></td></tr>
-
-<tr><th>狼刷怪蛋<br />
-豹猫刷怪蛋<br />
-马刷怪蛋<br />
-驴刷怪蛋<br />
-羊驼刷怪蛋<br />
-鹦鹉刷怪蛋<br />
-海龟刷怪蛋</th><td>骨头+<a href="#heads">骷髅头颅</a>+龙蛋<br />
-任意生鱼+<a href="#heads">骷髅头颅</a>+龙蛋<br />
-皮革+<a href="#heads">骷髅头颅</a>+龙蛋<br />
-箱子+<a href="#heads">骷髅头颅</a>+龙蛋<br />
-任意地毯+<a href="#heads">骷髅头颅</a>+龙蛋<br />
-羽毛+<a href="#heads">骷髅头颅</a>+龙蛋<br />
-海草+<a href="#heads">骷髅头颅</a>+龙蛋</td><td>
-<span class="mcui"><span><span class="mcui_row"><span class="bone" title="骨头">
-</span><span class="skeleton_skull" title="骷髅头颅">
-</span><span class="bone" title="骨头">
-</span></span><span class="mcui_row"><span class="bone" title="骨头">
-</span><span class="dragon_egg" title="龙蛋">
-</span><span class="bone" title="骨头">
-</span></span><span class="mcui_row"><span class="bone" title="骨头">
-</span><span class="bone" title="骨头">
-</span><span class="bone" title="骨头">
-</span></span></span><span class="mcui_arrow"></span><span class="mcui_output">
-<span class="wolf_spawn_egg" title="狼">
-</span></span></span></br>
-
-<span class="mcui"><span><span class="mcui_row"><span class="feather" title="羽毛">
-</span><span class="skeleton_skull" title="骷髅头颅">
-</span><span class="feather" title="羽毛">
-</span></span><span class="mcui_row"><span class="feather" title="羽毛">
-</span><span class="dragon_egg" title="龙蛋">
-</span><span class="feather" title="羽毛">
-</span></span><span class="mcui_row"><span class="feather" title="羽毛">
-</span><span class="feather" title="羽毛">
-</span><span class="feather" title="羽毛">
-</span></span></span><span class="mcui_arrow"></span><span class="mcui_output">
-<span class="parrot_spawn_egg" title="鹦鹉">
-</span></span></span></td></tr>
 </tbody></table>
+
 
 <h3 id="stairs">楼梯</h3>
 <p>修改合成得到的楼梯数量为8；新增17种楼梯回收为原方块。</p>
@@ -3382,6 +3316,9 @@
 <span class="melon" title="西瓜片"><span class="stacksize">9</span>
 </span></span></span></td></tr>
 </tbody></table>
+
+<h3 id="stone_tools">石制工具</h3>
+<p>现在花岗岩、安山岩、闪长岩可替换圆石合成石制工具。</p>
 
 <h3 id="bed_dying">染色床</h3>
 <p>现在任意颜色的床均可被染色。</p>
@@ -3840,17 +3777,14 @@ scoreboard players set #powered_creeper_base cppValue 32
 # 黑暗动物生成基数，几率=1/基数
 scoreboard players set #dark_animal_base cppValue 32
 
-# 附魔之瓶存储的经验值
-scoreboard players set #xp_in_bottle cppValue 4
-
-# 牧师出售附魔之瓶价格(绿宝石)
-scoreboard players set #price_of_xp_bottle cppValue 1
+# 附魔之瓶存储的经验值，请设置为9到64之间
+scoreboard players set #xp_in_bottle cppValue 9
 
 # 作物变异基数(若小于20将导致部分作物无法杂交)，变异率=1/基数
 scoreboard players set #plants_hybrid cppValue 20
 
-# 魔法树树叶转化基数，期望时间=基数/6(秒)
-scoreboard players set #leaves_grow_threshold cppValue 7200
+# 魔法树树叶转化基数，期望时间=基数/3(秒)
+scoreboard players set #leaves_grow_threshold cppValue 3600
 
 # 元素之力消耗经验值
 scoreboard players set #blue_force_of_sky_xp cppValue 10
@@ -3863,7 +3797,7 @@ scoreboard players set #purple_force_of_life_xp cppValue 0
 scoreboard players set #white_force_of_lightning_xp cppValue 0
 scoreboard players set #black_force_of_moon_xp cppValue 40
 
-# 多功能一体机时长基数
+# 机器时长基数
 scoreboard players set #all_in_one_machine_cd cppValue 1200
 
 # 世界之源消耗经验值
@@ -4070,8 +4004,8 @@ scoreboard players set #rituals_time cppValue 1200
 <!--1.8-->
 
 <tr class="v1-8">
-	<th rowspan="92">1.8<br/><span class="lore">元素更新</span></th>
-	<th rowspan="92">2018年8月30日<br/><span class='lore'>1490 KB</span></th>
+	<th rowspan="90">1.8<br/><span class="lore">元素更新</span></th>
+	<th rowspan="90">2018年8月30日<br/><span class='lore'>1490 KB</span></th>
 	<td>游戏本体版本升级为1.13，不再支持1.13之前的版本。</td></tr>
 <tr class="v1-8"><td>修改资源包文字的代码名称、记分板、标签前缀为cpp，修改资源包以适应1.13，添加材质。</td></tr>
 <tr class="v1-8"><td>移除闪烁标语。</td></tr>
@@ -4174,6 +4108,25 @@ scoreboard players set #rituals_time cppValue 1200
 <tr class="v1-8"><td>空岛模块下可使用绿宝石块和雪块制作末地传送门框架。</td></tr>
 <tr class="v1-8"><td>空岛模块下添加雪球、鸡蛋、圆石、砂砾的合成。</td></tr>
 
+<tr class="v1-8">
+	<th rowspan="19">1.8.1</th>
+	<th rowspan="19">2018年9月30日<br/><span class='lore'>1490 KB</span></th>
+	<td>修复bug。</td></tr>
+<tr class="v1-8"><td>修复了将物品放置在背景也能无序合成的错误。</td></tr>
+<tr class="v1-8"><td>将附魔之瓶默认存储经验值修改为9。</td></tr>
+<tr class="v1-8"><td>将附魔之瓶默认售价修改为2(附魔之瓶经验存储值除4)。</td></tr>
+<tr class="v1-8"><td>调整多功能一体机存储经验量最高为48。</td></tr>
+<tr class="v1-8"><td>交易不再直接获得附魔之瓶，而是先存储为经验值再转化。</td></tr>
+<tr class="v1-8"><td>将画作的材质修改为石剑。</td></tr>
+<tr class="v1-8"><td>现在称号支持翻译文本了。</td></tr>
+<tr class="v1-8"><td>仪式每次消耗的附魔之瓶数量修改为64。</td></tr>
+<tr class="v1-8"><td>现在矿石树苗支持无序合成。</td></tr>
+<tr class="v1-8"><td>现在炼药锅可将海绵变为湿海绵。</td></tr>
+<tr class="v1-8"><td>现在炼药锅可将熔岩桶变为黑曜石和桶。</td></tr>
+<tr class="v1-8"><td>现在炼药锅可将熔岩桶变为黑曜石和桶。</td></tr>
+<tr class="v1-8"><td>添加了生物投影仪，使用4附魔铁锭+刷怪笼+箱子+2附魔钻石+生命之灵合成。</td></tr>
+<tr class="v1-8"><td>生物投影仪每10秒生成一次生物，所需材料为鸡蛋和另两种，消耗经验4/8/32点。</td></tr>
+<tr class="v1-8"><td>移除除僵尸、骷髅、洞穴蜘蛛、蜘蛛、爬行者、烈焰人、蠹虫外的所有刷怪蛋合成配方。</td></tr>
 </tbody></table>
 
 
