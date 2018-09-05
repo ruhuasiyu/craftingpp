@@ -5,13 +5,17 @@
 .mcui{
 	display:inline-block;
 	position:relative;
-	background-color:#C6C6C6;
+	background-color:#2CB72C;
 	border:2px solid;
-	border-color:#DBDBDB #5B5B5B #5B5B5B #DBDBDB;
+	border-color:#DBDBDB #1C381C #1C381C #DBDBDB;
 	padding:6px;
 	text-align:left;
 	white-space:nowrap;
 	vertical-align:bottom;
+}
+.normal .mcui{
+	background-color:#C6C6C6;
+	border-color:#DBDBDB #5B5B5B #5B5B5B #DBDBDB;
 }
 .mcui > *{
 	display:inline-block;
@@ -24,7 +28,7 @@
 .mcui_row>span{
 	position:relative;
 	display:inline-block;
-	background-color:#8B8B8B;
+	background-color:#3F8C3F;
 	border:2px solid;
 	width:32px;
 	height:32px;
@@ -32,21 +36,33 @@
 	line-height:1;
 	text-align:left;
 }
+.normal .mcui_row>span{
+	background-color:#8B8B8B;	
+}
 .mcui_arrow{
 	background:url("arrow.png") no-repeat;
 	width:32px;
 	height:26px;
 	margin:40px 4px 0;
 }
+.normal .mcui_arrow{
+	background:url("normalarrow.png") no-repeat;	
+}
 .mcui_output{
 	position:relative;
-	background-color:#8B8B8B;
+	background-color:#3F8C3F;
 	border:2px solid;
 	width:32px;
 	height:32px;
 	padding:8px;
 }
+.normal .mcui_output{
+	background-color:#8B8B8B;	
+}
 .mcui_row>span, .mcui_output{
+	border-color:#1C381C #FFF #FFF #1C381C;
+}
+.normal .mcui_row>span, .normal .mcui_output{
 	border-color:#373737 #FFF #FFF #373737;
 }
 .mcui_output{
@@ -77,7 +93,10 @@
 	display:block;
 	width:19px;
 	height:15px;
-	background-image:url("grid_layout_shapeless.png");
+	background-image:url("shapeless.png");
+}
+.normal .mcui_shapeless{
+	background-image:url("normalshapeless.png");
 }
 .mcui_crafting_machine{
 	display:block;
@@ -787,6 +806,7 @@ span.pufferfish{	background-position:-864px -1664px;}
 span.cod{	background-position:-896px -1664px;}
 span.salmon{	background-position:-928px -1664px;}
 
+span.tube_coral_block{	background-position:-288px -1696px;}
 span.tube_coral{	background-position:-448px -1696px;}
 span.trident{	background-position:-608px -1696px;}
 span.brain_coral_fan{	background-position:-832px -1696px;}
