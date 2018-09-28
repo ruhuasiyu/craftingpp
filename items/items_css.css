@@ -483,7 +483,7 @@ span.quartz_block{	background-position: -64px -864px;}
 span.bookshelf{	background-position: -96px -864px;}
 span.brickBlock{	background-position: -160px -864px;}
 span.cobblestone{	background-position: -320px -864px;}
-span.dark_oak_planks{	background-position: -504px -864px;}
+span.dark_oak_planks{	background-position: -512px -864px;}
 span.oak_fence{	background-position: -704px -864px;}
 span.oak_fence_door{	background-position: -736px -864px;}
 span.glass{	background-position: -768px -864px;}
@@ -524,7 +524,7 @@ span.zombie_head{	background-position: -256px -960px;}
 span.andesite{	background-position: -288px -960px;}
 span.bedrock{	background-position: -320px -960px;}
 span.clay{	background-position: -384px -960px;}
-span.cobweb{	background-position: -446px -960px;}
+span.cobweb{	background-position: -448px -960px;}
 span.dark_prismarine{	background-position: -512px -960px;}
 span.diorite{	background-position: -544px -960px;}
 span.dirt{	background-position: -576px -960px;}
@@ -625,7 +625,7 @@ span.gold_ingot{	background-position: -160px -1120px;}
 span.gunpowder{	background-position: -192px -1120px;}
 span.iron_ingot{	background-position: -224px -1120px;}
 span.leather{	background-position: -256px -1120px;}
-span.netherBrick{	background-position: -288px -1120px;}
+span.nether_bricks{	background-position: -288px -1120px;}
 span.quartz{	background-position: -320px -1120px;}
 span.nether_star{	background-position: -352px -1120px;}
 span.paper{	background-position: -384px -1120px;}
@@ -722,6 +722,8 @@ span.furnace{	background-position: -960px -1216px;}
 span.hopper{	background-position: -992px -1216px;}
 	
 span.note_block{	background-position: -96px -1248px;}
+span.chipped_anvil{	background-position: -128px -1248px;}
+span.damaged_anvil{	background-position: -256px -1248px;}
 span.wet_sponge{	background-position: -288px -1248px;}
 span.arrow{	background-position: -576px -1248px;}
 span.bow{	background-position: -992px -1248px;}
