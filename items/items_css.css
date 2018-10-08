@@ -136,7 +136,7 @@
 }
 span.colorful_items{
 	background-image: url("colorful_items.png");
-	background-size: 288px 384px;
+	background-size: 288px 448px;
 }
 span.magma_block{
 	background-image: url("magma_block.gif");
@@ -789,6 +789,7 @@ span.parrot_spawn_egg{	background-position: -224px -1536px;}
 span.blue_bed{	background-position: -192px -1568px;}
 span.green_bed{	background-position: -320px -1568px;}
 span.white_bed{	background-position: -608px -1568px;}
+span.yellow_bed{	background-position: -640px -1568px;}
 
 span.white_carpet{	background-position: -64px -1632px;}
 
@@ -906,11 +907,6 @@ span.temperancer_closed{	background-position: -192px -224px;}
 span.golem{	background-position: -224px -224px;}
 span.empty_bookshelf{	background-position: -256px -224px;}
 
-span.glow_hat{	background-position: -0px -256px;}
-span.green_hat{	background-position: -32px -256px;}
-span.black_hat{	background-position: -64px -256px;}
-span.nurse_hat{	background-position: -96px -256px;}
-span.red_hat{	background-position: -128px -256px;}
 span.jacket{	background-position: -160px -256px;}
 span.red_coat{	background-position: -192px -256px;}
 span.tight_leather_leggings{	background-position: -224px -256px;}
@@ -946,6 +942,22 @@ span.cold_drink{	background-position: -192px -352px;}
 span.beethoven{	background-position: -224px -352px;}
 span.bauhinia{	background-position: -256px -352px;}
 
+span.purple_eye{	background-position: -0px -384px;}
+span.glass_helmet{	background-position: -32px -384px;}
+span.lash{	background-position: -64px -384px;}
+span.cat_breed{	background-position: -96px -384px;}
+span.black_framed_glasses{	background-position: -128px -384px;}
+span.orange_framed_glasses{	background-position: -160px -384px;}
+span.pants{	background-position: -192px -384px;}
+span.empire_hat{	background-position: -224px -384px;}
+
+span.glow_hat{	background-position: -0px -416px;}
+span.green_hat{	background-position: -32px -416px;}
+span.black_hat{	background-position: -64px -416px;}
+span.nurse_hat{	background-position: -96px -416px;}
+span.red_hat{	background-position: -128px -416px;}
+span.beacon_enhancer{	background-position: -160px -416px;}
+span.golden_anvil{	background-position: -192px -416px;}
 
 
 span.effect{
