@@ -320,8 +320,8 @@ abbr{
 .v1-4{background:hsl(120,100%,70%);}
 .v1-5{background:hsl(150,100%,70%);}
 .v1-6{background:hsl(180,100%,70%);}
-.v1-7{background:hsl(200,100%,70%);}
-.v1-8{background:hsl(300,100%,70%);}
+.v1-7{background:hsl(210,100%,70%);}
+.v1-8{background:hsl(240,100%,75%);}
 
 span.chainmail_boots{	background-position: -32px -0px;}
 span.chainmail_chestplate{	background-position: -64px -0px;}
@@ -913,8 +913,8 @@ span.tight_leather_leggings{	background-position: -224px -256px;}
 span.blue_jeans{	background-position: -256px -256px;}
 
 span.snow_boots{	background-position: -0px -288px;}
-span.skrik{	background-position: -32px -288px;}
-span.mona_lisa{	background-position: -64px -288px;}
+span.colorful_sign{	background-position: -32px -288px;}
+span.glass_item_frame{	background-position: -64px -288px;}
 span.the_last_supper{	background-position: -96px -288px;}
 span.luoxia_guwu{	background-position: -128px -288px;}
 span.bamboo_and_stone{	background-position: -160px -288px;}
@@ -950,6 +950,7 @@ span.black_framed_glasses{	background-position: -128px -384px;}
 span.orange_framed_glasses{	background-position: -160px -384px;}
 span.pants{	background-position: -192px -384px;}
 span.empire_hat{	background-position: -224px -384px;}
+span.portable_crafting_table{	background-position: -256px -384px;}
 
 span.glow_hat{	background-position: -0px -416px;}
 span.green_hat{	background-position: -32px -416px;}
