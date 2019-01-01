@@ -50,7 +50,7 @@
 
 <p><strong>什么是原版模组？</strong>原版模组一般是指在不修改Minecraft游戏本体的前提下，通过命令方块、ooc或数据包等方式，而非forge或liteloader等api来对游戏的可玩性做出修改。</p>
 
-<p><strong>什么是《更多的合成》？</strong>《更多的合成》是国内论坛最大的原版模组，目前已更新至<em>1.9(魔法更新)</em>，支持<em>Minecraft Java版 1.14</em>。内容包括：</p>
+<p><strong>什么是《更多的合成》？</strong>《更多的合成》是国内论坛最大的原版模组，目前已更新至<em>1.9 测试版m01d01(魔法更新)</em>，支持<em>Minecraft Java版 1.14</em>。内容包括：</p>
 <ul>
 <li>多种实用工具，帮你更好地改造大自然，更有超强压缩能力的压缩器，可压缩上亿个同类物品；</li>
 <li>多种傀儡，替你钓鱼、种菜、挖矿、杀怪、喂食；</li>
@@ -72,16 +72,15 @@
 
 
 <h3 id="how_to_start">📦 如何开始</h3>
-<p>本页面所列内容为1.8版本。不建议玩家使用旧版本，同时新版本放出后，旧版本一律不再更新和修复bug。
+<p>本页面所列内容为1.9版本。不建议玩家使用旧版本，同时新版本放出后，旧版本一律不再更新和修复bug。
 本页面内容亦会同步更新至<a href="http://www.mcbbs.net/forum.php?mod=viewthread&tid=696861&cp=3">mcbbs中文论坛页面</a>。</p>
 
 <table><thead><tr><th>支持的minecraft版本</th><th>模组版本及下载链接</th></tr></thead>
 <tbody>
-<tr><td>Minecraft Java版 1.14</td><td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/raw/master/versions/1.9/v1.9-m12d20.zip">craftingpp-1.9m12d20</a> | <a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.9-m12d20.zip
-">备用链接</a> | <a href="http://home.ustc.edu.cn/~zsxqq/craftingpp">wiki</a></li></td></tr>
+<tr><td>Minecraft Java版 1.14</td><td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/raw/master/versions/1.9/v1.9-m01d01.zip">craftingpp-1.9m01d01</a> | <a href="http://home.ustc.edu.cn/~zsxqq/rua/v1.9-m01d01.zip
+">备用链接</a> | <a href="https://www.mcmod.cn/class/1297.html">wiki</a></li></td></tr>
 <tr><td>Minecraft Java版 1.13.1-1.13.2</td><td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/raw/master/versions/1.8/v1.8.1.zip">craftingpp-1.8.1</a> | <a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.8.1.zip
-">备用链接</a> | <a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/1.8
-">wiki</a></li></td></tr>
+">备用链接</a></li></td></tr>
 <tr><td>Minecraft Java版 1.12</td><td>
 <a href="http://www.mcbbs.net/forum.php?mod=attachment&aid=MTA4NDIzM3xhYjM4MDU1NnwxNTExNjI3NjYwfDk3NTUyNXw2OTY4NjE%3D">craftingpp-1.7.4</a></td></tr>
 <tr><td>Minecraft Java版 1.12 pre</td><td>
@@ -94,7 +93,7 @@
 <tr><td>Minecraft Java版 1.10</td><td>SpawnEggPressureStoneMod-1.0</td></tr>
 </tbody></table>
 
-<p>下载后，将解压缩后的<code>datapacks</code>文件夹和<code>resources.zip</code>放入<code>.minecraft/saves/世界名</code>文件夹，然后进入游戏并按下F3+T或退出世界重进即可。如需安装在服务器类似操作，请设置为自动下载资源包，客户端无需安装数据包。</p>
+<p>下载后，将解压缩后的<code>datapacks</code>文件夹和<code>resources.zip</code>放入<code>.minecraft/saves/世界名</code>文件夹，然后进入游戏并按下F3+T或退出世界重进即可。若资源包未成功安装，请将其解压并放入resourcepacks文件夹并选择该资源包。如需安装在服务器类似操作，请设置为自动下载资源包，客户端无需安装数据包。</p>
 <p>涉及模组特有物品均需使用<a href="#crafting_machine"><img src="items/crafting_machine.png" style="height:20px;" />合成器</a>来合成。</p>
 <p>模组部分参数可通过修改<a href="#config">配置文件</a>datapacks/craftingpp/data/cpp/functions/config.mcfunction修改。</p>
 
@@ -127,6 +126,7 @@
 · <a href="#effect_adding">效果附加</a>
 · <a href="#attribute_adding">属性附加</a>
 · <a href="#dark_rituals">黑暗仪式</a>)
+· <a href="#magic">魔法</a>
 · <a href="#block_sky_domain">空域开端</a>
 · <a href="#advancements">进度</a>
 </td></tr>
@@ -164,56 +164,59 @@
 </td></tr>
 
 <tr><th>机器</th><td>
-  <a href="#crafting_machine"><span class="ci" style="background-position: -0px -32px;"></span>合成器</a> 
-· <a href="#all_in_one_machine"><span class="ci" style="background-position: -16px -32px;"></span>多功能一体机</a> 
-· <a href="#trade_machine"><span class="ci" style="background-position: -32px -32px;"></span>交易机</a>
-· <a href="#mob_projector"><span class="ci" style="background-position: -48px -32px;"></span>生物投影仪</a>
-· <a href="#beacon_enhancer"><span class="ci" style="background-position: -64px -32px;"></span>信标增强器</a>
-· <a href="#golden_anvil"><span class="ci" style="background-position: -80px -32px;"></span>金砧</a>
-· <a href="#empty_bookshelf"><span class="ci" style="background-position: -96px -32px;"></span>空书架</a> </td></tr>
+  <a href="#crafting_machine"><span class="ci" style="background-position: -0px -0px;"></span>合成器</a> 
+· <a href="#all_in_one_machine"><span class="ci" style="background-position: -16px -0px;"></span>多功能一体机</a> 
+· <a href="#trade_machine"><span class="ci" style="background-position: -32px -0px;"></span>交易机</a>
+· <a href="#mob_projector"><span class="ci" style="background-position: -48px -0px;"></span>生物投影仪</a>
+· <a href="#beacon_enhancer"><span class="ci" style="background-position: -64px -0px;"></span>信标增强器</a>
+· <a href="#golden_anvil"><span class="ci" style="background-position: -80px -0px;"></span>金砧</a>
+· <a href="#empty_bookshelf"><span class="ci" style="background-position: -96px -0px;"></span>空书架</a> </td></tr>
 
 <tr><th>插件</th><td>
-  <a href="#empty_plugin"><span class="ci" style="background-position: -0px -48px;"></span>空白插件</a> 
-· <a href="#low_temperature_plugin"><span class="ci" style="background-position: -64px -48px;"></span>低温插件</a> 
-· <a href="#low_pressure_plugin"><span class="ci" style="background-position: -32px -48px;"></span>低压插件</a> 
-· <a href="#high_temperature_plugin"><span class="ci" style="background-position: -48px -48px;"></span>高温插件</a> 
-· <a href="#high_pressure_plugin"><span class="ci" style="background-position: -16px -48px;"></span>高压插件</a>
-· <a href="#cobblestone_plugin"><span class="ci" style="background-position: -80px -48px;"></span>圆石插件</a> 
-· <a href="#stone_plugin"><span class="ci" style="background-position: -96px -48px;"></span>石头插件</a> 
-· <a href="#obsidian_plugin"><span class="ci" style="background-position: -112px -48px;"></span>黑曜石插件</a>
+  <a href="#empty_plugin"><span class="ci" style="background-position: -112px -0px;"></span>空白插件</a> 
+· <a href="#low_temperature_plugin"><span class="ci" style="background-position: -128px -0px;"></span>低温插件</a> 
+· <a href="#low_pressure_plugin"><span class="ci" style="background-position: -0px -16px;"></span>低压插件</a> 
+· <a href="#high_temperature_plugin"><span class="ci" style="background-position: -16px -16px;"></span>高温插件</a> 
+· <a href="#high_pressure_plugin"><span class="ci" style="background-position: -32px -16px;"></span>高压插件</a>
+· <a href="#cobblestone_plugin"><span class="ci" style="background-position: -48px -16px;"></span>圆石插件</a> 
+· <a href="#stone_plugin"><span class="ci" style="background-position: -64px -16px;"></span>石头插件</a> 
+· <a href="#obsidian_plugin"><span class="ci" style="background-position: -80px -16px;"></span>黑曜石插件</a>
 </td></tr>
 
 <tr><th>掉落物</th><td>
-  <a href="#wing_of_sky"><span class="ci" style="background-position: -0px -0px;"></span>天空之翼</a> 
-· <a href="#heart_of_ocean"><span class="ci" style="background-position: -16px -0px;"></span>海洋之心</a> 
-· <a href="#limb_of_ridge"><span class="ci" style="background-position: -32px -0px;"></span>山脉之肢</a> 
-· <a href="#soul_of_dirt"><span class="ci" style="background-position: -64px -0px;"></span>泥土之魂</a> 
-· <a href="#certification_of_earth"><span class="ci" style="background-position: -48px -0px;"></span>居民之证</a> 
-· <a href="#nova_of_fire"><span class="ci" style="background-position: -80px -0px;"></span>火焰之星</a> 
-· <a href="#spirit_of_life"><span class="ci" style="background-position: -96px -0px;"></span>生命之灵</a>
+  <a href="#wing_of_sky"><span class="ci" style="background-position: -96px -16px;"></span>天空之翼</a> 
+· <a href="#heart_of_ocean"><span class="ci" style="background-position: -112px -16px;"></span>海洋之心</a> 
+· <a href="#limb_of_ridge"><span class="ci" style="background-position: -128px -16px;"></span>山脉之肢</a> 
+· <a href="#soul_of_dirt"><span class="ci" style="background-position: -0px -32px;"></span>泥土之魂</a> 
+· <a href="#certification_of_earth"><span class="ci" style="background-position: -16px -32px;"></span>居民之证</a> 
+· <a href="#nova_of_fire"><span class="ci" style="background-position: -32px -32px;"></span>火焰之星</a> 
+· <a href="#spirit_of_life"><span class="ci" style="background-position: -48px -32px;"></span>生命之灵</a>
 · <a href="#heads"><span style="background-position: -176px -720px;"></span>生物头颅</a>
 · <a href="#player_head"><span style="background-position: -80px -480px;"></span>玩家的头</a>
 · <a href="#dragon_egg"><span style="background-position: -496px -384px;"></span>龙蛋</a>
-· <a href="#shard_of_the_darkness"><span class="ci" style="background-position: -128px -112px;"></span>黑暗碎片</a>
+· <a href="#shard_of_the_darkness"><span class="ci" style="background-position: -64px -32px;"></span>黑暗碎片</a>
 · <a href="#red_mushroom"><span style="background-position: -80px -528px;"></span>红色蘑菇</a>
-· <a href="#meat"><span class="ci" style="background-position: -0px -272px;"></span><span class="ci" style="background-position: -16px -272px;"></span><span class="ci" style="background-position: -32px -272px;"></span>肉</a>
-· <a href="#broken_spawner"><span class="ci" style="background-position: -32px -128px;"></span>破损的刷怪箱</a></td></tr>
+· <a href="#meat"><span class="ci" style="background-position: -80px -32px;"></span><span class="ci" style="background-position: -96px -32px;"></span><span class="ci" style="background-position: -112px -32px;"></span><span class="ci" style="background-position: -128px -32px;"></span><span class="ci" style="background-position: -0px -48px;"></span><span class="ci" style="background-position: -16px -48px;"></span><span class="ci" style="background-position: -32px -48px;"></span><span class="ci" style="background-position: -48px -48px;"></span><span class="ci" style="background-position: -64px -48px;"></span><span class="ci" style="background-position: -80px -48px;"></span><span class="ci" style="background-position: -96px -48px;"></span><span class="ci" style="background-position: -112px -48px;"></span>肉</a>
+· <a href="#broken_spawner"><span class="ci" style="background-position: -128px -48px;"></span>破损的刷怪箱</a></td></tr>
 
 <tr><th>材料</th><td>
   <a href="#experience_bottle"><span style="background-position: -160px -544px;"></span>附魔之瓶</a>
-· <a href="#enchanted_iron"><span class="ci" style="background-position: -0px -112px;"></span>附魔铁锭</a>
-· <a href="#enchanted_gold"><span class="ci" style="background-position: -16px -112px;"></span>附魔金锭</a>
-· <a href="#enchanted_diamond"><span class="ci" style="background-position: -32px -112px;"></span>附魔钻石</a>
-· <a href="#coal_nugget"><span class="ci" style="background-position: -80px -112px;"></span>煤粒</a>
-· <a href="#cinder"><span class="ci" style="background-position: -96px -112px;"></span>煤渣</a>
-· <a href="#splint"><span class="ci" style="background-position: -112px -112px;"></span>碎钻</a>
-· <a href="#rare_earth_glass"><span class="ci" style="background-position: -80px -128px;"></span>稀土玻璃</a>
-· <a href="#reinforced_glass"><span class="ci" style="background-position: -64px -128px;"></span>钢化玻璃</a>
-· <a href="#silicon_plate"><span class="ci" style="background-position: -0px -128px;"></span>硅板</a>
-· <a href="#moon_shard"><span class="ci" style="background-position: -64px -112px;"></span>月之碎片</a>
-· <a href="#sun_shard"><span class="ci" style="background-position: -48px -112px;"></span>日之碎片</a>
-· <a href="#clay_bucket"><span class="ci" style="background-position: -16px -128px;"></span>粘土桶</a>
-· <a href="#iron_chain"><span class="ci" style="background-position: -48px -128px;"></span>铁链</a>
+· <a href="#ancient_scroll"><span class="ci" style="background-position: -0px -64px;"></span>上古卷轴</a>
+· <a href="#enchanted_iron"><span class="ci" style="background-position: -16px -64px;"></span>附魔铁锭</a>
+· <a href="#enchanted_gold"><span class="ci" style="background-position: -32px -64px;"></span>附魔金锭</a>
+· <a href="#enchanted_diamond"><span class="ci" style="background-position: -48px -64px;"></span>附魔钻石</a>
+· <a href="#coal_nugget"><span class="ci" style="background-position: -64px -64px;"></span>煤粒</a>
+· <a href="#cinder"><span class="ci" style="background-position: -80px -64px;"></span>煤渣</a>
+· <a href="#splint"><span class="ci" style="background-position: -96px -64px;"></span>碎钻</a>
+· <a href="#rare_earth_glass"><span class="ci" style="background-position: -112px -64px;"></span>稀土玻璃</a>
+· <a href="#reinforced_glass"><span class="ci" style="background-position: -128px -64px;"></span>钢化玻璃</a>
+· <a href="#silicon_plate"><span class="ci" style="background-position: -0px -80px;"></span>硅板</a>
+· <a href="#moon_shard"><span class="ci" style="background-position: -16px -80px;"></span>月之碎片</a>
+· <a href="#sun_shard"><span class="ci" style="background-position: -32px -80px;"></span>日之碎片</a>
+· <a href="#moon_shard"><span class="ci" style="background-position: -48px -80px;"></span>月石</a>
+· <a href="#sun_shard"><span class="ci" style="background-position: -64px -80px;"></span>日石</a>
+· <a href="#iron_chain"><span class="ci" style="background-position: -80px -80px;"></span>铁链</a>
+· <a href="#clay_bucket"><span class="ci" style="background-position: -96px -80px;"></span>粘土桶</a>
 · <a href="#mycelium"><span style="background-position: -432px -480px;"></span>菌丝</a>
 · <a href="#grass_block"><span style="background-position: -320px -480px;"></span>草方块</a>
 · <a href="#ghast_tear"><span style="background-position: -272px -320px;"></span>恶魂之泪</a>
@@ -222,53 +225,53 @@
 </td></tr>
 
 <tr><th>粉末</th><td>
-  <a href="#iron_dust"><span class="ci" style="background-position: -0px -64px;"></span>铁粉</a>
-· <a href="#gold_dust"><span class="ci" style="background-position: -16px -64px;"></span>金粉</a>
-· <a href="#carbon_dust"><span class="ci" style="background-position: -32px -64px;"></span>碳粉</a>
-· <a href="#emerald_dust"><span class="ci" style="background-position: -48px -64px;"></span>绿宝石粉</a>
-· <a href="#diamond_dust"><span class="ci" style="background-position: -64px -64px;"></span>钻石粉</a>
-· <a href="#quartz_dust"><span class="ci" style="background-position: -80px -64px;"></span>石英粉</a>
-· <a href="#rare_earth_salt"><span class="ci" style="background-position: -96px -64px;"></span>稀土盐</a>
-· <a href="#alkaloid_rare_earth"><span class="ci" style="background-position: -112px -64px;"></span>碱性稀土</a>
-· <a href="#coarse_silicon"><span class="ci" style="background-position: -0px -80px;"></span>粗硅</a>
-· <a href="#silicon_dust"><span class="ci" style="background-position: -16px -80px;"></span>硅粉</a>
-· <a href="#steel_dust"><span class="ci" style="background-position: -32px -80px;"></span>钢粉</a>
-· <a href="#rare_earth_dust"><span class="ci" style="background-position: -128px -64px;"></span>稀土粉</a>
-· <a href="#fertilizer"><span class="ci" style="background-position: -48px -80px;"></span>肥料</a>
+  <a href="#iron_dust"><span class="ci" style="background-position: -112px -80px;"></span>铁粉</a>
+· <a href="#gold_dust"><span class="ci" style="background-position: -128px -80px;"></span>金粉</a>
+· <a href="#carbon_dust"><span class="ci" style="background-position: -0px -96px;"></span>碳粉</a>
+· <a href="#emerald_dust"><span class="ci" style="background-position: -16px -96px;"></span>绿宝石粉</a>
+· <a href="#diamond_dust"><span class="ci" style="background-position: -32px -96px;"></span>钻石粉</a>
+· <a href="#quartz_dust"><span class="ci" style="background-position: -48px -96px;"></span>石英粉</a>
+· <a href="#rare_earth_salt"><span class="ci" style="background-position: -64px -96px;"></span>稀土盐</a>
+· <a href="#alkaloid_rare_earth"><span class="ci" style="background-position: -80px -96px;"></span>碱性稀土</a>
+· <a href="#coarse_silicon"><span class="ci" style="background-position: -96px -96px;"></span>粗硅</a>
+· <a href="#silicon_dust"><span class="ci" style="background-position: -112px -96px;"></span>硅粉</a>
+· <a href="#steel_dust"><span class="ci" style="background-position: -128px -96px;"></span>钢粉</a>
+· <a href="#rare_earth_dust"><span class="ci" style="background-position: -0px -112px;"></span>稀土粉</a>
+· <a href="#fertilizer"><span class="ci" style="background-position: -16px -112px;"></span>肥料</a>
 </td></tr>
 
 <tr><th>瓶装物品</th><td>
-  <a href="#acid"><span class="ci" style="background-position: -0px -96px;"></span>酸水</a>
-· <a href="#soda_water"><span class="ci" style="background-position: -16px -96px;"></span>碱水</a>
-· <a href="#bionic_acid"><span class="ci" style="background-position: -32px -96px;"></span>生物酸</a>
-· <a href="#alkaloid"><span class="ci" style="background-position: -48px -96px;"></span>生物碱</a>
-· <a href="#bottle_of_air"><span class="ci" style="background-position: -64px -96px;"></span>空气瓶</a>
-· <a href="#bottle_of_salt"><span class="ci" style="background-position: -80px -96px;"></span>盐瓶</a>
-· <a href="#ammonia_refrigerant"><span class="ci" style="background-position: -96px -96px;"></span>氨制冷剂</a>
+  <a href="#bottle_of_salt"><span class="ci" style="background-position: -32px -112px;"></span>盐瓶</a>
+· <a href="#acid"><span class="ci" style="background-position: -48px -112px;"></span>酸水</a>
+· <a href="#soda_water"><span class="ci" style="background-position: -64px -112px;"></span>碱水</a>
+· <a href="#bionic_acid"><span class="ci" style="background-position: -80px -112px;"></span>生物酸</a>
+· <a href="#alkaloid"><span class="ci" style="background-position: -96px -112px;"></span>生物碱</a>
+· <a href="#bottle_of_air"><span class="ci" style="background-position: -112px -112px;"></span>空气瓶</a>
+· <a href="#ammonia_refrigerant"><span class="ci" style="background-position: -128px -112px;"></span>氨制冷剂</a>
 </td></tr>
 
 <tr><th>元素之力</th><td>
-  <a href="#blue_force_of_sky"><span class="ci" style="background-position: -0px -16px;"></span>蓝色天之力</a>
-· <a href="#green_force_of_water"><span class="ci" style="background-position: -16px -16px;"></span>绿色水之力</a>
-· <a href="#cyan_force_of_mountain"><span class="ci" style="background-position: -32px -16px;"></span>青色山之力</a>
-· <a href="#orange_force_of_dirt"><span class="ci" style="background-position: -48px -16px;"></span>橙色土之力</a>
-· <a href="#yellow_force_of_earth"><span class="ci" style="background-position: -64px -16px;"></span>黄色地之力</a>
-· <a href="#red_force_of_fire"><span class="ci" style="background-position: -80px -16px;"></span>红色火之力</a>
-· <a href="#purple_force_of_life"><span class="ci" style="background-position: -96px -16px;"></span>紫色命之力</a>
-· <a href="#white_force_of_lightning"><span class="ci" style="background-position: -112px -16px;"></span>白色电之力</a>
-· <a href="#black_force_of_moon"><span class="ci" style="background-position: -128px -16px;"></span>黑色月之力</a> 
+  <a href="#blue_force_of_sky"><span class="ci" style="background-position: -0px -128px;"></span>蓝色天之力</a>
+· <a href="#green_force_of_water"><span class="ci" style="background-position: -16px -128px;"></span>绿色水之力</a>
+· <a href="#cyan_force_of_mountain"><span class="ci" style="background-position: -32px -128px;"></span>青色山之力</a>
+· <a href="#orange_force_of_dirt"><span class="ci" style="background-position: -48px -128px;"></span>橙色土之力</a>
+· <a href="#yellow_force_of_earth"><span class="ci" style="background-position: -64px -128px;"></span>黄色地之力</a>
+· <a href="#red_force_of_fire"><span class="ci" style="background-position: -80px -128px;"></span>红色火之力</a>
+· <a href="#purple_force_of_life"><span class="ci" style="background-position: -96px -128px;"></span>紫色命之力</a>
+· <a href="#white_force_of_lightning"><span class="ci" style="background-position: -112px -128px;"></span>白色电之力</a>
+· <a href="#black_force_of_moon"><span class="ci" style="background-position: -128px -128px;"></span>黑色月之力</a> 
 </td></tr>
 
 <tr><th>实用工具</th><td>
-  <a href="#portable_crafting_table"><span class="ci" style="background-position: -112px -32px;"></span>便携式工作台</a> 
-· <a href="#magnet"><span class="ci" style="background-position: -0px -192px;"></span>磁铁</a> 
-· <a href="#time_conditioner"><span class="ci" style="background-position: -16px -192px;"></span>时间调节器</a> 
-· <a href="#time_checker"><span class="ci" style="background-position: -32px -192px;"></span>报时器</a> 
-· <a href="#origin_of_the_world"><span class="ci" style="background-position: -48px -192px;"></span>世界之源</a> 
-· <a href="#compressor"><span class="ci" style="background-position: -64px -192px;"></span>压缩器</a> 
-· <a href="#elder_s_words"><span class="ci" style="background-position: -80px -192px;"></span>年长者之教诲</a> 
-· <a href="#coordinate_recorder"><span class="ci" style="background-position: -96px -192px;"></span>坐标记录仪</a> 
-· <a href="#grafter"><span class="ci" style="background-position: -112px -192px;"></span>剪枝器</a> 
+  <a href="#portable_crafting_table"><span class="ci" style="background-position: -0px -144px;"></span>便携式工作台</a> 
+· <a href="#magnet"><span class="ci" style="background-position: -16px -144px;"></span>磁铁</a> 
+· <a href="#time_conditioner"><span class="ci" style="background-position: -32px -144px;"></span>时间调节器</a> 
+· <a href="#time_checker"><span class="ci" style="background-position: -48px -144px;"></span>报时器</a> 
+· <a href="#origin_of_the_world"><span class="ci" style="background-position: -64px -144px;"></span>世界之源</a> 
+· <a href="#compressor"><span class="ci" style="background-position: -80px -144px;"></span>压缩器</a> 
+· <a href="#elder_s_words"><span class="ci" style="background-position: -96px -144px;"></span>年长者之教诲</a> 
+· <a href="#coordinate_recorder"><span class="ci" style="background-position: -112px -144px;"></span>坐标记录仪</a> 
+· <a href="#grafter"><span class="ci" style="background-position: -128px -144px;"></span>剪枝器</a> 
 · <a href="#stone_tools"><span style="background-position: -96px -608px;"></span>石制工具</a>
 · <a href="#dyed_bed"><span style="background-position: -160px -784px;"></span>染色床</a> 
 · <a href="#anvil"><span style="background-position: -240px -608px;"></span>铁砧</a>
@@ -277,39 +280,47 @@
 
 
 <tr><th>手</th><td>
-  <a href="#industrious_hand"><span class="ci" style="background-position: -64px -144px;"></span>勤劳之手</a> 
-· <a href="#break_hand"><span class="ci" style="background-position: -80px -144px;"></span>破坏之手</a>
-· <a href="#smart_hand"><span class="ci" style="background-position: -96px -144px;"></span>灵巧之手</a> 
-· <a href="#angry_hand"><span class="ci" style="background-position: -112px -144px;"></span>愤怒之手</a> 
-· <a href="#toughen_hand"><span class="ci" style="background-position: -128px -144px;"></span>历练之手</a> 
+  <a href="#industrious_hand"><span class="ci" style="background-position: -16px -176px;"></span>勤劳之手</a> 
+· <a href="#break_hand"><span class="ci" style="background-position: -32px -176px;"></span>破坏之手</a>
+· <a href="#smart_hand"><span class="ci" style="background-position: -48px -176px;"></span>灵巧之手</a> 
+· <a href="#angry_hand"><span class="ci" style="background-position: -64px -176px;"></span>愤怒之手</a> 
+· <a href="#toughen_hand"><span class="ci" style="background-position: -80px -176px;"></span>历练之手</a> 
 </td></tr>
 
 <tr><th>傀儡</th><td>
-  <a href="#golem"><span class="ci" style="background-position: -48px -160px;"></span>傀儡</a>
-· <a href="#golem_farmer"><span class="ci" style="background-position: -64px -160px;"></span>傀儡农民</a>
-· <a href="#golem_fisher"><span class="ci" style="background-position: -80px -160px;"></span>傀儡矿工</a>
-· <a href="#golem_fisher"><span class="ci" style="background-position: -96px -160px;"></span>傀儡渔夫</a>
-· <a href="#golem_warrior"><span class="ci" style="background-position: -112px -160px;"></span>傀儡战士</a>
-· <a href="#golem_herder"><span class="ci" style="background-position: -128px -160px;"></span>傀儡牧民</a>
+  <a href="#golem"><span class="ci" style="background-position: -96px -176px;"></span>傀儡</a>
+· <a href="#golem_farmer"><span class="ci" style="background-position: -112px -176px;"></span>傀儡农民</a>
+· <a href="#golem_fisher"><span class="ci" style="background-position: -128px -176px;"></span>傀儡矿工</a>
+· <a href="#golem_fisher"><span class="ci" style="background-position: -0px -192px;"></span>傀儡渔夫</a>
+· <a href="#golem_warrior"><span class="ci" style="background-position: -16px -192px;"></span>傀儡战士</a>
+· <a href="#golem_herder"><span class="ci" style="background-position: -32px -192px;"></span>傀儡牧民</a>
 </td></tr>
 
 <tr><th>食物</th><td>
   <a href="#enchanted_golden_apple"><span style="background-position: -16px -416px;"></span>附魔金苹果</a>
-· <a href="#toffee_apple"><span class="ci" style="background-position: -128px -256px;"></span>拔丝苹果</a>
-· <a href="#raw_colorful_vegetable"><span class="ci" style="background-position: -0px -256px;"></span>生缤纷菜蔬</a>
-· <a href="#colorful_vegetable"><span class="ci" style="background-position: -16px -256px;"></span>缤纷菜蔬</a>
-· <a href="#raw_braised_pork_with_potatoes"><span class="ci" style="background-position: -32px -256px;"></span>生土豆排骨</a>
-· <a href="#braised_pork_with_potatoes"><span class="ci" style="background-position: -48px -256px;"></span>土豆排骨</a>
-· <a href="#raw_braised_beef_with_potatoes"><span class="ci" style="background-position: -64px -256px;"></span>生土豆牛肉</a>
-· <a href="#braised_beef_with_potatoes"><span class="ci" style="background-position: -80px -256px;"></span>土豆牛肉</a>
-· <a href="#raw_rabbit_stew"><span class="ci" style="background-position: -96px -256px;"></span>生兔肉煲</a>
-· <a href="#rabbit_stew"><span class="ci" style="background-position: -112px -256px;"></span>兔肉煲</a>
-· <a href="#fish_and_chips"><span class="ci" style="background-position: -96px -288px;"></span>炸鱼薯条</a>
-· <a href="#meat_floss_bread"><span class="ci" style="background-position: -96px -272px;"></span>肉松面包</a>
-· <a href="#boiled_egg"><span class="ci" style="background-position: -112px -272px;"></span>煮鸡蛋</a>
-· <a href="#baked_carrot"><span class="ci" style="background-position: -128px -272px;"></span>烤胡萝卜</a>
-· <a href="#fruits"><span class="ci" style="background-position: -64px -304px;"></span><span class="ci" style="background-position: -80px -304px;"></span>水果</a>
-· <a href="#raisin"><span class="ci" style="background-position: -112px -272px;"></span>葡萄干</a>
+· <a href="#raw_colorful_vegetable"><span class="ci" style="background-position: -48px -192px;"></span>生缤纷菜蔬</a>
+· <a href="#colorful_vegetable"><span class="ci" style="background-position: -64px -192px;"></span>缤纷菜蔬</a>
+· <a href="#raw_braised_pork_with_potatoes"><span class="ci" style="background-position: -80px -192px;"></span>生土豆排骨</a>
+· <a href="#braised_pork_with_potatoes"><span class="ci" style="background-position: -96px -192px;"></span>土豆排骨</a>
+· <a href="#raw_braised_beef_with_potatoes"><span class="ci" style="background-position: -112px -192px;"></span>生土豆牛肉</a>
+· <a href="#braised_beef_with_potatoes"><span class="ci" style="background-position: -128px -192px;"></span>土豆牛肉</a>
+· <a href="#raw_rabbit_stew"><span class="ci" style="background-position: -0px -208px;"></span>生兔肉煲</a>
+· <a href="#rabbit_stew"><span class="ci" style="background-position: -16px -208px;"></span>兔肉煲</a>
+· <a href="#toffee_apple"><span class="ci" style="background-position: -32px -208px;"></span>拔丝苹果</a>
+· <a href="#dumpling"><span class="ci" style="background-position: -48px -208px;"></span>饺子</a>
+· <a href="#meat_floss_bread"><span class="ci" style="background-position: -64px -208px;"></span>肉松面包</a>
+· <a href="#boiled_egg"><span class="ci" style="background-position: -80px -208px;"></span>煮鸡蛋</a>
+· <a href="#baked_carrot"><span class="ci" style="background-position: -96px -208px;"></span>烤胡萝卜</a>
+· <a href="#ketchup"><span class="ci" style="background-position: -112px -208px;"></span>番茄酱</a>
+· <a href="#cheese"><span class="ci" style="background-position: -128px -208px;"></span>奶酪</a>
+· <a href="#christmas_roast_chicken"><span class="ci" style="background-position: -0px -224px;"></span>烤鸡</a>
+· <a href="#fish_and_chips"><span class="ci" style="background-position: -16px -224px;"></span>炸鱼薯条</a>
+· <a href="#burger"><span class="ci" style="background-position: -32px -224px;"></span>汉堡</a>
+· <a href="#pizza"><span class="ci" style="background-position: -48px -224px;"></span>披萨</a>
+· <a href="#sushi"><span class="ci" style="background-position: -64px -224px;"></span>寿司</a>
+· <a href="#stargazy_pie"><span class="ci" style="background-position: -80px -224px;"></span>仰望星空派</a>
+· <a href="#fruits"><span class="ci" style="background-position: -96px -224px;"></span>水果</a>
+· <a href="#raisin"><span class="ci" style="background-position: -64px -272px;"></span>葡萄干</a>
 </td></tr>
 
 <tr><th>药水</th><td>
@@ -338,7 +349,7 @@
 </td></tr>
 
 
-<tr><th>作物</th><td>
+<tr><th>花草</th><td>
   <a href="#crops"><img src="items/items/modcrops/lycoris_radiata3.png">彼岸花
 · <img src="items/items/modcrops/trifolium3.png">白车轴
 · <img src="items/items/modcrops/blackthorn3.png">黑荆棘
@@ -362,47 +373,53 @@
 </td></tr>
 
 
-<tr><th>树苗</th><td>
-  <a href="#fruit_sapling"><span class="ci" style="background-position: -0px -304px;"></span>水果树树苗</a> 
-· <a href="#ore_sapling"><span class="ci" style="background-position: -32px -304px;"></span>矿石树树苗</a> 
-· <a href="#wool_sapling"><span class="ci" style="background-position: -16px -304px;"></span>羊毛树树苗</a>
+<tr><th>树</th><td>
+  <a href="#fruit_sapling"><span class="ci" style="background-position: -0px -352px;"></span>水果树树苗</a> 
+· <a href="#wool_sapling"><span class="ci" style="background-position: -16px -352px;"></span>羊毛树树苗</a>
+· <a href="#ore_sapling"><span class="ci" style="background-position: -32px -352px;"></span>矿石树树苗</a> 
+· <a href="#ore_sapling"><span class="ci" style="background-position: -96px -352px;"></span>圣诞树</a> 
+· <a href="#ore_sapling"><span class="ci" style="background-position: -112px -352px;"></span>圣诞花</a> 
 </td></tr>
 
 <tr><th>魔法</th><td>
-  <a href="#sealing_wand"><span class="ci" style="background-position: -0px -208px;"></span>封印之杖</a> 
-· <a href="#star_wand"><span class="ci" style="background-position: -16px -208px;"></span>星之杖</a> 
-· <a href="#dream_wand"><span class="ci" style="background-position: -32px -208px;"></span>梦之杖</a> 
-· <a href="#temperancer"><span class="ci" style="background-position: -96px -208px;"></span>节制器</a> 
-· <a href="#wand_of_the_darkness"><span class="ci" style="background-position: -48px -208px;"></span>黑暗魔杖</a> 
-· <a href="#ancient_scroll"><span style="background-position: -48px -176px;"></span>上古卷轴</a>
-· <a href="#broom"><span class="ci" style="background-position: -64px -208px;"></span>扫帚</a> 
-· <a href="#shooting_star"><span class="ci" style="background-position: -80px -208px;"></span>流星丸</a> 
+  <a href="#sealing_wand"><span class="ci" style="background-position: -0px -368px;"></span>封印之杖</a> 
+· <a href="#star_wand"><span class="ci" style="background-position: -16px -368px;"></span>星之杖</a> 
+· <a href="#dream_wand"><span class="ci" style="background-position: -32px -368px;"></span>梦之杖</a> 
+· <a href="#temperancer"><span class="ci" style="background-position: -96px -368px;"></span>节制器</a> 
+· <a href="#wand_of_the_darkness"><span class="ci" style="background-position: -48px -368px;"></span>黑暗魔杖</a> 
+· <a href="#broom"><span class="ci" style="background-position: -64px -368px;"></span>扫帚</a> 
+· <a href="#shooting_star"><span class="ci" style="background-position: -80px -368px;"></span>流星丸</a> 
+· <a href="#sorcerer_stone"><span class="ci" style="background-position: -128px -368px;"></span>魔导石</a> 
 </td></tr>
 
 <tr><th>装饰</th><td>
   <a href="#title">称号</a> 
-· <a href="#dyed_leather_armor"><span class="ci" style="background-position: -96px -128px;"></span>皮革盔甲染色</a> 
-· <a href="#purple_eye"><span class="ci" style="background-position: -0px -224px;"></span>紫色美瞳</a> 
-· <a href="#lash"><span class="ci" style="background-position: -16px -224px;"></span>假睫毛</a> 
-· <a href="#cat_breed"><span class="ci" style="background-position: -32px -224px;"></span>猫胡子</a> 
-· <a href="#black_framed_glasses"><span class="ci" style="background-position: -48px -224px;"></span>黑框眼镜</a> 
-· <a href="#orange_framed_glasses"><span class="ci" style="background-position: -64px -224px;"></span>橙框眼镜</a> 
-· <a href="#pants"><span class="ci" style="background-position: -80px -224px;"></span>胖次</a> 
-· <a href="#empire_hat"><span class="ci" style="background-position: -96px -224px;"></span>冕旒</a> 
-· <a href="#glass_helmet"><span class="ci" style="background-position: -112px -224px;"></span>玻璃头盔</a> 
-· <a href="#glow_hat"><span class="ci" style="background-position: -128px -224px;"></span>荧光帽</a> 
-· <a href="#green_hat"><span class="ci" style="background-position: -0px -240px;"></span>原谅帽</a> 
-· <a href="#black_hat"><span class="ci" style="background-position: -16px -240px;"></span>非酋帽</a> 
-· <a href="#nurse_hat"><span class="ci" style="background-position: -32px -240px;"></span>护士帽</a> 
-· <a href="#red_hat"><span class="ci" style="background-position: -48px -240px;"></span>小红帽</a> 
-· <a href="#jacket"><span class="ci" style="background-position: -64px -240px;"></span>皮夹克</a> 
-· <a href="#red_coat"><span class="ci" style="background-position: -80px -240px;"></span>红色外套</a> 
-· <a href="#tight_leather_leggings"><span class="ci" style="background-position: -96px -240px;"></span>紧身皮裤</a> 
-· <a href="#blue_jeans"><span class="ci" style="background-position: -112px -240px;"></span>牛仔裤</a> 
-· <a href="#snow_boots"><span class="ci" style="background-position: -128px -240px;"></span>雪地靴</a> 
-· <a href="#classical_painting"><span class="ci" style="background-position: -32px -176px;"></span>经典画作</a> 
-· <a href="#colorful_sign"><span class="ci" style="background-position: -0px -176px;"></span>彩色告示牌</a> 
-· <a href="#glass_item_frame"><span class="ci" style="background-position: -16px -176px;"></span>玻璃物品展示框</a> 
+· <a href="#dyed_leather_armor"><span style="background-position: -176px -16px;"></span>皮革盔甲染色</a> 
+· <a href="#purple_eye"><span class="ci" style="background-position: -0px -384px;"></span>紫色美瞳</a> 
+· <a href="#lash"><span class="ci" style="background-position: -16px -384px;"></span>假睫毛</a> 
+· <a href="#cat_breed"><span class="ci" style="background-position: -32px -384px;"></span>猫胡子</a> 
+· <a href="#red_lip"><span class="ci" style="background-position: -48px -384px;"></span>烈焰红唇</a>
+· <a href="#garland"><span class="ci" style="background-position: -64px -384px;"></span>花环</a>
+· <a href="#black_framed_glasses"><span class="ci" style="background-position: -80px -384px;"></span>黑框眼镜</a> 
+· <a href="#orange_framed_glasses"><span class="ci" style="background-position: -96px -384px;"></span>橙框眼镜</a> 
+· <a href="#joking_glasses"><span class="ci" style="background-position: -112px -384px;"></span>愚弄眼镜</a> 
+· <a href="#minion_goggles"><span class="ci" style="background-position: -128px -384px;"></span>小黄人眼罩</a> 
+· <a href="#pants"><span class="ci" style="background-position: -0px -400px;"></span>胖次</a> 
+· <a href="#empire_hat"><span class="ci" style="background-position: -16px -400px;"></span>冕旒</a> 
+· <a href="#glass_helmet"><span class="ci" style="background-position: -32px -400px;"></span>玻璃头盔</a> 
+· <a href="#glow_hat"><span class="ci" style="background-position: -48px -400px;"></span>荧光帽</a> 
+· <a href="#green_hat"><span class="ci" style="background-position: -64px -400px;"></span>原谅帽</a> 
+· <a href="#black_hat"><span class="ci" style="background-position: -80px -400px;"></span>非酋帽</a> 
+· <a href="#nurse_hat"><span class="ci" style="background-position: -96px -400px;"></span>护士帽</a> 
+· <a href="#red_hat"><span class="ci" style="background-position: -112px -400px;"></span>小红帽</a> 
+· <a href="#jacket"><span class="ci" style="background-position: -128px -400px;"></span>皮夹克</a> 
+· <a href="#red_coat"><span class="ci" style="background-position: -0px -416px;"></span>红色外套</a> 
+· <a href="#tight_leather_leggings"><span class="ci" style="background-position: -16px -416px;"></span>紧身皮裤</a> 
+· <a href="#blue_jeans"><span class="ci" style="background-position: -32px -416px;"></span>牛仔裤</a> 
+· <a href="#snow_boots"><span class="ci" style="background-position: -48px -416px;"></span>雪地靴</a> 
+· <a href="#classical_painting"><span class="ci" style="background-position: -64px -416px;"></span>经典画作</a> 
+· <a href="#glass_item_frame"><span class="ci" style="background-position: -80px -416px;"></span>玻璃物品展示框</a> 
+· <a href="#colorful_sign"><span class="ci" style="background-position: -96px -416px;"></span>彩色告示牌</a> 
 · <a href="#stairs"><span style="background-position: -352px -448px;"></span>楼梯</a> 
 · <a href="#slabs"><span style="background-position: -80px -464px;"></span>台阶</a> 
 </td></tr>
@@ -416,7 +433,7 @@
 <p class="small">与通常地牢不同，爬行者地牢是全封闭的。注意爬行者的爆炸可能会破坏刷怪箱。</p>
 
 <h3 id="enchanting_room">附魔室 (Enchanting Room)</h3>
-<p>天然生成在主世界的陆地地表。附魔室是一个由黑曜石、荧石、<a href="#empty_bookshelf">空书架</a>、淡蓝色玻璃、地狱砖、附魔台构成的小房间，空书架内含有纸、书、附魔书、指南针、空地图、要塞地图、地牢地图和<a href="#ancient_scroll">上古卷轴</a>。</p>
+<p>天然生成在主世界的陆地地表。附魔室是一个由黑曜石、荧石、<a href="#empty_bookshelf">空书架</a>、淡蓝色玻璃、地狱砖、附魔台构成的小房间，空书架内含有纸、书、附魔书、指南针、空地图、要塞地图、地牢地图和<a href="#ancient_scroll">上古卷轴</a>，并包含一个幻术师。</p>
 
 <h3 id="totem_pillar">图腾柱 (Totem Pillar)</h3>
 <p>天然生成在主世界的陆地地表。图腾柱是一根由各种石砖构成的柱子，中间包含包含矿石、熔岩和宝箱。宝箱含<a href="#soul_of_dirt">泥土之魂</a>/<a href="#nova_of_fire">火焰之星/<a href="#limb_of_ridge">山脉之肢</a>/<a href="#enchanted_golden_apple">附魔金苹果</a>/<a href="#enchanted_iron">附魔铁锭</a>/<a href="#enchanted_gold">附魔金锭</a>/<a href="#meat_floss_bread">肉松面包</a>/<a href="#toffee_apple">拔丝苹果</a>/煤炭/骨头/火药/腐肉/线。</p>
@@ -437,32 +454,31 @@
 <img style="height:350px" src="items/screenshots/wool_tree.png" />
 
 <h3 id="dead_coral_fan">死珊瑚扇 (Dead Coral Fan)</h3>
-<p>天然生成在主世界的陆地地表沙子上，包含5种死珊瑚扇。</p>
+<p>天然生成在沙漠或恶地地表，包含5种死珊瑚扇。</p>
 
 <h3 id="small_bush">灌木丛 (Small Bush)</h3>
-<p>天然生成在主世界的地表草方块上。由一块橡木和若干橡树树叶构成。</p>
+<p>天然生成在主世界的地表草方块上，由一块橡木和若干橡树树叶构成。</p>
 
 <h3 id="dead_spruce">死云杉树 (Dead Spruce)</h3>
-<p>天然生成在主世界的地表灰化土上。由云杉木和若干云杉树叶构成。</p>
+<p>天然生成在针叶林地表，由云杉木和若干云杉树叶构成。</p>
 
 <h3 id="field">农作物 (Field)</h3>
-<p>天然生成在主世界的地表草方块上。可能为小麦、马铃薯、胡萝卜或甜菜作物。</p>
+<p>天然生成在主世界的地表草方块上，为小麦、马铃薯、胡萝卜或甜菜根作物形成的一丛。</p>
 
-<h3 id="flower_and_grass">花草 (Flower and Grass)</h3>
-<p>天然生成在主世界的地表草方块上，包括<a href="#crops">该列表</a>中的任意一种。通常由1-8个形成一簇。</p>
+<h3 id="flowers_and_grasses_bushes">花草丛 (Flowers and Grasses Bushes)</h3>
+<p>天然生成在主世界的地表草方块上，为任意一种花草形成的一丛。</p>
 
-<img style="height:220px" src="items/screenshots/dead_coral_fan.png" />
-<img style="height:220px" src="items/screenshots/small_bush.png" />
-<img style="height:220px" src="items/screenshots/dead_spruce.png" />
-<img style="height:220px" src="items/screenshots/field.png" />
-<img style="height:220px" src="items/screenshots/flower_and_grass.png" />
+<img style="height:190px" src="items/screenshots/dead_coral_fan.png" />
+<img style="height:190px" src="items/screenshots/small_bush.png" />
+<img style="height:190px" src="items/screenshots/dead_spruce.png" />
+<img style="height:190px" src="items/screenshots/field.png" />
+<img style="height:190px" src="items/screenshots/flowers_and_grasses_bushes.png" />
 
 
 
 <!-------------------------------------------------------------------------------------------------->
 <h2 id="entities">实体</h2>
 <h3 id="improved_mob">怪物加强</h3>
-<p>隶属于数据包 enhance_mobs</p>
 <ul>
 <li>僵尸：有更高的几率生成时身穿盔甲、手持武器。</li>
 <li>骷髅：有更高的几率生成时身穿盔甲、射出药箭。</li>
@@ -486,7 +502,7 @@
 
 
 <h3 id="villager">村民</h3>
-<p>可被附近手持绿宝石块的玩家吸引。(隶属于数据包 emerald_block_attract_villagers)</p>
+<p>可被附近手持绿宝石块的玩家吸引。</p>
 <p>死亡时掉落<code>掉落1~(2+抢夺等级)</code>绿宝石，被玩家杀死时和3点经验值。</p>
 <p class="small">村民被玩家吸引不会自动爬升方块，使用台阶或楼梯来辅助之。</p>
 <img style="height:250px" src="items/screenshots/rare_drops.png" />
@@ -622,6 +638,7 @@
 <tr><td>地狱疣</td><td><a href="#fertilizer">肥料</a></td><td>4 地狱疣</td><td>-</td><td>2</td><td>2</td></tr>
 <tr><td>睡莲</td><td><a href="#fertilizer">肥料</a></td><td>4 睡莲</td><td>-</td><td>2</td><td>2</td></tr>
 <tr><td>紫颂花</td><td><a href="#fertilizer">肥料</a></td><td>2 紫颂果</td><td>0~3 紫颂花</td><td>2</td><td>2</td></tr>
+<tr><td>竹子</td><td><a href="#fertilizer">肥料</a></td><td>8 竹子</td><td>-</td><td>2</td><td>2</td></tr>
 <tr><td>花</td><td><a href="#fertilizer">肥料</a></td><td>4 花</td><td>-</td><td>2</td><td>2</td></tr>
 <tr><td>树苗</td><td><a href="#fertilizer">肥料</a></td><td>4 木头</td><td>0~3 树苗</td><td>2</td><td>2</td></tr>
 <tr><td><a href="#fruit_sapling">水果树树苗</a></td><td><a href="#fertilizer">肥料</a></td><td><a href="#fruits">水果</a></td><td>0~3 <a href="#fruit_sapling">水果树树苗</a></td><td>2</td><td>2</td></tr>
@@ -764,7 +781,7 @@
 <tr><td>潜影贝</td><td>紫颂果</td><td>末影珍珠</td></tr>
 <tr><td>凋灵骷髅</td><td>骨头</td><td>煤炭块</td></tr>
 <tr><td>狼</td><td>骨头</td><td><a href="#heads">骷髅头颅</a></td></tr>
-<tr><td>豹猫</td><td>鳕鱼/鲑鱼</td><td><a href="#heads">骷髅头颅</a></td></tr>
+<tr><td>猫</td><td>鳕鱼/鲑鱼</td><td><a href="#heads">骷髅头颅</a></td></tr>
 <tr><td>马</td><td>皮革</td><td><a href="#heads">骷髅头颅</a></td></tr>
 <tr><td>驴</td><td>箱子</td><td><a href="#heads">骷髅头颅</a></td></tr>
 <tr><td>羊驼</td><td>任意地毯</td><td><a href="#heads">骷髅头颅</a></td></tr>
@@ -793,8 +810,9 @@
 
 <img style="height:200px" src="items/screenshots/beacon_enhancer.png" />
 
-<p>需放置在信标顶部。左侧可选择对玩家生效的一种效果，右侧可选择对玩家外实体生效的一种效果。影响范围基于下方的信标等级，为半径=10*(等级+1)的球形区域。</p>
-
+<p>需放置在信标顶部。左侧可选择对玩家生效的一种效果，右侧可选择对玩家外实体生效的一种效果，最右侧选择负面效果对敌对生物/所有生物生效。影响范围基于下方的信标等级，为半径=10*(等级+1)的球形区域。</p>
+<p>若下方为4级信标，每秒恢复64米内玩家1点魔法值，上限60点。若信标矿物块塔的顶层为X形的5个日石和4个月石，则额外每秒恢复128米内玩家1点魔法值，上限100点。</p>
+<img style="height:400px" src="items/screenshots/sss.png" />
 
 <h3 id="golden_anvil">金砧 (Golden Anvil)</h3>
 <table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
@@ -1351,6 +1369,42 @@
 </span></td></tr>
 </tbody></table>
 
+
+<h3 id="moon_stone">月石 (Moon Stone)</h3>
+<p>可用于信标底座，对于信标增强仪提供魔法值有加成。</p>
+<table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
+<tr><th>月石</th><td><a href="#moon_shard">月之碎片</a></td>
+<td><span class="ui cm" title="合成器">
+<span class="ci moon_shard" title="月之碎片"></span>
+<span class="ci moon_shard" title="月之碎片"></span>
+<span class="ci moon_shard" title="月之碎片"></span>
+<span class="ci moon_shard" title="月之碎片"></span>
+<span class="ci moon_shard" title="月之碎片"></span>
+<span class="ci moon_shard" title="月之碎片"></span>
+<span class="ci moon_shard" title="月之碎片"></span>
+<span class="ci moon_shard" title="月之碎片"></span>
+<span class="ci moon_shard" title="月之碎片"></span>
+<span class="ci moon_stone" title="月石"></span>
+</span></td></tr>
+</tbody></table>
+
+<h3 id="sun_stone">日石 (Sun Stone)</h3>
+<p>可用于信标底座，对于信标增强仪提供魔法值有加成。</p>
+<table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
+<tr><th>日石</th><td><a href="#sun_shard">日之碎片</a></td>
+<td><span class="ui cm" title="合成器">
+<span class="ci sun_shard" title="日之碎片"></span>
+<span class="ci sun_shard" title="日之碎片"></span>
+<span class="ci sun_shard" title="日之碎片"></span>
+<span class="ci sun_shard" title="日之碎片"></span>
+<span class="ci sun_shard" title="日之碎片"></span>
+<span class="ci sun_shard" title="日之碎片"></span>
+<span class="ci sun_shard" title="日之碎片"></span>
+<span class="ci sun_shard" title="日之碎片"></span>
+<span class="ci sun_shard" title="日之碎片"></span>
+<span class="ci sun_stone" title="日石"></span>
+</span></td></tr>
+</tbody></table>
 
 <h3 id="iron_chain">铁链 (Iron Chain)</h3>
 <p>可用于制作锁链盔甲。</p>
@@ -2320,7 +2374,7 @@
 
 <h3 id="magnet">磁铁 (Magnet)</h3>
 <p>自动将附近物品吸引过来。右击依次切换范围为0/8/16米。若放置放物品展示框，可吸引附近16米的物品到所在处。</p>
-<p class="small">切换会导致改名或移除光泽的磁铁恢复为默认名称和光泽。</p>
+<p class="small">切换会导致改名的磁铁恢复为默认名称。</p>
 <table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
 <tr><th>磁铁</th><td><a href="#enchanted_iron">附魔铁锭</a>+红石</td>
 <td><span class="ui cm" title="合成器">
@@ -2449,7 +2503,7 @@
 </tbody></table>
 
 <h3 id="grafter">剪枝器 (Grafter)</h3>
-<p>破坏树叶必定掉落树苗。</p>
+<p>破坏树叶必定掉落树苗。每次使用消耗2点耐久。</p>
 <table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
 <tr><th>剪枝器</th><td><a href="#enchanted_iron">附魔铁锭</a>+木棍</td>
 <td><span class="ui cm" title="合成器">
@@ -2463,6 +2517,187 @@
 <span class="empty"></span>
 <span class="empty"></span>
 <span class="ci grafter" title="剪枝器"></span>
+</span></td></tr>
+</tbody></table>
+
+<h3 id="glass_pickaxe">玻璃镐 (Glass Pickaxe)</h3>
+<p>无需精准附魔即可采集玻璃。</p>
+<table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
+<tr><th>玻璃镐</th><td>玻璃+木棍</td>
+<td><span class="ui cm" title="合成器">
+<span class="glass" title="玻璃"></span>
+<span class="glass" title="玻璃"></span>
+<span class="glass" title="玻璃"></span>
+<span class="empty"></span>
+<span class="stick" title="木棍"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="stick" title="木棍"></span>
+<span class="empty"></span>
+<span class="ci glass_pickaxe" title="玻璃镐"></span>
+</span></td></tr>
+</tbody></table>
+
+<h3 id="shield_pattern">盾牌图案 (Shield Pattern)</h3>
+<table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>	
+<tr><th>盾牌(中国国旗)</th>
+<td>盾牌+牡丹+<a href="#crops">焰光菊</a>+<a href="#flower_and_grass">金盏花</a></td>
+<td><span class="ui cm" title="合成器">
+<span class="shield" title="盾牌"></span>
+<span class="peony" title="牡丹"></span>
+<span class="ci burning_chrysanthe" title="焰光菊"></span>
+<span class="ci marigold" title="金盏花"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="ci shield_china_flag" title="盾牌(中国国旗)"></span>
+<span class="shapeless" title="此配方是无形的，材料可以以任何排列方式放置在合成格内。"></span>
+</span></td></tr>
+
+<tr><th>盾牌(美国国旗)</th>
+<td>盾牌+玫瑰丛+<a href="#crops">风信子</a>+<a href="#crops">蓬蓬草</a></td>
+<td><span class="ui cm" title="合成器">
+<span class="shield" title="盾牌"></span>
+<span class="rose_bush" title="玫瑰丛"></span>
+<span class="ci hyacinth" title="风信子"></span>
+<span class="ci fluffy_grass" title="蓬蓬草"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="ci shield_usa_flag" title="盾牌(美国国旗)"></span>
+<span class="shapeless" title="此配方是无形的，材料可以以任何排列方式放置在合成格内。"></span>
+</span></td></tr>
+
+<tr><th>盾牌(俄罗斯国旗)</th>
+<td>盾牌+向日葵+<a href="#crops">风信子</a>+<a href="#crops">蓬蓬草</a></td>
+<td><span class="ui cm" title="合成器">
+<span class="shield" title="盾牌"></span>
+<span class="sunflower" title="向日葵"></span>
+<span class="ci hyacinth" title="风信子"></span>
+<span class="ci fluffy_grass" title="蓬蓬草"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="ci shield_russia_flag" title="盾牌(俄罗斯国旗)"></span>
+<span class="shapeless" title="此配方是无形的，材料可以以任何排列方式放置在合成格内。"></span>
+</span></td></tr>
+
+<tr><th>盾牌(法国国旗)</th>
+<td>盾牌+矢车菊+<a href="#crops">风信子</a>+<a href="#crops">蓬蓬草</a></td>
+<td><span class="ui cm" title="合成器">
+<span class="shield" title="盾牌"></span>
+<span class="cornflower" title="矢车菊"></span>
+<span class="ci hyacinth" title="风信子"></span>
+<span class="ci fluffy_grass" title="蓬蓬草"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="ci shield_france_flag" title="盾牌(法国国旗)"></span>
+<span class="shapeless" title="此配方是无形的，材料可以以任何排列方式放置在合成格内。"></span>
+</span></td></tr>
+
+<tr><th>盾牌(英国国旗)</th>
+<td>盾牌+虞美人+<a href="#crops">风信子</a>+<a href="#crops">蓬蓬草</a></td>
+<td><span class="ui cm" title="合成器">
+<span class="shield" title="盾牌"></span>
+<span class="poppy" title="虞美人"></span>
+<span class="ci hyacinth" title="风信子"></span>
+<span class="ci fluffy_grass" title="蓬蓬草"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="ci shield_uk_flag" title="盾牌(英国国旗)"></span>
+<span class="shapeless" title="此配方是无形的，材料可以以任何排列方式放置在合成格内。"></span>
+</span></td></tr>
+
+<tr><th>盾牌(哔哩哔哩标志)</th>
+<td>盾牌+<a href="#crops">黑荆棘</a>+<a href="#crops">白车轴</a>+<a href="#crops">芦苇草</a></td>
+<td><span class="ui cm" title="合成器">
+<span class="shield" title="盾牌"></span>
+<span class="ci blackthorn" title="黑荆棘"></span>
+<span class="ci trifolium" title="白车轴"></span>
+<span class="ci esparto" title="芦苇草"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="ci shield_bilibili" title="盾牌(哔哩哔哩标志)"></span>
+<span class="shapeless" title="此配方是无形的，材料可以以任何排列方式放置在合成格内。"></span>
+</span></td></tr>
+
+<tr><th>盾牌(github标志)</th>
+<td>盾牌+<a href="#crops">黑荆棘</a>+<a href="#crops">白车轴</a>+<a href="#crops">香蒲草</a></td>
+<td><span class="ui cm" title="合成器">
+<span class="shield" title="盾牌"></span>
+<span class="ci blackthorn" title="黑荆棘"></span>
+<span class="ci trifolium" title="白车轴"></span>
+<span class="ci cattail" title="香蒲草"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="ci shield_github" title="盾牌(github标志)"></span>
+<span class="shapeless" title="此配方是无形的，材料可以以任何排列方式放置在合成格内。"></span>
+</span></td></tr>
+
+<tr><th>盾牌(mcmod标志)</th>
+<td>盾牌+<a href="#crops">黑荆棘</a>+<a href="#crops">白车轴</a>+<a href="#crops">异绒兰</a></td>
+<td><span class="ui cm" title="合成器">
+<span class="shield" title="盾牌"></span>
+<span class="ci blackthorn" title="黑荆棘"></span>
+<span class="ci trifolium" title="白车轴"></span>
+<span class="ci isorchid" title="异绒兰"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="ci shield_mcmod" title="盾牌(mcmod标志)"></span>
+<span class="shapeless" title="此配方是无形的，材料可以以任何排列方式放置在合成格内。"></span>
+</span></td></tr>
+
+<tr><th>盾牌(TCP标志)</th>
+<td>盾牌+<a href="#crops">黑荆棘</a>+<a href="#crops">白车轴</a>+<a href="#crops">紫荆花</a></td>
+<td><span class="ui cm" title="合成器">
+<span class="shield" title="盾牌"></span>
+<span class="ci blackthorn" title="黑荆棘"></span>
+<span class="ci trifolium" title="白车轴"></span>
+<span class="ci bauhinia" title="紫荆花"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="ci shield_tcp" title="盾牌(tcp标志)"></span>
+<span class="shapeless" title="此配方是无形的，材料可以以任何排列方式放置在合成格内。"></span>
+</span></td></tr>
+
+<tr><th>盾牌(CBL标志)</th>
+<td>盾牌+<a href="#crops">黑荆棘</a>+<a href="#crops">白车轴</a>+<a href="#crops">风信子</a></td>
+<td><span class="ui cm" title="合成器">
+<span class="shield" title="盾牌"></span>
+<span class="ci blackthorn" title="黑荆棘"></span>
+<span class="ci trifolium" title="白车轴"></span>
+<span class="ci hyacinth" title="风信子"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="ci shield_cbl" title="盾牌(cbl标志)"></span>
+<span class="shapeless" title="此配方是无形的，材料可以以任何排列方式放置在合成格内。"></span>
 </span></td></tr>
 </tbody></table>
 
@@ -2695,7 +2930,7 @@
 <li><strong id="golem_warrior">傀儡战士 (Golem Warrior)</strong>：对接触的非玩家生物造成伤害。</li>
 <li><strong id="golem_herder">傀儡牧民 (Golem Herder)</strong>：繁殖接触的动物。</li>
 </ul>
-<p>主手持有这些傀儡右击放置，放置后默认向东方移动，接触控制方块后会转向。和平模式下傀儡会直接消失。</p>
+<p>手持傀儡右击放置，放置后默认向东方移动，接触控制方块后会转向。和平模式下傀儡会直接消失。</p>
 
 <table><thead>
 <tr><th>方向</th><th>控制方块</th></tr>
@@ -2829,24 +3064,6 @@
 </span></td></tr>
 </tbody></table>
 
-<h3 id="toffee_apple">拔丝苹果 (Toffee Apple)</h3>
-<p>食用后恢复6点饥饿值并获得30秒的速度效果。</p>
-<table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
-<tr><th>拔丝苹果<br /><img src="items/hunger.png" style="width:18px;height:18px;" title="6" /><img src="items/hunger.png" style="width:18px;height:18px;" title="6" /><img src="items/hunger.png" style="width:18px;height:18px;" title="6" /> 速度 30秒</th><td>糖+苹果</td>
-<td><span class="ui cm" title="合成器">
-<span class="sugar" title="糖"></span>
-<span class="sugar" title="糖"></span>
-<span class="sugar" title="糖"></span>
-<span class="sugar" title="糖"></span>
-<span class="apple" title="苹果"></span>
-<span class="sugar" title="糖"></span>
-<span class="sugar" title="糖"></span>
-<span class="sugar" title="糖"></span>
-<span class="sugar" title="糖"></span>
-<span class="ci toffee_apple" title="拔丝苹果"></span>
-</span></td></tr>
-</tbody></table>
-
 <h3 id="raw_colorful_vegetable">生缤纷菜蔬 (Raw Colorful Vegetable)</h3>
 <p>食用后恢复10点饥饿值。</p>
 <table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
@@ -2966,28 +3183,44 @@
 <span class="ci rabbit_stew" title="兔肉煲"></span>
 </span></td></tr></tbody></table>
 
-<h3 id="fish_and_chips">炸鱼薯条 (Fish and Chips)</h3>
-<p>食用后恢复16点饥饿值并获得30秒的速度效果。</p>
+<h3 id="toffee_apple">拔丝苹果 (Toffee Apple)</h3>
+<p>食用后恢复6点饥饿值并获得30秒的速度效果。</p>
 <table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
-<tr><th>炸鱼薯条<br /><img src="items/hunger.png" style="width:18px;height:18px;" title="16" /><img src="items/hunger.png" style="width:18px;height:18px;" title="16" /><img src="items/hunger.png" style="width:18px;height:18px;" title="16" /><img src="items/hunger.png" style="width:18px;height:18px;" title="16" /><img src="items/hunger.png" style="width:18px;height:18px;" title="16" /><img src="items/hunger.png" style="width:18px;height:18px;" title="16" /><img src="items/hunger.png" style="width:18px;height:18px;" title="16" /><img src="items/hunger.png" style="width:18px;height:18px;" title="16" /><br /><span class="effects speed"></span> <span class="lore">速度 00:30</span></th><td><a href="#bottle_of_salt" onclick="change('machines');">盐瓶</a>+烤马铃薯+熟鳕鱼</td>
+<tr><th>拔丝苹果<br /><img src="items/hunger.png" style="width:18px;height:18px;" title="6" /><img src="items/hunger.png" style="width:18px;height:18px;" title="6" /><img src="items/hunger.png" style="width:18px;height:18px;" title="6" /> 速度 30秒</th><td>糖+苹果</td>
 <td><span class="ui cm" title="合成器">
-<span class="ci bottle_of_salt" title="盐瓶"></span>
-<span class="cooked_cod" title="熟鳕鱼"></span>
-<span class="baked_potato" title="烤马铃薯"></span>
-<span class="empty"></span>
-<span class="empty"></span>
-<span class="empty"></span>
-<span class="empty"></span>
-<span class="empty"></span>
-<span class="empty"></span>
-<span class="ci fish_and_chips" title="炸鱼薯条"></span>
-<span class="shapeless" title="此配方是无形的，材料可以以任何排列方式放置在合成格内。"></span>
+<span class="sugar" title="糖"></span>
+<span class="sugar" title="糖"></span>
+<span class="sugar" title="糖"></span>
+<span class="sugar" title="糖"></span>
+<span class="apple" title="苹果"></span>
+<span class="sugar" title="糖"></span>
+<span class="sugar" title="糖"></span>
+<span class="sugar" title="糖"></span>
+<span class="sugar" title="糖"></span>
+<span class="ci toffee_apple" title="拔丝苹果"></span>
+</span></td></tr>
+</tbody></table>
+
+<h3 id="dumpling">饺子 (Dumpling)</h3>
+<p>食用后恢复8点饥饿值。</p>
+<table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
+<tr><th>饺子<br /><img src="items/hunger.png" style="width:18px;height:18px;" title="8" /><img src="items/hunger.png" style="width:18px;height:18px;" title="8" /><img src="items/hunger.png" style="width:18px;height:18px;" title="8" /><img src="items/hunger.png" style="width:18px;height:18px;" title="8" /></th><td>熟猪排/牛排+小麦</td>
+<td><span class="ui cm" title="合成器">
+<span class="wheat" title="小麦"></span>
+<span class="wheat" title="小麦"></span>
+<span class="wheat" title="小麦"></span>
+<span class="wheat" title="小麦"></span>
+<span class="cooked_beef" title="牛排"></span>
+<span class="wheat" title="小麦"></span>
+<span class="wheat" title="小麦"></span>
+<span class="wheat" title="小麦"></span>
+<span class="wheat" title="小麦"></span>
+<span class="ci dumpling" title="饺子"><span class="stack">4</span></span>
 </span></td></tr>
 </tbody></table>
 
 <h3 id="meat_floss_bread">肉松面包 (Meat Floss Bread)</h3>
 <p>食用后恢复10点饥饿值并获得30秒的速度效果。</p>
-
 <table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
 <tr><th>肉松面包<br /><img src="items/hunger.png" style="width:18px;height:18px;" title="10" /><img src="items/hunger.png" style="width:18px;height:18px;" title="10" /><img src="items/hunger.png" style="width:18px;height:18px;" title="10" /><img src="items/hunger.png" style="width:18px;height:18px;" title="10" /><img src="items/hunger.png" style="width:18px;height:18px;" title="10" /><br /><span class="effects speed"></span> <span class="lore">速度 00:30</span></th><td><a href="#bottle_of_salt" onclick="change('machines');">盐瓶</a>+小麦+熟鸡肉/熟鹦鹉肉</td>
 <td><span class="ui cm" title="合成器">
@@ -3027,10 +3260,174 @@
 </span></td></tr>
 </tbody></table>
 
+<h3 id="ketchup">番茄酱 (Ketchup)</h3>
+<p>食用后恢复5点饥饿值。</p>
+<table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
+<tr><th>番茄酱<br /><img src="items/hunger.png" style="width:18px;height:18px;" title="5" /><img src="items/hunger.png" style="width:18px;height:18px;" title="5" /><img src="items/hunger_half.png" style="width:18px;height:18px;" title="5" /></th><td><a href="#fruits">西红柿</a>+糖+<a href="#bottle_of_salt">盐瓶</a></td>
+<td><span class="ui cm" title="合成器">
+<span class="ci tomato" title="西红柿"></span>
+<span class="sugar" title="糖"></span>
+<span class="ci bottle_of_salt" title="盐瓶"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="ci ketchup" title="番茄酱"></span>
+<span class="shapeless" title="此配方是无形的，材料可以以任何排列方式放置在合成格内。"></span>
+</span></td></tr>
+</tbody></table>
+
+<h3 id="cheese">奶酪 (Cheese)</h3>
+<p>食用后恢复5点饥饿值。</p>
+<table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
+<tr><th>奶酪<br /><img src="items/hunger.png" style="width:18px;height:18px;" title="5" /><img src="items/hunger.png" style="width:18px;height:18px;" title="5" /><img src="items/hunger_half.png" style="width:18px;height:18px;" title="5" /></th><td>牛奶桶+<a href="#fruits">柠檬</a></td>
+<td><span class="ui cm" title="合成器">
+<span class="milk_bucket" title="牛奶桶"></span>
+<span class="ci lemon" title="柠檬"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="ci cheese" title="奶酪"></span>
+<span class="shapeless" title="此配方是无形的，材料可以以任何排列方式放置在合成格内。"></span>
+</span></td></tr>
+</tbody></table>
+
+<h3 id="christmas_roast_chicken">烤鸡 (Christmas Roast Chicken)</h3>
+<p>食用后恢复16点饥饿值。</p>
+<table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
+<tr><th>烤鸡<br /><img src="items/hunger.png" style="width:18px;height:18px;" title="16" /><img src="items/hunger.png" style="width:18px;height:18px;" title="16" /><img src="items/hunger.png" style="width:18px;height:18px;" title="16" /><img src="items/hunger.png" style="width:18px;height:18px;" title="16" /><img src="items/hunger.png" style="width:18px;height:18px;" title="16" /><img src="items/hunger.png" style="width:18px;height:18px;" title="16" /><img src="items/hunger.png" style="width:18px;height:18px;" title="16" /><img src="items/hunger.png" style="width:18px;height:18px;" title="16" /></th><td><a href="#lemon">柠檬</a>+熟鸡肉/熟鹦鹉肉+烤马铃薯</td>
+<td><span class="ui cm" title="合成器">
+<span class="ci lemon" title="柠檬"></span>
+<span class="cooked_chicken" title="熟鸡肉"></span>
+<span class="baked_potato" title="烤马铃薯"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="ci christmas_roast_chicken" title="烤鸡"></span>
+<span class="shapeless" title="此配方是无形的，材料可以以任何排列方式放置在合成格内。"></span>
+</span></td></tr>
+</tbody></table>
+
+<h3 id="fish_and_chips">炸鱼薯条 (Fish and Chips)</h3>
+<p>食用后恢复16点饥饿值并获得30秒的速度效果。</p>
+<table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
+<tr><th>炸鱼薯条<br /><img src="items/hunger.png" style="width:18px;height:18px;" title="16" /><img src="items/hunger.png" style="width:18px;height:18px;" title="16" /><img src="items/hunger.png" style="width:18px;height:18px;" title="16" /><img src="items/hunger.png" style="width:18px;height:18px;" title="16" /><img src="items/hunger.png" style="width:18px;height:18px;" title="16" /><img src="items/hunger.png" style="width:18px;height:18px;" title="16" /><img src="items/hunger.png" style="width:18px;height:18px;" title="16" /><img src="items/hunger.png" style="width:18px;height:18px;" title="16" /><br /><span class="effects speed"></span> <span class="lore">速度 00:30</span></th><td><a href="#bottle_of_salt">盐瓶</a>+熟鳕鱼+烤马铃薯+<a href="#ketchup">番茄酱</a>+碗</td>
+<td><span class="ui cm" title="合成器">
+<span class="ci bottle_of_salt" title="盐瓶"></span>
+<span class="cooked_cod" title="熟鳕鱼"></span>
+<span class="baked_potato" title="烤马铃薯"></span>
+<span class="ci ketchup" title="西红柿"></span>
+<span class="bowl" title="碗"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="ci fish_and_chips" title="炸鱼薯条"></span>
+<span class="shapeless" title="此配方是无形的，材料可以以任何排列方式放置在合成格内。"></span>
+</span></td></tr>
+</tbody></table>
+
+<h3 id="burger">汉堡 (Burger)</h3>
+<p>食用后恢复20点饥饿值。</p>
+<table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
+<tr><th>汉堡<br /><img src="items/hunger.png" style="width:18px;height:18px;" title="20" /><img src="items/hunger.png" style="width:18px;height:18px;" title="20" /><img src="items/hunger.png" style="width:18px;height:18px;" title="20" /><img src="items/hunger.png" style="width:18px;height:18px;" title="20" /><img src="items/hunger.png" style="width:18px;height:18px;" title="20" /><img src="items/hunger.png" style="width:18px;height:18px;" title="20" /><img src="items/hunger.png" style="width:18px;height:18px;" title="20" /><img src="items/hunger.png" style="width:18px;height:18px;" title="20" /><img src="items/hunger.png" style="width:18px;height:18px;" title="20" /><img src="items/hunger.png" style="width:18px;height:18px;" title="20" /></th><td><a href="#ketchup">番茄酱</a>+<a href="#cheese">奶酪</a>+<a href="#fruits">西红柿</a>+牛排+面包</td>
+<td><span class="ui cm" title="合成器">
+<span class="ci ketchup" title="番茄酱"></span>
+<span class="ci cheese" title="奶酪"></span>
+<span class="ci tomato" title="西红柿"></span>
+<span class="cooked_beef" title="牛排"></span>
+<span class="bread" title="面包"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="ci burger" title="汉堡"></span>
+<span class="shapeless" title="此配方是无形的，材料可以以任何排列方式放置在合成格内。"></span>
+</span></td></tr>
+</tbody></table>
+
+<h3 id="pizza">披萨 (Pizza)</h3>
+<p>食用后恢复5点饥饿值。</p>
+<table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
+<tr><th>披萨<br /><img src="items/hunger.png" style="width:18px;height:18px;" title="5" /><img src="items/hunger.png" style="width:18px;height:18px;" title="5" /><img src="items/hunger_half.png" style="width:18px;height:18px;" title="5" /></th><td><a href="#ketchup">番茄酱</a>+<a href="#cheese">奶酪</a>+<a href="#fruits">西红柿</a>+熟猪排+小麦</td>
+<td><span class="ui cm" title="合成器">
+<span class="ci ketchup" title="番茄酱"></span>
+<span class="ci cheese" title="奶酪"></span>
+<span class="ci tomato" title="西红柿"></span>
+<span class="cooked_porkchop" title="熟猪排"></span>
+<span class="wheat" title="小麦"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="ci pizza" title="披萨"><span class="stack">4</span></span>
+<span class="shapeless" title="此配方是无形的，材料可以以任何排列方式放置在合成格内。"></span>
+</span></td></tr>
+</tbody></table>
+
+<h3 id="sushi">寿司 (Sushi)</h3>
+<p>食用后恢复5点饥饿值。</p>
+<table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
+<tr><th>寿司<br /><img src="items/hunger.png" style="width:18px;height:18px;" title="5" /><img src="items/hunger.png" style="width:18px;height:18px;" title="5" /><img src="items/hunger_half.png" style="width:18px;height:18px;" title="5" /></th><td>干海带+小麦+生鲑鱼</td>
+<td><span class="ui cm" title="合成器">
+<span class="dried_kelp" title="干海带"></span>
+<span class="wheat" title="小麦"></span>
+<span class="salmon" title="生鲑鱼"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="ci sushi" title="寿司"></span>
+<span class="shapeless" title="此配方是无形的，材料可以以任何排列方式放置在合成格内。"></span>
+</span></td></tr>
+</tbody></table>
+
+<h3 id="stargazy_pie">仰望星空派 (Stargazy Pie)</h3>
+<p>食用后恢复16点饥饿值。</p>
+<table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
+<tr><th>仰望星空派<br /><img src="items/hunger.png" style="width:18px;height:18px;" title="16" /><img src="items/hunger.png" style="width:18px;height:18px;" title="16" /><img src="items/hunger.png" style="width:18px;height:18px;" title="16" /><img src="items/hunger.png" style="width:18px;height:18px;" title="16" /><img src="items/hunger.png" style="width:18px;height:18px;" title="16" /><img src="items/hunger.png" style="width:18px;height:18px;" title="16" /><img src="items/hunger.png" style="width:18px;height:18px;" title="16" /><img src="items/hunger.png" style="width:18px;height:18px;" title="16" /></th><td>熟鳕鱼+熟猪排+棕色蘑菇+小麦</td>
+<td><span class="ui cm" title="合成器">
+<span class="cooked_salmon" title="熟鳕鱼"></span>
+<span class="cooked_porkchop" title="熟猪排"></span>
+<span class="brown_mushroom" title="棕色蘑菇"></span>
+<span class="wheat" title="小麦"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="ci stargazy_pie" title="仰望星空派"></span>
+<span class="shapeless" title="此配方是无形的，材料可以以任何排列方式放置在合成格内。"></span>
+</span></td></tr>
+</tbody></table>
+		
 <h3 id="fruits">水果 (Fruits)</h3>
-<p>水果树下会随机长出，破坏相邻的树叶即可掉落。</p>
+<span class="ui slot"><span class="ci apricot"></span></span><span class="ui slot"><span class="ci banana"></span></span><span class="ui slot"><span class="ci blueberry"></span></span><span class="ui slot"><span class="ci cherry"></span></span><span class="ui slot"><span class="ci chinese_date"></span></span><span class="ui slot"><span class="ci coconut"></span></span><span class="ui slot"><span class="ci golden_grape"></span></span><span class="ui slot"><span class="ci grape"></span></span><span class="ui slot"><span class="ci grapefruit"></span></span><span class="ui slot"><span class="ci hawthorn"></span></span><span class="ui slot"><span class="ci lemon"></span></span><span class="ui slot"><span class="ci longan"></span></span><span class="ui slot"><span class="ci loquat"></span></span><span class="ui slot"><span class="ci lychee"></span></span><span class="ui slot"><span class="ci mango"></span></span><span class="ui slot"><span class="ci orange"></span></span><span class="ui slot"><span class="ci payapa"></span></span><span class="ui slot"><span class="ci peach"></span></span><span class="ui slot"><span class="ci pear"></span></span><span class="ui slot"><span class="ci persimmon"></span></span><span class="ui slot"><span class="ci plum"></span></span><span class="ui slot"><span class="ci pomegranate"></span></span><span class="ui slot"><span class="ci strawberry"></span></span><span class="ui slot"><span class="ci tomato"></span></span><span class="ui slot"><span class="ci citrus"></span></span>
+
+<p>水果树下会随机长出除香橼外的所有水果，破坏相邻的树叶即可掉落。香橼可通过击杀森林蝙蝠得到。</p>
 <p>食用后恢复4点饥饿值。可用于<a href="#all_in_one_machine">多功能一体机</a>低温高压下制作冷饮。</p>
 
+<h3 id="raisin">葡萄干 (Raisin)</h3>
+<p>食用后恢复4点饥饿值，并获得10秒的速度效果。</p>
+<table><thead><tr><th>产物</th><th colspan="2">烧炼配方</th></tr></thead><tbody>
+<tr><th>葡萄干<br /><img src="items/hunger.png" style="width:18px;height:18px;" title="4" /><img src="items/hunger.png" style="width:18px;height:18px;" title="4" /></th><td>葡萄/金葡萄</td>
+<td><span class="ui fur" title="熔炉或烟熏炉">
+<span class="ci grape" title="葡萄"></span>
+<span class="coal" title="燃料"></span>
+<span class="ci raisin" title="葡萄干"></span>
+</span></td></tr>
+</tbody></table>
 
 <h3 id="cold_drink">冷饮 (Cold Drink)</h3>
 <p>冷饮由<a href="#all_in_one_machine">多功能一体机</a>低温高压下通过水瓶+<a href="#fruits">水果</a>得到。</p>
@@ -3114,7 +3511,7 @@
 <span class="red_mushroom" title="红色蘑菇"></span>
 <span class="brown_mushroom" title="棕色蘑菇"></span>
 <span class="bowl" title="碗"></span>
-<span class="ci bauhinia" title="花草"></span>
+<span class="ci lycoris_radiata" title="花草"></span>
 <span class="empty"></span>
 <span class="empty"></span>
 <span class="empty"></span>
@@ -3229,68 +3626,53 @@
 </tr>
 </tbody></table>
 
-<h3 id="fruit_sapling">水果树树苗 (Fruit Sapling)</h3>
-<p>水果树树苗种下并长大后，每隔一段时间会长出一个<a href="#fruits">水果</a>，破坏附着的树叶即可掉落。可用骨粉催熟。水果长出平均需要1600秒，受时间调节器影响。</p>
-<p class="small">非底部树叶不会长出水果。每个树叶都对应一个实体，大面积种植可能会卡顿。</p>
+<h3 id="poinsettia">圣诞花 (Poinsettia)</h3>
 <table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>	
-<tr><th>水果树树苗</th>
-<td>橡树树苗+苹果</td>
+<tr><th>圣诞花</th>
+<td>虞美人+<a href="#crops">彼岸花</a>+<a href="#crops">金盏花</a>+<a href="#crops">碎璃草</a></td>
 <td><span class="ui cm" title="合成器">
-<span class="apple" title="苹果"></span>
-<span class="apple" title="苹果"></span>
-<span class="apple" title="苹果"></span>
-<span class="apple" title="苹果"></span>
-<span class="oak_sapling" title="橡树树苗"></span>
-<span class="apple" title="苹果"></span>
-<span class="apple" title="苹果"></span>
-<span class="apple" title="苹果"></span>
-<span class="apple" title="苹果"></span>
-<span class="ci fruit_sapling" title="水果树树苗"></span>
-</span></td></tr>
-</tbody></table>
-
-<h3 id="ore_sapling">矿石树树苗 (Ore Sapling)</h3>
-<p>矿石树树苗种下并长大后，每隔一段时间树叶会转化为一种矿石。可用骨粉催熟。树叶转化平均需要1600秒，受时间调节器影响。</p>
-<p class="small">若矿石分离了树叶和树干，树叶可能会腐烂。每个树叶都对应一个实体，大面积种植可能会卡顿。</p>
-
-<table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>	
-<tr><th>矿石树树苗</th>
-<td>煤炭+钻石+红石+铁锭+云杉树苗<br />+金锭+青金石+绿宝石+石英</td>
-<td><span class="ui cm" title="合成器">
-<span class="coal" title="煤炭"></span>
-<span class="diamond" title="钻石"></span>
-<span class="redstone" title="红石"></span>
-<span class="iron_ingot" title="铁锭"></span>
-<span class="spruce_sapling" title="云杉树苗"></span>
-<span class="gold_ingot" title="金锭"></span>
-<span class="lapis_lazuli" title="青金石"></span>
-<span class="emerald" title="绿宝石"></span>
-<span class="quartz" title="石英"></span>
-<span class="ci ore_sapling" title="矿石树树苗"></span>
+<span class="poppy" title="虞美人"></span>
+<span class="ci lycoris_radiata" title="彼岸花"></span>
+<span class="ci marigold" title="金盏花"></span>
+<span class="ci glazed_shade" title="碎璃草"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="ci poinsettia" title="圣诞花"></span>
 <span class="shapeless" title="此配方是无形的，材料可以以任何排列方式放置在合成格内。"></span>
 </span></td></tr>
 </tbody></table>
 
-<h3 id="wool_sapling">羊毛树树苗 (Wool Sapling)</h3>
-<p>可用骨粉催熟。破坏树叶掉落羊毛树树苗、羊毛、鱼或羊。</p>
-<p class="small">每个树叶都对应一个实体，大面积种植可能会卡顿。</p>
-
+<h3 id="christmas_tree">圣诞树 (Christmas Tree)</h3>
 <table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>	
-<tr><th>羊毛树树苗</th>
-<td>白桦树苗+8 白色羊毛</td>
+<tr><th>圣诞树</th>
+<td>荧石粉+雪球+<a href="#poinsettia">圣诞花</a>+云杉树苗</td>
 <td><span class="ui cm" title="合成器">
-<span class="white_wool" title="白色羊毛"></span>
-<span class="white_wool" title="白色羊毛"></span>
-<span class="white_wool" title="白色羊毛"></span>
-<span class="white_wool" title="白色羊毛"></span>
-<span class="birch_sapling" title="白桦树苗"></span>
-<span class="white_wool" title="白色羊毛"></span>
-<span class="white_wool" title="白色羊毛"></span>
-<span class="white_wool" title="白色羊毛"></span>
-<span class="white_wool" title="白色羊毛"></span>
-<span class="ci wool_sapling" title="羊毛树树苗"></span>
+<span class="glowstone_dust" title="荧石粉"></span>
+<span class="snowball" title="雪球"></span>
+<span class="glowstone_dust" title="荧石粉"></span>
+<span class="glowstone_dust" title="荧石粉"></span>
+<span class="snowball" title="雪球"></span>
+<span class="glowstone_dust" title="荧石粉"></span>
+<span class="ci poinsettia" title="圣诞花"></span>
+<span class="spruce_sapling" title="云杉树苗"></span>
+<span class="ci poinsettia" title="圣诞花"></span>
+<span class="ci christmas_tree" title="圣诞树"></span>
 </span></td></tr>
 </tbody></table>
+
+<h3 id="fruit_sapling">水果树树苗 (Fruit Sapling)</h3>
+<p>水果树树苗种下并长大后，每隔一段时间会长出一个<a href="#fruits">水果</a>，破坏附着的树叶即可掉落。</p>
+<p class="small">可用骨粉催熟。树叶转化平均需要1600秒，受时间调节器影响。每个树叶都对应一个实体，大面积种植可能会卡顿。</p>
+
+<h3 id="ore_sapling">矿石树树苗 (Ore Sapling)</h3>
+<p>矿石树树苗种下并长大后，每隔一段时间树叶会转化为一种矿石。</p>
+
+<h3 id="wool_sapling">羊毛树树苗 (Wool Sapling)</h3>
+<p>破坏树叶掉落羊毛树树苗、羊毛、鱼或羊。</p>
+
 
 
 <!------------------------------------------------------------------------------------------------->
@@ -3372,7 +3754,7 @@
 <p>将烈焰棒重命名为任意名称，然后扔入岩浆即可得到黑暗魔杖，名称越中二法力越强。</p>
 
 <h3 id="broom">扫帚 (Broom)</h3>
-<p>在副手时提供漂浮效果，主手时悬浮。<em>Tia Fraere!</em></p>
+<p>在副手时跳起可提供漂浮效果，漂浮过程中可按住shift下降直至着陆。<em>Tia Fraere!</em></p>
 <p>可用于合成<a href="#shooting_star">流星丸</a>。</p>
 <table><thead><tr><th>名称</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
 <tr><th>扫帚</th><td>烟花火箭+木棍+干草块</td>
@@ -3391,7 +3773,7 @@
 </tbody></table>
 
 <h3 id="shooting_star">流星丸 (Shooting Star)</h3>
-<p>装备在胸甲并起飞后可自动飞行。</p>
+<p>装备在胸甲跳起可提供悬浮效果并自动向前飞行，漂浮过程中可按住shift下降直至着陆。</p>
 <table><thead><tr><th>名称</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
 <tr><th>流星丸</th><td><a href="#wing_of_sky">天空之翼</a>+鞘翅+<a href="#broom">扫帚</a></td>
 <td><span class="ui cm" title="合成器">
@@ -3410,17 +3792,7 @@
 
 <h3 id="sorcerer_stone">魔导石 (Sorcerer Stone)</h3>
 <p>玩家出生点附近自然生成，无法手动破坏，无掉落。</p>
-<p>可令32米内的玩家每秒回复1点魔法值，上线30点。</p>
-
-<h3 id="sorcery_solution_system">魔力产生系统 (Sorcery Solution System)</h3>
-<p>一共需要164个矿物块，1个信标，4个日石，4个月石。</p>
-<p>在4级信标周围放置4个日石，对角位置放置4个月石，有一定几率会不时地杀死附近的非玩家生物。</p>
-<p>可令64米内的玩家每秒回复1点魔法值，上线60点。</p>
-
-<h3 id="dream_spirit_system">梦想精神系统 (Dream Spirit System)</h3>
-<p>一共需要164个矿物块，1个信标，8个日石，8个月石，32个海晶石砖，4个海晶灯，1个潮涌核心。</p>
-<p>在魔力产生系统上放置3*3的水和潮涌核心，每个侧面用8个海晶石转和1个海晶灯，顶部用4个日石和4个月石围绕放置得到。</p>
-<p>可令128米内的玩家每秒回复1点魔法值，上线100点。</p>
+<p>可令32米内的玩家每秒回复1点魔法值，上限30点。</p>
 
 <h3 id="magic_rituals">魔法仪式</h3>
 <p>在地面摆出如下形状，然后在青金石上方放置发射器，并在发射器上方放置物品展示框。将材料放入发射器，将待处理的物品放入物品展示框，使用魔杖右击并等待即可。</p>
@@ -3570,42 +3942,51 @@
 <h3 id="magic">魔法</h3>
 <p>若要使用魔法，玩家需要副手持有魔杖，然后按下对应的键，最后双击F发动，玩家需要拥有足够的魔法值方可。</p>
 <table><thead><tr><th>魔法</th><th>键</th><th>效果</th><th>范围/时长</th><th>魔杖等级</th><th>魔法值</th></tr></thead><tbody>
-<tr><td rowspan="3">火之召唤</td><td rowspan="3">1234</td><td rowspan="3">向前方地面召唤火焰，距离不超过32米</td>
-	<td>1米×3米×1米</td><td>1级</td><td>5</td></tr>
-<tr><td>3米×3米×3米</td><td>2级</td><td>10</td></tr>
-<tr><td>5米×3米×5米</td><td>3级</td><td>15</td></tr>
-<tr><td rowspan="3">火之催化</td><td rowspan="3">1243</td><td rowspan="3">将附近的熔炉全部点燃，使其可烧炼物品</td>
-	<td>1米×3米×1米，320秒</td><td>1级</td><td>10</td></tr>
-<tr><td>3米×3米×3米，640秒</td><td>2级</td><td>15</td></tr>
-<tr><td>5米×3米×5米，960秒</td><td>3级</td><td>20</td></tr>
-<tr><td rowspan="3">雨之召唤</td><td rowspan="3">1243</td><td rowspan="3">召唤雨</td>
-	<td>5分钟雨</td><td>1级</td><td>5</td></tr>
-<tr><td>10分钟雨</td><td>2级</td><td>10</td></tr>
-<tr><td>15分钟雷雨</td><td>3级</td><td>15</td></tr>
-<tr><td rowspan="3">灵之召唤</td><td rowspan="3">1324</td><td rowspan="3">将前方一定范围内实体石化，距离不超过32米</td>
-	<td>10秒，半径2米</td><td>1级</td><td>5</td></tr>
-<tr><td>15秒，半径3米</td><td>2级</td><td>10</td></tr>
-<tr><td>20秒，半径5米</td><td>3级</td><td>15</td></tr>
-<tr><td rowspan="3">灵之催化</td><td rowspan="3">1234</td><td rowspan="3">将附近的作物催熟</td>
-	<td>1米×3米×1米</td><td>1级</td><td>5</td></tr>
-<tr><td>3米×3米×3米</td><td>2级</td><td>10</td></tr>
-<tr><td>5米×3米×5米</td><td>3级</td><td>15</td></tr>
-<tr><td rowspan="3">风之召唤</td><td rowspan="3">1324</td><td rowspan="3">将前方一定范围内实体吹向空中并掉落</td>
-	<td>半径2米</td><td>1级</td><td>10</td></tr>
-<tr><td>半径3米</td><td>2级</td><td>15</td></tr>
-<tr><td>半径5米</td><td>3级</td><td>20</td></tr>
-<tr><td rowspan="3">风之庇佑</td><td rowspan="3">1324</td><td rowspan="3">让玩家获得悬浮效果</td>
-	<td>60秒</td><td>1级</td><td>5</td></tr>
-<tr><td>90秒</td><td>2级</td><td>10</td></tr>
-<tr><td>120秒</td><td>3级</td><td>15</td></tr>
-<tr><td rowspan="3">灵之庇佑</td><td rowspan="3">1324</td><td rowspan="3">让玩家获得空虚效果(附近128米不再生成敌对生物)</td>
-	<td>60秒</td><td>1级</td><td>5</td></tr>
-<tr><td>90秒</td><td>2级</td><td>10</td></tr>
-<tr><td>120秒</td><td>3级</td><td>15</td></tr>
-<tr><td rowspan="3">地之咆哮</td><td rowspan="3">1324</td><td rowspan="3">在前方地表召唤裂缝</td>
-	<td>3米</td><td>1级</td><td>10</td></tr>
-<tr><td>5米</td><td>2级</td><td>15</td></tr>
-<tr><td>7米</td><td>3级</td><td>20</td></tr>
+<tr><td rowspan="3">召唤术：风</td><td rowspan="3">1212</td><td rowspan="3">将前方一定范围内实体吹向空中并掉落</td>
+	<td>半径2米</td><td>1级</td><td rowspan="3">10</td></tr>
+<tr><td>半径3米</td><td>2级</td></tr>
+<tr><td>半径5米</td><td>3级</td></tr>
+<tr><td rowspan="3">召唤术：火</td><td rowspan="3">1213</td><td rowspan="3">在前方地面(32米内)召唤火焰</td>
+	<td>1米×3米×1米</td><td>1级</td><td rowspan="3">10</td></tr>
+<tr><td>3米×3米×3米</td><td>2级</td></tr>
+<tr><td>5米×3米×5米</td><td>3级</td></tr>
+<tr><td rowspan="3">召唤术：雷</td><td rowspan="3">1214</td><td rowspan="3">召唤闪电</td>
+	<td>1道</td><td>1级</td><td rowspan="3">20</td></tr>
+<tr><td>5道</td><td>2级</td></tr>
+<tr><td>9道</td><td>3级</td></tr>
+<tr><td rowspan="3">召唤术：雨</td><td rowspan="3">1215</td><td rowspan="3">召唤雨</td>
+	<td>5分钟雨</td><td>1级</td><td rowspan="3">10</td></tr>
+<tr><td>10分钟雨</td><td>2级</td></tr>
+<tr><td>15分钟雷雨</td><td>3级</td></tr>
+<tr><td rowspan="3">召唤术：灵</td><td rowspan="3">1216</td><td rowspan="3">将前方实体石化(32米内)</td>
+	<td>10秒</td><td>1级</td><td rowspan="3">5</td></tr>
+<tr><td>15秒</td><td>2级</td></tr>
+<tr><td>20秒</td><td>3级</td></tr>
+
+<tr><td rowspan="3">催化术：风</td><td rowspan="3">1312</td><td rowspan="3">让玩家获得悬浮效果</td>
+	<td>60秒</td><td>1级</td><td rowspan="3">5</td></tr>
+<tr><td>90秒</td><td>2级</td></tr>
+<tr><td>120秒</td><td>3级</td></tr>
+<tr><td rowspan="3">催化术：火</td><td rowspan="3">1313</td><td rowspan="3">将附近的熔炉全部点燃，使其可烧炼物品</td>
+	<td>3米内，320秒</td><td>1级</td><td rowspan="3">10</td></tr>
+<tr><td>7米内，640秒</td><td>2级</td></tr>
+<tr><td>11米内，960秒</td><td>3级</td></tr>
+<tr><td rowspan="3">催化术：雷</td><td rowspan="3">1314</td><td rowspan="3">恢复玩家生命</td>
+	<td><img src="items/heart.png" title="4" /><img src="items/heart.png" title="4" /> 4点</td><td>1级</td><td rowspan="3">10</td></tr>
+<tr><td><img src="items/heart.png" title="8" /><img src="items/heart.png" title="8" /><img src="items/heart.png" title="8" /><img src="items/heart.png" title="8" /> 8点</td><td>2级</td></tr>
+<tr><td><img src="items/heart.png" title="16" /><img src="items/heart.png" title="16" /><img src="items/heart.png" title="16" /><img src="items/heart.png" title="16" /><img src="items/heart.png" title="16" /><img src="items/heart.png" title="16" /><img src="items/heart.png" title="16" /><img src="items/heart.png" title="16" /> 16点</td><td>3级</td></tr>
+<tr><td rowspan="3">催化术：雨</td><td rowspan="3">1315</td><td rowspan="3">清除附近的火，并将熔岩变成黑曜石</td>
+	<td>11米×11米</td><td>1级</td><td rowspan="3">10</td></tr>
+<tr><td>15米×15米</td><td>2级</td></tr>
+<tr><td>21米×21米</td><td>3级</td></tr>
+<tr><td rowspan="3">催化术：灵</td><td rowspan="3">1316</td><td rowspan="3">将附近的<abbr title="小麦、马铃薯、胡萝卜、甜菜根、甘蔗、地狱疣">作物</abbr>催熟</td>
+	<td>1米×1米</td><td>1级</td><td rowspan="3">5</td></tr>
+<tr><td>3米×3米</td><td>2级</td></tr>
+<tr><td>5米×5米</td><td>3级</td></tr>
+<tr><td rowspan="3">催化术：地</td><td rowspan="3">1317</td><td rowspan="3">在前方地表召唤裂缝</td>
+	<td>3米</td><td>1级</td><td rowspan="3">10</td></tr>
+<tr><td>5米</td><td>2级</td></tr>
+<tr><td>7米</td><td>3级</td></tr>
 </tbody></table>
 
 <!------------------------------------------------------------------------------------------------->
@@ -3732,6 +4113,7 @@
 </tbody></table>
 
 <h3 id="garland">花环 (Garland)</h3>
+<p>每10秒恢复玩家1点魔法值，上限30点。</p>
 <table><thead><tr><th>名称</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
 <tr><th>花环</th>
 <td>虞美人+蒲公英+木棍</td>
@@ -3840,6 +4222,7 @@
 </tbody></table>
 
 <h3 id="empire_hat">冕旒 (Empire Hat)</h3>
+<p>每10秒恢复玩家1点魔法值，上限100点。</p>
 <table><thead><tr><th>名称</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
 <tr><th>冕旒</th>
 <td>黄色染料+末影珍珠+黄色床</td>
@@ -3896,6 +4279,7 @@
 </tbody></table>
 
 <h3 id="green_hat">原谅帽 (Green Hat)</h3>
+<p>每10秒恢复玩家1点魔法值，上限60点。</p>
 <table><thead><tr><th>名称</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
 <tr><th>原谅帽</th>
 <td>绿宝石</td>
@@ -4741,12 +5125,111 @@ scoreboard players set #rituals_time cppValue 1200
 
 
 <tr class="v1-9">
-	<th rowspan="90">1.9<br/><span class="lore">魔法更新</span></th>
-	<th rowspan="90">2019年1月30日<br/><span class='lore'>1525 KB</span></th>
-	<td>游戏本体版本升级为1.14，不再支持1.14之前的版本。</td></tr>
-<tr class="v1-9"><td>将竖台阶、村民交易、空岛、实用功能部分分离。</td></tr>
+	<th rowspan="140">1.9<br/><span class="lore">魔法更新</span></th>
+	<th rowspan="140">2019年1月30日<br/><span class='lore'>6737 KB</span></th>
+	<td>游戏本体版本升级为1.14，不再支持1.14之前的版本。</td></tr><tr class="v1-9"><td>新增并修改材质。</td></tr><tr class="v1-9"><td>新增使用指令/loot give @s loot cpp:物品英文名可获取相应物品。</td></tr>
+<tr class="v1-9"><td>新增附魔室的物品要塞地图、地牢地图。</td></tr><tr class="v1-9"><td>新增附魔室生成幻术师。</td></tr><tr class="v1-9"><td>新增自然生成农作物。</td></tr><tr class="v1-9"><td>新增自然生成花草。</td></tr><tr class="v1-9"><td>新增自然生成水果树和矿石树。</td></tr>
+<tr class="v1-9"><td>现在死亡的云杉仅在针叶林及其变种生物群系内生成。</td></tr>
+<tr class="v1-9"><td>现在死珊瑚扇仅在沙漠和恶地及其变种生物群系内生成。</td></tr>
 
+<tr class="v1-9"><td>修改了骷髅和僵尸的盔甲、武器算法和几率。</td></tr>
+<tr class="v1-9"><td>修改了高压爬行者的几率。</td></tr>
+<tr class="v1-9"><td>新增对凋零骷髅的加强。</td></tr>
+<tr class="v1-9"><td>新增部分生物的稀有掉落物。</td></tr>
+<tr class="v1-9"><td>修改肉类名称。</td></tr>
+<tr class="v1-9"><td>新增玩家死亡掉落头。</td></tr>
 
+<tr class="v1-9"><td>修改所有配方中的染料为1.14的相应染料。</td></tr>
+<tr class="v1-9"><td>修改花合成染料为烧炼。</td></tr>
+<tr class="v1-9"><td>烧炼配方现在支持高炉和烟熏炉。</td></tr>
+
+<tr class="v1-9"><td>新增信标增强器可选择敌对/全部生物。</td></tr>
+<tr class="v1-9"><td>新增多功能一体机常温常压模式制作竹子。</td></tr>
+<tr class="v1-9"><td>修改多功能一体机常温高压下部分产物几率和数量。</td></tr>
+<tr class="v1-9"><td>移除多功能一体机常温高压下压缩功能。</td></tr>
+<tr class="v1-9"><td>修改生物投影仪的豹猫为猫。</td></tr>
+<tr class="v1-9"><td>修改生物投影仪材质，可以显示正在生成的生物。</td></tr>
+<tr class="v1-9"><td>修改除信标增强器外的机器所在方块为木桶。</td></tr>
+
+<tr class="v1-9"><td>新增碎钻，烧炼矿石制品得到，可合成钻石。</td></tr>
+<tr class="v1-9"><td>新增煤粒，煤炭或木炭分解得到。</td></tr>
+<tr class="v1-9"><td>修复粗硅的错误名称。</td></tr>
+<tr class="v1-9"><td>修改矿石粉为只需要/只能烧炼出1个矿物。</td></tr>
+<tr class="v1-9"><td>修改月之碎片合成配方中的附魔金苹果为粘液球。</td></tr>
+<tr class="v1-9"><td>新增4个月之碎片和末影之眼合成日之碎片。</td></tr>
+<tr class="v1-9"><td>新增4个日之碎片和下界之星合成2下界之星。</td></tr>
+<tr class="v1-9"><td>新增月石，使用9月之碎片合成，可分解。</td></tr>
+<tr class="v1-9"><td>新增日石，使用9日之碎片合成，可分解。</td></tr>
+<tr class="v1-9"><td>移除神秘烈焰粉和神秘兔子脚。</td></tr>
+<tr class="v1-9"><td>修改草方块的合成配方为8草丛加泥土。</td></tr>
+<tr class="v1-9"><td>修改菌丝的合成配方为4棕色蘑菇、4红色蘑菇加泥土。</td></tr>
+<tr class="v1-9"><td>修改皮革和兔子皮的比例恢复为1:4。</td></tr>
+<tr class="v1-9"><td>修改石英块和石英的比例恢复为1:4。</td></tr>
+<tr class="v1-9"><td>修改合成珊瑚块所需珊瑚个数为4。</td></tr>
+<tr class="v1-9"><td>修改合成楼梯数量为4个，楼梯回收为6个。</td></tr><tr class="v1-9"><td>新增热带鱼类别的翻译。</td></tr>
+<tr class="v1-9"><td>修改热带鱼桶的合成配方。</td></tr>
+<tr class="v1-9"><td>移除彩色床加染料合成彩色床的配方。</td></tr>
+
+<tr class="v1-9"><td>修改蓝色天之力为可根据当前天气调节。</td></tr>
+<tr class="v1-9"><td>新增剪枝器，2木棍和附魔铁锭合成，破坏树叶得到树苗。</td></tr>
+<tr class="v1-9"><td>新增玻璃镐，可破坏玻璃。</td></tr>
+<tr class="v1-9"><td>新增盾牌(中国国旗)，使用牡丹、焰光菊、金盏花和盾牌合成得到。</td></tr>
+<tr class="v1-9"><td>新增盾牌(美国国旗)，使用玫瑰丛、风信子、蓬蓬草和盾牌合成得到。</td></tr>
+<tr class="v1-9"><td>新增盾牌(俄罗斯国旗)，使用向日葵、风信子、蓬蓬草和盾牌合成得到。</td></tr>
+<tr class="v1-9"><td>新增盾牌(法国国旗)，使用矢车菊、风信子、蓬蓬草和盾牌合成得到。</td></tr>
+<tr class="v1-9"><td>新增盾牌(英国国旗)，使用虞美人、风信子、蓬蓬草和盾牌合成得到。</td></tr>
+<tr class="v1-9"><td>新增盾牌(bilibili标志))，使用黑荆棘、白车轴、芦苇草和盾牌合成得到。</td></tr>
+<tr class="v1-9"><td>新增盾牌(github标志))，使用黑荆棘、白车轴、香蒲草和盾牌合成得到。</td></tr>
+<tr class="v1-9"><td>新增盾牌(mcmod标志))，使用黑荆棘、白车轴、异绒兰和盾牌合成得到。</td></tr>
+<tr class="v1-9"><td>新增盾牌(tcp标志))，使用黑荆棘、白车轴、紫荆花和盾牌合成得到。</td></tr>
+<tr class="v1-9"><td>新增盾牌(cbl标志))，使用黑荆棘、白车轴、风信子和盾牌合成得到。</td></tr>
+
+<tr class="v1-9"><td>新增食物饥饿值显示。</td></tr>
+<tr class="v1-9"><td>移除鸡蛋羹。</td></tr>
+<tr class="v1-9"><td>修改土豆牛肉、土豆排骨、兔肉煲效果为力量I。</td></tr>
+<tr class="v1-9"><td>修改土豆牛肉等食物为无序合成。</td></tr>
+<tr class="v1-9"><td>修改炸鱼薯条的配方为盐瓶、熟鳕鱼、烤马铃薯、番茄酱和碗。</td></tr>
+<tr class="v1-9"><td>修改肉松面包的配方为盐瓶、小麦和熟鸡肉或熟鹦鹉肉。</td></tr><tr class="v1-9"><td>新增煮鸡蛋，恢复2点饥饿值。</td></tr>
+<tr class="v1-9"><td>新增番茄酱，使用西红柿、糖和盐瓶合成，恢复5点饥饿值。</td></tr>
+<tr class="v1-9"><td>新增奶酪，使用牛奶桶和柠檬无序合成，恢复5点饥饿值。</td></tr>
+<tr class="v1-9"><td>新增汉堡，使用番茄酱、奶酪、西红柿、牛排和面包无序合成，恢复20点饥饿值。</td></tr>
+<tr class="v1-9"><td>新增披萨，使用番茄酱、奶酪、西红柿、熟猪排和小麦无序合成，恢复5点饥饿值。</td></tr>
+<tr class="v1-9"><td>新增寿司，使用干海带、小麦和生鲑鱼无序合成，恢复5点饥饿值。</td></tr>
+<tr class="v1-9"><td>新增仰望星空派，使用熟鳕鱼、熟猪排、棕色蘑菇和小麦合成，恢复16点饥饿值。</td></tr>
+<tr class="v1-9"><td>新增烤鸡，使用熟鸡肉、柠檬和烤马铃薯合成，恢复16点饥饿值。</td></tr>
+<tr class="v1-9"><td>新增饺子，使用熟猪排或熟牛排和8小麦合成得到4个，恢复5点饥饿值。</td></tr>
+<tr class="v1-9"><td>新增葡萄干，烧炼葡萄/金葡萄得到，食用后获得10秒速度。</td></tr>
+<tr class="v1-9"><td>新增稀有掉落物可用于酿造。</td></tr>
+<tr class="v1-9"><td>修改连锁算法，现在只破坏镐子可挖掘的方块了。</td></tr>
+<tr class="v1-9"><td>新增花草替代作物，成熟后破坏得到花草。</td></tr><tr class="v1-9"><td>新增花草烧炼成对应物。</td></tr><tr class="v1-9"><td>新增花草合成为3个对应种子。</td></tr>
+<tr class="v1-9"><td>修改水果的内部id。</td></tr><tr class="v1-9"><td>新增可食用的水果。</td></tr>
+<tr class="v1-9"><td>新增森林蝙蝠掉落香橼。</td></tr>
+<tr class="v1-9"><td>修改羊毛树掉落羊毛树树苗、鱼和羊。</td></tr>
+<tr class="v1-9"><td>移除水果树树苗、矿石树树苗、羊毛树树苗的合成配方。</td></tr>
+<tr class="v1-9"><td>新增圣诞花，使用虞美人、彼岸花、金盏花和碎璃草无序合成。</td></tr>
+<tr class="v1-9"><td>新增圣诞树，使用4荧石粉、2雪球、2圣诞花和云杉树苗合成。</td></tr>
+<tr class="v1-9"><td>新增可直接佩戴的头饰。</td></tr><tr class="v1-9"><td>新增彩色告示牌。</td></tr><tr class="v1-9"><td>新增玻璃物品展示框,放入物品后变透明。</td></tr>
+<tr class="v1-9"><td>移除平滑方块的合成和加速效果。</td></tr>
+<tr class="v1-9"><td>将竖台阶、村民交易、空岛、实用功能部分分离。</td></tr></td></tr>
+
+<tr class="v1-9"><td>新增魔法，包括召唤术：风火雷雨灵，催化术：风火雷雨灵地。</td></tr>
+<tr class="v1-9"><td>若要使用魔法，玩家需要副手持有魔杖，然后按下对应的键，最后双击F发动，玩家需要拥有足够的魔法值方可。</td></tr>
+<tr class="v1-9"><td>新增出生点附近生成魔导石，每秒恢复32米内玩家1点魔法值，上限30点。</td></tr>
+<tr class="v1-9"><td>新增4级星标上的信标增强仪每秒恢复64米内玩家1点魔法值，上限60点。</td></tr>
+<tr class="v1-9"><td>新增4级星标上的信标增强仪，若顶层基座使用5日石和4月石，每秒恢复128米内玩家1点魔法值，上限100点。</td></tr>
+
+<tr class="v1-9"><td>新增花环每10秒恢复玩家1点魔法值，上限30点。</td></tr>
+<tr class="v1-9"><td>新增原谅帽每10秒恢复玩家1点魔法值，上限60点。</td></tr>
+<tr class="v1-9"><td>新增冕旒每10秒恢复玩家1点魔法值，上限100点。</td></tr>
+<tr class="v1-9"><td>新增烈焰红唇、愚弄眼镜、小黄人眼罩。</td></tr>
+<tr class="v1-9"><td>新增漂浮时按下shift下降。</td></tr>
+<tr class="v1-9"><td>修改扫帚和流星丸需要跳跃才可漂浮，移除主手效果。</td></tr>
+
+<tr class="v1-9"><td>临时移除随机方块功能。</td></tr><tr class="v1-9"><td>新增空岛8草丛加泥土合成草方块。</td></tr><tr class="v1-9"><td>新增空岛4棕色蘑菇、4红色蘑菇加泥土合成菌丝。</td></tr><tr class="v1-9"><td>新增方块破坏器下方的伸出的活塞臂收回时，会自动破坏其上方的方块。</td></tr><tr class="v1-9"><td>新增空岛初始物资箱子、泥土、树苗、16骨粉。</td></tr><tr class="v1-9"><td>新增空岛雪球加4树苗或作物或树叶合成泥土。</td></tr><tr class="v1-9"><td>新增空岛合成烈焰棒。</td></tr><tr class="v1-9"><td>新增空岛玩家杀死生物时背包的沙子会变成灵魂沙。</td></tr><tr class="v1-9"><td>新增粉碎机粉碎泥土有几率掉落草丛。</td></tr><tr class="v1-9"><td>新增粉碎机粉碎沙子有几率掉落枯萎的灌木。</td></tr><tr class="v1-9"><td>新增粉碎机粉碎泥土有几率掉落水果树树苗、矿石树树苗、羊毛树树苗、竹子。</td></tr>
+<tr class="v1-9"><td>新增空岛破坏草丛掉落甜浆果。<tr class="v1-9"><td>修改空岛破坏草丛掉落种子而不是使用粉碎机粉碎泥土。</td></tr><tr class="v1-9"><td>修改空岛破坏枯萎的灌木掉落种子而不是使用粉碎机粉碎沙子。</td></tr><tr class="v1-9"><td>修改粉碎机粉碎圆石变为沙子。</td></tr><tr class="v1-9"><td>修改粉碎机粉碎石头变为砂砾。</td></tr><tr class="v1-9"><td>移除空岛无限草方块。</td></tr><tr class="v1-9"><td>移除空岛合成砂砾的配方。</td></tr><tr class="v1-9"><td>移除空岛石头合成炼药锅。</td></tr>
+<tr class="v1-9"><td>新增粉碎机粉碎泥土有几率掉落竹子。</td></tr>
+<tr class="v1-9"><td>新增空岛破坏草丛掉落甜浆果。</td></tr>
+<tr class="v1-9"><td>新增空岛破坏海草有几率掉落海带。</td></tr><tr class="v1-9"><td>修改箱子排序为只需主手或副手持有木棍即可。</td></tr><tr class="v1-9"><td>修改箱子排序算法，现在支持大箱子且可以满槽位。</td></tr><tr class="v1-9"><td>修改墙名称为竖台阶和模型。</td></tr><tr class="v1-9"><td>移除竖台阶。</td></tr><tr class="v1-9"><td>修改双台阶模型材质为竖纹。</td></tr><tr class="v1-9"><td>新增炼药锅漂白羊毛、床、粘性活塞。</td></tr><tr class="v1-9"><td>修改村民代码以支持1.14。</td></tr><tr class="v1-9"><td>修改末影龙掉落龙蛋方块而不是龙头。</td></tr><tr class="v1-9"><td>绿宝石块吸引村民支持副手。</td></tr>
 
 </tbody></table>
 
@@ -4763,7 +5246,8 @@ scoreboard players set #rituals_time cppValue 1200
 <a href="https://space.bilibili.com/4469715"><img src="items/bilibili.png" /></a>
 </p>
 
-<p>最后更新 2018-10-25</p>
+<p>最后更新 2019-01-01</p>
 </footer>
 </article>
 </body></html>
+
