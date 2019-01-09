@@ -5316,7 +5316,7 @@
 </tbody></table>
 
 <h3 id="random_block">随机方块</h3>
-<p>将投掷器重命名为<code>random_block</code>，然后放置在地面上并放入方块。之后玩家副手持有木棍且主手为空时，将会从最近的名称为<code>random_block</code>的投掷器中随机选择一个给予玩家。</p>
+<p>副手持有潜影箱而主手为空时，将会从潜影箱随机选择一个给予玩家。</p>
 
 <p><img style="width:48%" src="items/screenshots/dispenser_plant.png" /> <img style="width:48%" src="items/screenshots/random_block.png" /></p>
 
@@ -6296,6 +6296,8 @@ scoreboard players set #rituals_time cppValue 1200
 <tr class="v1-9"><td>移除彩色床加染料合成彩色床的配方。</td></tr>
 
 <tr class="v1-9"><td>修改蓝色天之力为可根据当前天气调节。</td></tr>
+<tr class="v1-9"><td>修改白色电之力的功能为消耗6点生命值恢复10点魔力值。</td></tr>
+
 <tr class="v1-9"><td>新增剪枝器，2木棍和附魔铁锭合成，破坏树叶得到树苗。</td></tr>
 <tr class="v1-9"><td>新增玻璃镐，可破坏玻璃。</td></tr>
 <tr class="v1-9"><td>新增盾牌(中国国旗)，使用牡丹、焰光菊、金盏花和盾牌合成得到。</td></tr>
@@ -6329,6 +6331,8 @@ scoreboard players set #rituals_time cppValue 1200
 <tr class="v1-9"><td>新增花草替代作物，成熟后破坏得到花草。</td></tr><tr class="v1-9"><td>新增花草烧炼成对应物。</td></tr><tr class="v1-9"><td>新增花草合成为3个对应种子。</td></tr>
 <tr class="v1-9"><td>修改水果的内部id。</td></tr><tr class="v1-9"><td>新增可食用的水果。</td></tr>
 <tr class="v1-9"><td>新增森林蝙蝠掉落香橼。</td></tr>
+<tr class="v1-9"><td>饮用冷饮后恢复4点魔力值。</td></tr>
+
 <tr class="v1-9"><td>修改羊毛树掉落羊毛树树苗、鱼和羊。</td></tr>
 <tr class="v1-9"><td>移除水果树树苗、矿石树树苗、羊毛树树苗的合成配方。</td></tr>
 <tr class="v1-9"><td>新增圣诞花，使用虞美人、彼岸花、金盏花和碎璃草无序合成。</td></tr>
@@ -6354,7 +6358,15 @@ scoreboard players set #rituals_time cppValue 1200
 <tr class="v1-9"><td>新增空岛破坏草丛掉落甜浆果。<tr class="v1-9"><td>修改空岛破坏草丛掉落种子而不是使用粉碎机粉碎泥土。</td></tr><tr class="v1-9"><td>修改空岛破坏枯萎的灌木掉落种子而不是使用粉碎机粉碎沙子。</td></tr><tr class="v1-9"><td>修改粉碎机粉碎圆石变为沙子。</td></tr><tr class="v1-9"><td>修改粉碎机粉碎石头变为砂砾。</td></tr><tr class="v1-9"><td>移除空岛无限草方块。</td></tr><tr class="v1-9"><td>移除空岛合成砂砾的配方。</td></tr><tr class="v1-9"><td>移除空岛石头合成炼药锅。</td></tr>
 <tr class="v1-9"><td>新增粉碎机粉碎泥土有几率掉落竹子。</td></tr>
 <tr class="v1-9"><td>新增空岛破坏草丛掉落甜浆果。</td></tr>
-<tr class="v1-9"><td>新增空岛破坏海草有几率掉落海带。</td></tr><tr class="v1-9"><td>修改箱子排序为只需主手或副手持有木棍即可。</td></tr><tr class="v1-9"><td>修改箱子排序算法，现在支持大箱子且可以满槽位。</td></tr><tr class="v1-9"><td>修改墙名称为竖台阶和模型。</td></tr><tr class="v1-9"><td>移除竖台阶。</td></tr><tr class="v1-9"><td>修改双台阶模型材质为竖纹。</td></tr><tr class="v1-9"><td>新增炼药锅漂白羊毛、床、粘性活塞。</td></tr><tr class="v1-9"><td>修改村民代码以支持1.14。</td></tr><tr class="v1-9"><td>修改末影龙掉落龙蛋方块而不是龙头。</td></tr><tr class="v1-9"><td>绿宝石块吸引村民支持副手。</td></tr>
+<tr class="v1-9"><td>新增空岛破坏海草有几率掉落海带。</td></tr>
+<tr class="v1-9"><td>修改了随机方块功能：副手持有潜影箱而主手为空时，将会从潜影箱随机选择一个给予玩家。</td></tr><tr class="v1-9"><td>修改箱子排序为只需主手或副手持有木棍即可。</td></tr><tr class="v1-9"><td>修改箱子排序算法，现在支持大箱子且可以满槽位。</td></tr><tr class="v1-9"><td>修改墙名称为竖台阶和模型。</td></tr><tr class="v1-9"><td>移除竖台阶。</td></tr><tr class="v1-9"><td>修改双台阶模型材质为竖纹。</td></tr><tr class="v1-9"><td>新增炼药锅漂白羊毛、床、粘性活塞。</td></tr>
+<tr class="v1-9"><td>修改村民代码以支持1.14。</td></tr>
+<tr class="v1-9"><td>制图师现在可以出售各种结构的地图了，使用月之碎片购买。与所在维度有关，村庄地图暂时无效。超平坦模式下无效。</td></tr>
+<tr class="v1-9"><td>修改了tcp的logo。</td></tr><tr class="v1-9"><td>修改末影龙掉落龙蛋方块而不是龙头。</td></tr><tr class="v1-9"><td>绿宝石块吸引村民支持副手。</td></tr>
+
+
+
+
 
 </tbody></table>
 
