@@ -81,15 +81,21 @@
 <tr>
 	<td>Minecraft Java版 1.12</td>
 	<td>Crafting++ 1.7.4</td>
-	<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/tree/master/versions/1.7">github</a> | <a href="http://www.mcbbs.net/forum.php?mod=attachment&aid=MTA4NDIzM3xhYjM4MDU1NnwxNTExNjI3NjYwfDk3NTUyNXw2OTY4NjE%3D">mcbbs</a></td></tr>
+	<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/blob/master/versions/1.7/v1.7.4.zip">github</a> | <a href="http://www.mcbbs.net/forum.php?mod=attachment&aid=MTA4NDIzM3xhYjM4MDU1NnwxNTExNjI3NjYwfDk3NTUyNXw2OTY4NjE%3D">mcbbs</a></td></tr>
 <tr>
 	<td>Minecraft Java版 1.12 pre</td>
 	<td>Crafting++ 1.6.1</td>
-	<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/tree/master/versions/1.6">github</a></td>
+	<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/tree/master/versions/1.6/v1.6.zip">github</a></td>
 </tr>
 </tbody></table>
 
-<p>下载后，将解压缩后的<code>datapacks</code>文件夹和<code>resources.zip</code>放入<code>.minecraft/saves/世界名</code>文件夹，然后进入游戏并按下F3+T或退出世界重进即可。若资源包无法成功安装，请将其解压并放入resourcepacks文件夹，然后选择该资源包。如需安装在服务器类似操作，请设置为自动下载资源包，客户端无需安装数据包。</p>
+<p>如果您没有安装HMCL，下载后，将解压缩后的<code>datapacks</code>文件夹和<code>resources.zip</code>放入<code>.minecraft/saves/世界名</code>文件夹。如果您安装了HMCL，新建世界后，打开HMCL，点击左侧相应版本右侧的齿轮打开设置，选择世界/数据包，点击相应世界右侧的三个点并选择管理数据包，点击+并选择下载好的压缩包导入。</p>
+
+<p>注意，1.14快照无法读取.zip格式资源包，因此请将资源包解压并放入resourcepacks文件夹，然后选择该资源包。不要将resources.zip放入世界存档文件夹。</p>
+
+<p>安装完成后进入游戏并按下F3+T或退出世界重进即可。如需安装在服务器类似操作，请设置为自动下载资源包，客户端无需安装数据包。</p>
+
+
 <p>涉及模组特有物品均需使用<a href="#crafting_machine"><img src="items/crafting_machine.png" style="height:20px;" />合成器</a>来合成。模组部分参数可通过修改<a href="#config">配置文件</a><code>datapacks/craftingpp/data/cpp/functions/config.mcfunction</code>修改。模组大部分文字支持英文、简体中文、繁体中文。如有任何意见建议，欢迎<a href="http://www.mcbbs.net/thread-696861-1-1.html">在论坛回复</a>、<a href="https://github.com/ruhuasiyu/craftingpp/issues/new">发起issue</a>或<a href="http://www.mcbbs.net/home.php?mod=spacecp&ac=pm&touid=975525">私信我</a>，请在反馈时提供游戏版本和模组版本。</p>
 
 <p>转载本文需遵守<strong><a href="https://creativecommons.org/licenses/by-nc-nd/2.5/cn/">CC BY-NC-ND 2.5 CN 许可协议</a></strong>——列出作者(<a href="http://www.mcbbs.net/home.php?mod=spacecp&ac=pm&touid=975525">ruhuasiyu@mcbbs</a>)、来源、原始下载链接以及相同的许可协议。模组代码使用需遵守<a href="https://www.gnu.org/licenses/gpl.html">GNU GENERAL PUBLIC LICENSE v3.0</a>协议。请勿转载至网盘或文件存储平台，通讯类工具允许下载后分享。公益服务器可直接使用；非公益服务器需先联系我。</p>
@@ -1790,7 +1796,7 @@
 <table><thead><tr><th>产物</th><th>材料</th><th>烧炼配方</th></tr></thead><tbody>
 <tr><th>兔子皮</th>
 <td>腐肉<br/>皮革盔甲<br/>鞍</td>
-<td><span class="ui fur" title="熔炉或烟熏炉">
+<td><span class="ui fur" title="熔炉、烟熏炉或营火">
 <span class="rotten_flesh" title="腐肉"></span>
 <span class="coal" title="燃料"></span>
 <span class="rabbit_hide" title="兔子皮"></td></tr>
@@ -3622,7 +3628,7 @@
 <p>食用后恢复14点饥饿值并获得30秒的跳跃提升效果。</p>
 <table><thead><tr><th>产物</th><th colspan="2">烧炼配方</th></tr></thead><tbody>
 <tr><th>缤纷菜蔬<br /><img src="items/hunger.png" style="width:18px;height:18px;" title="14" /><img src="items/hunger.png" style="width:18px;height:18px;" title="14" /><img src="items/hunger.png" style="width:18px;height:18px;" title="14" /><img src="items/hunger.png" style="width:18px;height:18px;" title="14" /><img src="items/hunger.png" style="width:18px;height:18px;" title="14" /><img src="items/hunger.png" style="width:18px;height:18px;" title="14" /><img src="items/hunger.png" style="width:18px;height:18px;" title="14" /><br /><span class="effects jump_boost"></span> <span class="lore">跳跃提升 00:30</span></th><td><a href="#raw_colorful_vegetable">生缤纷菜蔬</a></td>
-<td><span class="ui fur" title="熔炉或烟熏炉">
+<td><span class="ui fur" title="熔炉、烟熏炉或营火">
 <span class="ci raw_colorful_vegetable" title="生缤纷菜蔬"></span>
 <span class="coal" title="燃料"></span>
 <span class="ci colorful_vegetable" title="缤纷菜蔬"></span>
@@ -3654,7 +3660,7 @@
 <p>食用后恢复16点饥饿值并获得30秒的力量效果。</p>
 <table><thead><tr><th>产物</th><th colspan="2">烧炼配方</th></tr></thead><tbody>
 <tr><th>土豆排骨<br /><img src="items/hunger.png" style="width:18px;height:18px;" title="16" /><img src="items/hunger.png" style="width:18px;height:18px;" title="16" /><img src="items/hunger.png" style="width:18px;height:18px;" title="16" /><img src="items/hunger.png" style="width:18px;height:18px;" title="16" /><img src="items/hunger.png" style="width:18px;height:18px;" title="16" /><img src="items/hunger.png" style="width:18px;height:18px;" title="16" /><img src="items/hunger.png" style="width:18px;height:18px;" title="16" /><img src="items/hunger.png" style="width:18px;height:18px;" title="16" /><br /><span class="effects strength"></span> <span class="lore">力量 00:30</span></th><td><a href="#raw_braised_pork_with_potatoes">生土豆排骨</a></td>
-<td><span class="ui fur" title="熔炉或烟熏炉">
+<td><span class="ui fur" title="熔炉、烟熏炉或营火">
 <span class="ci raw_braised_pork_with_potatoes" title="生土豆排骨"></span>
 <span class="coal" title="燃料"></span>
 <span class="ci braised_pork_with_potatoes" title="土豆排骨"></span>
@@ -3685,7 +3691,7 @@
 <p>食用后恢复16点饥饿值并获得30秒的力量效果。</p>
 <table><thead><tr><th>产物</th><th colspan="2">烧炼配方</th></tr></thead><tbody>
 <tr><th>土豆牛肉<br /><img src="items/hunger.png" style="width:18px;height:18px;" title="16" /><img src="items/hunger.png" style="width:18px;height:18px;" title="16" /><img src="items/hunger.png" style="width:18px;height:18px;" title="16" /><img src="items/hunger.png" style="width:18px;height:18px;" title="16" /><img src="items/hunger.png" style="width:18px;height:18px;" title="16" /><img src="items/hunger.png" style="width:18px;height:18px;" title="16" /><img src="items/hunger.png" style="width:18px;height:18px;" title="16" /><img src="items/hunger.png" style="width:18px;height:18px;" title="16" /><br /><span class="effects strength"></span> <span class="lore">力量 00:30</span></th><td><a href="#raw_braised_beef_with_potatoes">生土豆牛肉</a></td>
-<td><span class="ui fur" title="熔炉或烟熏炉">
+<td><span class="ui fur" title="熔炉、烟熏炉或营火">
 <span class="ci raw_braised_beef_with_potatoes" title="生土豆牛肉"></span>
 <span class="coal" title="燃料"></span>
 <span class="ci braised_beef_with_potatoes" title="土豆牛肉"></span>
@@ -3718,7 +3724,7 @@
 <p class="small">原兔肉煲的配方已被移除。</p>
 <table><thead><tr><th>产物</th><th colspan="2">烧炼配方</th></tr></thead><tbody>
 <tr><th>兔肉煲<br /><img src="items/hunger.png" style="width:18px;height:18px;" title="16" /><img src="items/hunger.png" style="width:18px;height:18px;" title="16" /><img src="items/hunger.png" style="width:18px;height:18px;" title="16" /><img src="items/hunger.png" style="width:18px;height:18px;" title="16" /><img src="items/hunger.png" style="width:18px;height:18px;" title="16" /><img src="items/hunger.png" style="width:18px;height:18px;" title="16" /><img src="items/hunger.png" style="width:18px;height:18px;" title="16" /><img src="items/hunger.png" style="width:18px;height:18px;" title="16" /><br /><span class="effects strength"></span> <span class="lore">力量 00:30</span></th><td><a href="#cooked_rabbit_stew">生兔肉煲</a></td>
-<td><span class="ui fur" title="熔炉或烟熏炉">
+<td><span class="ui fur" title="熔炉、烟熏炉或营火">
 <span class="ci raw_rabbit_stew" title="生兔肉煲"></span>
 <span class="coal" title="燃料"></span>
 <span class="ci rabbit_stew" title="兔肉煲"></span>
@@ -3787,7 +3793,7 @@
 <p>食用后恢复2点饥饿值。</p>
 <table><thead><tr><th>产物</th><th colspan="2">烧炼配方</th></tr></thead><tbody>
 <tr><th>煮鸡蛋<br /><img src="items/hunger.png" style="width:18px;height:18px;" title="2" /></th><td>鸡蛋</td>
-<td><span class="ui fur" title="熔炉或烟熏炉">
+<td><span class="ui fur" title="熔炉、烟熏炉或营火">
 <span class="egg" title="鸡蛋"></span>
 <span class="coal" title="燃料"></span>
 <span class="ci boiled_egg" title="煮鸡蛋"></span>
@@ -3799,7 +3805,7 @@
 <p>食用后恢复5点饥饿值。</p>
 <table><thead><tr><th>产物</th><th colspan="2">烧炼配方</th></tr></thead><tbody>
 <tr><th>烤胡萝卜<br /><img src="items/hunger.png" style="width:18px;height:18px;" title="5" /><img src="items/hunger.png" style="width:18px;height:18px;" title="5" /><img src="items/hunger_half.png" style="width:18px;height:18px;" title="5" /></th><td>胡萝卜</td>
-<td><span class="ui fur" title="熔炉或烟熏炉">
+<td><span class="ui fur" title="熔炉、烟熏炉或营火">
 <span class="carrot" title="胡萝卜"></span>
 <span class="coal" title="燃料"></span>
 <span class="ci baked_carrot" title="烤胡萝卜"></span>
@@ -3977,7 +3983,7 @@
 <p>食用后恢复4点饥饿值，并获得10秒的速度效果。</p>
 <table><thead><tr><th>产物</th><th colspan="2">烧炼配方</th></tr></thead><tbody>
 <tr><th>葡萄干<br /><img src="items/hunger.png" style="width:18px;height:18px;" title="4" /><img src="items/hunger.png" style="width:18px;height:18px;" title="4" /></th><td>葡萄/金葡萄</td>
-<td><span class="ui fur" title="熔炉或烟熏炉">
+<td><span class="ui fur" title="熔炉、烟熏炉或营火">
 <span class="ci grape" title="葡萄"></span>
 <span class="coal" title="燃料"></span>
 <span class="ci raisin" title="葡萄干"></span>
@@ -4057,7 +4063,7 @@
 <h2 id="plants">植物</h2>
 <h3 id="crops">花草</h3>
 <p>
-新增20种花草，在合成器中合成为3个对应种子。种子在土质方块上种植，一共4个生长阶段，成熟后收割可获得相应花草，否则只能获得种子。作物不受时运影响，可用骨粉催熟。收获成熟的小麦、胡萝卜、马铃薯和甜菜根有20%几率获得花草种子。每个花草都对应一个实体，大面积种植可能会卡顿。</p>
+新增20种花草，在合成器中合成为3个对应种子。种子在土质方块上种植，一共4个生长阶段，成熟后收割可获得相应花草，否则只能获得种子。作物不受时运影响，可用骨粉催熟。收获成熟的小麦、胡萝卜、马铃薯和甜菜根有5%几率获得花草种子。每个花草都对应一个实体，大面积种植可能会卡顿。</p>
 <p>可在熔炉熔炼成其它物品。</p>
 <p>可用于合成迷之炖菜，效果见下表。</p>
 
@@ -6266,7 +6272,7 @@ scoreboard players set #rituals_time cppValue 1200
 
 <tr class="v1-9"><td>修改所有配方中的染料为1.14的相应染料。</td></tr>
 <tr class="v1-9"><td>修改花合成染料为烧炼。</td></tr>
-<tr class="v1-9"><td>烧炼配方现在支持高炉和烟熏炉。</td></tr>
+<tr class="v1-9"><td>烧炼配方现在支持高炉、烟熏炉和营火。</td></tr>
 
 <tr class="v1-9"><td>新增信标增强器可选择敌对/全部生物。</td></tr>
 <tr class="v1-9"><td>新增多功能一体机常温常压模式制作竹子。</td></tr>
