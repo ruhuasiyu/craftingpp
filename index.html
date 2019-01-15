@@ -48,11 +48,12 @@
 
 <!-------------------------------------------------------------------------------------------------->
 <h2 id="introduction">简介</h2>
-<p>🎉欢迎来到《更多的合成》！</p>
+<p style="color:red">🎉欢迎来到原版模组《更多的合成》主页！</p>
 
-<p>什么是原版模组？原版模组一般是指在不修改Minecraft游戏本体的前提下，通过命令方块、ooc或数据包等方式，而非forge或liteloader等api来对游戏的可玩性做出修改。</p>
+<p>原版模组一般是指使用命令而非<abbr title="forge liteloader rift fibric 等">mod api</abbr>来对游戏的可玩性做出修改。自1.13起，原版模组一般以数据包的形式出现。</p>
 
-<p>什么是《更多的合成》？《更多的合成》是国内论坛最大的原版模组，包括数百种物品、材料、工具、装饰等，以及新的村民交易和空岛系统。目前已更新至<em>1.9 测试版m01d09(魔法更新)</em>，支持<em>Minecraft Java版 1.14</em>。</p>
+<p>《更多的合成》是国内论坛最大的原版模组，包括数百种物品、材料、工具、装饰等，以及新的村民交易和空岛系统。《更多的合成》<span style="color:red">无明确的主题</span>，凡是作者认为原版没有而应该有的特性都有可能加入进来。</p>
+<p>最新版本为测试版v1.9-m01d09(魔法更新)，支持Minecraft Java版 1.14。</p>
 
 
 <h3 id="how_to_start">📦 如何开始</h3>
@@ -96,28 +97,27 @@
 </tr>
 </tbody></table>
 
-<p>如果您没有安装HMCL，下载后，将解压缩后的<code>datapacks</code>文件夹和<code>resources.zip</code>放入<code>.minecraft/saves/世界名</code>文件夹。如果您安装了HMCL，新建世界后，打开HMCL，点击左侧相应版本右侧的齿轮打开设置，选择世界/数据包，点击相应世界右侧的三个点并选择管理数据包，点击+并选择下载好的压缩包导入。</p>
+<p>下载后，将解压缩后的<code>datapacks</code>文件夹和<code>resources.zip</code>放入<code>.minecraft/saves/世界名</code>文件夹。注意，1.14快照无法读取.zip格式资源包，因此请将资源包解压并放入resourcepacks文件夹，然后选择该资源包。不要将resources.zip放入世界存档文件夹。</p>
 
-<p>注意，1.14快照无法读取.zip格式资源包，因此请将资源包解压并放入resourcepacks文件夹，然后选择该资源包。不要将resources.zip放入世界存档文件夹。</p>
-
-<p>安装完成后进入游戏并按下F3+T或退出世界重进即可。如需安装在服务器类似操作，请设置为自动下载资源包，客户端无需安装数据包。</p>
+<p>安装完成后进入游戏并按下F3+T或退出世界重进即可。服务端的操作类似，请设置为自动下载资源包，客户端无需安装数据包。</p>
 
 
-<p>涉及模组特有物品均需使用<a href="#crafting_machine"><img src="items/crafting_machine.png" style="height:20px;" />合成器</a>来合成。模组部分参数可通过修改<a href="#config">配置文件</a><code>datapacks/craftingpp/data/cpp/functions/config.mcfunction</code>修改。模组大部分文字支持英文、简体中文、繁体中文。如有任何意见建议，欢迎<a href="http://www.mcbbs.net/thread-696861-1-1.html">在论坛回复</a>、<a href="https://github.com/ruhuasiyu/craftingpp/issues/new">发起issue</a>或<a href="http://www.mcbbs.net/home.php?mod=spacecp&ac=pm&touid=975525">私信我</a>，请在反馈时提供游戏版本和模组版本。</p>
+<p>大部分合成需使用<a href="#crafting_machine"><img src="items/crafting_machine.png" style="height:20px;" />合成器</a>。模组需要的附魔之瓶可通过副手持有漏斗获取。</p>
+<p>部分参数可通过<a href="#config">配置文件</a><code>datapacks/craftingpp/data/cpp/functions/config.mcfunction</code>修改。模组支持英文、简体中文、繁体中文三种语言。如有任何意见建议，欢迎<a href="http://www.mcbbs.net/thread-696861-1-1.html">在论坛回复</a>、<a href="https://github.com/ruhuasiyu/craftingpp/issues/new">发起issue</a>或<a href="http://www.mcbbs.net/home.php?mod=spacecp&ac=pm&touid=975525">私信我</a>，请在反馈时提供游戏版本和模组版本。</p>
 
 <p>转载本文需遵守<strong><a href="https://creativecommons.org/licenses/by-nc-nd/2.5/cn/">CC BY-NC-ND 2.5 CN 许可协议</a></strong>——列出作者(<a href="http://www.mcbbs.net/home.php?mod=spacecp&ac=pm&touid=975525">ruhuasiyu@mcbbs</a>)、来源、原始下载链接以及相同的许可协议。模组代码使用需遵守<a href="https://www.gnu.org/licenses/gpl.html">GNU GENERAL PUBLIC LICENSE v3.0</a>协议。请勿转载至网盘或文件存储平台，通讯类工具允许下载后分享。公益服务器可直接使用；非公益服务器需先联系我。</p>
 
 <h3>💖 支持我们</h3>
-<p>如果您想要对我们进行支持，可使用<a href="https://afdian.net/@ruhuasiyu">爱发电</a>、<a href="https://i.loli.net/2018/08/16/5b751fcd32566.png">支付宝</a>、<a href="https://i.loli.net/2018/08/05/5b66d8a6eb4c6.png">微信</a>、<a href="https://space.bilibili.com/4469715">bilibili充电</a>对我们进行赞助。您的赞助对我们至关重要，非常感谢您的支持！</p>
+<p>模组的开发需要耗费我们大量时间和精力，如果您想要对我们进行支持，可使用<a href="https://afdian.net/@ruhuasiyu">爱发电</a>、<a href="https://i.loli.net/2018/08/16/5b751fcd32566.png">支付宝</a>、<a href="https://i.loli.net/2018/08/05/5b66d8a6eb4c6.png">微信</a>、<a href="https://space.bilibili.com/4469715">bilibili充电</a>对我们进行赞助。您的赞助对我们至关重要，非常感谢您的支持！</p>
 
 <h3 id="acknowledge">👷 制作者名单</h3>
 <p><span style="font-weight:bold;">数据包设计</span>：ruhuasiyu</p>
-<p><span style="font-weight:bold;">资源包设计</span>：ruhuasiyu RubberTree 天狼星black 折君 匠魂 Gingerbread MC先生</p>
+<p><span style="font-weight:bold;">资源包设计</span>：ruhuasiyu RubberTree 折君 天狼星black 匠魂 Gingerbread MC先生</p>
 <p><span style="font-weight:bold;">服务器支持</span>：HerobrineXia</p>
 <p><span style="font-weight:bold;">平台支持</span>：<a href="https://www.mcbbs.net/">Minecraft(我的世界)中文论坛</a> <a href="https://www.mcmod.cn/">MC百科</a> </p>
-<p><span style="font-weight:bold;">经费支持</span>：墨鱼 火星浮云 倪采臣 SPGoding ustc_zzzz 苹果果 落天望月 chyx switefaster</p>
-<p>设计过程中亦参考了<a href="http://teamcofh.com/">热力膨胀</a> <a href="https://botaniamod.net/">植物魔法</a>、<a href="http://www.abyssalcraft.com/">深渊国度</a>、<a href="https://minecraft.curseforge.com/projects/pams-harvestcraft">潘马斯农场</a>、盐等模组以及Bilibili与Youtube一些视频，<a href="http://www.mcbbs.net/group-546-1.html">CBL小组</a>、<a href="http://www.mcbbs.net/group-1009-1.html">TCP小组</a>、<a href="http://www.mcbbs.net/group-1474-1.html">CBV小组</a>、<a href="http://www.mcbbs.net/group-1478-1.html">MAG小组</a>等小组以及<a href="http://www.mcbbs.net/?1963599">pineapple_</a>、<a href="http://www.mcbbs.net/?160123">贰逼</a>、ECS、<a href="https://github.com/pca006132">pca</a>、<a href="http://www.mcbbs.net/?720449">玄素</a>、<a href="http://www.mcbbs.net/?582040">chyx</a>、<a href="https://github.com/ustc-zzzz">zzzz_ustc</a>、<a href="http://www.mcbbs.net/?1073223">乙烯_中国</a>、<a href="https://github.com/switefaster">switefaster</a>、折君、<a href="http://www.mcbbs.net/?725858">⊙v⊙</a>、Herobrinexia等玩家亦对此模组有贡献。</p>
-<p style="color:red;">感谢以上所有玩家，特别感谢对我们给予经费支持的玩家！</p>
+<p><span style="font-weight:bold;">赞助名单</span>：墨鱼 火星浮云 倪采臣 SPGoding ustc_zzzz 苹果果 落天望月 chyx switefaster</p>
+<p>设计过程中亦参考了<a href="http://teamcofh.com/">热力膨胀</a>、<a href="https://botaniamod.net/">植物魔法</a>、<a href="http://www.abyssalcraft.com/">深渊国度</a>、<a href="https://minecraft.curseforge.com/projects/pams-harvestcraft">潘马斯农场</a>、盐等模组以及Bilibili与Youtube一些视频，<a href="http://www.mcbbs.net/group-546-1.html">CBL小组</a>、<a href="http://www.mcbbs.net/group-1009-1.html">TCP小组</a>、<a href="http://www.mcbbs.net/group-1474-1.html">CBV小组</a>、<a href="http://www.mcbbs.net/group-1478-1.html">MAG小组</a>等小组以及<a href="http://www.mcbbs.net/?1963599">pineapple_</a>、<a href="http://www.mcbbs.net/?160123">贰逼</a>、ECS、<a href="https://github.com/pca006132">pca</a>、<a href="http://www.mcbbs.net/?720449">玄素</a>、<a href="http://www.mcbbs.net/?582040">chyx</a>、<a href="https://github.com/ustc-zzzz">zzzz_ustc</a>、<a href="http://www.mcbbs.net/?1073223">乙烯_中国</a>、<a href="https://github.com/switefaster">switefaster</a>、折君、<a href="http://www.mcbbs.net/?725858">⊙v⊙</a>、Herobrinexia等玩家亦对此模组有贡献。</p>
+<p style="color:red;">感谢以上所有玩家，特别感谢对我们给予赞助的玩家！</p>
 
 <!------------------------------------------------------------------------------------------------->
 <h2 id="index">索引</h2>
@@ -165,6 +165,7 @@
   <a href="#improved_mob">怪物加强</a> 
 · <a href="#dark_animals">黑暗动物</a> 
 · <a href="#villager">村民</a> 
+· <a href="#chicken_roost">鸡窝</a>
 · <a href="#fishing">钓鱼</a>
 · <a href="#trade">交易</a>
 </td></tr>
@@ -225,7 +226,7 @@
 · <a href="#clay_bucket"><span class="ci" style="background-position: -96px -80px;"></span>粘土桶</a>
 · <a href="#ghast_tear"><span style="background-position: -272px -320px;"></span>恶魂之泪</a>
 · <a href="#tropical_fish_bucket"><span style="background-position: -320px -832px;"></span>热带鱼桶</a>
-· <a href="#other_vanilla"><span style="background-position: -256px -560px;"></span>其它原版物品</a>
+· <a href="#other_vanilla_items"><span style="background-position: -256px -560px;"></span>其它原版物品</a>
 </td></tr>
 
 <tr><th>粉末</th><td>
@@ -277,6 +278,7 @@
 · <a href="#coordinate_recorder"><span class="ci" style="background-position: -112px -144px;"></span>坐标记录仪</a> 
 · <a href="#grafter"><span class="ci" style="background-position: -128px -144px;"></span>剪枝器</a> 
 · <a href="#glass_pickaxe"><span class="ci" style="background-position: -112px -416px;"></span>玻璃镐</a>
+· <a href="#roost"><span class="ci" style="background-position: -112px -416px;"></span>鸡窝</a>
 · <a href="#flags"><span class="ci" style="background-position: -0px -576px;"></span><span class="ci" style="background-position: -16px -576px;"></span><span class="ci" style="background-position: -32px -576px;"></span><span class="ci" style="background-position: -48px -576px;"></span><span class="ci" style="background-position: -64px -576px;"></span>旗帜</a>
 · <a href="#logos"><span class="ci" style="background-position: -80px -576px;"></span><span class="ci" style="background-position: -96px -576px;"></span><span class="ci" style="background-position: -112px -576px;"></span><span class="ci" style="background-position: -128px -576px;"></span><span class="ci" style="background-position: -144px -592px;"></span>标志</a>
 · <a href="#shield_pattern"><span class="ci" style="background-position: -0px -160px;"></span><span class="ci" style="background-position: -16px -160px;"></span><span class="ci" style="background-position: -32px -160px;"></span><span class="ci" style="background-position: -48px -160px;"></span><span class="ci" style="background-position: -64px -160px;"></span><span class="ci" style="background-position: -80px -160px;"></span><span class="ci" style="background-position: -96px -160px;"></span><span class="ci" style="background-position: -112px -160px;"></span><span class="ci" style="background-position: -128px -160px;"></span><span class="ci" style="background-position: -144px -176px;"></span>盾牌图案</a>
@@ -515,6 +517,9 @@
 <p class="small">村民被玩家吸引不会自动爬升方块，使用台阶或楼梯来辅助之。</p>
 <img style="height:250px" src="items/screenshots/rare_drops.png" />
 
+<h3 id="chicken_roost">鸡窝</h3>
+<p>鸡将要下蛋时会寻找附近的鸡窝，如果没有则会创建一个。鸡必须有鸡窝才能下蛋。鸡死亡后掉落<code>0~1+0.5×抢夺等级</code>个鸡蛋。</p>
+<img style="height:250px" src="items/screenshots/chicken_roost.png" />
 
 <h3 id="fishing">钓鱼</h3>
 <p>有几率掉到宝藏湿海绵、鳕鱼头/鲑鱼头/热带鱼头/河豚头、<a href="#heart_of_ocean">海洋之心</a>和垃圾火药/海晶碎片。</p>
@@ -1799,8 +1804,15 @@
 </tbody></table>
 
 <h3 id="other_vanilla_items">其它原版物品</h3>
+<p>花卉合成染料的配方均修改为烧炼配方。</p>
+<table><thead><tr><th>产物</th><th>材料</th><th>配方</th></tr></thead><tbody>
+<tr><th>染料</th>
+<td>花</td>
+<td><span class="ui fur" title="熔炉">
+<span class="poppy" title="虞美人"></span>
+<span class="coal" title="燃料"></span>
+<span class="red_dye" title="红色染料"></td></tr>
 
-<table><thead><tr><th>产物</th><th>材料</th><th>烧炼配方</th></tr></thead><tbody>
 <tr><th>兔子皮</th>
 <td>腐肉<br/>皮革盔甲<br/>鞍</td>
 <td><span class="ui fur" title="熔炉、烟熏炉或营火">
@@ -1815,9 +1827,7 @@
 <span class="coal" title="燃料"></span>
 <span class="iron_ingot" title="铁锭"></span>
 </span></td></tr>
-</tbody></table>
 
-<table><thead><tr><th>名称</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
 <tr><th>草方块</th><td>草+泥土</td>
 <td><span class="ui ct" title="工作台">
 <span class="grass" title="草"></span>
@@ -2864,6 +2874,25 @@
 <span class="stick" title="木棍"></span>
 <span class="empty"></span>
 <span class="ci glass_pickaxe" title="玻璃镐"></span>
+</span></td></tr>
+</tbody></table>
+
+<h3 id="roost">鸡窝 (Roost)</h3>
+<span class="ui single"><span class="ci roost"></span></span>
+<p>可作为鸡下蛋的位置，破坏后无掉落。</p>
+<table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
+<tr><th>鸡窝</th><td>小麦</td>
+<td><span class="ui cm" title="合成器">
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="wheat" title="小麦"></span>
+<span class="empty"></span>
+<span class="wheat" title="小麦"></span>
+<span class="wheat" title="小麦"></span>
+<span class="wheat" title="小麦"></span>
+<span class="wheat" title="小麦"></span>
+<span class="ci roost" title="鸡窝"></span>
 </span></td></tr>
 </tbody></table>
 
@@ -5185,7 +5214,7 @@
 <span class="shapeless" title="此配方是无形的，材料可以以任何排列方式放置在合成格内。"></span>
 </span></td></tr>
 </tbody></table>
-<p><img style="width:90%" src="items/screenshots/paintings.png" /></p>
+<p><img style="height:400px" src="items/screenshots/paintings.png" /></p>
 
 <h3 id="colorful_sign">彩色告示牌 (Colorful Sign)</h3>
 <span class="ui single"><span class="ci white_sign"></span></span>
@@ -5330,8 +5359,7 @@
 
 <h3 id="random_block">随机方块</h3>
 <p>副手持有潜影箱而主手为空时，将会从潜影箱随机选择一个给予玩家。</p>
-
-<p><img style="width:48%" src="items/screenshots/dispenser_plant.png" /> <img style="width:48%" src="items/screenshots/random_block.png" /></p>
+<p><img style="height:200px" src="items/screenshots/random_block.png" /></p>
 
 <h3 id="sort_chest">箱子整理</h3>
 <p>当玩家主手/副手持有木棍右击箱子/潜影箱后，箱子内的物品会按照物品id的长度/物品数量从小到大排序。该操作不会合并同名的物品。</p>
@@ -5346,19 +5374,22 @@
 <tr><td>灰化土、菌丝上方</td><td>蘑菇</td></tr>
 <tr><td>丛林木侧面</td><td>可可豆</td></tr>
 </tbody></table>
+<p><img style="height:200px" src="items/screenshots/dispenser_plant.png" /></p>
 
 <h3 id="mix_slabs">复合台阶</h3>
-<p>如果一个台阶位于一个格子的底部，我们用另一台阶右击其顶部即可将二者复合。该位置仅上半部分有方块。破坏上半台阶后下半台阶会保留，无法直接破坏下半台阶。</p>
+<p>手持台阶右击一下半台阶顶部可将二者复合。</p>
 
 <h3 id="vertical_blocks">竖纹方块</h3>
 <p>部分方块双台阶材质修改为竖纹。</p>
+<p><img style="height:160px" src="items/screenshots/vertical_blocks.png" /></p>
 
 <h3 id="vertical_slabs">竖台阶</h3>
 <p>墙名称和模型均修改为竖台阶。</p>
+<p><img style="height:200px" src="items/screenshots/vertical_slabs.png" /></p>
+
 
 <h3 id="nether_dry_wet_sponge">干燥湿海绵</h3>
 <p>湿海绵在下界可直接被干燥为海绵。</p>
-
 <!------------------------------------------------------------------------------------------------>
 <h2 id="trade">交易</h2>
 <p>新增了9种村民。现在制图师可以出售所有结构的地图，使用<a href="#moon_shard">月之碎片</a>购买，在下界/末地可以购买下界要塞/末地城地图，超平坦模式下无效。</p>
@@ -5608,8 +5639,8 @@
 <tr>
 	<td>沙子(方块)</td>
 	<td>砂砾(方块)</td>
-	<td>24% 燧石</td><td>24% 煤</td><td>24% 铁粒</td><td>16% 金粒</td><td>5% 石英</td><td>5% 青金石</td><td>1% 绿宝石</td><td>1% 钻石</td>
-	<td>32% 枯萎的灌木</td><td>24% 铁粒</td><td>16% 金粒</td><td>10% 骨粉</td><td>10% 红石</td><td>6% 火药</td><td>2% 烈焰粉</td>
+	<td>24% 燧石</td><td>24% 煤</td><td>24% 1~4铁粒</td><td>16% 1~4金粒</td><td>5% 石英</td><td>5% 青金石</td><td>1% 绿宝石</td><td>1% 钻石</td>
+	<td>32% 枯萎的灌木</td><td>24% 1~4铁粒</td><td>16% 1~4金粒</td><td>10% 骨粉</td><td>10% 红石</td><td>6% 火药</td><td>2% 烈焰粉</td>
 </tr>
 </tbody></table>
 
@@ -5888,13 +5919,14 @@ scoreboard players set #rituals_time cppValue 1200
 
 <!------------------------------------------------------------------------------------------------>
 <h2 id="changelog">更新日志</h2>
-<p>模组版本：1.9(魔法更新)</p><p>更新时间：2019年待定</p><p>模组大小：6737 KB</p><p>更新内容：</p><ul>
-<li>游戏本体版本升级为1.14，不再支持1.14之前的版本。</li><li>新增并修改材质。</li><li>新增使用指令/loot give @s loot cpp:物品英文名可获取相应物品。</li><li>新增附魔室的物品要塞地图、地牢地图。</li><li>新增附魔室生成幻术师。</li><li>新增自然生成农作物。</li><li>新增自然生成花草。</li><li>新增自然生成水果树和矿石树。</li><li>现在死亡的云杉仅在针叶林及其变种生物群系内生成。</li><li>现在死珊瑚扇仅在沙漠和恶地及其变种生物群系内生成。</li><li>修改了骷髅和僵尸的盔甲、武器算法和几率。</li><li>修改了高压爬行者的几率。</li><li>新增对凋零骷髅的加强。</li><li>新增部分生物的稀有掉落物。</li><li>修改肉类名称。</li><li>新增玩家死亡掉落头。</li><li>鸡死亡掉落鸡蛋数受抢夺加成上限从1调整为0.5。</li><li>新增森林蝙蝠掉落香橼。</li><li>绿宝石块吸引村民支持副手。</li><li>修改所有配方中的染料为1.14的相应染料。</li><li>修改花合成染料为烧炼。</li><li>烧炼配方现在支持高炉、烟熏炉和营火。</li><li>新增信标增强器可选择敌对/全部生物。</li><li>新增多功能一体机常温常压模式制作竹子。</li><li>修改多功能一体机常温高压下部分产物几率和数量。</li><li>移除多功能一体机常温高压下压缩功能。</li><li>修改生物投影仪的豹猫为猫。</li><li>修改生物投影仪材质，可以显示正在生成的生物。</li><li>修改除信标增强器外的机器所在方块为木桶。</li><li>新增碎钻，烧炼矿石制品得到，可合成钻石。</li><li>新增煤粒，煤炭或木炭分解得到。</li><li>修复粗硅的错误名称。</li><li>修改矿石粉为只需要/只能烧炼出1个矿物。</li><li>修改月之碎片合成配方中的附魔金苹果为粘液球。</li><li>新增4个月之碎片和末影之眼合成日之碎片。</li><li>新增4个日之碎片和下界之星合成2下界之星。</li><li>新增月石，使用9月之碎片合成，可分解。</li><li>新增日石，使用9日之碎片合成，可分解。</li><li>移除神秘烈焰粉和神秘兔子脚。</li><li>修改草方块的合成配方为8草丛加泥土。</li><li>修改菌丝的合成配方为4棕色蘑菇、4红色蘑菇加泥土。</li><li>修改皮革和兔子皮的比例恢复为1:4。</li><li>修改石英块和石英的比例恢复为1:4。</li><li>修改合成珊瑚块所需珊瑚个数为4。</li><li>新增热带鱼类别的翻译。</li><li>修改热带鱼桶的合成配方。</li><li>移除彩色床加染料合成彩色床的配方。</li><li>修改蓝色天之力为可根据当前天气调节。</li><li>修改白色电之力的功能为消耗6点生命值恢复10点魔力值。</li><li>新增剪枝器，2木棍和附魔铁锭合成，破坏树叶得到树苗。</li><li>新增玻璃镐，可破坏玻璃。</li><li>新增鸡窝，使用5小麦合成，破坏后无掉落。</li><li>鸡将要下蛋时会寻找附近的鸡窝，如果没有则会创建一个。</li><li>鸡必须有鸡窝才能下蛋。</li><li>调整了傀儡农民和傀儡矿工的功能。</li><li>新增中国国旗，使用牡丹、焰光菊、金盏花和红色旗帜合成得到。</li><li>新增美国国旗，使用玫瑰丛、风信子、蓬蓬草和白色旗帜合成得到。</li><li>新增俄罗斯国旗，使用向日葵、风信子、蓬蓬草和红色旗帜合成得到。</li><li>新增英国国旗，使用虞美人、风信子、蓬蓬草和白色旗帜合成得到。</li><li>新增法国国旗，使用矢车菊、风信子、蓬蓬草和红色旗帜合成得到。</li><li>新增bilibili标志，使用黑荆棘、白车轴、芦苇草和画合成得到。</li><li>新增github标志，使用黑荆棘、白车轴、香蒲草和画合成得到。</li><li>新增mcmod标志，使用黑荆棘、白车轴、异绒兰和画合成得到。</li><li>新增tcp标志，使用黑荆棘、白车轴、紫荆花和画合成得到。</li><li>新增cbl标志，使用黑荆棘、白车轴、风信子和画合成得到。</li><li>新增盾牌和国旗或标志合成相应图案的盾牌。</li><li>新增食物饥饿值显示。</li><li>新增煮鸡蛋代替鸡蛋羹，恢复2点饥饿值。</li><li>修改土豆牛肉、土豆排骨、兔肉煲效果为力量I。</li><li>修改土豆牛肉等食物为无序合成。</li><li>修改炸鱼薯条的配方为盐瓶、熟鳕鱼、烤马铃薯、番茄酱和碗。</li><li>修改肉松面包的配方为盐瓶、小麦和熟鸡肉或熟鹦鹉肉。</li><li>新增番茄酱，使用西红柿、糖和盐瓶合成，恢复5点饥饿值。</li><li>新增奶酪，使用牛奶桶和柠檬无序合成，恢复5点饥饿值。</li><li>新增汉堡，使用番茄酱、奶酪、西红柿、牛排和面包无序合成，恢复20点饥饿值。</li><li>新增披萨，使用番茄酱、奶酪、西红柿、熟猪排和小麦无序合成，恢复5点饥饿值。</li><li>新增寿司，使用干海带、小麦和生鲑鱼无序合成，恢复5点饥饿值。</li><li>新增仰望星空派，使用熟鳕鱼、熟猪排、棕色蘑菇和小麦合成，恢复16点饥饿值。</li><li>新增烤鸡，使用熟鸡肉、柠檬和烤马铃薯合成，恢复16点饥饿值。</li><li>新增饺子，使用熟猪排或熟牛排和8小麦合成得到4个，恢复5点饥饿值。</li><li>新增25种可食用的水果。</li><li>新增葡萄干，烧炼葡萄/金葡萄得到，食用后获得10秒速度。</li><li>现在冷饮可恢复5点魔力值。</li><li>新增稀有掉落物可用于酿造。</li><li>修改连锁算法，现在只破坏镐子可挖掘的方块了。</li><li>新增花草替代作物，成熟后破坏得到花草。</li><li>新增花草烧炼成对应物。</li><li>新增花草合成为3个对应种子。</li><li>修改羊毛树掉落羊毛树树苗、鱼和羊。</li><li>移除水果树树苗、矿石树树苗、羊毛树树苗的合成配方。</li><li>新增圣诞花，使用虞美人、彼岸花、金盏花和碎璃草无序合成。</li><li>新增圣诞树，使用4荧石粉、2雪球、2圣诞花和云杉树苗合成。</li><li>现在漂浮时可按下shift下降。</li><li>修改扫帚和流星丸需要跳跃才可漂浮，移除主手效果。</li><li>新增魔法，包括召唤术：风火雷雨灵，催化术：风火雷雨灵地。</li><li>若要使用魔法，玩家需要副手持有魔杖，然后按下对应的键，最后双击F发动，玩家需要拥有足够的魔法值方可。</li><li>新增出生点附近生成魔导石，每秒恢复32米内玩家1点魔法值，上限30点。</li><li>新增4级星标上的信标增强仪每秒恢复64米内玩家1点魔法值，上限60点。</li><li>新增4级星标上的信标增强仪，若顶层基座使用5日石和4月石，每秒恢复128米内玩家1点魔法值，上限100点。</li><li>现在头饰可直接佩戴。</li><li>新增紫色美瞳，戴上后显示玩家附近的野生花草。</li><li>新增花环每10秒恢复玩家1点魔法值，上限30点。</li><li>新增原谅帽每10秒恢复玩家1点魔法值，上限60点。</li><li>新增冕旒每10秒恢复玩家1点魔法值，上限100点。</li><li>新增烈焰红唇、愚弄眼镜、小黄人眼罩。</li><li>新增经典画作，使用羽毛、黑色染料和画无序合成。</li><li>将经典画作放置在物品展示框上，会随机显示33种画的一种。</li><li>新增彩色告示牌。</li><li>新增玻璃物品展示框，使用玻璃板和8个木棍合成。放入物品后变透明。</li><li>修改合成楼梯数量为4个，楼梯回收为6个。</li><li>移除平滑方块的合成和加速效果。</li><li>将实用功能部分分离为发射器种植、下界干燥湿海绵、复合台阶、随机方块、箱子排序、炼药锅功能。</li><li>新增炼药锅漂白羊毛、床、粘性活塞。</li><li>修改了随机方块功能为：副手持有潜影箱而主手为空时，将会从潜影箱随机选择一个给予玩家。</li><li>修改箱子排序为只需主手或副手持有木棍即可。</li><li>修改箱子排序算法，现在支持大箱子且可以满槽位。</li><li>修改墙名称为竖台阶和模型。</li><li>移除竖台阶。</li><li>修改双台阶模型材质为竖纹。</li><li>修改末影龙掉落龙蛋方块而不是龙头。</li><li>修改村民代码以支持1.14。</li><li>为村民出售的食物添加了饱食度显示。</li><li>制图师现在可以出售各种结构的地图了，使用月之碎片购买。与所在维度有关，若无相应结构则无效。</li><li>修改了tcp的logo。</li><li>新增空岛8草丛加泥土合成草方块。</li><li>新增空岛4棕色蘑菇、4红色蘑菇加泥土合成菌丝。</li><li>新增方块破坏器下方的伸出的活塞臂收回时，会自动破坏其上方的方块。</li><li>新增空岛初始物资箱子、泥土、树苗、16骨粉。</li><li>新增空岛雪球加4树苗或作物或树叶合成泥土。</li><li>新增空岛合成烈焰棒。</li><li>新增空岛玩家杀死生物时背包的沙子会变成灵魂沙。</li><li>新增粉碎机粉碎泥土有几率掉落草丛。</li><li>新增粉碎机粉碎沙子有几率掉落枯萎的灌木。</li><li>新增粉碎机粉碎泥土有几率掉落水果树树苗、矿石树树苗、羊毛树树苗、竹子。</li><li>新增空岛破坏草丛掉落甜浆果。</li><li>修改空岛破坏草丛掉落种子而不是使用粉碎机粉碎泥土。</li><li>修改空岛破坏枯萎的灌木掉落种子而不是使用粉碎机粉碎沙子。</li><li>修改粉碎机粉碎圆石变为沙子。</li><li>修改粉碎机粉碎石头变为砂砾。</li><li>移除空岛无限草方块。</li><li>移除空岛合成砂砾的配方。</li><li>移除空岛石头合成炼药锅。</li><li>新增粉碎机粉碎泥土有几率掉落竹子。</li><li>新增空岛破坏草丛掉落甜浆果。</li><li>新增空岛破坏海草有几率掉落海带。</li>
+<p>模组版本：1.9(魔法更新)</p><p>更新时间：2019年待定</p><p>模组大小：3908 KB</p><p>更新内容：</p><ul>
+<li>游戏本体版本升级为1.14，不再支持1.14之前的版本。</li><li>新增并修改材质。</li><li>新增使用指令/loot give @s loot cpp:物品英文名可获取相应物品。</li><li>新增附魔室的物品要塞地图、地牢地图。</li><li>新增附魔室生成幻术师。</li><li>新增自然生成农作物。</li><li>新增自然生成花草。</li><li>新增自然生成水果树和矿石树。</li><li>现在死亡的云杉仅在针叶林及其变种生物群系内生成。</li><li>现在死珊瑚扇仅在沙漠和恶地及其变种生物群系内生成。</li><li>修改了骷髅和僵尸的盔甲、武器算法和几率。</li><li>修改了高压爬行者的几率。</li><li>新增对凋零骷髅的加强。</li><li>新增部分生物的稀有掉落物。</li><li>修改肉类名称。</li><li>新增玩家死亡掉落头。</li><li>鸡死亡掉落鸡蛋数受抢夺加成上限从1调整为0.5。</li><li>新增森林蝙蝠掉落香橼。</li><li>绿宝石块吸引村民支持副手。</li><li>修改所有配方中的染料为1.14的相应染料。</li><li>修改花合成染料为烧炼。</li><li>烧炼配方现在支持高炉、烟熏炉和营火。</li><li>新增信标增强器可选择敌对/全部生物。</li><li>新增多功能一体机常温常压模式制作竹子。</li><li>修改多功能一体机常温高压下部分产物几率和数量。</li><li>移除多功能一体机常温高压下压缩功能。</li><li>修改生物投影仪的豹猫为猫。</li><li>修改生物投影仪材质，可以显示正在生成的生物。</li><li>修改除信标增强器外的机器所在方块为木桶。</li><li>新增碎钻，烧炼矿石制品得到，可合成钻石。</li><li>新增煤粒，煤炭或木炭分解得到。</li><li>修复粗硅的错误名称。</li><li>修改矿石粉为只需要/只能烧炼出1个矿物。</li><li>修改月之碎片合成配方中的附魔金苹果为粘液球。</li><li>新增4个月之碎片和末影之眼合成日之碎片。</li><li>新增4个日之碎片和下界之星合成2下界之星。</li><li>新增月石，使用9月之碎片合成，可分解。</li><li>新增日石，使用9日之碎片合成，可分解。</li><li>移除神秘烈焰粉和神秘兔子脚。</li><li>修改草方块的合成配方为8草丛加泥土。</li><li>修改菌丝的合成配方为4棕色蘑菇、4红色蘑菇加泥土。</li><li>修改皮革和兔子皮的比例恢复为1:4。</li><li>修改石英块和石英的比例恢复为1:4。</li><li>修改合成珊瑚块所需珊瑚个数为4。</li><li>新增热带鱼类别的翻译。</li><li>修改热带鱼桶的合成配方。</li><li>移除彩色床加染料合成彩色床的配方。</li><li>修改蓝色天之力为可根据当前天气调节。</li><li>修改白色电之力的功能为消耗6点生命值恢复10点魔力值。</li><li>新增剪枝器，2木棍和附魔铁锭合成，破坏树叶得到树苗。</li><li>新增玻璃镐，可破坏玻璃。</li><li>新增鸡窝，使用5小麦合成，破坏后无掉落。</li><li>鸡将要下蛋时会寻找附近的鸡窝，如果没有则会创建一个。</li><li>鸡必须有鸡窝才能下蛋。</li><li>调整了傀儡农民和傀儡矿工的功能。</li><li>新增中国国旗，使用牡丹、焰光菊、金盏花和红色旗帜合成得到。</li><li>新增美国国旗，使用玫瑰丛、风信子、蓬蓬草和白色旗帜合成得到。</li><li>新增俄罗斯国旗，使用向日葵、风信子、蓬蓬草和红色旗帜合成得到。</li><li>新增英国国旗，使用虞美人、风信子、蓬蓬草和白色旗帜合成得到。</li><li>新增法国国旗，使用矢车菊、风信子、蓬蓬草和红色旗帜合成得到。</li><li>新增bilibili标志，使用黑荆棘、白车轴、芦苇草和画合成得到。</li><li>新增github标志，使用黑荆棘、白车轴、香蒲草和画合成得到。</li><li>新增mcmod标志，使用黑荆棘、白车轴、异绒兰和画合成得到。</li><li>新增tcp标志，使用黑荆棘、白车轴、紫荆花和画合成得到。</li><li>新增cbl标志，使用黑荆棘、白车轴、风信子和画合成得到。</li><li>新增盾牌和国旗或标志合成相应图案的盾牌。</li><li>新增食物饥饿值显示。</li><li>新增煮鸡蛋代替鸡蛋羹，恢复2点饥饿值。</li><li>修改土豆牛肉、土豆排骨、兔肉煲效果为力量I。</li><li>修改土豆牛肉等食物为无序合成。</li><li>修改炸鱼薯条的配方为盐瓶、熟鳕鱼、烤马铃薯、番茄酱和碗。</li><li>修改肉松面包的配方为盐瓶、小麦和熟鸡肉或熟鹦鹉肉。</li><li>新增番茄酱，使用西红柿、糖和盐瓶合成，恢复5点饥饿值。</li><li>新增奶酪，使用牛奶桶和柠檬无序合成，恢复5点饥饿值。</li><li>新增汉堡，使用番茄酱、奶酪、西红柿、牛排和面包无序合成，恢复20点饥饿值。</li><li>新增披萨，使用番茄酱、奶酪、西红柿、熟猪排和小麦无序合成，恢复5点饥饿值。</li><li>新增寿司，使用干海带、小麦和生鲑鱼无序合成，恢复5点饥饿值。</li><li>新增仰望星空派，使用熟鳕鱼、熟猪排、棕色蘑菇和小麦合成，恢复16点饥饿值。</li><li>新增烤鸡，使用熟鸡肉、柠檬和烤马铃薯合成，恢复16点饥饿值。</li><li>新增饺子，使用熟猪排或熟牛排和8小麦合成得到4个，恢复5点饥饿值。</li><li>新增25种可食用的水果。</li><li>新增葡萄干，烧炼葡萄/金葡萄得到，食用后获得10秒速度。</li><li>现在冷饮可恢复5点魔力值。</li><li>新增稀有掉落物可用于酿造。</li><li>修改连锁算法，现在只破坏镐子可挖掘的方块了。</li><li>新增花草替代作物，成熟后破坏得到花草。</li><li>新增花草烧炼成对应物。</li><li>新增花草合成为3个对应种子。</li><li>修改羊毛树掉落羊毛树树苗、鱼和羊。</li><li>移除水果树树苗、矿石树树苗、羊毛树树苗的合成配方。</li><li>新增圣诞花，使用虞美人、彼岸花、金盏花和碎璃草无序合成。</li><li>新增圣诞树，使用4荧石粉、2雪球、2圣诞花和云杉树苗合成。</li><li>现在漂浮时可按下shift下降。</li><li>修改扫帚和流星丸需要跳跃才可漂浮，移除主手效果。</li><li>新增魔法，包括召唤术：风火雷雨灵，催化术：风火雷雨灵地。</li><li>若要使用魔法，玩家需要副手持有魔杖，然后按下对应的键，最后双击F发动，玩家需要拥有足够的魔法值方可。</li><li>新增出生点附近生成魔导石，每秒恢复32米内玩家1点魔法值，上限30点。</li><li>新增4级星标上的信标增强仪每秒恢复64米内玩家1点魔法值，上限60点。</li><li>新增4级星标上的信标增强仪，若顶层基座使用5日石和4月石，每秒恢复128米内玩家1点魔法值，上限100点。</li><li>现在头饰可直接佩戴。</li><li>新增紫色美瞳，戴上后显示玩家附近的野生花草。</li><li>新增花环每10秒恢复玩家1点魔法值，上限30点。</li><li>新增原谅帽每10秒恢复玩家1点魔法值，上限60点。</li><li>新增冕旒每10秒恢复玩家1点魔法值，上限100点。</li><li>新增烈焰红唇、愚弄眼镜、小黄人眼罩。</li><li>新增经典画作，使用羽毛、黑色染料和画无序合成。</li><li>将经典画作放置在物品展示框上，会随机显示33种画的一种。</li><li>新增彩色告示牌。</li><li>新增玻璃物品展示框，使用玻璃板和8个木棍合成。放入物品后变透明。</li><li>修改合成楼梯数量为4个，楼梯回收为6个。</li><li>移除平滑方块的合成和加速效果。</li><li>将实用功能部分分离为发射器种植、下界干燥湿海绵、复合台阶、随机方块、箱子排序、炼药锅功能。</li><li>新增炼药锅漂白羊毛、床、粘性活塞。</li><li>修改了随机方块功能为：副手持有潜影箱而主手为空时，将会从潜影箱随机选择一个给予玩家。</li><li>修改箱子排序为只需主手或副手持有木棍即可。</li><li>修改箱子排序算法，现在支持大箱子且可以满槽位。</li><li>移除竖台阶，修改墙名称为竖台阶和模型。</li>
+<li>现在复合台阶拥有完整碰撞箱且破坏后全部掉落。</li><li>修改双台阶模型材质为竖纹。</li><li>修改末影龙掉落龙蛋方块而不是龙头。</li><li>修改村民代码以支持1.14。</li><li>为村民出售的食物添加了饱食度显示。</li><li>制图师现在可以出售各种结构的地图了，使用月之碎片购买。与所在维度有关，若无相应结构则无效。</li><li>修改了tcp的logo。</li><li>新增空岛8草丛加泥土合成草方块。</li><li>新增空岛4棕色蘑菇、4红色蘑菇加泥土合成菌丝。</li><li>新增方块破坏器下方的伸出的活塞臂收回时，会自动破坏其上方的方块。</li><li>新增空岛初始物资箱子、泥土、树苗、16骨粉。</li><li>新增空岛雪球加4树苗或作物或树叶合成泥土。</li><li>新增空岛合成烈焰棒。</li><li>新增空岛玩家杀死生物时背包的沙子会变成灵魂沙。</li><li>新增粉碎机粉碎泥土有几率掉落草丛。</li><li>新增粉碎机粉碎沙子有几率掉落枯萎的灌木。</li><li>新增粉碎机粉碎泥土有几率掉落水果树树苗、矿石树树苗、羊毛树树苗、竹子。</li><li>新增空岛破坏草丛掉落甜浆果。</li><li>修改空岛破坏草丛掉落种子而不是使用粉碎机粉碎泥土。</li><li>修改空岛破坏枯萎的灌木掉落种子而不是使用粉碎机粉碎沙子。</li><li>修改粉碎机粉碎圆石变为沙子。</li><li>修改粉碎机粉碎石头变为砂砾。</li><li>移除空岛无限草方块。</li><li>移除空岛合成砂砾的配方。</li><li>移除空岛石头合成炼药锅。</li><li>新增粉碎机粉碎泥土有几率掉落竹子。</li><li>新增空岛破坏草丛掉落甜浆果。</li><li>新增空岛破坏海草有几率掉落海带。</li>
 </ul>
 
 <footer>
 <p>
-<a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/"><img src="items/crafting_machine.png" alt="官网" title="挼の原版模组合集" /></a>
+<a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/"><img src="items/crafting_machine.png" alt="官网" title="更多的合成" /></a>
 <a href="http://www.mcbbs.net/thread-696861-1-1.html"><img src="http://www.mcbbs.net/template/mcbbs/image/logo_sc.png" alt="Mcbbs" title="Minecraft(我的世界)中文论坛"></a>
 <a href="https://www.mcmod.cn/class/1297.html"><img src="items/mcmod.png" alt="Mcbbs" title="MC百科"></a>
 <a href="https://github.com/ruhuasiyu/CraftingPlusPlus"><img src="items/github.png" alt="GitHub" title="github" /></a>

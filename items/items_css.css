@@ -436,8 +436,7 @@ sup{
 	font-weight:normal;
 }
 em{
-	font-style:normal;
-	font-weight:bold;
+	font-style:italic;
 }
 .center{
 	text-align:center;

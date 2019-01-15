@@ -1,14 +1,17 @@
+<img src="http://home.ustc.edu.cn/~zsxqq/craftingpp/items/screenshots/banner.png" width="80%">
 # Crafting++
-This is a vanilla mod of minecraft by using datapacks.
-It adds lots of recipes, cook, tools, machines (maybe), plants, maps, etc.
-It supports English, but there is no wiki in English, through you can find the recipes in the webpage.
+This is a pack of datapacks of minecraft.
+It adds a lot of items, materials, tools, decors, etc.
 This project is licensed under the terms of the GNU General Public License v3.0.
+It supports English, but there is no wiki in English. You can find the recipes on the webpage.
 
 # 更多的合成
-这是Minecraft原版模组，添加了大量的合成表、食物、建筑等内容。该项目采用 GNU General Public License v3.0 协议。
+这是Minecraft原版模组，包括数百种物品、材料、工具、装饰等，以及新的村民交易和空岛系统。该项目采用 GNU General Public License v3.0 协议。
 
 # 更多的合成
-這是Minecraft原版模組，添加了大量的合成表、食物、建築等內容。該項目采用 GNU General Public License v3.0 協議。
+這是Minecraft原版模組，包括數百種物品、材料、工具、裝飾等，以及新的村民交易和空島系統。該項目采用 GNU General Public License v3.0 協議。
 
-主页：[https://ruhuasiyu.github.io/CraftingPlusPlus/](https://ruhuasiyu.github.io/CraftingPlusPlus/)
-[http://home.ustc.edu.cn/~zsxqq/craftingpp/](http://home.ustc.edu.cn/~zsxqq/craftingpp/)
+* [官方主页](http://home.ustc.edu.cn/~zsxqq/craftingpp)
+* [mcbbs中文论坛页面](http://www.mcbbs.net/thread-696861-1-1.html)
+* [mcmod wiki页面](https://www.mcmod.cn/class/1297.html)
+* [github 页面](https://ruhuasiyu.github.io/CraftingPlusPlus/)
