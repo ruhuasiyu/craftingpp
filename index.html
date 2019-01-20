@@ -53,7 +53,7 @@
 <p>原版模组一般是指使用命令而非<abbr title="forge liteloader rift fibric 等">mod api</abbr>来对游戏的可玩性做出修改。自1.13起，原版模组一般以数据包的形式出现。</p>
 
 <p>《更多的合成》是国内论坛最大的原版模组，包括数百种物品、材料、工具、装饰等，以及新的村民交易和空岛系统。《更多的合成》<span style="color:red">无明确的主题</span>，凡是作者认为原版没有而应该有的特性都有可能加入进来。</p>
-<p>最新版本为测试版v1.9-m01d17(魔法更新)，支持Minecraft Java版 1.14。</p>
+<p>最新版本为测试版v1.9-m01d20(魔法更新)，支持Minecraft Java版 1.14。</p>
 
 
 <h3 id="how_to_start">📦 如何开始</h3>
@@ -69,9 +69,9 @@
 <tbody>
 <tr>
 	<td>Minecraft Java版 19w03a</td>
-	<td>Crafting++ 1.9测试版m01d17</td>
-	<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/raw/master/versions/1.9/v1.9-m01d17.zip">github</a>
-      | <a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.9-m01d17.zip">官方</a></td>
+	<td>Crafting++ 1.9测试版m01d20</td>
+	<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/raw/master/versions/1.9/v1.9-m01d20.zip">github</a>
+      | <a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.9-m01d20.zip">官方</a></td>
 	<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/raw/master/versions/1.9/change.log">更新日志</a></td>
 </tr>
 <tr>
@@ -568,7 +568,6 @@
 <span class="ci all_in_one_machine" title="多功能一体机"></span>
 </span></td></tr>
 </tbody></table>
-<p><em>那个长得像土豆的东西其实是发电机。</em></p>
 <img style="height:200px" src="items/screenshots/all_in_one_machine.png" />
 <p>默认只能使用常压常温模式。主手持有相应的插件右击即可升级并解锁相应模式，包括：<a href="#low_temperature_plugin">低温插件</a>、<a href="#low_pressure_plugin">低压插件</a>、<a href="#high_temperature_plugin">高温插件</a>、<a href="#high_pressure_plugin">高压插件</a>。</p>
 <p>包括上方两个输入槽，下方两个输出槽。右上方为附魔之瓶槽位和经验槽。左侧三个槽位控制压力、温度和输出方向，按Q或Shift+左键切换模式。若输出方向有箱子/潜影箱/陷阱箱则会自动输出到箱子内。</p>
@@ -4378,7 +4377,7 @@
 <h3 id="fruit_sapling">水果树树苗 (Fruit Sapling)</h3>
 <span class="ui single"><span class="ci fruit_sapling"></span></span>
 <span class="ui single"><span class="ci fruit_leaves"></span></span>
-<p>水果树树苗种下并长大后，每隔一段时间会长出一个<a href="#fruits">水果</a>，破坏附着的树叶即可掉落。</p>
+<p>水果树树苗种下并长大后，每隔一段时间会长出一个<a href="#fruits">水果</a>，破坏附着的树叶即可掉落。只有下方为空气的树叶下方才能长出。</p>
 <p class="small">可用骨粉催熟。树叶转化平均需要1600秒，受时间调节器影响。每个树叶都对应一个实体，大面积种植可能会卡顿。</p>
 
 <h3 id="ore_sapling">矿石树树苗 (Ore Sapling)</h3>
@@ -4667,49 +4666,49 @@
 
 <h3 id="magic">魔法</h3>
 <p>若要使用魔法，玩家需要副手持有魔杖，此时会显示技能菜单和魔法值。通过滚动鼠标滑轮来选择相应魔法，然后按下F键发动。玩家需要拥有足够的魔法值。</p>
-<table><thead><tr><th>魔法</th><th>键</th><th>效果</th><th>范围/时长</th><th>魔杖等级</th><th>魔法值</th></tr></thead><tbody>
-<tr><td rowspan="3">召唤术：风</td><td rowspan="3">1212</td><td rowspan="3">将前方一定范围内实体吹向空中并掉落</td>
+<table><thead><tr><th>魔法</th><th>效果</th><th>范围/时长</th><th>魔杖等级</th><th>魔法值</th></tr></thead><tbody>
+<tr><td rowspan="3">召唤术：风</td><td rowspan="3">将前方一定范围内实体吹向空中并掉落</td>
 	<td>半径2米</td><td>1级</td><td rowspan="3">10</td></tr>
 <tr><td>半径3米</td><td>2级</td></tr>
 <tr><td>半径5米</td><td>3级</td></tr>
-<tr><td rowspan="3">召唤术：火</td><td rowspan="3">1213</td><td rowspan="3">在前方地面(32米内)召唤火焰</td>
+<tr><td rowspan="3">召唤术：火</td><td rowspan="3">在前方地面(32米内)召唤火焰</td>
 	<td>1米×3米×1米</td><td>1级</td><td rowspan="3">10</td></tr>
 <tr><td>3米×3米×3米</td><td>2级</td></tr>
 <tr><td>5米×3米×5米</td><td>3级</td></tr>
-<tr><td rowspan="3">召唤术：雷</td><td rowspan="3">1214</td><td rowspan="3">召唤闪电</td>
+<tr><td rowspan="3">召唤术：雷</td><td rowspan="3">召唤闪电</td>
 	<td>1道</td><td>1级</td><td rowspan="3">20</td></tr>
 <tr><td>5道</td><td>2级</td></tr>
 <tr><td>9道</td><td>3级</td></tr>
-<tr><td rowspan="3">召唤术：雨</td><td rowspan="3">1215</td><td rowspan="3">召唤雨</td>
+<tr><td rowspan="3">召唤术：雨</td><td rowspan="3">召唤雨</td>
 	<td>5分钟雨</td><td>1级</td><td rowspan="3">10</td></tr>
 <tr><td>10分钟雨</td><td>2级</td></tr>
 <tr><td>15分钟雷雨</td><td>3级</td></tr>
-<tr><td rowspan="3">召唤术：灵</td><td rowspan="3">1216</td><td rowspan="3">将前方实体石化(32米内)</td>
+<tr><td rowspan="3">召唤术：灵</td><td rowspan="3">将前方实体石化(32米内)</td>
 	<td>10秒</td><td>1级</td><td rowspan="3">5</td></tr>
 <tr><td>15秒</td><td>2级</td></tr>
 <tr><td>20秒</td><td>3级</td></tr>
 
-<tr><td rowspan="3">催化术：风</td><td rowspan="3">1312</td><td rowspan="3">让玩家获得悬浮效果</td>
+<tr><td rowspan="3">催化术：风</td><td rowspan="3">让玩家获得悬浮效果</td>
 	<td>60秒</td><td>1级</td><td rowspan="3">5</td></tr>
 <tr><td>90秒</td><td>2级</td></tr>
 <tr><td>120秒</td><td>3级</td></tr>
-<tr><td rowspan="3">催化术：火</td><td rowspan="3">1313</td><td rowspan="3">将附近的熔炉全部点燃，使其可烧炼物品</td>
+<tr><td rowspan="3">催化术：火</td><td rowspan="3">将附近的熔炉全部点燃，使其可烧炼物品</td>
 	<td>3米内，320秒</td><td>1级</td><td rowspan="3">10</td></tr>
 <tr><td>7米内，640秒</td><td>2级</td></tr>
 <tr><td>11米内，960秒</td><td>3级</td></tr>
-<tr><td rowspan="3">催化术：雷</td><td rowspan="3">1314</td><td rowspan="3">恢复玩家生命</td>
+<tr><td rowspan="3">催化术：雷</td><td rowspan="3">恢复玩家生命</td>
 	<td><img src="items/heart.png" title="4" /><img src="items/heart.png" title="4" /> 4点</td><td>1级</td><td rowspan="3">10</td></tr>
 <tr><td><img src="items/heart.png" title="8" /><img src="items/heart.png" title="8" /><img src="items/heart.png" title="8" /><img src="items/heart.png" title="8" /> 8点</td><td>2级</td></tr>
 <tr><td><img src="items/heart.png" title="16" /><img src="items/heart.png" title="16" /><img src="items/heart.png" title="16" /><img src="items/heart.png" title="16" /><img src="items/heart.png" title="16" /><img src="items/heart.png" title="16" /><img src="items/heart.png" title="16" /><img src="items/heart.png" title="16" /> 16点</td><td>3级</td></tr>
-<tr><td rowspan="3">催化术：雨</td><td rowspan="3">1315</td><td rowspan="3">清除附近的火，并将熔岩变成黑曜石</td>
+<tr><td rowspan="3">催化术：雨</td><td rowspan="3">清除附近的火，并将熔岩变成黑曜石</td>
 	<td>11米×11米</td><td>1级</td><td rowspan="3">10</td></tr>
 <tr><td>15米×15米</td><td>2级</td></tr>
 <tr><td>21米×21米</td><td>3级</td></tr>
-<tr><td rowspan="3">催化术：灵</td><td rowspan="3">1316</td><td rowspan="3">将附近的<abbr title="小麦、马铃薯、胡萝卜、甜菜根、甘蔗、地狱疣">作物</abbr>催熟</td>
+<tr><td rowspan="3">催化术：灵</td><td rowspan="3">将附近的<abbr title="小麦、马铃薯、胡萝卜、甜菜根、甘蔗、地狱疣">作物</abbr>催熟</td>
 	<td>1米×1米</td><td>1级</td><td rowspan="3">5</td></tr>
 <tr><td>3米×3米</td><td>2级</td></tr>
 <tr><td>5米×5米</td><td>3级</td></tr>
-<tr><td rowspan="3">催化术：地</td><td rowspan="3">1317</td><td rowspan="3">在前方地表召唤裂缝</td>
+<tr><td rowspan="3">催化术：地</td><td rowspan="3">在前方地表召唤裂缝</td>
 	<td>3米</td><td>1级</td><td rowspan="3">10</td></tr>
 <tr><td>5米</td><td>2级</td></tr>
 <tr><td>7米</td><td>3级</td></tr>
