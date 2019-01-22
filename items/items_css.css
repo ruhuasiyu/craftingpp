@@ -993,7 +993,6 @@ span.turtle_spawn_egg{background-image:url("https://d1u5p3l4wpay3k.cloudfront.ne
 
 
 
-span.crafting_machine{	background-position: -0px -0px;}
 span.all_in_one_machine{	background-position: -32px -0px;}
 span.trade_machine{	background-position: -64px -0px;}
 span.mob_projector{	background-position: -96px -0px;}
@@ -1359,6 +1358,8 @@ span.mcmod_logo{	background-position: -224px -1152px;}
 span.tcp_logo{	background-position: -256px -1152px;}
 
 span.cbl_logo{	background-position: -0px -1184px;}
+span.roost{	background-position: -32px -1184px;}
+span.crafting_machine{	background-position: -64px -1184px;}
 
 
 span.effects{
