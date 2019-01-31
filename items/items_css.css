@@ -70,11 +70,11 @@
 }
 .index span.ci{
 	background-image: url("colorful_items.png");
-	background-size:144px 608px;
+	background-size:144px 624px;
 }
 .ui > span.ci{
 	background-image: url("colorful_items.png");
-	background-size: 288px 1216px;
+	background-size: 288px 1248px;
 }
 
 .ui > span.shapeless{
@@ -1360,7 +1360,18 @@ span.tcp_logo{	background-position: -256px -1152px;}
 span.cbl_logo{	background-position: -0px -1184px;}
 span.roost{	background-position: -32px -1184px;}
 span.crafting_machine{	background-position: -64px -1184px;}
+span.summon_wind{	background-position: -96px -1184px;}
+span.summon_fire{	background-position: -128px -1184px;}
+span.summon_thunder{	background-position: -160px -1184px;}
+span.summon_rain{	background-position: -192px -1184px;}
+span.summon_spirit{	background-position: -224px -1184px;}
+span.catalytic_wind{	background-position: -256px -1184px;}
 
+span.catalytic_fire{	background-position: -0px -1216px;}
+span.catalytic_thunder{	background-position: -32px -1216px;}
+span.catalytic_rain{	background-position: -64px -1216px;}
+span.catalytic_spirit{	background-position: -96px -1216px;}
+span.catalytic_earth{	background-position: -128px -1216px;}
 
 span.effects{
 	display:inline-block;
