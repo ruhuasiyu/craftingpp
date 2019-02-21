@@ -70,11 +70,11 @@
 }
 .index span.ci{
 	background-image: url("colorful_items.png");
-	background-size:144px 624px;
+	background-size:144px 640px;
 }
 .ui > span.ci{
 	background-image: url("colorful_items.png");
-	background-size: 288px 1248px;
+	background-size: 288px 1280px;
 }
 
 .ui > span.shapeless{
@@ -1380,7 +1380,9 @@ span.bedsheet01{	background-position: -192px -1216px;}
 span.bedsheet02{	background-position: -224px -1216px;}
 span.bedsheet03{	background-position: -256px -1216px;}
 
-
+span.compress_craft_machine{	background-position: -0px -1248px;}
+span.spring_festival_decorations{	background-position: -32px -1248px;}
+span.santa_gift{	background-position: -64px -1248px;}
 
 
 span.effects{
