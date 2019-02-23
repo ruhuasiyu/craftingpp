@@ -904,9 +904,9 @@ span.polar_bear_spawn_egg{	background-position: -960px -1344px;}
 span.wither_skeleton_spawn_egg{	background-position: -32px -1376px;}
 
 span.shulker_shell{	background-position: -32px -1408px;}
-span.evocation_illager_spawn_egg{	background-position: -64px -1408px;}
+span.evoker_spawn_egg{	background-position: -64px -1408px;}
 span.llama_spawn_egg{	background-position: -96px -1408px;}
-span.vindication_illager_spawn_egg{	background-position: -160px -1408px;}
+span.vindicator_spawn_egg{	background-position: -160px -1408px;}
 span.totem_of_undying{	background-position: -192px -1408px;}
 span.iron_nugget{	background-position: -896px -1408px;}
 
@@ -1078,8 +1078,8 @@ span.ammonia_refrigerant{	background-position: -256px -224px;}
 span.blue_force_of_sky{	background-position: -0px -256px;}
 span.green_force_of_water{	background-position: -32px -256px;}
 span.cyan_force_of_mountain{	background-position: -64px -256px;}
-span.yellow_force_of_earth{	background-position: -96px -256px;}
-span.orange_force_of_dirt{	background-position: -256px -256px;}
+span.orange_force_of_dirt{	background-position: -96px -256px;}
+span.yellow_force_of_earth{	background-position: -128px -256px;}
 span.red_force_of_fire{	background-position: -160px -256px;}
 span.purple_force_of_life{	background-position: -192px -256px;}
 span.white_force_of_lightning{	background-position: -224px -256px;}
@@ -1383,6 +1383,8 @@ span.bedsheet03{	background-position: -256px -1216px;}
 span.compress_craft_machine{	background-position: -0px -1248px;}
 span.spring_festival_decorations{	background-position: -32px -1248px;}
 span.santa_gift{	background-position: -64px -1248px;}
+span.vindicator_head{	background-position: -96px -1248px;}
+span.potion_of_fat{	background-position: -128px -1248px;}
 
 
 span.effects{
