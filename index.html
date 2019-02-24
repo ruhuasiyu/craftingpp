@@ -59,7 +59,7 @@
 <p>原版模组一般是指使用命令而非<abbr title="forge liteloader rift fibric 等">mod api</abbr>来对游戏的可玩性做出修改。自1.13起，原版模组一般以数据包的形式出现。</p>
 
 <p>《更多的合成》是国内论坛最大的原版模组，包括数百种物品、材料、工具、装饰等，以及新的村民交易和空岛系统。该模组无明确的主题，凡是作者认为原版没有而应该有的特性都有可能加入进来。</p>
-<p>最新版本为测试版v1.9-m02d23(魔法更新)，支持Minecraft Java版 1.14快照19w08a+。</p>
+<p>最新版本为测试版v1.9-m02d24(魔法更新)，支持Minecraft Java版 1.14快照19w08a+。</p>
 
 
 <h3 id="download">📦 下载地址</h3>
@@ -75,9 +75,9 @@
 <tbody>
 <tr>
 	<td>Minecraft Java版 19w08a+</td>
-	<td>Crafting++ 1.9测试版m02d23</td>
-	<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/raw/master/versions/1.9/v1.9-m02d23.zip">github</a>
-      | <a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.9-m02d23.zip">官方</a></td>
+	<td>Crafting++ 1.9测试版m02d24</td>
+	<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/raw/master/versions/1.9/v1.9-m02d24.zip">github</a>
+      | <a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.9-m02d24.zip">官方</a></td>
 	<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/raw/master/versions/1.9/change.log">更新日志</a></td>
 </tr>
 <tr>
@@ -105,6 +105,7 @@
 <li><span style="color:blue">转发模组文件</span>不可上传至网盘或文件存储平台，但通讯类工具允许下载后分享。</li>
 <li><span style="color:blue">服务器</span>若为公益可直接使用；非公益请先联系我后再使用。</li>
 <li><span style="color:blue">主播或视频制作者</span>若在直播或视频中使用了本模组，请在简介中注明主页、作者名或模组来源。</li>
+<li><span style="color:blue">原版模组整合者</span>，该原版模组命名空间为cpp和bsd，所有记分板和标签均使用前缀cpp或bsd，物品自定义模型区段位于12970000-12979999，修改了minecraft命名空间大部分的战利品表和少量配方与标签。</li>
 </ul>
 
 <h3>💖 支持我们</h3>
@@ -2505,7 +2506,7 @@
 <span class="empty"></span>
 <span class="ci origin_of_the_world" title="世界之源"></span>
 </span></td>
-<td>右击消耗20点经验返回主世界<abbr title="指X与Z为(0,0)的地表">原点</a>附近。<em>Slonhon Ral!</em></td></tr>
+<td>右击消耗20点经验返回复活点，若无复活点则返回主世界<abbr title="指X与Z为(0,0)的地表">原点</a>附近。<em>Slonhon Ral!</em></td></tr>
 
 <tr><th><strong id="compressor">压缩器 (Comperessor)</strong></th><td>附魔之瓶+<a href="#enchanted_diamond">附魔钻石</a>+<a href="#enchanted_gold">附魔金锭</a>+活塞+<a href="#enchanted_iron">附魔铁锭</a>+<a href="#silicon_plate">硅板</a></td>
 <td><span class="ui cm" title="合成器">
@@ -3189,7 +3190,7 @@
 <li><strong id="golem_warrior">傀儡战士 (Golem Warrior)</strong>：对接触的非玩家生物造成伤害。</li>
 <li><strong id="golem_herder">傀儡牧民 (Golem Herder)</strong>：繁殖接触的成年动物。</li>
 </ul>
-<p>手持傀儡右击放置，放置后默认向东方移动，接触控制方块后会转向。和平模式下傀儡会直接消失。</p>
+<p>手持傀儡对着控制方块右击放置，接触控制方块后会转向。和平模式下傀儡会直接消失。</p>
 
 <table><thead>
 <tr><th>方向</th><th>控制方块</th></tr>
@@ -4037,7 +4038,7 @@
 
 <h3 id="broom">扫帚 (Broom)</h3>
 <span class="ui single"><span class="ci broom"></span></span>
-<p>在副手时跳起可提供漂浮效果，可按住shift下降。<em>Tia Fraere!</em></p>
+<p>在副手时可提供漂浮效果，可按住shift下降。<em>Tia Fraere!</em></p>
 <table><thead><tr><th>名称</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
 <tr><th>扫帚</th><td>烟花火箭+木棍+干草块</td>
 <td><span class="ui cm" title="合成器">
@@ -4056,7 +4057,7 @@
 
 <h3 id="shooting_star">流星丸 (Shooting Star)</h3>
 <span class="ui single"><span class="ci shooting_star"></span></span>
-<p>装备在胸甲跳起可提供悬浮效果并自动向前飞行，可按住shift下降直至着陆。</p>
+<p>装备在胸甲可提供悬浮效果。若玩家未开启节制器，会自动向前飞行。可按住shift下降直至着陆。</p>
 <table><thead><tr><th>名称</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
 <tr><th>流星丸</th><td><a href="#wing_of_sky">天空之翼</a>+鞘翅+<a href="#broom">扫帚</a></td>
 <td><span class="ui cm" title="合成器">
@@ -4704,7 +4705,7 @@
 日出江花红胜火 春来江水绿如蓝<br />
 爆竹声声辞旧岁 春联户户迎新春<br />
 一年四季行好运 八方财宝进家门<br />
-迎新春平安如意 贺佳节富贵平安<br />
+迎新春吉祥如意 贺佳节富贵平安<br />
 旧岁又添几个喜 新年更上一层楼<br />
 绿竹别其三分景 红梅正报万家春<br />
 天增岁月人增寿 春满乾坤福满楼<br />
