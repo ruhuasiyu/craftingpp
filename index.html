@@ -59,7 +59,7 @@
 <p>原版模组一般是指使用命令而非<abbr title="forge liteloader rift fibric 等">mod api</abbr>来对游戏的可玩性做出修改。自1.13起，原版模组一般以数据包的形式出现。</p>
 
 <p>《更多的合成》是国内论坛最大的原版模组，包括数百种物品、材料、工具、装饰等，以及新的村民交易和空岛系统。该模组无明确的主题，凡是作者认为原版没有而应该有的特性都有可能加入进来。</p>
-<p>最新版本为测试版v1.9-m03d01(魔法更新)，支持Minecraft Java版 1.14快照19w08a+。</p>
+<p>最新版本为测试版v1.9-m03d04(魔法更新)，支持Minecraft Java版 1.14快照19w08a+。</p>
 
 
 <h3 id="download">📦 下载地址</h3>
@@ -75,9 +75,9 @@
 <tbody>
 <tr>
 	<td>Minecraft Java版 19w08a+</td>
-	<td>Crafting++ 1.9测试版m03d01</td>
-	<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/raw/master/versions/1.9/v1.9-m03d01.zip">github</a>
-	  | <a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.9-m03d01.zip">官方</a></td>
+	<td>Crafting++ 1.9测试版m03d04</td>
+	<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/raw/master/versions/1.9/v1.9-m03d04.zip">github</a>
+	  | <a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.9-m03d04.zip">官方</a></td>
 	<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/raw/master/versions/1.9/change.log">更新日志</a></td>
 </tr>
 <tr>
@@ -3197,9 +3197,9 @@
 <p>傀儡用于合成</p>
 <ul>
 <li><strong id="golem_farmer">傀儡农民 (Golem Farmer)</strong>：破坏接触的<abbr title="树叶、木头、西瓜、南瓜、蘑菇方块、甘蔗、竹子">农业方块</abbr>、成熟的<abbr title="小麦、甜菜根、胡萝卜、马铃薯、甜浆果丛">作物</abbr>并补种。</li>
-<li><strong id="golem_miner">傀儡矿工 (Golem Miner)</strong>：破坏接触的除控制方块外的所有方块。</li>
-<li><strong id="golem_fisher">傀儡渔夫 (Golem Fisher)</strong>：接触水时会开始钓鱼，时长5-45秒。</li>
-<li><strong id="golem_warrior">傀儡战士 (Golem Warrior)</strong>：对接触的非玩家生物造成伤害。</li>
+<li><strong id="golem_miner">傀儡矿工 (Golem Miner)</strong>：破坏接触的除控制方块外的所有方块。支持时运和精准采集魔咒。</li>
+<li><strong id="golem_fisher">傀儡渔夫 (Golem Fisher)</strong>：接触水时会开始钓鱼，时长5-45秒。支持饵钓和海之眷顾魔咒。</li>
+<li><strong id="golem_warrior">傀儡战士 (Golem Warrior)</strong>：杀死接触的非玩家生物。支持抢夺魔咒，但是不会掉落需要玩家杀死才能掉落的掉落物。</li>
 <li><strong id="golem_herder">傀儡牧民 (Golem Herder)</strong>：繁殖接触的成年动物。</li>
 </ul>
 <p>手持傀儡对着控制方块右击放置，接触控制方块后会转向。和平模式下傀儡会直接消失。</p>
@@ -3698,9 +3698,9 @@
 <h2 id="plants">植物</h2>
 <h3 id="flowers_and_grasses">花草</h3>
 <p>
-新增20种花草，在合成器中合成为3个对应种子。种子在土质方块上种植，一共4个生长阶段，成熟后收割可获得相应花草，否则只能获得种子。作物不受时运影响，可用骨粉催熟。收获成熟的小麦、胡萝卜、马铃薯和甜菜根有5%几率获得花草种子。每个花草都对应一个实体，大面积种植可能会卡顿。</p>
-<p>可在熔炉熔炼成其它物品。</p>
-<p>可用于合成迷之炖菜，效果见下表。</p>
+新增20种花草，在合成器中合成为3个对应种子。种子在土质方块上种植，一共4个生长阶段，成熟后收割可获得相应花草，否则只能获得种子。作物不受时运影响，可用骨粉催熟。每个花草都对应一个实体，大面积种植可能会卡顿。</p>
+<p>收获成熟的小麦、胡萝卜、马铃薯和甜菜根有5%几率获得六种花草种子，其余花草种子可以通过杂交得到：当一种作物将要生长成熟时，若邻近的花草可杂交，则有5%几率变异为其它花草。</p>
+<p>可在熔炉熔炼成其它物品，还可用于合成迷之炖菜，效果见下表。</p>
 
 <table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
 <tr><th>迷之炖菜<br /><img src="items/hunger.png" style="width:18px;height:18px;" title="6" /><img src="items/hunger.png" style="width:18px;height:18px;" title="6" /><img src="items/hunger.png" style="width:18px;height:18px;" title="6" /></th><td>红色蘑菇+棕色蘑菇+碗+花草</td>
@@ -3719,9 +3719,9 @@
 </span></td></tr>
 </tbody></table>
 
-<table><thead><tr><th>种子与作物</th><th>名称</th><th>熔炼得到物品</th><th>状态效果</th><th>持续时间</th></tr></thead><tbody>
+<table><thead><tr><th>种子与作物</th><th>名称</th><th>收割/杂交来源</th><th>熔炼得到物品</th><th>状态效果</th><th>持续时间</th></tr></thead><tbody>
 <tr>	<td>		<span class="ui single"><span class="ci lycoris_radiata_seeds"></span></span>		<span class="ui single"><span class="ci lycoris_radiata0"></span></span>		<span class="ui single"><span class="ci lycoris_radiata1"></span></span>		<span class="ui single"><span class="ci lycoris_radiata2"></span></span>		<span class="ui single"><span class="ci lycoris_radiata"></span></span>	</td>
-	<td><strong id="lycoris_radiata">彼岸花 (Lycoris Radiata)</strong></td>
+	<td><strong id="lycoris_radiata">彼岸花 (Lycoris Radiata)</strong></td><td>小麦、甜菜根</td>
 	<td>红色染料</td><td><span class="effects strength"></span>力量</td><td>5s</td>
 </tr>
 <tr>
@@ -3732,7 +3732,7 @@
 		<span class="ui single"><span class="ci trifolium2"></span></span>
 		<span class="ui single"><span class="ci trifolium"></span></span>
 	</td>
-	<td><strong id="trifolium">白车轴 (Trifolium)</strong></td>
+	<td><strong id="trifolium">白车轴 (Trifolium)</strong></td><td>小麦、马铃薯</td>
 	<td>白色染料</td><td><span class="effects mining_fatigue"></span>挖掘疲劳</td><td>5s</td>
 </tr>
 <tr>
@@ -3743,7 +3743,7 @@
 		<span class="ui single"><span class="ci blackthorn2"></span></span>
 		<span class="ui single"><span class="ci blackthorn"></span></span>
 	</td>
-	<td><strong id="blackthorn">黑荆棘 (Blackthorn)</strong></td>
+	<td><strong id="blackthorn">黑荆棘 (Blackthorn)</strong></td><td>甜菜根、胡萝卜</td>
 	<td>黑色染料</td><td><span class="effects wither"></span>凋零</td><td>5s</td>
 </tr>
 <tr>
@@ -3754,7 +3754,7 @@
 		<span class="ui single"><span class="ci cattail2"></span></span>
 		<span class="ui single"><span class="ci cattail"></span></span>
 	</td>
-	<td><strong id="cattail">香蒲草 (Cattail)</strong></td>
+	<td><strong id="cattail">香蒲草 (Cattail)</strong></td><td>甜菜根、马铃薯</td>
 	<td>黄色染料</td><td><span class="effects invisibility"></span>隐身</td><td>5s</td>
 </tr>
 <tr>
@@ -3765,7 +3765,7 @@
 		<span class="ui single"><span class="ci marigold2"></span></span>
 		<span class="ui single"><span class="ci marigold"></span></span>
 	</td>
-	<td><strong id="marigold">金盏花 (Marigold)</strong></td>
+	<td><strong id="marigold">金盏花 (Marigold)</strong></td><td>胡萝卜、马铃薯</td>
 	<td>橙色染料</td><td><span class="effects haste"></span>急迫</td><td>5s</td>
 </tr>
 <tr>
@@ -3776,7 +3776,7 @@
 		<span class="ui single"><span class="ci hibiscus2"></span></span>
 		<span class="ui single"><span class="ci hibiscus"></span></span>
 	</td>
-	<td><strong id="hibiscus">木槿花 (Hibiscus)</strong></td>
+	<td><strong id="hibiscus">木槿花 (Hibiscus)</strong></td><td>小麦、胡萝卜</td>
 	<td>粉红色染料</td><td><span class="effects weakness"></span>虚弱</td><td>5s</td>
 </tr>
 <tr>
@@ -3787,7 +3787,7 @@
 		<span class="ui single"><span class="ci hyacinth2"></span></span>
 		<span class="ui single"><span class="ci hyacinth"></span></span>
 	</td>
-	<td><strong id="hyacinth">风信子 (Hyacinth)</strong></td>
+	<td><strong id="hyacinth">风信子 (Hyacinth)</strong></td><td>彼岸花+黑荆棘</td>
 	<td>蓝色染料</td><td><span class="effects jump_boost"></span>跳跃提升</td><td>5s</td>
 </tr>
 <tr>
@@ -3798,7 +3798,7 @@
 		<span class="ui single"><span class="ci calamus2"></span></span>
 		<span class="ui single"><span class="ci calamus"></span></span>
 	</td>
-	<td><strong id="calamus">菖蒲草 (Calamus)</strong></td>
+	<td><strong id="calamus">菖蒲草 (Calamus)</strong></td><td>彼岸花+风信子</td>
 	<td>紫色染料</td><td><span class="effects nausea"></span>反胃</td><td>5s</td>
 </tr>
 <tr>
@@ -3809,7 +3809,7 @@
 		<span class="ui single"><span class="ci wild_lilium2"></span></span>
 		<span class="ui single"><span class="ci wild_lilium"></span></span>
 	</td>
-	<td><strong id="wild_lilium">滇百合 (Wild Lilium)</strong></td>
+	<td><strong id="wild_lilium">滇百合 (Wild Lilium)</strong></td><td>香蒲草+金盏花</td>
 	<td>黄绿色染料</td><td><span class="effects poison"></span>中毒</td><td>5s</td>
 </tr>
 <tr>
@@ -3820,7 +3820,7 @@
 		<span class="ui single"><span class="ci bauhinia2"></span></span>
 		<span class="ui single"><span class="ci bauhinia"></span></span>
 	</td>
-	<td><strong id="bauhinia">紫荆花 (Bauhinia)</strong></td>
+	<td><strong id="bauhinia">紫荆花 (Bauhinia)</strong></td><td>木槿花+菖蒲草</td>
 	<td>品红色染料</td><td><span class="effects saturation"></span>饱和</td><td>5s</td>
 </tr>
 <tr>
@@ -3831,7 +3831,7 @@
 		<span class="ui single"><span class="ci fluffy_grass2"></span></span>
 		<span class="ui single"><span class="ci fluffy_grass"></span></span>
 	</td>
-	<td><strong id="fluffy_grass">蓬蓬草 (Fluffy Grass)</strong></td>
+	<td><strong id="fluffy_grass">蓬蓬草 (Fluffy Grass)</strong></td><td>白车轴+香蒲草</td>
 	<td>羽毛</td><td><span class="effects levitation"></span>漂浮</td><td>5s</td>
 </tr>
 <tr>
@@ -3842,7 +3842,7 @@
 		<span class="ui single"><span class="ci gerbera2"></span></span>
 		<span class="ui single"><span class="ci gerbera"></span></span>
 	</td>
-	<td><strong id="gerbera">大丁草 (Gerbera)</strong></td>
+	<td><strong id="gerbera">大丁草 (Gerbera)</strong></td><td>黑荆棘+香蒲草</td>
 	<td>火药</td><td><span class="effects blindness"></span>失明</td><td>5s</td>
 </tr>
 <tr>
@@ -3853,7 +3853,7 @@
 		<span class="ui single"><span class="ci esparto2"></span></span>
 		<span class="ui single"><span class="ci esparto"></span></span>
 	</td>
-	<td><strong id="esparto">芦苇草 (Esparto)</strong></td>
+	<td><strong id="esparto">芦苇草 (Esparto)</strong></td><td>白车轴+风信子</td>
 	<td>线</td><td><span class="effects speed"></span>速度</td><td>5s</td>
 </tr>
 <tr>
@@ -3864,7 +3864,7 @@
 		<span class="ui single"><span class="ci glow_forsythia2"></span></span>
 		<span class="ui single"><span class="ci glow_forsythia"></span></span>
 	</td>
-	<td><strong id="glow_forsythia">亮连翘 (Glow Forsythia)</strong></td>
+	<td><strong id="glow_forsythia">亮连翘 (Glow Forsythia)</strong></td><td>香蒲草+风信子</td>
 	<td>荧石粉</td><td><span class="effects glowing"></span>发光</td><td>5s</td>
 </tr>
 <tr>
@@ -3875,7 +3875,7 @@
 		<span class="ui single"><span class="ci glazed_shade2"></span></span>
 		<span class="ui single"><span class="ci glazed_shade"></span></span>
 	</td>
-	<td><strong id="glazed_shade">碎璃草 (Glazed Shade)</strong></td>
+	<td><strong id="glazed_shade">碎璃草 (Glazed Shade)</strong></td><td>滇百合+紫荆花</td>
 	<td>海晶碎片</td><td><span class="effects water_breathing"></span>水下呼吸</td><td>5s</td>
 </tr>
 <tr>
@@ -3886,7 +3886,7 @@
 		<span class="ui single"><span class="ci stelera2"></span></span>
 		<span class="ui single"><span class="ci stelera"></span></span>
 	</td>
-	<td><strong id="stelera">狼毒花 (Stelera)</strong></td>
+	<td><strong id="stelera">狼毒花 (Stelera)</strong></td><td>彼岸花+菖蒲草</td>
 	<td>蜘蛛眼</td><td><span class="effects poison"></span>中毒</td><td>5s</td>
 </tr>
 <tr>
@@ -3897,7 +3897,7 @@
 		<span class="ui single"><span class="ci forage_crystal2"></span></span>
 		<span class="ui single"><span class="ci forage_crystal"></span></span>
 	</td>
-	<td><strong id="forage_crystal">牧晶花 (Forage Crystal)</strong></td>
+	<td><strong id="forage_crystal">牧晶花 (Forage Crystal)</strong></td><td>白车轴+滇百合</td>
 	<td>恶魂之泪</td><td><span class="effects regeneration"></span>生命恢复</td><td>5s</td>
 </tr>
 <tr>
@@ -3908,7 +3908,7 @@
 		<span class="ui single"><span class="ci isorchid2"></span></span>
 		<span class="ui single"><span class="ci isorchid"></span></span>
 	</td>
-	<td><strong id="isorchid">异绒兰 (Isorchid)</strong></td>
+	<td><strong id="isorchid">异绒兰 (Isorchid)</strong></td><td>彼岸花+紫荆花</td>
 	<td>末影珍珠</td><td><span class="effects resistance"></span>抗性提升</td><td>5s</td>
 </tr>
 <tr>
@@ -3919,7 +3919,7 @@
 		<span class="ui single"><span class="ci burning_chrysanthe2"></span></span>
 		<span class="ui single"><span class="ci burning_chrysanthe"></span></span>
 	</td>
-	<td><strong id="burning_chrysanthe">焰光菊 (Burning Chrysanthe)</strong></td>
+	<td><strong id="burning_chrysanthe">焰光菊 (Burning Chrysanthe)</strong></td><td>香蒲草+滇百合</td>
 	<td>烈焰粉</td><td><span class="effects fire_resistance"></span>防火</td><td>5s</td>
 </tr>
 <tr>
@@ -3930,7 +3930,7 @@
 		<span class="ui single"><span class="ci oxalis2"></span></span>
 		<span class="ui single"><span class="ci oxalis"></span></span>
 	</td>
-	<td><strong id="oxalis">酢浆草 (Oxalis)</strong></td>
+	<td><strong id="oxalis">酢浆草 (Oxalis)</strong></td><td>菖蒲草+紫荆花</td>
 	<td>粘液球</td><td><span class="effects slowness"></span>缓慢</td><td>5s</td>
 </tr>
 </tbody></table>
@@ -4064,7 +4064,7 @@
 
 <h3 id="broom">扫帚 (Broom)</h3>
 <span class="ui single"><span class="ci broom"></span></span>
-<p>在副手时可提供漂浮效果，可按住shift下降。<em>Tia Fraere!</em></p>
+<p>手持可提供漂浮效果，可按住shift下降。<em>Tia Fraere!</em></p>
 <table><thead><tr><th>名称</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
 <tr><th>扫帚</th><td>烟花火箭+木棍+干草块</td>
 <td><span class="ui cm" title="合成器">
@@ -4353,7 +4353,27 @@
 </span></td></tr>
 </tbody></table>
 
+<h3 id="red_lip">烈焰红唇 (Red Lip)</h3>
+<p>烈焰红唇可以通过各种染料在工作台中染色，也可以在合成器中像皮革盔甲一样染色。佩戴后取下需要放在合成器中修复，方可重新染色、佩戴。</p>
 <table><thead><tr><th>名称</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
+<tr><th><strong>烈焰红唇</strong></th>
+<td>红石粉+岩浆膏</td>
+<td><span class="ui cm" title="合成器">
+<span class="redstone" title="红石粉"></span>
+<span class="redstone" title="红石粉"></span>
+<span class="redstone" title="红石粉"></span>
+<span class="redstone" title="红石粉"></span>
+<span class="magma_cream" title="岩浆膏"></span>
+<span class="redstone" title="红石粉"></span>
+<span class="redstone" title="红石粉"></span>
+<span class="redstone" title="红石粉"></span>
+<span class="redstone" title="红石粉"></span>
+<span class="ci red_lip" title="烈焰红唇"></span>
+</span></td></tr>
+</tbody></table>
+
+<table><thead><tr><th>名称</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
+
 <tr><th><strong id="purple_eye">紫色美瞳 (Purple Eye)</strong><br/>
 <p>帮助寻找<a href="#flowers_and_grasses_bushes">花草丛</a>。</p></th>
 <td>紫色染料+末影之眼</td>
@@ -4398,21 +4418,6 @@
 <span class="stick" title="木棍"></span>
 <span class="feather" title="羽毛"></span>
 <span class="ci cat_breed" title="猫胡子"></span>
-</span></td></tr>
-
-<tr><th><strong id="red_lip">烈焰红唇 (Red Lip)</strong></th>
-<td>红石粉+岩浆膏</td>
-<td><span class="ui cm" title="合成器">
-<span class="redstone" title="红石粉"></span>
-<span class="redstone" title="红石粉"></span>
-<span class="redstone" title="红石粉"></span>
-<span class="redstone" title="红石粉"></span>
-<span class="magma_cream" title="岩浆膏"></span>
-<span class="redstone" title="红石粉"></span>
-<span class="redstone" title="红石粉"></span>
-<span class="redstone" title="红石粉"></span>
-<span class="redstone" title="红石粉"></span>
-<span class="ci red_lip" title="烈焰红唇"></span>
 </span></td></tr>
 
 <tr><th><strong id="garland">花环 (Garland)</strong><br/>
@@ -5513,6 +5518,7 @@ scoreboard players set #rituals_time cppValue 1200
 <li>移除彩色床加染料合成彩色床的配方。</li>
 <li>修改蓝色天之力为可根据当前天气调节。</li>
 <li>修改白色电之力的功能为消耗6点生命值恢复10点魔力值。</li>
+<li>交换了时间调节器与报时器的合成配方。</li>
 <li>添加了便携式合成器，右击可放置一个合成器，玩家离开后会自动消失。</li>
 <li>新增剪枝器，2木棍和附魔铁锭合成，破坏树叶得到树苗。</li>
 <li>新增玻璃镐，可破坏玻璃。</li>
@@ -5520,6 +5526,8 @@ scoreboard players set #rituals_time cppValue 1200
 <li>鸡将要下蛋时会寻找附近的鸡窝，如果没有则会创建一个。</li>
 <li>鸡必须有鸡窝才能下蛋。</li>
 <li>调整了傀儡农民和傀儡矿工的功能。</li>
+<li>现在傀儡战士直接杀死接触的非玩家生物。</li>
+<li>现在手和傀儡的合成支持附魔效果。</li>
 <li>新增中国国旗，使用牡丹、焰光菊、金盏花和红色旗帜合成得到。</li>
 <li>新增美国国旗，使用玫瑰丛、风信子、蓬蓬草和白色旗帜合成得到。</li>
 <li>新增俄罗斯国旗，使用向日葵、风信子、蓬蓬草和红色旗帜合成得到。</li>
@@ -5554,6 +5562,7 @@ scoreboard players set #rituals_time cppValue 1200
 <li>现在连锁会保留最后1点耐久了。</li>
 <li>现在连锁挖矿会掉落经验。</li>
 <li>新增花草替代作物，成熟后破坏得到花草。</li>
+<li>部分花草种子可以通过收获成熟作物得到，其余需要杂交获取。</li>
 <li>新增花草烧炼成对应物。</li>
 <li>新增花草合成为3个对应种子。</li>
 <li>修改羊毛树掉落羊毛树树苗、鱼和羊。</li>
@@ -5561,7 +5570,8 @@ scoreboard players set #rituals_time cppValue 1200
 <li>新增圣诞花，使用虞美人、彼岸花、金盏花和碎璃草无序合成。</li>
 <li>新增圣诞树，使用4荧石粉、2雪球、2圣诞花和云杉树苗合成。</li>
 <li>现在漂浮时可按下shift下降。</li>
-<li>修改扫帚和流星丸需要跳跃才可漂浮，移除主手效果。</li>
+<li>现在扫帚手持即可漂浮。</li>
+<li>现在装备流星丸时漂浮，未携带节制器时自动飞行。</li>
 <li>新增魔法，包括召唤术：风火雷雨灵，催化术：风火雷雨灵地。</li>
 <li>若要使用魔法，玩家需要副手持有魔杖，然后按下对应的键，最后双击F发动，玩家需要拥有足够的魔法值方可。</li>
 <li>新增出生点附近生成魔导石，每秒恢复32米内玩家1点魔法值，上限30点。</li>
@@ -5573,6 +5583,7 @@ scoreboard players set #rituals_time cppValue 1200
 <li>新增原谅帽每10秒恢复玩家1点魔法值，上限60点。</li>
 <li>新增冕旒每10秒恢复玩家1点魔法值，上限100点。</li>
 <li>新增烈焰红唇、愚弄眼镜、小黄人眼罩。</li>
+<li>烈焰红唇可以染色，佩戴后需要合成器修复。</li>
 <li>新增经典画作，使用羽毛、黑色染料和画无序合成。</li>
 <li>经典画作放置后右击可改变图案，会随机显示33种画的一种。</li>
 <li>新增新春装饰，代替了原有的春联横批等物品。</li>
@@ -5636,7 +5647,7 @@ scoreboard players set #rituals_time cppValue 1200
 <a href="https://space.bilibili.com/4469715"><img src="items/bilibili.png" /></a>
 </p>
 
-<p>最后更新 2019-03-01</p>
+<p>最后更新 2019-03-04</p>
 </footer>
 </article>
 </body></html>
