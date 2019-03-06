@@ -48,18 +48,18 @@
 
 <!-------------------------------------------------------------------------------------------------->
 <h2 id="introduction">简介</h2>
-
+<!--
 <div style="width:50%;margin:20px auto;padding:2px;border-color:#373737 #FFF #FFF #373737; border:2px solid blue;">
 <div style="padding:2px;border-color:#373737 #FFF #FFF #373737; border:2px solid blue;">
 <p style="color:red;font-weight:bold;text-align:center;vertical-align:middle;">目前模组开发急需材质作者，如有意向请<a href="http://www.mcbbs.net/home.php?mod=spacecp&ac=pm&touid=975525">联系我</a>。</p>
-</div></div>
+</div></div>-->
 
 <p style="color:red">🎉欢迎来到原版模组《更多的合成》主页！</p>
 
 <p>原版模组一般是指使用命令而非<abbr title="forge liteloader rift fibric 等">mod api</abbr>来对游戏的可玩性做出修改。自1.13起，原版模组一般以数据包的形式出现。</p>
 
 <p>《更多的合成》是国内论坛最大的原版模组，包括数百种物品、材料、工具、装饰等，以及新的村民交易和空岛系统。该模组无明确的主题，凡是作者认为原版没有而应该有的特性都有可能加入进来。</p>
-<p>最新版本为测试版v1.9-m03d04(魔法更新)，支持Minecraft Java版 1.14快照19w08a+。</p>
+<p>最新版本为测试版v1.9-m03d06(魔法更新)，支持Minecraft Java版 1.14快照19w08a+。</p>
 
 
 <h3 id="download">📦 下载地址</h3>
@@ -75,9 +75,9 @@
 <tbody>
 <tr>
 	<td>Minecraft Java版 19w08a+</td>
-	<td>Crafting++ 1.9测试版m03d04</td>
-	<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/raw/master/versions/1.9/v1.9-m03d04.zip">github</a>
-	  | <a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.9-m03d04.zip">官方</a></td>
+	<td>Crafting++ 1.9测试版m03d06</td>
+	<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/raw/master/versions/1.9/v1.9-m03d06.zip">github</a>
+	  | <a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.9-m03d06.zip">官方</a></td>
 	<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/raw/master/versions/1.9/change.log">更新日志</a></td>
 </tr>
 <tr>
@@ -412,10 +412,10 @@
 <tr><th>装饰</th><td>
   <a href="#title">称号</a> 
 · <a href="#dyed_leather_armor"><span style="background-position: -176px -16px;"></span>皮革盔甲染色</a> 
+· <a href="#red_lip"><span class="ci" style="background-position: -48px -384px;"></span>烈焰红唇</a>
 · <a href="#purple_eye"><span class="ci" style="background-position: -0px -384px;"></span>紫色美瞳</a> 
 · <a href="#lash"><span class="ci" style="background-position: -16px -384px;"></span>假睫毛</a> 
 · <a href="#cat_breed"><span class="ci" style="background-position: -32px -384px;"></span>猫胡子</a> 
-· <a href="#red_lip"><span class="ci" style="background-position: -48px -384px;"></span>烈焰红唇</a>
 · <a href="#garland"><span class="ci" style="background-position: -64px -384px;"></span>花环</a>
 · <a href="#black_framed_glasses"><span class="ci" style="background-position: -80px -384px;"></span>黑框眼镜</a> 
 · <a href="#orange_framed_glasses"><span class="ci" style="background-position: -96px -384px;"></span>橙框眼镜</a> 
@@ -2464,7 +2464,7 @@
 </span></td>
 <td>自动将附近物品吸引过来。右击依次切换范围为0/8/16米。若放置放物品展示框，可吸引附近16米的物品到所在处。</td></tr>
 
-<tr><th><strong id="time_checker">报时器 (Time Checker)</strong></th><td><a href="#enchanted_diamond">附魔钻石</a>+红石</td>
+<tr><th><strong id="time_checker">报时器 (Time Checker)</strong></th><td><a href="#enchanted_gold">附魔金锭</a>+红石</td>
 <td><span class="ui cm" title="合成器">
 <span class="empty"></span>
 <span class="ci enchanted_gold" title="附魔金锭"></span>
@@ -2479,7 +2479,7 @@
 </span></td>
 <td>放置于物品展示框后可报时。右击消耗4点经验将时间增加1200刻(60秒)。</td></tr>
 
-<tr><th><strong id="time_conditioner">时间调节器 (Time Conditioner)</strong></th><td><a href="#enchanted_gold">附魔金锭</a>+红石</td>
+<tr><th><strong id="time_conditioner">时间调节器 (Time Conditioner)</strong></th><td><a href="#enchanted_diamond">附魔钻石</a>+红石</td>
 <td><span class="ui cm" title="合成器">
 <span class="empty"></span>
 <span class="ci enchanted_diamond" title="附魔钻石"></span>
@@ -4356,7 +4356,7 @@
 <h3 id="red_lip">烈焰红唇 (Red Lip)</h3>
 <p>烈焰红唇可以通过各种染料在工作台中染色，也可以在合成器中像皮革盔甲一样染色。佩戴后取下需要放在合成器中修复，方可重新染色、佩戴。</p>
 <table><thead><tr><th>名称</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
-<tr><th><strong>烈焰红唇</strong></th>
+<tr><th>烈焰红唇</th>
 <td>红石粉+岩浆膏</td>
 <td><span class="ui cm" title="合成器">
 <span class="redstone" title="红石粉"></span>
@@ -4668,17 +4668,17 @@
 
 <tr><th><strong id="blue_jeans">牛仔裤 (Blue Jeans)</strong><br/>
 <img style="width:12px;height:12px" src="items/armor.png" title="2盔甲" /></th>
-<td>青金石+皮革</td>
+<td>蓝色染料+皮革</td>
 <td><span class="ui cm" title="合成器">
-<span class="lapis_lazuli" title="青金石"></span>
-<span class="lapis_lazuli" title="青金石"></span>
-<span class="lapis_lazuli" title="青金石"></span>
+<span class="blue_dye" title="蓝色染料"></span>
+<span class="blue_dye" title="蓝色染料"></span>
+<span class="blue_dye" title="蓝色染料"></span>
 <span class="leather" title="皮革"></span>
 <span class="empty"></span>
 <span class="leather" title="皮革"></span>
-<span class="lapis_lazuli" title="青金石"></span>
+<span class="blue_dye" title="蓝色染料"></span>
 <span class="empty"></span>
-<span class="lapis_lazuli" title="青金石"></span>
+<span class="blue_dye" title="蓝色染料"></span>
 <span class="ci blue_jeans" title="牛仔裤"></span>
 </span></td></tr>
 
@@ -5647,7 +5647,7 @@ scoreboard players set #rituals_time cppValue 1200
 <a href="https://space.bilibili.com/4469715"><img src="items/bilibili.png" /></a>
 </p>
 
-<p>最后更新 2019-03-04</p>
+<p>最后更新 2019-03-06</p>
 </footer>
 </article>
 </body></html>
