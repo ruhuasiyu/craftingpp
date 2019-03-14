@@ -59,7 +59,7 @@
 <p>原版模组一般是指使用命令而非<abbr title="forge liteloader rift fibric 等">mod api</abbr>来对游戏的可玩性做出修改。自1.13起，原版模组一般以数据包的形式出现。</p>
 
 <p>《更多的合成》是国内论坛最大的原版模组，包括数百种物品、材料、工具、装饰等，以及新的村民交易和空岛系统。该模组无明确的主题，凡是作者认为原版没有而应该有的特性都有可能加入进来。</p>
-<p>最新版本为测试版v1.9-m03d06(魔法更新)，支持Minecraft Java版 1.14快照19w08a+。</p>
+<p>最新版本为测试版v1.9-m03d14(魔法更新)，支持Minecraft Java版 1.14快照19w11a+。</p>
 
 
 <h3 id="download">📦 下载地址</h3>
@@ -74,10 +74,10 @@
 <table><thead><tr><th>支持的minecraft版本</th><th>Crafting++版本</th><th>下载地址</th><th>更新日志</th></tr></thead>
 <tbody>
 <tr>
-	<td>Minecraft Java版 19w08a+</td>
-	<td>Crafting++ 1.9测试版m03d06</td>
-	<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/raw/master/versions/1.9/v1.9-m03d06.zip">github</a>
-	  | <a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.9-m03d06.zip">官方</a></td>
+	<td>Minecraft Java版 19w11a+</td>
+	<td>Crafting++ 1.9测试版m03d14</td>
+	<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/raw/master/versions/1.9/v1.9-m03d14.zip">github</a>
+	  | <a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.9-m03d14.zip">官方</a></td>
 	<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/raw/master/versions/1.9/change.log">更新日志</a></td>
 </tr>
 <tr>
@@ -92,7 +92,7 @@
 <h3 id="how_to_start">🚀 如何开始</h3>
 <p>下载后，将解压缩后的<code>datapacks</code>文件夹和<code>resources.zip</code>放入<code>.minecraft/saves/世界名</code>文件夹。安装完成后进入游戏并按下F3+T即可。</p>
 <p>服务端的操作类似，请设置server.properties中resource-pack=home.ustc.edu.cn/~zsxqq/craftingpp/resources.zip，每次更新时请重新计算resource-pack-sha1。客户端无需安装数据包。</p>
-<!--<p>广告：欢迎加入挼苹果服，QQ群号681437794。</p>-->
+<p>广告：欢迎加入挼苹果服，QQ群号885244850。</p>
 
 <h4>模组入门</h4>
 <p>大部分合成需使用<a href="#crafting_machine"><img src="items/crafting_machine.png" style="height:20px;" />合成器</a>。模组需要的附魔之瓶可通过副手持有漏斗获取。</p>
@@ -171,6 +171,7 @@
 · <a href="#villager">村民</a> 
 · <a href="#chicken_roost">鸡窝</a>
 · <a href="#fishing">钓鱼</a>
+· <a href="#mooshroom">哞菇</a>
 · <a href="#trade">交易</a>
 </td></tr>
 
@@ -509,7 +510,7 @@
 
 
 <h3 id="dark_animals">黑暗动物</h3>
-<p>生成动物时有一定几率生成。黑暗动物头部有黑色颗粒效果，会主攻靠近并攻击附近的玩家。黑暗动物有几率掉落<a href="#shard_of_the_darkness">黑暗碎片</a>。</p>
+<p>生成动物时有一定几率生成。黑暗动物头部有黑色颗粒效果，会主攻靠近并攻击附近的玩家。黑暗动物被玩家杀死后掉落<a href="#shard_of_the_darkness">黑暗碎片</a>。</p>
 
 <table><thead><tr><th>生物类别</th><th>攻击方式</th><th>掉落</th></tr></thead><tbody>
 <tr><th>黑暗牛</th><td>凋零、饥饿</td><td>皮革、腐肉</td></tr>
@@ -533,7 +534,10 @@
 <!--<img style="height:250px" src="items/screenshots/chicken_roost.png" />-->
 
 <h3 id="fishing">钓鱼</h3>
-<p>有几率掉到宝藏湿海绵、鳕鱼头/鲑鱼头/热带鱼头/河豚头、<a href="#heart_of_ocean">水晶之心</a>和垃圾火药/海晶碎片。</p>
+<p>有几率掉到宝藏珊瑚、珊瑚扇、湿海绵、鳕鱼头/鲑鱼头/热带鱼头/河豚头、<a href="#heart_of_ocean">水晶之心</a>和垃圾火药/海晶碎片。</p>
+
+<h3 id="mooshroom">哞菇</h3>
+<p>哞菇死亡时会将下方泥土变为菌丝。</p>
 
 
 <!-------------------------------------------------------------------------------------------------->
@@ -753,7 +757,9 @@
 	<td>
 		<span class="ui slot"><span class="enchanted_book" title="附魔书"></span></span>
 		<span class="ui slot"><span class="compass" title="指南针"></span></span>
-		<span class="ui slot"><span class="written_book" title="成书"><span class="stack">2</span></span></span>
+		<span class="ui slot"><span class="written_book" title="成书"><span class="stack">4</span></span></span>
+		<span class="ui slot"><span class="rabbit_foot" title="兔子腿"><span class="stack">4</span></span></span>
+		<span class="ui slot"><span class="scute" title="鳞甲"><span class="stack">4</span></span></span>
 		<span class="ui slot"><span class="pumpkin" title="南瓜"><span class="stack">8</span></span></span>
 		<span class="ui slot"><span class="melon" title="西瓜"><span class="stack">8</span></span></span>
 		<span class="ui slot"><span class="book" title="书"><span class="stack">8</span></span></span>
@@ -761,44 +767,69 @@
 		<span class="ui slot"><span class="iron_ingot" title="铁锭"><span class="stack">8</span></span></span>
 		<br />
 		<span class="ui slot"><span class="leather" title="皮革"><span class="stack">8</span></span></span>
+		<span class="ui slot"><span class="spider_eye" title="蜘蛛眼"><span class="stack">8</span></span></span>
+		<span class="ui slot"><span class="clay" title="粘土块"><span class="stack">8</span></span></span>
 		<span class="ui slot"><span class="wheat" title="小麦"><span class="stack">16</span></span></span>
 		<span class="ui slot"><span class="potato" title="马铃薯"><span class="stack">16</span></span></span>
 		<span class="ui slot"><span class="carrot" title="胡萝卜"><span class="stack">16</span></span></span>
+		<span class="ui slot"><span class="beetroot" title="甜菜根"><span class="stack">16</span></span></span>
+		<span class="ui slot"><span class="nether_wart" title="地狱疣"><span class="stack">16</span></span></span>
 		<span class="ui slot"><span class="chorus_fruit" title="紫颂果"><span class="stack">16</span></span></span>
-		<span class="ui slot"><span class="spider_eye" title="蜘蛛眼"><span class="stack">16</span></span></span>
-		<span class="ui slot"><span class="ender_pearl" title="末影珍珠"><span class="stack">16</span></span></span>
 		<span class="ui slot"><span class="porkchop" title="生猪排"><span class="stack">16</span></span></span>
 		<br />
 		<span class="ui slot"><span class="chicken" title="生鸡肉"><span class="stack">16</span></span></span>
-		<span class="ui slot"><span class="nether_wart" title="地狱疣"><span class="stack">16</span></span></span>
-		<span class="ui slot"><span class="string" title="线"><span class="stack">16</span></span></span>
-		<span class="ui slot"><span class="coal" title="煤炭"><span class="stack">16</span></span></span>
+		<span class="ui slot"><span class="beef" title="生牛肉"><span class="stack">16</span></span></span>
+		<span class="ui slot"><span class="mutton" title="生羊肉"><span class="stack">16</span></span></span>
+		<span class="ui slot"><span class="rabbit" title="生兔子肉"><span class="stack">16</span></span></span>
+		<span class="ui slot"><span class="egg" title="鸡蛋"><span class="stack">16</span></span></span>
 		<span class="ui slot"><span class="white_wool" title="白色羊毛"><span class="stack">16</span></span></span>
+		<span class="ui slot"><span class="string" title="线"><span class="stack">16</span></span></span>
+		<span class="ui slot"><span class="bone" title="骨头"><span class="stack">16</span></span></span>
+		<span class="ui slot"><span class="ender_pearl" title="末影珍珠"><span class="stack">16</span></span></span>
+		<span class="ui slot"><span class="coal" title="煤炭"><span class="stack">16</span></span></span>
+		<br />
 		<span class="ui slot"><span class="lapis_lazuli" title="青金石"><span class="stack">16</span></span></span>
 		<span class="ui slot"><span class="glowstone_dust" title="荧石粉"><span class="stack">16</span></span></span>
 		<span class="ui slot"><span class="redstone" title="红石"><span class="stack">16</span></span></span>
-		<br />
-		<span class="ui slot"><span class="paper" title="纸"><span class="stack">32</span></span></span>
-		<span class="ui slot"><span class="charcoal" title="木炭"><span class="stack">32</span></span></span>
-		<span class="ui slot"><span class="red_dye" title="红色染料"><span class="stack">32</span></span></span>
-		<span class="ui slot"><span class="black_dye" title="黑色染料"><span class="stack">32</span></span></span>
+		<span class="ui slot"><span class="quartz" title="石英"><span class="stack">16</span></span></span>
 		<span class="ui slot"><span class="seagrass" title="海草"><span class="stack">32</span></span></span>
 		<span class="ui slot"><span class="kelp" title="海带"><span class="stack">32</span></span></span>
+		<span class="ui slot"><span class="paper" title="纸"><span class="stack">32</span></span></span>
+		<span class="ui slot"><span class="charcoal" title="木炭"><span class="stack">32</span></span></span>
+		<span class="ui slot"><span class="flint" title="燧石"><span class="stack">32</span></span></span>
 		<span class="ui slot"><span class="cod" title="鳕鱼"><span class="stack">32</span></span></span>
-		<span class="ui slot"><span class="salmon" title="鲑鱼"><span class="stack">32</span></span></span>
 		<br />
+		<span class="ui slot"><span class="salmon" title="鲑鱼"><span class="stack">32</span></span></span>
 		<span class="ui slot"><span class="tropical_fish" title="热带鱼"><span class="stack">32</span></span></span>
 		<span class="ui slot"><span class="pufferfish" title="河豚"><span class="stack">32</span></span></span>
-		<span class="ui slot"><span class="rotten_flesh" title="腐肉"><span class="stack">36</span></span></span>
-		<span class="ui slot"><span class="gunpowder" title="火药"><span class="stack">36</span></span></span>
-		<span class="ui slot"><span class="bone_meal" title="骨粉"><span class="stack">36</span></span></span>
-		<span class="ui slot"><span class="blaze_powder" title="烈焰粉"><span class="stack">36</span></span></span>
-		<span class="ui slot"><span class="slime_ball" title="粘液球"><span class="stack">36</span></span></span>
-		<span class="ui slot"><span class="arrow" title="箭"><span class="stack">36</span></span></span>
+		<span class="ui slot"><span class="feather" title="羽毛"><span class="stack">32</span></span></span>
+		<span class="ui slot"><span class="rotten_flesh" title="腐肉"><span class="stack">32</span></span></span>
+		<span class="ui slot"><span class="gunpowder" title="火药"><span class="stack">32</span></span></span>
+		<span class="ui slot"><span class="blaze_powder" title="烈焰粉"><span class="stack">32</span></span></span>
+		<span class="ui slot"><span class="prismarine_crystals" title="海晶砂粒"><span class="stack">32</span></span></span>
+		<span class="ui slot"><span class="glass" title="玻璃"><span class="stack">32</span></span></span>
+		<span class="ui slot"><span class="bamboo" title="竹子"><span class="stack">48</span></span></span>
 		<br />
-		<span class="ui slot"><span class="prismarine_crystals" title="海晶砂粒"><span class="stack">36</span></span></span>
-		<span class="ui slot"><span class="bamboo" title="竹子"><span class="stack">36</span></span></span>
-		<span class="ui slot"><span class="sweet_berries" title="甜浆果"><span class="stack">36</span></span></span>
+		<span class="ui slot"><span class="sweet_berries" title="甜浆果"><span class="stack">48</span></span></span>
+		<span class="ui slot"><span class="slime_ball" title="粘液球"><span class="stack">48</span></span></span>
+		<span class="ui slot"><span class="arrow" title="箭"><span class="stack">48</span></span></span>		
+		<span class="ui slot"><span class="white_dye" title="红色染料"><span class="stack">48</span></span></span>
+		<span class="ui slot"><span class="orange_dye" title="橙色染料"><span class="stack">48</span></span></span>
+		<span class="ui slot"><span class="magenta_dye" title="品红色染料"><span class="stack">48</span></span></span>
+		<span class="ui slot"><span class="light_blue_dye" title="淡蓝色染料"><span class="stack">48</span></span></span>
+		<span class="ui slot"><span class="yellow_dye" title="黄色染料"><span class="stack">48</span></span></span>
+		<span class="ui slot"><span class="lime_dye" title="黄绿色染料"><span class="stack">48</span></span></span>
+		<span class="ui slot"><span class="pink_dye" title="粉色染料"><span class="stack">48</span></span></span>
+		<br />
+		<span class="ui slot"><span class="gray_dye" title="灰色染料"><span class="stack">48</span></span></span>
+		<span class="ui slot"><span class="light_gray_dye" title="淡灰色染料"><span class="stack">48</span></span></span>
+		<span class="ui slot"><span class="cyan_dye" title="青色染料"><span class="stack">48</span></span></span>
+		<span class="ui slot"><span class="purple_dye" title="紫色染料"><span class="stack">48</span></span></span>
+		<span class="ui slot"><span class="blue_dye" title="蓝色染料"><span class="stack">48</span></span></span>
+		<span class="ui slot"><span class="brown_dye" title="棕色染料"><span class="stack">48</span></span></span>
+		<span class="ui slot"><span class="green_dye" title="绿色染料"><span class="stack">48</span></span></span>
+		<span class="ui slot"><span class="red_dye" title="红色染料"><span class="stack">48</span></span></span>
+		<span class="ui slot"><span class="black_dye" title="黑色染料"><span class="stack">48</span></span></span>
 	</td>
 	<td>
 		<span class="ui slot"><span class="emerald" title="绿宝石"></span></span>
@@ -1437,7 +1468,7 @@
 
 <h3 id="shard_of_the_darkness">黑暗碎片 (Shard of the Darkness)</h3>
 <span class="ui single"><span class="ci shard_of_the_darkness"></span></span>
-<p><a href="#dark_animals"><abbr title="黑暗牛、黑暗哞菇、黑暗羊、黑暗猪、黑暗鸡、黑暗兔子">黑暗生物</abbr></a>被玩家杀死时有<code>0.5+0.2×抢夺等级</code>几率掉落。</p>
+<p><a href="#dark_animals"><abbr title="黑暗牛、黑暗哞菇、黑暗羊、黑暗猪、黑暗鸡、黑暗兔子">黑暗生物</abbr></a>被玩家杀死时掉落。</p>
 <p>可用于<a href="#rituals">仪式</a>。
 
 
@@ -1773,31 +1804,6 @@
 <span class="iron_ingot" title="铁锭"></span>
 </span></td></tr>
 
-<tr><th>草方块</th><td>草+泥土</td>
-<td><span class="ui ct" title="工作台">
-<span class="grass" title="草"></span>
-<span class="grass" title="草"></span>
-<span class="grass" title="草"></span>
-<span class="grass" title="草"></span>
-<span class="dirt" title="泥土"></span>
-<span class="grass" title="草"></span>
-<span class="grass" title="草"></span>
-<span class="grass" title="草"></span>
-<span class="grass" title="草"></span>
-<span class="grass_block" title="草方块"></span>
-<tr><th>菌丝</th><td>棕色蘑菇+红色蘑菇+泥土</td>
-<td><span class="ui ct" title="工作台">
-<span class="brown_mushroom" title="棕色蘑菇"></span>
-<span class="red_mushroom" title="红色蘑菇"></span>
-<span class="brown_mushroom" title="棕色蘑菇"></span>
-<span class="red_mushroom" title="红色蘑菇"></span>
-<span class="dirt" title="泥土"></span>
-<span class="red_mushroom" title="红色蘑菇"></span>
-<span class="brown_mushroom" title="棕色蘑菇"></span>
-<span class="red_mushroom" title="红色蘑菇"></span>
-<span class="brown_mushroom" title="棕色蘑菇"></span>
-<span class="mycelium" title="菌丝"></span>
-</span></td></tr>
 <tr><th>兔子皮</th>
 <td>皮革</td>
 <td><span class="ui ct" title="工作台">
@@ -4958,7 +4964,7 @@
 <p>湿海绵在下界可直接被干燥为海绵。</p>
 <!------------------------------------------------------------------------------------------------>
 <h2 id="trade">交易</h2>
-<p>新增了8种村民。现在制图师可以出售所有结构的地图，使用<a href="#moon_shard">月之碎片</a>购买，在下界/末地可以购买下界要塞/末地城地图(必须有相应结构才可)。</p>
+<p>新增了8种村民。调整制图师为可出售所有结构的地图，使用<a href="#moon_shard">月之碎片</a>购买，在下界/末地可以购买下界要塞/末地城地图(必须有相应结构才可)。</p>
 <img style="height:400px;" src="items/villager/banner.png" />
 <table style="width:100%;">
 <thead><tr><th colspan="2">职业</th><th style="width:40px;">层级</th><th>买</th><th>卖</th></tr></thead>
@@ -5288,19 +5294,7 @@
 <span class="grass" title="草"></span>
 <span class="grass" title="草"></span>
 <span class="grass_block" title="草方块"></span>
-<tr><th>菌丝</th><td>棕色蘑菇+红色蘑菇+泥土</td>
-<td><span class="ui ct" title="工作台">
-<span class="brown_mushroom" title="棕色蘑菇"></span>
-<span class="red_mushroom" title="红色蘑菇"></span>
-<span class="brown_mushroom" title="棕色蘑菇"></span>
-<span class="red_mushroom" title="红色蘑菇"></span>
-<span class="dirt" title="泥土"></span>
-<span class="red_mushroom" title="红色蘑菇"></span>
-<span class="brown_mushroom" title="棕色蘑菇"></span>
-<span class="red_mushroom" title="红色蘑菇"></span>
-<span class="brown_mushroom" title="棕色蘑菇"></span>
-<span class="mycelium" title="菌丝"></span>
-</span></td></tr>
+
 </tbody></table>
 
 <!------------------------------------------------------------------------------------------------>
@@ -5611,7 +5605,6 @@ scoreboard players set #rituals_time cppValue 1200
 <li>现在购买圣诞礼物需要1个月之碎片而不是绿宝石。</li>
 <li>提高了圣诞礼物的质量。</li>
 <li>新增空岛8草丛加泥土合成草方块。</li>
-<li>新增空岛4棕色蘑菇、4红色蘑菇加泥土合成菌丝。</li>
 <li>新增方块破坏器下方的伸出的活塞臂收回时，会自动破坏其上方的方块。</li>
 <li>新增空岛初始物资箱子、泥土、树苗、16骨粉。</li>
 <li>新增空岛雪球加4树苗或作物或树叶合成泥土。</li>
@@ -5647,7 +5640,7 @@ scoreboard players set #rituals_time cppValue 1200
 <a href="https://space.bilibili.com/4469715"><img src="items/bilibili.png" /></a>
 </p>
 
-<p>最后更新 2019-03-06</p>
+<p>最后更新 2019-03-14</p>
 </footer>
 </article>
 </body></html>
