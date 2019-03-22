@@ -1,0 +1,5 @@
+# 双台阶物品
+添加了双台阶和特定乐器音符盒的物品形式，使用精准采集的工具采集，或loot give @s loot double_acacia_slab等指令获取。
+需要配合XeKr的方纹中古1.14，或者任意带有block/double_acacia_slab等双台阶模型的资源包使用。
+
+将double_slab_items放入存档datapacks文件夹，将double_slab_items_resources放入资源包文件夹，进入游戏选择该资源包即可。
