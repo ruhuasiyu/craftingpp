@@ -1,0 +1,34 @@
+execute as @s[tag=cpp_mixed_slabs_stone_slab] run summon item ~ ~ ~ {Item:{id:"minecraft:stone_slab",Count:1b}}
+execute as @s[tag=cpp_mixed_slabs_smooth_stone_slab] run summon item ~ ~ ~ {Item:{id:"minecraft:smooth_stone_slab",Count:1b}}
+execute as @s[tag=cpp_mixed_slabs_stone_brick_slab] run summon item ~ ~ ~ {Item:{id:"minecraft:stone_brick_slab",Count:1b}}
+execute as @s[tag=cpp_mixed_slabs_sandstone_slab] run summon item ~ ~ ~ {Item:{id:"minecraft:sandstone_slab",Count:1b}}
+execute as @s[tag=cpp_mixed_slabs_acacia_slab] run summon item ~ ~ ~ {Item:{id:"minecraft:acacia_slab",Count:1b}}
+execute as @s[tag=cpp_mixed_slabs_birch_slab] run summon item ~ ~ ~ {Item:{id:"minecraft:birch_slab",Count:1b}}
+execute as @s[tag=cpp_mixed_slabs_dark_oak_slab] run summon item ~ ~ ~ {Item:{id:"minecraft:dark_oak_slab",Count:1b}}
+execute as @s[tag=cpp_mixed_slabs_jungle_slab] run summon item ~ ~ ~ {Item:{id:"minecraft:jungle_slab",Count:1b}}
+execute as @s[tag=cpp_mixed_slabs_oak_slab] run summon item ~ ~ ~ {Item:{id:"minecraft:oak_slab",Count:1b}}
+execute as @s[tag=cpp_mixed_slabs_spruce_slab] run summon item ~ ~ ~ {Item:{id:"minecraft:spruce_slab",Count:1b}}
+execute as @s[tag=cpp_mixed_slabs_purpur_slab] run summon item ~ ~ ~ {Item:{id:"minecraft:purpur_slab",Count:1b}}
+execute as @s[tag=cpp_mixed_slabs_quartz_slab] run summon item ~ ~ ~ {Item:{id:"minecraft:quartz_slab",Count:1b}}
+execute as @s[tag=cpp_mixed_slabs_red_sandstone_slab] run summon item ~ ~ ~ {Item:{id:"minecraft:red_sandstone_slab",Count:1b}}
+execute as @s[tag=cpp_mixed_slabs_brick_slab] run summon item ~ ~ ~ {Item:{id:"minecraft:brick_slab",Count:1b}}
+execute as @s[tag=cpp_mixed_slabs_cobblestone_slab] run summon item ~ ~ ~ {Item:{id:"minecraft:cobblestone_slab",Count:1b}}
+execute as @s[tag=cpp_mixed_slabs_nether_brick_slab] run summon item ~ ~ ~ {Item:{id:"minecraft:nether_brick_slab",Count:1b}}
+execute as @s[tag=cpp_mixed_slabs_prismarine_slab] run summon item ~ ~ ~ {Item:{id:"minecraft:prismarine_slab",Count:1b}}
+execute as @s[tag=cpp_mixed_slabs_prismarine_brick_slab] run summon item ~ ~ ~ {Item:{id:"minecraft:prismarine_brick_slab",Count:1b}}
+execute as @s[tag=cpp_mixed_slabs_dark_prismarine_slab] run summon item ~ ~ ~ {Item:{id:"minecraft:dark_prismarine_slab",Count:1b}}
+execute as @s[tag=cpp_mixed_slabs_polished_granite_slab] run summon item ~ ~ ~ {Item:{id:"minecraft:polished_granite_slab",Count:1b}}
+execute as @s[tag=cpp_mixed_slabs_smooth_red_sandstone_slab] run summon item ~ ~ ~ {Item:{id:"minecraft:smooth_red_sandstone_slab",Count:1b}}
+execute as @s[tag=cpp_mixed_slabs_mossy_stone_brick_slab] run summon item ~ ~ ~ {Item:{id:"minecraft:mossy_stone_brick_slab",Count:1b}}
+execute as @s[tag=cpp_mixed_slabs_polished_diorite_slab] run summon item ~ ~ ~ {Item:{id:"minecraft:polished_diorite_slab",Count:1b}}
+execute as @s[tag=cpp_mixed_slabs_mossy_cobblestone_slab] run summon item ~ ~ ~ {Item:{id:"minecraft:mossy_cobblestone_slab",Count:1b}}
+execute as @s[tag=cpp_mixed_slabs_end_stone_brick_slab] run summon item ~ ~ ~ {Item:{id:"minecraft:end_stone_brick_slab",Count:1b}}
+execute as @s[tag=cpp_mixed_slabs_smooth_sandstone_slab] run summon item ~ ~ ~ {Item:{id:"minecraft:smooth_sandstone_slab",Count:1b}}
+execute as @s[tag=cpp_mixed_slabs_smooth_quartz_slab] run summon item ~ ~ ~ {Item:{id:"minecraft:smooth_quartz_slab",Count:1b}}
+execute as @s[tag=cpp_mixed_slabs_granite_slab] run summon item ~ ~ ~ {Item:{id:"minecraft:granite_slab",Count:1b}}
+execute as @s[tag=cpp_mixed_slabs_andesite_slab] run summon item ~ ~ ~ {Item:{id:"minecraft:andesite_slab",Count:1b}}
+execute as @s[tag=cpp_mixed_slabs_red_nether_brick_slab] run summon item ~ ~ ~ {Item:{id:"minecraft:red_nether_brick_slab",Count:1b}}
+execute as @s[tag=cpp_mixed_slabs_polished_andesite_slab] run summon item ~ ~ ~ {Item:{id:"minecraft:polished_andesite_slab",Count:1b}}
+execute as @s[tag=cpp_mixed_slabs_diorite_slab] run summon item ~ ~ ~ {Item:{id:"minecraft:diorite_slab",Count:1b}}
+
+kill @s

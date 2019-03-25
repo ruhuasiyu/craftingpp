@@ -70,11 +70,11 @@
 }
 .index span.ci{
 	background-image: url("colorful_items.png");
-	background-size:144px 640px;
+	background-size:144px 704px;
 }
 .ui > span.ci{
 	background-image: url("colorful_items.png");
-	background-size: 288px 1280px;
+	background-size: 288px 1408px;
 }
 
 .ui > span.shapeless{
@@ -1387,6 +1387,32 @@ span.vindicator_head{	background-position: -96px -1248px;}
 span.potion_of_fat{	background-position: -128px -1248px;}
 span.firecrackers{	background-position: -160px -1248px;}
 span.glass_sign{	background-position: -192px -1248px;}
+span.potion_of_sky{	background-position: -224px -1248px;}
+span.splash_potion_of_sky{	background-position: -256px -1248px;}
+
+span.lingering_potion_of_sky{	background-position: -0px -1280px;}
+span.potion_of_ocean{	background-position: -32px -1280px;}
+span.splash_potion_of_ocean{	background-position: -64px -1280px;}
+span.lingering_potion_of_ocean{	background-position: -96px -1280px;}
+span.potion_of_ridge{	background-position: -128px -1280px;}
+span.splash_potion_of_ridge{	background-position: -160px -1280px;}
+span.lingering_potion_of_ridge{	background-position: -192px -1280px;}
+span.potion_of_dirt{	background-position: -224px -1280px;}
+span.potion_of_earth{	background-position: -256px -1280px;}
+
+span.splash_potion_of_earth{	background-position: -0px -1312px;}
+span.lingering_potion_of_earth{	background-position: -32px -1312px;}
+span.potion_of_fire{	background-position: -64px -1312px;}
+span.splash_potion_of_fire{	background-position: -96px -1312px;}
+span.lingering_potion_of_fire{	background-position: -128px -1312px;}
+span.potion_of_life{	background-position: -160px -1312px;}
+span.splash_potion_of_life{	background-position: -192px -1312px;}
+span.lingering_potion_of_life{	background-position: -224px -1312px;}
+span.potion_of_haste{	background-position: -256px -1312px;}
+
+span.potion_of_resistance{	background-position: -0px -1280px;}
+span.potion_of_tide{	background-position: -32px -1280px;}
+span.potion_of_chain{	background-position: -64px -1280px;}
 
 
 span.effects{

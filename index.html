@@ -58,7 +58,7 @@
 <p>原版模组一般是指使用命令而非<abbr title="forge liteloader rift fibric 等">mod api</abbr>来对游戏的可玩性做出修改。自1.13起，原版模组一般以数据包的形式出现。</p>
 
 <p>《更多的合成》是国内论坛最大的原版模组，包括数百种物品、材料、工具、装饰等，以及新的村民交易和空岛系统。该模组无明确的主题，凡是作者认为原版没有而应该有的特性都有可能加入进来。</p>
-<p>最新版本为测试版v1.9-m03d22(魔法更新)，支持Minecraft Java版 1.14快照19w12a+。</p>
+<p>最新版本为测试版v1.9-m03d25(魔法更新)，支持Minecraft Java版 1.14快照19w12a+。</p>
 
 
 <h3 id="download">📦 下载地址</h3>
@@ -74,9 +74,9 @@
 <tbody>
 <tr>
 	<td>Minecraft Java版 19w12a+</td>
-	<td>Crafting++ 1.9测试版m03d22</td>
-	<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/raw/master/versions/1.9/v1.9-m03d22.zip">github</a>
-	  | <a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.9-m03d22.zip">官方</a></td>
+	<td>Crafting++ 1.9测试版m03d25</td>
+	<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/raw/master/versions/1.9/v1.9-m03d25.zip">github</a>
+	  | <a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.9-m03d25.zip">官方</a></td>
 	<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/raw/master/versions/1.9/change.log">更新日志</a></td>
 </tr>
 <tr>
@@ -144,7 +144,6 @@
 · <a href="#random_block">随机方块</a>
 · <a href="#sort_chest">箱子整理</a>
 · <a href="#dispenser_plant">自动种植</a>
-· <a href="#mix_slabs">复合台阶</a> 
 · <a href="#vertical_blocks">竖纹方块</a>
 · <a href="#vertical_slabs">竖台阶</a>
 · <a href="#nether_dry_wet_sponge">干燥湿海绵</a>
@@ -3315,9 +3314,12 @@
 
 <h3>药水</h3>
 <p>通过酿造稀有掉落物和粗制的药水，可以得到各种药水。部分支持喷溅、滞留、延长、加强版的酿造。连环效果无对应的喷溅、滞留版本。</p>
-<table><thead><tr><th>药水名称</th><th>材料</th><th>效果</th><th>延长版</th><th>加强版</th></tr></thead><tbody>
+<table><thead><tr><th colspan="2">药水名称</th><th>材料</th><th>效果</th><th>延长版</th><th>加强版</th></tr></thead><tbody>
 <tr>
 	<td><strong id="potion_of_sky">天空药水 (Potion of Sky)</strong></td>
+	<td><span class="ui single"><span class="ci potion_of_sky"></span></span>
+		<span class="ui single"><span class="ci splash_potion_of_sky"></span></span>
+		<span class="ui single"><span class="ci lingering_potion_of_sky"></span></span></td>
 	<td><a href="#wing_of_sky">天空之翼</a></td>
 	<th class="lore">速度 3:00<br/>缓降 1:30</th>
 	<th class="lore">速度 8:00<br/>缓降 4:00</th>
@@ -3325,6 +3327,9 @@
 </tr>
 <tr>
 	<td><strong id="potion_of_ocean">海洋药水 (Potion of Ocean)</strong></td>
+	<td><span class="ui single"><span class="ci potion_of_ocean"></span></span>
+		<span class="ui single"><span class="ci splash_potion_of_ocean"></span></span>
+		<span class="ui single"><span class="ci lingering_potion_of_ocean"></span></span></td>
 	<td><a href="#heart_of_ocean">水晶之心</a></td>
 	<th class="lore">水下呼吸 3:00<br/>潮涌能量 1:30</th>
 	<th class="lore">水下呼吸 8:00<br/>潮涌能量 4:00</th>
@@ -3332,6 +3337,9 @@
 </tr>
 <tr>
 	<td><strong id="potion_of_ridge">山脉药水 (Potion of Ridge)</strong></td>
+	<td><span class="ui single"><span class="ci potion_of_ridge"></span></span>
+		<span class="ui single"><span class="ci splash_potion_of_ridge"></span></span>
+		<span class="ui single"><span class="ci lingering_potion_of_ridge"></span></span></td>
 	<td><a href="#limb_of_ridge">山脉之肢</a></td>
 	<th class="lore">力量 3:00<br/>夜视 3:00</th>
 	<th class="lore">力量 8:00<br/>夜视 8:00</th>
@@ -3339,6 +3347,7 @@
 </tr>
 <tr>
 	<td><strong id="potion_of_dirt">泥土药水 (Potion of Dirt)</strong></td>
+	<td><span class="ui single"><span class="ci potion_of_dirt"></span></span></td>
 	<td><a href="#soul_of_dirt">泥土之魂</a></td>
 	<th class="lore">隐身 3:00<br/>连环 3:00</th>
 	<th class="lore">隐身 8:00<br/>连环 8:00</th>
@@ -3346,6 +3355,9 @@
 </tr>
 <tr>
 	<td><strong id="potion_of_earth">大地药水 (Potion of Earth)</strong></td>
+	<td><span class="ui single"><span class="ci potion_of_earth"></span></span>
+		<span class="ui single"><span class="ci splash_potion_of_earth"></span></span>
+		<span class="ui single"><span class="ci lingering_potion_of_earth"></span></span></td>
 	<td><a href="#certification_of_earth">大地之证</a></td>
 	<th class="lore">跳跃提升 3:00<br/>急迫 3:00</th>
 	<th class="lore">跳跃提升 8:00<br/>急迫 8:00</th>
@@ -3353,6 +3365,9 @@
 </tr>
 <tr>
 	<td><strong id="potion_of_fire">火焰药水 (Potion of Fire)</strong></td>
+	<td><span class="ui single"><span class="ci potion_of_fire"></span></span>
+		<span class="ui single"><span class="ci splash_potion_of_fire"></span></span>
+		<span class="ui single"><span class="ci lingering_potion_of_fire"></span></span></td>
 	<td><a href="#nova_of_fire">火焰之星</a></td>
 	<th class="lore">防火 3:00<br/>抗性提升 3:00</th>
 	<th class="lore">防火 8:00<br/>抗性提升 8:00</th>
@@ -3360,6 +3375,9 @@
 </tr>
 <tr>
 	<td><strong id="potion_of_life">生命药水 (Potion of Life)</strong></td>
+	<td><span class="ui single"><span class="ci potion_of_life"></span></span>
+		<span class="ui single"><span class="ci splash_potion_of_life"></span></span>
+		<span class="ui single"><span class="ci lingering_potion_of_life"></span></span></td>
 	<td><a href="#spirit_of_life">生命之灵</a></td>
 	<th class="lore">生命恢复 0:45<br/>瞬间治疗</th>
 	<th class="lore">生命恢复 1:30<br/>瞬间治疗</th>
@@ -4629,9 +4647,6 @@
 </tbody></table>
 <p><img style="height:200px" src="items/screenshots/dispenser_plant.png" /></p>
 
-<h3 id="mix_slabs">复合台阶</h3>
-<p>手持台阶右击一下半台阶顶部可将二者复合。复合台阶必须用镐破坏。当活塞推动多个复合台阶时可能会导致推动失败。</p>
-
 <h3 id="vertical_blocks">竖纹方块</h3>
 <p>部分方块双台阶材质修改为竖纹。</p>
 <p><img style="height:160px" src="items/screenshots/vertical_blocks.png" /></p>
@@ -5065,7 +5080,7 @@
 <a href="https://space.bilibili.com/4469715"><img src="items/bilibili.png" /></a>
 </p>
 
-<p>最后更新 2019-03-22</p>
+<p>最后更新 2019-03-25</p>
 </footer>
 </article>
 </body></html>
