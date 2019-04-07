@@ -58,7 +58,7 @@
 <p>原版模组一般是指使用命令而非<abbr title="forge liteloader rift fibric 等">mod api</abbr>来对游戏的可玩性做出修改。自1.13起，原版模组一般以数据包的形式出现。</p>
 
 <p>《更多的合成》是国内论坛最大的原版模组，包括数百种物品、材料、工具、装饰等，以及新的村民交易和空岛系统。该模组无明确的主题，凡是作者认为原版没有而应该有的特性都有可能加入进来。</p>
-<p>最新版本为测试版v1.9-m04d02(魔法更新)，支持Minecraft Java版 1.14快照19w12a+。</p>
+<p>最新版本为测试版v1.9-m04d07(魔法更新)，支持Minecraft Java版 1.14快照19w12a+。</p>
 
 
 <h3 id="download">📦 下载地址</h3>
@@ -80,9 +80,9 @@
 </tr>
 <tr>
 	<td>Minecraft Java版 19w12a+</td>
-	<td>Crafting++ 1.9测试版m04d02</td>
-	<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/raw/master/versions/1.9/v1.9-m04d02.zip">github</a>
-	  | <a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.9-m04d02.zip">官方</a></td>
+	<td>Crafting++ 1.9测试版m04d07</td>
+	<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/raw/master/versions/1.9/v1.9-m04d07.zip">github</a>
+	  | <a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.9-m04d07.zip">官方</a></td>
 	<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/commit/766130772f098636359056e9f050332371672243">更新日志</a></td>
 </tr>
 <tr>
@@ -279,6 +279,7 @@
 <tr><th>实用工具</th><td>
   <a href="#portable_crafting_table"><span class="ci" style="background-position: -0px -144px;"></span>便携式工作台</a> 
 · <a href="#portable_crafting_machine"><span class="ci" style="background-position: -80px -608px;"></span>便携式合成器</a> 
+· <a href="#dustbin"><span class="ci" style="background-position: -0px -720px;"></span>垃圾桶</a> 
 · <a href="#magnet"><span class="ci" style="background-position: -16px -144px;"></span>磁铁</a> 
 · <a href="#time_checker"><span class="ci" style="background-position: -48px -144px;"></span>报时器</a> 
 · <a href="#time_conditioner"><span class="ci" style="background-position: -32px -144px;"></span>时间调节器</a> 
@@ -433,7 +434,6 @@
 · <a href="#green_hat"><span class="ci" style="background-position: -64px -400px;"></span>原谅帽</a> 
 · <a href="#black_hat"><span class="ci" style="background-position: -80px -400px;"></span>非酋帽</a> 
 · <a href="#nurse_hat"><span class="ci" style="background-position: -96px -400px;"></span>护士帽</a> 
-· <a href="#red_hat"><span class="ci" style="background-position: -112px -400px;"></span>小红帽</a> 
 · <a href="#jacket"><span class="ci" style="background-position: -128px -400px;"></span>皮夹克</a> 
 · <a href="#red_coat"><span class="ci" style="background-position: -0px -416px;"></span>红色外套</a> 
 · <a href="#tight_leather_leggings"><span class="ci" style="background-position: -16px -416px;"></span>紧身皮裤</a> 
@@ -441,9 +441,7 @@
 · <a href="#snow_boots"><span class="ci" style="background-position: -48px -416px;"></span>雪地靴</a> 
 · <a href="#classical_painting"><span class="ci" style="background-position: -64px -416px;"></span>经典画作</a> 
 · <a href="#spring_festival_decorations"><span class="ci" style="background-position: -16px -624px;"></span>新春装饰</a> 
-· <a href="#character"><span class="ci" style="background-position: -96px -608px;"></span>
-<span class="ci" style="background-position: -112px -608px;"></span>
-<span class="ci" style="background-position: -128px -608px;"></span>纸片人</a> 
+· <a href="#character"><span class="ci" style="background-position: -96px -608px;"></span>纸片人</a> 
 · <a href="#colorful_sign"><span class="ci" style="background-position: -64px -560px;"></span>彩色告示牌</a> 
 · <a href="#glass_item_frame"><span class="ci" style="background-position: -80px -416px;"></span>玻璃物品展示框</a> 
 · <a href="#stairs"><span style="background-position: -352px -448px;"></span>楼梯</a> 
@@ -2434,6 +2432,21 @@
 </span></td>
 <td>右击可放置一个<a href="#crafting_machine">合成器</a>，玩家离开后会自动消失（包括其中的物品也会消失）。</td></tr>
 
+<tr><th><strong id="dustbin">垃圾桶 (Dustbin)</strong></th><td>铁锭+打火石+熔岩桶</td>
+<td><span class="ui cm" title="合成器">
+<span class="iron_ingot" title="铁锭"></span>
+<span class="flint_and_steel" title="打火石"></span>
+<span class="iron_ingot" title="铁锭"></span>
+<span class="iron_ingot" title="铁锭"></span>
+<span class="lava_bucket" title="熔岩桶"></span>
+<span class="iron_ingot" title="铁锭"></span>
+<span class="iron_ingot" title="铁锭"></span>
+<span class="iron_ingot" title="铁锭"></span>
+<span class="iron_ingot" title="铁锭"></span>
+<span class="ci dustbin" title="垃圾桶"></span>
+</span></td>
+<td>自动清理输入到垃圾桶的物品。</td></tr>
+
 <tr><th><strong id="magnet">磁铁 (Magnet)</strong></th><td><a href="#enchanted_iron">附魔铁锭</a>+红石</td>
 <td><span class="ui cm" title="合成器">
 <span class="empty"></span>
@@ -4298,21 +4311,6 @@
 <span class="ci nurse_hat" title="护士帽"></span>
 </span></td></tr>
 
-<tr><th><strong id="red_hat">小红帽 (Red Hat)</strong></th>
-<td>红石</td>
-<td><span class="ui cm" title="合成器">
-<span class="redstone" title="红石"></span>
-<span class="redstone" title="红石"></span>
-<span class="redstone" title="红石"></span>
-<span class="redstone" title="红石"></span>
-<span class="empty"></span>
-<span class="redstone" title="红石"></span>
-<span class="empty"></span>
-<span class="empty"></span>
-<span class="empty"></span>
-<span class="ci red_hat" title="小红帽"></span>
-</span></td></tr>
-
 <tr><th><strong id="jacket">皮夹克 (Jacket)</strong><br/>
 <img style="width:12px;height:12px" src="items/armor.png" title="3盔甲" /><img style="width:12px;height:12px" src="items/armor_half.png" title="3盔甲" /></th>
 <td>棕色染料+皮革</td>
@@ -4485,7 +4483,16 @@
 <span class="ui single"><span class="ci character16"></span></span>
 <span class="ui single"><span class="ci character17"></span></span>
 <span class="ui single"><span class="ci character18"></span></span>
-<p>对床shift右键即可使用，共18种样式。从<a href="#trade">圣诞老人村民</a>处购买圣诞礼物有几率得到。包括：樱之宫莓香、日向夏帆、星川麻冬、天野美雨、神崎日照、鹿目圆香、晓美焰、美树沙耶香、巴麻美、佐仓杏子、篝敦子、洛蒂·杨森、苏西·曼芭芭拉、夏莉欧·杜诺尔、春风DoReMi、藤原羽月、妹尾爱子、木之本樱、小起。</p>
+<span class="ui single"><span class="ci character19"></span></span>
+<span class="ui single"><span class="ci character20"></span></span>
+<span class="ui single"><span class="ci character21"></span></span>
+<span class="ui single"><span class="ci character22"></span></span>
+<span class="ui single"><span class="ci character23"></span></span>
+<span class="ui single"><span class="ci character24"></span></span>
+<span class="ui single"><span class="ci character25"></span></span>
+<span class="ui single"><span class="ci character26"></span></span>
+<span class="ui single"><span class="ci character27"></span></span>
+<p>对床shift右键即可使用，共27种样式。从<a href="#trade">圣诞老人村民</a>处购买圣诞礼物有几率得到。包括：樱之宫莓香、日向夏帆、星川麻冬、天野美雨、神崎日照、鹿目圆香、晓美焰、美树沙耶香、巴麻美、佐仓杏子、篝敦子、洛蒂·杨森、苏西·曼芭芭拉、夏莉欧·杜诺尔、春风DoReMi、藤原羽月、妹尾爱子、木之本樱、小起、宫永咲、原村和、片冈优希、染谷真子、竹井久、龙门渕透华、天江衣、福路美穗子。</p>
 
 <h3 id="colorful_sign">彩色告示牌 (Colorful Sign)</h3>
 <span class="ui single"><span class="ci white_sign"></span></span>
@@ -4522,10 +4529,10 @@
 <span class="ci red_sign" title="红色色告示牌"></span>
 <span class="shapeless" title="此配方是无形的，材料可以以任何排列方式放置在合成格内。"></span>
 </span></td></tr>
-<tr><th>玻璃告示牌</th><td>告示牌+玻璃</td>
+<tr><th>玻璃告示牌</th><td>告示牌+玻璃板</td>
 <td><span class="ui cm" title="合成器">
 <span class="oak_sign" title="橡木告示牌"></span>
-<span class="glass" title="玻璃"></span>
+<span class="glass_pane" title="玻璃板"></span>
 <span class="empty"></span>
 <span class="empty"></span>
 <span class="empty"></span>
@@ -5102,7 +5109,7 @@
 <a href="https://space.bilibili.com/4469715"><img src="items/bilibili.png" /></a>
 </p>
 
-<p>最后更新 2019-04-02</p>
+<p>最后更新 2019-04-07</p>
 </footer>
 </article>
 </body></html>

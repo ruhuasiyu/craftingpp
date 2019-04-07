@@ -70,11 +70,11 @@
 }
 .index span.ci{
 	background-image: url("colorful_items.png");
-	background-size:144px 704px;
+	background-size:144px 736px;
 }
 .ui > span.ci{
 	background-image: url("colorful_items.png");
-	background-size: 288px 1408px;
+	background-size: 288px 1472px;
 }
 
 .ui > span.shapeless{
@@ -1252,7 +1252,6 @@ span.glow_hat{	background-position: -96px -800px;}
 span.green_hat{	background-position: -128px -800px;}
 span.black_hat{	background-position: -160px -800px;}
 span.nurse_hat{	background-position: -192px -800px;}
-span.red_hat{	background-position: -224px -800px;}
 span.jacket{	background-position: -256px -800px;}
 
 span.red_coat{	background-position: -0px -832px;}
@@ -1429,6 +1428,18 @@ span.character15{	background-position: -160px -1376px;}
 span.character16{	background-position: -192px -1376px;}
 span.character17{	background-position: -224px -1376px;}
 span.character18{	background-position: -256px -1376px;}
+
+span.character19{	background-position: -0px -1408px;}
+span.character20{	background-position: -32px -1408px;}
+span.character21{	background-position: -64px -1408px;}
+span.character22{	background-position: -96px -1408px;}
+span.character23{	background-position: -128px -1408px;}
+span.character24{	background-position: -160px -1408px;}
+span.character25{	background-position: -192px -1408px;}
+span.character26{	background-position: -224px -1408px;}
+span.character27{	background-position: -256px -1408px;}
+
+span.dustbin{	background-position: -0px -1440px;}
 
 
 span.effects{
