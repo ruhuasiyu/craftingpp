@@ -647,7 +647,7 @@ span.smooth_stone{	background-position: -832px -896px;}
 span.snow_block{	background-position: -928px -896px;}
 
 span.spruce_planks{	background-position: -0px -928px;}
-span.stone_slab{	background-position: -160px -928px;}
+span.smooth_stone_slab{	background-position: -160px -928px;}
 span.redstone_block{	background-position: -288px -928px;}
 span.iron_trapdoor{	background-position: -416px -928px;}
 span.lever{	background-position: -480px -928px;}
@@ -984,6 +984,7 @@ span.lily_of_the_valley{	background-position: -640px -2368px;}
 span.suspicious_stew{	background-position: -928px -2368px;}
 
 span.barrel{	background-position: -64px -2432px;}
+span.stone_slab{	background-position: -224px -2432px;}
 span.sweet_berries{	background-position: -768px -2432px;}
 
 span.empty{	background-position: -992px -2432px;}

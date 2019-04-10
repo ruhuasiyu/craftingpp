@@ -58,7 +58,7 @@
 <p>原版模组一般是指使用命令而非<abbr title="forge liteloader rift fibric 等">mod api</abbr>来对游戏的可玩性做出修改。自1.13起，原版模组一般以数据包的形式出现。</p>
 
 <p>《更多的合成》是国内论坛最大的原版模组，包括数百种物品、材料、工具、装饰等，以及新的村民交易和空岛系统。该模组无明确的主题，凡是作者认为原版没有而应该有的特性都有可能加入进来。</p>
-<p>最新版本为测试版v1.9-m04d07(魔法更新)，支持Minecraft Java版 1.14快照19w12a+。</p>
+<p>最新版本为测试版v1.9-m04d10(魔法更新)，支持Minecraft Java版 1.14快照19w12a+。</p>
 
 
 <h3 id="download">📦 下载地址</h3>
@@ -80,9 +80,9 @@
 </tr>
 <tr>
 	<td>Minecraft Java版 19w12a+</td>
-	<td>Crafting++ 1.9测试版m04d07</td>
-	<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/raw/master/versions/1.9/v1.9-m04d07.zip">github</a>
-	  | <a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.9-m04d07.zip">官方</a></td>
+	<td>Crafting++ 1.9测试版m04d10</td>
+	<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/raw/master/versions/1.9/v1.9-m04d10.zip">github</a>
+	  | <a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.9-m04d10.zip">官方</a></td>
 	<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/commit/756bf4442d070d3161b667e8cf03557372de7923">更新日志</a></td>
 </tr>
 <tr>
@@ -95,8 +95,8 @@
 </tbody></table>
 
 <h3 id="how_to_start">🚀 如何开始</h3>
-<p>下载后，将解压缩后的<code>datapacks</code>文件夹和<code>resources.zip</code>放入<code>.minecraft/saves/世界名</code>文件夹。安装完成后进入游戏并按下F3+T即可。</p>
-<p>服务端的操作类似，请设置server.properties中resource-pack=home.ustc.edu.cn/~zsxqq/craftingpp/resources.zip，每次更新时请重新计算resource-pack-sha1。客户端无需安装数据包。</p>
+<p>下载后，将解压缩后的<code>datapacks</code>文件夹和<code>resources.zip</code>放入<code>.minecraft/saves/世界名</code>文件夹。安装完成后进入游戏即可。</p>
+<p>服务端的操作类似，请设置server.properties中resource-pack=home.ustc.edu.cn/~zsxqq/craftingpp/resources.zip，每次更新时请重新计算resource-pack-sha1；或者让玩家自行下载资源包。客户端无需安装数据包。</p>
 <p>广告：欢迎加入挼苹果服，QQ群号885244850。</p>
 
 <h4>模组入门</h4>
@@ -674,6 +674,7 @@
 <tr><td><a href="#fruit_sapling">水果树树苗</a></td><td><a href="#fertilizer">肥料</a></td><td><a href="#fruits">水果</a></td><td>0~3 <a href="#fruit_sapling">水果树树苗</a></td><td>2</td><td>2</td></tr>
 <tr><td><a href="#ore_sapling">矿石树树苗</a></td><td><a href="#fertilizer">肥料</a></td><td>矿石</td><td>0~3 <a href="#ore_sapling">矿石树树苗</a></td><td>2</td><td>2</td></tr>
 <tr><td><a href="#wool_sapling">羊毛树树苗</a></td><td><a href="#fertilizer">肥料</a></td><td>羊毛</td><td>0~3 <a href="#wool_sapling">羊毛树树苗</a></td><td>2</td><td>2</td></tr>
+<tr><td><a href="#flowers_and_grasses">花草种子</a></td><td><a href="#fertilizer">肥料</a></td><td><a href="#flowers_and_grasses">花草</a></td><td>-</a></td><td>2</td><td>2</td></tr>
 </tbody></table>
 
 <h4>常温低压</h4>
@@ -2348,7 +2349,7 @@
 <span class="red_dye" title="红色染料"></span>
 <span class="ci red_force_of_fire" title="红色火之力"></span>
 </span></td>
-<td>右击烧炼方块成物品，有1/5几率获得1点经验。<span style="font-style:itapc;">Fial Forces!</span></td></tr>
+<td>右击烧炼方块成物品。也可用于点燃生物。<span style="font-style:itapc;">Fial Forces!</span></td></tr>
 
 <tr><th><strong id="purple_force_of_life">紫色命之力 (Purple Force of Life)</strong></th><td>紫色染料+钻石+<a href="#spirit_of_life">生命之灵</a></td>
 <td><span class="ui cm" title="合成器">
@@ -2565,7 +2566,7 @@
 <span class="empty"></span>
 <span class="ci grafter" title="剪枝器"></span>
 </span></td>
-<td>破坏树叶必定掉落树苗。每次使用消耗2点耐久。</td></tr>
+<td>破坏树叶必定掉落树苗。每次使用消耗2点耐久，共132点耐久。</td></tr>
 
 <tr><th><strong id="glass_pickaxe">玻璃镐 (Glass Pickaxe)</strong></th><td>玻璃+木棍</td>
 <td><span class="ui cm" title="合成器">
@@ -2580,7 +2581,22 @@
 <span class="empty"></span>
 <span class="ci glass_pickaxe" title="玻璃镐"></span>
 </span></td>
-<td>无需精准附魔即可采集玻璃。</td></tr>
+<td>无需精准附魔即可采集玻璃，共132点耐久。</td></tr>
+
+<tr><th><strong id="chest_transporter">搬箱器 (Chest Transporter)</strong></th><td>木棍+<a href="#enchanted_iron">附魔铁锭</a></td>
+<td><span class="ui cm" title="合成器">
+<span class="stick" title="木棍"></span>
+<span class="empty"></span>
+<span class="stick" title="木棍"></span>
+<span class="stick" title="木棍"></span>
+<span class="ci enchanted_iron" title="附魔铁锭"></span>
+<span class="stick" title="木棍"></span>
+<span class="empty"></span>
+<span class="ci enchanted_iron" title="附魔铁锭"></span>
+<span class="empty"></span>
+<span class="ci chest_transporter" title="搬箱器"></span>
+</span></td>
+<td>shift右键破坏箱子，箱子内的物品会保留。共26点耐久。</td></tr>
 
 <tr><th><strong id="roost">鸡窝 (Roost)</strong></th><td>小麦</td>
 <td><span class="ui cm" title="合成器">
@@ -2597,20 +2613,20 @@
 </span></td>
 <td>可作为鸡下蛋的位置，破坏后无掉落。</td></tr>
 
-<tr><th><strong id="firecrackers">鞭炮 (Firecrackers)</strong></th><td>火药+纸</td>
+<tr><th><strong id="firecrackers">鞭炮 (Firecrackers)</strong></th><td>火药+线+纸</td>
 <td><span class="ui cm" title="合成器">
 <span class="gunpowder" title="火药"></span>
-<span class="paper" title="纸"></span>
+<span class="string" title="线"></span>
 <span class="gunpowder" title="火药"></span>
 <span class="paper" title="纸"></span>
-<span class="gunpowder" title="火药"></span>
+<span class="string" title="线"></span>
 <span class="paper" title="纸"></span>
 <span class="gunpowder" title="火药"></span>
-<span class="paper" title="纸"></span>
+<span class="string" title="线"></span>
 <span class="gunpowder" title="火药"></span>
 <span class="ci firecrackers" title="鞭炮"></span>
 </span></td>
-<td>放置后生成一个即将爆炸的tnt。</td></tr>
+<td>放置后生成一个即将爆炸的tnt，引线时长1.5秒。</td></tr>
 </tbody></table>
 
 <h3>旗帜、标志和盾牌图案</h3>
@@ -4549,11 +4565,11 @@
 
 <h3 id="glass_item_frame">玻璃物品展示框 (Glass Item Frame)</h3>
 <span class="ui single"><span class="ci glass_item_frame"></span></span>
-<p>放入物品后变为透明。</p>
-<table><thead><tr><th>名称</th><th>材料</th><th>合成配方</th><!--<th>原画</th>--></tr></thead>
+<p>现在物品展示框材质默认为玻璃材质，放入物品后边框会消失。</p>
+<table><thead><tr><th>名称</th><th>材料</th><th>合成配方</th></tr></thead>
 <tbody>
 <tr><th>玻璃物品展示框</th><td>木棍+玻璃板</td>
-<td><span class="ui cm" title="合成器">
+<td><span class="ui ct" title="工作台">
 <span class="stick" title="木棍"></span>
 <span class="stick" title="木棍"></span>
 <span class="stick" title="木棍"></span>
@@ -4756,8 +4772,8 @@
 <h2 id="block_sky_domain">空域开端</h2>
 <p>
 该数据包仅在出生点y=0处无基岩情形下启用，玩家可由自定义超平坦如<code>minecraft:air;minecraft:mountains;</code>进入。</p>
-<p>若要在非空岛模式下开启该模块，依次输入<code>/datapack enable "file/block_sky_domain"</code>和<code>scoreboard players set #load_block_sky_domain cppValue 1</code></p>
-<p>若要在空岛模式下关闭该模块，依次输入<code>/datapack disable "file/block_sky_domain"</code>和<code>scoreboard players set #load_block_sky_domain cppValue 0</code></p>
+<p>若要在非空岛模式下开启该模块，依次输入<code>scoreboard players set #load_block_sky_domain cppValue 1</code>和<code>/datapack enable "file/block_sky_domain"</code></p>
+<p>若要在空岛模式下关闭该模块，依次输入<code>scoreboard players set #load_block_sky_domain cppValue 0</code>和<code>/datapack disable "file/block_sky_domain"</code></p>
 <p>该数据包旨在为空岛玩家提供从泥土到末地的完整科技链。加载后会在海平面高度生成一块基岩和一个箱子，箱子内包含1泥土、1橡树树苗、16骨粉。</p>
 <p>玩家破坏树叶、草丛、枯萎的灌木、海草会掉落下述物品。</p>
 
@@ -4940,9 +4956,9 @@
 <td><span class="ui ct" title="工作台">
 <span class="snowball" title="雪球"></span>
 <span class="oak_sapling" title="树苗"></span>
-<span class="wheat" title="小麦"></span>
-<span class="potato" title="马铃薯"></span>
-<span class="carrot" title="胡萝卜"></span>
+<span class="oak_sapling" title="树苗"></span>
+<span class="oak_sapling" title="树苗"></span>
+<span class="oak_sapling" title="树苗"></span>
 <span class="empty"></span>
 <span class="empty"></span>
 <span class="empty"></span>
