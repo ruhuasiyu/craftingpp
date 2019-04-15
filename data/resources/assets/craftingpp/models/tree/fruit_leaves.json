@@ -1,0 +1,19 @@
+{
+	"parent": "craftingpp:machine/machine",
+    "textures": {
+        "particle": "craftingpp:tree/fruit_leaves",
+        "down": "craftingpp:tree/fruit_leaves",
+        "up": "craftingpp:tree/fruit_leaves",
+        "north": "craftingpp:tree/fruit_leaves",
+        "east": "craftingpp:tree/fruit_leaves",
+        "south": "craftingpp:tree/fruit_leaves",
+        "west": "craftingpp:tree/fruit_leaves"
+    },
+	"display": {
+		"head": {
+			"rotation": [ 0, 0, 0 ],
+			"translation": [ 0, 3.6, 0 ],
+			"scale": [ 2.29, 2.29, 2.29 ]
+		}
+	}
+}

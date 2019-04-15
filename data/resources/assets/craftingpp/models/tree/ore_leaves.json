@@ -1,0 +1,19 @@
+{
+	"parent": "craftingpp:machine/machine",
+    "textures": {
+        "particle": "craftingpp:tree/ore_leaves",
+        "down": "craftingpp:tree/ore_leaves",
+        "up": "craftingpp:tree/ore_leaves",
+        "north": "craftingpp:tree/ore_leaves",
+        "east": "craftingpp:tree/ore_leaves",
+        "south": "craftingpp:tree/ore_leaves",
+        "west": "craftingpp:tree/ore_leaves"
+    },
+	"display": {
+		"head": {
+			"rotation": [ 0, 0, 0 ],
+			"translation": [ 0, 3.6, 0 ],
+			"scale": [ 2.29, 2.29, 2.29 ]
+		}
+	}
+}
