@@ -1,0 +1,9 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "item/stone_sword"
+    },
+	"overrides": [
+		{ "predicate": { "custom_model_data": 12970001 }, "model": "craftingpp:tool/grafter"}
+	]
+}

@@ -1,0 +1,17 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "item/bread"
+    },
+	"overrides": [
+		{ "predicate": { "custom_model_data": 12970001 }, "model": "craftingpp:food/meat_floss_bread"},
+		{ "predicate": { "custom_model_data": 12970002 }, "model": "craftingpp:food/baked_carrot"},
+		{ "predicate": { "custom_model_data": 12970003 }, "model": "craftingpp:food/dumpling"},
+		{ "predicate": { "custom_model_data": 12970004 }, "model": "craftingpp:food/burger"},
+		{ "predicate": { "custom_model_data": 12970005 }, "model": "craftingpp:food/cheese"},
+		{ "predicate": { "custom_model_data": 12970006 }, "model": "craftingpp:food/ketchup"},
+		{ "predicate": { "custom_model_data": 12970007 }, "model": "craftingpp:food/pizza"},
+		{ "predicate": { "custom_model_data": 12970008 }, "model": "craftingpp:food/sushi"},
+		{ "predicate": { "custom_model_data": 12970009 }, "model": "craftingpp:food/stargazy_pie"}
+	]
+}

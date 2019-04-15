@@ -4,7 +4,7 @@
 		"particle": "craftingpp:mob/santa_claus",
 		"voxels_atlas": "craftingpp:mob/santa_claus"
 	},
-	"elements": [ 	 
+	"elements": [
 		{
 			"__comment": "Voxels",
 			"from": [ 0, 13, 0 ],

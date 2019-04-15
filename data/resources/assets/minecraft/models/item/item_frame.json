@@ -1,0 +1,27 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "item/item_frame"
+    },
+	"overrides": [
+		{ "predicate": { "custom_model_data": 12970002 }, "model": "craftingpp:painting/classical_painting"},
+		{ "predicate": { "custom_model_data": 12970003 }, "model": "craftingpp:image/happiness"},
+		
+		{ "predicate": { "custom_model_data": 12970101 }, "model": "craftingpp:item_frame/glass"},
+		{ "predicate": { "custom_model_data": 12970201 }, "model": "craftingpp:item_frame/glass_up"},
+		{ "predicate": { "custom_model_data": 12970301 }, "model": "craftingpp:item_frame/glass_down"},
+		
+		{ "predicate": { "custom_model_data": 12971001 }, "model": "craftingpp:tool/firecrackers"},
+		
+		{ "predicate": { "custom_model_data": 12974401 }, "model": "craftingpp:flag/china_flag" },
+		{ "predicate": { "custom_model_data": 12974402 }, "model": "craftingpp:flag/usa_flag" },
+		{ "predicate": { "custom_model_data": 12974403 }, "model": "craftingpp:flag/russia_flag" },
+		{ "predicate": { "custom_model_data": 12974404 }, "model": "craftingpp:flag/uk_flag" },
+		{ "predicate": { "custom_model_data": 12974405 }, "model": "craftingpp:flag/france_flag" },
+		{ "predicate": { "custom_model_data": 12974406 }, "model": "craftingpp:flag/bilibili_logo" },
+		{ "predicate": { "custom_model_data": 12974407 }, "model": "craftingpp:flag/github_logo" },
+		{ "predicate": { "custom_model_data": 12974408 }, "model": "craftingpp:flag/mcmod_logo" },
+		{ "predicate": { "custom_model_data": 12974409 }, "model": "craftingpp:flag/tcp_logo" },
+		{ "predicate": { "custom_model_data": 12974410 }, "model": "craftingpp:flag/cbl_logo" }	
+	]
+}

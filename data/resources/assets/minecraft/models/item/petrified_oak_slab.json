@@ -1,0 +1,36 @@
+{
+	"parent": "craftingpp:machine/machine",
+	"textures": {
+		"particle": "craftingpp:machine/crafting_machine_front",
+		"down": "block/oak_planks",
+		"up": "craftingpp:machine/crafting_machine_top",
+		"north": "craftingpp:machine/crafting_machine_front",
+		"east": "craftingpp:machine/crafting_machine_side",
+		"south": "craftingpp:machine/crafting_machine_side",
+		"west": "craftingpp:machine/crafting_machine_front"
+	},
+	"overrides": [
+		{ "predicate": { "custom_model_data": 12970001 }, "model": "craftingpp:machine/all_in_one_machine"},
+		{ "predicate": { "custom_model_data": 12970002 }, "model": "craftingpp:machine/trade_machine"},
+		{ "predicate": { "custom_model_data": 12970003 }, "model": "craftingpp:machine/mob_projector"},
+		{ "predicate": { "custom_model_data": 12970004 }, "model": "craftingpp:machine/golden_anvil"},
+		{ "predicate": { "custom_model_data": 12970005 }, "model": "craftingpp:machine/beacon_enhancer"},
+		{ "predicate": { "custom_model_data": 12970010 }, "model": "craftingpp:machine/bookshelf0"},
+		{ "predicate": { "custom_model_data": 12970011 }, "model": "craftingpp:machine/bookshelf1"},
+		{ "predicate": { "custom_model_data": 12970012 }, "model": "craftingpp:machine/bookshelf2"},
+		{ "predicate": { "custom_model_data": 12970013 }, "model": "craftingpp:machine/bookshelf3"},
+		{ "predicate": { "custom_model_data": 12970014 }, "model": "craftingpp:machine/bookshelf4"},
+		{ "predicate": { "custom_model_data": 12970015 }, "model": "craftingpp:machine/bookshelf5"},
+		{ "predicate": { "custom_model_data": 12970016 }, "model": "craftingpp:machine/bookshelf6"},
+		{ "predicate": { "custom_model_data": 12970017 }, "model": "craftingpp:machine/bookshelf7"},
+		{ "predicate": { "custom_model_data": 12970018 }, "model": "craftingpp:machine/compress_craft_machine"},
+		{ "predicate": { "custom_model_data": 12970019 }, "model": "craftingpp:machine/dustbin"},
+
+		{ "predicate": { "custom_model_data": 12970091 }, "model": "craftingpp:material/moon_stone"},
+		{ "predicate": { "custom_model_data": 12970092 }, "model": "craftingpp:material/sun_stone"},
+		{ "predicate": { "custom_model_data": 12970099 }, "model": "craftingpp:tool/portable_crafting_machine"},
+		
+		{ "predicate": { "custom_model_data": 12970101 }, "model": "craftingpp:machine/sorcerer_stone"}
+		
+	]
+}

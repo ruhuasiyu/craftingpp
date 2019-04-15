@@ -1,0 +1,26 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "item/elytra"
+    },
+    "overrides": [
+		{
+			"predicate": {
+				"custom_model_data": 12970001
+			},
+			"model": "craftingpp:tool/shooting_star"
+		},
+        {
+            "predicate": {
+				"damaged": 1
+            },
+            "model": "item/elytra"
+        },
+        {
+            "predicate": {
+                "broken": 1
+            },
+            "model": "item/broken_elytra"
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "parent": "block/orientable",
+    "textures": {
+        "top": "block/pumpkin_top",
+        "front": "block/carved_pumpkin",
+        "side": "block/pumpkin_side"
+    },
+	"overrides": [
+		{ "predicate": { "custom_model_data": 12970011 }, "model": "craftingpp:decor/purple_eye"},
+		{ "predicate": { "custom_model_data": 12970012 }, "model": "craftingpp:decor/glass_helmet"},
+		{ "predicate": { "custom_model_data": 12970013 }, "model": "craftingpp:decor/lash"},
+		{ "predicate": { "custom_model_data": 12970014 }, "model": "craftingpp:decor/cat_breed"},
+		{ "predicate": { "custom_model_data": 12970015 }, "model": "craftingpp:decor/black_framed_glasses"},
+		{ "predicate": { "custom_model_data": 12970016 }, "model": "craftingpp:decor/orange_framed_glasses"},
+		{ "predicate": { "custom_model_data": 12970017 }, "model": "craftingpp:decor/pants"},
+		{ "predicate": { "custom_model_data": 12970018 }, "model": "craftingpp:decor/empire_hat"},
+		{ "predicate": { "custom_model_data": 12970019 }, "model": "craftingpp:decor/glow_hat"},
+		{ "predicate": { "custom_model_data": 12970020 }, "model": "craftingpp:decor/green_hat"},
+		{ "predicate": { "custom_model_data": 12970021 }, "model": "craftingpp:decor/black_hat"},
+		{ "predicate": { "custom_model_data": 12970022 }, "model": "craftingpp:decor/nurse_hat"},
+		{ "predicate": { "custom_model_data": 12970024 }, "model": "craftingpp:decor/garland"},
+		{ "predicate": { "custom_model_data": 12970025 }, "model": "craftingpp:decor/minion_goggles"},
+		{ "predicate": { "custom_model_data": 12970026 }, "model": "craftingpp:decor/joking_glasses"},
+		
+		{ "predicate": { "custom_model_data": 12970051 }, "model": "craftingpp:mob/forester"},
+		{ "predicate": { "custom_model_data": 12970052 }, "model": "craftingpp:mob/santa_claus"},
+		{ "predicate": { "custom_model_data": 12970053 }, "model": "craftingpp:mob/pharmacist"},
+		{ "predicate": { "custom_model_data": 12970054 }, "model": "craftingpp:mob/end_envoy"},
+		{ "predicate": { "custom_model_data": 12970055 }, "model": "craftingpp:mob/fireworker"},
+		{ "predicate": { "custom_model_data": 12970056 }, "model": "craftingpp:mob/gardener"},
+		{ "predicate": { "custom_model_data": 12970057 }, "model": "craftingpp:mob/mechanician"},
+		{ "predicate": { "custom_model_data": 12970058 }, "model": "craftingpp:mob/frogman"},
+	
+		{ "predicate": { "custom_model_data": 12970111 }, "model": "craftingpp:decor/purple_eye"},
+		{ "predicate": { "custom_model_data": 12970112 }, "model": "craftingpp:decor/glass_helmet1"},
+		{ "predicate": { "custom_model_data": 12970113 }, "model": "craftingpp:decor/lash"},
+		{ "predicate": { "custom_model_data": 12970114 }, "model": "craftingpp:decor/cat_breed"},
+		{ "predicate": { "custom_model_data": 12970115 }, "model": "craftingpp:decor/black_framed_glasses1"},
+		{ "predicate": { "custom_model_data": 12970116 }, "model": "craftingpp:decor/orange_framed_glasses1"},
+		{ "predicate": { "custom_model_data": 12970117 }, "model": "craftingpp:decor/pants1"},
+		{ "predicate": { "custom_model_data": 12970118 }, "model": "craftingpp:decor/empire_hat"},
+		{ "predicate": { "custom_model_data": 12970119 }, "model": "craftingpp:decor/glow_hat1"},
+		{ "predicate": { "custom_model_data": 12970120 }, "model": "craftingpp:decor/green_hat1"},
+		{ "predicate": { "custom_model_data": 12970121 }, "model": "craftingpp:decor/black_hat1"},
+		{ "predicate": { "custom_model_data": 12970122 }, "model": "craftingpp:decor/nurse_hat1"},
+		{ "predicate": { "custom_model_data": 12970124 }, "model": "craftingpp:decor/garland1"},
+		{ "predicate": { "custom_model_data": 12970125 }, "model": "craftingpp:decor/minion_goggles1"},
+		{ "predicate": { "custom_model_data": 12970126 }, "model": "craftingpp:decor/joking_glasses1"}
+	]
+}

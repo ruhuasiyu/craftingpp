@@ -1,0 +1,66 @@
+{
+	"parent": "builtin/entity",
+	"textures": {
+		"particle": "block/dark_oak_planks"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [ 0, 90, 0 ],
+			"translation": [ 10, 6, -4 ],
+			"scale": [ 1, 1, 1 ]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [ 0, 90, 0 ],
+			"translation": [ 10, 6, 12 ],
+			"scale": [ 1, 1, 1 ]
+		},
+		"firstperson_righthand": {
+			"rotation": [ 0, 180, 5 ],
+			"translation": [ -10, 2, -10 ],
+			"scale": [ 1.25, 1.25, 1.25 ]
+		},
+		"firstperson_lefthand": {
+			"rotation": [ 0, 180, 5 ],
+			"translation": [ 10, 0, -10 ],
+			"scale": [ 1.25, 1.25, 1.25 ]
+		},
+		"gui": {
+			"rotation": [ 15, -25, -5 ],
+			"translation": [ 2, 3, 0 ],
+			"scale": [ 0.65, 0.65, 0.65 ]
+		},
+		"fixed": {
+			"rotation": [ 0, 180, 0 ],
+			"translation": [ -2, 4, -5],
+			"scale":[ 0.5, 0.5, 0.5]
+		},
+		"ground": {
+			"rotation": [ 0, 0, 0 ],
+			"translation": [ 4, 4, 2],
+			"scale":[ 0.25, 0.25, 0.25]
+		}
+	},
+	"overrides": [
+		{	"predicate": { "blocking": 1 }, "model": "item/shield_blocking" },
+		{	"predicate": { "custom_model_data": 12970001 }, "model": "craftingpp:shield/china_flag" },
+		{	"predicate": { "custom_model_data": 12970001, "blocking": 1 }, "model": "craftingpp:shield/china_flag_blocking"},
+		{	"predicate": { "custom_model_data": 12970002 }, "model": "craftingpp:shield/usa_flag" },
+		{	"predicate": { "custom_model_data": 12970002, "blocking": 1 }, "model": "craftingpp:shield/usa_flag_blocking"},
+		{	"predicate": { "custom_model_data": 12970003 }, "model": "craftingpp:shield/russia_flag" },
+		{	"predicate": { "custom_model_data": 12970003, "blocking": 1 }, "model": "craftingpp:shield/russia_flag_blocking"},
+		{	"predicate": { "custom_model_data": 12970004 }, "model": "craftingpp:shield/uk_flag" },
+		{	"predicate": { "custom_model_data": 12970004, "blocking": 1 }, "model": "craftingpp:shield/uk_flag_blocking"},
+		{	"predicate": { "custom_model_data": 12970005 }, "model": "craftingpp:shield/france_flag" },
+		{	"predicate": { "custom_model_data": 12970005, "blocking": 1 }, "model": "craftingpp:shield/france_flag_blocking"},
+		{	"predicate": { "custom_model_data": 12970006 }, "model": "craftingpp:shield/bilibili" },
+		{	"predicate": { "custom_model_data": 12970006, "blocking": 1 }, "model": "craftingpp:shield/bilibili_blocking"},
+		{	"predicate": { "custom_model_data": 12970007 }, "model": "craftingpp:shield/github" },
+		{	"predicate": { "custom_model_data": 12970007, "blocking": 1 }, "model": "craftingpp:shield/github_blocking"},
+		{	"predicate": { "custom_model_data": 12970008 }, "model": "craftingpp:shield/mcmod" },
+		{	"predicate": { "custom_model_data": 12970008, "blocking": 1 }, "model": "craftingpp:shield/mcmod_blocking"},
+		{	"predicate": { "custom_model_data": 12970009 }, "model": "craftingpp:shield/tcp" },
+		{	"predicate": { "custom_model_data": 12970009, "blocking": 1 }, "model": "craftingpp:shield/tcp_blocking"},
+		{	"predicate": { "custom_model_data": 12970010 }, "model": "craftingpp:shield/cbl" },
+		{	"predicate": { "custom_model_data": 12970010, "blocking": 1 }, "model": "craftingpp:shield/cbl_blocking"}
+	]
+}

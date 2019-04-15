@@ -1,0 +1,9 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "item/cookie"
+	},
+	"overrides": [
+		{ "predicate": { "custom_model_data": 12970001 }, "model": "craftingpp:food/boiled_egg"}
+	]
+}

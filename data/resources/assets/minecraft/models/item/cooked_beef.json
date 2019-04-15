@@ -1,0 +1,9 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "item/cooked_beef"
+    },
+	"overrides": [
+		{ "predicate": { "custom_model_data": 12970001 }, "model": "craftingpp:food/cooked_bear_meat"}
+	]
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "block/crafting_table",
+	"overrides": [
+		{ "predicate": { "custom_model_data": 12970001 }, "model": "craftingpp:tool/portable_crafting_table"}
+	]
+}
