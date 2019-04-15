@@ -1,0 +1,9 @@
+{
+	"type": "smelting",
+	"ingredient": {
+		"item": "minecraft:sunflower"
+	},
+	"result": "minecraft:yellow_dye",
+	"experience": 0.1,
+	"cookingtime": 200
+}

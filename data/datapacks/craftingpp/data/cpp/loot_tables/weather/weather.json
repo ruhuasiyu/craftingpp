@@ -1,0 +1,63 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:alternatives",
+					"children": [
+						{
+							"conditions":[
+								{
+									"condition":"weather_check",
+									"thundering": true
+								}
+							],
+							"type": "item",
+							"name": "minecraft:firework_star",
+							"functions": [
+								{
+									"function": "set_nbt",
+									"tag": "{isWeatherMarker:1b,id:\"cpp:weather/thunder\",CustomModelData:12971000}"
+								}
+							]
+						},
+						{
+							"conditions":[
+								{
+									"condition":"weather_check",
+									"raining": true,
+									"thundering": false
+								}
+							],
+							"type": "item",
+							"name": "minecraft:firework_star",
+							"functions": [
+								{
+									"function": "set_nbt",
+									"tag": "{isWeatherMarker:1b,id:\"cpp:weather/rain\",CustomModelData:12971000}"
+								}
+							]
+						},
+						{
+							"conditions":[
+								{
+									"condition":"weather_check",
+									"raining": false
+								}
+							],
+							"type": "item",
+							"name": "minecraft:firework_star",
+							"functions": [
+								{
+									"function": "set_nbt",
+									"tag": "{isWeatherMarker:1b,id:\"cpp:weather/clear\",CustomModelData:12971000}"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

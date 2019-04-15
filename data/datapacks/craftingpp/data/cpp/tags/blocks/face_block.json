@@ -1,0 +1,14 @@
+{
+	"replace": false,
+	"values": [
+		"#cpp:dirt",
+		"minecraft:stone",
+		"minecraft:granite",
+		"minecraft:diorite",
+		"minecraft:andesite",
+		"minecraft:sand",
+		"minecraft:sandstone",
+		"minecraft:red_sand",
+		"minecraft:red_sandstone"
+	]
+}

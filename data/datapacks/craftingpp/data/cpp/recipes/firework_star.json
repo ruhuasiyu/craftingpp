@@ -1,0 +1,9 @@
+{
+	"type": "smelting",
+	"ingredient": {
+		"item": "minecraft:firework_star"
+	},
+	"result": "minecraft:firework_star",
+	"experience": 0.1,
+	"cookingtime": 200
+}

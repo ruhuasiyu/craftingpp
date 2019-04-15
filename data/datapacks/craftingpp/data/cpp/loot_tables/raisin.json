@@ -1,0 +1,18 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type":"item",
+					"name": "minecraft:apple",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag":"{id:\"cpp:raisin\",display:{Name:\"{\\\"translate\\\":\\\"item.cpp.raisin\\\"}\",Lore:[\"{\\\"text\\\":\\\"§r\\\"}\"]},CustomModelData:12970101}"
+						}
+					]				}
+			]
+		}
+	]
+}

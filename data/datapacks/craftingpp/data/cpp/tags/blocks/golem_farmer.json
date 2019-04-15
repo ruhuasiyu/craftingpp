@@ -1,0 +1,24 @@
+{
+	"replace": false,
+	"values": [	
+		"minecraft:oak_leaves",
+		"minecraft:spruce_leaves",
+		"minecraft:birch_leaves",
+		"minecraft:jungle_leaves",
+		"minecraft:acacia_leaves",
+		"minecraft:dark_oak_leaves",
+		"minecraft:melon",
+		"minecraft:mushroom_stem",
+		"minecraft:brown_mushroom_block",
+		"minecraft:red_mushroom_block",
+		"minecraft:oak_log",
+		"minecraft:spruce_log",
+		"minecraft:birch_log",
+		"minecraft:jungle_log",
+		"minecraft:acacia_log",
+		"minecraft:dark_oak_log",
+		"minecraft:pumpkin",
+		"minecraft:sugar_cane",
+		"minecraft:bamboo"
+	]
+}

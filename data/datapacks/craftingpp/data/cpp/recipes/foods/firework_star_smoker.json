@@ -1,0 +1,9 @@
+{
+	"type": "smoking",
+	"ingredient": {
+		"item": "minecraft:firework_star"
+	},
+	"result": "minecraft:firework_star",
+	"experience": 0.35,
+	"cookingtime": 100
+}

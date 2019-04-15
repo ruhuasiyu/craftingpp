@@ -1,0 +1,103 @@
+{
+	"type": "minecraft:entity",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:tropical_fish",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{display:{Lore:[\"{\\\"text\\\":\\\"§r\\\"}\"]}}"
+						}
+					]
+				}
+			]
+		},
+        {
+            "conditions": [
+                {
+                    "condition": "random_chance",
+                    "chance": 0.05
+                }
+            ],
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:bone_meal"
+                }
+            ]
+        },
+		{
+			"conditions": [
+				{
+					"condition": "alternative",
+					"terms": [
+						{
+							"condition": "killed_by_player"
+						},
+						{
+							"condition": "entity_properties",
+							"entity": "killer",
+							"predicate": {
+								"type": "minecraft:zombie_pigman"
+							} 
+						}
+					]
+				},
+				{
+					"condition": "random_chance_with_looting",
+					"chance": 0.025,
+					"looting_multiplier": 0.01
+				}
+			],
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "loot_table",
+					"name": "cpp:heart_of_crystal"
+				}
+			]
+		},
+		{
+			"conditions": [
+				{
+					"condition": "alternative",
+					"terms": [
+						{
+							"condition": "killed_by_player"
+						},
+						{
+							"condition": "entity_properties",
+							"entity": "killer",
+							"predicate": {
+								"type": "minecraft:zombie_pigman"
+							} 
+						}
+					]
+				},
+				{
+					"condition": "random_chance_with_looting",
+					"chance": 0.025,
+					"looting_multiplier": 0.01
+				}
+			],
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:player_head",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.tropical_fish_head\\\"}\"},id:\"cpp:tropical_fish_head\",SkullOwner:{Id:\"7b314fba-09ab-4ab6-b956-cec6a5fcbed5\",Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzZkMTQ5ZTRkNDk5OTI5NjcyZTI3Njg5NDllNjQ3Nzk1OWMyMWU2NTI1NDYxM2IzMjdiNTM4ZGYxZTRkZiJ9fX0=\"}]}}}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

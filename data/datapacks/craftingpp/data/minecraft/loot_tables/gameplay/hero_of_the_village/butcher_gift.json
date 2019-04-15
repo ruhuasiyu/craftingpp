@@ -1,0 +1,60 @@
+{
+	"type": "minecraft:gift",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:cooked_rabbit",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{display:{Lore:[\"{\\\"text\\\":\\\"§r\\\"}\"]}}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:cooked_chicken",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{display:{Lore:[\"{\\\"text\\\":\\\"§r\\\"}\"]}}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:cooked_porkchop",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{display:{Lore:[\"{\\\"text\\\":\\\"§r\\\"}\"]}}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:cooked_beef",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{display:{Lore:[\"{\\\"text\\\":\\\"§r\\\"}\"]}}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:cooked_mutton",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{display:{Lore:[\"{\\\"text\\\":\\\"§r\\\"}\"]}}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

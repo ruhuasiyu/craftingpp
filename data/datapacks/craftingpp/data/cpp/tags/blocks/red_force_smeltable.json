@@ -1,0 +1,22 @@
+{
+	"replace": false,
+	"values": [
+		"minecraft:sand",
+		"minecraft:red_sand",
+		"#minecraft:logs",
+		"minecraft:cactus",
+		"minecraft:cobblestone",
+		"minecraft:netherrack",
+		"minecraft:stone_bricks",
+		"minecraft:wet_sponge",
+		"minecraft:clay",
+		"minecraft:kelp_plant",
+		"minecraft:sea_pickle",
+		"#cpp:terracottas",
+		"#cpp:ores",
+		"minecraft:quartz_block",
+		"minecraft:sandstone",
+		"minecraft:red_sandstone",
+		"minecraft:stone"
+	]
+}

@@ -1,0 +1,15 @@
+{
+	"type": "crafting_shaped",
+	"group": "stone_from_slabs",
+	"pattern": [
+		"##"
+	],
+	"key": {
+		"#": {
+			"item": "minecraft:stone_brick_slab"
+		}
+	},
+	"result": {
+		"item": "minecraft:stone_bricks"
+	}
+}

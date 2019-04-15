@@ -1,0 +1,10 @@
+{
+	"replace": false,
+	"values": [
+		"minecraft:torch",
+		"minecraft:tall_grass",
+		"minecraft:large_fern",
+		"minecraft:item_frame",
+		"minecraft:firework_star"
+	]
+}

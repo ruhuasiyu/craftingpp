@@ -1,0 +1,187 @@
+{
+	"type": "minecraft:entity",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:rotten_flesh",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 0,
+								"max": 1
+							}
+						},
+						{
+							"function": "looting_enchant",
+							"count": {
+								"min": 0,
+								"max": 1
+							}
+						},
+						{
+							"function": "set_nbt",
+							"tag": "{display:{Lore:[\"{\\\"text\\\":\\\"§r\\\"}\"]}}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:gold_nugget",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 0,
+								"max": 1
+							}
+						},
+						{
+							"function": "looting_enchant",
+							"count": {
+								"min": 0,
+								"max": 1
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"conditions": [
+				{
+					"condition": "alternative",
+					"terms": [
+						{
+							"condition": "killed_by_player"
+						},
+						{
+							"condition": "entity_properties",
+							"entity": "killer",
+							"predicate": {
+								"type": "minecraft:zombie_pigman"
+							} 
+						}
+					]
+				},
+				{
+					"condition": "random_chance_with_looting",
+					"chance": 0.025,
+					"looting_multiplier": 0.01
+				}
+			],
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:gold_ingot"
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:porkchop",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 0,
+								"max": 1
+							}
+						},
+						{
+							"function": "looting_enchant",
+							"count": {
+								"min": 0,
+								"max": 1
+							}
+						},
+						{
+							"function": "set_nbt",
+							"tag": "{display:{Lore:[\"{\\\"text\\\":\\\"§r\\\"}\"]}}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"conditions": [
+				{
+					"condition": "alternative",
+					"terms": [
+						{
+							"condition": "killed_by_player"
+						},
+						{
+							"condition": "entity_properties",
+							"entity": "killer",
+							"predicate": {
+								"type": "minecraft:zombie_pigman"
+							} 
+						}
+					]
+				},
+				{
+					"condition": "random_chance_with_looting",
+					"chance": 0.025,
+					"looting_multiplier": 0.01
+				}
+			],
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "loot_table",
+					"name": "cpp:soul_of_dirt"
+				}
+			]
+		},
+		{
+			"conditions": [
+				{
+					"condition": "alternative",
+					"terms": [
+						{
+							"condition": "killed_by_player"
+						},
+						{
+							"condition": "entity_properties",
+							"entity": "killer",
+							"predicate": {
+								"type": "minecraft:zombie_pigman"
+							} 
+						}
+					]
+				},
+				{
+					"condition": "random_chance_with_looting",
+					"chance": 0.025,
+					"looting_multiplier": 0.01
+				}
+			],
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:player_head",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.zombie_pigman_head\\\"}\"},SkullOwner:{Id:\"6540c046-d6ea-4aff-9766-32a54ebe6958\",Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzRlOWM2ZTk4NTgyZmZkOGZmOGZlYjMzMjJjZDE4NDljNDNmYjE2YjE1OGFiYjExY2E3YjQyZWRhNzc0M2ViIn19fQ==\"}]}}}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

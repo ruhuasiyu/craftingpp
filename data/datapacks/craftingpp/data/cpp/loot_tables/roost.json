@@ -1,0 +1,19 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:dead_fire_coral_fan",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.roost\\\"}\"},id:\"cpp:roost\",CustomModelData:12970001}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

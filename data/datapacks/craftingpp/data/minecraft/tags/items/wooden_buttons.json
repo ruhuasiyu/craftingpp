@@ -1,0 +1,18 @@
+{
+	"replace": false,
+	"values": [
+		"minecraft:oak_leaves",
+		"minecraft:spruce_leaves",
+		"minecraft:birch_leaves",
+		"minecraft:jungle_leaves",
+		"minecraft:acacia_leaves",
+		"minecraft:dark_oak_leaves",
+		"minecraft:grass",
+		"minecraft:fern",
+		"minecraft:dead_bush",
+		"minecraft:vine",
+		"minecraft:string",
+		"minecraft:paper",
+		"minecraft:feather"
+	]
+}

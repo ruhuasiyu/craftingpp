@@ -1,0 +1,25 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"conditions":[
+				{
+					"condition": "random_chance",
+					"chance": 0.33333333
+				}
+			],
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:firework_star",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{isRdMark:1b,CustomModelData:12971000}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

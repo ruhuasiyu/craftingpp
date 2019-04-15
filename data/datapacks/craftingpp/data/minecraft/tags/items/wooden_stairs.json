@@ -1,0 +1,15 @@
+{
+	"replace": true,
+	"values": [
+		"minecraft:end_rod",
+		"minecraft:dried_kelp_block",
+		"minecraft:book",
+		"minecraft:writable_book",
+		"minecraft:written_book",
+		"minecraft:enchanted_book",
+		"minecraft:armor_stand",
+		"minecraft:bow",
+		"minecraft:fishing_rod",
+		"minecraft:carrot_on_a_stick"
+	]
+}
