@@ -1,0 +1,39 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:zombie_head"
+		},
+		"title":{
+			"translate": "advancements.cpp.all_head.title"
+		},
+		"description": {
+			"translate": "advancements.cpp.all_head.description"
+		},
+		"frame": "challenge"
+	},
+	"parent": "cpp:undead",
+	"criteria": {
+		"all_head": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:zombie_head"
+					},
+					{
+						"item": "minecraft:skeleton_skull"
+					},
+					{
+						"item": "minecraft:wither_skeleton_skull"
+					},
+					{
+						"item": "minecraft:creeper_head"
+					}
+				]
+			}
+		}
+	},
+	"rewards":{
+		"experience": 500
+	}
+}

@@ -1,0 +1,13 @@
+{
+	"criteria": {
+		"acacia_leaves": {
+			"trigger": "minecraft:placed_block",
+			"conditions": {
+				"block": "minecraft:acacia_leaves"
+			}
+		}
+	},
+	"rewards": {
+		"function": "cpp:block/acacia_leaves"
+	}
+}

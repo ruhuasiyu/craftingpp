@@ -1,0 +1,27 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:item_frame",
+			"nbt":"{CustomModelData:12970002}"
+		},
+		"title":{
+			"translate": "advancements.cpp.artist.title"
+		},
+		"description": {
+			"translate": "advancements.cpp.artist.description"
+		}
+	},
+	"parent": "cpp:meow",
+	"criteria": {
+		"artist": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"nbt": "{id:\"cpp:classical_painting\"}"
+					}
+				]
+			}
+		}
+	}
+}

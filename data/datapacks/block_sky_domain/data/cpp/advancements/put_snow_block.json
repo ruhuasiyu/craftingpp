@@ -1,0 +1,16 @@
+{
+	"criteria": {
+		"snow_block": {
+			"trigger": "minecraft:placed_block",
+			"conditions": {
+				"block": "minecraft:snow_block",
+				"item": {
+					"item": "minecraft:snow_block"
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "cpp:bsd/system/put_snow_block"
+	}
+}

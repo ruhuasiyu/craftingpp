@@ -1,0 +1,15 @@
+{
+	"criteria": {
+		"chain": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"nbt": "{CustomPotionEffects:[{Id:99b,Duration:3600}]}"
+				}
+			}
+		}
+	},
+	"rewards":{
+		"function": "cpp:foods/potions/chain"
+	}
+}

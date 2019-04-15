@@ -1,0 +1,37 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "empty",
+					"weight": 25
+				},
+				{
+					"type": "item",
+					"name": "minecraft:quartz",
+					"weight": 40
+				},
+				{
+					"type": "item",
+					"name": "minecraft:clay_ball",
+					"weight": 20
+				},
+				{
+					"type": "item",
+					"name": "minecraft:nether_wart",
+					"weight": 9
+				},
+				{
+					"type": "item",
+					"name": "minecraft:blaze_powder",
+					"weight": 5
+				},
+				{
+					"type": "item",
+					"name": "minecraft:ghast_tear"
+				}
+			]
+		}
+	]
+}

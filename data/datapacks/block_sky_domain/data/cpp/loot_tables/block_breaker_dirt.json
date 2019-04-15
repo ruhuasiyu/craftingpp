@@ -1,0 +1,68 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:empty",
+					"weight": 12
+				},
+				{
+					"type": "item",
+					"name": "minecraft:grass",
+					"weight": 32
+				},
+				{
+					"type": "item",
+					"name": "minecraft:oak_sapling",
+					"weight": 8
+				},
+				{
+					"type": "item",
+					"name": "minecraft:spruce_sapling",
+					"weight": 8
+				},
+				{
+					"type": "item",
+					"name": "minecraft:birch_sapling",
+					"weight": 8
+				},
+				{
+					"type": "item",
+					"name": "minecraft:jungle_sapling",
+					"weight": 8
+				},
+				{
+					"type": "item",
+					"name": "minecraft:acacia_sapling",
+					"weight": 8
+				},
+				{
+					"type": "item",
+					"name": "minecraft:dark_oak_sapling",
+					"weight": 8
+				},
+				{
+					"type": "item",
+					"name": "minecraft:bamboo",
+					"weight": 2
+				},
+				{
+					"type": "loot_table",
+					"name": "cpp:fruit_sapling",
+					"weight": 2
+				},
+				{
+					"type": "loot_table",
+					"name": "cpp:ore_sapling",
+					"weight": 2
+				},
+				{
+					"type": "loot_table",
+					"name": "cpp:wool_sapling",
+					"weight": 2
+				}
+			]
+		}
+	]
+}

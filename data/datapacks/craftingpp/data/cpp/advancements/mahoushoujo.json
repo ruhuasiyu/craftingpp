@@ -1,0 +1,31 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:carrot_on_a_stick",
+			"nbt":"{CustomModelData:12970062}"
+		},
+		"title":{
+			"translate": "advancements.cpp.mahoushoujo.title"
+		},
+		"description": {
+			"translate": "advancements.cpp.mahoushoujo.description"
+		},
+		"frame": "challenge"
+	},
+	"parent": "cpp:transporter",
+	"criteria": {
+		"mahoushoujo": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions":{
+				"items":[
+					{
+						"nbt":"{id:\"cpp:sealing_wand\"}"
+					}
+				]
+			}
+		}
+	},
+	"rewards":{
+		"experience": 100
+	}
+}

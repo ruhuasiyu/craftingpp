@@ -1,0 +1,20 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:carrot_on_a_stick",
+			"nbt":"{CustomModelData:12970005}"
+		},
+		"title":{
+			"translate": "advancements.cpp.elements.title"
+		},
+		"description": {
+			"translate": "advancements.cpp.elements.description"
+		}
+	},
+	"parent": "cpp:drops",
+	"criteria": {
+		"elements": {
+			"trigger": "minecraft:impossible"
+		}
+	}
+}

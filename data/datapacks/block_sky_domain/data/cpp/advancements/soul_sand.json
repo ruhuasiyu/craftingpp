@@ -1,0 +1,10 @@
+{
+	"criteria": {
+		"soul": {
+			"trigger": "minecraft:player_killed_entity"
+		}
+	},
+	"rewards": {
+		"function": "cpp:bsd/soul"
+	}
+}

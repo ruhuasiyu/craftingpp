@@ -1,0 +1,15 @@
+{
+	"criteria": {
+		"portable_crafting_table": {
+			"trigger": "minecraft:placed_block",
+			"conditions": {
+				"item": {
+					"nbt":"{CustomModelData:12970001}"
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "cpp:block/portable_crafting_table"
+	}
+}

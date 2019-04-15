@@ -1,0 +1,23 @@
+{
+	"type": "crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "minecraft:snowball"
+		},
+		{
+			"tag": "cpp:crops_and_saplings"
+		},
+		{
+			"tag": "cpp:crops_and_saplings"
+		},
+		{
+			"tag": "cpp:crops_and_saplings"
+		},
+		{
+			"tag": "cpp:crops_and_saplings"
+		}
+	],
+	"result": {
+		"item": "minecraft:dirt"
+	}
+}

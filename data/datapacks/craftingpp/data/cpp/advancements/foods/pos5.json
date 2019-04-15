@@ -1,0 +1,65 @@
+{
+	"criteria": {
+		"cooked_rabbit": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:cooked_rabbit"
+				}
+			}
+		},
+		"cooked_cod": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:cooked_cod"
+				}
+			}
+		},
+		"burger": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"nbt": "{id:\"cpp:burger\"}"
+				}
+			}
+		},
+		"sushi": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"nbt": "{id:\"cpp:sushi\"}"
+				}
+			}
+		},
+		"pizza": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"nbt": "{id:\"cpp:pizza\"}"
+				}
+			}
+		},
+		"stargazy_pie": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"nbt": "{id:\"cpp:stargazy_pie\"}"
+				}
+			}
+		}
+	},
+	"requirements":[
+		[
+			"cooked_rabbit",
+			"cooked_cod",
+			"burger",
+			"sushi",
+			"pizza",
+			"stargazy_pie"
+		]
+	],
+	"rewards":{
+		"function": "cpp:foods/fatness/pos5"
+	}
+}

@@ -1,0 +1,20 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:carved_pumpkin",
+			"nbt":"{CustomModelData:12970114}"
+		},
+		"title":{
+			"translate": "advancements.cpp.meow.title"
+		},
+		"description": {
+			"translate": "advancements.cpp.meow.description"
+		}
+	},
+	"parent": "cpp:broom",
+	"criteria": {
+		"meow": {
+			"trigger": "minecraft:impossible"
+		}
+	}
+}

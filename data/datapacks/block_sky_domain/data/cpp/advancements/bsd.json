@@ -1,0 +1,10 @@
+{
+	"criteria": {
+		"root": {
+			"trigger": "minecraft:tick"
+		}
+	},
+	"rewards": {
+		"function": "cpp:bsd/root"
+	}
+}

@@ -1,0 +1,15 @@
+{
+	"criteria": {
+		"roost": {
+			"trigger": "minecraft:placed_block",
+			"conditions": {
+				"item": {
+					"nbt":"{id:\"cpp:roost\"}"
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "cpp:block/roost"
+	}
+}

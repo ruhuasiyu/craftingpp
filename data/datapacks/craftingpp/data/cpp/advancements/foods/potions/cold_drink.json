@@ -1,0 +1,15 @@
+{
+	"criteria": {
+		"cold_drink": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"nbt": "{id:\"cpp:cold_drink\"}"
+				}
+			}
+		}
+	},
+	"rewards":{
+		"function": "cpp:foods/potions/cold_drink"
+	}
+}

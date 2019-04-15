@@ -1,0 +1,16 @@
+{
+	"parent": "cpp:system/root",
+	"criteria": {
+		"kill_villager": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:villager"
+				}
+			}
+		}
+	},
+	"rewards":{
+		"function": "cpp:adv/kill_villager"
+	}
+}

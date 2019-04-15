@@ -1,0 +1,24 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:potion",
+			"nbt":"{CustomPotionColor:255}"
+		},
+		"title":{
+			"translate": "advancements.cpp.fat.title"
+		},
+		"description": {
+			"translate": "advancements.cpp.fat.description"
+		},
+		"frame": "challenge"
+	},
+	"parent": "cpp:all_head",
+	"criteria": {
+		"effect": {
+			"trigger": "minecraft:impossible"
+		}
+	},
+	"rewards": {
+		"experience": 500
+	}
+}

@@ -1,0 +1,30 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:totem_of_undying"
+		},
+		"title":{
+			"translate": "advancements.cpp.undead.title"
+		},
+		"description": {
+			"translate": "advancements.cpp.undead.description"
+		},
+		"frame": "goal"
+	},
+	"parent": "cpp:shining",
+	"criteria": {
+		"undead": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:totem_of_undying"
+					}
+				]
+			}
+		}
+	},
+	"rewards":{
+		"experience": 100
+	}
+}

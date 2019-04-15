@@ -1,0 +1,26 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:beef",
+			"nbt":"{CustomModelData:12970001}"
+		},
+		"title":{
+			"translate": "advancements.cpp.fighter.title"
+		},
+		"description": {
+			"translate": "advancements.cpp.fighter.description"
+		},
+		"frame": "goal"
+	},
+	"parent": "cpp:robber",
+	"criteria": {
+		"fighter": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:polar_bear"
+				}
+			}
+		}
+	}
+}
