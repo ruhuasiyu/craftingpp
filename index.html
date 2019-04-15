@@ -58,7 +58,7 @@
 <p>原版模组一般是指使用命令而非<abbr title="forge liteloader rift fibric 等">mod api</abbr>来对游戏的可玩性做出修改。自1.13起，原版模组一般以数据包的形式出现。</p>
 
 <p>《更多的合成》是国内论坛最大的原版模组，包括数百种物品、材料、工具、装饰等，以及新的村民交易和空岛系统。该模组无明确的主题，凡是作者认为原版没有而应该有的特性都有可能加入进来。</p>
-<p>最新版本为测试版v1.9-m04d10(魔法更新)，支持Minecraft Java版 1.14快照19w12a+。</p>
+<p>最新版本为测试版v1.9-m04d15(魔法更新)，支持Minecraft Java版 1.14快照19w12a+。</p>
 
 
 <h3 id="download">📦 下载地址</h3>
@@ -80,10 +80,10 @@
 </tr>
 <tr>
 	<td>Minecraft Java版 19w12a+</td>
-	<td>Crafting++ 1.9测试版m04d10</td>
-	<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/raw/master/versions/1.9/v1.9-m04d10.zip">github</a>
-	  | <a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.9-m04d10.zip">官方</a></td>
-	<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/commit/756bf4442d070d3161b667e8cf03557372de7923">更新日志</a></td>
+	<td>Crafting++ 1.9测试版m04d15</td>
+	<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/raw/master/versions/1.9/v1.9-m04d15.zip">github</a>
+	  | <a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.9-m04d15.zip">官方</a></td>
+	<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/commits/master">更新日志</a></td>
 </tr>
 <tr>
 	<td>Minecraft Java版 1.13.1-1.13.2</td>
@@ -108,7 +108,7 @@
 <li><span style="color:blue">转载本页面</span>需遵守<strong><a href="https://creativecommons.org/licenses/by-nc-nd/2.5/cn/">CC BY-NC-ND 2.5 CN 许可协议</a></strong>——列出作者(<a href="http://www.mcbbs.net/home.php?mod=spacecp&ac=pm&touid=975525">ruhuasiyu@mcbbs</a>)、来源、原始下载链接以及相同的许可协议。</li>
 <li><span style="color:blue">使用模组代码</span>需遵守<a href="https://www.gnu.org/licenses/gpl.html">GNU GENERAL PUBLIC LICENSE v3.0</a>协议。</li>
 <li><span style="color:blue">转发模组文件</span>不可上传至网盘或文件存储平台，但通讯类工具允许下载后分享。</li>
-<li><span style="color:blue">服务器</span>若为公益可直接使用；非公益请先联系我后再使用。</li>
+<li><span style="color:blue">服务器</span>若为公益可直接使用；非公益请先在<a href="https://afdian.net/@ruhuasiyu">爱发电</a>支付100元商业服授权费用后再使用。</li>
 <li><span style="color:blue">主播或视频制作者</span>若在直播或视频中使用了本模组，请在简介中注明主页、作者名或模组来源。</li>
 <li><span style="color:blue">原版模组整合者</span>，该原版模组命名空间为cpp和bsd，所有记分板和标签均使用前缀cpp或bsd，物品自定义模型区段位于12970000-12979999，修改了minecraft命名空间大部分的战利品表和少量配方与标签。</li>
 </ul>
@@ -1198,8 +1198,9 @@
 
 <table><thead><tr><th>效果</th><th colspan="3">输入材料</th></tr></thead><tbody>
 <tr><td>移除惩罚等级</td><td>有惩罚等级的盔甲或工具</td><td><a href="#moon_shard">月之碎片</a></td><td rowspan="3">64 附魔之瓶</td></tr>
-<tr><td>移除诅咒附魔</td><td>有诅咒附魔的盔甲或工具</td><td><a href="#enchanted_golden_apple">附魔金苹果</a></td></tr>
-<tr><td>升级附魔</td><td>拥有与上古卷轴同等级附魔的盔甲或工具</td><td><a href="#ancient_scroll">上古卷轴</a></td></tr>
+<tr><td>移除诅咒魔咒</td><td>有诅咒魔咒的盔甲或工具</td><td><a href="#enchanted_golden_apple">附魔金苹果</a></td></tr>
+<tr><td>升级魔咒</td><td>拥有与上古卷轴同等级魔咒的盔甲或工具</td><td><a href="#ancient_scroll">上古卷轴</a></td></tr>
+<tr><td>转移魔咒至书</td><td>附魔物品</td><td>书</td></tr>
 
 </tbody></table>
 
@@ -2446,7 +2447,7 @@
 <span class="iron_ingot" title="铁锭"></span>
 <span class="ci dustbin" title="垃圾桶"></span>
 </span></td>
-<td>自动清理输入到垃圾桶的物品。</td></tr>
+<td>自动清理其中的物品。</td></tr>
 
 <tr><th><strong id="magnet">磁铁 (Magnet)</strong></th><td><a href="#enchanted_iron">附魔铁锭</a>+红石</td>
 <td><span class="ui cm" title="合成器">
@@ -5125,7 +5126,7 @@
 <a href="https://space.bilibili.com/4469715"><img src="items/bilibili.png" /></a>
 </p>
 
-<p>最后更新 2019-04-07</p>
+<p>最后更新 2019-04-10</p>
 </footer>
 </article>
 </body></html>
