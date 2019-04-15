@@ -1,0 +1,45 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "loot_table",
+					"name": "cpp:generate/overworld",
+					"conditions":[
+						{
+							"condition": "minecraft:location_check",
+							"predicate": {
+								"dimension": "overworld"
+							}
+						}
+					]
+				},
+				{
+					"type": "loot_table",
+					"name": "cpp:generate/the_nether",
+					"conditions":[
+						{
+							"condition": "minecraft:location_check",
+							"predicate": {
+								"dimension": "the_nether"
+							}
+						}
+					]
+				},
+				{
+					"type": "loot_table",
+					"name": "cpp:generate/the_end",
+					"conditions":[
+						{
+							"condition": "minecraft:location_check",
+							"predicate": {
+								"dimension": "the_end"
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"pools": [
+		{
+			"rolls": 8,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:sweet_berries",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{display:{Lore:[\"{\\\"text\\\":\\\"§r\\\"}\"]}}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

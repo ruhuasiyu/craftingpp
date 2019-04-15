@@ -1,0 +1,19 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:suspicious_stew",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{display:{\"Name\":\"{\\\"translate\\\":\\\"item.cpp.colorful_vegetable\\\"}\",Lore:[\"{\\\"text\\\":\\\"§r\\\"}\",\"{\\\"translate\\\":\\\"lore.cpp.leap\\\"}\"]},id:\"cpp:colorful_vegetable\",CustomModelData:12970002,Effects:[{EffectDuration:600,EffectId:8b},{EffectDuration:8,EffectId:23b}]}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

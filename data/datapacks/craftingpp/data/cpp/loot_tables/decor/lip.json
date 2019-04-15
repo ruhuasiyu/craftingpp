@@ -1,0 +1,41 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:firework_star",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{CustomModelData:12971001,Explosion:{Colors:[I;123456]},display:{Name:\"{\\\"translate\\\":\\\"item.cpp.red_lip\\\"}\",color:16711680},id:\"cpp:red_lip\",HideFlags:63}"
+						},
+						{
+							"function": "minecraft:copy_nbt",
+							"source": "killer",
+							"ops": [
+								{
+									"source": "Inventory[{Slot:103b}].tag.display.color",
+									"target": "Explosion.Colors[0]",
+									"op": "replace"
+								}
+							]
+						},
+						{
+							"function": "minecraft:copy_nbt",
+							"source": "killer",
+							"ops": [
+								{
+									"source": "Inventory[{Slot:103b}].tag.display.color",
+									"target": "display.color",
+									"op": "replace"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

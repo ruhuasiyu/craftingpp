@@ -1,0 +1,19 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:item_frame",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.classical_painting\\\"}\"},id:\"cpp:classical_painting\",CustomModelData:12970002,EntityTag:{Item:{id:'minecraft:firework_star',Count:1b,tag:{CustomModelData:12974001,isMachineBg:1b}},Tags:['cpp_item_frame_classical_painting','cpp_special_item_frame']}}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"pools": [
+		{
+			"rolls": 6,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:carrot",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{display:{Lore:[\"{\\\"text\\\":\\\"§r\\\"}\"]}}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
