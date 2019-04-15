@@ -1,0 +1,6 @@
+{
+	"parent": "craftingpp:character/temp",
+	"textures": {
+		"layer0": "craftingpp:character/pic02"
+	}
+}

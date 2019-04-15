@@ -1,0 +1,6 @@
+{
+    "parent": "craftingpp:plant/plant",
+    "textures": {
+        "crop": "craftingpp:plant/wild_lilium0"
+    }
+}

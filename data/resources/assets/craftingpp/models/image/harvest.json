@@ -1,0 +1,12 @@
+{
+    "parent": "item/generated",
+    "display": {
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "scale": [ 2, 2, 3 ]
+        }
+    },
+    "textures": {
+        "layer0": "craftingpp:image/harvest"
+    }
+}

@@ -1,0 +1,1 @@
+execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:shulker_box"}]}] unless data entity @s SelectedItem if data entity @s Inventory[{Slot:-106b}].tag.BlockEntityTag.Items[] at @s run function cpp:random_block/run

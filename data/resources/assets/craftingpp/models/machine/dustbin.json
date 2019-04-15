@@ -1,0 +1,12 @@
+{
+    "parent": "craftingpp:machine/machine",
+    "textures": {
+        "particle": "craftingpp:machine/dustbin_side",
+        "down": "craftingpp:machine/dustbin_bottom",
+        "up": "craftingpp:machine/dustbin_top",
+        "north": "craftingpp:machine/dustbin_side",
+        "east": "craftingpp:machine/dustbin_side",
+        "south": "craftingpp:machine/dustbin_side",
+        "west": "craftingpp:machine/dustbin_side"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "craftingpp:painting/painting",
+    "textures": {
+        "layer0": "craftingpp:painting/19"
+    }
+}

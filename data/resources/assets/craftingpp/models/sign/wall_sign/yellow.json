@@ -1,0 +1,7 @@
+{
+    "parent": "craftingpp:sign/wall_sign/sign",
+    "textures": {
+        "particle": "craftingpp:sign/wall_sign/yellow",
+        "texture": "craftingpp:sign/wall_sign/yellow"
+    }
+}

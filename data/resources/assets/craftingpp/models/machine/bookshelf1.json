@@ -1,0 +1,7 @@
+{
+    "parent": "craftingpp:machine/bookshelf",
+    "textures": {
+        "top": "block/oak_planks",
+        "side": "craftingpp:machine/bookshelf1"
+    }
+}

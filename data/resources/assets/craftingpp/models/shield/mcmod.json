@@ -1,0 +1,6 @@
+{
+	"parent": "craftingpp:shield/normal",
+	"textures": {
+		"pattern": "craftingpp:shield/mcmod"
+	}
+}

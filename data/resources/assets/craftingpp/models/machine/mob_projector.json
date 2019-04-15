@@ -1,0 +1,12 @@
+{
+    "parent": "craftingpp:machine/machine",
+    "textures": {
+        "particle": "craftingpp:machine/mob_projector_top",
+        "down": "craftingpp:machine/mob_projector_bottom",
+        "up": "craftingpp:machine/mob_projector_top",
+        "north": "craftingpp:machine/mob_projector_front",
+        "east": "craftingpp:machine/mob_projector_side",
+        "south": "craftingpp:machine/mob_projector_side",
+        "west": "craftingpp:machine/mob_projector_side"
+    }
+}

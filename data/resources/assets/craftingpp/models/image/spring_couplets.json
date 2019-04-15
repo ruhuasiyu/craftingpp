@@ -1,0 +1,10 @@
+{
+    "parent": "item/generated",
+    "display": {
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, -16, 0 ],
+            "scale": [ 4, 4, 3 ]
+        }
+    }
+}

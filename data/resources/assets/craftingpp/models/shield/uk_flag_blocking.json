@@ -1,0 +1,6 @@
+{
+	"parent": "craftingpp:shield/blocking",
+	"textures": {
+		"pattern": "craftingpp:shield/uk_flag"
+	}
+}

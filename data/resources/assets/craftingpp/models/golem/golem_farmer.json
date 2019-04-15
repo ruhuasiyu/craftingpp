@@ -1,0 +1,6 @@
+{
+    "parent": "craftingpp:golem/golem",
+    "textures": {
+        "layer0": "craftingpp:golem/golem_farmer"
+    }
+}

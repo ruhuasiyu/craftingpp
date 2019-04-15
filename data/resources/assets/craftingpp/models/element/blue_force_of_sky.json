@@ -1,0 +1,6 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "craftingpp:element/blue_force_of_sky"
+    }
+}
