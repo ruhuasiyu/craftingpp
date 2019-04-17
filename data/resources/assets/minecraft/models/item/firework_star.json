@@ -83,7 +83,7 @@
 		{ "predicate": { "custom_model_data": 12971028 }, "model": "craftingpp:machine/process_shower7"},
 		{ "predicate": { "custom_model_data": 12971029 }, "model": "craftingpp:machine/process_shower8"},
 		
-		{ "predicate": { "custom_model_data": 12971030 }, "model": "craftingpp:machine/compress_craft_machine_gui"},
+		{ "predicate": { "custom_model_data": 12971030 }, "model": "craftingpp:machine/item_processer_gui"},
 		
 		{ "predicate": { "custom_model_data": 12971041 }, "model": "craftingpp:machine/output_east"},
 		{ "predicate": { "custom_model_data": 12971042 }, "model": "craftingpp:machine/output_south"},

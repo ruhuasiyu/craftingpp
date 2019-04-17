@@ -58,7 +58,7 @@
 	"item.cpp.trade_machine":"§r交易機",
 	"item.cpp.mob_projector":"§r生物投影儀",
 	"item.cpp.beacon_enhancer":"§r信標增強器",
-	"item.cpp.compress_craft_machine":"§r壓縮合成機",
+	"item.cpp.item_processer":"§r物品處理機",
 	"item.cpp.dustbin":"§r垃圾桶",
 	"item.cpp.golden_anvil":"§r金砧",
 	"item.cpp.empty_plugin":"§r空白插件",
@@ -565,7 +565,7 @@
 
 	"The":"§a原版模組《更多的合成》已成功加載,",
 	"resourcepack":"版本",
-	"does":"§a1.9-m04d15§a.",
+	"does":"§a1.9-m04d17§a.",
 	"not":"§a更多內容請",
 	"Install":"§e點擊此處進入wiki.",
 	"correctly":"§a作者:",

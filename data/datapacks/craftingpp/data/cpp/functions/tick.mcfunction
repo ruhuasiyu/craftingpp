@@ -135,7 +135,7 @@ execute as @e[type=armor_stand,tag=cpp_beacon_enhancer] at @s run function cpp:b
 execute as @e[type=armor_stand,tag=cpp_all_in_one_machine] at @s run function cpp:all_in_one_machine/tick
 execute as @e[type=armor_stand,tag=cpp_trade_machine] at @s run function cpp:trade_machine/tick
 execute as @e[type=armor_stand,tag=cpp_mob_projector] at @s run function cpp:mob_projector/tick
-execute as @e[type=armor_stand,tag=cpp_compress_craft_machine] at @s run function cpp:compress_craft_machine/tick
+execute as @e[type=armor_stand,tag=cpp_item_processer] at @s run function cpp:item_processer/tick
 execute as @e[type=armor_stand,tag=cpp_golden_anvil] at @s if entity @a[distance=..6] run function cpp:golden_anvil/tick
 execute as @e[type=armor_stand,tag=cpp_bookshelf] at @s if entity @a[distance=..6] run function cpp:bookshelf/tick
 execute as @e[tag=cpp_crafting_machine] at @s if entity @a[distance=..6] run function cpp:craft/craft

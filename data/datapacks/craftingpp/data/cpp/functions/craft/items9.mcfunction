@@ -18,7 +18,7 @@ execute if block ~ ~ ~ barrel{Items:[{Slot:1b,id:"minecraft:white_dye"},{Slot:3b
 execute if block ~ ~ ~ barrel{Items:[{Slot:1b,id:"minecraft:black_dye"},{Slot:3b,id:"minecraft:black_dye"},{Slot:19b,id:"minecraft:black_dye"},{Slot:21b,id:"minecraft:black_dye"},{Slot:2b,id:"minecraft:glowstone_dust"},{Slot:10b,id:"minecraft:glowstone_dust"},{Slot:12b,id:"minecraft:glowstone_dust"},{Slot:20b,id:"minecraft:glowstone_dust"},{Slot:11b,id:"minecraft:dragon_egg"}]} run loot replace block ~ ~ ~ container.16 loot cpp:black_force_of_moon
 
 # 机器
-execute if block ~ ~ ~ barrel{Items:[{Slot:11b,id:"minecraft:barrel"}]} run function cpp:craft/shape_all_machines
+execute if block ~ ~ ~ barrel{Items:[{Slot:11b,id:"minecraft:barrel"}]} run function cpp:craft/items9_machines
 
 # 流星丸
 execute if block ~ ~ ~ barrel{Items:[{Slot:1b,tag:{id:"cpp:wing_of_sky"}},{Slot:2b,tag:{id:"cpp:broom"}},{Slot:3b,tag:{id:"cpp:wing_of_sky"}},{Slot:10b,tag:{id:"cpp:wing_of_sky"}},{Slot:11b,id:"minecraft:elytra"},{Slot:12b,tag:{id:"cpp:wing_of_sky"}},{Slot:19b,tag:{id:"cpp:wing_of_sky"}},{Slot:20b,tag:{id:"cpp:wing_of_sky"}},{Slot:21b,tag:{id:"cpp:wing_of_sky"}}]} run loot replace block ~ ~ ~ container.16 loot cpp:shooting_star
@@ -26,21 +26,21 @@ execute if block ~ ~ ~ barrel{Items:[{Slot:1b,tag:{id:"cpp:wing_of_sky"}},{Slot:
 # 傀儡
 execute if block ~ ~ ~ barrel{Items:[{Slot:1b,id:"minecraft:experience_bottle"},{Slot:2b,id:"minecraft:zombie_head"},{Slot:3b,id:"minecraft:experience_bottle"},{Slot:10b,tag:{id:"cpp:silicon_plate"}},{Slot:11b,id:"minecraft:enchanted_golden_apple"},{Slot:12b,tag:{id:"cpp:silicon_plate"}},{Slot:19b,id:"minecraft:armor_stand"},{Slot:20b,id:"minecraft:diamond_boots"},{Slot:21b,id:"minecraft:armor_stand"}]} run loot replace block ~ ~ ~ container.16 loot cpp:golem
 # 手
-execute if block ~ ~ ~ barrel{Items:[{Slot:1b,tag:{id:"cpp:rare_earth_glass"}},{Slot:2b,id:"minecraft:player_head",tag:{SkullOwner:{Id:"0de98464-1274-4dd6-bba8-370efa5d41a8"}}},{Slot:3b,tag:{id:"cpp:rare_earth_glass"}},{Slot:10b,tag:{id:"cpp:rare_earth_glass"}},{Slot:12b,tag:{id:"cpp:rare_earth_glass"}},{Slot:19b,tag:{id:"cpp:reinforced_glass"}},{Slot:20b,id:"minecraft:experience_bottle"},{Slot:21b,tag:{id:"cpp:reinforced_glass"}}]} run function cpp:craft/shape_all_hands
+execute if block ~ ~ ~ barrel{Items:[{Slot:1b,tag:{id:"cpp:rare_earth_glass"}},{Slot:2b,id:"minecraft:player_head",tag:{SkullOwner:{Id:"0de98464-1274-4dd6-bba8-370efa5d41a8"}}},{Slot:3b,tag:{id:"cpp:rare_earth_glass"}},{Slot:10b,tag:{id:"cpp:rare_earth_glass"}},{Slot:12b,tag:{id:"cpp:rare_earth_glass"}},{Slot:19b,tag:{id:"cpp:reinforced_glass"}},{Slot:20b,id:"minecraft:experience_bottle"},{Slot:21b,tag:{id:"cpp:reinforced_glass"}}]} run function cpp:craft/items9_hands
 
 #附魔矿物
-execute if block ~ ~ ~ barrel{Items:[{Slot:1b,id:"minecraft:experience_bottle"},{Slot:2b,id:"minecraft:experience_bottle"},{Slot:3b,id:"minecraft:experience_bottle"},{Slot:10b,id:"minecraft:experience_bottle"},{Slot:12b,id:"minecraft:experience_bottle"},{Slot:19b,id:"minecraft:experience_bottle"},{Slot:20b,id:"minecraft:experience_bottle"},{Slot:21b,id:"minecraft:experience_bottle"}]} run function cpp:craft/shape_all_minerals
+execute if block ~ ~ ~ barrel{Items:[{Slot:1b,id:"minecraft:experience_bottle"},{Slot:2b,id:"minecraft:experience_bottle"},{Slot:3b,id:"minecraft:experience_bottle"},{Slot:10b,id:"minecraft:experience_bottle"},{Slot:12b,id:"minecraft:experience_bottle"},{Slot:19b,id:"minecraft:experience_bottle"},{Slot:20b,id:"minecraft:experience_bottle"},{Slot:21b,id:"minecraft:experience_bottle"}]} run function cpp:craft/items9_minerals
 
 # 月之碎片
 execute if block ~ ~ ~ barrel{Items:[{tag:{id:"cpp:carbon_dust"}},{tag:{id:"cpp:iron_dust"}},{tag:{id:"cpp:gold_dust"}},{tag:{id:"cpp:diamond_dust"}},{tag:{id:"cpp:emerald_dust"}},{tag:{id:"cpp:quartz_dust"}},{id:"minecraft:slime_ball"},{id:"minecraft:ghast_tear"},{id:"minecraft:ender_pearl"}]} run loot replace block ~ ~ ~ container.16 loot cpp:moon_shard
 
 # 工具
-execute if block ~ ~ ~ barrel{Items:[{Slot:1b,id:"minecraft:experience_bottle"},{Slot:2b,tag:{id:"cpp:enchanted_diamond"}},{Slot:3b,id:"minecraft:experience_bottle"},{Slot:10b,tag:{id:"cpp:enchanted_gold"}},{Slot:12b,tag:{id:"cpp:enchanted_gold"}},{Slot:19b,tag:{id:"cpp:enchanted_iron"}},{Slot:20b,tag:{id:"cpp:silicon_plate"}},{Slot:21b,tag:{id:"cpp:enchanted_iron"}}]} run function cpp:craft/shape_all_tools
+execute if block ~ ~ ~ barrel{Items:[{Slot:1b,id:"minecraft:experience_bottle"},{Slot:2b,tag:{id:"cpp:enchanted_diamond"}},{Slot:3b,id:"minecraft:experience_bottle"},{Slot:10b,tag:{id:"cpp:enchanted_gold"}},{Slot:12b,tag:{id:"cpp:enchanted_gold"}},{Slot:19b,tag:{id:"cpp:enchanted_iron"}},{Slot:20b,tag:{id:"cpp:silicon_plate"}},{Slot:21b,tag:{id:"cpp:enchanted_iron"}}]} run function cpp:craft/items9_tools
 
 # 插件
 execute if block ~ ~ ~ barrel{Items:[{Slot:1b,id:"minecraft:paper"},{Slot:2b,id:"minecraft:paper"},{Slot:3b,id:"minecraft:paper"},{Slot:10b,id:"minecraft:paper"},{Slot:11b,id:"minecraft:redstone"},{Slot:12b,id:"minecraft:paper"},{Slot:19b,id:"minecraft:paper"},{Slot:20b,id:"minecraft:paper"},{Slot:21b,id:"minecraft:paper"}]} run loot replace block ~ ~ ~ container.16 loot cpp:empty_plugin
 
-execute if block ~ ~ ~ barrel{Items:[{Slot:1b,id:"minecraft:experience_bottle"},{Slot:2b,tag:{id:"cpp:enchanted_diamond"}},{Slot:3b,id:"minecraft:experience_bottle"},{Slot:10b,tag:{id:"cpp:enchanted_gold"}},{Slot:11b,tag:{id:"cpp:empty_plugin"}},{Slot:12b,tag:{id:"cpp:enchanted_gold"}}]} run function cpp:craft/shape_all_plugins
+execute if block ~ ~ ~ barrel{Items:[{Slot:1b,id:"minecraft:experience_bottle"},{Slot:2b,tag:{id:"cpp:enchanted_diamond"}},{Slot:3b,id:"minecraft:experience_bottle"},{Slot:10b,tag:{id:"cpp:enchanted_gold"}},{Slot:11b,tag:{id:"cpp:empty_plugin"}},{Slot:12b,tag:{id:"cpp:enchanted_gold"}}]} run function cpp:craft/items9_plugins
 
 # 食物
 execute if block ~ ~ ~ barrel{Items:[{Slot:1b,id:"minecraft:sugar"},{Slot:2b,id:"minecraft:sugar"},{Slot:3b,id:"minecraft:sugar"},{Slot:10b,id:"minecraft:sugar"},{Slot:11b,id:"minecraft:apple"},{Slot:12b,id:"minecraft:sugar"},{Slot:19b,id:"minecraft:sugar"},{Slot:20b,id:"minecraft:sugar"},{Slot:21b,id:"minecraft:sugar"}]} run loot replace block ~ ~ ~ container.16 loot cpp:toffee_apple

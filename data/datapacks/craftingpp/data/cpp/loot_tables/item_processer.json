@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.compress_craft_machine\\\"}\"},id:\"cpp:compress_craft_machine\",CustomModelData:12970018}"
+							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.item_processer\\\"}\"},id:\"cpp:item_processer\",CustomModelData:12970018}"
 						}
 					]
 				}

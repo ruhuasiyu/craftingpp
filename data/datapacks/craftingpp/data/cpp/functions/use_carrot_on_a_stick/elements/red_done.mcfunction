@@ -31,14 +31,8 @@ execute if block ~ ~ ~ green_terracotta run summon item ~ ~ ~ {Item:{id:"minecra
 execute if block ~ ~ ~ red_terracotta run summon item ~ ~ ~ {Item:{id:"minecraft:red_glazed_terracotta",Count:1b}}
 execute if block ~ ~ ~ black_terracotta run summon item ~ ~ ~ {Item:{id:"minecraft:black_glazed_terracotta",Count:1b}}
 
-execute if block ~ ~ ~ coal_ore run summon item ~ ~ ~ {Item:{id:"minecraft:coal",Count:1b}}
-execute if block ~ ~ ~ nether_quartz_ore run summon item ~ ~ ~ {Item:{id:"minecraft:quartz",Count:1b}}
 execute if block ~ ~ ~ iron_ore run summon item ~ ~ ~ {Item:{id:"minecraft:iron_ingot",Count:1b}}
 execute if block ~ ~ ~ gold_ore run summon item ~ ~ ~ {Item:{id:"minecraft:gold_ingot",Count:1b}}
-execute if block ~ ~ ~ redstone_ore run summon item ~ ~ ~ {Item:{id:"minecraft:redstone",Count:1b}}
-execute if block ~ ~ ~ lapis_ore run summon item ~ ~ ~ {Item:{id:"minecraft:lapis_lazuli",Count:1b}}
-execute if block ~ ~ ~ diamond_ore run summon item ~ ~ ~ {Item:{id:"minecraft:diamond",Count:1b}}
-execute if block ~ ~ ~ emerald_ore run summon item ~ ~ ~ {Item:{id:"minecraft:emerald",Count:1b}}
 
 execute if block ~ ~ ~ quartz_block run summon item ~ ~ ~ {Item:{id:"minecraft:smooth_quartz",Count:1b}}
 execute if block ~ ~ ~ sandstone run summon item ~ ~ ~ {Item:{id:"minecraft:smooth_sandstone",Count:1b}}

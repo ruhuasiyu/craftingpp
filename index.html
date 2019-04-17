@@ -58,7 +58,7 @@
 <p>原版模组一般是指使用命令而非<abbr title="forge liteloader rift fibric 等">mod api</abbr>来对游戏的可玩性做出修改。自1.13起，原版模组一般以数据包的形式出现。</p>
 
 <p>《更多的合成》是国内论坛最大的原版模组，包括数百种物品、材料、工具、装饰等，以及新的村民交易和空岛系统。该模组无明确的主题，凡是作者认为原版没有而应该有的特性都有可能加入进来。</p>
-<p>最新版本为测试版v1.9-m04d15(魔法更新)，支持Minecraft Java版 1.14快照19w12a+。</p>
+<p>最新版本为测试版v1.9-m04d17(魔法更新)，支持Minecraft Java版 1.14快照19w12a+。</p>
 
 
 <h3 id="download">📦 下载地址</h3>
@@ -80,9 +80,9 @@
 </tr>
 <tr>
 	<td>Minecraft Java版 19w12a+</td>
-	<td>Crafting++ 1.9测试版m04d15</td>
-	<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/releases/download/v1.9m04d15/v1.9m04d15.zip">github</a>
-	  | <a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.9-m04d15.zip">官方</a></td>
+	<td>Crafting++ 1.9测试版m04d17</td>
+	<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/releases/download/v1.9m04d17/v1.9m04d17.zip">github</a>
+	  | <a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.9-m04d17.zip">官方</a></td>
 	<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/commits/master">更新日志</a></td>
 </tr>
 <tr>
@@ -110,7 +110,7 @@
 <li><span style="color:blue">转发模组文件</span>不可上传至网盘或文件存储平台，但通讯类工具允许下载后分享。</li>
 <li><span style="color:blue">服务器</span>若为公益可直接使用；非公益请先在<a href="https://afdian.net/@ruhuasiyu">爱发电</a>支付100元商业服授权费用后再使用。</li>
 <li><span style="color:blue">主播或视频制作者</span>若在直播或视频中使用了本模组，请在简介中注明主页、作者名或模组来源。</li>
-<li><span style="color:blue">原版模组整合者</span>，该原版模组命名空间为cpp和bsd，所有记分板和标签均使用前缀cpp或bsd，物品自定义模型区段位于12970000-12979999，修改了minecraft命名空间大部分的战利品表和少量配方与标签。</li>
+<li><span style="color:blue">原版模组整合者</span>，该原版模组命名空间为cpp，所有记分板和标签均使用前缀cpp，物品自定义模型区段位于12970000-12979999，修改了minecraft命名空间大部分的战利品表和少量配方与标签。</li>
 </ul>
 
 <h3>💖 支持我们</h3>
@@ -183,11 +183,12 @@
   <a href="#crafting_machine"><span class="ci" style="background-position: -32px -592px;"></span>合成器</a> 
 · <a href="#all_in_one_machine"><span class="ci" style="background-position: -16px -0px;"></span>多功能一体机</a> 
 · <a href="#trade_machine"><span class="ci" style="background-position: -32px -0px;"></span>交易机</a>
-· <a href="#compress_craft_machine"><span class="ci" style="background-position: -0px -624px;"></span>压缩合成机</a>
+· <a href="#item_processer"><span class="ci" style="background-position: -0px -624px;"></span>物品处理机</a>
 · <a href="#mob_projector"><span class="ci" style="background-position: -48px -0px;"></span>生物投影仪</a>
 · <a href="#beacon_enhancer"><span class="ci" style="background-position: -64px -0px;"></span>信标增强器</a>
 · <a href="#golden_anvil"><span class="ci" style="background-position: -80px -0px;"></span>金砧</a>
-· <a href="#empty_bookshelf"><span class="ci" style="background-position: -96px -0px;"></span>空书架</a> </td></tr>
+· <a href="#empty_bookshelf"><span class="ci" style="background-position: -96px -0px;"></span>空书架</a>
+</td></tr>
 
 <tr><th>插件</th><td>
   <a href="#empty_plugin"><span class="ci" style="background-position: -112px -0px;"></span>空白插件</a> 
@@ -214,7 +215,8 @@
 · <a href="#mushroom"><span style="background-position: -80px -528px;"></span>蘑菇</a>
 · <a href="#meat"><span class="ci" style="background-position: -80px -32px;"></span><span class="ci" style="background-position: -96px -32px;"></span><span class="ci" style="background-position: -112px -32px;"></span><span class="ci" style="background-position: -128px -32px;"></span><span class="ci" style="background-position: -0px -48px;"></span><span class="ci" style="background-position: -16px -48px;"></span><span class="ci" style="background-position: -32px -48px;"></span><span class="ci" style="background-position: -48px -48px;"></span><span class="ci" style="background-position: -64px -48px;"></span><span class="ci" style="background-position: -80px -48px;"></span><span class="ci" style="background-position: -96px -48px;"></span><span class="ci" style="background-position: -112px -48px;"></span>肉</a>
 · <a href="#dragon_egg"><span style="background-position: -496px -384px;"></span>龙蛋</a>
-· <a href="#broken_spawner"><span class="ci" style="background-position: -128px -48px;"></span>破损的刷怪箱</a></td></tr>
+· <a href="#broken_spawner"><span class="ci" style="background-position: -128px -48px;"></span>破损的刷怪箱</a>
+</td></tr>
 
 <tr><th>材料</th><td>
   <a href="#ancient_scroll"><span class="ci" style="background-position: -0px -64px;"></span>上古卷轴</a>
@@ -847,53 +849,273 @@
 </tr>
 </tbody></table>
 
-<h3 id="compress_craft_machine">压缩合成机 (Compress-Craft Machine)</h3>
-<span class="ui single"><span class="ci compress_craft_machine"></span></span>
+<h3 id="item_processer">物品处理机 (Item Processer)</h3>
+<span class="ui single"><span class="ci item_processer"></span></span>
 <table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
-<tr><th>压缩合成机</th>
-<td><a href="#enchanted_iron">附魔铁锭</a>+<a href="#compressor">压缩器</a>+木桶+红石+<a href="#limb_of_ridge">山脉之肢</a></td>
+<tr><th>物品处理机</th>
+<td><a href="#enchanted_iron">附魔铁锭</a>+合成器+木桶+红石+熔炉</td>
 <td><span class="ui cm" title="合成器">
 <span class="ci enchanted_iron" title="附魔铁锭"></span>
-<span class="ci compressor" title="压缩器"></span>
+<span class="crafting_table" title="工作台"></span>
 <span class="ci enchanted_iron" title="附魔铁锭"></span>
 <span class="ci enchanted_iron" title="附魔铁锭"></span>
 <span class="barrel" title="木桶"></span>
 <span class="ci enchanted_iron" title="附魔铁锭"></span>
 <span class="redstone" title="红石"></span>
-<span class="ci limb_of_ridge" title="山脉之肢"></span>
+<span class="furnace" title="熔炉"></span>
 <span class="redstone" title="红石"></span>
-<span class="ci compress_craft_machine" title="压缩合成机"></span>
+<span class="ci item_processer" title="物品处理机"></span>
 </span></td></tr>
 </tbody></table>
 
 <p>
-包括左侧1个输入槽，右侧1个输出槽。左侧槽位控制输出方向，按Q或Shift+左键切换模式，若输出方向有箱子/潜影箱/陷阱箱/木桶则会自动输出到箱子内。</p>
+包括左侧方块输入槽，上部工具输入槽，右侧2个输出槽。最左侧槽位控制输出方向，按Q或Shift+左键切换模式，若输出方向有箱子/潜影箱/陷阱箱/木桶则会自动输出到箱子内。</p>
 
-<span class="ui onetoone"><span class="wheat" title="小麦"><span class="stack">9</span></span><span class="hay_block" title="干草块"></span></span>
-<span class="ui onetoone"><span class="melon_slice" title="西瓜片"><span class="stack">9</span></span><span class="melon" title="西瓜"></span></span>
-<span class="ui onetoone"><span class="dried_kelp" title="干海带"><span class="stack">9</span></span><span class="dried_kelp_block" title="干海带块"></span></span>
-<span class="ui onetoone"><span class="nether_wart" title="地狱疣"><span class="stack">9</span></span><span class="nether_wart_block" title="地狱疣块"></span></span>
-<span class="ui onetoone"><span class="slime_ball" title="粘液球"><span class="stack">9</span></span><span class="slime_block" title="粘液块"></span></span>
+<table><thead><tr><th>工具</th><th>配方</th><th>配方</th></tr></thead><tbody>
+<tr>
+	<td><span class="ui single"><span class="golden_shovel" title="金锹"></span></span><span class="ui single"><span class="wooden_shovel" title="木锹"></span></span><span class="ui single"><span class="stone_shovel" title="石锹"></span></span><span class="ui single"><span class="iron_shovel" title="铁锹"></span></span><span class="ui single"><span class="diamond_shovel" title="钻石锹"></span></span></td>
+	<td><span class="ui single"><span class="grass_block" title="草方块"></span></span></td>
+	<td><span class="ui single"><span class="grass_path" title="草径"></span></span></td>
+</tr>
+<tr>
+	<td rowspan="3"><span class="ui single"><span class="golden_hoe" title="金锄"></span></span><span class="ui single"><span class="wooden_hoe" title="木锄"></span></span><span class="ui single"><span class="stone_hoe" title="石锄"></span></span><span class="ui single"><span class="iron_hoe" title="铁锄"></span></span><span class="ui single"><span class="diamond_hoe" title="钻石锄"></span></span></td>
+	<td><span class="ui single"><span class="dirt" title="泥土"></span></span></td>
+	<td><span class="ui single"><span class="farmland" title="耕地"></span></span></td>
+</tr>
+<tr>
+	<td><span class="ui single"><span class="grass_block" title="草方块"></span></span></td>
+	<td><span class="ui single"><span class="farmland" title="耕地"></span></span></td>
+</tr>
+<tr>
+	<td><span class="ui single"><span class="coarse_dirt" title="砂土"></span></span></td>
+	<td><span class="ui single"><span class="dirt" title="泥土"></span></span></td>
+</tr>
+<tr>
+	<td><span class="ui single"><span class="golden_axe" title="金斧"></span></span><span class="ui single"><span class="wooden_axe" title="木斧"></span></span><span class="ui single"><span class="stone_axe" title="石斧"></span></span><span class="ui single"><span class="iron_axe" title="铁斧"></span></span><span class="ui single"><span class="diamond_axe" title="钻石斧"></span></span></td>
+	<td><span class="ui single"><span class="oak_log" title="原木"></span></span></td>
+	<td><span class="ui single"><span class="stripped_oak_log" title="去皮原木"></span></span></td>
+</tr>
+<tr>
+	<td><span class="ui single"><span class="golden_pickaxe" title="金镐"></span></span><span class="ui single"><span class="wooden_pickaxe" title="木镐"></span></span><span class="ui single"><span class="stone_pickaxe" title="石镐"></span></span><span class="ui single"><span class="iron_pickaxe" title="铁镐"></span></span><span class="ui single"><span class="diamond_pickaxe" title="钻石镐"></span></span></td>
+	<td><span class="ui single"><span class="stone" title="石头"></span></span></td>
+	<td><span class="ui single"><span class="cobblestone" title="圆石"></span></span></td>
+</tr>
+<tr>
+	<td><span class="ui single"><span class="shears" title="剪刀"></span></span></td>
+	<td><span class="ui single"><span class="pumpkin" title="南瓜"></span></span></td>
+	<td><span class="ui single"><span class="carved_pumpkin" title="雕刻过的南瓜"></span></span><span class="ui single"><span class="pumpkin_seeds" title="南瓜种子"><span class="stack">4</span></span></span></td>
+</tr>
 
-<span class="ui onetoone"><span class="bone_meal" title="骨粉"><span class="stack">9</span></span><span class="bone_block" title="骨块"></span></span>
-<span class="ui onetoone"><span class="ci splint" title="碎钻"><span class="stack">9</span></span><span class="diamond" title="钻石"></span></span>
-<span class="ui onetoone"><span class="coal" title="煤炭"><span class="stack">9</span></span><span class="coal_block" title="煤块"></span></span>
-<span class="ui onetoone"><span class="iron_ingot" title="铁锭"><span class="stack">9</span></span><span class="iron_block" title="铁块"></span></span>
-<span class="ui onetoone"><span class="gold_ingot" title="金锭"><span class="stack">9</span></span><span class="gold_block" title="金块"></span></span>
+<tr>
+	<td rowspan="21"><span class="ui single"><span class="piston" title="活塞"></span></span></td>
+	<td><span class="ui single"><span class="wheat" title="小麦"><span class="stack">9</span></span></span></td>
+	<td><span class="ui single"><span class="hay_block" title="干草块"></span></span></td>
+</tr>
+<tr>
+	<td><span class="ui single"><span class="melon_slice" title="西瓜片"><span class="stack">9</span></span></span></td>
+	<td><span class="ui single"><span class="melon" title="西瓜"></span></span></td>
+</tr>
+<tr>
+	<td><span class="ui single"><span class="dried_kelp" title="干海带"><span class="stack">9</span></span></span></td>
+	<td><span class="ui single"><span class="dried_kelp_block" title="干海带块"></span></span></td>
+</tr>
+<tr>
+	<td><span class="ui single"><span class="nether_wart" title="地狱疣"><span class="stack">9</span></span></span></td>
+	<td><span class="ui single"><span class="nether_wart_block" title="地狱疣块"></span></span></td>
+</tr>
+<tr>
+	<td><span class="ui single"><span class="slime_ball" title="粘液球"><span class="stack">9</span></span></span></td>
+	<td><span class="ui single"><span class="slime_block" title="粘液块"></span></span></td>
+</tr>
+<tr>
+	<td><span class="ui single"><span class="bone_meal" title="骨粉"><span class="stack">9</span></span></span></td>
+	<td><span class="ui single"><span class="bone_block" title="骨块"></span></span></td>
+</tr>
+<tr>
+	<td><span class="ui single"><span class="ci splint" title="碎钻"><span class="stack">9</span></span></span></td>
+	<td><span class="ui single"><span class="diamond" title="钻石"></span></span></td>
+</tr>
+<tr>
+	<td><span class="ui single"><span class="coal" title="煤炭"><span class="stack">9</span></span></span></td>
+	<td><span class="ui single"><span class="coal_block" title="煤块"></span></span></td>
+</tr>
+<tr>
+	<td><span class="ui single"><span class="iron_ingot" title="铁锭"><span class="stack">9</span></span></span></td>
+	<td><span class="ui single"><span class="iron_block" title="铁块"></span></span></td>
+</tr>
+<tr>
+	<td><span class="ui single"><span class="gold_ingot" title="金锭"><span class="stack">9</span></span></span></td>
+	<td><span class="ui single"><span class="gold_block" title="金块"></span></span></td>
+</tr>
+<tr>
+	<td><span class="ui single"><span class="redstone" title="红石"><span class="stack">9</span></span></span></td>
+	<td><span class="ui single"><span class="redstone_block" title="红石块"></span></span></td>
+</tr>
+<tr>
+	<td><span class="ui single"><span class="lapis_lazuli" title="青金石"><span class="stack">9</span></span></span></td>
+	<td><span class="ui single"><span class="lapis_block" title="青金石块"></span></span></td>
+</tr>
+<tr>
+	<td><span class="ui single"><span class="diamond" title="钻石"><span class="stack">9</span></span></span></td>
+	<td><span class="ui single"><span class="diamond_block" title="钻石块"></span></span></td>
+</tr>
+<tr>
+	<td><span class="ui single"><span class="emerald" title="绿宝石"><span class="stack">9</span></span></span></td>
+	<td><span class="ui single"><span class="emerald_block" title="绿宝石块"></span></span></td>
+</tr>
+<tr>
+	<td><span class="ui single"><span class="iron_nugget" title="铁粒"><span class="stack">9</span></span></span></td>
+	<td><span class="ui single"><span class="iron_ingot" title="铁锭"></span></span></td>
+</tr>
+<tr>
+	<td><span class="ui single"><span class="gold_nugget" title="金粒"><span class="stack">9</span></span></span></td>
+	<td><span class="ui single"><span class="gold_ingot" title="金锭"></span></span></td>
+</tr>
+<tr>
+	<td><span class="ui single"><span class="rabbit_hide" title="兔子皮"><span class="stack">4</span></span></span></td>
+	<td><span class="ui single"><span class="leather" title="皮革"></span></span></td>
+</tr>
+<tr>
+	<td><span class="ui single"><span class="snowball" title="雪球"><span class="stack">4</span></span></span></td>
+	<td><span class="ui single"><span class="snow_block" title="雪块"></span></span></td>
+</tr>
+<tr>
+	<td><span class="ui single"><span class="glowstone_dust" title="荧石粉"><span class="stack">4</span></span></span></td>
+	<td><span class="ui single"><span class="glowstone" title="荧石"></span></span></td>
+</tr>
+<tr>
+	<td><span class="ui single"><span class="clay_ball" title="粘土"><span class="stack">4</span></span></span></td>
+	<td><span class="ui single"><span class="clay" title="粘土块"></span></span></td>
+</tr>
 
-<span class="ui onetoone"><span class="redstone" title="红石"><span class="stack">9</span></span><span class="redstone_block" title="红石块"></span></span>
-<span class="ui onetoone"><span class="lapis_lazuli" title="青金石"><span class="stack">9</span></span><span class="lapis_block" title="青金石块"></span></span>
-<span class="ui onetoone"><span class="diamond" title="钻石"><span class="stack">9</span></span><span class="diamond_block" title="钻石块"></span></span>
-<span class="ui onetoone"><span class="emerald" title="绿宝石"><span class="stack">9</span></span><span class="emerald_block" title="绿宝石块"></span></span>
-<span class="ui onetoone"><span class="iron_nugget" title="铁粒"><span class="stack">9</span></span><span class="iron_ingot" title="铁锭"></span></span>
+<tr>
+	<td><span class="ui single"><span class="quartz" title="石英"><span class="stack">4</span></span></span></td>
+	<td><span class="ui single"><span class="quartz_block" title="石英块"></span></span></td>
+</tr>
 
-<span class="ui onetoone"><span class="gold_nugget" title="金粒"><span class="stack">9</span></span><span class="gold_ingot" title="金锭"></span></span>
-<span class="ui onetoone"><span class="rabbit_hide" title="兔子皮"><span class="stack">4</span></span><span class="leather" title="皮革"></span></span>
-<span class="ui onetoone"><span class="snowball" title="雪球"><span class="stack">4</span></span><span class="snow_block" title="雪块"></span></span>
-<span class="ui onetoone"><span class="glowstone_dust" title="荧石粉"><span class="stack">4</span></span><span class="glowstone" title="荧石"></span></span>
-<span class="ui onetoone"><span class="clay_ball" title="粘土"><span class="stack">4</span></span><span class="clay" title="粘土块"></span></span>
+<tr>
+	<td rowspan="18"><span class="ui single"><span class="ci red_force_of_fire" title="红色火之力"></span></span></td>
+	<td><span class="ui single"><span class="sand" title="沙子"></span></span></td>
+	<td><span class="ui single"><span class="glass" title="玻璃"></span></span></td>
+</tr>
+<tr>
+	<td><span class="ui single"><span class="red_sand" title="红沙"></span></span></td>
+	<td><span class="ui single"><span class="glass" title="玻璃"></span></span></td>
+</tr>
+<tr>
+	<td><span class="ui single"><span class="oak_log" title="木头"></span></span></td>
+	<td><span class="ui single"><span class="charcoal" title="木炭"></span></span></td>
+</tr>
+<tr>
+	<td><span class="ui single"><span class="cactus" title="仙人掌"></span></span></td>
+	<td><span class="ui single"><span class="green_dye" title="绿色染料"></span></span></td>
+</tr>
+<tr>
+	<td><span class="ui single"><span class="cobblestone" title="圆石"></span></span></td>
+	<td><span class="ui single"><span class="stone" title="石头"></span></span></td>
+</tr>
+<tr>
+	<td><span class="ui single"><span class="netherrack" title="地狱岩"></span></span></td>
+	<td><span class="ui single"><span class="nether_brick" title="地狱砖"></span></span></td>
+</tr>
+<tr>
+	<td><span class="ui single"><span class="stone_bricks" title="石砖"></span></span></td>
+	<td><span class="ui single"><span class="cracked_stone_bricks" title="裂石砖"></span></span></td>
+</tr>
+<tr>
+	<td><span class="ui single"><span class="wet_sponge" title="湿海绵"></span></span></td>
+	<td><span class="ui single"><span class="sponge" title="海绵"></span></span></td>
+</tr>
+<tr>
+	<td><span class="ui single"><span class="clay" title="粘土块"></span></span></td>
+	<td><span class="ui single"><span class="terracotta" title="陶瓦"></span></span></td>
+</tr>
+<tr>
+	<td><span class="ui single"><span class="kelp" title="海带"></span></span></td>
+	<td><span class="ui single"><span class="dried_kelp" title="干海带"></span></span></td>
+</tr>
+<tr>
+	<td><span class="ui single"><span class="sea_pickle" title="海泡菜"></span></span></td>
+	<td><span class="ui single"><span class="lime_dye" title="黄绿色染料"></span></span></td>
+</tr>
+<tr>
+	<td><span class="ui single"><span class="yellow_terracotta" title="染色陶瓦"></span></span></td>
+	<td><span class="ui single"><span class="yellow_glazed_terracotta" title="染色带釉陶瓦"></span></span></td>
+</tr>
+<tr>
+	<td><span class="ui single"><span class="iron_ore" title="铁矿"></span></span></td>
+	<td><span class="ui single"><span class="iron_ingot" title="铁锭"></span></span></td>
+</tr>
+<tr>
+	<td><span class="ui single"><span class="gold_ore" title="金矿"></span></span></td>
+	<td><span class="ui single"><span class="gold_ingot" title="金锭"></span></span></td>
+</tr>
+<tr>
+	<td><span class="ui single"><span class="quartz_block" title="石英块"></span></span></td>
+	<td><span class="ui single"><span class="quartz_block" title="平滑石英块"></span></span></td>
+</tr>
+<tr>
+	<td><span class="ui single"><span class="sandstone" title="砂岩"></span></span></td>
+	<td><span class="ui single"><span class="smooth_sandstone" title="平滑砂岩"></span></span></td>
+</tr>
+<tr>
+	<td><span class="ui single"><span class="red_sandstone" title="红砂岩"></span></span></td>
+	<td><span class="ui single"><span class="smooth_red_sandstone" title="平滑红砂岩"></span></span></td>
+</tr>
+<tr>
+	<td><span class="ui single"><span class="stone" title="石头"></span></span></td>
+	<td><span class="ui single"><span class="smooth_stone" title="平滑石头"></span></span></td>
+</tr>
 
-<span class="ui onetoone"><span class="quartz" title="石英"><span class="stack">4</span></span><span class="quartz_block" title="石英块"></span></span>
+<tr>
+	<td rowspan="9"><span class="ui single"><span class="water_bucket" title="水桶"></span></span></td>
+	<td><span class="ui single"><span class="black_stained_glass" title="染色玻璃"></span></span></td>
+	<td><span class="ui single"><span class="glass" title="玻璃"></span></span></td>
+</tr>
+<tr>
+	<td><span class="ui single"><span class="purple_terracotta" title="染色陶瓦"></span></span></td>
+	<td><span class="ui single"><span class="terracotta" title="陶瓦"></span></span></td>
+</tr>
+<tr>
+	<td><span class="ui single"><span class="green_wool" title="彩色羊毛"></span></span></td>
+	<td><span class="ui single"><span class="white_wool" title="白色羊毛"></span></span></td>
+</tr>
+<tr>
+	<td><span class="ui single"><span class="green_bed" title="彩色床"></span></span></td>
+	<td><span class="ui single"><span class="white_bed" title="白色床"></span></span></td>
+</tr>
+<tr>
+	<td><span class="ui single"><span class="sponge" title="海绵"></span></span></td>
+	<td><span class="ui single"><span class="wet_sponge" title="湿海绵"></span></span></td>
+</tr>
+<tr>
+	<td><span class="ui single"><span class="lava_bucket" title="熔岩桶"></span></span></td>
+	<td><span class="ui single"><span class="obsidian" title="黑曜石"></span></span><span class="ui single"><span class="bucket" title="桶"></span></span></td>
+</tr>
+<tr>
+	<td><span class="ui single"><span class="sticky_piston" title="粘性活塞"></span></span></td>
+	<td><span class="ui single"><span class="piston" title="活塞"></span></span></td>
+</tr>
+<tr>
+	<td><span class="ui single"><span class="glass_bottle" title="玻璃瓶"></span></span></td>
+	<td><span class="ui single"><span class="water_bottle" title="水瓶"></span></span></td>
+</tr>
+<tr>
+	<td><span class="ui single"><span class="black_concrete_powder" title="混凝土粉末"></span></span></td>
+	<td><span class="ui single"><span class="black_concrete" title="混凝土"></span></span></td>
+</tr>
+
+<tr>
+	<td><span class="ui single"><span class="grass_block" title="草方块"></span></span></td>
+	<td><span class="ui single"><span class="dirt" title="泥土"></span></span></td>
+	<td><span class="ui single"><span class="grass_block" title="草方块"></span></span></td>
+</tr>
+<tr>
+	<td><span class="ui single"><span class="mycelium" title="菌丝"></span></span></td>
+	<td><span class="ui single"><span class="dirt" title="泥土"></span></span></td>
+	<td><span class="ui single"><span class="mycelium" title="菌丝"></span></span></td>
+</tr>
+</tbody></table>
 
 <h3 id="mob_projector">生物投影仪 (Mob Projector)</h3>
 <span class="ui single"><span class="ci mob_projector"></span></span>
@@ -1050,12 +1272,12 @@
 
 <tr><td>岩浆怪</td><td><img src="https://gamepedia.cursecdn.com/minecraft_zh_gamepedia/0/09/Magma_Cube_Face.png" title="岩浆怪" /></td><td><span class="ui slot"><span class="egg" title="鸡蛋">
 </span></span><span class="ui slot"><span class="magma_cream" title="岩浆膏">
-</span></span><span class="ui slot"><span class="nether_bricks" title="地狱砖">
+</span></span><span class="ui slot"><span class="nether_brick" title="地狱砖">
 </span></span><span class="ui slot"><span class="xp_orb" title="经验"><span class="stack">8</span></span></span></td></tr>
 
 <tr><td>烈焰人</td><td><img src="https://gamepedia.cursecdn.com/minecraft_zh_gamepedia/3/31/Blaze_Face.png" title="烈焰人" /></td><td><span class="ui slot"><span class="egg" title="鸡蛋">
 </span></span><span class="ui slot"><span class="blaze_powder" title="烈焰粉">
-</span></span><span class="ui slot"><span class="nether_bricks" title="地狱砖">
+</span></span><span class="ui slot"><span class="nether_brick" title="地狱砖">
 </span></span><span class="ui slot"><span class="xp_orb" title="经验"><span class="stack">8</span></span></span></td></tr>
 
 <tr><td>末影人</td><td><img src="https://gamepedia.cursecdn.com/minecraft_zh_gamepedia/2/2d/EndermanFace.png" title="末影人" /></td><td><span class="ui slot"><span class="egg" title="鸡蛋">
@@ -4641,6 +4863,18 @@
 <span class="terracotta" title="陶瓦"></span>
 </span></td></tr>
 
+<tr><th>白色羊毛</th><td>彩色羊毛</td>
+<td><span class="ui onetoone" title="炼药锅">
+<span class="green_wool" title="彩色羊毛"></span>
+<span class="white_wool" title="白色羊毛"></span>
+</span></td></tr>
+
+<tr><th>白色床</th><td>彩色床</td>
+<td><span class="ui onetoone" title="炼药锅">
+<span class="green_bed" title="彩色床"></span>
+<span class="white_bed" title="白色床"></span>
+</span></td></tr>
+
 <tr><th>湿海绵</th><td>海绵</td>
 <td><span class="ui onetoone" title="炼药锅">
 <span class="sponge" title="海绵"></span>
@@ -4657,12 +4891,6 @@
 <td><span class="ui onetoone" title="炼药锅">
 <span class="sticky_piston" title="粘性活塞"></span>
 <span class="piston" title="活塞"></span>
-</span></td></tr>
-
-<tr><th>白色床</th><td>彩色床</td>
-<td><span class="ui onetoone" title="炼药锅">
-<span class="green_bed" title="彩色床"></span>
-<span class="white_bed" title="白色床"></span>
 </span></td></tr>
 </tbody></table>
 
@@ -5126,7 +5354,7 @@
 <a href="https://space.bilibili.com/4469715"><img src="items/bilibili.png" /></a>
 </p>
 
-<p>最后更新 2019-04-10</p>
+<p>最后更新 2019-04-17</p>
 </footer>
 </article>
 </body></html>

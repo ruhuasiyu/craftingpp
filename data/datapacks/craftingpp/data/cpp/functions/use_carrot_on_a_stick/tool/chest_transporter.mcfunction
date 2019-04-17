@@ -7,8 +7,8 @@ execute as @s[nbt={SelectedItem:{tag:{id:"cpp:chest_transporter"}}}] store resul
 execute as @s[nbt=!{SelectedItem:{tag:{id:"cpp:chest_transporter"}}}] store result score #temp cppValue run data get entity @s Inventory[{Slot:-106b}].tag.Damage
 scoreboard players add #temp cppValue 1
 
-execute as @s[nbt={SelectedItem:{tag:{id:"cpp:chest_transporter"}}}] store result entity @s SelectedItem.tag.Damage int 1 run scoreboard players get #temp cppValue
-execute as @s[nbt=!{SelectedItem:{tag:{id:"cpp:chest_transporter"}}}] store result entity @s Inventory[{Slot:-106b}].tag.Damage int 1 run scoreboard players get #temp cppValue
+execute as @s[gamemode=!creative,nbt={SelectedItem:{tag:{id:"cpp:chest_transporter"}}}] store result entity @s SelectedItem.tag.Damage int 1 run scoreboard players get #temp cppValue
+execute as @s[gamemode=!creative,nbt=!{SelectedItem:{tag:{id:"cpp:chest_transporter"}}}] store result entity @s Inventory[{Slot:-106b}].tag.Damage int 1 run scoreboard players get #temp cppValue
 
 execute if score #temp cppValue matches 26.. run replaceitem entity @s[nbt=!{SelectedItem:{tag:{id:"cpp:chest_transporter"}}},gamemode=!creative] weapon.offhand air
 execute if score #temp cppValue matches 26.. run replaceitem entity @s[nbt={SelectedItem:{tag:{id:"cpp:chest_transporter"}}},gamemode=!creative] weapon.mainhand air

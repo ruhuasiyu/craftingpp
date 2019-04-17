@@ -1,3 +1,7 @@
+# 鞋
+execute if block ~ ~ ~ barrel{Items:[{Slot:1b,id:"minecraft:leather"},{Slot:3b,id:"minecraft:leather"},{Slot:10b,id:"minecraft:brown_dye"},{Slot:12b,id:"minecraft:brown_dye"}]} run loot replace block ~ ~ ~ container.16 loot cpp:snow_boots
+execute if block ~ ~ ~ barrel{Items:[{Slot:10b,id:"minecraft:leather"},{Slot:12b,id:"minecraft:leather"},{Slot:19b,id:"minecraft:brown_dye"},{Slot:21b,id:"minecraft:brown_dye"}]} run loot replace block ~ ~ ~ container.16 loot cpp:snow_boots
+
 execute if block ~ ~ ~ barrel{Items:[{id:"minecraft:bone_meal"},{id:"minecraft:rotten_flesh"},{id:"minecraft:charcoal"},{id:"minecraft:gunpowder"}]} run loot replace block ~ ~ ~ container.16 loot cpp:craft/fertilizer
 execute if block ~ ~ ~ barrel{Items:[{id:"minecraft:poppy"},{tag:{id:"cpp:lycoris_radiata"}},{tag:{id:"cpp:glazed_shade"}},{tag:{id:"cpp:marigold"}}]} run loot replace block ~ ~ ~ container.16 loot cpp:poinsettia
 

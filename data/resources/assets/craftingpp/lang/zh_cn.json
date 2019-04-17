@@ -59,7 +59,7 @@
 	"item.cpp.mob_projector":"§r生物投影仪",
 	"item.cpp.golden_anvil":"§r金砧",
 	"item.cpp.beacon_enhancer":"§r信标增强器",
-	"item.cpp.compress_craft_machine":"§r压缩合成机",
+	"item.cpp.item_processer":"§r物品处理机",
 	"item.cpp.dustbin":"§r垃圾桶",
 	"item.cpp.empty_plugin":"§r空白插件",
 	"item.cpp.high_temperature_plugin":"§r高温插件",
@@ -565,7 +565,7 @@
 
 	"The":"§a原版模组《更多的合成》已成功加载,",
 	"resourcepack":"版本",
-	"does":"§a1.9-m04d15§a.",
+	"does":"§a1.9-m04d17§a.",
 	"not":"§a更多内容请",
 	"Install":"§e点击此处进入wiki.",
 	"correctly":"§a作者:",

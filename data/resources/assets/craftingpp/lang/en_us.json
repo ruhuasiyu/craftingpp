@@ -59,7 +59,7 @@
 	"item.cpp.mob_projector":"§rMob Projector",
 	"item.cpp.beacon_enhancer":"§rBeacon Enhancer",
 	"item.cpp.golden_anvil":"§rGolden Anvil",
-	"item.cpp.compress_craft_machine":"§rCompress-Craft Machine",
+	"item.cpp.item_processer":"§rItem Processer",
 	"item.cpp.dustbin":"§Dustbin",
 	"item.cpp.empty_plugin":"§rEmpty Plugin",
 	"item.cpp.high_temperature_plugin":"§rHigh Temperature Plugin",
@@ -565,7 +565,7 @@
 
 	"The":"§aCrafting++ is loaded,",	
 	"resourcepack":"version",
-	"does":"§a1.9-m04d15§a.",
+	"does":"§a1.9-m04d17§a.",
 	"not":"§aPlease",
 	"Install":"\n§evisit the wiki",
 	"correctly":"§ato get more informations. Authors:",

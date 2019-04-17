@@ -18,6 +18,6 @@
         }
     },
     "textures": {
-        "layer1": "craftingpp:machine/compress_craft_machine_gui"
+        "layer1": "craftingpp:machine/item_processer_gui"
     }
 }

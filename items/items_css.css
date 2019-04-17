@@ -548,6 +548,7 @@ span.red_dye{	background-position: -960px -672px;}
 span.black_stained_glass{	background-position: -64px -704px;}
 span.black_stained_glass_pane{	background-position: -96px -704px;}
 span.blue_stained_glass_pane{	background-position: -288px -704px;}
+span.yellow_terracotta{	background-position: -416px -704px;}
 span.brown_stained_glass_pane{	background-position: -480x -704px;}
 span.cyan_stained_glass_pane{	background-position: -672px -704px;}
 span.gray_stained_glass_pane{	background-position: -864px -704px;}
@@ -626,6 +627,7 @@ span.bookshelf{	background-position: -96px -864px;}
 span.brickBlock{	background-position: -160px -864px;}
 span.cobblestone{	background-position: -320px -864px;}
 span.dark_oak_planks{	background-position: -512px -864px;}
+span.farmland{	background-position: -672px -864px;}
 span.oak_fence{	background-position: -704px -864px;}
 span.oak_fence_door{	background-position: -736px -864px;}
 span.glass{	background-position: -768px -864px;}
@@ -667,7 +669,9 @@ span.zombie_head{	background-position: -256px -960px;}
 span.andesite{	background-position: -288px -960px;}
 span.bedrock{	background-position: -320px -960px;}
 span.clay{	background-position: -384px -960px;}
+span.coarse_dirt{	background-position: -416px -960px;}
 span.cobweb{	background-position: -448px -960px;}
+span.cracked_stone_bricks{	background-position: -480px -960px;}
 span.dark_prismarine{	background-position: -512px -960px;}
 span.diorite{	background-position: -544px -960px;}
 span.dirt{	background-position: -576px -960px;}
@@ -684,6 +688,7 @@ span.shield{	background-position: -992px -960px;}
 
 span.prismarine_bricks{	background-position: -0px -992px;}
 span.red_sand{	background-position: -32px -992px;}
+span.red_sandstone{	background-position: -64px -992px;}
 span.sand{	background-position: -96px -992px;}
 span.sandstone{	background-position: -128px -992px;}
 span.snow{	background-position: -192px -992px;}
@@ -777,7 +782,7 @@ span.gold_ingot{	background-position: -160px -1120px;}
 span.gunpowder{	background-position: -192px -1120px;}
 span.iron_ingot{	background-position: -224px -1120px;}
 span.leather{	background-position: -256px -1120px;}
-span.nether_bricks{	background-position: -288px -1120px;}
+span.nether_brick{	background-position: -288px -1120px;}
 span.quartz{	background-position: -320px -1120px;}
 span.nether_star{	background-position: -352px -1120px;}
 span.paper{	background-position: -384px -1120px;}
@@ -894,6 +899,7 @@ span.stone_sword{	background-position: -352px -1280px;}
 span.wooden_sword{	background-position: -384px -1280px;}
 
 span.potion_of_water_breathing{	background-position: -64px -1344px;}
+span.grass_path{	background-position: -96px -1344px;}
 span.elytra{	background-position: -384px -1344px;}
 span.nether_wart_block{	background-position: -672px -1344px;}
 span.bone_block{	background-position: -736px -1344px;}
@@ -949,6 +955,7 @@ span.lime_carpet{	background-position: -896px -1600px;}
 span.white_carpet{	background-position: -64px -1632px;}
 
 span.dried_kelp_block{	background-position:-128px -1664px;}
+span.stripped_oak_log{	background-position:-288px -1664px;}
 span.pumpkin{	background-position:-352px -1664px;}
 span.turtle_helmet{	background-position:-512px -1664px;}
 span.dried_kelp{	background-position:-544px -1664px;}
@@ -972,6 +979,7 @@ span.brain_coral_fan{	background-position:-832px -1696px;}
 
 span.phantom_membrane{	background-position: -32px -1728px;}
 span.potion_of_slow_falling{	background-position: -64px -1728px;}
+span.sea_pickle{	background-position: -224px -1728px;}
 
 span.bamboo{	background-position: -128px -2368px;}
 span.black_dye{	background-position: -192px -2368px;}
@@ -1380,7 +1388,7 @@ span.character01{	background-position: -192px -1216px;}
 span.character02{	background-position: -224px -1216px;}
 span.character03{	background-position: -256px -1216px;}
 
-span.compress_craft_machine{	background-position: -0px -1248px;}
+span.item_processer{	background-position: -0px -1248px;}
 span.spring_festival_decorations{	background-position: -32px -1248px;}
 span.santa_gift{	background-position: -64px -1248px;}
 span.vindicator_head{	background-position: -96px -1248px;}
@@ -1441,6 +1449,7 @@ span.character26{	background-position: -224px -1408px;}
 span.character27{	background-position: -256px -1408px;}
 
 span.dustbin{	background-position: -0px -1440px;}
+span.chest_transporter{	background-position: -32px -1440px;}
 
 
 span.effects{

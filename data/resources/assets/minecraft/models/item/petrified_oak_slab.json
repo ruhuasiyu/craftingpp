@@ -23,7 +23,7 @@
 		{ "predicate": { "custom_model_data": 12970015 }, "model": "craftingpp:machine/bookshelf5"},
 		{ "predicate": { "custom_model_data": 12970016 }, "model": "craftingpp:machine/bookshelf6"},
 		{ "predicate": { "custom_model_data": 12970017 }, "model": "craftingpp:machine/bookshelf7"},
-		{ "predicate": { "custom_model_data": 12970018 }, "model": "craftingpp:machine/compress_craft_machine"},
+		{ "predicate": { "custom_model_data": 12970018 }, "model": "craftingpp:machine/item_processer"},
 		{ "predicate": { "custom_model_data": 12970019 }, "model": "craftingpp:machine/dustbin"},
 
 		{ "predicate": { "custom_model_data": 12970091 }, "model": "craftingpp:material/moon_stone"},
