@@ -26,7 +26,8 @@ execute unless data block ~ ~ ~ Items[{Slot:24b}] run replaceitem block ~ ~ ~ co
 execute unless data block ~ ~ ~ Items[{Slot:25b}] run replaceitem block ~ ~ ~ container.25 firework_star{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.mob_projector\"}"},CustomModelData:12971000}
 execute unless data block ~ ~ ~ Items[{Slot:26b}] run replaceitem block ~ ~ ~ container.26 firework_star{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.xp_bar\"}"},CustomModelData:12971000}
 
-execute if block ~ ~ ~ barrel{Items:[{Slot:4b,id:"minecraft:egg"},{Slot:13b},{Slot:22b}]} run function cpp:mob_projector/type
+function cpp:check_power
+execute as @s[tag=!cpp_redstone_powered] if block ~ ~ ~ barrel{Items:[{Slot:4b,id:"minecraft:egg"},{Slot:13b},{Slot:22b}]} run function cpp:mob_projector/type
 
 execute unless entity @s[scores={cppMacType=1..}] run scoreboard players reset @s cppTick
 scoreboard players reset @s cppMacType

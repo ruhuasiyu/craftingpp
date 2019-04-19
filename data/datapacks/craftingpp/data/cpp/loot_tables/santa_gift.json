@@ -5,11 +5,11 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "minecraft:chest",
+					"name": "minecraft:carrot_on_a_stick",
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.santa_gift\\\"}\"},id:'cpp:santa_gift',BlockEntityTag:{LootTable:'cpp:chests/santa_gift'},CustomModelData:12970001}"
+							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.santa_gift\\\"}\"},id:'cpp:santa_gift',CustomModelData:12970049}"
 						}
 					]
 				}

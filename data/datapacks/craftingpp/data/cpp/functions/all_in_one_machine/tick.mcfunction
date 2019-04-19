@@ -31,7 +31,8 @@ execute unless data block ~ ~ ~ Items[{Slot:24b}] run replaceitem block ~ ~ ~ co
 execute unless data block ~ ~ ~ Items[{Slot:25b}] run replaceitem block ~ ~ ~ container.25 firework_star{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.all_in_one_machine\"}"},CustomModelData:12971000}
 execute unless data block ~ ~ ~ Items[{Slot:26b}] run replaceitem block ~ ~ ~ container.26 firework_star{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.xp_bar\"}"},CustomModelData:12971000}
 
-execute if data block ~ ~ ~ Items[{Slot:3b}] if data block ~ ~ ~ Items[{Slot:4b}] if data block ~ ~ ~ Items[{Slot:21b,tag:{id:"cpp:output_slot"}}] if data block ~ ~ ~ Items[{Slot:22b,tag:{id:"cpp:output_slot"}}] run function cpp:all_in_one_machine/type/all
+function cpp:check_power
+execute as @s[tag=!cpp_redstone_powered] if data block ~ ~ ~ Items[{Slot:3b}] if data block ~ ~ ~ Items[{Slot:4b}] if data block ~ ~ ~ Items[{Slot:21b,tag:{id:"cpp:output_slot"}}] if data block ~ ~ ~ Items[{Slot:22b,tag:{id:"cpp:output_slot"}}] run function cpp:all_in_one_machine/type/all
 
 execute unless entity @s[scores={cppMacType=1..}] run scoreboard players reset @s cppTick
 scoreboard players reset @s cppMacType

@@ -58,7 +58,7 @@
 <p>原版模组一般是指使用命令而非<abbr title="forge liteloader rift fibric 等">mod api</abbr>来对游戏的可玩性做出修改。自1.13起，原版模组一般以数据包的形式出现。</p>
 
 <p>《更多的合成》是国内论坛最大的原版模组，包括数百种物品、材料、工具、装饰等，以及新的村民交易和空岛系统。该模组无明确的主题，凡是作者认为原版没有而应该有的特性都有可能加入进来。</p>
-<p>最新版本为测试版v1.9-m04d17(魔法更新)，支持Minecraft Java版 1.14快照19w12a+。</p>
+<p>最新版本为测试版v1.9-m04d19(魔法更新)，支持Minecraft Java版 1.14快照19w12a+。</p>
 
 
 <h3 id="download">📦 下载地址</h3>
@@ -80,9 +80,9 @@
 </tr>
 <tr>
 	<td>Minecraft Java版 19w12a+</td>
-	<td>Crafting++ 1.9测试版m04d17</td>
-	<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/releases/download/v1.9-m04d17/v1.9-m04d17.zip">github</a>
-	  | <a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.9-m04d17.zip">官方</a></td>
+	<td>Crafting++ 1.9测试版m04d19</td>
+	<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/releases/download/v1.9-m04d19/v1.9-m04d19.zip">github</a>
+	  | <a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.9-m04d19.zip">官方</a></td>
 	<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/commits/master">更新日志</a></td>
 </tr>
 <tr>
@@ -589,6 +589,7 @@
 <p>默认只能使用常压常温模式。主手持有相应的插件右击即可升级并解锁相应模式，包括：<a href="#low_temperature_plugin">低温插件</a>、<a href="#low_pressure_plugin">低压插件</a>、<a href="#high_temperature_plugin">高温插件</a>、<a href="#high_pressure_plugin">高压插件</a>。</p>
 <p>包括上方两个输入槽，下方两个输出槽。右上方为附魔之瓶槽位和经验槽。左侧三个槽位控制压力、温度和输出方向，按Q或Shift+左键切换模式。若输出方向有箱子/潜影箱/陷阱箱/木桶则会自动输出到箱子内。</p>
 <p>可以存储至多48点经验，当经验空缺部分达到附魔之瓶经验存储量时，会自动消耗右上方槽位的<a href="#experience_bottle">附魔之瓶</a>来装填。</p>
+<p>被强充能时停止工作。</p>
 
 <h4>高温高压</h4>
 矿石的倍率在模组加载时被确定，玩家可自行测量参数。产出1.6~3.5个对应矿物，红石×5，青金石×6。
@@ -746,6 +747,7 @@
 包括左侧1个输入槽，右侧2个输出槽。左侧槽位控制输出方向，按Q或Shift+左键切换模式，若输出方向有箱子/潜影箱/陷阱箱/木桶则会自动输出到箱子内。</p>
 <p>
 每次交易获得7点经验值，若输入绿宝石则额外产生7点。当存储的经验值达到附魔之瓶的存储量时，会转化为附魔之瓶输出。</p>
+<p>被强充能时停止工作。</p>
 <table class="center"><thead><tr><th>输入</th><th>输出</th></tr></thead><tbody>
 <tr>
 	<td>
@@ -870,6 +872,7 @@
 
 <p>
 包括左侧方块输入槽，上部工具输入槽，右侧2个输出槽。最左侧槽位控制输出方向，按Q或Shift+左键切换模式，若输出方向有箱子/潜影箱/陷阱箱/木桶则会自动输出到箱子内。</p>
+<p>被强充能时停止工作。</p>
 
 <table><thead><tr><th>工具</th><th>配方</th><th>配方</th></tr></thead><tbody>
 <tr>
@@ -1140,6 +1143,7 @@
 
 <p>
 包括4个输入槽，上方为鸡蛋槽，右上方为附魔之瓶槽。当材料合适时，每隔10秒会在下方两米处生成相应生物。</p>
+<p>被强充能时停止工作。</p>
 <table><thead><tr><th colspan="2">生成生物</th><th>输入</th></tr></thead><tbody>
 
 <tr><td>羊</td><td><img src="https://gamepedia.cursecdn.com/minecraft_zh_gamepedia/b/b1/SheepFace.png" title="羊"/></td><td><span class="ui slot"><span class="egg" title="鸡蛋">
@@ -1395,6 +1399,7 @@
 
 <p>需放置在信标顶部。左侧可选择对玩家生效的一种效果，右侧可选择对玩家外实体生效的一种效果，最右侧选择负面效果对敌对生物/所有生物生效。影响范围基于下方的信标等级，为半径=10*(等级+1)的球形区域。</p>
 <p>若下方为4级信标，每秒恢复64米内玩家1点魔法值，上限60点。若信标矿物块塔的顶层为X形的5个日石和4个月石，则额外每秒恢复128米内玩家1点魔法值，上限100点。</p>
+<p>被强充能时停止工作。</p>
 <img style="height:400px" src="items/screenshots/sss.png" />
 
 <h3 id="golden_anvil">金砧 (Golden Anvil)</h3>
@@ -2669,7 +2674,7 @@
 <span class="iron_ingot" title="铁锭"></span>
 <span class="ci dustbin" title="垃圾桶"></span>
 </span></td>
-<td>自动清理其中的物品。</td></tr>
+<td>每秒自动清理其中的物品。被强充能时停止工作。</td></tr>
 
 <tr><th><strong id="magnet">磁铁 (Magnet)</strong></th><td><a href="#enchanted_iron">附魔铁锭</a>+红石</td>
 <td><span class="ui cm" title="合成器">

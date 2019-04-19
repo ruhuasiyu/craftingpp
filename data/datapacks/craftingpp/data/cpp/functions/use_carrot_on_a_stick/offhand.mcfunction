@@ -29,3 +29,4 @@ execute as @s[tag=!cpp_used,nbt={Inventory:[{Slot:-106b,tag:{id:"cpp:temperancer
 tag @s remove cpp_used
 
 execute as @s[nbt={Inventory:[{Slot:-106b,tag:{id:"cpp:character"}}]}] anchored eyes run function cpp:decor/character_ray
+execute as @s[nbt={Inventory:[{Slot:-106b,tag:{id:"cpp:santa_gift"}}]}] anchored eyes run function cpp:use_carrot_on_a_stick/tool/santa_gift

@@ -30,6 +30,7 @@
 		{ "predicate": { "custom_model_data": 12970046 }, "model": "craftingpp:tool/temperancer"},
 		{ "predicate": { "custom_model_data": 12970047 }, "model": "craftingpp:tool/temperancer_closed"},
 		{ "predicate": { "custom_model_data": 12970048 }, "model": "craftingpp:tool/coordinate_recorder"},
+		{ "predicate": { "custom_model_data": 12970049 }, "model": "craftingpp:material/santa_gift"},
 		
 		{ "predicate": { "custom_model_data": 12970061 }, "model": "craftingpp:tool/elder_s_words"},		
 		{ "predicate": { "custom_model_data": 12970062 }, "model": "craftingpp:tool/sealing_wand"},

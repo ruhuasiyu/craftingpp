@@ -29,3 +29,4 @@ execute as @s[tag=!cpp_used,nbt={SelectedItem:{tag:{id:"cpp:temperancer_closed"}
 tag @s remove cpp_used
 
 execute as @s[nbt={SelectedItem:{tag:{id:"cpp:character"}}}] anchored eyes run function cpp:decor/character_ray
+execute as @s[nbt={SelectedItem:{tag:{id:"cpp:santa_gift"}}}] anchored eyes run function cpp:use_carrot_on_a_stick/tool/santa_gift

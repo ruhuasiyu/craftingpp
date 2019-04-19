@@ -25,7 +25,12 @@ execute as @a[nbt={Inventory:[{Slot:103b,id:"minecraft:carved_pumpkin"}]}] at @s
 scoreboard players add @a cppMana 0
 execute at @e[tag=cpp_sorcerer_stone] as @a[distance=..32,scores={cppMana=..29}] run scoreboard players add @s cppMana 1
 # 信标增强仪
-execute as @e[tag=cpp_beacon_enhancer] at @s if block ~ ~-1 ~ beacon run function cpp:beacon_enhancer/level
+execute as @e[tag=cpp_beacon_enhancer] at @s run function cpp:check_power
+execute as @e[tag=cpp_beacon_enhancer,tag=!cpp_redstone_powered] at @s if block ~ ~-1 ~ beacon run function cpp:beacon_enhancer/level
+
+execute as @e[tag=cpp_dustbin] at @s run function cpp:check_power
+execute as @e[tag=cpp_dustbin,tag=!cpp_redstone_powered] at @s run data remove block ~ ~ ~ Items
+
 execute as @a[tag=cpp_has_wand_off] at @s positioned ~ -1 ~ run function cpp:magic/show_title
 
 # 连锁

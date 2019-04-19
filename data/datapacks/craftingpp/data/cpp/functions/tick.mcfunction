@@ -139,7 +139,6 @@ execute as @e[type=armor_stand,tag=cpp_item_processer] at @s run function cpp:it
 execute as @e[type=armor_stand,tag=cpp_golden_anvil] at @s if entity @a[distance=..6] run function cpp:golden_anvil/tick
 execute as @e[type=armor_stand,tag=cpp_bookshelf] at @s if entity @a[distance=..6] run function cpp:bookshelf/tick
 execute as @e[tag=cpp_crafting_machine] at @s if entity @a[distance=..6] run function cpp:craft/craft
-execute at @e[tag=cpp_dustbin] run data remove block ~ ~ ~ Items
 
 kill @e[type=item,nbt={Item:{tag:{isMachineBg:1b}}}]
 clear @a firework_star{isMachineBg:1b}
