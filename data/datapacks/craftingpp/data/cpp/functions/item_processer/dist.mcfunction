@@ -22,11 +22,17 @@ execute as @s[scores={cppMacType=303}] run loot insert ~ ~ ~ loot blocks/strippe
 execute as @s[scores={cppMacType=304}] run loot insert ~ ~ ~ loot blocks/stripped_jungle_log
 execute as @s[scores={cppMacType=305}] run loot insert ~ ~ ~ loot blocks/stripped_acacia_log
 execute as @s[scores={cppMacType=306}] run loot insert ~ ~ ~ loot blocks/stripped_dark_oak_log
-execute at @s as @s[scores={cppMacType=301..306}] run data remove block ~ ~ ~ Items[{Slot:3b,id:"minecraft:golden_axe",tag:{Damage:33}}]
-execute at @s as @s[scores={cppMacType=301..306}] run data remove block ~ ~ ~ Items[{Slot:3b,id:"minecraft:wooden_axe",tag:{Damage:60}}]
-execute at @s as @s[scores={cppMacType=301..306}] run data remove block ~ ~ ~ Items[{Slot:3b,id:"minecraft:stone_axe",tag:{Damage:132}}]
-execute at @s as @s[scores={cppMacType=301..306}] run data remove block ~ ~ ~ Items[{Slot:3b,id:"minecraft:iron_axe",tag:{Damage:251}}]
-execute at @s as @s[scores={cppMacType=301..306}] run data remove block ~ ~ ~ Items[{Slot:3b,id:"minecraft:diamond_axe",tag:{Damage:1562}}]
+execute as @s[scores={cppMacType=311}] run loot insert ~ ~ ~ loot blocks/stripped_oak_wood
+execute as @s[scores={cppMacType=312}] run loot insert ~ ~ ~ loot blocks/stripped_spruce_wood
+execute as @s[scores={cppMacType=313}] run loot insert ~ ~ ~ loot blocks/stripped_birch_wood
+execute as @s[scores={cppMacType=314}] run loot insert ~ ~ ~ loot blocks/stripped_jungle_wood
+execute as @s[scores={cppMacType=315}] run loot insert ~ ~ ~ loot blocks/stripped_acacia_wood
+execute as @s[scores={cppMacType=316}] run loot insert ~ ~ ~ loot blocks/stripped_dark_oak_wood
+execute at @s as @s[scores={cppMacType=301..316}] run data remove block ~ ~ ~ Items[{Slot:3b,id:"minecraft:golden_axe",tag:{Damage:33}}]
+execute at @s as @s[scores={cppMacType=301..316}] run data remove block ~ ~ ~ Items[{Slot:3b,id:"minecraft:wooden_axe",tag:{Damage:60}}]
+execute at @s as @s[scores={cppMacType=301..316}] run data remove block ~ ~ ~ Items[{Slot:3b,id:"minecraft:stone_axe",tag:{Damage:132}}]
+execute at @s as @s[scores={cppMacType=301..316}] run data remove block ~ ~ ~ Items[{Slot:3b,id:"minecraft:iron_axe",tag:{Damage:251}}]
+execute at @s as @s[scores={cppMacType=301..316}] run data remove block ~ ~ ~ Items[{Slot:3b,id:"minecraft:diamond_axe",tag:{Damage:1562}}]
 
 execute as @s[scores={cppMacType=401}] run loot insert ~ ~ ~ loot blocks/cobblestone
 execute at @s as @s[scores={cppMacType=401}] run data remove block ~ ~ ~ Items[{Slot:3b,id:"minecraft:golden_pickaxe",tag:{Damage:33}}]

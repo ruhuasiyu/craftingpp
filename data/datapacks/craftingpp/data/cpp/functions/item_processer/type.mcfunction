@@ -53,6 +53,37 @@ execute if block ~ ~ ~ barrel{Items:[{Slot:3b,id:"minecraft:stone_axe"},{Slot:12
 execute if block ~ ~ ~ barrel{Items:[{Slot:3b,id:"minecraft:iron_axe"},{Slot:12b,id:"minecraft:dark_oak_log"}]} run scoreboard players set @s cppMacType 306
 execute if block ~ ~ ~ barrel{Items:[{Slot:3b,id:"minecraft:diamond_axe"},{Slot:12b,id:"minecraft:dark_oak_log"}]} run scoreboard players set @s cppMacType 306
 
+execute if block ~ ~ ~ barrel{Items:[{Slot:3b,id:"minecraft:golden_axe"},{Slot:12b,id:"minecraft:oak_wood"}]} run scoreboard players set @s cppMacType 311
+execute if block ~ ~ ~ barrel{Items:[{Slot:3b,id:"minecraft:wooden_axe"},{Slot:12b,id:"minecraft:oak_wood"}]} run scoreboard players set @s cppMacType 311
+execute if block ~ ~ ~ barrel{Items:[{Slot:3b,id:"minecraft:stone_axe"},{Slot:12b,id:"minecraft:oak_wood"}]} run scoreboard players set @s cppMacType 311
+execute if block ~ ~ ~ barrel{Items:[{Slot:3b,id:"minecraft:iron_axe"},{Slot:12b,id:"minecraft:oak_wood"}]} run scoreboard players set @s cppMacType 311
+execute if block ~ ~ ~ barrel{Items:[{Slot:3b,id:"minecraft:diamond_axe"},{Slot:12b,id:"minecraft:oak_wood"}]} run scoreboard players set @s cppMacType 311
+execute if block ~ ~ ~ barrel{Items:[{Slot:3b,id:"minecraft:golden_axe"},{Slot:12b,id:"minecraft:spruce_wood"}]} run scoreboard players set @s cppMacType 312
+execute if block ~ ~ ~ barrel{Items:[{Slot:3b,id:"minecraft:wooden_axe"},{Slot:12b,id:"minecraft:spruce_wood"}]} run scoreboard players set @s cppMacType 312
+execute if block ~ ~ ~ barrel{Items:[{Slot:3b,id:"minecraft:stone_axe"},{Slot:12b,id:"minecraft:spruce_wood"}]} run scoreboard players set @s cppMacType 312
+execute if block ~ ~ ~ barrel{Items:[{Slot:3b,id:"minecraft:iron_axe"},{Slot:12b,id:"minecraft:spruce_wood"}]} run scoreboard players set @s cppMacType 312
+execute if block ~ ~ ~ barrel{Items:[{Slot:3b,id:"minecraft:diamond_axe"},{Slot:12b,id:"minecraft:spruce_wood"}]} run scoreboard players set @s cppMacType 312
+execute if block ~ ~ ~ barrel{Items:[{Slot:3b,id:"minecraft:golden_axe"},{Slot:12b,id:"minecraft:birch_wood"}]} run scoreboard players set @s cppMacType 313
+execute if block ~ ~ ~ barrel{Items:[{Slot:3b,id:"minecraft:wooden_axe"},{Slot:12b,id:"minecraft:birch_wood"}]} run scoreboard players set @s cppMacType 313
+execute if block ~ ~ ~ barrel{Items:[{Slot:3b,id:"minecraft:stone_axe"},{Slot:12b,id:"minecraft:birch_wood"}]} run scoreboard players set @s cppMacType 313
+execute if block ~ ~ ~ barrel{Items:[{Slot:3b,id:"minecraft:iron_axe"},{Slot:12b,id:"minecraft:birch_wood"}]} run scoreboard players set @s cppMacType 313
+execute if block ~ ~ ~ barrel{Items:[{Slot:3b,id:"minecraft:diamond_axe"},{Slot:12b,id:"minecraft:birch_wood"}]} run scoreboard players set @s cppMacType 313
+execute if block ~ ~ ~ barrel{Items:[{Slot:3b,id:"minecraft:golden_axe"},{Slot:12b,id:"minecraft:jungle_wood"}]} run scoreboard players set @s cppMacType 314
+execute if block ~ ~ ~ barrel{Items:[{Slot:3b,id:"minecraft:wooden_axe"},{Slot:12b,id:"minecraft:jungle_wood"}]} run scoreboard players set @s cppMacType 314
+execute if block ~ ~ ~ barrel{Items:[{Slot:3b,id:"minecraft:stone_axe"},{Slot:12b,id:"minecraft:jungle_wood"}]} run scoreboard players set @s cppMacType 314
+execute if block ~ ~ ~ barrel{Items:[{Slot:3b,id:"minecraft:iron_axe"},{Slot:12b,id:"minecraft:jungle_wood"}]} run scoreboard players set @s cppMacType 314
+execute if block ~ ~ ~ barrel{Items:[{Slot:3b,id:"minecraft:diamond_axe"},{Slot:12b,id:"minecraft:jungle_wood"}]} run scoreboard players set @s cppMacType 314
+execute if block ~ ~ ~ barrel{Items:[{Slot:3b,id:"minecraft:golden_axe"},{Slot:12b,id:"minecraft:acacia_wood"}]} run scoreboard players set @s cppMacType 315
+execute if block ~ ~ ~ barrel{Items:[{Slot:3b,id:"minecraft:wooden_axe"},{Slot:12b,id:"minecraft:acacia_wood"}]} run scoreboard players set @s cppMacType 315
+execute if block ~ ~ ~ barrel{Items:[{Slot:3b,id:"minecraft:stone_axe"},{Slot:12b,id:"minecraft:acacia_wood"}]} run scoreboard players set @s cppMacType 315
+execute if block ~ ~ ~ barrel{Items:[{Slot:3b,id:"minecraft:iron_axe"},{Slot:12b,id:"minecraft:acacia_wood"}]} run scoreboard players set @s cppMacType 315
+execute if block ~ ~ ~ barrel{Items:[{Slot:3b,id:"minecraft:diamond_axe"},{Slot:12b,id:"minecraft:acacia_wood"}]} run scoreboard players set @s cppMacType 315
+execute if block ~ ~ ~ barrel{Items:[{Slot:3b,id:"minecraft:golden_axe"},{Slot:12b,id:"minecraft:dark_oak_wood"}]} run scoreboard players set @s cppMacType 316
+execute if block ~ ~ ~ barrel{Items:[{Slot:3b,id:"minecraft:wooden_axe"},{Slot:12b,id:"minecraft:dark_oak_wood"}]} run scoreboard players set @s cppMacType 316
+execute if block ~ ~ ~ barrel{Items:[{Slot:3b,id:"minecraft:stone_axe"},{Slot:12b,id:"minecraft:dark_oak_wood"}]} run scoreboard players set @s cppMacType 316
+execute if block ~ ~ ~ barrel{Items:[{Slot:3b,id:"minecraft:iron_axe"},{Slot:12b,id:"minecraft:dark_oak_wood"}]} run scoreboard players set @s cppMacType 316
+execute if block ~ ~ ~ barrel{Items:[{Slot:3b,id:"minecraft:diamond_axe"},{Slot:12b,id:"minecraft:dark_oak_wood"}]} run scoreboard players set @s cppMacType 316
+
 execute if block ~ ~ ~ barrel{Items:[{Slot:3b,id:"minecraft:golden_pickaxe"},{Slot:12b,id:"minecraft:stone"}]} run scoreboard players set @s cppMacType 401
 execute if block ~ ~ ~ barrel{Items:[{Slot:3b,id:"minecraft:wooden_pickaxe"},{Slot:12b,id:"minecraft:stone"}]} run scoreboard players set @s cppMacType 401
 execute if block ~ ~ ~ barrel{Items:[{Slot:3b,id:"minecraft:stone_pickaxe"},{Slot:12b,id:"minecraft:stone"}]} run scoreboard players set @s cppMacType 401

@@ -6,6 +6,12 @@ execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:birch_log"}] run score
 execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:jungle_log"}] run scoreboard players set @s cppMacType 702
 execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:acacia_log"}] run scoreboard players set @s cppMacType 702
 execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:dark_oak_log"}] run scoreboard players set @s cppMacType 702
+execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:oak_wood"}] run scoreboard players set @s cppMacType 702
+execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:spruce_wood"}] run scoreboard players set @s cppMacType 702
+execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:birch_wood"}] run scoreboard players set @s cppMacType 702
+execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:jungle_wood"}] run scoreboard players set @s cppMacType 702
+execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:acacia_wood"}] run scoreboard players set @s cppMacType 702
+execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:dark_oak_wood"}] run scoreboard players set @s cppMacType 702
 execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:cactus"}] run scoreboard players set @s cppMacType 703
 execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:cobblestone"}] run scoreboard players set @s cppMacType 704
 execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:netherrack"}] run scoreboard players set @s cppMacType 705
