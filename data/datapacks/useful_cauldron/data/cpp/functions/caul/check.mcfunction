@@ -64,6 +64,23 @@ execute as @s[nbt={Item:{id:"minecraft:green_bed"}}] run function cpp:caul/type/
 execute as @s[nbt={Item:{id:"minecraft:red_bed"}}] run function cpp:caul/type/bed
 execute as @s[nbt={Item:{id:"minecraft:black_bed"}}] run function cpp:caul/type/bed
 
+execute as @s[nbt={Item:{id:"minecraft:white_concrete_powder"}}] run function cpp:caul/type/concrete_powder
+execute as @s[nbt={Item:{id:"minecraft:orange_concrete_powder"}}] run function cpp:caul/type/concrete_powder
+execute as @s[nbt={Item:{id:"minecraft:magenta_concrete_powder"}}] run function cpp:caul/type/concrete_powder
+execute as @s[nbt={Item:{id:"minecraft:light_blue_concrete_powder"}}] run function cpp:caul/type/concrete_powder
+execute as @s[nbt={Item:{id:"minecraft:yellow_concrete_powder"}}] run function cpp:caul/type/concrete_powder
+execute as @s[nbt={Item:{id:"minecraft:lime_concrete_powder"}}] run function cpp:caul/type/concrete_powder
+execute as @s[nbt={Item:{id:"minecraft:pink_concrete_powder"}}] run function cpp:caul/type/concrete_powder
+execute as @s[nbt={Item:{id:"minecraft:gray_concrete_powder"}}] run function cpp:caul/type/concrete_powder
+execute as @s[nbt={Item:{id:"minecraft:light_gray_concrete_powder"}}] run function cpp:caul/type/concrete_powder
+execute as @s[nbt={Item:{id:"minecraft:cyan_concrete_powder"}}] run function cpp:caul/type/concrete_powder
+execute as @s[nbt={Item:{id:"minecraft:purple_concrete_powder"}}] run function cpp:caul/type/concrete_powder
+execute as @s[nbt={Item:{id:"minecraft:blue_concrete_powder"}}] run function cpp:caul/type/concrete_powder
+execute as @s[nbt={Item:{id:"minecraft:brown_concrete_powder"}}] run function cpp:caul/type/concrete_powder
+execute as @s[nbt={Item:{id:"minecraft:green_concrete_powder"}}] run function cpp:caul/type/concrete_powder
+execute as @s[nbt={Item:{id:"minecraft:red_concrete_powder"}}] run function cpp:caul/type/concrete_powder
+execute as @s[nbt={Item:{id:"minecraft:black_concrete_powder"}}] run function cpp:caul/type/concrete_powder
+
 execute as @s[nbt={Item:{id:"minecraft:sponge"}}] run function cpp:caul/type/sponge
 execute as @s[nbt={Item:{id:"minecraft:lava_bucket"}}] run function cpp:caul/type/lava_bucket
 execute as @s[nbt={Item:{id:"minecraft:sticky_piston"}}] run function cpp:caul/type/sticky_piston

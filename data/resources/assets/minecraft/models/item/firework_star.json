@@ -146,6 +146,7 @@
 		{ "predicate": { "custom_model_data": 12971151 }, "model": "craftingpp:machine/mob_projector/parrot"},
 		{ "predicate": { "custom_model_data": 12971152 }, "model": "craftingpp:machine/mob_projector/turtle"},
 		{ "predicate": { "custom_model_data": 12971153 }, "model": "craftingpp:machine/mob_projector/fox"},
+		{ "predicate": { "custom_model_data": 12971154 }, "model": "craftingpp:machine/mob_projector/panda"},
 		
 		{ "predicate": { "custom_model_data": 12972000 }, "model": "craftingpp:machine/xp_shower/xp_shower0"},
 		{ "predicate": { "custom_model_data": 12972001 }, "model": "craftingpp:machine/xp_shower/xp_shower1"},

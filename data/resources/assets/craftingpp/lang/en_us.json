@@ -565,12 +565,12 @@
 
 	"The":"§aCrafting++ is loaded,",	
 	"resourcepack":"version",
-	"does":"§a1.9-m04d22§a.",
+	"does":"§a1.9§a.",
 	"not":"§aPlease",
 	"Install":"\n§evisit the wiki",
 	"correctly":"§ato get more informations. Authors:",
 	"or":"§aruhuasiyu,",
-	"Launch":"§aRubberTree",
+	"Launch":"§aRubberTree, etc",
 
 	"title.actionbar.fat":"§6[Crafting++]§a Your weight index is ",
 	"title.actionbar.fat0":", too thin",

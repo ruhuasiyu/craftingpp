@@ -71,8 +71,8 @@
 §7资源包设计/Resource Pack Designer
 §f          ruhuasiyu
 §f          RubberTree
-§f          折君
 §f          XeKr
+§f          折君
 §f          天狼星black
 §f          MC先生
 
