@@ -39,7 +39,7 @@ execute if block ~ ~ ~ barrel{Items:[{Slot:3b,tag:{id:"cpp:fertilizer"}},{Slot:4
 execute if block ~ ~ ~ barrel{Items:[{Slot:3b,tag:{id:"cpp:fertilizer"}},{Slot:4b,id:"minecraft:spruce_sapling"}]} run scoreboard players set @s cppMacType 42
 execute if block ~ ~ ~ barrel{Items:[{Slot:3b,tag:{id:"cpp:fertilizer"}},{Slot:4b,id:"minecraft:birch_sapling"}]} run scoreboard players set @s cppMacType 43
 execute if block ~ ~ ~ barrel{Items:[{Slot:3b,tag:{id:"cpp:fertilizer"}},{Slot:4b,id:"minecraft:jungle_sapling"}]} run scoreboard players set @s cppMacType 44
-execute if block ~ ~ ~ barrel{Items:[{Slot:3b,tag:{id:"cpp:fertilizer"}},{Slot:4b,id:"minecraft:acacia_sapling"}]} run scoreboard players set @s cppMacType 45
+execute if block ~ ~ ~ barrel{Items:[{Slot:3b,tag:{id:"cpp:fertilizer"}},{Slot:4b,id:"minecraft:acacia_sapling"}]} unless data block ~ ~ ~ Items[{Slot:4b}].tag.CustomModelData run scoreboard players set @s cppMacType 45
 execute if block ~ ~ ~ barrel{Items:[{Slot:3b,tag:{id:"cpp:fertilizer"}},{Slot:4b,id:"minecraft:dark_oak_sapling"}]} run scoreboard players set @s cppMacType 46
 execute if block ~ ~ ~ barrel{Items:[{Slot:3b,tag:{id:"cpp:fertilizer"}},{Slot:4b,tag:{id:"cpp:fruit_sapling"}}]} run scoreboard players set @s cppMacType 47
 execute if block ~ ~ ~ barrel{Items:[{Slot:3b,tag:{id:"cpp:fertilizer"}},{Slot:4b,tag:{id:"cpp:ore_sapling"}}]} run scoreboard players set @s cppMacType 48
@@ -108,7 +108,7 @@ execute if block ~ ~ ~ barrel{Items:[{Slot:4b,tag:{id:"cpp:fertilizer"}},{Slot:3
 execute if block ~ ~ ~ barrel{Items:[{Slot:4b,tag:{id:"cpp:fertilizer"}},{Slot:3b,id:"minecraft:spruce_sapling"}]} run scoreboard players set @s cppMacType 42
 execute if block ~ ~ ~ barrel{Items:[{Slot:4b,tag:{id:"cpp:fertilizer"}},{Slot:3b,id:"minecraft:birch_sapling"}]} run scoreboard players set @s cppMacType 43
 execute if block ~ ~ ~ barrel{Items:[{Slot:4b,tag:{id:"cpp:fertilizer"}},{Slot:3b,id:"minecraft:jungle_sapling"}]} run scoreboard players set @s cppMacType 44
-execute if block ~ ~ ~ barrel{Items:[{Slot:4b,tag:{id:"cpp:fertilizer"}},{Slot:3b,id:"minecraft:acacia_sapling"}]} run scoreboard players set @s cppMacType 45
+execute if block ~ ~ ~ barrel{Items:[{Slot:4b,tag:{id:"cpp:fertilizer"}},{Slot:3b,id:"minecraft:acacia_sapling"}]} unless data block ~ ~ ~ Items[{Slot:3b}].tag.CustomModelData run scoreboard players set @s cppMacType 45
 execute if block ~ ~ ~ barrel{Items:[{Slot:4b,tag:{id:"cpp:fertilizer"}},{Slot:3b,id:"minecraft:dark_oak_sapling"}]} run scoreboard players set @s cppMacType 46
 execute if block ~ ~ ~ barrel{Items:[{Slot:4b,tag:{id:"cpp:fertilizer"}},{Slot:3b,tag:{id:"cpp:fruit_sapling"}}]} run scoreboard players set @s cppMacType 47
 execute if block ~ ~ ~ barrel{Items:[{Slot:4b,tag:{id:"cpp:fertilizer"}},{Slot:3b,tag:{id:"cpp:ore_sapling"}}]} run scoreboard players set @s cppMacType 48
