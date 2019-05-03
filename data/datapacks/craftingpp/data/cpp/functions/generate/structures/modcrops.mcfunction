@@ -1,17 +1,22 @@
-summon armor_stand ~ ~ ~ {Invulnerable:1b,Invisible:1b,Small:1b,Marker:1b,NoGravity:1b,DisabledSlots:7967,Tags:["cpp_plants","cpp_temp","cpp_wild_grass"],ArmorItems:[{},{},{},{id:"minecraft:acacia_sapling",Count:1b,tag:{CustomModelData:1}}]}
-summon armor_stand ~ ~ ~ {Invulnerable:1b,Invisible:1b,Small:1b,Marker:1b,NoGravity:1b,DisabledSlots:7967,Tags:["cpp_plants","cpp_temp","cpp_wild_grass"],ArmorItems:[{},{},{},{id:"minecraft:acacia_sapling",Count:1b,tag:{CustomModelData:1}}]}
-summon armor_stand ~ ~ ~ {Invulnerable:1b,Invisible:1b,Small:1b,Marker:1b,NoGravity:1b,DisabledSlots:7967,Tags:["cpp_plants","cpp_temp","cpp_wild_grass"],ArmorItems:[{},{},{},{id:"minecraft:acacia_sapling",Count:1b,tag:{CustomModelData:1}}]}
-summon armor_stand ~ ~ ~ {Invulnerable:1b,Invisible:1b,Small:1b,Marker:1b,NoGravity:1b,DisabledSlots:7967,Tags:["cpp_plants","cpp_temp","cpp_wild_grass"],ArmorItems:[{},{},{},{id:"minecraft:acacia_sapling",Count:1b,tag:{CustomModelData:1}}]}
-summon armor_stand ~ ~ ~ {Invulnerable:1b,Invisible:1b,Small:1b,Marker:1b,NoGravity:1b,DisabledSlots:7967,Tags:["cpp_plants","cpp_temp","cpp_wild_grass"],ArmorItems:[{},{},{},{id:"minecraft:acacia_sapling",Count:1b,tag:{CustomModelData:1}}]}
-summon armor_stand ~ ~ ~ {Invulnerable:1b,Invisible:1b,Small:1b,Marker:1b,NoGravity:1b,DisabledSlots:7967,Tags:["cpp_plants","cpp_temp","cpp_wild_grass"],ArmorItems:[{},{},{},{id:"minecraft:acacia_sapling",Count:1b,tag:{CustomModelData:1}}]}
-summon armor_stand ~ ~ ~ {Invulnerable:1b,Invisible:1b,Small:1b,Marker:1b,NoGravity:1b,DisabledSlots:7967,Tags:["cpp_plants","cpp_temp","cpp_wild_grass"],ArmorItems:[{},{},{},{id:"minecraft:acacia_sapling",Count:1b,tag:{CustomModelData:1}}]}
-summon armor_stand ~ ~ ~ {Invulnerable:1b,Invisible:1b,Small:1b,Marker:1b,NoGravity:1b,DisabledSlots:7967,Tags:["cpp_plants","cpp_temp","cpp_wild_grass"],ArmorItems:[{},{},{},{id:"minecraft:acacia_sapling",Count:1b,tag:{CustomModelData:1}}]}
+summon armor_stand ~ ~ ~ {Invulnerable:1b,Invisible:1b,Small:1b,Marker:1b,NoGravity:1b,DisabledSlots:7967,Tags:["cpp_plants","cpp_temp","cpp_wild_grass"]}
+summon armor_stand ~ ~ ~ {Invulnerable:1b,Invisible:1b,Small:1b,Marker:1b,NoGravity:1b,DisabledSlots:7967,Tags:["cpp_plants","cpp_temp","cpp_wild_grass"]}
+summon armor_stand ~ ~ ~ {Invulnerable:1b,Invisible:1b,Small:1b,Marker:1b,NoGravity:1b,DisabledSlots:7967,Tags:["cpp_plants","cpp_temp","cpp_wild_grass"]}
+summon armor_stand ~ ~ ~ {Invulnerable:1b,Invisible:1b,Small:1b,Marker:1b,NoGravity:1b,DisabledSlots:7967,Tags:["cpp_plants","cpp_temp","cpp_wild_grass"]}
+summon armor_stand ~ ~ ~ {Invulnerable:1b,Invisible:1b,Small:1b,Marker:1b,NoGravity:1b,DisabledSlots:7967,Tags:["cpp_plants","cpp_temp","cpp_wild_grass"]}
+summon armor_stand ~ ~ ~ {Invulnerable:1b,Invisible:1b,Small:1b,Marker:1b,NoGravity:1b,DisabledSlots:7967,Tags:["cpp_plants","cpp_temp","cpp_wild_grass"]}
+summon armor_stand ~ ~ ~ {Invulnerable:1b,Invisible:1b,Small:1b,Marker:1b,NoGravity:1b,DisabledSlots:7967,Tags:["cpp_plants","cpp_temp","cpp_wild_grass"]}
+summon armor_stand ~ ~ ~ {Invulnerable:1b,Invisible:1b,Small:1b,Marker:1b,NoGravity:1b,DisabledSlots:7967,Tags:["cpp_plants","cpp_temp","cpp_wild_grass"]}
 
 spreadplayers ~ ~ 0 3 false @e[type=armor_stand,tag=cpp_temp]
 execute as @e[type=armor_stand,tag=cpp_temp] at @s if block ~ ~-1 ~ grass_block run setblock ~ ~ ~ acacia_sapling
 execute as @e[type=armor_stand,tag=cpp_temp] at @s unless block ~ ~-1 ~ grass_block run kill @s
 
-execute store result score @s cppValue run data get entity @s Item.Count
-scoreboard players add @s cppValue 12973016
-execute as @e[type=armor_stand,tag=cpp_temp,distance=..15] store result entity @s ArmorItems[3].tag.CustomModelData int 1 run scoreboard players get @e[type=item,nbt={Item:{tag:{id:"cpp:modcrops_marker"}}},sort=nearest,limit=1] cppValue
+summon armor_stand ~ ~ ~ {Invulnerable:1b,Invisible:1b,Small:1b,Marker:1b,NoGravity:1b,DisabledSlots:7967,Tags:["cpp_plants","cpp_temp2","cpp_wild_grass"]}
+loot replace entity @e[type=armor_stand,tag=cpp_temp2,limit=1,sort=nearest,distance=..1] weapon.mainhand loot cpp:generate/mod_seeds
+execute as @e[type=armor_stand,tag=cpp_temp2,limit=1,sort=nearest,distance=..1] store result score #temp cppValue run data get entity @s HandItems[0].tag.CustomModelData
+execute as @e[type=armor_stand,tag=cpp_temp2,limit=1,sort=nearest,distance=..1] store result entity @s HandItems[0].tag.CustomModelData int 1 run scoreboard players add #temp cppValue 3000
+
+execute as @e[type=armor_stand,tag=cpp_temp,distance=..15] run data modify entity @s ArmorItems[3] set from entity @e[type=armor_stand,tag=cpp_temp2,limit=1,sort=nearest,distance=..1] HandItems[0]
+kill @e[type=armor_stand,tag=cpp_temp2,limit=1]
+
 tag @e[tag=cpp_temp] remove cpp_temp

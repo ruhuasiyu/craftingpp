@@ -25,6 +25,7 @@ tag @a remove cpp_player_hand_emerald_block
 tag @a[nbt={SelectedItem:{id:"minecraft:emerald_block"}}] add cpp_player_hand_emerald_block
 tag @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:emerald_block"}]}] add cpp_player_hand_emerald_block
 execute as @e[type=villager] at @s if entity @a[distance=1..10,tag=cpp_player_hand_emerald_block] run function cpp:villager/attract
+execute as @e[type=wandering_trader] at @s if entity @a[distance=1..10,tag=cpp_player_hand_emerald_block] run function cpp:villager/attract
 
 # 鸡窝
 execute as @e[tag=cpp_roost] at @s unless block ~ ~ ~ dead_fire_coral_fan run function cpp:block/break_roost

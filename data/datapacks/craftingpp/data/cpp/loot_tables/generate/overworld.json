@@ -285,13 +285,6 @@
 						{
 							"function": "set_nbt",
 							"tag": "{isStrMark:1b,CustomModelData:1000,id:\"cpp:modcrops_marker\"}"
-						},
-						{
-							"function": "set_count",
-							"count": {
-								"min": 1,
-								"max": 64
-							}
 						}
 					]
 				}

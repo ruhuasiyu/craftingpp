@@ -4,7 +4,7 @@ execute as @s[nbt={SelectedItem:{tag:{id:"cpp:cyan_force_of_mountain"}}}] run fu
 execute as @s[nbt={SelectedItem:{tag:{id:"cpp:orange_force_of_dirt"}}}] anchored eyes run function cpp:use_carrot_on_a_stick/elements/orange
 execute as @s[nbt={SelectedItem:{tag:{id:"cpp:yellow_force_of_earth"}}}] run function cpp:use_carrot_on_a_stick/elements/yellow
 execute as @s[nbt={SelectedItem:{tag:{id:"cpp:red_force_of_fire"}}}] anchored eyes run function cpp:use_carrot_on_a_stick/elements/red
-execute as @s[nbt={SelectedItem:{tag:{id:"cpp:purple_force_of_life"}}}] run function cpp:use_carrot_on_a_stick/elements/purple
+execute as @s[nbt={SelectedItem:{tag:{id:"cpp:purple_force_of_life"}}}] anchored eyes run function cpp:use_carrot_on_a_stick/elements/purple
 execute as @s[nbt={SelectedItem:{tag:{id:"cpp:white_force_of_lightning"}}}] run function cpp:use_carrot_on_a_stick/elements/white
 execute as @s[nbt={SelectedItem:{tag:{id:"cpp:black_force_of_moon"}}}] run function cpp:use_carrot_on_a_stick/elements/black
 

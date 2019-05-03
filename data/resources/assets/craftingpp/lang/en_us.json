@@ -565,7 +565,7 @@
 
 	"The":"§aCrafting++ is loaded,",	
 	"resourcepack":"version",
-	"does":"§a1.9§a.",
+	"does":"§a1.9.1§a.",
 	"not":"§aPlease",
 	"Install":"\n§evisit the wiki",
 	"correctly":"§ato get more informations. Authors:",
@@ -705,19 +705,5 @@
 	
 	"item.minecraft.potion.effect.empty": "§rMystery Potion",
 	"item.minecraft.splash_potion.effect.empty": "§rSplash Mystery Potion",
-	"item.minecraft.lingering_potion.effect.empty": "§rLingering Mystery Potion",	
-	"block.minecraft.cobblestone_wall": "Cobbelstone Slab",
-	"block.minecraft.mossy_cobblestone_wall": "Vertical Mossy Cobblestone Slab",
-	"block.minecraft.brick_wall": "Vertical Brick Slab",
-	"block.minecraft.prismarine_wall": "Vertical Prismarine Slab",
-	"block.minecraft.red_sandstone_wall": "Vertical Red Sandstone Slab",
-	"block.minecraft.mossy_stone_brick_wall": "Vertical Mossy Stone Brick Slab",
-	"block.minecraft.granite_wall": "Vertical Granite Slab",
-	"block.minecraft.stone_brick_wall": "Vertical Stone Brick Slab",
-	"block.minecraft.nether_brick_wall": "Vertical Nether Brick Slab",
-	"block.minecraft.andesite_wall": "Vertical Andesite Slab",
-	"block.minecraft.red_nether_brick_wall": "Vertical Red Nether Brick Slab",
-	"block.minecraft.sandstone_wall": "Vertical Sandstone Slab",
-	"block.minecraft.end_stone_brick_wall": "Vertical End Stone Brick Slab",
-	"block.minecraft.diorite_wall": "Vertical Diorite Wall"
+	"item.minecraft.lingering_potion.effect.empty": "§rLingering Mystery Potion"
 }

@@ -97,8 +97,12 @@ execute if block ~ ~ ~ barrel{Items:[{Slot:3b,id:"minecraft:piston"}]} if score 
 execute if block ~ ~ ~ barrel{Items:[{Slot:3b,tag:{id:"cpp:red_force_of_fire"}}]} run function cpp:item_processer/type_red_force
 
 execute if block ~ ~ ~ barrel{Items:[{Slot:3b,id:"minecraft:water_bucket"}]} run function cpp:item_processer/type_water
+execute if block ~ ~ ~ barrel{Items:[{Slot:3b,tag:{id:"cpp:green_force_of_water"}},{Slot:12b,id:"minecraft:glass_bottle"}]} run scoreboard players set @s cppMacType 808
+execute if block ~ ~ ~ barrel{Items:[{Slot:3b,tag:{id:"cpp:green_force_of_water"}},{Slot:12b,id:"minecraft:bucket"}]} run scoreboard players set @s cppMacType 899
 
 execute if block ~ ~ ~ barrel{Items:[{Slot:3b,id:"minecraft:grass_block"},{Slot:12b,id:"minecraft:dirt"}]} run scoreboard players set @s cppMacType 901
 execute if block ~ ~ ~ barrel{Items:[{Slot:3b,id:"minecraft:mycelium"},{Slot:12b,id:"minecraft:dirt"}]} run scoreboard players set @s cppMacType 902
+
+execute if block ~ ~ ~ barrel{Items:[{Slot:3b,tag:{id:"cpp:compressor"}},{Slot:12b,Count:64b}]} run scoreboard players set @s cppMacType 1000
 
 execute as @s[scores={cppMacType=1..}] run function cpp:item_processer/done

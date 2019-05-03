@@ -129,10 +129,14 @@ execute as @s[scores={cppMacType=823}] run loot insert ~ ~ ~ loot blocks/brown_c
 execute as @s[scores={cppMacType=824}] run loot insert ~ ~ ~ loot blocks/green_concrete
 execute as @s[scores={cppMacType=825}] run loot insert ~ ~ ~ loot blocks/red_concrete
 execute as @s[scores={cppMacType=826}] run loot insert ~ ~ ~ loot blocks/black_concrete
+execute as @s[scores={cppMacType=899}] run loot insert ~ ~ ~ loot cpp:items/water_bucket
 
 execute as @s[scores={cppMacType=901}] run loot insert ~ ~ ~ loot cpp:items/grass_block
 execute as @s[scores={cppMacType=902}] run loot insert ~ ~ ~ loot cpp:items/mycelium
 
+execute as @s[scores={cppMacType=1000}] run function cpp:item_processer/type_compressor
+
 execute at @s as @s[scores={cppMacType=601..616}] store result block ~ ~ ~ Items[{Slot:12b}].Count byte 1 run scoreboard players remove #temp cppValue 8
 execute at @s as @s[scores={cppMacType=641..645}] store result block ~ ~ ~ Items[{Slot:12b}].Count byte 1 run scoreboard players remove #temp cppValue 3
+execute at @s as @s[scores={cppMacType=1000}] store result block ~ ~ ~ Items[{Slot:12b}].Count byte 1 run scoreboard players remove #temp cppValue 63
 execute at @s store result block ~ ~ ~ Items[{Slot:12b}].Count byte 1 run scoreboard players remove #temp cppValue 1
