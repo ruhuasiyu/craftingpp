@@ -1,6 +1,0 @@
-{
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "craftingpp:material/soul_of_dirt"
-    }
-}
