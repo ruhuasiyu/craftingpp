@@ -7,3 +7,4 @@ execute if data block ~ ~ ~ Items[{Slot:2b,id:"minecraft:cooked_chicken"}] run d
 execute if data block ~ ~ ~ Items[{Slot:2b,id:"minecraft:cooked_mutton"}] run data modify block ~ ~ ~ Items[{Slot:2b}].tag.display.Lore append value "{\"text\":\"§r\"}"
 execute if data block ~ ~ ~ Items[{Slot:2b,id:"minecraft:cooked_beef"}] run data modify block ~ ~ ~ Items[{Slot:2b}].tag.display.Lore append value "{\"text\":\"§r\"}"
 execute if data block ~ ~ ~ Items[{Slot:2b,id:"minecraft:cooked_porkchop"}] run data modify block ~ ~ ~ Items[{Slot:2b}].tag.display.Lore append value "{\"text\":\"§r\"}"
+execute if data block ~ ~ ~ Items[{Slot:2b,id:"minecraft:spider_eye"}] run data modify block ~ ~ ~ Items[{Slot:2b}].tag.display.Lore append value "{\"text\":\"§r\"}"

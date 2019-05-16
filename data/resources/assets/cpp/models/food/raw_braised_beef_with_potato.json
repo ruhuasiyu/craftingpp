@@ -1,0 +1,6 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "cpp:food/raw_braised_beef_with_potato"
+    }
+}

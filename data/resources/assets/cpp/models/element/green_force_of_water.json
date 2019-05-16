@@ -1,0 +1,6 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "cpp:element/green_force_of_water"
+    }
+}

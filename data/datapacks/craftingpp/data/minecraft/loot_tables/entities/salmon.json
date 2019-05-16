@@ -114,14 +114,8 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "item",
-					"name": "minecraft:player_head",
-					"functions": [
-						{
-							"function": "set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.salmon_head\\\"}\"},id:\"cpp:salmon_head\",SkullOwner:{Id:\"e246c06c-5d6a-4fd9-b600-c6bd71336b7a\",Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWRmYzU3ZDA5MDU5ZTQ3OTlmYTkyYzE1ZTI4NTEyYmNmYWExMzE1NTc3ZmUzYTI3YWVkMzg5ZTRmNzUyMjg5YSJ9fX0=\"}]}}}"
-						}
-					]
+					"type": "loot_table",
+					"name": "cpp:salmon_head"
 				}
 			]
 		}

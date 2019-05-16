@@ -1,0 +1,14 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "cpp:empty",
+        "layer1": "cpp:decor/lip"
+    },
+	"display": {
+		"head": {
+			"rotation":  [ 0, 0, 0 ],
+			"translation":  [ 0, -4, -8 ],
+			"scale":  [ 0.65, 0.65, 0.65 ]
+		}
+	}
+}

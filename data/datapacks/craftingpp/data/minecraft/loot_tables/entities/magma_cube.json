@@ -83,14 +83,8 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "item",
-					"name": "minecraft:player_head",
-					"functions": [
-						{
-							"function": "set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.magma_cube_head\\\"}\"},SkullOwner:{Id:\"96aced64-5b85-4b99-b825-53cd7a9f9726\",Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzg5NTdkNTAyM2M5MzdjNGM0MWFhMjQxMmQ0MzQxMGJkYTIzY2Y3OWE5ZjZhYjM2Yjc2ZmVmMmQ3YzQyOSJ9fX0=\"}]}}}"
-						}
-					]
+					"type": "loot_table",
+					"name": "cpp:magma_cube_head"
 				}
 			]
 		}

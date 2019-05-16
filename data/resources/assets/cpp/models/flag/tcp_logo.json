@@ -1,0 +1,12 @@
+{
+    "parent": "item/generated",
+    "display": {
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "scale": [ 4, 4, 4]
+        }
+    },
+    "textures": {
+        "layer0": "cpp:flag/tcp_logo"
+	}
+}

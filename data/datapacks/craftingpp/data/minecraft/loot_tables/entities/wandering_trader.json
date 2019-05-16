@@ -83,14 +83,8 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "item",
-					"name": "minecraft:player_head",
-					"functions": [
-						{
-							"function": "set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.villager_head\\\"}\"},SkullOwner:{Id:\"0a9e8efb-9191-4c81-80f5-e27ca5433156\",Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODIyZDhlNzUxYzhmMmZkNGM4OTQyYzQ0YmRiMmY1Y2E0ZDhhZThlNTc1ZWQzZWIzNGMxOGE4NmU5M2IifX19\"}]}}}"
-						}
-					]
+					"type": "loot_table",
+					"name": "cpp:wandering_trader_head"
 				}
 			]
 		}

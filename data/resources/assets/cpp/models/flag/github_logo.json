@@ -1,0 +1,12 @@
+{
+    "parent": "item/generated",
+    "display": {
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "scale": [ 2, 2, 2]
+        }
+    },
+    "textures": {
+        "layer0": "cpp:flag/github_logo"
+	}
+}

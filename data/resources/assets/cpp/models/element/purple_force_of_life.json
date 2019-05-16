@@ -1,0 +1,6 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "cpp:element/purple_force_of_life"
+    }
+}

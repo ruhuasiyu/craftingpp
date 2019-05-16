@@ -155,14 +155,8 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "item",
-					"name": "minecraft:player_head",
-					"functions": [
-						{
-							"function": "set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.stray_skull\\\"}\"},SkullOwner:{Id:\"644c9bad-958b-43ce-9d2f-199d85be607c\",Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzhkZGY3NmU1NTVkZDVjNGFhOGEwYTVmYzU4NDUyMGNkNjNkNDg5YzI1M2RlOTY5ZjdmMjJmODVhOWEyZDU2In19fQ==\"}]}}}"
-						}
-					]
+					"type": "loot_table",
+					"name": "cpp:stray_skull"
 				}
 			]
 		}

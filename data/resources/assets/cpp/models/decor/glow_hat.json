@@ -1,0 +1,7 @@
+{
+	"parent": "cpp:decor/hat",
+	"textures": {
+		"hat": "cpp:decor/glow_hat",
+		"item": "cpp:decor/glow_hat_item"
+	}
+}

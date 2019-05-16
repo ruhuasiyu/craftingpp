@@ -1,0 +1,6 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "cpp:decor/black_framed_glasses_item"
+	}
+}

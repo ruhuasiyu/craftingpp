@@ -152,34 +152,74 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "item",
-					"name": "minecraft:player_head",
-					"functions": [
+					"type": "alternatives",
+					"children": [
 						{
-							"function": "set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.parrot_head\\\"}\"},SkullOwner:{Id:\"c3f25f72-a644-49fc-acf4-805a7c655bba\",Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWVlYmUyNmYxOGZhNTk2MGFiYmRkNjU5NTdkYTUzNjViNmY2ZjQ0ZGI2YTk5NDRmM2YxNDY2ZGU2OWEyIn19fQ==\"}]}}}"
-						}
-					]
-				},
-				{
-					"type": "item",
-					"name": "minecraft:player_head",
-					"functions": [
+							"conditions": [
+								{
+									"condition": "entity_properties",
+									"entity": "this",
+									"predicate": {
+										"nbt": "{Variant:0}"
+									}
+								}
+							],
+							"type": "loot_table",
+							"name": "cpp:parrot_head/0"
+						},
 						{
-							"function": "set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.parrot_head\\\"}\"},SkullOwner:{Id:\"2326acb5-9f48-407b-a8e4-f29acc6d7ec4\",Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWJjNmQ4NDE2OGVjZmMzZTE4ZmI4MGYxMzRhMmIxYTczMjRlYTYxMWJkNmQyODY3MDYxZjlhMzg5NDEzMCJ9fX0=\"}]}}}"
-						}
-					]
-				},
-				{
-					"type": "item",
-					"name": "minecraft:player_head",
-					"functions": [
+							"conditions": [
+								{
+									"condition": "entity_properties",
+									"entity": "this",
+									"predicate": {
+										"nbt": "{Variant:1}"
+									}
+								}
+							],
+							"type": "loot_table",
+							"name": "cpp:parrot_head/1"
+						},
 						{
-							"function": "set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.parrot_head\\\"}\"},SkullOwner:{Id:\"b836bfd9-826d-4dc8-9407-a18cc9f886b6\",Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzA3ZGFiMmNiZWJlYTUzOWI2NGQ1YWQyNDZmOWNjYzFmY2RhN2FhOTRiODhlNTlmYzI4Mjk4NTJmNDYwNzEifX19\"}]}}}"
+							"conditions": [
+								{
+									"condition": "entity_properties",
+									"entity": "this",
+									"predicate": {
+										"nbt": "{Variant:2}"
+									}
+								}
+							],
+							"type": "loot_table",
+							"name": "cpp:parrot_head/2"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "entity_properties",
+									"entity": "this",
+									"predicate": {
+										"nbt": "{Variant:3}"
+									}
+								}
+							],
+							"type": "loot_table",
+							"name": "cpp:parrot_head/3"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "entity_properties",
+									"entity": "this",
+									"predicate": {
+										"nbt": "{Variant:4}"
+									}
+								}
+							],
+							"type": "loot_table",
+							"name": "cpp:parrot_head/4"
 						}
-					]
+					]	
 				}
 			]
 		}

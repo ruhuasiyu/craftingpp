@@ -1,0 +1,6 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "cpp:element/red_force_of_fire"
+    }
+}

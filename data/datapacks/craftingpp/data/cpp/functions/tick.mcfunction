@@ -130,7 +130,8 @@ scoreboard players reset @a cppOpenFrame
 execute as @e[type=armor_stand,tag=cpp_gold_block] at @s unless block ~ ~ ~ gold_block run function cpp:block/machine/break_gold_block
 execute as @e[type=armor_stand,tag=cpp_barrel] at @s unless block ~ ~ ~ barrel run function cpp:block/machine/break_barrel
 execute as @e[type=armor_stand,tag=cpp_chest] at @s unless block ~ ~ ~ chest run function cpp:block/machine/break_chest
-execute as @e[type=armor_stand,tag=cpp_sorcerer_stone] at @s unless block ~ ~ ~ barrier run kill @s
+execute as @e[type=armor_stand,tag=cpp_petrified_oak_slab] at @s unless block ~ ~ ~ petrified_oak_slab[type=double] run function cpp:block/machine/break_petrified_oak_slab
+execute as @e[type=armor_stand,tag=cpp_barrier] at @s unless block ~ ~ ~ barrier run function cpp:block/machine/break_barrier
 
 execute as @e[type=armor_stand,tag=cpp_beacon_enhancer] at @s run function cpp:beacon_enhancer/tick
 execute as @e[type=armor_stand,tag=cpp_all_in_one_machine] at @s run function cpp:all_in_one_machine/tick
@@ -140,6 +141,7 @@ execute as @e[type=armor_stand,tag=cpp_item_processer] at @s run function cpp:it
 execute as @e[type=armor_stand,tag=cpp_golden_anvil] at @s if entity @a[distance=..6] run function cpp:golden_anvil/tick
 execute as @e[type=armor_stand,tag=cpp_bookshelf] at @s if entity @a[distance=..6] run function cpp:bookshelf/tick
 execute as @e[tag=cpp_crafting_machine] at @s if entity @a[distance=..6] run function cpp:craft/craft
+execute as @e[tag=cpp_muffler] at @s as @e[distance=..5] run data merge entity @s {Silent:1b}
 
 kill @e[type=item,nbt={Item:{tag:{isMachineBg:1b}}}]
 clear @a firework_star{isMachineBg:1b}
@@ -180,9 +182,6 @@ execute as @e[type=item_frame,tag=!cpp_has_no_item] unless data entity @s Item a
 # 鞭炮
 execute at @e[tag=cpp_firecrackers] run summon tnt ~ ~ ~ {Fuse:30s}
 kill @e[tag=cpp_firecrackers]
-
-# 生物头颅
-execute as @e[type=item,nbt={Item:{id:"minecraft:player_head"},Age:0s}] run function cpp:heads
 
 # 魔法
 execute as @a[tag=cpp_has_wand_off,nbt={SelectedItem:{tag:{id:"cpp:sealing_wand"}}}] at @s run function cpp:magic/action
