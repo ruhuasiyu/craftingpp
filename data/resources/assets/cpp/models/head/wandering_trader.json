@@ -1,0 +1,7 @@
+{
+	"parent": "cpp:head/villager_template",
+	"textures": {
+		"particle": "entity/wandering_trader",
+		"layer": "entity/wandering_trader"
+	}
+}

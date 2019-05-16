@@ -1,0 +1,7 @@
+{
+	"parent": "cpp:head/head_big_template",
+	"textures": {
+		"particle": "cpp:head/zombie_horse",
+		"layer": "cpp:head/zombie_horse"
+	}
+}

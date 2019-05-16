@@ -1,0 +1,6 @@
+{
+    "parent": "cpp:machine/xp_shower/xp_shower",
+    "textures": {
+        "layer0": "cpp:machine/xp_shower/xp_shower43"
+    }
+}

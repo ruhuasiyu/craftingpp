@@ -1,0 +1,12 @@
+{
+    "parent": "cpp:machine/machine",
+    "textures": {
+        "particle": "cpp:machine/dustbin_side",
+        "down": "cpp:machine/dustbin_bottom",
+        "up": "cpp:machine/dustbin_top",
+        "north": "cpp:machine/dustbin_side",
+        "east": "cpp:machine/dustbin_side",
+        "south": "cpp:machine/dustbin_side",
+        "west": "cpp:machine/dustbin_side"
+    }
+}

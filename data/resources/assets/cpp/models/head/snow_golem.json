@@ -1,0 +1,7 @@
+{
+	"parent": "cpp:head/head_small_template",
+	"textures": {
+		"particle": "entity/snow_golem",
+		"layer": "entity/snow_golem"
+	}
+}

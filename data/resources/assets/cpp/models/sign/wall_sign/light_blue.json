@@ -1,0 +1,7 @@
+{
+    "parent": "cpp:sign/wall_sign/sign",
+    "textures": {
+        "particle": "cpp:sign/wall_sign/light_blue",
+        "texture": "cpp:sign/wall_sign/light_blue"
+    }
+}

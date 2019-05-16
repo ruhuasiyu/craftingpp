@@ -1,0 +1,7 @@
+{
+	"parent": "cpp:head/rabbit/rabbit",
+	"textures": {
+		"particle": "entity/rabbit/white",
+		"layer": "entity/rabbit/white"
+	}
+}

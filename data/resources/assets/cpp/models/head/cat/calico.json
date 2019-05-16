@@ -1,0 +1,7 @@
+{
+	"parent": "cpp:head/cat/cat",
+	"textures": {
+		"particle": "entity/cat/calico",
+		"layer": "entity/cat/calico"
+	}
+}

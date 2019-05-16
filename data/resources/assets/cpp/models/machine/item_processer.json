@@ -1,0 +1,12 @@
+{
+    "parent": "cpp:machine/machine",
+    "textures": {
+        "particle": "cpp:machine/item_processer_side",
+        "down": "cpp:machine/item_processer_bottom",
+        "up": "cpp:machine/item_processer_top",
+        "north": "cpp:machine/item_processer_front",
+        "east": "cpp:machine/item_processer_side",
+        "south": "cpp:machine/item_processer_side",
+        "west": "cpp:machine/item_processer_side"
+    }
+}

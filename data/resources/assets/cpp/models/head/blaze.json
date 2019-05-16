@@ -1,0 +1,7 @@
+{
+	"parent": "cpp:head/head_template",
+	"textures": {
+		"particle": "entity/blaze",
+		"layer": "entity/blaze"
+	}
+}

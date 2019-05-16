@@ -1,0 +1,6 @@
+{
+    "parent": "cpp:machine/process",
+    "textures": {
+        "layer0": "cpp:machine/process_shower9"
+    }
+}

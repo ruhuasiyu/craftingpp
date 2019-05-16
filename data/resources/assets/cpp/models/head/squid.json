@@ -1,0 +1,30 @@
+{
+	"parent": "block/block",
+	"display": {
+		"head": {
+			"scale": [ 1.09, 1.09, 1.09 ]
+		},
+		"gui": {
+			"rotation": [ 30, 225, 0 ],
+			"scale": [ 0.5, 0.5, 0.5 ]
+		}
+	},
+	"textures": {
+		"particle": "entity/squid",
+		"layer": "entity/squid"
+	},
+	"elements": [
+		{
+			"from": [ 2, 0, 2 ],
+			"to": [ 14, 16, 14 ],
+			"faces": {
+				"east":	{ "uv": [ 0, 6, 3, 14 ], "texture": "#layer" },
+				"north":{ "uv": [ 3, 6, 6, 14 ], "texture": "#layer" },
+				"west":	{ "uv": [ 6, 6, 9, 14 ], "texture": "#layer" },
+				"south":{ "uv": [ 9, 6,12, 14 ], "texture": "#layer" },
+				"up":	{ "uv": [ 3, 0, 6, 6 ], "texture": "#layer", "rotation": 180},
+				"down":	{ "uv": [ 6, 0, 9, 6 ], "texture": "#layer" }
+			}
+		}
+	]
+}

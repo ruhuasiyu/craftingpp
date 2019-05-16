@@ -1,0 +1,9 @@
+{
+    "parent": "item/generated",
+	"display": {
+		"gui": {
+			"translation": [ 9, 0, 1 ],
+			"scale": [ 2.25, 2, 1 ]
+		}
+	}
+}

@@ -1,0 +1,12 @@
+{
+    "parent": "cpp:machine/machine",
+    "textures": {
+        "particle": "cpp:machine/beacon_enhancer",
+        "down": "cpp:machine/beacon_enhancer_bottom",
+        "up": "cpp:machine/beacon_enhancer_top",
+        "north": "cpp:machine/beacon_enhancer",
+        "east": "cpp:machine/beacon_enhancer",
+        "south": "cpp:machine/beacon_enhancer",
+        "west": "cpp:machine/beacon_enhancer"
+    }
+}

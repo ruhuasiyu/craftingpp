@@ -1,0 +1,7 @@
+{
+	"parent": "cpp:head/head_template",
+	"textures": {
+		"particle": "entity/skeleton/stray",
+		"layer": "entity/skeleton/stray"
+	}
+}

@@ -1,0 +1,7 @@
+{
+	"parent": "cpp:head/head_big_template",
+	"textures": {
+		"particle": "cpp:head/dolphin",
+		"layer": "cpp:head/dolphin"
+	}
+}

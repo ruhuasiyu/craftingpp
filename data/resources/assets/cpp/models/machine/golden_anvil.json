@@ -1,0 +1,12 @@
+{
+    "parent": "cpp:machine/machine",
+    "textures": {
+        "particle": "cpp:machine/golden_anvil_top",
+        "down": "cpp:machine/golden_anvil_bottom",
+        "up": "cpp:machine/golden_anvil_top",
+        "north": "cpp:machine/golden_anvil_side",
+        "east": "cpp:machine/golden_anvil_front",
+        "south": "cpp:machine/golden_anvil_side",
+        "west": "cpp:machine/golden_anvil_side"
+    }
+}

@@ -1,0 +1,30 @@
+{
+	"parent": "block/block",
+	"display": {
+		"head": {
+			"scale": [ 1.09, 1.09, 1.09 ]
+		},
+		"gui": {
+			"rotation": [ 30, 225, 0 ],
+			"scale": [ 0.5, 0.5, 0.5 ]
+		}
+	},
+	"textures": {
+		"particle": "entity/sheep/sheep",
+		"layer": "entity/sheep/sheep"
+	},
+	"elements": [
+		{
+			"from": [ 2, 2, 0 ],
+			"to": [ 14, 14, 16 ],
+			"faces": {
+				"east":	{ "uv": [ 0, 4, 2, 7 ], "texture": "#layer" },
+				"north":{ "uv": [ 2, 4, 3.5, 7 ], "texture": "#layer"},
+				"west":	{ "uv": [ 3.5, 4, 5.5, 7 ], "texture": "#layer" },
+				"south":{ "uv": [ 5.5, 4, 7, 7 ], "texture": "#layer" },
+				"up":	{ "uv": [ 2, 0, 3.5, 4 ], "texture": "#layer", "rotation": 180},
+				"down":	{ "uv": [ 3.5, 0, 5, 4 ], "texture": "#layer" }
+			}
+		}
+	]
+}

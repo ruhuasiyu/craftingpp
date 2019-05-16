@@ -1,0 +1,30 @@
+{
+	"parent": "block/block",
+	"display": {
+		"head": {
+			"scale": [ 1.31, 1.31, 1.31 ]
+		},
+		"gui": {
+			"rotation": [ 30, 225, 0 ],
+			"scale": [ 0.67, 0.67, 0.67 ]
+		}
+	},
+	"textures": {
+		"particle": "entity/turtle/big_sea_turtle",
+		"layer": "entity/turtle/big_sea_turtle"
+	},
+	"elements": [
+		{
+			"from": [ 2, 3, 2 ],
+			"to": [ 14, 13, 14 ],
+			"faces": {
+				"east":	{ "uv": [ 0.375, 1.5, 1.125, 2.5 ], "texture": "#layer" },
+				"north":{ "uv": [ 1.125, 1.5, 1.875, 2.5 ], "texture": "#layer" },
+				"west":	{ "uv": [ 1.875, 1.5, 2.625, 2.5 ], "texture": "#layer" },
+				"south":{ "uv": [ 2.625, 1.5, 3.375, 2.5 ], "texture": "#layer" },
+				"up":	{ "uv": [ 1.125, 0, 1.875, 1.5 ], "texture": "#layer", "rotation": 180},
+				"down":	{ "uv": [ 1.875, 0, 2.625, 1.5 ], "texture": "#layer" }
+			}
+		}
+	]
+}

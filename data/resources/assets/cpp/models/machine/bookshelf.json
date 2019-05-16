@@ -1,0 +1,12 @@
+{
+	"parent": "cpp:machine/machine",
+    "textures": {
+        "particle": "#top",
+        "down": "#top",
+        "up": "#top",
+        "north": "#side",
+        "east": "#side",
+        "south": "#side",
+        "west": "#side"
+    }
+}

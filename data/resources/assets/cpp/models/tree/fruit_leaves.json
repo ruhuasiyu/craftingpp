@@ -1,0 +1,19 @@
+{
+	"parent": "cpp:machine/machine",
+    "textures": {
+        "particle": "cpp:tree/fruit_leaves",
+        "down": "cpp:tree/fruit_leaves",
+        "up": "cpp:tree/fruit_leaves",
+        "north": "cpp:tree/fruit_leaves",
+        "east": "cpp:tree/fruit_leaves",
+        "south": "cpp:tree/fruit_leaves",
+        "west": "cpp:tree/fruit_leaves"
+    },
+	"display": {
+		"head": {
+			"rotation": [ 0, 0, 0 ],
+			"translation": [ 0, 3.6, 0 ],
+			"scale": [ 2.29, 2.29, 2.29 ]
+		}
+	}
+}

@@ -1,0 +1,7 @@
+{
+	"parent": "cpp:head/villager_template",
+	"textures": {
+		"particle": "entity/villager/villager",
+		"layer": "entity/villager/villager"
+	}
+}

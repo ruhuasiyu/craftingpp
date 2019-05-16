@@ -1,0 +1,12 @@
+{
+    "parent": "cpp:machine/machine",
+    "textures": {
+        "particle": "cpp:machine/mob_projector_top",
+        "down": "cpp:machine/mob_projector_bottom",
+        "up": "cpp:machine/mob_projector_top",
+        "north": "cpp:machine/mob_projector_front",
+        "east": "cpp:machine/mob_projector_side",
+        "south": "cpp:machine/mob_projector_side",
+        "west": "cpp:machine/mob_projector_side"
+    }
+}

@@ -1,0 +1,7 @@
+{
+	"parent": "cpp:head/guardian_template",
+	"textures": {
+		"particle": "entity/guardian_elder",
+		"layer": "entity/guardian_elder"
+	}
+}

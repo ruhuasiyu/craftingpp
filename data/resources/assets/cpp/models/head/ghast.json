@@ -1,0 +1,30 @@
+{
+	"parent": "block/block",
+	"display": {
+		"head": {
+			"scale": [ 0.82, 0.82, 0.82 ]
+		},
+		"gui": {
+			"rotation": [ 30, 225, 0 ],
+			"scale": [ 0.5, 0.5, 0.5 ]
+		}
+	},
+	"textures": {
+		"particle": "entity/ghast/ghast",
+		"layer": "entity/ghast/ghast"
+	},
+	"elements": [
+		{
+			"from": [ 0, 0, 0 ],
+			"to": [ 16, 16, 16 ],
+			"faces": {
+				"east":	{ "uv": [  0, 8,  4, 16 ], "texture": "#layer" },
+				"north":{ "uv": [  4, 8,  8, 16 ], "texture": "#layer" },
+				"west":	{ "uv": [  8, 8, 12, 16 ], "texture": "#layer" },
+				"south":{ "uv": [ 12, 8, 16, 16 ], "texture": "#layer" },
+				"up":	{ "uv": [  4, 0,  8,  8 ], "texture": "#layer", "rotation": 180},
+				"down":	{ "uv": [  8, 0, 12,  8 ], "texture": "#layer" }
+			}
+		}
+	]
+}

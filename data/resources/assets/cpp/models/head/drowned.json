@@ -1,0 +1,43 @@
+{
+	"parent": "block/block",
+	"textures": {
+		"particle": "entity/zombie/drowned",
+		"layer": "entity/zombie/drowned",
+		"outer_layer": "entity/zombie/drowned_outer_layer"
+	},
+	"display": {
+		"head": {
+			"scale": [ 0.82, 0.82, 0.82 ]
+		},
+		"gui": {
+			"rotation": [ 30, 225, 0 ],
+			"scale": [ 0.5, 0.5, 0.5 ]
+		}
+	},
+	"elements": [
+		{
+			"from": [ 0, 0, 0 ],
+			"to": [ 16, 16, 16 ],
+			"faces": {
+				"east":	{ "uv": [ 0, 2, 2, 4 ], "texture": "#layer" },
+				"north":{ "uv": [ 2, 2, 4, 4 ], "texture": "#layer" },
+				"west":	{ "uv": [ 4, 2, 6, 4 ], "texture": "#layer" },
+				"south":{ "uv": [ 6, 2, 8, 4 ], "texture": "#layer" },
+				"up":	{ "uv": [ 2, 0, 4, 2 ], "texture": "#layer", "rotation": 180},
+				"down":	{ "uv": [ 4, 0, 6, 2 ], "texture": "#layer" }
+			}
+		},
+		{
+			"from": [ 0, 0, 0 ],
+			"to": [ 16, 16, 16 ],
+			"faces": {
+				"east":	{ "uv": [ 0, 2, 2, 4 ], "texture": "#outer_layer" },
+				"north":{ "uv": [ 2, 2, 4, 4 ], "texture": "#outer_layer" },
+				"west":	{ "uv": [ 4, 2, 6, 4 ], "texture": "#outer_layer" },
+				"south":{ "uv": [ 6, 2, 8, 4 ], "texture": "#outer_layer" },
+				"up":	{ "uv": [ 2, 0, 4, 2 ], "texture": "#outer_layer", "rotation": 180},
+				"down":	{ "uv": [ 4, 0, 6, 2 ], "texture": "#outer_layer" }
+			}
+		}
+	]
+}

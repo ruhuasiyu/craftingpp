@@ -1,0 +1,7 @@
+{
+	"parent": "cpp:head/head_big_template",
+	"textures": {
+		"particle": "cpp:head/llama",
+		"layer": "cpp:head/llama"
+	}
+}

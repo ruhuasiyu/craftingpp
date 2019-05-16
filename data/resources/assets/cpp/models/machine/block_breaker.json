@@ -1,0 +1,12 @@
+{
+    "parent": "cpp:machine/machine",
+    "textures": {
+        "particle": "cpp:machine/block_breaker_top",
+        "down": "cpp:machine/block_breaker_bottom",
+        "up": "cpp:machine/block_breaker_top",
+        "north": "cpp:machine/block_breaker_side",
+        "east": "cpp:machine/block_breaker_side",
+        "south": "cpp:machine/block_breaker_side",
+        "west": "cpp:machine/block_breaker_side"
+    }
+}

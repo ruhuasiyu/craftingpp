@@ -1,0 +1,7 @@
+{
+    "parent": "cpp:machine/bookshelf",
+    "textures": {
+        "top": "block/oak_planks",
+        "side": "cpp:machine/bookshelf5"
+    }
+}

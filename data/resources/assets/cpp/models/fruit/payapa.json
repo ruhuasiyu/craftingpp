@@ -1,0 +1,6 @@
+{
+    "parent": "cpp:fruit/fruit",
+    "textures": {
+        "layer0": "cpp:fruit/payapa"
+    }
+}

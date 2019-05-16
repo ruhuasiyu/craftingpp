@@ -1,0 +1,7 @@
+{
+	"parent": "cpp:head/spider_template",
+	"textures": {
+		"particle": "entity/spider/spider",
+		"layer": "entity/spider/spider"
+	}
+}

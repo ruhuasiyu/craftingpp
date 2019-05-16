@@ -1,0 +1,7 @@
+{
+	"parent": "cpp:head/cat/cat",
+	"textures": {
+		"particle": "entity/cat/british_shorthair",
+		"layer": "entity/cat/british_shorthair"
+	}
+}

@@ -1,0 +1,12 @@
+{
+    "parent": "cpp:machine/machine",
+    "textures": {
+        "particle": "cpp:machine/muffler_side",
+        "down": "cpp:machine/muffler_bottom",
+        "up": "cpp:machine/muffler_top",
+        "north": "cpp:machine/muffler_side",
+        "east": "cpp:machine/muffler_side",
+        "south": "cpp:machine/muffler_side",
+        "west": "cpp:machine/muffler_side"
+    }
+}

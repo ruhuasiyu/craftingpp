@@ -1,0 +1,19 @@
+{
+	"parent": "cpp:machine/machine",
+    "textures": {
+        "particle": "cpp:tree/wool_leaves",
+        "down": "cpp:tree/wool_leaves",
+        "up": "cpp:tree/wool_leaves",
+        "north": "cpp:tree/wool_leaves",
+        "east": "cpp:tree/wool_leaves",
+        "south": "cpp:tree/wool_leaves",
+        "west": "cpp:tree/wool_leaves"
+    },
+	"display": {
+		"head": {
+			"rotation": [ 0, 0, 0 ],
+			"translation": [ 0, 3.6, 0 ],
+			"scale": [ 2.29, 2.29, 2.29 ]
+		}
+	}
+}
