@@ -1,7 +1,0 @@
-{
-	"parent": "item/generated",
-	"textures": {
-		"layer0": "craftingpp:potion/cold_drink",
-		"layer1": "craftingpp:potion/cold_drink"
-	}		
-}

@@ -1,8 +1,8 @@
 {
     "parent": "block/acacia_leaves",
 	"overrides": [
-		{ "predicate": { "custom_model_data": 12970101 }, "model": "craftingpp:tree/fruit_leaves"},
-		{ "predicate": { "custom_model_data": 12970102 }, "model": "craftingpp:tree/ore_leaves"},
-		{ "predicate": { "custom_model_data": 12970103 }, "model": "craftingpp:tree/wool_leaves"}
+		{ "predicate": { "custom_model_data": 12970101 }, "model": "cpp:tree/fruit_leaves"},
+		{ "predicate": { "custom_model_data": 12970102 }, "model": "cpp:tree/ore_leaves"},
+		{ "predicate": { "custom_model_data": 12970103 }, "model": "cpp:tree/wool_leaves"}
 	]
 }

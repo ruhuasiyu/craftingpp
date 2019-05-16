@@ -1,6 +1,0 @@
-{
-    "parent": "craftingpp:plant/double_plant",
-    "textures": {
-        "crop": "craftingpp:tree/christmas_tree"
-    }
-}

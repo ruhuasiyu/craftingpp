@@ -4,7 +4,7 @@
         "layer0": "item/cooked_chicken"
     },
 	"overrides": [
-		{ "predicate": { "custom_model_data": 12970001 }, "model": "craftingpp:food/cooked_parrot_meat"},
-		{ "predicate": { "custom_model_data": 12970002 }, "model": "craftingpp:food/christmas_roast_chicken"}
+		{ "predicate": { "custom_model_data": 12970001 }, "model": "cpp:food/cooked_parrot_meat"},
+		{ "predicate": { "custom_model_data": 12970002 }, "model": "cpp:food/christmas_roast_chicken"}
 	]
 }

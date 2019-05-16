@@ -4,6 +4,6 @@
 		"layer0": "item/cookie"
 	},
 	"overrides": [
-		{ "predicate": { "custom_model_data": 12970001 }, "model": "craftingpp:food/boiled_egg"}
+		{ "predicate": { "custom_model_data": 12970001 }, "model": "cpp:food/boiled_egg"}
 	]
 }

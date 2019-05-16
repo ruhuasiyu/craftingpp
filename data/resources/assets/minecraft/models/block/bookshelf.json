@@ -4,9 +4,9 @@
         "particle": "block/oak_planks",
         "down": "block/oak_planks",
         "up": "block/oak_planks",
-        "north": "craftingpp:machine/bookshelf7",
-        "east": "craftingpp:machine/bookshelf7",
-        "south": "craftingpp:machine/bookshelf7",
-        "west": "craftingpp:machine/bookshelf7"
+        "north": "cpp:machine/bookshelf7",
+        "east": "cpp:machine/bookshelf7",
+        "south": "cpp:machine/bookshelf7",
+        "west": "cpp:machine/bookshelf7"
     }
 }

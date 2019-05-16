@@ -1,6 +1,0 @@
-{
-    "parent": "craftingpp:machine/xp_shower/xp_shower",
-    "textures": {
-        "layer0": "craftingpp:machine/xp_shower/xp_shower16"
-    }
-}

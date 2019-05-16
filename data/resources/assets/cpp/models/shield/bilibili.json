@@ -1,0 +1,6 @@
+{
+	"parent": "cpp:shield/normal",
+	"textures": {
+		"pattern": "cpp:shield/bilibili"
+	}
+}

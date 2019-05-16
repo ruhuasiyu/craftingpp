@@ -4,6 +4,6 @@
 		"layer0": "item/stone_pickaxe"
 	},
 	"overrides": [
-		{ "predicate": { "custom_model_data": 12970001 }, "model": "craftingpp:tool/glass_pickaxe"}
+		{ "predicate": { "custom_model_data": 12970001 }, "model": "cpp:tool/glass_pickaxe"}
 	]
 }

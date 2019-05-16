@@ -1,6 +1,0 @@
-{
-    "parent": "item/handheld",
-    "textures": {
-        "layer0": "craftingpp:element/green_force_of_water"
-    }
-}

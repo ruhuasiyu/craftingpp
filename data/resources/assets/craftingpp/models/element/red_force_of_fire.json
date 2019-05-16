@@ -1,6 +1,0 @@
-{
-    "parent": "item/handheld",
-    "textures": {
-        "layer0": "craftingpp:element/red_force_of_fire"
-    }
-}

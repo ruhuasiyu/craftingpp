@@ -4,14 +4,14 @@
         "layer0": "item/suspicious_stew"
     },
 	"overrides": [
-		{ "predicate": { "custom_model_data": 12970001 }, "model": "craftingpp:food/raw_colorful_vegetable"},
-		{ "predicate": { "custom_model_data": 12970002 }, "model": "craftingpp:food/colorful_vegetable"},
-		{ "predicate": { "custom_model_data": 12970003 }, "model": "craftingpp:food/raw_braised_porkchop_with_potato"},
-		{ "predicate": { "custom_model_data": 12970004 }, "model": "craftingpp:food/braised_porkchop_with_potato"},
-		{ "predicate": { "custom_model_data": 12970005 }, "model": "craftingpp:food/raw_braised_beef_with_potato"},
-		{ "predicate": { "custom_model_data": 12970006 }, "model": "craftingpp:food/braised_beef_with_potato"},
-		{ "predicate": { "custom_model_data": 12970007 }, "model": "craftingpp:food/raw_rabbit_stew"},
-		{ "predicate": { "custom_model_data": 12970008 }, "model": "craftingpp:food/rabbit_stew"},
-		{ "predicate": { "custom_model_data": 12970009 }, "model": "craftingpp:food/fish_and_chips"}	
+		{ "predicate": { "custom_model_data": 12970001 }, "model": "cpp:food/raw_colorful_vegetable"},
+		{ "predicate": { "custom_model_data": 12970002 }, "model": "cpp:food/colorful_vegetable"},
+		{ "predicate": { "custom_model_data": 12970003 }, "model": "cpp:food/raw_braised_porkchop_with_potato"},
+		{ "predicate": { "custom_model_data": 12970004 }, "model": "cpp:food/braised_porkchop_with_potato"},
+		{ "predicate": { "custom_model_data": 12970005 }, "model": "cpp:food/raw_braised_beef_with_potato"},
+		{ "predicate": { "custom_model_data": 12970006 }, "model": "cpp:food/braised_beef_with_potato"},
+		{ "predicate": { "custom_model_data": 12970007 }, "model": "cpp:food/raw_rabbit_stew"},
+		{ "predicate": { "custom_model_data": 12970008 }, "model": "cpp:food/rabbit_stew"},
+		{ "predicate": { "custom_model_data": 12970009 }, "model": "cpp:food/fish_and_chips"}	
 	]
 }

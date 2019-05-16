@@ -1,7 +1,0 @@
-{
-    "parent": "item/generated",
-    "textures": {
-        "particle": "craftingpp:sign/item/red",
-        "layer0": "craftingpp:sign/item/red"
-    }
-}

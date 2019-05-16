@@ -4,6 +4,6 @@
         "layer0": "item/blaze_powder"
     },
 	"overrides": [
-		{ "predicate": { "custom_model_data": 12970001 }, "model": "craftingpp:material/mystery_blaze_powder"}
+		{ "predicate": { "custom_model_data": 12970001 }, "model": "cpp:material/mystery_blaze_powder"}
 	]
 }

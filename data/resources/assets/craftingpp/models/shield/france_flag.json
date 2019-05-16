@@ -1,6 +1,0 @@
-{
-	"parent": "craftingpp:shield/normal",
-	"textures": {
-		"pattern": "craftingpp:shield/france_flag"
-	}
-}

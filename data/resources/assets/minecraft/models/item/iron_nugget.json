@@ -4,6 +4,6 @@
         "layer0": "item/iron_nugget"
     },
 	"overrides": [
-		{ "predicate": { "custom_model_data": 12970001 }, "model": "craftingpp:material/iron_chain"}
+		{ "predicate": { "custom_model_data": 12970001 }, "model": "cpp:material/iron_chain"}
 	]
 }

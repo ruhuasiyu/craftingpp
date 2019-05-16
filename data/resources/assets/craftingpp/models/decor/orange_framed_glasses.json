@@ -1,7 +1,0 @@
-{
-	"parent": "craftingpp:decor/hat",
-	"textures": {
-		"hat": "craftingpp:decor/orange_framed_glasses",
-		"item": "craftingpp:decor/orange_framed_glasses_item"
-	}
-}

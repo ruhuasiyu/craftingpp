@@ -1,0 +1,6 @@
+{
+    "parent": "cpp:painting/painting",
+    "textures": {
+        "layer0": "cpp:painting/06"
+    }
+}

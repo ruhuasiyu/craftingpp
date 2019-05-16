@@ -4,6 +4,6 @@
         "layer0": "item/chicken"
     },
 	"overrides": [
-		{ "predicate": { "custom_model_data": 12970001 }, "model": "craftingpp:food/parrot_meat"}
+		{ "predicate": { "custom_model_data": 12970001 }, "model": "cpp:food/parrot_meat"}
 	]
 }

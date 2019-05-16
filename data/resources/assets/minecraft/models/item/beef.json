@@ -4,6 +4,6 @@
         "layer0": "item/beef"
     },
 	"overrides": [
-		{ "predicate": { "custom_model_data": 12970001 }, "model": "craftingpp:food/bear_meat"}
+		{ "predicate": { "custom_model_data": 12970001 }, "model": "cpp:food/bear_meat"}
 	]
 }

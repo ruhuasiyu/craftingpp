@@ -1,7 +1,0 @@
-{
-	"parent": "craftingpp:decor/hat",
-	"textures": {
-		"hat": "craftingpp:decor/garland",
-		"item": "craftingpp:decor/garland_item"
-	}
-}

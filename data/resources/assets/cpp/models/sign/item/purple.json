@@ -1,0 +1,7 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "particle": "cpp:sign/item/purple",
+        "layer0": "cpp:sign/item/purple"
+    }
+}

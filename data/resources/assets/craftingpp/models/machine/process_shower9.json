@@ -1,6 +1,0 @@
-{
-    "parent": "craftingpp:machine/process",
-    "textures": {
-        "layer0": "craftingpp:machine/process_shower9"
-    }
-}

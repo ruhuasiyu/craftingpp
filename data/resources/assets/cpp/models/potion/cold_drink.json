@@ -1,0 +1,7 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "cpp:potion/cold_drink",
+		"layer1": "cpp:potion/cold_drink"
+	}		
+}

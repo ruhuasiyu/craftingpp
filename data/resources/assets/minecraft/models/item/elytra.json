@@ -8,7 +8,7 @@
 			"predicate": {
 				"custom_model_data": 12970001
 			},
-			"model": "craftingpp:tool/shooting_star"
+			"model": "cpp:tool/shooting_star"
 		},
         {
             "predicate": {

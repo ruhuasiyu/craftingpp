@@ -1,6 +1,0 @@
-{
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "craftingpp:food/braised_porkchop_with_potato"
-    }
-}

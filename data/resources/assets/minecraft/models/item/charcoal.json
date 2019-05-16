@@ -4,6 +4,6 @@
         "layer0": "item/charcoal"
     },
 	"overrides": [
-		{ "predicate": { "custom_model_data": 12970024 }, "model": "craftingpp:material/cinder"}
+		{ "predicate": { "custom_model_data": 12970024 }, "model": "cpp:material/cinder"}
 	]
 }

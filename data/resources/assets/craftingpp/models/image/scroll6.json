@@ -1,6 +1,0 @@
-{
-    "parent": "craftingpp:image/scroll",
-    "textures": {
-        "layer0": "craftingpp:image/scroll6"
-    }
-}

@@ -1,6 +1,0 @@
-{
-    "parent": "craftingpp:plant/plant",
-    "textures": {
-        "crop": "craftingpp:plant/glazed_shade3"
-    }
-}

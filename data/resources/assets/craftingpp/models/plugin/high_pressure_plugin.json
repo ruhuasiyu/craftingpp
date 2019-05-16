@@ -1,6 +1,0 @@
-{
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "craftingpp:plugin/high_pressure_plugin"
-    }
-}

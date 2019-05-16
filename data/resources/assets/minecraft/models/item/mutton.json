@@ -4,9 +4,9 @@
         "layer0": "item/mutton"
     },
 	"overrides": [
-		{ "predicate": { "custom_model_data": 12970001 }, "model": "craftingpp:food/horse_meat"},
-		{ "predicate": { "custom_model_data": 12970002 }, "model": "craftingpp:food/donkey_meat"},
-		{ "predicate": { "custom_model_data": 12970003 }, "model": "craftingpp:food/mule_meat"},
-		{ "predicate": { "custom_model_data": 12970004 }, "model": "craftingpp:food/llama_meat"}
+		{ "predicate": { "custom_model_data": 12970001 }, "model": "cpp:food/horse_meat"},
+		{ "predicate": { "custom_model_data": 12970002 }, "model": "cpp:food/donkey_meat"},
+		{ "predicate": { "custom_model_data": 12970003 }, "model": "cpp:food/mule_meat"},
+		{ "predicate": { "custom_model_data": 12970004 }, "model": "cpp:food/llama_meat"}
 	]
 }

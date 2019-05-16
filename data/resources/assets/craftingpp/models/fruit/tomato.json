@@ -1,6 +1,0 @@
-{
-    "parent": "craftingpp:fruit/fruit",
-    "textures": {
-        "layer0": "craftingpp:fruit/tomato"
-    }
-}

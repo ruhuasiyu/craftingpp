@@ -5,6 +5,6 @@
         "layer1": "item/potion"
     },
 	"overrides": [
-		{ "predicate": { "custom_model_data": 12970001 }, "model": "craftingpp:potion/cold_drink"}
+		{ "predicate": { "custom_model_data": 12970001 }, "model": "cpp:potion/cold_drink"}
 	]		
 }

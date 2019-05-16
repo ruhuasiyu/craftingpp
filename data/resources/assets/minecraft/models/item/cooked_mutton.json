@@ -4,9 +4,9 @@
         "layer0": "item/cooked_mutton"
     },
 	"overrides": [
-		{ "predicate": { "custom_model_data": 12970001 }, "model": "craftingpp:food/cooked_horse_meat"},
-		{ "predicate": { "custom_model_data": 12970002 }, "model": "craftingpp:food/cooked_donkey_meat"},
-		{ "predicate": { "custom_model_data": 12970003 }, "model": "craftingpp:food/cooked_mule_meat"},
-		{ "predicate": { "custom_model_data": 12970004 }, "model": "craftingpp:food/cooked_llama_meat"}
+		{ "predicate": { "custom_model_data": 12970001 }, "model": "cpp:food/cooked_horse_meat"},
+		{ "predicate": { "custom_model_data": 12970002 }, "model": "cpp:food/cooked_donkey_meat"},
+		{ "predicate": { "custom_model_data": 12970003 }, "model": "cpp:food/cooked_mule_meat"},
+		{ "predicate": { "custom_model_data": 12970004 }, "model": "cpp:food/cooked_llama_meat"}
 	]
 }
