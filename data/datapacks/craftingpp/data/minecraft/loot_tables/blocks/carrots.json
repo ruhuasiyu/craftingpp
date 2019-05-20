@@ -6,13 +6,7 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:carrot",
-					"functions": [
-						{
-							"function": "set_nbt",
-							"tag": "{display:{Lore:[\"{\\\"text\\\":\\\"§r\\\"}\"]}}"
-						}
-					]
+					"name": "minecraft:carrot"
 				}
 			]
 		},
@@ -40,10 +34,6 @@
 								"extra": 3,
 								"probability": 0.5714286
 							}
-						},
-						{
-							"function": "set_nbt",
-							"tag": "{display:{Lore:[\"{\\\"text\\\":\\\"§r\\\"}\"]}}"
 						}
 					]
 				}

@@ -13,10 +13,6 @@
 								"min": 0,
 								"max": 3
 							}
-						},
-						{
-							"function": "set_nbt",
-							"tag": "{display:{Lore:[\"{\\\"text\\\":\\\"§r\\\"}\"]}}"
 						}
 					]
 				}
@@ -33,13 +29,7 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:poisonous_potato",
-					"functions": [
-						{
-							"function": "set_nbt",
-							"tag": "{display:{Lore:[\"{\\\"text\\\":\\\"§r\\\"}\"]}}"
-						}
-					]
+					"name": "minecraft:poisonous_potato"
 				}
 			]
 		},

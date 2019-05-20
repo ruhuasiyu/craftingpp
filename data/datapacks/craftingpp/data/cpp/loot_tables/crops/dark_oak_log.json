@@ -1,11 +1,17 @@
 {
 	"pools": [
 		{
-			"rolls": 4,
+			"rolls": 1,
 			"entries": [
 				{
 					"type": "item",
-					"name": "minecraft:dark_oak_log"
+					"name": "minecraft:dark_oak_log",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": 4
+						}
+					]
 				}
 			]
 		},

@@ -6,13 +6,7 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:potato",
-					"functions": [
-						{
-							"function": "set_nbt",
-							"tag": "{display:{Lore:[\"{\\\"text\\\":\\\"§r\\\"}\"]}}"
-						}
-					]
+					"name": "minecraft:potato"
 				}
 			]
 		},
@@ -40,10 +34,6 @@
 								"extra": 3,
 								"probability": 0.5714286
 							}
-						},
-						{
-							"function": "set_nbt",
-							"tag": "{display:{Lore:[\"{\\\"text\\\":\\\"§r\\\"}\"]}}"
 						}
 					]
 				}
@@ -69,13 +59,7 @@
 						}
 					],
 					"type": "minecraft:item",
-					"name": "minecraft:poisonous_potato",
-					"functions": [
-						{
-							"function": "set_nbt",
-							"tag": "{display:{Lore:[\"{\\\"text\\\":\\\"§r\\\"}\"]}}"
-						}
-					]
+					"name": "minecraft:poisonous_potato"
 				}
 			]
 		},

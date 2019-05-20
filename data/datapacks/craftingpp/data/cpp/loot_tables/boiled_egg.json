@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{display:{\"Name\":\"{\\\"translate\\\":\\\"item.cpp.boiled_egg\\\"}\",Lore:[\"{\\\"text\\\":\\\"§r\\\"}\"]},id:\"cpp:boiled_egg\",CustomModelData:12970001}"
+							"tag": "{display:{\"Name\":\"{\\\"translate\\\":\\\"item.cpp.boiled_egg\\\"}\"},id:\"cpp:boiled_egg\",CustomModelData:12970001}"
 						}
 					]
 				}

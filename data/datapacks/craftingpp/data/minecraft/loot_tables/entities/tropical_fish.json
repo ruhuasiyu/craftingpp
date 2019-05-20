@@ -6,13 +6,7 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "minecraft:tropical_fish",
-					"functions": [
-						{
-							"function": "set_nbt",
-							"tag": "{display:{Lore:[\"{\\\"text\\\":\\\"§r\\\"}\"]}}"
-						}
-					]
+					"name": "minecraft:tropical_fish"
 				}
 			]
 		},

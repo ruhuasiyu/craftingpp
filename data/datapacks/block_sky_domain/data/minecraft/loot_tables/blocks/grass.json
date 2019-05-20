@@ -36,23 +36,11 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:potato",
-					"functions": [
-						{
-							"function": "set_nbt",
-							"tag": "{display:{Lore:[\"{\\\"text\\\":\\\"§r\\\"}\"]}}"
-						}
-					]
+					"name": "minecraft:potato"
 				},
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:carrot",
-					"functions": [
-						{
-							"function": "set_nbt",
-							"tag": "{display:{Lore:[\"{\\\"text\\\":\\\"§r\\\"}\"]}}"
-						}
-					]
+					"name": "minecraft:carrot"
 				},
 				{
 					"type": "minecraft:item",

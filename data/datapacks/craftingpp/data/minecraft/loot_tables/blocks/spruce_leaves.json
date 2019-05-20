@@ -79,11 +79,11 @@
 									"chance": 0.1
 								}
 							],
-							"name": "minecraft:string",
+							"name": "minecraft:firework_star",
 							"functions": [
 								{
-									"function": "minecraft:set_nbt",
-									"tag": "{isSkyDrop:1b}"
+									"function": "set_nbt",
+									"tag": "{isSkyDrop:1b,isStringMarker:1b,CustomModelData:12971000}"
 								}
 							]
 						},
@@ -95,11 +95,11 @@
 									"chance": 0.1
 								}
 							],
-							"name": "minecraft:bone_meal",
+							"name": "minecraft:firework_star",
 							"functions": [
 								{
-									"function": "minecraft:set_nbt",
-									"tag": "{isSkyDrop:1b}"
+									"function": "set_nbt",
+									"tag": "{isSkyDrop:1b,isBoneMealMarker:1b,CustomModelData:12971000}"
 								}
 							]
 						}

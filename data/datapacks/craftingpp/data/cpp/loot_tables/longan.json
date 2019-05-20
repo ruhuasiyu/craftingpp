@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag":"{isFruit:1b,id:\"cpp:longan\",display:{Name:\"{\\\"translate\\\":\\\"item.cpp.longan\\\"}\",Lore:[\"{\\\"text\\\":\\\"§r\\\"}\"]},CustomModelData:12970012}"
+							"tag":"{isFruit:1b,id:\"cpp:longan\",display:{Name:\"{\\\"translate\\\":\\\"item.cpp.longan\\\"}\"},CustomModelData:12970012}"
 						}
 					]				}
 			]

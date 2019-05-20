@@ -18,13 +18,7 @@
 								}
 							],
 							"type": "minecraft:item",
-							"name": "minecraft:beetroot",
-							"functions": [
-								{
-									"function": "set_nbt",
-									"tag": "{display:{Lore:[\"{\\\"text\\\":\\\"§r\\\"}\"]}}"
-								}
-							]
+							"name": "minecraft:beetroot"
 						},
 						{
 							"type": "minecraft:item",

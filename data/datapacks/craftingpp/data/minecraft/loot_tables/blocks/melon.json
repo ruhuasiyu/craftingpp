@@ -54,10 +54,6 @@
 								},
 								{
 									"function": "minecraft:explosion_decay"
-								},
-								{
-									"function": "set_nbt",
-									"tag": "{display:{Lore:[\"{\\\"text\\\":\\\"§r\\\"}\"]}}"
 								}
 							]
 						}

@@ -20,23 +20,11 @@
 								}
 							],
 							"type": "minecraft:item",
-							"name": "minecraft:cod",
-							"functions": [
-								{
-									"function": "set_nbt",
-									"tag": "{display:{Lore:[\"{\\\"text\\\":\\\"§r\\\"}\"]}}"
-								}
-							]
+							"name": "minecraft:cod"
 						},
 						{
 							"type": "item",
-							"name": "minecraft:cooked_cod",
-							"functions": [
-								{
-									"function": "set_nbt",
-									"tag": "{display:{Lore:[\"{\\\"text\\\":\\\"§r\\\"}\"]}}"
-								}
-							]
+							"name": "minecraft:cooked_cod"
 						}
 					]
 				}

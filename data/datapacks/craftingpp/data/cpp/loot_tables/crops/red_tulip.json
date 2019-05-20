@@ -1,11 +1,17 @@
 {
 	"pools": [
 		{
-			"rolls": 4,
+			"rolls": 1,
 			"entries": [
 				{
 					"type": "item",
-					"name": "minecraft:red_tulip"
+					"name": "minecraft:red_tulip",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": 4
+						}
+					]
 				}
 			]
 		}

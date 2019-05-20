@@ -32,8 +32,9 @@ execute as @e[tag=cpp_roost] at @s unless block ~ ~ ~ dead_fire_coral_fan run fu
 execute as @e[type=chicken,nbt={EggLayTime:100}] at @s run function cpp:roost/check
 
 # 空岛树叶控制
-execute if score #load_block_sky_domain cppValue matches -1..0 run kill @e[type=item,nbt={Item:{tag:{isSkyDrop:1b}}}]
-execute if score #load_block_sky_domain cppValue matches 1..2 as @e[type=item,nbt={Item:{tag:{isSkyDrop:1b}}}] run data remove entity @s Item.tag
+execute if score #load_block_sky_domain cppValue matches 1..2 at @e[type=item,nbt={Item:{tag:{isStringMarker:1b}}}] run summon item ~ ~ ~ {Item:{id:"minecraft:string",Count:1b}}
+execute if score #load_block_sky_domain cppValue matches 1..2 at @e[type=item,nbt={Item:{tag:{isBoneMealMarker:1b}}}] run summon item ~ ~ ~ {Item:{id:"minecraft:bone_meal",Count:1b}}
+kill @e[type=item,nbt={Item:{tag:{isSkyDrop:1b}}}]
 
 # 附魔之瓶
 execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:hopper"}]}] run function cpp:xp/check
@@ -67,20 +68,8 @@ execute as @e[type=armor_stand,tag=cpp_furnace] at @s if block ~ ~ ~ furnace{Coo
 execute as @e[type=armor_stand,tag=cpp_smoker] at @s if block ~ ~ ~ smoker{CookTime:99s} run function cpp:furnace/type
 execute as @e[type=armor_stand,tag=cpp_blast_furnace] at @s if block ~ ~ ~ blast_furnace{CookTime:99s} run function cpp:furnace/type
 
-execute as @e[type=armor_stand,tag=cpp_all_furnace] at @s unless data block ~ ~ ~ Items[{Slot:2b}].tag.display.Lore run function cpp:furnace/lore
-
 execute as @e[type=armor_stand,tag=cpp_campfire] at @s unless block ~ ~ ~ campfire run kill @s
 execute as @e[type=armor_stand,tag=cpp_campfire] at @s if block ~ ~ ~ campfire[lit=true]{Items:[{}]} run function cpp:campfire/check
-
-# 显示饱食度
-execute as @e[type=item,nbt={Item:{id:"minecraft:mushroom_stew"}}] unless data entity @s Item.tag.display.Lore run data merge entity @s {Item:{tag:{display:{Lore:["{\"text\":\"§r\"}"]}}}}
-execute as @e[type=item,nbt={Item:{id:"minecraft:bread"}}] unless data entity @s Item.tag.display.Lore run data merge entity @s {Item:{tag:{display:{Lore:["{\"text\":\"§r\"}"]}}}}
-execute as @e[type=item,nbt={Item:{id:"minecraft:golden_apple"}}] unless data entity @s Item.tag.display.Lore run data merge entity @s {Item:{tag:{display:{Lore:["{\"text\":\"§r\"}"]}}}}
-execute as @e[type=item,nbt={Item:{id:"minecraft:cookie"}}] unless data entity @s Item.tag.display.Lore run data merge entity @s {Item:{tag:{display:{Lore:["{\"text\":\"§r\"}"]}}}}
-execute as @e[type=item,nbt={Item:{id:"minecraft:dried_kelp"}}] unless data entity @s Item.tag.display.Lore run data merge entity @s {Item:{tag:{display:{Lore:["{\"text\":\"§r\"}"]}}}}
-execute as @e[type=item,nbt={Item:{id:"minecraft:pumpkin_pie"}}] unless data entity @s Item.tag.display.Lore run data merge entity @s {Item:{tag:{display:{Lore:["{\"text\":\"§r\"}"]}}}}
-execute as @e[type=item,nbt={Item:{id:"minecraft:beetroot_soup"}}] unless data entity @s Item.tag.display.Lore run data merge entity @s {Item:{tag:{display:{Lore:["{\"text\":\"§r\"}"]}}}}
-execute as @e[type=item,nbt={Item:{id:"minecraft:sweet_berries"}}] unless data entity @s Item.tag.display.Lore run data merge entity @s {Item:{tag:{display:{Lore:["{\"text\":\"§r\"}"]}}}}
 
 # 酿造
 execute as @e[type=armor_stand,tag=cpp_brewing_stand] at @s unless block ~ ~ ~ brewing_stand run kill @s

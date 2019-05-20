@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{display:{\"Name\":\"{\\\"translate\\\":\\\"item.cpp.baked_carrot\\\"}\",Lore:[\"{\\\"text\\\":\\\"§r\\\"}\"]},id:\"cpp:baked_carrot\",CustomModelData:12970002}"
+							"tag": "{display:{\"Name\":\"{\\\"translate\\\":\\\"item.cpp.baked_carrot\\\"}\"},id:\"cpp:baked_carrot\",CustomModelData:12970002}"
 						}
 					]
 				}

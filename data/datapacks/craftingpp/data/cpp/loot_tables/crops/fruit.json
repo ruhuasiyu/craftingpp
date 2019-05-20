@@ -102,14 +102,20 @@
 			]
 		},
 		{
-			"rolls": {
-				"min": 0,
-				"max": 3
-			},
+			"rolls": 1,
 			"entries": [
 				{
 					"type":  "loot_table",
-					"name": "cpp:fruit_sapling"
+					"name": "cpp:fruit_sapling",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 0,
+								"max": 3
+							}
+						}
+					]
 				}
 			]
 		}

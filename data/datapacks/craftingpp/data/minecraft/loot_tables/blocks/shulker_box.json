@@ -14,7 +14,7 @@
 								{
 									"condition": "minecraft:match_tool",
 									"predicate": {
-										"enchantments": [{"enchantment": "minecraft:silk_touch", "levels": { "min": 255 }}]
+										"nbt":"{isShulkerMarker:1b}"
 									}
 								}
 							]

@@ -1,11 +1,17 @@
 {
 	"pools": [
 		{
-			"rolls": 2,
+			"rolls": 1,
 			"entries": [
 				{
 					"type": "item",
-					"name": "minecraft:melon"
+					"name": "minecraft:melon",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": 2
+						}
+					]
 				}
 			]
 		}

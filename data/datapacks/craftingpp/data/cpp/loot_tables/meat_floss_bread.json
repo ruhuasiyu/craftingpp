@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.meat_floss_bread\\\"}\",Lore:[\"{\\\"text\\\":\\\"§r\\\"}\",\"{\\\"translate\\\":\\\"lore.cpp.speed\\\"}\"]},id:\"cpp:meat_floss_bread\",CustomModelData:12970001}"
+							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.meat_floss_bread\\\"}\"},id:\"cpp:meat_floss_bread\",CustomModelData:12970001}"
 						}
 					]
 				}

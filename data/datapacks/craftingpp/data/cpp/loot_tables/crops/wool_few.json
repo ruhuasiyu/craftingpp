@@ -75,23 +75,11 @@
 				},
 				{
 					"type":"item",
-					"name":"minecraft:cod",
-					"functions": [
-						{
-							"function": "set_nbt",
-							"tag": "{display:{Lore:[\"{\\\"text\\\":\\\"§r\\\"}\"]}}"
-						}
-					]
+					"name":"minecraft:cod"
 				},
 				{
 					"type":"item",
-					"name":"minecraft:salmon",
-					"functions": [
-						{
-							"function": "set_nbt",
-							"tag": "{display:{Lore:[\"{\\\"text\\\":\\\"§r\\\"}\"]}}"
-						}
-					]
+					"name":"minecraft:salmon"
 				}
 			]
 		},

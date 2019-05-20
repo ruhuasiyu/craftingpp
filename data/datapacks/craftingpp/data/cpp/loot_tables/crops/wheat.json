@@ -1,11 +1,17 @@
 {
 	"pools": [
 		{
-			"rolls": 2,
+			"rolls": 1,
 			"entries": [
 				{
 					"type": "item",
-					"name": "minecraft:wheat"
+					"name": "minecraft:wheat",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": 2
+						}
+					]
 				}
 			]
 		},

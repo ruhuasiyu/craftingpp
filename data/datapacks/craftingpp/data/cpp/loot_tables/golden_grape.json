@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag":"{isFruit:1b,id:\"cpp:golden_grape\",display:{Name:\"{\\\"translate\\\":\\\"item.cpp.golden_grape\\\"}\",Lore:[\"{\\\"text\\\":\\\"§r\\\"}\"]},CustomModelData:12970007}"
+							"tag":"{isFruit:1b,id:\"cpp:golden_grape\",display:{Name:\"{\\\"translate\\\":\\\"item.cpp.golden_grape\\\"}\"},CustomModelData:12970007}"
 						}
 					]				}
 			]

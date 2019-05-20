@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.pizza\\\"}\",Lore:[\"{\\\"text\\\":\\\"§r\\\"}\"]},id:\"cpp:pizza\",CustomModelData:12970007}"
+							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.pizza\\\"}\"},id:\"cpp:pizza\",CustomModelData:12970007}"
 						}
 					]
 				}

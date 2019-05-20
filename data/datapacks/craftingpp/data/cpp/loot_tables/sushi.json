@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.sushi\\\"}\",Lore:[\"{\\\"text\\\":\\\"§r\\\"}\"]},id:\"cpp:sushi\",CustomModelData:12970008}"
+							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.sushi\\\"}\"},id:\"cpp:sushi\",CustomModelData:12970008}"
 						}
 					]
 				}

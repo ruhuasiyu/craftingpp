@@ -32,6 +32,5 @@
 		
 		{ "predicate": { "custom_model_data": 12970101 }, "model": "cpp:machine/sorcerer_stone"},
 		{ "predicate": { "custom_model_data": 12970102 }, "model": "cpp:machine/muffler"}
-		
 	]
 }

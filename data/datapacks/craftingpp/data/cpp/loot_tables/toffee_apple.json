@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.toffee_apple\\\"}\",Lore:[\"{\\\"text\\\":\\\"§r\\\"}\",\"{\\\"translate\\\":\\\"lore.cpp.speed\\\"}\"]},id:\"cpp:toffee_apple\",CustomModelData:12970100}"
+							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.toffee_apple\\\"}\",Lore:[\"{\\\"translate\\\":\\\"lore.cpp.speed\\\"}\"]},id:\"cpp:toffee_apple\",CustomModelData:12970100}"
 						}
 					]
 				}

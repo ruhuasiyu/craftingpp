@@ -1,15 +1,15 @@
 {
 	"pools": [
 		{
-			"rolls": 6,
+			"rolls": 1,
 			"entries": [
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:carrot",
 					"functions": [
 						{
-							"function": "set_nbt",
-							"tag": "{display:{Lore:[\"{\\\"text\\\":\\\"§r\\\"}\"]}}"
+							"function": "set_count",
+							"count": 6
 						}
 					]
 				}

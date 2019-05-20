@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{display:{\"Name\":\"{\\\"translate\\\":\\\"item.cpp.raw_braised_beef_with_potatoes\\\"}\",Lore:[\"{\\\"text\\\":\\\"§r\\\"}\"]},id:\"cpp:raw_braised_beef_with_potatoes\",CustomModelData:12970005,Effects:[{EffectDuration:4,EffectId:23b}]}"
+							"tag": "{display:{\"Name\":\"{\\\"translate\\\":\\\"item.cpp.raw_braised_beef_with_potatoes\\\"}\"},id:\"cpp:raw_braised_beef_with_potatoes\",CustomModelData:12970005,Effects:[{EffectDuration:4,EffectId:23b}]}"
 						}
 					]
 				}

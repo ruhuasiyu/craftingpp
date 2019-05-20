@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag":"{isFruit:1b,id:\"cpp:persimmon\",display:{Name:\"{\\\"translate\\\":\\\"item.cpp.persimmon\\\"}\",Lore:[\"{\\\"text\\\":\\\"§r\\\"}\"]},CustomModelData:12970020}"
+							"tag":"{isFruit:1b,id:\"cpp:persimmon\",display:{Name:\"{\\\"translate\\\":\\\"item.cpp.persimmon\\\"}\"},CustomModelData:12970020}"
 						}
 					]				}
 			]

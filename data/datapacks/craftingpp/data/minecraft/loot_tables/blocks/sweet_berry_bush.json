@@ -2,17 +2,11 @@
 	"type": "minecraft:block",
 	"pools": [
 		{
-			"rolls": 1.0,
+			"rolls": 1,
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:sweet_berries",
-					"functions": [
-						{
-							"function": "set_nbt",
-							"tag":"{display:{Lore:[\"{\\\"text\\\":\\\"§r\\\"}\"]}}"
-						}
-					]
+					"name": "minecraft:sweet_berries"
 				}
 			],
 			"conditions": [
@@ -48,13 +42,7 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:sweet_berries",
-					"functions": [
-						{
-							"function": "set_nbt",
-							"tag":"{display:{Lore:[\"{\\\"text\\\":\\\"§r\\\"}\"]}}"
-						}
-					]
+					"name": "minecraft:sweet_berries"
 				}
 			],
 			"conditions": [

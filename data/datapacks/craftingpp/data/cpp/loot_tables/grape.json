@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag":"{isFruit:1b,id:\"cpp:grape\",display:{Name:\"{\\\"translate\\\":\\\"item.cpp.grape\\\"}\",Lore:[\"{\\\"text\\\":\\\"§r\\\"}\"]},CustomModelData:12970008}"
+							"tag":"{isFruit:1b,id:\"cpp:grape\",display:{Name:\"{\\\"translate\\\":\\\"item.cpp.grape\\\"}\"},CustomModelData:12970008}"
 						}
 					]				}
 			]

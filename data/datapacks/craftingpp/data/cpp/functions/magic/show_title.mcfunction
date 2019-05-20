@@ -1,14 +1,14 @@
-execute as @s[scores={cppKey=1}] run summon item ~ ~ ~ {Tags:["cpp_temp"],Item:{id:"minecraft:stone",Count:1b,tag:{text:""}}}
-execute as @s[scores={cppKey=2}] run summon item ~ ~ ~ {Tags:["cpp_temp"],Item:{id:"minecraft:stone",Count:1b,tag:{text:""}}}
-execute as @s[scores={cppKey=3}] run summon item ~ ~ ~ {Tags:["cpp_temp"],Item:{id:"minecraft:stone",Count:1b,tag:{text:""}}}
-execute as @s[scores={cppKey=4}] run summon item ~ ~ ~ {Tags:["cpp_temp"],Item:{id:"minecraft:stone",Count:1b,tag:{text:""}}}
-execute as @s[scores={cppKey=5}] run summon item ~ ~ ~ {Tags:["cpp_temp"],Item:{id:"minecraft:stone",Count:1b,tag:{text:""}}}
-execute as @s[scores={cppKey=6}] run summon item ~ ~ ~ {Tags:["cpp_temp"],Item:{id:"minecraft:stone",Count:1b,tag:{text:""}}}
-execute as @s[scores={cppKey=7}] run summon item ~ ~ ~ {Tags:["cpp_temp"],Item:{id:"minecraft:stone",Count:1b,tag:{text:""}}}
-execute as @s[scores={cppKey=8}] run summon item ~ ~ ~ {Tags:["cpp_temp"],Item:{id:"minecraft:stone",Count:1b,tag:{text:""}}}
-execute as @s[scores={cppKey=9}] run summon item ~ ~ ~ {Tags:["cpp_temp"],Item:{id:"minecraft:stone",Count:1b,tag:{text:""}}}
-execute as @s[scores={cppKey=10}] run summon item ~ ~ ~ {Tags:["cpp_temp"],Item:{id:"minecraft:stone",Count:1b,tag:{text:""}}}
-execute as @s[scores={cppKey=11}] run summon item ~ ~ ~ {Tags:["cpp_temp"],Item:{id:"minecraft:stone",Count:1b,tag:{text:""}}}
+execute as @s[scores={cppKey=1}] run summon item ~ ~ ~ {Tags:["cpp_temp"],Item:{id:"minecraft:firework_star",Count:1b,tag:{text:"",CustomModelData:12971000}}}
+execute as @s[scores={cppKey=2}] run summon item ~ ~ ~ {Tags:["cpp_temp"],Item:{id:"minecraft:firework_star",Count:1b,tag:{text:"",CustomModelData:12971000}}}
+execute as @s[scores={cppKey=3}] run summon item ~ ~ ~ {Tags:["cpp_temp"],Item:{id:"minecraft:firework_star",Count:1b,tag:{text:"",CustomModelData:12971000}}}
+execute as @s[scores={cppKey=4}] run summon item ~ ~ ~ {Tags:["cpp_temp"],Item:{id:"minecraft:firework_star",Count:1b,tag:{text:"",CustomModelData:12971000}}}
+execute as @s[scores={cppKey=5}] run summon item ~ ~ ~ {Tags:["cpp_temp"],Item:{id:"minecraft:firework_star",Count:1b,tag:{text:"",CustomModelData:12971000}}}
+execute as @s[scores={cppKey=6}] run summon item ~ ~ ~ {Tags:["cpp_temp"],Item:{id:"minecraft:firework_star",Count:1b,tag:{text:"",CustomModelData:12971000}}}
+execute as @s[scores={cppKey=7}] run summon item ~ ~ ~ {Tags:["cpp_temp"],Item:{id:"minecraft:firework_star",Count:1b,tag:{text:"",CustomModelData:12971000}}}
+execute as @s[scores={cppKey=8}] run summon item ~ ~ ~ {Tags:["cpp_temp"],Item:{id:"minecraft:firework_star",Count:1b,tag:{text:"",CustomModelData:12971000}}}
+execute as @s[scores={cppKey=9}] run summon item ~ ~ ~ {Tags:["cpp_temp"],Item:{id:"minecraft:firework_star",Count:1b,tag:{text:"",CustomModelData:12971000}}}
+execute as @s[scores={cppKey=10}] run summon item ~ ~ ~ {Tags:["cpp_temp"],Item:{id:"minecraft:firework_star",Count:1b,tag:{text:"",CustomModelData:12971000}}}
+execute as @s[scores={cppKey=11}] run summon item ~ ~ ~ {Tags:["cpp_temp"],Item:{id:"minecraft:firework_star",Count:1b,tag:{text:"",CustomModelData:12971000}}}
 
 title @s[scores={cppMana=0..4}] actionbar [{"nbt":"Item.tag.text","entity":"@e[type=item,distance=..1,tag=cpp_temp,limit=1]"},{"text":" \ue010"}]
 title @s[scores={cppMana=5..14}] actionbar [{"nbt":"Item.tag.text","entity":"@e[type=item,distance=..1,tag=cpp_temp,limit=1]"},{"text":" \ue011"}]

@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag":"{isFruit:1b,id:\"cpp:plum\",display:{Name:\"{\\\"translate\\\":\\\"item.cpp.plum\\\"}\",Lore:[\"{\\\"text\\\":\\\"§r\\\"}\"]},CustomModelData:12970021}"
+							"tag":"{isFruit:1b,id:\"cpp:plum\",display:{Name:\"{\\\"translate\\\":\\\"item.cpp.plum\\\"}\"},CustomModelData:12970021}"
 						}
 					]				}
 			]

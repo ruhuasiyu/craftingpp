@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.dumpling\\\"}\",Lore:[\"{\\\"text\\\":\\\"§r\\\"}\"]},id:\"cpp:dumpling\",CustomModelData:12970003}"
+							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.dumpling\\\"}\"},id:\"cpp:dumpling\",CustomModelData:12970003}"
 						},
 						{
 							"function": "set_count",

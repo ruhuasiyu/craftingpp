@@ -2,20 +2,6 @@
 	"providers": [
 		{
 			"type": "bitmap",
-			"file": "minecraft:font/hunger.png",
-			"height": 9,
-			"ascent": 9,
-			"chars": ["\ue001"]
-		},
-		{
-			"type": "bitmap",
-			"file": "minecraft:font/half_hunger.png",
-			"height": 9,
-			"ascent": 9,
-			"chars": ["\ue002"]
-		},
-		{
-			"type": "bitmap",
 			"file": "minecraft:font/mana0.png",
 			"height": 91,
 			"ascent": 85,

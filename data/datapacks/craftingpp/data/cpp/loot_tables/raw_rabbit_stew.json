@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{display:{\"Name\":\"{\\\"translate\\\":\\\"item.cpp.raw_rabbit_stew\\\"}\",Lore:[\"{\\\"text\\\":\\\"§r\\\"}\"]},id:\"cpp:raw_rabbit_stew\",CustomModelData:12970007,Effects:[{EffectDuration:4,EffectId:23b}]}"
+							"tag": "{display:{\"Name\":\"{\\\"translate\\\":\\\"item.cpp.raw_rabbit_stew\\\"}\"},id:\"cpp:raw_rabbit_stew\",CustomModelData:12970007,Effects:[{EffectDuration:4,EffectId:23b}]}"
 						}
 					]
 				}

@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.christmas_roast_chicken\\\"}\",Lore:[\"{\\\"text\\\":\\\"§r\\\"}\"]},id:\"cpp:christmas_roast_chicken\",CustomModelData:12970002}"
+							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.christmas_roast_chicken\\\"}\"},id:\"cpp:christmas_roast_chicken\",CustomModelData:12970002}"
 						}
 					]
 				}

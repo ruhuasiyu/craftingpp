@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.llama_meat\\\"}\",Lore:[\"{\\\"text\\\":\\\"§r\\\"}\"]},id:\"cpp:llama_meat\",CustomModelData:12970004}"
+							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.llama_meat\\\"}\"},id:\"cpp:llama_meat\",CustomModelData:12970004}"
 						}
 					]
 				}

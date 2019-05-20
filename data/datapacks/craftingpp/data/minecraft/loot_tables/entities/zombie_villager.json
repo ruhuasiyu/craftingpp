@@ -21,10 +21,6 @@
 								"min": 0,
 								"max": 1
 							}
-						},
-						{
-							"function": "set_nbt",
-							"tag": "{display:{Lore:[\"{\\\"text\\\":\\\"§r\\\"}\"]}}"
 						}
 					]
 				}
@@ -61,23 +57,11 @@
 				},
 				{
 					"type": "item",
-					"name": "minecraft:carrot",
-					"functions": [
-						{
-							"function": "set_nbt",
-							"tag": "{display:{Lore:[\"{\\\"text\\\":\\\"§r\\\"}\"]}}"
-						}
-					]
+					"name": "minecraft:carrot"
 				},
 				{
 					"type": "item",
-					"name": "minecraft:potato",
-					"functions": [
-						{
-							"function": "set_nbt",
-							"tag": "{display:{Lore:[\"{\\\"text\\\":\\\"§r\\\"}\"]}}"
-						}
-					]
+					"name": "minecraft:potato"
 				}
 			]
 		},

@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag":"{isFruit:1b,id:\"cpp:payapa\",display:{Name:\"{\\\"translate\\\":\\\"item.cpp.payapa\\\"}\",Lore:[\"{\\\"text\\\":\\\"§r\\\"}\"]},CustomModelData:12970017}"
+							"tag":"{isFruit:1b,id:\"cpp:payapa\",display:{Name:\"{\\\"translate\\\":\\\"item.cpp.payapa\\\"}\"},CustomModelData:12970017}"
 						}
 					]				}
 			]
