@@ -19,5 +19,5 @@ execute as @s[scores={cppGolemFace=5}] at @s run tp @s ~0 ~-0.1 ~0 0 -90
 execute as @s[tag=cpp_golem_miner] unless block ~ ~ ~ #cpp:golem_control_blocks run function cpp:golem/miner
 execute as @s[tag=cpp_golem_farmer] run function cpp:golem/farmer
 execute as @s[tag=cpp_golem_fisher] if block ~ ~ ~ water run function cpp:golem/fisher
-execute as @s[tag=cpp_golem_warrior] if entity @e[type=#cpp:normal_mob,distance=..1,nbt={Invulnerable:0b}] run function cpp:golem/warrior
+execute as @s[tag=cpp_golem_warrior] if entity @e[type=#cpp:golem_warrier,distance=..1,nbt={Invulnerable:0b}] run function cpp:golem/warrior
 execute as @s[tag=cpp_golem_herder] run function cpp:golem/herder
