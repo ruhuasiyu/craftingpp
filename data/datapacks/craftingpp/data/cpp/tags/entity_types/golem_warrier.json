@@ -1,0 +1,8 @@
+{
+	"replace": false,
+	"values": [
+		"#cpp:normal_mob",
+		"minecraft:villager",
+		"minecraft:wandering_trader"
+	]
+}
