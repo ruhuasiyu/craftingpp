@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.golem_warrior\\\"}\"},id:\"cpp:golem_warrior\",CustomModelData:12970024}"
+							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.golem_warrior\\\"}\"},id:\"cpp:golem_warrior\",CustomModelData:12970024,StoredTool:{id:\"minecraft:diamond_sword\",Count:1b}}"
 						}
 					]
 				}

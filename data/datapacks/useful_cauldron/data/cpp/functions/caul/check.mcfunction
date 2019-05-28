@@ -84,4 +84,5 @@ execute as @s[nbt={Item:{id:"minecraft:black_concrete_powder"}}] run function cp
 execute as @s[nbt={Item:{id:"minecraft:sponge"}}] run function cpp:caul/type/sponge
 execute as @s[nbt={Item:{id:"minecraft:lava_bucket"}}] run function cpp:caul/type/lava_bucket
 execute as @s[nbt={Item:{id:"minecraft:sticky_piston"}}] run function cpp:caul/type/sticky_piston
+execute as @s[nbt={Item:{id:"minecraft:filled_map"}}] run function cpp:caul/type/filled_map
 

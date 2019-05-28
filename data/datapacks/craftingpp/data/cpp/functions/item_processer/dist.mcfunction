@@ -112,6 +112,7 @@ execute as @s[scores={cppMacType=806}] run loot insert ~ ~ ~ loot blocks/obsidia
 execute as @s[scores={cppMacType=806}] run loot insert ~ ~ ~ loot cpp:items/bucket
 execute as @s[scores={cppMacType=807}] run loot insert ~ ~ ~ loot blocks/piston
 execute as @s[scores={cppMacType=808}] run loot insert ~ ~ ~ loot cpp:items/potion_of_water
+execute as @s[scores={cppMacType=809}] run loot insert ~ ~ ~ loot cpp:items/map
 
 execute as @s[scores={cppMacType=811}] run loot insert ~ ~ ~ loot blocks/white_concrete
 execute as @s[scores={cppMacType=812}] run loot insert ~ ~ ~ loot blocks/orange_concrete

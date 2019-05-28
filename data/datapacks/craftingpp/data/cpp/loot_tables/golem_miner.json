@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.golem_miner\\\"}\"},id:\"cpp:golem_miner\",CustomModelData:12970022}"
+							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.golem_miner\\\"}\"},id:\"cpp:golem_miner\",CustomModelData:12970022,StoredTool:{id:\"minecraft:diamond_pickaxe\",Count:1b}}"
 						}
 					]
 				}

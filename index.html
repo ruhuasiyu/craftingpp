@@ -2,7 +2,7 @@
 <html lang="zh-cmn-Hans">
 <head>
 <meta charset="utf-8" />
-<title>更多的合成 Crafting++ v1.9.2</title>
+<title>更多的合成 Crafting++ v1.9.3</title>
 <meta name='author' content='ruhuasiyu@mcbbs' />
 <meta name='keywords' content='minecraft, 原版模组, vanilla mod, datapacks, Crafting++' />
 <meta name='description' content='Minecraft 原版模组 更多的合成' />
@@ -49,11 +49,11 @@
 <p style="color:red">🎉欢迎来到原版模组《更多的合成》主页！</p>
 <p>原版模组一般是指使用命令而非<abbr title="forge liteloader rift fibric 等">mod api</abbr>来对游戏的可玩性做出修改。自1.13起，原版模组一般以数据包的形式出现。</p>
 <p>《更多的合成》是国内论坛最大的原版模组，包括数百种物品、材料、工具、装饰等，以及新的村民交易和空岛系统。</p>
-<p>最新正式版本为v1.9.2，于2019年5月20日发布，支持Minecraft 1.14版本。此次更新添加了魔杖的魔法效果，对大量模组物品和方块材质进行了重新绘制，同时也添加了很多实用工具、食物、装饰和药水。具体来说，加入了物品处理机、剪枝器、玻璃镐、搬箱器、垃圾桶、旗帜、标志、汉堡、披萨、寿司、仰望星空派、水果、葡萄干等，以及重新设计了花草、头颅和空岛。此次更新也加入了获取物品的便捷方式，优化了大量指令，加入了很多可自动化的内容。</p>
+<p>最新正式版本为v1.9.3，于2019年5月25日发布，支持Minecraft 1.14版本。此次更新添加了魔杖的魔法效果，对大量模组物品和方块材质进行了重新绘制，同时也添加了很多实用工具、食物、装饰和药水。具体来说，加入了物品处理机、剪枝器、玻璃镐、搬箱器、垃圾桶、旗帜、标志、汉堡、披萨、寿司、仰望星空派、水果、葡萄干等，以及重新设计了花草、头颅和空岛。此次更新也加入了获取物品的便捷方式，优化了大量指令，加入了很多可自动化的内容。</p>
 <p>本模组即将完结，以后应该只会修复bug和优化内容，不会再有大的更新。如遇到Minecraft命令机制大改或新生物等内容，我还是会及时更新代码并支持新的内容。感谢大家一直以来的支持和帮助！</p>
 
 <h3 id="download">📦 下载地址</h3>
-<p>本页面所列内容为1.9.2版本。不建议玩家使用旧版本，同时新版本放出后，旧版本一律不再更新和修复bug。</p>
+<p>本页面所列内容为1.9.3版本。不建议玩家使用旧版本，同时新版本放出后，旧版本一律不再更新和修复bug。</p>
 <ul>
 	<li><a href="http://home.ustc.edu.cn/~zsxqq/craftingpp">官方主页</a></li>
 	<li><a href="http://www.mcbbs.net/thread-696861-1-1.html">mcbbs中文论坛页面</a></li>
@@ -65,9 +65,9 @@
 <tbody>
 <tr>
 	<td>Minecraft Java版 1.14-1.14.2</td>
-	<td>Crafting++ 1.9.2</td>
-	<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/releases/tag/v1.9.2">github</a>
-	  | <a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.9.21.9.2.zip">官方</a></td>
+	<td>Crafting++ 1.9.3</td>
+	<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/releases/tag/v1.9.3">github</a>
+	  | <a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.9.3.zip">官方</a></td>
 </tr>
 <tr>
 	<td>Minecraft Java版 1.13.1-1.13.2</td>
@@ -135,6 +135,7 @@
 · <a href="#random_block">随机方块</a>
 · <a href="#sort_chest">箱子整理</a>
 · <a href="#dispenser_plant">自动种植</a>
+· <a href="#auto_torch">自动插火把</a>
 · <a href="#vertical_blocks">竖纹方块</a>
 · <a href="#nether_dry_wet_sponge">干燥湿海绵</a>
 </td></tr>
@@ -1058,7 +1059,7 @@
 </tr>
 
 <tr>
-	<td rowspan="9"><span class="ui single"><span class="water_bucket" title="水桶"></span></span></td>
+	<td rowspan="10"><span class="ui single"><span class="water_bucket" title="水桶"></span></span></td>
 	<td><span class="ui single"><span class="black_stained_glass" title="染色玻璃"></span></span></td>
 	<td><span class="ui single"><span class="glass" title="玻璃"></span></span></td>
 </tr>
@@ -1085,6 +1086,10 @@
 <tr>
 	<td><span class="ui single"><span class="sticky_piston" title="粘性活塞"></span></span></td>
 	<td><span class="ui single"><span class="piston" title="活塞"></span></span></td>
+</tr>
+<tr>
+	<td><span class="ui single"><span class="filled_map" title="地图"></span></span></td>
+	<td><span class="ui single"><span class="map" title="空地图"></span></span></td>
 </tr>
 <tr>
 	<td><span class="ui single"><span class="glass_bottle" title="玻璃瓶"></span></span></td>
@@ -1200,7 +1205,7 @@
 </span></span><span class="ui slot"><span class="charcoal" title="木炭">
 </span></span><span class="ui slot"><span class="xp_orb" title="经验"><span class="stack">4</span></span></span></td></tr>
 
-<tr><td>鱿鱼</td><td><img src="https://gamepedia.cursecdn.com/minecraft_zh_gamepedia/1/14/Squidface.png" title="鱿鱼" /></td><td><span class="ui slot"><span class="egg" title="鸡蛋">
+<tr><td>鱿鱼</td><td><img src="https://gamepedia.cursecdn.com/minecraft_zh_gamepedia/e/ea/SquidFace.png" title="鱿鱼" /></td><td><span class="ui slot"><span class="egg" title="鸡蛋">
 </span></span><span class="ui slot"><span class="ink_sac" title="墨囊">
 </span></span><span class="ui slot"><span class="cod" title="鳕鱼">
 </span></span><span class="ui slot"><span class="xp_orb" title="经验"><span class="stack">4</span></span></span><br />
@@ -1243,7 +1248,7 @@
 </span></span><span class="ui slot"><span class="iron_nugget" title="铁粒">
 </span></span><span class="ui slot"><span class="xp_orb" title="经验"><span class="stack">4</span></span></span></td></tr>
 
-<tr><td>女巫</td><td><img src="https://gamepedia.cursecdn.com/minecraft_zh_gamepedia/6/65/Witchface2.png" title="女巫" /></td><td><span class="ui slot"><span class="egg" title="鸡蛋">
+<tr><td>女巫</td><td><img src="https://gamepedia.cursecdn.com/minecraft_zh_gamepedia/4/4e/WitchFace.png" title="女巫" /></td><td><span class="ui slot"><span class="egg" title="鸡蛋">
 </span></span><span class="ui slot"><span class="redstone" title="红石">
 </span></span><span class="ui slot"><span class="glowstone_dust" title="荧石粉">
 </span></span><span class="ui slot"><span class="xp_orb" title="经验"><span class="stack">8</span></span></span></td></tr>
@@ -1277,12 +1282,12 @@
 </span></span><span class="ui slot"><span class="gunpowder" title="火药">
 </span></span><span class="ui slot"><span class="xp_orb" title="经验"><span class="stack">8</span></span></span></td></tr>
 
-<tr><td>岩浆怪</td><td><img src="https://gamepedia.cursecdn.com/minecraft_zh_gamepedia/0/09/Magma_Cube_Face.png" title="岩浆怪" /></td><td><span class="ui slot"><span class="egg" title="鸡蛋">
+<tr><td>岩浆怪</td><td><img src="https://gamepedia.cursecdn.com/minecraft_zh_gamepedia/6/69/MagmaCubeFace.png" title="岩浆怪" /></td><td><span class="ui slot"><span class="egg" title="鸡蛋">
 </span></span><span class="ui slot"><span class="magma_cream" title="岩浆膏">
 </span></span><span class="ui slot"><span class="nether_brick" title="地狱砖">
 </span></span><span class="ui slot"><span class="xp_orb" title="经验"><span class="stack">8</span></span></span></td></tr>
 
-<tr><td>烈焰人</td><td><img src="https://gamepedia.cursecdn.com/minecraft_zh_gamepedia/3/31/Blaze_Face.png" title="烈焰人" /></td><td><span class="ui slot"><span class="egg" title="鸡蛋">
+<tr><td>烈焰人</td><td><img src="https://gamepedia.cursecdn.com/minecraft_zh_gamepedia/e/e3/BlazeFace.png" title="烈焰人" /></td><td><span class="ui slot"><span class="egg" title="鸡蛋">
 </span></span><span class="ui slot"><span class="blaze_powder" title="烈焰粉">
 </span></span><span class="ui slot"><span class="nether_brick" title="地狱砖">
 </span></span><span class="ui slot"><span class="xp_orb" title="经验"><span class="stack">8</span></span></span></td></tr>
@@ -1297,18 +1302,18 @@
 </span></span><span class="ui slot"><span class="gold_nugget" title="金粒">
 </span></span><span class="ui slot"><span class="xp_orb" title="经验"><span class="stack">8</span></span></span></td></tr>
 
-<tr><td>村民(93.75%)</td><td><img src="https://gamepedia.cursecdn.com/minecraft_zh_gamepedia/d/d3/Villagerhead.png" title="村民" /></td><td rowspan="2"><span class="ui slot"><span class="egg" title="鸡蛋">
+<tr><td>村民(93.75%)</td><td><img src="https://gamepedia.cursecdn.com/minecraft_zh_gamepedia/4/4a/VillagerFace.png" title="村民" /></td><td rowspan="2"><span class="ui slot"><span class="egg" title="鸡蛋">
 </span></span><span class="ui slot"><span class="emerald" title="绿宝石">
 </span></span><span class="ui slot"><span class="book" title="书">
 </span></span><span class="ui slot"><span class="xp_orb" title="经验"><span class="stack">8</span></span></span></td></tr>
 <tr><td>流浪商人(6.25%)</td><td><img src="https://gamepedia.cursecdn.com/minecraft_gamepedia/8/83/WanderingTraderFace.png" title="流浪商人" /></td></tr>
 
-<tr><td>卫道士(43.75%)</td><td><img src="https://gamepedia.cursecdn.com/minecraft_zh_gamepedia/e/e3/Vindicator_Head.png" title="卫道士" /></td><td rowspan="4"><span class="ui slot"><span class="egg" title="鸡蛋">
+<tr><td>卫道士(43.75%)</td><td><img src="https://gamepedia.cursecdn.com/minecraft_zh_gamepedia/0/04/VindicatorFace.png" title="卫道士" /></td><td rowspan="4"><span class="ui slot"><span class="egg" title="鸡蛋">
 </span></span><span class="ui slot"><span class="emerald" title="绿宝石">
 </span></span><span class="ui slot"><span class="gold_block" title="金块">
 </span></span><span class="ui slot"><span class="xp_orb" title="经验"><span class="stack">32</span></span></span></td></tr>
 <tr><td>掠夺者(43.75%)</td><td><img src="https://gamepedia.cursecdn.com/minecraft_zh_gamepedia/5/5a/PillagerFace.png" title="掠夺者" /></td></tr>
-<tr><td>唤魔者(6.25%)</td><td><img src="https://gamepedia.cursecdn.com/minecraft_zh_gamepedia/5/58/Evoker_Head.png" title="唤魔者" /></td></tr>
+<tr><td>唤魔者(6.25%)</td><td><img src="https://gamepedia.cursecdn.com/minecraft_zh_gamepedia/b/b0/EvokerFace.png" title="唤魔者" /></td></tr>
 <tr><td>劫掠兽(6.25%)</td><td><img src="https://gamepedia.cursecdn.com/minecraft_zh_gamepedia/a/a9/RavagerFace.png" title="劫掠兽" /></td></tr>
 
 <tr><td>守卫者(93.75%)</td><td><img src="https://gamepedia.cursecdn.com/minecraft_zh_gamepedia/e/e6/GuardianFace.png" title="守卫者" /></td><td rowspan="2"><span class="ui slot"><span class="egg" title="鸡蛋">
@@ -1319,7 +1324,7 @@
 </span></span><span class="ui slot"><span class="water_bottle" title="水瓶">
 </span></span><span class="ui slot"><span class="salmon" title="鲑鱼">
 </span></span><span class="ui slot"><span class="xp_orb" title="经验"><span class="stack">32</span></span></span></td></tr>
-<tr><td>远古守卫者(6.25%)</td><td><img src="https://gamepedia.cursecdn.com/minecraft_zh_gamepedia/e/e8/Elder_GuardianFace.png" title="远古守卫者" /></td></tr>
+<tr><td>远古守卫者(6.25%)</td><td><img src="https://gamepedia.cursecdn.com/minecraft_zh_gamepedia/c/c1/ElderGuardianFace.png" title="远古守卫者" /></td></tr>
 
 <tr><td>潜影贝</td><td><img src="https://gamepedia.cursecdn.com/minecraft_zh_gamepedia/e/e4/ShulkerisReallyFeelingIt.png" title="潜影贝" /></td><td><span class="ui slot"><span class="egg" title="鸡蛋">
 </span></span><span class="ui slot"><span class="chorus_fruit" title="紫颂果">
@@ -2839,7 +2844,7 @@
 <span class="empty"></span>
 <span class="ci glass_pickaxe" title="玻璃镐"></span>
 </span></td>
-<td>无需精准附魔即可采集玻璃，共132点耐久。</td></tr>
+<td>无需精准附魔即可采集玻璃，共132点耐久	。</td></tr>
 
 <tr><th><strong id="chest_transporter">搬箱器 (Chest Transporter)</strong></th><td>木棍+<a href="#enchanted_iron">附魔铁锭</a></td>
 <td><span class="ui cm" title="合成器">
@@ -2854,7 +2859,7 @@
 <span class="empty"></span>
 <span class="ci chest_transporter" title="搬箱器"></span>
 </span></td>
-<td>shift右键破坏箱子，箱子内的物品会保留。共26点耐久。</td></tr>
+<td>shift右键破坏箱子，箱子内的物品会保留。共26点耐久，支持经验修补魔咒，不支持耐久魔咒。</td></tr>
 
 <tr><th><strong id="roost">鸡窝 (Roost)</strong></th><td>小麦</td>
 <td><span class="ui cm" title="合成器">
@@ -4286,7 +4291,7 @@
 <!------------------------------------------------------------------------------------------------->
 <h2 id="decorations">装饰</h3>
 <h3>称号</h3>
-玩家手持绿宝石并根据下表的数字输入 <code>/trigger title set 数值</code> 即可消耗绿宝石并获得相应称号。
+玩家手持绿宝石并根据下表的数字输入 <code>/trigger cppTitle set 数值</code> 即可消耗绿宝石并获得相应称号。
 <table class="center">
 <thead>
 <tr><th>+</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th></tr></thead>
@@ -4928,6 +4933,12 @@
 <span class="piston" title="活塞"></span>
 </span></td></tr>
 
+<tr><th>空地图</th><td>地图</td>
+<td><span class="ui onetoone" title="炼药锅">
+<span class="filled_map" title="地图"></span>
+<span class="map" title="空地图"></span>
+</span></td></tr>
+
 <tr><th>混凝土</th><td>混凝土粉末</td>
 <td><span class="ui onetoone" title="炼药锅">
 <span class="black_concrete_powder" title="混凝土粉末"></span>
@@ -4959,6 +4970,9 @@
 <tr><td>丛林木侧面</td><td>可可豆</td></tr>
 </tbody></table>
 <p><img style="height:200px" src="items/screenshots/dispenser_plant.png" /></p>
+
+<h3 id="auto_torch">自动插火把</h3>
+<p>使用指令<code>/trigger cppAutoTorch set 刻数</code>，可以设定每隔一段时间自动插一根火把。设置为0取消自动插火把功能。</p>
 
 <h3 id="vertical_blocks">竖纹方块</h3>
 <p>部分方块双台阶材质修改为竖纹。</p>
@@ -5390,7 +5404,7 @@
 <a href="https://space.bilibili.com/4469715"><img src="items/bilibili.png" /></a>
 </p>
 
-<p>最后更新 2019-05-20</p>
+<p>最后更新 2019-05-28</p>
 </footer>
 </article>
 </body></html>

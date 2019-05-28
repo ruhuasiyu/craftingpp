@@ -85,8 +85,8 @@ execute as @e[type=item_frame,tag=cpp_rituals_item] at @s run function cpp:ritua
 advancement grant @a[scores={cppHealth=40..}] only cpp:fat
 
 # 称号
-scoreboard players enable @a title
-execute as @a[scores={title=1..},nbt={SelectedItem:{id:"minecraft:emerald",Count:1b}}] run function cpp:decor/set_title
+scoreboard players enable @a cppTitle
+execute as @a[scores={cppTitle=1..},nbt={SelectedItem:{id:"minecraft:emerald",Count:1b}}] run function cpp:decor/set_title
 
 # 装饰
 execute as @a[nbt={Inventory:[{Slot:103b,id:"minecraft:carved_pumpkin"}]}] run function cpp:decor/hat

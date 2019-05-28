@@ -33,7 +33,7 @@ execute if score #temp cppValue matches 16.. if data block ~ ~ ~ Items[{Slot:12b
 execute if score #temp cppValue matches 16.. if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:white_wool"}] run scoreboard players set @s cppMacType 5
 execute if score #temp cppValue matches 16.. if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:string"}] run scoreboard players set @s cppMacType 5
 execute if score #temp cppValue matches 16.. if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:bone"}] run scoreboard players set @s cppMacType 5
-execute if score #temp cppValue matches 16.. if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:ender_pearl"}] run scoreboard players set @s cppMacType 
+execute if score #temp cppValue matches 16.. if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:ender_pearl"}] run scoreboard players set @s cppMacType 5
 execute if score #temp cppValue matches 16.. if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:coal"}] run scoreboard players set @s cppMacType 5
 execute if score #temp cppValue matches 16.. if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:lapis_lazuli"}] run scoreboard players set @s cppMacType 5
 execute if score #temp cppValue matches 16.. if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:glowstone_dust"}] run scoreboard players set @s cppMacType 5

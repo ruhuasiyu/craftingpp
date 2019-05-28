@@ -68,6 +68,7 @@ execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:sponge"}] run scoreboa
 execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:lava_bucket"}] run scoreboard players set @s cppMacType 806
 execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:sticky_piston"}] run scoreboard players set @s cppMacType 807
 execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:glass_bottle"}] run scoreboard players set @s cppMacType 808
+execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:filled_map"}] run scoreboard players set @s cppMacType 809
 
 execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:white_concrete_powder"}] run scoreboard players set @s cppMacType 811
 execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:orange_concrete_powder"}] run scoreboard players set @s cppMacType 812

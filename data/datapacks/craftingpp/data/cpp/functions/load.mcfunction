@@ -27,6 +27,7 @@ scoreboard objectives add cppSneakTime minecraft.custom:minecraft.sneak_time
 # 跳跃
 scoreboard objectives add cppJump minecraft.custom:minecraft.jump
 # 打开箱子(安装插件)
+scoreboard objectives remove cppOpenFrame
 scoreboard objectives add cppOpenFrame minecraft.custom:minecraft.open_barrel
 # 交互发射器(仪式)
 scoreboard objectives add cppInsDisp minecraft.custom:minecraft.inspect_dispenser
@@ -104,7 +105,7 @@ execute if score #load_block_sky_domain cppValue matches -1..0 run datapack disa
 execute if score #load_block_sky_domain cppValue matches 1..2 run datapack enable "file/block_sky_domain"
 
 # 称号
-scoreboard objectives add title trigger
+scoreboard objectives add cppTitle trigger
 team add cppTitle1
 team modify cppTitle1 prefix {"translate":"title.cpp.1"}
 team add cppTitle2

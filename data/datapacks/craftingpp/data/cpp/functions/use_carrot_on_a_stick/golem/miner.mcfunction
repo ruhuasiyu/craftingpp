@@ -1,6 +1,6 @@
 function cpp:use_carrot_on_a_stick/golem/get_front_control_block
-execute at @e[tag=cpp_front_control_block,limit=1] run summon zombie_pigman ~ ~ ~ {IsBaby:1b,Invulnerable:1b,NoAI:1b,Tags:["cpp_golem","cpp_golem_miner"],DeathLootTable:"cpp:golem/golem_miner",PersistenceRequired:1b,HandItems:[{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Enchantments:[]}},{}],ArmorDropChances:[-1.0f,-1.0f,-1.0f,-1.0f],Silent:1b}
-execute at @e[tag=cpp_front_control_block,limit=1] run data modify entity @e[tag=cpp_golem,sort=nearest,limit=1,distance=..0.1] HandItems[0].tag.Enchantments set from entity @s SelectedItem.tag.Enchantments
+execute at @e[tag=cpp_front_control_block,limit=1] run summon zombie_pigman ~ ~ ~ {IsBaby:1b,Invulnerable:1b,NoAI:1b,Tags:["cpp_golem","cpp_golem_miner"],DeathLootTable:"cpp:golem/golem_miner",PersistenceRequired:1b,ArmorDropChances:[-1.0f,-1.0f,-1.0f,-1.0f],Silent:1b,HandItems:[{Count:1b,id:"minecraft:diamond_pickaxe"},{}]}
+execute at @e[tag=cpp_front_control_block,limit=1] run data modify entity @e[tag=cpp_golem,sort=nearest,limit=1,distance=..0.1] HandItems[0] set from entity @s SelectedItem.tag.StoredTool
 execute at @e[tag=cpp_front_control_block,limit=1] run replaceitem entity @s[gamemode=!creative,nbt=!{SelectedItem:{id:"minecraft:carrot_on_a_stick"}}] weapon.offhand air
 execute at @e[tag=cpp_front_control_block,limit=1] run replaceitem entity @s[gamemode=!creative,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick"}}] weapon.mainhand air
 execute at @e[tag=cpp_front_control_block,limit=1] if block ~ ~ ~ #cpp:golem_east run scoreboard players set @e[tag=cpp_golem,sort=nearest,limit=1,distance=..0.1] cppGolemFace 0
