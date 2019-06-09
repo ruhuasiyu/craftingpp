@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "cpp:seeds/hibiscus_seeds"
+        "layer0": "cpp:crop/hibiscus_seeds"
     }
 }

@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "cpp:seeds/marigold_seeds"
+        "layer0": "cpp:crop/marigold_seeds"
     }
 }

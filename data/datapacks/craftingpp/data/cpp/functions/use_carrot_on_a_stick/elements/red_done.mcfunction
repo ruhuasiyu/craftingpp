@@ -39,4 +39,34 @@ execute if block ~ ~ ~ sandstone run summon item ~ ~ ~ {Item:{id:"minecraft:smoo
 execute if block ~ ~ ~ red_sandstone run summon item ~ ~ ~ {Item:{id:"minecraft:smooth_red_sandstone",Count:1b}}
 execute if block ~ ~ ~ stone run summon item ~ ~ ~ {Item:{id:"minecraft:smooth_stone",Count:1b}}
 
-setblock ~ ~ ~ air
+execute if block ~ ~ ~ poppy run summon item ~ ~ ~ {Item:{id:"minecraft:red_dye",Count:1b}}
+execute if block ~ ~ ~ red_tulip run summon item ~ ~ ~ {Item:{id:"minecraft:red_dye",Count:1b}}
+execute if block ~ ~ ~ cornflower run summon item ~ ~ ~ {Item:{id:"minecraft:blue_dye",Count:1b}}
+execute if block ~ ~ ~ blue_orchid run summon item ~ ~ ~ {Item:{id:"minecraft:light_blue_dye",Count:1b}}
+execute if block ~ ~ ~ lily_of_the_valley run summon item ~ ~ ~ {Item:{id:"minecraft:white_dye",Count:1b}}
+execute if block ~ ~ ~ dandelion run summon item ~ ~ ~ {Item:{id:"minecraft:yellow_dye",Count:1b}}
+execute if block ~ ~ ~ azure_bluet run summon item ~ ~ ~ {Item:{id:"minecraft:light_gray_dye",Count:1b}}
+execute if block ~ ~ ~ oxeye_daisy run summon item ~ ~ ~ {Item:{id:"minecraft:light_gray_dye",Count:1b}}
+execute if block ~ ~ ~ white_tulip run summon item ~ ~ ~ {Item:{id:"minecraft:light_gray_dye",Count:1b}}
+execute if block ~ ~ ~ allium run summon item ~ ~ ~ {Item:{id:"minecraft:magenta_dye",Count:1b}}
+execute if block ~ ~ ~ orange_tulip run summon item ~ ~ ~ {Item:{id:"minecraft:orange_dye",Count:1b}}
+execute if block ~ ~ ~ pink_tulip run summon item ~ ~ ~ {Item:{id:"minecraft:pink_dye",Count:1b}}
+execute if block ~ ~ ~ wither_rose run summon item ~ ~ ~ {Item:{id:"minecraft:black_dye",Count:1b}}
+
+execute if block ~ ~ ~ rose_bush run summon item ~ ~ ~ {Item:{id:"minecraft:red_dye",Count:1b}}
+execute if block ~ ~ ~ sunflower run summon item ~ ~ ~ {Item:{id:"minecraft:yellow_dye",Count:1b}}
+execute if block ~ ~ ~ lilac run summon item ~ ~ ~ {Item:{id:"minecraft:magenta_dye",Count:1b}}
+execute if block ~ ~ ~ peony run summon item ~ ~ ~ {Item:{id:"minecraft:pink_dye",Count:1b}}
+
+execute if block ~ ~ ~ beetroots[age=3] run summon item ~ ~ ~ {Item:{id:"minecraft:red_dye",Count:1b}}
+execute if block ~ ~ ~ potatoes run summon item ~ ~ ~ {Item:{id:"minecraft:baked_potato",Count:1b}}
+execute if block ~ ~ ~ carrots run loot spawn ~ ~ ~ loot cpp:baked_carrot
+
+execute if block ~ ~ ~ #cpp:red_force_smeltable1 unless block ~ ~ ~ beetroots run setblock ~ ~ ~ air
+execute if block ~ ~ ~ beetroots[age=3] run setblock ~ ~ ~ air
+
+execute if block ~ ~ ~ #cpp:red_force_smeltable2[half=upper] run fill ~ ~ ~ ~ ~-1 ~ air
+execute if block ~ ~ ~ #cpp:red_force_smeltable2[half=lower] run fill ~ ~ ~ ~ ~1 ~ air
+
+execute if block ~ ~ ~ acacia_sapling align xyz positioned ~0.5 ~ ~0.5 as @e[tag=cpp_plants,distance=..0.5] run function cpp:use_carrot_on_a_stick/elements/red_plants
+

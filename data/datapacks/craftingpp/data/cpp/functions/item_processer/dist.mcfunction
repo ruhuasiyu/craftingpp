@@ -103,6 +103,33 @@ execute as @s[scores={cppMacType=752}] run loot insert ~ ~ ~ loot blocks/smooth_
 execute as @s[scores={cppMacType=753}] run loot insert ~ ~ ~ loot blocks/smooth_red_sandstone
 execute as @s[scores={cppMacType=754}] run loot insert ~ ~ ~ loot blocks/smooth_stone
 
+
+execute as @s[scores={cppMacType=761}] run loot insert ~ ~ ~ loot cpp:items/red_dye
+execute as @s[scores={cppMacType=762}] run loot insert ~ ~ ~ loot cpp:items/blue_dye
+execute as @s[scores={cppMacType=763}] run loot insert ~ ~ ~ loot cpp:items/light_blue_dye
+execute as @s[scores={cppMacType=764}] run loot insert ~ ~ ~ loot cpp:items/white_dye
+execute as @s[scores={cppMacType=765}] run loot insert ~ ~ ~ loot cpp:items/yellow_dye
+execute as @s[scores={cppMacType=766}] run loot insert ~ ~ ~ loot cpp:items/light_gray_dye
+execute as @s[scores={cppMacType=767}] run loot insert ~ ~ ~ loot cpp:items/magenta_dye
+execute as @s[scores={cppMacType=768}] run loot insert ~ ~ ~ loot cpp:items/orange_dye
+execute as @s[scores={cppMacType=769}] run loot insert ~ ~ ~ loot cpp:items/pink_dye
+execute as @s[scores={cppMacType=770}] run loot insert ~ ~ ~ loot cpp:items/black_dye
+execute as @s[scores={cppMacType=771}] run loot insert ~ ~ ~ loot cpp:items/baked_potato
+execute as @s[scores={cppMacType=772}] run loot insert ~ ~ ~ loot cpp:baked_carrot
+execute as @s[scores={cppMacType=773}] run loot insert ~ ~ ~ loot cpp:items/purple_dye
+
+execute as @s[scores={cppMacType=780}] run loot insert ~ ~ ~ loot cpp:items/feather
+execute as @s[scores={cppMacType=781}] run loot insert ~ ~ ~ loot cpp:items/gunpowder
+execute as @s[scores={cppMacType=782}] run loot insert ~ ~ ~ loot cpp:items/string
+execute as @s[scores={cppMacType=783}] run loot insert ~ ~ ~ loot cpp:items/glowstone_dust
+execute as @s[scores={cppMacType=784}] run loot insert ~ ~ ~ loot cpp:items/prismarine_shard
+execute as @s[scores={cppMacType=785}] run loot insert ~ ~ ~ loot cpp:items/spider_eye
+execute as @s[scores={cppMacType=786}] run loot insert ~ ~ ~ loot cpp:items/ghast_tear
+execute as @s[scores={cppMacType=787}] run loot insert ~ ~ ~ loot cpp:items/ender_pearl
+execute as @s[scores={cppMacType=788}] run loot insert ~ ~ ~ loot cpp:items/blaze_powder
+execute as @s[scores={cppMacType=789}] run loot insert ~ ~ ~ loot cpp:items/slime_ball
+
+
 execute as @s[scores={cppMacType=801}] run loot insert ~ ~ ~ loot cpp:items/glass
 execute as @s[scores={cppMacType=802}] run loot insert ~ ~ ~ loot blocks/terracotta
 execute as @s[scores={cppMacType=803}] run loot insert ~ ~ ~ loot blocks/white_wool
@@ -130,12 +157,14 @@ execute as @s[scores={cppMacType=823}] run loot insert ~ ~ ~ loot blocks/brown_c
 execute as @s[scores={cppMacType=824}] run loot insert ~ ~ ~ loot blocks/green_concrete
 execute as @s[scores={cppMacType=825}] run loot insert ~ ~ ~ loot blocks/red_concrete
 execute as @s[scores={cppMacType=826}] run loot insert ~ ~ ~ loot blocks/black_concrete
+execute as @s[scores={cppMacType=831}] run function cpp:item_processer/dist_leather_armor
+execute as @s[scores={cppMacType=832}] run function cpp:item_processer/dist_banner
 execute as @s[scores={cppMacType=899}] run loot insert ~ ~ ~ loot cpp:items/water_bucket
 
 execute as @s[scores={cppMacType=901}] run loot insert ~ ~ ~ loot cpp:items/grass_block
 execute as @s[scores={cppMacType=902}] run loot insert ~ ~ ~ loot cpp:items/mycelium
 
-execute as @s[scores={cppMacType=1000}] run function cpp:item_processer/type_compressor
+execute as @s[scores={cppMacType=1000}] run function cpp:item_processer/dist_compressor
 
 execute at @s as @s[scores={cppMacType=601..616}] store result block ~ ~ ~ Items[{Slot:12b}].Count byte 1 run scoreboard players remove #temp cppValue 8
 execute at @s as @s[scores={cppMacType=641..645}] store result block ~ ~ ~ Items[{Slot:12b}].Count byte 1 run scoreboard players remove #temp cppValue 3

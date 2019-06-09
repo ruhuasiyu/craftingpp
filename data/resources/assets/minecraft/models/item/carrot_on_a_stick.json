@@ -66,6 +66,9 @@
 		{ "predicate": { "custom_model_data": 12971024 }, "model": "cpp:character/pic24"},
 		{ "predicate": { "custom_model_data": 12971025 }, "model": "cpp:character/pic25"},
 		{ "predicate": { "custom_model_data": 12971026 }, "model": "cpp:character/pic26"},
-		{ "predicate": { "custom_model_data": 12971027 }, "model": "cpp:character/pic27"}
+		{ "predicate": { "custom_model_data": 12971027 }, "model": "cpp:character/pic27"},
+		{ "predicate": { "custom_model_data": 12971028 }, "model": "cpp:character/pic28"},
+		{ "predicate": { "custom_model_data": 12971029 }, "model": "cpp:character/pic29"},
+		{ "predicate": { "custom_model_data": 12971030 }, "model": "cpp:character/pic30"}
 	]
 }

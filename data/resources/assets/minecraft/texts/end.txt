@@ -62,7 +62,7 @@
 [C]§2天长地久有时尽，此恨绵绵无绝期。
 
 [C]§f============
-[C]§e更多的合成/Crafting++ version 1.9
+[C]§e更多的合成/Crafting++ version 1.9.4
 [C]§f============
  
 §7数据包设计/Data Pack Designer

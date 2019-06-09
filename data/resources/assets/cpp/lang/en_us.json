@@ -99,6 +99,8 @@
 	"item.cpp.cobblestone_core":"§eCobblestone Plugin",
 	"item.cpp.stone_core":"§eStone Plugin",
 	"item.cpp.obsidian_core":"§eObsidian Plugin",
+	"item.cpp.netherrack_plugin":"§eNetherrack Plugin",
+	"item.cpp.end_stone_plugin":"§eEnd Stone Plugin",
 	
 	"item.cpp.process_shower":"§rProcess Shower",
 	"item.cpp.output_slot":"§rOutput",
@@ -526,6 +528,9 @@
 	"item.cpp.character.25":"§rCharacter (Ryumonbuchi Toka)",
 	"item.cpp.character.26":"§rCharacter (Amae Koromo)",
 	"item.cpp.character.27":"§rCharacter (Fukuji Mihoko)",
+	"item.cpp.character.28":"§rCharacter (Segawa Onpu)",
+	"item.cpp.character.29":"§rCharacter (Asuka Momoko)",
+	"item.cpp.character.30":"§rCharacter (Makihatayama Hana)",
 	
 	"advancements.cpp.root.title":"§eInitialization!",
 	"advancements.cpp.root.description":"§dThanks for your use",
@@ -597,7 +602,7 @@
 
 	"The":"§aCrafting++ is loaded,",	
 	"resourcepack":"version",
-	"does":"§a1.9.3§a.",
+	"does":"§a1.9.4§a.",
 	"not":"§aPlease",
 	"Install":"\n§evisit the wiki",
 	"correctly":"§ato get more informations. Authors:",

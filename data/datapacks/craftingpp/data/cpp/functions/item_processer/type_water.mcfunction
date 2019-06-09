@@ -86,3 +86,25 @@ execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:brown_concrete_powder"
 execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:green_concrete_powder"}] run scoreboard players set @s cppMacType 824
 execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:red_concrete_powder"}] run scoreboard players set @s cppMacType 825
 execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:black_concrete_powder"}] run scoreboard players set @s cppMacType 826
+
+execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:leather_helmet"}].tag.display.color run scoreboard players set @s cppMacType 831
+execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:leather_chestplate"}].tag.display.color run scoreboard players set @s cppMacType 831
+execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:leather_leggings"}].tag.display.color run scoreboard players set @s cppMacType 831
+execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:leather_boots"}].tag.display.color run scoreboard players set @s cppMacType 831
+
+execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:white_banner"}].tag.BlockEntityTag.Patterns[] run scoreboard players set @s cppMacType 832
+execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:orange_banner"}].tag.BlockEntityTag.Patterns[] run scoreboard players set @s cppMacType 832
+execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:magenta_banner"}].tag.BlockEntityTag.Patterns[] run scoreboard players set @s cppMacType 832
+execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:light_blue_banner"}].tag.BlockEntityTag.Patterns[] run scoreboard players set @s cppMacType 832
+execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:yellow_banner"}].tag.BlockEntityTag.Patterns[] run scoreboard players set @s cppMacType 832
+execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:lime_banner"}].tag.BlockEntityTag.Patterns[] run scoreboard players set @s cppMacType 832
+execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:pink_banner"}].tag.BlockEntityTag.Patterns[] run scoreboard players set @s cppMacType 832
+execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:gray_banner"}].tag.BlockEntityTag.Patterns[] run scoreboard players set @s cppMacType 832
+execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:light_gray_banner"}].tag.BlockEntityTag.Patterns[] run scoreboard players set @s cppMacType 832
+execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:cyan_banner"}].tag.BlockEntityTag.Patterns[] run scoreboard players set @s cppMacType 832
+execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:purple_banner"}].tag.BlockEntityTag.Patterns[] run scoreboard players set @s cppMacType 832
+execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:blue_banner"}].tag.BlockEntityTag.Patterns[] run scoreboard players set @s cppMacType 832
+execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:brown_banner"}].tag.BlockEntityTag.Patterns[] run scoreboard players set @s cppMacType 832
+execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:green_banner"}].tag.BlockEntityTag.Patterns[] run scoreboard players set @s cppMacType 832
+execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:red_banner"}].tag.BlockEntityTag.Patterns[] run scoreboard players set @s cppMacType 832
+execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:black_banner"}].tag.BlockEntityTag.Patterns[] run scoreboard players set @s cppMacType 832

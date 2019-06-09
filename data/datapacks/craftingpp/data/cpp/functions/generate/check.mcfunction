@@ -1,9 +1,9 @@
-execute positioned ~-64 -2 ~-64 unless entity @e[tag=cpp_chunk,dx=32,dy=256,dz=32] run function cpp:generate/mark
-execute positioned ~-32 -2 ~-64 unless entity @e[tag=cpp_chunk,dx=32,dy=256,dz=32] run function cpp:generate/mark
-execute positioned ~ -2 ~-64 unless entity @e[tag=cpp_chunk,dx=32,dy=256,dz=32] run function cpp:generate/mark
-execute positioned ~-64 -2 ~-32 unless entity @e[tag=cpp_chunk,dx=32,dy=256,dz=32] run function cpp:generate/mark
-execute positioned ~-32 -2 ~-32 unless entity @e[tag=cpp_chunk,dx=32,dy=256,dz=32] run function cpp:generate/mark
-execute positioned ~ -2 ~-32 unless entity @e[tag=cpp_chunk,dx=32,dy=256,dz=32] run function cpp:generate/mark
-execute positioned ~-64 -2 ~ unless entity @e[tag=cpp_chunk,dx=32,dy=256,dz=32] run function cpp:generate/mark
-execute positioned ~-32 -2 ~ unless entity @e[tag=cpp_chunk,dx=32,dy=256,dz=32] run function cpp:generate/mark
-execute positioned ~ -2 ~ unless entity @e[tag=cpp_chunk,dx=32,dy=256,dz=32] run function cpp:generate/mark
+execute positioned ~-32 0 ~-32 unless block ~ ~ ~ barrier run function cpp:generate/mark
+execute positioned ~ 0 ~-32 unless block ~ ~ ~ barrier run function cpp:generate/mark
+execute positioned ~32 0 ~-32 unless block ~ ~ ~ barrier run function cpp:generate/mark
+execute positioned ~-32 0 ~ unless block ~ ~ ~ barrier run function cpp:generate/mark
+execute positioned ~ 0 ~ unless block ~ ~ ~ barrier run function cpp:generate/mark
+execute positioned ~32 0 ~ unless block ~ ~ ~ barrier run function cpp:generate/mark
+execute positioned ~-32 0 ~32 unless block ~ ~ ~ barrier run function cpp:generate/mark
+execute positioned ~ 0 ~32 unless block ~ ~ ~ barrier run function cpp:generate/mark
+execute positioned ~32 0 ~32 unless block ~ ~ ~ barrier run function cpp:generate/mark

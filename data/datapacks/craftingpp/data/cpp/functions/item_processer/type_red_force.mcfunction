@@ -45,3 +45,49 @@ execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:quartz_block"}] run sc
 execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:sandstone"}] run scoreboard players set @s cppMacType 752
 execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:red_sandstone"}] run scoreboard players set @s cppMacType 753
 execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:stone"}] run scoreboard players set @s cppMacType 754
+
+execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:poppy"}] run scoreboard players set @s cppMacType 761
+execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:rose_bush"}] run scoreboard players set @s cppMacType 761
+execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:beetroot"}] run scoreboard players set @s cppMacType 761
+execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:red_tulip"}] run scoreboard players set @s cppMacType 761
+execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:cornflower"}] run scoreboard players set @s cppMacType 762
+execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:blue_orchid"}] run scoreboard players set @s cppMacType 763
+execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:lily_of_the_valley"}] run scoreboard players set @s cppMacType 764
+execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:dandelion"}] run scoreboard players set @s cppMacType 765
+execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:sunflower"}] run scoreboard players set @s cppMacType 765
+execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:azure_bluet"}] run scoreboard players set @s cppMacType 766
+execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:oxeye_daisy"}] run scoreboard players set @s cppMacType 766
+execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:white_tulip"}] run scoreboard players set @s cppMacType 766
+execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:allium"}] run scoreboard players set @s cppMacType 767
+execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:lilac"}] run scoreboard players set @s cppMacType 767
+execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:orange_tulip"}] run scoreboard players set @s cppMacType 768
+execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:pink_tulip"}] run scoreboard players set @s cppMacType 769
+execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:peony"}] run scoreboard players set @s cppMacType 769
+execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:wither_rose"}] run scoreboard players set @s cppMacType 770
+
+execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:potato"}] run scoreboard players set @s cppMacType 771
+execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:carrot"}] run scoreboard players set @s cppMacType 772
+
+execute if data block ~ ~ ~ Items[{Slot:12b,tag:{id:"cpp:lycoris_radiata"}}] run scoreboard players set @s cppMacType 761
+execute if data block ~ ~ ~ Items[{Slot:12b,tag:{id:"cpp:trifolium"}}] run scoreboard players set @s cppMacType 764
+execute if data block ~ ~ ~ Items[{Slot:12b,tag:{id:"cpp:blackthorn"}}] run scoreboard players set @s cppMacType 770
+execute if data block ~ ~ ~ Items[{Slot:12b,tag:{id:"cpp:cattail"}}] run scoreboard players set @s cppMacType 765
+execute if data block ~ ~ ~ Items[{Slot:12b,tag:{id:"cpp:marigold"}}] run scoreboard players set @s cppMacType 768
+execute if data block ~ ~ ~ Items[{Slot:12b,tag:{id:"cpp:hibiscus"}}] run scoreboard players set @s cppMacType 769
+execute if data block ~ ~ ~ Items[{Slot:12b,tag:{id:"cpp:hyacinth"}}] run scoreboard players set @s cppMacType 762
+execute if data block ~ ~ ~ Items[{Slot:12b,tag:{id:"cpp:calamus"}}] run scoreboard players set @s cppMacType 773
+execute if data block ~ ~ ~ Items[{Slot:12b,tag:{id:"cpp:wild_lilium"}}] run scoreboard players set @s cppMacType 710
+execute if data block ~ ~ ~ Items[{Slot:12b,tag:{id:"cpp:bauhinia"}}] run scoreboard players set @s cppMacType 767
+execute if data block ~ ~ ~ Items[{Slot:12b,tag:{id:"cpp:fluffy_grass"}}] run scoreboard players set @s cppMacType 780
+execute if data block ~ ~ ~ Items[{Slot:12b,tag:{id:"cpp:gerbera"}}] run scoreboard players set @s cppMacType 781
+execute if data block ~ ~ ~ Items[{Slot:12b,tag:{id:"cpp:esparto"}}] run scoreboard players set @s cppMacType 782
+execute if data block ~ ~ ~ Items[{Slot:12b,tag:{id:"cpp:glow_forsythia"}}] run scoreboard players set @s cppMacType 783
+execute if data block ~ ~ ~ Items[{Slot:12b,tag:{id:"cpp:glazed_shade"}}] run scoreboard players set @s cppMacType 784
+execute if data block ~ ~ ~ Items[{Slot:12b,tag:{id:"cpp:stelera"}}] run scoreboard players set @s cppMacType 785
+execute if data block ~ ~ ~ Items[{Slot:12b,tag:{id:"cpp:forage_crystal"}}] run scoreboard players set @s cppMacType 786
+execute if data block ~ ~ ~ Items[{Slot:12b,tag:{id:"cpp:isorchid"}}] run scoreboard players set @s cppMacType 787
+execute if data block ~ ~ ~ Items[{Slot:12b,tag:{id:"cpp:burning_chrysanthe"}}] run scoreboard players set @s cppMacType 788
+execute if data block ~ ~ ~ Items[{Slot:12b,tag:{id:"cpp:oxalis"}}] run scoreboard players set @s cppMacType 789
+
+
+

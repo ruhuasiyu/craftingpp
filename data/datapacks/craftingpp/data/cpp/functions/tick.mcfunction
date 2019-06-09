@@ -1,31 +1,24 @@
-# 生成魔导石
-execute unless score #load_sorcerer_stone cppValue matches 1 unless entity @e[tag=cpp_sorcerer_stone] if entity @a run function cpp:load_sorcerer_stone
-
 # 关闭GUI
 execute as @a[tag=cpp_close_gui] at @s positioned ~ ~-256 ~ run function cpp:close_gui_back
 
 # 世界生成
-execute as @a at @s run function cpp:generate/check
+execute if score #load_block_sky_domain cppValue matches -1..0 as @a positioned as @s if entity @s[distance=..1] run function cpp:generate/check
 
 # 怪物加强
-execute as @e[tag=!cpp_enhance_mobs_checked,type=#cpp:zombies] run function cpp:enhance_mobs/zombies
-execute as @e[tag=!cpp_enhance_mobs_checked,type=#cpp:skeletons] run function cpp:enhance_mobs/skeletons
-execute as @e[tag=!cpp_enhance_mobs_checked,type=wither_skeleton] run function cpp:enhance_mobs/wither_skeleton
-execute as @e[tag=!cpp_enhance_mobs_checked,type=creeper] run function cpp:enhance_mobs/creeper
+execute as @e[tag=!cpp_enhance_mobs_checked,type=#cpp:enhance_mobs] run function cpp:enhance_mobs/type
 execute as @e[type=#cpp:zombies] at @s if block ~ ~ ~ #cpp:zombie_can_break run setblock ~ ~ ~ air destroy
 execute as @e[type=#cpp:zombies] at @s if block ~ ~1 ~ #cpp:zombie_can_break run setblock ~ ~1 ~ air destroy
 # 黑暗动物
 execute as @e[tag=!cpp_dark_animal_checked,type=#cpp:animals] at @s run function cpp:dark_animals/check
 execute as @e[tag=cpp_dark_animal,type=#cpp:animals] at @s if entity @a[distance=..16] run function cpp:dark_animals/attract
-# 哞菇
-execute as @e[type=item,nbt={Item:{tag:{id:"cpp:mycelium_marker"}}}] at @s run function cpp:block/mycelium
-
 # 绿宝石吸引村民
 tag @a remove cpp_player_hand_emerald_block
 tag @a[nbt={SelectedItem:{id:"minecraft:emerald_block"}}] add cpp_player_hand_emerald_block
 tag @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:emerald_block"}]}] add cpp_player_hand_emerald_block
-execute as @e[type=villager] at @s if entity @a[distance=1..10,tag=cpp_player_hand_emerald_block] run function cpp:villager/attract
-execute as @e[type=wandering_trader] at @s if entity @a[distance=1..10,tag=cpp_player_hand_emerald_block] run function cpp:villager/attract
+execute as @e[type=#cpp:villagers] at @s if entity @a[distance=1..10,tag=cpp_player_hand_emerald_block] run function cpp:villager/attract
+
+# 哞菇
+execute as @e[type=item,nbt={Item:{tag:{id:"cpp:mycelium_marker"}}}] at @s run function cpp:block/mycelium
 
 # 鸡窝
 execute as @e[tag=cpp_roost] at @s unless block ~ ~ ~ dead_fire_coral_fan run function cpp:block/break_roost
@@ -183,15 +176,18 @@ execute as @a[nbt={Inventory:[{Slot:-106b,tag:{id:"cpp:dream_wand"}}]}] run func
 
 execute as @e[tag=cpp_bullet] at @s run function cpp:magic/bullet_tracking
 
-
 # 连锁
 execute as @a[scores={cppChainTick=1..}] at @s anchored eyes run function cpp:chain/type
-execute as @e[type=item,nbt={Item:{id:"minecraft:oak_log"},Age:6s}] at @s if block ~ ~ ~ air run function cpp:chain/leaves_decay
-execute as @e[type=item,nbt={Item:{id:"minecraft:spruce_log"},Age:6s}] at @s if block ~ ~ ~ air run function cpp:chain/leaves_decay
-execute as @e[type=item,nbt={Item:{id:"minecraft:birch_log"},Age:6s}] at @s if block ~ ~ ~ air run function cpp:chain/leaves_decay
-execute as @e[type=item,nbt={Item:{id:"minecraft:jungle_log"},Age:6s}] at @s if block ~ ~ ~ air run function cpp:chain/leaves_decay
-execute as @e[type=item,nbt={Item:{id:"minecraft:acacia_log"},Age:6s}] at @s if block ~ ~ ~ air run function cpp:chain/leaves_decay
-execute as @e[type=item,nbt={Item:{id:"minecraft:dark_oak_log"},Age:6s}] at @s if block ~ ~ ~ air run function cpp:chain/leaves_decay
+execute as @e[type=item,nbt={Item:{id:"minecraft:oak_log"},Age:1s}] at @s run summon area_effect_cloud ~ ~ ~ {Duration:99,Tags:["cpp_leaves_decay"]}
+execute as @e[type=item,nbt={Item:{id:"minecraft:spruce_log"},Age:1s}] at @s run summon area_effect_cloud ~ ~ ~ {Duration:99,Tags:["cpp_leaves_decay"]}
+execute as @e[type=item,nbt={Item:{id:"minecraft:birch_log"},Age:1s}] at @s run summon area_effect_cloud ~ ~ ~ {Duration:99,Tags:["cpp_leaves_decay"]}
+execute as @e[type=item,nbt={Item:{id:"minecraft:jungle_log"},Age:1s}] at @s run summon area_effect_cloud ~ ~ ~ {Duration:99,Tags:["cpp_leaves_decay"]}
+execute as @e[type=item,nbt={Item:{id:"minecraft:acacia_log"},Age:1s}] at @s run summon area_effect_cloud ~ ~ ~ {Duration:99,Tags:["cpp_leaves_decay"]}
+execute as @e[type=item,nbt={Item:{id:"minecraft:dark_oak_log"},Age:1s}] at @s run summon area_effect_cloud ~ ~ ~ {Duration:99,Tags:["cpp_leaves_decay"]}
+execute as @e[type=item,nbt={Item:{id:"minecraft:charcoal"},Age:1s}] at @s run summon area_effect_cloud ~ ~ ~ {Duration:99,Tags:["cpp_leaves_decay"]}
+
+execute as @e[type=area_effect_cloud,tag=cpp_leaves_decay,nbt={Age:6}] at @s run function cpp:chain/leaves_decay
+kill @e[type=area_effect_cloud,tag=cpp_leaves_decay,nbt={Age:6}]
 
 # NoAi
 execute as @e[scores={cppNoAITick=1}] run data merge entity @s {NoAI:0b}

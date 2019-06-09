@@ -53,6 +53,8 @@
 		{ "predicate": { "custom_model_data": 12970106 }, "model": "cpp:plugin/cobblestone_plugin"},
 		{ "predicate": { "custom_model_data": 12970107 }, "model": "cpp:plugin/stone_plugin"},
 		{ "predicate": { "custom_model_data": 12970108 }, "model": "cpp:plugin/obsidian_plugin"},
+		{ "predicate": { "custom_model_data": 12970109 }, "model": "cpp:plugin/netherrack_plugin"},
+		{ "predicate": { "custom_model_data": 12970110 }, "model": "cpp:plugin/end_stone_plugin"},
 		
 		{ "predicate": { "custom_model_data": 12970121 }, "model": "cpp:golem/industrious_hand"},
 		{ "predicate": { "custom_model_data": 12970122 }, "model": "cpp:golem/break_hand"},

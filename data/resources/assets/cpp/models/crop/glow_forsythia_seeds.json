@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "cpp:seeds/glow_forsythia_seeds"
+        "layer0": "cpp:crop/glow_forsythia_seeds"
     }
 }

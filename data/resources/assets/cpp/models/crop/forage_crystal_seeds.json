@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "cpp:seeds/forage_crystal_seeds"
+        "layer0": "cpp:crop/forage_crystal_seeds"
     }
 }

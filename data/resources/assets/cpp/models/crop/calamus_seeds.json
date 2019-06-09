@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "cpp:seeds/calamus_seeds"
+        "layer0": "cpp:crop/calamus_seeds"
     }
 }

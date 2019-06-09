@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "cpp:seeds/burning_chrysanthe_seeds"
+        "layer0": "cpp:crop/burning_chrysanthe_seeds"
     }
 }

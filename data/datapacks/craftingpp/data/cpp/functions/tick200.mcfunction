@@ -1,3 +1,6 @@
+# 生成魔导石
+execute unless score #load_sorcerer_stone cppValue matches 1 unless entity @e[tag=cpp_sorcerer_stone] if entity @a run function cpp:load_sorcerer_stone
+
 execute as @e[type=armor_stand,tag=cpp_need_fire] run data merge entity @s {Fire:32767s}
 
 # 头饰恢复魔法值

@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "cpp:seeds/bauhinia_seeds"
+        "layer0": "cpp:crop/bauhinia_seeds"
     }
 }

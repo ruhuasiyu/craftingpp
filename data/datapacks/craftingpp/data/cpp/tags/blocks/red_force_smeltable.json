@@ -1,23 +1,8 @@
 {
 	"replace": false,
 	"values": [
-		"minecraft:sand",
-		"minecraft:red_sand",
-		"#minecraft:logs",
-		"minecraft:cactus",
-		"minecraft:cobblestone",
-		"minecraft:netherrack",
-		"minecraft:stone_bricks",
-		"minecraft:wet_sponge",
-		"minecraft:clay",
-		"minecraft:kelp_plant",
-		"minecraft:sea_pickle",
-		"#cpp:terracottas",
-		"minecraft:iron_ore",
-		"minecraft:gold_ore",
-		"minecraft:quartz_block",
-		"minecraft:sandstone",
-		"minecraft:red_sandstone",
-		"minecraft:stone"
+		"#cpp:red_force_smeltable1",
+		"#cpp:red_force_smeltable2",
+		"minecraft:acacia_sapling"
 	]
 }

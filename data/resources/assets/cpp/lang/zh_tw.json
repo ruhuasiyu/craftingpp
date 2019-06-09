@@ -99,6 +99,8 @@
 	"item.cpp.cobblestone_plugin":"§e鵝卵石插件",
 	"item.cpp.stone_plugin":"§e石頭插件",
 	"item.cpp.obsidian_plugin":"§e黑曜石插件",
+	"item.cpp.netherrack_plugin":"§e地獄石插件",
+	"item.cpp.end_stone_plugin":"§e終界石插件",
 	
 	"item.cpp.process_shower":"§r進度條",
 	"item.cpp.output_slot":"§r輸出",
@@ -526,6 +528,9 @@
 	"item.cpp.character.25":"§r紙片人：龍門渕透華",
 	"item.cpp.character.26":"§r紙片人：天江衣",
 	"item.cpp.character.27":"§r紙片人：福路美穗子",
+	"item.cpp.character.28":"§r紙片人：瀨川音符",
+	"item.cpp.character.29":"§r紙片人：飛鳥桃子",
+	"item.cpp.character.30":"§r紙片人：卷機山花",
 	
 	"advancements.cpp.root.title":"§e開啟模組！",
 	"advancements.cpp.root.description":"§d感謝您的使用",
@@ -597,7 +602,7 @@
 
 	"The":"§a原版模組《更多的合成》已成功加載,",
 	"resourcepack":"版本",
-	"does":"§a1.9.3§a.",
+	"does":"§a1.9.4§a.",
 	"not":"§a更多內容請",
 	"Install":"§e點擊此處進入wiki.",
 	"correctly":"§a作者:",

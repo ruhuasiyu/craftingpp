@@ -506,6 +506,9 @@ span.leather_helmet{	background-position: -288px -32px;}
 span.leather_leggings{	background-position: -320px -32px;}
 span.leather_chestplate{	background-position: -352px -32px;}
 
+span.white_banner_mojang{	background-position: -512px -544px;}
+
+
 span.baked_potato{	background-position: -384px -640px;}
 span.blaze_powder{	background-position: -416px -640px;}
 span.blaze_rod{	background-position: -448px -640px;}
@@ -1452,6 +1455,11 @@ span.character27{	background-position: -256px -1408px;}
 span.dustbin{	background-position: -0px -1440px;}
 span.chest_transporter{	background-position: -32px -1440px;}
 span.muffler{	background-position: -64px -1440px;}
+span.netherrack_plugin{	background-position: -96px -1440px;}
+span.end_stone_plugin{	background-position: -128px -1440px;}
+span.character28{	background-position: -160px -1440px;}
+span.character29{	background-position: -192px -1440px;}
+span.character30{	background-position: -224px -1440px;}
 
 
 span.effects{

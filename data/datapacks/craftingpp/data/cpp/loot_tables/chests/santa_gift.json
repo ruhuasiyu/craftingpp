@@ -300,7 +300,10 @@
 				{ "type": "loot_table", "name": "cpp:character/24" },
 				{ "type": "loot_table", "name": "cpp:character/25" },
 				{ "type": "loot_table", "name": "cpp:character/26" },
-				{ "type": "loot_table", "name": "cpp:character/27" }
+				{ "type": "loot_table", "name": "cpp:character/27" },
+				{ "type": "loot_table", "name": "cpp:character/28" },
+				{ "type": "loot_table", "name": "cpp:character/29" },
+				{ "type": "loot_table", "name": "cpp:character/30" }
 			]
 		}
 	]
