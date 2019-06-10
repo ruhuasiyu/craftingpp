@@ -534,6 +534,7 @@
 <!-------------------------------------------------------------------------------------------------->
 <h2 id="machines">机器和插件</h2>
 <p>所有机器可空手开采，但用斧更快。关闭后，界面里的东西会保留，可以使用漏斗输入。强行将物品放入机器背景会导致停机。</p>
+<p>机器产出的物品会输出到相应方位的容器内。如果容器内的空槽位不足两个，或者对应位置没有容器，则会输出到机器自身的输出槽，同时机器会停止直到取走物品。</p>
 <h3 id="crafting_machine">合成器 (Crafting Machine)</h3>
 <span class="ui single"><span class="ci crafting_machine"></span></span>
 <p>放置后右击打开并将材料放入左侧3×3的合成方格，若右侧为空，则会自动合成出产物。</p>
@@ -576,7 +577,7 @@
 </tbody></table>
 <img style="height:200px" src="items/screenshots/all_in_one_machine.png" />
 <p>默认只能使用常压常温模式。主手持有相应的插件右击即可升级并解锁相应模式，包括：<a href="#low_temperature_plugin">低温插件</a>、<a href="#low_pressure_plugin">低压插件</a>、<a href="#high_temperature_plugin">高温插件</a>、<a href="#high_pressure_plugin">高压插件</a>。</p>
-<p>包括上方两个输入槽，下方两个输出槽。右上方为附魔之瓶槽位和经验槽。左侧三个槽位控制压力、温度和输出方向，按Q或Shift+左键切换模式。若输出方向有箱子/潜影箱/陷阱箱/木桶则会自动输出到箱子内。</p>
+<p>包括上方两个输入槽，下方两个输出槽。右上方为附魔之瓶槽位和经验槽。左侧三个槽位控制压力、温度和输出方向，按Q或左键切换模式。若输出方向有箱子/潜影箱/陷阱箱/木桶则会自动输出到箱子内。</p>
 <p>可以存储至多48点经验，当经验空缺部分达到附魔之瓶经验存储量时，会自动消耗右上方槽位的<a href="#experience_bottle">附魔之瓶</a>来装填。</p>
 <p>被强充能时停止工作。</p>
 
@@ -735,7 +736,7 @@
 <img style="height:200px" src="items/screenshots/trade_machine.png" />
 
 <p>
-包括左侧1个输入槽，右侧2个输出槽。左侧槽位控制输出方向，按Q或Shift+左键切换模式，若输出方向有箱子/潜影箱/陷阱箱/木桶则会自动输出到箱子内。</p>
+包括左侧1个输入槽，右侧2个输出槽。左侧槽位控制输出方向，按Q或左键切换模式，若输出方向有箱子/潜影箱/陷阱箱/木桶则会自动输出到箱子内。</p>
 <p>
 每次交易获得7点经验值，若输入绿宝石则额外产生7点。当存储的经验值达到附魔之瓶的存储量时，会转化为附魔之瓶输出。</p>
 <p>被强充能时停止工作。</p>
@@ -862,7 +863,7 @@
 </tbody></table>
 
 <p>
-包括左侧方块输入槽，上部工具输入槽，右侧2个输出槽。最左侧槽位控制输出方向，按Q或Shift+左键切换模式，若输出方向有箱子/潜影箱/陷阱箱/木桶则会自动输出到箱子内。</p>
+包括左侧方块输入槽，上部工具输入槽，右侧2个输出槽。最左侧槽位控制输出方向，按Q或左键切换模式，若输出方向有箱子/潜影箱/陷阱箱/木桶则会自动输出到箱子内。</p>
 <p>工具若有耐久会消耗1点耐久，否则不会被消耗。</p>
 <p>被强充能时停止工作。</p>
 
@@ -1469,7 +1470,7 @@
 <img style="height:200px" src="items/screenshots/golden_anvil.png" />
 
 <table><thead><tr><th>效果</th><th colspan="3">输入材料</th></tr></thead><tbody>
-<tr><td>移除惩罚等级</td><td>有惩罚等级的盔甲或工具</td><td><a href="#moon_shard">月之碎片</a></td><td rowspan="3">64 附魔之瓶</td></tr>
+<tr><td>移除惩罚等级</td><td>有惩罚等级的盔甲或工具</td><td><a href="#moon_shard">月之碎片</a></td><td rowspan="4">64 附魔之瓶</td></tr>
 <tr><td>移除诅咒魔咒</td><td>有诅咒魔咒的盔甲或工具</td><td><a href="#enchanted_golden_apple">附魔金苹果</a></td></tr>
 <tr><td>升级魔咒</td><td>拥有与上古卷轴同等级魔咒的盔甲或工具</td><td><a href="#ancient_scroll">上古卷轴</a></td></tr>
 <tr><td>转移魔咒至书</td><td>附魔物品</td><td>书</td></tr>
@@ -2933,7 +2934,7 @@
 <span class="empty"></span>
 <span class="ci chest_transporter" title="搬箱器"></span>
 </span></td>
-<td>shift右键破坏箱子，箱子内的物品会保留。共26点耐久，支持经验修补魔咒，不支持耐久魔咒。</td></tr>
+<td>shift右键破坏箱子，箱子内的物品会保留。共26点耐久。</td></tr>
 
 <tr><th><strong id="roost">鸡窝 (Roost)</strong></th><td>小麦</td>
 <td><span class="ui cm" title="合成器">
@@ -5034,7 +5035,7 @@
 <p><img style="height:200px" src="items/screenshots/random_block.png" /></p>
 
 <h3 id="sort_chest">箱子整理</h3>
-<p>当玩家主手/副手持有木棍右击箱子/潜影箱后，箱子内的物品会按照物品id的长度/物品数量从小到大排序。该操作不会合并同名的物品。</p>
+<p>当玩家主手/副手持有木棍右击箱子/潜影箱后，箱子内的物品会按照物品id的长度/物品数量从小到大排序。</p>
 
 <h3 id="dispenser_plant">自动种植</h3>
 <p>当发射器发射的物品可以种植在前方位置时，会自动种植。支持本模组的树苗和花草。</p>
@@ -5128,9 +5129,9 @@
 <h2 id="block_sky_domain">空域开端</h2>
 <p>
 该数据包仅在出生点y=0处无方块情形下启用，玩家可由自定义超平坦如<code>minecraft:air;minecraft:mountains;</code>进入。</p>
-<p>若要在非空岛模式下开启该模块，依次输入<code>scoreboard players set #load_block_sky_domain cppValue 1</code>和<code>/datapack enable "file/block_sky_domain"</code></p>
-<p>若要在空岛模式下关闭该模块，依次输入<code>scoreboard players set #load_block_sky_domain cppValue 0</code>和<code>/datapack disable "file/block_sky_domain"</code></p>
-<p>该数据包旨在为空岛玩家提供从泥土到末地的完整科技链。加载后会在海平面高度生成一块基岩和一个箱子，箱子内包含1泥土、1橡树树苗、16骨粉。</p>
+<p>若要在非空岛模式下开启该模块，输入<code>scoreboard players set #load_block_sky_domain cppValue 1</code>并重新加载即可。</p>
+<p>若要在空岛模式下关闭该模块，依次输入<code>scoreboard players set #load_block_sky_domain cppValue 0</code>并重新加载即可。</p>
+<p>该数据包旨在为空岛玩家提供从泥土到末地的完整科技链。加载后会生成一块基岩和一个箱子，箱子内包含1泥土、1橡树树苗、16骨粉。</p>
 <p>玩家破坏树叶、草丛、枯萎的灌木、海草会掉落下述物品。</p>
 
 <table style="font-size:88%;text-align:center">

@@ -1,3 +1,5 @@
+kill @e[tag=cpp_chunk]
+
 # 黑暗生物攻击
 execute as @e[tag=cpp_dark_animal] at @s if entity @a[distance=..1] run function cpp:dark_animals/attack
 
