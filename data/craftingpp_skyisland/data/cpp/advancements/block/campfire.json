@@ -1,0 +1,13 @@
+{
+	"criteria": {
+		"put_campfire": {
+			"trigger": "minecraft:placed_block",
+			"conditions": {
+				"block": "minecraft:campfire"
+			}
+		}
+	},
+	"rewards": {
+		"function": "cpp:block/campfire"
+	}
+}

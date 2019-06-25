@@ -1,0 +1,15 @@
+{
+	"criteria": {
+		"machine": {
+			"trigger": "minecraft:placed_block",
+			"conditions": {
+				"item": {
+					"item":"minecraft:petrified_oak_slab"
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "cpp:block/machine/adv"
+	}
+}

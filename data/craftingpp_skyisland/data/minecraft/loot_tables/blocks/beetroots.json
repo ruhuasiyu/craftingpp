@@ -1,0 +1,96 @@
+{
+	"type": "minecraft:block",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:alternatives",
+					"children": [
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:block_state_property",
+									"block": "minecraft:beetroots",
+									"properties": {
+										"age": "3"
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:beetroot"
+						},
+						{
+							"type": "minecraft:item",
+							"name": "minecraft:beetroot_seeds"
+						}
+					]
+				}
+			]
+		},
+		{
+			"conditions": [
+				{
+					"condition": "minecraft:block_state_property",
+					"block": "minecraft:beetroots",
+					"properties": {
+						"age": "3"
+					}
+				}
+			],
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:beetroot_seeds",
+					"functions": [
+						{
+							"function": "minecraft:apply_bonus",
+							"enchantment": "minecraft:fortune",
+							"formula": "minecraft:binomial_with_bonus_count",
+							"parameters": {
+								"extra": 3,
+								"probability": 0.5714286
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1.0,
+			"conditions": [
+				{
+					"condition": "minecraft:block_state_property",
+					"block": "minecraft:beetroots",
+					"properties": {
+						"age": "3"
+					}
+				},
+				{
+					"condition": "minecraft:random_chance",
+					"chance": 0.05
+				}
+			],
+			"entries": [
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:lycoris_radiata_seeds"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:blackthorn_seeds"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:cattail_seeds"
+				}
+			]
+		}
+	],
+	"functions": [
+		{
+			"function": "minecraft:explosion_decay"
+		}
+	]
+}

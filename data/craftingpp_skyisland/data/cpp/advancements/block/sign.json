@@ -1,0 +1,13 @@
+{
+	"criteria": {
+		"oak_sign": {
+			"trigger": "minecraft:placed_block",
+			"conditions": {
+				"block":"minecraft:oak_sign"
+			}
+		}
+	},
+	"rewards": {
+		"function": "cpp:block/sign"
+	}
+}

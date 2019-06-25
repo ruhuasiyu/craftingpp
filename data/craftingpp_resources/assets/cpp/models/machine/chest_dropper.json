@@ -1,0 +1,12 @@
+{
+    "parent": "cpp:machine/machine",
+    "textures": {
+        "particle": "cpp:machine/chest_dropper_side",
+        "down": "cpp:machine/chest_dropper_bottom",
+        "up": "cpp:machine/chest_dropper_top",
+        "north": "cpp:machine/chest_dropper_side",
+        "east": "cpp:machine/chest_dropper_side",
+        "south": "cpp:machine/chest_dropper_side",
+        "west": "cpp:machine/chest_dropper_side"
+    }
+}

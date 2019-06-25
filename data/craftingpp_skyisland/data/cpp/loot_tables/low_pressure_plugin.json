@@ -1,0 +1,19 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:firework_star",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{MachinePlugin:1b,display:{Name:\"{\\\"translate\\\":\\\"item.cpp.low_pressure_plugin\\\"}\"},id:\"cpp:low_pressure_plugin\",CustomModelData:12970102}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,9 +1,0 @@
-{
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "block/dead_fire_coral_fan"
-    },
-	"overrides": [
-		{ "predicate": { "custom_model_data": 12970001 }, "model": "cpp:tool/roost"}
-	]
-}

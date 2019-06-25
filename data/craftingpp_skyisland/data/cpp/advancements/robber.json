@@ -1,0 +1,41 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:emerald"
+		 },
+		"title":{
+			"translate": "advancements.cpp.robber.title"
+		},
+		"description": {
+			"translate": "advancements.cpp.robber.description"
+		}
+	},
+	"parent": "cpp:root",
+	"criteria": {
+		"villager": {
+			"trigger": "minecraft:player_killed_entity",
+				"conditions": {
+				"entity": {
+					"type": "minecraft:villager"
+				}
+			}
+		},
+		"wandering_trader": {
+			"trigger": "minecraft:player_killed_entity",
+				"conditions": {
+				"entity": {
+					"type": "minecraft:wandering_trader"
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"villager",
+			"wandering_trader"
+		]
+	],
+	"rewards": {
+		"function": "cpp:adv/robber"
+	}
+}

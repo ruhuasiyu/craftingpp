@@ -1,0 +1,30 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:stone",
+					"functions": [
+						{
+							"function": "set_attributes",
+							"modifiers": [
+								{
+									"name": "head_maxHealth",
+									"attribute": "generic.maxHealth",
+									"operation": "addition",
+									"amount": {
+										"min": 0,
+										"max": 16777216
+									},
+									"slot": "head"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

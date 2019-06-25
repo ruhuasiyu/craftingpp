@@ -1,0 +1,19 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:carved_pumpkin",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.witch_head\\\"}\"},id:\"cpp:witch_head\",CustomModelData:12970236}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,39 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{ "type": "loot_table", "name": "cpp:character/01" },
+				{ "type": "loot_table", "name": "cpp:character/02" },
+				{ "type": "loot_table", "name": "cpp:character/03" },
+				{ "type": "loot_table", "name": "cpp:character/04" },
+				{ "type": "loot_table", "name": "cpp:character/05" },
+				{ "type": "loot_table", "name": "cpp:character/06" },
+				{ "type": "loot_table", "name": "cpp:character/07" },
+				{ "type": "loot_table", "name": "cpp:character/08" },
+				{ "type": "loot_table", "name": "cpp:character/09" },
+				{ "type": "loot_table", "name": "cpp:character/10" },
+				{ "type": "loot_table", "name": "cpp:character/11" },
+				{ "type": "loot_table", "name": "cpp:character/12" },
+				{ "type": "loot_table", "name": "cpp:character/13" },
+				{ "type": "loot_table", "name": "cpp:character/14" },
+				{ "type": "loot_table", "name": "cpp:character/15" },
+				{ "type": "loot_table", "name": "cpp:character/16" },
+				{ "type": "loot_table", "name": "cpp:character/17" },
+				{ "type": "loot_table", "name": "cpp:character/18" },
+				{ "type": "loot_table", "name": "cpp:character/19" },
+				{ "type": "loot_table", "name": "cpp:character/20" },
+				{ "type": "loot_table", "name": "cpp:character/21" },
+				{ "type": "loot_table", "name": "cpp:character/22" },
+				{ "type": "loot_table", "name": "cpp:character/23" },
+				{ "type": "loot_table", "name": "cpp:character/24" },
+				{ "type": "loot_table", "name": "cpp:character/25" },
+				{ "type": "loot_table", "name": "cpp:character/26" },
+				{ "type": "loot_table", "name": "cpp:character/27" },
+				{ "type": "loot_table", "name": "cpp:character/28" },
+				{ "type": "loot_table", "name": "cpp:character/29" },
+				{ "type": "loot_table", "name": "cpp:character/30" }
+			]
+		}
+	]
+}

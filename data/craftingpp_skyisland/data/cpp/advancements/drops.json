@@ -1,0 +1,98 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:rabbit_foot",
+			"nbt":"{CustomModelData:12970001}"
+		},
+		"title":{
+			"translate": "advancements.cpp.drops.title"
+		},
+		"description": {
+			"translate": "advancements.cpp.drops.description"
+		}
+	},
+	"parent": "cpp:xp_bottle",
+	"criteria": {
+		"wing_of_sky": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"nbt":"{id:\"cpp:wing_of_sky\"}"
+					}
+				]
+			}
+		},
+		"heart_of_crystal": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"nbt":"{id:\"cpp:heart_of_crystal\"}"
+					}
+				]
+			}
+		},
+		"nova_of_fire": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"nbt":"{id:\"cpp:nova_of_fire\"}"
+					}
+				]
+			}
+		},
+		"soul_of_dirt": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"nbt":"{id:\"cpp:soul_of_dirt\"}"
+					}
+				]
+			}
+		},
+		"certification_of_earth": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"nbt":"{id:\"cpp:certification_of_earth\"}"
+					}
+				]
+			}
+		},
+		"limb_of_ridge": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"nbt":"{id:\"cpp:limb_of_ridge\"}"
+					}
+				]
+			}
+		},
+		"spirit_of_life": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"nbt":"{id:\"cpp:spirit_of_life\"}"
+					}
+				]
+			}
+		}
+	},
+	"requirements":[
+		[
+			"wing_of_sky",
+			"heart_of_crystal",
+			"nova_of_fire",
+			"soul_of_dirt",
+			"certification_of_earth",
+			"limb_of_ridge",
+			"spirit_of_life"
+		]
+	]
+}

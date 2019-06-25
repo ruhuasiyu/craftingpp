@@ -1,9 +1,0 @@
-execute positioned ~-32 0 ~-32 unless block ~ ~ ~ barrier run function cpp:generate/mark
-execute positioned ~ 0 ~-32 unless block ~ ~ ~ barrier run function cpp:generate/mark
-execute positioned ~32 0 ~-32 unless block ~ ~ ~ barrier run function cpp:generate/mark
-execute positioned ~-32 0 ~ unless block ~ ~ ~ barrier run function cpp:generate/mark
-execute positioned ~ 0 ~ unless block ~ ~ ~ barrier run function cpp:generate/mark
-execute positioned ~32 0 ~ unless block ~ ~ ~ barrier run function cpp:generate/mark
-execute positioned ~-32 0 ~32 unless block ~ ~ ~ barrier run function cpp:generate/mark
-execute positioned ~ 0 ~32 unless block ~ ~ ~ barrier run function cpp:generate/mark
-execute positioned ~32 0 ~32 unless block ~ ~ ~ barrier run function cpp:generate/mark

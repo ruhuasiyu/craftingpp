@@ -1,0 +1,19 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:stone_sword",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.grafter\\\"}\"},id:\"cpp:grafter\",CustomModelData:12970001,HideFlags:63}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

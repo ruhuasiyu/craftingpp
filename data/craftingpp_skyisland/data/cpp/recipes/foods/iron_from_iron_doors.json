@@ -1,0 +1,14 @@
+{
+	"type": "smelting",
+	"ingredient": [
+		{
+			"item": "minecraft:iron_door"
+		},
+		{
+			"item": "minecraft:iron_trapdoor"
+		}
+	],
+	"result": "minecraft:iron_ingot",
+	"experience": 0.35,
+	"cookingtime": 200
+}

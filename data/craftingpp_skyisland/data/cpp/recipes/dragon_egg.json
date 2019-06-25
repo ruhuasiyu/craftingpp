@@ -1,0 +1,19 @@
+{
+	"type": "crafting_shaped",
+	"pattern": [
+		" # ",
+		"#e#",
+		" # "
+	],
+	"key": {
+		"#": {
+			"item": "minecraft:dragon_head"
+		},
+		"e": {
+			"item": "minecraft:egg"
+		}
+	},
+	"result": {
+		"item": "minecraft:dragon_egg"
+	}
+}

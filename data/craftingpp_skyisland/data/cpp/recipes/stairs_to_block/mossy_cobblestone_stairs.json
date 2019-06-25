@@ -1,0 +1,17 @@
+{
+	"type": "crafting_shaped",
+	"group": "stairs_to_block",
+	"pattern": [
+		"##",
+		"##"
+	],
+	"key": {
+		"#": {
+			"item": "minecraft:mossy_cobblestone_stairs"
+		}
+	},
+	"result": {
+		"item": "minecraft:mossy_cobblestone",
+		"count": 4
+	}
+}

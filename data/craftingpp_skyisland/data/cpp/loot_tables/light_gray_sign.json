@@ -1,0 +1,19 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:oak_sign",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.light_gray_sign\\\"}\"},id:\"cpp:light_gray_sign\",CustomModelData:12970009}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

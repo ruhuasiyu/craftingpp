@@ -1,0 +1,170 @@
+{
+	"type": "minecraft:entity",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:leather",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 0,
+								"max": 2
+							}
+						},
+						{
+							"function": "looting_enchant",
+							"count": {
+								"min": 0,
+								"max": 1
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"conditions": [
+				{
+					"condition": "entity_properties",
+					"entity": "this",
+					"predicate": {
+						"flags": {
+							"is_on_fire": false
+						}
+					}
+				}
+			],
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "loot_table",
+					"name": "cpp:mule_meat",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 3
+							}
+						},
+						{
+							"function": "looting_enchant",
+							"count": {
+								"min": 0,
+								"max": 1
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"conditions": [
+				{
+					"condition": "entity_properties",
+					"entity": "this",
+					"predicate": {
+						"flags": {
+							"is_on_fire": true
+						}
+					}
+				}
+			],
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "loot_table",
+					"name": "cpp:cooked_mule_meat",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 3
+							}
+						},
+						{
+							"function": "looting_enchant",
+							"count": {
+								"min": 0,
+								"max": 1
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"conditions": [
+				{
+					"condition": "alternative",
+					"terms": [
+						{
+							"condition": "killed_by_player"
+						},
+						{
+							"condition": "entity_properties",
+							"entity": "killer",
+							"predicate": {
+								"type": "minecraft:zombie_pigman"
+							} 
+						}
+					]
+				},
+				{
+					"condition": "random_chance_with_looting",
+					"chance": 0.025,
+					"looting_multiplier": 0.01
+				}
+			],
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "loot_table",
+					"name": "cpp:limb_of_ridge"
+				}
+			]
+		},
+		{
+			"conditions": [
+				{
+					"condition": "alternative",
+					"terms": [
+						{
+							"condition": "killed_by_player"
+						},
+						{
+							"condition": "entity_properties",
+							"entity": "killer",
+							"predicate": {
+								"type": "minecraft:zombie_pigman"
+							} 
+						}
+					]
+				},
+				{
+					"condition": "random_chance_with_looting",
+					"chance": 0.025,
+					"looting_multiplier": 0.01
+				}
+			],
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:player_head",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{id:\"cpp:mule_head\",display:{Name:\"{\\\"translate\\\":\\\"item.cpp.mule_head\\\"}\"},SkullOwner:{Id:\"1fd5db60-329f-4dcd-9e8d-7d4adc68ff29\",Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTA0ODZhNzQyZTdkZGEwYmFlNjFjZTJmNTVmYTEzNTI3ZjFjM2IzMzRjNTdjMDM0YmI0Y2YxMzJmYjVmNWYifX19\"}]}}}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

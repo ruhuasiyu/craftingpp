@@ -1,0 +1,23 @@
+﻿{
+	"pack": {
+		"pack_format": 4,
+		"description": "§6更多的合成资源包v1.9.5\n§aruhuasiyu RubberTree等"
+	},
+	"language": {
+		"zh_cn":{
+			"name": "简体中文",
+			"region": "中国大陆",
+			"bidirectional": false
+		},
+		"en_us":{
+			"name": "English",
+			"region": "United States",
+			"bidirectional": false
+		},
+		"zh_tw":{
+			"name": "繁体中文",
+			"region": "中国台湾",
+			"bidirectional": false
+		}
+	}
+}

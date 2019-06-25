@@ -1,0 +1,9 @@
+execute positioned ~-32 0 ~-32 if block ~ ~ ~ bedrock run function cpp:generate/mark
+execute positioned ~ 0 ~-32 if block ~ ~ ~ bedrock run function cpp:generate/mark
+execute positioned ~32 0 ~-32 if block ~ ~ ~ bedrock run function cpp:generate/mark
+execute positioned ~-32 0 ~ if block ~ ~ ~ bedrock run function cpp:generate/mark
+execute positioned ~ 0 ~ if block ~ ~ ~ bedrock run function cpp:generate/mark
+execute positioned ~32 0 ~ if block ~ ~ ~ bedrock run function cpp:generate/mark
+execute positioned ~-32 0 ~32 if block ~ ~ ~ bedrock run function cpp:generate/mark
+execute positioned ~ 0 ~32 if block ~ ~ ~ bedrock run function cpp:generate/mark
+execute positioned ~32 0 ~32 if block ~ ~ ~ bedrock run function cpp:generate/mark

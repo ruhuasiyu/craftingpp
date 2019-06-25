@@ -1,0 +1,87 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:stone",
+					"functions": [
+						{
+							"function": "set_attributes",
+							"modifiers": [
+								{
+									"name": "mainhand_attackSpeed",
+									"attribute": "generic.attackSpeed",
+									"operation": "addition",
+									"amount": {
+										"min": -2.9,
+										"max": -0.9
+									},
+									"slot": "mainhand"
+								}
+							]
+						},
+						{
+							"function": "set_attributes",
+							"modifiers": [
+								{
+									"name": "mainhand_attackDamage",
+									"attribute": "generic.attackDamage",
+									"operation": "addition",
+									"amount": {
+										"min": 8,
+										"max": 16
+									},
+									"slot": "mainhand"
+								}
+							]
+						},
+						{
+							"function": "set_attributes",
+							"modifiers": [
+								{
+									"name": "mainhand_movementSpeed",
+									"attribute": "generic.movementSpeed",
+									"operation": "addition",
+									"amount": {
+										"min": 0.005,
+										"max": 0.015
+									},
+									"slot": "mainhand"
+								}
+							],
+							"conditions": [
+								{
+									"condition": "random_chance",
+									"chance": 0.5
+								}
+							]
+						},
+						{
+							"function": "set_attributes",
+							"modifiers": [
+								{
+									"name": "mainhand_luck",
+									"attribute": "generic.luck",
+									"operation": "addition",
+									"amount": {
+										"min": 0.5,
+										"max": 2
+									},
+									"slot": "mainhand"
+								}
+							],
+							"conditions": [
+								{
+									"condition": "random_chance",
+									"chance": 0.5
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,155 @@
+{
+	"type": "minecraft:fishing",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:tube_coral",
+					"weight": 2
+				},
+				{
+					"type": "item",
+					"name": "minecraft:brain_coral",
+					"weight": 2
+				},
+				{
+					"type": "item",
+					"name": "minecraft:bubble_coral",
+					"weight": 2
+				},
+				{
+					"type": "item",
+					"name": "minecraft:fire_coral",
+					"weight": 2
+				},
+				{
+					"type": "item",
+					"name": "minecraft:horn_coral",
+					"weight": 2
+				},
+				{
+					"type": "item",
+					"name": "minecraft:tube_coral_fan",
+					"weight": 2
+				},
+				{
+					"type": "item",
+					"name": "minecraft:brain_coral_fan",
+					"weight": 2
+				},
+				{
+					"type": "item",
+					"name": "minecraft:bubble_coral_fan",
+					"weight": 2
+				},
+				{
+					"type": "item",
+					"name": "minecraft:fire_coral_fan",
+					"weight": 2
+				},
+				{
+					"type": "item",
+					"name": "minecraft:horn_coral_fan",
+					"weight": 2
+				},
+				{
+					"type": "item",
+					"name": "minecraft:lily_pad",
+					"weight": 20
+				},
+				{
+					"type": "item",
+					"name": "minecraft:name_tag",
+					"weight": 20
+				},
+				{
+					"type": "item",
+					"name": "minecraft:saddle",
+					"weight": 20
+				},
+				{
+					"type": "item",
+					"name": "minecraft:bow",
+					"weight": 20,
+					"functions": [
+						{
+							"function": "set_damage",
+							"damage": {
+								"min": 0,
+								"max": 0.25
+							}
+						},
+						{
+							"function": "enchant_with_levels",
+							"levels": 30,
+							"treasure": true
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:fishing_rod",
+					"weight": 20,
+					"functions": [
+						{
+							"function": "set_damage",
+							"damage": {
+								"min": 0,
+								"max": 0.25
+							}
+						},
+						{
+							"function": "enchant_with_levels",
+							"levels": 30,
+							"treasure": true
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:book",
+					"weight": 20,
+					"functions": [
+						{
+							"function": "enchant_with_levels",
+							"levels": 30,
+							"treasure": true
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:nautilus_shell",
+					"weight": 20
+				},
+				{
+					"type": "item",
+					"name": "minecraft:wet_sponge",
+					"weight": 2
+				},
+				{
+					"type": "loot_table",
+					"name": "cpp:cod_head"
+				},
+				{
+					"type": "loot_table",
+					"name": "cpp:salmon_head"
+				},
+				{
+					"type": "loot_table",
+					"name": "cpp:tropical_fish_head"
+				},
+				{
+					"type": "loot_table",
+					"name": "cpp:pufferfish_head"
+				},
+				{
+					"type": "loot_table",
+					"name": "cpp:heart_of_crystal"
+				}
+			]
+		}
+	]
+}

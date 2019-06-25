@@ -2,7 +2,7 @@
 <html lang="zh-cmn-Hans">
 <head>
 <meta charset="utf-8" />
-<title>更多的合成 Crafting++ v1.9.4</title>
+<title>更多的合成 Crafting++ v1.9.5</title>
 <meta name='author' content='ruhuasiyu@mcbbs' />
 <meta name='keywords' content='minecraft, 原版模组, vanilla mod, datapacks, Crafting++' />
 <meta name='description' content='Minecraft 原版模组 更多的合成' />
@@ -35,7 +35,7 @@
 	<li><a href="#trade">交易</a></li>
 	<li><a href="#block_sky_domain">空岛</a></li>
 	<li><a href="#advancements">进度</a></li>
-	<li><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/releases/tag/v1.9.1">日志</a></li>
+	<li><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/releases/tag/v1.9.5">日志</a></li>
 </ul>
 </nav>
 <div class="banner" style="margin-top:44px">
@@ -49,11 +49,11 @@
 <p style="color:red">🎉欢迎来到原版模组《更多的合成》主页！</p>
 <p>原版模组一般是指使用命令而非<abbr title="forge liteloader rift fibric 等">mod api</abbr>来对游戏的可玩性做出修改。自1.13起，原版模组一般以数据包的形式出现。</p>
 <p>《更多的合成》是国内论坛最大的原版模组，包括数百种物品、材料、工具、装饰等，以及新的村民交易和空岛系统。</p>
-<p>最新正式版本为v1.9.4，于2019年5月25日发布，支持Minecraft 1.14版本。此次更新添加了魔杖的魔法效果，对大量模组物品和方块材质进行了重新绘制，同时也添加了很多实用工具、食物、装饰和药水。具体来说，加入了物品处理机、剪枝器、玻璃镐、搬箱器、垃圾桶、旗帜、标志、汉堡、披萨、寿司、仰望星空派、水果、葡萄干等，以及重新设计了花草、头颅和空岛。此次更新也加入了获取物品的便捷方式，优化了大量指令，加入了很多可自动化的内容。</p>
+<p>最新正式版本为v1.9.5，于2019年6月25日发布，支持Minecraft 1.14版本。此次更新添加了魔杖的魔法效果，对大量模组物品和方块材质进行了重新绘制，同时也添加了很多实用工具、食物、装饰和药水。具体来说，加入了物品处理机、剪枝器、玻璃镐、搬箱器、垃圾桶、旗帜、标志、汉堡、披萨、寿司、仰望星空派、水果、葡萄干等，以及重新设计了花草、头颅和空岛。此次更新也加入了获取物品的便捷方式，优化了大量指令，加入了很多可自动化的内容。</p>
 <p>本模组即将完结，以后应该只会修复bug和优化内容，不会再有大的更新。如遇到Minecraft命令机制大改或新生物等内容，我还是会及时更新代码并支持新的内容。感谢大家一直以来的支持和帮助！</p>
 
 <h3 id="download">📦 下载地址</h3>
-<p>本页面所列内容为1.9.4版本。不建议玩家使用旧版本，同时新版本放出后，旧版本一律不再更新和修复bug。</p>
+<p>本页面所列内容为1.9.5版本。不建议玩家使用旧版本，同时新版本放出后，旧版本一律不再更新和修复bug。</p>
 <ul>
 	<li><a href="http://home.ustc.edu.cn/~zsxqq/craftingpp">官方主页</a></li>
 	<li><a href="http://www.mcbbs.net/thread-696861-1-1.html">mcbbs中文论坛页面</a></li>
@@ -64,10 +64,10 @@
 <table><thead><tr><th>支持的minecraft版本</th><th>Crafting++版本</th><th>下载地址</th></tr></thead>
 <tbody>
 <tr>
-	<td>Minecraft Java版 1.14-1.14.2</td>
-	<td>Crafting++ 1.9.4</td>
-	<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/releases/tag/v1.9.4">github</a>
-	  | <a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.9.4.zip">官方</a></td>
+	<td>Minecraft Java版 1.14-1.14.3</td>
+	<td>Crafting++ 1.9.5</td>
+	<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/releases/tag/v1.9.5">github</a>
+	  | <a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.9.5.zip">官方</a></td>
 </tr>
 <tr>
 	<td>Minecraft Java版 1.13.1-1.13.2</td>
@@ -79,21 +79,26 @@
 </tbody></table>
 
 <h3 id="how_to_start">🚀 如何开始</h3>
-<p>下载后，将解压缩后的<code>datapacks</code>文件夹和<code>resources.zip</code>放入<code>.minecraft/saves/世界名</code>文件夹，同时打开选项->语言->强制使用Unicode字体：关。安装完成后进入游戏即可。</p>
-<p>服务端的操作类似，请设置server.properties中resource-pack=home.ustc.edu.cn/~zsxqq/craftingpp/resources.zip，每次更新时请重新计算resource-pack-sha1。客户端无需安装数据包。若资源包加载太慢或有其它问题，可让玩家自行下载到本地后选择。</p>
-<p>服主或管理员可使用命令<code>/loot give @s loot cpp:物品英文名</code>来获取模组的物品，物品英文名为小写，空格转为下划线。例如使用命令<code>/loot give @s loot cpp:all_in_one_machine</code>可获得多功能一体机。</p>
+<p>下载后解压缩。</p>
+<ul>
+<li><span style="font-weight:bold;">资源包</span>文件夹位于<code>.minecraft/resourcepacks</code>文件夹，该文件夹也可从游戏界面<code>选项->资源包->打开资源包文件夹</code>处打开。将<code>craftingpp_resources.zip</code>放入，然后进入选择资源包的页面，选择该资源包至右侧已选的资源包。</li>
+<li><span style="font-weight:bold;">数据包</span>文件夹位于<code>.minecraft/saves/世界名称/datapacks</code>文件夹，该文件夹也可从游戏界面<code>选中世界->编辑->打开世界文件夹->打开datapacks文件夹</code>处打开。将文件夹<code>craftingpp</code>(普通生存模式)或文件夹<code>craftingpp_skyisland</code>(空岛生存模式)放入，然后退出世界重进。请勿将两个数据包同时放置在该文件夹内！</li>
+</ul>
+<p>最后请打开<code>选项->语言->强制使用Unicode字体：关</code>。
 <!--<p>广告：欢迎加入挼苹果服，QQ群号885244850。</p>-->
 
 <h4>模组入门</h4>
 <p>大部分合成需使用<a href="#crafting_machine"><span class="ui single"><span class="ci crafting_machine"></span></span>合成器</a>。模组需要的附魔之瓶可通过副手持有漏斗获取。</p>
 <p>部分参数可通过<a href="#config">配置文件</a><code>datapacks/craftingpp/data/cpp/functions/config.mcfunction</code>修改。模组支持英文、简体中文、繁体中文三种语言。如有任何意见建议，欢迎<a href="http://www.mcbbs.net/thread-696861-1-1.html">在论坛回复</a>、<a href="https://github.com/ruhuasiyu/craftingpp/issues/new">发起issue</a>或<a href="http://www.mcbbs.net/home.php?mod=spacecp&ac=pm&touid=975525">私信我</a>，请在反馈时提供游戏版本和模组版本。</p>
+<p>管理员可使用命令<code>/loot give @s loot cpp:物品英文名</code>来获取模组的物品，物品英文名为小写，空格转为下划线。例如使用命令<code>/loot give @s loot cpp:all_in_one_machine</code>可获得多功能一体机。</p>
 
 <h4>注意事项</h4>
 <ul>
+<li>本模组所有内容仅在单机纯净端测试通过，理论上支持多人。但是对于非纯净端，例如Spigot/Sponge等，未必支持。</li>
+<li>服务端的操作与单机类似，请设置服务器资源包下载地址。客户端无需安装数据包。若资源包加载太慢或有其它问题，可让玩家自行下载到本地后选择。非公益服务器建议在<a href="https://afdian.net/@ruhuasiyu">爱发电</a>根据自身盈利能力对作者进行赞助。</li>
 <li><span style="color:blue">转载本页面</span>需遵守<strong><a href="https://creativecommons.org/licenses/by-nc-nd/2.5/cn/">CC BY-NC-ND 2.5 CN 许可协议</a></strong>——列出作者(<a href="http://www.mcbbs.net/home.php?mod=spacecp&ac=pm&touid=975525">ruhuasiyu@mcbbs</a>)、来源、原始下载链接以及相同的许可协议。</li>
 <li><span style="color:blue">使用模组代码</span>需遵守<a href="https://www.gnu.org/licenses/gpl.html">GNU GENERAL PUBLIC LICENSE v3.0</a>协议。</li>
 <li><span style="color:blue">转发模组文件</span>不可上传至网盘或文件存储平台，但通讯类工具允许下载后分享。</li>
-<li><span style="color:blue">服务器</span>若为公益可直接使用；非公益请先在<a href="https://afdian.net/@ruhuasiyu">爱发电</a>支付100元商业服授权费用后再使用。</li>
 <li><span style="color:blue">主播或视频制作者</span>若在直播或视频中使用了本模组，请在简介中注明主页、作者名或模组来源。</li>
 <li><span style="color:blue">原版模组整合者</span>，该原版模组命名空间为cpp，所有记分板和标签均使用前缀cpp，物品自定义模型区段位于12970000-12979999，修改了minecraft命名空间大部分的战利品表和少量配方与标签。</li>
 </ul>
@@ -106,8 +111,8 @@
 <p><span style="font-weight:bold;">资源包设计</span>：ruhuasiyu RubberTree XeKr 折君 天狼星black MC先生</p>
 <p><span style="font-weight:bold;">服务器支持</span>：HerobrineXia SorrowRain 苹果果</p>
 <p><span style="font-weight:bold;">平台支持</span>：<a href="https://www.mcbbs.net/">Minecraft(我的世界)中文论坛</a> <a href="https://www.mcmod.cn/">MC百科</a> </p>
-<p><span style="font-weight:bold;">赞助名单</span>：<span style="color:blue;">一米八微笑 明月庄主 Rhythm萱 唯一丶为伊 LIXIAOGANG 墨鱼 uuu2011 火星浮云 匿名 这是彩虹糖呢 倪采臣 SPGoding ustc_zzzz 苹果果 落天望月 猫君 chyx switefaster</span></p>
-<!--一米八微笑 250 明月庄主 250 Rhythm萱 128 LIXIAOGANG 96 墨鱼 86 uuu2011 66 火星浮云 64 匿名 50 这是彩虹糖呢 48 倪采臣 32 SPGoding ustc_zzzz 苹果果 落天望月 猫君 chyx switefaster-->
+<p><span style="font-weight:bold;">赞助名单</span>：<span style="color:blue;">一米八微笑 明月庄主 Rhythm萱 唯一丶为伊 LIXIAOGANG 陌余Oucher uuu2011 爱发电用户_AU9c 火星浮云 这是彩虹糖呢 SPGoding 支持国产mod 倪采臣 zzzz 折君 Hao_Tian22 Appleeeee 爱发电用户_JCmn 落天望月 爱发电用户_4eyN switefaster 猫君 chyx </span></p>
+<!--一米八微笑 250 明月庄主 250 Rhythm萱 128 LIXIAOGANG 96 墨鱼 86 uuu2011 66 火星浮云 64 匿名1 64 匿名2 50 这是彩虹糖呢 48 SPGoding 38 倪采臣 32 ustc_zzzz 32 折君 31  苹果果 落天望月 chyx switefaster 猫君-->
 <p>设计过程中亦参考了<a href="http://teamcofh.com/">热力膨胀</a>、<a href="https://botaniamod.net/">植物魔法</a>、<a href="http://www.abyssalcraft.com/">深渊国度</a>、<a href="https://minecraft.curseforge.com/projects/pams-harvestcraft">潘马斯农场</a>、<a href="https://minecraft.curseforge.com/projects/saltymod">盐</a>等模组以及<a href="https://www.bilibili.com/">Bilibili</a>与<a href="youtube.com">Youtube</a>一些视频，<a href="http://www.mcbbs.net/group-546-1.html">CBL小组</a>、<a href="http://www.mcbbs.net/group-1009-1.html">TCP小组</a>、<a href="http://www.mcbbs.net/group-1474-1.html">CBV小组</a>、<a href="http://www.mcbbs.net/group-1478-1.html">MAG小组</a>等小组以及<a href="http://www.mcbbs.net/?1963599">pineapple_</a>、<a href="http://www.mcbbs.net/?160123">贰逼</a>、ECS、<a href="https://github.com/pca006132">pca</a>、<a href="http://www.mcbbs.net/?720449">玄素</a>、<a href="http://www.mcbbs.net/?582040">chyx</a>、<a href="https://github.com/ustc-zzzz">zzzz_ustc</a>、<a href="http://www.mcbbs.net/?1073223">乙烯_中国</a>、<a href="https://github.com/switefaster">switefaster</a>、折君、<a href="http://www.mcbbs.net/?725858">⊙v⊙</a>、Herobrinexia、Amber、匠魂、Gingerbread等玩家亦对此模组有贡献。</p>
 <p>感谢以上所有玩家，特别感谢对我们给予赞助的玩家！</p>
 
@@ -158,7 +163,7 @@
   <a href="#improved_mob">怪物加强</a> 
 · <a href="#dark_animals">黑暗动物</a> 
 · <a href="#villager">村民</a> 
-· <a href="#chicken_roost">鸡窝</a>
+· <a href="#chicken_entity">鸡</a> 
 · <a href="#fishing">钓鱼</a>
 · <a href="#mooshroom">哞菇</a>
 · <a href="#trade">交易</a>
@@ -174,6 +179,7 @@
 · <a href="#golden_anvil"><span class="ci" style="background-position: -80px -0px;"></span>金砧</a>
 · <a href="#dustbin"><span class="ci" style="background-position: -0px -720px;"></span>垃圾桶</a> 
 · <a href="#muffler"><span class="ci" style="background-position: -32px -720px;"></span>消音器</a> 
+· <a href="#chest_dropper"><span class="ci" style="background-position: -128px -720px;"></span>箱漏</a> 
 · <a href="#empty_bookshelf"><span class="ci" style="background-position: -96px -0px;"></span>空书架</a>
 </td></tr>
 
@@ -280,7 +286,6 @@
 · <a href="#grafter"><span class="ci" style="background-position: -128px -144px;"></span>剪枝器</a> 
 · <a href="#glass_pickaxe"><span class="ci" style="background-position: -112px -416px;"></span>玻璃镐</a> 
 · <a href="#chest_transporter"><span class="ci" style="background-position: -16px -720px;"></span>搬箱器</a> 
-· <a href="#roost"><span class="ci" style="background-position: -16px -592px;"></span>鸡窝</a>
 · <a href="#firecrackers"><span class="ci" style="background-position: -80px -624px;"></span>鞭炮</a>
 · <a href="#flags"><span class="ci" style="background-position: -0px -576px;"></span><span class="ci" style="background-position: -16px -576px;"></span><span class="ci" style="background-position: -32px -576px;"></span><span class="ci" style="background-position: -48px -576px;"></span><span class="ci" style="background-position: -64px -576px;"></span>旗帜</a>
 · <a href="#logos"><span class="ci" style="background-position: -80px -576px;"></span><span class="ci" style="background-position: -96px -576px;"></span><span class="ci" style="background-position: -112px -576px;"></span><span class="ci" style="background-position: -128px -576px;"></span><span class="ci" style="background-position: -144px -592px;"></span>标志</a>
@@ -521,8 +526,8 @@
 <p>死亡时掉落<code>掉落1~(2+抢夺等级)</code>绿宝石，被玩家杀死时掉落3点经验值。</p>
 <img style="height:250px" src="items/screenshots/rare_drops.png" />
 
-<h3 id="chicken_roost">鸡窝</h3>
-<p>鸡将要下蛋时会寻找附近的鸡窝，如果没有则会创建一个。鸡必须有鸡窝才能下蛋。鸡死亡后掉落<code>0~1+0.5×抢夺等级</code>个鸡蛋。</p>
+<h3 id="chicken_entity">鸡</h3>
+<p>鸡死亡后掉落<code>0~1+0.5×抢夺等级</code>个鸡蛋。</p>
 
 <h3 id="fishing">钓鱼</h3>
 <p>有几率掉到宝藏珊瑚、珊瑚扇、湿海绵、鳕鱼头/鲑鱼头/热带鱼头/河豚头、<a href="#heart_of_ocean">水晶之心</a>和垃圾火药/海晶碎片。</p>
@@ -533,11 +538,11 @@
 
 <!-------------------------------------------------------------------------------------------------->
 <h2 id="machines">机器和插件</h2>
-<p>所有机器可空手开采，但用斧更快。关闭后，界面里的东西会保留，可以使用漏斗输入。强行将物品放入机器背景会导致停机。</p>
-<p>机器产出的物品会输出到相应方位的容器内。如果容器内的空槽位不足两个，或者对应位置没有容器，则会输出到机器自身的输出槽，同时机器会停止直到取走物品。</p>
+<p>所有机器可空手开采，但用斧更快。关闭后，界面里的东西会保留，可以使用漏斗输入。</p>
+<p>机器产出的物品会输出到相应方位的容器内。如果容器内的空槽位不足两个，或者对应位置没有容器，则机器会停止且发光，直到有空槽位。</p>
 <h3 id="crafting_machine">合成器 (Crafting Machine)</h3>
 <span class="ui single"><span class="ci crafting_machine"></span></span>
-<p>放置后右击打开并将材料放入左侧3×3的合成方格，若右侧为空，则会自动合成出产物。</p>
+<p>放置后右击打开并将材料放入左侧3×3的合成方格，若右侧为空，则会自动合成出产物。强行将物品放入机器背景会导致停机。</p>
 <table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
 <tr><th>合成器</th>
 <td><a href="#experience_bottle">附魔之瓶</a>+工作台</td><td>
@@ -1155,6 +1160,11 @@
 </tr>
 
 <tr>
+	<td><span class="ui single"><span class="crafting_table" title="工作台"></span></span></td>
+	<td><span class="ui single"><span class="sugar_cane" title="甘蔗"></span></span></td>
+	<td><span class="ui single"><span class="paper" title="纸"></span></span></td>
+</tr>
+<tr>
 	<td><span class="ui single"><span class="ci compressor" title="压缩器"></span></span></td>
 	<td>64个任意物品</td>
 	<td>1个64×物品</td>
@@ -1513,6 +1523,25 @@
 <span class="iron_ingot" title="铁锭"></span>
 <span class="iron_ingot" title="铁锭"></span>
 <span class="ci muffler" title="消音器"></span>
+</span></td></tr>
+</tbody></table>
+
+<h3 id="chest_dropper">箱漏 (Chest Dropper)</h3>
+<span class="ui single"><span class="ci chest_dropper"></span></span>
+<p>输入到其中的物品会从下方漏出。</p>
+<table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
+<tr><th>箱漏</th><td>铁锭+燧石+湿海绵</td>
+<td><span class="ui cm" title="合成器">
+<span class="empty"></span>
+<span class="barrel" title="木桶"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="hopper" title="漏斗"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="dropper" title="投掷器"></span>
+<span class="empty"></span>
+<span class="ci chest_dropper" title="箱漏"></span>
 </span></td></tr>
 </tbody></table>
 
@@ -2936,21 +2965,6 @@
 </span></td>
 <td>shift右键破坏箱子，箱子内的物品会保留。共26点耐久。</td></tr>
 
-<tr><th><strong id="roost">鸡窝 (Roost)</strong></th><td>小麦</td>
-<td><span class="ui cm" title="合成器">
-<span class="empty"></span>
-<span class="empty"></span>
-<span class="empty"></span>
-<span class="wheat" title="小麦"></span>
-<span class="empty"></span>
-<span class="wheat" title="小麦"></span>
-<span class="wheat" title="小麦"></span>
-<span class="wheat" title="小麦"></span>
-<span class="wheat" title="小麦"></span>
-<span class="ci roost" title="鸡窝"></span>
-</span></td>
-<td>可作为鸡下蛋的位置，破坏后无掉落。</td></tr>
-
 <tr><th><strong id="firecrackers">鞭炮 (Firecrackers)</strong></th><td>火药+线+纸</td>
 <td><span class="ui cm" title="合成器">
 <span class="gunpowder" title="火药"></span>
@@ -3068,7 +3082,7 @@
 
 <h3 id="santa_gift">圣诞礼物 (Santa Gift)</h3>
 <span class="ui single"><span class="ci santa_gift"></span></span>
-<p>从<a href="#trade">圣诞老人</a>处可购买，打开后可随机获得鞘翅、附魔钻石盔甲/工具/剑、矿物、金苹果、马铠、种子包和<a href="#character">纸片人</a>。</p>
+<p>从流浪商人处可购买，打开后可随机获得鞘翅、附魔钻石盔甲/工具/剑、矿物、金苹果、马铠和种子包。</p>
 
 <h3 id="stone_tools">石制工具 (Stone Tools)</h3>
 <span class="ui single"><span class="stone_axe"></span></span>
@@ -4119,8 +4133,8 @@
 </span></td></tr>
 </tbody></table>
 
-<h3 id="wand_of_the_darkness">黑暗之杖 (Wand of the Darkness)</h3>
-<span class="ui single"><span class="ci wand_of_the_darkness" title="黑暗之杖"></span></span>
+<h3 id="wand_of_the_darkness">黑暗魔杖 (Wand of the Darkness)</h3>
+<span class="ui single"><span class="ci wand_of_the_darkness" title="黑暗魔杖"></span></span>
 <p>将烈焰棒重命名为任意名称，然后扔入岩浆即可得到黑暗魔杖，名称越中二法力越强。</p>
 
 <h3 id="broom">扫帚 (Broom)</h3>
@@ -4167,7 +4181,7 @@
 <p>可令32米内的玩家每秒回复1点魔法值，上限30点。</p>
 
 <h3 id="magic_rituals">魔法仪式</h3>
-<p>在地面摆出如下形状，然后在青金石上方放置发射器，并在发射器上方放置物品展示框。将材料放入发射器，将待处理的物品放入物品展示框，使用魔杖右击并等待即可。</p>
+<p>在地面摆出如下形状，然后在青金石上方放置发射器，并在发射器上方放置物品展示框。将材料放入发射器，将待处理的物品放入物品展示框，使用魔杖shift右击并等待即可。</p>
 <p><span class="ui dp">
 <span class="emerald_block" title="绿宝石块"></span>
 <span class="gold_block" title="金块"></span>
@@ -4279,7 +4293,7 @@
 <p><img style="width:48%" src="items/screenshots/rituals.png" /> <img style="width:48%" src="items/screenshots/helmet.png" /></p>
 
 <h3 id="dark_rituals">黑暗仪式</h3>
-<p>在地面摆出如下形状，然后在基岩上方放置发射器，并在发射器上方放置物品展示框。将材料放入发射器，将待处理的物品放入物品展示框，使用黑暗魔杖右击并等待即可。</p>
+<p>在地面摆出如下形状，然后在基岩上方放置发射器，并在发射器上方放置物品展示框。将材料放入发射器，将待处理的物品放入物品展示框，使用黑暗魔杖shift右击并等待即可。</p>
 <p><span class="ui dp">
 <span class="obsidian" title="黑曜石"></span>
 <span class="magma_block" title="熔岩块"></span>
@@ -4849,7 +4863,7 @@
 <span class="ui single"><span class="ci character28"></span></span>
 <span class="ui single"><span class="ci character29"></span></span>
 <span class="ui single"><span class="ci character30"></span></span>
-<p>对床shift右键即可使用，共30种样式。从<a href="#trade">圣诞老人村民</a>处购买圣诞礼物有几率得到。包括：樱之宫莓香、日向夏帆、星川麻冬、天野美雨、神崎日照、鹿目圆香、晓美焰、美树沙耶香、巴麻美、佐仓杏子、篝敦子、洛蒂·杨森、苏西·曼芭芭拉、夏莉欧·杜诺尔、春风DoReMi、藤原羽月、妹尾爱子、木之本樱、小起、宫永咲、原村和、片冈优希、染谷真子、竹井久、龙门渕透华、天江衣、福路美穗子、濑川音符、飞鸟桃子、卷机山花。</p>
+<p>对床shift右键即可使用，共30种样式。从流浪商人处可购买。包括：樱之宫莓香、日向夏帆、星川麻冬、天野美雨、神崎日照、鹿目圆香、晓美焰、美树沙耶香、巴麻美、佐仓杏子、篝敦子、洛蒂·杨森、苏西·曼芭芭拉、夏莉欧·杜诺尔、春风DoReMi、藤原羽月、妹尾爱子、木之本樱、小起、宫永咲、原村和、片冈优希、染谷真子、竹井久、龙门渕透华、天江衣、福路美穗子、濑川音符、飞鸟桃子、卷机山花。</p>
 
 <h3 id="colorful_sign">彩色告示牌 (Colorful Sign)</h3>
 <span class="ui single"><span class="ci white_sign"></span></span>
@@ -5035,10 +5049,11 @@
 <p><img style="height:200px" src="items/screenshots/random_block.png" /></p>
 
 <h3 id="sort_chest">箱子整理</h3>
-<p>当玩家主手/副手持有木棍右击箱子/潜影箱后，箱子内的物品会按照物品id的长度/物品数量从小到大排序。</p>
+<p>当玩家主手持有木棍右击箱子/潜影箱后，容器内的物品会被整理。</p>
+<p>使用命令<code>/trigger cppTrim</code>来为玩家背包(不含快捷栏)整理。</p>
 
 <h3 id="dispenser_plant">自动种植</h3>
-<p>当发射器发射的物品可以种植在前方位置时，会自动种植。支持本模组的树苗和花草。</p>
+<p>当发射器发射的物品可以种植在前方位置时，会自动种植。支持本模组的树苗和花草。红石信号频率太快会导致无法种植。</p>
 <table><thead><tr><th>位置</th><th>作物</th></tr></thead><tbody>
 <tr><td>泥土等上方</td><td>树苗</td></tr>
 <tr><td>耕地上方</td><td>小麦种子、甜菜种子、南瓜种子、西瓜种子、胡萝卜、马铃薯</td></tr>
@@ -5060,78 +5075,52 @@
 <p>湿海绵在下界可直接被干燥为海绵。</p>
 <!------------------------------------------------------------------------------------------------>
 <h2 id="trade">交易</h2>
-<p>新增了8种村民。调整制图师为可出售所有结构的地图，使用<a href="#moon_shard">月之碎片</a>购买，在下界/末地可以购买下界要塞/末地城地图(必须有相应结构才可)。</p>
-<img style="height:400px;" src="items/villager/banner.png" />
-<table style="width:100%;">
-<thead><tr><th colspan="2">职业</th><th style="width:40px;">层级</th><th>买</th><th>卖</th></tr></thead>
+<p>为流浪商人增加了8种头饰，6项28种交易。</p>
+<table style="width:100%;" class="center" id="trade_table">
+<thead><tr><th></th><th>想要的物品</th><th>数量</th><th>交换的物品</th><th>数量</th><th>失效前可交易次数</th></tr></thead>
 <tbody>
-<tr><th rowspan="12"><img src="items/villager/forester.png" style="height:100px;"/></th><th rowspan="12">林业员</th><th rowspan="6">1</th><td style="text-align:center">36-40 橡木</td><td style="text-align:center">绿宝石</td></tr>
-<tr><td style="text-align:center">36-40 云杉木</td><td style="text-align:center">绿宝石</td></tr>
-<tr><td style="text-align:center">36-40 白桦木</td><td style="text-align:center">绿宝石</td></tr>
-<tr><td style="text-align:center">36-40 丛林木</td><td style="text-align:center">绿宝石</td></tr>
-<tr><td style="text-align:center">36-40 金合欢木</td><td style="text-align:center">绿宝石</td></tr>
-<tr><td style="text-align:center">36-40 深色橡木</td><td style="text-align:center">绿宝石</td></tr>
-<tr><th rowspan="6">2</th><td style="text-align:center">2-4 绿宝石</td><td style="text-align:center">橡树树苗</td></tr>
-<tr><td style="text-align:center">2-4 绿宝石</td><td style="text-align:center">云杉树苗</td></tr>
-<tr><td style="text-align:center">2-4 绿宝石</td><td style="text-align:center">白桦树苗</td></tr>
-<tr><td style="text-align:center">2-4 绿宝石</td><td style="text-align:center">丛林树苗</td></tr>
-<tr><td style="text-align:center">2-4 绿宝石</td><td style="text-align:center">金合欢树苗</td></tr>
-<tr><td style="text-align:center">2-4 绿宝石</td><td style="text-align:center">深色橡木树苗</td></tr>
-<tr><th style="width:50px;"><img src="items/villager/santa_claus.png" style="height:100px;"/></th><th style="width:70px;">圣诞老人</th><th>-</th><td style="text-align:center">皮革靴子+<a href="#moon_shard">月之碎片</a></td><td style="text-align:center"><a href="#santa_gift">圣诞礼物</a></td></tr>
+<tr><th rowspan="6">第1项</th><td><span style="background-position: -464px -512px;"></span>橡木</td><td>36-40</td><td><span style="background-position: -0px -560px;"></span>绿宝石</td><td>1</td><td>12</td></tr>
+<tr><td><span style="background-position: -224px -528px;"></span>云杉木</td><td>36-40</td><td><span style="background-position: -0px -560px;"></span>绿宝石</td><td>1</td><td>12</td></tr>
+<tr><td><span style="background-position: -48px -512px;"></span>白桦木</td><td>36-40</td><td><span style="background-position: -0px -560px;"></span>绿宝石</td><td>1</td><td>12</td></tr>
+<tr><td><span style="background-position: -320px -512px;"></span>丛林木</td><td>36-40</td><td><span style="background-position: -0px -560px;"></span>绿宝石</td><td>1</td><td>12</td></tr>
+<tr><td><span style="background-position: -480px -496px;"></span>金合欢木</td><td>36-40</td><td><span style="background-position: -0px -560px;"></span>绿宝石</td><td>1</td><td>12</td></tr>
+<tr><td><span style="background-position: -208px -512px;"></span>深色橡木</td><td>36-40</td><td><span style="background-position: -0px -560px;"></span>绿宝石</td><td>1</td><td>12</td></tr>
 
-<tr><th rowspan="6"><img src="items/villager/pharmacist.png" style="height:100px;"/></th><th rowspan="6">药剂师</th><th rowspan="4">1</th><td style="text-align:center">15-19 地狱疣</td><td style="text-align:center">绿宝石</td></tr>
-<tr><td style="text-align:center">15-19 蜘蛛眼</td><td style="text-align:center">绿宝石</td></tr>
-<tr><td style="text-align:center">36-40 烈焰粉</td><td style="text-align:center">绿宝石</td></tr>
-<tr><td style="text-align:center">36-40 粘液球</td><td style="text-align:center">绿宝石</td></tr>
-<tr><th rowspan="2">2</th><td style="text-align:center">3-11 绿宝石</td><td style="text-align:center">随机药水</td></tr>
-<tr><td style="text-align:center">3-11 绿宝石</td><td style="text-align:center">随机喷溅药水</td></tr>
+<tr><th rowspan="6">第2项</th><td><span style="background-position: -240px -336px;"></span>骨粉</td><td>36-40</td><td><span style="background-position: -0px -560px;"></span>绿宝石</td><td>1</td><td>12</td></tr>
+<tr><td><span style="background-position: -96px -560px;"></span>火药</td><td>36-40</td><td><span style="background-position: -0px -560px;"></span>绿宝石</td><td>1</td><td>12</td></tr>
+<tr><td><span style="background-position: -208px -320px;"></span>烈焰粉</td><td>36-40</td><td><span style="background-position: -0px -560px;"></span>绿宝石</td><td>1</td><td>12</td></tr>
+<tr><td><span style="background-position: -288px -560px;"></span>粘液球</td><td>36-40</td><td><span style="background-position: -0px -560px;"></span>绿宝石</td><td>1</td><td>12</td></tr>
+<tr><td><span style="background-position: -288px -624px;"></span>箭</td><td>36-40</td><td><span style="background-position: -0px -560px;"></span>绿宝石</td><td>1</td><td>12</td></tr>
+<tr><td><span style="background-position: -240px -560px;"></span>海晶砂粒</td><td>36-40</td><td><span style="background-position: -0px -560px;"></span>绿宝石</td><td>1</td><td>12</td></tr>
 
-<tr><th rowspan="3"><img src="items/villager/end_envoy.png" style="height:100px;"/></th><th rowspan="3">末地使</th><th rowspan="2">1</th><td style="text-align:center">15-19 紫颂果</td><td style="text-align:center">绿宝石</td></tr>
-<tr><td style="text-align:center">14-16 末影珍珠</td><td style="text-align:center">绿宝石</td></tr>
-<tr><th rowspan="1">2</th><td style="text-align:center">16-20 绿宝石</td><td style="text-align:center">潜影箱</td></tr>
+<tr><th rowspan="4">第3项</th><td><span style="background-position: -368px -400px;"></span>紫颂果</td><td>15-19</td><td><span style="background-position: -0px -560px;"></span>绿宝石</td><td>1</td><td>12</td></tr>
+<tr><td><span style="background-position: -272px -560px;"></span>红石</td><td>16-20</td><td><span style="background-position: -0px -560px;"></span>绿宝石</td><td>1</td><td>12</td></tr>
+<tr><td><span style="background-position: -16px -560px;"></span>末影珍珠</td><td>14-16</td><td><span style="background-position: -0px -560px;"></span>绿宝石</td><td>1</td><td>12</td></tr>
+<tr><td><span style="background-position: -416px -320px;"></span>蜘蛛眼</td><td>8-12</td><td><span style="background-position: -0px -560px;"></span>绿宝石</td><td>1</td><td>12</td></tr>
 
-<tr><th rowspan="3"><img src="items/villager/fireworker.png" style="height:100px;"/></th><th rowspan="3" style="width:50px">烟花师</th><th rowspan="2" style="width:20px">1</th><td style="text-align:center">24-36 纸</td><td style="text-align:center">绿宝石</td></tr>
-<tr><td style="text-align:center">36-40 火药</td><td style="text-align:center">绿宝石</td></tr>
-<tr><th>2</th><td style="text-align:center">1 绿宝石</td><td style="text-align:center">3-5烟花火箭 (为双层球状，颜色随机)</td></tr>
+<tr><th rowspan="4">第10项</th><td><span style="background-position: -0px -560px;"></span>绿宝石</td><td>4-6</td><td><span style="background-position: -272px -464px;"></span>活塞</td><td>1</td><td>12</td></tr>
+<tr><td><span style="background-position: -0px -560px;"></span>绿宝石</td><td>4-6</td><td><span style="background-position: -352px -464px;"></span>红石灯</td><td>1</td><td>12</td></tr>
+<tr><td><span style="background-position: -0px -560px;"></span>绿宝石</td><td>4-6</td><td><span style="background-position: -96px -624px;"></span>TNT</td><td>1</td><td>12</td></tr>
+<tr><td><span style="background-position: -0px -560px;"></span>绿宝石</td><td>4-6</td><td><span style="background-position: -400px -704px;"></span>侦测器</td><td>1</td><td>12</td></tr>
 
-<tr><th rowspan="9"><img src="items/villager/gardener.png" style="height:100px;"/></th><th rowspan="9">园丁</th><th rowspan="1">1</th><td style="text-align:center">36-40 骨粉</td><td style="text-align:center">绿宝石</td></tr>
-<tr><th rowspan="8">2</th><td style="text-align:center">3-5 绿宝石</td><td style="text-align:center">红色郁金香</td></tr>
-<tr><td style="text-align:center">3-5 绿宝石</td><td style="text-align:center">橙色郁金香</td></tr>
-<tr><td style="text-align:center">3-5 绿宝石</td><td style="text-align:center">白色郁金香</td></tr>
-<tr><td style="text-align:center">3-5 绿宝石</td><td style="text-align:center">粉色郁金香</td></tr>
-<tr><td style="text-align:center">3-11 绿宝石</td><td style="text-align:center">向日葵</td></tr>
-<tr><td style="text-align:center">3-11 绿宝石</td><td style="text-align:center">丁香</td></tr>
-<tr><td style="text-align:center">3-11 绿宝石</td><td style="text-align:center">玫瑰丛</td></tr>
-<tr><td style="text-align:center">3-11 绿宝石</td><td style="text-align:center">牡丹</td></tr>
+<tr><th rowspan="4">第11项</th><td><span style="background-position: -0px -560px;"></span>绿宝石</td><td>1</td><td><span style="background-position: -112px -400px;"></span>烟花火箭 (为双层球状，颜色随机)</td><td>4-6</td><td>6</td></tr>
+<tr><td><span style="background-position: -0px -560px;"></span>绿宝石</td><td>4-6</td><td><span style="background-position: -368px -832px;"></span>鲑鱼桶</td><td>1</td><td>6</td></tr>
+<tr><td><span style="background-position: -0px -560px;"></span>绿宝石</td><td>4-6</td><td><span style="background-position: -480px -528px;"></span>随机药水</td><td>1</td><td>6</td></tr>
+<tr><td><span style="background-position: -0px -560px;"></span>绿宝石</td><td>4-6</td><td><span class="ci" style="background-position: -96px -656px;"></span>随机喷溅药水</td><td>1</td><td>6</td></tr>
 
-<tr><th rowspan="9"><img src="items/villager/mechanician.png" style="height:100px;"/></th><th rowspan="9">机械工</th><th rowspan="3">1</th><td style="text-align:center">16-24 红石</td><td style="text-align:center">绿宝石</td></tr>
-<tr><td style="text-align:center">36-40 箭</td><td style="text-align:center">绿宝石</td></tr>
-<tr><td style="text-align:center">15-20 线</td><td style="text-align:center">绿宝石</td></tr>
-<tr><th rowspan="6">2</th><td style="text-align:center">4-6 绿宝石</td><td style="text-align:center">活塞</td></tr>
-<tr><td style="text-align:center">4-6 绿宝石</td><td style="text-align:center">红石灯</td></tr>
-<tr><td style="text-align:center">4-6 绿宝石</td><td style="text-align:center">TNT</td></tr>
-<tr><td style="text-align:center">4-6 绿宝石</td><td style="text-align:center">侦测器</td></tr>
-<tr><td style="text-align:center">4-6 绿宝石</td><td style="text-align:center">投掷器</td></tr>
-<tr><td style="text-align:center">4-6 绿宝石</td><td style="text-align:center">发射器</td></tr>
-
-<tr><th rowspan="7"><img src="items/villager/frogman.png" style="height:100px;"/></th><th rowspan="7">潜水员</th><th rowspan="3">1</th><td style="text-align:center">30-38 海草</td><td style="text-align:center">绿宝石</td></tr>
-<tr><td style="text-align:center">30-38 海带</td><td style="text-align:center">绿宝石</td></tr>
-<tr><td style="text-align:center">36-40 海晶砂粒</td><td style="text-align:center">绿宝石</td></tr>
-<tr><th rowspan="4">2</th><td style="text-align:center">鳕鱼+3-5 绿宝石</td><td style="text-align:center">鳕鱼桶</td></tr>
-<tr><td style="text-align:center">三文鱼+3-5 绿宝石</td><td style="text-align:center">三文鱼桶</td></tr>
-<tr><td style="text-align:center">热带鱼+3-5 绿宝石</td><td style="text-align:center">热带鱼桶</td></tr>
-<tr><td style="text-align:center">河鲀+3-5 绿宝石</td><td style="text-align:center">河鲀桶</td></tr>
+<tr><th rowspan="4">第12项</th><td><span class="ci" style="background-position: -16px -80px;"></span><a href="#moon_shard">月之碎片</a></td><td>1</td><td><span style="background-position: -224px -800px;"></span>潜影箱</td><td>1</td><td>3</td></tr>
+<tr><td><span class="ci" style="background-position: -16px -80px;"></span><a href="#moon_shard">月之碎片</a></td><td>1</td><td><span style="background-position: -32px -608px;"></span>随机地图(相应世界存在的结构)</td><td>1</td><td>3</td></tr>
+<tr><td><span class="ci" style="background-position: -16px -80px;"></span><a href="#moon_shard">月之碎片</a></td><td>1</td><td><span class="ci" style="background-position: -96px -608px;"></span><a href="#character">纸片人</a></td><td>1</td><td>3</td></tr>
+<tr><td><span class="ci" style="background-position: -16px -80px;"></span><a href="#moon_shard">月之碎片</a></td><td>1</td><td><span class="ci" style="background-position: -32px -624px;"></span><a href="#santa_gift">圣诞礼物</a></td><td>1</td><td>3</td></tr>
 
 </tbody></table>
 
 
 <!------------------------------------------------------------------------------------------------->
 <h2 id="block_sky_domain">空域开端</h2>
-<p>
-该数据包仅在出生点y=0处为空气情形下启用，玩家可由自定义超平坦如<code>minecraft:air;minecraft:mountains;</code>进入。</p>
-<p>若要在非空岛模式下开启该模块，输入<code>scoreboard players set #load_block_sky_domain cppValue 1</code>并重新加载即可。</p>
-<p>若要在空岛模式下关闭该模块，依次输入<code>scoreboard players set #load_block_sky_domain cppValue 0</code>并重新加载即可。</p>
+<p>开启本模块请使用craftingpp_skyisland数据包代替craftingpp数据包。建议玩家使用自定义超平坦如<code>minecraft:air;minecraft:mountains;</code>进入。</p>
 <p>该数据包旨在为空岛玩家提供从泥土到末地的完整科技链。加载后会生成一块基岩和一个箱子，箱子内包含1泥土、1橡树树苗、16骨粉。</p>
+<p>空岛模式下不会生成模组的结构。</p>
 <p>玩家破坏树叶、草丛、枯萎的灌木、海草会掉落下述物品。</p>
 
 <table style="font-size:88%;text-align:center">
@@ -5409,7 +5398,7 @@
 <tr><td><span class="ui normal"><span class="ci broken_spawner"></span></span></td>
 <th>搬运工</th><td>破坏一个刷怪箱</td><td>—</td><td>这是异变！</td><td>cpp:transporter</td></tr>
 <tr><td><span class="ui challenge"><span class="ci sealing_wand"></span></span></td>
-<th>成为马猴烧酒</th><td>魔杖可是标配</td><td>100点经验</td><td>提高姿势水平</td><td>cpp:mahoushoujo</td></tr>
+<th>成为马猴烧酒</th><td>魔杖可是标配</td><td>100点经验</td><td>搬运工</td><td>cpp:mahoushoujo</td></tr>
 <tr><td><span class="ui normal"><span class="ci wand_of_the_darkness"></span></span></td>
 <th>成为库洛缺德</th><td>黑暗权杖</td><td>-</td><td>Release</td><td>cpp:dark_wand</td></tr>
 <tr><td><span class="ui challenge"><span class="ci star_wand"></span></span></td>
@@ -5482,7 +5471,7 @@
 <a href="https://space.bilibili.com/4469715"><img src="items/bilibili.png" /></a>
 </p>
 
-<p>最后更新 2019-06-10</p>
+<p>最后更新 2019-06-30</p>
 </footer>
 </article>
 </body></html>

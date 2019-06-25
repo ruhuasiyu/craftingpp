@@ -61,14 +61,14 @@
 	background-color:#ddd;
 	font-weight:bold;
 }
-.index span{
+.index span, #trade_table span{
 	display:inline-block;
 	width:16px;
 	height:16px;
 	background-image:url("invsprite.png");
 	background-size:512px 1232px;
 }
-.index span.ci{
+.index span.ci, #trade_table span.ci{
 	background-image: url("colorful_items.png");
 	background-size:144px 736px;
 }
@@ -595,7 +595,7 @@ span.firework_charge_white{	background-position: -608px -800px;}
 span.firework_charge_yellow{	background-position: -640px -800px;}
 span.apple{	background-position: -672px -800px;}
 span.bread{	background-position: -704px -800px;}
-span.chorus_fruit{	background-position: -738px -800px;}
+span.chorus_fruit{	background-position: -736px -800px;}
 span.cooked_chicken{	background-position: -800px -800px;}
 span.cooked_mutton{	background-position: -864px -800px;}
 span.cooked_porkchop{	background-position: -896px -800px;}
@@ -657,6 +657,7 @@ span.redstone_block{	background-position: -288px -928px;}
 span.iron_trapdoor{	background-position: -416px -928px;}
 span.lever{	background-position: -480px -928px;}
 span.piston{	background-position: -544px -928px;}
+span.redstone_lamp{	background-position: -704px -928px;}
 span.redstone_torch{	background-position: -768px -928px;}
 span.sticky_piston{	background-position: -832px -928px;}
 span.stone_button{	background-position: -864px -928px;}
@@ -712,11 +713,13 @@ span.lapis_ore{	background-position: -832px -992px;}
 span.redstone_ore{	background-position: -864px -992px;}
 span.acacia_leaves{	background-position: -896px -992px;}
 span.acacia_sapling{	background-position: -928px -992px;}
+span.acacia_sapling{	background-position: -960px -992px;}
 span.allium{	background-position: -992px -992px;}
 
 span.azure_bluet{	background-position: -0px -1024px;}
 span.birch_leaves{	background-position: -32px -1024px;}
 span.birch_sapling{	background-position: -64px -1024px;}
+span.birch_log{	background-position: -96px -1024px;}
 span.blue_orchid{	background-position: -128px -1024px;}
 span.brown_mushroom{	background-position: -160px -1024px;}
 span.cactus{	background-position: -224px -1024px;}
@@ -724,6 +727,7 @@ span.chorus_flower{	background-position: -256px -1024px;}
 span.dandelion{	background-position: -320px -1024px;}
 span.dark_oak_leaves{	background-position: -352px -1024px;}
 span.dark_oak_sapling{	background-position: -384px -1024px;}
+span.dark_oak_log{	background-position: -416px -1024px;}
 span.dead_bush{	background-position: -448px -1024px;}
 span.grass{	background-position: -544px -1024px;}
 span.jungle_leaves{	background-position: -576px -1024px;}
@@ -750,6 +754,7 @@ span.rose_bush{	background-position: -288px -1056px;}
 span.wheat_seeds{	background-position: -320px -1056px;}
 span.spruce_leaves{	background-position: -384px -1056px;}
 span.spruce_sapling{	background-position: -416px -1056px;}
+span.spruce_log{	background-position: -448x -1056px;}
 span.sugar_cane{	background-position: -480px -1056px;}
 span.sunflower{	background-position: -512px -1056px;}
 span.vine{	background-position: -544px -1056px;}
@@ -885,6 +890,7 @@ span.hopper{	background-position: -992px -1216px;}
 span.note_block{	background-position: -96px -1248px;}
 span.chipped_anvil{	background-position: -128px -1248px;}
 span.sponge{	background-position: -160px -1248px;}
+span.tnt{	background-position: -192px -1248px;}
 span.damaged_anvil{	background-position: -256px -1248px;}
 span.wet_sponge{	background-position: -288px -1248px;}
 span.arrow{	background-position: -576px -1248px;}
@@ -918,6 +924,7 @@ span.evoker_spawn_egg{	background-position: -64px -1408px;}
 span.llama_spawn_egg{	background-position: -96px -1408px;}
 span.vindicator_spawn_egg{	background-position: -160px -1408px;}
 span.totem_of_undying{	background-position: -192px -1408px;}
+span.observer{	background-position: -800px -1408px;}
 span.iron_nugget{	background-position: -896px -1408px;}
 
 span.blaze_head{	background-position: -64px -1440px;}
@@ -954,6 +961,7 @@ span.green_bed{	background-position: -320px -1568px;}
 span.white_bed{	background-position: -608px -1568px;}
 span.yellow_bed{	background-position: -640px -1568px;}
 
+span.shulker_box{	background-position: -448px -1600px;}
 span.lime_carpet{	background-position: -896px -1600px;}
 
 span.white_carpet{	background-position: -64px -1632px;}
@@ -1460,6 +1468,7 @@ span.end_stone_plugin{	background-position: -128px -1440px;}
 span.character28{	background-position: -160px -1440px;}
 span.character29{	background-position: -192px -1440px;}
 span.character30{	background-position: -224px -1440px;}
+span.chest_dropper{	background-position: -256px -1440px;}
 
 
 span.effects{

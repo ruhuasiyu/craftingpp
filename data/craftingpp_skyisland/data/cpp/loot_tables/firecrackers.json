@@ -1,0 +1,18 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:item_frame",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag":"{id:\"cpp:firecrackers\",display:{Name:\"{\\\"translate\\\":\\\"item.cpp.firecrackers\\\"}\"},CustomModelData:12971001,EntityTag:{Tags:[\"cpp_firecrackers\"]}}"
+						}
+					]				}
+			]
+		}
+	]
+}

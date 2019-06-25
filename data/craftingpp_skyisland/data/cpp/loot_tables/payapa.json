@@ -1,0 +1,18 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type":"item",
+					"name": "minecraft:apple",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag":"{isFruit:1b,id:\"cpp:payapa\",display:{Name:\"{\\\"translate\\\":\\\"item.cpp.payapa\\\"}\"},CustomModelData:12970017}"
+						}
+					]				}
+			]
+		}
+	]
+}

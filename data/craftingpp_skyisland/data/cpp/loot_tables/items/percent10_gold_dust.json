@@ -1,0 +1,19 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "loot_table",
+					"name": "cpp:gold_dust",
+					"conditions": [
+						{
+							"condition": "random_chance",
+							"chance": 0.1
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:rabbit_foot",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.heart_of_crystal\\\"}\"},id:\"cpp:heart_of_crystal\",CustomModelData:12970002}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,47 @@
+{
+	"criteria": {
+		"mushroom_stew": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:mushroom_stew"
+				}
+			}
+		},
+		"beetroot_soup": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:beetroot_soup"
+				}
+			}
+		},
+		"suspicious_stew": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:suspicious_stew"
+				}
+			}
+		},
+		"colorful_vegetable": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"nbt": "{id:\"cpp:colorful_vegetable\"}"
+				}
+			}
+		}
+	},
+	"requirements":[
+		[
+			"mushroom_stew",
+			"beetroot_soup",
+			"suspicious_stew",
+			"colorful_vegetable"
+		]
+	],
+	"rewards":{
+		"function": "cpp:foods/fatness/neg6"
+	}
+}

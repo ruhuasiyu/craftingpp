@@ -1,0 +1,48 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:suspicious_stew",
+			"nbt":"{CustomModelData:12970001}"
+		},
+		"title":{
+			"translate": "advancements.cpp.raw_meal.title"
+		},
+		"description": {
+			"translate": "advancements.cpp.raw_meal.description"
+		}
+	},
+	"parent": "cpp:doraemon",
+	"criteria": {
+		"raw_braised_beef_with_potatoes": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"nbt":"{id:\"cpp:raw_braised_beef_with_potatoes\"}"
+				}
+			}
+		},
+		"raw_braised_pork_with_potatoes": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"nbt":"{id:\"cpp:raw_braised_pork_with_potatoes\"}"
+				}
+			}
+		},
+		"raw_colorful_vegetable": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"nbt":"{id:\"cpp:raw_colorful_vegetable\"}"
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"raw_braised_beef_with_potatoes",
+			"raw_braised_pork_with_potatoes",
+			"raw_colorful_vegetable"
+		]
+	]
+}

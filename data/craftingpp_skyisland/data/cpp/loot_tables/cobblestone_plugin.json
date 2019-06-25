@@ -1,0 +1,19 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:firework_star",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.cobblestone_plugin\\\"}\"},id:\"cpp:cobblestone_plugin\",CustomModelData:12970106}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,125 @@
+{
+	"type": "minecraft:entity",
+	"pools": [
+		{
+			"rolls": 1,
+			"conditions": [
+				{
+					"condition": "alternative",
+					"terms": [
+						{
+							"condition": "killed_by_player"
+						},
+						{
+							"condition": "entity_properties",
+							"entity": "killer",
+							"predicate": {
+								"type": "minecraft:zombie_pigman"
+							} 
+						}
+					]
+				},
+				{
+					"condition": "random_chance_with_looting",
+					"chance": 0.025,
+					"looting_multiplier": 0.01
+				}
+			],
+			"entries": [
+				{
+					"type": "loot_table",
+					"name": "cpp:wing_of_sky"
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"conditions": [
+				{
+					"condition": "minecraft:alternative",
+					"terms": [
+						{
+							"condition": "minecraft:location_check",
+							"predicate": {
+								"biome": "minecraft:forest"
+							}
+						},
+						{
+							"condition": "minecraft:location_check",
+							"predicate": {
+								"biome": "minecraft:birch_forest"
+							}
+						},
+						{
+							"condition": "minecraft:location_check",
+							"predicate": {
+								"biome": "minecraft:birch_forest_hills"
+							}
+						},
+						{
+							"condition": "minecraft:location_check",
+							"predicate": {
+								"biome": "minecraft:dark_forest"
+							}
+						},
+						{
+							"condition": "minecraft:location_check",
+							"predicate": {
+								"biome": "minecraft:flower_forest"
+							}
+						},
+						{
+							"condition": "minecraft:location_check",
+							"predicate": {
+								"biome": "minecraft:tall_birch_forest"
+							}
+						},
+						{
+							"condition": "minecraft:location_check",
+							"predicate": {
+								"biome": "minecraft:dark_forest_hills"
+							}
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:citrus"
+				}
+			]
+		},
+		{
+			"conditions": [
+				{
+					"condition": "alternative",
+					"terms": [
+						{
+							"condition": "killed_by_player"
+						},
+						{
+							"condition": "entity_properties",
+							"entity": "killer",
+							"predicate": {
+								"type": "minecraft:zombie_pigman"
+							} 
+						}
+					]
+				},
+				{
+					"condition": "random_chance_with_looting",
+					"chance": 0.025,
+					"looting_multiplier": 0.01
+				}
+			],
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "loot_table",
+					"name": "cpp:bat_head"
+				}
+			]
+		}
+	]
+}

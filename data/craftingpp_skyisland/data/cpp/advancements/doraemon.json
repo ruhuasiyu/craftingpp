@@ -1,0 +1,27 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:carrot_on_a_stick",
+			"nbt":"{CustomModelData:12970044}"
+		},
+		"title":{
+			"translate": "advancements.cpp.doraemon.title"
+		},
+		"description": {
+			"translate": "advancements.cpp.doraemon.description"
+		}
+	},
+	"parent": "cpp:arguments",
+	"criteria": {
+		"doraemon": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions":{
+				"items":[
+					{
+						"nbt":"{compressedLevel:2s}"
+					}
+				]
+			}
+		}
+	}
+}

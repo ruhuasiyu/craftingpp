@@ -1,0 +1,29 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:wet_sponge"
+		},
+		"title":{
+			"translate": "advancements.cpp.sponge.title"
+		},
+		"description": {
+			"translate": "advancements.cpp.sponge.description"
+		}
+	},
+	"parent": "cpp:fighter",
+	"criteria": {
+		"sponge": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:wet_sponge"
+					}
+				]
+			}
+		}
+	},
+	"rewards": {
+		"function": "cpp:adv/sponge"
+	}
+}

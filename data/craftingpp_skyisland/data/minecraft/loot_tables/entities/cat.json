@@ -1,0 +1,199 @@
+{
+	"type": "minecraft:entity",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 0.0,
+								"max": 2.0,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"name": "minecraft:string"
+				}
+			]
+		},
+		{
+			"conditions": [
+				{
+					"condition": "alternative",
+					"terms": [
+						{
+							"condition": "killed_by_player"
+						},
+						{
+							"condition": "entity_properties",
+							"entity": "killer",
+							"predicate": {
+								"type": "minecraft:zombie_pigman"
+							} 
+						}
+					]
+				},
+				{
+					"condition": "random_chance_with_looting",
+					"chance": 0.025,
+					"looting_multiplier": 0.01
+				}
+			],
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "alternatives",
+					"children": [
+						{
+							"conditions": [
+								{
+									"condition": "entity_properties",
+									"entity": "this",
+									"predicate": {
+										"nbt": "{CatType:0}"
+									}
+								}
+							],
+							"type": "loot_table",
+							"name": "cpp:cat_head/tabby"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "entity_properties",
+									"entity": "this",
+									"predicate": {
+										"nbt": "{CatType:1}"
+									}
+								}
+							],
+							"type": "loot_table",
+							"name": "cpp:cat_head/tuxedo"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "entity_properties",
+									"entity": "this",
+									"predicate": {
+										"nbt": "{CatType:2}"
+									}
+								}
+							],
+							"type": "loot_table",
+							"name": "cpp:cat_head/red"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "entity_properties",
+									"entity": "this",
+									"predicate": {
+										"nbt": "{CatType:3}"
+									}
+								}
+							],
+							"type": "loot_table",
+							"name": "cpp:cat_head/siamese"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "entity_properties",
+									"entity": "this",
+									"predicate": {
+										"nbt": "{CatType:4}"
+									}
+								}
+							],
+							"type": "loot_table",
+							"name": "cpp:cat_head/british_shorthair"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "entity_properties",
+									"entity": "this",
+									"predicate": {
+										"nbt": "{CatType:5}"
+									}
+								}
+							],
+							"type": "loot_table",
+							"name": "cpp:cat_head/calico"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "entity_properties",
+									"entity": "this",
+									"predicate": {
+										"nbt": "{CatType:6}"
+									}
+								}
+							],
+							"type": "loot_table",
+							"name": "cpp:cat_head/persian"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "entity_properties",
+									"entity": "this",
+									"predicate": {
+										"nbt": "{CatType:7}"
+									}
+								}
+							],
+							"type": "loot_table",
+							"name": "cpp:cat_head/ragdoll"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "entity_properties",
+									"entity": "this",
+									"predicate": {
+										"nbt": "{CatType:8}"
+									}
+								}
+							],
+							"type": "loot_table",
+							"name": "cpp:cat_head/white"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "entity_properties",
+									"entity": "this",
+									"predicate": {
+										"nbt": "{CatType:9}"
+									}
+								}
+							],
+							"type": "loot_table",
+							"name": "cpp:cat_head/jellie"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "entity_properties",
+									"entity": "this",
+									"predicate": {
+										"nbt": "{CatType:10}"
+									}
+								}
+							],
+							"type": "loot_table",
+							"name": "cpp:cat_head/black"
+						}
+					]
+				}
+			]
+		}
+	]
+}

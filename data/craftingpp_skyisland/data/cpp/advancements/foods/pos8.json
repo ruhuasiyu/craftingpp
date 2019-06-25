@@ -1,0 +1,38 @@
+{
+	"criteria": {
+		"cooked_porkchop": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:cooked_porkchop"
+				}
+			}
+		},
+		"cooked_beef": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:cooked_beef"
+				}
+			}
+		},
+		"meat_floss_bread": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"nbt": "{id:\"cpp:meat_floss_bread\"}"
+				}
+			}
+		}
+	},
+	"requirements":[
+		[
+			"cooked_porkchop",
+			"cooked_beef",
+			"meat_floss_bread"
+		]
+	],
+	"rewards":{
+		"function": "cpp:foods/fatness/pos8"
+	}
+}

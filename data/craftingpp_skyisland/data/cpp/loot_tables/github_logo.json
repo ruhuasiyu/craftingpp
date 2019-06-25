@@ -1,0 +1,18 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:item_frame",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag":"{id:\"cpp:github_logo\",display:{Name:\"{\\\"translate\\\":\\\"item.cpp.github_logo\\\"}\"},CustomModelData:12974407,EntityTag:{Item:{id:'minecraft:item_frame',Count:1b,tag:{CustomModelData:12974407,isMachineBg:1b}},Tags:['cpp_item_frame_flag','cpp_special_item_frame','cpp_github_logo']}}"
+						}
+					]				}
+			]
+		}
+	]
+}

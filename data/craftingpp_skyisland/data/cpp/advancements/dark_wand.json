@@ -1,0 +1,27 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:carrot_on_a_stick",
+			"nbt":"{CustomModelData:12970065}"
+		},
+		"title":{
+			"translate": "advancements.cpp.dark_wand.title"
+		},
+		"description": {
+			"translate": "advancements.cpp.dark_wand.description"
+		}
+	},
+	"parent": "cpp:mahoushoujo",
+	"criteria": {
+		"dark_wand": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions":{
+				"items":[
+					{
+						"nbt":"{id:\"cpp:wand_of_the_darkness\"}"
+					}
+				]
+			}
+		}
+	}
+}

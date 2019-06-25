@@ -1,0 +1,29 @@
+{
+	"type": "smoking",
+	"ingredient": [
+		{
+			"item": "minecraft:leather_horse_armor"
+		},
+		{
+			"item": "minecraft:rotten_flesh"
+		},
+		{
+			"item": "minecraft:leather_helmet"
+		},
+		{
+			"item": "minecraft:leather_chestplate"
+		},
+		{
+			"item": "minecraft:leather_leggings"
+		},
+		{
+			"item": "minecraft:leather_boots"
+		},
+		{
+			"item": "minecraft:saddle"
+		}
+	],
+	"result": "minecraft:rabbit_hide",
+	"experience": 0.1,
+	"cookingtime": 100
+}

@@ -1,0 +1,6 @@
+{
+	"values": [
+		"cpp:load",
+		"cpp:bsd/load"
+	]
+}

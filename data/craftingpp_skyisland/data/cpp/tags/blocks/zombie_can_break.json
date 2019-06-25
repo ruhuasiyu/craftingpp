@@ -1,0 +1,9 @@
+{
+	"replace": false,
+	"values": [
+		"minecraft:torch",
+		"minecraft:lantern",
+		"minecraft:sea_pickle",
+		"minecraft:end_rod"
+	]
+}

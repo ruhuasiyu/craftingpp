@@ -1,0 +1,15 @@
+{
+	"criteria": {
+		"christmas_roast_chicken": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"nbt": "{id:\"cpp:christmas_roast_chicken\"}"
+				}
+			}
+		}
+	},
+	"rewards":{
+		"function": "cpp:foods/christmas_roast_chicken"
+	}
+}

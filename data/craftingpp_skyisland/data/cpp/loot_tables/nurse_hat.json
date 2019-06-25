@@ -1,0 +1,31 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:carved_pumpkin",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.nurse_hat\\\"}\"},id:\"cpp:nurse_hat\",CustomModelData:12970022}"
+						},
+						{
+							"function": "set_attributes",
+							"modifiers": [
+								{
+									"name": "head_luck",
+									"attribute": "generic.luck",
+									"operation": "addition",
+									"amount": 1,
+									"slot": "head"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

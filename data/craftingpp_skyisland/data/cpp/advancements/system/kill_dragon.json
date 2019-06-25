@@ -1,0 +1,15 @@
+{
+	"criteria": {
+		"kill_dragon": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:ender_dragon"
+				}
+			}
+		}
+	},
+	"rewards":{
+		"function":"cpp:adv/kill_dragon"
+	}
+}
