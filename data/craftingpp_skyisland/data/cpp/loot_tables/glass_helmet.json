@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.glass_helmet\\\"}\"},id:\"cpp:glass_helmet\",CustomModelData:12970012}"
+							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.glass_helmet\\\"}\"},id:\"cpp:glass_helmet\",CustomModelData:12970112}"
 						}
 					]
 				}

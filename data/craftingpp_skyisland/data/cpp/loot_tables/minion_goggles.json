@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.minion_goggles\\\"}\"},id:\"cpp:minion_goggles\",CustomModelData:12970025}"
+							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.minion_goggles\\\"}\"},id:\"cpp:minion_goggles\",CustomModelData:12970125}"
 						}
 					]
 				}

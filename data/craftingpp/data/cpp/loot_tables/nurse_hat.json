@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.nurse_hat\\\"}\"},id:\"cpp:nurse_hat\",CustomModelData:12970022}"
+							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.nurse_hat\\\"}\"},id:\"cpp:nurse_hat\",CustomModelData:12970122}"
 						},
 						{
 							"function": "set_attributes",

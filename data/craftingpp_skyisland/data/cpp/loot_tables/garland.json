@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.garland\\\"}\"},id:\"cpp:garland\",CustomModelData:12970024}"
+							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.garland\\\"}\"},id:\"cpp:garland\",CustomModelData:12970124}"
 						}
 					]
 				}

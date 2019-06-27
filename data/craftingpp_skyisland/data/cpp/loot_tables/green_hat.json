@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.green_hat\\\"}\"},id:\"cpp:green_hat\",CustomModelData:12970020}"
+							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.green_hat\\\"}\"},id:\"cpp:green_hat\",CustomModelData:12970120}"
 						}
 					]
 				}
