@@ -14,5 +14,5 @@ execute as @s[tag=cpp_item_processer] run loot spawn ~ ~ ~ loot cpp:item_process
 execute as @s[tag=cpp_bookshelf] run loot spawn ~ ~ ~ loot cpp:empty_bookshelf
 execute as @s[tag=cpp_dustbin] run loot spawn ~ ~ ~ loot cpp:dustbin
 execute as @s[tag=cpp_chest_dropper] run loot spawn ~ ~ ~ loot cpp:chest_dropper
-
+function #cpp:break_barrel
 kill @s

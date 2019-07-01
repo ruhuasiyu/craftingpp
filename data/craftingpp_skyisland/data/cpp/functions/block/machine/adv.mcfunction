@@ -19,3 +19,4 @@ execute at @e[tag=cpp_machine_pos] as @s[scores={cppValue=12970099}] run functio
 execute at @e[tag=cpp_machine_pos] as @s[scores={cppValue=12970101}] run function cpp:block/machine/sorcerer_stone
 execute at @e[tag=cpp_machine_pos] as @s[scores={cppValue=12970102}] run function cpp:block/machine/muffler
 execute at @e[tag=cpp_machine_pos] as @s[scores={cppValue=12970103}] run function cpp:block/machine/chest_dropper
+function #cpp:put_machine

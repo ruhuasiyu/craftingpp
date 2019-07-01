@@ -82,6 +82,8 @@ scoreboard objectives add cppTorchPeriod trigger
 scoreboard objectives add cppTorchTick 
 # 整理
 scoreboard objectives add cppTrim trigger
+scoreboard objectives add cppSortOpenC minecraft.custom:minecraft.open_chest
+scoreboard objectives add cppSortOpenS minecraft.custom:minecraft.open_shulker_box
 
 # 常数
 scoreboard players set #60 cppValue 60

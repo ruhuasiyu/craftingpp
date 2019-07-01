@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.gold_dust\\\"}\"},id:\"cpp:gold_dust\",CustomModelData:12970042}"
+							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.gold_dust\\\"}\"},id:\"cpp:gold_dust\",CustomModelData:12970042,dict:\"gold_dust\"}"
 						}
 					]
 				}

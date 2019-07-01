@@ -6,6 +6,3 @@ execute at @e[tag=cpp_temp,limit=1] run tp @a ~ ~2 ~
 execute at @e[tag=cpp_temp,limit=1] run setworldspawn ~ ~3 ~
 kill @e[tag=cpp_temp]
 scoreboard players set #load_bsd cppValue 1
-
-# 生成魔导石
-execute unless score #load_sorcerer_stone cppValue matches 1 unless entity @e[tag=cpp_sorcerer_stone] if entity @a run function cpp:load_sorcerer_stone

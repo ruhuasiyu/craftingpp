@@ -127,13 +127,8 @@
 §f          ECS
 §f          pca
 §f          玄素
-§f          chyx
-§f          zzzz_ustc
 §f          乙烯_中国
-§f          switefaster
-§f          折君
 §f          ⊙v⊙
-§f          HerobrineXia
 §f          Amber
 §f          匠魂
 §f          Gingerbread

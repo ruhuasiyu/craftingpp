@@ -1041,3 +1041,28 @@ v1.9.6
 ### 头饰
 
 + 修复了头饰无法使用的问题。
+
+v1.9.7
+
+# 新增
+
+## 常规
+
+### 矿物辞典
++ 拥有对应矿物辞典nbt信息的其它原版模组物品，可以代替本模组的对应物品。
++ 为碎钻添加了矿物辞典 dict:"diamond_nugget"
++ 为铁粉添加了矿物辞典 dict:"iron_dust"
++ 为金粉添加了矿物辞典 dict:"gold_dust"
++ 为碳粉添加了矿物辞典 dict:"carbon_dust"
++ 为绿宝石粉添加了矿物辞典 dict:"emerald_dust"
++ 为钻石粉添加了矿物辞典 dict:"diamond_dust"
++ 为石英粉添加了矿物辞典 dict:"quartz_dust"
++ 为钢粉添加了矿物辞典 dict:"steel_dust"
++ 为盐瓶添加了矿物辞典 dict:"salt"
+
+
+### 其它
++ 为放置机器添加了函数标签#cpp:put_machine。
++ 为破坏机器(木桶)添加了函数标签#cpp:break_barrel。
++ 修复了箱子排序无效的问题。
++ 修复了称号无法使用的问题。
