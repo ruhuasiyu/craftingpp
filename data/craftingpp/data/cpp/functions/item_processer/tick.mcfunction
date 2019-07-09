@@ -27,7 +27,6 @@ execute unless block ~ ~ ~ barrel{Items:[{Slot:25b}]} run replaceitem block ~ ~ 
 execute unless block ~ ~ ~ barrel{Items:[{Slot:26b}]} run replaceitem block ~ ~ ~ container.26 firework_star{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.item_processer\"}"},CustomModelData:12971000}
 
 function cpp:check_power
-execute as @s[tag=!cpp_redstone_powered,tag=cpp_wait_output] run function cpp:item_processer/done
-execute as @s[tag=!cpp_redstone_powered,tag=!cpp_wait_output] if data block ~ ~ ~ Items[{Slot:3b}] if data block ~ ~ ~ Items[{Slot:12b}] run function cpp:item_processer/type
+execute as @s[tag=!cpp_redstone_powered] if data block ~ ~ ~ Items[{Slot:3b}] if data block ~ ~ ~ Items[{Slot:12b}] run function cpp:item_processer/type
 
 scoreboard players reset @s cppMacType

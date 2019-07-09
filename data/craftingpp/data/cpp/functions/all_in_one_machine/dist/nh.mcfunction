@@ -41,10 +41,10 @@ execute as @s[scores={cppMacType=25}] run loot insert ~ ~ ~ loot cpp:items/prism
 
 execute as @s[scores={cppMacType=26}] run loot insert ~ ~ ~ loot cpp:items/slime_ball
 
-execute as @s[scores={cppMacType=27..42}] run loot insert ~ ~ ~ loot blocks/cobweb
-execute as @s[scores={cppMacType=27..42}] run loot insert ~ ~ ~ loot blocks/cobweb
-execute as @s[scores={cppMacType=27..42}] run loot insert ~ ~ ~ loot blocks/cobweb
-execute as @s[scores={cppMacType=27..42}] run loot insert ~ ~ ~ loot blocks/cobweb
+execute as @s[scores={cppMacType=27..42}] run loot insert ~ ~ ~ loot cpp:items/string
+execute as @s[scores={cppMacType=27..42}] run loot insert ~ ~ ~ loot cpp:items/string
+execute as @s[scores={cppMacType=27..42}] run loot insert ~ ~ ~ loot cpp:items/string
+execute as @s[scores={cppMacType=27..42}] run loot insert ~ ~ ~ loot cpp:items/string
 execute as @s[scores={cppMacType=27}] run loot insert ~ ~ ~ loot cpp:items/percent5_white_dye
 execute as @s[scores={cppMacType=28}] run loot insert ~ ~ ~ loot cpp:items/percent5_orange_dye
 execute as @s[scores={cppMacType=29}] run loot insert ~ ~ ~ loot cpp:items/percent5_magenta_dye

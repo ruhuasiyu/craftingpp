@@ -2,55 +2,55 @@ execute if block ~ ~ ~ barrel{Items:[{Slot:4b,tag:{id:"cpp:iron_dust"}},{Slot:3b
 execute if block ~ ~ ~ barrel{Items:[{Slot:4b,tag:{id:"cpp:iron_dust"}},{Slot:3b,id:"minecraft:red_sand"}]} run scoreboard players set @s cppMacType 1
 execute if block ~ ~ ~ barrel{Items:[{Slot:3b,tag:{id:"cpp:iron_dust"}},{Slot:4b,id:"minecraft:sand"}]} run scoreboard players set @s cppMacType 1
 execute if block ~ ~ ~ barrel{Items:[{Slot:3b,tag:{id:"cpp:iron_dust"}},{Slot:4b,id:"minecraft:red_sand"}]} run scoreboard players set @s cppMacType 1
-execute if block ~ ~ ~ barrel{Items:[{Slot:4b,tag:{dict:"iron_dust"}},{Slot:3b,id:"minecraft:sand"}]} run scoreboard players set @s cppMacType 1
-execute if block ~ ~ ~ barrel{Items:[{Slot:4b,tag:{dict:"iron_dust"}},{Slot:3b,id:"minecraft:red_sand"}]} run scoreboard players set @s cppMacType 1
-execute if block ~ ~ ~ barrel{Items:[{Slot:3b,tag:{dict:"iron_dust"}},{Slot:4b,id:"minecraft:sand"}]} run scoreboard players set @s cppMacType 1
-execute if block ~ ~ ~ barrel{Items:[{Slot:3b,tag:{dict:"iron_dust"}},{Slot:4b,id:"minecraft:red_sand"}]} run scoreboard players set @s cppMacType 1
+execute if block ~ ~ ~ barrel{Items:[{Slot:4b,tag:{dict:["iron_dust"]}},{Slot:3b,id:"minecraft:sand"}]} run scoreboard players set @s cppMacType 1
+execute if block ~ ~ ~ barrel{Items:[{Slot:4b,tag:{dict:["iron_dust"]}},{Slot:3b,id:"minecraft:red_sand"}]} run scoreboard players set @s cppMacType 1
+execute if block ~ ~ ~ barrel{Items:[{Slot:3b,tag:{dict:["iron_dust"]}},{Slot:4b,id:"minecraft:sand"}]} run scoreboard players set @s cppMacType 1
+execute if block ~ ~ ~ barrel{Items:[{Slot:3b,tag:{dict:["iron_dust"]}},{Slot:4b,id:"minecraft:red_sand"}]} run scoreboard players set @s cppMacType 1
 
 execute if block ~ ~ ~ barrel{Items:[{Slot:4b,tag:{id:"cpp:gold_dust"}},{Slot:3b,id:"minecraft:sand"}]} run scoreboard players set @s cppMacType 2
 execute if block ~ ~ ~ barrel{Items:[{Slot:4b,tag:{id:"cpp:gold_dust"}},{Slot:3b,id:"minecraft:red_sand"}]} run scoreboard players set @s cppMacType 2
 execute if block ~ ~ ~ barrel{Items:[{Slot:3b,tag:{id:"cpp:gold_dust"}},{Slot:4b,id:"minecraft:sand"}]} run scoreboard players set @s cppMacType 2
 execute if block ~ ~ ~ barrel{Items:[{Slot:3b,tag:{id:"cpp:gold_dust"}},{Slot:4b,id:"minecraft:red_sand"}]} run scoreboard players set @s cppMacType 2
-execute if block ~ ~ ~ barrel{Items:[{Slot:4b,tag:{dict:"gold_dust"}},{Slot:3b,id:"minecraft:sand"}]} run scoreboard players set @s cppMacType 2
-execute if block ~ ~ ~ barrel{Items:[{Slot:4b,tag:{dict:"gold_dust"}},{Slot:3b,id:"minecraft:red_sand"}]} run scoreboard players set @s cppMacType 2
-execute if block ~ ~ ~ barrel{Items:[{Slot:3b,tag:{dict:"gold_dust"}},{Slot:4b,id:"minecraft:sand"}]} run scoreboard players set @s cppMacType 2
-execute if block ~ ~ ~ barrel{Items:[{Slot:3b,tag:{dict:"gold_dust"}},{Slot:4b,id:"minecraft:red_sand"}]} run scoreboard players set @s cppMacType 2
+execute if block ~ ~ ~ barrel{Items:[{Slot:4b,tag:{dict:["gold_dust"]}},{Slot:3b,id:"minecraft:sand"}]} run scoreboard players set @s cppMacType 2
+execute if block ~ ~ ~ barrel{Items:[{Slot:4b,tag:{dict:["gold_dust"]}},{Slot:3b,id:"minecraft:red_sand"}]} run scoreboard players set @s cppMacType 2
+execute if block ~ ~ ~ barrel{Items:[{Slot:3b,tag:{dict:["gold_dust"]}},{Slot:4b,id:"minecraft:sand"}]} run scoreboard players set @s cppMacType 2
+execute if block ~ ~ ~ barrel{Items:[{Slot:3b,tag:{dict:["gold_dust"]}},{Slot:4b,id:"minecraft:red_sand"}]} run scoreboard players set @s cppMacType 2
 
 execute if block ~ ~ ~ barrel{Items:[{Slot:4b,tag:{id:"cpp:carbon_dust"}},{Slot:3b,id:"minecraft:sand"}]} run scoreboard players set @s cppMacType 3
 execute if block ~ ~ ~ barrel{Items:[{Slot:4b,tag:{id:"cpp:carbon_dust"}},{Slot:3b,id:"minecraft:red_sand"}]} run scoreboard players set @s cppMacType 3
 execute if block ~ ~ ~ barrel{Items:[{Slot:3b,tag:{id:"cpp:carbon_dust"}},{Slot:4b,id:"minecraft:sand"}]} run scoreboard players set @s cppMacType 3
 execute if block ~ ~ ~ barrel{Items:[{Slot:3b,tag:{id:"cpp:carbon_dust"}},{Slot:4b,id:"minecraft:red_sand"}]} run scoreboard players set @s cppMacType 3
-execute if block ~ ~ ~ barrel{Items:[{Slot:4b,tag:{dict:"carbon_dust"}},{Slot:3b,id:"minecraft:sand"}]} run scoreboard players set @s cppMacType 3
-execute if block ~ ~ ~ barrel{Items:[{Slot:4b,tag:{dict:"carbon_dust"}},{Slot:3b,id:"minecraft:red_sand"}]} run scoreboard players set @s cppMacType 3
-execute if block ~ ~ ~ barrel{Items:[{Slot:3b,tag:{dict:"carbon_dust"}},{Slot:4b,id:"minecraft:sand"}]} run scoreboard players set @s cppMacType 3
-execute if block ~ ~ ~ barrel{Items:[{Slot:3b,tag:{dict:"carbon_dust"}},{Slot:4b,id:"minecraft:red_sand"}]} run scoreboard players set @s cppMacType 3
+execute if block ~ ~ ~ barrel{Items:[{Slot:4b,tag:{dict:["carbon_dust"]}},{Slot:3b,id:"minecraft:sand"}]} run scoreboard players set @s cppMacType 3
+execute if block ~ ~ ~ barrel{Items:[{Slot:4b,tag:{dict:["carbon_dust"]}},{Slot:3b,id:"minecraft:red_sand"}]} run scoreboard players set @s cppMacType 3
+execute if block ~ ~ ~ barrel{Items:[{Slot:3b,tag:{dict:["carbon_dust"]}},{Slot:4b,id:"minecraft:sand"}]} run scoreboard players set @s cppMacType 3
+execute if block ~ ~ ~ barrel{Items:[{Slot:3b,tag:{dict:["carbon_dust"]}},{Slot:4b,id:"minecraft:red_sand"}]} run scoreboard players set @s cppMacType 3
 
 execute if block ~ ~ ~ barrel{Items:[{Slot:4b,tag:{id:"cpp:diamond_dust"}},{Slot:3b,id:"minecraft:sand"}]} run scoreboard players set @s cppMacType 4
 execute if block ~ ~ ~ barrel{Items:[{Slot:4b,tag:{id:"cpp:diamond_dust"}},{Slot:3b,id:"minecraft:red_sand"}]} run scoreboard players set @s cppMacType 4
 execute if block ~ ~ ~ barrel{Items:[{Slot:3b,tag:{id:"cpp:diamond_dust"}},{Slot:4b,id:"minecraft:sand"}]} run scoreboard players set @s cppMacType 4
 execute if block ~ ~ ~ barrel{Items:[{Slot:3b,tag:{id:"cpp:diamond_dust"}},{Slot:4b,id:"minecraft:red_sand"}]} run scoreboard players set @s cppMacType 4
-execute if block ~ ~ ~ barrel{Items:[{Slot:4b,tag:{dict:"diamond_dust"}},{Slot:3b,id:"minecraft:sand"}]} run scoreboard players set @s cppMacType 4
-execute if block ~ ~ ~ barrel{Items:[{Slot:4b,tag:{dict:"diamond_dust"}},{Slot:3b,id:"minecraft:red_sand"}]} run scoreboard players set @s cppMacType 4
-execute if block ~ ~ ~ barrel{Items:[{Slot:3b,tag:{dict:"diamond_dust"}},{Slot:4b,id:"minecraft:sand"}]} run scoreboard players set @s cppMacType 4
-execute if block ~ ~ ~ barrel{Items:[{Slot:3b,tag:{dict:"diamond_dust"}},{Slot:4b,id:"minecraft:red_sand"}]} run scoreboard players set @s cppMacType 4
+execute if block ~ ~ ~ barrel{Items:[{Slot:4b,tag:{dict:["diamond_dust"]}},{Slot:3b,id:"minecraft:sand"}]} run scoreboard players set @s cppMacType 4
+execute if block ~ ~ ~ barrel{Items:[{Slot:4b,tag:{dict:["diamond_dust"]}},{Slot:3b,id:"minecraft:red_sand"}]} run scoreboard players set @s cppMacType 4
+execute if block ~ ~ ~ barrel{Items:[{Slot:3b,tag:{dict:["diamond_dust"]}},{Slot:4b,id:"minecraft:sand"}]} run scoreboard players set @s cppMacType 4
+execute if block ~ ~ ~ barrel{Items:[{Slot:3b,tag:{dict:["diamond_dust"]}},{Slot:4b,id:"minecraft:red_sand"}]} run scoreboard players set @s cppMacType 4
 
 execute if block ~ ~ ~ barrel{Items:[{Slot:4b,tag:{id:"cpp:emerald_dust"}},{Slot:3b,id:"minecraft:sand"}]} run scoreboard players set @s cppMacType 5
 execute if block ~ ~ ~ barrel{Items:[{Slot:4b,tag:{id:"cpp:emerald_dust"}},{Slot:3b,id:"minecraft:red_sand"}]} run scoreboard players set @s cppMacType 5
 execute if block ~ ~ ~ barrel{Items:[{Slot:3b,tag:{id:"cpp:emerald_dust"}},{Slot:4b,id:"minecraft:sand"}]} run scoreboard players set @s cppMacType 5
 execute if block ~ ~ ~ barrel{Items:[{Slot:3b,tag:{id:"cpp:emerald_dust"}},{Slot:4b,id:"minecraft:red_sand"}]} run scoreboard players set @s cppMacType 5
-execute if block ~ ~ ~ barrel{Items:[{Slot:4b,tag:{dict:"emerald_dust"}},{Slot:3b,id:"minecraft:sand"}]} run scoreboard players set @s cppMacType 5
-execute if block ~ ~ ~ barrel{Items:[{Slot:4b,tag:{dict:"emerald_dust"}},{Slot:3b,id:"minecraft:red_sand"}]} run scoreboard players set @s cppMacType 5
-execute if block ~ ~ ~ barrel{Items:[{Slot:3b,tag:{dict:"emerald_dust"}},{Slot:4b,id:"minecraft:sand"}]} run scoreboard players set @s cppMacType 5
-execute if block ~ ~ ~ barrel{Items:[{Slot:3b,tag:{dict:"emerald_dust"}},{Slot:4b,id:"minecraft:red_sand"}]} run scoreboard players set @s cppMacType 5
+execute if block ~ ~ ~ barrel{Items:[{Slot:4b,tag:{dict:["emerald_dust"]}},{Slot:3b,id:"minecraft:sand"}]} run scoreboard players set @s cppMacType 5
+execute if block ~ ~ ~ barrel{Items:[{Slot:4b,tag:{dict:["emerald_dust"]}},{Slot:3b,id:"minecraft:red_sand"}]} run scoreboard players set @s cppMacType 5
+execute if block ~ ~ ~ barrel{Items:[{Slot:3b,tag:{dict:["emerald_dust"]}},{Slot:4b,id:"minecraft:sand"}]} run scoreboard players set @s cppMacType 5
+execute if block ~ ~ ~ barrel{Items:[{Slot:3b,tag:{dict:["emerald_dust"]}},{Slot:4b,id:"minecraft:red_sand"}]} run scoreboard players set @s cppMacType 5
 
 execute if block ~ ~ ~ barrel{Items:[{Slot:4b,tag:{id:"cpp:quartz_dust"}},{Slot:3b,id:"minecraft:sand"}]} run scoreboard players set @s cppMacType 6
 execute if block ~ ~ ~ barrel{Items:[{Slot:4b,tag:{id:"cpp:quartz_dust"}},{Slot:3b,id:"minecraft:red_sand"}]} run scoreboard players set @s cppMacType 6
 execute if block ~ ~ ~ barrel{Items:[{Slot:3b,tag:{id:"cpp:quartz_dust"}},{Slot:4b,id:"minecraft:sand"}]} run scoreboard players set @s cppMacType 6
 execute if block ~ ~ ~ barrel{Items:[{Slot:3b,tag:{id:"cpp:quartz_dust"}},{Slot:4b,id:"minecraft:red_sand"}]} run scoreboard players set @s cppMacType 6
-execute if block ~ ~ ~ barrel{Items:[{Slot:4b,tag:{dict:"quartz_dust"}},{Slot:3b,id:"minecraft:sand"}]} run scoreboard players set @s cppMacType 6
-execute if block ~ ~ ~ barrel{Items:[{Slot:4b,tag:{dict:"quartz_dust"}},{Slot:3b,id:"minecraft:red_sand"}]} run scoreboard players set @s cppMacType 6
-execute if block ~ ~ ~ barrel{Items:[{Slot:3b,tag:{dict:"quartz_dust"}},{Slot:4b,id:"minecraft:sand"}]} run scoreboard players set @s cppMacType 6
-execute if block ~ ~ ~ barrel{Items:[{Slot:3b,tag:{dict:"quartz_dust"}},{Slot:4b,id:"minecraft:red_sand"}]} run scoreboard players set @s cppMacType 6
+execute if block ~ ~ ~ barrel{Items:[{Slot:4b,tag:{dict:["quartz_dust"]}},{Slot:3b,id:"minecraft:sand"}]} run scoreboard players set @s cppMacType 6
+execute if block ~ ~ ~ barrel{Items:[{Slot:4b,tag:{dict:["quartz_dust"]}},{Slot:3b,id:"minecraft:red_sand"}]} run scoreboard players set @s cppMacType 6
+execute if block ~ ~ ~ barrel{Items:[{Slot:3b,tag:{dict:["quartz_dust"]}},{Slot:4b,id:"minecraft:sand"}]} run scoreboard players set @s cppMacType 6
+execute if block ~ ~ ~ barrel{Items:[{Slot:3b,tag:{dict:["quartz_dust"]}},{Slot:4b,id:"minecraft:red_sand"}]} run scoreboard players set @s cppMacType 6
 
 execute if block ~ ~ ~ barrel{Items:[{Slot:4b,tag:{id:"cpp:silicon_dust"}},{Slot:3b,id:"minecraft:sand"}]} run scoreboard players set @s cppMacType 7
 execute if block ~ ~ ~ barrel{Items:[{Slot:4b,tag:{id:"cpp:silicon_dust"}},{Slot:3b,id:"minecraft:red_sand"}]} run scoreboard players set @s cppMacType 7
@@ -66,10 +66,10 @@ execute if block ~ ~ ~ barrel{Items:[{Slot:4b,tag:{id:"cpp:steel_dust"}},{Slot:3
 execute if block ~ ~ ~ barrel{Items:[{Slot:4b,tag:{id:"cpp:steel_dust"}},{Slot:3b,id:"minecraft:red_sand"}]} run scoreboard players set @s cppMacType 9
 execute if block ~ ~ ~ barrel{Items:[{Slot:3b,tag:{id:"cpp:steel_dust"}},{Slot:4b,id:"minecraft:sand"}]} run scoreboard players set @s cppMacType 9
 execute if block ~ ~ ~ barrel{Items:[{Slot:3b,tag:{id:"cpp:steel_dust"}},{Slot:4b,id:"minecraft:red_sand"}]} run scoreboard players set @s cppMacType 9
-execute if block ~ ~ ~ barrel{Items:[{Slot:4b,tag:{dict:"steel_dust"}},{Slot:3b,id:"minecraft:sand"}]} run scoreboard players set @s cppMacType 9
-execute if block ~ ~ ~ barrel{Items:[{Slot:4b,tag:{dict:"steel_dust"}},{Slot:3b,id:"minecraft:red_sand"}]} run scoreboard players set @s cppMacType 9
-execute if block ~ ~ ~ barrel{Items:[{Slot:3b,tag:{dict:"steel_dust"}},{Slot:4b,id:"minecraft:sand"}]} run scoreboard players set @s cppMacType 9
-execute if block ~ ~ ~ barrel{Items:[{Slot:3b,tag:{dict:"steel_dust"}},{Slot:4b,id:"minecraft:red_sand"}]} run scoreboard players set @s cppMacType 9
+execute if block ~ ~ ~ barrel{Items:[{Slot:4b,tag:{dict:["steel_dust"]}},{Slot:3b,id:"minecraft:sand"}]} run scoreboard players set @s cppMacType 9
+execute if block ~ ~ ~ barrel{Items:[{Slot:4b,tag:{dict:["steel_dust"]}},{Slot:3b,id:"minecraft:red_sand"}]} run scoreboard players set @s cppMacType 9
+execute if block ~ ~ ~ barrel{Items:[{Slot:3b,tag:{dict:["steel_dust"]}},{Slot:4b,id:"minecraft:sand"}]} run scoreboard players set @s cppMacType 9
+execute if block ~ ~ ~ barrel{Items:[{Slot:3b,tag:{dict:["steel_dust"]}},{Slot:4b,id:"minecraft:red_sand"}]} run scoreboard players set @s cppMacType 9
 
 execute if block ~ ~ ~ barrel{Items:[{Slot:4b,id:"minecraft:glass_bottle"},{Slot:3b,id:"minecraft:sand"}]} run scoreboard players set @s cppMacType 10
 execute if block ~ ~ ~ barrel{Items:[{Slot:4b,id:"minecraft:glass_bottle"},{Slot:3b,id:"minecraft:red_sand"}]} run scoreboard players set @s cppMacType 10

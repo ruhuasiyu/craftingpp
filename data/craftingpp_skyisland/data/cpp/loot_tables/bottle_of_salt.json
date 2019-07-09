@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.bottle_of_salt\\\"}\"},id:\"cpp:bottle_of_salt\",CustomModelData:12970051,dict:\"salt\"}"
+							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.bottle_of_salt\\\"}\"},id:\"cpp:bottle_of_salt\",CustomModelData:12970051,dict:[\"salt\"]}"
 						}
 					]
 				}

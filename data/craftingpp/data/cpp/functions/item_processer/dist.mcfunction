@@ -1,5 +1,7 @@
 execute at @s as @s[scores={cppMacType=101..501}] store result score #temp1 cppValue run data get block ~ ~ ~ Items[{Slot:3b}].tag.Damage
 execute at @s as @s[scores={cppMacType=101..501}] store result block ~ ~ ~ Items[{Slot:3b}].tag.Damage int 1 run scoreboard players add #temp1 cppValue 1
+execute at @s as @s[scores={cppMacType=1201..1299}] store result score #temp1 cppValue run data get block ~ ~ ~ Items[{Slot:3b}].tag.Damage
+execute at @s as @s[scores={cppMacType=1201..1299}] store result block ~ ~ ~ Items[{Slot:3b}].tag.Damage int 1 run scoreboard players add #temp1 cppValue 1
 
 execute as @s[scores={cppMacType=101}] run loot insert ~ ~ ~ loot cpp:items/grass_path
 execute at @s as @s[scores={cppMacType=101}] run data remove block ~ ~ ~ Items[{Slot:3b,id:"minecraft:golden_shovel",tag:{Damage:33}}]
@@ -9,7 +11,7 @@ execute at @s as @s[scores={cppMacType=101}] run data remove block ~ ~ ~ Items[{
 execute at @s as @s[scores={cppMacType=101}] run data remove block ~ ~ ~ Items[{Slot:3b,id:"minecraft:diamond_shovel",tag:{Damage:1562}}]
 
 execute as @s[scores={cppMacType=201}] run loot insert ~ ~ ~ loot cpp:items/farmland
-execute as @s[scores={cppMacType=202}] run loot insert ~ ~ ~ loot blocks/dirt
+execute as @s[scores={cppMacType=202}] run loot insert ~ ~ ~ loot cpp:items/dirt
 execute at @s as @s[scores={cppMacType=201..202}] run data remove block ~ ~ ~ Items[{Slot:3b,id:"minecraft:golden_hoe",tag:{Damage:33}}]
 execute at @s as @s[scores={cppMacType=201..202}] run data remove block ~ ~ ~ Items[{Slot:3b,id:"minecraft:wooden_hoe",tag:{Damage:60}}]
 execute at @s as @s[scores={cppMacType=201..202}] run data remove block ~ ~ ~ Items[{Slot:3b,id:"minecraft:stone_hoe",tag:{Damage:132}}]
@@ -34,7 +36,7 @@ execute at @s as @s[scores={cppMacType=301..316}] run data remove block ~ ~ ~ It
 execute at @s as @s[scores={cppMacType=301..316}] run data remove block ~ ~ ~ Items[{Slot:3b,id:"minecraft:iron_axe",tag:{Damage:251}}]
 execute at @s as @s[scores={cppMacType=301..316}] run data remove block ~ ~ ~ Items[{Slot:3b,id:"minecraft:diamond_axe",tag:{Damage:1562}}]
 
-execute as @s[scores={cppMacType=401}] run loot insert ~ ~ ~ loot blocks/cobblestone
+execute as @s[scores={cppMacType=401}] run loot insert ~ ~ ~ loot cpp:items/cobblestone
 execute at @s as @s[scores={cppMacType=401}] run data remove block ~ ~ ~ Items[{Slot:3b,id:"minecraft:golden_pickaxe",tag:{Damage:33}}]
 execute at @s as @s[scores={cppMacType=401}] run data remove block ~ ~ ~ Items[{Slot:3b,id:"minecraft:wooden_pickaxe",tag:{Damage:60}}]
 execute at @s as @s[scores={cppMacType=401}] run data remove block ~ ~ ~ Items[{Slot:3b,id:"minecraft:stone_pickaxe",tag:{Damage:132}}]
@@ -135,7 +137,7 @@ execute as @s[scores={cppMacType=802}] run loot insert ~ ~ ~ loot blocks/terraco
 execute as @s[scores={cppMacType=803}] run loot insert ~ ~ ~ loot blocks/white_wool
 execute as @s[scores={cppMacType=804}] run loot insert ~ ~ ~ loot blocks/white_bed
 execute as @s[scores={cppMacType=805}] run loot insert ~ ~ ~ loot blocks/wet_sponge
-execute as @s[scores={cppMacType=806}] run loot insert ~ ~ ~ loot blocks/obsidian
+execute as @s[scores={cppMacType=806}] run loot insert ~ ~ ~ loot cpp:items/obsidian
 execute as @s[scores={cppMacType=806}] run loot insert ~ ~ ~ loot cpp:items/bucket
 execute as @s[scores={cppMacType=807}] run loot insert ~ ~ ~ loot blocks/piston
 execute as @s[scores={cppMacType=808}] run loot insert ~ ~ ~ loot cpp:items/potion_of_water
@@ -167,6 +169,13 @@ execute as @s[scores={cppMacType=902}] run loot insert ~ ~ ~ loot cpp:items/myce
 execute as @s[scores={cppMacType=1000}] run function cpp:item_processer/dist_compressor
 
 execute as @s[scores={cppMacType=1101}] run loot insert ~ ~ ~ loot cpp:items/paper
+
+execute as @s[scores={cppMacType=1201}] run loot insert ~ ~ ~ loot blocks/dead_bush
+execute at @s as @s[scores={cppMacType=1201..1299}] run data remove block ~ ~ ~ Items[{Slot:3b,id:"minecraft:golden_sword",tag:{Damage:33}}]
+execute at @s as @s[scores={cppMacType=1201..1299}] run data remove block ~ ~ ~ Items[{Slot:3b,id:"minecraft:wooden_sword",tag:{Damage:60}}]
+execute at @s as @s[scores={cppMacType=1201..1299}] run data remove block ~ ~ ~ Items[{Slot:3b,id:"minecraft:stone_sword",tag:{Damage:132}}]
+execute at @s as @s[scores={cppMacType=1201..1299}] run data remove block ~ ~ ~ Items[{Slot:3b,id:"minecraft:iron_sword",tag:{Damage:251}}]
+execute at @s as @s[scores={cppMacType=1201..1299}] run data remove block ~ ~ ~ Items[{Slot:3b,id:"minecraft:diamond_sword",tag:{Damage:1562}}]
 
 execute at @s as @s[scores={cppMacType=601..616}] store result block ~ ~ ~ Items[{Slot:12b}].Count byte 1 run scoreboard players remove #temp cppValue 8
 execute at @s as @s[scores={cppMacType=641..645}] store result block ~ ~ ~ Items[{Slot:12b}].Count byte 1 run scoreboard players remove #temp cppValue 3

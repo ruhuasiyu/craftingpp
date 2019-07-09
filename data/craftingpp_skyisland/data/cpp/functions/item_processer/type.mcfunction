@@ -110,6 +110,12 @@ execute if block ~ ~ ~ barrel{Items:[{Slot:3b,tag:{id:"cpp:compressor"}},{Slot:1
 
 execute if block ~ ~ ~ barrel{Items:[{Slot:3b,id:"minecraft:crafting_table"},{Slot:12b,id:"minecraft:sugar_cane"}]} run scoreboard players set @s cppMacType 1101
 
+execute if block ~ ~ ~ barrel{Items:[{Slot:3b,id:"minecraft:golden_sword"}]} run function cpp:item_processer/type_sword
+execute if block ~ ~ ~ barrel{Items:[{Slot:3b,id:"minecraft:wooden_sword"}]} run function cpp:item_processer/type_sword
+execute if block ~ ~ ~ barrel{Items:[{Slot:3b,id:"minecraft:stone_sword"}]} run function cpp:item_processer/type_sword
+execute if block ~ ~ ~ barrel{Items:[{Slot:3b,id:"minecraft:iron_sword"}]} run function cpp:item_processer/type_sword
+execute if block ~ ~ ~ barrel{Items:[{Slot:3b,id:"minecraft:diamond_sword"}]} run function cpp:item_processer/type_sword
+
 execute as @s[scores={cppMacType=1..}] run function cpp:item_processer/done
 
 # 接口

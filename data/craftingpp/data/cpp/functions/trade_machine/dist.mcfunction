@@ -1,7 +1,7 @@
-execute as @s[scores={cppMacType=1}] run loot insert ~ ~ ~ loot blocks/emerald_ore
-execute as @s[scores={cppMacType=1}] run loot insert ~ ~ ~ loot blocks/emerald_ore
-execute as @s[scores={cppMacType=1}] run loot insert ~ ~ ~ loot blocks/emerald_ore
-execute as @s[scores={cppMacType=1..7}] run loot insert ~ ~ ~ loot blocks/emerald_ore
+execute as @s[scores={cppMacType=1}] run loot insert ~ ~ ~ loot cpp:items/emerald
+execute as @s[scores={cppMacType=1}] run loot insert ~ ~ ~ loot cpp:items/emerald
+execute as @s[scores={cppMacType=1}] run loot insert ~ ~ ~ loot cpp:items/emerald
+execute as @s[scores={cppMacType=1..7}] run loot insert ~ ~ ~ loot cpp:items/emerald
 
 scoreboard players add @s cppStoredxp 7
 execute if score @s cppStoredxp matches 9.. run loot insert ~ ~ ~ loot cpp:items/experience_bottle
