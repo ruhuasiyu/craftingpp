@@ -69,7 +69,8 @@ execute positioned ~1 ~6 ~ run summon armor_stand ~ ~-0.5 ~ {Invulnerable:1b,Inv
 
 execute at @e[type=armor_stand,tag=cpp_wool_leaves,distance=..20] if block ~ ~0.5 ~ #minecraft:leaves run setblock ~ ~0.5 ~ acacia_leaves replace
 execute at @e[type=armor_stand,tag=cpp_wool_leaves,distance=..20] run setblock ~ ~0.5 ~ acacia_leaves keep
+kill @s
 setblock ~ ~ ~ air
 fill ~ ~ ~ ~ ~5 ~ birch_log replace #minecraft:leaves
 fill ~ ~ ~ ~ ~5 ~ birch_log keep
-kill @s
+tag @s add cpp_plants_dead

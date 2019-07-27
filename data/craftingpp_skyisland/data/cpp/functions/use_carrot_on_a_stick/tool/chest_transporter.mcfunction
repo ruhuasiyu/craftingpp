@@ -1,5 +1,5 @@
-summon item ~ ~ ~ {Item:{id:"minecraft:chest",Count:1b,tag:{BlockEntityTag:{}}},Tags:["cpp_temp"]}
-data modify entity @e[tag=cpp_temp,distance=..2,sort=nearest,limit=1] Item.tag.BlockEntityTag set from block ~ ~ ~ {}
+summon item ~ ~ ~ {Item:{id:"minecraft:chest",Count:1b,tag:{BlockEntityTag:{Items:0}}},Tags:["cpp_temp"]}
+data modify entity @e[tag=cpp_temp,distance=..2,sort=nearest,limit=1] Item.tag.BlockEntityTag.Items set from block ~ ~ ~ Items
 setblock ~ ~ ~ air
 tag @e[tag=cpp_temp,distance=..2,sort=nearest,limit=1] remove cpp_temp
 

@@ -16,7 +16,7 @@
 						},
 						{
 							"function": "set_nbt",
-							"tag": "{isRdMark:1b}"
+							"tag": "{isRdMark:1b,isMachineBg:1b}"
 						}
 					]
 				}

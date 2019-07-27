@@ -9,3 +9,4 @@ execute if score #temp cppValue matches 26.. run replaceitem entity @s[nbt=!{Sel
 execute if score #temp cppValue matches 26.. run replaceitem entity @s[nbt={SelectedItem:{tag:{id:"cpp:chest_transporter"}}}] weapon.mainhand air
 
 kill @e[type=item,distance=..2,nbt={Item:{tag:{isRdMark:1b}}},limit=1]
+clear @a firework_star{isRdMark:1b}
