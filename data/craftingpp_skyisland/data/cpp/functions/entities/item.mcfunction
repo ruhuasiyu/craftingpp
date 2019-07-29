@@ -6,8 +6,6 @@ execute as @s[nbt={Item:{tag:{Tags:["cpp_generate_sheep"]}}}] run function cpp:p
 execute as @s[nbt={Item:{id:"minecraft:blaze_rod",Count:1b,tag:{display:{}}}}] run function cpp:tool/wand_of_the_darkness
 # 清理机器背景
 kill @s[nbt={Item:{tag:{isMachineBg:1b}}}]
-# 磁铁
-execute as @s[nbt={PickupDelay:0s}] if entity @a[distance=..16,nbt={Inventory:[{tag:{id:"cpp:magnet"}}]}] run function cpp:tool/magnet_check
 # 解压缩
 execute as @s[tag=!cpp_item_compressed,nbt={Item:{Count:1b}}] if data entity @s Item.tag.compressedLevel run function cpp:use_carrot_on_a_stick/tool/decompress
 # 树叶腐烂
