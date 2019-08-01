@@ -6,7 +6,8 @@ data merge entity @s[nbt={Item:{id:"minecraft:spruce_sapling",Count:2b}}] {Item:
 data merge entity @s[nbt={Item:{id:"minecraft:oak_sapling",Count:2b}}] {Item:{id:"minecraft:spruce_sapling",Count:1b}}
 data merge entity @s[nbt={Item:{id:"minecraft:dark_oak_sapling",Count:2b}}] {Item:{id:"minecraft:oak_sapling",Count:1b}}
 
-data merge entity @s[nbt={Item:{id:"minecraft:cocoa_beans",Count:2b}}] {Item:{id:"minecraft:wheat_seeds",Count:1b}}
+data merge entity @s[nbt={Item:{id:"minecraft:bamboo",Count:2b}}] {Item:{id:"minecraft:wheat_seeds",Count:1b}}
+data merge entity @s[nbt={Item:{id:"minecraft:cocoa_beans",Count:2b}}] {Item:{id:"minecraft:bamboo",Count:1b}}
 data merge entity @s[nbt={Item:{id:"minecraft:cactus",Count:2b}}] {Item:{id:"minecraft:cocoa_beans",Count:1b}}
 data merge entity @s[nbt={Item:{id:"minecraft:sugar_cane",Count:2b}}] {Item:{id:"minecraft:cactus",Count:1b}}
 data merge entity @s[nbt={Item:{id:"minecraft:melon_seeds",Count:2b}}] {Item:{id:"minecraft:sugar_cane",Count:1b}}
