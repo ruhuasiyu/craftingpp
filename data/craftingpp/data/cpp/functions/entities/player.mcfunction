@@ -17,7 +17,7 @@ execute as @s[tag=cpp_close_gui] at @s positioned ~ ~-256 ~ run function cpp:clo
 execute as @s[scores={cppChainTick=1..}] at @s anchored eyes run function cpp:chain/type
 # 自动火把
 scoreboard players enable @s cppTorchPeriod
-execute as @s[scores={cppTorchPeriod=1..}] run function cpp:auto_torch/check
+execute as @s[scores={cppTorchPeriod=1..}] at @s run function cpp:auto_torch/check
 # 随机方块
 execute as @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:shulker_box"}]}] unless data entity @s SelectedItem if data entity @s Inventory[{Slot:-106b}].tag.BlockEntityTag.Items[] run function cpp:random_block/run
 # 物品处理

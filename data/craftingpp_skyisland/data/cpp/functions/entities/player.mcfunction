@@ -7,6 +7,8 @@ tag @s[nbt={SelectedItem:{id:"minecraft:emerald_block"}}] add cpp_player_hand_em
 tag @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:emerald_block"}]}] add cpp_player_hand_emerald_block
 
 # 方块处理
+# 世界生成
+execute as @s positioned as @s if entity @s[distance=..1] run function cpp:generate/check
 # 营养均衡
 execute as @s at @s if block ~ ~ ~ heavy_weighted_pressure_plate run function cpp:foods/fatness/info
 # 关闭GUI
@@ -15,7 +17,7 @@ execute as @s[tag=cpp_close_gui] at @s positioned ~ ~-256 ~ run function cpp:clo
 execute as @s[scores={cppChainTick=1..}] at @s anchored eyes run function cpp:chain/type
 # 自动火把
 scoreboard players enable @s cppTorchPeriod
-execute as @s[scores={cppTorchPeriod=1..}] run function cpp:auto_torch/check
+execute as @s[scores={cppTorchPeriod=1..}] at @s run function cpp:auto_torch/check
 # 随机方块
 execute as @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:shulker_box"}]}] unless data entity @s SelectedItem if data entity @s Inventory[{Slot:-106b}].tag.BlockEntityTag.Items[] run function cpp:random_block/run
 # 物品处理

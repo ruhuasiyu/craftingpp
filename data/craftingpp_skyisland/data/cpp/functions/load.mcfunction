@@ -79,7 +79,7 @@ scoreboard objectives add cppMana dummy
 scoreboard objectives add cppNoAITick dummy
 # 自动火把
 scoreboard objectives add cppTorchPeriod trigger
-scoreboard objectives add cppTorchTick 
+scoreboard objectives add cppTorchTick dummy
 # 整理
 scoreboard objectives add cppTrim trigger
 scoreboard objectives add cppSortOpenC minecraft.custom:minecraft.open_chest

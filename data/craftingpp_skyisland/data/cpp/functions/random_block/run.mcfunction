@@ -1,7 +1,7 @@
 setblock ~ 255 ~ shulker_box{Items:[{Slot:0b,Count:1b,id:"minecraft:firework_star"}]}
 scoreboard players set #random_min cppRandom 1
 execute store result score #random_max cppRandom run data get entity @s Inventory[{Slot:-106b}].tag.BlockEntityTag.Items
-function cpp:random_block/random
+function cpp:random
 execute as @s[scores={cppRandom=1}] run function cpp:random_block/slot/slot00
 execute as @s[scores={cppRandom=2}] run function cpp:random_block/slot/slot01
 execute as @s[scores={cppRandom=3}] run function cpp:random_block/slot/slot02

@@ -1,2 +1,2 @@
-clear @s torch 1
+clear @s[gamemode=!creative] torch 1
 setblock ~ ~ ~ torch
