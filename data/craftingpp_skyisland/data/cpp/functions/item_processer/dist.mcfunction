@@ -11,7 +11,7 @@ execute at @s as @s[scores={cppMacType=101}] run data remove block ~ ~ ~ Items[{
 execute at @s as @s[scores={cppMacType=101}] run data remove block ~ ~ ~ Items[{Slot:3b,id:"minecraft:diamond_shovel",tag:{Damage:1562}}]
 
 execute as @s[scores={cppMacType=201}] run loot insert ~ ~ ~ loot cpp:items/farmland
-execute as @s[scores={cppMacType=202}] run loot insert ~ ~ ~ loot blocks/dirt
+execute as @s[scores={cppMacType=202}] run loot insert ~ ~ ~ loot cpp:items/dirt
 execute at @s as @s[scores={cppMacType=201..202}] run data remove block ~ ~ ~ Items[{Slot:3b,id:"minecraft:golden_hoe",tag:{Damage:33}}]
 execute at @s as @s[scores={cppMacType=201..202}] run data remove block ~ ~ ~ Items[{Slot:3b,id:"minecraft:wooden_hoe",tag:{Damage:60}}]
 execute at @s as @s[scores={cppMacType=201..202}] run data remove block ~ ~ ~ Items[{Slot:3b,id:"minecraft:stone_hoe",tag:{Damage:132}}]
@@ -36,7 +36,7 @@ execute at @s as @s[scores={cppMacType=301..316}] run data remove block ~ ~ ~ It
 execute at @s as @s[scores={cppMacType=301..316}] run data remove block ~ ~ ~ Items[{Slot:3b,id:"minecraft:iron_axe",tag:{Damage:251}}]
 execute at @s as @s[scores={cppMacType=301..316}] run data remove block ~ ~ ~ Items[{Slot:3b,id:"minecraft:diamond_axe",tag:{Damage:1562}}]
 
-execute as @s[scores={cppMacType=401}] run loot insert ~ ~ ~ loot blocks/cobblestone
+execute as @s[scores={cppMacType=401}] run loot insert ~ ~ ~ loot cpp:items/cobblestone
 execute at @s as @s[scores={cppMacType=401}] run data remove block ~ ~ ~ Items[{Slot:3b,id:"minecraft:golden_pickaxe",tag:{Damage:33}}]
 execute at @s as @s[scores={cppMacType=401}] run data remove block ~ ~ ~ Items[{Slot:3b,id:"minecraft:wooden_pickaxe",tag:{Damage:60}}]
 execute at @s as @s[scores={cppMacType=401}] run data remove block ~ ~ ~ Items[{Slot:3b,id:"minecraft:stone_pickaxe",tag:{Damage:132}}]
@@ -137,7 +137,7 @@ execute as @s[scores={cppMacType=802}] run loot insert ~ ~ ~ loot blocks/terraco
 execute as @s[scores={cppMacType=803}] run loot insert ~ ~ ~ loot blocks/white_wool
 execute as @s[scores={cppMacType=804}] run loot insert ~ ~ ~ loot blocks/white_bed
 execute as @s[scores={cppMacType=805}] run loot insert ~ ~ ~ loot blocks/wet_sponge
-execute as @s[scores={cppMacType=806}] run loot insert ~ ~ ~ loot blocks/obsidian
+execute as @s[scores={cppMacType=806}] run loot insert ~ ~ ~ loot cpp:items/obsidian
 execute as @s[scores={cppMacType=806}] run loot insert ~ ~ ~ loot cpp:items/bucket
 execute as @s[scores={cppMacType=807}] run loot insert ~ ~ ~ loot blocks/piston
 execute as @s[scores={cppMacType=808}] run loot insert ~ ~ ~ loot cpp:items/potion_of_water

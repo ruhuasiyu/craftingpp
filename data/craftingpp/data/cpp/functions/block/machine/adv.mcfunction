@@ -4,6 +4,8 @@ execute store result score @s cppValue run data get entity @s SelectedItem.tag.C
 execute unless entity @s[nbt={SelectedItem:{id:"minecraft:petrified_oak_slab"}}] store result score @s cppValue run data get entity @s Inventory[{Slot:-106b}].tag.CustomModelData
 
 execute at @s anchored eyes run function cpp:block/machine/get_pos
+execute unless entity @e[tag=cpp_machine_pos] at @s anchored eyes run function cpp:block/machine/get_pos1
+execute unless entity @e[tag=cpp_machine_pos] at @s anchored eyes run function cpp:block/machine/get_pos2
 execute at @e[tag=cpp_machine_pos] as @s[scores={cppValue=0}] run function cpp:block/machine/crafting_machine
 execute at @e[tag=cpp_machine_pos] as @s[scores={cppValue=12970001}] run function cpp:block/machine/all_in_one_machine
 execute at @e[tag=cpp_machine_pos] as @s[scores={cppValue=12970002}] run function cpp:block/machine/trade_machine
@@ -19,4 +21,5 @@ execute at @e[tag=cpp_machine_pos] as @s[scores={cppValue=12970099}] run functio
 execute at @e[tag=cpp_machine_pos] as @s[scores={cppValue=12970101}] run function cpp:block/machine/sorcerer_stone
 execute at @e[tag=cpp_machine_pos] as @s[scores={cppValue=12970102}] run function cpp:block/machine/muffler
 execute at @e[tag=cpp_machine_pos] as @s[scores={cppValue=12970103}] run function cpp:block/machine/chest_dropper
+kill @e[tag=cpp_machine_pos]
 function #cpp:put_machine

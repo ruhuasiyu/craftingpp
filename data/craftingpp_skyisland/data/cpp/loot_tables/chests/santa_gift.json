@@ -126,7 +126,7 @@
 				{
 					"type": "item",
 					"name": "minecraft:diamond",
-					"weight": 5,
+					"weight": 1,
 					"functions": [
 						{
 							"function": "set_count",
@@ -140,7 +140,7 @@
 				{
 					"type": "item",
 					"name": "minecraft:emerald",
-					"weight": 10,
+					"weight": 1,
 					"functions": [
 						{
 							"function": "set_count",
@@ -154,7 +154,7 @@
 				{
 					"type": "item",
 					"name": "minecraft:gold_ingot",
-					"weight": 10,
+					"weight": 1,
 					"functions": [
 						{
 							"function": "set_count",
@@ -168,7 +168,7 @@
 				{
 					"type": "item",
 					"name": "minecraft:iron_ingot",
-					"weight": 15,
+					"weight": 1,
 					"functions": [
 						{
 							"function": "set_count",
@@ -182,7 +182,7 @@
 				{
 					"type": "item",
 					"name": "minecraft:coal",
-					"weight": 10,
+					"weight": 1,
 					"functions": [
 						{
 							"function": "set_count",
@@ -196,7 +196,7 @@
 				{
 					"type": "item",
 					"name": "minecraft:lapis_lazuli",
-					"weight": 10,
+					"weight": 1,
 					"functions": [
 						{
 							"function": "set_count",
@@ -210,7 +210,7 @@
 				{
 					"type": "item",
 					"name": "minecraft:redstone",
-					"weight": 10,
+					"weight": 1,
 					"functions": [
 						{
 							"function": "set_count",
@@ -228,28 +228,33 @@
 				},
 				{
 					"type": "item",
+					"name": "minecraft:trident",
+					"weight": 1
+				},
+				{
+					"type": "item",
 					"name": "minecraft:iron_horse_armor",
-					"weight": 3
+					"weight": 1
 				},
 				{
 					"type": "item",
 					"name": "minecraft:golden_horse_armor",
-					"weight": 3
+					"weight": 1
 				},
 				{
 					"type": "item",
 					"name": "minecraft:diamond_horse_armor",
-					"weight": 3
+					"weight": 1
 				},
 				{
 					"type": "loot_table",
 					"name": "cpp:chests/santa_gift_seeds",
-					"weight": 5
+					"weight": 1
 				},
 				{
 					"type": "item",
 					"name": "minecraft:golden_apple",
-					"weight": 5,
+					"weight": 1,
 					"functions": [
 						{
 							"function": "set_count",
@@ -263,7 +268,7 @@
 				{
 					"type": "item",
 					"name": "minecraft:enchanted_golden_apple",
-					"weight": 5,
+					"weight": 1,
 					"functions": [
 						{
 							"function": "set_count",

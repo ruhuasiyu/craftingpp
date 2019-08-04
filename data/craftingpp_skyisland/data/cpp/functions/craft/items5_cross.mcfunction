@@ -1,5 +1,5 @@
 execute if block ~ ~ ~ barrel{Items:[{Slot:2b,tag:{id:"cpp:carbon_dust"}},{Slot:10b,tag:{id:"cpp:carbon_dust"}},{Slot:11b,tag:{id:"cpp:iron_dust"}},{Slot:12b,tag:{id:"cpp:carbon_dust"}},{Slot:20b,tag:{id:"cpp:carbon_dust"}}]} run loot replace block ~ ~ ~ container.16 loot cpp:steel_dust
-execute if block ~ ~ ~ barrel{Items:[{Slot:2b,tag:{dict:"carbon_dust"}},{Slot:10b,tag:{dict:"carbon_dust"}},{Slot:11b,tag:{dict:"iron_dust"}},{Slot:12b,tag:{dict:"carbon_dust"}},{Slot:20b,tag:{dict:"carbon_dust"}}]} run loot replace block ~ ~ ~ container.16 loot cpp:steel_dust
+execute if block ~ ~ ~ barrel{Items:[{Slot:2b,tag:{dict:["carbon_dust"]}},{Slot:10b,tag:{dict:["carbon_dust"]}},{Slot:11b,tag:{dict:["iron_dust"]}},{Slot:12b,tag:{dict:["carbon_dust"]}},{Slot:20b,tag:{dict:["carbon_dust"]}}]} run loot replace block ~ ~ ~ container.16 loot cpp:steel_dust
 
 execute if block ~ ~ ~ barrel{Items:[{Slot:2b,tag:{id:"cpp:enchanted_iron"}},{Slot:10b,tag:{id:"cpp:enchanted_iron"}},{Slot:11b,id:"minecraft:redstone"},{Slot:12b,tag:{id:"cpp:enchanted_iron"}},{Slot:20b,tag:{id:"cpp:enchanted_iron"}}]} run loot replace block ~ ~ ~ container.16 loot cpp:magnet
 
