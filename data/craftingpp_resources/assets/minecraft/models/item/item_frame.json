@@ -22,6 +22,7 @@
 		{ "predicate": { "custom_model_data": 12974407 }, "model": "cpp:flag/github_logo" },
 		{ "predicate": { "custom_model_data": 12974408 }, "model": "cpp:flag/mcmod_logo" },
 		{ "predicate": { "custom_model_data": 12974409 }, "model": "cpp:flag/tcp_logo" },
-		{ "predicate": { "custom_model_data": 12974410 }, "model": "cpp:flag/cbl_logo" }	
+		{ "predicate": { "custom_model_data": 12974410 }, "model": "cpp:flag/cbl_logo" },
+		{ "predicate": { "custom_model_data": 12974411 }, "model": "cpp:flag/nf_logo" }	
 	]
 }

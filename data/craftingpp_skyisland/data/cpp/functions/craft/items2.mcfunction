@@ -38,6 +38,7 @@ execute if block ~ ~ ~ barrel{Items:[{id:"minecraft:shield"},{tag:{id:"cpp:githu
 execute if block ~ ~ ~ barrel{Items:[{id:"minecraft:shield"},{tag:{id:"cpp:mcmod_logo"}}]} run loot replace block ~ ~ ~ container.16 loot cpp:shield_mcmod
 execute if block ~ ~ ~ barrel{Items:[{id:"minecraft:shield"},{tag:{id:"cpp:tcp_logo"}}]} run loot replace block ~ ~ ~ container.16 loot cpp:shield_tcp
 execute if block ~ ~ ~ barrel{Items:[{id:"minecraft:shield"},{tag:{id:"cpp:cbl_logo"}}]} run loot replace block ~ ~ ~ container.16 loot cpp:shield_cbl
+execute if block ~ ~ ~ barrel{Items:[{id:"minecraft:shield"},{tag:{id:"cpp:nf_logo"}}]} run loot replace block ~ ~ ~ container.16 loot cpp:shield_nf
 
 # 皮革盔甲染色
 execute if block ~ ~ ~ barrel{Items:[{Slot:1b,id:"minecraft:leather_helmet"},{Slot:2b,id:"minecraft:black_dye"}]} run function cpp:craft/leather_armor/black

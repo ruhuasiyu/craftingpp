@@ -41,3 +41,4 @@ execute if block ~ ~ ~ barrel{Items:[{id:"minecraft:painting"},{tag:{id:"cpp:bla
 execute if block ~ ~ ~ barrel{Items:[{id:"minecraft:painting"},{tag:{id:"cpp:blackthorn"}},{tag:{id:"cpp:trifolium"}},{tag:{id:"cpp:isorchid"}}]} run loot replace block ~ ~ ~ container.16 loot cpp:mcmod_logo
 execute if block ~ ~ ~ barrel{Items:[{id:"minecraft:painting"},{tag:{id:"cpp:blackthorn"}},{tag:{id:"cpp:trifolium"}},{tag:{id:"cpp:bauhinia"}}]} run loot replace block ~ ~ ~ container.16 loot cpp:tcp_logo
 execute if block ~ ~ ~ barrel{Items:[{id:"minecraft:painting"},{tag:{id:"cpp:blackthorn"}},{tag:{id:"cpp:trifolium"}},{tag:{id:"cpp:hyacinth"}}]} run loot replace block ~ ~ ~ container.16 loot cpp:cbl_logo
+execute if block ~ ~ ~ barrel{Items:[{id:"minecraft:painting"},{tag:{id:"cpp:blackthorn"}},{tag:{id:"cpp:trifolium"}},{tag:{id:"cpp:lycoris_radiata"}}]} run loot replace block ~ ~ ~ container.16 loot cpp:nf_logo

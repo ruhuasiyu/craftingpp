@@ -61,6 +61,8 @@
 		{	"predicate": { "custom_model_data": 12970009 }, "model": "cpp:shield/tcp" },
 		{	"predicate": { "custom_model_data": 12970009, "blocking": 1 }, "model": "cpp:shield/tcp_blocking"},
 		{	"predicate": { "custom_model_data": 12970010 }, "model": "cpp:shield/cbl" },
-		{	"predicate": { "custom_model_data": 12970010, "blocking": 1 }, "model": "cpp:shield/cbl_blocking"}
+		{	"predicate": { "custom_model_data": 12970010, "blocking": 1 }, "model": "cpp:shield/cbl_blocking"},
+		{	"predicate": { "custom_model_data": 12970011 }, "model": "cpp:shield/nf" },
+		{	"predicate": { "custom_model_data": 12970011, "blocking": 1 }, "model": "cpp:shield/nf_blocking"}
 	]
 }

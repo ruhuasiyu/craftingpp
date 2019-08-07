@@ -24,6 +24,9 @@ scoreboard players set #generate_crops cppValue 1
 # 是否生成花草(1是 0否)
 scoreboard players set #generate_modcrops cppValue 1
 
+# 是否开启蝙蝠骚话(1是 0否)
+scoreboard players set #forest_bat_words cppValue 0
+
 # 是否加强僵尸(1是 0否)
 scoreboard players set #improve_zombie cppValue 1
 # 是否加强骷髅(1是 0否)

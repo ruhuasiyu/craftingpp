@@ -10,4 +10,5 @@ execute as @s[tag=cpp_github_logo] run loot spawn ~ ~ ~ loot cpp:github_logo
 execute as @s[tag=cpp_mcmod_logo] run loot spawn ~ ~ ~ loot cpp:mcmod_logo
 execute as @s[tag=cpp_tcp_logo] run loot spawn ~ ~ ~ loot cpp:tcp_logo
 execute as @s[tag=cpp_cbl_logo] run loot spawn ~ ~ ~ loot cpp:cbl_logo
+execute as @s[tag=cpp_nf_logo] run loot spawn ~ ~ ~ loot cpp:nf_logo
 kill @s

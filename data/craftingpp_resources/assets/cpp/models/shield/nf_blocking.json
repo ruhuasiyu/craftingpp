@@ -1,0 +1,6 @@
+{
+	"parent": "cpp:shield/blocking",
+	"textures": {
+		"pattern": "cpp:shield/nf"
+	}
+}

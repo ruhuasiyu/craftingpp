@@ -12,11 +12,12 @@ execute as @s[type=hopper_minecart,nbt={Items:[{tag:{isMachineBg:1b}}]}] run dat
 execute as @s[type=experience_bottle] at @s run function cpp:xp/throw
 # 盔甲架
 execute as @s[type=armor_stand] at @s run function cpp:entities/armor_stand
-# 物品
-execute as @s[type=item] at @s run function cpp:entities/item
 # 物品展示框
 execute as @s[type=item_frame] at @s run function cpp:entities/item_frame
 # 药水云-树叶腐烂
 execute as @s[type=area_effect_cloud,tag=cpp_leaves_decay,nbt={Age:6}] at @s run function cpp:chain/leaves_aec
 # NoAi
 execute as @s[scores={cppNoAITick=1..}] run function cpp:magic/noai
+
+# 物品
+execute as @s[type=item] at @s run function cpp:entities/item

@@ -70,11 +70,11 @@
 }
 .index span.ci, #trade_table span.ci{
 	background-image: url("colorful_items.png");
-	background-size:144px 736px;
+	background-size:144px 752px;
 }
 .ui > span.ci{
 	background-image: url("colorful_items.png");
-	background-size: 288px 1472px;
+	background-size: 288px 1504px;
 }
 
 .ui > span.shapeless{
@@ -1470,6 +1470,8 @@ span.character29{	background-position: -192px -1440px;}
 span.character30{	background-position: -224px -1440px;}
 span.chest_dropper{	background-position: -256px -1440px;}
 
+span.nf_logo{	background-position: -0px -1472px;}
+span.shield_nf{	background-position: -32px -1472px;}
 
 span.effects{
 	display:inline-block;

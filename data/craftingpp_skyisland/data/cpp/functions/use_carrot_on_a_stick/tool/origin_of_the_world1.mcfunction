@@ -1,6 +1,5 @@
 tellraw @s ["<",{"selector":"@s"},"> Slonhon Ral!"]
 execute in overworld run tp @s 0 255 0
-tellraw @p [{"nbt":"Pos","entity":"@p"}]
 execute store result score #temp cppValue run spreadplayers 0 0 1 10 false @s
 execute if score #temp cppValue matches 0 run fill -1 62 -1 1 62 1 dirt
 spreadplayers 0 0 1 10 false @s

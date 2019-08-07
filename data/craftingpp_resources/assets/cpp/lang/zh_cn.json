@@ -252,8 +252,9 @@
 	"item.cpp.bilibili_logo":"§7哔哩哔哩标志",
 	"item.cpp.github_logo":"§7github标志",
 	"item.cpp.mcmod_logo":"§7mcmod百科标志",
-	"item.cpp.tcp_logo":"§7TCP标志",
-	"item.cpp.cbl_logo":"§7CBL标志",
+	"item.cpp.tcp_logo":"§7The Command Power标志",
+	"item.cpp.cbl_logo":"§7Command Block Logic标志",
+	"item.cpp.nf_logo":"§7Nuclear Fusion标志",
 
 	"item.cpp.donkey_meat":"§r生驴肉",
 	"item.cpp.cooked_donkey_meat":"§r熟驴肉",
@@ -604,7 +605,7 @@
 
 	"info.cpp.load1":"§6[Crafting++] §r原版模组《更多的合成》已成功加载, 作者ruhuasiyu, RubberTree等. 更多内容请",
 	"info.cpp.load2":"§e点击此处进入wiki",
-	"info.cpp.load3":"§r. 资源包版本为 1.9.12, 数据包版本为",
+	"info.cpp.load3":"§r. 资源包版本为 1.9.13, 数据包版本为",
 	"info.cpp.load4":"§r请检查是否一致.",
 	
 	"title.actionbar.fat":"§6[Crafting++]§r 你的体重指数为",
