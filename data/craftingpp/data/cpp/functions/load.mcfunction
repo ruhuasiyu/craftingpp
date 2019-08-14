@@ -32,7 +32,7 @@ scoreboard objectives add cppOpenFrame minecraft.custom:minecraft.open_barrel
 # 玩家数字ID
 scoreboard objectives add cppID dummy
 # 玩家经验值
-scoreboard objectives add cppXpTotal dummy
+scoreboard objectives add cppLevel dummy
 # 各种计时
 scoreboard objectives add cppTick dummy
 # 随机数

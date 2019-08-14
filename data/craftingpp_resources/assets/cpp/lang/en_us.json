@@ -250,8 +250,8 @@
 	"item.cpp.uk_flag":"§7UK Flag",
 	"item.cpp.france_flag":"§7France Flag",
 	"item.cpp.bilibili_logo":"§7Bilibili Logo",
-	"item.cpp.github_logo":"§7Github Logo",
-	"item.cpp.mcmod_logo":"§7MCmod Logo",
+	"item.cpp.github_logo":"§7GitHub Logo",
+	"item.cpp.mcmod_logo":"§7mcmod.cn Logo",
 	"item.cpp.tcp_logo":"§7The Command Power Logo",
 	"item.cpp.cbl_logo":"§7Command Block Logic Logo",
 	"item.cpp.nf_logo":"§7Nuclear Fusion Logo",
@@ -605,7 +605,7 @@
 
 	"info.cpp.load1":"§6[Crafting++] §rCrafting++ is loaded. Authors: ruhuasiyu, RubberTree, etc. ",
 	"info.cpp.load2":"§eClick §eto §evisit §ethe §ewiki ",
-	"info.cpp.load3":"§rfor more informations. Resourcepack version 1.9.13, Datapack version ",
+	"info.cpp.load3":"§rfor more informations. Resourcepack version 1.9.14, Datapack version ",
 	"info.cpp.load4":" §rPlease check wheather they coincides.",
 
 	"title.actionbar.fat":"§6[Crafting++]§r Your weight index is ",

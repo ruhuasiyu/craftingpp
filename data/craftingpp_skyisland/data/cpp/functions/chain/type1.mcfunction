@@ -1,5 +1,6 @@
 scoreboard players set @s cppChainDam 0
 execute store result score @s cppChainDam run data get entity @s SelectedItem.tag.Enchantments[{id:"minecraft:unbreaking"}].lvl
+scoreboard players add @s cppChainDam 1
 execute as @s[scores={cppUseAxe1=1..}] run function cpp:chain/axe/init
 execute as @s[scores={cppUseAxe2=1..}] run function cpp:chain/axe/init
 execute as @s[scores={cppUseAxe3=1..}] run function cpp:chain/axe/init

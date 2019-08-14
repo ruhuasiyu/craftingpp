@@ -1,7 +1,7 @@
-# 接口
-function #cpp:item_processer
 
 execute store result score #temp cppValue run data get block ~ ~ ~ Items[{Slot:12b}].Count
+# 接口
+function #cpp:item_processer
 
 execute if block ~ ~ ~ barrel{Items:[{Slot:3b,id:"minecraft:golden_shovel"},{Slot:12b,id:"minecraft:grass_block"}]} run scoreboard players set @s cppMacType 101
 execute if block ~ ~ ~ barrel{Items:[{Slot:3b,id:"minecraft:wooden_shovel"},{Slot:12b,id:"minecraft:grass_block"}]} run scoreboard players set @s cppMacType 101
@@ -117,6 +117,3 @@ execute if block ~ ~ ~ barrel{Items:[{Slot:3b,id:"minecraft:iron_sword"}]} run f
 execute if block ~ ~ ~ barrel{Items:[{Slot:3b,id:"minecraft:diamond_sword"}]} run function cpp:item_processer/type_sword
 
 execute as @s[scores={cppMacType=1..}] run function cpp:item_processer/done
-
-# 接口
-function #cpp:item_processer

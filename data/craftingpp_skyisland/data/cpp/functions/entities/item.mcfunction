@@ -1,5 +1,5 @@
 # spigot端需要下述命令
-execute as @s[nbt={PickupDelay:-1s}] run data merge entity @s {PickupDelay:0s}
+#execute as @s[nbt={PickupDelay:-1s}] run data merge entity @s {PickupDelay:0s}
 # 磁铁
 execute as @s[nbt={PickupDelay:0s}] if entity @a[distance=..16,nbt={Inventory:[{tag:{id:"cpp:magnet"}}]}] run function cpp:tool/magnet_check
 # 黑暗魔杖

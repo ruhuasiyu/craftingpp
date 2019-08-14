@@ -1,0 +1,26 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:firework_star",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 9
+							}
+						},
+						{
+							"function": "set_nbt",
+							"tag": "{isRdMark:1b,isMachineBg:1b,CustomModelData:12971000}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

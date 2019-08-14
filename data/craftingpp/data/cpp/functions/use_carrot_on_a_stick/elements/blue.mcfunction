@@ -1,4 +1,9 @@
-execute store result score @s cppValue run data get entity @s XpTotal
-execute if score @s cppValue matches ..9 run tellraw @s {"translate":"item.cpp.elements.fail","with":["10"]}
-execute if score @s cppValue matches 10.. run function cpp:use_carrot_on_a_stick/elements/blue1
-execute if score @s cppValue matches 10.. run xp add @s -10
+tag @s remove cpp_has_enough_xp
+execute store result score @s cppValue run xp query @s points
+execute store result score @s cppLevel run data get entity @s XpLevel
+tag @s[scores={cppLevel=1,cppValue=3..}] add cpp_has_enough_xp
+tag @s[scores={cppLevel=2..}] add cpp_has_enough_xp
+
+tellraw @s[tag=!cpp_has_enough_xp] {"translate":"item.cpp.elements.fail","with":["10"]}
+execute as @s[tag=cpp_has_enough_xp] run function cpp:use_carrot_on_a_stick/elements/blue1
+xp add @s[tag=cpp_has_enough_xp] -10

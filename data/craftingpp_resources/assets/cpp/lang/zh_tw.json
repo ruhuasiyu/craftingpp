@@ -250,11 +250,11 @@
 	"item.cpp.uk_flag":"§7英國國旗",
 	"item.cpp.france_flag":"§7法國國旗",
 	"item.cpp.bilibili_logo":"§7嗶哩嗶哩標誌",
-	"item.cpp.github_logo":"§7github標誌",
-	"item.cpp.mcmod_logo":"§7mcmod百科標誌",
-	"item.cpp.tcp_logo":"§7The Command Power標誌",
-	"item.cpp.cbl_logo":"§7Command Block Logic標誌",
-	"item.cpp.nf_logo":"§7Nuclear Fusion標誌",
+	"item.cpp.github_logo":"§7GitHub 標誌",
+	"item.cpp.mcmod_logo":"§7MC百科標誌",
+	"item.cpp.tcp_logo":"§7The Command Power 標誌",
+	"item.cpp.cbl_logo":"§7Command Block Logic 標誌",
+	"item.cpp.nf_logo":"§7Nuclear Fusion 標誌",
 	
 	"item.cpp.donkey":"§r生驢肉",
 	"item.cpp.cooked_donkey":"§r熟驢肉",
@@ -605,7 +605,7 @@
 
 	"info.cpp.load1":"§6[Crafting++] §r原版模組《更多的合成》已成功加載, 作者ruhuasiyu, RubberTree等. 更多內容請",
 	"info.cpp.load2":"§e點擊此處進入wiki",
-	"info.cpp.load3":"§r. 資源包版本為 1.9.13, 數據包版本為",
+	"info.cpp.load3":"§r. 資源包版本為 1.9.14, 數據包版本為",
 	"info.cpp.load4":"§r請檢查是否壹致.",
 
 	"title.actionbar.fat":"§6[Crafting++]§r 你的體重指數為",

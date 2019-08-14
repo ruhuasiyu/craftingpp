@@ -181,3 +181,5 @@ execute at @s as @s[scores={cppMacType=601..616}] store result block ~ ~ ~ Items
 execute at @s as @s[scores={cppMacType=641..645}] store result block ~ ~ ~ Items[{Slot:12b}].Count byte 1 run scoreboard players remove #temp cppValue 3
 execute at @s as @s[scores={cppMacType=1000}] store result block ~ ~ ~ Items[{Slot:12b}].Count byte 1 run scoreboard players remove #temp cppValue 63
 execute at @s store result block ~ ~ ~ Items[{Slot:12b}].Count byte 1 run scoreboard players remove #temp cppValue 1
+# 接口
+function #cpp:item_processer_dist

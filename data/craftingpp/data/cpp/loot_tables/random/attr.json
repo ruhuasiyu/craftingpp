@@ -1,0 +1,34 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:stone",
+					"functions": [
+						{
+							"function": "set_attributes",
+							"modifiers": [
+								{
+									"slot": "mainhand",
+									"name": "random_attackDamage",
+									"attribute": "generic.attackDamage",
+									"operation": "addition",
+									"amount": {
+										"min": 0,
+										"max": 2048
+									}
+								}
+							]
+						},
+						{
+							"function": "set_nbt",
+							"tag": "{isRdMark:1b,isMachineBg:1b,CustomModelData:12971000}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
