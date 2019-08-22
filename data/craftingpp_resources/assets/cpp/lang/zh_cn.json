@@ -219,7 +219,7 @@
 	"item.cpp.time_checker.time18":"§6[Crafting++]§r 现在时间 18:00，太阳下山了",
 	"item.cpp.time_checker.time00":"§6[Crafting++]§r 现在时间 00:00",
 	"item.cpp.origin_of_the_world":"§r世界之源",
-	"item.cpp.origin_of_the_world.no_spawn":"§6[Crafting++]§r 你尚未设置重生点，将会被传送至(0,64,0)附近",
+	"item.cpp.origin_of_the_world.no_spawn":"§6[Crafting++]§r 你尚未设置重生点，将会被传送至出生点附近",
 	"item.cpp.compressor":"§r压缩器",
 	"item.cpp.elder_s_words":"§r年长者之教诲",
 	"item.cpp.coordinate_recorder":"§r坐标记录仪",
@@ -605,7 +605,7 @@
 
 	"info.cpp.load1":"§6[Crafting++] §r原版模组《更多的合成》已成功加载, 作者ruhuasiyu, RubberTree等. 更多内容请",
 	"info.cpp.load2":"§e点击此处进入wiki",
-	"info.cpp.load3":"§r. 资源包版本为 1.9.14, 数据包版本为",
+	"info.cpp.load3":"§r. 资源包版本为 1.9.15, 数据包版本为",
 	"info.cpp.load4":"§r请检查是否一致.",
 	
 	"title.actionbar.fat":"§6[Crafting++]§r 你的体重指数为",

@@ -46,7 +46,7 @@ execute as @s[nbt={Inventory:[{Slot:102b,tag:{id:"cpp:shooting_star"}}]},nbt=!{I
 # shift下降
 execute as @s[scores={cppSneakTime=1..},nbt={ActiveEffects:[{Id:25b}]}] at @s if block ~ ~-0.3 ~ #cpp:fluid run tp @s ~ ~-0.3 ~
 # 使用胡萝卜钓竿(元素之力、机器、工具、傀儡)
-execute as @s[scores={cppUseCSt=1..}] at @s run function cpp:use_carrot_on_a_stick/type
+execute as @s[scores={cppUseCSt=1..}] run function cpp:use_carrot_on_a_stick/type
 # 机器插件
 execute as @s[scores={cppOpenFrame=1..},nbt={SelectedItem:{tag:{MachinePlugin:1b}}}] at @s anchored eyes run function cpp:all_in_one_machine/ray
 # 箱子整理

@@ -7,8 +7,6 @@ tag @s[nbt={SelectedItem:{id:"minecraft:emerald_block"}}] add cpp_player_hand_em
 tag @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:emerald_block"}]}] add cpp_player_hand_emerald_block
 
 # 方块处理
-# 世界生成
-execute as @s positioned as @s if entity @s[distance=..1] run function cpp:generate/check
 # 营养均衡
 execute as @s at @s if block ~ ~ ~ heavy_weighted_pressure_plate run function cpp:foods/fatness/info
 # 关闭GUI

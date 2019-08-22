@@ -18,7 +18,7 @@
 							"functions": [
 								{
 									"function": "set_nbt",
-									"tag": "{isWeatherMarker:1b,id:\"cpp:weather/thunder\",CustomModelData:12971000}"
+									"tag": "{isWeatherMarker:1b,id:\"cpp:weather/thunder\",isMachineBg:1b,CustomModelData:12971000}"
 								}
 							]
 						},
@@ -35,7 +35,7 @@
 							"functions": [
 								{
 									"function": "set_nbt",
-									"tag": "{isWeatherMarker:1b,id:\"cpp:weather/rain\",CustomModelData:12971000}"
+									"tag": "{isWeatherMarker:1b,id:\"cpp:weather/rain\",isMachineBg:1b,CustomModelData:12971000}"
 								}
 							]
 						},
@@ -51,7 +51,7 @@
 							"functions": [
 								{
 									"function": "set_nbt",
-									"tag": "{isWeatherMarker:1b,id:\"cpp:weather/clear\",CustomModelData:12971000}"
+									"tag": "{isWeatherMarker:1b,id:\"cpp:weather/clear\",isMachineBg:1b,CustomModelData:12971000}"
 								}
 							]
 						}

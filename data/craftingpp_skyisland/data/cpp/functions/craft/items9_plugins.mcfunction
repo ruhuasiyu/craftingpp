@@ -7,3 +7,6 @@ execute if block ~ ~ ~ barrel{Items:[{Slot:19b,tag:{id:"cpp:enchanted_iron"}},{S
 execute if block ~ ~ ~ barrel{Items:[{Slot:19b,tag:{id:"cpp:enchanted_iron"}},{Slot:20b,id:"minecraft:golden_pickaxe"},{Slot:21b,tag:{id:"cpp:enchanted_iron"}}]} run loot replace block ~ ~ ~ container.16 loot cpp:obsidian_plugin
 execute if block ~ ~ ~ barrel{Items:[{Slot:19b,tag:{id:"cpp:enchanted_iron"}},{Slot:20b,id:"minecraft:ghast_tear"},{Slot:21b,tag:{id:"cpp:enchanted_iron"}}]} run loot replace block ~ ~ ~ container.16 loot cpp:netherrack_plugin
 execute if block ~ ~ ~ barrel{Items:[{Slot:19b,tag:{id:"cpp:enchanted_iron"}},{Slot:20b,id:"minecraft:ender_pearl"},{Slot:21b,tag:{id:"cpp:enchanted_iron"}}]} run loot replace block ~ ~ ~ container.16 loot cpp:end_stone_plugin
+
+execute if data block ~ ~ ~ Items[{Slot:16b,tag:{id:"cpp:high_temperature_plugin"}}] run data modify block ~ ~ ~ Items[{id:"minecraft:lava_bucket"}].Count set value 2
+execute if data block ~ ~ ~ Items[{Slot:16b,tag:{id:"cpp:high_temperature_plugin"}}] run data modify block ~ ~ ~ Items[{id:"minecraft:lava_bucket"}].id set value "minecraft:bucket"

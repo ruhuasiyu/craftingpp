@@ -88,6 +88,8 @@ execute if block ~ ~ ~ barrel{Items:[{Slot:1b,id:"minecraft:gunpowder"},{Slot:2b
 
 # 垃圾桶
 execute if block ~ ~ ~ barrel{Items:[{Slot:1b,id:"minecraft:iron_ingot"},{Slot:2b,id:"minecraft:flint_and_steel"},{Slot:3b,id:"minecraft:iron_ingot"},{Slot:10b,id:"minecraft:iron_ingot"},{Slot:11b,id:"minecraft:lava_bucket"},{Slot:12b,id:"minecraft:iron_ingot"},{Slot:19b,id:"minecraft:iron_ingot"},{Slot:20b,id:"minecraft:iron_ingot"},{Slot:21b,id:"minecraft:iron_ingot"}]} run loot replace block ~ ~ ~ container.16 loot cpp:dustbin
-# 垃圾桶
+execute if data block ~ ~ ~ Items[{Slot:16b,tag:{id:"cpp:dustbin"}}] run data modify block ~ ~ ~ Items[{id:"minecraft:lava_bucket"}].Count set value 2
+execute if data block ~ ~ ~ Items[{Slot:16b,tag:{id:"cpp:dustbin"}}] run data modify block ~ ~ ~ Items[{id:"minecraft:lava_bucket"}].id set value "minecraft:bucket"
+# 消音器
 execute if block ~ ~ ~ barrel{Items:[{Slot:1b,id:"minecraft:iron_ingot"},{Slot:2b,id:"minecraft:flint"},{Slot:3b,id:"minecraft:iron_ingot"},{Slot:10b,id:"minecraft:iron_ingot"},{Slot:11b,id:"minecraft:wet_sponge"},{Slot:12b,id:"minecraft:iron_ingot"},{Slot:19b,id:"minecraft:iron_ingot"},{Slot:20b,id:"minecraft:iron_ingot"},{Slot:21b,id:"minecraft:iron_ingot"}]} run loot replace block ~ ~ ~ container.16 loot cpp:muffler
 
