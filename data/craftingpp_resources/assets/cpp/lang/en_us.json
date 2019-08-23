@@ -54,6 +54,7 @@
 	"item.cpp.endermite_head":"§eEndermite Head",
 	"item.cpp.dolphin_head":"§eDolphin Head",
 	"item.cpp.zombie_horse_head":"§eZombie Horse Head",
+	"item.cpp.bee_head":"§eBee Head",
 	
 	"item.cpp.cat_head.tabby":"§eTabby Cat Head",
 	"item.cpp.cat_head.tuxedo":"§eTuxedo Cat Head",
@@ -605,7 +606,7 @@
 
 	"info.cpp.load1":"§6[Crafting++] §rCrafting++ is loaded. Authors: ruhuasiyu, RubberTree, etc. ",
 	"info.cpp.load2":"§eClick §eto §evisit §ethe §ewiki ",
-	"info.cpp.load3":"§rfor more informations. Resourcepack version 1.9.15, Datapack version ",
+	"info.cpp.load3":"§rfor more informations. Resourcepack version 1.9.16, Datapack version ",
 	"info.cpp.load4":" §rPlease check wheather they coincides.",
 
 	"title.actionbar.fat":"§6[Crafting++]§r Your weight index is ",

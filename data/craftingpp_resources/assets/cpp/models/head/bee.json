@@ -1,0 +1,30 @@
+{
+	"parent": "block/block",
+	"display": {
+		"head": {
+			"scale": [ 1.1, 1.1, 1.1 ]
+		},
+		"gui": {
+			"rotation": [ 30, 225, 0 ],
+			"scale": [ 0.67, 0.67, 0.67 ]
+		}
+	},
+	"textures": {
+		"particle": "entity/bee/bee",
+		"layer": "entity/bee/bee"
+	},
+	"elements": [
+		{
+			"from": [ 1, 1, -2 ],
+			"to": [ 15, 15, 18 ],
+			"faces": {
+				"east":	{ "uv": [ 0   , 2.5, 2.5 , 4.25 ], "texture": "#layer" },
+				"north":{ "uv": [ 2.5 , 2.5, 4.25, 4.25 ], "texture": "#layer" },
+				"west":	{ "uv": [ 4.25, 2.5, 6.75 , 4.25 ], "texture": "#layer" },
+				"south":{ "uv": [ 6.75 , 2.5, 8.5 , 4.25 ], "texture": "#layer" },
+				"up":	{ "uv": [ 2.5 , 0  , 4.25, 2.5 ], "texture": "#layer", "rotation": 180 },
+				"down":	{ "uv": [ 4.25, 0  , 6   , 2.5 ], "texture": "#layer" }
+			}
+		}
+	]
+}

@@ -54,6 +54,7 @@
 	"item.cpp.endermite_head":"§e末影蟎頭",
 	"item.cpp.dolphin_head":"§e海豚頭",
 	"item.cpp.zombie_horse_head":"§e僵屍馬頭",
+	"item.cpp.bee_head":"§e蜜蜂頭",
 	
 	"item.cpp.cat_head.tabby":"§e虎斑貓頭",
 	"item.cpp.cat_head.tuxedo":"§e西服貓頭",
@@ -605,7 +606,7 @@
 
 	"info.cpp.load1":"§6[Crafting++] §r原版模組《更多的合成》已成功加載, 作者ruhuasiyu, RubberTree等. 更多內容請",
 	"info.cpp.load2":"§e點擊此處進入wiki",
-	"info.cpp.load3":"§r. 資源包版本為 1.9.15, 數據包版本為",
+	"info.cpp.load3":"§r. 資源包版本為 1.9.16, 數據包版本為",
 	"info.cpp.load4":"§r請檢查是否壹致.",
 
 	"title.actionbar.fat":"§6[Crafting++]§r 你的體重指數為",
