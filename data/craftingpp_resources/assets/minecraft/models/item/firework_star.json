@@ -148,7 +148,6 @@
 		{ "predicate": { "custom_model_data": 12971152 }, "model": "cpp:machine/mob_projector/turtle"},
 		{ "predicate": { "custom_model_data": 12971153 }, "model": "cpp:machine/mob_projector/fox"},
 		{ "predicate": { "custom_model_data": 12971154 }, "model": "cpp:machine/mob_projector/panda"},
-		{ "predicate": { "custom_model_data": 12971155 }, "model": "cpp:machine/mob_projector/bee"},
 		
 		{ "predicate": { "custom_model_data": 12972000 }, "model": "cpp:machine/xp_shower/xp_shower0"},
 		{ "predicate": { "custom_model_data": 12972001 }, "model": "cpp:machine/xp_shower/xp_shower1"},

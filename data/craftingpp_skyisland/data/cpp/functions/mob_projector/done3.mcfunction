@@ -31,6 +31,5 @@ execute as @s[scores={cppMacType=51}] run summon parrot ~ ~-2 ~
 execute as @s[scores={cppMacType=52}] run summon turtle ~ ~-2 ~
 execute as @s[scores={cppMacType=53}] run summon fox ~ ~-2 ~
 execute as @s[scores={cppMacType=54}] run summon panda ~ ~-2 ~
-execute as @s[scores={cppMacType=55}] run summon bee ~ ~-2 ~
 
 scoreboard players reset @s cppTick

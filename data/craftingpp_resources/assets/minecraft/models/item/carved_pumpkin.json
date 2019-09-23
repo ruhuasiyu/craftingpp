@@ -102,7 +102,6 @@
 		{ "predicate": { "custom_model_data": 12970251 }, "model": "cpp:head/endermite"},
 		{ "predicate": { "custom_model_data": 12970252 }, "model": "cpp:head/dolphin"},
 		{ "predicate": { "custom_model_data": 12970253 }, "model": "cpp:head/zombie_horse"},
-		{ "predicate": { "custom_model_data": 12970254 }, "model": "cpp:head/bee"},
 		
 		{ "predicate": { "custom_model_data": 12970260 }, "model": "cpp:head/parrot/parrot0"},
 		{ "predicate": { "custom_model_data": 12970261 }, "model": "cpp:head/parrot/parrot1"},

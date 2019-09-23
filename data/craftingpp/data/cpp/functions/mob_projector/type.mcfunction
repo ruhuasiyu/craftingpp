@@ -123,7 +123,7 @@ execute if block ~ ~ ~ barrel{Items:[{Slot:13b,id:"minecraft:feather"},{Slot:22b
 execute if block ~ ~ ~ barrel{Items:[{Slot:13b,id:"minecraft:seagrass"},{Slot:22b,id:"minecraft:skeleton_skull"}]} run scoreboard players set @s cppMacType 52
 execute if block ~ ~ ~ barrel{Items:[{Slot:13b,id:"minecraft:sweet_berries"},{Slot:22b,id:"minecraft:skeleton_skull"}]} run scoreboard players set @s cppMacType 53
 execute if block ~ ~ ~ barrel{Items:[{Slot:13b,id:"minecraft:bamboo"},{Slot:22b,id:"minecraft:skeleton_skull"}]} run scoreboard players set @s cppMacType 54
-execute if block ~ ~ ~ barrel{Items:[{Slot:13b,id:"minecraft:poppy"},{Slot:22b,id:"minecraft:skeleton_skull"}]} run scoreboard players set @s cppMacType 55
+
 
 execute if block ~ ~ ~ barrel{Items:[{Slot:22b,id:"minecraft:white_wool"},{Slot:13b,id:"minecraft:wheat"}]} run scoreboard players set @s cppMacType 1
 execute if block ~ ~ ~ barrel{Items:[{Slot:22b,id:"minecraft:orange_wool"},{Slot:13b,id:"minecraft:wheat"}]} run scoreboard players set @s cppMacType 1
@@ -244,11 +244,10 @@ execute if block ~ ~ ~ barrel{Items:[{Slot:22b,id:"minecraft:feather"},{Slot:13b
 execute if block ~ ~ ~ barrel{Items:[{Slot:22b,id:"minecraft:seagrass"},{Slot:13b,id:"minecraft:skeleton_skull"}]} run scoreboard players set @s cppMacType 52
 execute if block ~ ~ ~ barrel{Items:[{Slot:22b,id:"minecraft:sweet_berries"},{Slot:13b,id:"minecraft:skeleton_skull"}]} run scoreboard players set @s cppMacType 53
 execute if block ~ ~ ~ barrel{Items:[{Slot:22b,id:"minecraft:bamboo"},{Slot:13b,id:"minecraft:skeleton_skull"}]} run scoreboard players set @s cppMacType 54
-execute if block ~ ~ ~ barrel{Items:[{Slot:22b,id:"minecraft:poppy"},{Slot:13b,id:"minecraft:skeleton_skull"}]} run scoreboard players set @s cppMacType 55
 
 scoreboard players add @s[scores={cppMacType=1..12,cppStoredxp=4..}] cppTick 6
 scoreboard players add @s[scores={cppMacType=21..31,cppStoredxp=8..}] cppTick 6
-scoreboard players add @s[scores={cppMacType=41..55,cppStoredxp=32..}] cppTick 6
+scoreboard players add @s[scores={cppMacType=41..54,cppStoredxp=32..}] cppTick 6
 
 replaceitem block ~ ~ ~ container.9 firework_star{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.mob_projector\"}"},CustomModelData:12971000}
 scoreboard players set #temp cppValue 12971100
@@ -256,4 +255,4 @@ execute as @s[scores={cppMacType=1..}] store result block ~ ~ ~ Items[{Slot:9b}]
 
 execute as @s[scores={cppMacType=1..12,cppStoredxp=4..}] if score @s cppTick >= #mob_projector_cd cppValue run function cpp:mob_projector/done1
 execute as @s[scores={cppMacType=21..31,cppStoredxp=8..}] if score @s cppTick >= #mob_projector_cd cppValue run function cpp:mob_projector/done2
-execute as @s[scores={cppMacType=41..55,cppStoredxp=32..}] if score @s cppTick >= #mob_projector_cd cppValue run function cpp:mob_projector/done3
+execute as @s[scores={cppMacType=41..54,cppStoredxp=32..}] if score @s cppTick >= #mob_projector_cd cppValue run function cpp:mob_projector/done3
