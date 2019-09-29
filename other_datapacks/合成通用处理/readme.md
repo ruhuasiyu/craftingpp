@@ -3,11 +3,11 @@
 需要【方块通用处理】作为前置。
 需要配套资源包，包含合成台、图形界面、按钮等内容。
 
-# 合成台配方
+## 合成台配方
 + 合成台为石化橡木台阶，请自行为其添加配方
 + 或`barrel{id:"cpp:crafting_machine"}`
 
-# 合成表
+## 合成表
 在函数标签#cpp_craft:craft中添加函数，内容格式为
 ```
 execute as @s[scores={cppValue=原材料数量}] if block ~ ~ ~ barrel{Items:[Slot:1b,2b,3b,10b,11b,12b,19b,20b,21b为配方信息]} run loot replace block ~ ~ ~ container.16 loot 产物战利品表
