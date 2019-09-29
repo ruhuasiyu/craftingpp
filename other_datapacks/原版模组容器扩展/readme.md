@@ -8,5 +8,5 @@ execute if block ~ ~ ~ [方块id] run scoreboard players remove @s container [�
 
 现已支持：
 + [更多箱子](https://www.curseforge.com/minecraft/mc-mods/iron-chests)：除了泥土箱子外的所有箱子
-+ [更多潜影盒](https://www.curseforge.com/minecraft/mc-mods/iron-shulker-boxes)：所有箱子
++ [更多潜影盒](https://www.curseforge.com/minecraft/mc-mods/iron-shulker-boxes)：所有潜影盒
 + [石箱子](https://www.curseforge.com/minecraft/mc-mods/stone-chest)：所有箱子
