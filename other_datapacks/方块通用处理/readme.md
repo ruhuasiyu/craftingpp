@@ -1,4 +1,8 @@
 # 方块通用处理
+本模组并非具有实际效果的模组，而是为了给原版模组的方块基本操作提供功能。使用本模组作为前置后，方块的放置、破坏、机器的基本操作都无需再编写函数来处理了。
+
+例如，放置模组内方块时，本来用视线追踪即可实现，然而放置不完整方块（作物、树苗、告示牌等），或者在台阶上放置方块等情形，要做进一步的调整才可将bug调至最低。而使用本前置模组后，无需再考虑这些问题，只需要专心设计方块内容即可。
+
 本模组支持的版本为：19w38a-19w39a
 
 ## 方块的放置
@@ -24,7 +28,7 @@
 	+ 执行位置为盔甲架位置
 	+ 通过修改盔甲架头部物来实现修改掉落品
 + 注意事项
-	+ 若放置时对物品做了修改，破坏时需要反向修改会原物品。
+	+ 若放置时对物品做了修改，破坏时需要反向修改会原物品
 	+ 屏障默认无掉落
 
 ## 机器的处理
@@ -32,7 +36,7 @@
 + 目标：下方漏斗，下方漏斗矿车，掉落物，玩家
 + 结果：禁止漏斗吸取，清除漏斗和漏斗矿车内、地面、玩家背包内拥有标签`isMachineBg:1b`的物品
 + 接口：为你的机器内的所有用于图形界面的物品添加标签`isMachineBg:1b`即可
-+ 默认只支持物品淡灰色染色玻璃板和烟火之星，如果需要可以在物品标签`#cpp_block:machine_gui`中额外添加。
++ 默认只支持物品石化橡木台阶、淡灰色染色玻璃板和烟火之星，如果需要可以在物品标签`#cpp_block:machine_gui`中额外添加
 
 ## 机器的输出
 + 事件：执行函数`cpp_block:dist`
@@ -55,10 +59,61 @@
 	+ 仅识别原版红石元件
 	+ 不识别陷阱箱
 
+## 例子
+创建文件`craftingpp\data\cpp\loot_tables\moon_stone.json`
+```
+    {
+        "pools": [
+            {
+                "rolls": 1,
+                "entries": [
+                    {
+                        "type": "minecraft:item",
+                        "name": "minecraft:gold_block",
+                        "functions": [
+                            {
+                                "function": "minecraft:set_nbt",
+                                "tag": "{display:{Name:"{\\"translate\\":\\"item.cpp.moon_stone\\"}"},id:"cpp:moon_stone",CustomModelData:12970001}"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+```
+然后`loot give @s loot cpp:moon_stone`并创建相应模型，即可自动放置和破坏。
+![](https://i.loli.net/2019/09/29/4bPZfQtlJpyqjLG.png)
+
+创建文件`craftingpp\data\cpp\loot_tables\all_in_one_machine.json`
+```
+    {
+        "pools": [
+            {
+                "rolls": 1,
+                "entries": [
+                    {
+                        "type": "minecraft:item",
+                        "name": "minecraft:barrel",
+                        "functions": [
+                            {
+                                "function": "minecraft:set_nbt",
+                                "tag": "{display:{Name:"{\\"translate\\":\\"item.cpp.all_in_one_machine\\"}"},id:"cpp:all_in_one_machine",CustomModelData:12970001,hasGUI:1b}"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+```
+然后`loot give @s loot cpp:all_in_one_machine`并创建相应模型和机器背景板。机器的背景高频放置、产出、经验条、选项等操作需要额外编写。
+![](https://i.loli.net/2019/09/29/glqRTmQcS5kVjEs.png)
+
 ## 更新日志
-### v1.1 2019/09/30
+### 1.1 2019/09/30
 + 移除了无用的函数。
 + 物品标签`#cpp_block:machine_gui`中添加了石化橡木台阶。
 
-### v1.0 2019/09/29
+### 1.0 2019/09/29
 + 提交第一个版本。
