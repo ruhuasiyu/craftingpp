@@ -43,7 +43,7 @@
 + 也可执行函数`cpp_block:dist/pos`来直接指定当前位置为输出位置
 + 扩展：若要支持更多容器
 	+ 方块标签`#container:all`内添加容器`方块id`
-	+ 方块标签`#container:chest`内添加占据两格的大箱子`方块id`，需与原版橡木箱子拥有相同的方块状态
+	+ 方块标签`#container:chests`内添加占据两格的大箱子`方块id`，需与原版橡木箱子拥有相同的方块状态
 	+ 函数标签`#container:check`内添加函数，函数指令为
 	``` execute if block ~ ~ ~ [方块id] run scoreboard players remove @s container [容器容量] ```
 	+ 可以直接添加[原版模组容器扩展](https://github.com/ruhuasiyu/CraftingPlusPlus/tree/master/other_datapacks/%E5%8E%9F%E7%89%88%E6%A8%A1%E7%BB%84%E5%AE%B9%E5%99%A8%E6%89%A9%E5%B1%95)中的数据包来支持相应模组
@@ -56,5 +56,9 @@
 	+ 不识别陷阱箱
 
 ## 更新日志
+### v1.1 2019/09/30
++ 移除了无用的函数。
++ 物品标签`#cpp_block:machine_gui`中添加了石化橡木台阶。
+
 ### v1.0 2019/09/29
 + 提交第一个版本。
