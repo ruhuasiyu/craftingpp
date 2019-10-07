@@ -1,0 +1,10 @@
+{
+	"replace": false,
+	"values": [
+		"minecraft:diamond_shovel",
+		"minecraft:golden_shovel",
+		"minecraft:iron_shovel",
+		"minecraft:wooden_shovel",
+		"minecraft:stone_shovel"
+	]
+}

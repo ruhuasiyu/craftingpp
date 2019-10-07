@@ -4,7 +4,7 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:carved_pumpkin"
 				}
 			]
@@ -13,11 +13,11 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:pumpkin_seeds",
 					"functions": [
 						{
-							"function": "set_count",
+							"function": "minecraft:set_count",
 							"count": 4
 						}
 					]

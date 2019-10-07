@@ -4,11 +4,11 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:wheat_seeds",
 					"functions": [
 						{
-							"function": "set_count",
+							"function": "minecraft:set_count",
 							"count": {
 								"min": 1,
 								"max": 10
@@ -22,11 +22,11 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:beetroot_seeds",
 					"functions": [
 						{
-							"function": "set_count",
+							"function": "minecraft:set_count",
 							"count": {
 								"min": 1,
 								"max": 10
@@ -40,11 +40,11 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:carrot",
 					"functions": [
 						{
-							"function": "set_count",
+							"function": "minecraft:set_count",
 							"count": {
 								"min": 1,
 								"max": 10
@@ -58,11 +58,11 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:potato",
 					"functions": [
 						{
-							"function": "set_count",
+							"function": "minecraft:set_count",
 							"count": {
 								"min": 1,
 								"max": 10
@@ -76,11 +76,11 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:pumpkin_seeds",
 					"functions": [
 						{
-							"function": "set_count",
+							"function": "minecraft:set_count",
 							"count": {
 								"min": 1,
 								"max": 10
@@ -94,11 +94,11 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:melon_seeds",
 					"functions": [
 						{
-							"function": "set_count",
+							"function": "minecraft:set_count",
 							"count": {
 								"min": 1,
 								"max": 10
@@ -112,11 +112,11 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:cactus",
 					"functions": [
 						{
-							"function": "set_count",
+							"function": "minecraft:set_count",
 							"count": {
 								"min": 1,
 								"max": 10
@@ -130,11 +130,11 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:sugar_cane",
 					"functions": [
 						{
-							"function": "set_count",
+							"function": "minecraft:set_count",
 							"count": {
 								"min": 1,
 								"max": 10
@@ -148,11 +148,11 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:kelp",
 					"functions": [
 						{
-							"function": "set_count",
+							"function": "minecraft:set_count",
 							"count": {
 								"min": 1,
 								"max": 10
@@ -166,11 +166,11 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:sweet_berries",
 					"functions": [
 						{
-							"function": "set_count",
+							"function": "minecraft:set_count",
 							"count": {
 								"min": 1,
 								"max": 10
@@ -184,11 +184,11 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:cocoa_beans",
 					"functions": [
 						{
-							"function": "set_count",
+							"function": "minecraft:set_count",
 							"count": {
 								"min": 1,
 								"max": 10

@@ -1,0 +1,7 @@
+{
+    "parent": "block/gold_block",
+	"overrides": [
+		{ "predicate": { "custom_model_data": 12970001 }, "model": "cpp:material/moon_stone"},
+		{ "predicate": { "custom_model_data": 12970002 }, "model": "cpp:material/sun_stone"}
+	]
+}

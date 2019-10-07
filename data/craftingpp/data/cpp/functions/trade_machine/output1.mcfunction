@@ -1,0 +1,6 @@
+execute as @s[scores={cppOutputFace=1}] run replaceitem block ~ ~ ~ container.23 petrified_oak_slab{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.trade_machine\"}"},CustomModelData:12971041}
+execute as @s[scores={cppOutputFace=2}] run replaceitem block ~ ~ ~ container.23 petrified_oak_slab{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.trade_machine\"}"},CustomModelData:12971042}
+execute as @s[scores={cppOutputFace=3}] run replaceitem block ~ ~ ~ container.23 petrified_oak_slab{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.trade_machine\"}"},CustomModelData:12971043}
+execute as @s[scores={cppOutputFace=4}] run replaceitem block ~ ~ ~ container.23 petrified_oak_slab{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.trade_machine\"}"},CustomModelData:12971044}
+execute as @s[scores={cppOutputFace=5}] run replaceitem block ~ ~ ~ container.23 petrified_oak_slab{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.trade_machine\"}"},CustomModelData:12971045}
+execute as @s[scores={cppOutputFace=6}] run replaceitem block ~ ~ ~ container.23 petrified_oak_slab{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.trade_machine\"}"},CustomModelData:12971046}

@@ -4,14 +4,15 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:apple",
 					"functions": [
 						{
-							"function": "set_nbt",
+							"function": "minecraft:set_nbt",
 							"tag":"{isFruit:1b,id:\"cpp:banana\",display:{Name:\"{\\\"translate\\\":\\\"item.cpp.banana\\\"}\"},CustomModelData:12970002}"
 						}
-					]				}
+					]
+				}
 			]
 		}
 	]

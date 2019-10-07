@@ -1,0 +1,6 @@
+{
+    "parent": "cpp:machine/gui/temp",
+    "textures": {
+        "layer1": "cpp:machine/gui/bookshelf"
+    }
+}

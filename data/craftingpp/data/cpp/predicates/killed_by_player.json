@@ -1,0 +1,15 @@
+{
+	"condition": "minecraft:alternative",
+	"terms": [
+		{
+			"condition": "minecraft:killed_by_player"
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "killer",
+			"predicate": {
+				"type": "minecraft:zombie_pigman"
+			} 
+		}
+	]
+}

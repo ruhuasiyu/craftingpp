@@ -4,11 +4,11 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:suspicious_stew",
 					"functions": [
 						{
-							"function": "set_nbt",
+							"function": "minecraft:set_nbt",
 							"tag": "{display:{\"Name\":\"{\\\"translate\\\":\\\"item.cpp.rabbit_stew\\\"}\",Lore:[\"{\\\"translate\\\":\\\"lore.cpp.strength\\\"}\"]},id:\"cpp:rabbit_stew\",CustomModelData:12970008,Effects:[{EffectDuration:600,EffectId:5b},{EffectDuration:10,EffectId:23b}]}"
 						}
 					]

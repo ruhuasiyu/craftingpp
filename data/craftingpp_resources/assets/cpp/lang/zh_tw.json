@@ -86,6 +86,7 @@
 	"item.cpp.broken_spawner":"§r破損的刷怪箱",
 	
 	"block.minecraft.petrified_oak_slab":"§r合成器",
+	"item.cpp.crafting_machine":"§r合成器",
 	"item.cpp.all_in_one_machine":"§r多功能一體機",	
 	"item.cpp.trade_machine":"§r交易機",
 	"item.cpp.mob_projector":"§r生物投影儀",
@@ -239,11 +240,7 @@
 	"item.cpp.angry_hand":"§b憤怒之手",
 	"item.cpp.toughen_hand":"§b歷練之手",
 	"item.cpp.golem":"§b傀儡",
-	"item.cpp.golem_farmer":"§b傀儡農民",
-	"item.cpp.golem_miner":"§b傀儡礦工",
-	"item.cpp.golem_fisher":"§b傀儡漁夫",
-	"item.cpp.golem_warrior":"§b傀儡戰士",
-	"item.cpp.golem_herder":"§b傀儡牧民",
+	"item.cpp.equipped_golem":"§b已裝配的傀儡",
 	
 	"item.cpp.china_flag":"§7中國國旗",
 	"item.cpp.usa_flag":"§7美國國旗",
@@ -606,7 +603,7 @@
 
 	"info.cpp.load1":"§6[Crafting++] §r原版模組《更多的合成》已成功加載, 作者ruhuasiyu, RubberTree等. 更多內容請",
 	"info.cpp.load2":"§e點擊此處進入wiki",
-	"info.cpp.load3":"§r. 資源包版本為 1.9.16, 數據包版本為",
+	"info.cpp.load3":"§r. 資源包版本為 1.10, 數據包版本為",
 	"info.cpp.load4":"§r請檢查是否壹致.",
 
 	"title.actionbar.fat":"§6[Crafting++]§r 你的體重指數為",

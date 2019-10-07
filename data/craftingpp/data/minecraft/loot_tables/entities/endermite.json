@@ -2,63 +2,25 @@
 	"type": "minecraft:entity",
 	"pools": [
 		{
-			"conditions": [
-				{
-					"condition": "alternative",
-					"terms": [
-						{
-							"condition": "killed_by_player"
-						},
-						{
-							"condition": "entity_properties",
-							"entity": "killer",
-							"predicate": {
-								"type": "minecraft:zombie_pigman"
-							} 
-						}
-					]
-				},
-				{
-					"condition": "random_chance_with_looting",
-					"chance": 0.025,
-					"looting_multiplier": 0.01
-				}
-			],
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "loot_table",
-					"name": "cpp:spirit_of_life"
+					"type": "minecraft:loot_table",
+					"name": "cpp:rare_drops/spirit_of_life"
 				}
 			]
 		},
 		{
 			"conditions": [
 				{
-					"condition": "alternative",
-					"terms": [
-						{
-							"condition": "killed_by_player"
-						},
-						{
-							"condition": "entity_properties",
-							"entity": "killer",
-							"predicate": {
-								"type": "minecraft:zombie_pigman"
-							} 
-						}
-					]
-				},
-				{
-					"condition": "random_chance_with_looting",
-					"chance": 0.025,
-					"looting_multiplier": 0.01
+					"condition": "minecraft:reference",
+					"name": "cpp:rare_drop"
 				}
 			],
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "loot_table",
+					"type": "minecraft:loot_table",
 					"name": "cpp:endermite_head"
 				}
 			]

@@ -25,14 +25,14 @@
 		{ "predicate": { "custom_model_data": 12970019 }, "model": "cpp:crop/burning_chrysanthe_seeds"},
 		{ "predicate": { "custom_model_data": 12970020 }, "model": "cpp:crop/oxalis_seeds"},
 		
-		{ "predicate": { "custom_model_data": 12970099 }, "model": "cpp:tree/acacia_tree"},
-		
+		{ "predicate": { "custom_model_data": 12970100 }, "model": "cpp:tree/acacia_tree"},
 		{ "predicate": { "custom_model_data": 12970101 }, "model": "cpp:tree/fruit_tree"},
 		{ "predicate": { "custom_model_data": 12970102 }, "model": "cpp:tree/ore_tree"},
 		{ "predicate": { "custom_model_data": 12970103 }, "model": "cpp:tree/wool_tree"},
 		{ "predicate": { "custom_model_data": 12970104 }, "model": "cpp:tree/poinsettia0"},
 		{ "predicate": { "custom_model_data": 12970105 }, "model": "cpp:tree/christmas_tree0"},
 		
+		{ "predicate": { "custom_model_data": 12970110 }, "model": "item/acacia_sapling"},
 		{ "predicate": { "custom_model_data": 12970111 }, "model": "cpp:tree/fruit_sapling"},
 		{ "predicate": { "custom_model_data": 12970112 }, "model": "cpp:tree/ore_sapling"},
 		{ "predicate": { "custom_model_data": 12970113 }, "model": "cpp:tree/wool_sapling"},

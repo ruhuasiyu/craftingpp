@@ -1,0 +1,19 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:carved_pumpkin",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.bee_head\\\"}\"},id:\"cpp:bee_head\",CustomModelData:12970254}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

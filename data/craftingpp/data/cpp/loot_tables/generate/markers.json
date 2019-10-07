@@ -4,37 +4,37 @@
 			"rolls": 1,
 			"conditions":[
 				{
-					"condition": "random_chance",
+					"condition": "minecraft:random_chance",
 					"chance": 0.018
 				}
 			],
 			"entries": [
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:firework_star",
 					"functions": [
 						{
-							"function": "set_nbt",
+							"function": "minecraft:set_nbt",
 							"tag": "{isStrMark:1b,CustomModelData:1000,id:\"cpp:creeper_dungeon_marker\"}"
 						}
 					]
 				},
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:firework_star",
 					"functions": [
 						{
-							"function": "set_nbt",
+							"function": "minecraft:set_nbt",
 							"tag": "{isStrMark:1b,CustomModelData:1000,id:\"cpp:enchanting_room_marker\"}"
 						}
 					]
 				},
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:firework_star",
 					"functions": [
 						{
-							"function": "set_nbt",
+							"function": "minecraft:set_nbt",
 							"tag": "{isStrMark:1b,CustomModelData:1000,id:\"cpp:totem_pillar_marker\"}"
 						}
 					]
@@ -45,37 +45,37 @@
 			"rolls": 1,
 			"conditions":[
 				{
-					"condition": "random_chance",
+					"condition": "minecraft:random_chance",
 					"chance": 0.09
 				}
 			],
 			"entries": [
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:firework_star",
 					"functions": [
 						{
-							"function": "set_nbt",
+							"function": "minecraft:set_nbt",
 							"tag": "{isStrMark:1b,CustomModelData:1000,id:\"cpp:fruit_tree_marker\"}"
 						}
 					]
 				},
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:firework_star",
 					"functions": [
 						{
-							"function": "set_nbt",
+							"function": "minecraft:set_nbt",
 							"tag": "{isStrMark:1b,CustomModelData:1000,id:\"cpp:ore_tree_marker\"}"
 						}
 					]
 				},
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:firework_star",
 					"functions": [
 						{
-							"function": "set_nbt",
+							"function": "minecraft:set_nbt",
 							"tag": "{isStrMark:1b,CustomModelData:1000,id:\"cpp:wool_tree_marker\"}"
 						}
 					]
@@ -86,7 +86,7 @@
 			"rolls": 1,
 			"conditions":[
 				{
-					"condition": "random_chance",
+					"condition": "minecraft:random_chance",
 					"chance": 0.15
 				},
 				{
@@ -151,15 +151,15 @@
 			],
 			"entries": [
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:firework_star",
 					"functions": [
 						{
-							"function": "set_nbt",
+							"function": "minecraft:set_nbt",
 							"tag": "{isStrMark:1b,CustomModelData:1000,id:\"cpp:dead_coral_fan_marker\"}"
 						},
 						{
-							"function": "set_count",
+							"function": "minecraft:set_count",
 							"count": {
 								"min": 1,
 								"max": 5
@@ -173,17 +173,17 @@
 			"rolls": 1,
 			"conditions":[
 				{
-					"condition": "random_chance",
+					"condition": "minecraft:random_chance",
 					"chance": 0.1
 				}
 			],
 			"entries": [
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:firework_star",
 					"functions": [
 						{
-							"function": "set_nbt",
+							"function": "minecraft:set_nbt",
 							"tag": "{isStrMark:1b,CustomModelData:1000,id:\"cpp:small_bush_marker\"}"
 						}
 					]
@@ -194,7 +194,7 @@
 			"rolls": 1,
 			"conditions":[
 				{
-					"condition": "random_chance",
+					"condition": "minecraft:random_chance",
 					"chance": 0.08
 				},
 				{
@@ -223,15 +223,15 @@
 			],
 			"entries": [
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:firework_star",
 					"functions": [
 						{
-							"function": "set_nbt",
+							"function": "minecraft:set_nbt",
 							"tag": "{isStrMark:1b,CustomModelData:1000,id:\"cpp:dead_spruce_marker\"}"
 						},
 						{
-							"function": "set_count",
+							"function": "minecraft:set_count",
 							"count": {
 								"min": 1,
 								"max": 4
@@ -245,21 +245,21 @@
 			"rolls": 1,
 			"conditions":[
 				{
-					"condition": "random_chance",
+					"condition": "minecraft:random_chance",
 					"chance": 0.04
 				}
 			],
 			"entries": [
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:firework_star",
 					"functions": [
 						{
-							"function": "set_nbt",
+							"function": "minecraft:set_nbt",
 							"tag": "{isStrMark:1b,CustomModelData:1000,id:\"cpp:crops_marker\"}"
 						},
 						{
-							"function": "set_count",
+							"function": "minecraft:set_count",
 							"count": {
 								"min": 1,
 								"max": 4
@@ -273,17 +273,17 @@
 			"rolls": 1,
 			"conditions":[
 				{
-					"condition": "random_chance",
+					"condition": "minecraft:random_chance",
 					"chance": 0.2
 				}
 			],
 			"entries": [
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:firework_star",
 					"functions": [
 						{
-							"function": "set_nbt",
+							"function": "minecraft:set_nbt",
 							"tag": "{isStrMark:1b,CustomModelData:1000,id:\"cpp:modcrops_marker\"}"
 						}
 					]

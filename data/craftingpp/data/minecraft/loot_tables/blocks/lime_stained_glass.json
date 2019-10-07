@@ -3,36 +3,16 @@
 	"pools": [
 		{
 			"rolls": 1,
+			"conditions": [
+				{
+					"condition": "minecraft:reference",
+					"name": "cpp:drop_glass"
+				}
+			],
 			"entries": [
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:lime_stained_glass"
-				}
-			],
-			"conditions": [
-				{
-					"condition": "minecraft:alternative",
-					"terms": [
-						{
-							"condition": "minecraft:match_tool",
-							"predicate": {
-								"enchantments": [
-									{
-										"enchantment": "minecraft:silk_touch",
-										"levels": {
-											"min": 1
-										}
-									}
-								]
-							}
-						},
-						{
-							"condition": "minecraft:match_tool",
-							"predicate": {
-								"nbt": "{id:\"cpp:glass_pickaxe\"}"
-							}
-						}
-					]
 				}
 			]
 		}

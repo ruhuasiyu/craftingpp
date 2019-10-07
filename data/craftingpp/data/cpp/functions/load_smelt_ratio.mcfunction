@@ -1,5 +1,10 @@
 scoreboard players set #load_smelt_ratio cppValue 1
 
+
+scoreboard players set #random_min random 11
+scoreboard players set #random_max random 30
+function random:random
+
 loot spawn ~ ~ ~ loot cpp:random/ore
 execute store result score #smelt_iron_gold cppValue run data get entity @e[nbt={Item:{tag:{isRdMark:1b}}},type=item,limit=1] Item.Count
 kill @e[nbt={Item:{tag:{isRdMark:1b}}},type=item,limit=1]

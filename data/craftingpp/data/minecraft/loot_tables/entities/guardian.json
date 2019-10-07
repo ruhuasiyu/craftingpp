@@ -5,18 +5,18 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:prismarine_shard",
 					"functions": [
 						{
-							"function": "set_count",
+							"function": "minecraft:set_count",
 							"count": {
 								"min": 0,
 								"max": 2
 							}
 						},
 						{
-							"function": "looting_enchant",
+							"function": "minecraft:looting_enchant",
 							"count": {
 								"min": 0,
 								"max": 1
@@ -30,55 +30,35 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "minecraft:alternatives",
 					"weight": 2,
-					"children": [
+					"type": "minecraft:item",
+					"name": "minecraft:cod",
+					"functions": [
 						{
-							"conditions": [
-								{
-									"condition": "entity_properties",
-									"entity": "this",
-									"predicate": {
-										"flags": {
-											"is_on_fire": false
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:cod",
-							"functions": [
-								{
-									"function": "looting_enchant",
-									"count": {
-										"min": 0,
-										"max": 1
-									}
-								}
-							]
+							"function": "minecraft:looting_enchant",
+							"count": {
+								"min": 0,
+								"max": 1
+							}
 						},
 						{
-							"type": "item",
-							"name": "minecraft:cooked_cod",
-							"functions": [
+							"function": "minecraft:furnace_smelt",
+							"conditions": [
 								{
-									"function": "looting_enchant",
-									"count": {
-										"min": 0,
-										"max": 1
-									}
+									"condition": "minecraft:reference",
+									"name": "cpp:is_on_fire"
 								}
 							]
 						}
 					]
 				},
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:prismarine_crystals",
 					"weight": 2,
 					"functions": [
 						{
-							"function": "looting_enchant",
+							"function": "minecraft:looting_enchant",
 							"count": {
 								"min": 0,
 								"max": 1
@@ -87,69 +67,31 @@
 					]
 				},
 				{
-					"type": "empty",
+					"type": "minecraft:empty",
 					"weight": 1
 				}
 			]
 		},
 		{
-			"conditions": [
-				{
-					"condition": "alternative",
-					"terms": [
-						{
-							"condition": "killed_by_player"
-						},
-						{
-							"condition": "entity_properties",
-							"entity": "killer",
-							"predicate": {
-								"type": "minecraft:zombie_pigman"
-							} 
-						}
-					]
-				},
-				{
-					"condition": "random_chance_with_looting",
-					"chance": 0.025,
-					"looting_multiplier": 0.01
-				}
-			],
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "loot_table",
-					"name": "cpp:heart_of_crystal"
+					"type": "minecraft:loot_table",
+					"name": "cpp:rare_drops/heart_of_crystal"
 				}
 			]
 		},
 		{
 			"conditions": [
 				{
-					"condition": "alternative",
-					"terms": [
-						{
-							"condition": "killed_by_player"
-						},
-						{
-							"condition": "entity_properties",
-							"entity": "killer",
-							"predicate": {
-								"type": "minecraft:zombie_pigman"
-							} 
-						}
-					]
-				},
-				{
-					"condition": "random_chance_with_looting",
-					"chance": 0.025,
-					"looting_multiplier": 0.01
+					"condition": "minecraft:reference",
+					"name": "cpp:rare_drop"
 				}
 			],
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "loot_table",
+					"type": "minecraft:loot_table",
 					"name": "cpp:guardian_head"
 				}
 			]

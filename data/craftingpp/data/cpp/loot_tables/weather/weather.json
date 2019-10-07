@@ -13,11 +13,11 @@
 									"thundering": true
 								}
 							],
-							"type": "item",
+							"type": "minecraft:item",
 							"name": "minecraft:firework_star",
 							"functions": [
 								{
-									"function": "set_nbt",
+									"function": "minecraft:set_nbt",
 									"tag": "{isWeatherMarker:1b,id:\"cpp:weather/thunder\",isMachineBg:1b,CustomModelData:12971000}"
 								}
 							]
@@ -30,11 +30,11 @@
 									"thundering": false
 								}
 							],
-							"type": "item",
+							"type": "minecraft:item",
 							"name": "minecraft:firework_star",
 							"functions": [
 								{
-									"function": "set_nbt",
+									"function": "minecraft:set_nbt",
 									"tag": "{isWeatherMarker:1b,id:\"cpp:weather/rain\",isMachineBg:1b,CustomModelData:12971000}"
 								}
 							]
@@ -46,11 +46,11 @@
 									"raining": false
 								}
 							],
-							"type": "item",
+							"type": "minecraft:item",
 							"name": "minecraft:firework_star",
 							"functions": [
 								{
-									"function": "set_nbt",
+									"function": "minecraft:set_nbt",
 									"tag": "{isWeatherMarker:1b,id:\"cpp:weather/clear\",isMachineBg:1b,CustomModelData:12971000}"
 								}
 							]

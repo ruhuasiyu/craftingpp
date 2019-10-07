@@ -1,11 +1,10 @@
-execute as @s[scores={cppOutputFace=1}] positioned ~1 ~ ~ run function cpp:all_in_one_machine/to_chest
-execute as @s[scores={cppOutputFace=2}] positioned ~ ~ ~1 run function cpp:all_in_one_machine/to_chest
-execute as @s[scores={cppOutputFace=3}] positioned ~-1 ~ ~ run function cpp:all_in_one_machine/to_chest
-execute as @s[scores={cppOutputFace=4}] positioned ~ ~ ~-1 run function cpp:all_in_one_machine/to_chest
-execute as @s[scores={cppOutputFace=5}] positioned ~ ~-1 ~ run function cpp:all_in_one_machine/to_chest
-execute as @s[scores={cppOutputFace=6}] positioned ~ ~1 ~ run function cpp:all_in_one_machine/to_chest
-
-effect give @s[scores={cppSlotsDown=26..}] glowing 1
-
-scoreboard players reset @s[scores={cppSlotsDown=..25}] cppTick
-scoreboard players reset @s cppSlotsDown
+execute as @s[scores={cppTemperature=0,cppPressure=0}] run function cpp:all_in_one_machine/dist/ll
+execute as @s[scores={cppTemperature=0,cppPressure=1}] run function cpp:all_in_one_machine/dist/ln
+execute as @s[scores={cppTemperature=0,cppPressure=2}] run function cpp:all_in_one_machine/dist/lh
+execute as @s[scores={cppTemperature=1,cppPressure=0}] run function cpp:all_in_one_machine/dist/nl
+execute as @s[scores={cppTemperature=1,cppPressure=1}] run function cpp:all_in_one_machine/dist/nn
+execute as @s[scores={cppTemperature=1,cppPressure=2}] run function cpp:all_in_one_machine/dist/nh
+execute as @s[scores={cppTemperature=2,cppPressure=0}] run function cpp:all_in_one_machine/dist/hl
+execute as @s[scores={cppTemperature=2,cppPressure=1}] run function cpp:all_in_one_machine/dist/hn
+execute as @s[scores={cppTemperature=2,cppPressure=2}] run function cpp:all_in_one_machine/dist/hh
+scoreboard players reset @s cppTick

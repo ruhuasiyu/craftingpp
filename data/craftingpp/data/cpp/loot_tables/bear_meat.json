@@ -4,11 +4,11 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:beef",
 					"functions": [
 						{
-							"function": "set_nbt",
+							"function": "minecraft:set_nbt",
 							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.bear_meat\\\"}\"},id:\"cpp:bear_meat\",CustomModelData:12970001}"
 						}
 					]

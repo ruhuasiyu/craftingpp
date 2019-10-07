@@ -4,11 +4,11 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:potion",
 					"functions": [
 						{
-							"function": "set_nbt",
+							"function": "minecraft:set_nbt",
 							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.potion.slow_falling\\\"}\"},CustomPotionColor:16711676,CustomPotionEffects:[{Id:28b,Amplifier:0b,Duration:9600}]}"
 						}
 					]

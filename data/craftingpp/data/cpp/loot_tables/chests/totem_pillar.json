@@ -25,7 +25,7 @@
 					"quality": 2
 				},
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:enchanted_golden_apple",
 					"quality": 1,
 					"weight": 3
@@ -43,16 +43,16 @@
 					"quality": 1
 				},
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:bread",
 					"weight": 10,
 					"functions": [
 						{
-							"function": "set_nbt",
+							"function": "minecraft:set_nbt",
 							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.meat_floss_bread\\\"}\",Lore:[\"{\\\"translate\\\":\\\"lore.cpp.speed\\\"}\"]},id:\"cpp:meat_floss_bread\",CustomModelData:12970001}"
 						},
 						{
-							"function": "set_count",
+							"function": "minecraft:set_count",
 							"count": {
 								"min": 1,
 								"max": 5
@@ -61,16 +61,16 @@
 					]
 				},
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:apple",
 					"weight": 10,
 					"functions": [
 						{
-							"function": "set_nbt",
+							"function": "minecraft:set_nbt",
 							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.toffee_apple\\\"}\",Lore:[\"{\\\"translate\\\":\\\"lore.cpp.speed\\\"}\"]},id:\"cpp:toffee_apple\",CustomModelData:12970100}"
 						},
 						{
-							"function": "set_count",
+							"function": "minecraft:set_count",
 							"count": {
 								"min": 1,
 								"max": 5
@@ -79,12 +79,12 @@
 					]
 				},
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:coal",
 					"weight": 12,
 					"functions": [
 						{
-							"function": "set_count",
+							"function": "minecraft:set_count",
 							"count": {
 								"min": 1,
 								"max": 5
@@ -93,13 +93,13 @@
 					]
 				},
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:bone",
 					"weight": 12,
 					"quality": -2,
 					"functions": [
 						{
-							"function": "set_count",
+							"function": "minecraft:set_count",
 							"count": {
 								"min": 1,
 								"max": 9
@@ -108,13 +108,13 @@
 					]
 				},
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:gunpowder",
 					"weight": 12,
 					"quality": -2,
 					"functions": [
 						{
-							"function": "set_count",
+							"function": "minecraft:set_count",
 							"count": {
 								"min": 1,
 								"max": 9
@@ -123,13 +123,13 @@
 					]
 				},
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:rotten_flesh",
 					"weight": 12,
 					"quality": -2,
 					"functions": [
 						{
-							"function": "set_count",
+							"function": "minecraft:set_count",
 							"count": {
 								"min": 1,
 								"max": 9
@@ -138,13 +138,13 @@
 					]
 				},
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:string",
 					"weight": 12,
 					"quality": -2,
 					"functions": [
 						{
-							"function": "set_count",
+							"function": "minecraft:set_count",
 							"count": {
 								"min": 1,
 								"max": 9

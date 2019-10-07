@@ -4,11 +4,11 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:firework_star",
 					"functions": [
 						{
-							"function": "set_nbt",
+							"function": "minecraft:set_nbt",
 							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.enchanted_diamond\\\"}\"},id:\"cpp:enchanted_diamond\",CustomModelData:12970023}"
 						}
 					]

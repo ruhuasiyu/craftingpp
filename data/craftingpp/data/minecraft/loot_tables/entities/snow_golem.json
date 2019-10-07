@@ -5,11 +5,11 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:snowball",
 					"functions": [
 						{
-							"function": "set_count",
+							"function": "minecraft:set_count",
 							"count": {
 								"min": 0,
 								"max": 15
@@ -22,30 +22,14 @@
 		{
 			"conditions": [
 				{
-					"condition": "alternative",
-					"terms": [
-						{
-							"condition": "killed_by_player"
-						},
-						{
-							"condition": "entity_properties",
-							"entity": "killer",
-							"predicate": {
-								"type": "minecraft:zombie_pigman"
-							} 
-						}
-					]
-				},
-				{
-					"condition": "random_chance_with_looting",
-					"chance": 0.025,
-					"looting_multiplier": 0.01
+					"condition": "minecraft:reference",
+					"name": "cpp:rare_drop"
 				}
 			],
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "loot_table",
+					"type": "minecraft:loot_table",
 					"name": "cpp:snow_golem_head"
 				}
 			]

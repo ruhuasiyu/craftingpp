@@ -5,56 +5,29 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "minecraft:alternatives",
-					"children": [
+					"type": "minecraft:item",
+					"name": "minecraft:porkchop",
+					"functions": [
 						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 1,
+								"max": 3
+							}
+						},
+						{
+							"function": "minecraft:looting_enchant",
+							"count": {
+								"min": 0,
+								"max": 1
+							}
+						},
+						{
+							"function": "minecraft:furnace_smelt",
 							"conditions": [
 								{
-									"condition": "entity_properties",
-									"entity": "this",
-									"predicate": {
-										"flags": {
-											"is_on_fire": false
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:porkchop",
-							"functions": [
-								{
-									"function": "set_count",
-									"count": {
-										"min": 1,
-										"max": 3
-									}
-								},
-								{
-									"function": "looting_enchant",
-									"count": {
-										"min": 0,
-										"max": 1
-									}
-								}
-							]
-						},
-						{
-							"type": "item",
-							"name": "minecraft:cooked_porkchop",
-							"functions": [
-								{
-									"function": "set_count",
-									"count": {
-										"min": 1,
-										"max": 3
-									}
-								},
-								{
-									"function": "looting_enchant",
-									"count": {
-										"min": 0,
-										"max": 1
-									}
+									"condition": "minecraft:reference",
+									"name": "cpp:is_on_fire"
 								}
 							]
 						}
@@ -63,63 +36,25 @@
 			]
 		},
 		{
-			"conditions": [
-				{
-					"condition": "alternative",
-					"terms": [
-						{
-							"condition": "killed_by_player"
-						},
-						{
-							"condition": "entity_properties",
-							"entity": "killer",
-							"predicate": {
-								"type": "minecraft:zombie_pigman"
-							} 
-						}
-					]
-				},
-				{
-					"condition": "random_chance_with_looting",
-					"chance": 0.025,
-					"looting_multiplier": 0.01
-				}
-			],
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "loot_table",
-					"name": "cpp:limb_of_ridge"
+					"type": "minecraft:loot_table",
+					"name": "cpp:rare_drops/limb_of_ridge"
 				}
 			]
 		},
 		{
+			"rolls": 1,
 			"conditions": [
 				{
-					"condition": "alternative",
-					"terms": [
-						{
-							"condition": "killed_by_player"
-						},
-						{
-							"condition": "entity_properties",
-							"entity": "killer",
-							"predicate": {
-								"type": "minecraft:zombie_pigman"
-							} 
-						}
-					]
-				},
-				{
-					"condition": "random_chance_with_looting",
-					"chance": 0.025,
-					"looting_multiplier": 0.01
+					"condition": "minecraft:reference",
+					"name": "cpp:rare_drop"
 				}
 			],
-			"rolls": 1,
 			"entries": [
 				{
-					"type": "loot_table",
+					"type": "minecraft:loot_table",
 					"name": "cpp:pig_head"
 				}
 			]

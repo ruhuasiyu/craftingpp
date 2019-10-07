@@ -4,11 +4,11 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "item",
-					"name": "minecraft:petrified_oak_slab",
+					"type": "minecraft:item",
+					"name": "minecraft:barrel",
 					"functions": [
 						{
-							"function": "set_nbt",
+							"function": "minecraft:set_nbt",
 							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.chest_dropper\\\"}\"},id:\"cpp:chest_dropper\",CustomModelData:12970103}"
 						}
 					]

@@ -4,11 +4,11 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:potion",
 					"functions": [
 						{
-							"function": "set_nbt",
+							"function": "minecraft:set_nbt",
 							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.potion.tide\\\"}\"},CustomPotionColor:1950417,CustomPotionEffects:[{Id:29b,Amplifier:0b,Duration:9600}]}"
 						}
 					]

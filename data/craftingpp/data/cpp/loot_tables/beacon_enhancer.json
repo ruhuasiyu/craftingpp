@@ -4,11 +4,11 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "item",
-					"name": "minecraft:petrified_oak_slab",
+					"type": "minecraft:item",
+					"name": "minecraft:chest",
 					"functions": [
 						{
-							"function": "set_nbt",
+							"function": "minecraft:set_nbt",
 							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.beacon_enhancer\\\"}\"},id:\"cpp:beacon_enhancer\",CustomModelData:12970005}"
 						}
 					]

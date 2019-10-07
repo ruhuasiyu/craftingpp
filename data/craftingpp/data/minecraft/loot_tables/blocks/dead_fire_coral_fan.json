@@ -3,36 +3,16 @@
 	"pools": [
 		{
 			"rolls": 1,
+			"conditions": [
+				{
+					"condition": "minecraft:reference",
+					"name": "cpp:drop_coral"
+				}
+			],
 			"entries": [
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:dead_fire_coral_fan"
-				}
-			],
-			"conditions": [
-				{
-					"condition": "minecraft:alternative",
-					"terms": [
-						{
-							"condition": "minecraft:match_tool",
-							"predicate": {
-								"item": "minecraft:shears"
-							}
-						},
-						{
-							"condition": "minecraft:match_tool",
-							"predicate": {
-								"enchantments": [
-									{
-										"enchantment": "minecraft:silk_touch",
-										"levels": {
-											"min": 1
-										}
-									}
-								]
-							}
-						}
-					]
 				}
 			]
 		}

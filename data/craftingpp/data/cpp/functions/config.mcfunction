@@ -1,52 +1,49 @@
-# 0手动关闭，1手动开启
-#scoreboard players set #load_block_sky_domain cppValue -1
-
 # 是否生成爬行者地牢(1是 0否)
-scoreboard players set #generate_creeper_dungeon cppValue 1
+tellraw @s [{"translate":"config.cpp.generate_creeper_dungeon"},{"score":{"name":"#generate_creeper_dungeon","objective":"cppValue"}}]
 # 是否生成附魔室(1是 0否)
-scoreboard players set #generate_enchanting_room cppValue 1
+tellraw @s [{"translate":"config.cpp.generate_enchanting_room"},{"score":{"name":"#generate_enchanting_room","objective":"cppValue"}}]
 # 是否生成图腾柱(1是 0否)
-scoreboard players set #generate_totem_pillar cppValue 1
+tellraw @s [{"translate":"config.cpp.generate_totem_pillar"},{"score":{"name":"#generate_totem_pillar","objective":"cppValue"}}]
 # 是否生成水果树(1是 0否)
-scoreboard players set #generate_fruit_tree cppValue 1
+tellraw @s [{"translate":"config.cpp.generate_fruit_tree"},{"score":{"name":"#generate_fruit_tree","objective":"cppValue"}}]
 # 是否生成矿石树(1是 0否)
-scoreboard players set #generate_ore_tree cppValue 1
+tellraw @s [{"translate":"config.cpp.generate_ore_tree"},{"score":{"name":"#generate_ore_tree","objective":"cppValue"}}]
 # 是否生成羊毛树(1是 0否)
-scoreboard players set #generate_wool_tree cppValue 1
+tellraw @s [{"translate":"config.cpp.generate_wool_tree"},{"score":{"name":"#generate_wool_tree","objective":"cppValue"}}]
 # 是否生成死珊瑚扇(1是 0否)
-scoreboard players set #generate_dead_coral_fan cppValue 1
+tellraw @s [{"translate":"config.cpp.generate_dead_coral_fan"},{"score":{"name":"#generate_dead_coral_fan","objective":"cppValue"}}]
 # 是否生成灌木丛(1是 0否)
-scoreboard players set #generate_small_bush cppValue 1
+tellraw @s [{"translate":"config.cpp.generate_small_bush"},{"score":{"name":"#generate_small_bush","objective":"cppValue"}}]
 # 是否生成死云杉树(1是 0否)
-scoreboard players set #generate_dead_spruce cppValue 1
+tellraw @s [{"translate":"config.cpp.generate_dead_spruce"},{"score":{"name":"#generate_dead_spruce","objective":"cppValue"}}]
 # 是否生成农作物(1是 0否)
-scoreboard players set #generate_crops cppValue 1
+tellraw @s [{"translate":"config.cpp.generate_crops"},{"score":{"name":"#generate_crops","objective":"cppValue"}}]
 # 是否生成花草(1是 0否)
-scoreboard players set #generate_modcrops cppValue 1
+tellraw @s [{"translate":"config.cpp.generate_modcrops"},{"score":{"name":"#generate_modcrops","objective":"cppValue"}}]
 
 # 是否开启蝙蝠骚话(1是 0否)
-scoreboard players set #forest_bat_words cppValue 0
+tellraw @s [{"translate":"config.cpp.forest_bat_words"},{"score":{"name":"#forest_bat_words","objective":"cppValue"}}]
 
 # 是否加强僵尸(1是 0否)
-scoreboard players set #improve_zombie cppValue 1
+tellraw @s [{"translate":"config.cpp.improve_zombie"},{"score":{"name":"#improve_zombie","objective":"cppValue"}}]
 # 是否加强骷髅(1是 0否)
-scoreboard players set #improve_skeleton cppValue 1
+tellraw @s [{"translate":"config.cpp.improve_skeleton"},{"score":{"name":"#improve_skeleton","objective":"cppValue"}}]
 # 是否加强爬行者(1是 0否)
-scoreboard players set #improve_creeper cppValue 1
+tellraw @s [{"translate":"config.cpp.improve_creeper"},{"score":{"name":"#improve_creeper","objective":"cppValue"}}]
 # 是否生成黑暗动物(1是 0否)
-scoreboard players set #generate_dark_animal cppValue 1
+tellraw @s [{"translate":"config.cpp.generate_dark_animal"},{"score":{"name":"#generate_dark_animal","objective":"cppValue"}}]
 
 # 模组树生长阶段数
-scoreboard players set #fruit_tree_age_max cppValue 2
-scoreboard players set #ore_tree_age_max cppValue 2
-scoreboard players set #wool_tree_age_max cppValue 2
+tellraw @s [{"translate":"config.cpp.fruit_tree_age_max"},{"score":{"name":"#fruit_tree_age_max","objective":"cppValue"}}]
+tellraw @s [{"translate":"config.cpp.ore_tree_age_max"},{"score":{"name":"#ore_tree_age_max","objective":"cppValue"}}]
+tellraw @s [{"translate":"config.cpp.wool_tree_age_max"},{"score":{"name":"#wool_tree_age_max","objective":"cppValue"}}]
 
 # 模组树树叶转化基数(期望时间/秒*随机刻)
-scoreboard players set #leaves_grow_threshold cppValue 3600
+tellraw @s [{"translate":"config.cpp.leaves_grow_threshold"},{"score":{"name":"#leaves_grow_threshold","objective":"cppValue"}}]
 
 # 机器耗时基数(刻)
-scoreboard players set #all_in_one_machine_cd cppValue 1200
+tellraw @s [{"translate":"config.cpp.all_in_one_machine_cd"},{"score":{"name":"#all_in_one_machine_cd","objective":"cppValue"}}]
 # 生物投影仪耗时(刻)
-scoreboard players set #mob_projector_cd cppValue 1200
+tellraw @s [{"translate":"config.cpp.mob_projector_cd"},{"score":{"name":"#mob_projector_cd","objective":"cppValue"}}]
 # 仪式耗时(刻)
-scoreboard players set #rituals_time cppValue 1200
+tellraw @s [{"translate":"config.cpp.rituals_time"},{"score":{"name":"#rituals_time","objective":"cppValue"}}]

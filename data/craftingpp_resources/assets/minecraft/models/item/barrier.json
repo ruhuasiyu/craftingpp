@@ -1,0 +1,9 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "item/barrier"
+    },
+	"overrides": [
+		{ "predicate": { "custom_model_data": 12970001 }, "model": "cpp:machine/sorcerer_stone"}
+	]
+}

@@ -4,15 +4,15 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:bread",
 					"functions": [
 						{
-							"function": "set_nbt",
+							"function": "minecraft:set_nbt",
 							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.dumpling\\\"}\"},id:\"cpp:dumpling\",CustomModelData:12970003}"
 						},
 						{
-							"function": "set_count",
+							"function": "minecraft:set_count",
 							"count": 4
 						}
 					]

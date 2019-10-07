@@ -86,6 +86,7 @@
 	"item.cpp.broken_spawner":"§rBroken Spawner",
 	
 	"block.minecraft.petrified_oak_slab":"§rCrafting Machine",
+	"item.cpp.crafting_machine":"§rCrafting Machine",
 	"item.cpp.all_in_one_machine":"§rAll-in-one Machine",
 	"item.cpp.trade_machine":"§rTrade Machine",
 	"item.cpp.mob_projector":"§rMob Projector",
@@ -239,11 +240,7 @@
 	"item.cpp.angry_hand":"§bAngry Hand",
 	"item.cpp.toughen_hand":"§bToughen Hand",	
 	"item.cpp.golem":"§bGolem",
-	"item.cpp.golem_farmer":"§bGolem Farmer",
-	"item.cpp.golem_miner":"§bGolem Miner",
-	"item.cpp.golem_fisher":"§bGolem Fisher",
-	"item.cpp.golem_warrior":"§bGolem Warrior",
-	"item.cpp.golem_herder":"§bGolem Herder",
+	"item.cpp.equipped_golem":"§bEquipped Golem",
 	
 	"item.cpp.china_flag":"§7China Flag",
 	"item.cpp.usa_flag":"§7USA Flag",
@@ -606,7 +603,7 @@
 
 	"info.cpp.load1":"§6[Crafting++] §rCrafting++ is loaded. Authors: ruhuasiyu, RubberTree, etc. ",
 	"info.cpp.load2":"§eClick §eto §evisit §ethe §ewiki ",
-	"info.cpp.load3":"§rfor more informations. Resourcepack version 1.9.16, Datapack version ",
+	"info.cpp.load3":"§rfor more informations. Resourcepack version 1.10, Datapack version ",
 	"info.cpp.load4":" §rPlease check wheather they coincides.",
 
 	"title.actionbar.fat":"§6[Crafting++]§r Your weight index is ",

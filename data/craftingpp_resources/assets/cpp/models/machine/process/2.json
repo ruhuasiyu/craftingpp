@@ -1,0 +1,6 @@
+{
+    "parent": "cpp:machine/process/temp",
+    "textures": {
+        "layer0": "cpp:machine/process/2"
+    }
+}

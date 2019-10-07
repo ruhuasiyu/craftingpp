@@ -4,11 +4,11 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:firework_star",
 					"functions": [
 						{
-							"function": "set_nbt",
+							"function": "minecraft:set_nbt",
 							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.gold_dust\\\"}\"},id:\"cpp:gold_dust\",CustomModelData:12970042,dict:[\"gold_dust\"]}"
 						}
 					]

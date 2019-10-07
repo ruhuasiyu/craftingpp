@@ -96,6 +96,8 @@ function cpp:config
 execute unless score #load_smelt_ratio cppValue matches 1 run function cpp:load_smelt_ratio
 # 初始化附魔对应
 execute unless score #load_enchant cppValue matches 1 run function cpp:load_enchant
+# 初始化配置文件
+execute unless score #load_config cppValue matches 1 run function cpp:load_config
 
 # 是否开启空岛模式
 # -1自动关闭，0手动关闭，1手动开启，2自动开启

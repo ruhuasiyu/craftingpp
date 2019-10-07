@@ -1,22 +1,6 @@
-execute if block ~ ~ ~ barrel{Items:[{tag:{id:"cpp:golem"}},{tag:{id:"cpp:industrious_hand"}}]} run loot replace block ~ ~ ~ container.16 loot cpp:golem_farmer
-execute if block ~ ~ ~ barrel{Items:[{tag:{id:"cpp:golem"}},{tag:{id:"cpp:industrious_hand"}}]} run data modify block ~ ~ ~ Items[{Slot:16b}].tag.Enchantments set from block ~ ~ ~ Items[{tag:{id:"cpp:industrious_hand"}}].tag.Enchantments
-execute if block ~ ~ ~ barrel{Items:[{tag:{id:"cpp:golem"}},{tag:{id:"cpp:industrious_hand"}}]} run data modify block ~ ~ ~ Items[{Slot:16b}].tag.StoredTool set from block ~ ~ ~ Items[{tag:{id:"cpp:industrious_hand"}}].tag.StoredTool
-execute if block ~ ~ ~ barrel{Items:[{tag:{id:"cpp:golem"}},{tag:{id:"cpp:break_hand"}}]} run loot replace block ~ ~ ~ container.16 loot cpp:golem_miner
-execute if block ~ ~ ~ barrel{Items:[{tag:{id:"cpp:golem"}},{tag:{id:"cpp:break_hand"}}]} run data modify block ~ ~ ~ Items[{Slot:16b}].tag.Enchantments set from block ~ ~ ~ Items[{tag:{id:"cpp:break_hand"}}].tag.Enchantments
-execute if block ~ ~ ~ barrel{Items:[{tag:{id:"cpp:golem"}},{tag:{id:"cpp:break_hand"}}]} run data modify block ~ ~ ~ Items[{Slot:16b}].tag.StoredTool set from block ~ ~ ~ Items[{tag:{id:"cpp:break_hand"}}].tag.StoredTool
-execute if block ~ ~ ~ barrel{Items:[{tag:{id:"cpp:golem"}},{tag:{id:"cpp:smart_hand"}}]} run loot replace block ~ ~ ~ container.16 loot cpp:golem_fisher
-execute if block ~ ~ ~ barrel{Items:[{tag:{id:"cpp:golem"}},{tag:{id:"cpp:smart_hand"}}]} run data modify block ~ ~ ~ Items[{Slot:16b}].tag.Enchantments set from block ~ ~ ~ Items[{tag:{id:"cpp:smart_hand"}}].tag.Enchantments
-execute if block ~ ~ ~ barrel{Items:[{tag:{id:"cpp:golem"}},{tag:{id:"cpp:smart_hand"}}]} run data modify block ~ ~ ~ Items[{Slot:16b}].tag.StoredTool set from block ~ ~ ~ Items[{tag:{id:"cpp:smart_hand"}}].tag.StoredTool
-execute if block ~ ~ ~ barrel{Items:[{tag:{id:"cpp:golem"}},{tag:{id:"cpp:angry_hand"}}]} run loot replace block ~ ~ ~ container.16 loot cpp:golem_warrior
-execute if block ~ ~ ~ barrel{Items:[{tag:{id:"cpp:golem"}},{tag:{id:"cpp:angry_hand"}}]} run data modify block ~ ~ ~ Items[{Slot:16b}].tag.Enchantments set from block ~ ~ ~ Items[{tag:{id:"cpp:angry_hand"}}].tag.Enchantments
-execute if block ~ ~ ~ barrel{Items:[{tag:{id:"cpp:golem"}},{tag:{id:"cpp:angry_hand"}}]} run data modify block ~ ~ ~ Items[{Slot:16b}].tag.StoredTool set from block ~ ~ ~ Items[{tag:{id:"cpp:angry_hand"}}].tag.StoredTool
-execute if block ~ ~ ~ barrel{Items:[{tag:{id:"cpp:golem"}},{tag:{id:"cpp:toughen_hand"}}]} run loot replace block ~ ~ ~ container.16 loot cpp:golem_herder
-execute if block ~ ~ ~ barrel{Items:[{tag:{id:"cpp:golem"}},{tag:{id:"cpp:toughen_hand"}}]} run data modify block ~ ~ ~ Items[{Slot:16b}].tag.Enchantments set from block ~ ~ ~ Items[{tag:{id:"cpp:toughen_hand"}}].tag.Enchantments
-execute if block ~ ~ ~ barrel{Items:[{tag:{id:"cpp:golem"}},{tag:{id:"cpp:toughen_hand"}}]} run data modify block ~ ~ ~ Items[{Slot:16b}].tag.StoredTool set from block ~ ~ ~ Items[{tag:{id:"cpp:toughen_hand"}}].tag.StoredTool
-
 execute if block ~ ~ ~ barrel{Items:[{id:"minecraft:milk_bucket"},{tag:{id:"cpp:lemon"}}]} run loot replace block ~ ~ ~ container.16 loot cpp:cheese
-execute if data block ~ ~ ~ Items[{Slot:16b,tag:{id:"cpp:cheese"}}] run data modify block ~ ~ ~ Items[{id:"minecraft:milk_bucket"}].Count set value 2
-execute if data block ~ ~ ~ Items[{Slot:16b,tag:{id:"cpp:cheese"}}] run data modify block ~ ~ ~ Items[{id:"minecraft:milk_bucket"}].id set value "minecraft:bucket"
+execute if block ~ ~ ~ barrel{Items:[{id:"minecraft:milk_bucket"},{tag:{id:"cpp:lemon"}}]} run data modify block ~ ~ ~ Items[{id:"minecraft:milk_bucket"}].Count set value 2
+execute if block ~ ~ ~ barrel{Items:[{id:"minecraft:milk_bucket"},{tag:{id:"cpp:lemon"}}]} run data modify block ~ ~ ~ Items[{id:"minecraft:milk_bucket"}].id set value "minecraft:bucket"
 
 execute if block ~ ~ ~ barrel{Items:[{id:"minecraft:experience_bottle"},{id:"minecraft:crafting_table"}]} run loot replace block ~ ~ ~ container.16 loot cpp:portable_crafting_table
 execute if block ~ ~ ~ barrel{Items:[{id:"minecraft:experience_bottle"},{id:"minecraft:petrified_oak_slab"}]} run loot replace block ~ ~ ~ container.16 loot cpp:portable_crafting_machine

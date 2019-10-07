@@ -1,3 +1,5 @@
+execute if block ~ ~ ~ barrel{Items:[{Slot:2b,id:"minecraft:shulker_box"},{Slot:10b},{Slot:11b,tag:{id:"cpp:golem"}},{Slot:12b}]} run function cpp:craft/items4_golem
+
 # 鞋
 execute if block ~ ~ ~ barrel{Items:[{Slot:1b,id:"minecraft:leather"},{Slot:3b,id:"minecraft:leather"},{Slot:10b,id:"minecraft:brown_dye"},{Slot:12b,id:"minecraft:brown_dye"}]} run loot replace block ~ ~ ~ container.16 loot cpp:snow_boots
 execute if block ~ ~ ~ barrel{Items:[{Slot:10b,id:"minecraft:leather"},{Slot:12b,id:"minecraft:leather"},{Slot:19b,id:"minecraft:brown_dye"},{Slot:21b,id:"minecraft:brown_dye"}]} run loot replace block ~ ~ ~ container.16 loot cpp:snow_boots

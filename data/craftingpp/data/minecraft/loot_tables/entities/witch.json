@@ -8,18 +8,18 @@
 			},
 			"entries": [
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:glowstone_dust",
 					"functions": [
 						{
-							"function": "set_count",
+							"function": "minecraft:set_count",
 							"count": {
 								"min": 0,
 								"max": 2
 							}
 						},
 						{
-							"function": "looting_enchant",
+							"function": "minecraft:looting_enchant",
 							"count": {
 								"min": 0,
 								"max": 1
@@ -28,18 +28,18 @@
 					]
 				},
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:sugar",
 					"functions": [
 						{
-							"function": "set_count",
+							"function": "minecraft:set_count",
 							"count": {
 								"min": 0,
 								"max": 2
 							}
 						},
 						{
-							"function": "looting_enchant",
+							"function": "minecraft:looting_enchant",
 							"count": {
 								"min": 0,
 								"max": 1
@@ -48,18 +48,18 @@
 					]
 				},
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:redstone",
 					"functions": [
 						{
-							"function": "set_count",
+							"function": "minecraft:set_count",
 							"count": {
 								"min": 0,
 								"max": 2
 							}
 						},
 						{
-							"function": "looting_enchant",
+							"function": "minecraft:looting_enchant",
 							"count": {
 								"min": 0,
 								"max": 1
@@ -68,18 +68,18 @@
 					]
 				},
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:spider_eye",
 					"functions": [
 						{
-							"function": "set_count",
+							"function": "minecraft:set_count",
 							"count": {
 								"min": 0,
 								"max": 2
 							}
 						},
 						{
-							"function": "looting_enchant",
+							"function": "minecraft:looting_enchant",
 							"count": {
 								"min": 0,
 								"max": 1
@@ -88,18 +88,18 @@
 					]
 				},
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:glass_bottle",
 					"functions": [
 						{
-							"function": "set_count",
+							"function": "minecraft:set_count",
 							"count": {
 								"min": 0,
 								"max": 2
 							}
 						},
 						{
-							"function": "looting_enchant",
+							"function": "minecraft:looting_enchant",
 							"count": {
 								"min": 0,
 								"max": 1
@@ -108,18 +108,18 @@
 					]
 				},
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:gunpowder",
 					"functions": [
 						{
-							"function": "set_count",
+							"function": "minecraft:set_count",
 							"count": {
 								"min": 0,
 								"max": 2
 							}
 						},
 						{
-							"function": "looting_enchant",
+							"function": "minecraft:looting_enchant",
 							"count": {
 								"min": 0,
 								"max": 1
@@ -128,19 +128,19 @@
 					]
 				},
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:stick",
 					"weight": 2,
 					"functions": [
 						{
-							"function": "set_count",
+							"function": "minecraft:set_count",
 							"count": {
 								"min": 0,
 								"max": 2
 							}
 						},
 						{
-							"function": "looting_enchant",
+							"function": "minecraft:looting_enchant",
 							"count": {
 								"min": 0,
 								"max": 1
@@ -153,30 +153,14 @@
 		{
 			"conditions": [
 				{
-					"condition": "alternative",
-					"terms": [
-						{
-							"condition": "killed_by_player"
-						},
-						{
-							"condition": "entity_properties",
-							"entity": "killer",
-							"predicate": {
-								"type": "minecraft:zombie_pigman"
-							} 
-						}
-					]
-				},
-				{
-					"condition": "random_chance_with_looting",
-					"chance": 0.025,
-					"looting_multiplier": 0.01
+					"condition": "minecraft:reference",
+					"name": "cpp:rare_drop"
 				}
 			],
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "loot_table",
+					"type": "minecraft:loot_table",
 					"name": "cpp:witch_head"
 				}
 			]

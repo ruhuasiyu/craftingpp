@@ -136,6 +136,5 @@ execute if block ~ ~ ~ barrel{Items:[{Slot:4b,tag:{id:"cpp:fertilizer"}},{Slot:3
 execute if block ~ ~ ~ barrel{Items:[{Slot:4b,tag:{id:"cpp:fertilizer"}},{Slot:3b,tag:{id:"cpp:burning_chrysanthe_seeds"}}]} run scoreboard players set @s cppMacType 119
 execute if block ~ ~ ~ barrel{Items:[{Slot:4b,tag:{id:"cpp:fertilizer"}},{Slot:3b,tag:{id:"cpp:oxalis_seeds"}}]} run scoreboard players set @s cppMacType 120
 
-
 scoreboard players add @s[scores={cppMacType=1..120,cppStoredxp=2..}] cppTick 30
 execute if entity @s[scores={cppMacType=1..120,cppStoredxp=2..}] if score @s cppTick >= #all_in_one_machine_cd cppValue run function cpp:all_in_one_machine/done

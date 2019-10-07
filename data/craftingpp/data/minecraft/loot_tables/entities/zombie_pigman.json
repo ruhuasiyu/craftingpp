@@ -5,18 +5,18 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:rotten_flesh",
 					"functions": [
 						{
-							"function": "set_count",
+							"function": "minecraft:set_count",
 							"count": {
 								"min": 0,
 								"max": 1
 							}
 						},
 						{
-							"function": "looting_enchant",
+							"function": "minecraft:looting_enchant",
 							"count": {
 								"min": 0,
 								"max": 1
@@ -30,18 +30,18 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:gold_nugget",
 					"functions": [
 						{
-							"function": "set_count",
+							"function": "minecraft:set_count",
 							"count": {
 								"min": 0,
 								"max": 1
 							}
 						},
 						{
-							"function": "looting_enchant",
+							"function": "minecraft:looting_enchant",
 							"count": {
 								"min": 0,
 								"max": 1
@@ -54,30 +54,14 @@
 		{
 			"conditions": [
 				{
-					"condition": "alternative",
-					"terms": [
-						{
-							"condition": "killed_by_player"
-						},
-						{
-							"condition": "entity_properties",
-							"entity": "killer",
-							"predicate": {
-								"type": "minecraft:zombie_pigman"
-							} 
-						}
-					]
-				},
-				{
-					"condition": "random_chance_with_looting",
-					"chance": 0.025,
-					"looting_multiplier": 0.01
+					"condition": "minecraft:reference",
+					"name": "cpp:rare_drop"
 				}
 			],
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:gold_ingot"
 				}
 			]
@@ -86,18 +70,18 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:porkchop",
 					"functions": [
 						{
-							"function": "set_count",
+							"function": "minecraft:set_count",
 							"count": {
 								"min": 0,
 								"max": 1
 							}
 						},
 						{
-							"function": "looting_enchant",
+							"function": "minecraft:looting_enchant",
 							"count": {
 								"min": 0,
 								"max": 1
@@ -108,63 +92,25 @@
 			]
 		},
 		{
-			"conditions": [
-				{
-					"condition": "alternative",
-					"terms": [
-						{
-							"condition": "killed_by_player"
-						},
-						{
-							"condition": "entity_properties",
-							"entity": "killer",
-							"predicate": {
-								"type": "minecraft:zombie_pigman"
-							} 
-						}
-					]
-				},
-				{
-					"condition": "random_chance_with_looting",
-					"chance": 0.025,
-					"looting_multiplier": 0.01
-				}
-			],
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "loot_table",
-					"name": "cpp:soul_of_dirt"
+					"type": "minecraft:loot_table",
+					"name": "cpp:rare_drops/soul_of_dirt"
 				}
 			]
 		},
 		{
 			"conditions": [
 				{
-					"condition": "alternative",
-					"terms": [
-						{
-							"condition": "killed_by_player"
-						},
-						{
-							"condition": "entity_properties",
-							"entity": "killer",
-							"predicate": {
-								"type": "minecraft:zombie_pigman"
-							} 
-						}
-					]
-				},
-				{
-					"condition": "random_chance_with_looting",
-					"chance": 0.025,
-					"looting_multiplier": 0.01
+					"condition": "minecraft:reference",
+					"name": "cpp:rare_drop"
 				}
 			],
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "loot_table",
+					"type": "minecraft:loot_table",
 					"name": "cpp:zombie_pigman_head"
 				}
 			]

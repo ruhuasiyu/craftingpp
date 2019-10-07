@@ -76,6 +76,11 @@
 §f          天狼星black
 §f          MC先生
 
+§7服务器支持/Server Support
+§f          HerobrineXia
+§f          SorrowRain
+§f          苹果果
+
 §7平台支持/Platform Support
 §f          Minecraft(我的世界)中文论坛
 §f          MC百科
@@ -124,10 +129,6 @@
 §f          玄素
 §f          乙烯_中国
 §f          ⊙v⊙
-§f          HerobrineXia
-§f          白天
-§f          苹果果
-§f          SorrowRain
 §f          Amber
 §f          匠魂
 §f          Gingerbread

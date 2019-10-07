@@ -5,29 +5,24 @@
 			"rolls": 1,
 			"conditions": [
 				{
-					"condition": "entity_properties",
-					"entity": "this",
-					"predicate": {
-						"flags": {
-							"is_on_fire": false
-						}
-					}
+					"condition": "minecraft:reference",
+					"name": "cpp:is_not_on_fire"
 				}
 			],
 			"entries": [
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:feather",
 					"functions": [
 						{
-							"function": "set_count",
+							"function": "minecraft:set_count",
 							"count": {
 								"min": 0,
 								"max": 2
 							}
 						},
 						{
-							"function": "looting_enchant",
+							"function": "minecraft:looting_enchant",
 							"count": {
 								"min": 0,
 								"max": 1
@@ -41,18 +36,18 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:egg",
 					"functions": [
 						{
-							"function": "set_count",
+							"function": "minecraft:set_count",
 							"count": {
 								"min": 0,
 								"max": 1
 							}
 						},
 						{
-							"function": "looting_enchant",
+							"function": "minecraft:looting_enchant",
 							"count": {
 								"min": 0,
 								"max": 0.5
@@ -70,7 +65,7 @@
 					"name": "minecraft:chicken",
 					"functions": [
 						{
-							"function": "looting_enchant",
+							"function": "minecraft:looting_enchant",
 							"count": {
 								"min": 0,
 								"max": 1
@@ -80,13 +75,8 @@
 							"function": "minecraft:furnace_smelt",
 							"conditions": [
 								{
-									"condition": "minecraft:entity_properties",
-									"entity": "this",
-									"predicate": {
-										"flags": {
-											"is_on_fire": true
-										}
-									}
+									"condition": "minecraft:reference",
+									"name": "cpp:is_on_fire"
 								}
 							]
 						}
@@ -95,63 +85,25 @@
 			]
 		},
 		{
-			"conditions": [
-				{
-					"condition": "alternative",
-					"terms": [
-						{
-							"condition": "killed_by_player"
-						},
-						{
-							"condition": "entity_properties",
-							"entity": "killer",
-							"predicate": {
-								"type": "minecraft:zombie_pigman"
-							} 
-						}
-					]
-				},
-				{
-					"condition": "random_chance_with_looting",
-					"chance": 0.025,
-					"looting_multiplier": 0.01
-				}
-			],
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "loot_table",
-					"name": "cpp:wing_of_sky"
+					"type": "minecraft:loot_table",
+					"name": "cpp:rare_drops/wing_of_sky"
 				}
 			]
 		},
 		{
 			"conditions": [
 				{
-					"condition": "alternative",
-					"terms": [
-						{
-							"condition": "killed_by_player"
-						},
-						{
-							"condition": "entity_properties",
-							"entity": "killer",
-							"predicate": {
-								"type": "minecraft:zombie_pigman"
-							} 
-						}
-					]
-				},
-				{
-					"condition": "random_chance_with_looting",
-					"chance": 0.025,
-					"looting_multiplier": 0.01
+					"condition": "minecraft:reference",
+					"name": "cpp:rare_drop"
 				}
 			],
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "loot_table",
+					"type": "minecraft:loot_table",
 					"name": "cpp:chicken_head"
 				}
 			]

@@ -1,0 +1,6 @@
+{
+    "parent": "cpp:golem/golem",
+    "textures": {
+        "layer0": "cpp:golem/equipped_golem"
+    }
+}

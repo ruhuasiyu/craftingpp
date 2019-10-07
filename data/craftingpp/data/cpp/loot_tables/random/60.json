@@ -4,18 +4,18 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:firework_star",
 					"functions": [
 						{
-							"function": "set_count",
+							"function": "minecraft:set_count",
 							"count": {
 								"min": 1,
 								"max": 60
 							}
 						},
 						{
-							"function": "set_nbt",
+							"function": "minecraft:set_nbt",
 							"tag": "{isRdMark:1b,isMachineBg:1b,CustomModelData:12971000}"
 						}
 					]

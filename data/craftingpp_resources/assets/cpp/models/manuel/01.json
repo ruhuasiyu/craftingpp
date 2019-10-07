@@ -1,0 +1,6 @@
+{
+	"parent": "cpp:manuel/temp",
+	"textures": {
+		"layer": "cpp:manuel/01"
+	}
+}

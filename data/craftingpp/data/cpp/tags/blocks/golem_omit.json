@@ -1,0 +1,19 @@
+{
+	"replace": false,
+	"values": [
+		"#cpp:golem_east",
+		"#cpp:golem_west",
+		"#cpp:golem_south",
+		"#cpp:golem_north",
+		"#cpp:golem_up",
+		"#cpp:golem_down",
+		"#cpp:golem_end",
+		"#cpp:golem_switch",
+		"minecraft:chest",
+		"minecraft:dropper",
+		"#cpp:fluid",
+		"#minecraft:saplings",
+		"minecraft:attached_melon_stem",
+		"minecraft:attached_pumpkin_stem"
+	]
+}

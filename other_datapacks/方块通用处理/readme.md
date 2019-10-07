@@ -5,6 +5,14 @@
 
 本模组支持的版本为：19w38a-19w39a
 
+## 前置检测
++ 请在使用本前置的数据包的加载函数添加
+```
+scoreboard players set #datapack_cpp_block cppValue 0
+function cpp_block:datapack
+execute if score #datapack_cpp_block cppValue matches 0 run tellraw @a {"text":"[xx模组]：缺少必要的数据包前置[方块通用处理]！"}
+```
+
 ## 方块的放置
 + 事件：玩家放置方块
 + 条件：方块拥有`tag.id`标签
@@ -112,6 +120,9 @@
 ![](https://i.loli.net/2019/09/29/glqRTmQcS5kVjEs.png)
 
 ## 更新日志
+### 1.3
++ 添加了检测数据包是否存在的方式。
+
 ### 1.2 2019/10/02
 + 方块破坏后会先处理掉机器背景物品。
 + 添加了函数标签`#cpp_block:break_drop`来添加额外的掉落物。

@@ -4,11 +4,11 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:leather_helmet",
 					"conditions": [
 						{
-							"condition": "random_chance",
+							"condition": "minecraft:random_chance",
 							"chance": 0.25
 						}
 					],
@@ -31,11 +31,11 @@
 					]
 				},
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:iron_helmet",
 					"conditions": [
 						{
-							"condition": "random_chance",
+							"condition": "minecraft:random_chance",
 							"chance": 0.25
 						}
 					],
@@ -58,11 +58,11 @@
 					]
 				},
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:golden_helmet",
 					"conditions": [
 						{
-							"condition": "random_chance",
+							"condition": "minecraft:random_chance",
 							"chance": 0.2
 						}
 					],
@@ -85,11 +85,11 @@
 					]
 				},
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:chainmail_helmet",
 					"conditions": [
 						{
-							"condition": "random_chance",
+							"condition": "minecraft:random_chance",
 							"chance": 0.2
 						}
 					],
@@ -112,11 +112,11 @@
 					]
 				},
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:diamond_helmet",
 					"conditions": [
 						{
-							"condition": "random_chance",
+							"condition": "minecraft:random_chance",
 							"chance": 0.1
 						}
 					],

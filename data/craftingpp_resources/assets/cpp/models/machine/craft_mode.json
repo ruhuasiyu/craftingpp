@@ -1,0 +1,12 @@
+{
+	"parent": "item/generated",
+	"display": {
+		"gui": {
+			"translation": [ 0, 0, 1 ],
+			"scale": [ 1.125, 1.125, 1.1 ]
+		}
+	},
+	"textures": {
+        "layer0": "cpp:machine/craft_mode"
+    }
+}

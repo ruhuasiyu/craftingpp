@@ -4,11 +4,11 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:suspicious_stew",
 					"functions": [
 						{
-							"function": "set_nbt",
+							"function": "minecraft:set_nbt",
 							"tag": "{display:{\"Name\":\"{\\\"translate\\\":\\\"item.cpp.raw_braised_beef_with_potatoes\\\"}\"},id:\"cpp:raw_braised_beef_with_potatoes\",CustomModelData:12970005,Effects:[{EffectDuration:4,EffectId:23b}]}"
 						}
 					]

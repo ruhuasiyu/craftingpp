@@ -4,11 +4,11 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:bread",
 					"functions": [
 						{
-							"function": "set_nbt",
+							"function": "minecraft:set_nbt",
 							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.stargazy_pie\\\"}\",Lore:[\"{\\\"translate\\\":\\\"lore.cpp.speed\\\"}\"]},id:\"cpp:stargazy_pie\",CustomModelData:12970009}"
 						}
 					]

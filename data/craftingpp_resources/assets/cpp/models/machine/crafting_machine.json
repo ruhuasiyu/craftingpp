@@ -1,0 +1,13 @@
+{
+    "__comment": "材质由天狼星black绘制",
+    "parent": "cpp:machine/machine",
+    "textures": {
+        "particle": "cpp:machine/crafting_machine_top",
+        "down": "cpp:machine/crafting_machine_bottom",
+        "up": "cpp:machine/crafting_machine_top",
+        "north": "cpp:machine/crafting_machine_front",
+        "east": "cpp:machine/crafting_machine_side",
+        "south": "cpp:machine/crafting_machine_front",
+        "west": "cpp:machine/crafting_machine_side"
+    }
+}

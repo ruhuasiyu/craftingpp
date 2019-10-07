@@ -6,6 +6,7 @@
 		"minecraft:void_air",
 		"minecraft:bubble_column",
 		"minecraft:water",
-		"minecraft:lava"
+		"minecraft:lava",
+		"minecraft:fire"
 	]
 }

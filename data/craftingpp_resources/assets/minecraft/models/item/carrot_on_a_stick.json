@@ -15,11 +15,7 @@
 		{ "predicate": { "custom_model_data": 12970009 }, "model": "cpp:element/black_force_of_moon"},
 
 		{ "predicate": { "custom_model_data": 12970020 }, "model": "cpp:golem/golem"},
-		{ "predicate": { "custom_model_data": 12970021 }, "model": "cpp:golem/golem_farmer"},
-		{ "predicate": { "custom_model_data": 12970022 }, "model": "cpp:golem/golem_miner"},
-		{ "predicate": { "custom_model_data": 12970023 }, "model": "cpp:golem/golem_fisher"},
-		{ "predicate": { "custom_model_data": 12970024 }, "model": "cpp:golem/golem_warrior"},
-		{ "predicate": { "custom_model_data": 12970025 }, "model": "cpp:golem/golem_herder"},
+		{ "predicate": { "custom_model_data": 12970021 }, "model": "cpp:golem/equipped_golem"},
 		
 		{ "predicate": { "custom_model_data": 12970040 }, "model": "cpp:material/ancient_scroll"},
 		{ "predicate": { "custom_model_data": 12970041 }, "model": "cpp:tool/magnet"},
@@ -69,6 +65,8 @@
 		{ "predicate": { "custom_model_data": 12971027 }, "model": "cpp:character/pic27"},
 		{ "predicate": { "custom_model_data": 12971028 }, "model": "cpp:character/pic28"},
 		{ "predicate": { "custom_model_data": 12971029 }, "model": "cpp:character/pic29"},
-		{ "predicate": { "custom_model_data": 12971030 }, "model": "cpp:character/pic30"}
+		{ "predicate": { "custom_model_data": 12971030 }, "model": "cpp:character/pic30"},
+		
+		{ "predicate": { "custom_model_data": 12972001 }, "model": "cpp:manuel/01"}
 	]
 }

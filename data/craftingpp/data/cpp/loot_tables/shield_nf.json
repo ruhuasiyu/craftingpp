@@ -4,11 +4,11 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:shield",
 					"functions": [
 						{
-							"function": "set_nbt",
+							"function": "minecraft:set_nbt",
 							"tag":"{id:\"cpp:shield_nf\",display:{Lore:[\"{\\\"translate\\\":\\\"item.cpp.cbl_logo\\\"}\"]},CustomModelData:12970011}"
 						}
 					]

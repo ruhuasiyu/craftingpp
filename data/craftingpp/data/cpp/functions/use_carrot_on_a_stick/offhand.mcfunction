@@ -19,11 +19,7 @@ execute as @s[nbt={Inventory:[{Slot:-106b,tag:{id:"cpp:coordinate_recorder"}}]}]
 execute as @s[nbt={Inventory:[{Slot:-106b,tag:{id:"cpp:chest_transporter"}}]}] at @s anchored eyes run function cpp:use_carrot_on_a_stick/tool/chest_transporter_ray
 execute as @s[nbt={Inventory:[{Slot:-106b,tag:{id:"cpp:santa_gift"}}]}] at @s anchored eyes run function cpp:use_carrot_on_a_stick/tool/santa_gift
 
-execute as @s[nbt={Inventory:[{Slot:-106b,tag:{id:"cpp:golem_miner"}}]}] at @s anchored eyes run function cpp:use_carrot_on_a_stick/golem/type
-execute as @s[nbt={Inventory:[{Slot:-106b,tag:{id:"cpp:golem_farmer"}}]}] at @s anchored eyes run function cpp:use_carrot_on_a_stick/golem/type
-execute as @s[nbt={Inventory:[{Slot:-106b,tag:{id:"cpp:golem_fisher"}}]}] at @s anchored eyes run function cpp:use_carrot_on_a_stick/golem/type
-execute as @s[nbt={Inventory:[{Slot:-106b,tag:{id:"cpp:golem_warrior"}}]}] at @s anchored eyes run function cpp:use_carrot_on_a_stick/golem/type
-execute as @s[nbt={Inventory:[{Slot:-106b,tag:{id:"cpp:golem_herder"}}]}] at @s anchored eyes run function cpp:use_carrot_on_a_stick/golem/type
+execute as @s[nbt={Inventory:[{Slot:-106b,tag:{id:"cpp:equipped_golem"}}]}] at @s anchored eyes run function cpp:use_carrot_on_a_stick/golem/type
 
 execute as @s[nbt={Inventory:[{Slot:-106b,tag:{id:"cpp:temperancer"}}]}] run function cpp:use_carrot_on_a_stick/rituals/temperancer
 execute as @s[tag=!cpp_used,nbt={Inventory:[{Slot:-106b,tag:{id:"cpp:temperancer_closed"}}]}] run function cpp:use_carrot_on_a_stick/rituals/temperancer_closed

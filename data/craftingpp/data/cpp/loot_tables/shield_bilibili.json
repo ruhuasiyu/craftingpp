@@ -4,14 +4,15 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:shield",
 					"functions": [
 						{
-							"function": "set_nbt",
+							"function": "minecraft:set_nbt",
 							"tag":"{id:\"cpp:shield_bilibili\",display:{Lore:[\"{\\\"translate\\\":\\\"item.cpp.bilibili_logo\\\"}\"]},CustomModelData:12970006}"
 						}
-					]				}
+					]
+				}
 			]
 		}
 	]

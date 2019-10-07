@@ -109,7 +109,7 @@
 					"name": "cpp:fruit_sapling",
 					"functions": [
 						{
-							"function": "set_count",
+							"function": "minecraft:set_count",
 							"count": {
 								"min": 0,
 								"max": 3

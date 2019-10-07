@@ -1,6 +1,7 @@
-loot spawn ~ -1 ~ loot cpp:random/min1max9
-execute positioned ~ -1 ~ store result score @s cppRandom run data get entity @e[type=item,nbt={Item:{tag:{isRdMark:1b}}},limit=1,distance=..1] Item.Count
-execute positioned ~ -1 ~ run kill @e[type=item,nbt={Item:{tag:{isRdMark:1b}}},limit=1,distance=..1]
+scoreboard players set #random_min random 1
+scoreboard players set #random_max random 9
+function random:random
+
 scoreboard players operation #smelt_iron cppValue = @s cppRandom
 scoreboard players operation #smelt_gold cppValue = @s cppRandom
 scoreboard players operation #smelt_coal cppValue = @s cppRandom
