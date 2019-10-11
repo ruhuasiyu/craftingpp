@@ -1,20 +1,5 @@
 scoreboard players remove @s cppStoredxp 2
 
-execute as @s[scores={cppMacType=1}] run loot replace block ~ ~ ~ container.21 2 loot cpp:crops/wheat
-execute as @s[scores={cppMacType=2}] run loot replace block ~ ~ ~ container.21 2 loot cpp:crops/beetroot
-execute as @s[scores={cppMacType=3}] run replaceitem block ~ ~ ~ container.21 carrot 6
-execute as @s[scores={cppMacType=4}] run replaceitem block ~ ~ ~ container.21 potato 6
-execute as @s[scores={cppMacType=5}] run replaceitem block ~ ~ ~ container.21 pumpkin 2
-execute as @s[scores={cppMacType=6}] run replaceitem block ~ ~ ~ container.21 melon 2
-execute as @s[scores={cppMacType=7}] run replaceitem block ~ ~ ~ container.21 sugar_cane 4
-execute as @s[scores={cppMacType=8}] run replaceitem block ~ ~ ~ container.21 kelp 4
-execute as @s[scores={cppMacType=9}] run replaceitem block ~ ~ ~ container.21 cactus 4
-execute as @s[scores={cppMacType=10}] run replaceitem block ~ ~ ~ container.21 vine 4
-execute as @s[scores={cppMacType=11}] run replaceitem block ~ ~ ~ container.21 cocoa_beans 4
-execute as @s[scores={cppMacType=12}] run replaceitem block ~ ~ ~ container.21 brown_mushroom 4
-execute as @s[scores={cppMacType=13}] run replaceitem block ~ ~ ~ container.21 red_mushroom 4
-execute as @s[scores={cppMacType=14}] run replaceitem block ~ ~ ~ container.21 nether_wart 4
-execute as @s[scores={cppMacType=15}] run replaceitem block ~ ~ ~ container.21 lily_pad 4
 execute as @s[scores={cppMacType=16}] run loot replace block ~ ~ ~ container.21 2 loot cpp:crops/chorus_fruit
 execute as @s[scores={cppMacType=17}] run replaceitem block ~ ~ ~ container.21 bamboo 8
 execute as @s[scores={cppMacType=18}] run replaceitem block ~ ~ ~ container.21 sweet_berries 8

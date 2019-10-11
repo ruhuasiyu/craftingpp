@@ -1,0 +1,14 @@
+execute as @s[tag=!cpp_machine_work] if block ~ ~ ~ barrel{Items:[{tag:{id:"cpp:enchanted_iron"}}]} run function cpp:all_in_one_machine/type/nl/awkward_enchanted_iron
+execute as @s[tag=!cpp_machine_work] if block ~ ~ ~ barrel{Items:[{id:"minecraft:phantom_membrane"}]} run function cpp:all_in_one_machine/type/nl/awkward_phantom_membrane
+execute as @s[tag=!cpp_machine_work] if block ~ ~ ~ barrel{Items:[{id:"minecraft:nautilus_shell"}]} run function cpp:all_in_one_machine/type/nl/awkward_nautilus_shell
+execute as @s[tag=!cpp_machine_work] if block ~ ~ ~ barrel{Items:[{id:"minecraft:golden_carrot"}]} run function cpp:all_in_one_machine/type/nl/awkward_golden_carrot
+execute as @s[tag=!cpp_machine_work] if block ~ ~ ~ barrel{Items:[{id:"minecraft:ender_pearl"}]} run function cpp:all_in_one_machine/type/nl/awkward_ender_pearl
+execute as @s[tag=!cpp_machine_work] if block ~ ~ ~ barrel{Items:[{id:"minecraft:magma_cream"}]} run function cpp:all_in_one_machine/type/nl/awkward_magma_cream
+execute as @s[tag=!cpp_machine_work] if block ~ ~ ~ barrel{Items:[{id:"minecraft:pufferfish"}]} run function cpp:all_in_one_machine/type/nl/awkward_pufferfish
+execute as @s[tag=!cpp_machine_work] if block ~ ~ ~ barrel{Items:[{id:"minecraft:rabbit_foot"}]} run function cpp:all_in_one_machine/type/nl/awkward_rabbit_foot
+execute as @s[tag=!cpp_machine_work] if block ~ ~ ~ barrel{Items:[{id:"minecraft:sugar"}]} run function cpp:all_in_one_machine/type/nl/awkward_sugar
+execute as @s[tag=!cpp_machine_work] if block ~ ~ ~ barrel{Items:[{id:"minecraft:blaze_powder"}]} run function cpp:all_in_one_machine/type/nl/awkward_blaze_powder
+execute as @s[tag=!cpp_machine_work] if block ~ ~ ~ barrel{Items:[{tag:{id:"cpp:enchanted_diamond"}}]} run function cpp:all_in_one_machine/type/nl/awkward_enchanted_diamond
+execute as @s[tag=!cpp_machine_work] if block ~ ~ ~ barrel{Items:[{tag:{id:"cpp:enchanted_gold"}}]} run function cpp:all_in_one_machine/type/nl/awkward_enchanted_gold
+execute as @s[tag=!cpp_machine_work] if block ~ ~ ~ barrel{Items:[{id:"minecraft:ghast_tear"}]} run function cpp:all_in_one_machine/type/nl/awkward_ghast_tear
+execute as @s[tag=!cpp_machine_work] if block ~ ~ ~ barrel{Items:[{id:"minecraft:glistering_melon_slice"}]} run function cpp:all_in_one_machine/type/nl/awkward_glistering_melon_slice

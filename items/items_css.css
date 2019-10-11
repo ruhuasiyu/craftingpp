@@ -72,6 +72,20 @@
 	background-image: url("colorful_items.png");
 	background-size:144px 752px;
 }
+
+table.item_list{
+	width: 100%;
+}
+table.item_list th span{
+	display:inline-block;
+	width:72px;
+	height:72px;
+}
+table.item_list th span.ci{
+	background-image: url("colorful_items.png");
+	background-size:648px 3384x;
+}
+
 .ui > span.ci{
 	background-image: url("colorful_items.png");
 	background-size: 288px 1504px;
@@ -1139,6 +1153,7 @@ span.golem_miner{	background-position: -256px -352px;}
 span.golem_warrior{	background-position: -0px -384px;}
 span.golem_fisher{	background-position: -32px -384px;}
 span.golem_herder{	background-position: -64px -384px;}
+span.equipped_golem{	background-position: -64px -384px;}
 span.raw_colorful_vegetable{	background-position: -96px -384px;}
 span.colorful_vegetable{	background-position: -128px -384px;}
 span.raw_braised_pork_with_potatoes{	background-position: -160px -384px;}

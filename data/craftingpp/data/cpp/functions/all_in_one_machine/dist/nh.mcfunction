@@ -1,3 +1,4 @@
+execute if score #remove cppStoredxp matches 1 run function cpp:all_in_one_machine/dist/nh1
 scoreboard players remove @s[scores={cppMacType=1..8,cppStoredxp=4..}] cppStoredxp 4
 scoreboard players remove @s[scores={cppMacType=24..213,cppStoredxp=1..}] cppStoredxp 1
 
