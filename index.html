@@ -2,7 +2,7 @@
 <html lang="zh-cmn-Hans">
 <head>
 <meta charset="utf-8" />
-<title>更多的合成 Crafting++ v1.9.17</title>
+<title>更多的合成 Crafting++ v1.10</title>
 <meta name='author' content='ruhuasiyu@mcbbs' />
 <meta name='keywords' content='minecraft, 原版模组, vanilla mod, datapacks, Crafting++' />
 <meta name='description' content='Minecraft 原版模组 更多的合成' />
@@ -35,7 +35,7 @@
 	<li><a href="#trade">交易</a></li>
 	<li><a href="#block_sky_domain">空岛</a></li>
 	<li><a href="#advancements">进度</a></li>
-	<li><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/releases/tag/v1.9.9">日志</a></li>
+	<li><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/releases/tag/v1.10">日志</a></li>
 </ul>
 </nav>
 <div class="banner" style="margin-top:44px">
@@ -46,11 +46,15 @@
 
 <!-------------------------------------------------------------------------------------------------->
 <h2 id="introduction">简介</h2>
-<p>🎉欢迎来到《更多的合成》百科！</p>
-<p>1.9.17，于2019年10月16日发布，支持Minecraft 1.14.x版本。</p>
+<p style="color:red">🎉欢迎来到原版模组《更多的合成》主页！</p>
+<p>原版模组一般是指使用命令而非<abbr title="forge liteloader rift fibric 等">mod api</abbr>来对游戏的可玩性做出修改。自1.13起，原版模组一般以数据包的形式出现。</p>
+<p>《更多的合成》是国内论坛最大的原版模组，包括数百种物品、材料、工具、装饰等，以及新的村民交易和空岛系统。</p>
+<p>最新正式版本为v1.9.18，于2019年10月25日发布，支持Minecraft 1.14.x版本。此次更新添加了魔杖的魔法效果，对大量模组物品和方块材质进行了重新绘制，同时也添加了很多实用工具、食物、装饰和药水。具体来说，加入了物品处理机、剪枝器、玻璃镐、搬箱器、垃圾桶、旗帜、标志、汉堡、披萨、寿司、仰望星空派、水果、葡萄干等，以及重新设计了花草、头颅和空岛。此次更新也加入了获取物品的便捷方式，优化了大量指令，加入了很多可自动化的内容。</p>
+<p>最新测试版本为v1.10-m08d23，于2019年8月23日发布，支持Minecraft 1.15快照版本。此次更新旨在支持1.15的新内容蜜蜂，并对原有内容进行了调整。</p>
+<p>本模组即将完结，以后应该只会修复bug和优化内容，不会再有大的更新。如遇到Minecraft命令机制大改或新生物等内容，我还是会及时更新代码并支持新的内容。感谢大家一直以来的支持和帮助！</p>
 
 <h3 id="download">📦 下载地址</h3>
-<p>本页面所列内容为1.9.17版本。不建议玩家使用旧版本，同时新版本放出后，旧版本一律不再更新和修复bug。更多版本请<a href="https://github.com/ruhuasiyu/CraftingPlusPlus/tags">点击此处查看</a>。</p>
+<p>本页面所列内容为1.9版本。不建议玩家使用旧版本，同时新版本放出后，旧版本一律不再更新和修复bug。更多版本请<a href="https://github.com/ruhuasiyu/CraftingPlusPlus/tags">点击此处查看</a>。</p>
 <ul>
 	<li><a href="http://home.ustc.edu.cn/~zsxqq/craftingpp">官方主页</a></li>
 	<li><a href="http://www.mcbbs.net/thread-696861-1-1.html">mcbbs中文论坛页面</a></li>
@@ -59,30 +63,39 @@
 </ul>
 
 <table><thead><tr><th>支持的minecraft版本</th><th>Crafting++版本</th><th colspan="2">下载地址</th><th>内容介绍</th></tr></thead>
-	<tbody>
-		<tr>
-			<td>Java版 1.14.x</td>
-			<td>v1.9.17</td>
-			<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/releases/tag/v1.9.17">github</a></td>
-			<td><a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.9.17.zip">官方</a></td>
-			<td><a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/1.9.html">1.9</a></td>
-		</tr>
-		<tr>
-			<td>Java版 1.13.1-1.13.2</td>
-			<td>v1.8.4</td>
-			<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/releases/tag/v1.8.4">github</a></td>
-			<td><a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.8.4.zip">官方</a></td>
-			<td><a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/1.8.html">1.8</a></td>
-		</tr>
-	</tbody></table>
-	
+<tbody>
+	<tr>
+		<td>Java版 快照19w39b</td>
+		<td>v1.10</td>
+		<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/releases/tag/v1.10-m08d23">github</a></td>
+		<td><a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.10-m08d23.zip">官方</a></td>
+		<td><a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/">1.10</a></td>
+	</tr>
+	<tr>
+		<td>Java版 1.14.x</td>
+		<td>v1.9.18</td>
+		<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/releases/tag/v1.9.18">github</a></td>
+		<td><a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.9.18.zip">官方</a></td>
+		<td><a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/1.9.html">1.9</a></td>
+	</tr>
+	<tr>
+		<td>Java版 1.13.1-1.13.2</td>
+		<td>v1.8.4</td>
+		<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/releases/tag/v1.8.4">github</a></td>
+		<td><a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.8.4.zip">官方</a></td>
+		<td><a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/1.8.html">1.8</a></td>
+	</tr>
+</tbody></table>
+
 <h3 id="how_to_start">🚀 如何开始</h3>
 <p>下载后解压缩。</p>
 <ul>
 <li><span style="font-weight:bold;">资源包</span>文件夹位于<code>.minecraft/resourcepacks</code>文件夹，该文件夹也可从游戏界面<code>选项->资源包->打开资源包文件夹</code>处打开。将<code>craftingpp_resources.zip</code>放入，然后进入选择资源包的页面，选择该资源包至右侧已选的资源包。如果仍然无法使用，请解压后放入。</li>
-<li><span style="font-weight:bold;">数据包</span>文件夹位于<code>.minecraft/saves/世界名称/datapacks</code>文件夹，该文件夹也可从游戏界面<code>选中世界->编辑->打开世界文件夹->打开datapacks文件夹</code>处打开。将文件夹<code>craftingpp</code>放入，然后退出世界重进。</li>
+<li><span style="font-weight:bold;">数据包</span>文件夹位于<code>.minecraft/saves/世界名称/datapacks</code>文件夹，该文件夹也可从游戏界面<code>选中世界->编辑->打开世界文件夹->打开datapacks文件夹</code>处打开。将文件夹<code>craftingpp</code>(普通生存模式)或文件夹<code>craftingpp_skyisland</code>(空岛生存模式)放入，然后退出世界重进。请勿将两个数据包同时放置在该文件夹内！</li>
 </ul>
 <p>最后请打开<code>选项->语言->强制使用Unicode字体：关</code>。
+<p><strong>广告：欢迎加入挼白天服，QQ群号415344316。新服企划中，计划装有6个原版模组，正版验证。</strong></p>
+
 <h4>模组入门</h4>
 <p>大部分合成需使用<a href="#crafting_machine"><span class="ui single"><span class="ci crafting_machine"></span></span>合成器</a>。模组需要的附魔之瓶可通过副手持有漏斗获取。</p>
 <p>部分参数可通过<a href="#config">配置文件</a><code>datapacks/craftingpp/data/cpp/functions/config.mcfunction</code>修改。模组支持英文、简体中文、繁体中文三种语言。如有任何意见建议，欢迎<a href="http://www.mcbbs.net/thread-696861-1-1.html">在论坛回复</a>、<a href="https://github.com/ruhuasiyu/craftingpp/issues/new">发起issue</a>或<a href="http://www.mcbbs.net/home.php?mod=spacecp&ac=pm&touid=975525">私信我</a>，请在反馈时提供游戏版本和模组版本。</p>
@@ -106,8 +119,8 @@
 <p><span style="font-weight:bold;">数据包设计</span>：ruhuasiyu</p>
 <p><span style="font-weight:bold;">资源包设计</span>：ruhuasiyu RubberTree XeKr 折君 天狼星black MC先生</p>
 <p><span style="font-weight:bold;">平台支持</span>：<a href="https://www.mcbbs.net/">Minecraft(我的世界)中文论坛</a> <a href="https://www.mcmod.cn/">MC百科</a> </p>
-<p><span style="font-weight:bold;">赞助名单</span>：<span style="color:blue;">一米八微笑 明月庄主 Rhythm萱 唯一丶为伊 LIXIAOGANG 陌余Oucher uuu2011 爱发电用户_AU9c 火星浮云 这是彩虹糖呢 SPGoding 支持国产mod 倪采臣 zzzz 折君 Hao_Tian22 Appleeeee 爱发电用户_JCmn 落天望月 爱发电用户_4eyN switefaster 猫君 chyx </span></p>
-<!--一米八微笑 250 明月庄主 250 Rhythm萱 128 LIXIAOGANG 96 墨鱼 86 uuu2011 66 火星浮云 64 匿名1 64 匿名2 50 这是彩虹糖呢 48 SPGoding 38 倪采臣 32 ustc_zzzz 32 折君 31  苹果果 落天望月 chyx switefaster 猫君-->
+<p><span style="font-weight:bold;">赞助名单</span>：<span style="color:blue;">一米八微笑 明月庄主 Rhythm萱 唯一丶为伊 LIXIAOGANG SPGoding 陌余Oucher uuu2011 爱发电用户_AU9c 火星浮云 这是彩虹糖呢 支持国产mod 倪采臣 zzzz 折君 Hao_Tian22 Appleeeee 爱发电用户_JCmn 落天望月 爱发电用户_4eyN switefaster 猫君 chyx </span></p>
+<!--一米八微笑 250 明月庄主 250 Rhythm萱 128 LIXIAOGANG 96 SPGoding 88 墨鱼 86 uuu2011 66 火星浮云 64 匿名1 64 匿名2 50 这是彩虹糖呢 48 倪采臣 32 ustc_zzzz 32 折君 31  苹果果 落天望月 chyx switefaster 猫君-->
 <p>设计过程中亦参考了<a href="http://teamcofh.com/">热力膨胀</a>、<a href="https://botaniamod.net/">植物魔法</a>、<a href="http://www.abyssalcraft.com/">深渊国度</a>、<a href="https://minecraft.curseforge.com/projects/pams-harvestcraft">潘马斯农场</a>、<a href="https://minecraft.curseforge.com/projects/saltymod">盐</a>等模组以及<a href="https://www.bilibili.com/">Bilibili</a>与<a href="youtube.com">Youtube</a>一些视频，<a href="http://www.mcbbs.net/group-546-1.html">CBL小组</a>、<a href="http://www.mcbbs.net/group-1009-1.html">TCP小组</a>、<a href="http://www.mcbbs.net/group-1474-1.html">CBV小组</a>、<a href="http://www.mcbbs.net/group-1478-1.html">MAG小组</a>等小组以及<a href="http://www.mcbbs.net/?1963599">pineapple_</a>、<a href="http://www.mcbbs.net/?160123">贰逼</a>、ECS、<a href="https://github.com/pca006132">pca</a>、<a href="http://www.mcbbs.net/?720449">玄素</a>、<a href="http://www.mcbbs.net/?1073223">乙烯_中国</a>、<a href="http://www.mcbbs.net/?725858">⊙v⊙</a>、HerobrineXia、白天、苹果果、SorrowRain、Amber、匠魂、Gingerbread、森林蝙蝠、mcer、Stark、yap等玩家亦对此模组有贡献。</p>
 <p>感谢以上所有玩家，特别感谢对我们给予赞助的玩家！</p>
 
@@ -123,21 +136,16 @@
 · <a href="#effect_adding">效果附加</a>
 · <a href="#attribute_adding">属性附加</a>
 · <a href="#dark_rituals">黑暗仪式</a>)
-· <a href="#magic">魔法</a>
 · <a href="#block_sky_domain">空域开端</a>
 · <a href="#advancements">进度</a>
 </td></tr>
 
 <tr><th>便捷化</th><td>
-<a href="#cauldon">炼药锅</a>
-· <a href="#leaves_fast_decay">树叶快速腐烂</a>
+<a href="#leaves_fast_decay">树叶快速腐烂</a>
 · <a href="#obsidian_wither_immune">黑曜石防凋灵</a>
 · <a href="#random_block">随机方块</a>
 · <a href="#sort_chest">箱子整理</a>
-· <a href="#dispenser_plant">自动种植</a>
 · <a href="#auto_torch">自动插火把</a>
-· <a href="#vertical_blocks">竖纹方块</a>
-· <a href="#nether_dry_wet_sponge">干燥湿海绵</a>
 </td></tr>
 
 <tr><th>自然生成</th><td>
@@ -403,7 +411,6 @@
 · <a href="#wand_of_the_darkness"><span class="ci" style="background-position: -48px -368px;"></span>黑暗魔杖</a> 
 · <a href="#broom"><span class="ci" style="background-position: -64px -368px;"></span>扫帚</a> 
 · <a href="#shooting_star"><span class="ci" style="background-position: -80px -368px;"></span>流星丸</a> 
-· <a href="#sorcerer_stone"><span class="ci" style="background-position: -128px -368px;"></span>魔导石</a> 
 </td></tr>
 
 <tr><th>装饰</th><td>
@@ -533,11 +540,10 @@
 
 <!-------------------------------------------------------------------------------------------------->
 <h2 id="machines">机器和插件</h2>
-<p>所有机器可空手开采，但用斧更快。关闭后，界面里的东西会保留，可以使用漏斗输入。</p>
-<p>机器产出的物品会输出到相应方位的容器内。如果容器内的空槽位不足两个，或者对应位置没有容器，则机器会停止且发光，直到有空槽位。</p>
+
 <h3 id="crafting_machine">合成器 (Crafting Machine)</h3>
 <span class="ui single"><span class="ci crafting_machine"></span></span>
-<p>放置后右击打开并将材料放入左侧3×3的合成方格，若右侧为空，则会自动合成出产物。强行将物品放入机器背景会导致停机。</p>
+<p><code>/loot give @s loot cpp:crafting_machine</code></p>
 <table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
 <tr><th>合成器</th>
 <td><a href="#experience_bottle">附魔之瓶</a>+工作台</td><td>
@@ -554,10 +560,13 @@
 <span class="ci crafting_machine" title="合成器"></span>
 </span></td></tr>
 </tbody></table>
+<p>将材料放入左侧3×3的合成方格即可自动合成出产物。</p>
+<p>下方按钮控制输出方向，当相应位置有不满的容器时会将输出槽的物品放入。</p>
 <img style="height:200px" src="items/screenshots/crafting_machine.png" />
 
 <h3 id="all_in_one_machine">多功能一体机 (All-in-one Machine)</h3>
 <span class="ui single"><span class="ci all_in_one_machine"></span></span>
+<p><code>/loot give @s loot cpp:all_in_one_machine</code></p>
 <p>这里绿色背景表示使用合成器合成，下同。</p>
 <table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
 <tr><th>多功能一体机</th>
@@ -577,8 +586,8 @@
 </tbody></table>
 <img style="height:200px" src="items/screenshots/all_in_one_machine.png" />
 <p>默认只能使用常压常温模式。主手持有相应的插件右击即可升级并解锁相应模式，包括：<a href="#low_temperature_plugin">低温插件</a>、<a href="#low_pressure_plugin">低压插件</a>、<a href="#high_temperature_plugin">高温插件</a>、<a href="#high_pressure_plugin">高压插件</a>。</p>
-<p>包括上方两个输入槽，下方两个输出槽。右上方为附魔之瓶槽位和经验槽。左侧三个槽位控制压力、温度和输出方向，按Q或左键切换模式。若输出方向有箱子/潜影箱/陷阱箱/木桶则会自动输出到箱子内。</p>
-<p>可以存储至多48点经验，当经验空缺部分达到附魔之瓶经验存储量时，会自动消耗右上方槽位的<a href="#experience_bottle">附魔之瓶</a>来装填。</p>
+<p>左侧三个按钮分别控制压力、温度和输出方向。</p>
+<p>可以存储至多48点经验。</p>
 <p>被强充能时停止工作。</p>
 
 <h4>高温高压</h4>
@@ -637,10 +646,10 @@
 <tr><td>海晶石砖/暗海晶石</td><td>燧石</td><td>6 海晶碎片</td><td>2 海晶砂粒</td><td>1</td><td>2.5</td></tr>
 <tr><td>羊毛</td><td>燧石</td><td>4 线</td><td>5% 染料</td><td>1</td><td>2.5</td></tr>
 <tr><td>粘土块</td><td>燧石</td><td>粘液球</td><td>-</td><td>1</td><td>2.5</td></tr>
-<tr><td>4 圆石</td><td>燧石</td><td>4 沙子</td><td>砂砾或燧石</td><td>1</td><td>1</td></tr>
-<tr><td>4 石头</td><td>燧石</td><td>4 砂砾或燧石</td><td>沙子</td><td>1</td><td>1</td></tr>
-<tr><td>4 砂砾</td><td>燧石</td><td>4 燧石</td><td>沙子</td><td>1</td><td>1</td></tr>
-
+<tr><td>8 石头</td><td>燧石</td><td>8 圆石</td><td>-</td><td>1</td><td>2.5</td></tr>
+<tr><td>8 圆石</td><td>燧石</td><td>8 砂砾</td><td>-</td><td>1</td><td>2.5</td></tr>
+<tr><td>8 砂砾</td><td>燧石</td><td>8 燧石</td><td>-</td><td>1</td><td>2.5</td></tr>
+<tr><td>8 草方块/灰化土/菌丝/耕地/草径</td><td>燧石</td><td>8 泥土</td><td>-</td><td>1</td><td>2.5</td></tr>
 </tbody></table>
 
 <h4>常温常压</h4>
@@ -652,7 +661,7 @@
 <tr><td>南瓜种子</td><td><a href="#fertilizer">肥料</a></td><td>2 南瓜</td><td>-</td><td>2</td><td>2</td></tr>
 <tr><td>西瓜种子</td><td><a href="#fertilizer">肥料</a></td><td>2 西瓜</td><td>-</td><td>2</td><td>2</td></tr>
 <tr><td>甘蔗</td><td><a href="#fertilizer">肥料</a></td><td>4 甘蔗</td><td>-</td><td>2</td><td>2</td></tr>
-<tr><td>海带</td><td><a href="#fertilizer">肥料</a></td><td>4 海带</td><td>-</td><td>2</td><td>2</td></tr>
+<tr><td>海带</td><td><a href="#fertilizer">肥料</a></td><td>6 海带</td><td>-</td><td>2</td><td>2</td></tr>
 <tr><td>仙人掌</td><td><a href="#fertilizer">肥料</a></td><td>4 仙人掌</td><td>-</td><td>2</td><td>2</td></tr>
 <tr><td>藤蔓</td><td><a href="#fertilizer">肥料</a></td><td>4 藤蔓</td><td>-</td><td>2</td><td>2</td></tr>
 <tr><td>可可豆</td><td><a href="#fertilizer">肥料</a></td><td>4 可可豆</td><td>-</td><td>2</td><td>2</td></tr>
@@ -869,9 +878,13 @@
 
 <table><thead><tr><th>工具</th><th>配方</th><th>配方</th></tr></thead><tbody>
 <tr>
-	<td><span class="ui single"><span class="golden_shovel" title="金锹"></span></span><span class="ui single"><span class="wooden_shovel" title="木锹"></span></span><span class="ui single"><span class="stone_shovel" title="石锹"></span></span><span class="ui single"><span class="iron_shovel" title="铁锹"></span></span><span class="ui single"><span class="diamond_shovel" title="钻石锹"></span></span></td>
+	<td rowspan="2"><span class="ui single"><span class="golden_shovel" title="金锹"></span></span><span class="ui single"><span class="wooden_shovel" title="木锹"></span></span><span class="ui single"><span class="stone_shovel" title="石锹"></span></span><span class="ui single"><span class="iron_shovel" title="铁锹"></span></span><span class="ui single"><span class="diamond_shovel" title="钻石锹"></span></span></td>
 	<td><span class="ui single"><span class="grass_block" title="草方块"></span></span></td>
 	<td><span class="ui single"><span class="grass_path" title="草径"></span></span></td>
+</tr>
+<tr>
+	<td><span class="ui single"><span class="gravel" title="砂砾"></span></span></td>
+	<td><span class="ui single"><span class="gravel" title="砂砾"></span></span><span class="ui single"><span class="flint" title="燧石"></span></span>支持时运</td>
 </tr>
 <tr>
 	<td rowspan="3"><span class="ui single"><span class="golden_hoe" title="金锄"></span></span><span class="ui single"><span class="wooden_hoe" title="木锄"></span></span><span class="ui single"><span class="stone_hoe" title="石锄"></span></span><span class="ui single"><span class="iron_hoe" title="铁锄"></span></span><span class="ui single"><span class="diamond_hoe" title="钻石锄"></span></span></td>
@@ -892,9 +905,17 @@
 	<td><span class="ui single"><span class="stripped_oak_log" title="去皮原木"></span></span></td>
 </tr>
 <tr>
-	<td><span class="ui single"><span class="golden_pickaxe" title="金镐"></span></span><span class="ui single"><span class="wooden_pickaxe" title="木镐"></span></span><span class="ui single"><span class="stone_pickaxe" title="石镐"></span></span><span class="ui single"><span class="iron_pickaxe" title="铁镐"></span></span><span class="ui single"><span class="diamond_pickaxe" title="钻石镐"></span></span></td>
+	<td rowspan="2"><span class="ui single"><span class="golden_pickaxe" title="金镐"></span></span><span class="ui single"><span class="wooden_pickaxe" title="木镐"></span></span><span class="ui single"><span class="stone_pickaxe" title="石镐"></span></span><span class="ui single"><span class="iron_pickaxe" title="铁镐"></span></span><span class="ui single"><span class="diamond_pickaxe" title="钻石镐"></span></span></td>
 	<td><span class="ui single"><span class="stone" title="石头"></span></span></td>
 	<td><span class="ui single"><span class="cobblestone" title="圆石"></span></span></td>
+</tr>
+<tr>
+	<td><span class="ui single"><span class="grass_block" title="草方块"></span></span>
+		<span class="ui single"><span class="mycelium" title="菌丝"></span></span>
+		<span class="ui single"><span class="podzol" title="灰化土"></span></span>
+		<span class="ui single"><span class="grass_path" title="草径"></span></span>
+		<span class="ui single"><span class="farmland" title="耕地"></span></span></td>
+	<td><span class="ui single"><span class="dirt" title="泥土"></span></span></td>
 </tr>
 <tr>
 	<td><span class="ui single"><span class="shears" title="剪刀"></span></span></td>
@@ -1454,7 +1475,6 @@
 <img style="height:200px" src="items/screenshots/beacon_enhancer.png" />
 
 <p>需放置在信标顶部。左侧可选择对玩家生效的一种效果，右侧可选择对玩家外实体生效的一种效果，最右侧选择负面效果对敌对生物/所有生物生效。影响范围基于下方的信标等级，为半径=10*(等级+1)的球形区域。对村民无效。</p>
-<p>若下方为4级信标，每秒恢复64米内玩家1点魔法值，上限60点。若信标矿物块塔的顶层为X形的5个日石和4个月石，则额外每秒恢复128米内玩家1点魔法值，上限100点。</p>
 <p>被强充能时停止工作。</p>
 <img style="height:400px" src="items/screenshots/sss.png" />
 
@@ -1865,10 +1885,21 @@
 <h2 id="materials">材料</h2>
 <h3 id="ancient_scroll">上古卷轴 (Ancient Scroll)</h3>
 <span class="ui single"><span class="ci ancient_scroll" title="上古卷轴"></span></span>
-<p>在附魔室箱子中有几率出现，可能的种类有:时运III，抢夺III，水下呼吸III，饵钓III，耐久III，横扫之刃III，力量V，锋利V。在<a href="#golden_anvil">金砧</a>中可用于给拥有相同等级相应附魔的物品的附魔等级+1。</p>
+<p><code>
+上古卷轴 (时运 III)	/loot give @s loot cpp:ancien_scroll/fortune<br/>
+上古卷轴 (抢夺 III)	/loot give @s loot cpp:ancien_scroll/looting<br/>
+上古卷轴 (水下呼吸 III)	/loot give @s loot cpp:ancien_scroll/respiration<br/>
+上古卷轴 (饵钓 III)	/loot give @s loot cpp:ancien_scroll/lure<br/>
+上古卷轴 (耐久 III)	/loot give @s loot cpp:ancien_scroll/unbreaking<br/>
+上古卷轴 (横扫之刃 III)	/loot give @s loot cpp:ancien_scroll/sweeping<br/>
+上古卷轴 (力量 III)	/loot give @s loot cpp:ancien_scroll/power<br/>
+上古卷轴 (锋利 III)	/loot give @s loot cpp:ancien_scroll/sharpness
+</code></p>
+<p>在附魔室箱子中有几率出现，一共8种。在<a href="#golden_anvil">金砧</a>中可用于给拥有相同等级相应附魔的物品的附魔等级+1。</p>
 
 <h3 id="experience_bottle">附魔之瓶 (Experience Bottle)</h3>
 <span class="ui single"><span class="experience_bottle"></span></span>
+<p><code>/give @s experience_bottle</code></p>
 <p>附魔之瓶掉落9点经验值，附魔之瓶(64×)掉落576点经验值。</p>
 <p>当你副手持有漏斗时，你的经验会以每刻9点的速度转化为附魔之瓶。如果此时你主手还持有<a href="#compressor">压缩器</a>，你的经验会以每刻576点的速度转化为<a href="#compressor">附魔之瓶(64×)</a>。附魔之瓶(64×)也可以通过对地面的64个附魔之瓶使用<a href="#compressor">压缩器</a>得到。</p>
 <p><a href="#trade_machine">交易机</a>和<a href="#golem">傀儡</a>存储的经验值达到附魔之瓶的经验存储值时，会消耗相应数量经验生成附魔之瓶。</p>
@@ -2049,7 +2080,7 @@
 </span></td></tr>
 
 <tr><th><strong id="moon_stone">月石 (Moon Stone)</strong><br />
-可用于信标底座，对于<a href="#beacon_enhancer">信标增强仪</a>提供魔法值有加成。</th><td><a href="#moon_shard">月之碎片</a></td>
+可用于信标底座。</th><td><a href="#moon_shard">月之碎片</a></td>
 <td><span class="ui cm" title="合成器">
 <span class="ci moon_shard" title="月之碎片"></span>
 <span class="ci moon_shard" title="月之碎片"></span>
@@ -2064,7 +2095,7 @@
 </span></td></tr>
 
 <tr><th><strong id="sun_stone">日石 (Sun Stone)</strong><br />
-可用于信标底座，对于<a href="#beacon_enhancer">信标增强仪</a>提供魔法值有加成。</th><td><a href="#sun_shard">日之碎片</a></td>
+可用于信标底座。</th><td><a href="#sun_shard">日之碎片</a></td>
 <td><span class="ui cm" title="合成器">
 <span class="ci sun_shard" title="日之碎片"></span>
 <span class="ci sun_shard" title="日之碎片"></span>
@@ -2761,7 +2792,7 @@
 <span class="white_dye" title="白色染料"></span>
 <span class="ci white_force_of_lightning" title="白色电之力"></span>
 </span></td>
-<td>右击消耗6点生命值恢复10点魔力值。</td></tr>
+<td>右击移除地面物品的附魔。</td></tr>
 
 <tr><th><strong id="black_force_of_moon">黑色月之力 (Black Force of Moon)</strong></th><td>黑色染料+荧石粉+<a href="#dragon_egg">龙蛋</a></td>
 <td><span class="ui cm" title="合成器">
@@ -3304,39 +3335,12 @@
 </span></td></tr>
 </tbody></table>
 
-<h3 id="golem">傀儡 (Golem)</h3>
+<h3 id="golem">傀儡</h3>
+<span class="ui single"><span class="ci empty_golem"></span></span>
 <span class="ui single"><span class="ci golem"></span></span>
-<span class="ui single"><span class="ci golem_farmer"></span></span>
-<span class="ui single"><span class="ci golem_miner"></span></span>
-<span class="ui single"><span class="ci golem_fisher"></span></span>
-<span class="ui single"><span class="ci golem_warrior"></span></span>
-<span class="ui single"><span class="ci golem_herder"></span></span>
-<p>傀儡用于合成。如果合成手时使用了带有魔咒的工具，魔咒最终会转移到傀儡上。</p>
-<ul>
-<li><strong id="golem_farmer">傀儡农民 (Golem Farmer)</strong>：破坏接触的<abbr title="树叶、木头、西瓜、南瓜、蘑菇方块、甘蔗、竹子">农业方块</abbr>、成熟的<abbr title="小麦、甜菜根、胡萝卜、马铃薯、甜浆果丛">作物</abbr>并补种。</li>
-<li><strong id="golem_miner">傀儡矿工 (Golem Miner)</strong>：破坏接触的除控制方块外的所有方块。支持时运和精准采集魔咒。</li>
-<li><strong id="golem_fisher">傀儡渔夫 (Golem Fisher)</strong>：接触水时会开始钓鱼，时长5-45秒。支持饵钓和海之眷顾魔咒。</li>
-<li><strong id="golem_warrior">傀儡战士 (Golem Warrior)</strong>：杀死接触的非玩家生物。支持抢夺魔咒。</li>
-<li><strong id="golem_herder">傀儡牧民 (Golem Herder)</strong>：繁殖接触的成年动物。</li>
-</ul>
-<p>手持傀儡对着控制方块右击放置，放置后即开始高速移动。接触控制方块后会转向，<span style="color:red">注意请将控制方块合理放置使得傀儡可以沿着路径循环，否则傀儡有可能飞出加载区块！建议先在单机测试！</span></p>
-<p>和平模式下傀儡会直接消失。</p>
-<p>傀儡杀死生物、钓鱼或挖矿会积累经验并存储为附魔之瓶。</p>
-
-<table><thead>
-<tr><th>方向</th><th>控制方块</th></tr>
-</thead><tbody>
-<tr><td>东</td><td>红色羊毛</td></tr>
-<tr><td>南</td><td>黄色羊毛</td></tr>
-<tr><td>西</td><td>蓝色羊毛</td></tr>
-<tr><td>北</td><td>绿色羊毛</td></tr>
-<tr><td>上</td><td>青色羊毛</td></tr>
-<tr><td>下</td><td>品红色羊毛</td></tr>
-<tr><td>终止并掉落</td><td>白色羊毛</td></tr>
-</tbody></table>
 
 <table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
-<tr><th>傀儡</th><td><a href="#experience_bottle">附魔之瓶+<a href="#heads">僵尸的头+<a href="#silicon_plate">硅板</a>+<a href="#enchanted_golden_apple">附魔金苹果</a>+盔甲架+钻石靴子</td>
+<tr><th>空白傀儡 (Empty Golem)</th><td><a href="#experience_bottle">附魔之瓶+<a href="#heads">僵尸的头+<a href="#silicon_plate">硅板</a>+<a href="#enchanted_golden_apple">附魔金苹果</a>+盔甲架+钻石靴子</td>
 <td><span class="ui cm" title="合成器">
 <span class="experience_bottle" title="附魔之瓶"></span>
 <span class="zombie_head" title="僵尸的头"></span>
@@ -3347,34 +3351,58 @@
 <span class="armor_stand" title="盔甲架"></span>
 <span class="diamond_boots" title="钻石靴子"></span>
 <span class="armor_stand" title="盔甲架"></span>
-<span class="ci golem" title="傀儡"></span>
+<span class="ci empty_golem" title="空白傀儡"></span>
 </span></span></td></tr>
 
-<tr><th>傀儡农民<br/>
-	傀儡矿工<br/>
-	傀儡渔夫<br/>
-	傀儡战士<br/>
-	傀儡牧民</th>
-<td>傀儡+<a href="#industrious_hand">勤劳之手</a><br/>
-	傀儡+<a href="#break_hand">破坏之手</a><br/>
-	傀儡+<a href="#smart_hand">灵巧之手</a><br/>
-	傀儡+<a href="#angry_hand">愤怒之手</a><br/>
-	傀儡+<a href="#toughen_hand">历练之手</a></td>
+<tr><th>傀儡 (Golem)</th>
+<td>潜影盒+工具A+空白傀儡+工具B</td>
 <td><span class="ui cm" title="合成器">
+<span class="empty"></span>
+<span class="shulker_box" title="潜影盒"></span>
+<span class="empty"></span>
+<span class="diamond_hoe" title="工具A"></span>
+<span class="ci empty_golem" title="空白傀儡"></span>
+<span class="diamond_pickaxe" title="工具B"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
 <span class="ci golem" title="傀儡"></span>
-<span class="ci industrious_hand" title="勤劳之手"></span>
-<span class="empty"></span>
-<span class="empty"></span>
-<span class="empty"></span>
-<span class="empty"></span>
-<span class="empty"></span>
-<span class="empty"></span>
-<span class="empty"></span>
-<span class="ci golem_farmer" title="傀儡农民"></span>
-<span class="shapeless" title="此配方是无形的，材料可以以任何排列方式放置在合成格内。"></span>
 </span></td></tr>
 </tbody></table>
+<p>合成配方中的潜影盒、工具A、工具B的物品信息均会保存在已装配的傀儡上。</p>
 
+<p>手持傀儡对着下方前6种羊毛右击即可放置，放置后傀儡会不停地高速移动。接触到下述方块/实体会产生相应效果：</p>
+<ul>
+	<li>红色羊毛：方向向东</li>
+	<li>黄色羊毛：方向向南</li>
+	<li>蓝色羊毛：方向向西</li>
+	<li>绿色羊毛：方向向北</li>
+	<li>青色羊毛：方向向上</li>
+	<li>品红色羊毛：方向向下</li>
+	<li>白色羊毛：终止行动并掉落所有物品</li>
+	<li>黑色羊毛或进入虚空：返回出生点</li>
+	<li>橙色羊毛：切换破坏模式(初始状态)/使用模式</li>
+	<li>箱子：放入背包内物品</li>
+	<li>粘液块：尝试推下一个遇到的控制方向的羊毛/li>
+	<li>掉落物：取走物品放入背包</li>
+	<li>经验球：存储为附魔之瓶</li>
+</ul>
+<p><span style="color:red">注意请将控制方块合理放置使得傀儡可以沿着路径循环，否则傀儡有可能飞出加载区块！建议先在单机测试！</span>和平模式下傀儡会直接消失。</p>
+
+<p>破坏模式(初始状态)：傀儡使用工具B</p>
+<ul>
+	<li>若手持剑，则杀死遇到的生物。忽略玩家、凋灵、末影龙和其它模组生物。</li>
+	<li>若没有手持剑，则挖掘遇到的方块。忽略上述方块、未成熟的农作物、瓜梗、树苗、拉杆、压力板、按钮、红石中继器、红石比较器、拌线、拌线钩、箱子、木桶、漏斗。</li>
+</ul>
+<p>使用模式：傀儡使用工具A</p>
+<ul>
+	<li>若手持锄，则会耕下方的地，并种植小麦、胡萝卜、土豆、甜菜根、甜浆果、地狱疣。</li>
+	<li>若手持斧，则会种植可可豆、树苗。</li>
+	<li>若手持锹，则会制造草径。</li>
+	<li>若手持剪刀，则会剪羊毛和南瓜。</li>
+	<li>若手持栓绳，则会喂食动物。</li>
+	<li>若手持钓鱼竿，则会在水中钓鱼。</li>
+</ul>
 
 <!------------------------------------------------------------------------------------------------->
 <h2 id="foods">饮食</h2>
@@ -3686,8 +3714,7 @@
 <span class="ci raisin" title="葡萄干"></span>
 </span></td></tr>
 
-<tr><th><strong id="cold_drink">冷饮 (Cold Drink)</strong><br/><span class="lore">饱和IV</span><br/>
-回复5点魔力值</th><td>水瓶+<a href="#fruits">水果</a><td>
+<tr><th><strong id="cold_drink">冷饮 (Cold Drink)</strong><br/><span class="lore">饱和IV</span></th><td>水瓶+<a href="#fruits">水果</a><td>
 <span class="ui aiom hl2" title="多功能一体机 高温低压模式">
 <span class="water_bottle" title="水瓶"></span>
 <span class="ci banana" title="水果"></span>
@@ -4180,11 +4207,6 @@
 </span></td></tr>
 </tbody></table>
 
-<h3 id="sorcerer_stone">魔导石 (Sorcerer Stone)</h3>
-<span class="ui single"><span class="ci sorcerer_stone"></span></span>
-<p>玩家出生点附近自然生成，无法手动破坏，无掉落。</p>
-<p>可令32米内的玩家每秒回复1点魔法值，上限30点。</p>
-
 <h3 id="magic_rituals">魔法仪式</h3>
 <p>在地面摆出如下形状，然后在青金石上方放置发射器，并在发射器上方放置物品展示框。将材料放入发射器，将待处理的物品放入物品展示框，使用魔杖shift右击并等待即可。</p>
 <p><span class="ui dp">
@@ -4263,7 +4285,7 @@
 <h4 id="attribute_adding">属性附加</h4>
 <ul>
 <li>魔杖等级：至少3级</li>
-<li>附加物：书</li>
+<li>附加物：可佩戴的物品和武器</li>
 <li>时长：60秒</li>
 <li>消耗材料：金锭+附魔之瓶+<a href="#wing_of_sky">稀有掉落物</a>/下界之星</li>
 </ul>
@@ -4331,56 +4353,6 @@
 <span class="ci shard_of_the_darkness" title="黑暗碎片"></span>
 </span></p>
 <p>仪式完成后，破损刷怪箱将会变成刷怪箱。</p>
-
-<h3 id="magic">魔法</h3>
-<p>若要使用魔法，玩家需要副手持有魔杖，此时会显示技能菜单和魔法值。通过滚动鼠标滑轮来选择相应魔法，然后按下F键发动。玩家需要拥有足够的魔法值。</p>
-<table><thead><tr><th colspan="2">魔法</th><th>效果</th><th>范围/时长</th><th>魔杖等级</th><th>魔法值</th></tr></thead><tbody>
-<tr><td rowspan="3"><span class="ui single"><span class="ci summon_wind"></span></span></td><td rowspan="3">召唤术：风</td><td rowspan="3">将前方一定范围内实体吹向空中并掉落</td>
-	<td>半径2米</td><td>1级</td><td rowspan="3">10</td></tr>
-<tr><td>半径3米</td><td>2级</td></tr>
-<tr><td>半径5米</td><td>3级</td></tr>
-<tr><td rowspan="3"><span class="ui single"><span class="ci summon_fire"></span></span></td><td rowspan="3">召唤术：火</td><td rowspan="3">在前方地面(32米内)召唤火焰</td>
-	<td>1米×3米×1米</td><td>1级</td><td rowspan="3">10</td></tr>
-<tr><td>3米×3米×3米</td><td>2级</td></tr>
-<tr><td>5米×3米×5米</td><td>3级</td></tr>
-<tr><td rowspan="3"><span class="ui single"><span class="ci summon_thunder"></span></span></td><td rowspan="3">召唤术：雷</td><td rowspan="3">召唤闪电</td>
-	<td>1道</td><td>1级</td><td rowspan="3">20</td></tr>
-<tr><td>5道</td><td>2级</td></tr>
-<tr><td>9道</td><td>3级</td></tr>
-<tr><td rowspan="3"><span class="ui single"><span class="ci summon_rain"></span></span></td><td rowspan="3">召唤术：雨</td><td rowspan="3">召唤雨</td>
-	<td>5分钟雨</td><td>1级</td><td rowspan="3">10</td></tr>
-<tr><td>10分钟雨</td><td>2级</td></tr>
-<tr><td>15分钟雷雨</td><td>3级</td></tr>
-<tr><td rowspan="3"><span class="ui single"><span class="ci summon_spirit"></span></span></td><td rowspan="3">召唤术：灵</td><td rowspan="3">将前方实体石化(32米内)</td>
-	<td>10秒</td><td>1级</td><td rowspan="3">5</td></tr>
-<tr><td>15秒</td><td>2级</td></tr>
-<tr><td>20秒</td><td>3级</td></tr>
-
-<tr><td rowspan="3"><span class="ui single"><span class="ci catalytic_wind"></span></span></td><td rowspan="3">催化术：风</td><td rowspan="3">让玩家获得悬浮效果</td>
-	<td>60秒</td><td>1级</td><td rowspan="3">5</td></tr>
-<tr><td>90秒</td><td>2级</td></tr>
-<tr><td>120秒</td><td>3级</td></tr>
-<tr><td rowspan="3"><span class="ui single"><span class="ci catalytic_fire"></span></span></td><td rowspan="3">催化术：火</td><td rowspan="3">将附近的熔炉全部点燃，使其可烧炼物品</td>
-	<td>3米内，320秒</td><td>1级</td><td rowspan="3">10</td></tr>
-<tr><td>7米内，640秒</td><td>2级</td></tr>
-<tr><td>11米内，960秒</td><td>3级</td></tr>
-<tr><td rowspan="3"><span class="ui single"><span class="ci catalytic_thunder"></span></span></td><td rowspan="3">催化术：雷</td><td rowspan="3">恢复玩家生命</td>
-	<td><img src="items/heart.png" title="4" /><img src="items/heart.png" title="4" /> 4点</td><td>1级</td><td rowspan="3">10</td></tr>
-<tr><td><img src="items/heart.png" title="8" /><img src="items/heart.png" title="8" /><img src="items/heart.png" title="8" /><img src="items/heart.png" title="8" /> 8点</td><td>2级</td></tr>
-<tr><td><img src="items/heart.png" title="16" /><img src="items/heart.png" title="16" /><img src="items/heart.png" title="16" /><img src="items/heart.png" title="16" /><img src="items/heart.png" title="16" /><img src="items/heart.png" title="16" /><img src="items/heart.png" title="16" /><img src="items/heart.png" title="16" /> 16点</td><td>3级</td></tr>
-<tr><td rowspan="3"><span class="ui single"><span class="ci catalytic_rain"></span></span></td><td rowspan="3">催化术：雨</td><td rowspan="3">清除附近的火，并将熔岩变成黑曜石</td>
-	<td>11米×11米</td><td>1级</td><td rowspan="3">10</td></tr>
-<tr><td>15米×15米</td><td>2级</td></tr>
-<tr><td>21米×21米</td><td>3级</td></tr>
-<tr><td rowspan="3"><span class="ui single"><span class="ci catalytic_spirit"></span></span></td><td rowspan="3">催化术：灵</td><td rowspan="3">将附近的<abbr title="小麦、马铃薯、胡萝卜、甜菜根、甘蔗、地狱疣">作物</abbr>催熟</td>
-	<td>1米×1米</td><td>1级</td><td rowspan="3">5</td></tr>
-<tr><td>3米×3米</td><td>2级</td></tr>
-<tr><td>5米×5米</td><td>3级</td></tr>
-<tr><td rowspan="3"><span class="ui single"><span class="ci catalytic_earth"></span></span></td><td rowspan="3">催化术：地</td><td rowspan="3">在前方地表召唤裂缝</td>
-	<td>3米</td><td>1级</td><td rowspan="3">10</td></tr>
-<tr><td>5米</td><td>2级</td></tr>
-<tr><td>7米</td><td>3级</td></tr>
-</tbody></table>
 
 <!------------------------------------------------------------------------------------------------->
 <h2 id="decorations">装饰</h3>
@@ -4500,8 +4472,7 @@
 <span class="ci cat_breed" title="猫胡子"></span>
 </span></td></tr>
 
-<tr><th><strong id="garland">花环 (Garland)</strong><br/>
-<p>每10秒恢复玩家1点魔力值，上限30点。</p></th>
+<tr><th><strong id="garland">花环 (Garland)</strong></th>
 <td>虞美人+蒲公英+木棍</td>
 <td><span class="ui cm" title="合成器">
 <span class="poppy" title="虞美人"></span>
@@ -4592,8 +4563,7 @@
 <span class="ci pants" title="胖次"></span>
 </span></td></tr>
 
-<tr><th><strong id="empire_hat">冕旒 (Empire Hat)</strong><br/>
-每10秒恢复玩家1点魔力值，上限100点。</th>
+<tr><th><strong id="empire_hat">冕旒 (Empire Hat)</strong></th>
 <td>黄色染料+末影珍珠+黄色床</td>
 <td><span class="ui cm" title="合成器">
 <span class="yellow_dye" title="黄色染料"></span>
@@ -4638,8 +4608,7 @@
 <span class="ci glow_hat" title="荧光帽"></span>
 </span></td></tr>
 
-<tr><th><strong id="green_hat">原谅帽 (Green Hat)</strong><br/>
-每10秒恢复玩家1点魔力值，上限60点。</th>
+<tr><th><strong id="green_hat">原谅帽 (Green Hat)</strong></th>
 <td>绿宝石</td>
 <td><span class="ui cm" title="合成器">
 <span class="emerald" title="绿宝石"></span>
@@ -4982,66 +4951,6 @@
 
 <!------------------------------------------------------------------------------------------------->
 <h2 id="utilitypp">实用</h2>
-<h3 id="cauldon">炼药锅</h3>
-<p>将下列物品扔进炼药锅可将其变为另一物品，并减少炼药锅一级水位。</p>
-<p class="small">可以一次性扔入多个物品。</p>
-
-<table><thead><tr><th>名称</th><th>材料</th><th>配方</th></tr></thead>
-<tbody>
-<tr><th>玻璃</th><td>染色玻璃</td>
-<td><span class="ui onetoone" title="炼药锅">
-<span class="black_stained_glass" title="染色玻璃"></span>
-<span class="glass" title="玻璃"></span>
-</span></td></tr>
-
-<tr><th>陶瓦</th><td>染色陶瓦</td>
-<td><span class="ui onetoone" title="炼药锅">
-<span class="purple_terracotta" title="染色陶瓦"></span>
-<span class="terracotta" title="陶瓦"></span>
-</span></td></tr>
-
-<tr><th>白色羊毛</th><td>彩色羊毛</td>
-<td><span class="ui onetoone" title="炼药锅">
-<span class="green_wool" title="彩色羊毛"></span>
-<span class="white_wool" title="白色羊毛"></span>
-</span></td></tr>
-
-<tr><th>白色床</th><td>彩色床</td>
-<td><span class="ui onetoone" title="炼药锅">
-<span class="green_bed" title="彩色床"></span>
-<span class="white_bed" title="白色床"></span>
-</span></td></tr>
-
-<tr><th>湿海绵</th><td>海绵</td>
-<td><span class="ui onetoone" title="炼药锅">
-<span class="sponge" title="海绵"></span>
-<span class="wet_sponge" title="湿海绵"></span>
-</span></td></tr>
-
-<tr><th>黑曜石</th><td>熔岩桶(桶会返还)</td>
-<td><span class="ui onetoone" title="炼药锅">
-<span class="lava_bucket" title="熔岩桶"></span>
-<span class="obsidian" title="黑曜石"></span>
-</span></td></tr>
-
-<tr><th>活塞</th><td>粘性活塞</td>
-<td><span class="ui onetoone" title="炼药锅">
-<span class="sticky_piston" title="粘性活塞"></span>
-<span class="piston" title="活塞"></span>
-</span></td></tr>
-
-<tr><th>空地图</th><td>地图</td>
-<td><span class="ui onetoone" title="炼药锅">
-<span class="filled_map" title="地图"></span>
-<span class="map" title="空地图"></span>
-</span></td></tr>
-
-<tr><th>混凝土</th><td>混凝土粉末</td>
-<td><span class="ui onetoone" title="炼药锅">
-<span class="black_concrete_powder" title="混凝土粉末"></span>
-<span class="black_concrete" title="混凝土"></span>
-</span></td></tr>
-</tbody></table>
 
 <h3 id="leaves_fast_decay">树叶快速腐烂</h3>
 <p>现在树上的树叶没有邻近的木头时，会迅速腐烂。</p>
@@ -5057,27 +4966,9 @@
 <p>当玩家主手持有木棍右击箱子/潜影箱后，容器内的物品会被整理。</p>
 <p>使用命令<code>/trigger cppTrim</code>来为玩家背包(不含快捷栏)整理。</p>
 
-<h3 id="dispenser_plant">自动种植</h3>
-<p>当发射器发射的物品可以种植在前方位置时，会自动种植。支持本模组的树苗和花草。红石信号频率太快会导致无法种植。</p>
-<table><thead><tr><th>位置</th><th>作物</th></tr></thead><tbody>
-<tr><td>泥土等上方</td><td>树苗</td></tr>
-<tr><td>耕地上方</td><td>小麦种子、甜菜种子、南瓜种子、西瓜种子、胡萝卜、马铃薯</td></tr>
-<tr><td>灵魂沙上方</td><td>地狱疣</td></tr>
-<tr><td>末地石上方</td><td>紫颂花</td></tr>
-<tr><td>灰化土、菌丝上方</td><td>蘑菇</td></tr>
-<tr><td>丛林木侧面</td><td>可可豆</td></tr>
-</tbody></table>
-<p><img style="height:200px" src="items/screenshots/dispenser_plant.png" /></p>
-
 <h3 id="auto_torch">自动插火把</h3>
 <p>使用指令<code>/trigger cppAutoTorch set 刻数</code>，可以设定每隔一段时间自动插一根火把。设置为0取消自动插火把功能。</p>
 
-<h3 id="vertical_blocks">竖纹方块</h3>
-<p>部分方块双台阶材质修改为竖纹。</p>
-<p><img style="height:160px" src="items/screenshots/vertical_blocks.png" /></p>
-
-<h3 id="nether_dry_wet_sponge">干燥湿海绵</h3>
-<p>湿海绵在下界可直接被干燥为海绵。</p>
 <!------------------------------------------------------------------------------------------------>
 <h2 id="trade">交易</h2>
 <p>为流浪商人增加了8种头饰，6项28种交易。</p>
@@ -5123,9 +5014,9 @@
 
 <!------------------------------------------------------------------------------------------------->
 <h2 id="block_sky_domain">空域开端</h2>
-<p>空岛模式会在y=0处为空气时自动开启，建议玩家使用自定义超平坦如<code>minecraft:air;minecraft:mountains;</code>进入。也可输入下述命令手动开启<code>/scoreboard players set #skyislandMode cppValue 1</code></p>
-<p>该模块旨在为空岛玩家提供从泥土到末地的完整科技链。加载后会生成一块基岩和一个箱子，箱子内包含1泥土、1橡树树苗、16骨粉。</p>
-<p>空岛模式下不会生成模组的结构。</p>
+<p>开启本模块请使用craftingpp_skyisland数据包代替craftingpp数据包。建议玩家使用自定义超平坦如<code>minecraft:air;minecraft:mountains;</code>进入。</p>
+<p>该数据包旨在为空岛玩家提供从泥土到末地的完整科技链。加载后会生成一块基岩和一个箱子，箱子内包含1泥土、1橡树树苗、16骨粉。</p>
+<p>空岛模式下不会生成模组的结构。不同玩家的间距为100米。</p>
 <p>玩家破坏树叶、草丛、枯萎的灌木、海草会掉落下述物品。</p>
 
 <table style="font-size:88%;text-align:center">
@@ -5476,7 +5367,7 @@
 <a href="https://space.bilibili.com/4469715"><img src="items/bilibili.png" /></a>
 </p>
 
-<p>最后更新 2019-10-16</p>
+<p>最后更新 2019-10-25</p>
 </footer>
 </article>
 </body></html>
