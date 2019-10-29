@@ -47,9 +47,9 @@
 <!-------------------------------------------------------------------------------------------------->
 <h2 id="introduction">简介</h2>
 <p style="color:red">🎉欢迎来到原版模组《更多的合成》主页！</p>
-<p>原版模组一般是指使用命令而非<abbr title="forge liteloader rift fibric 等">mod api</abbr>来对游戏的可玩性做出修改。自1.13起，原版模组一般以数据包的形式出现。</p>
+<p>原版模组一般是指使用命令而非<abbr title="forge liteloader rift fabric 等">mod api</abbr>来对游戏的可玩性做出修改。自1.13起，原版模组一般以数据包的形式出现。</p>
 <p>《更多的合成》是国内论坛最大的原版模组，包括数百种物品、材料、工具、装饰等，以及新的村民交易和空岛系统。</p>
-<p>最新正式版本为v1.9.21，于2019年10月25日发布，支持Minecraft 1.14.x版本。此次更新添加了魔杖的魔法效果，对大量模组物品和方块材质进行了重新绘制，同时也添加了很多实用工具、食物、装饰和药水。具体来说，加入了物品处理机、剪枝器、玻璃镐、搬箱器、垃圾桶、旗帜、标志、汉堡、披萨、寿司、仰望星空派、水果、葡萄干等，以及重新设计了花草、头颅和空岛。此次更新也加入了获取物品的便捷方式，优化了大量指令，加入了很多可自动化的内容。</p>
+<p>最新正式版本为v1.9.22，于2019年10月29日发布，支持Minecraft 1.14.x版本。此次更新添加了魔杖的魔法效果，对大量模组物品和方块材质进行了重新绘制，同时也添加了很多实用工具、食物、装饰和药水。具体来说，加入了物品处理机、剪枝器、玻璃镐、搬箱器、垃圾桶、旗帜、标志、汉堡、披萨、寿司、仰望星空派、水果、葡萄干等，以及重新设计了花草、头颅和空岛。此次更新也加入了获取物品的便捷方式，优化了大量指令，加入了很多可自动化的内容。</p>
 <p>最新测试版本为v1.10-m08d23，于2019年8月23日发布，支持Minecraft 1.15快照版本。此次更新旨在支持1.15的新内容蜜蜂，并对原有内容进行了调整。</p>
 <p>本模组即将完结，以后应该只会修复bug和优化内容，不会再有大的更新。如遇到Minecraft命令机制大改或新生物等内容，我还是会及时更新代码并支持新的内容。感谢大家一直以来的支持和帮助！</p>
 
@@ -73,9 +73,9 @@
 	</tr>
 	<tr>
 		<td>Java版 1.14.x</td>
-		<td>v1.9.21</td>
-		<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/releases/tag/v1.9.21">github</a></td>
-		<td><a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.9.21.zip">官方</a></td>
+		<td>v1.9.22</td>
+		<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/releases/tag/v1.9.22">github</a></td>
+		<td><a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.9.22.zip">官方</a></td>
 		<td><a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/1.9.html">1.9</a></td>
 	</tr>
 	<tr>
@@ -5015,65 +5015,8 @@
 <h2 id="block_sky_domain">空域开端</h2>
 <p>开启本模块请使用craftingpp_skyisland数据包代替craftingpp数据包。建议玩家使用自定义超平坦如<code>minecraft:air;minecraft:mountains;</code>进入。</p>
 <p>该数据包旨在为空岛玩家提供从泥土到末地的完整科技链。加载后会生成一块基岩和一个箱子，箱子内包含1泥土、1橡树树苗、16骨粉。</p>
-<p>空岛模式下不会生成模组的结构。不同玩家的间距为100米。</p>
-<p>玩家破坏树叶、草丛、枯萎的灌木、海草会掉落下述物品。</p>
-
-<table style="font-size:88%;text-align:center">
-<thead><tr>
-	<th rowspan="1"></th>
-	<th colspan="5">树叶</th>
-	<th colspan="7">草丛</th>
-	<th colspan="6">枯萎的灌木</th>
-	<th colspan="1">海草</th>
-</tr></thead>
-<tbody><tr>
-	<th>方块</th>
-	<td colspan="5">
-		<span class="ui single"><span class="oak_leaves" title="树叶"></span></span><span class="ui single"><span class="spruce_leaves" title="树叶"></span></span><span class="ui single"><span class="birch_leaves" title="树叶"></span></span><span class="ui single"><span class="jungle_leaves" title="树叶"></span></span><span class="ui single"><span class="acacia_leaves" title="树叶"></span></span><span class="ui single"><span class="dark_oak_leaves" title="树叶"></span></span>
-	</td>
-	<td colspan="7">
-		<span class="ui single"><span class="grass" title="草丛"></span></span>
-	</td>
-	<td colspan="6">
-		<span class="ui single"><span class="dead_bush" title="枯萎的灌木"></span></span>
-	</td>
-	<td colspan="1">
-		<span class="ui single"><span class="seagrass" title="海草"></span></span>
-	</td>
-</tr>
-<tr>
-	<th rowspan="2">掉落物</th>
-	<td><span class="ui single"><span class="string" title="线"></span></span></td>
-	<td><span class="ui single"><span class="bone_meal" title="骨粉"></span></span></td>
-	<td><span class="ui single"><span class="oak_sapling" title="树苗"></span></span></td>
-	<td><span class="ui single"><span class="stick" title="木棍"></span></span></td>
-	<td><span class="ui single"><span class="apple" title="苹果"></span></span></td>
-	
-	<td><span class="ui single"><span class="wheat_seeds" title="小麦种子"></span></span></td>
-	<td><span class="ui single"><span class="beetroot_seeds" title="甜菜种子"></span></span></td>
-	<td><span class="ui single"><span class="pumpkin_seeds" title="南瓜种子"></span></span></td>
-	<td><span class="ui single"><span class="melon_seeds" title="西瓜种子"></span></span></td>
-	<td><span class="ui single"><span class="carrot" title="胡萝卜"></span></span></td>
-	<td><span class="ui single"><span class="potato" title="马铃薯"></span></span></td>
-	<td><span class="ui single"><span class="sweet_berries" title="甜浆果"></span></span></td>
-	
-	<td><span class="ui single"><span class="stick" title="木棍"></span></span></td>
-	<td><span class="ui single"><span class="cactus" title="仙人掌"></span></span></td>
-	<td><span class="ui single"><span class="sugar_cane" title="甘蔗"></span></span></td>
-	<td><span class="ui single"><span class="brown_mushroom" title="棕色蘑菇"></span></span></td>
-	<td><span class="ui single"><span class="red_mushroom" title="红色蘑菇"></span></span></td>
-	<td><span class="ui single"><span class="cocoa_beans" title="可可豆"></span></span></td>
-	
-	<td><span class="ui single"><span class="kelp" title="海带"></span></span></td>
-</tr>
-<tr>
-	<td>10% 线</td><td>10% 骨粉</td><td>通常 树苗</td><td>通常 木棍</td><td>通常 苹果</td>
-	<td>10% 小麦种子</td><td>5% 甜菜种子</td><td>5% 南瓜种子</td><td>5% 西瓜种子</td><td>5% 胡萝卜</td><td>5% 马铃薯</td><td>5% 甜浆果</td>
-	<td>20% 1~2 木棍</td><td>10% 仙人掌</td><td>10% 甘蔗</td><td>10% 棕色蘑菇</td><td>10% 红色蘑菇</td><td>10% 可可豆</td>
-	<td>5% 海带</td>
-</tr>
-</tbody></table>
-
+<p>空岛模式下不会生成模组的结构。不同玩家的间距为200米。</p>
+<p>玩家破坏树叶会额外掉落骨粉和线。</p>
 <p>在熔炉上方放置雪块可将其变成方块破坏器，之后在其上方放置泥土/砂砾/圆石/石头/沙子/灵魂沙，然后右击方块破坏器可以打碎该方块。掉落物如下：</p>
 <table style="font-size:88%;text-align:center">
 <thead><tr>
@@ -5366,7 +5309,7 @@
 <a href="https://space.bilibili.com/4469715"><img src="items/bilibili.png" /></a>
 </p>
 
-<p>最后更新 2019-10-25</p>
+<p>最后更新 2019-10-29</p>
 </footer>
 </article>
 </body></html>
