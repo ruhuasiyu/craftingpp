@@ -3,6 +3,9 @@
 
 若要支持模组容器，请额外安装[原版模组容器扩展](https://github.com/ruhuasiyu/CraftingPlusPlus/tree/master/other_datapacks/原版模组容器扩展)中的相应数据包。
 
+v1.9 2019/10/31
++ 修复了有时候物品进错箱子的问题。
+
 v1.8 2019/09/29
 + 改进了算法不再要求大箱子必须容量为27*2了。
 
