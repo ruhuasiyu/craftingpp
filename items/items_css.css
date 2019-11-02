@@ -1146,14 +1146,14 @@ span.break_hand{	background-position: -64px -352px;}
 span.smart_hand{	background-position: -96px -352px;}
 span.angry_hand{	background-position: -128px -352px;}
 span.toughen_hand{	background-position: -160px -352px;}
-span.golem{	background-position: -192px -352px;}
+span.empty_golem{	background-position: -192px -352px;}
 span.golem_farmer{	background-position: -224px -352px;}
 span.golem_miner{	background-position: -256px -352px;}
 
 span.golem_warrior{	background-position: -0px -384px;}
 span.golem_fisher{	background-position: -32px -384px;}
 span.golem_herder{	background-position: -64px -384px;}
-span.equipped_golem{	background-position: -64px -384px;}
+span.golem{	background-position: -64px -384px;}
 span.raw_colorful_vegetable{	background-position: -96px -384px;}
 span.colorful_vegetable{	background-position: -128px -384px;}
 span.raw_braised_pork_with_potatoes{	background-position: -160px -384px;}

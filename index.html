@@ -49,7 +49,7 @@
 <p style="color:red">🎉欢迎来到原版模组《更多的合成》主页！</p>
 <p>原版模组一般是指使用命令而非<abbr title="forge liteloader rift fabric 等">mod api</abbr>来对游戏的可玩性做出修改。自1.13起，原版模组一般以数据包的形式出现。</p>
 <p>《更多的合成》是国内论坛最大的原版模组，包括数百种物品、材料、工具、装饰等，以及新的村民交易和空岛系统。</p>
-<p>最新正式版本为v1.9.22，于2019年10月29日发布，支持Minecraft 1.14.x版本。此次更新添加了魔杖的魔法效果，对大量模组物品和方块材质进行了重新绘制，同时也添加了很多实用工具、食物、装饰和药水。具体来说，加入了物品处理机、剪枝器、玻璃镐、搬箱器、垃圾桶、旗帜、标志、汉堡、披萨、寿司、仰望星空派、水果、葡萄干等，以及重新设计了花草、头颅和空岛。此次更新也加入了获取物品的便捷方式，优化了大量指令，加入了很多可自动化的内容。</p>
+<p>最新正式版本为v1.9.23，于2019年10月29日发布，支持Minecraft 1.14.x版本。此次更新添加了魔杖的魔法效果，对大量模组物品和方块材质进行了重新绘制，同时也添加了很多实用工具、食物、装饰和药水。具体来说，加入了物品处理机、剪枝器、玻璃镐、搬箱器、垃圾桶、旗帜、标志、汉堡、披萨、寿司、仰望星空派、水果、葡萄干等，以及重新设计了花草、头颅和空岛。此次更新也加入了获取物品的便捷方式，优化了大量指令，加入了很多可自动化的内容。</p>
 <p>最新测试版本为v1.10-m08d23，于2019年8月23日发布，支持Minecraft 1.15快照版本。此次更新旨在支持1.15的新内容蜜蜂，并对原有内容进行了调整。</p>
 <p>本模组即将完结，以后应该只会修复bug和优化内容，不会再有大的更新。如遇到Minecraft命令机制大改或新生物等内容，我还是会及时更新代码并支持新的内容。感谢大家一直以来的支持和帮助！</p>
 
@@ -73,9 +73,9 @@
 	</tr>
 	<tr>
 		<td>Java版 1.14.x</td>
-		<td>v1.9.22</td>
-		<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/releases/tag/v1.9.22">github</a></td>
-		<td><a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.9.22.zip">官方</a></td>
+		<td>v1.9.23</td>
+		<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/releases/tag/v1.9.23">github</a></td>
+		<td><a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.9.23.zip">官方</a></td>
 		<td><a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/1.9.html">1.9</a></td>
 	</tr>
 	<tr>
@@ -288,6 +288,9 @@
 · <a href="#grafter"><span class="ci" style="background-position: -128px -144px;"></span>剪枝器</a> 
 · <a href="#glass_pickaxe"><span class="ci" style="background-position: -112px -416px;"></span>玻璃镐</a> 
 · <a href="#chest_transporter"><span class="ci" style="background-position: -16px -720px;"></span>搬箱器</a> 
+· <a href="#industrious_hand"><span class="ci" style="background-position: -16px -176px;"></span>勤劳之手</a> 
+· <a href="#empty_golem"><span class="ci" style="background-position: -96px -176px;"></span>空白傀儡</a>
+· <a href="#golem"><span class="ci" style="background-position: -96px -176px;"></span>傀儡</a>
 · <a href="#firecrackers"><span class="ci" style="background-position: -80px -624px;"></span>鞭炮</a>
 · <a href="#flags"><span class="ci" style="background-position: -0px -576px;"></span><span class="ci" style="background-position: -16px -576px;"></span><span class="ci" style="background-position: -32px -576px;"></span><span class="ci" style="background-position: -48px -576px;"></span><span class="ci" style="background-position: -64px -576px;"></span>旗帜</a>
 · <a href="#logos"><span class="ci" style="background-position: -80px -576px;"></span><span class="ci" style="background-position: -96px -576px;"></span><span class="ci" style="background-position: -112px -576px;"></span><span class="ci" style="background-position: -128px -576px;"></span><span class="ci" style="background-position: -144px -592px;"></span><span class="ci" style="background-position: -0px -736px;"></span>标志</a>
@@ -297,24 +300,6 @@
 · <a href="#chainmail_armors"><span style="background-position: -16px -0px;"></span><span style="background-position: -32px -0px;"></span><span style="background-position: -48px -0px;"></span><span style="background-position: -64px -0px;"></span>锁链盔甲</a>
 · <a href="#anvil"><span style="background-position: -128px -624px;"></span><span style="background-position: -64px -624px;"></span><span style="background-position: -240px -608px;"></span>铁砧</a>
 · <a href="#spawn_egg"><span style="background-position: -416px -560px;"></span><span style="background-position: -240px -576px;"></span><span style="background-position: -128px -576px;"></span><span style="background-position: -160px -576px;"></span><span style="background-position: -368px -560px;"></span><span style="background-position: -352px -560px;"></span><span style="background-position: -112px -576px;"></span>刷怪蛋</a>
-</td></tr>
-
-
-<tr><th>手</th><td>
-  <a href="#industrious_hand"><span class="ci" style="background-position: -16px -176px;"></span>勤劳之手</a> 
-· <a href="#break_hand"><span class="ci" style="background-position: -32px -176px;"></span>破坏之手</a>
-· <a href="#smart_hand"><span class="ci" style="background-position: -48px -176px;"></span>灵巧之手</a> 
-· <a href="#angry_hand"><span class="ci" style="background-position: -64px -176px;"></span>愤怒之手</a> 
-· <a href="#toughen_hand"><span class="ci" style="background-position: -80px -176px;"></span>历练之手</a> 
-</td></tr>
-
-<tr><th>傀儡</th><td>
-  <a href="#golem"><span class="ci" style="background-position: -96px -176px;"></span>傀儡</a>
-· <a href="#golem_farmer"><span class="ci" style="background-position: -112px -176px;"></span>傀儡农民</a>
-· <a href="#golem_fisher"><span class="ci" style="background-position: -128px -176px;"></span>傀儡矿工</a>
-· <a href="#golem_fisher"><span class="ci" style="background-position: -0px -192px;"></span>傀儡渔夫</a>
-· <a href="#golem_warrior"><span class="ci" style="background-position: -16px -192px;"></span>傀儡战士</a>
-· <a href="#golem_herder"><span class="ci" style="background-position: -32px -192px;"></span>傀儡牧民</a>
 </td></tr>
 
 <tr><th>食物</th><td>
@@ -450,8 +435,7 @@
 <!------------------------------------------------------------------------------------------------->
 <h2 id="generation">自然生成</h2>
 <h3 id="creeper_dungeon">爬行者地牢 (Creeper Dungeon)</h3>
-<p>天然生成在主世界的地下y=20附近。与其它地牢类似，爬行者地牢是一个由圆石和苔石构成的小房间，包含苦力怕刷怪箱和地牢宝箱。</p>
-<p class="small">与通常地牢不同，爬行者地牢是全封闭的。注意爬行者的爆炸可能会破坏刷怪箱。</p>
+<p>原版主世界的地牢的刷怪箱有几率为爬行者刷怪箱，注意爬行者的爆炸可能会破坏刷怪箱。</p>
 
 <h3 id="enchanting_room">附魔室 (Enchanting Room)</h3>
 <p>天然生成在主世界的陆地地表。附魔室是一个由黑曜石、荧石、<a href="#empty_bookshelf">空书架</a>、淡蓝色玻璃、地狱砖、附魔台构成的小房间，空书架内含有纸、书、附魔书、指南针、空地图、要塞地图、地牢地图和<a href="#ancient_scroll">上古卷轴</a>，并包含一个幻术师。</p>
@@ -726,10 +710,10 @@
 <span class="ui single"><span class="ci trade_machine"></span></span>
 <table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
 <tr><th>交易机</th>
-<td><a href="#enchanted_iron">附魔铁锭</a>+<a href="#golem">傀儡</a>+木桶+绿宝石+<a href="#certification_of_earth">大地之证</a></td>
+<td><a href="#enchanted_iron">附魔铁锭</a>+<a href="#empty_golem">空白傀儡</a>+木桶+绿宝石+<a href="#certification_of_earth">大地之证</a></td>
 <td><span class="ui cm" title="合成器">
 <span class="ci enchanted_iron" title="附魔铁锭"></span>
-<span class="ci golem" title="傀儡"></span>
+<span class="ci empty_golem" title="空白傀儡"></span>
 <span class="ci enchanted_iron" title="附魔铁锭"></span>
 <span class="ci enchanted_iron" title="附魔铁锭"></span>
 <span class="barrel" title="木桶"></span>
@@ -2364,6 +2348,105 @@
 <span class="red_sand" title="红沙"></span>
 <span class="shapeless" title="此配方是无形的，材料可以以任何排列方式放置在合成格内。"></span>
 </span></td></tr>
+
+<tr><th>雪球</th><td>木棍+线</td>
+<td><span class="ui ct" title="工作台">
+<span class="stick" title="木棍"></span>
+<span class="stick" title="木棍"></span>
+<span class="stick" title="木棍"></span>
+<span class="stick" title="木棍"></span>
+<span class="string" title="线"></span>
+<span class="stick" title="木棍"></span>
+<span class="stick" title="木棍"></span>
+<span class="stick" title="木棍"></span>
+<span class="stick" title="木棍"></span>
+<span class="snowball" title="雪球"></span>
+</span></td></tr>
+
+<tr><th>泥土</th><td>雪球+树苗或小麦或甜菜或马铃薯或胡萝卜(任意组合)</td>
+<td><span class="ui ct" title="工作台">
+<span class="snowball" title="雪球"></span>
+<span class="oak_sapling" title="树苗"></span>
+<span class="oak_sapling" title="树苗"></span>
+<span class="oak_sapling" title="树苗"></span>
+<span class="oak_sapling" title="树苗"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="dirt" title="泥土"></span>
+<span class="shapeless" title="此配方是无形的，材料可以以任何排列方式放置在合成格内。"></span>
+</span></td></tr>
+
+<tr><th>圆石</th><td>泥土+雪球</td>
+<td><span class="ui ct" title="工作台">
+<span class="dirt" title="泥土"></span>
+<span class="dirt" title="泥土"></span>
+<span class="dirt" title="泥土"></span>
+<span class="dirt" title="泥土"></span>
+<span class="snowball" title="雪球"></span>
+<span class="dirt" title="泥土"></span>
+<span class="dirt" title="泥土"></span>
+<span class="dirt" title="泥土"></span>
+<span class="dirt" title="泥土"></span>
+<span class="cobblestone" title="圆石"><span class="stack">8</span></span>
+</span></td></tr>
+
+<tr><th>泥土</th><td>圆石+雪球</td>
+<td><span class="ui ct" title="工作台">
+<span class="cobblestone" title="圆石"></span>
+<span class="cobblestone" title="圆石"></span>
+<span class="cobblestone" title="圆石"></span>
+<span class="cobblestone" title="圆石"></span>
+<span class="snowball" title="雪球"></span>
+<span class="cobblestone" title="圆石"></span>
+<span class="cobblestone" title="圆石"></span>
+<span class="cobblestone" title="圆石"></span>
+<span class="cobblestone" title="圆石"></span>
+<span class="dirt" title="泥土"><span class="stack">8</span></span>
+</span></td></tr>
+
+<tr><th>鸡蛋</th><td>雪球+绿宝石</td>
+<td><span class="ui ct" title="工作台">
+<span class="snowball" title="雪球"></span>
+<span class="snowball" title="雪球"></span>
+<span class="snowball" title="雪球"></span>
+<span class="snowball" title="雪球"></span>
+<span class="emerald" title="绿宝石"></span>
+<span class="snowball" title="雪球"></span>
+<span class="snowball" title="雪球"></span>
+<span class="snowball" title="雪球"></span>
+<span class="snowball" title="雪球"></span>
+<span class="egg" title="鸡蛋"><span class="stack">8</span></span>
+</span></td></tr>
+
+<tr><th>烈焰棒</th><td>烈焰粉+木棍</td>
+<td><span class="ui ct" title="工作台">
+<span class="blaze_powder" title="烈焰粉"></span>
+<span class="blaze_powder" title="烈焰粉"></span>
+<span class="blaze_powder" title="烈焰粉"></span>
+<span class="blaze_powder" title="烈焰粉"></span>
+<span class="stick" title="木棍"></span>
+<span class="blaze_powder" title="烈焰粉"></span>
+<span class="blaze_powder" title="烈焰粉"></span>
+<span class="blaze_powder" title="烈焰粉"></span>
+<span class="blaze_powder" title="烈焰粉"></span>
+<span class="blaze_rod" title="烈焰棒"></span>
+</span></td></tr>
+
+<tr><th>草方块</th><td>草+泥土</td>
+<td><span class="ui ct" title="工作台">
+<span class="grass" title="草"></span>
+<span class="grass" title="草"></span>
+<span class="grass" title="草"></span>
+<span class="grass" title="草"></span>
+<span class="dirt" title="泥土"></span>
+<span class="grass" title="草"></span>
+<span class="grass" title="草"></span>
+<span class="grass" title="草"></span>
+<span class="grass" title="草"></span>
+<span class="grass_block" title="草方块"></span>
+
 </tbody></table>
 
 <h2 id="dusts">粉末</h2>
@@ -2791,7 +2874,7 @@
 <span class="white_dye" title="白色染料"></span>
 <span class="ci white_force_of_lightning" title="白色电之力"></span>
 </span></td>
-<td>右击移除地面物品的附魔。</td></tr>
+<td>在周围32米内的生物处召唤闪电。</td></tr>
 
 <tr><th><strong id="black_force_of_moon">黑色月之力 (Black Force of Moon)</strong></th><td>黑色染料+荧石粉+<a href="#dragon_egg">龙蛋</a></td>
 <td><span class="ui cm" title="合成器">
@@ -3009,7 +3092,94 @@
 <span class="ci firecrackers" title="鞭炮"></span>
 </span></td>
 <td>放置后生成一个即将爆炸的tnt，引线时长1.5秒。</td></tr>
+
+<tr>
+	<th><strong id="break_hand">破坏之手 (Break Hand)</strong></th>
+	<td><a href="#rare_earth_glass">稀土玻璃</a>+<a href="#heads">末影人头</a>+钻石稿+<a href="#reinforced_glass">钢化玻璃</a>+<a href="#experience_bottle">附魔之瓶</a></td>
+	<td><span class="ui cm" title="合成器">
+		<span class="ci rare_earth_glass" title="稀土玻璃"></span>
+		<span class="enderman_head" title="末影人头"></span>
+		<span class="ci rare_earth_glass" title="稀土玻璃"></span>
+		<span class="ci rare_earth_glass" title="稀土玻璃"></span>
+		<span class="diamond_pickaxe" title="钻石镐"></span>
+		<span class="ci rare_earth_glass" title="稀土玻璃"></span>
+		<span class="ci reinforced_glass" title="钢化玻璃"></span>
+		<span class="experience_bottle" title="附魔之瓶"></span>
+		<span class="ci reinforced_glass" title="钢化玻璃"></span>
+		<span class="ci break_hand" title="破坏之手"></span>
+		</span></td>
+	<td>放置在物品展示框时，会破坏正上方的方块。</td>
+</tr>
 </tbody></table>
+
+<h3 id="golem">傀儡</h3>
+<span class="ui single"><span class="ci empty_golem"></span></span>
+<span class="ui single"><span class="ci golem"></span></span>
+
+<table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
+<tr><th>空白傀儡 (Empty Golem)</th><td><a href="#experience_bottle">附魔之瓶+<a href="#heads">僵尸的头+<a href="#silicon_plate">硅板</a>+<a href="#enchanted_golden_apple">附魔金苹果</a>+盔甲架+钻石靴子</td>
+<td><span class="ui cm" title="合成器">
+<span class="experience_bottle" title="附魔之瓶"></span>
+<span class="zombie_head" title="僵尸的头"></span>
+<span class="experience_bottle" title="附魔之瓶"></span>
+<span class="ci silicon_plate" title="硅板"></span>
+<span class="golden_apple" title="附魔金苹果"></span>
+<span class="ci silicon_plate" title="硅板"></span>
+<span class="armor_stand" title="盔甲架"></span>
+<span class="diamond_boots" title="钻石靴子"></span>
+<span class="armor_stand" title="盔甲架"></span>
+<span class="ci empty_golem" title="空白傀儡"></span>
+</span></span></td></tr>
+
+<tr><th>傀儡 (Golem)</th>
+<td>潜影盒+工具A+空白傀儡+工具B</td>
+<td><span class="ui cm" title="合成器">
+<span class="empty"></span>
+<span class="shulker_box" title="潜影盒"></span>
+<span class="empty"></span>
+<span class="diamond_hoe" title="工具A"></span>
+<span class="ci empty_golem" title="空白傀儡"></span>
+<span class="diamond_pickaxe" title="工具B"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="empty"></span>
+<span class="ci golem" title="傀儡"></span>
+</span></td></tr>
+</tbody></table>
+<p>合成配方中的潜影盒、工具A、工具B的物品信息均会保存在傀儡上。</p>
+<p>手持傀儡对着下方前6种羊毛右击即可放置，放置后傀儡会不停地高速移动。接触到下述方块/实体会产生相应效果：</p>
+<ul>
+	<li>红色羊毛：方向向东</li>
+	<li>黄色羊毛：方向向南</li>
+	<li>蓝色羊毛：方向向西</li>
+	<li>绿色羊毛：方向向北</li>
+	<li>青色羊毛：方向向上</li>
+	<li>品红色羊毛：方向向下</li>
+	<li>白色羊毛：终止行动并掉落所有物品</li>
+	<li>黑色羊毛或进入虚空：返回出生点</li>
+	<li>橙色羊毛：切换破坏模式(初始状态)/使用模式</li>
+	<li>箱子：放入背包内物品</li>
+	<li>粘液块：尝试推下一个遇到的控制方向的羊毛</li>
+	<li>掉落物：取走物品放入背包</li>
+	<li>经验球：存储为附魔之瓶</li>
+</ul>
+<p>傀儡连续移动80个方块而没有接触到上述方块时，会返回其出生点。</p>
+<p>和平模式下傀儡会直接消失。</p>
+
+<p>破坏模式(初始状态)：傀儡使用工具B</p>
+<ul>
+	<li>若手持剑，则杀死遇到的生物。忽略玩家、凋灵、末影龙和其它模组生物。</li>
+	<li>若没有手持剑，则挖掘遇到的方块。忽略上述方块、未成熟的农作物、瓜梗、树苗、拉杆、压力板、按钮、红石中继器、红石比较器、拌线、拌线钩、箱子、木桶、漏斗。</li>
+</ul>
+<p>使用模式：傀儡使用工具A</p>
+<ul>
+	<li>若手持锄，则会耕下方的地，并种植小麦、胡萝卜、土豆、甜菜根、甜浆果、地狱疣。</li>
+	<li>若手持斧，则会种植可可豆、树苗。</li>
+	<li>若手持锹，则会制造草径。</li>
+	<li>若手持剪刀，则会剪羊毛和南瓜。</li>
+	<li>若手持栓绳，则会喂食动物。</li>
+	<li>若手持钓鱼竿，则会在水中钓鱼。</li>
+</ul>
 
 <h3>旗帜、标志和盾牌图案</h3>
 <table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>	
@@ -3259,149 +3429,6 @@
 <span class="silverfish_spawn_egg" title="蠹虫"></span>
 </span></td></tr>
 </tbody></table>
-
-<h3>手</h3>
-<table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
-<tr><th><strong id="industrious_hand">勤劳之手 (Industrious Hand)</strong></th><td><a href="#rare_earth_glass">稀土玻璃</a>+<a href="#heads">末影人头</a>+钻石锄+<a href="#reinforced_glass">钢化玻璃</a>+<a href="#experience_bottle">附魔之瓶</a></td>
-<td><span class="ui cm" title="合成器">
-<span class="ci rare_earth_glass" title="稀土玻璃"></span>
-<span class="enderman_head" title="末影人头"></span>
-<span class="ci rare_earth_glass" title="稀土玻璃"></span>
-<span class="ci rare_earth_glass" title="稀土玻璃"></span>
-<span class="diamond_hoe" title="钻石锄"></span>
-<span class="ci rare_earth_glass" title="稀土玻璃"></span>
-<span class="ci reinforced_glass" title="钢化玻璃"></span>
-<span class="experience_bottle" title="附魔之瓶"></span>
-<span class="ci reinforced_glass" title="钢化玻璃"></span>
-<span class="ci industrious_hand" title="破坏之手"></span>
-</span></td></tr>
-
-<tr><th><strong id="break_hand">破坏之手 (Break Hand)</strong><br/>
-放置在物品展示框时，会破坏正上方的方块。</th><td><a href="#rare_earth_glass">稀土玻璃</a>+<a href="#heads">末影人头</a>+钻石稿+<a href="#reinforced_glass">钢化玻璃</a>+<a href="#experience_bottle">附魔之瓶</a></td>
-<td><span class="ui cm" title="合成器">
-<span class="ci rare_earth_glass" title="稀土玻璃"></span>
-<span class="enderman_head" title="末影人头"></span>
-<span class="ci rare_earth_glass" title="稀土玻璃"></span>
-<span class="ci rare_earth_glass" title="稀土玻璃"></span>
-<span class="diamond_pickaxe" title="钻石镐"></span>
-<span class="ci rare_earth_glass" title="稀土玻璃"></span>
-<span class="ci reinforced_glass" title="钢化玻璃"></span>
-<span class="experience_bottle" title="附魔之瓶"></span>
-<span class="ci reinforced_glass" title="钢化玻璃"></span>
-<span class="ci break_hand" title="破坏之手"></span>
-</span></td></tr>
-
-<tr><th><strong id="smart_hand">灵巧之手 (Smart Hand)</strong></th><td><a href="#rare_earth_glass">稀土玻璃</a>+<a href="#heads">末影人头</a>+钓鱼竿+<a href="#reinforced_glass">钢化玻璃</a>+<a href="#experience_bottle">附魔之瓶</a></td>
-<td><span class="ui cm" title="合成器">
-<span class="ci rare_earth_glass" title="稀土玻璃"></span>
-<span class="enderman_head" title="末影人头"></span>
-<span class="ci rare_earth_glass" title="稀土玻璃"></span>
-<span class="ci rare_earth_glass" title="稀土玻璃"></span>
-<span class="fishing_rod" title="钓鱼竿"></span>
-<span class="ci rare_earth_glass" title="稀土玻璃"></span>
-<span class="ci reinforced_glass" title="钢化玻璃"></span>
-<span class="experience_bottle" title="附魔之瓶"></span>
-<span class="ci reinforced_glass" title="钢化玻璃"></span>
-<span class="ci smart_hand" title="破坏之手"></span>
-</span></td></tr>
-
-<tr><th><strong id="angry_hand">愤怒之手 (Angry Hand)</strong></th><td><a href="#rare_earth_glass">稀土玻璃</a>+<a href="#heads">末影人头</a>+钻石剑+<a href="#reinforced_glass">钢化玻璃</a>+<a href="#experience_bottle">附魔之瓶</a></td>
-<td><span class="ui cm" title="合成器">
-<span class="ci rare_earth_glass" title="稀土玻璃"></span>
-<span class="enderman_head" title="末影人头"></span>
-<span class="ci rare_earth_glass" title="稀土玻璃"></span>
-<span class="ci rare_earth_glass" title="稀土玻璃"></span>
-<span class="diamond_sword" title="钻石剑"></span>
-<span class="ci rare_earth_glass" title="稀土玻璃"></span>
-<span class="ci reinforced_glass" title="钢化玻璃"></span>
-<span class="experience_bottle" title="附魔之瓶"></span>
-<span class="ci reinforced_glass" title="钢化玻璃"></span>
-<span class="ci angry_hand" title="愤怒之手"></span>
-</span></td></tr>
-
-<tr><th><strong id="toughen_hand">历练之手 (Toughen Hand)</strong></th><td><a href="#rare_earth_glass">稀土玻璃</a>+<a href="#heads">末影人头</a>+栓绳+<a href="#reinforced_glass">钢化玻璃</a>+<a href="#experience_bottle">附魔之瓶</a></td>
-<td><span class="ui cm" title="合成器">
-<span class="ci rare_earth_glass" title="稀土玻璃"></span>
-<span class="enderman_head" title="末影人头"></span>
-<span class="ci rare_earth_glass" title="稀土玻璃"></span>
-<span class="ci rare_earth_glass" title="稀土玻璃"></span>
-<span class="lead" title="栓绳"></span>
-<span class="ci rare_earth_glass" title="稀土玻璃"></span>
-<span class="ci reinforced_glass" title="钢化玻璃"></span>
-<span class="experience_bottle" title="附魔之瓶"></span>
-<span class="ci reinforced_glass" title="钢化玻璃"></span>
-<span class="ci toughen_hand" title="历练之手"></span>
-</span></td></tr>
-</tbody></table>
-
-<h3 id="golem">傀儡</h3>
-<span class="ui single"><span class="ci empty_golem"></span></span>
-<span class="ui single"><span class="ci golem"></span></span>
-
-<table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
-<tr><th>空白傀儡 (Empty Golem)</th><td><a href="#experience_bottle">附魔之瓶+<a href="#heads">僵尸的头+<a href="#silicon_plate">硅板</a>+<a href="#enchanted_golden_apple">附魔金苹果</a>+盔甲架+钻石靴子</td>
-<td><span class="ui cm" title="合成器">
-<span class="experience_bottle" title="附魔之瓶"></span>
-<span class="zombie_head" title="僵尸的头"></span>
-<span class="experience_bottle" title="附魔之瓶"></span>
-<span class="ci silicon_plate" title="硅板"></span>
-<span class="golden_apple" title="附魔金苹果"></span>
-<span class="ci silicon_plate" title="硅板"></span>
-<span class="armor_stand" title="盔甲架"></span>
-<span class="diamond_boots" title="钻石靴子"></span>
-<span class="armor_stand" title="盔甲架"></span>
-<span class="ci empty_golem" title="空白傀儡"></span>
-</span></span></td></tr>
-
-<tr><th>傀儡 (Golem)</th>
-<td>潜影盒+工具A+空白傀儡+工具B</td>
-<td><span class="ui cm" title="合成器">
-<span class="empty"></span>
-<span class="shulker_box" title="潜影盒"></span>
-<span class="empty"></span>
-<span class="diamond_hoe" title="工具A"></span>
-<span class="ci empty_golem" title="空白傀儡"></span>
-<span class="diamond_pickaxe" title="工具B"></span>
-<span class="empty"></span>
-<span class="empty"></span>
-<span class="empty"></span>
-<span class="ci golem" title="傀儡"></span>
-</span></td></tr>
-</tbody></table>
-<p>合成配方中的潜影盒、工具A、工具B的物品信息均会保存在已装配的傀儡上。</p>
-
-<p>手持傀儡对着下方前6种羊毛右击即可放置，放置后傀儡会不停地高速移动。接触到下述方块/实体会产生相应效果：</p>
-<ul>
-	<li>红色羊毛：方向向东</li>
-	<li>黄色羊毛：方向向南</li>
-	<li>蓝色羊毛：方向向西</li>
-	<li>绿色羊毛：方向向北</li>
-	<li>青色羊毛：方向向上</li>
-	<li>品红色羊毛：方向向下</li>
-	<li>白色羊毛：终止行动并掉落所有物品</li>
-	<li>黑色羊毛或进入虚空：返回出生点</li>
-	<li>橙色羊毛：切换破坏模式(初始状态)/使用模式</li>
-	<li>箱子：放入背包内物品</li>
-	<li>粘液块：尝试推下一个遇到的控制方向的羊毛/li>
-	<li>掉落物：取走物品放入背包</li>
-	<li>经验球：存储为附魔之瓶</li>
-</ul>
-<p><span style="color:red">注意请将控制方块合理放置使得傀儡可以沿着路径循环，否则傀儡有可能飞出加载区块！建议先在单机测试！</span>和平模式下傀儡会直接消失。</p>
-
-<p>破坏模式(初始状态)：傀儡使用工具B</p>
-<ul>
-	<li>若手持剑，则杀死遇到的生物。忽略玩家、凋灵、末影龙和其它模组生物。</li>
-	<li>若没有手持剑，则挖掘遇到的方块。忽略上述方块、未成熟的农作物、瓜梗、树苗、拉杆、压力板、按钮、红石中继器、红石比较器、拌线、拌线钩、箱子、木桶、漏斗。</li>
-</ul>
-<p>使用模式：傀儡使用工具A</p>
-<ul>
-	<li>若手持锄，则会耕下方的地，并种植小麦、胡萝卜、土豆、甜菜根、甜浆果、地狱疣。</li>
-	<li>若手持斧，则会种植可可豆、树苗。</li>
-	<li>若手持锹，则会制造草径。</li>
-	<li>若手持剪刀，则会剪羊毛和南瓜。</li>
-	<li>若手持栓绳，则会喂食动物。</li>
-	<li>若手持钓鱼竿，则会在水中钓鱼。</li>
-</ul>
 
 <!------------------------------------------------------------------------------------------------->
 <h2 id="foods">饮食</h2>
@@ -5116,111 +5143,6 @@
 <p>在方块破坏器上方放置炼药锅，然后向炼药锅扔入4个圆石或4个雪球，可以制作岩浆或水。</p>
 <p>将12个绿宝石块摆成末地传送门框架的形状，然后在正中间放置雪块即可得到末地传送门框架。</p>
 <p>玩家杀死生物时背包的沙子会变成灵魂沙。</p>
-
-<h3>合成表</h3>
-<table>
-<thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead>
-<tbody>
-
-<tr><th>雪球</th><td>木棍+线</td>
-<td><span class="ui ct" title="工作台">
-<span class="stick" title="木棍"></span>
-<span class="stick" title="木棍"></span>
-<span class="stick" title="木棍"></span>
-<span class="stick" title="木棍"></span>
-<span class="string" title="线"></span>
-<span class="stick" title="木棍"></span>
-<span class="stick" title="木棍"></span>
-<span class="stick" title="木棍"></span>
-<span class="stick" title="木棍"></span>
-<span class="snowball" title="雪球"></span>
-</span></td></tr>
-
-<tr><th>泥土</th><td>雪球+树苗或小麦或甜菜或马铃薯或胡萝卜(任意组合)</td>
-<td><span class="ui ct" title="工作台">
-<span class="snowball" title="雪球"></span>
-<span class="oak_sapling" title="树苗"></span>
-<span class="oak_sapling" title="树苗"></span>
-<span class="oak_sapling" title="树苗"></span>
-<span class="oak_sapling" title="树苗"></span>
-<span class="empty"></span>
-<span class="empty"></span>
-<span class="empty"></span>
-<span class="empty"></span>
-<span class="dirt" title="泥土"></span>
-<span class="shapeless" title="此配方是无形的，材料可以以任何排列方式放置在合成格内。"></span>
-</span></td></tr>
-
-<tr><th>圆石</th><td>泥土+雪球</td>
-<td><span class="ui ct" title="工作台">
-<span class="dirt" title="泥土"></span>
-<span class="dirt" title="泥土"></span>
-<span class="dirt" title="泥土"></span>
-<span class="dirt" title="泥土"></span>
-<span class="snowball" title="雪球"></span>
-<span class="dirt" title="泥土"></span>
-<span class="dirt" title="泥土"></span>
-<span class="dirt" title="泥土"></span>
-<span class="dirt" title="泥土"></span>
-<span class="cobblestone" title="圆石"><span class="stack">8</span></span>
-</span></td></tr>
-
-<tr><th>泥土</th><td>圆石+雪球</td>
-<td><span class="ui ct" title="工作台">
-<span class="cobblestone" title="圆石"></span>
-<span class="cobblestone" title="圆石"></span>
-<span class="cobblestone" title="圆石"></span>
-<span class="cobblestone" title="圆石"></span>
-<span class="snowball" title="雪球"></span>
-<span class="cobblestone" title="圆石"></span>
-<span class="cobblestone" title="圆石"></span>
-<span class="cobblestone" title="圆石"></span>
-<span class="cobblestone" title="圆石"></span>
-<span class="dirt" title="泥土"><span class="stack">8</span></span>
-</span></td></tr>
-
-<tr><th>鸡蛋</th><td>雪球+绿宝石</td>
-<td><span class="ui ct" title="工作台">
-<span class="snowball" title="雪球"></span>
-<span class="snowball" title="雪球"></span>
-<span class="snowball" title="雪球"></span>
-<span class="snowball" title="雪球"></span>
-<span class="emerald" title="绿宝石"></span>
-<span class="snowball" title="雪球"></span>
-<span class="snowball" title="雪球"></span>
-<span class="snowball" title="雪球"></span>
-<span class="snowball" title="雪球"></span>
-<span class="egg" title="鸡蛋"><span class="stack">8</span></span>
-</span></td></tr>
-
-<tr><th>烈焰棒</th><td>烈焰粉+木棍</td>
-<td><span class="ui ct" title="工作台">
-<span class="blaze_powder" title="烈焰粉"></span>
-<span class="blaze_powder" title="烈焰粉"></span>
-<span class="blaze_powder" title="烈焰粉"></span>
-<span class="blaze_powder" title="烈焰粉"></span>
-<span class="stick" title="木棍"></span>
-<span class="blaze_powder" title="烈焰粉"></span>
-<span class="blaze_powder" title="烈焰粉"></span>
-<span class="blaze_powder" title="烈焰粉"></span>
-<span class="blaze_powder" title="烈焰粉"></span>
-<span class="blaze_rod" title="烈焰棒"></span>
-</span></td></tr>
-
-<tr><th>草方块</th><td>草+泥土</td>
-<td><span class="ui ct" title="工作台">
-<span class="grass" title="草"></span>
-<span class="grass" title="草"></span>
-<span class="grass" title="草"></span>
-<span class="grass" title="草"></span>
-<span class="dirt" title="泥土"></span>
-<span class="grass" title="草"></span>
-<span class="grass" title="草"></span>
-<span class="grass" title="草"></span>
-<span class="grass" title="草"></span>
-<span class="grass_block" title="草方块"></span>
-
-</tbody></table>
 
 <!------------------------------------------------------------------------------------------------>
 <h2 id="advancements">进度</h2>
