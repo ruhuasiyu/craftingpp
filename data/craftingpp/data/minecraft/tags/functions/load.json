@@ -1,5 +1,6 @@
 {
 	"values": [
-		"cpp:load"
+		"cpp:load",
+		"container:load"
 	]
 }

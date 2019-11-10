@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.ore_leaves\\\"}\"},id:\"cpp:ore_leaves\",CustomModelData:12970102}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.ore_leaves\"}'},id:'cpp:ore_leaves',CustomModelData:12970102}"
 						}
 					]
 				}

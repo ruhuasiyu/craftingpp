@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.orange_sign\\\"}\"},id:\"cpp:orange_sign\",CustomModelData:12970002}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.orange_sign\"}'},id:'cpp:orange_sign',CustomModelData:12970002}"
 						}
 					]
 				}

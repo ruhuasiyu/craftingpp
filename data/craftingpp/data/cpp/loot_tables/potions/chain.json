@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.potion.chain\\\"}\",Lore:[\"{\\\"translate\\\":\\\"lore.cpp.long_chain\\\"}\"]},CustomPotionColor:12345678,CustomPotionEffects:[{Id:99b,Amplifier:0b,Duration:9600}],id:\"cpp:potion_of_long_chain\",HideFlags:63,Enchantments:[{id:\"minecraft:binding_curse\"}]}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.potion.chain\"}',Lore:['{\"translate\":\"lore.cpp.long_chain\"}']},id:'cpp:potion_of_long_chain',CustomPotionColor:12345678,CustomPotionEffects:[{Id:99b,Amplifier:0b,Duration:9600}],HideFlags:63,Enchantments:[{id:'minecraft:binding_curse'}]}"
 						}
 					]
 				}

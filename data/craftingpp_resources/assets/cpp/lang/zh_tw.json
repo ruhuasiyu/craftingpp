@@ -86,7 +86,6 @@
 	"item.cpp.broken_spawner":"§r破損的刷怪箱",
 	
 	"block.minecraft.petrified_oak_slab":"§r合成器",
-	"item.cpp.crafting_machine":"§r合成器",
 	"item.cpp.all_in_one_machine":"§r多功能一體機",	
 	"item.cpp.trade_machine":"§r交易機",
 	"item.cpp.mob_projector":"§r生物投影儀",
@@ -118,6 +117,10 @@
 	"item.cpp.output_north":"§r向北輸出",
 	"item.cpp.output_down":"§r向下輸出",
 	"item.cpp.output_up":"§r向上輸出",
+	"item.cpp.emerald_mode":"§r綠寶石模式",
+	"item.cpp.experience_bottle_mode":"§r附魔之瓶模式",
+	"item.cpp.burn_mode":"§r燃燒模式",
+	"item.cpp.create_mode":"§r創造模式",
 	"item.cpp.xp_bar":"§r§6經驗",
 	"lore.cpp.switch":"§a點擊切換",
 	"info.cpp.high_pressure_plugin":"§6[Crafting++]§r 高壓插件已安裝",
@@ -605,6 +608,7 @@
 	"info.cpp.load2":"§e點擊此處進入wiki",
 	"info.cpp.load3":"§r. 資源包版本為 1.10, 數據包版本為",
 	"info.cpp.load4":"§r請檢查是否壹致.",
+	"info.cpp.skyisland":"§6[Crafting++] §r空島模式已開啟.",
 
 	"title.actionbar.fat":"§6[Crafting++]§r 你的體重指數為",
 	"title.actionbar.fat0":"，過瘦",

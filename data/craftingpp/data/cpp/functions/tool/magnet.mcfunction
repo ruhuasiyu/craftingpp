@@ -1,11 +1,7 @@
-execute store result score #playerPos cppValue run data get entity @p[nbt={Inventory:[{tag:{id:"cpp:magnet",Type:0b}}]}] Pos[0] 100
-execute store result score #itemPos cppValue run data get entity @s Pos[0] 100
-execute store result entity @s Motion[0] double 0.001 run scoreboard players operation #playerPos cppValue -= #itemPos cppValue
+scoreboard players set #temp cppValue 0
+execute store result score #temp cppValue run data get entity @s SelectedItem.tag.Type
 
-execute store result score #playerPos cppValue run data get entity @p[nbt={Inventory:[{tag:{id:"cpp:magnet",Type:0b}}]}] Pos[1] 100
-execute store result score #itemPos cppValue run data get entity @s Pos[1] 100
-execute store result entity @s Motion[1] double 0.001 run scoreboard players operation #playerPos cppValue -= #itemPos cppValue
+execute if score #temp cppValue matches 0 run replaceitem entity @s weapon.mainhand carrot_on_a_stick{CustomModelData:12970041,Unbreakable:1b,HideFlags:63,display:{Name:"{\"translate\":\"item.cpp.magnet.area\"}"},id:"cpp:magnet",Type:1b}
+execute if score #temp cppValue matches 1 run replaceitem entity @s weapon.mainhand carrot_on_a_stick{CustomModelData:12970041,Unbreakable:1b,HideFlags:63,display:{Name:"{\"translate\":\"item.cpp.magnet.closed\"}"},id:"cpp:magnet",Type:-1b}
+execute if score #temp cppValue matches -1 run replaceitem entity @s weapon.mainhand carrot_on_a_stick{CustomModelData:12970041,Unbreakable:1b,HideFlags:63,display:{Name:"{\"translate\":\"item.cpp.magnet\"}"},id:"cpp:magnet",Type:0b}
 
-execute store result score #playerPos cppValue run data get entity @p[nbt={Inventory:[{tag:{id:"cpp:magnet",Type:0b}}]}] Pos[2] 100
-execute store result score #itemPos cppValue run data get entity @s Pos[2] 100
-execute store result entity @s Motion[2] double 0.001 run scoreboard players operation #playerPos cppValue -= #itemPos cppValue

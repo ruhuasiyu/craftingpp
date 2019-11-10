@@ -1,11 +1,9 @@
 {
-	"type": "crafting_shapeless",
-	"ingredients": [
-		{
-			"item": "minecraft:chest"
-		}
-	],
-	"result": {
-		"item": "minecraft:chest"
-	}
+	"type": "smoking",
+	"ingredient": {
+		"item": "minecraft:suspicious_stew"
+	},
+	"result": "minecraft:suspicious_stew",
+	"experience": 0.35,
+	"cookingtime": 100
 }

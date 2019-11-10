@@ -5,11 +5,11 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:carved_pumpkin",
+					"name": "minecraft:jack_o_lantern",
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.cow_head\\\"}\"},id:\"cpp:cow_head\",CustomModelData:12970203}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.cow_head\"}'},id:'cpp:cow_head',CustomModelData:12970203}"
 						}
 					]
 				}

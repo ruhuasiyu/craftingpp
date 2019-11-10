@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.glazed_shade\\\"}\"},id:\"cpp:glazed_shade\",CustomModelData:12973095}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.glazed_shade\"}'},id:'cpp:glazed_shade',CustomModelData:12973095}"
 						}
 					]
 				}

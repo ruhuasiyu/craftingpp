@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.dream_wand\\\"}\"},id:\"cpp:dream_wand\",CustomModelData:12970064}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.dream_wand\"}'},id:'cpp:dream_wand',CustomModelData:12970064}"
 						}
 					]
 				}

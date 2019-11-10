@@ -1,9 +1,0 @@
-execute as @s[tag=!cpp_machine_work] if block ~ ~ ~ minecraft:barrel{Items:[{tag:{id:"cpp:acid"}},{id:"minecraft:nether_wart"}]} run function cpp:all_in_one_machine/type/hl/acid_nether_wart
-execute as @s[tag=!cpp_machine_work] if block ~ ~ ~ minecraft:barrel{Items:[{tag:{id:"cpp:soda_water"}},{id:"minecraft:nether_wart"}]} run function cpp:all_in_one_machine/type/hl/soda_water_nether_wart
-execute as @s[tag=!cpp_machine_work] if block ~ ~ ~ minecraft:barrel{Items:[{tag:{dict:["quartz_dust"]}},{id:"minecraft:flint"}]} run function cpp:all_in_one_machine/type/hl/quartz_dust_flint
-execute as @s[tag=!cpp_machine_work] if block ~ ~ ~ minecraft:barrel{Items:[{id:"minecraft:glass_bottle"},{id:"minecraft:piston"}]} run function cpp:all_in_one_machine/type/hl/glass_bottle_piston
-execute as @s[tag=!cpp_machine_work] if block ~ ~ ~ minecraft:barrel{Items:[{tag:{id:"cpp:coarse_silicon"}},{tag:{id:"cpp:bottle_of_air"}}]} run function cpp:all_in_one_machine/type/hl/coarse_silicon_bottle_of_air
-execute as @s[tag=!cpp_machine_work] if block ~ ~ ~ minecraft:barrel{Items:[{id:"minecraft:clay_ball"},{tag:{dict:["salt"]}}]} run function cpp:all_in_one_machine/type/hl/clay_ball_salt
-execute as @s[tag=!cpp_machine_work] if block ~ ~ ~ minecraft:barrel{Items:[{tag:{id:"cpp:rare_earth_salt"}},{tag:{id:"cpp:alkaloid"}}]} run function cpp:all_in_one_machine/type/hl/rare_earth_salt_alkaloid
-execute as @s[tag=!cpp_machine_work] if block ~ ~ ~ minecraft:barrel{Items:[{tag:{id:"cpp:alkaloid_rare_earth"}},{tag:{id:"cpp:bionic_acid"}}]} run function cpp:all_in_one_machine/type/hl/alkaloid_rare_earth_bionic_acid
-execute as @s[tag=!cpp_machine_work] if block ~ ~ ~ minecraft:barrel{Items:[{tag:{id:"cpp:alkaloid"}},{tag:{id:"cpp:fertilizer"}}]} run function cpp:all_in_one_machine/type/hl/alkaloid_fertilizer

@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.origin_of_the_world\\\"}\"},id:\"cpp:origin_of_the_world\",CustomModelData:12970045}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.origin_of_the_world\"}'},id:'cpp:origin_of_the_world',CustomModelData:12970045}"
 						}
 					]
 				}

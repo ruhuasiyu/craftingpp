@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.moon_shard\\\"}\"},id:\"cpp:moon_shard\",CustomModelData:12970027}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.moon_shard\"}'},id:'cpp:moon_shard',CustomModelData:12970027}"
 						}
 					]
 				}

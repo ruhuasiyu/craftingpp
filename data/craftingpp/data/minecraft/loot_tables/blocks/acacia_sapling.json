@@ -1,1 +1,20 @@
-{}
+{
+	"type": "minecraft:block",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:acacia_sapling",
+					"functions": [
+						{
+							"function":"minecraft:set_nbt",
+							"tag": "{CustomModelData:12970110,id:\"minecraft:acacia_sapling\"}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

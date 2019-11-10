@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.potion.invisibility\\\"}\"},CustomPotionColor:8356754,CustomPotionEffects:[{Id:14b,Amplifier:0b,Duration:19200}]}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.potion.invisibility\"}'},CustomPotionColor:8356754,CustomPotionEffects:[{Id:14b,Amplifier:0b,Duration:19200}]}"
 						}
 					]
 				}

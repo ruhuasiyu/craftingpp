@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.rare_earth_glass\\\"}\"},id:\"cpp:rare_earth_glass\",CustomModelData:12970031}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.rare_earth_glass\"}'},id:'cpp:rare_earth_glass',CustomModelData:12970031}"
 						}
 					]
 				}

@@ -1,0 +1,301 @@
+{
+	"condition": "minecraft:alternative",
+	"terms": [
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:1b,id:'minecraft:leather'},{Slot:3b,id:'minecraft:leather'},{Slot:10b,id:'minecraft:brown_dye'},{Slot:12b,id:'minecraft:brown_dye'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:10b,id:'minecraft:leather'},{Slot:12b,id:'minecraft:leather'},{Slot:19b,id:'minecraft:brown_dye'},{Slot:21b,id:'minecraft:brown_dye'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{id:'minecraft:bone_meal'},{id:'minecraft:rotten_flesh'},{id:'minecraft:charcoal'},{id:'minecraft:gunpowder'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{id:'minecraft:poppy'},{tag:{id:'cpp:lycoris_radiata'}},{tag:{id:'cpp:glazed_shade'}},{tag:{id:'cpp:marigold'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{id:'minecraft:cooked_porkchop'},{id:'minecraft:cooked_salmon'},{id:'minecraft:brown_mushroom'},{id:'minecraft:wheat'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{id:'minecraft:feather'},{id:'minecraft:ink_sac'},{id:'minecraft:red_dye'},{id:'minecraft:paper'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{id:'minecraft:red_mushroom'},{id:'minecraft:brown_mushroom'},{id:'minecraft:bowl'},{tag:{id:'cpp:lycoris_radiata'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{id:'minecraft:red_mushroom'},{id:'minecraft:brown_mushroom'},{id:'minecraft:bowl'},{tag:{id:'cpp:trifolium'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{id:'minecraft:red_mushroom'},{id:'minecraft:brown_mushroom'},{id:'minecraft:bowl'},{tag:{id:'cpp:blackthorn'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{id:'minecraft:red_mushroom'},{id:'minecraft:brown_mushroom'},{id:'minecraft:bowl'},{tag:{id:'cpp:cattail'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{id:'minecraft:red_mushroom'},{id:'minecraft:brown_mushroom'},{id:'minecraft:bowl'},{tag:{id:'cpp:marigold'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{id:'minecraft:red_mushroom'},{id:'minecraft:brown_mushroom'},{id:'minecraft:bowl'},{tag:{id:'cpp:hibiscus'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{id:'minecraft:red_mushroom'},{id:'minecraft:brown_mushroom'},{id:'minecraft:bowl'},{tag:{id:'cpp:hyacinth'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{id:'minecraft:red_mushroom'},{id:'minecraft:brown_mushroom'},{id:'minecraft:bowl'},{tag:{id:'cpp:calamus'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{id:'minecraft:red_mushroom'},{id:'minecraft:brown_mushroom'},{id:'minecraft:bowl'},{tag:{id:'cpp:wild_lilium'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{id:'minecraft:red_mushroom'},{id:'minecraft:brown_mushroom'},{id:'minecraft:bowl'},{tag:{id:'cpp:bauhinia'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{id:'minecraft:red_mushroom'},{id:'minecraft:brown_mushroom'},{id:'minecraft:bowl'},{tag:{id:'cpp:fluffy_grass'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{id:'minecraft:red_mushroom'},{id:'minecraft:brown_mushroom'},{id:'minecraft:bowl'},{tag:{id:'cpp:gerbera'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{id:'minecraft:red_mushroom'},{id:'minecraft:brown_mushroom'},{id:'minecraft:bowl'},{tag:{id:'cpp:esparto'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{id:'minecraft:red_mushroom'},{id:'minecraft:brown_mushroom'},{id:'minecraft:bowl'},{tag:{id:'cpp:glow_forsythia'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{id:'minecraft:red_mushroom'},{id:'minecraft:brown_mushroom'},{id:'minecraft:bowl'},{tag:{id:'cpp:glazed_shade'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{id:'minecraft:red_mushroom'},{id:'minecraft:brown_mushroom'},{id:'minecraft:bowl'},{tag:{id:'cpp:stelera'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{id:'minecraft:red_mushroom'},{id:'minecraft:brown_mushroom'},{id:'minecraft:bowl'},{tag:{id:'cpp:forage_crystal'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{id:'minecraft:red_mushroom'},{id:'minecraft:brown_mushroom'},{id:'minecraft:bowl'},{tag:{id:'cpp:isorchid'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{id:'minecraft:red_mushroom'},{id:'minecraft:brown_mushroom'},{id:'minecraft:bowl'},{tag:{id:'cpp:burning_chrysanthe'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{id:'minecraft:red_mushroom'},{id:'minecraft:brown_mushroom'},{id:'minecraft:bowl'},{tag:{id:'cpp:oxalis'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{id:'minecraft:red_banner'},{id:'minecraft:peony'},{tag:{id:'cpp:burning_chrysanthe'}},{tag:{id:'cpp:marigold'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{id:'minecraft:white_banner'},{id:'minecraft:rose_bush'},{tag:{id:'cpp:hyacinth'}},{tag:{id:'cpp:fluffy_grass'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{id:'minecraft:red_banner'},{id:'minecraft:sunflower'},{tag:{id:'cpp:hyacinth'}},{tag:{id:'cpp:fluffy_grass'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{id:'minecraft:red_banner'},{id:'minecraft:cornflower'},{tag:{id:'cpp:hyacinth'}},{tag:{id:'cpp:fluffy_grass'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{id:'minecraft:white_banner'},{id:'minecraft:poppy'},{tag:{id:'cpp:hyacinth'}},{tag:{id:'cpp:fluffy_grass'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{id:'minecraft:painting'},{tag:{id:'cpp:blackthorn'}},{tag:{id:'cpp:trifolium'}},{tag:{id:'cpp:esparto'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{id:'minecraft:painting'},{tag:{id:'cpp:blackthorn'}},{tag:{id:'cpp:trifolium'}},{tag:{id:'cpp:cattail'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{id:'minecraft:painting'},{tag:{id:'cpp:blackthorn'}},{tag:{id:'cpp:trifolium'}},{tag:{id:'cpp:isorchid'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{id:'minecraft:painting'},{tag:{id:'cpp:blackthorn'}},{tag:{id:'cpp:trifolium'}},{tag:{id:'cpp:bauhinia'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{id:'minecraft:painting'},{tag:{id:'cpp:blackthorn'}},{tag:{id:'cpp:trifolium'}},{tag:{id:'cpp:hyacinth'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{id:'minecraft:painting'},{tag:{id:'cpp:blackthorn'}},{tag:{id:'cpp:trifolium'}},{tag:{id:'cpp:lycoris_radiata'}}]}"
+				}
+			}
+		}
+	]
+}

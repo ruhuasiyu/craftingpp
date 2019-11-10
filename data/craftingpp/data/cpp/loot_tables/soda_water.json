@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.soda_water\\\"}\"},id:\"cpp:soda_water\",CustomModelData:12970055}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.soda_water\"}'},id:'cpp:soda_water',CustomModelData:12970055}"
 						}
 					]
 				}

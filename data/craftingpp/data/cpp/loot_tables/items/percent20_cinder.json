@@ -10,7 +10,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.cinder\\\"}\"},id:\"cpp:cinder\",CustomModelData:12970024}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.cinder\"}'},id:'cpp:cinder',CustomModelData:12970024}"
 						}
 					],
 					"conditions": [

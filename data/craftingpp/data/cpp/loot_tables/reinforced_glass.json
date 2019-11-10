@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.reinforced_glass\\\"}\"},id:\"cpp:reinforced_glass\",CustomModelData:12970030}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.reinforced_glass\"}'},id:'cpp:reinforced_glass',CustomModelData:12970030}"
 						}
 					]
 				}

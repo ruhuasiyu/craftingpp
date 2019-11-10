@@ -9,7 +9,7 @@
 						{
 							"conditions":[
 								{
-									"condition":"weather_check",
+									"condition":"minecraft:weather_check",
 									"thundering": true
 								}
 							],
@@ -18,14 +18,14 @@
 							"functions": [
 								{
 									"function": "minecraft:set_nbt",
-									"tag": "{isWeatherMarker:1b,id:\"cpp:weather/thunder\",isMachineBg:1b,CustomModelData:12971000}"
+									"tag": "{isWeatherMarker:1b,id:'cpp:weather/thunder',cppMachineBg:1b,CustomModelData:12971000}"
 								}
 							]
 						},
 						{
 							"conditions":[
 								{
-									"condition":"weather_check",
+									"condition":"minecraft:weather_check",
 									"raining": true,
 									"thundering": false
 								}
@@ -35,14 +35,14 @@
 							"functions": [
 								{
 									"function": "minecraft:set_nbt",
-									"tag": "{isWeatherMarker:1b,id:\"cpp:weather/rain\",isMachineBg:1b,CustomModelData:12971000}"
+									"tag": "{isWeatherMarker:1b,id:'cpp:weather/rain',cppMachineBg:1b,CustomModelData:12971000}"
 								}
 							]
 						},
 						{
 							"conditions":[
 								{
-									"condition":"weather_check",
+									"condition":"minecraft:weather_check",
 									"raining": false
 								}
 							],
@@ -51,7 +51,7 @@
 							"functions": [
 								{
 									"function": "minecraft:set_nbt",
-									"tag": "{isWeatherMarker:1b,id:\"cpp:weather/clear\",isMachineBg:1b,CustomModelData:12971000}"
+									"tag": "{isWeatherMarker:1b,id:'cpp:weather/clear',cppMachineBg:1b,CustomModelData:12971000}"
 								}
 							]
 						}

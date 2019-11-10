@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.carbon_dust\\\"}\"},id:\"cpp:carbon_dust\",CustomModelData:12970043,dict:[\"carbon_dust\"]}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.carbon_dust\"}'},id:'cpp:carbon_dust',CustomModelData:12970043,dict:['carbon_dust']}"
 						}
 					]
 				}

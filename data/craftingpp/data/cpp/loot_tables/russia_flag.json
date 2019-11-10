@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag":"{id:\"cpp:russia_flag\",display:{Name:\"{\\\"translate\\\":\\\"item.cpp.russia_flag\\\"}\"},CustomModelData:12974403,EntityTag:{Item:{id:'minecraft:item_frame',Count:1b,tag:{CustomModelData:12974403,isMachineBg:1b}},Tags:['cpp_item_frame_flag','cpp_special_item_frame','cpp_russia_flag']}}"
+							"tag":"{display:{Name:'{\"translate\":\"item.cpp.russia_flag\"}'},id:'cpp:russia_flag',CustomModelData:12974403,EntityTag:{Item:{id:'minecraft:item_frame',Count:1b,tag:{CustomModelData:12974403,cppMachineBg:1b}},Tags:['cpp_item_frame_flag','cpp_special_item_frame','cpp_russia_flag']}}"
 						}
 					]
 				}

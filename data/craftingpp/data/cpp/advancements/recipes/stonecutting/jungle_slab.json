@@ -1,0 +1,29 @@
+{
+	"criteria": {
+		"jungle_planks": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:jungle_planks"
+					}
+				]
+			}
+		},
+		"has_the_recipe": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "cpp:stonecutting/jungle_slab"
+			}
+		}
+	},
+	"rewards":{
+		"recipes": ["cpp:stonecutting/jungle_slab"]
+	},
+	"requirements": [
+		[
+			"jungle_planks",
+			"has_the_recipe"
+		]
+	]
+}

@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.forage_crystal_seeds\\\"}\"},id:\"cpp:forage_crystal_seeds\",CustomModelData:12970017}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.forage_crystal_seeds\"}'},id:'cpp:forage_crystal_seeds',CustomModelData:12970017}"
 						}
 					]
 				}

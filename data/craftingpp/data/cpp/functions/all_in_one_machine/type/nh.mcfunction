@@ -1,1 +1,0 @@
-execute if block ~ ~ ~ minecraft:barrel{Items:[{id:"minecraft:flint"}]} run function cpp:all_in_one_machine/type/nh/flint

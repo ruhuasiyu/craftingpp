@@ -6,7 +6,6 @@
 		"#cpp:golem_south",
 		"#cpp:golem_north",
 		"#cpp:golem_up",
-		"#cpp:golem_down",
-		"#cpp:golem_end"
+		"#cpp:golem_down"
 	]
 }

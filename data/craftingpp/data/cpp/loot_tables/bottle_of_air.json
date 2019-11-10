@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.bottle_of_air\\\"}\"},id:\"cpp:bottle_of_air\",CustomModelData:12970058}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.bottle_of_air\"}'},id:'cpp:bottle_of_air',CustomModelData:12970058}"
 						}
 					]
 				}

@@ -5,14 +5,14 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:carved_pumpkin",
+					"name": "minecraft:jack_o_lantern",
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.nurse_hat\\\"}\"},id:\"cpp:nurse_hat\",CustomModelData:12970122}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.nurse_hat\"}'},id:'cpp:nurse_hat',CustomModelData:12970122,cppHatSlot:'hand'}"
 						},
 						{
-							"function": "set_attributes",
+							"function": "minecraft:set_attributes",
 							"modifiers": [
 								{
 									"name": "head_luck",

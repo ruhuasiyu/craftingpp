@@ -1,0 +1,158 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"conditions":[
+				{
+					"condition": "minecraft:alternative",
+					"terms": [
+						{
+							"condition": "minecraft:location_check",
+							"predicate": {
+								"block": {
+									"nbt": "{Items:[{id:'minecraft:sand'}]}"
+								}
+							}
+						},
+						{
+							"condition": "minecraft:location_check",
+							"predicate": {
+								"block": {
+									"nbt": "{Items:[{id:'minecraft:red_sand'}]}"
+								}
+							}
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "minecraft:alternatives",
+					"children": [
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{tag:{id:'cpp:silicon_dust'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:silicon_plate"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{tag:{id:'cpp:rare_earth_dust'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:rare_earth_glass"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{tag:{dict:['steel_dust']}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:reinforced_glass"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:glass_bottle'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:bottle_of_salt"
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"conditions":[
+				{
+					"condition": "minecraft:random_chance",
+					"chance": 0.2
+				},
+				{
+					"condition": "minecraft:alternative",
+					"terms": [
+						{
+							"condition": "minecraft:location_check",
+							"predicate": {
+								"block": {
+									"nbt": "{Items:[{id:'minecraft:sand'}]}"
+								}
+							}
+						},
+						{
+							"condition": "minecraft:location_check",
+							"predicate": {
+								"block": {
+									"nbt": "{Items:[{id:'minecraft:red_sand'}]}"
+								}
+							}
+						}
+					]
+				},
+				{
+					"condition": "minecraft:alternative",
+					"terms": [
+						{
+							"condition": "minecraft:location_check",
+							"predicate": {
+								"block": {
+									"nbt": "{Items:[{tag:{id:'cpp:silicon_dust'}}]}"
+								}
+							}
+						},
+						{
+							"condition": "minecraft:location_check",
+							"predicate": {
+								"block": {
+									"nbt": "{Items:[{tag:{id:'cpp:rare_earth_dust'}}]}"
+								}
+							}
+						},
+						{
+							"condition": "minecraft:location_check",
+							"predicate": {
+								"block": {
+									"nbt": "{Items:[{tag:{dict:['steel_dust']}}]}"
+								}
+							}
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:cinder"
+				}
+			]
+		}
+	]
+}

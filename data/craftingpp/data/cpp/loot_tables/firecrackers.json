@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag":"{id:\"cpp:firecrackers\",display:{Name:\"{\\\"translate\\\":\\\"item.cpp.firecrackers\\\"}\"},CustomModelData:12971001,EntityTag:{Tags:[\"cpp_firecrackers\"]}}"
+							"tag":"{display:{Name:'{\"translate\":\"item.cpp.firecrackers\"}'},id:'cpp:firecrackers',CustomModelData:12971001,EntityTag:{Tags:['cpp_firecrackers']}}"
 						}
 					]
 				}

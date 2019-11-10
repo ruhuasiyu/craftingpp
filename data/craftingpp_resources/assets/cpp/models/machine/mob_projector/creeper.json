@@ -1,14 +1,5 @@
 {
-	"parent": "item/generated",
-    "display": {
-        "gui": {
-            "scale": [ 3, 3, 1 ],
-			"translation": [ 30, -2, -70]
-        },
-        "ground": {
-            "scale": [ 0.1, 0.1, 0.1 ]
-        }
-    },
+	"parent": "cpp:machine/mob_projector/temp",
     "textures": {
         "layer0": "cpp:machine/mob_projector/creeper"
     }

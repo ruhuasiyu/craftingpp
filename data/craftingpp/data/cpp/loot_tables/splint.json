@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{\"Name\":\"{\\\"translate\\\":\\\"item.cpp.splint\\\"}\"},id:\"cpp:splint\",CustomModelData:12970061,dict:[\"diamond_nugget\"]}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.splint\"}'},id:'cpp:splint',CustomModelData:12970061,dict:['diamond_nugget']}"
 						}
 					]
 				}

@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.purple_sign\\\"}\"},id:\"cpp:purple_sign\",CustomModelData:12970011}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.purple_sign\"}'},id:'cpp:purple_sign',CustomModelData:12970011}"
 						}
 					]
 				}

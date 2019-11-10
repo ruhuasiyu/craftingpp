@@ -5,6 +5,27 @@
 			"conditions":[
 				{
 					"condition": "minecraft:random_chance",
+					"chance": 0.2
+				}
+			],
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:firework_star",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{cppIsGenerateMarker:1b,CustomModelData:12971000,cppGenerateMarker:\"creeper_dungeon\"}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"conditions":[
+				{
+					"condition": "minecraft:random_chance",
 					"chance": 0.018
 				}
 			],
@@ -15,7 +36,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{isStrMark:1b,CustomModelData:1000,id:\"cpp:creeper_dungeon_marker\"}"
+							"tag": "{cppIsGenerateMarker:1b,CustomModelData:12971000,cppGenerateMarker:\"creeper_dungeon\"}"
 						}
 					]
 				},
@@ -25,7 +46,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{isStrMark:1b,CustomModelData:1000,id:\"cpp:enchanting_room_marker\"}"
+							"tag": "{cppIsGenerateMarker:1b,CustomModelData:12971000,cppGenerateMarker:\"enchanting_room\"}"
 						}
 					]
 				},
@@ -35,7 +56,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{isStrMark:1b,CustomModelData:1000,id:\"cpp:totem_pillar_marker\"}"
+							"tag": "{cppIsGenerateMarker:1b,CustomModelData:12971000,cppGenerateMarker:\"totem_pillar\"}"
 						}
 					]
 				}
@@ -56,7 +77,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{isStrMark:1b,CustomModelData:1000,id:\"cpp:fruit_tree_marker\"}"
+							"tag": "{cppIsGenerateMarker:1b,CustomModelData:12971000,cppGenerateMarker:\"fruit_tree\"}"
 						}
 					]
 				},
@@ -66,7 +87,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{isStrMark:1b,CustomModelData:1000,id:\"cpp:ore_tree_marker\"}"
+							"tag": "{cppIsGenerateMarker:1b,CustomModelData:12971000,cppGenerateMarker:\"ore_tree\"}"
 						}
 					]
 				},
@@ -76,7 +97,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{isStrMark:1b,CustomModelData:1000,id:\"cpp:wool_tree_marker\"}"
+							"tag": "{cppIsGenerateMarker:1b,CustomModelData:12971000,cppGenerateMarker:\"wool_tree\"}"
 						}
 					]
 				}
@@ -156,7 +177,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{isStrMark:1b,CustomModelData:1000,id:\"cpp:dead_coral_fan_marker\"}"
+							"tag": "{cppIsGenerateMarker:1b,CustomModelData:12971000,cppGenerateMarker:\"dead_coral_fan\"}"
 						},
 						{
 							"function": "minecraft:set_count",
@@ -184,7 +205,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{isStrMark:1b,CustomModelData:1000,id:\"cpp:small_bush_marker\"}"
+							"tag": "{cppIsGenerateMarker:1b,CustomModelData:12971000,cppGenerateMarker:\"small_bush\"}"
 						}
 					]
 				}
@@ -228,7 +249,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{isStrMark:1b,CustomModelData:1000,id:\"cpp:dead_spruce_marker\"}"
+							"tag": "{cppIsGenerateMarker:1b,CustomModelData:12971000,cppGenerateMarker:\"dead_spruce\"}"
 						},
 						{
 							"function": "minecraft:set_count",
@@ -256,7 +277,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{isStrMark:1b,CustomModelData:1000,id:\"cpp:crops_marker\"}"
+							"tag": "{cppIsGenerateMarker:1b,CustomModelData:12971000,cppGenerateMarker:\"crops\"}"
 						},
 						{
 							"function": "minecraft:set_count",
@@ -284,7 +305,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{isStrMark:1b,CustomModelData:1000,id:\"cpp:modcrops_marker\"}"
+							"tag": "{cppIsGenerateMarker:1b,CustomModelData:12971000,cppGenerateMarker:\"modcrops\"}"
 						}
 					]
 				}

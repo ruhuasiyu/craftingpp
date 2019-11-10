@@ -6,6 +6,16 @@
 		]
 	},
 	"criteria": {
+		"has_glass_pane": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:glass_pane"
+					}
+				]
+			}
+		},
 		"has_stick": {
 			"trigger": "minecraft:inventory_changed",
 			"conditions": {
@@ -25,6 +35,7 @@
 	},
 	"requirements": [
 		[
+			"has_glass_pane",
 			"has_stick",
 			"has_the_recipe"
 		]

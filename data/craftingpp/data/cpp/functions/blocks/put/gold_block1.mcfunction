@@ -1,0 +1,1 @@
+tag @s add cpp_gold_block

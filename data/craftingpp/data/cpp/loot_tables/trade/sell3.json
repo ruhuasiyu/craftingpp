@@ -8,15 +8,15 @@
 					"name": "minecraft:shulker_box"
 				},
 				{
-					"type":	"loot_table",
+					"type":	"minecraft:loot_table",
 					"name": "cpp:character/random"
 				},
 				{
-					"type":	"loot_table",
+					"type":	"minecraft:loot_table",
 					"name": "cpp:chests/exploration_map"
 				},
 				{
-					"type":	"loot_table",
+					"type":	"minecraft:loot_table",
 					"name": "cpp:santa_gift"
 				}
 			]

@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.potion.resistance\\\"}\"},CustomPotionColor:10044730,CustomPotionEffects:[{Id:11b,Amplifier:1b,Duration:9600}]}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.potion.resistance\"}'},CustomPotionColor:10044730,CustomPotionEffects:[{Id:11b,Amplifier:1b,Duration:9600}]}"
 						}
 					]
 				}

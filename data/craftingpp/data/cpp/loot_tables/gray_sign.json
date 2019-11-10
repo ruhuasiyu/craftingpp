@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.gray_sign\\\"}\"},id:\"cpp:gray_sign\",CustomModelData:12970008}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.gray_sign\"}'},id:'cpp:gray_sign',CustomModelData:12970008}"
 						}
 					]
 				}

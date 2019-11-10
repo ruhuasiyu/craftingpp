@@ -1,0 +1,32 @@
+{
+	"criteria": {
+		"coral": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:brain_coral",
+						"count": {
+							"min": 4
+						}
+					}
+				]
+			}
+		},
+		"has_the_recipe": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "cpp:coral/brain"
+			}
+		}
+	},
+	"rewards":{
+		"recipes": ["cpp:coral/brain"]
+	},
+	"requirements": [
+		[
+			"coral",
+			"has_the_recipe"
+		]
+	]
+}

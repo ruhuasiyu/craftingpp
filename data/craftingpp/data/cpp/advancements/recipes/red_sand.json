@@ -1,0 +1,40 @@
+{
+	"criteria": {
+		"sand": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:sand"
+					}
+				]
+			}
+		},
+		"redstone": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:redstone"
+					}
+				]
+			}
+		},
+		"has_the_recipe": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "cpp:red_sand"
+			}
+		}
+	},
+	"rewards":{
+		"recipes": ["cpp:red_sand"]
+	},
+	"requirements": [
+		[
+			"sand",
+			"redstone",
+			"has_the_recipe"
+		]
+	]
+}

@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.red_coat\\\"}\",color:16711680},id:\"cpp:red_coat\"}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.red_coat\"}',color:16711680},id:'cpp:red_coat'}"
 						}
 					]
 				}

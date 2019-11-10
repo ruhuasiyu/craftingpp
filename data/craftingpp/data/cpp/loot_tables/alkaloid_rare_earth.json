@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.alkaloid_rare_earth\\\"}\"},id:\"cpp:alkaloid_rare_earth\",CustomModelData:12970053}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.alkaloid_rare_earth\"}'},id:'cpp:alkaloid_rare_earth',CustomModelData:12970053}"
 						}
 					]
 				}

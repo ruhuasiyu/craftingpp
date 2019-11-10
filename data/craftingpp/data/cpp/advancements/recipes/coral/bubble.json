@@ -1,0 +1,32 @@
+{
+	"criteria": {
+		"coral": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:bubble_coral",
+						"count": {
+							"min": 4
+						}
+					}
+				]
+			}
+		},
+		"has_the_recipe": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "cpp:coral/bubble"
+			}
+		}
+	},
+	"rewards":{
+		"recipes": ["cpp:coral/bubble"]
+	},
+	"requirements": [
+		[
+			"coral",
+			"has_the_recipe"
+		]
+	]
+}

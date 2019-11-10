@@ -1,0 +1,29 @@
+{
+	"criteria": {
+		"snow": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:snow"
+					}
+				]
+			}
+		},
+		"has_the_recipe": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "cpp:decomposition/snow"
+			}
+		}
+	},
+	"rewards":{
+		"recipes": ["cpp:decomposition/snow"]
+	},
+	"requirements": [
+		[
+			"snow",
+			"has_the_recipe"
+		]
+	]
+}

@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.broken_spawner\\\"}\"},id:\"cpp:broken_spawner\",CustomModelData:12970009}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.broken_spawner\"}'},id:'cpp:broken_spawner',CustomModelData:12970009}"
 						}
 					]
 				}

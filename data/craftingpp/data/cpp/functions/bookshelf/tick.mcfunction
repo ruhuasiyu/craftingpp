@@ -1,36 +1,10 @@
-execute unless data block ~ ~ ~ Items[{Slot:0b}] run replaceitem block ~ ~ ~ container.0 light_gray_stained_glass_pane{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.bookshelf\"}"},CustomModelData:12971016}
-execute unless data block ~ ~ ~ Items[{Slot:1b}] run replaceitem block ~ ~ ~ container.1 light_gray_stained_glass_pane{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.bookshelf\"}"},CustomModelData:12971000}
-execute unless data block ~ ~ ~ Items[{Slot:2b}] run replaceitem block ~ ~ ~ container.2 light_gray_stained_glass_pane{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.bookshelf\"}"},CustomModelData:12971000}
-execute unless data block ~ ~ ~ Items[{Slot:3b}] run replaceitem block ~ ~ ~ container.3 light_gray_stained_glass_pane{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.bookshelf\"}"},CustomModelData:12971000}
-execute unless data block ~ ~ ~ Items[{Slot:4b}] run replaceitem block ~ ~ ~ container.4 light_gray_stained_glass_pane{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.bookshelf\"}"},CustomModelData:12971000}
-execute unless data block ~ ~ ~ Items[{Slot:5b}] run replaceitem block ~ ~ ~ container.5 light_gray_stained_glass_pane{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.bookshelf\"}"},CustomModelData:12971000}
-execute unless data block ~ ~ ~ Items[{Slot:6b}] run replaceitem block ~ ~ ~ container.6 light_gray_stained_glass_pane{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.bookshelf\"}"},CustomModelData:12971000}
-execute unless data block ~ ~ ~ Items[{Slot:7b}] run replaceitem block ~ ~ ~ container.7 light_gray_stained_glass_pane{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.bookshelf\"}"},CustomModelData:12971000}
-execute unless data block ~ ~ ~ Items[{Slot:8b}] run replaceitem block ~ ~ ~ container.8 light_gray_stained_glass_pane{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.bookshelf\"}"},CustomModelData:12971000}
-
-execute unless data block ~ ~ ~ Items[{Slot:9b}] run replaceitem block ~ ~ ~ container.9 light_gray_stained_glass_pane{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.bookshelf\"}"},CustomModelData:12971000}
-execute unless data block ~ ~ ~ Items[{Slot:10b}] run replaceitem block ~ ~ ~ container.10 light_gray_stained_glass_pane{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.bookshelf\"}"},CustomModelData:12971000}
-execute unless data block ~ ~ ~ Items[{Slot:11b}] run replaceitem block ~ ~ ~ container.11 light_gray_stained_glass_pane{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.bookshelf\"}"},CustomModelData:12971000}
-execute unless data block ~ ~ ~ Items[{Slot:15b}] run replaceitem block ~ ~ ~ container.15 light_gray_stained_glass_pane{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.bookshelf\"}"},CustomModelData:12971000}
-execute unless data block ~ ~ ~ Items[{Slot:16b}] run replaceitem block ~ ~ ~ container.16 light_gray_stained_glass_pane{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.bookshelf\"}"},CustomModelData:12971000}
-execute unless data block ~ ~ ~ Items[{Slot:17b}] run replaceitem block ~ ~ ~ container.17 light_gray_stained_glass_pane{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.bookshelf\"}"},CustomModelData:12971000}
-
-execute unless data block ~ ~ ~ Items[{Slot:18b}] run replaceitem block ~ ~ ~ container.18 light_gray_stained_glass_pane{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.bookshelf\"}"},CustomModelData:12971000}
-execute unless data block ~ ~ ~ Items[{Slot:19b}] run replaceitem block ~ ~ ~ container.19 light_gray_stained_glass_pane{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.bookshelf\"}"},CustomModelData:12971000}
-execute unless data block ~ ~ ~ Items[{Slot:20b}] run replaceitem block ~ ~ ~ container.20 light_gray_stained_glass_pane{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.bookshelf\"}"},CustomModelData:12971000}
-execute unless data block ~ ~ ~ Items[{Slot:21b}] run replaceitem block ~ ~ ~ container.21 light_gray_stained_glass_pane{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.bookshelf\"}"},CustomModelData:12971000}
-execute unless data block ~ ~ ~ Items[{Slot:22b}] run replaceitem block ~ ~ ~ container.22 light_gray_stained_glass_pane{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.bookshelf\"}"},CustomModelData:12971000}
-execute unless data block ~ ~ ~ Items[{Slot:23b}] run replaceitem block ~ ~ ~ container.23 light_gray_stained_glass_pane{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.bookshelf\"}"},CustomModelData:12971000}
-execute unless data block ~ ~ ~ Items[{Slot:24b}] run replaceitem block ~ ~ ~ container.24 light_gray_stained_glass_pane{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.bookshelf\"}"},CustomModelData:12971000}
-execute unless data block ~ ~ ~ Items[{Slot:25b}] run replaceitem block ~ ~ ~ container.25 light_gray_stained_glass_pane{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.bookshelf\"}"},CustomModelData:12971000}
-execute unless data block ~ ~ ~ Items[{Slot:26b}] run replaceitem block ~ ~ ~ container.26 light_gray_stained_glass_pane{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.bookshelf\"}"},CustomModelData:12971000}
-
+# 检测GUI
+execute unless block ~ ~ ~ barrel{Items:[{Slot:0b,tag:{cppMachineBg:1b}},{Slot:1b,tag:{cppMachineBg:1b}},{Slot:2b,tag:{cppMachineBg:1b}},{Slot:3b,tag:{cppMachineBg:1b}},{Slot:4b,tag:{cppMachineBg:1b}},{Slot:5b,tag:{cppMachineBg:1b}},{Slot:6b,tag:{cppMachineBg:1b}},{Slot:7b,tag:{cppMachineBg:1b}},{Slot:8b,tag:{cppMachineBg:1b}},{Slot:9b,tag:{cppMachineBg:1b}},{Slot:10b,tag:{cppMachineBg:1b}},{Slot:11b,tag:{cppMachineBg:1b}},{Slot:12b,tag:{cppMachineBg:1b}},{Slot:13b,tag:{cppMachineBg:1b}},{Slot:14b,tag:{cppMachineBg:1b}},{Slot:15b,tag:{cppMachineBg:1b}},{Slot:16b,tag:{cppMachineBg:1b}},{Slot:17b,tag:{cppMachineBg:1b}},{Slot:18b,tag:{cppMachineBg:1b}},{Slot:19b,tag:{cppMachineBg:1b}},{Slot:20b,tag:{cppMachineBg:1b}},{Slot:21b,tag:{cppMachineBg:1b}},{Slot:22b,tag:{cppMachineBg:1b}},{Slot:23b,tag:{cppMachineBg:1b}},{Slot:24b,tag:{cppMachineBg:1b}},{Slot:25b,tag:{cppMachineBg:1b}},{Slot:26b,tag:{cppMachineBg:1b}}]} run function cpp:bookshelf/reset
+# 外观
 scoreboard players set #temp cppValue 12970010
 execute if data block ~ ~ ~ Items[{Slot:12b}] run scoreboard players add #temp cppValue 4
 execute if data block ~ ~ ~ Items[{Slot:13b}] run scoreboard players add #temp cppValue 2
 execute if data block ~ ~ ~ Items[{Slot:14b}] run scoreboard players add #temp cppValue 1
-
 execute store result entity @s ArmorItems[3].tag.CustomModelData int 1 run scoreboard players get #temp cppValue
-
-execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:book",Count:1b}] if data block ~ ~ ~ Items[{Slot:13b,id:"minecraft:book",Count:1b}] if data block ~ ~ ~ Items[{Slot:14b,id:"minecraft:book",Count:1b}] run kill @s
-execute if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:book",Count:1b}] if data block ~ ~ ~ Items[{Slot:13b,id:"minecraft:book",Count:1b}] if data block ~ ~ ~ Items[{Slot:14b,id:"minecraft:book",Count:1b}] run setblock ~ ~ ~ bookshelf
+# 转变为书架
+execute if block ~ ~ ~ barrel{Items:[{Slot:12b,id:"minecraft:book",Count:1b},{Slot:13b,id:"minecraft:book",Count:1b},{Slot:14b,id:"minecraft:book",Count:1b}]} run function cpp:bookshelf/change

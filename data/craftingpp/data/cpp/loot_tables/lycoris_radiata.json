@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.lycoris_radiata\\\"}\"},id:\"cpp:lycoris_radiata\",CustomModelData:12973081}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.lycoris_radiata\"}'},id:'cpp:lycoris_radiata',CustomModelData:12973081}"
 						}
 					]
 				}

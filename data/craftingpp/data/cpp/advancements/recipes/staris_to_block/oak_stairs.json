@@ -1,0 +1,29 @@
+{
+	"criteria": {
+		"oak_stairs": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:oak_stairs"
+					}
+				]
+			}
+		},
+		"has_the_recipe": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "cpp:stairs_to_block/oak_stairs"
+			}
+		}
+	},
+	"rewards":{
+		"recipes": ["cpp:stairs_to_block/oak_stairs"]
+	},
+	"requirements": [
+		[
+			"oak_stairs",
+			"has_the_recipe"
+		]
+	]
+}

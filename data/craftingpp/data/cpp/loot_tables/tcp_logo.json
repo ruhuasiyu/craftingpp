@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag":"{id:\"cpp:tcp_logo\",display:{Name:\"{\\\"translate\\\":\\\"item.cpp.tcp_logo\\\"}\"},CustomModelData:12974409,EntityTag:{Item:{id:'minecraft:item_frame',Count:1b,tag:{CustomModelData:12974409,isMachineBg:1b}},Tags:['cpp_item_frame_flag','cpp_special_item_frame','cpp_tcp_logo']}}"
+							"tag":"{display:{Name:'{\"translate\":\"item.cpp.tcp_logo\"}'},id:'cpp:tcp_logo',CustomModelData:12974409,EntityTag:{Item:{id:'minecraft:item_frame',Count:1b,tag:{CustomModelData:12974409,cppMachineBg:1b}},Tags:['cpp_item_frame_flag','cpp_special_item_frame','cpp_tcp_logo']}}"
 						}
 					]
 				}

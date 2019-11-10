@@ -1,13 +1,11 @@
 {
-    "__comment": "材质作者：天狼星black",
-    "parent": "cpp:machine/machine",
-    "textures": {
-        "particle": "cpp:machine/all_in_one_machine_top",
-        "down": "cpp:machine/all_in_one_machine_down",
-        "up": "cpp:machine/all_in_one_machine_top",
-        "north": "cpp:machine/all_in_one_machine_front",
-        "east": "cpp:machine/all_in_one_machine_right",
-        "south": "cpp:machine/all_in_one_machine_back",
-        "west": "cpp:machine/all_in_one_machine_left"
-    }
+	"parent": "cpp:machine/machine",
+	"textures": {
+		"down": "cpp:machine/all_in_one_machine_bottom",
+		"up": "cpp:machine/all_in_one_machine_top",
+		"north": "cpp:machine/all_in_one_machine_front",
+		"east": "cpp:machine/all_in_one_machine_side",
+		"south": "cpp:machine/all_in_one_machine_back",
+		"west": "cpp:machine/all_in_one_machine_side"
+	}
 }

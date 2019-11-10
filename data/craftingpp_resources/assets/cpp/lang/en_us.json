@@ -86,7 +86,6 @@
 	"item.cpp.broken_spawner":"§rBroken Spawner",
 	
 	"block.minecraft.petrified_oak_slab":"§rCrafting Machine",
-	"item.cpp.crafting_machine":"§rCrafting Machine",
 	"item.cpp.all_in_one_machine":"§rAll-in-one Machine",
 	"item.cpp.trade_machine":"§rTrade Machine",
 	"item.cpp.mob_projector":"§rMob Projector",
@@ -118,6 +117,10 @@
 	"item.cpp.output_north":"§rOutput North",
 	"item.cpp.output_down":"§rOutput Down",
 	"item.cpp.output_up":"§rOutput Up",
+	"item.cpp.emerald_mode":"§rEmerald Mode",
+	"item.cpp.experience_bottle_mode":"§rExperience Bottle Mode",
+	"item.cpp.burn_mode":"§rBurn Mode",
+	"item.cpp.create_mode":"§rCreate Mode",
 	"item.cpp.xp_bar":"§r§6Experience",
 	"lore.cpp.switch":"§aClick to switch",
 	"info.cpp.high_pressure_plugin":"§6[Crafting++]§r High Pressure Plugin has been installed.",
@@ -605,6 +608,7 @@
 	"info.cpp.load2":"§eClick §eto §evisit §ethe §ewiki ",
 	"info.cpp.load3":"§rfor more informations. Resourcepack version 1.10, Datapack version ",
 	"info.cpp.load4":" §rPlease check wheather they coincides.",
+	"info.cpp.skyisland":"§6[Crafting++] §rSkyisland mode is enabled.",
 
 	"title.actionbar.fat":"§6[Crafting++]§r Your weight index is ",
 	"title.actionbar.fat0":", too thin",

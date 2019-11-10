@@ -1,0 +1,29 @@
+{
+	"criteria": {
+		"polished_andesite_stairs": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:polished_andesite_stairs"
+					}
+				]
+			}
+		},
+		"has_the_recipe": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "cpp:stairs_to_block/polished_andesite_stairs"
+			}
+		}
+	},
+	"rewards":{
+		"recipes": ["cpp:stairs_to_block/polished_andesite_stairs"]
+	},
+	"requirements": [
+		[
+			"polished_andesite_stairs",
+			"has_the_recipe"
+		]
+	]
+}

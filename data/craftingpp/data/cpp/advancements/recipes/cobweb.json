@@ -1,0 +1,32 @@
+{
+	"criteria": {
+		"string": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:string",
+						"count": {
+							"min": 9
+						}
+					}
+				]
+			}
+		},
+		"has_the_recipe": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "cpp:cobweb"
+			}
+		}
+	},
+	"rewards":{
+		"recipes": ["cpp:cobweb"]
+	},
+	"requirements": [
+		[
+			"string",
+			"has_the_recipe"
+		]
+	]
+}

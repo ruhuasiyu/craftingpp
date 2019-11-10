@@ -1,0 +1,32 @@
+{
+	"criteria": {
+		"experience_bottle": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:experience_bottle",
+						"count": {
+							"min": 8
+						}
+					}
+				]
+			}
+		},
+		"has_the_recipe": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "cpp:crafting_machine"
+			}
+		}
+	},
+	"rewards":{
+		"recipes": ["cpp:crafting_machine"]
+	},
+	"requirements": [
+		[
+			"experience_bottle",
+			"has_the_recipe"
+		]
+	]
+}

@@ -1,0 +1,37 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:oak_log",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": 4
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:oak_sapling",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count":{
+								"min": 0,
+								"max": 3
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

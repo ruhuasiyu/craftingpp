@@ -1,0 +1,105 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:apricot"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:banana"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:blueberry"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:cherry"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:chinese_date"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:coconut"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:golden_grape"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:grape"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:grapefruit"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:hawthorn"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:lemon"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:longan"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:loquat"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:lychee"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:mango"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:orange"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:payapa"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:peach"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:pear"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:persimmon"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:plum"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:pomegranate"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:strawberry"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:tomato"
+				}
+			]
+		}
+	]
+}

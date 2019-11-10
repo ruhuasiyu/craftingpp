@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.glass_sign\\\"}\"},id:\"cpp:glass_sign\",CustomModelData:12970017}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.glass_sign\"}'},id:'cpp:glass_sign',CustomModelData:12970017}"
 						}
 					]
 				}

@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.heart_of_crystal\\\"}\"},id:\"cpp:heart_of_crystal\",CustomModelData:12970002}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.heart_of_crystal\"}'},id:'cpp:heart_of_crystal',CustomModelData:12970002}"
 						}
 					]
 				}

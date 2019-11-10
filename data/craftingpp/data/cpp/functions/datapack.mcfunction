@@ -1,0 +1,1 @@
+scoreboard players set #datapack_craftingpp cppValue 1

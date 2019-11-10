@@ -1,3 +1,2 @@
-execute unless entity @a[distance=..6] run setblock ~ ~ ~ air
-execute unless block ~ ~ ~ crafting_table run kill @e[type=item,nbt={Item:{id:"minecraft:crafting_table"}},sort=nearest,limit=1,distance=..2]
-execute unless block ~ ~ ~ crafting_table run kill @s
+execute anchored eyes run function cpp:misc/get_front_air
+execute as @e[type=area_effect_cloud,tag=cpp_front_air,distance=..7] at @s align xyz positioned ~0.5 ~ ~0.5 run function cpp:tool/portable_crafting_table_put

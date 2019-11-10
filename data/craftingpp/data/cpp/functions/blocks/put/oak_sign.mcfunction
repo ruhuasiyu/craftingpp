@@ -1,0 +1,16 @@
+execute if block ~ ~ ~ oak_sign[rotation=0] run summon armor_stand ~ ~ ~ {Invulnerable:1b,Invisible:1b,Marker:1b,NoGravity:1b,Small:1b,DisabledSlots:7967,Tags:["cpp_block","cpp_sign"]}
+execute if block ~ ~ ~ oak_sign[rotation=1] run summon armor_stand ~ ~ ~ {Invulnerable:1b,Invisible:1b,Marker:1b,NoGravity:1b,Small:1b,DisabledSlots:7967,Tags:["cpp_block","cpp_sign"],Rotation:[22.5f,0.0f]}
+execute if block ~ ~ ~ oak_sign[rotation=2] run summon armor_stand ~ ~ ~ {Invulnerable:1b,Invisible:1b,Marker:1b,NoGravity:1b,Small:1b,DisabledSlots:7967,Tags:["cpp_block","cpp_sign"],Rotation:[45.0f,0.0f]}
+execute if block ~ ~ ~ oak_sign[rotation=3] run summon armor_stand ~ ~ ~ {Invulnerable:1b,Invisible:1b,Marker:1b,NoGravity:1b,Small:1b,DisabledSlots:7967,Tags:["cpp_block","cpp_sign"],Rotation:[67.5f,0.0f]}
+execute if block ~ ~ ~ oak_sign[rotation=4] run summon armor_stand ~ ~ ~ {Invulnerable:1b,Invisible:1b,Marker:1b,NoGravity:1b,Small:1b,DisabledSlots:7967,Tags:["cpp_block","cpp_sign"],Rotation:[90.0f,0.0f]}
+execute if block ~ ~ ~ oak_sign[rotation=5] run summon armor_stand ~ ~ ~ {Invulnerable:1b,Invisible:1b,Marker:1b,NoGravity:1b,Small:1b,DisabledSlots:7967,Tags:["cpp_block","cpp_sign"],Rotation:[112.5f,0.0f]}
+execute if block ~ ~ ~ oak_sign[rotation=6] run summon armor_stand ~ ~ ~ {Invulnerable:1b,Invisible:1b,Marker:1b,NoGravity:1b,Small:1b,DisabledSlots:7967,Tags:["cpp_block","cpp_sign"],Rotation:[135.0f,0.0f]}
+execute if block ~ ~ ~ oak_sign[rotation=7] run summon armor_stand ~ ~ ~ {Invulnerable:1b,Invisible:1b,Marker:1b,NoGravity:1b,Small:1b,DisabledSlots:7967,Tags:["cpp_block","cpp_sign"],Rotation:[157.5f,0.0f]}
+execute if block ~ ~ ~ oak_sign[rotation=8] run summon armor_stand ~ ~ ~ {Invulnerable:1b,Invisible:1b,Marker:1b,NoGravity:1b,Small:1b,DisabledSlots:7967,Tags:["cpp_block","cpp_sign"],Rotation:[180.0f,0.0f]}
+execute if block ~ ~ ~ oak_sign[rotation=9] run summon armor_stand ~ ~ ~ {Invulnerable:1b,Invisible:1b,Marker:1b,NoGravity:1b,Small:1b,DisabledSlots:7967,Tags:["cpp_block","cpp_sign"],Rotation:[202.5f,0.0f]}
+execute if block ~ ~ ~ oak_sign[rotation=10] run summon armor_stand ~ ~ ~ {Invulnerable:1b,Invisible:1b,Marker:1b,NoGravity:1b,Small:1b,DisabledSlots:7967,Tags:["cpp_block","cpp_sign"],Rotation:[225.0f,0.0f]}
+execute if block ~ ~ ~ oak_sign[rotation=11] run summon armor_stand ~ ~ ~ {Invulnerable:1b,Invisible:1b,Marker:1b,NoGravity:1b,Small:1b,DisabledSlots:7967,Tags:["cpp_block","cpp_sign"],Rotation:[247.5f,0.0f]}
+execute if block ~ ~ ~ oak_sign[rotation=12] run summon armor_stand ~ ~ ~ {Invulnerable:1b,Invisible:1b,Marker:1b,NoGravity:1b,Small:1b,DisabledSlots:7967,Tags:["cpp_block","cpp_sign"],Rotation:[270.0f,0.0f]}
+execute if block ~ ~ ~ oak_sign[rotation=13] run summon armor_stand ~ ~ ~ {Invulnerable:1b,Invisible:1b,Marker:1b,NoGravity:1b,Small:1b,DisabledSlots:7967,Tags:["cpp_block","cpp_sign"],Rotation:[292.5f,0.0f]}
+execute if block ~ ~ ~ oak_sign[rotation=14] run summon armor_stand ~ ~ ~ {Invulnerable:1b,Invisible:1b,Marker:1b,NoGravity:1b,Small:1b,DisabledSlots:7967,Tags:["cpp_block","cpp_sign"],Rotation:[315.0f,0.0f]}
+execute if block ~ ~ ~ oak_sign[rotation=15] run summon armor_stand ~ ~ ~ {Invulnerable:1b,Invisible:1b,Marker:1b,NoGravity:1b,Small:1b,DisabledSlots:7967,Tags:["cpp_block","cpp_sign"],Rotation:[337.5f,0.0f]}

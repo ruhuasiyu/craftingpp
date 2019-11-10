@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.potion.haste\\\"}\"},CustomPotionColor:14270531,CustomPotionEffects:[{Id:3b,Amplifier:1b,Duration:9600}]}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.potion.haste\"}'},CustomPotionColor:14270531,CustomPotionEffects:[{Id:3b,Amplifier:1b,Duration:9600}]}"
 						}
 					]
 				}

@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.golem\\\"}\"},id:\"cpp:golem\",CustomModelData:12970020}"
+							"tag": "{cppGolem:1b,display:{Name:'{\"translate\":\"item.cpp.golem\"}'},id:'cpp:golem',CustomModelData:12970021,mainhand:{id:\"minecraft:diamond_pickaxe\",Count:1b},offhand:{id:\"minecraft:shulker_box\",Count:1b,tag:{switch:{Count:1b,id:\"minecraft:diamond_hoe\"}}}}"
 						}
 					]
 				}

@@ -1,0 +1,29 @@
+{
+	"criteria": {
+		"red_nether_brick_stairs": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:red_nether_brick_stairs"
+					}
+				]
+			}
+		},
+		"has_the_recipe": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "cpp:stairs_to_block/red_nether_brick_stairs"
+			}
+		}
+	},
+	"rewards":{
+		"recipes": ["cpp:stairs_to_block/red_nether_brick_stairs"]
+	},
+	"requirements": [
+		[
+			"red_nether_brick_stairs",
+			"has_the_recipe"
+		]
+	]
+}

@@ -1,10 +1,10 @@
 tag @s remove cpp_redstone_powered
 execute if block ~ ~-1 ~ #cpp:lever_and_buttons[powered=true,face=ceiling] run tag @s add cpp_redstone_powered
-execute if block ~ ~-1 ~ redstone_torch[lit=true] run tag @s add cpp_redstone_powered
+execute if block ~ ~-1 ~ #cpp:redstone_torches[lit=true] run tag @s add cpp_redstone_powered
 execute if block ~ ~-1 ~ observer[powered=true,facing=down] run tag @s add cpp_redstone_powered
 
 execute if block ~ ~1 ~ #cpp:lever_and_buttons[powered=true,face=floor] run tag @s add cpp_redstone_powered
-execute if block ~ ~1 ~ #minecraft:pressure_plates[powered=true] run tag @s add cpp_redstone_powered
+execute if block ~ ~1 ~ #cpp:pressure_plates[powered=true] run tag @s add cpp_redstone_powered
 execute if block ~ ~1 ~ observer[powered=true,facing=up] run tag @s add cpp_redstone_powered
 
 execute if block ~1 ~ ~ #cpp:lever_and_buttons[powered=true,face=wall,facing=east] run tag @s add cpp_redstone_powered

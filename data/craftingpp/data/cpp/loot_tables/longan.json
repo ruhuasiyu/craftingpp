@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag":"{isFruit:1b,id:\"cpp:longan\",display:{Name:\"{\\\"translate\\\":\\\"item.cpp.longan\\\"}\"},CustomModelData:12970012}"
+							"tag":"{display:{Name:'{\"translate\":\"item.cpp.longan\"}'},id:'cpp:longan',CustomModelData:12970012}"
 						}
 					]
 				}

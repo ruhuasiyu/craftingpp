@@ -1,0 +1,536 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:alternatives",
+					"children": [
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:milk_bucket'},{tag:{id:'cpp:lemon'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:cheese"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:experience_bottle'},{id:'minecraft:crafting_table'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:portable_crafting_table"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:experience_bottle'},{tag:{id:'cpp:crafting_machine'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:portable_crafting_machine"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:iron_ingot'},{id:'minecraft:iron_nugget'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:iron_chain",
+							"functions": [
+								{
+									"function": "minecraft:set_count",
+									"count": 2
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:reference",
+									"name": "cpp:crafting_machine/items_sign"
+								},
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:white_dye'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:white_sign"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:reference",
+									"name": "cpp:crafting_machine/items_sign"
+								},
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:orange_dye'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:orange_sign"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:reference",
+									"name": "cpp:crafting_machine/items_sign"
+								},
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:magenta_dye'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:magenta_sign"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:reference",
+									"name": "cpp:crafting_machine/items_sign"
+								},
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:light_blue_dye'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:light_blue_sign"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:reference",
+									"name": "cpp:crafting_machine/items_sign"
+								},
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:yellow_dye'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:yellow_sign"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:reference",
+									"name": "cpp:crafting_machine/items_sign"
+								},
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:lime_dye'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:lime_sign"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:reference",
+									"name": "cpp:crafting_machine/items_sign"
+								},
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:pink_dye'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:pink_sign"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:reference",
+									"name": "cpp:crafting_machine/items_sign"
+								},
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:gray_dye'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:gray_sign"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:reference",
+									"name": "cpp:crafting_machine/items_sign"
+								},
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:light_gray_dye'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:light_gray_sign"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:reference",
+									"name": "cpp:crafting_machine/items_sign"
+								},
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:cyan_dye'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:cyan_sign"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:reference",
+									"name": "cpp:crafting_machine/items_sign"
+								},
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:purple_dye'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:purple_sign"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:reference",
+									"name": "cpp:crafting_machine/items_sign"
+								},
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:blue_dye'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:blue_sign"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:reference",
+									"name": "cpp:crafting_machine/items_sign"
+								},
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:brown_dye'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:brown_sign"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:reference",
+									"name": "cpp:crafting_machine/items_sign"
+								},
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:green_dye'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:green_sign"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:reference",
+									"name": "cpp:crafting_machine/items_sign"
+								},
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:red_dye'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:red_sign"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:reference",
+									"name": "cpp:crafting_machine/items_sign"
+								},
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:black_dye'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:black_sign"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:reference",
+									"name": "cpp:crafting_machine/items_sign"
+								},
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:glass_pane'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:glass_sign"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:shield'},{tag:{id:'cpp:china_flag'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:shield_china_flag"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:shield'},{tag:{id:'cpp:usa_flag'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:shield_usa_flag"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:shield'},{tag:{id:'cpp:russia_flag'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:shield_russia_flag"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:shield'},{tag:{id:'cpp:france_flag'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:shield_france_flag"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:shield'},{tag:{id:'cpp:uk_flag'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:shield_uk_flag"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:shield'},{tag:{id:'cpp:bilibili_logo'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:shield_bilibili"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:shield'},{tag:{id:'cpp:github_logo'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:shield_github"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:shield'},{tag:{id:'cpp:mcmod_logo'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:shield_mcmod"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:shield'},{tag:{id:'cpp:tcp_logo'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:shield_tcp"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:shield'},{tag:{id:'cpp:cbl_logo'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:shield_cbl"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:shield'},{tag:{id:'cpp:nf_logo'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:shield_nf"
+						}
+					]
+				}
+			]
+		}
+	]
+}

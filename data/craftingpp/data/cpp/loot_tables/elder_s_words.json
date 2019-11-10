@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.elder_s_words\\\"}\"},id:\"cpp:elder_s_words\",CustomModelData:12970061}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.elder_s_words\"}'},id:'cpp:elder_s_words',CustomModelData:12970061}"
 						}
 					]
 				}

@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.silicon_plate\\\"}\"},id:\"cpp:silicon_plate\",CustomModelData:12970026}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.silicon_plate\"}'},id:'cpp:silicon_plate',CustomModelData:12970026}"
 						}
 					]
 				}

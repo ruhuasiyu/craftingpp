@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.ammonia_refrigerant\\\"}\"},id:\"cpp:ammonia_refrigerant\",CustomModelData:12970059}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.ammonia_refrigerant\"}'},id:'cpp:ammonia_refrigerant',CustomModelData:12970059}"
 						}
 					]
 				}

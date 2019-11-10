@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.bauhinia_seeds\\\"}\"},id:\"cpp:bauhinia_seeds\",CustomModelData:12970010}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.bauhinia_seeds\"}'},id:'cpp:bauhinia_seeds',CustomModelData:12970010}"
 						}
 					]
 				}

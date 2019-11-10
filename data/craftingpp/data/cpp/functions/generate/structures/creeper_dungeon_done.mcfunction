@@ -1,0 +1,2 @@
+fill ~-15 ~ ~-15 ~16 ~31 ~16 chest{Items:[{Slot:0b,id:"minecraft:stone",Count:1b,tag:{cppChestCreeperDungeonMarker:1b}}]} replace spawner
+fill ~-15 ~ ~-15 ~16 ~31 ~16 spawner{MaxNearbyEntities:6s,RequiredPlayerRange:16s,SpawnCount:4s,SpawnData:{id:"minecraft:creeper"},MaxSpawnDelay:800s,MinSpawnDelay:200s,SpawnRange:4s} replace chest{Items:[{Slot:0b,id:"minecraft:stone",Count:1b,tag:{cppChestCreeperDungeonMarker:1b}}]}

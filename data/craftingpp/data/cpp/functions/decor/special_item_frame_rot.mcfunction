@@ -1,11 +1,11 @@
-execute as @s[tag=!cpp_item_frame_flag] store result entity @s Item.tag.CustomModelData int 1.00000008 run data get entity @s Item.tag.CustomModelData
-data merge entity @s[tag=!cpp_item_frame_flag] {ItemRotation:0b}
+execute store result entity @s[tag=!cpp_item_frame_flag] Item.tag.CustomModelData int 1.00000008 run data get entity @s Item.tag.CustomModelData
+data modify entity @s[tag=!cpp_item_frame_flag] ItemRotation set value 0b
 
 # 画
-execute as @s[nbt={Item:{tag:{CustomModelData:12974034}}}] run data merge entity @s {Item:{tag:{CustomModelData:12974001}}}
+data modify entity @s[nbt={Item:{tag:{CustomModelData:12974034}}}] Item.tag.CustomModelData set value 12974001
 # 春联
-execute as @s[nbt={Item:{tag:{CustomModelData:12974117}}}] run data merge entity @s {Item:{tag:{CustomModelData:12974201}}}
+data modify entity @s[nbt={Item:{tag:{CustomModelData:12974117}}}] Item.tag.CustomModelData set value 12974201
 # 横批
-execute as @s[nbt={Item:{tag:{CustomModelData:12974209}}}] run data merge entity @s {Item:{tag:{CustomModelData:12974301}}}
+data modify entity @s[nbt={Item:{tag:{CustomModelData:12974209}}}] Item.tag.CustomModelData set value 12974301
 # 其它
-execute as @s[nbt={Item:{tag:{CustomModelData:12974305}}}] run data merge entity @s {Item:{tag:{CustomModelData:12974101}}}
+data modify entity @s[nbt={Item:{tag:{CustomModelData:12974305}}}] Item.tag.CustomModelData set value 12974101

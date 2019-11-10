@@ -1,7 +1,7 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:carved_pumpkin",
+			"item": "minecraft:jack_o_lantern",
 			"nbt":"{CustomModelData:12970114}"
 		},
 		"title":{

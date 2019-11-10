@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.moon_stone\\\"}\"},id:\"cpp:moon_stone\",CustomModelData:12970001}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.moon_stone\"}'},id:'cpp:moon_stone',CustomModelData:12970001}"
 						}
 					]
 				}

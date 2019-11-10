@@ -1,0 +1,29 @@
+{
+	"criteria": {
+		"glowstone": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:glowstone"
+					}
+				]
+			}
+		},
+		"has_the_recipe": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "cpp:decomposition/glowstone"
+			}
+		}
+	},
+	"rewards":{
+		"recipes": ["cpp:decomposition/glowstone"]
+	},
+	"requirements": [
+		[
+			"glowstone",
+			"has_the_recipe"
+		]
+	]
+}

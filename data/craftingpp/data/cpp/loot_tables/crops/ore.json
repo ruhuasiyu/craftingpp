@@ -61,7 +61,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag":"{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.ore_sapling\\\"}\"},id:\"cpp:ore_sapling\",CustomModelData:12970112}"
+							"tag":"{display:{Name:'{\"translate\":\"item.cpp.ore_sapling\"}'},id:'cpp:ore_sapling',CustomModelData:12970112}"
 						}
 					]
 				}

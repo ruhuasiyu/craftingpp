@@ -1,3 +1,0 @@
-execute as @s[scores={cppTemperature=0}] run replaceitem block ~ ~ ~ container.11 petrified_oak_slab{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.all_in_one_machine\"}"},CustomModelData:12971054}
-execute as @s[scores={cppTemperature=1}] run replaceitem block ~ ~ ~ container.11 petrified_oak_slab{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.all_in_one_machine\"}"},CustomModelData:12971055}
-execute as @s[scores={cppTemperature=2}] run replaceitem block ~ ~ ~ container.11 petrified_oak_slab{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.all_in_one_machine\"}"},CustomModelData:12971056}

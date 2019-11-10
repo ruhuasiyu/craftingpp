@@ -1,0 +1,32 @@
+{
+	"criteria": {
+		"dragon_head": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:dragon_head",
+						"count": {
+							"min": 4
+						}
+					}
+				]
+			}
+		},
+		"has_the_recipe": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "cpp:dragon_egg"
+			}
+		}
+	},
+	"rewards":{
+		"recipes": ["cpp:dragon_egg"]
+	},
+	"requirements": [
+		[
+			"dragon_head",
+			"has_the_recipe"
+		]
+	]
+}

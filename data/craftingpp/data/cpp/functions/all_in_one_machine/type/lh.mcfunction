@@ -1,3 +1,0 @@
-execute as @s[tag=!cpp_machine_work,scores={cppStoredxp=2..}] if block ~ ~ ~ minecraft:barrel{Items:[{id:"minecraft:potion",tag:{Potion:"minecraft:water"}},{tag:{isFruit:1b}}]} run function cpp:all_in_one_machine/type/lh/cold_drink
-execute as @s[tag=!cpp_machine_work] if block ~ ~ ~ minecraft:barrel{Items:[{id:"minecraft:potion",tag:{Potion:"minecraft:water"}},{tag:{id:"cpp:ammonia_refrigerant"}}]} run function cpp:all_in_one_machine/type/lh/ice_from_water
-execute as @s[tag=!cpp_machine_work] if block ~ ~ ~ minecraft:barrel{Items:[{tag:{id:"cpp:green_force_of_water"}},{tag:{id:"cpp:ammonia_refrigerant"}}]} run function cpp:all_in_one_machine/type/lh/ice_from_green_force

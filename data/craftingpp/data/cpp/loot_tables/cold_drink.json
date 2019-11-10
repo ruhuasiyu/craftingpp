@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{id:\"cpp:cold_drink\",display:{Name:\"{\\\"translate\\\":\\\"item.cpp.potion.cold_drink\\\"}\"},CustomPotionEffects:[{Id:23b,Amplifier:3b}],CustomModelData:12970001}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.potion.cold_drink\"}'},id:'cpp:cold_drink',CustomModelData:12970001,CustomPotionEffects:[{Id:23b,Amplifier:3b}]}"
 						}
 					]
 				}

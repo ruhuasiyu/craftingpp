@@ -1,0 +1,29 @@
+{
+	"criteria": {
+		"string": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:string"
+					}
+				]
+			}
+		},
+		"has_the_recipe": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "cpp:snowball"
+			}
+		}
+	},
+	"rewards":{
+		"recipes": ["cpp:snowball"]
+	},
+	"requirements": [
+		[
+			"string",
+			"has_the_recipe"
+		]
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"replace": false,
+	"values": [
+		"minecraft:birch_fence_gate",
+		"minecraft:oak_fence_gate",
+		"minecraft:spruce_fence_gate",
+		"minecraft:jungle_fence_gate",
+		"minecraft:dark_oak_fence_gate",
+		"minecraft:acacia_fence_gate",
+		"minecraft:birch_trapdoor",
+		"minecraft:oak_trapdoor",
+		"minecraft:spruce_trapdoor",
+		"minecraft:jungle_trapdoor",
+		"minecraft:dark_oak_trapdoor",
+		"minecraft:acacia_trapdoor"
+	]
+}

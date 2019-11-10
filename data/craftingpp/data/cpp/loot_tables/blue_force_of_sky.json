@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.blue_force_of_sky\\\"}\"},id:\"cpp:blue_force_of_sky\",CustomModelData:12970001}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.blue_force_of_sky\"}'},id:'cpp:blue_force_of_sky',CustomModelData:12970001}"
 						}
 					]
 				}

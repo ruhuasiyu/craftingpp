@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.coordinate_recorder\\\"}\"},id:\"cpp:coordinate_recorder\",CustomModelData:12970048}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.coordinate_recorder\"}'},id:'cpp:coordinate_recorder',CustomModelData:12970048}"
 						}
 					]
 				}

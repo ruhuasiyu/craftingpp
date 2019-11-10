@@ -10,4 +10,4 @@ execute store result block ~ 255 ~1 Items[0].Count byte 1 run scoreboard players
 data modify block ~ 255 ~ Items append from block ~ 255 ~1 Items[0]
 data modify entity @s HandItems[1].tag.BlockEntityTag.Items set from block ~ 255 ~ Items
 fill ~ 255 ~ ~ 255 ~1 minecraft:air
-data merge entity @e[type=minecraft:chicken,distance=..1,nbt={Age:0,InLove:0},limit=1] {InLove:600}
+data merge entity @e[type=chicken,distance=..1,nbt={Age:0,InLove:0},limit=1] {InLove:600}

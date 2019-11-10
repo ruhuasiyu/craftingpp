@@ -1,15 +1,29 @@
 {
 	"criteria": {
-		"long_chain": {
+		"potion_of_long_chain": {
 			"trigger": "minecraft:consume_item",
 			"conditions": {
 				"item": {
-					"nbt": "{CustomPotionEffects:[{Id:99b,Duration:9600}]}"
+					"nbt": "{id:\"cpp:potion_of_long_chain\"}"
+				}
+			}
+		},
+		"potion_of_long_dirt": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"nbt": "{id:\"cpp:potion_of_long_dirt\"}"
 				}
 			}
 		}
 	},
 	"rewards":{
 		"function": "cpp:foods/potions/long_chain"
-	}
+	},
+	"requirements": [
+		[
+			"potion_of_long_chain",
+			"potion_of_long_dirt"
+		]
+	]
 }

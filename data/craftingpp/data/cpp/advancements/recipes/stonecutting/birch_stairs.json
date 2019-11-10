@@ -1,0 +1,29 @@
+{
+	"criteria": {
+		"birch_planks": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:birch_planks"
+					}
+				]
+			}
+		},
+		"has_the_recipe": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "cpp:stonecutting/birch_stairs"
+			}
+		}
+	},
+	"rewards":{
+		"recipes": ["cpp:stonecutting/birch_stairs"]
+	},
+	"requirements": [
+		[
+			"birch_planks",
+			"has_the_recipe"
+		]
+	]
+}

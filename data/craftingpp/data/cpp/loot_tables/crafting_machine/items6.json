@@ -1,0 +1,28 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:alternatives",
+					"children": [
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:1b,id:'minecraft:stick'},{Slot:3b,id:'minecraft:stick'},{Slot:10b,id:'minecraft:stick'},{Slot:12b,id:'minecraft:stick'},{Slot:11b,tag:{id:'cpp:enchanted_iron'}},{Slot:20b,tag:{id:'cpp:enchanted_iron'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:chest_transporter"
+						}
+					]
+				}
+			]
+		}
+	]
+}

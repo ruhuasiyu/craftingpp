@@ -1,0 +1,12 @@
+{
+	"parent": "minecraft:block/cross",
+    "display": {
+        "thirdperson_righthand": {
+            "rotation": [ 90, 90, 0 ],
+            "translation": [ -6, -2, 24 ]
+        }
+    },
+	"textures": {
+		"cross": "cm:tool/hopperhock"
+	}
+}

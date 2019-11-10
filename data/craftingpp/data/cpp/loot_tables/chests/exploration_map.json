@@ -16,7 +16,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{MapColor:11830110,Name:\"{\\\"translate\\\":\\\"filled_map.buried_treasure\\\"}\"}}"
+							"tag": "{display:{MapColor:11830110,Name:'{\"translate\":\"filled_map.buried_treasure\"}'}}"
 						}
 					],
 					"conditions": [
@@ -41,7 +41,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{MapColor:13081344,Name:\"{\\\"translate\\\":\\\"filled_map.end_city\\\"}\"}}"
+							"tag": "{display:{MapColor:13081344,Name:'{\"translate\":\"filled_map.end_city\"}'}}"
 						}
 					],
 					"conditions": [
@@ -66,7 +66,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{MapColor:12796215,Name:\"{\\\"translate\\\":\\\"filled_map.fortress\\\"}\"}}"
+							"tag": "{display:{MapColor:12796215,Name:'{\"translate\":\"filled_map.fortress\"}'}}"
 						}
 					],
 					"conditions": [
@@ -91,7 +91,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{MapColor:5393476,Name:\"{\\\"translate\\\":\\\"filled_map.mansion\\\"}\"}}"
+							"tag": "{display:{MapColor:5393476,Name:'{\"translate\":\"filled_map.mansion\"}'}}"
 						}
 					],
 					"conditions": [
@@ -116,7 +116,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{MapColor:13081344,Name:\"{\\\"translate\\\":\\\"filled_map.mineshaft\\\"}\"}}"
+							"tag": "{display:{MapColor:13081344,Name:'{\"translate\":\"filled_map.mineshaft\"}'}}"
 						}
 					],
 					"conditions": [
@@ -141,7 +141,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{MapColor:3830373,Name:\"{\\\"translate\\\":\\\"filled_map.monument\\\"}\"}}"
+							"tag": "{display:{MapColor:3830373,Name:'{\"translate\":\"filled_map.monument\"}'}}"
 						}
 					],
 					"conditions": [
@@ -166,7 +166,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{MapColor:13081344,Name:\"{\\\"translate\\\":\\\"filled_map.ocean_ruins\\\"}\"}}"
+							"tag": "{display:{MapColor:13081344,Name:'{\"translate\":\"filled_map.ocean_ruins\"}'}}"
 						}
 					],
 					"conditions": [
@@ -191,7 +191,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{MapColor:7100513,Name:\"{\\\"translate\\\":\\\"filled_map.shipwreck\\\"}\"}}"
+							"tag": "{display:{MapColor:7100513,Name:'{\"translate\":\"filled_map.shipwreck\"}'}}"
 						}
 					],
 					"conditions": [
@@ -216,7 +216,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{MapColor:12796215,Name:\"{\\\"translate\\\":\\\"filled_map.stronghold\\\"}\"}}"
+							"tag": "{display:{MapColor:12796215,Name:'{\"translate\":\"filled_map.stronghold\"}'}}"
 						}
 					],
 					"conditions": [
@@ -241,7 +241,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{MapColor:13809920,Name:\"{\\\"translate\\\":\\\"filled_map.desert_pyramid\\\"}\"}}"
+							"tag": "{display:{MapColor:13809920,Name:'{\"translate\":\"filled_map.desert_pyramid\"}'}}"
 						}
 					],
 					"conditions": [
@@ -266,7 +266,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{MapColor:2316237,Name:\"{\\\"translate\\\":\\\"filled_map.igloo\\\"}\"}}"
+							"tag": "{display:{MapColor:2316237,Name:'{\"translate\":\"filled_map.igloo\"}'}}"
 						}
 					],
 					"conditions": [
@@ -291,7 +291,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{MapColor:7965706,Name:\"{\\\"translate\\\":\\\"filled_map.jungle_pyramid\\\"}\"}}"
+							"tag": "{display:{MapColor:7965706,Name:'{\"translate\":\"filled_map.jungle_pyramid\"}'}}"
 						}
 					],
 					"conditions": [
@@ -316,7 +316,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{MapColor:11087060,Name:\"{\\\"translate\\\":\\\"filled_map.swamp_hut\\\"}\"}}"
+							"tag": "{display:{MapColor:11087060,Name:'{\"translate\":\"filled_map.swamp_hut\"}'}}"
 						}
 					],
 					"conditions": [
@@ -341,7 +341,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{MapColor:11772732,Name:\"{\\\"translate\\\":\\\"filled_map.village\\\"}\"}}"
+							"tag": "{display:{MapColor:11772732,Name:'{\"translate\":\"filled_map.village\"}'}}"
 						}
 					],
 					"conditions": [

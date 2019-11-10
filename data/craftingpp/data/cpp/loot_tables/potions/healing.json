@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.potion.healing\\\"}\"},CustomPotionColor:16262179,CustomPotionEffects:[{Id:6b,Amplifier:2b}]}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.potion.healing\"}'},CustomPotionColor:16262179,CustomPotionEffects:[{Id:6b,Amplifier:2b}]}"
 						}
 					]
 				}

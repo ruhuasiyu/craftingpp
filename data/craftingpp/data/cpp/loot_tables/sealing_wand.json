@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.sealing_wand\\\"}\"},id:\"cpp:sealing_wand\",CustomModelData:12970062}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.sealing_wand\"}'},id:'cpp:sealing_wand',CustomModelData:12970062}"
 						}
 					]
 				}

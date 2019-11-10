@@ -81,6 +81,34 @@
 									"count": { "min": 1, "max": 2 }
 								}
 							]
+						},
+						{
+							"type": "minecraft:loot_table",
+							"name": "cpp:bsd/leaves"
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:petrified_oak_slab",
+					"conditions": [
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:oak_leaves",
+							"properties": {
+								"persistent": "false"
+							}
+						}
+					],
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{CustomModelData:12971000,isLeavesFastDecayMarker:1b}"
 						}
 					]
 				}

@@ -1,5 +1,5 @@
 {
-	"parent": "item/handheld",
+	"parent": "item/handheld_rod",
 	"textures": {
 		"layer0": "item/carrot_on_a_stick"
 	},
@@ -26,7 +26,8 @@
 		{ "predicate": { "custom_model_data": 12970046 }, "model": "cpp:tool/temperancer"},
 		{ "predicate": { "custom_model_data": 12970047 }, "model": "cpp:tool/temperancer_closed"},
 		{ "predicate": { "custom_model_data": 12970048 }, "model": "cpp:tool/coordinate_recorder"},
-		{ "predicate": { "custom_model_data": 12970049 }, "model": "cpp:material/santa_gift"},
+		{ "predicate": { "custom_model_data": 12970049 }, "model": "cpp:tool/santa_gift"},
+		{ "predicate": { "custom_model_data": 12970050 }, "model": "cpp:tool/muffler"},
 		
 		{ "predicate": { "custom_model_data": 12970061 }, "model": "cpp:tool/elder_s_words"},		
 		{ "predicate": { "custom_model_data": 12970062 }, "model": "cpp:tool/sealing_wand"},
@@ -34,7 +35,21 @@
 		{ "predicate": { "custom_model_data": 12970064 }, "model": "cpp:tool/dream_wand"},
 		{ "predicate": { "custom_model_data": 12970065 }, "model": "cpp:tool/wand_of_the_darkness"},
 		{ "predicate": { "custom_model_data": 12970066 }, "model": "cpp:tool/broom"},
-		{ "predicate": { "custom_model_data": 12970067 }, "model": "cpp:tool/chest_transporter"},
+		{ "predicate": { "custom_model_data": 12970067 }, "model": "cpp:tool/chest_transporter"},	
+		{ "predicate": { "custom_model_data": 12970068 }, "model": "cpp:tool/portable_crafting_table"},
+		{ "predicate": { "custom_model_data": 12970069 }, "model": "cpp:tool/portable_crafting_machine"},
+		{ "predicate": { "custom_model_data": 12970070 }, "model": "cpp:tool/elder_s_words"},
+		
+		{ "predicate": { "custom_model_data": 12970101 }, "model": "cpp:plugin/empty_plugin"},
+		{ "predicate": { "custom_model_data": 12970102 }, "model": "cpp:plugin/low_pressure_plugin"},
+		{ "predicate": { "custom_model_data": 12970103 }, "model": "cpp:plugin/high_pressure_plugin"},
+		{ "predicate": { "custom_model_data": 12970104 }, "model": "cpp:plugin/low_temperature_plugin"},
+		{ "predicate": { "custom_model_data": 12970105 }, "model": "cpp:plugin/high_temperature_plugin"},
+		{ "predicate": { "custom_model_data": 12970106 }, "model": "cpp:plugin/cobblestone_plugin"},
+		{ "predicate": { "custom_model_data": 12970107 }, "model": "cpp:plugin/stone_plugin"},
+		{ "predicate": { "custom_model_data": 12970108 }, "model": "cpp:plugin/obsidian_plugin"},
+		{ "predicate": { "custom_model_data": 12970109 }, "model": "cpp:plugin/netherrack_plugin"},
+		{ "predicate": { "custom_model_data": 12970110 }, "model": "cpp:plugin/end_stone_plugin"},
 		
 		{ "predicate": { "custom_model_data": 12971001 }, "model": "cpp:character/pic01"},
 		{ "predicate": { "custom_model_data": 12971002 }, "model": "cpp:character/pic02"},
@@ -65,8 +80,6 @@
 		{ "predicate": { "custom_model_data": 12971027 }, "model": "cpp:character/pic27"},
 		{ "predicate": { "custom_model_data": 12971028 }, "model": "cpp:character/pic28"},
 		{ "predicate": { "custom_model_data": 12971029 }, "model": "cpp:character/pic29"},
-		{ "predicate": { "custom_model_data": 12971030 }, "model": "cpp:character/pic30"},
-		
-		{ "predicate": { "custom_model_data": 12972001 }, "model": "cpp:manuel/01"}
+		{ "predicate": { "custom_model_data": 12971030 }, "model": "cpp:character/pic30"}
 	]
 }

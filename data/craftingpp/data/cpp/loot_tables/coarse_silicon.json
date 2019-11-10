@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.coarse_silicon\\\"}\"},id:\"cpp:coarse_silicon\",CustomModelData:12970050}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.coarse_silicon\"}'},id:'cpp:coarse_silicon',CustomModelData:12970050}"
 						}
 					]
 				}

@@ -15,7 +15,7 @@
 							}
 						},
 						{
-							"function": "looting_enchant",
+							"function": "minecraft:looting_enchant",
 							"count": {
 								"min": 0,
 								"max": 1
@@ -40,7 +40,7 @@
 							}
 						},
 						{
-							"function": "looting_enchant",
+							"function": "minecraft:looting_enchant",
 							"count": {
 								"min": 0,
 								"max": 1
@@ -53,13 +53,13 @@
 		{
 			"conditions": [
 				{
-					"condition": "alternative",
+					"condition": "minecraft:alternative",
 					"terms": [
 						{
-							"condition": "killed_by_player"
+							"condition": "minecraft:killed_by_player"
 						},
 						{
-							"condition": "entity_properties",
+							"condition": "minecraft:entity_properties",
 							"entity": "killer",
 							"predicate": {
 								"type": "minecraft:zombie_pigman"
@@ -68,7 +68,7 @@
 					]
 				},
 				{
-					"condition": "random_chance_with_looting",
+					"condition": "minecraft:random_chance_with_looting",
 					"chance": 0.025,
 					"looting_multiplier": 0.01
 				}
@@ -76,7 +76,7 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "loot_table",
+					"type": "minecraft:loot_table",
 					"name": "cpp:cow_head"
 				}
 			]
@@ -84,13 +84,13 @@
 		{
 			"conditions": [
 				{
-					"condition": "alternative",
+					"condition": "minecraft:alternative",
 					"terms": [
 						{
-							"condition": "killed_by_player"
+							"condition": "minecraft:killed_by_player"
 						},
 						{
-							"condition": "entity_properties",
+							"condition": "minecraft:entity_properties",
 							"entity": "killer",
 							"predicate": {
 								"type": "minecraft:zombie_pigman"
@@ -102,7 +102,7 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "loot_table",
+					"type": "minecraft:loot_table",
 					"name": "cpp:shard_of_the_darkness"
 				}
 			]

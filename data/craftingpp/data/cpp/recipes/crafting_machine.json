@@ -1,15 +1,15 @@
 {
 	"type": "crafting_shaped",
 	"pattern": [
-		"XXX",
-		"X#X",
-		"XXX"
+		"eee",
+		"ece",
+		"eee"
 	],
 	"key": {
-		"#": {
+		"c": {
 			"item": "minecraft:crafting_table"
 		},
-		"X": {
+		"e": {
 			"item": "minecraft:experience_bottle"
 		}
 	},

@@ -1,0 +1,29 @@
+{
+	"criteria": {
+		"stone_brick_stairs": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:stone_brick_stairs"
+					}
+				]
+			}
+		},
+		"has_the_recipe": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "cpp:stairs_to_block/stone_brick_stairs"
+			}
+		}
+	},
+	"rewards":{
+		"recipes": ["cpp:stairs_to_block/stone_brick_stairs"]
+	},
+	"requirements": [
+		[
+			"stone_brick_stairs",
+			"has_the_recipe"
+		]
+	]
+}

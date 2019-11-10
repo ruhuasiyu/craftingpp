@@ -1,2 +1,2 @@
-execute as @s[nbt=!{SelectedItem:{tag:{id:"cpp:compressor"}}}] run function cpp:xp/xp_bottle
-execute as @s[nbt={SelectedItem:{tag:{id:"cpp:compressor"}}}] run function cpp:xp/xp_bottle64
+execute as @s[predicate=!cpp:mainhand_compressor] run function cpp:xp/xp_bottle
+execute as @s[predicate=cpp:mainhand_compressor] run function cpp:xp/xp_bottle64

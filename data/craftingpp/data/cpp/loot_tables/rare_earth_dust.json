@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.rare_earth_dust\\\"}\"},id:\"cpp:rare_earth_dust\",CustomModelData:12970048}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.rare_earth_dust\"}'},id:'cpp:rare_earth_dust',CustomModelData:12970048}"
 						}
 					]
 				}

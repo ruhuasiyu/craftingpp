@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.beacon_enhancer\\\"}\"},id:\"cpp:beacon_enhancer\",CustomModelData:12970005}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.beacon_enhancer\"}'},id:'cpp:beacon_enhancer',CustomModelData:12970005}"
 						}
 					]
 				}

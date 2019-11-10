@@ -1,0 +1,29 @@
+{
+	"criteria": {
+		"nether_bricks": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:nether_bricks"
+					}
+				]
+			}
+		},
+		"has_the_recipe": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "cpp:stairs_to_block/nether_bricks"
+			}
+		}
+	},
+	"rewards":{
+		"recipes": ["cpp:stairs_to_block/nether_bricks"]
+	},
+	"requirements": [
+		[
+			"nether_bricks",
+			"has_the_recipe"
+		]
+	]
+}

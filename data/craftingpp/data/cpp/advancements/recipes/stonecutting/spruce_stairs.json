@@ -1,0 +1,29 @@
+{
+	"criteria": {
+		"spruce_planks": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:spruce_planks"
+					}
+				]
+			}
+		},
+		"has_the_recipe": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "cpp:stonecutting/spruce_stairs"
+			}
+		}
+	},
+	"rewards":{
+		"recipes": ["cpp:stonecutting/spruce_stairs"]
+	},
+	"requirements": [
+		[
+			"spruce_planks",
+			"has_the_recipe"
+		]
+	]
+}

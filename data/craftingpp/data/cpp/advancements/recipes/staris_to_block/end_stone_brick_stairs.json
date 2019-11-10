@@ -1,0 +1,29 @@
+{
+	"criteria": {
+		"end_stone_brick_stairs": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:end_stone_brick_stairs"
+					}
+				]
+			}
+		},
+		"has_the_recipe": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "cpp:stairs_to_block/end_stone_brick_stairs"
+			}
+		}
+	},
+	"rewards":{
+		"recipes": ["cpp:stairs_to_block/end_stone_brick_stairs"]
+	},
+	"requirements": [
+		[
+			"end_stone_brick_stairs",
+			"has_the_recipe"
+		]
+	]
+}

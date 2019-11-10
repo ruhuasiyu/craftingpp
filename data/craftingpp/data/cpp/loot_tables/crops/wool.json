@@ -77,7 +77,7 @@
 			"entries": [
 				{
 			
-					"type": "loot_table",
+					"type": "minecraft:loot_table",
 					"name": "cpp:wool_sapling"
 				}
 			]

@@ -1,24 +1,7 @@
 {
-    "display": {
-        "gui": {
-            "rotation": [ 0, 0, 0 ],
-            "translation": [ -18, 0, 0],
-            "scale":[ 1.25, 1.25, 1.25 ]
-        },
-        "ground": {
-            "scale":[ 0, 0, 0 ]
-        }
-    },
+    "parent": "cpp:machine/effects/temp",
 	"textures": {
 		"effects": "mob_effect/glowing"
-	},
-	"elements": [
-		{   "from": [ 0, 0, 0 ],
-			"to": [ 16, 16, 0 ],
-			"faces": {
-				"south": { "uv": [ 0, 0, 16, 16 ], "texture": "#effects"}
-			}
-		}
-	]
+	}
 }
 

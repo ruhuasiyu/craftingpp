@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.limb_of_ridge\\\"}\"},id:\"cpp:limb_of_ridge\",CustomModelData:12970006}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.limb_of_ridge\"}'},id:'cpp:limb_of_ridge',CustomModelData:12970006}"
 						}
 					]
 				}

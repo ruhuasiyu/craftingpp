@@ -1,0 +1,32 @@
+{
+	"criteria": {
+		"coral": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:tube_coral",
+						"count": {
+							"min": 4
+						}
+					}
+				]
+			}
+		},
+		"has_the_recipe": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "cpp:coral/tube"
+			}
+		}
+	},
+	"rewards":{
+		"recipes": ["cpp:coral/tube"]
+	},
+	"requirements": [
+		[
+			"coral",
+			"has_the_recipe"
+		]
+	]
+}

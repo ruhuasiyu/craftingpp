@@ -11,8 +11,8 @@
 		}
 	},
 	"textures": {
-		"particle": "entity/iron_golem",
-		"layer": "entity/iron_golem"
+		"particle": "entity/iron_golem/iron_golem",
+		"layer": "entity/iron_golem/iron_golem"
 	},
 	"elements": [
 		{

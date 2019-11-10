@@ -1,0 +1,29 @@
+{
+	"condition": "minecraft:alternative",
+	"terms": [
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{id:'minecraft:rabbit_hide'},{id:'minecraft:carrot'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{id:'minecraft:rabbit_hide'},{id:'minecraft:golden_carrot'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{id:'minecraft:rabbit_hide'},{id:'minecraft:dandelion'}]}"
+				}
+			}
+		}
+	]
+}

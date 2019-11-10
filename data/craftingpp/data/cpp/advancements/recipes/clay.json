@@ -1,0 +1,29 @@
+{
+	"criteria": {
+		"slime_ball": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:slime_ball"
+					}
+				]
+			}
+		},
+		"has_the_recipe": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "cpp:clay"
+			}
+		}
+	},
+	"rewards":{
+		"recipes": ["cpp:clay"]
+	},
+	"requirements": [
+		[
+			"slime_ball",
+			"has_the_recipe"
+		]
+	]
+}

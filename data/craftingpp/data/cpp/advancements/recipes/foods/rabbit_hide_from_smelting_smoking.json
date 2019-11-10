@@ -1,0 +1,95 @@
+{
+	"criteria": {
+		"leather_horse_armor": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:leather_horse_armor"
+					}
+				]
+			}
+		},
+		"rotten_flesh": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:rotten_flesh"
+					}
+				]
+			}
+		},
+		"leather_helmet": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:leather_helmet"
+					}
+				]
+			}
+		},
+		"leather_chestplate": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:leather_chestplate"
+					}
+				]
+			}
+		},
+		"leather_leggings": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:leather_leggings"
+					}
+				]
+			}
+		},
+		"leather_boots": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:leather_boots"
+					}
+				]
+			}
+		},
+		"saddle": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:saddle"
+					}
+				]
+			}
+		},
+		"has_the_recipe": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "cpp:decomposition/rabbit_hide_from_smelting_smoking"
+			}
+		}
+	},
+	"rewards":{
+		"recipes": ["cpp:decomposition/rabbit_hide_from_smelting_smoking"]
+	},
+	"requirements": [
+		[
+			"leather_horse_armor",
+			"rotten_flesh",
+			"leather_helmet",
+			"leather_chestplate",
+			"leather_leggings",
+			"leather_boots",
+			"saddle",
+			"has_the_recipe"
+		]
+	]
+}

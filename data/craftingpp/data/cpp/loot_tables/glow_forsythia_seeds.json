@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.glow_forsythia_seeds\\\"}\"},id:\"cpp:glow_forsythia_seeds\",CustomModelData:12970014}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.glow_forsythia_seeds\"}'},id:'cpp:glow_forsythia_seeds',CustomModelData:12970014}"
 						}
 					]
 				}

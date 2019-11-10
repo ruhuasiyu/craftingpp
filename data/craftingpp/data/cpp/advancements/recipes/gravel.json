@@ -1,0 +1,46 @@
+{
+	"criteria": {
+		"sand": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:sand",
+						"count": {
+							"min": 2
+						}
+					}
+				]
+			}
+		},
+		"cobblestone": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:cobblestone",
+						"count": {
+							"min": 2
+						}
+					}
+				]
+			}
+		},
+		"has_the_recipe": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "cpp:gravel"
+			}
+		}
+	},
+	"rewards":{
+		"recipes": ["cpp:gravel"]
+	},
+	"requirements": [
+		[
+			"sand",
+			"cobblestone",
+			"has_the_recipe"
+		]
+	]
+}

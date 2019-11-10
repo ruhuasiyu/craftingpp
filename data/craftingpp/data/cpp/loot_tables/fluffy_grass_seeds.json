@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.fluffy_grass_seeds\\\"}\"},id:\"cpp:fluffy_grass_seeds\",CustomModelData:12970011}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.fluffy_grass_seeds\"}'},id:'cpp:fluffy_grass_seeds',CustomModelData:12970011}"
 						}
 					]
 				}

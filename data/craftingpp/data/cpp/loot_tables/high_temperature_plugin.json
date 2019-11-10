@@ -5,11 +5,11 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:firework_star",
+					"name": "minecraft:carrot_on_a_stick",
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{MachinePlugin:1b,display:{Name:\"{\\\"translate\\\":\\\"item.cpp.high_temperature_plugin\\\"}\"},id:\"cpp:high_temperature_plugin\",CustomModelData:12970105}"
+							"tag": "{MachinePlugin:1b,display:{Name:'{\"translate\":\"item.cpp.high_temperature_plugin\"}'},id:'cpp:high_temperature_plugin',CustomModelData:12970105}"
 						}
 					]
 				}

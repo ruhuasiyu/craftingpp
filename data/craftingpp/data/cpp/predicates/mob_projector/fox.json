@@ -1,0 +1,8 @@
+{
+	"condition": "minecraft:location_check",
+	"predicate": {
+		"block": {
+			"nbt": "{Items:[{id:'minecraft:skeleton_skull'},{id:'minecraft:sweet_berries'}]}"
+		}
+	}
+}

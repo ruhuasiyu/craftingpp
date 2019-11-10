@@ -5,11 +5,11 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:carved_pumpkin",
+					"name": "minecraft:jack_o_lantern",
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.glass_helmet\\\"}\"},id:\"cpp:glass_helmet\",CustomModelData:12970112}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.glass_helmet\"}'},id:'cpp:glass_helmet',CustomModelData:12970112,cppHatSlot:'hand'}"
 						}
 					]
 				}

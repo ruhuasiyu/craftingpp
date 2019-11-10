@@ -1,0 +1,21 @@
+{
+	"condition": "minecraft:alternative",
+	"terms": [
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:1b,id:'minecraft:coal'},{Slot:2b,id:'minecraft:coal'},{Slot:3b,id:'minecraft:coal'},{Slot:10b,id:'minecraft:leather'},{Slot:12b,id:'minecraft:leather'},{Slot:19b,id:'minecraft:coal'},{Slot:21b,id:'minecraft:coal'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:1b,id:'minecraft:blue_dye'},{Slot:2b,id:'minecraft:blue_dye'},{Slot:3b,id:'minecraft:blue_dye'},{Slot:10b,id:'minecraft:leather'},{Slot:12b,id:'minecraft:leather'},{Slot:19b,id:'minecraft:blue_dye'},{Slot:21b,id:'minecraft:blue_dye'}]}"
+				}
+			}
+		}
+	]
+}

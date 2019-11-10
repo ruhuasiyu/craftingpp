@@ -5,11 +5,11 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:barrel",
+					"name": "minecraft:carrot_on_a_stick",
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.portable_crafting_machine\\\"}\"},id:\"cpp:portable_crafting_machine\",CustomModelData:12970099}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.portable_crafting_machine\"}'},id:'cpp:portable_crafting_machine',CustomModelData:12970069}"
 						}
 					]					
 				}

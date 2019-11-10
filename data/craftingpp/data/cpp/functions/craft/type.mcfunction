@@ -1,9 +1,0 @@
-execute as @s[scores={cppValue=9}] run function cpp:craft/items9
-execute as @s[scores={cppValue=8}] run function cpp:craft/items8
-execute as @s[scores={cppValue=7}] run function cpp:craft/items7
-execute as @s[scores={cppValue=6}] run function cpp:craft/items6
-execute as @s[scores={cppValue=5}] run function cpp:craft/items5
-execute as @s[scores={cppValue=4}] run function cpp:craft/items4
-execute as @s[scores={cppValue=3}] run function cpp:craft/items3
-execute as @s[scores={cppValue=2}] run function cpp:craft/items2
-execute as @s[scores={cppValue=1}] run function cpp:craft/items1

@@ -1,15 +1,11 @@
 {
 	"replace": false,
 	"values": [
-		"#cpp:golem_east",
-		"#cpp:golem_west",
-		"#cpp:golem_south",
-		"#cpp:golem_north",
-		"#cpp:golem_up",
-		"#cpp:golem_down",
+		"#cpp:golem_motion_blocks",
 		"#cpp:golem_end",
+		"#cpp:golem_back",
 		"#cpp:golem_switch",
 		"minecraft:chest",
-		"minecraft:dropper"
+		"minecraft:slime_block"
 	]
 }

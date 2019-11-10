@@ -1,0 +1,32 @@
+{
+	"criteria": {
+		"jungle_slab": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:jungle_slab",
+						"count": {
+							"min": 2
+						}
+					}
+				]
+			}
+		},
+		"has_the_recipe": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "cpp:slab_to_block/jungle_slab"
+			}
+		}
+	},
+	"rewards":{
+		"recipes": ["cpp:slab_to_block/jungle_slab"]
+	},
+	"requirements": [
+		[
+			"jungle_slab",
+			"has_the_recipe"
+		]
+	]
+}

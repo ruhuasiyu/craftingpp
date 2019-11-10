@@ -15,7 +15,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData:1000,id:\"cpp:powered_creeper_mark\"}"
+							"tag": "{CustomModelData:1000,id:'cpp:enchance_mobs/creeper'}"
 						}
 					]
 				}

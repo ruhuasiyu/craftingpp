@@ -1,0 +1,758 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:alternatives",
+					"children": [
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:1b,id:'minecraft:leather'},{Slot:3b,id:'minecraft:leather'},{Slot:10b,id:'minecraft:brown_dye'},{Slot:12b,id:'minecraft:brown_dye'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:snow_boots"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:10b,id:'minecraft:leather'},{Slot:12b,id:'minecraft:leather'},{Slot:19b,id:'minecraft:brown_dye'},{Slot:21b,id:'minecraft:brown_dye'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:snow_boots"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:bone_meal'},{id:'minecraft:rotten_flesh'},{id:'minecraft:charcoal'},{id:'minecraft:gunpowder'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:fertilizer",
+							"functions": [
+								{
+									"function": "minecraft:set_count",
+									"count": 4
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:poppy'},{tag:{id:'cpp:lycoris_radiata'}},{tag:{id:'cpp:glazed_shade'}},{tag:{id:'cpp:marigold'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:poinsettia"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:cooked_porkchop'},{id:'minecraft:cooked_salmon'},{id:'minecraft:brown_mushroom'},{id:'minecraft:wheat'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:stargazy_pie"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:feather'},{id:'minecraft:ink_sac'},{id:'minecraft:red_dye'},{id:'minecraft:paper'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:spring_festival_decorations"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:red_mushroom'},{id:'minecraft:brown_mushroom'},{id:'minecraft:bowl'},{tag:{id:'cpp:lycoris_radiata'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:suspicious_stew",
+							"functions": [
+								{
+									"function": "minecraft:set_stew_effect",
+									"effects": [
+										{
+											"type": "minecraft:strength",
+											"duration": 100
+										}
+									]
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:red_mushroom'},{id:'minecraft:brown_mushroom'},{id:'minecraft:bowl'},{tag:{id:'cpp:trifolium'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:suspicious_stew",
+							"functions": [
+								{
+									"function": "minecraft:set_stew_effect",
+									"effects": [
+										{
+											"type": "minecraft:mining_fatigue",
+											"duration": 100
+										}
+									]
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:red_mushroom'},{id:'minecraft:brown_mushroom'},{id:'minecraft:bowl'},{tag:{id:'cpp:blackthorn'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:suspicious_stew",
+							"functions": [
+								{
+									"function": "minecraft:set_stew_effect",
+									"effects": [
+										{
+											"type": "minecraft:wither",
+											"duration": 100
+										}
+									]
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:red_mushroom'},{id:'minecraft:brown_mushroom'},{id:'minecraft:bowl'},{tag:{id:'cpp:cattail'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:suspicious_stew",
+							"functions": [
+								{
+									"function": "minecraft:set_stew_effect",
+									"effects": [
+										{
+											"type": "minecraft:invisibility",
+											"duration": 100
+										}
+									]
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:red_mushroom'},{id:'minecraft:brown_mushroom'},{id:'minecraft:bowl'},{tag:{id:'cpp:marigold'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:suspicious_stew",
+							"functions": [
+								{
+									"function": "minecraft:set_stew_effect",
+									"effects": [
+										{
+											"type": "minecraft:haste",
+											"duration": 100
+										}
+									]
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:red_mushroom'},{id:'minecraft:brown_mushroom'},{id:'minecraft:bowl'},{tag:{id:'cpp:hibiscus'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:suspicious_stew",
+							"functions": [
+								{
+									"function": "minecraft:set_stew_effect",
+									"effects": [
+										{
+											"type": "minecraft:weakness",
+											"duration": 100
+										}
+									]
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:red_mushroom'},{id:'minecraft:brown_mushroom'},{id:'minecraft:bowl'},{tag:{id:'cpp:hyacinth'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:suspicious_stew",
+							"functions": [
+								{
+									"function": "minecraft:set_stew_effect",
+									"effects": [
+										{
+											"type": "minecraft:jump_boost",
+											"duration": 100
+										}
+									]
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:red_mushroom'},{id:'minecraft:brown_mushroom'},{id:'minecraft:bowl'},{tag:{id:'cpp:calamus'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:suspicious_stew",
+							"functions": [
+								{
+									"function": "minecraft:set_stew_effect",
+									"effects": [
+										{
+											"type": "minecraft:nausea",
+											"duration": 100
+										}
+									]
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:red_mushroom'},{id:'minecraft:brown_mushroom'},{id:'minecraft:bowl'},{tag:{id:'cpp:wild_lilium'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:suspicious_stew",
+							"functions": [
+								{
+									"function": "minecraft:set_stew_effect",
+									"effects": [
+										{
+											"type": "minecraft:poison",
+											"duration": 100
+										}
+									]
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:red_mushroom'},{id:'minecraft:brown_mushroom'},{id:'minecraft:bowl'},{tag:{id:'cpp:bauhinia'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:suspicious_stew",
+							"functions": [
+								{
+									"function": "minecraft:set_stew_effect",
+									"effects": [
+										{
+											"type": "minecraft:saturation",
+											"duration": 100
+										}
+									]
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:red_mushroom'},{id:'minecraft:brown_mushroom'},{id:'minecraft:bowl'},{tag:{id:'cpp:fluffy_grass'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:suspicious_stew",
+							"functions": [
+								{
+									"function": "minecraft:set_stew_effect",
+									"effects": [
+										{
+											"type": "minecraft:levitation",
+											"duration": 100
+										}
+									]
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:red_mushroom'},{id:'minecraft:brown_mushroom'},{id:'minecraft:bowl'},{tag:{id:'cpp:gerbera'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:suspicious_stew",
+							"functions": [
+								{
+									"function": "minecraft:set_stew_effect",
+									"effects": [
+										{
+											"type": "minecraft:blindness",
+											"duration": 100
+										}
+									]
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:red_mushroom'},{id:'minecraft:brown_mushroom'},{id:'minecraft:bowl'},{tag:{id:'cpp:esparto'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:suspicious_stew",
+							"functions": [
+								{
+									"function": "minecraft:set_stew_effect",
+									"effects": [
+										{
+											"type": "minecraft:speed",
+											"duration": 100
+										}
+									]
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:red_mushroom'},{id:'minecraft:brown_mushroom'},{id:'minecraft:bowl'},{tag:{id:'cpp:glow_forsythia'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:suspicious_stew",
+							"functions": [
+								{
+									"function": "minecraft:set_stew_effect",
+									"effects": [
+										{
+											"type": "minecraft:glowing",
+											"duration": 100
+										}
+									]
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:red_mushroom'},{id:'minecraft:brown_mushroom'},{id:'minecraft:bowl'},{tag:{id:'cpp:glazed_shade'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:suspicious_stew",
+							"functions": [
+								{
+									"function": "minecraft:set_stew_effect",
+									"effects": [
+										{
+											"type": "minecraft:water_breathing",
+											"duration": 100
+										}
+									]
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:red_mushroom'},{id:'minecraft:brown_mushroom'},{id:'minecraft:bowl'},{tag:{id:'cpp:stelera'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:suspicious_stew",
+							"functions": [
+								{
+									"function": "minecraft:set_stew_effect",
+									"effects": [
+										{
+											"type": "minecraft:poison",
+											"duration": 100
+										}
+									]
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:red_mushroom'},{id:'minecraft:brown_mushroom'},{id:'minecraft:bowl'},{tag:{id:'cpp:forage_crystal'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:suspicious_stew",
+							"functions": [
+								{
+									"function": "minecraft:set_stew_effect",
+									"effects": [
+										{
+											"type": "minecraft:regeneration",
+											"duration": 100
+										}
+									]
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:red_mushroom'},{id:'minecraft:brown_mushroom'},{id:'minecraft:bowl'},{tag:{id:'cpp:isorchid'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:suspicious_stew",
+							"functions": [
+								{
+									"function": "minecraft:set_stew_effect",
+									"effects": [
+										{
+											"type": "minecraft:resistance",
+											"duration": 100
+										}
+									]
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:red_mushroom'},{id:'minecraft:brown_mushroom'},{id:'minecraft:bowl'},{tag:{id:'cpp:burning_chrysanthe'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:suspicious_stew",
+							"functions": [
+								{
+									"function": "minecraft:set_stew_effect",
+									"effects": [
+										{
+											"type": "minecraft:fire_resistance",
+											"duration": 100
+										}
+									]
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:red_mushroom'},{id:'minecraft:brown_mushroom'},{id:'minecraft:bowl'},{tag:{id:'cpp:oxalis'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:suspicious_stew",
+							"functions": [
+								{
+									"function": "minecraft:set_stew_effect",
+									"effects": [
+										{
+											"type": "minecraft:slowness",
+											"duration": 100
+										}
+									]
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:red_banner'},{id:'minecraft:peony'},{tag:{id:'cpp:burning_chrysanthe'}},{tag:{id:'cpp:marigold'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:china_flag"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:white_banner'},{id:'minecraft:rose_bush'},{tag:{id:'cpp:hyacinth'}},{tag:{id:'cpp:fluffy_grass'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:usa_flag"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:red_banner'},{id:'minecraft:sunflower'},{tag:{id:'cpp:hyacinth'}},{tag:{id:'cpp:fluffy_grass'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:russia_flag"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:red_banner'},{id:'minecraft:cornflower'},{tag:{id:'cpp:hyacinth'}},{tag:{id:'cpp:fluffy_grass'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:france_flag"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:white_banner'},{id:'minecraft:poppy'},{tag:{id:'cpp:hyacinth'}},{tag:{id:'cpp:fluffy_grass'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:uk_flag"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:painting'},{tag:{id:'cpp:blackthorn'}},{tag:{id:'cpp:trifolium'}},{tag:{id:'cpp:esparto'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:bilibili_logo"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:painting'},{tag:{id:'cpp:blackthorn'}},{tag:{id:'cpp:trifolium'}},{tag:{id:'cpp:cattail'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:github_logo"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:painting'},{tag:{id:'cpp:blackthorn'}},{tag:{id:'cpp:trifolium'}},{tag:{id:'cpp:isorchid'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:mcmod_logo"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:painting'},{tag:{id:'cpp:blackthorn'}},{tag:{id:'cpp:trifolium'}},{tag:{id:'cpp:bauhinia'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:tcp_logo"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:painting'},{tag:{id:'cpp:blackthorn'}},{tag:{id:'cpp:trifolium'}},{tag:{id:'cpp:hyacinth'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:cbl_logo"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:painting'},{tag:{id:'cpp:blackthorn'}},{tag:{id:'cpp:trifolium'}},{tag:{id:'cpp:lycoris_radiata'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:nf_logo"
+						}
+					]
+				}
+			]
+		}
+	]
+}

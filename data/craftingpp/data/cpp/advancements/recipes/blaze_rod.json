@@ -1,0 +1,32 @@
+{
+	"criteria": {
+		"blaze_powder": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:blaze_powder",
+						"count": {
+							"min": 8
+						}
+					}
+				]
+			}
+		},
+		"has_the_recipe": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "cpp:blaze_rod"
+			}
+		}
+	},
+	"rewards":{
+		"recipes": ["cpp:blaze_rod"]
+	},
+	"requirements": [
+		[
+			"blaze_powder",
+			"has_the_recipe"
+		]
+	]
+}

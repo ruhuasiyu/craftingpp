@@ -1,0 +1,13 @@
+{
+	"criteria": {
+		"put_furnace": {
+			"trigger": "minecraft:placed_block",
+			"conditions": {
+				"block": "minecraft:smoker"
+			}
+		}
+	},
+	"rewards": {
+		"function": "cpp:block/smoker/reset"
+	}
+}

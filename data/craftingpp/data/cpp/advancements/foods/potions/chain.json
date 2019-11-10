@@ -1,15 +1,29 @@
 {
 	"criteria": {
-		"chain": {
+		"potion_of_chain": {
 			"trigger": "minecraft:consume_item",
 			"conditions": {
 				"item": {
-					"nbt": "{CustomPotionEffects:[{Id:99b,Duration:3600}]}"
+					"nbt": "{id:\"cpp:potion_of_chain\"}"
+				}
+			}
+		},
+		"potion_of_dirt": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"nbt": "{id:\"cpp:potion_of_dirt\"}"
 				}
 			}
 		}
 	},
 	"rewards":{
 		"function": "cpp:foods/potions/chain"
-	}
+	},
+	"requirements": [
+		[
+			"potion_of_chain",
+			"potion_of_dirt"
+		]
+	]
 }

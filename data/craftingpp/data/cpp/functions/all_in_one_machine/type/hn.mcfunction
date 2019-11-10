@@ -1,2 +1,0 @@
-execute as @s[tag=!cpp_machine_work] if block ~ ~ ~ minecraft:barrel{Items:[{id:"minecraft:sand"}]} run function cpp:all_in_one_machine/type/hn/sand
-execute as @s[tag=!cpp_machine_work] if block ~ ~ ~ minecraft:barrel{Items:[{id:"minecraft:red_sand"}]} run function cpp:all_in_one_machine/type/hn/sand

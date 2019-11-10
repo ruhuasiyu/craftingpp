@@ -1,0 +1,6 @@
+{
+	"parent": "cpp:machine/mob_projector/temp",
+    "textures": {
+        "layer0": "cpp:machine/mob_projector/pufferfish"
+    }
+}

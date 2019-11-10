@@ -1,0 +1,11 @@
+{
+	"parent": "cpp:machine/machine",
+	"textures": {
+		"down": "cpp:machine/all_in_one_machine_bottom",
+		"up": "cpp:machine/all_in_one_machine_top",
+		"north": "cpp:machine/all_in_one_machine_front_active",
+		"east": "cpp:machine/all_in_one_machine_side_active",
+		"south": "cpp:machine/all_in_one_machine_back_active",
+		"west": "cpp:machine/all_in_one_machine_side_active"
+	}
+}

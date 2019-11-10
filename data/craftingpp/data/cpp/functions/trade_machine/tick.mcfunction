@@ -1,35 +1,10 @@
-execute if data block ~ ~ ~ Items[{Slot:15b}] unless data block ~ ~ ~ Items[{Slot:15b,tag:{isMachineBg:1b}}] run function cpp:trade_machine/dist15
-execute if data block ~ ~ ~ Items[{Slot:16b}] unless data block ~ ~ ~ Items[{Slot:16b,tag:{isMachineBg:1b}}] run function cpp:trade_machine/dist16
-
-execute unless block ~ ~ ~ barrel{Items:[{Slot:0b}]} run replaceitem block ~ ~ ~ container.0 petrified_oak_slab{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.trade_machine\"}"},CustomModelData:12971012}
-execute unless block ~ ~ ~ barrel{Items:[{Slot:1b}]} run replaceitem block ~ ~ ~ container.1 petrified_oak_slab{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.trade_machine\"}"},CustomModelData:12971000}
-execute unless block ~ ~ ~ barrel{Items:[{Slot:2b}]} run replaceitem block ~ ~ ~ container.2 petrified_oak_slab{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.trade_machine\"}"},CustomModelData:12971000}
-execute unless block ~ ~ ~ barrel{Items:[{Slot:3b}]} run replaceitem block ~ ~ ~ container.3 petrified_oak_slab{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.trade_machine\"}"},CustomModelData:12971000}
-execute unless block ~ ~ ~ barrel{Items:[{Slot:4b}]} run replaceitem block ~ ~ ~ container.4 petrified_oak_slab{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.trade_machine\"}"},CustomModelData:12971000}
-execute unless block ~ ~ ~ barrel{Items:[{Slot:5b}]} run replaceitem block ~ ~ ~ container.5 petrified_oak_slab{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.trade_machine\"}"},CustomModelData:12971000}
-execute unless block ~ ~ ~ barrel{Items:[{Slot:6b}]} run replaceitem block ~ ~ ~ container.6 petrified_oak_slab{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.trade_machine\"}"},CustomModelData:12971000}
-execute unless block ~ ~ ~ barrel{Items:[{Slot:7b}]} run replaceitem block ~ ~ ~ container.7 petrified_oak_slab{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.trade_machine\"}"},CustomModelData:12971000}
-execute unless block ~ ~ ~ barrel{Items:[{Slot:8b}]} run replaceitem block ~ ~ ~ container.8 petrified_oak_slab{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.trade_machine\"}"},CustomModelData:12971000}
-
-execute unless block ~ ~ ~ barrel{Items:[{Slot:9b}]} run replaceitem block ~ ~ ~ container.9 petrified_oak_slab{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.trade_machine\"}"},CustomModelData:12971000}
-execute unless block ~ ~ ~ barrel{Items:[{Slot:10b}]} run replaceitem block ~ ~ ~ container.10 petrified_oak_slab{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.trade_machine\"}"},CustomModelData:12971000}
-# 输入
-execute unless block ~ ~ ~ barrel{Items:[{Slot:12b}]} run replaceitem block ~ ~ ~ container.12 petrified_oak_slab{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.trade_machine\"}"},CustomModelData:12971000}
-execute unless block ~ ~ ~ barrel{Items:[{Slot:13b}]} run replaceitem block ~ ~ ~ container.13 petrified_oak_slab{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.trade_machine\"}"},CustomModelData:12971000}
-execute unless block ~ ~ ~ barrel{Items:[{Slot:14b}]} run replaceitem block ~ ~ ~ container.14 petrified_oak_slab{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.trade_machine\"}"},CustomModelData:12971000}
-execute unless block ~ ~ ~ barrel{Items:[{Slot:15b}]} run replaceitem block ~ ~ ~ container.15 petrified_oak_slab{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.output_slot\"}"},CustomModelData:12971000}
-execute unless block ~ ~ ~ barrel{Items:[{Slot:16b}]} run replaceitem block ~ ~ ~ container.16 petrified_oak_slab{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.output_slot\"}"},CustomModelData:12971000}
-execute unless block ~ ~ ~ barrel{Items:[{Slot:17b}]} run replaceitem block ~ ~ ~ container.17 petrified_oak_slab{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.trade_machine\"}"},CustomModelData:12971000}
-
-execute unless block ~ ~ ~ barrel{Items:[{Slot:18b}]} run replaceitem block ~ ~ ~ container.18 petrified_oak_slab{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.trade_machine\"}"},CustomModelData:12971000}
-execute unless block ~ ~ ~ barrel{Items:[{Slot:19b}]} run replaceitem block ~ ~ ~ container.19 petrified_oak_slab{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.trade_machine\"}"},CustomModelData:12971000}
-execute unless block ~ ~ ~ barrel{Items:[{Slot:20b}]} run replaceitem block ~ ~ ~ container.20 petrified_oak_slab{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.trade_machine\"}"},CustomModelData:12971000}
-execute unless block ~ ~ ~ barrel{Items:[{Slot:21b}]} run replaceitem block ~ ~ ~ container.21 petrified_oak_slab{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.trade_machine\"}"},CustomModelData:12971000}
-execute unless block ~ ~ ~ barrel{Items:[{Slot:22b}]} run function cpp:trade_machine/output
-execute unless block ~ ~ ~ barrel{Items:[{Slot:23b}]} run function cpp:trade_machine/output1
-execute unless block ~ ~ ~ barrel{Items:[{Slot:24b}]} run replaceitem block ~ ~ ~ container.24 petrified_oak_slab{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.trade_machine\"}"},CustomModelData:12971000}
-execute unless block ~ ~ ~ barrel{Items:[{Slot:25b}]} run replaceitem block ~ ~ ~ container.25 petrified_oak_slab{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.trade_machine\"}"},CustomModelData:12971000}
-execute unless block ~ ~ ~ barrel{Items:[{Slot:26b}]} run replaceitem block ~ ~ ~ container.26 petrified_oak_slab{isMachineBg:1b,display:{Name:"{\"translate\":\"item.cpp.trade_machine\"}"},CustomModelData:12971000}
-
+# 检测GUI
+execute unless predicate cpp:trade_machine/gui run function cpp:trade_machine/gui
+execute unless data block ~ ~ ~ Items[{Slot:15b}] run replaceitem block ~ ~ ~ container.15 firework_star{cppMachineBg:1b,display:{Name:'{"translate":"item.cpp.output_slot"}'},CustomModelData:12971000}
+execute unless data block ~ ~ ~ Items[{Slot:16b}] run replaceitem block ~ ~ ~ container.16 firework_star{cppMachineBg:1b,display:{Name:'{"translate":"item.cpp.output_slot"}'},CustomModelData:12971000}
+# 合成
 function cpp:check_power
-execute as @s[tag=!cpp_redstone_powered] if block ~ ~ ~ barrel{Items:[{Slot:11b},{Slot:16b,tag:{isMachineBg:1b}},{Slot:17b,tag:{isMachineBg:1b}}]} run function cpp:trade_machine/type
+execute as @s[tag=!cpp_redstone_powered] if block ~ ~ ~ barrel{Items:[{Slot:15b,tag:{cppMachineBg:1b}},{Slot:16b,tag:{cppMachineBg:1b}}]} run function cpp:trade_machine/check
+# 物品输出
+execute unless data block ~ ~ ~ Items[{Slot:15b,tag:{cppMachineBg:1b}}] run function cpp:trade_machine/dist15
+execute unless data block ~ ~ ~ Items[{Slot:16b,tag:{cppMachineBg:1b}}] run function cpp:trade_machine/dist16

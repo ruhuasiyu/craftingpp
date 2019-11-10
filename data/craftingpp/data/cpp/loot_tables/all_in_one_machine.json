@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.all_in_one_machine\\\"}\"},id:\"cpp:all_in_one_machine\",CustomModelData:12970001,hasGUI:1b}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.all_in_one_machine\"}'},id:'cpp:all_in_one_machine',CustomModelData:12970001}"
 						}
 					]
 				}

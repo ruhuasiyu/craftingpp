@@ -1,0 +1,29 @@
+{
+	"criteria": {
+		"dark_oak_planks": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:dark_oak_planks"
+					}
+				]
+			}
+		},
+		"has_the_recipe": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "cpp:stonecutting/dark_oak_slab"
+			}
+		}
+	},
+	"rewards":{
+		"recipes": ["cpp:stonecutting/dark_oak_slab"]
+	},
+	"requirements": [
+		[
+			"dark_oak_planks",
+			"has_the_recipe"
+		]
+	]
+}

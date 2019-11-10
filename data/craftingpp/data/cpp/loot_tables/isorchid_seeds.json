@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.isorchid_seeds\\\"}\"},id:\"cpp:isorchid_seeds\",CustomModelData:12970018}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.isorchid_seeds\"}'},id:'cpp:isorchid_seeds',CustomModelData:12970018}"
 						}
 					]
 				}

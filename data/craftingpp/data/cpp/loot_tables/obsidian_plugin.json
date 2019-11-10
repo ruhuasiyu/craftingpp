@@ -5,11 +5,11 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:firework_star",
+					"name": "minecraft:carrot_on_a_stick",
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.obsidian_plugin\\\"}\"},id:\"cpp:obsidian_plugin\",CustomModelData:12970108}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.obsidian_plugin\"}'},id:'cpp:obsidian_plugin',CustomModelData:12970108}"
 						}
 					]
 				}

@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.star_wand\\\"}\"},id:\"cpp:star_wand\",CustomModelData:12970063}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.star_wand\"}'},id:'cpp:star_wand',CustomModelData:12970063}"
 						}
 					]
 				}

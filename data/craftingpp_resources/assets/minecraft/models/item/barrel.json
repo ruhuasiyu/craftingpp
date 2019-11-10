@@ -16,8 +16,8 @@
 		{ "predicate": { "custom_model_data": 12970017 }, "model": "cpp:machine/bookshelf7"},
 		{ "predicate": { "custom_model_data": 12970018 }, "model": "cpp:machine/item_processer"},
 		{ "predicate": { "custom_model_data": 12970019 }, "model": "cpp:machine/dustbin"},
-		{ "predicate": { "custom_model_data": 12970099 }, "model": "cpp:tool/portable_crafting_machine"},
 		{ "predicate": { "custom_model_data": 12970103 }, "model": "cpp:machine/chest_dropper"},
+		{ "predicate": { "custom_model_data": 12971001 }, "model": "cpp:machine/all_in_one_machine_active"},
 		{ "predicate": { "custom_model_data": 12979999 }, "model": "cpp:empty"}
 	]
 }

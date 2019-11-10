@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.shooting_star\\\"}\"},id:\"cpp:shooting_star\",CustomModelData:12970001}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.shooting_star\"}'},id:'cpp:shooting_star',CustomModelData:12970001}"
 						}
 					]
 				}

@@ -1,0 +1,229 @@
+{
+	"condition": "minecraft:alternative",
+	"terms": [
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{id:'minecraft:sugar'},{id:'minecraft:rotten_flesh'},{id:'minecraft:glistering_melon_slice'},{id:'minecraft:gunpowder'},{id:'minecraft:potion',tag:{Potion:'minecraft:water'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{id:'minecraft:cocoa_beans'},{id:'minecraft:bone_meal'},{id:'minecraft:pumpkin'},{id:'minecraft:fermented_spider_eye'},{id:'minecraft:potion',tag:{Potion:'minecraft:water'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{tag:{dict:['salt']}},{id:'minecraft:pumpkin'},{id:'minecraft:bowl'},{id:'minecraft:carrot'},{id:'minecraft:potato'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{tag:{dict:['salt']}},{id:'minecraft:porkchop'},{id:'minecraft:bowl'},{id:'minecraft:carrot'},{id:'minecraft:potato'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{tag:{dict:['salt']}},{id:'minecraft:beef'},{id:'minecraft:bowl'},{id:'minecraft:carrot'},{id:'minecraft:potato'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{tag:{dict:['salt']}},{id:'minecraft:rabbit'},{id:'minecraft:bowl'},{id:'minecraft:carrot'},{id:'minecraft:potato'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{tag:{dict:['salt']}},{id:'minecraft:cooked_cod'},{id:'minecraft:baked_potato'},{tag:{id:'cpp:ketchup'}},{id:'minecraft:bowl'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{tag:{id:'cpp:ketchup'}},{tag:{id:'cpp:tomato'}},{tag:{id:'cpp:cheese'}},{id:'minecraft:cooked_beef'},{id:'minecraft:bread'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{tag:{id:'cpp:ketchup'}},{tag:{id:'cpp:tomato'}},{tag:{id:'cpp:cheese'}},{id:'minecraft:cooked_porkchop'},{id:'minecraft:wheat'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:1b,id:'minecraft:glass'},{Slot:2b,id:'minecraft:glass'},{Slot:3b,id:'minecraft:glass'},{Slot:11b,id:'minecraft:stick'},{Slot:20b,id:'minecraft:stick'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:2b,id:'minecraft:stick'},{Slot:11b,id:'minecraft:stick'},{Slot:19b,id:'minecraft:firework_rocket'},{Slot:20b,id:'minecraft:hay_block'},{Slot:21b,id:'minecraft:firework_rocket'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:1b,id:'minecraft:glowstone_dust'},{Slot:2b,id:'minecraft:glowstone_dust'},{Slot:3b,id:'minecraft:glowstone_dust'},{Slot:10b,id:'minecraft:glowstone_dust'},{Slot:12b,id:'minecraft:glowstone_dust'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:10b,id:'minecraft:glowstone_dust'},{Slot:11b,id:'minecraft:glowstone_dust'},{Slot:12b,id:'minecraft:glowstone_dust'},{Slot:19b,id:'minecraft:glowstone_dust'},{Slot:21b,id:'minecraft:glowstone_dust'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:1b,id:'minecraft:emerald'},{Slot:2b,id:'minecraft:emerald'},{Slot:3b,id:'minecraft:emerald'},{Slot:10b,id:'minecraft:emerald'},{Slot:12b,id:'minecraft:emerald'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:10b,id:'minecraft:emerald'},{Slot:11b,id:'minecraft:emerald'},{Slot:12b,id:'minecraft:emerald'},{Slot:19b,id:'minecraft:emerald'},{Slot:21b,id:'minecraft:emerald'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:1b,id:'minecraft:coal'},{Slot:2b,id:'minecraft:coal'},{Slot:3b,id:'minecraft:coal'},{Slot:10b,id:'minecraft:coal'},{Slot:12b,id:'minecraft:coal'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:10b,id:'minecraft:coal'},{Slot:11b,id:'minecraft:coal'},{Slot:12b,id:'minecraft:coal'},{Slot:19b,id:'minecraft:coal'},{Slot:21b,id:'minecraft:coal'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:1b,id:'minecraft:quartz'},{Slot:2b,id:'minecraft:quartz'},{Slot:3b,id:'minecraft:quartz'},{Slot:10b,id:'minecraft:quartz'},{Slot:12b,id:'minecraft:quartz'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:10b,id:'minecraft:quartz'},{Slot:11b,id:'minecraft:quartz'},{Slot:12b,id:'minecraft:quartz'},{Slot:19b,id:'minecraft:quartz'},{Slot:21b,id:'minecraft:quartz'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:1b,id:'minecraft:glass'},{Slot:2b,id:'minecraft:glass'},{Slot:3b,id:'minecraft:glass'},{Slot:10b,id:'minecraft:glass'},{Slot:12b,id:'minecraft:glass'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:10b,id:'minecraft:glass'},{Slot:11b,id:'minecraft:glass'},{Slot:12b,id:'minecraft:glass'},{Slot:19b,id:'minecraft:glass'},{Slot:21b,id:'minecraft:glass'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:2b,tag:{dict:['carbon_dust']}},{Slot:10b,tag:{dict:['carbon_dust']}},{Slot:11b,tag:{dict:['iron_dust']}},{Slot:12b,tag:{dict:['carbon_dust']}},{Slot:20b,tag:{dict:['carbon_dust']}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:2b,tag:{id:'cpp:enchanted_iron'}},{Slot:10b,tag:{id:'cpp:enchanted_iron'}},{Slot:11b,id:'minecraft:redstone'},{Slot:12b,tag:{id:'cpp:enchanted_iron'}},{Slot:20b,tag:{id:'cpp:enchanted_iron'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:2b,tag:{id:'cpp:enchanted_gold'}},{Slot:10b,tag:{id:'cpp:enchanted_gold'}},{Slot:11b,id:'minecraft:redstone'},{Slot:12b,tag:{id:'cpp:enchanted_gold'}},{Slot:20b,tag:{id:'cpp:enchanted_gold'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:2b,tag:{id:'cpp:enchanted_diamond'}},{Slot:10b,tag:{id:'cpp:enchanted_diamond'}},{Slot:11b,id:'minecraft:redstone'},{Slot:12b,tag:{id:'cpp:enchanted_diamond'}},{Slot:20b,tag:{id:'cpp:enchanted_diamond'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:2b,tag:{id:'cpp:wing_of_sky'}},{Slot:10b,tag:{id:'cpp:limb_of_ridge'}},{Slot:11b,id:'minecraft:redstone'},{Slot:12b,tag:{id:'cpp:limb_of_ridge'}},{Slot:20b,tag:{id:'cpp:wing_of_sky'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:2b,tag:{id:'cpp:moon_shard'}},{Slot:10b,tag:{id:'cpp:moon_shard'}},{Slot:11b,id:'minecraft:ender_eye'},{Slot:12b,tag:{id:'cpp:moon_shard'}},{Slot:20b,tag:{id:'cpp:moon_shard'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:2b,tag:{id:'cpp:sun_shard'}},{Slot:10b,tag:{id:'cpp:sun_shard'}},{Slot:11b,id:'minecraft:nether_star'},{Slot:12b,tag:{id:'cpp:sun_shard'}},{Slot:20b,tag:{id:'cpp:sun_shard'}}]}"
+				}
+			}
+		}
+	]
+}

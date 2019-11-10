@@ -1,0 +1,28 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:alternatives",
+					"children": [
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:random_chance",
+									"chance": 0.14
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:flint"
+						},
+						{
+							"type": "minecraft:item",
+							"name": "minecraft:gravel"
+						}
+					]
+				}
+			]
+		}
+	]
+}

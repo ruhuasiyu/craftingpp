@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.burning_chrysanthe\\\"}\"},id:\"cpp:burning_chrysanthe\",CustomModelData:12973099}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.burning_chrysanthe\"}'},id:'cpp:burning_chrysanthe',CustomModelData:12973099}"
 						}
 					]
 				}

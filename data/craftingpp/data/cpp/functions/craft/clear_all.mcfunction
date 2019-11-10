@@ -1,9 +1,0 @@
-execute store result block ~ ~ ~ Items[{Slot:21b}].Count byte 1 run data get block ~ ~ ~ Items[{Slot:21b}].Count 0.999
-execute store result block ~ ~ ~ Items[{Slot:20b}].Count byte 1 run data get block ~ ~ ~ Items[{Slot:20b}].Count 0.999
-execute store result block ~ ~ ~ Items[{Slot:19b}].Count byte 1 run data get block ~ ~ ~ Items[{Slot:19b}].Count 0.999
-execute store result block ~ ~ ~ Items[{Slot:12b}].Count byte 1 run data get block ~ ~ ~ Items[{Slot:12b}].Count 0.999
-execute store result block ~ ~ ~ Items[{Slot:11b}].Count byte 1 run data get block ~ ~ ~ Items[{Slot:11b}].Count 0.999
-execute store result block ~ ~ ~ Items[{Slot:10b}].Count byte 1 run data get block ~ ~ ~ Items[{Slot:10b}].Count 0.999
-execute store result block ~ ~ ~ Items[{Slot:3b}].Count byte 1 run data get block ~ ~ ~ Items[{Slot:3b}].Count 0.999
-execute store result block ~ ~ ~ Items[{Slot:2b}].Count byte 1 run data get block ~ ~ ~ Items[{Slot:2b}].Count 0.999
-execute store result block ~ ~ ~ Items[{Slot:1b}].Count byte 1 run data get block ~ ~ ~ Items[{Slot:1b}].Count 0.999

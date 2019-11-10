@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.wild_lilium\\\"}\"},id:\"cpp:wild_lilium\",CustomModelData:12973089}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.wild_lilium\"}'},id:'cpp:wild_lilium',CustomModelData:12973089}"
 						}
 					]
 				}

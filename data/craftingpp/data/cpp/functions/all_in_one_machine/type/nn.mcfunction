@@ -1,1 +1,0 @@
-execute as @s[tag=!cpp_machine_work] if block ~ ~ ~ minecraft:barrel{Items:[{tag:{id:"cpp:fertilizer"}}]} run function cpp:all_in_one_machine/type/nn/fertilizer

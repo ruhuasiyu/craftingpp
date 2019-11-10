@@ -1,0 +1,29 @@
+{
+	"criteria": {
+		"acacia_planks": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:acacia_planks"
+					}
+				]
+			}
+		},
+		"has_the_recipe": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "cpp:stonecutting/acacia_stairs"
+			}
+		}
+	},
+	"rewards":{
+		"recipes": ["cpp:stonecutting/acacia_stairs"]
+	},
+	"requirements": [
+		[
+			"acacia_planks",
+			"has_the_recipe"
+		]
+	]
+}

@@ -1,0 +1,32 @@
+{
+	"criteria": {
+		"polished_granite_slab": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:polished_granite_slab",
+						"count": {
+							"min": 2
+						}
+					}
+				]
+			}
+		},
+		"has_the_recipe": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "cpp:slab_to_block/polished_granite_slab"
+			}
+		}
+	},
+	"rewards":{
+		"recipes": ["cpp:slab_to_block/polished_granite_slab"]
+	},
+	"requirements": [
+		[
+			"polished_granite_slab",
+			"has_the_recipe"
+		]
+	]
+}

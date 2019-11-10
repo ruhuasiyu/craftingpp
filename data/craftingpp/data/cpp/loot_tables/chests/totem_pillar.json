@@ -7,19 +7,19 @@
 			},
 			"entries": [
 				{
-					"type": "loot_table",
+					"type": "minecraft:loot_table",
 					"name": "cpp:soul_of_dirt",
 					"weight": 1,
 					"quality": 2
 				},
 				{
-					"type": "loot_table",
+					"type": "minecraft:loot_table",
 					"name": "cpp:nova_of_fire",
 					"weight": 1,
 					"quality": 2
 				},
 				{
-					"type": "loot_table",
+					"type": "minecraft:loot_table",
 					"name": "cpp:limb_of_ridge",
 					"weight": 1,
 					"quality": 2
@@ -31,13 +31,13 @@
 					"weight": 3
 				},
 				{
-					"type": "loot_table",
+					"type": "minecraft:loot_table",
 					"name": "cpp:enchanted_iron",
 					"weight": 7,
 					"quality": 1
 				},
 				{
-					"type": "loot_table",
+					"type": "minecraft:loot_table",
 					"name": "cpp:enchanted_gold",
 					"weight": 7,
 					"quality": 1
@@ -49,7 +49,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.meat_floss_bread\\\"}\",Lore:[\"{\\\"translate\\\":\\\"lore.cpp.speed\\\"}\"]},id:\"cpp:meat_floss_bread\",CustomModelData:12970001}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.meat_floss_bread\"}',Lore:['{\"translate\":\"lore.cpp.speed\"}']},id:'cpp:meat_floss_bread',CustomModelData:12970001}"
 						},
 						{
 							"function": "minecraft:set_count",
@@ -67,7 +67,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.toffee_apple\\\"}\",Lore:[\"{\\\"translate\\\":\\\"lore.cpp.speed\\\"}\"]},id:\"cpp:toffee_apple\",CustomModelData:12970100}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.toffee_apple\"}',Lore:['{\"translate\":\"lore.cpp.speed\"}']},id:'cpp:toffee_apple',CustomModelData:12970100}"
 						},
 						{
 							"function": "minecraft:set_count",

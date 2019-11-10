@@ -13,8 +13,8 @@ data modify block ~ 255 ~ Items append from block ~ 255 ~1 Items[0]
 data modify entity @s HandItems[1].tag.BlockEntityTag.Items set from block ~ 255 ~ Items
 fill ~ 255 ~ ~ 255 ~1 minecraft:air
 execute if score @s cppValue matches 1 run setblock ~ ~ ~ minecraft:oak_sapling
-execute if score @s cppValue matches 2 run setblock ~ ~ ~ minecraft:birch_sapling
-execute if score @s cppValue matches 3 run setblock ~ ~ ~ minecraft:spruce_sapling
+execute if score @s cppValue matches 2 run setblock ~ ~ ~ minecraft:spruce_sapling
+execute if score @s cppValue matches 3 run setblock ~ ~ ~ minecraft:birch_sapling
 execute if score @s cppValue matches 4 run setblock ~ ~ ~ minecraft:jungle_sapling
 execute if score @s cppValue matches 5 run setblock ~ ~ ~ minecraft:acacia_sapling
 execute if score @s cppValue matches 5 align xyz run summon minecraft:armor_stand ~0.5 ~ ~0.5 {Invulnerable:1b,Invisible:1b,Small:1b,Marker:1b,NoGravity:1b,DisabledSlots:7967,Tags:["cpp_block"],ArmorItems:[{},{},{},{id:"minecraft:acacia_sapling",tag:{id:"minecraft:acacia_sapling",CustomModelData:12970100},Count:1b}]}

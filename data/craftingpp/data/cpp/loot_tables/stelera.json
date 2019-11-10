@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.cpp.stelera\\\"}\"},id:\"cpp:stelera\",CustomModelData:12973096}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.stelera\"}'},id:'cpp:stelera',CustomModelData:12973096}"
 						}
 					]
 				}
