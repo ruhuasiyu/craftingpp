@@ -9,7 +9,7 @@
 <meta name='revised' content='ruhuasiyu@mcbbs' />
 <base href="" />
 <link rel="shortcut icon" href="https://zsx.neocities.org/main/favicon.ico" />
-<link rel="stylesheet" href="items/items_css.css" />
+<link rel="stylesheet" href="items/items_css1.9.css" />
 <script src="items/menufixed.js"></script>
 </head>
 
@@ -43,73 +43,12 @@
 </div>
 
 <article>
-
-<!-------------------------------------------------------------------------------------------------->
-<h2 id="introduction">简介</h2>
-<p>🎉欢迎来到《更多的合成》百科！</p>
-<p>1.9.23，于2019年10月29日发布，支持Minecraft 1.14.x版本。此次更新添加了魔杖的魔法效果，对大量模组物品和方块材质进行了重新绘制，同时也添加了很多实用工具、食物、装饰和药水。具体来说，加入了物品处理机、剪枝器、玻璃镐、搬箱器、垃圾桶、旗帜、标志、汉堡、披萨、寿司、仰望星空派、水果、葡萄干等，以及重新设计了花草、头颅和空岛。此次更新也加入了获取物品的便捷方式，优化了大量指令，加入了很多可自动化的内容。</p>
-
-<h3 id="download">📦 下载地址</h3>
-<p>本页面所列内容为1.9.23版本。不建议玩家使用旧版本，同时新版本放出后，旧版本一律不再更新和修复bug。更多版本请<a href="https://github.com/ruhuasiyu/CraftingPlusPlus/tags">点击此处查看</a>。</p>
-<ul>
-	<li><a href="http://home.ustc.edu.cn/~zsxqq/craftingpp">官方主页</a></li>
-	<li><a href="http://www.mcbbs.net/thread-696861-1-1.html">mcbbs中文论坛页面</a></li>
-	<li><a href="https://www.mcmod.cn/class/1297.html">mcmod wiki页面</a></li>
-	<li><a href="https://github.com/ruhuasiyu/CraftingPlusPlus">github 页面</a></li>
-</ul>
-
-<table><thead><tr><th>支持的minecraft版本</th><th>Crafting++版本</th><th colspan="2">下载地址</th></tr></thead>
-<tbody>
-	<tr>
-		<td>Java版 1.14.x</td>
-		<td>v1.9.23</td>
-		<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/releases/tag/v1.9.23">github</a></td>
-		<td><a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.9.23.zip">官方</a></td>
-	</tr>
-</tbody></table>
-
-<h3 id="how_to_start">🚀 如何开始</h3>
-<p>下载后解压缩。</p>
-<ul>
-<li><span style="font-weight:bold;">资源包</span>文件夹位于<code>.minecraft/resourcepacks</code>文件夹，该文件夹也可从游戏界面<code>选项->资源包->打开资源包文件夹</code>处打开。将<code>craftingpp_resources.zip</code>放入，然后进入选择资源包的页面，选择该资源包至右侧已选的资源包。如果仍然无法使用，请解压后放入。</li>
-<li><span style="font-weight:bold;">数据包</span>文件夹位于<code>.minecraft/saves/世界名称/datapacks</code>文件夹，该文件夹也可从游戏界面<code>选中世界->编辑->打开世界文件夹->打开datapacks文件夹</code>处打开。将文件夹<code>craftingpp</code>放入，然后退出世界重进。</li>
-</ul>
-<p>最后请打开<code>选项->语言->强制使用Unicode字体：关</code>。
-<h4>模组入门</h4>
-<p>大部分合成需使用<a href="#crafting_machine"><span class="ui single"><span class="ci crafting_machine"></span></span>合成器</a>。模组需要的附魔之瓶可通过副手持有漏斗获取。</p>
-<p>部分参数可通过<a href="#config">配置文件</a><code>datapacks/craftingpp/data/cpp/functions/config.mcfunction</code>修改。模组支持英文、简体中文、繁体中文三种语言。如有任何意见建议，欢迎<a href="http://www.mcbbs.net/thread-696861-1-1.html">在论坛回复</a>、<a href="https://github.com/ruhuasiyu/craftingpp/issues/new">发起issue</a>或<a href="http://www.mcbbs.net/home.php?mod=spacecp&ac=pm&touid=975525">私信我</a>，请在反馈时提供游戏版本和模组版本。</p>
-<p>管理员可使用命令<code>/loot give @s loot cpp:物品英文名</code>来获取模组的物品，物品英文名为小写，空格转为下划线。例如使用命令<code>/loot give @s loot cpp:all_in_one_machine</code>可获得多功能一体机。</p>
-
-<h4>注意事项</h4>
-<ul>
-<li>本模组所有内容仅在单机纯净端测试通过，理论上支持多人。但是对于非纯净端，例如Spigot/Sponge等，未必支持。</li>
-<li>服务端的操作与单机类似，请设置服务器资源包下载地址。客户端无需安装数据包。若资源包加载太慢或有其它问题，可让玩家自行下载到本地后选择。非公益服务器建议在<a href="https://afdian.net/@ruhuasiyu">爱发电</a>根据自身盈利能力对作者进行赞助。</li>
-<li><span style="color:blue">转载本页面</span>需遵守<strong><a href="https://creativecommons.org/licenses/by-nc-nd/2.5/cn/">CC BY-NC-ND 2.5 CN 许可协议</a></strong>——列出作者(<a href="http://www.mcbbs.net/home.php?mod=spacecp&ac=pm&touid=975525">ruhuasiyu@mcbbs</a>)、来源、原始下载链接以及相同的许可协议。</li>
-<li><span style="color:blue">使用模组代码</span>需遵守<a href="https://www.gnu.org/licenses/gpl.html">GNU GENERAL PUBLIC LICENSE v3.0</a>协议。</li>
-<li><span style="color:blue">转发模组文件</span>不可上传至网盘或文件存储平台，但通讯类工具允许下载后分享。</li>
-<li><span style="color:blue">主播或视频制作者</span>若在直播或视频中使用了本模组，请在简介中注明主页、作者名或模组来源。</li>
-<li><span style="color:blue">原版模组整合者</span>，该原版模组命名空间为cpp，所有记分板和标签均使用前缀cpp，物品自定义模型区段位于12970000-12979999，修改了minecraft命名空间大部分的战利品表和少量配方与标签。</li>
-</ul>
-
-<h3>💖 支持我们</h3>
-<p>模组的开发需要耗费我们大量时间和精力，如果您想要对我们进行支持，可使用<a href="https://afdian.net/@ruhuasiyu">爱发电</a>、<a href="https://i.loli.net/2018/08/16/5b751fcd32566.png">微信赞赏</a>、<a href="https://i.loli.net/2018/08/05/5b66d8a6eb4c6.png">支付宝</a>、<a href="https://space.bilibili.com/4469715">bilibili充电</a>对我们进行赞助。您的赞助对我们至关重要，非常感谢您的支持！</p>
-
-<h3 id="acknowledge">👷 制作者名单</h3>
-<p><span style="font-weight:bold;">数据包设计</span>：ruhuasiyu</p>
-<p><span style="font-weight:bold;">资源包设计</span>：ruhuasiyu RubberTree XeKr 折君 天狼星black MC先生</p>
-<p><span style="font-weight:bold;">平台支持</span>：<a href="https://www.mcbbs.net/">Minecraft(我的世界)中文论坛</a> <a href="https://www.mcmod.cn/">MC百科</a> </p>
-<p><span style="font-weight:bold;">赞助名单</span>：<span style="color:blue;">一米八微笑 明月庄主 Rhythm萱 唯一丶为伊 LIXIAOGANG 陌余Oucher uuu2011 爱发电用户_AU9c 火星浮云 这是彩虹糖呢 SPGoding 支持国产mod 倪采臣 zzzz 折君 Hao_Tian22 Appleeeee 爱发电用户_JCmn 落天望月 爱发电用户_4eyN switefaster 猫君 chyx </span></p>
-<!--一米八微笑 250 明月庄主 250 Rhythm萱 128 LIXIAOGANG 96 墨鱼 86 uuu2011 66 火星浮云 64 匿名1 64 匿名2 50 这是彩虹糖呢 48 SPGoding 38 倪采臣 32 ustc_zzzz 32 折君 31  苹果果 落天望月 chyx switefaster 猫君-->
-<p>设计过程中亦参考了<a href="http://teamcofh.com/">热力膨胀</a>、<a href="https://botaniamod.net/">植物魔法</a>、<a href="http://www.abyssalcraft.com/">深渊国度</a>、<a href="https://minecraft.curseforge.com/projects/pams-harvestcraft">潘马斯农场</a>、<a href="https://minecraft.curseforge.com/projects/saltymod">盐</a>等模组以及<a href="https://www.bilibili.com/">Bilibili</a>与<a href="youtube.com">Youtube</a>一些视频，<a href="http://www.mcbbs.net/group-546-1.html">CBL小组</a>、<a href="http://www.mcbbs.net/group-1009-1.html">TCP小组</a>、<a href="http://www.mcbbs.net/group-1474-1.html">CBV小组</a>、<a href="http://www.mcbbs.net/group-1478-1.html">MAG小组</a>等小组以及<a href="http://www.mcbbs.net/?1963599">pineapple_</a>、<a href="http://www.mcbbs.net/?160123">贰逼</a>、ECS、<a href="https://github.com/pca006132">pca</a>、<a href="http://www.mcbbs.net/?720449">玄素</a>、<a href="http://www.mcbbs.net/?1073223">乙烯_中国</a>、<a href="http://www.mcbbs.net/?725858">⊙v⊙</a>、HerobrineXia、白天、苹果果、SorrowRain、Amber、匠魂、Gingerbread、森林蝙蝠、mcer、Stark、yap等玩家亦对此模组有贡献。</p>
-<p>感谢以上所有玩家，特别感谢对我们给予赞助的玩家！</p>
-
 <!------------------------------------------------------------------------------------------------->
 <h2 id="index">索引</h2>
 <table class="index"><tbody>
 
 <tr><th>机制</th><td>
-<a href="#introduction">简介</a>
-· <a href="#balance_food">营养均衡</a>
+<a href="#balance_food">营养均衡</a>
 · <a href="#rituals">仪式</a>
  (<a href="#enchanted_book_making">附魔书制作</a>
 · <a href="#effect_adding">效果附加</a>
@@ -5342,9 +5281,9 @@
 <tr><td><span class="ui normal"><span class="ci wand_of_the_darkness"></span></span></td>
 <th>成为库洛缺德</th><td>黑暗权杖</td><td>-</td><td>Release</td><td>cpp:dark_wand</td></tr>
 <tr><td><span class="ui challenge"><span class="ci star_wand"></span></span></td>
-<th>Release!</th><td>星之杖</td><td>500点经验，若玩家无头盔或帽子，则会绑定小樱头。</td><td>成为马猴烧酒</td><td>cpp:star_wand</td></tr>
+<th>Release!</th><td>星之杖</td><td>500点经验</td><td>成为马猴烧酒</td><td>cpp:star_wand</td></tr>
 <tr><td><span class="ui challenge"><span class="ci dream_wand"></span></span></td>
-<th>膜法少女!</th><td>梦之杖</td><td>500点经验</td><td>星之杖</td><td>cpp:dream_wand</td></tr>
+<th>膜法少女!</th><td>梦之杖</td><td>500点经验，若玩家无头盔或帽子，则会绑定小樱头。</td><td>星之杖</td><td>cpp:dream_wand</td></tr>
 
 <tr><td><span class="ui normal"><span class="ci green_hat"></span></span></td>
 <th style="color:green;">当然是选择原谅她啦！</th><td>戴上你的原谅帽</td><td>—</td><td>开启模组！</td><td>cpp:forgive</td></tr>
