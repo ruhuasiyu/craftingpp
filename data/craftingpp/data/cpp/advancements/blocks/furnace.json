@@ -8,6 +8,6 @@
 		}
 	},
 	"rewards": {
-		"function": "cpp:block/furnace/reset"
+		"function": "cpp:block/furnace"
 	}
 }

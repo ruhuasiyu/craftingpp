@@ -1,7 +1,7 @@
 particle smoke ~ ~1 ~ 0 0 0 0.001 1
 tp @s ~ ~ ~ facing entity @p
 data merge entity @s {Motion:[0.0d,-1.0d,0.0d]}
-execute positioned ^ ^ ^0.4 unless block ~ ~ ~ #cpp:air if block ~ ~1 ~ #cpp:air run data merge entity @s {Motion:[0.0d,1.0d,0.0d]}
+execute facing entity @p feet positioned ^ ^ ^0.75 unless block ~ ~ ~ #cpp:attract_through if block ~ ~1 ~ #cpp:air run data merge entity @s {Motion:[0.0d,1.0d,0.0d]}
 
 execute store result score #temp0 cppValue run data get entity @p Pos[0] 100
 execute store result score #temp1 cppValue run data get entity @s Pos[0] 100

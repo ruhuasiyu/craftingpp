@@ -5,7 +5,7 @@
 			"conditions":[
 				{
 					"condition": "minecraft:random_chance",
-					"chance": 0.2
+					"chance": 0.006
 				}
 			],
 			"entries": [
@@ -15,7 +15,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{cppIsGenerateMarker:1b,CustomModelData:12971000,cppGenerateMarker:\"creeper_dungeon\"}"
+							"tag": "{cppIsGenerateMarker:1b,CustomModelData:12971000,cppGenerateMarker:'enchanting_room'}"
 						}
 					]
 				}
@@ -26,7 +26,7 @@
 			"conditions":[
 				{
 					"condition": "minecraft:random_chance",
-					"chance": 0.018
+					"chance": 0.006
 				}
 			],
 			"entries": [
@@ -36,27 +36,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{cppIsGenerateMarker:1b,CustomModelData:12971000,cppGenerateMarker:\"creeper_dungeon\"}"
-						}
-					]
-				},
-				{
-					"type": "minecraft:item",
-					"name": "minecraft:firework_star",
-					"functions": [
-						{
-							"function": "minecraft:set_nbt",
-							"tag": "{cppIsGenerateMarker:1b,CustomModelData:12971000,cppGenerateMarker:\"enchanting_room\"}"
-						}
-					]
-				},
-				{
-					"type": "minecraft:item",
-					"name": "minecraft:firework_star",
-					"functions": [
-						{
-							"function": "minecraft:set_nbt",
-							"tag": "{cppIsGenerateMarker:1b,CustomModelData:12971000,cppGenerateMarker:\"totem_pillar\"}"
+							"tag": "{cppIsGenerateMarker:1b,CustomModelData:12971000,cppGenerateMarker:'totem_pillar'}"
 						}
 					]
 				}
@@ -77,7 +57,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{cppIsGenerateMarker:1b,CustomModelData:12971000,cppGenerateMarker:\"fruit_tree\"}"
+							"tag": "{cppIsGenerateMarker:1b,CustomModelData:12971000,cppGenerateMarker:'fruit_tree'}"
 						}
 					]
 				},
@@ -87,7 +67,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{cppIsGenerateMarker:1b,CustomModelData:12971000,cppGenerateMarker:\"ore_tree\"}"
+							"tag": "{cppIsGenerateMarker:1b,CustomModelData:12971000,cppGenerateMarker:'ore_tree'}"
 						}
 					]
 				},
@@ -97,7 +77,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{cppIsGenerateMarker:1b,CustomModelData:12971000,cppGenerateMarker:\"wool_tree\"}"
+							"tag": "{cppIsGenerateMarker:1b,CustomModelData:12971000,cppGenerateMarker:'wool_tree'}"
 						}
 					]
 				}
@@ -177,7 +157,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{cppIsGenerateMarker:1b,CustomModelData:12971000,cppGenerateMarker:\"dead_coral_fan\"}"
+							"tag": "{cppIsGenerateMarker:1b,CustomModelData:12971000,cppGenerateMarker:'dead_coral_fan'}"
 						},
 						{
 							"function": "minecraft:set_count",
@@ -205,7 +185,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{cppIsGenerateMarker:1b,CustomModelData:12971000,cppGenerateMarker:\"small_bush\"}"
+							"tag": "{cppIsGenerateMarker:1b,CustomModelData:12971000,cppGenerateMarker:'small_bush'}"
 						}
 					]
 				}
@@ -249,7 +229,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{cppIsGenerateMarker:1b,CustomModelData:12971000,cppGenerateMarker:\"dead_spruce\"}"
+							"tag": "{cppIsGenerateMarker:1b,CustomModelData:12971000,cppGenerateMarker:'dead_spruce'}"
 						},
 						{
 							"function": "minecraft:set_count",
@@ -277,7 +257,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{cppIsGenerateMarker:1b,CustomModelData:12971000,cppGenerateMarker:\"crops\"}"
+							"tag": "{cppIsGenerateMarker:1b,CustomModelData:12971000,cppGenerateMarker:'crops'}"
 						},
 						{
 							"function": "minecraft:set_count",
@@ -305,7 +285,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{cppIsGenerateMarker:1b,CustomModelData:12971000,cppGenerateMarker:\"modcrops\"}"
+							"tag": "{cppIsGenerateMarker:1b,CustomModelData:12971000,cppGenerateMarker:'modcrops'}"
 						}
 					]
 				}

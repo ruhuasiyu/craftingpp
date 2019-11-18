@@ -1,7 +1,5 @@
-# 爬行者地牢
-execute as @s[nbt={Item:{tag:{cppGenerateMarker:"creeper_dungeon"}}}] run function cpp:generate/structures/creeper_dungeon
 # 附魔室
-execute if score #t cppValue matches 1.. as @s[nbt={Item:{tag:{cppGenerateMarker:"enchanting_room"}}}] positioned ~ -1 ~ if entity @s[] run function cpp:generate/structures/enchanting_room
+execute as @s[nbt={Item:{tag:{cppGenerateMarker:"enchanting_room"}}}] if score #t cppValue matches 1.. run function cpp:generate/structures/enchanting_room
 # 图腾柱
 execute as @s[nbt={Item:{tag:{cppGenerateMarker:"totem_pillar"}}}] run function cpp:generate/structures/totem_pillar
 # 水果树
@@ -18,7 +16,7 @@ execute as @s[nbt={Item:{tag:{cppGenerateMarker:"dead_coral_fan"}}}] run functio
 execute as @s[nbt={Item:{tag:{cppGenerateMarker:"small_bush"}}}] if block ~ ~-1 ~ #cpp:dirt run function cpp:generate/structures/small_bush
 
 # 死云杉树
-execute as @s[nbt={Item:{tag:{cppGenerateMarker:"dead_spruce"}}}] unless block ~ ~-1 ~ #cpp:fluid run function cpp:generate/structures/dead_spruce
+execute as @s[nbt={Item:{tag:{cppGenerateMarker:"dead_spruce"}}}] if block ~ ~-1 ~ #cpp:dirt run function cpp:generate/structures/dead_spruce
 
 # 农作物
 execute as @s[nbt={Item:{tag:{cppGenerateMarker:"crops"}}}] if block ~ ~-1 ~ minecraft:grass_block run function cpp:generate/structures/crops

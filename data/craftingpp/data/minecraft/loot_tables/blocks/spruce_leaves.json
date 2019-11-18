@@ -73,7 +73,7 @@
 						},
 						{
 							"type": "minecraft:loot_table",
-							"name": "cpp:bsd/leaves"
+							"name": "cpp:misc/skyisland_leaves"
 						}
 					]
 				}
@@ -84,20 +84,11 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:petrified_oak_slab",
-					"conditions": [
-						{
-							"condition": "minecraft:block_state_property",
-							"block": "minecraft:spruce_leaves",
-							"properties": {
-								"persistent": "false"
-							}
-						}
-					],
+					"name": "minecraft:firework_star",
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData:12971000,isLeavesFastDecayMarker:1b}"
+							"tag": "{CustomModelData:12971000,cppLeavesFastDecayMarker:1b}"
 						}
 					]
 				}

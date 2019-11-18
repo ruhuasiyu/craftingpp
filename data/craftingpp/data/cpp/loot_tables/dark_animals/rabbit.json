@@ -4,24 +4,8 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "minecraft:item",
-					"name": "minecraft:rabbit_hide",
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 0,
-								"max": 2
-							}
-						},
-						{
-							"function": "minecraft:looting_enchant",
-							"count": {
-								"min": 0,
-								"max": 1
-							}
-						}
-					]
+					"type": "minecraft:loot_table",
+					"name": "minecraft:entities/rabbit"
 				}
 			]
 		},
@@ -53,142 +37,8 @@
 		{
 			"conditions": [
 				{
-					"condition": "minecraft:alternative",
-					"terms": [
-						{
-							"condition": "minecraft:killed_by_player"
-						},
-						{
-							"condition": "minecraft:entity_properties",
-							"entity": "killer",
-							"predicate": {
-								"type": "minecraft:zombie_pigman"
-							} 
-						}
-					]
-				},
-				{
-					"condition": "minecraft:random_chance_with_looting",
-					"chance": 0.025,
-					"looting_multiplier": 0.01
-				}
-			],
-			"rolls": 1,
-			"entries": [
-				{
-					"type": "minecraft:alternatives",
-					"children": [
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:entity_properties",
-									"entity": "this",
-									"predicate": {
-										"nbt": "{CustomName:'{\"text\":\"Toast\"}'}"
-									}
-								}
-							],
-							"type": "minecraft:loot_table",
-							"name": "cpp:rabbit_head/toast"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:entity_properties",
-									"entity": "this",
-									"predicate": {
-										"nbt": "{RabbitType:0}"
-									}
-								}
-							],
-							"type": "minecraft:loot_table",
-							"name": "cpp:rabbit_head/brown"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:entity_properties",
-									"entity": "this",
-									"predicate": {
-										"nbt": "{RabbitType:1}"
-									}
-								}
-							],
-							"type": "minecraft:loot_table",
-							"name": "cpp:rabbit_head/white"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:entity_properties",
-									"entity": "this",
-									"predicate": {
-										"nbt": "{RabbitType:2}"
-									}
-								}
-							],
-							"type": "minecraft:loot_table",
-							"name": "cpp:rabbit_head/black"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:entity_properties",
-									"entity": "this",
-									"predicate": {
-										"nbt": "{RabbitType:3}"
-									}
-								}
-							],
-							"type": "minecraft:loot_table",
-							"name": "cpp:rabbit_head/white_splotched"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:entity_properties",
-									"entity": "this",
-									"predicate": {
-										"nbt": "{RabbitType:4}"
-									}
-								}
-							],
-							"type": "minecraft:loot_table",
-							"name": "cpp:rabbit_head/gold"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:entity_properties",
-									"entity": "this",
-									"predicate": {
-										"nbt": "{RabbitType:5}"
-									}
-								}
-							],
-							"type": "minecraft:loot_table",
-							"name": "cpp:rabbit_head/salt"
-						}
-					]
-				}
-			]
-		},
-		{
-			"conditions": [
-				{
-					"condition": "minecraft:alternative",
-					"terms": [
-						{
-							"condition": "minecraft:killed_by_player"
-						},
-						{
-							"condition": "minecraft:entity_properties",
-							"entity": "killer",
-							"predicate": {
-								"type": "minecraft:zombie_pigman"
-							} 
-						}
-					]
+					"condition": "minecraft:reference",
+					"name": "cpp:killed_by_player"
 				}
 			],
 			"rolls": 1,

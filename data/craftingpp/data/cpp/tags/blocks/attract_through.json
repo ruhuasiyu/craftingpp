@@ -1,0 +1,14 @@
+{
+	"replace": false,
+	"values": [
+		"#cpp:part_block",
+		"#minecraft:walls",
+		"#minecraft:fences",
+		"minecraft:oak_fence_gate",
+		"minecraft:spruce_fence_gate",
+		"minecraft:birch_fence_gate",
+		"minecraft:jungle_fence_gate",
+		"minecraft:acacia_fence_gate",
+		"minecraft:dark_oak_fence_gate"
+	]
+}

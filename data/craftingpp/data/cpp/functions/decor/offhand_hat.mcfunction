@@ -1,4 +1,4 @@
-setblock ~ 255 ~ shulker_box{Items:[{Slot:0b,id:"minecraft:jack_o_lantern",Count:1b}]}
+setblock ~ 255 ~ shulker_box{Items:[{Slot:0b,id:"minecraft:carved_pumpkin",Count:1b}]}
 data modify block ~ 255 ~ Items[0].Count set from entity @s Inventory[{Slot:-106b}].Count
 data modify block ~ 255 ~ Items[0].tag set from entity @s Inventory[{Slot:-106b}].tag
 execute store result score #temp cppValue run data get block ~ 255 ~ Items[0].tag.CustomModelData

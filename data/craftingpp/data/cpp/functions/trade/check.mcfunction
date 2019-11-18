@@ -1,4 +1,4 @@
-data merge entity @s {ArmorItems:[{},{},{},{id:"minecraft:jack_o_lantern",Count:1b,tag:{CustomModelData:12970051}}],ArmorDropChances:[-1.0f,-1.0f,-1.0f,-1.0f]}
+data merge entity @s {ArmorItems:[{},{},{},{id:"minecraft:carved_pumpkin",Count:1b,tag:{CustomModelData:12970051}}],ArmorDropChances:[-1.0f,-1.0f,-1.0f,-1.0f]}
 data modify entity @s Offers.Recipes prepend value {buy:{id:"minecraft:stone",Count:64b},sell:{id:"minecraft:emerald",Count:1b},maxUses:12}
 data modify entity @s Offers.Recipes prepend value {buy:{id:"minecraft:stone",Count:64b},sell:{id:"minecraft:emerald",Count:1b},maxUses:12}
 data modify entity @s Offers.Recipes prepend value {buy:{id:"minecraft:stone",Count:64b},sell:{id:"minecraft:emerald",Count:1b},maxUses:12}

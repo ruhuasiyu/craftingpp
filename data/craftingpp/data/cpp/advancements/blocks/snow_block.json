@@ -3,14 +3,11 @@
 		"snow_block": {
 			"trigger": "minecraft:placed_block",
 			"conditions": {
-				"block": "minecraft:snow_block",
-				"item": {
-					"item": "minecraft:snow_block"
-				}
+				"block": "minecraft:snow_block"
 			}
 		}
 	},
 	"rewards": {
-		"function": "cpp:adv/snow_block/reset"
+		"function": "cpp:blocks/snow_block/reset"
 	}
 }

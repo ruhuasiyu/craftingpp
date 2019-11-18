@@ -74,7 +74,7 @@
 									"condition": "minecraft:entity_properties",
 									"entity": "this",
 									"predicate": {
-										"nbt": "{Type:\"red\"}"
+										"nbt": "{Type:'red'}"
 									}
 								}
 							],
@@ -148,7 +148,7 @@
 									"condition": "minecraft:entity_properties",
 									"entity": "this",
 									"predicate": {
-										"nbt": "{Type:\"red\"}"
+										"nbt": "{Type:'red'}"
 									}
 								}
 							]
@@ -170,7 +170,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{id:\"cpp:mycelium_marker\",isMachineBg:1b,CustomModelData:12971000}"
+							"tag": "{cppMyceliumMarker:1b,cppMachineBg:1b,CustomModelData:12971000}"
 						}
 					]
 				}

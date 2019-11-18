@@ -4,14 +4,13 @@
 			"rolls": 1,
 			"entries": [
 				{
+					"type": "minecraft:empty",
+					"weight": 25
+				},
+				{
 					"type": "minecraft:item",
 					"name": "minecraft:leather_boots",
-					"conditions": [
-						{
-							"condition": "minecraft:random_chance",
-							"chance": 0.25
-						}
-					],
+					"weight": 20,
 					"functions": [
 						{
 							"function": "enchant_with_levels",
@@ -33,12 +32,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:iron_boots",
-					"conditions": [
-						{
-							"condition": "minecraft:random_chance",
-							"chance": 0.25
-						}
-					],
+					"weight": 20,
 					"functions": [
 						{
 							"function": "enchant_with_levels",
@@ -60,12 +54,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:golden_boots",
-					"conditions": [
-						{
-							"condition": "minecraft:random_chance",
-							"chance": 0.2
-						}
-					],
+					"weight": 15,
 					"functions": [
 						{
 							"function": "enchant_with_levels",
@@ -87,12 +76,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:chainmail_boots",
-					"conditions": [
-						{
-							"condition": "minecraft:random_chance",
-							"chance": 0.2
-						}
-					],
+					"weight": 15,
 					"functions": [
 						{
 							"function": "enchant_with_levels",
@@ -114,12 +98,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:diamond_boots",
-					"conditions": [
-						{
-							"condition": "minecraft:random_chance",
-							"chance": 0.1
-						}
-					],
+					"weight": 5,
 					"functions": [
 						{
 							"function": "enchant_with_levels",

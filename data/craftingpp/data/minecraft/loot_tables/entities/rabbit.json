@@ -98,7 +98,7 @@
 									"condition": "minecraft:entity_properties",
 									"entity": "this",
 									"predicate": {
-										"nbt": "{CustomName:\"{\\\"text\\\":\\\"Toast\\\"}\"}"
+										"nbt": "{CustomName:'{\"text\":\"Toast\"}'}"
 									}
 								}
 							],

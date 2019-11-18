@@ -3,10 +3,13 @@ scoreboard players set #skyislandMode cppValue 0
 execute if block ~ 0 ~ minecraft:air run scoreboard players set #skyislandMode cppValue 1
 # 是否开启蝙蝠骚话
 scoreboard players set #forestBatWords cppValue 1
-# 是否加强僵尸
+
+# 是否加强僵尸、僵尸村民和尸壳
 scoreboard players set #doZombieImproving cppValue 1
-# 是否加强骷髅
+# 是否加强骷髅和流浪者
 scoreboard players set #doSkeletonImproving cppValue 1
+# 是否加强凋灵骷髅
+scoreboard players set #doWitherSkeletonImproving cppValue 1
 # 是否加强爬行者
 scoreboard players set #doCreeperImproving cppValue 1
 # 是否生成黑暗动物

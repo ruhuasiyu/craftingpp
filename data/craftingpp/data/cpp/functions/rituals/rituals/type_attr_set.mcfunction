@@ -9,7 +9,7 @@ execute as @s[nbt={HandItems:[{id:"minecraft:iron_axe"},{}]}] run loot replace e
 execute as @s[nbt={HandItems:[{id:"minecraft:wooden_sword"},{}]}] run loot replace entity @s weapon.offhand 1 loot cpp:attribute/diamond_axe
 execute as @s[nbt={HandItems:[{id:"minecraft:trident"},{}]}] run loot replace entity @s weapon.offhand 1 loot cpp:attribute/trident
 
-execute as @s[predicate=cpp:has_ritual_hat] run loot replace entity @s weapon.offhand 1 loot cpp:attribute/jack_o_lantern
+execute as @s[predicate=cpp:has_ritual_hat] run loot replace entity @s weapon.offhand 1 loot cpp:attribute/carved_pumpkin
 execute as @s[nbt={HandItems:[{id:"minecraft:leather_helmet"},{}]}] run loot replace entity @s weapon.offhand 1 loot cpp:attribute/leather_helmet
 execute as @s[predicate=cpp:has_ritual_iron_helmet] run loot replace entity @s weapon.offhand 1 loot cpp:attribute/iron_helmet
 execute as @s[nbt={HandItems:[{id:"minecraft:diamond_helmet"},{}]}] run loot replace entity @s weapon.offhand 1 loot cpp:attribute/diamond_helmet

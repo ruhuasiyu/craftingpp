@@ -1,13 +1,8 @@
 {
-	"condition": "minecraft:alternative",
-	"terms": [
-		{
-			"condition": "minecraft:location_check",
-			"predicate": {
-				"block": {
-					"nbt": "{Items:[{Slot:0b,tag:{cppMachineBg:1b}},{Slot:4b,tag:{cppMachineBg:1b}},{Slot:5b,tag:{cppMachineBg:1b}},{Slot:6b,tag:{cppMachineBg:1b}},{Slot:7b,tag:{cppMachineBg:1b}},{Slot:8b,tag:{cppMachineBg:1b}},{Slot:9b,tag:{cppMachineBg:1b}},{Slot:13b,tag:{cppMachineBg:1b}},{Slot:14b,tag:{cppMachineBg:1b}},{Slot:15b,tag:{cppMachineBg:1b}},{Slot:17b,tag:{cppMachineBg:1b}},{Slot:18b,tag:{cppMachineBg:1b}},{Slot:22b,tag:{cppMachineBg:1b}},{Slot:23b,tag:{cppMachineBg:1b}},{Slot:24b,tag:{cppMachineBg:1b}},{Slot:25b,tag:{cppMachineBg:1b}},{Slot:26b,tag:{cppMachineBg:1b}}]}"
-				}
-			}
+	"condition": "minecraft:location_check",
+	"predicate": {
+		"block": {
+			"nbt": "{Items:[{Slot:0b,tag:{cppMachineBg:1b}},{Slot:4b,tag:{cppMachineBg:1b}},{Slot:5b,tag:{cppMachineBg:1b}},{Slot:6b,tag:{cppMachineBg:1b}},{Slot:7b,tag:{cppMachineBg:1b}},{Slot:8b,tag:{cppMachineBg:1b}},{Slot:9b,tag:{cppMachineBg:1b}},{Slot:13b,tag:{cppMachineBg:1b}},{Slot:14b,tag:{cppMachineBg:1b}},{Slot:15b,tag:{cppMachineBg:1b}},{Slot:17b,tag:{cppMachineBg:1b}},{Slot:18b,tag:{cppMachineBg:1b}},{Slot:22b,tag:{cppMachineBg:1b}},{Slot:23b,tag:{cppMachineBg:1b}},{Slot:24b,tag:{cppMachineBg:1b}},{Slot:25b,tag:{cppMachineBg:1b}},{Slot:26b,tag:{cppMachineBg:1b}}]}"
 		}
-	]
+	}
 }

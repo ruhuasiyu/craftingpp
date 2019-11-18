@@ -13,7 +13,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{Potion:\"minecraft:night_vision\"}"
+							"tag": "{Potion:'minecraft:night_vision'}"
 						}
 					]
 				},
@@ -23,7 +23,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{Potion:\"minecraft:invisibility\"}"
+							"tag": "{Potion:'minecraft:invisibility'}"
 						}
 					]
 				},
@@ -33,7 +33,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{Potion:\"minecraft:leaping\"}"
+							"tag": "{Potion:'minecraft:leaping'}"
 						}
 					]
 				},
@@ -43,7 +43,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{Potion:\"minecraft:fire_resistance\"}"
+							"tag": "{Potion:'minecraft:fire_resistance'}"
 						}
 					]
 				},
@@ -53,7 +53,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{Potion:\"minecraft:swiftness\"}"
+							"tag": "{Potion:'minecraft:swiftness'}"
 						}
 					]
 				},
@@ -63,7 +63,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{Potion:\"minecraft:turtle_master\"}"
+							"tag": "{Potion:'minecraft:turtle_master'}"
 						}
 					]
 				},
@@ -73,7 +73,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{Potion:\"minecraft:water_breathing\"}"
+							"tag": "{Potion:'minecraft:water_breathing'}"
 						}
 					]
 				},
@@ -83,7 +83,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{Potion:\"minecraft:healing\"}"
+							"tag": "{Potion:'minecraft:healing'}"
 						}
 					]
 				},
@@ -93,7 +93,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{Potion:\"minecraft:harming\"}"
+							"tag": "{Potion:'minecraft:harming'}"
 						}
 					]
 				},
@@ -103,7 +103,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{Potion:\"minecraft:poison\"}"
+							"tag": "{Potion:'minecraft:poison'}"
 						}
 					]
 				},
@@ -113,7 +113,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{Potion:\"minecraft:regeneration\"}"
+							"tag": "{Potion:'minecraft:regeneration'}"
 						}
 					]
 				},
@@ -123,7 +123,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{Potion:\"minecraft:strength\"}"
+							"tag": "{Potion:'minecraft:strength'}"
 						}
 					]
 				},
@@ -133,7 +133,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{Potion:\"minecraft:weakness\"}"
+							"tag": "{Potion:'minecraft:weakness'}"
 						}
 					]
 				},
@@ -143,7 +143,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{Potion:\"minecraft:luck\"}"
+							"tag": "{Potion:'minecraft:luck'}"
 						}
 					]
 				},
@@ -153,7 +153,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{Potion:\"minecraft:slow_falling\"}"
+							"tag": "{Potion:'minecraft:slow_falling'}"
 						}
 					]
 				}

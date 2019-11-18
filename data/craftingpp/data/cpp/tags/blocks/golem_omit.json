@@ -2,7 +2,7 @@
 	"replace": false,
 	"values": [
 		"#cpp:golem_control_blocks",
-		"#cpp:fluid",
+		"#cpp:fluids",
 		"#minecraft:saplings",
 		"minecraft:attached_melon_stem",
 		"minecraft:attached_pumpkin_stem",
@@ -18,6 +18,7 @@
 		"#minecraft:rails",
 		"minecraft:barrel",
 		"minecraft:hopper",
-		"minecraft:chest"
+		"minecraft:chest",
+		"minecraft:dropper"
 	]
 }

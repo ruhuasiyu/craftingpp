@@ -4,21 +4,19 @@ scoreboard objectives add cppOutSlots dummy
 scoreboard objectives add cppOutputFace dummy
 # 方块破坏器
 scoreboard objectives add cppBsdIntFur minecraft.custom:minecraft.interact_with_furnace
+# 使用打火石
+scoreboard objectives add cppUseFS minecraft.used:minecraft.flint_and_steel
 # 生命值
 scoreboard objectives add cppHealth health
-# 使用胡萝卜钓竿
-scoreboard objectives add cppUseCSt minecraft.used:minecraft.carrot_on_a_stick
-# 使用斧(连锁效果)
+# 连锁效果
 scoreboard objectives add cppUseAxe1 minecraft.used:minecraft.diamond_axe
 scoreboard objectives add cppUseAxe2 minecraft.used:minecraft.iron_axe
 scoreboard objectives add cppUseAxe3 minecraft.used:minecraft.golden_axe
 scoreboard objectives add cppUseAxe4 minecraft.used:minecraft.stone_axe
-# 使用镐(连锁效果)
 scoreboard objectives add cppUsePick1 minecraft.used:minecraft.diamond_pickaxe
 scoreboard objectives add cppUsePick2 minecraft.used:minecraft.iron_pickaxe
 scoreboard objectives add cppUsePick3 minecraft.used:minecraft.golden_pickaxe
 scoreboard objectives add cppUsePick4 minecraft.used:minecraft.stone_pickaxe
-# 使用锹(连锁效果)
 scoreboard objectives add cppUseShovel1 minecraft.used:minecraft.diamond_shovel
 scoreboard objectives add cppUseShovel2 minecraft.used:minecraft.iron_shovel
 scoreboard objectives add cppUseShovel3 minecraft.used:minecraft.golden_shovel
@@ -27,6 +25,8 @@ scoreboard objectives add cppUseShovel4 minecraft.used:minecraft.stone_shovel
 scoreboard objectives add cppSneakTime minecraft.custom:minecraft.sneak_time
 # 跳跃
 scoreboard objectives add cppJump minecraft.custom:minecraft.jump
+# 使用胡萝卜钓竿
+scoreboard objectives add cppUseCSt minecraft.used:minecraft.carrot_on_a_stick
 # 玩家数字ID
 scoreboard objectives add cppID dummy
 # 玩家等级
@@ -87,7 +87,9 @@ scoreboard players set #skymkx cppValue 0
 scoreboard players set #skymkz cppValue 0
 # 计算放置方块的位置
 scoreboard players set #-1 cppValue -1
-scoreboard players set #1000 cppValue 1000
+scoreboard players set #100 cppValue 100
+# 计算玩家朝向
+scoreboard players set #90 cppValue 90
 # 盔甲染色配方
 scoreboard players set #256 cppValue 256
 scoreboard players set #65536 cppValue 65536

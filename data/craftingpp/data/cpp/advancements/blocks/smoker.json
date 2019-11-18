@@ -8,6 +8,6 @@
 		}
 	},
 	"rewards": {
-		"function": "cpp:block/smoker/reset"
+		"function": "cpp:block/smoker"
 	}
 }

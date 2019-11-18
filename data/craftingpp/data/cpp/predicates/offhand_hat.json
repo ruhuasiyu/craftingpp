@@ -4,7 +4,7 @@
 	"predicate": {
 		"equipment": {
 			"offhand":{
-				"item": "minecraft:jack_o_lantern",
+				"item": "minecraft:carved_pumpkin",
 				"nbt": "{cppHatSlot:'head'}"
 			}
 		}

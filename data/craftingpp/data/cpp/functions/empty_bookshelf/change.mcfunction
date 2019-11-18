@@ -1,0 +1,2 @@
+kill @s
+setblock ~ ~ ~ bookshelf

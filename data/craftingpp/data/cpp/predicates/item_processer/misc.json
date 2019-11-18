@@ -1,0 +1,37 @@
+{
+	"condition": "minecraft:alternative",
+	"terms": [
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:3b,tag:{id:'cpp:green_force_of_water'}},{Slot:12b,id:'minecraft:glass_bottle'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:3b,tag:{id:'cpp:green_force_of_water'}},{Slot:12b,id:'minecraft:bucket'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:3b,id:'minecraft:grass_block'},{Slot:12b,id:'minecraft:dirt'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:3b,id:'minecraft:mycelium'},{Slot:12b,id:'minecraft:dirt'}]}"
+				}
+			}
+		}
+	]
+}

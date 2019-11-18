@@ -1,0 +1,76 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:alternatives",
+					"children": [
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:3b,tag:{id:'cpp:green_force_of_water'}},{Slot:12b,id:'minecraft:glass_bottle'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:potion",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Potion:'minecraft:water'}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:3b,tag:{id:'cpp:green_force_of_water'}},{Slot:12b,id:'minecraft:bucket'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:water_bucket"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:3b,id:'minecraft:grass_block'},{Slot:12b,id:'minecraft:dirt'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:grass_block"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:3b,id:'minecraft:mycelium'},{Slot:12b,id:'minecraft:dirt'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:mycelium"
+						}
+					]
+				}
+			]
+		}
+	]
+}

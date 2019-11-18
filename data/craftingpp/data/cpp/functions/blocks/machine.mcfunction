@@ -1,3 +1,4 @@
+# 清理附近 GUI
 execute positioned ~-1 ~-2 ~-1 as @e[type=hopper_minecart,dx=2,dy=2,dz=2] run data modify entity @s TransferCooldown set value 2
 execute if block ~ ~-1 ~ hopper run data modify block ~ ~-1 ~ TransferCooldown set value 2
 
@@ -11,7 +12,7 @@ execute as @s[tag=cpp_trade_machine] run function cpp:trade_machine/tick
 execute as @s[tag=cpp_mob_projector] run function cpp:mob_projector/tick
 execute as @s[tag=cpp_item_processer] run function cpp:item_processer/tick
 execute as @s[tag=cpp_golden_anvil] if entity @a[distance=..7] run function cpp:golden_anvil/tick
-execute as @s[tag=cpp_empty_bookshelf] if entity @a[distance=..32] run function cpp:bookshelf/tick
+execute as @s[tag=cpp_empty_bookshelf] if entity @a[distance=..32] run function cpp:empty_bookshelf/tick
 execute as @s[tag=cpp_chest_dropper] if data block ~ ~ ~ Items[] run function cpp:chest_dropper/tick
 execute as @s[tag=cpp_dustbin] if data block ~ ~ ~ Items[] run function cpp:dustbin/tick
 execute as @s[tag=cpp_beacon_enhancer] run function cpp:beacon_enhancer/tick

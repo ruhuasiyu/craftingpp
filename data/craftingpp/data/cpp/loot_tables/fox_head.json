@@ -5,7 +5,7 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:jack_o_lantern",
+					"name": "minecraft:carved_pumpkin",
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",

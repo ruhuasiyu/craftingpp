@@ -52,26 +52,6 @@
 									"condition": "minecraft:location_check",
 									"predicate": {
 										"block": {
-											"nbt": "{Items:[{id:'minecraft:compass'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stone",
-							"functions": [
-								{
-									"function": "minecraft:set_nbt",
-									"tag": "{cppTradeValue:2880}"
-								}
-							]
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
 											"nbt": "{Items:[{tag:{id:'cpp:wing_of_sky'}}]}"
 										}
 									}
@@ -212,7 +192,87 @@
 									"condition": "minecraft:location_check",
 									"predicate": {
 										"block": {
-											"nbt": "{Items:[{id:'minecraft:written_book'}]}"
+											"nbt": "{Items:[{id:'minecraft:compass'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{cppTradeValue:2880}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:lava_bucket'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{cppTradeValue:2880}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:gold_ingot'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{cppTradeValue:720}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:iron_ingot'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{cppTradeValue:720}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:lapis_lazuli'}]}"
 										}
 									}
 								}
@@ -272,6 +332,66 @@
 									"condition": "minecraft:location_check",
 									"predicate": {
 										"block": {
+											"nbt": "{Items:[{id:'minecraft:book'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{cppTradeValue:720}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:written_book'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{cppTradeValue:720}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:enchanted_book'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{cppTradeValue:720}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
 											"nbt": "{Items:[{id:'minecraft:pumpkin'}]}"
 										}
 									}
@@ -293,66 +413,6 @@
 									"predicate": {
 										"block": {
 											"nbt": "{Items:[{id:'minecraft:melon'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stone",
-							"functions": [
-								{
-									"function": "minecraft:set_nbt",
-									"tag": "{cppTradeValue:360}"
-								}
-							]
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{id:'minecraft:book'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stone",
-							"functions": [
-								{
-									"function": "minecraft:set_nbt",
-									"tag": "{cppTradeValue:360}"
-								}
-							]
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{id:'minecraft:gold_ingot'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stone",
-							"functions": [
-								{
-									"function": "minecraft:set_nbt",
-									"tag": "{cppTradeValue:360}"
-								}
-							]
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{id:'minecraft:iron_ingot'}]}"
 										}
 									}
 								}
@@ -423,6 +483,186 @@
 								{
 									"function": "minecraft:set_nbt",
 									"tag": "{cppTradeValue:360}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:cooked_porkchop'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{cppTradeValue:200}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:cooked_chicken'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{cppTradeValue:200}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:cooked_beef'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{cppTradeValue:200}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:cooked_mutton'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{cppTradeValue:200}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:cooked_rabbit'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{cppTradeValue:200}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:coal'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{cppTradeValue:180}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:glowstone_dust'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{cppTradeValue:180}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:redstone'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{cppTradeValue:180}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:quartz'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{cppTradeValue:180}"
 								}
 							]
 						},
@@ -552,6 +792,26 @@
 									"condition": "minecraft:location_check",
 									"predicate": {
 										"block": {
+											"nbt": "{Items:[{id:'minecraft:egg'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{cppTradeValue:180}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
 											"nbt": "{Items:[{id:'minecraft:porkchop'}]}"
 										}
 									}
@@ -652,7 +912,7 @@
 									"condition": "minecraft:location_check",
 									"predicate": {
 										"block": {
-											"nbt": "{Items:[{id:'minecraft:egg'}]}"
+											"nbt": "{Items:[{id:'minecraft:white_wool'}]}"
 										}
 									}
 								}
@@ -672,7 +932,287 @@
 									"condition": "minecraft:location_check",
 									"predicate": {
 										"block": {
-											"nbt": "{Items:[{id:'minecraft:white_wool'}]}"
+											"nbt": "{Items:[{id:'minecraft:orange_wool'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{cppTradeValue:180}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:magenta_wool'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{cppTradeValue:180}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:light_blue_wool'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{cppTradeValue:180}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:yellow_wool'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{cppTradeValue:180}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:lime_wool'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{cppTradeValue:180}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:pink_wool'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{cppTradeValue:180}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:gray_wool'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{cppTradeValue:180}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:light_gray_wool'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{cppTradeValue:180}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:cyan_wool'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{cppTradeValue:180}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:purple_wool'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{cppTradeValue:180}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:blue_wool'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{cppTradeValue:180}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:brown_wool'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{cppTradeValue:180}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:green_wool'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{cppTradeValue:180}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:red_wool'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{cppTradeValue:180}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:black_wool'}]}"
 										}
 									}
 								}
@@ -752,7 +1292,7 @@
 									"condition": "minecraft:location_check",
 									"predicate": {
 										"block": {
-											"nbt": "{Items:[{id:'minecraft:coal'}]}"
+											"nbt": "{Items:[{id:'minecraft:slime_ball'}]}"
 										}
 									}
 								}
@@ -772,7 +1312,7 @@
 									"condition": "minecraft:location_check",
 									"predicate": {
 										"block": {
-											"nbt": "{Items:[{id:'minecraft:lapis_lazuli'}]}"
+											"nbt": "{Items:[{id:'minecraft:ghast_tear'}]}"
 										}
 									}
 								}
@@ -792,47 +1332,7 @@
 									"condition": "minecraft:location_check",
 									"predicate": {
 										"block": {
-											"nbt": "{Items:[{id:'minecraft:glowstone_dust'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stone",
-							"functions": [
-								{
-									"function": "minecraft:set_nbt",
-									"tag": "{cppTradeValue:180}"
-								}
-							]
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{id:'minecraft:redstone'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stone",
-							"functions": [
-								{
-									"function": "minecraft:set_nbt",
-									"tag": "{cppTradeValue:180}"
-								}
-							]
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{id:'minecraft:quartz'}]}"
+											"nbt": "{Items:[{id:'minecraft:prismarine_crystals'}]}"
 										}
 									}
 								}
@@ -932,47 +1432,47 @@
 									"condition": "minecraft:location_check",
 									"predicate": {
 										"block": {
+											"nbt": "{Items:[{id:'minecraft:sweet_berries'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{cppTradeValue:90}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:sugar_cane'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{cppTradeValue:90}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
 											"nbt": "{Items:[{id:'minecraft:paper'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stone",
-							"functions": [
-								{
-									"function": "minecraft:set_nbt",
-									"tag": "{cppTradeValue:90}"
-								}
-							]
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{id:'minecraft:charcoal'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stone",
-							"functions": [
-								{
-									"function": "minecraft:set_nbt",
-									"tag": "{cppTradeValue:90}"
-								}
-							]
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{id:'minecraft:flint'}]}"
 										}
 									}
 								}
@@ -1152,7 +1652,47 @@
 									"condition": "minecraft:location_check",
 									"predicate": {
 										"block": {
-											"nbt": "{Items:[{id:'minecraft:prismarine_crystals'}]}"
+											"nbt": "{Items:[{id:'minecraft:prismarine_shard'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{cppTradeValue:90}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:charcoal'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{cppTradeValue:90}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:flint'}]}"
 										}
 									}
 								}
@@ -1193,66 +1733,6 @@
 									"predicate": {
 										"block": {
 											"nbt": "{Items:[{id:'minecraft:bamboo'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stone",
-							"functions": [
-								{
-									"function": "minecraft:set_nbt",
-									"tag": "{cppTradeValue:60}"
-								}
-							]
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{id:'minecraft:sweet_berries'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stone",
-							"functions": [
-								{
-									"function": "minecraft:set_nbt",
-									"tag": "{cppTradeValue:60}"
-								}
-							]
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{id:'minecraft:slime_ball'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stone",
-							"functions": [
-								{
-									"function": "minecraft:set_nbt",
-									"tag": "{cppTradeValue:60}"
-								}
-							]
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{id:'minecraft:arrow'}]}"
 										}
 									}
 								}
@@ -1587,12 +2067,22 @@
 							]
 						},
 						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:arrow'}]}"
+										}
+									}
+								}
+							],
 							"type": "minecraft:item",
 							"name": "minecraft:stone",
 							"functions": [
 								{
 									"function": "minecraft:set_nbt",
-									"tag": "{cppTradeValue:1}"
+									"tag": "{cppTradeValue:60}"
 								}
 							]
 						}

@@ -8,6 +8,6 @@
 		}
 	},
 	"rewards": {
-		"function": "cpp:block/blast_furnace/reset"
+		"function": "cpp:block/blast_furnace"
 	}
 }

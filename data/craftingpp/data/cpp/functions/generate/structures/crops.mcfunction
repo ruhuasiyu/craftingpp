@@ -1,7 +1,7 @@
 setblock ~ ~3 ~ minecraft:oak_trapdoor[facing=south,half=bottom]
 setblock ~1 ~1 ~ minecraft:oak_trapdoor[facing=east,half=top]
 setblock ~-1 ~1 ~ minecraft:oak_trapdoor[facing=west,half=top]
-setblock ~ ~2 ~ minecraft:jack_o_lantern[facing=south]
+setblock ~ ~2 ~ minecraft:carved_pumpkin[facing=south]
 setblock ~ ~1 ~ minecraft:hay_block
 setblock ~ ~ ~ minecraft:oak_fence
 setblock ~ ~-1 ~ minecraft:water
