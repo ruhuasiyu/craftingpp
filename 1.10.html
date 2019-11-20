@@ -428,15 +428,14 @@
 <p>有几率掉到宝藏珊瑚、珊瑚扇、湿海绵、鳕鱼头/鲑鱼头/热带鱼头/河豚头、<a href="#heart_of_ocean">水晶之心</a>和垃圾火药/海晶碎片。</p>
 
 <h3 id="mooshroom">哞菇</h3>
-<p>哞菇死亡时会将下方泥土变为菌丝。</p>
+<p>哞菇死亡时会将下方灰化土变为菌丝，泥土变成灰化土。</p>
 
 <!-------------------------------------------------------------------------------------------------->
 <h2 id="machines">机器和插件</h2>
-<p>除金砧和空书架外的机器被原版红石元件强充能时停止工作。有输出物品的机器有一个用于切换输出方向的按钮，若输出方向有容器会将输出栏物品输出到其中。</p>
+<p>大部分机器被原版红石元件强充能时停止工作，部分则相反。有输出物品的机器有一个用于切换输出方向的按钮，若输出方向有容器会将输出栏物品输出到其中。</p>
 
 <h3 id="crafting_machine">合成器 (Crafting Machine)</h3>
 <a class="ui ci crafting_machine"></a>
-<p><code>/loot give @s loot cpp:crafting_machine</code></p>
 <table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
 <tr><th>合成器</th>
 <td><a href="#experience_bottle">附魔之瓶</a>+工作台</td><td>
@@ -458,7 +457,6 @@
 
 <h3 id="all_in_one_machine">多功能一体机 (All-in-one Machine)</h3>
 <a class="ui ci all_in_one_machine"></a>
-<p><code>/loot give @s loot cpp:all_in_one_machine</code></p>
 <p>这里绿色背景表示使用合成器合成，下同。</p>
 <table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
 <tr><th>多功能一体机</th>
@@ -477,134 +475,516 @@
 </span></td></tr>
 </tbody></table>
 <img style="height:200px" src="items/screenshots/all_in_one_machine.png" />
-<p>这种机器功能极为广泛，但是默认情形只能使用常压常温模式。我们需要主手持有插件Shift右击来安装并解锁相应模式，包括：<a href="#low_temperature_plugin">低温插件</a>、<a href="#low_pressure_plugin">低压插件</a>、<a href="#high_temperature_plugin">高温插件</a>、<a href="#high_pressure_plugin">高压插件</a>。</p>
+<p>默认情形只能使用常压常温模式。我们需要主手持有插件Shift右击来安装并解锁相应模式，包括：<a href="#low_temperature_plugin">低温插件</a>、<a href="#low_pressure_plugin">低压插件</a>、<a href="#high_temperature_plugin">高温插件</a>、<a href="#high_pressure_plugin">高压插件</a>。</p>
 <p>机器的左侧三个按钮分别控制压力、温度和输出方向。机器可以存储至多48点经验。</p>
 
-<h4>高温高压</h4>
 <p>高温高压模式直接将两种不同的矿石混合烧炼并提高产出，不同的搭配拥有不同的倍率，倍率在模组加载时被确定，需要玩家测量参数以确定最佳组合。倍率为1.6~3.5倍，其中红石的基准数量为5，青金石的基准数量为6。</p>
 
-<table><thead><tr><th colspan="2">输入</th><th>输出</th><th>消耗经验</th><th>耗时</th></tr></thead><tbody>
-<tr><td colspan="2">任意两种矿石</td><td>1.6~3.5倍对应矿物</td><td>4</td><td>10</td></tr>
-</tbody></table>
+<table style="background-color: #bb8822;color:white">
+<thead>
+<tr><th colspan="12" style="font-size: 24px;">多功能一体机配方表</th></tr>
+<tr><th colspan="2">模式</th><th colspan="4">输入</th><th colspan="4">输出</th><th>消耗经验</th><th>耗时</th></tr>
+</thead>
+<tbody>
+<tr><td>高温高压</td><td><a href="#high_pressure_plugin" class="ui ci high_pressure"></a><a href="#high_temperature_plugin" class="ui ci high_temperature"></a></td>
+	<td colspan="4">任意两种矿石</td><td colspan="4">1.6~3.5倍对应矿物</td>
+	<td>4</td><td>10</td></tr>
 
-<h4>高温常压</h4>
-<p>高温高压模式用来烧炼各种粉末，以及晒盐。</p>
-<table><thead><tr><th colspan="2">输入</th><th colspan="2">输出</th><th>消耗经验</th><th>耗时</th></tr></thead><tbody>
-<tr><td><a href="#iron_dust">铁粉</a></td><td>沙子/<a href="#red_sand">红沙</a></td><td>铁锭</td><td>20% <a href="#cinder">煤渣</a></td><td>1</td><td>2.5</td></tr>
-<tr><td><a href="#gold_dust">金粉</a></td><td>沙子/<a href="#red_sand">红沙</a></td><td>金锭</td><td>20% <a href="#cinder">煤渣</a></td><td>1</td><td>2.5</td></tr>
-<tr><td><a href="#carbon_dust">碳粉</a></td><td>沙子/<a href="#red_sand">红沙</a></td><td>煤炭</td><td>20% <a href="#cinder">煤渣</a></td><td>1</td><td>2.5</td></tr>
-<tr><td><a href="#diamond_dust">钻石粉</a></td><td>沙子/<a href="#red_sand">红沙</a></td><td>钻石</td><td>20% <a href="#cinder">煤渣</a></td><td>1</td><td>2.5</td></tr>
-<tr><td><a href="#emerald_dust">绿宝石粉</a></td><td>沙子/<a href="#red_sand">红沙</a></td><td>绿宝石</td><td>20% <a href="#cinder">煤渣</a></td><td>1</td><td>2.5</td></tr>
-<tr><td><a href="#quartz_dust">石英粉</a></td><td>沙子/<a href="#red_sand">红沙</a></td><td>石英</td><td>20% <a href="#cinder">煤渣</a></td><td>1</td><td>2.5</td></tr>
-<tr><td><a href="#silicon_dust">硅粉</a></td><td>沙子/<a href="#red_sand">红沙</a></td><td><a href="#silicon_plate">硅板</a></td><td>20% <a href="#cinder">煤渣</a></td><td>4</td><td>10</td></tr>
-<tr><td><a href="#rare_earth_dust">稀土粉</a></td><td>沙子/<a href="#red_sand">红沙</a></td><td><a href="#rare_earth_glass">稀土玻璃</a></td><td>20% <a href="#cinder">煤渣</a></td><td>4</td><td>10</td></tr>
-<tr><td><a href="#steel_dust">钢粉</a></td><td>沙子/<a href="#red_sand">红沙</a></td><td><a href="#reinforced_glass">钢化玻璃</a></td><td>20% <a href="#cinder">煤渣</a></td><td>4</td><td>10</td></tr>
-<tr><td>玻璃瓶</td><td>沙子/<a href="#red_sand">红沙</a></td><td><a href="#bottle_of_salt">盐瓶</a></td><td>-</td><td>4</td><td>10</td></tr>
-</tbody></table>
 
-<h4>高温低压</h4>
-<p>高温低压模式下，不同物品搭配可以发生反应。</p>
-<table><thead><tr><th colspan="2">输入</th><th colspan="2">输出</th><th>消耗经验</th><th>耗时</th></tr></thead><tbody>
-<tr><td><a href="#acid">酸水</a></td><td>地狱疣</td><td><a href="#bionic_acid">生物酸</a></td><td>-</td><td>4</td><td>10</td></tr>
-<tr><td><a href="#soda_water">碱水</a></td><td>地狱疣</td><td><a href="#alkaloid">生物碱</a></td><td>-</td><td>4</td><td>10</td></tr>
-<tr><td><a href="#quartz_dust">石英粉</a></td><td>燧石</td><td><a href="#coarse_silicon">粗硅</a></td><td>-</td><td>4</td><td>10</td></tr>
-<tr><td>玻璃瓶</td><td>活塞</td><td><a href="#bottle_of_air">空气瓶</a></td><td>-</td><td>4</td><td>10</td></tr>
-<tr><td><a href="#coarse_silicon">粗硅</a></td><td><a href="#bottle_of_air">空气瓶</a></td><td><a href="#silicon_dust">硅粉</a></td><td>-</td><td>4</td><td>10</td></tr>
-<tr><td>粘土</td><td><a href="#bottle_of_salt">盐瓶</a></td><td><a href="#rare_earth_salt">稀土盐</a></td><td>-</td><td>4</td><td>10</td></tr>
-<tr><td><a href="#rare_earth_salt">稀土盐</a></td><td><a href="#alkaloid">生物碱</a></td><td><a href="#alkaloid_rare_earth">碱性稀土</a></td><td>-</td><td>4</td><td>10</td></tr>
-<tr><td><a href="#alkaloid_rare_earth">碱性稀土</a></td><td><a href="#bionic_acid">生物酸</a></td><td><a href="#rare_earth_dust">稀土粉</a></td><td>-</td><td>4</td><td>10</td></tr>
-<tr><td><a href="#alkaloid">生物碱</a></td><td><a href="#fertilizer">肥料</a></td><td><a href="#ammonia_refrigerant">氨制冷剂</a></td><td><a href="#cinder">煤渣</a></td><td>4</td><td>10</td></tr>
-</tbody></table>
+<tr><td>高温常压</td><td><a class="ui ci normal_case"></a><a href="#high_temperature_plugin" class="ui ci high_temperature"></a></td>
+	<td><a href="#iron_dust">铁粉</a></td><td><a href="#iron_dust" class="ui ci iron_dust"></a></td>
+	<td>沙子/红沙</td><td><a class="ui sand"></a></td>
+	<td>铁锭</td><td><a class="ui iron_ingot"></a></td>
+	<td>20% <a href="#cinder">煤渣</a></td><td><a href="#cinder" class="ui ci cinder"><span class="stack">20%</span></a></td>
+	<td>1</td><td>2.5</td></tr>
+<tr><td>高温常压</td><td><a class="ui ci normal_case"></a><a href="#high_temperature_plugin" class="ui ci high_temperature"></a></td>
+	<td><a href="#gold_dust">金粉</a></td><td><a href="#gold_dust" class="ui ci gold_dust"></a></td>
+	<td>沙子/红沙</td><td><a class="ui sand"></a></td>
+	<td>金锭</td><td><a class="ui gold_ingot"></a></td>
+	<td>20% <a href="#cinder">煤渣</a></td><td><a href="#cinder" class="ui ci cinder"><span class="stack">20%</span></a></td>
+	<td>1</td><td>2.5</td></tr>
+<tr><td>高温常压</td><td><a class="ui ci normal_case"></a><a href="#high_temperature_plugin" class="ui ci high_temperature"></a></td>
+	<td><a href="#carbon_dust">碳粉</a></td><td><a href="#carbon_dust" class="ui ci carbon_dust"></a></td>
+	<td>沙子/红沙</td><td><a class="ui sand"></a></td>
+	<td>煤炭</td><td><a class="ui coal"></a></td>
+	<td>20% <a href="#cinder">煤渣</a></td><td><a href="#cinder" class="ui ci cinder"><span class="stack">20%</span></a></td>
+	<td>1</td><td>2.5</td></tr>
+<tr><td>高温常压</td><td><a class="ui ci normal_case"></a><a href="#high_temperature_plugin" class="ui ci high_temperature"></a></td>
+	<td><a href="#diamond_dust">钻石粉</a></td><td><a href="#diamond_dust" class="ui ci diamond_dust"></a></td>
+	<td>沙子/红沙</td><td><a class="ui sand"></a></td>
+	<td>钻石</td><td><a class="ui diamond"></a></td>
+	<td>20% <a href="#cinder">煤渣</a></td><td><a href="#cinder" class="ui ci cinder"><span class="stack">20%</span></a></td>
+	<td>1</td><td>2.5</td></tr>
+<tr><td>高温常压</td><td><a class="ui ci normal_case"></a><a href="#high_temperature_plugin" class="ui ci high_temperature"></a></td>
+	<td><a href="#emerald_dust">绿宝石粉</a></td><td><a href="#emerald_dust" class="ui ci emerald_dust"></a></td>
+	<td>沙子/红沙</td><td><a class="ui sand"></a></td>
+	<td>绿宝石</td><td><a class="ui emerald"></a></td>
+	<td>20% <a href="#cinder">煤渣</a></td><td><a href="#cinder" class="ui ci cinder"><span class="stack">20%</span></a></td>
+	<td>1</td><td>2.5</td></tr>
+<tr><td>高温常压</td><td><a class="ui ci normal_case"></a><a href="#high_temperature_plugin" class="ui ci high_temperature"></a></td>
+	<td><a href="#quartz_dust">石英粉</a></td><td><a href="#quartz_dust" class="ui ci quartz_dust"></a></td>
+	<td>沙子/红沙</td><td><a class="ui sand"></a></td>
+	<td>石英</td><td><a class="ui quartz"></a></td>
+	<td>20% <a href="#cinder">煤渣</a></td><td><a href="#cinder" class="ui ci cinder"><span class="stack">20%</span></a></td>
+	<td>1</td><td>2.5</td></tr>
+<tr><td>高温常压</td><td><a class="ui ci normal_case"></a><a href="#high_temperature_plugin" class="ui ci high_temperature"></a></td>
+	<td><a href="#silicon_dust">硅粉</a></td><td><a href="#silicon_dust" class="ui ci silicon_dust"></a></td>
+	<td>沙子/红沙</td><td><a class="ui sand"></a></td>
+	<td><a href="#silicon_plate">硅板</a></td><td><a class="ui ci silicon_plate"></a></td>
+	<td>20% <a href="#cinder">煤渣</a></td><td><a href="#cinder" class="ui ci cinder"><span class="stack">20%</span></a></td>
+	<td>4</td><td>10</td></tr>
+<tr><td>高温常压</td><td><a class="ui ci normal_case"></a><a href="#high_temperature_plugin" class="ui ci high_temperature"></a></td>
+	<td><a href="#rare_earth_dust">稀土粉</a></td><td><a href="#rare_earth_dust" class="ui ci rare_earth_dust"></a></td>
+	<td>沙子/红沙</td><td><a class="ui sand"></a></td>
+	<td><a href="#rare_earth_glass">稀土玻璃</a></td><td><a class="ui ci rare_earth_glass"></a></td>
+	<td>20% <a href="#cinder">煤渣</a></td><td><a href="#cinder" class="ui ci cinder"><span class="stack">20%</span></a></td>
+	<td>4</td><td>10</td></tr>
+<tr><td>高温常压</td><td><a class="ui ci normal_case"></a><a href="#high_temperature_plugin" class="ui ci high_temperature"></a></td>
+	<td><a href="#steel_dust">钢粉</a></td><td><a href="#steel_dust" class="ui ci steel_dust"></a></td>
+	<td>沙子/红沙</td><td><a class="ui sand"></a></td>
+	<td><a href="#reinforced_glass">钢化玻璃</a></td><td><a href="#iron_dust" class="ui ci reinforced_glass"></a></td>
+	<td>20% <a href="#cinder">煤渣</a></td><td><a href="#cinder" class="ui ci cinder"><span class="stack">20%</span></a></td>
+	<td>4</td><td>10</td></tr>
+<tr><td>高温常压</td><td><a class="ui ci normal_case"></a><a href="#high_temperature_plugin" class="ui ci high_temperature"></a></td>
+	<td>玻璃瓶</td><td><a class="ui glass_bottle"></a></td>
+	<td>沙子/红沙</td><td><a class="ui sand"></a></td>
+	<td><a href="#bottle_of_salt">盐瓶</a></td><td><a class="ui ci bottle_of_salt"></a></td>
+	<td>-</td><td>-</td>
+	<td>4</td><td>10</td></tr>
+	
 
-<h4>常温高压</h4>
-<p>高温高压模式使用燧石来粉碎各种方块。好好好，你说它是磨粉机它就是磨粉机。</p>
-<table><thead><tr><th colspan="2">输入</th><th colspan="2">输出</th><th>消耗经验</th><th>耗时</th></tr></thead><tbody>
-<tr><td>铁矿石</td><td>燧石</td><td><a href="#iron_dust">2 铁粉</a></td><td>10% 金粉</td><td>4</td><td>10</td></tr>
-<tr><td>金矿石</td><td>燧石</td><td><a href="#gold_dust">2 金粉</a></td><td>10% 铁粉</td><td>4</td><td>10</td></tr>
-<tr><td>煤矿石</td><td>燧石</td><td><a href="#carbon_dust">2 碳粉</a></td><td>2% 钻石粉</td><td>4</td><td>10</td></tr>
-<tr><td>绿宝石矿石</td><td>燧石</td><td><a href="#emerald_dust">2 绿宝石粉</a></td><td>10% 钻石粉</td><td>4</td><td>10</td></tr>
-<tr><td>钻石矿石</td><td>燧石</td><td><a href="#diamond_dust">2 钻石粉</a></td><td>10% 碳粉</td><td>4</td><td>10</td></tr>
-<tr><td>石英矿石</td><td>燧石</td><td><a href="#quartz_dust">2 石英粉</a></td><td>10% 荧石粉</td><td>4</td><td>10</td></tr>
-<tr><td>红石矿石</td><td>燧石</td><td>红石块</td><td>2~4 青金石</td><td>4</td><td>10</td></tr>
-<tr><td>青金石矿石</td><td>燧石</td><td>10-20 青金石</td><td>2~4 红石</td><td>4</td><td>10</td></tr>
+<tr><td>高温低压</td><td><a href="#low_pressure_plugin" class="ui ci low_pressure"></a><a href="#high_temperature_plugin" class="ui ci high_temperature"></a></td>
+	<td><a href="#acid">酸水</a></td><td><a href="#acid" class="ui ci acid"></a></td>
+	<td>地狱疣</td><td><a class="ui nether_wart"></a></td>
+	<td><a href="#bionic_acid">生物酸</a></td><td><a href="#bionic_acid" class="ui ci bionic_acid"></a></td>
+	<td>-</td><td>-</td>
+	<td>4</td><td>10</td></tr>
+<tr><td>高温低压</td><td><a href="#low_pressure_plugin" class="ui ci low_pressure"></a><a href="#high_temperature_plugin" class="ui ci high_temperature"></a></td>
+	<td><a href="#soda_water">碱水</a></td><td><a href="#soda_water" class="ui ci soda_water"></a></td>
+	<td>地狱疣</td><td><a class="ui nether_wart"></a></td>
+	<td><a href="#alkaloid">生物碱</a></td><td><a href="#alkaloid" class="ui ci alkaloid"></a></td>
+	<td>-</td><td>-</td>
+	<td>4</td><td>10</td></tr>
+<tr><td>高温低压</td><td><a href="#low_pressure_plugin" class="ui ci low_pressure"></a><a href="#high_temperature_plugin" class="ui ci high_temperature"></a></td>
+	<td><a href="#quartz_dust">石英粉</a></td><td><a href="#quartz_dust" class="ui ci quartz_dust"></a></td>
+	<td>燧石</td><td><a class="ui flint"></a></td>
+	<td><a href="#coarse_silicon">粗硅</a></td><td><a href="#coarse_silicon" class="ui ci coarse_silicon"></a></td>
+	<td>-</td><td>-</td>
+	<td>4</td><td>10</td></tr>
+<tr><td>高温低压</td><td><a href="#low_pressure_plugin" class="ui ci low_pressure"></a><a href="#high_temperature_plugin" class="ui ci high_temperature"></a></td>
+	<td>玻璃瓶</td><td><a class="ui glass_bottle"></a></td>
+	<td>活塞</td><td><a class="ui piston"></a></td>
+	<td><a href="#bottle_of_air">空气瓶</a></td><td><a href="#bottle_of_air" class="ui ci bottle_of_air"></a></td>
+	<td>-</td><td>-</td>
+	<td>4</td><td>10</td></tr>
+<tr><td>高温低压</td><td><a href="#low_pressure_plugin" class="ui ci low_pressure"></a><a href="#high_temperature_plugin" class="ui ci high_temperature"></a></td>
+	<td><a href="#coarse_silicon">粗硅</a></td><td><a href="#coarse_silicon" class="ui ci coarse_silicon"></a></td>
+	<td><a href="#bottle_of_air">空气瓶</a></td><td><a href="#bottle_of_air" class="ui ci bottle_of_air"></a></td>
+	<td><a href="#silicon_dust">硅粉</a></td><td><a href="#silicon_dust" class="ui ci silicon_dust"></a></td>
+	<td>-</td><td>-</td>
+	<td>4</td><td>10</td></tr>
+<tr><td>高温低压</td><td><a href="#low_pressure_plugin" class="ui ci low_pressure"></a><a href="#high_temperature_plugin" class="ui ci high_temperature"></a></td>
+	<td>粘土</td><td><a class="ui clay"></a></td>
+	<td><a href="#bottle_of_salt">盐瓶</a></td><td><a href="#bottle_of_salt" class="ui ci bottle_of_salt"></a></td>
+	<td><a href="#rare_earth_salt">稀土盐</a></td><td><a href="#rare_earth_salt" class="ui ci rare_earth_salt"></a></td>
+	<td>-</td><td>-</td>
+	<td>4</td><td>10</td></tr>
+<tr><td>高温低压</td><td><a href="#low_pressure_plugin" class="ui ci low_pressure"></a><a href="#high_temperature_plugin" class="ui ci high_temperature"></a></td>
+	<td><a href="#rare_earth_salt">稀土盐</a></td><td><a href="#rare_earth_salt" class="ui ci rare_earth_salt"></a></td>
+	<td><a href="#alkaloid">生物碱</a></td><td><a href="#acid" class="ui ci alkaloid"></a></td>
+	<td><a href="#alkaloid_rare_earth">碱性稀土</a></td><td><a href="#alkaloid_rare_earth" class="ui ci alkaloid_rare_earth"></a></td>
+	<td>-</td><td>-</td>
+	<td>4</td><td>10</td></tr>
+<tr><td>高温低压</td><td><a href="#low_pressure_plugin" class="ui ci low_pressure"></a><a href="#high_temperature_plugin" class="ui ci high_temperature"></a></td>
+	<td><a href="#alkaloid_rare_earth">碱性稀土</a></td><td><a href="#alkaloid_rare_earth" class="ui ci alkaloid_rare_earth"></a></td>
+	<td><a href="#bionic_acid">生物酸</a></td><td><a href="#bionic_acid" class="ui ci bionic_acid"></a></td>
+	<td><a href="#rare_earth_dust">稀土粉</a></td><td><a href="#rare_earth_dust" class="ui ci rare_earth_dust"></a></td>
+	<td>-</td><td>-</td>
+	<td>4</td><td>10</td></tr>
+<tr><td>高温低压</td><td><a href="#low_pressure_plugin" class="ui ci low_pressure"></a><a href="#high_temperature_plugin" class="ui ci high_temperature"></a></td>
+	<td><a href="#alkaloid">生物碱</a></td><td><a href="#alkaloid" class="ui ci alkaloid"></a></td>
+	<td><a href="#fertilizer">肥料</a></td><td><a href="#fertilizer" class="ui ci fertilizer"></a></td>
+	<td><a href="#ammonia_refrigerant">氨制冷剂</a></td><td><a href="#ammonia_refrigerant" class="ui ci ammonia_refrigerant"></a></td>
+	<td><a href="#cinder">煤渣</a></td><td><a href="#cinder" class="ui ci cinder"></a></td>
+	<td>4</td><td>10</td></tr>
+	
 
-<tr><td>铁锭</td><td>燧石</td><td><a href="#iron_dust">铁粉</a></a></td><td>-</td><td>1</td><td>2.5</td></tr>
-<tr><td>金锭</td><td>燧石</td><td><a href="#gold_dust">金粉</a></td><td>-</td><td>1</td><td>2.5</td></tr>
-<tr><td>煤炭/木炭/<a href="#cinder">煤渣</a></td><td>燧石</td><td><a href="#carbon_dust">碳粉</a></td><td>-</td><td>1</td><td>2.5</td></tr>
-<tr><td>绿宝石</td><td>燧石</td><td><a href="#emerald_dust">绿宝石粉</a></td><td>-</td><td>1</td><td>2.5</td></tr>
-<tr><td>钻石</td><td>燧石</td><td><a href="#diamond_dust">钻石粉</a></td><td>-</td><td>1</td><td>2.5</td></tr>
-<tr><td>石英/花岗岩/安山岩/闪长岩</td><td>燧石</td><td><a href="#quartz_dust">石英粉</a></td><td>-</td><td>1</td><td>2.5</td></tr>
+<tr><td>常温高压</td><td><a href="#high_pressure_plugin" class="ui ci high_pressure"></a><a class="ui ci normal_case"></a></td>
+	<td>铁矿石</td><td><a class="ui iron_ore"></a></td>
+	<td>燧石</td><td><a class="ui flint"></a></td>
+	<td>2 <a href="#iron_dust">铁粉</a></td><td><a href="#iron_dust" class="ui ci iron_dust"><span class="stack">2</span></a></td>
+	<td>10% <a href="#gold_dust">金粉</a></td><td><a href="#gold_dust" class="ui ci gold_dust"><span class="stack">10%</span></a></td>
+	<td>4</td><td>10</td></tr>
+<tr><td>常温高压</td><td><a href="#high_pressure_plugin" class="ui ci high_pressure"></a><a class="ui ci normal_case"></a></td>
+	<td>金矿石</td><td><a class="ui gold_ore"></a></td>
+	<td>燧石</td><td><a class="ui flint"></a></td>
+	<td>2 <a href="#gold_dust">金粉</a></td><td><a href="#gold_dust" class="ui ci gold_dust"><span class="stack">2</span></a></td>
+	<td>10% <a href="#iron_dust">铁粉</a></td><td><a href="#iron_dust" class="ui ci iron_dust"><span class="stack">10%</span></a></td>
+	<td>4</td><td>10</td></tr>
+<tr><td>常温高压</td><td><a href="#high_pressure_plugin" class="ui ci high_pressure"></a><a class="ui ci normal_case"></a></td>
+	<td>煤矿石</td><td><a class="ui coal_ore"></a></td>
+	<td>燧石</td><td><a class="ui flint"></a></td>
+	<td>2 <a href="#carbon_dust">碳粉</a></td><td><a href="#carbon_dust" class="ui ci carbon_dust"><span class="stack">2</span></a></td>
+	<td>2% <a href="#diamond_dust">钻石粉</a></td><td><a href="#diamond_dust" class="ui ci diamond_dust"><span class="stack">2%</span></a></td>
+	<td>4</td><td>10</td></tr>
+<tr><td>常温高压</td><td><a href="#high_pressure_plugin" class="ui ci high_pressure"></a><a class="ui ci normal_case"></a></td>
+	<td>绿宝石矿石</td><td><a class="ui emerald_ore"></a></td>
+	<td>燧石</td><td><a class="ui flint"></a></td>
+	<td>2 <a href="#emerald_dust">绿宝石粉</a></td><td><a href="#emerald_dust" class="ui ci emerald_dust"><span class="stack">2</span></a></td>
+	<td>10% <a href="#diamond_dust">钻石粉</a></td><td><a href="#diamond_dust" class="ui ci diamond_dust"><span class="stack">10%</span></a></td>
+	<td>4</td><td>10</td></tr>
+<tr><td>常温高压</td><td><a href="#high_pressure_plugin" class="ui ci high_pressure"></a><a class="ui ci normal_case"></a></td>
+	<td>钻石矿石</td><td><a class="ui diamond_ore"></a></td>
+	<td>燧石</td><td><a class="ui flint"></a></td>
+	<td>2 <a href="#diamond_dust">钻石粉</a></td><td><a href="#diamond_dust" class="ui ci diamond_dust"><span class="stack">2</span></a></td>
+	<td>10% <a href="#carbon_dust">碳粉</a></td><td><a href="#carbon_dust" class="ui ci carbon_dust"><span class="stack">10%</span></a></td>
+	<td>4</td><td>10</td></tr>
+<tr><td>常温高压</td><td><a href="#high_pressure_plugin" class="ui ci high_pressure"></a><a class="ui ci normal_case"></a></td>
+	<td>下界石英矿石</td><td><a class="ui nether_quartz_ore"></a></td>
+	<td>燧石</td><td><a class="ui flint"></a></td>
+	<td>2 <a href="#quartz_dust">石英粉</a></td><td><a href="#quartz_dust" class="ui ci quartz_dust"><span class="stack">2</span></a></td>
+	<td>10% 荧石粉</td><td><a class="ui glowstone_dust"><span class="stack">10%</span></a></td>
+	<td>4</td><td>10</td></tr>
+<tr><td>常温高压</td><td><a href="#high_pressure_plugin" class="ui ci high_pressure"></a><a class="ui ci normal_case"></a></td>
+	<td>红石矿石</td><td><a class="ui redstone_ore"></a></td>
+	<td>燧石</td><td><a class="ui flint"></a></td>
+	<td>红石块</td><td><a class="ui redstone"></a></td>
+	<td>2~4 青金石</td><td><a class="ui lapis_lazuli"><span class="stack">2~4</span></a></td>
+	<td>4</td><td>10</td></tr>
+<tr><td>常温高压</td><td><a href="#high_pressure_plugin" class="ui ci high_pressure"></a><a class="ui ci normal_case"></a></td>
+	<td>青金石矿石</td><td><a class="ui lapis_ore"></a></td>
+	<td>燧石</td><td><a class="ui flint"></a></td>
+	<td>10-20 青金石</td><td><a class="ui lapis_lazuli"><span class="stack">10-20</span></a></td>
+	<td>2~4 红石</td><td><a class="ui redstone"><span class="stack">2~4</span></a></td>
+	<td>4</td><td>10</td></tr>
 
-<tr><td>海晶石</td><td>燧石</td><td>3 海晶碎片</td><td>海晶砂粒</td><td>1</td><td>2.5</td></tr>
-<tr><td>海晶石砖/暗海晶石</td><td>燧石</td><td>6 海晶碎片</td><td>2 海晶砂粒</td><td>1</td><td>2.5</td></tr>
-<tr><td>羊毛</td><td>燧石</td><td>4 线</td><td>5% 染料</td><td>1</td><td>2.5</td></tr>
-<tr><td>粘土块</td><td>燧石</td><td>粘液球</td><td>-</td><td>1</td><td>2.5</td></tr>
-<tr><td>圆石</td><td>燧石</td><td>沙子</td><td>燧石</td><td>1</td><td>1</td></tr>
-</tbody></table>
+<tr><td>常温高压</td><td><a href="#high_pressure_plugin" class="ui ci high_pressure"></a><a class="ui ci normal_case"></a></td>
+	<td>铁锭</td><td><a class="ui iron_ingot"></a></td>
+	<td>燧石</td><td><a class="ui flint"></a></td>
+	<td><a href="#iron_dust">铁粉</a></a></td><td><a href="#iron_dust" class="ui ci iron_dust"></a></td>
+	<td>-</td><td>-</td>
+	<td>1</td><td>2.5</td></tr>
+<tr><td>常温高压</td><td><a href="#high_pressure_plugin" class="ui ci high_pressure"></a><a class="ui ci normal_case"></a></td>
+	<td>金锭</td><td><a class="ui gold_ingot"></a></td>
+	<td>燧石</td><td><a class="ui flint"></a></td>
+	<td><a href="#gold_dust">金粉</a></td><td><a href="#gold_dust" class="ui ci gold_dust"></a></td>
+	<td>-</td><td>-</td>
+	<td>1</td><td>2.5</td></tr>
+<tr><td>常温高压</td><td><a href="#high_pressure_plugin" class="ui ci high_pressure"></a><a class="ui ci normal_case"></a></td>
+	<td>煤炭</td><td><a class="ui coal"></a></td>
+	<td>燧石</td><td><a class="ui flint"></a></td>
+	<td><a href="#carbon_dust">碳粉</a></td><td><a class="ui ci carbon_dust"></a></td>
+	<td>-</td><td>-</td>
+	<td>1</td><td>2.5</td></tr>
+<tr><td>常温高压</td><td><a href="#high_pressure_plugin" class="ui ci high_pressure"></a><a class="ui ci normal_case"></a></td>
+	<td>木炭</td><td><a class="ui charcoal"></a></td>
+	<td>燧石</td><td><a class="ui flint"></a></td>
+	<td><a href="#carbon_dust">碳粉</a></td><td><a class="ui ci carbon_dust"></a></td>
+	<td>-</td><td>-</td>
+	<td>1</td><td>2.5</td></tr>
+<tr><td>常温高压</td><td><a href="#high_pressure_plugin" class="ui ci high_pressure"></a><a class="ui ci normal_case"></a></td>
+	<td><a href="#cinder">煤渣</a></td><td><a href="#cinder" class="ui ci cinder"></a></td>
+	<td>燧石</td><td><a class="ui flint"></a></td>
+	<td><a href="#carbon_dust">碳粉</a></td><td><a class="ui ci carbon_dust"></a></td>
+	<td>-</td><td>-</td>
+	<td>1</td><td>2.5</td></tr>
+<tr><td>常温高压</td><td><a href="#high_pressure_plugin" class="ui ci high_pressure"></a><a class="ui ci normal_case"></a></td>
+	<td>绿宝石</td><td><a class="ui emerald"></a></td>
+	<td>燧石</td><td><a class="ui flint"></a></td>
+	<td><a href="#emerald_dust">绿宝石粉</a></td><td><a href="#emerald_dust" class="ui ci emerald_dust"></a></td>
+	<td>-</td><td>-</td>
+	<td>1</td><td>2.5</td></tr>
+<tr><td>常温高压</td><td><a href="#high_pressure_plugin" class="ui ci high_pressure"></a><a class="ui ci normal_case"></a></td>
+	<td>钻石</td><td><a class="ui diamond"></a></td>
+	<td>燧石</td><td><a class="ui flint"></a></td>
+	<td><a href="#diamond_dust">钻石粉</a></td><td><a href="#diamond_dust" class="ui ci diamond_dust"></a></td>
+	<td>-</td><td>-</td>
+	<td>1</td><td>2.5</td></tr>
+<tr><td>常温高压</td><td><a href="#high_pressure_plugin" class="ui ci high_pressure"></a><a class="ui ci normal_case"></a></td>
+	<td>石英</td><td><a class="ui quartz"></a></td>
+	<td>燧石</td><td><a class="ui flint"></a></td>
+	<td><a href="#quartz_dust">石英粉</a></td><td><a href="#quartz_dust" class="ui ci quartz_dust"></a></td>
+	<td>-</td><td>-</td>
+	<td>1</td><td>2.5</td></tr>
+<tr><td>常温高压</td><td><a href="#high_pressure_plugin" class="ui ci high_pressure"></a><a class="ui ci normal_case"></a></td>
+	<td>花岗岩</td><td><a class="ui granite"></a></td>
+	<td>燧石</td><td><a class="ui flint"></a></td>
+	<td><a href="#quartz_dust">石英粉</a></td><td><a href="#quartz_dust" class="ui ci quartz_dust"></a></td>
+	<td>-</td><td>-</td>
+	<td>1</td><td>2.5</td></tr>
+<tr><td>常温高压</td><td><a href="#high_pressure_plugin" class="ui ci high_pressure"></a><a class="ui ci normal_case"></a></td>
+	<td>安山岩</td><td><a class="ui andesite"></a></td>
+	<td>燧石</td><td><a class="ui flint"></a></td>
+	<td><a href="#quartz_dust">石英粉</a></td><td><a href="#quartz_dust" class="ui ci quartz_dust"></a></td>
+	<td>-</td><td>-</td>
+	<td>1</td><td>2.5</td></tr>
+<tr><td>常温高压</td><td><a href="#high_pressure_plugin" class="ui ci high_pressure"></a><a class="ui ci normal_case"></a></td>
+	<td>闪长岩</td><td><a class="ui diorite"></a></td>
+	<td>燧石</td><td><a class="ui flint"></a></td>
+	<td><a href="#quartz_dust">石英粉</a></td><td><a href="#quartz_dust" class="ui ci quartz_dust"></a></td>
+	<td>-</td><td>-</td>
+	<td>1</td><td>2.5</td></tr>
+<tr><td>常温高压</td><td><a href="#high_pressure_plugin" class="ui ci high_pressure"></a><a class="ui ci normal_case"></a></td>
+	<td>粘土块</td><td><a class="ui clay"></a></td>
+	<td>燧石</td><td><a class="ui flint"></a></td>
+	<td>粘液球</td><td><a class="ui slime_ball"></a></td>
+	<td>-</td><td>-</td>
+	<td>1</td><td>2.5</td></tr>
 
-<h4>常温常压</h4>
-<p>常温常压下作物才能够生长，而我们可以直接用肥料来无土培育。</p>
-<table><thead><tr><th colspan="2">输入</th><th colspan="2">输出</th><th>消耗经验</th><th>耗时</th></tr></thead><tbody>
-<tr><td>小麦种子</td><td><a href="#fertilizer">肥料</a></td><td>2 小麦</td><td>0~3 小麦种子</td><td>2</td><td>2</td></tr>
-<tr><td>甜菜种子</td><td><a href="#fertilizer">肥料</a></td><td>2 甜菜根</td><td>0~3 甜菜种子</td><td>2</td><td>2</td></tr>
-<tr><td>南瓜种子</td><td><a href="#fertilizer">肥料</a></td><td>2 南瓜</td><td>-</td><td>2</td><td>2</td></tr>
-<tr><td>西瓜种子</td><td><a href="#fertilizer">肥料</a></td><td>2 西瓜</td><td>-</td><td>2</td><td>2</td></tr>
-<tr><td>胡萝卜马铃薯</td><td><a href="#fertilizer">肥料</a></td><td>6 对应植物</td><td>-</td><td>2</td><td>2</td></tr>
-<tr><td>甘蔗仙人掌藤蔓可可豆蘑菇地狱疣睡莲花</td><td><a href="#fertilizer">肥料</a></td><td>4 对应植物</td><td>-</td><td>2</td><td>2</td></tr>
-<tr><td>竹子甜浆果海带</td><td><a href="#fertilizer">肥料</a></td><td>8 对应植物</td><td>-</td><td>2</td><td>2</td></tr>
-<tr><td>紫颂花</td><td><a href="#fertilizer">肥料</a></td><td>2 紫颂果</td><td>0~3 紫颂花</td><td>2</td><td>2</td></tr>
-<tr><td>树苗</td><td><a href="#fertilizer">肥料</a></td><td>4 木头</td><td>0~3 树苗</td><td>2</td><td>2</td></tr>
-<tr><td><a href="#fruit_sapling">水果树树苗</a></td><td><a href="#fertilizer">肥料</a></td><td><a href="#fruits">水果</a></td><td>0~3 <a href="#fruit_sapling">水果树树苗</a></td><td>2</td><td>2</td></tr>
-<tr><td><a href="#ore_sapling">矿石树树苗</a></td><td><a href="#fertilizer">肥料</a></td><td>矿石</td><td>0~3 <a href="#ore_sapling">矿石树树苗</a></td><td>2</td><td>2</td></tr>
-<tr><td><a href="#wool_sapling">羊毛树树苗</a></td><td><a href="#fertilizer">肥料</a></td><td>羊毛</td><td>0~3 <a href="#wool_sapling">羊毛树树苗</a></td><td>2</td><td>2</td></tr>
-<tr><td><a href="#flowers_and_grasses">花草种子</a></td><td><a href="#fertilizer">肥料</a></td><td><a href="#flowers_and_grasses">花草</a></td><td>-</a></td><td>2</td><td>2</td></tr>
-</tbody></table>
+<tr><td>常温高压</td><td><a href="#high_pressure_plugin" class="ui ci high_pressure"></a><a class="ui ci normal_case"></a></td>
+	<td>海晶石</td><td><a class="ui prismarine"></a></td>
+	<td>燧石</td><td><a class="ui flint"></a></td>
+	<td>3 海晶碎片</td><td><a class="ui prismarine_shard"><span class="stack">3</span></a></td>
+	<td>海晶砂粒</td><td><a class="ui prismarine_crystals"></a></td>
+	<td>1</td><td>2.5</td></tr>
+<tr><td>常温高压</td><td><a href="#high_pressure_plugin" class="ui ci high_pressure"></a><a class="ui ci normal_case"></a></td>
+	<td>海晶石砖</td><td><a class="ui prismarine_bricks"></a></td>
+	<td>燧石</td><td><a class="ui flint"></a></td>
+	<td>6 海晶碎片</td><td><a class="ui prismarine_shard"><span class="stack">6</span></a></td>
+	<td>2 海晶砂粒</td><td><a class="ui prismarine_crystals"><span class="stack">2</span></a></td>
+	<td>1</td><td>2.5</td></tr>
+<tr><td>常温高压</td><td><a href="#high_pressure_plugin" class="ui ci high_pressure"></a><a class="ui ci normal_case"></a></td>
+	<td>暗海晶石</td><td><a class="ui dark_prismarine"></a></td>
+	<td>燧石</td><td><a class="ui flint"></a></td>
+	<td>6 海晶碎片</td><td><a class="ui prismarine_shard"><span class="stack">6</span></a></td>
+	<td>2 海晶砂粒</td><td><a class="ui prismarine_crystals"><span class="stack">2</span></a></td>
+	<td>1</td><td>2.5</td></tr>
+<tr><td>常温高压</td><td><a href="#high_pressure_plugin" class="ui ci high_pressure"></a><a class="ui ci normal_case"></a></td>
+	<td>羊毛</td><td><a class="ui magenta_wool"></a></td>
+	<td>燧石</td><td><a class="ui flint"></a></td>
+	<td>4 线</td><td><a class="ui string"></a></td>
+	<td>5% 染料</td><td><a class="ui magenta_dye"></a></td>
+	<td>1</td><td>2.5</td></tr>
+<tr><td>常温高压</td><td><a href="#high_pressure_plugin" class="ui ci high_pressure"></a><a class="ui ci normal_case"></a></td>
+	<td>圆石</td><td><a class="ui cobblestone"></a></td>
+	<td>燧石</td><td><a class="ui flint"></a></td>
+	<td>沙子</td><td><a class="ui sand"></a></td>
+	<td>燧石</td><td><a class="ui flint"></a></td>
+	<td>1</td><td>1</td></tr>
+	
 
-<h4>常温低压</h4>
-<p>常温低压模式下可以让药水和物品充分反应，从而得到更强大的药水。</p>
-<table><thead><tr><th colspan="2">输入</th><th>输出</th><th>消耗经验</th><th>耗时</th></tr></thead><tbody>
-<tr><td>幻翼膜</td><td>粗制的药水</td><td><strong id="potion_of_slow_falling">缓降药水</strong> (缓降 8:00)</td><td>4</td><td>10</td></tr>
+<tr><td>常温常压</td><td><a class="ui ci normal_case"></a><a class="ui ci normal_case"></a></td>
+	<td>小麦种子</td><td><a class="ui wheat_seeds"></a></td>
+	<td><a href="#fertilizer">肥料</a></td><td><a href="#fertilizer" class="ui ci fertilizer"></a></td>
+	<td>2 小麦</td><td><a class="ui wheat"><span class="stack">2</span></a></td>
+	<td>0~3 小麦种子</td><td><a class="ui wheat_seeds"><span class="stack">0~3</span></a></td>
+	<td>2</td><td>2</td></tr>
+<tr><td>常温常压</td><td><a class="ui ci normal_case"></a><a class="ui ci normal_case"></a></td>
+	<td>甜菜种子</td><td><a class="ui beetroot_seeds"></a></td>
+	<td><a href="#fertilizer">肥料</a></td><td><a href="#fertilizer" class="ui ci fertilizer"></a></td>
+	<td>2 甜菜根</td><td><a class="ui beetroot"><span class="stack">2</span></a></td>
+	<td>0~3 甜菜种子</td><td><a class="ui beetroot_seeds"><span class="stack">0~3</span></a></td>
+	<td>2</td><td>2</td></tr>
+<tr><td>常温常压</td><td><a class="ui ci normal_case"></a><a class="ui ci normal_case"></a></td>
+	<td>南瓜种子</td><td><a class="ui pumpkin_seeds"></a></td>
+	<td><a href="#fertilizer">肥料</a></td><td><a href="#fertilizer" class="ui ci fertilizer"></a></td>
+	<td>2 南瓜</td><td><a class="ui pumpkin_seeds"><span class="stack">2</span></a></td>
+	<td>-</td><td>-</td>
+	<td>2</td><td>2</td></tr>
+<tr><td>常温常压</td><td><a class="ui ci normal_case"></a><a class="ui ci normal_case"></a></td>
+	<td>西瓜种子</td><td><a class="ui melon_seeds"></a></td>
+	<td><a href="#fertilizer">肥料</a></td><td><a href="#fertilizer" class="ui ci fertilizer"></a></td>
+	<td>2 西瓜</td><td><a class="ui melon"><span class="stack">2</span></a></td>
+	<td>-</td><td>-</td>
+	<td>2</td><td>2</td></tr>
+<tr><td>常温常压</td><td><a class="ui ci normal_case"></a><a class="ui ci normal_case"></a></td>
+	<td>胡萝卜</td><td><a class="ui carrot"></a></td>
+	<td><a href="#fertilizer">肥料</a></td><td><a href="#fertilizer" class="ui ci fertilizer"></a></td>
+	<td>6 胡萝卜</td><td><a class="ui carrot"><span class="stack">6</span></a></td>
+	<td>-</td><td>-</td>
+	<td>2</td><td>2</td></tr>
+<tr><td>常温常压</td><td><a class="ui ci normal_case"></a><a class="ui ci normal_case"></a></td>
+	<td>马铃薯</td><td><a class="ui potato"></a></td>
+	<td><a href="#fertilizer">肥料</a></td><td><a href="#fertilizer" class="ui ci fertilizer"></a></td>
+	<td>6 马铃薯</td><td><a class="ui potato"><span class="stack">6</span></a></td>
+	<td>-</td><td>-</td>
+	<td>2</td><td>2</td></tr>
+<tr><td>常温常压</td><td><a class="ui ci normal_case"></a><a class="ui ci normal_case"></a></td>
+	<td>可可豆仙人掌<br/>甘蔗蘑菇藤蔓<br/>地狱疣睡莲花</td><td><a class="ui sugar_cane"></a></td>
+	<td><a href="#fertilizer">肥料</a></td><td><a href="#fertilizer" class="ui ci fertilizer"></a></td>
+	<td>4 对应植物</td><td><a class="ui sugar_cane"><span class="stack">4</span></a></td>
+	<td>-</td><td>-</td>
+	<td>2</td><td>2</td></tr>
+<tr><td>常温常压</td><td><a class="ui ci normal_case"></a><a class="ui ci normal_case"></a></td>
+	<td>竹子甜浆果海带</td><td><a class="ui bamboo"></a></td>
+	<td><a href="#fertilizer">肥料</a></td><td><a href="#fertilizer" class="ui ci fertilizer"></a></td>
+	<td>8 对应植物</td><td><a class="ui bamboo"><span class="stack">8</span></a></td>
+	<td>-</td><td>-</td>
+	<td>2</td><td>2</td></tr>
+<tr><td>常温常压</td><td><a class="ui ci normal_case"></a><a class="ui ci normal_case"></a></td>
+	<td>紫颂花</td><td><a class="ui chorus_flower"></a></td>
+	<td><a href="#fertilizer">肥料</a></td><td><a href="#fertilizer" class="ui ci fertilizer"></a></td>
+	<td>2 紫颂果</td><td><a class="ui chorus_fruit"><span class="stack">2</span></a></td>
+	<td>0~3 紫颂花</td><td><a class="ui chorus_flower"><span class="stack">0~3</span></a></td>
+	<td>2</td><td>2</td></tr>
+<tr><td>常温常压</td><td><a class="ui ci normal_case"></a><a class="ui ci normal_case"></a></td>
+	<td>树苗</td><td><a class="ui oak_sapling"></a></td>
+	<td><a href="#fertilizer">肥料</a></td><td><a href="#fertilizer" class="ui ci fertilizer"></a></td>
+	<td>4 木头</td><td><a class="ui oak_log"><span class="stack">4</span></a></td>
+	<td>0~3 树苗</td><td><a class="ui oak_sapling"><span class="stack">0~3</span></a></td>
+	<td>2</td><td>2</td></tr>
+<tr><td>常温常压</td><td><a class="ui ci normal_case"></a><a class="ui ci normal_case"></a></td>
+	<td><a href="#fruit_sapling">水果树树苗</a></td><td><a href="#fruit_sapling" class="ui ci fruit_sapling"></a></td>
+	<td><a href="#fertilizer">肥料</a></td><td><a href="#fertilizer" class="ui ci fertilizer"></a></td>
+	<td><a href="#fruits">水果</a></td><td><a href="#fruits" class="ui ci apricot">?</a></td>
+	<td>0~3 <a href="#fruit_sapling">水果树树苗</a></td><td><a href="#fruit_sapling" class="ui ci fruit_sapling"><span class="stack">0~3</span></a></td>
+	<td>2</td><td>2</td></tr>
+<tr><td>常温常压</td><td><a class="ui ci normal_case"></a><a class="ui ci normal_case"></a></td>
+	<td><a href="#ore_sapling">矿石树树苗</a></td><td><a href="#ore_sapling" class="ui ci ore_sapling"></a></td>
+	<td><a href="#fertilizer">肥料</a></td><td><a href="#fertilizer" class="ui ci fertilizer"></a></td>
+	<td>矿石</td><td><a class="ui coal_ore">?</a></td>
+	<td>0~3 <a href="#ore_sapling">矿石树树苗</a></td><td><a href="#ore_sapling" class="ui ci ore_sapling"><span class="stack">0~3</span></a></td>
+	<td>2</td><td>2</td></tr>
+<tr><td>常温常压</td><td><a class="ui ci normal_case"></a><a class="ui ci normal_case"></a></td>
+	<td><a href="#wool_sapling">羊毛树树苗</a></td><td><a href="#wool_sapling" class="ui ci wool_sapling"></a></td>
+	<td><a href="#fertilizer">肥料</a></td><td><a href="#fertilizer" class="ui ci fertilizer"></a></td>
+	<td>羊毛</td><td><a class="ui magenta_wool">?</a></td>
+	<td>0~3 <a href="#wool_sapling">羊毛树树苗</a></td><td><a href="#wool_sapling" class="ui ci wool_sapling"><span class="stack">0~3</span></a></td>
+	<td>2</td><td>2</td></tr>
+<tr><td>常温常压</td><td><a class="ui ci normal_case"></a><a class="ui ci normal_case"></a></td>
+	<td><a href="#flowers_and_grasses">花草种子</a></td><td><a href="#forage_crystal_seeds" class="ui ci forage_crystal_seeds"></a></td>
+	<td><a href="#fertilizer">肥料</a></td><td><a href="#fertilizer" class="ui ci fertilizer"></a></td>
+	<td><a href="#flowers_and_grasses">对应花草</a></td><td><a href="#forage_crystal" class="ui ci forage_crystal"></a></td>
+	<td>-</td><td>-</td>
+	<td>2</td><td>2</td></tr>
 
-<tr><td>金胡萝卜</td><td>粗制的药水</td><td><strong id="potion_of_night_vision">夜视药水</strong> (夜视 16:00)</td><td>4</td><td>10</td></tr>
-<tr><td>岩浆膏</td><td>粗制的药水</td><td><strong id="potion_of_fire_resistance">抗火药水</strong> (防火 16:00)</td><td>4</td><td>10</td></tr>
-<tr><td>河豚</td><td>粗制的药水</td><td><strong id="potion_of_water_breathing">水肺药水</strong> (水下呼吸 16:00)</td><td>4</td><td>10</td></tr>
-<tr><td>末影珍珠</td><td>粗制的药水</td><td><strong id="potion_of_invisibility">隐身药水</strong> (隐身 16:00)</td><td>4</td><td>10</td></tr>
 
-<tr><td>兔子脚</td><td>粗制的药水</td><td><strong id="potion_of_leaping">跳跃药水</strong> (跳跃提升II 8:00)</td><td>4</td><td>10</td></tr>
-<tr><td>糖</td><td>粗制的药水</td><td><strong id="potion_of_swiftness">迅捷药水</strong> (速度II 8:00)</td><td>4</td><td>10</td></tr>
-<tr><td>烈焰粉</td><td>粗制的药水</td><td><strong id="potion_of_strength">力量药水</strong> (力量II 8:00)</td><td>4</td><td>10</td></tr>
-<tr><td><a href="#ghast_tear">恶魂之泪</a></td><td>粗制的药水</td><td><strong id="potion_of_regeneration">再生药水</strong> (生命恢复II 1:30)</td><td>4</td><td>10</td></tr>
-<tr><td>闪烁的西瓜</td><td>粗制的药水</td><td><strong id="potion_of_healing">治疗药水</strong> (瞬间治疗III)</td><td>4</td><td>10</td></tr>
+<tr><td>常温低压</td><td><a href="#low_pressure_plugin" class="ui ci low_pressure"></a><a class="ui ci normal_case"></a></td>
+	<td>幻翼膜</td><td><a class="ui phantom_membrane"></a></td>
+	<td>粗制的药水</td><td><a class="ui water_bottle"></a></td>
+	<td colspan="3"><strong id="potion_of_slow_falling">缓降药水</strong> (缓降 8:00)</td><td><a class="ui potion_of_slow_falling"></a></td>
+	<td>4</td><td>10</td></tr>
 
-<tr><td><a href="#enchanted_gold">附魔金锭</a></td><td>粗制的药水</td><td><strong id="potion_of_haste">急迫药水</strong> (急迫II 8:00)</td><td>4</td><td>10</td></tr>
-<tr><td><a href="#enchanted_diamond">附魔钻石</a></td><td>粗制的药水</td><td><strong id="potion_of_resistance">抗性药水</strong> (抗性提升II 8:00)</td><td>4</td><td>10</td></tr>
-<tr><td>鹦鹉螺壳</td><td>粗制的药水</td><td><strong id="potion_of_tide">潮汐药水</strong> (潮涌能量 8:00)</td><td>4</td><td>10</td></tr>
-<tr><td><a href="#enchanted_iron">附魔铁锭</a></td><td>粗制的药水</td><td><strong id="potion_of_chain">连环药水</strong> (连锁 8:00)</td><td>4</td><td>10</td></tr>
-</tbody></table>
+<tr><td>常温低压</td><td><a href="#low_pressure_plugin" class="ui ci low_pressure"></a><a class="ui ci normal_case"></a></td>
+	<td>金胡萝卜</td><td><a class="ui golden_carrot"></a></td>
+	<td>粗制的药水</td><td><a class="ui water_bottle"></a></td>
+	<td colspan="3"><strong id="potion_of_night_vision">夜视药水</strong> (夜视 16:00)</td><td><a class="ui potion_of_night_vision"></a></td>
+	<td>4</td><td>10</td></tr>
+<tr><td>常温低压</td><td><a href="#low_pressure_plugin" class="ui ci low_pressure"></a><a class="ui ci normal_case"></a></td>
+	<td>岩浆膏</td><td><a class="ui magma_cream"></a></td>
+	<td>粗制的药水</td><td><a class="ui water_bottle"></a></td>
+	<td colspan="3"><strong id="potion_of_fire_resistance">抗火药水</strong> (防火 16:00)</td><td><a class="ui potion_of_fire_resistance"></a></td>
+	<td>4</td><td>10</td></tr>
+<tr><td>常温低压</td><td><a href="#low_pressure_plugin" class="ui ci low_pressure"></a><a class="ui ci normal_case"></a></td>
+	<td>河豚</td><td><a class="ui pufferfish"></a></td>
+	<td>粗制的药水</td><td><a class="ui water_bottle"></a></td>
+	<td colspan="3"><strong id="potion_of_water_breathing">水肺药水</strong> (水下呼吸 16:00)</td><td><a class="ui water_bottle"></a></td>
+	<td>4</td><td>10</td></tr>
+<tr><td>常温低压</td><td><a href="#low_pressure_plugin" class="ui ci low_pressure"></a><a class="ui ci normal_case"></a></td>
+	<td>末影珍珠</td><td><a class="ui ender_pearl"></a></td>
+	<td>粗制的药水</td><td><a class="ui water_bottle"></a></td>
+	<td colspan="3"><strong id="potion_of_invisibility">隐身药水</strong> (隐身 16:00)</td><td><a class="ui potion_of_invisibility"></a></td>
+	<td>4</td><td>10</td></tr>
+<tr><td>常温低压</td><td><a href="#low_pressure_plugin" class="ui ci low_pressure"></a><a class="ui ci normal_case"></a></td>
+	<td>兔子脚</td><td><a class="ui rabbit_foot"></a></td>
+	<td>粗制的药水</td><td><a class="ui water_bottle"></a></td>
+	<td colspan="3"><strong id="potion_of_leaping">跳跃药水</strong> (跳跃提升II 8:00)</td><td><a class="ui potion_of_leaping"></a></td>
+	<td>4</td><td>10</td></tr>
+<tr><td>常温低压</td><td><a href="#low_pressure_plugin" class="ui ci low_pressure"></a><a class="ui ci normal_case"></a></td>
+	<td>糖</td><td><a class="ui sugar"></a></td>
+	<td>粗制的药水</td><td><a class="ui water_bottle"></a></td>
+	<td colspan="3"><strong id="potion_of_swiftness">迅捷药水</strong> (速度II 8:00)</td><td><a class="ui potion_of_swiftness"></a></td>
+	<td>4</td><td>10</td></tr>
+<tr><td>常温低压</td><td><a href="#low_pressure_plugin" class="ui ci low_pressure"></a><a class="ui ci normal_case"></a></td>
+	<td>烈焰粉</td><td><a class="ui blaze_powder"></a></td>
+	<td>粗制的药水</td><td><a class="ui water_bottle"></a></td>
+	<td colspan="3"><strong id="potion_of_strength">力量药水</strong> (力量II 8:00)</td><td><a class="ui potion_of_strength"></a></td>
+	<td>4</td><td>10</td></tr>
+<tr><td>常温低压</td><td><a href="#low_pressure_plugin" class="ui ci low_pressure"></a><a class="ui ci normal_case"></a></td>
+	<td>恶魂之泪</td><td><a class="ui ghast_tear"></a></td>
+	<td>粗制的药水</td><td><a class="ui water_bottle"></a></td>
+	<td colspan="3"><strong id="potion_of_regeneration">再生药水</strong> (生命恢复II 1:30)</td><td><a class="ui potion_of_regeneration"></a></td>
+	<td>4</td><td>10</td></tr>
+<tr><td>常温低压</td><td><a href="#low_pressure_plugin" class="ui ci low_pressure"></a><a class="ui ci normal_case"></a></td>
+	<td>闪烁的西瓜</td><td><a class="ui glistering_melon_slice"></a></td>
+	<td>粗制的药水</td><td><a class="ui water_bottle"></a></td>
+	<td colspan="3"><strong id="potion_of_healing">治疗药水</strong> (瞬间治疗III)</td><td><a class="ui potion_of_healing"></a></td>
+	<td>4</td><td>10</td></tr>
+<tr><td>常温低压</td><td><a href="#low_pressure_plugin" class="ui ci low_pressure"></a><a class="ui ci normal_case"></a></td>
+	<td><a href="#enchanted_gold">附魔金锭</a></td><td><a href="#enchanted_gold" class="ui ci enchanted_gold"></a></td>
+	<td>粗制的药水</td><td><a class="ui water_bottle"></a></td>
+	<td colspan="3"><strong id="potion_of_haste">急迫药水</strong> (急迫II 8:00)</td><td><a class="ui ci potion_of_haste"></a></td>
+	<td>4</td><td>10</td></tr>
+<tr><td>常温低压</td><td><a href="#low_pressure_plugin" class="ui ci low_pressure"></a><a class="ui ci normal_case"></a></td>
+	<td><a href="#enchanted_diamond">附魔钻石</a></td><td><a href="#enchanted_diamond" class="ui ci enchanted_diamond"></a></td>
+	<td>粗制的药水</td><td><a class="ui water_bottle"></a></td>
+	<td colspan="3"><strong id="potion_of_resistance">抗性药水</strong> (抗性提升II 8:00)</td><td><a class="ui ci potion_of_resistance"></a></td>
+	<td>4</td><td>10</td></tr>
+<tr><td>常温低压</td><td><a href="#low_pressure_plugin" class="ui ci low_pressure"></a><a class="ui ci normal_case"></a></td>
+	<td>鹦鹉螺壳</td><td><a class="ui nautilus_shell"></a></td>
+	<td>粗制的药水</td><td><a class="ui water_bottle"></a></td>
+	<td colspan="3"><strong id="potion_of_tide">潮汐药水</strong> (潮涌能量 8:00)</td><td><a class="ui ci potion_of_tide"></a></td>
+	<td>4</td><td>10</td></tr>
+<tr><td>常温低压</td><td><a href="#low_pressure_plugin" class="ui ci low_pressure"></a><a class="ui ci normal_case"></a></td>
+	<td><a href="#enchanted_iron">附魔铁锭</a></td><td><a href="#enchanted_iron" class="ui ci enchanted_iron"></a></td>
+	<td>粗制的药水</td><td><a class="ui water_bottle"></a></td>
+	<td colspan="3"><strong id="potion_of_chain">连环药水</strong> (连锁 8:00)</td><td><a class="ui ci potion_of_chain"></a></td>
+	<td>4</td><td>10</td></tr>
 
-<h4>低温高压</h4>
-<p>就是个冰箱。</p>
-<table><thead><tr><th colspan="2">输入</th><th colspan="2">输出</th><th>消耗经验</th><th>耗时</th></tr></thead><tbody>
-<tr><td>水瓶</td><td><a href="#fruits">水果</a></td><td><a href="#cold_drink">冷饮</a></td><td>-</td><td>2</td><td>5</td></tr>
-<tr><td>水瓶</td><td><a href="#ammonia_refrigerant">氨制冷剂</a></td><td>冰</td><td><a href="#ammonia_refrigerant">氨制冷剂</a></td><td>1</td><td>1</td></tr>
-<tr><td><a href="#green_force_of_water">绿色水之力</a> (不消耗)</td><td><a href="#ammonia_refrigerant">氨制冷剂</a></td><td>冰</td><td><a href="#ammonia_refrigerant">氨制冷剂</a></td><td>1</td><td>1</td></tr>
-</tbody></table>
+<tr><td>低温高压</td><td><a href="#high_pressure_plugin" class="ui ci high_pressure"></a><a href="#low_temperature_plugin" class="ui ci low_temperature"></a></td>
+	<td>蜂蜜瓶</td><td><a class="ui honey_bottle"></a></td>
+	<td><a href="#fruits">水果</a></td><td><a href="#apricot" class="ui ci apricot"></a></td>
+	<td><a href="#cold_drink">冷饮</a></td><td><a href="#cold_drink" class="ui ci cold_drink"></a></td>
+	<td>-</td><td>-</td>
+	<td>2</td><td>5</td></tr>
+<tr><td>低温高压</td><td><a href="#high_pressure_plugin" class="ui ci high_pressure"></a><a href="#low_temperature_plugin" class="ui ci low_temperature"></a></td>
+	<td>水瓶</td><td><a class="ui water_bottle"></a></td>
+	<td><a href="#ammonia_refrigerant">氨制冷剂</a></td><td><a href="#ammonia_refrigerant" class="ui ci ammonia_refrigerant"></a></td>
+	<td>冰</td><td><a class="ui ice"></a></td>
+	<td><a href="#ammonia_refrigerant">氨制冷剂</a></td><td><a href="#ammonia_refrigerant" class="ui ci ammonia_refrigerant"></a></td>
+	<td>1</td><td>1</td></tr>
+<tr><td>低温高压</td><td><a href="#high_pressure_plugin" class="ui ci high_pressure"></a><a href="#low_temperature_plugin" class="ui ci low_temperature"></a></td>
+	<td><a href="#green_force_of_water">绿色水之力</a><br/>(不消耗)</td><td><a href="#green_force_of_water" class="ui ci green_force_of_water"></a></td>
+	<td><a href="#ammonia_refrigerant">氨制冷剂</a><td><a href="#ammonia_refrigerant" class="ui ci ammonia_refrigerant"></a></td>
+</td><td>冰</td><td><a class="ui ice"></a></td>
+	<td><a href="#ammonia_refrigerant">氨制冷剂</a></td><td><a href="#ammonia_refrigerant" class="ui ci ammonia_refrigerant"></a></td>
+	<td>1</td><td>1</td></tr>
+	
+	
+<tr><td>低温常压</td><td><a class="ui ci normal_case"></a><a href="#low_temperature_plugin" class="ui ci low_temperature"></a></td>
+	<td>熔岩桶 (不消耗)</td><td><a class="ui lava_bucket"></a></td>
+	<td><a href="#stone_plugin">圆石插件</a><br/>(不消耗)</td><td><a href="#stone_plugin" class="ui ci stone_plugin"></a></td>
+	<td>4 圆石</td><td><a class="ui stone"><span class="stack">4</span></a></td>
+	<td>-</td><td>-</td>
+	<td>1</td><td>1</td></tr>
+<tr><td>低温常压</td><td><a class="ui ci normal_case"></a><a href="#low_temperature_plugin" class="ui ci low_temperature"></a></td>
+	<td>熔岩桶 (不消耗)</td><td><a class="ui lava_bucket"></a></td>
+	<td><a href="#stone_plugin">石头插件</a><br/>(不消耗)</td><td><a href="#stone_plugin" class="ui ci stone_plugin"></a></td>
+	<td>4 石头</td><td><a class="ui stone"><span class="stack">4</span></a></td>
+	<td>-</td><td>-</td>
+	<td>1</td><td>1</td></tr>
+<tr><td>低温常压</td><td><a class="ui ci normal_case"></a><a href="#low_temperature_plugin" class="ui ci low_temperature"></a></td>
+	<td>熔岩桶 (不消耗)</td><td><a class="ui lava_bucket"></a></td>
+	<td><a href="#netherrack_plugin">地狱岩插件</a><br/>(不消耗)</td><td><a href="#netherrack_plugin" class="ui ci netherrack_plugin"></a></td>
+	<td>4 地狱岩</td><td><a class="ui netherrack"><span class="stack">4</span></a></td>
+	<td>-</td><td>-</td>
+	<td>1</td><td>1</td></tr>
+<tr><td>低温常压</td><td><a class="ui ci normal_case"></a><a href="#low_temperature_plugin" class="ui ci low_temperature"></a></td>
+	<td>熔岩桶 (不消耗)</td><td><a class="ui lava_bucket"></a></td>
+	<td><a href="#end_stone_plugin">末地石插件</a><br/>(不消耗)</td><td><a href="#end_stone_plugin" class="ui ci end_stone_plugin"></a></td>
+	<td>末地石</td><td><a class="ui end_stone"></a></td>
+	<td>-</td><td>-</td>
+	<td>1</td><td>1</td></tr>
+<tr><td>低温常压</td><td><a class="ui ci normal_case"></a><a href="#low_temperature_plugin" class="ui ci low_temperature"></a></td>
+	<td>熔岩桶</td><td><a class="ui lava_bucket"></a></td>
+	<td><a href="#obsidian_plugin">黑曜石插件</a><br/>(不消耗)</td><td><a href="#obsidian_plugin" class="ui ci obsidian_plugin"></a></td>
+	<td>黑曜石</td><td><a class="ui obsidian"></a></td>
+	<td>桶</td><td><a class="ui bucket"></a></td>
+	<td>4</td><td>10</td></tr>
+	
 
-<h4>低温常压</h4>
-<p>把熔岩放冷就可以得到石头。</p>
-<table><thead><tr><th colspan="2">输入</th><th colspan="2">输出</th><th>消耗经验</th><th>耗时</th></tr></thead><tbody>
-<tr><td>熔岩桶 (不消耗)</td><td><a href="#stone_plugin">圆石插件</a> (不消耗)</td><td>4圆石</td><td>-</td><td>1</td><td>1</td></tr>
-<tr><td>熔岩桶 (不消耗)</td><td><a href="#stone_plugin">石头插件</a> (不消耗)</td><td>4石头</td><td>-</td><td>1</td><td>1</td></tr>
-<tr><td>熔岩桶 (不消耗)</td><td><a href="#netherrack_plugin">地狱岩插件</a> (不消耗)</td><td>4地狱岩</td><td>-</td><td>1</td><td>1</td></tr>
-<tr><td>熔岩桶 (不消耗)</td><td><a href="#end_stone_plugin">末地石插件</a> (不消耗)</td><td>末地石</td><td>-</td><td>1</td><td>1</td></tr>
-<tr><td>熔岩桶</td><td><a href="#obsidian_plugin">黑曜石插件</a> (不消耗)</td><td>黑曜石</td><td>桶</td><td>4</td><td>10</td></tr>
-</tbody></table>
-
-<h4>低温低压</h4>
-<p>压强太低导致冰都碎成了雪。</p>
-<table><thead><tr><th colspan="2">输入</th><th colspan="2">输出</th><th>消耗经验</th><th>耗时</th></tr></thead><tbody>
-<tr><td>水瓶</td><td><a href="#ammonia_refrigerant">氨制冷剂</a></td><td>雪块</td><td><a href="#ammonia_refrigerant">氨制冷剂</a></td><td>1</td><td>1</td></tr>
-<tr><td><a href="#green_force_of_water">绿色水之力</a> (不消耗)</td><td><a href="#ammonia_refrigerant">氨制冷剂</a></td><td>雪块</td><td><a href="#ammonia_refrigerant">氨制冷剂</a></td><td>1</td><td>1</td></tr>
+<tr><td>低温低压</td><td><a href="#low_pressure_plugin" class="ui ci low_pressure"></a><a href="#low_temperature_plugin" class="ui ci low_temperature"></a></td>
+	<td>水瓶</td><td><a class="ui water_bottle"></a></td>
+	<td><a href="#ammonia_refrigerant">氨制冷剂</a></td><td><a href="#ammonia_refrigerant" class="ui ci ammonia_refrigerant"></a></td>
+	<td>雪块</td><td><a class="ui snow_block"></a></td>
+	<td><a href="#ammonia_refrigerant">氨制冷剂</a><td><a href="#ammonia_refrigerant" class="ui ci ammonia_refrigerant"></a></td>
+</td><td>1</td><td>1</td></tr>
+<tr><td>低温低压</td><td><a href="#low_pressure_plugin" class="ui ci low_pressure"></a><a href="#low_temperature_plugin" class="ui ci low_temperature"></a></td>
+	<td><a href="#green_force_of_water">绿色水之力</a><br/>(不消耗)</td><td><a href="#green_force_of_water" class="ui ci green_force_of_water"></a></td>
+	<td><a href="#ammonia_refrigerant">氨制冷剂</a></td><td><a href="#ammonia_refrigerant" class="ui ci ammonia_refrigerant"></a></td>
+	<td>雪块</td><td><a class="ui snow_block"></a></td>
+	<td><a href="#ammonia_refrigerant">氨制冷剂</a></td><td><a href="#ammonia_refrigerant" class="ui ci ammonia_refrigerant"></a></td>
+	<td>1</td><td>1</td></tr>
 </tbody></table>
 
 
@@ -640,7 +1020,6 @@
 		<li>模组物品可以被复制。</li></ul>
 </ul>
 <p>燃烧/创造模式默认关闭，管理员可通过 <code>/scoreboard players set #doTradeCreate cppValue 1</code> 来打开，<code>/scoreboard players set #doTradeCreate cppValue 0</code> 来关闭。</p>
-<p>物品价值可以通过文件<code>data/cpp/loot_tables/trade_machine/type.json</code>来修改。</p>
 
 <table class="center"><thead><tr><th>价值</th><th>物品</th></tr></thead><tbody>
 <tr><td>11520</td><td class="left">
@@ -1737,7 +2116,7 @@
 
 <h3 id="dustbin">垃圾桶 (Dustbin)</h3>
 <a class="ui ci dustbin"></a>
-<p>每秒自动清理其中的物品。</p>
+<p>被强充能时清理其中的物品。</p>
 <table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
 <tr><th>垃圾桶</th><td>铁锭+打火石+熔岩桶</td>
 <td><span class="ui cm" title="合成器">
@@ -1754,28 +2133,9 @@
 </span></td></tr>
 </tbody></table>
 
-<h3 id="muffler">消音器 (Muffler)</h3>
-<a class="ui ci muffler"></a>
-<p>附近5米内的生物会被永久消声。</p>
-<table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
-<tr><th>消音器</th><td>铁锭+燧石+湿海绵</td>
-<td><span class="ui cm" title="合成器">
-<a class="iron_ingot" title="铁锭"></a>
-<a class="flint" title="燧石"></a>
-<a class="iron_ingot" title="铁锭"></a>
-<a class="iron_ingot" title="铁锭"></a>
-<a class="wet_sponge" title="湿海绵"></a>
-<a class="iron_ingot" title="铁锭"></a>
-<a class="iron_ingot" title="铁锭"></a>
-<a class="iron_ingot" title="铁锭"></a>
-<a class="iron_ingot" title="铁锭"></a>
-<a class="ci muffler" title="消音器"></a>
-</span></td></tr>
-</tbody></table>
-
 <h3 id="chest_dropper">箱漏 (Chest Dropper)</h3>
 <a class="ui ci chest_dropper"></a>
-<p>输入到其中的物品会从下方漏出。</p>
+<p>被强充能时其中的物品会从下方漏出，每刻1个。</p>
 <table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th></tr></thead><tbody>
 <tr><th>箱漏</th><td>木桶+漏斗+投掷器</td>
 <td><span class="ui cm" title="合成器">
@@ -2126,7 +2486,6 @@
 
 <h3 id="experience_bottle">附魔之瓶 (Experience Bottle)</h3>
 <a class="ui experience_bottle"></a>
-<p><code>/give @s experience_bottle</code></p>
 <p>附魔之瓶掉落9点经验值，附魔之瓶(64×)掉落576点经验值。</p>
 <p>当你副手持有漏斗时，你的经验会以每刻9点的速度转化为附魔之瓶。如果此时你主手还持有<a href="#compressor">压缩器</a>，你的经验会以每刻576点的速度转化为<a href="#compressor">附魔之瓶(64×)</a>。附魔之瓶(64×)也可以通过对地面的64个附魔之瓶使用<a href="#compressor">压缩器</a>得到。</p>
 <p><a href="#trade_machine">交易机</a>和<a href="#golem">傀儡</a>存储的经验值达到附魔之瓶的经验存储值时，会消耗相应数量经验生成附魔之瓶。</p>
@@ -2190,7 +2549,7 @@
 </span></td></tr>
 
 <tr><th rowspan="3"><strong id="cinder">煤渣 (Cinder)</strong><br />
-可作为燃料烧炼8个物品</th><td><a href="#iron_dust">铁粉</a>/<a href="#gold_dust">金粉</a>/<a href="#carbon_dust">碳粉</a>/<a href="#diamond_dust">钻石粉</a>/<a href="#emerald_dust">绿宝石粉</a>/<a href="#quartz_dust">石英粉</a>+沙子/<a href="#red_sand">红沙</a><td>
+可作为燃料烧炼8个物品</th><td><a href="#iron_dust">铁粉</a>/<a href="#gold_dust">金粉</a>/<a href="#carbon_dust">碳粉</a>/<a href="#diamond_dust">钻石粉</a>/<a href="#emerald_dust">绿宝石粉</a>/<a href="#quartz_dust">石英粉</a>+沙子/红沙<td>
 <span class="ui aiom nh1" title="多功能一体机 高温常压模式">
 <a href="#iron_dust" class="ci iron_dust" title="铁粉"></a>
 <a class="sand" title="高温常压"></a>
@@ -2198,7 +2557,7 @@
 <a class="ci cinder" title="煤渣"><span class="stack">20%</span></a>
 <a class="empty" title="1点经验 2.5秒"></a>
 </td></tr>
-<tr><td><a href="#silicon_dust">硅粉</a>/<a href="#rare_earth_dust">稀土粉</a>/<a href="#steel_dust">钢粉</a>+沙子/<a href="#red_sand">红沙</a><td>
+<tr><td><a href="#silicon_dust">硅粉</a>/<a href="#rare_earth_dust">稀土粉</a>/<a href="#steel_dust">钢粉</a>+沙子/红沙<td>
 <span class="ui aiom nh4" title="多功能一体机 高温常压模式">
 <a class="ci silicon_dust" title="硅粉"></a>
 <a class="sand" title="高温常压"></a>
@@ -2237,7 +2596,7 @@
 <a class="diamond" title="钻石"></a>
 </span></td></tr>
 
-<tr><th><strong id="rare_earth_glass">稀土玻璃 (Rare Earth Glass)</strong></th><td><a href="#rare_earth_dust">稀土粉</a>+沙子/<a href="#red_sand">红沙</a>
+<tr><th><strong id="rare_earth_glass">稀土玻璃 (Rare Earth Glass)</strong></th><td><a href="#rare_earth_dust">稀土粉</a>+沙子/红沙
 <td><span class="ui aiom nh4" title="多功能一体机 高温常压模式">
 <a class="ci rare_earth_dust" title="稀土粉"></a>
 <a class="sand" title="高温常压"></a>
@@ -2246,7 +2605,7 @@
 <a class="empty" title="4点经验 10秒"></a>
 </span></td></tr>
 
-<tr><th><strong id="reinforced_glass">钢化玻璃 (Reinforced Glass)</strong></th><td><a href="#steel_dust">钢粉</a>+沙子/<a href="#red_sand">红沙</a>
+<tr><th><strong id="reinforced_glass">钢化玻璃 (Reinforced Glass)</strong></th><td><a href="#steel_dust">钢粉</a>+沙子/红沙
 <td><span class="ui aiom nh4" title="多功能一体机 高温常压模式">
 <a class="ci steel_dust" title="钢粉"></a>
 <a class="sand" title="高温常压"></a>
@@ -2255,7 +2614,7 @@
 <a class="empty" title="4点经验 10秒"></a>
 </span></td></tr>
 
-<tr><th><strong id="silicon_plate">硅板 (Silicon Plate)</strong></th><td><a href="#silicon_dust">硅粉</a>+沙子/<a href="#red_sand">红沙</a>
+<tr><th><strong id="silicon_plate">硅板 (Silicon Plate)</strong></th><td><a href="#silicon_dust">硅粉</a>+沙子/红沙
 <td><span class="ui aiom nh4" title="多功能一体机 高温常压模式">
 <a class="ci silicon_dust" title="硅粉"></a>
 <a class="sand" title="高温常压"></a>
@@ -2890,7 +3249,7 @@
 <h2 id="bottles">瓶装物品</h2>
 
 <table><thead><tr><th>产物</th><th colspan="2">配方</th></tr></thead><tbody>
-<tr><th><strong id="bottle_of_salt">盐瓶 (Bottle of Salt)</strong><br />矿物辞典 dict:["salt"]</th><td>玻璃瓶+沙子/<a href="#red_sand">红沙</a><td>
+<tr><th><strong id="bottle_of_salt">盐瓶 (Bottle of Salt)</strong><br />矿物辞典 dict:["salt"]</th><td>玻璃瓶+沙子/红沙<td>
 <span class="ui aiom nh4" title="多功能一体机 高温常压模式">
 <a class="glass_bottle" title="玻璃瓶"></a>
 <a class="sand" title="沙子"></a>
@@ -3292,6 +3651,21 @@
 <a class="ci chest_transporter" title="搬箱器"></a>
 </a></td>
 <td>shift右键破坏箱子，箱子内的物品会保留。共26点耐久。</td></tr>
+
+<tr><th><strong id="muffler">消音器 (Muffler)</strong></th><td>铁锭+燧石+湿海绵</td>
+<td><span class="ui cm" title="合成器">
+<a class="iron_ingot" title="铁锭"></a>
+<a class="flint" title="燧石"></a>
+<a class="iron_ingot" title="铁锭"></a>
+<a class="iron_ingot" title="铁锭"></a>
+<a class="wet_sponge" title="湿海绵"></a>
+<a class="iron_ingot" title="铁锭"></a>
+<a class="iron_ingot" title="铁锭"></a>
+<a class="iron_ingot" title="铁锭"></a>
+<a class="iron_ingot" title="铁锭"></a>
+<a class="ci muffler" title="消音器"></a>
+</span></td>
+<td>附近5米内的生物会被永久消声。</td></tr>
 
 <tr><th><strong id="firecrackers">鞭炮 (Firecrackers)</strong></th><td>火药+线+纸</td>
 <td><span class="ui cm" title="合成器">
@@ -5212,7 +5586,7 @@
 
 <h3 id="sort_chest">箱子整理</h3>
 <p>当玩家主手持有木棍右击箱子/潜影箱后，容器内的物品会被整理。</p>
-<p>使用命令<code>/trigger cppTrim</code>来为玩家背包(不含快捷栏)整理。</p>
+<p>使用命令<code>/trigger cppTrim</code>来整理自己背包(不含快捷栏)。</p>
 
 <h3 id="auto_torch">自动插火把</h3>
 <p>使用指令<code>/trigger cppAutoTorch set 刻数</code>，可以设定每隔一段时间自动插一根火把。设置为0取消自动插火把功能。</p>
@@ -5262,7 +5636,7 @@
 
 <!------------------------------------------------------------------------------------------------->
 <h2 id="block_sky_domain">空域开端</h2>
-<p>空岛模式会在y=0处为空气时自动开启，建议玩家使用自定义超平坦如<code>minecraft:air;minecraft:flower_forest;</code>进入。也可输入下述命令手动开启<code>/scoreboard players set #skyislandMode cppValue 1</code>。空岛模式下不会生成模组的结构，不同玩家的间距默认为200米。</p>
+<p>空岛模式会在y=0处为空气时自动开启，建议玩家使用自定义超平坦如<code>minecraft:air;minecraft:flower_forest;</code>进入。也可输入下述命令手动开启<code>/scoreboard players set $skyislandMode cppConfig 1</code>。空岛模式下不会生成模组的结构，不同玩家的间距默认为1000米。</p>
 <p>玩家首次进入时，会生成一块基岩和一个包含1泥土、4橡树树苗、16骨粉的箱子。玩家破坏树叶会掉落骨粉和<strong>线</strong>，然后参考<a href="#other_vanilla_items">本模组原版物品合成变动</a>，使用线和8木棍合成<strong>雪球</strong>。
 <p>在堆肥桶上方放置雪块可将其变成<strong>发酵桶</strong>，类似于堆肥桶，放入各种植物或食物满了之后，会产出泥土。</p>
 <p>使用雪球和8泥土合成8<strong>圆石</strong>，制作<strong>熔炉</strong>，在熔炉上方放置雪块可将其变成<strong>方块破坏器</strong>，之后在其上方放置泥土/砂砾/圆石/石头/沙子/灵魂沙，然后右击方块破坏器可以打碎该方块。掉落物如下：</p>
