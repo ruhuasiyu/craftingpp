@@ -1,0 +1,19 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:carved_pumpkin",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.rabbit_head.salt\"}'},id:'cpp:rabbit_head.salt',CustomModelData:12970295,dict:['rabbit_head']}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

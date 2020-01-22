@@ -6,13 +6,13 @@ execute as @s[tag=cpp_portable_crafting_machine] unless entity @a[distance=..6] 
 execute as @s[tag=cpp_barrel] unless block ~ ~ ~ barrel run function cpp:blocks/break/barrel
 execute as @s[tag=cpp_chest] unless block ~ ~ ~ chest run function cpp:blocks/break/chest
 
-execute as @s[tag=cpp_crafting_machine] at @s run function cpp:crafting_machine/tick
+execute as @s[tag=cpp_crafting_machine] run function cpp:crafting_machine/tick
 execute as @s[tag=cpp_all_in_one_machine] run function cpp:all_in_one_machine/tick
 execute as @s[tag=cpp_trade_machine] run function cpp:trade_machine/tick
 execute as @s[tag=cpp_mob_projector] run function cpp:mob_projector/tick
 execute as @s[tag=cpp_item_processer] run function cpp:item_processer/tick
 execute as @s[tag=cpp_golden_anvil] if entity @a[distance=..7] run function cpp:golden_anvil/tick
 execute as @s[tag=cpp_empty_bookshelf] if entity @a[distance=..32] run function cpp:empty_bookshelf/tick
+execute as @s[tag=cpp_dustbin] run function cpp:dustbin/tick
 execute as @s[tag=cpp_chest_dropper] if data block ~ ~ ~ Items[] run function cpp:chest_dropper/tick
-execute as @s[tag=cpp_dustbin] if data block ~ ~ ~ Items[] run function cpp:dustbin/tick
 execute as @s[tag=cpp_beacon_enhancer] run function cpp:beacon_enhancer/tick

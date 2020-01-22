@@ -8,42 +8,42 @@
 					"weight": 12
 				},
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:grass",
 					"weight": 32
 				},
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:oak_sapling",
 					"weight": 8
 				},
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:spruce_sapling",
 					"weight": 8
 				},
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:birch_sapling",
 					"weight": 8
 				},
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:jungle_sapling",
 					"weight": 8
 				},
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:acacia_sapling",
 					"weight": 8
 				},
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:dark_oak_sapling",
 					"weight": 8
 				},
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:bamboo",
 					"weight": 2
 				},

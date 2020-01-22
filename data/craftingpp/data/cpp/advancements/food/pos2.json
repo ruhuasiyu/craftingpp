@@ -1,0 +1,65 @@
+{
+	"criteria": {
+		"spider_eye": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:spider_eye"
+				}
+			}
+		},
+		"mutton": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:mutton"
+				}
+			}
+		},
+		"rabbit": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:rabbit"
+				}
+			}
+		},
+		"chicken": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:chicken"
+				}
+			}
+		},
+		"cod": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:cod"
+				}
+			}
+		},
+		"salmon": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:salmon"
+				}
+			}
+		}
+	},
+	"requirements":[
+		[
+			"spider_eye",
+			"mutton",
+			"rabbit",
+			"chicken",
+			"cod",
+			"salmon"
+		]
+	],
+	"rewards":{
+		"function": "cpp:food/pos2"
+	}
+}

@@ -1,0 +1,15 @@
+{
+	"criteria": {
+		"consume": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"nbt": "{id:'cpp:sky_agentia'}"
+				}
+			}
+		}
+	},
+	"rewards":{
+		"function": "cpp:potion/sky_agentia"
+	}
+}

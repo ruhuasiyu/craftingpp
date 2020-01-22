@@ -1,0 +1,19 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:honey_bottle",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.agentia_of_sky\"}',Lore:['[{\"translate\":\"effect.minecraft.speed\",\"italic\":\"false\",\"color\":\"blue\"},{\"text\":\" II (6:00)\"}]','[{\"translate\":\"effect.minecraft.slow_falling\",\"italic\":\"false\",\"color\":\"blue\"},{\"text\":\" (6:00)\"}]','\" \"','{\"translate\":\"potion.whenDrank\",\"italic\":\"false\"}','[{\"text\":\"+40% \",\"italic\":\"false\",\"color\":\"blue\"},{\"translate\":\"attribute.name.generic.movementSpeed\"}]']},id:'cpp:agentia_of_sky',CustomModelData:12970101}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

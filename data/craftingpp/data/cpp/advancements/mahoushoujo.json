@@ -19,7 +19,7 @@
 			"conditions":{
 				"items":[
 					{
-						"nbt":"{id:\"cpp:sealing_wand\"}"
+						"nbt":"{id:'cpp:sealing_wand'}"
 					}
 				]
 			}

@@ -10,7 +10,7 @@ execute store result score #g cppValue run data get entity @e[type=area_effect_c
 execute store result score #h cppValue run data get entity @e[type=area_effect_cloud,distance=..3,tag=cpp_loc_block_face_aec,limit=1] Pos[2] 100
 kill @e[type=area_effect_cloud,tag=cpp_loc_block_face_aec]
 # 玩家位置是否是特定方块
-execute as @e[type=armor_stand,distance=..9,tag=cpp_loc_block_as] at @s align xyz positioned ~0.5 ~ ~0.5 unless entity @e[type=armor_stand,distance=..0.5,tag=cpp_block] unless block ~ ~ ~ #cpp:fluids run function cpp:misc/loc/check
+execute as @e[type=armor_stand,distance=..9,tag=cpp_loc_block_as] at @s align xyz positioned ~0.5 ~ ~0.5 unless entity @e[type=armor_stand,distance=..0.5,tag=cpp_block] unless block ~ ~ ~ #cpp:fluid run function cpp:misc/loc/check
 # 记录朝向的坐标
 scoreboard players operation #f cppValue -= #x cppValue
 scoreboard players operation #g cppValue -= #y cppValue
@@ -30,9 +30,9 @@ execute if score #sh cppValue matches ..-1 run scoreboard players operation #h c
 execute unless entity @e[type=armor_stand,distance=..9,tag=cpp_loc_block_pos_pot] run function cpp:misc/loc/loop
 # 若未找到，尝试找上方一格位置
 execute unless entity @e[type=armor_stand,distance=..9,tag=cpp_loc_block_pos_pot] as @e[type=armor_stand,distance=..9,tag=cpp_loc_block_as] at @s run tp ~ ~1 ~
-execute as @e[type=armor_stand,distance=..9,tag=cpp_loc_block_as] at @s align xyz positioned ~0.5 ~ ~0.5 unless entity @e[type=armor_stand,distance=..0.1,tag=cpp_block] unless block ~ ~ ~ #cpp:fluids run function cpp:misc/loc/check
+execute as @e[type=armor_stand,distance=..9,tag=cpp_loc_block_as] at @s align xyz positioned ~0.5 ~ ~0.5 unless entity @e[type=armor_stand,distance=..0.5,tag=cpp_block] unless block ~ ~ ~ #cpp:fluid run function cpp:misc/loc/check
 # 若未找到，尝试找下方一格位置
 execute unless entity @e[type=armor_stand,distance=..9,tag=cpp_loc_block_pos_pot] as @e[type=armor_stand,distance=..9,tag=cpp_loc_block_as] at @s run tp ~ ~-2 ~
-execute as @e[type=armor_stand,distance=..9,tag=cpp_loc_block_as] at @s align xyz positioned ~0.5 ~ ~0.5 unless entity @e[type=armor_stand,distance=..0.1,tag=cpp_block] unless block ~ ~ ~ #cpp:fluids run function cpp:misc/loc/check
+execute as @e[type=armor_stand,distance=..9,tag=cpp_loc_block_as] at @s align xyz positioned ~0.5 ~ ~0.5 unless entity @e[type=armor_stand,distance=..0.5,tag=cpp_block] unless block ~ ~ ~ #cpp:fluid run function cpp:misc/loc/check
 tag @e[type=armor_stand,distance=..9,tag=cpp_loc_block_pos_pot,limit=1,sort=nearest] add cpp_loc_block_pos
 kill @e[type=armor_stand,distance=..9,tag=cpp_loc_block_as,tag=!cpp_loc_block_pos]

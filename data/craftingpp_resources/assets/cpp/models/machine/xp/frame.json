@@ -1,0 +1,15 @@
+{
+	"parent": "item/generated",
+	"display": {
+		"gui": {
+            "scale": [ 1.125, 3.25, -55 ],
+			"translation": [ 0, 19, 0]
+		},
+		"ground": {
+			"scale": [ 0, 0, 0 ]
+		}
+    },
+    "textures": {
+        "layer0": "cpp:machine/xp/frame"
+    }
+}

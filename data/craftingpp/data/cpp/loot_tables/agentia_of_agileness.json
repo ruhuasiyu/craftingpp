@@ -1,0 +1,19 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:honey_bottle",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.agentia_of_agileness\"}',Lore:['[{\"translate\":\"effect.minecraft.speed\",\"italic\":\"false\",\"color\":\"blue\"},{\"text\":\" II (4:00)\"}]','\" \"','{\"translate\":\"potion.whenDrank\",\"italic\":\"false\"}','[{\"text\":\"+40% \",\"italic\":\"false\",\"color\":\"blue\"},{\"translate\":\"attribute.name.generic.movementSpeed\"}]']},id:'cpp:agentia_of_agileness',CustomModelData:12970114}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

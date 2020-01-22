@@ -1,0 +1,13 @@
+{
+	"criteria": {
+		"snow_block": {
+			"trigger": "minecraft:placed_block",
+			"conditions": {
+				"block": "minecraft:snow_block"
+			}
+		}
+	},
+	"rewards": {
+		"function": "cpp:block/snow_block/reset"
+	}
+}

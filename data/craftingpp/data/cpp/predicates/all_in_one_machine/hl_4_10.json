@@ -72,6 +72,14 @@
 					"nbt": "{Items:[{tag:{id:'cpp:alkaloid'}},{tag:{id:'cpp:fertilizer'}}]}"
 				}
 			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{id:'minecraft:slime_ball'},{id:'minecraft:dirt'}]}"
+				}
+			}
 		}
 	]
 }

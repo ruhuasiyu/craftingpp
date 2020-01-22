@@ -527,6 +527,20 @@
 							],
 							"type": "minecraft:loot_table",
 							"name": "cpp:shield_nf"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:emerald'},{tag:{id:'cpp:character'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:character/random"
 						}
 					]
 				}

@@ -3,10 +3,10 @@
     "display": {
         "gui": {
             "scale": [ 3, 3, 1 ],
-			"translation": [ 30, -2, -70]
+			"translation": [ -7, 0, -65]
         },
         "ground": {
-            "scale": [ 0.1, 0.1, 0.1 ]
+            "scale": [ 0, 0, 0 ]
         }
     }
 }

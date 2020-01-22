@@ -142,7 +142,7 @@
 					"children": [
 						{
 							"type": "minecraft:loot_table",
-							"name": "cpp:red_mooshroom_head",
+							"name": "cpp:mooshroom_head.red",
 							"conditions": [
 								{
 									"condition": "minecraft:entity_properties",
@@ -155,7 +155,7 @@
 						},
 						{
 							"type": "minecraft:loot_table",
-							"name": "cpp:brown_mooshroom_head"
+							"name": "cpp:mooshroom_head.brown"
 						}
 					]
 				}

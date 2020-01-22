@@ -100,7 +100,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData:12971000,cppLeavesFastDecayMarker:1b}"
+							"tag": "{CustomModelData:12971000,cppClear:1b,cppLeavesFastDecayMarker:1b}"
 						}
 					]
 				}

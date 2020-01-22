@@ -47,7 +47,6 @@
 		{ "predicate": { "custom_model_data": 12970125 }, "model": "cpp:decor/minion_goggles1"},
 		{ "predicate": { "custom_model_data": 12970126 }, "model": "cpp:decor/joking_glasses1"},
 		
-		
 		{ "predicate": { "custom_model_data": 12970200 }, "model": "cpp:head/drowned"},
 		{ "predicate": { "custom_model_data": 12970201 }, "model": "cpp:head/blaze"},
 		{ "predicate": { "custom_model_data": 12970202 }, "model": "cpp:head/stray"},		

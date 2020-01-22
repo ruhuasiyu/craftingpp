@@ -131,6 +131,20 @@
 							],
 							"type": "minecraft:loot_table",
 							"name": "cpp:all_in_one_machine/items/ammonia_refrigerant_and_cinder"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:slime_ball'},{id:'minecraft:dirt'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:clay"
 						}
 					]
 				}

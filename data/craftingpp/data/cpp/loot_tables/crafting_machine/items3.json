@@ -12,7 +12,7 @@
 									"condition": "minecraft:location_check",
 									"predicate": {
 										"block": {
-											"nbt": "{Items:[{id:'minecraft:ink_sac'},{id:'minecraft:feather'},{id:'minecraft:painting'}]}"
+											"nbt": "{Items:[{id:'minecraft:black_dye'},{id:'minecraft:feather'},{id:'minecraft:painting'}]}"
 										}
 									}
 								}

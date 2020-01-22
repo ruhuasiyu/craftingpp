@@ -5,11 +5,11 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:potion",
+					"name": "minecraft:honey_bottle",
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"translate\":\"item.cpp.potion.cold_drink\"}'},id:'cpp:cold_drink',CustomModelData:12970001,CustomPotionEffects:[{Id:23b,Amplifier:3b}]}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.cold_drink\"}'},id:'cpp:cold_drink',CustomModelData:12970100}"
 						}
 					]
 				}

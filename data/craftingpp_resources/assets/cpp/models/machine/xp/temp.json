@@ -1,0 +1,11 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "cpp:pt"
+    },
+    "display": {
+        "ground": {
+            "scale": [ 0, 0, 0 ]
+        }
+    }
+}

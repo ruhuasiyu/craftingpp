@@ -1,4 +1,5 @@
 scoreboard objectives add cppValue dummy
+scoreboard objectives add cppConfig dummy {"translate":"info.cpp.config"}
 # 机器朝向
 scoreboard objectives add cppOutSlots dummy
 scoreboard objectives add cppOutputFace dummy
@@ -95,5 +96,7 @@ scoreboard players set #256 cppValue 256
 scoreboard players set #65536 cppValue 65536
 # 计算进度条
 scoreboard players set #32 cppValue 32
-scoreboard players operation #process_pre cppValue = #allInOneMachinePeriod cppValue
+scoreboard players operation #process_pre cppValue = $allInOneMachinePeriod cppConfig
 scoreboard players operation #process_pre cppValue /= #32 cppValue
+# 计算价值条
+scoreboard players set #100000 cppValue 100000

@@ -12,6 +12,34 @@
 									"condition": "minecraft:location_check",
 									"predicate": {
 										"block": {
+											"nbt": "{Items:[{Slot:1b,tag:{id:'cpp:iron_chain'}},{Slot:3b,tag:{id:'cpp:iron_chain'}},{Slot:10b,tag:{id:'cpp:iron_chain'}},{Slot:12b,tag:{id:'cpp:iron_chain'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:chainmail_boots"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:10b,tag:{id:'cpp:iron_chain'}},{Slot:12b,tag:{id:'cpp:iron_chain'}},{Slot:19b,tag:{id:'cpp:iron_chain'}},{Slot:21b,tag:{id:'cpp:iron_chain'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:chainmail_boots"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
 											"nbt": "{Items:[{Slot:1b,id:'minecraft:leather'},{Slot:3b,id:'minecraft:leather'},{Slot:10b,id:'minecraft:brown_dye'},{Slot:12b,id:'minecraft:brown_dye'}]}"
 										}
 									}
@@ -88,7 +116,7 @@
 									"condition": "minecraft:location_check",
 									"predicate": {
 										"block": {
-											"nbt": "{Items:[{id:'minecraft:feather'},{id:'minecraft:ink_sac'},{id:'minecraft:red_dye'},{id:'minecraft:paper'}]}"
+											"nbt": "{Items:[{id:'minecraft:feather'},{id:'minecraft:black_dye'},{id:'minecraft:red_dye'},{id:'minecraft:paper'}]}"
 										}
 									}
 								}

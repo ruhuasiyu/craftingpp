@@ -8,7 +8,7 @@ execute if entity @e[type=item,distance=..2,nbt=!{Age:0s},nbt=!{Age:1s}] unless 
 execute as @s[scores={cppStoredxp=9..}] run function cpp:golem/xp_bottle
 # 返回出生点
 execute positioned ~ -10 ~ if entity @s[dy=10] run function cpp:golem/control_back
-execute if score @s cppTick > #golemMoveMax cppValue run function cpp:golem/control_back
+execute if score @s cppTick > $golemMoveMax cppConfig run function cpp:golem/control_back
 # 行为
 scoreboard players add @s cppTick 1
 execute if block ~ ~ ~ #cpp:golem_control_blocks run function cpp:golem/control

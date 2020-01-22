@@ -1,0 +1,10 @@
+{
+	"criteria": {
+		"soul_sand": {
+			"trigger": "minecraft:player_killed_entity"
+		}
+	},
+	"rewards": {
+		"function": "cpp:adv/soul_sand"
+	}
+}

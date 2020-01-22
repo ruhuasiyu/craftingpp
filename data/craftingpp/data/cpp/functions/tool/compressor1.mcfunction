@@ -1,21 +1,20 @@
-data modify entity @s Item.Count set value 1b
-execute if data entity @s Item.tag.compressedLevel run data remove entity @s Item.tag.display.Lore[-1]
-execute unless data entity @s Item.tag.compressedLevel run data merge entity @s[nbt={Item:{tag:{HideFlags:63}}}] {Item:{tag:{has_hideflags:1b}}}
-execute unless data entity @s Item.tag.Enchantments run data merge entity @s {Item:{tag:{Enchantments:[]}}}
-execute unless data entity @s Item.tag.compressedLevel run data merge entity @s {Item:{tag:{HideFlags:63,compressedLevel:0s}}}
+data modify storage cpp:compressor Item set from entity @s Item
 
-execute as @s[nbt={Item:{tag:{compressedLevel:7s}}}] run data modify entity @s Item.tag.display.Lore append value "{\"text\":\"§6281474976710656×\"}"
-execute as @s[nbt={Item:{tag:{compressedLevel:6s}}}] run data modify entity @s Item.tag.display.Lore append value "{\"text\":\"§64398046511104×\"}"
-execute as @s[nbt={Item:{tag:{compressedLevel:5s}}}] run data modify entity @s Item.tag.display.Lore append value "{\"text\":\"§668719476736×\"}"
-execute as @s[nbt={Item:{tag:{compressedLevel:4s}}}] run data modify entity @s Item.tag.display.Lore append value "{\"text\":\"§61073741824×\"}"
-execute as @s[nbt={Item:{tag:{compressedLevel:3s}}}] run data modify entity @s Item.tag.display.Lore append value "{\"text\":\"§616777216×\"}"
-execute as @s[nbt={Item:{tag:{compressedLevel:2s}}}] run data modify entity @s Item.tag.display.Lore append value "{\"text\":\"§6262144×\"}"
-execute as @s[nbt={Item:{tag:{compressedLevel:1s}}}] run data modify entity @s Item.tag.display.Lore append value "{\"text\":\"§64096×\"}"
-execute as @s[nbt={Item:{tag:{compressedLevel:0s}}}] run data modify entity @s Item.tag.display.Lore append value "{\"text\":\"§664×\"}"
-execute as @s[nbt={Item:{tag:{compressedLevel:0s}}}] run data modify entity @s Item.tag.Enchantments append value {id:"minecraft:binding_curse"}
+data modify storage cpp:compressor Item.Count set value 1b
+execute store result score #t cppValue run data get storage cpp:compressor Item.tag.cppCompressedLevel
+execute store result storage cpp:compressor Item.tag.cppCompressedLevel short 1 run scoreboard players add #t cppValue 1
+execute if score #t cppValue matches 1 run data modify storage cpp:compressor Item.tag.cppStoreHideFlags set value 0b
+execute if score #t cppValue matches 1 run data modify storage cpp:compressor Item.tag.cppStoreHideFlags set from storage cpp:compressor Item.tag.HideFlags
+execute if score #t cppValue matches 1 run data modify storage cpp:compressor Item.tag.HideFlags set value 63b
+execute if score #t cppValue matches 1 run data modify storage cpp:compressor Item.tag.Enchantments append value {id:"minecraft:binding_curse"}
+execute if score #t cppValue matches 1 run data modify storage cpp:compressor Item.tag.display.Lore append value '{"text":"§664×"}'
+execute if score #t cppValue matches 2 run data modify storage cpp:compressor Item.tag.display.Lore[-1] set value '{"text":"§64096×"}'
+execute if score #t cppValue matches 3 run data modify storage cpp:compressor Item.tag.display.Lore[-1] set value '{"text":"§6262144×"}'
+execute if score #t cppValue matches 4 run data modify storage cpp:compressor Item.tag.display.Lore[-1] set value '{"text":"§616777216×"}'
+execute if score #t cppValue matches 5 run data modify storage cpp:compressor Item.tag.display.Lore[-1] set value '{"text":"§61073741824×"}'
+execute if score #t cppValue matches 6 run data modify storage cpp:compressor Item.tag.display.Lore[-1] set value '{"text":"§668719476736×"}'
+execute if score #t cppValue matches 7 run data modify storage cpp:compressor Item.tag.display.Lore[-1] set value '{"text":"§64398046511104×"}'
+execute if score #t cppValue matches 8 run data modify storage cpp:compressor Item.tag.display.Lore[-1] set value '{"text":"§6281474976710656×"}'
 
-scoreboard players set #temp cppValue 0
-execute store result score #temp cppValue run data get entity @s Item.tag.compressedLevel
-execute store result entity @s Item.tag.compressedLevel short 1 run scoreboard players add #temp cppValue 1
-
-tag @s add cpp_item_compressed
+data modify entity @s Item set from storage cpp:compressor Item
+tag @s add cpp_item_checked

@@ -1,0 +1,7 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"particle":"cpp:empty",
+		"layer0": "cpp:drink/agentia_of_tide"
+	}
+}

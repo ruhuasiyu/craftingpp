@@ -1,0 +1,19 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:carrot_on_a_stick",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{CustomModelData:12970040,display:{Name:'{\"translate\":\"item.cpp.ancient_scroll\"}',Lore:['{\"translate\":\"enchantment.cpp.sweeping\"}']},id:'cpp:ancient_scroll.sweeping',dict:['ancient_scroll']}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

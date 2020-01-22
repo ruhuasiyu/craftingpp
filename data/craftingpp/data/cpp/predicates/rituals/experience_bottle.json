@@ -1,0 +1,13 @@
+{
+	"condition": "minecraft:alternative",
+	"terms": [
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:1b,id:'minecraft:experience_bottle',Count:16b},{Slot:3b,id:'minecraft:experience_bottle',Count:16b},{Slot:5b,id:'minecraft:experience_bottle',Count:16b},{Slot:7b,id:'minecraft:experience_bottle',Count:16b}]}"
+				}
+			}
+		}
+	]
+}

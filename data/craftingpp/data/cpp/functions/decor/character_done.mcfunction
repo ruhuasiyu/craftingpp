@@ -6,6 +6,5 @@ execute if block ~ ~ ~ #minecraft:beds[facing=east] run summon armor_stand ~ ~ ~
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick"}}] run data modify entity @e[tag=cpp_character,tag=cpp_temp,distance=..0.1,limit=1] ArmorItems[3] set from entity @s SelectedItem
 execute unless entity @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick"}}] run data modify entity @e[tag=cpp_character,tag=cpp_temp,distance=..0.1,limit=1] ArmorItems[3] set from entity @s Inventory[{Slot:-106b}]
 tag @e[tag=cpp_character,tag=cpp_temp,distance=..0.1,limit=1] remove cpp_temp
-
 replaceitem entity @s[gamemode=!creative,nbt=!{SelectedItem:{id:"minecraft:carrot_on_a_stick"}}] weapon.offhand air
 replaceitem entity @s[gamemode=!creative,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick"}}] weapon.mainhand air

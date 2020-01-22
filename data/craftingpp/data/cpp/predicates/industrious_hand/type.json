@@ -1,0 +1,114 @@
+{
+	"condition": "minecraft:alternative",
+	"terms": [
+		{
+			"condition": "minecraft:block_state_property",
+			"block": "minecraft:wheat",
+			"properties": {
+				"age": "7"
+			}
+		},
+		{
+			"condition": "minecraft:block_state_property",
+			"block": "minecraft:beetroots",
+			"properties": {
+				"age": "3"
+			}
+		},
+		{
+			"condition": "minecraft:block_state_property",
+			"block": "minecraft:carrots",
+			"properties": {
+				"age": "7"
+			}
+		},
+		{
+			"condition": "minecraft:block_state_property",
+			"block": "minecraft:potatoes",
+			"properties": {
+				"age": "7"
+			}
+		},
+		{
+			"condition": "minecraft:block_state_property",
+			"block": "minecraft:sweet_berry_bush",
+			"properties": {
+				"age": "3"
+			}
+		},
+		{
+			"condition": "minecraft:block_state_property",
+			"block": "minecraft:nether_wart",
+			"properties": {
+				"age": "3"
+			}
+		},
+		{
+			"condition": "minecraft:block_state_property",
+			"block": "minecraft:cocoa",
+			"properties": {
+				"age": "3"
+			}
+		},
+		{
+			"condition": "minecraft:block_state_property",
+			"block": "minecraft:sugar_cane"
+		},
+		{
+			"condition": "minecraft:block_state_property",
+			"block": "minecraft:cactus"
+		},
+		{
+			"condition": "minecraft:block_state_property",
+			"block": "minecraft:bamboo"
+		},
+		{
+			"condition": "minecraft:block_state_property",
+			"block": "minecraft:oak_log"
+		},
+		{
+			"condition": "minecraft:block_state_property",
+			"block": "minecraft:spruce_log"
+		},
+		{
+			"condition": "minecraft:block_state_property",
+			"block": "minecraft:birch_log"
+		},
+		{
+			"condition": "minecraft:block_state_property",
+			"block": "minecraft:jungle_log"
+		},
+		{
+			"condition": "minecraft:block_state_property",
+			"block": "minecraft:acacia_log"
+		},
+		{
+			"condition": "minecraft:block_state_property",
+			"block": "minecraft:dark_oak_log"
+		},
+		{
+			"condition": "minecraft:block_state_property",
+			"block": "minecraft:oak_leaves"
+		},
+		{
+			"condition": "minecraft:block_state_property",
+			"block": "minecraft:spruce_leaves"
+		},
+		{
+			"condition": "minecraft:block_state_property",
+			"block": "minecraft:birch_leaves"
+		},
+		{
+			"condition": "minecraft:block_state_property",
+			"block": "minecraft:jungle_leaves"
+		},
+		{
+			"condition": "minecraft:block_state_property",
+			"block": "minecraft:acacia_leaves"
+		},
+		{
+			"condition": "minecraft:block_state_property",
+			"block": "minecraft:dark_oak_leaves"
+		}
+	]
+}

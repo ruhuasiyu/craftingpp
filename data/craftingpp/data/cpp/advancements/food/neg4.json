@@ -1,0 +1,47 @@
+{
+	"criteria": {
+		"apple": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:apple"
+				}
+			}
+		},
+		"golden_apple": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:golden_apple"
+				}
+			}
+		},
+		"enchanted_golden_apple": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:enchanted_golden_apple"
+				}
+			}
+		},
+		"chorus_fruit": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:chorus_fruit"
+				}
+			}
+		}
+	},
+	"requirements":[
+		[
+			"apple",
+			"golden_apple",
+			"enchanted_golden_apple",
+			"chorus_fruit"
+		]
+	],
+	"rewards":{
+		"function": "cpp:food/neg4"
+	}
+}

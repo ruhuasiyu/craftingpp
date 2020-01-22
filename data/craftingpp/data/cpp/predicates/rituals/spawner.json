@@ -1,0 +1,8 @@
+{
+	"condition": "minecraft:location_check",
+	"predicate": {
+		"block": {
+			"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:shard_of_the_darkness'},Count:1b},{Slot:1b,tag:{id:'cpp:shard_of_the_darkness'},Count:1b},{Slot:2b,tag:{id:'cpp:shard_of_the_darkness'},Count:1b},{Slot:3b,tag:{id:'cpp:shard_of_the_darkness'},Count:1b},{Slot:5b,tag:{id:'cpp:shard_of_the_darkness'},Count:1b},{Slot:6b,tag:{id:'cpp:shard_of_the_darkness'},Count:1b},{Slot:7b,tag:{id:'cpp:shard_of_the_darkness'},Count:1b},{Slot:8b,tag:{id:'cpp:shard_of_the_darkness'},Count:1b}]}"
+		}
+	}
+}

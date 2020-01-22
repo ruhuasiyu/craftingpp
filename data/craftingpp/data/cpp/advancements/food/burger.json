@@ -1,0 +1,15 @@
+{
+	"criteria": {
+		"burger": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"nbt": "{id:\"cpp:burger\"}"
+				}
+			}
+		}
+	},
+	"rewards":{
+		"function": "cpp:food/burger"
+	}
+}

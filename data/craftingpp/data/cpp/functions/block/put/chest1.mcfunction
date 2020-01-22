@@ -1,0 +1,1 @@
+execute if data storage cpp:loc_block Item.tag{id:"cpp:beacon_enhancer"} run tag @s add cpp_beacon_enhancer

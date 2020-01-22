@@ -10,12 +10,12 @@
 				]
 			}
 		},
-		"redstone": {
+		"nether_wart": {
 			"trigger": "minecraft:inventory_changed",
 			"conditions": {
 				"items": [
 					{
-						"item": "minecraft:redstone"
+						"item": "minecraft:nether_wart"
 					}
 				]
 			}
@@ -33,7 +33,7 @@
 	"requirements": [
 		[
 			"sand",
-			"redstone",
+			"nether_wart",
 			"has_the_recipe"
 		]
 	]

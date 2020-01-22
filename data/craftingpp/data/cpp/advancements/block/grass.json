@@ -1,0 +1,13 @@
+{
+	"criteria": {
+		"grass": {
+			"trigger": "minecraft:placed_block",
+			"conditions": {
+				"block": "minecraft:grass"
+			}
+		}
+	},
+	"rewards": {
+		"function": "cpp:block/grass/reset"
+	}
+}

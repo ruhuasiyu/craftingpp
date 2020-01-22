@@ -1,0 +1,19 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:carved_pumpkin",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.fox_head.snow\"}'},id:'cpp:fox_head.snow',CustomModelData:12970218,dict:['fox_head']}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:honey_bottle",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.agentia_of_life\"}',Lore:['[{\"translate\":\"effect.minecraft.regeneration\",\"italic\":\"false\",\"color\":\"blue\"},{\"text\":\"II (3:00)\"}]','[{\"translate\":\"effect.minecraft.instant_health\",\"italic\":\"false\",\"color\":\"blue\"},{\"text\":\" IV\"}]']},id:'cpp:agentia_of_life',CustomModelData:12970107}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

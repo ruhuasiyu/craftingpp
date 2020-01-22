@@ -7,7 +7,7 @@ scoreboard players set #random_min cppValue 1
 scoreboard players set #random_max cppValue 16
 function cpp:random
 
-execute store result score #t cppValue run data get block ~ ~ ~ Items[{Slot:9b}].tag.CustomModelData
+execute store result score #t cppValue run data get block ~ ~ ~ Items[{Slot:11b}].tag.CustomModelData
 execute if score #t cppValue matches 12970401 run summon minecraft:sheep ~ ~-2 ~ {PersistenceRequired:1b}
 execute if score #t cppValue matches 12970402 if score #rand cppValue matches 1..15 run summon minecraft:cow ~ ~-2 ~ {PersistenceRequired:1b}
 execute if score #t cppValue matches 12970402 if score #rand cppValue matches 16 run summon minecraft:mooshroom ~ ~-2 ~ {PersistenceRequired:1b}

@@ -4,7 +4,9 @@ execute if block ~ ~-1 ~ #cpp:redstone_torches[lit=true] run tag @s add cpp_reds
 execute if block ~ ~-1 ~ observer[powered=true,facing=down] run tag @s add cpp_redstone_powered
 
 execute if block ~ ~1 ~ #cpp:lever_and_buttons[powered=true,face=floor] run tag @s add cpp_redstone_powered
-execute if block ~ ~1 ~ #cpp:pressure_plates[powered=true] run tag @s add cpp_redstone_powered
+execute if block ~ ~1 ~ #minecraft:wooden_pressure_plates[powered=true] run tag @s add cpp_redstone_powered
+execute if block ~ ~1 ~ minecraft:stone_pressure_plate[powered=true] run tag @s add cpp_redstone_powered
+execute if block ~ ~1 ~ #cpp:weighted_pressure_plates unless block ~ ~1 ~ #cpp:weighted_pressure_plates[power=0] run tag @s add cpp_redstone_powered
 execute if block ~ ~1 ~ observer[powered=true,facing=up] run tag @s add cpp_redstone_powered
 
 execute if block ~1 ~ ~ #cpp:lever_and_buttons[powered=true,face=wall,facing=east] run tag @s add cpp_redstone_powered

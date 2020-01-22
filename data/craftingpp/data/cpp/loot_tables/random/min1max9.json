@@ -16,7 +16,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{isRdMark:1b,cppMachineBg:1b,CustomModelData:12971000}"
+							"tag": "{isRdMark:1b,cppClear:1b,CustomModelData:12970000}"
 						}
 					]
 				}

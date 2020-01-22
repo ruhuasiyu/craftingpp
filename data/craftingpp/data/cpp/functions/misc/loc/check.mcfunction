@@ -4,4 +4,5 @@ execute if block ~ ~ ~ fire if data storage cpp:loc_block Item{id:"minecraft:fir
 execute if block ~ ~ ~ water if data storage cpp:loc_block Item{id:"minecraft:water"} run scoreboard players set @s cppValue 0
 execute if block ~ ~ ~ lava if data storage cpp:loc_block Item{id:"minecraft:lava"} run scoreboard players set @s cppValue 0
 execute if block ~ ~ ~ barrier if data storage cpp:loc_block Item{id:"minecraft:barrier"} run scoreboard players set @s cppValue 0
+execute if block ~ ~ ~ pumpkin_stem if data storage cpp:loc_block Item{id:"minecraft:pumpkin_seeds"} run scoreboard players set @s cppValue 0
 tag @s[scores={cppValue=0}] add cpp_loc_block_pos_pot

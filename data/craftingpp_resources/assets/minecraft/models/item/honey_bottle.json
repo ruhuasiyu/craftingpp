@@ -1,0 +1,30 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "item/honey_bottle"
+	},
+	"overrides": [
+		{ "predicate": { "custom_model_data": 12970100 }, "model": "cpp:drink/cold_drink"},
+		{ "predicate": { "custom_model_data": 12970101 }, "model": "cpp:drink/agentia_of_sky"},
+		{ "predicate": { "custom_model_data": 12970102 }, "model": "cpp:drink/agentia_of_ocean"},
+		{ "predicate": { "custom_model_data": 12970103 }, "model": "cpp:drink/agentia_of_ridge"},
+		{ "predicate": { "custom_model_data": 12970104 }, "model": "cpp:drink/agentia_of_dirt"},
+		{ "predicate": { "custom_model_data": 12970105 }, "model": "cpp:drink/agentia_of_earth"},
+		{ "predicate": { "custom_model_data": 12970106 }, "model": "cpp:drink/agentia_of_fire"},
+		{ "predicate": { "custom_model_data": 12970107 }, "model": "cpp:drink/agentia_of_life"},
+		{ "predicate": { "custom_model_data": 12970108 }, "model": "cpp:drink/agentia_of_lightness"},		
+		{ "predicate": { "custom_model_data": 12970109 }, "model": "cpp:drink/agentia_of_eyesight"},
+		{ "predicate": { "custom_model_data": 12970110 }, "model": "cpp:drink/agentia_of_fire_shield"},
+		{ "predicate": { "custom_model_data": 12970111 }, "model": "cpp:drink/agentia_of_waterless"},
+		{ "predicate": { "custom_model_data": 12970112 }, "model": "cpp:drink/agentia_of_transparentness"},
+		{ "predicate": { "custom_model_data": 12970113 }, "model": "cpp:drink/agentia_of_bounce"},
+		{ "predicate": { "custom_model_data": 12970114 }, "model": "cpp:drink/agentia_of_agileness"},
+		{ "predicate": { "custom_model_data": 12970115 }, "model": "cpp:drink/agentia_of_sharpness"},
+		{ "predicate": { "custom_model_data": 12970116 }, "model": "cpp:drink/agentia_of_rejuveness"},
+		{ "predicate": { "custom_model_data": 12970117 }, "model": "cpp:drink/agentia_of_blood"},		
+		{ "predicate": { "custom_model_data": 12970118 }, "model": "cpp:drink/agentia_of_extremeness"},
+		{ "predicate": { "custom_model_data": 12970119 }, "model": "cpp:drink/agentia_of_shield"},
+		{ "predicate": { "custom_model_data": 12970120 }, "model": "cpp:drink/agentia_of_tide"},
+		{ "predicate": { "custom_model_data": 12970121 }, "model": "cpp:drink/agentia_of_chain"}
+	]
+}

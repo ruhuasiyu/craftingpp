@@ -18,7 +18,7 @@
 							"functions": [
 								{
 									"function": "minecraft:set_nbt",
-									"tag": "{cppWeatherMarker:1b,cppWeatherMarkerId:'thunder',cppMachineBg:1b,CustomModelData:12971000}"
+									"tag": "{cppWeatherMarker:1b,cppWeatherMarkerId:'thunder',cppClear:1b,CustomModelData:12970000}"
 								}
 							]
 						},
@@ -35,7 +35,7 @@
 							"functions": [
 								{
 									"function": "minecraft:set_nbt",
-									"tag": "{cppWeatherMarker:1b,cppWeatherMarkerId:'rain',cppMachineBg:1b,CustomModelData:12971000}"
+									"tag": "{cppWeatherMarker:1b,cppWeatherMarkerId:'rain',cppClear:1b,CustomModelData:12970000}"
 								}
 							]
 						},
@@ -51,7 +51,7 @@
 							"functions": [
 								{
 									"function": "minecraft:set_nbt",
-									"tag": "{cppWeatherMarker:1b,cppWeatherMarkerId:'clear',cppMachineBg:1b,CustomModelData:12971000}"
+									"tag": "{cppWeatherMarker:1b,cppWeatherMarkerId:'clear',cppClear:1b,CustomModelData:12970000}"
 								}
 							]
 						}

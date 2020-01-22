@@ -1,7 +1,7 @@
 {
     "parent": "cpp:machine/effects/temp",
 	"textures": {
-		"effects": "mob_effect/slowness"
+		"layer0": "mob_effect/slowness"
 	}
 }
 

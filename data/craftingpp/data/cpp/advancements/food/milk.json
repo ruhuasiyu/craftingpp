@@ -1,0 +1,15 @@
+{
+	"criteria": {
+		"milk": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:milk_bucket"
+				}
+			}
+		}
+	},
+	"rewards":{
+		"function": "cpp:food/milk"
+	}
+}

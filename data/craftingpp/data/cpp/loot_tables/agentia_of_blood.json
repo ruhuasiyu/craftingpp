@@ -1,0 +1,19 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:honey_bottle",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.agentia_of_blood\"}',Lore:['[{\"translate\":\"effect.minecraft.instant_health\",\"italic\":\"false\",\"color\":\"blue\"},{\"text\":\" III\"}]']},id:'cpp:agentia_of_blood',CustomModelData:12970117}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

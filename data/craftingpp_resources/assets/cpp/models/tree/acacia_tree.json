@@ -1,5 +1,5 @@
 {
-    "parent": "cpp:plant/plant",
+    "parent": "cpp:tree/temp",
     "textures": {
         "crop": "block/acacia_sapling"
     }

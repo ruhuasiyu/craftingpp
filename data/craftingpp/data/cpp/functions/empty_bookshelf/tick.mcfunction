@@ -1,5 +1,5 @@
 # 检测GUI
-execute if predicate cpp:empty_bookshelf/gui run function cpp:empty_bookshelf/gui
+execute unless predicate cpp:empty_bookshelf/gui run function cpp:empty_bookshelf/gui
 # 外观
 scoreboard players set #temp cppValue 12970010
 execute if data block ~ ~ ~ Items[{Slot:12b}] run scoreboard players add #temp cppValue 4

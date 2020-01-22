@@ -1,0 +1,15 @@
+{
+	"criteria": {
+		"consume": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"nbt": "{id:'cpp:agentia_of_eyesight'}"
+				}
+			}
+		}
+	},
+	"rewards":{
+		"function": "cpp:food/agentia_of_eyesight"
+	}
+}

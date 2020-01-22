@@ -8,4 +8,4 @@ execute as @s[scores={cppValue=3}] run function cpp:crafting_machine/recipes/ite
 execute as @s[scores={cppValue=2}] run function cpp:crafting_machine/recipes/items2
 execute as @s[scores={cppValue=1}] run function cpp:crafting_machine/recipes/items1
 function #cpp:crafting_machine
-execute unless data block ~ ~ ~ Items[{Slot:16b,tag:{cppMachineBg:1b}}] run function cpp:crafting_machine/clear/input
+execute unless data block ~ ~ ~ Items[{Slot:16b,tag:{cppClear:1b}}] run function cpp:crafting_machine/clear/input

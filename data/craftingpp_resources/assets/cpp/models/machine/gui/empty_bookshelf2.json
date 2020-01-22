@@ -1,0 +1,15 @@
+{
+	"parent": "item/generated",
+	"display": {
+		"gui": {
+			"scale": [ 3.375, 3.375, 1 ],
+			"translation": [ 18, -18, -70]
+		},
+		"ground": {
+			"scale": [ 0, 0, 0 ]
+		}
+    },
+    "textures": {
+        "layer0": "cpp:machine/gui/empty_bookshelf2"
+    }
+}

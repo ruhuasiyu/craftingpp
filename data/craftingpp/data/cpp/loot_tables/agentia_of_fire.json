@@ -1,0 +1,19 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:honey_bottle",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.agentia_of_fire\"}',Lore:['[{\"translate\":\"effect.minecraft.fire_resistance\",\"italic\":\"false\",\"color\":\"blue\"},{\"text\":\" (12:00)\"}]','[{\"translate\":\"effect.minecraft.resistance\",\"italic\":\"false\",\"color\":\"blue\"},{\"text\":\" II (6:00)\"}]']},id:'cpp:agentia_of_fire',CustomModelData:12970106}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

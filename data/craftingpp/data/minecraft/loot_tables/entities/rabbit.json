@@ -103,7 +103,7 @@
 								}
 							],
 							"type": "minecraft:loot_table",
-							"name": "cpp:rabbit_head/toast"
+							"name": "cpp:rabbit_head.toast"
 						},
 						{
 							"conditions": [
@@ -116,7 +116,7 @@
 								}
 							],
 							"type": "minecraft:loot_table",
-							"name": "cpp:rabbit_head/brown"
+							"name": "cpp:rabbit_head.brown"
 						},
 						{
 							"conditions": [
@@ -129,7 +129,7 @@
 								}
 							],
 							"type": "minecraft:loot_table",
-							"name": "cpp:rabbit_head/white"
+							"name": "cpp:rabbit_head.white"
 						},
 						{
 							"conditions": [
@@ -142,7 +142,7 @@
 								}
 							],
 							"type": "minecraft:loot_table",
-							"name": "cpp:rabbit_head/black"
+							"name": "cpp:rabbit_head.black"
 						},
 						{
 							"conditions": [
@@ -155,7 +155,7 @@
 								}
 							],
 							"type": "minecraft:loot_table",
-							"name": "cpp:rabbit_head/white_splotched"
+							"name": "cpp:rabbit_head.white_splotched"
 						},
 						{
 							"conditions": [
@@ -168,7 +168,7 @@
 								}
 							],
 							"type": "minecraft:loot_table",
-							"name": "cpp:rabbit_head/gold"
+							"name": "cpp:rabbit_head.gold"
 						},
 						{
 							"conditions": [
@@ -181,7 +181,7 @@
 								}
 							],
 							"type": "minecraft:loot_table",
-							"name": "cpp:rabbit_head/salt"
+							"name": "cpp:rabbit_head.salt"
 						}
 					]
 				}

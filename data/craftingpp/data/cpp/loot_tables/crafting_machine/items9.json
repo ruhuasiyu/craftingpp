@@ -7,6 +7,7 @@
 					"type": "minecraft:alternatives",
 					"children": [
 						{
+							"_comment":"多功能一体机",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -21,6 +22,7 @@
 							"name": "cpp:all_in_one_machine"
 						},
 						{
+							"_comment":"交易机",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -35,6 +37,7 @@
 							"name": "cpp:trade_machine"
 						},
 						{
+							"_comment":"生物投影仪",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -49,6 +52,7 @@
 							"name": "cpp:mob_projector"
 						},
 						{
+							"_comment":"信标增强仪",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -63,6 +67,7 @@
 							"name": "cpp:beacon_enhancer"
 						},
 						{
+							"_comment":"金砧",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -77,6 +82,7 @@
 							"name": "cpp:golden_anvil"
 						},
 						{
+							"_comment":"物品处理机",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -91,244 +97,7 @@
 							"name": "cpp:item_processer"
 						},
 						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:1b,id:'minecraft:experience_bottle'},{Slot:2b,tag:{id:'cpp:enchanted_diamond'}},{Slot:3b,id:'minecraft:experience_bottle'},{Slot:10b,tag:{id:'cpp:enchanted_gold'}},{Slot:11b,tag:{id:'cpp:empty_plugin'}},{Slot:12b,tag:{id:'cpp:enchanted_gold'}},{Slot:19b,id:'minecraft:snow_block'},{Slot:20b,tag:{id:'cpp:heart_of_crystal'}},{Slot:21b,id:'minecraft:snow_block'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:loot_table",
-							"name": "cpp:low_temperature_plugin"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:1b,id:'minecraft:experience_bottle'},{Slot:2b,tag:{id:'cpp:enchanted_diamond'}},{Slot:3b,id:'minecraft:experience_bottle'},{Slot:10b,tag:{id:'cpp:enchanted_gold'}},{Slot:11b,tag:{id:'cpp:empty_plugin'}},{Slot:12b,tag:{id:'cpp:enchanted_gold'}},{Slot:19b,id:'minecraft:glass'},{Slot:20b,tag:{id:'cpp:wing_of_sky'}},{Slot:21b,id:'minecraft:glass'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:loot_table",
-							"name": "cpp:low_pressure_plugin"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:1b,id:'minecraft:experience_bottle'},{Slot:2b,tag:{id:'cpp:enchanted_diamond'}},{Slot:3b,id:'minecraft:experience_bottle'},{Slot:10b,tag:{id:'cpp:enchanted_gold'}},{Slot:11b,tag:{id:'cpp:empty_plugin'}},{Slot:12b,tag:{id:'cpp:enchanted_gold'}},{Slot:19b,id:'minecraft:lava_bucket'},{Slot:20b,tag:{id:'cpp:nova_of_fire'}},{Slot:21b,id:'minecraft:lava_bucket'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:loot_table",
-							"name": "cpp:high_temperature_plugin"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:1b,id:'minecraft:experience_bottle'},{Slot:2b,tag:{id:'cpp:enchanted_diamond'}},{Slot:3b,id:'minecraft:experience_bottle'},{Slot:10b,tag:{id:'cpp:enchanted_gold'}},{Slot:11b,tag:{id:'cpp:empty_plugin'}},{Slot:12b,tag:{id:'cpp:enchanted_gold'}},{Slot:19b,id:'minecraft:piston'},{Slot:20b,tag:{id:'cpp:limb_of_ridge'}},{Slot:21b,id:'minecraft:piston'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:loot_table",
-							"name": "cpp:high_pressure_plugin"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:1b,id:'minecraft:experience_bottle'},{Slot:2b,tag:{id:'cpp:enchanted_diamond'}},{Slot:3b,id:'minecraft:experience_bottle'},{Slot:10b,tag:{id:'cpp:enchanted_gold'}},{Slot:11b,tag:{id:'cpp:empty_plugin'}},{Slot:12b,tag:{id:'cpp:enchanted_gold'}},{Slot:19b,tag:{id:'cpp:enchanted_iron'}},{Slot:20b,id:'minecraft:stone_pickaxe'},{Slot:21b,tag:{id:'cpp:enchanted_iron'}}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:loot_table",
-							"name": "cpp:cobblestone_plugin"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:1b,id:'minecraft:experience_bottle'},{Slot:2b,tag:{id:'cpp:enchanted_diamond'}},{Slot:3b,id:'minecraft:experience_bottle'},{Slot:10b,tag:{id:'cpp:enchanted_gold'}},{Slot:11b,tag:{id:'cpp:empty_plugin'}},{Slot:12b,tag:{id:'cpp:enchanted_gold'}},{Slot:19b,tag:{id:'cpp:enchanted_iron'}},{Slot:20b,id:'minecraft:iron_pickaxe'},{Slot:21b,tag:{id:'cpp:enchanted_iron'}}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:loot_table",
-							"name": "cpp:stone_plugin"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:1b,id:'minecraft:experience_bottle'},{Slot:2b,tag:{id:'cpp:enchanted_diamond'}},{Slot:3b,id:'minecraft:experience_bottle'},{Slot:10b,tag:{id:'cpp:enchanted_gold'}},{Slot:11b,tag:{id:'cpp:empty_plugin'}},{Slot:12b,tag:{id:'cpp:enchanted_gold'}},{Slot:19b,tag:{id:'cpp:enchanted_iron'}},{Slot:20b,id:'minecraft:golden_pickaxe'},{Slot:21b,tag:{id:'cpp:enchanted_iron'}}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:loot_table",
-							"name": "cpp:obsidian_plugin"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:1b,id:'minecraft:experience_bottle'},{Slot:2b,tag:{id:'cpp:enchanted_diamond'}},{Slot:3b,id:'minecraft:experience_bottle'},{Slot:10b,tag:{id:'cpp:enchanted_gold'}},{Slot:11b,tag:{id:'cpp:empty_plugin'}},{Slot:12b,tag:{id:'cpp:enchanted_gold'}},{Slot:19b,tag:{id:'cpp:enchanted_iron'}},{Slot:20b,id:'minecraft:ghast_tear'},{Slot:21b,tag:{id:'cpp:enchanted_iron'}}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:loot_table",
-							"name": "cpp:netherrack_plugin"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:1b,id:'minecraft:experience_bottle'},{Slot:2b,tag:{id:'cpp:enchanted_diamond'}},{Slot:3b,id:'minecraft:experience_bottle'},{Slot:10b,tag:{id:'cpp:enchanted_gold'}},{Slot:11b,tag:{id:'cpp:empty_plugin'}},{Slot:12b,tag:{id:'cpp:enchanted_gold'}},{Slot:19b,tag:{id:'cpp:enchanted_iron'}},{Slot:20b,id:'minecraft:ender_pearl'},{Slot:21b,tag:{id:'cpp:enchanted_iron'}}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:loot_table",
-							"name": "cpp:end_stone_plugin"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:1b,id:'minecraft:experience_bottle'},{Slot:2b,id:'minecraft:experience_bottle'},{Slot:3b,id:'minecraft:experience_bottle'},{Slot:10b,id:'minecraft:experience_bottle'},{Slot:11b,id:'minecraft:iron_ingot'},{Slot:12b,id:'minecraft:experience_bottle'},{Slot:19b,id:'minecraft:experience_bottle'},{Slot:20b,id:'minecraft:experience_bottle'},{Slot:21b,id:'minecraft:experience_bottle'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:loot_table",
-							"name": "cpp:enchanted_iron"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:1b,id:'minecraft:experience_bottle'},{Slot:2b,id:'minecraft:experience_bottle'},{Slot:3b,id:'minecraft:experience_bottle'},{Slot:10b,id:'minecraft:experience_bottle'},{Slot:11b,id:'minecraft:gold_ingot'},{Slot:12b,id:'minecraft:experience_bottle'},{Slot:19b,id:'minecraft:experience_bottle'},{Slot:20b,id:'minecraft:experience_bottle'},{Slot:21b,id:'minecraft:experience_bottle'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:loot_table",
-							"name": "cpp:enchanted_gold"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:1b,id:'minecraft:experience_bottle'},{Slot:2b,id:'minecraft:experience_bottle'},{Slot:3b,id:'minecraft:experience_bottle'},{Slot:10b,id:'minecraft:experience_bottle'},{Slot:11b,id:'minecraft:diamond'},{Slot:12b,id:'minecraft:experience_bottle'},{Slot:19b,id:'minecraft:experience_bottle'},{Slot:20b,id:'minecraft:experience_bottle'},{Slot:21b,id:'minecraft:experience_bottle'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:loot_table",
-							"name": "cpp:enchanted_diamond"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:1b,id:'minecraft:experience_bottle'},{Slot:2b,tag:{id:'cpp:enchanted_diamond'}},{Slot:3b,id:'minecraft:experience_bottle'},{Slot:10b,tag:{id:'cpp:enchanted_gold'}},{Slot:11b,id:'minecraft:piston'},{Slot:12b,tag:{id:'cpp:enchanted_gold'}},{Slot:19b,tag:{id:'cpp:enchanted_iron'}},{Slot:20b,tag:{id:'cpp:silicon_plate'}},{Slot:21b,tag:{id:'cpp:enchanted_iron'}}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:loot_table",
-							"name": "cpp:compressor"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:1b,id:'minecraft:experience_bottle'},{Slot:2b,tag:{id:'cpp:enchanted_diamond'}},{Slot:3b,id:'minecraft:experience_bottle'},{Slot:10b,tag:{id:'cpp:enchanted_gold'}},{Slot:11b,id:'minecraft:book'},{Slot:12b,tag:{id:'cpp:enchanted_gold'}},{Slot:19b,tag:{id:'cpp:enchanted_iron'}},{Slot:20b,tag:{id:'cpp:silicon_plate'}},{Slot:21b,tag:{id:'cpp:enchanted_iron'}}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:loot_table",
-							"name": "cpp:elder_s_words"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:1b,id:'minecraft:experience_bottle'},{Slot:2b,tag:{id:'cpp:enchanted_diamond'}},{Slot:3b,id:'minecraft:experience_bottle'},{Slot:10b,tag:{id:'cpp:enchanted_gold'}},{Slot:11b,id:'minecraft:paper'},{Slot:12b,tag:{id:'cpp:enchanted_gold'}},{Slot:19b,tag:{id:'cpp:enchanted_iron'}},{Slot:20b,tag:{id:'cpp:silicon_plate'}},{Slot:21b,tag:{id:'cpp:enchanted_iron'}}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:loot_table",
-							"name": "cpp:coordinate_recorder"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:1b,id:'minecraft:iron_ingot'},{Slot:2b,id:'minecraft:flint'},{Slot:3b,id:'minecraft:iron_ingot'},{Slot:10b,id:'minecraft:iron_ingot'},{Slot:11b,id:'minecraft:wet_sponge'},{Slot:12b,id:'minecraft:iron_ingot'},{Slot:19b,id:'minecraft:iron_ingot'},{Slot:20b,id:'minecraft:iron_ingot'},{Slot:21b,id:'minecraft:iron_ingot'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:loot_table",
-							"name": "cpp:muffler"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:1b,id:'minecraft:iron_ingot'},{Slot:2b,id:'minecraft:flint_and_steel'},{Slot:3b,id:'minecraft:iron_ingot'},{Slot:10b,id:'minecraft:iron_ingot'},{Slot:11b,id:'minecraft:lava_bucket'},{Slot:12b,id:'minecraft:iron_ingot'},{Slot:19b,id:'minecraft:iron_ingot'},{Slot:20b,id:'minecraft:iron_ingot'},{Slot:21b,id:'minecraft:iron_ingot'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:loot_table",
-							"name": "cpp:dustbin"
-						},
-						{
+							"_comment":"空白插件",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -343,6 +112,202 @@
 							"name": "cpp:empty_plugin"
 						},
 						{
+							"_comment":"低温插件",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:1b,id:'minecraft:experience_bottle'},{Slot:2b,tag:{id:'cpp:enchanted_diamond'}},{Slot:3b,id:'minecraft:experience_bottle'},{Slot:10b,tag:{id:'cpp:enchanted_gold'}},{Slot:11b,tag:{id:'cpp:empty_plugin'}},{Slot:12b,tag:{id:'cpp:enchanted_gold'}},{Slot:19b,id:'minecraft:snow_block'},{Slot:20b,tag:{id:'cpp:heart_of_crystal'}},{Slot:21b,id:'minecraft:snow_block'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:low_temperature_plugin"
+						},
+						{
+							"_comment":"低压插件",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:1b,id:'minecraft:experience_bottle'},{Slot:2b,tag:{id:'cpp:enchanted_diamond'}},{Slot:3b,id:'minecraft:experience_bottle'},{Slot:10b,tag:{id:'cpp:enchanted_gold'}},{Slot:11b,tag:{id:'cpp:empty_plugin'}},{Slot:12b,tag:{id:'cpp:enchanted_gold'}},{Slot:19b,id:'minecraft:glass'},{Slot:20b,tag:{id:'cpp:wing_of_sky'}},{Slot:21b,id:'minecraft:glass'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:low_pressure_plugin"
+						},
+						{
+							"_comment":"高温插件",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:1b,id:'minecraft:experience_bottle'},{Slot:2b,tag:{id:'cpp:enchanted_diamond'}},{Slot:3b,id:'minecraft:experience_bottle'},{Slot:10b,tag:{id:'cpp:enchanted_gold'}},{Slot:11b,tag:{id:'cpp:empty_plugin'}},{Slot:12b,tag:{id:'cpp:enchanted_gold'}},{Slot:19b,id:'minecraft:lava_bucket'},{Slot:20b,tag:{id:'cpp:nova_of_fire'}},{Slot:21b,id:'minecraft:lava_bucket'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:high_temperature_plugin"
+						},
+						{
+							"_comment":"高压插件",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:1b,id:'minecraft:experience_bottle'},{Slot:2b,tag:{id:'cpp:enchanted_diamond'}},{Slot:3b,id:'minecraft:experience_bottle'},{Slot:10b,tag:{id:'cpp:enchanted_gold'}},{Slot:11b,tag:{id:'cpp:empty_plugin'}},{Slot:12b,tag:{id:'cpp:enchanted_gold'}},{Slot:19b,id:'minecraft:piston'},{Slot:20b,tag:{id:'cpp:limb_of_ridge'}},{Slot:21b,id:'minecraft:piston'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:high_pressure_plugin"
+						},
+						{
+							"_comment":"圆石插件",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:1b,id:'minecraft:experience_bottle'},{Slot:2b,tag:{id:'cpp:enchanted_diamond'}},{Slot:3b,id:'minecraft:experience_bottle'},{Slot:10b,tag:{id:'cpp:enchanted_gold'}},{Slot:11b,tag:{id:'cpp:empty_plugin'}},{Slot:12b,tag:{id:'cpp:enchanted_gold'}},{Slot:19b,tag:{id:'cpp:enchanted_iron'}},{Slot:20b,id:'minecraft:stone_pickaxe'},{Slot:21b,tag:{id:'cpp:enchanted_iron'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:cobblestone_plugin"
+						},
+						{
+							"_comment":"石头插件",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:1b,id:'minecraft:experience_bottle'},{Slot:2b,tag:{id:'cpp:enchanted_diamond'}},{Slot:3b,id:'minecraft:experience_bottle'},{Slot:10b,tag:{id:'cpp:enchanted_gold'}},{Slot:11b,tag:{id:'cpp:empty_plugin'}},{Slot:12b,tag:{id:'cpp:enchanted_gold'}},{Slot:19b,tag:{id:'cpp:enchanted_iron'}},{Slot:20b,id:'minecraft:iron_pickaxe'},{Slot:21b,tag:{id:'cpp:enchanted_iron'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:stone_plugin"
+						},
+						{
+							"_comment":"黑曜石插件",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:1b,id:'minecraft:experience_bottle'},{Slot:2b,tag:{id:'cpp:enchanted_diamond'}},{Slot:3b,id:'minecraft:experience_bottle'},{Slot:10b,tag:{id:'cpp:enchanted_gold'}},{Slot:11b,tag:{id:'cpp:empty_plugin'}},{Slot:12b,tag:{id:'cpp:enchanted_gold'}},{Slot:19b,tag:{id:'cpp:enchanted_iron'}},{Slot:20b,id:'minecraft:golden_pickaxe'},{Slot:21b,tag:{id:'cpp:enchanted_iron'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:obsidian_plugin"
+						},
+						{
+							"_comment":"地狱岩插件",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:1b,id:'minecraft:experience_bottle'},{Slot:2b,tag:{id:'cpp:enchanted_diamond'}},{Slot:3b,id:'minecraft:experience_bottle'},{Slot:10b,tag:{id:'cpp:enchanted_gold'}},{Slot:11b,tag:{id:'cpp:empty_plugin'}},{Slot:12b,tag:{id:'cpp:enchanted_gold'}},{Slot:19b,tag:{id:'cpp:enchanted_iron'}},{Slot:20b,id:'minecraft:ghast_tear'},{Slot:21b,tag:{id:'cpp:enchanted_iron'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:netherrack_plugin"
+						},
+						{
+							"_comment":"末地石插件",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:1b,id:'minecraft:experience_bottle'},{Slot:2b,tag:{id:'cpp:enchanted_diamond'}},{Slot:3b,id:'minecraft:experience_bottle'},{Slot:10b,tag:{id:'cpp:enchanted_gold'}},{Slot:11b,tag:{id:'cpp:empty_plugin'}},{Slot:12b,tag:{id:'cpp:enchanted_gold'}},{Slot:19b,tag:{id:'cpp:enchanted_iron'}},{Slot:20b,id:'minecraft:ender_pearl'},{Slot:21b,tag:{id:'cpp:enchanted_iron'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:end_stone_plugin"
+						},
+						{
+							"_comment":"附魔铁锭",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:1b,id:'minecraft:experience_bottle'},{Slot:2b,id:'minecraft:experience_bottle'},{Slot:3b,id:'minecraft:experience_bottle'},{Slot:10b,id:'minecraft:experience_bottle'},{Slot:11b,id:'minecraft:iron_ingot'},{Slot:12b,id:'minecraft:experience_bottle'},{Slot:19b,id:'minecraft:experience_bottle'},{Slot:20b,id:'minecraft:experience_bottle'},{Slot:21b,id:'minecraft:experience_bottle'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:enchanted_iron"
+						},
+						{
+							"_comment":"附魔金锭",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:1b,id:'minecraft:experience_bottle'},{Slot:2b,id:'minecraft:experience_bottle'},{Slot:3b,id:'minecraft:experience_bottle'},{Slot:10b,id:'minecraft:experience_bottle'},{Slot:11b,id:'minecraft:gold_ingot'},{Slot:12b,id:'minecraft:experience_bottle'},{Slot:19b,id:'minecraft:experience_bottle'},{Slot:20b,id:'minecraft:experience_bottle'},{Slot:21b,id:'minecraft:experience_bottle'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:enchanted_gold"
+						},
+						{
+							"_comment":"附魔钻石",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:1b,id:'minecraft:experience_bottle'},{Slot:2b,id:'minecraft:experience_bottle'},{Slot:3b,id:'minecraft:experience_bottle'},{Slot:10b,id:'minecraft:experience_bottle'},{Slot:11b,id:'minecraft:diamond'},{Slot:12b,id:'minecraft:experience_bottle'},{Slot:19b,id:'minecraft:experience_bottle'},{Slot:20b,id:'minecraft:experience_bottle'},{Slot:21b,id:'minecraft:experience_bottle'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:enchanted_diamond"
+						},
+						{
+							"_comment":"垃圾桶",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:1b,id:'minecraft:iron_ingot'},{Slot:2b,id:'minecraft:flint_and_steel'},{Slot:3b,id:'minecraft:iron_ingot'},{Slot:10b,id:'minecraft:iron_ingot'},{Slot:11b,id:'minecraft:lava_bucket'},{Slot:12b,id:'minecraft:iron_ingot'},{Slot:19b,id:'minecraft:iron_ingot'},{Slot:20b,id:'minecraft:iron_ingot'},{Slot:21b,id:'minecraft:iron_ingot'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:dustbin"
+						},
+						{
+							"_comment":"月之碎片",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -357,6 +322,7 @@
 							"name": "cpp:moon_shard"
 						},
 						{
+							"_comment":"碎钻合成钻石",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -371,6 +337,7 @@
 							"name": "minecraft:diamond"
 						},
 						{
+							"_comment":"月石",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -385,6 +352,7 @@
 							"name": "cpp:moon_stone"
 						},
 						{
+							"_comment":"日石",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -399,6 +367,7 @@
 							"name": "cpp:sun_stone"
 						},
 						{
+							"_comment":"蓝色天之力",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -413,6 +382,7 @@
 							"name": "cpp:blue_force_of_sky"
 						},
 						{
+							"_comment":"绿色水之力",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -427,6 +397,7 @@
 							"name": "cpp:green_force_of_water"
 						},
 						{
+							"_comment":"青色山之力",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -441,6 +412,7 @@
 							"name": "cpp:cyan_force_of_mountain"
 						},
 						{
+							"_comment":"橙色土之力",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -455,6 +427,7 @@
 							"name": "cpp:orange_force_of_dirt"
 						},
 						{
+							"_comment":"黄色地之力",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -469,6 +442,7 @@
 							"name": "cpp:yellow_force_of_earth"
 						},
 						{
+							"_comment":"红色火之力",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -483,6 +457,7 @@
 							"name": "cpp:red_force_of_fire"
 						},
 						{
+							"_comment":"紫色命之力",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -497,6 +472,7 @@
 							"name": "cpp:purple_force_of_life"
 						},
 						{
+							"_comment":"白色电之力",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -511,6 +487,7 @@
 							"name": "cpp:white_force_of_lightning"
 						},
 						{
+							"_comment":"黑色月之力",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -525,6 +502,67 @@
 							"name": "cpp:black_force_of_moon"
 						},
 						{
+							"_comment":"压缩器",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:1b,id:'minecraft:experience_bottle'},{Slot:2b,tag:{id:'cpp:enchanted_diamond'}},{Slot:3b,id:'minecraft:experience_bottle'},{Slot:10b,tag:{id:'cpp:enchanted_gold'}},{Slot:11b,id:'minecraft:piston'},{Slot:12b,tag:{id:'cpp:enchanted_gold'}},{Slot:19b,tag:{id:'cpp:enchanted_iron'}},{Slot:20b,tag:{id:'cpp:silicon_plate'}},{Slot:21b,tag:{id:'cpp:enchanted_iron'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:compressor"
+						},
+						{
+							"_comment":"年长者之教诲",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:1b,id:'minecraft:experience_bottle'},{Slot:2b,tag:{id:'cpp:enchanted_diamond'}},{Slot:3b,id:'minecraft:experience_bottle'},{Slot:10b,tag:{id:'cpp:enchanted_gold'}},{Slot:11b,id:'minecraft:book'},{Slot:12b,tag:{id:'cpp:enchanted_gold'}},{Slot:19b,tag:{id:'cpp:enchanted_iron'}},{Slot:20b,tag:{id:'cpp:silicon_plate'}},{Slot:21b,tag:{id:'cpp:enchanted_iron'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:elder_s_words"
+						},
+						{
+							"_comment":"坐标记录仪",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:1b,id:'minecraft:experience_bottle'},{Slot:2b,tag:{id:'cpp:enchanted_diamond'}},{Slot:3b,id:'minecraft:experience_bottle'},{Slot:10b,tag:{id:'cpp:enchanted_gold'}},{Slot:11b,id:'minecraft:paper'},{Slot:12b,tag:{id:'cpp:enchanted_gold'}},{Slot:19b,tag:{id:'cpp:enchanted_iron'}},{Slot:20b,tag:{id:'cpp:silicon_plate'}},{Slot:21b,tag:{id:'cpp:enchanted_iron'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:coordinate_recorder"
+						},
+						{
+							"_comment":"消音器",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:1b,id:'minecraft:iron_ingot'},{Slot:2b,id:'minecraft:flint'},{Slot:3b,id:'minecraft:iron_ingot'},{Slot:10b,id:'minecraft:iron_ingot'},{Slot:11b,id:'minecraft:wet_sponge'},{Slot:12b,id:'minecraft:iron_ingot'},{Slot:19b,id:'minecraft:iron_ingot'},{Slot:20b,id:'minecraft:iron_ingot'},{Slot:21b,id:'minecraft:iron_ingot'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:muffler"
+						},
+						{
+							"_comment":"鞭炮",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -539,6 +577,37 @@
 							"name": "cpp:firecrackers"
 						},
 						{
+							"_comment":"流星丸",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:1b,tag:{id:'cpp:wing_of_sky'}},{Slot:2b,tag:{id:'cpp:broom'}},{Slot:3b,tag:{id:'cpp:wing_of_sky'}},{Slot:10b,tag:{id:'cpp:wing_of_sky'}},{Slot:11b,id:'minecraft:elytra'},{Slot:12b,tag:{id:'cpp:wing_of_sky'}},{Slot:19b,tag:{id:'cpp:wing_of_sky'}},{Slot:20b,tag:{id:'cpp:wing_of_sky'}},{Slot:21b,tag:{id:'cpp:wing_of_sky'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:shooting_star"
+						},
+						{
+							"_comment":"勤劳之手",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:1b,tag:{id:'cpp:rare_earth_glass'}},{Slot:2b,tag:{id:'cpp:enderman_head'}},{Slot:3b,tag:{id:'cpp:rare_earth_glass'}},{Slot:10b,tag:{id:'cpp:rare_earth_glass'}},{Slot:11b,id:'minecraft:diamond_hoe'},{Slot:12b,tag:{id:'cpp:rare_earth_glass'}},{Slot:19b,tag:{id:'cpp:reinforced_glass'}},{Slot:20b,id:'minecraft:experience_bottle'},{Slot:21b,tag:{id:'cpp:reinforced_glass'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:industrious_hand"
+						},
+						{
+							"_comment":"破坏之手",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -553,6 +622,52 @@
 							"name": "cpp:break_hand"
 						},
 						{
+							"_comment":"灵巧之手",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:1b,tag:{id:'cpp:rare_earth_glass'}},{Slot:2b,tag:{id:'cpp:enderman_head'}},{Slot:3b,tag:{id:'cpp:rare_earth_glass'}},{Slot:10b,tag:{id:'cpp:rare_earth_glass'}},{Slot:11b,id:'minecraft:fishing_rod'},{Slot:12b,tag:{id:'cpp:rare_earth_glass'}},{Slot:19b,tag:{id:'cpp:reinforced_glass'}},{Slot:20b,id:'minecraft:experience_bottle'},{Slot:21b,tag:{id:'cpp:reinforced_glass'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:smart_hand"
+						},
+						{
+							"_comment":"愤怒之手",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:1b,tag:{id:'cpp:rare_earth_glass'}},{Slot:2b,tag:{id:'cpp:enderman_head'}},{Slot:3b,tag:{id:'cpp:rare_earth_glass'}},{Slot:10b,tag:{id:'cpp:rare_earth_glass'}},{Slot:11b,id:'minecraft:diamond_sword'},{Slot:12b,tag:{id:'cpp:rare_earth_glass'}},{Slot:19b,tag:{id:'cpp:reinforced_glass'}},{Slot:20b,id:'minecraft:experience_bottle'},{Slot:21b,tag:{id:'cpp:reinforced_glass'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:angry_hand"
+						},
+						{
+							"_comment":"历练之手",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:1b,tag:{id:'cpp:rare_earth_glass'}},{Slot:2b,tag:{id:'cpp:enderman_head'}},{Slot:3b,tag:{id:'cpp:rare_earth_glass'}},{Slot:10b,tag:{id:'cpp:rare_earth_glass'}},{Slot:11b,id:'minecraft:lead'},{Slot:12b,tag:{id:'cpp:rare_earth_glass'}},{Slot:19b,tag:{id:'cpp:reinforced_glass'}},{Slot:20b,id:'minecraft:experience_bottle'},{Slot:21b,tag:{id:'cpp:reinforced_glass'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:toughen_hand"
+						},
+						{
+							"_comment":"空白傀儡",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -567,20 +682,7 @@
 							"name": "cpp:empty_golem"
 						},
 						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:1b,id:'minecraft:sugar'},{Slot:2b,id:'minecraft:sugar'},{Slot:3b,id:'minecraft:sugar'},{Slot:10b,id:'minecraft:sugar'},{Slot:11b,id:'minecraft:apple'},{Slot:12b,id:'minecraft:sugar'},{Slot:19b,id:'minecraft:sugar'},{Slot:20b,id:'minecraft:sugar'},{Slot:21b,id:'minecraft:sugar'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:loot_table",
-							"name": "cpp:toffee_apple"
-						},
-						{
+							"_comment":"附魔金苹果",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -595,6 +697,22 @@
 							"name": "minecraft:enchanted_golden_apple"
 						},
 						{
+							"_comment":"拔丝苹果",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:1b,id:'minecraft:sugar'},{Slot:2b,id:'minecraft:sugar'},{Slot:3b,id:'minecraft:sugar'},{Slot:10b,id:'minecraft:sugar'},{Slot:11b,id:'minecraft:apple'},{Slot:12b,id:'minecraft:sugar'},{Slot:19b,id:'minecraft:sugar'},{Slot:20b,id:'minecraft:sugar'},{Slot:21b,id:'minecraft:sugar'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:toffee_apple"
+						},
+						{
+							"_comment":"牛肉饺子",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -615,6 +733,7 @@
 							]
 						},
 						{
+							"_comment":"猪肉饺子",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -635,6 +754,7 @@
 							]
 						},
 						{
+							"_comment":"圣诞树",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -649,6 +769,7 @@
 							"name": "cpp:christmas_tree"
 						},
 						{
+							"_comment":"封印之杖",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -663,6 +784,7 @@
 							"name": "cpp:sealing_wand"
 						},
 						{
+							"_comment":"封印之杖",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -677,6 +799,7 @@
 							"name": "cpp:sealing_wand"
 						},
 						{
+							"_comment":"星之杖",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -691,6 +814,7 @@
 							"name": "cpp:star_wand"
 						},
 						{
+							"_comment":"星之杖",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -705,6 +829,7 @@
 							"name": "cpp:star_wand"
 						},
 						{
+							"_comment":"梦之杖",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -719,6 +844,7 @@
 							"name": "cpp:dream_wand"
 						},
 						{
+							"_comment":"梦之杖",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -733,6 +859,7 @@
 							"name": "cpp:dream_wand"
 						},
 						{
+							"_comment":"节制器",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -747,20 +874,7 @@
 							"name": "cpp:temperancer_closed"
 						},
 						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:1b,tag:{id:'cpp:wing_of_sky'}},{Slot:2b,tag:{id:'cpp:broom'}},{Slot:3b,tag:{id:'cpp:wing_of_sky'}},{Slot:10b,tag:{id:'cpp:wing_of_sky'}},{Slot:11b,id:'minecraft:elytra'},{Slot:12b,tag:{id:'cpp:wing_of_sky'}},{Slot:19b,tag:{id:'cpp:wing_of_sky'}},{Slot:20b,tag:{id:'cpp:wing_of_sky'}},{Slot:21b,tag:{id:'cpp:wing_of_sky'}}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:loot_table",
-							"name": "cpp:shooting_star"
-						},
-						{
+							"_comment":"梦之杖",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",

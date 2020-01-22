@@ -97,7 +97,7 @@
 					"children": [
 						{
 							"type": "minecraft:loot_table",
-							"name": "cpp:parrot_head/0",
+							"name": "cpp:parrot_head.red",
 							"conditions": [
 								{
 									"condition": "minecraft:entity_properties",
@@ -110,7 +110,7 @@
 						},
 						{
 							"type": "minecraft:loot_table",
-							"name": "cpp:parrot_head/1",
+							"name": "cpp:parrot_head.blue",
 							"conditions": [
 								{
 									"condition": "minecraft:entity_properties",
@@ -123,7 +123,7 @@
 						},
 						{
 							"type": "minecraft:loot_table",
-							"name": "cpp:parrot_head/2",
+							"name": "cpp:parrot_head.green",
 							"conditions": [
 								{
 									"condition": "minecraft:entity_properties",
@@ -136,7 +136,7 @@
 						},
 						{
 							"type": "minecraft:loot_table",
-							"name": "cpp:parrot_head/3",
+							"name": "cpp:parrot_head.cyan",
 							"conditions": [
 								{
 									"condition": "minecraft:entity_properties",
@@ -149,7 +149,7 @@
 						},
 						{
 							"type": "minecraft:loot_table",
-							"name": "cpp:parrot_head/4",
+							"name": "cpp:parrot_head.gray",
 							"conditions": [
 								{
 									"condition": "minecraft:entity_properties",

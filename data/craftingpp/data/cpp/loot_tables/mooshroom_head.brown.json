@@ -1,0 +1,19 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:carved_pumpkin",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.mooshroom_head.brown\"}'},id:'cpp:mooshroom_head.brown',CustomModelData:12970205,dict:['mooshroom_head']}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

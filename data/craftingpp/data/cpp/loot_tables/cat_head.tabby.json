@@ -1,0 +1,19 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:carved_pumpkin",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.cat_head.tabby\"}'},id:'cpp:cat_head.tabby',CustomModelData:12970270,dict:['cat_head']}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,5 +1,5 @@
 {
-	"type": "crafting_shaped",
+	"type": "minecraft:crafting_shaped",
 	"pattern": [
 		"XXX",
 		"X#X",
@@ -7,7 +7,7 @@
 	],
 	"key": {
 		"#": {
-			"item": "minecraft:redstone"
+			"item": "minecraft:nether_wart"
 		},
 		"X": {
 			"item": "minecraft:sand"

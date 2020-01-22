@@ -1,0 +1,117 @@
+{
+	"condition": "minecraft:alternative",
+	"terms":[
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:0b,tag:{CustomPotionEffects:[{Id:1b,Amplifier:1b,Duration:9600}]}},{Slot:2b,tag:{CustomPotionEffects:[{Id:1b,Amplifier:1b,Duration:9600}]}},{Slot:6b,tag:{CustomPotionEffects:[{Id:1b,Amplifier:1b,Duration:9600}]}},{Slot:8b,tag:{CustomPotionEffects:[{Id:1b,Amplifier:1b,Duration:9600}]}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:0b,tag:{CustomPotionEffects:[{Id:3b,Amplifier:1b,Duration:9600}]}},{Slot:2b,tag:{CustomPotionEffects:[{Id:3b,Amplifier:1b,Duration:9600}]}},{Slot:6b,tag:{CustomPotionEffects:[{Id:3b,Amplifier:1b,Duration:9600}]}},{Slot:8b,tag:{CustomPotionEffects:[{Id:3b,Amplifier:1b,Duration:9600}]}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:0b,tag:{CustomPotionEffects:[{Id:5b,Amplifier:1b,Duration:9600}]}},{Slot:2b,tag:{CustomPotionEffects:[{Id:5b,Amplifier:1b,Duration:9600}]}},{Slot:6b,tag:{CustomPotionEffects:[{Id:5b,Amplifier:1b,Duration:9600}]}},{Slot:8b,tag:{CustomPotionEffects:[{Id:5b,Amplifier:1b,Duration:9600}]}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:0b,tag:{CustomPotionEffects:[{Id:8b,Amplifier:1b,Duration:9600}]}},{Slot:2b,tag:{CustomPotionEffects:[{Id:8b,Amplifier:1b,Duration:9600}]}},{Slot:6b,tag:{CustomPotionEffects:[{Id:8b,Amplifier:1b,Duration:9600}]}},{Slot:8b,tag:{CustomPotionEffects:[{Id:8b,Amplifier:1b,Duration:9600}]}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:0b,tag:{CustomPotionEffects:[{Id:10b,Amplifier:1b,Duration:1800}]}},{Slot:2b,tag:{CustomPotionEffects:[{Id:10b,Amplifier:1b,Duration:1800}]}},{Slot:6b,tag:{CustomPotionEffects:[{Id:10b,Amplifier:1b,Duration:1800}]}},{Slot:8b,tag:{CustomPotionEffects:[{Id:10b,Amplifier:1b,Duration:1800}]}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:0b,tag:{CustomPotionEffects:[{Id:11b,Amplifier:1b,Duration:9600}]}},{Slot:2b,tag:{CustomPotionEffects:[{Id:11b,Amplifier:1b,Duration:9600}]}},{Slot:6b,tag:{CustomPotionEffects:[{Id:11b,Amplifier:1b,Duration:9600}]}},{Slot:8b,tag:{CustomPotionEffects:[{Id:11b,Amplifier:1b,Duration:9600}]}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:0b,tag:{CustomPotionEffects:[{Id:12b,Amplifier:0b,Duration:19200}]}},{Slot:2b,tag:{CustomPotionEffects:[{Id:12b,Amplifier:0b,Duration:19200}]}},{Slot:6b,tag:{CustomPotionEffects:[{Id:12b,Amplifier:0b,Duration:19200}]}},{Slot:8b,tag:{CustomPotionEffects:[{Id:12b,Amplifier:0b,Duration:19200}]}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:0b,tag:{CustomPotionEffects:[{Id:13b,Amplifier:0b,Duration:19200}]}},{Slot:2b,tag:{CustomPotionEffects:[{Id:13b,Amplifier:0b,Duration:19200}]}},{Slot:6b,tag:{CustomPotionEffects:[{Id:13b,Amplifier:0b,Duration:19200}]}},{Slot:8b,tag:{CustomPotionEffects:[{Id:13b,Amplifier:0b,Duration:19200}]}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:0b,tag:{CustomPotionEffects:[{Id:14b,Amplifier:0b,Duration:19200}]}},{Slot:2b,tag:{CustomPotionEffects:[{Id:14b,Amplifier:0b,Duration:19200}]}},{Slot:6b,tag:{CustomPotionEffects:[{Id:14b,Amplifier:0b,Duration:19200}]}},{Slot:8b,tag:{CustomPotionEffects:[{Id:14b,Amplifier:0b,Duration:19200}]}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:0b,tag:{CustomPotionEffects:[{Id:16b,Amplifier:0b,Duration:19200}]}},{Slot:2b,tag:{CustomPotionEffects:[{Id:16b,Amplifier:0b,Duration:19200}]}},{Slot:6b,tag:{CustomPotionEffects:[{Id:16b,Amplifier:0b,Duration:19200}]}},{Slot:8b,tag:{CustomPotionEffects:[{Id:16b,Amplifier:0b,Duration:19200}]}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:0b,tag:{CustomPotionEffects:[{Id:23b,Amplifier:3b}]}},{Slot:2b,tag:{CustomPotionEffects:[{Id:23b,Amplifier:3b}]}},{Slot:6b,tag:{CustomPotionEffects:[{Id:23b,Amplifier:3b}]}},{Slot:8b,tag:{CustomPotionEffects:[{Id:23b,Amplifier:3b}]}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:0b,tag:{CustomPotionEffects:[{Id:28b,Amplifier:0b,Duration:9600}]}},{Slot:2b,tag:{CustomPotionEffects:[{Id:28b,Amplifier:0b,Duration:9600}]}},{Slot:6b,tag:{CustomPotionEffects:[{Id:28b,Amplifier:0b,Duration:9600}]}},{Slot:8b,tag:{CustomPotionEffects:[{Id:28b,Amplifier:0b,Duration:9600}]}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:0b,tag:{CustomPotionEffects:[{Id:29b,Amplifier:0b,Duration:9600}]}},{Slot:2b,tag:{CustomPotionEffects:[{Id:29b,Amplifier:0b,Duration:9600}]}},{Slot:6b,tag:{CustomPotionEffects:[{Id:29b,Amplifier:0b,Duration:9600}]}},{Slot:8b,tag:{CustomPotionEffects:[{Id:29b,Amplifier:0b,Duration:9600}]}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:0b,tag:{CustomPotionEffects:[{Id:99b,Amplifier:0b,Duration:9600}]}},{Slot:2b,tag:{CustomPotionEffects:[{Id:99b,Amplifier:0b,Duration:9600}]}},{Slot:6b,tag:{CustomPotionEffects:[{Id:99b,Amplifier:0b,Duration:9600}]}},{Slot:8b,tag:{CustomPotionEffects:[{Id:99b,Amplifier:0b,Duration:9600}]}}]}"
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,29 @@
+{
+	"criteria": {
+		"tropical_fish": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:tropical_fish"
+				}
+			}
+		},
+		"pufferfish": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:pufferfish"
+				}
+			}
+		}
+	},
+	"requirements":[
+		[
+			"tropical_fish",
+			"pufferfish"
+		]
+	],
+	"rewards":{
+		"function": "cpp:food/pos1"
+	}
+}

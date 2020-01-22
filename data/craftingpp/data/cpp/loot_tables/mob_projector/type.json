@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{cppMachineBg:1b,display:{Name:'{\"translate\":\"item.cpp.mob_projector\"}'},CustomModelData:12971000}"
+							"tag": "{cppClear:1b,display:{Name:'{\"translate\":\"item.cpp.mob_projector\"}'},CustomModelData:12970000}"
 						},
 						{
 							"conditions": [

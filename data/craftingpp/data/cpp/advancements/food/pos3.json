@@ -1,0 +1,29 @@
+{
+	"criteria": {
+		"beef": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:beef"
+				}
+			}
+		},
+		"porkchop": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:porkchop"
+				}
+			}
+		}
+	},
+	"requirements":[
+		[
+			"beef",
+			"porkchop"
+		]
+	],
+	"rewards":{
+		"function": "cpp:food/pos3"
+	}
+}

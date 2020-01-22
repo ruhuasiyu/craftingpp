@@ -1,0 +1,56 @@
+{
+	"criteria": {
+		"melon_slice": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:melon_slice"
+				}
+			}
+		},
+		"cookie": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:cookie"
+				}
+			}
+		},
+		"poisonous_potato": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:poisonous_potato"
+				}
+			}
+		},
+		"sweet_berries": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:sweet_berries"
+				}
+			}
+		},
+		"raw_colorful_vegetable": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"nbt": "{id:\"cpp:raw_colorful_vegetable\"}"
+				}
+			}
+		}
+	},
+	"requirements":[
+		[
+			"melon_slice",
+			"cookie",
+			"poisonous_potato",
+			"sweet_berries",
+			"raw_colorful_vegetable"
+		]
+	],
+	"rewards":{
+		"function": "cpp:food/neg2"
+	}
+}

@@ -1,8 +1,8 @@
 {
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "item/rabbit_foot"
-    },
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "item/rabbit_foot"
+	},
 	"overrides": [
 		{ "predicate": { "custom_model_data": 12970001 }, "model": "cpp:material/wing_of_sky"},
 		{ "predicate": { "custom_model_data": 12970002 }, "model": "cpp:material/heart_of_crystal"},
@@ -10,6 +10,6 @@
 		{ "predicate": { "custom_model_data": 12970004 }, "model": "cpp:material/soul_of_dirt"},
 		{ "predicate": { "custom_model_data": 12970005 }, "model": "cpp:material/certification_of_earth"},
 		{ "predicate": { "custom_model_data": 12970006 }, "model": "cpp:material/limb_of_ridge"},
-		{ "predicate": { "custom_model_data": 12970007 }, "model": "cpp:material/spirit_of_life"}
+		{ "predicate": { "custom_model_data": 12970007 }, "model": "cpp:material/spirit_of_life"}		
 	]
 }

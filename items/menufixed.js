@@ -19,12 +19,12 @@ function main(){
 		var scrollTop = (document.documentElement.scrollTop || document.body.scrollTop)+2;
 		var len=hObj.length;
 		
-		for(var i=0;i<len;i++) navLiObj[i].style.borderBottomStyle = 'none';
-		if(scrollTop < hObj[1].offsetTop) navLiObj[0].style.borderBottomStyle = 'solid';
-		if(scrollTop >= hObj[len-1].offsetTop) navLiObj[len-1].style.borderBottomStyle = 'solid';
+		for(var i=0;i<len;i++) navLiObj[i].style.color = '#cccccc';
+		if(scrollTop < hObj[1].offsetTop) navLiObj[0].style.color = '#cccfff';
+		if(scrollTop >= hObj[len-1].offsetTop) navLiObj[len-1].style.color = '#cccfff';
 		for(i=1;i<len-1;i++){
 			if( hObj[i].offsetTop <= scrollTop && scrollTop <= hObj[i+1].offsetTop){
-				navLiObj[i].style.borderBottomStyle = 'solid';
+				navLiObj[i].style.color = '#cccfff';
 				break;
 			}
 		}	

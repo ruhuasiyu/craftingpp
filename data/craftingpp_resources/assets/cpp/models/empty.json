@@ -1,2 +1,14 @@
-{}
-
+{
+	"parent": "item/generated",
+	"display": {
+		"gui": {
+			"translation": [ 0, 0, -80]
+		},
+		"ground": {
+			"scale": [ 0, 0, 0 ]
+		}
+    },
+    "textures": {
+        "layer0": "cpp:empty"
+    }
+}

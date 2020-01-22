@@ -43,7 +43,7 @@
 								}
 							],
 							"type": "minecraft:loot_table",
-							"name": "cpp:cat_head/tabby"
+							"name": "cpp:cat_head.tabby"
 						},
 						{
 							"conditions": [
@@ -56,7 +56,7 @@
 								}
 							],
 							"type": "minecraft:loot_table",
-							"name": "cpp:cat_head/tuxedo"
+							"name": "cpp:cat_head.tuxedo"
 						},
 						{
 							"conditions": [
@@ -69,7 +69,7 @@
 								}
 							],
 							"type": "minecraft:loot_table",
-							"name": "cpp:cat_head/red"
+							"name": "cpp:cat_head.red"
 						},
 						{
 							"conditions": [
@@ -82,7 +82,7 @@
 								}
 							],
 							"type": "minecraft:loot_table",
-							"name": "cpp:cat_head/siamese"
+							"name": "cpp:cat_head.siamese"
 						},
 						{
 							"conditions": [
@@ -95,7 +95,7 @@
 								}
 							],
 							"type": "minecraft:loot_table",
-							"name": "cpp:cat_head/british_shorthair"
+							"name": "cpp:cat_head.british_shorthair"
 						},
 						{
 							"conditions": [
@@ -108,7 +108,7 @@
 								}
 							],
 							"type": "minecraft:loot_table",
-							"name": "cpp:cat_head/calico"
+							"name": "cpp:cat_head.calico"
 						},
 						{
 							"conditions": [
@@ -121,7 +121,7 @@
 								}
 							],
 							"type": "minecraft:loot_table",
-							"name": "cpp:cat_head/persian"
+							"name": "cpp:cat_head.persian"
 						},
 						{
 							"conditions": [
@@ -134,7 +134,7 @@
 								}
 							],
 							"type": "minecraft:loot_table",
-							"name": "cpp:cat_head/ragdoll"
+							"name": "cpp:cat_head.ragdoll"
 						},
 						{
 							"conditions": [
@@ -147,7 +147,7 @@
 								}
 							],
 							"type": "minecraft:loot_table",
-							"name": "cpp:cat_head/white"
+							"name": "cpp:cat_head.white"
 						},
 						{
 							"conditions": [
@@ -160,7 +160,7 @@
 								}
 							],
 							"type": "minecraft:loot_table",
-							"name": "cpp:cat_head/jellie"
+							"name": "cpp:cat_head.jellie"
 						},
 						{
 							"conditions": [
@@ -173,7 +173,7 @@
 								}
 							],
 							"type": "minecraft:loot_table",
-							"name": "cpp:cat_head/black"
+							"name": "cpp:cat_head.black"
 						}
 					]
 				}

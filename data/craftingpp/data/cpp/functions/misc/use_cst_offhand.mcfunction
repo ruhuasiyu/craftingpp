@@ -8,6 +8,7 @@ execute as @s[nbt={Inventory:[{Slot:-106b,tag:{id:"cpp:purple_force_of_life"}}]}
 execute as @s[nbt={Inventory:[{Slot:-106b,tag:{id:"cpp:white_force_of_lightning"}}]}] run function cpp:tool/elements/white
 execute as @s[nbt={Inventory:[{Slot:-106b,tag:{id:"cpp:black_force_of_moon"}}]}] at @s run function cpp:tool/elements/black
 
+execute as @s[nbt={Inventory:[{Slot:-106b,tag:{id:"cpp:portable_crafting_table"}}]}] at @s run function cpp:tool/portable_crafting_table
 execute as @s[nbt={Inventory:[{Slot:-106b,tag:{id:"cpp:portable_crafting_machine"}}]}] at @s run function cpp:tool/portable_crafting_machine
 
 execute as @s[nbt={Inventory:[{Slot:-106b,tag:{id:"cpp:magnet"}}]}] run function cpp:tool/magnet_off

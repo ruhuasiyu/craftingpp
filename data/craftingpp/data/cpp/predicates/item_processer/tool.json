@@ -165,6 +165,86 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
+					"nbt": "{Items:[{Slot:3b,id:'minecraft:golden_shovel'},{Slot:12b,id:'minecraft:clay'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:3b,id:'minecraft:wooden_shovel'},{Slot:12b,id:'minecraft:clay'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:3b,id:'minecraft:stone_shovel'},{Slot:12b,id:'minecraft:clay'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:3b,id:'minecraft:iron_shovel'},{Slot:12b,id:'minecraft:clay'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:3b,id:'minecraft:diamond_shovel'},{Slot:12b,id:'minecraft:clay'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:3b,id:'minecraft:golden_shovel'},{Slot:12b,id:'minecraft:clay'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:3b,id:'minecraft:wooden_shovel'},{Slot:12b,id:'minecraft:snow_block'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:3b,id:'minecraft:stone_shovel'},{Slot:12b,id:'minecraft:snow_block'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:3b,id:'minecraft:iron_shovel'},{Slot:12b,id:'minecraft:snow_block'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:3b,id:'minecraft:diamond_shovel'},{Slot:12b,id:'minecraft:snow_block'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
 					"nbt": "{Items:[{Slot:3b,id:'minecraft:golden_hoe'},{Slot:12b,id:'minecraft:coarse_dirt'}]}"
 				}
 			}
@@ -198,6 +278,46 @@
 			"predicate": {
 				"block": {
 					"nbt": "{Items:[{Slot:3b,id:'minecraft:diamond_hoe'},{Slot:12b,id:'minecraft:coarse_dirt'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:3b,id:'minecraft:golden_axe'},{Slot:12b,id:'minecraft:melon'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:3b,id:'minecraft:wooden_axe'},{Slot:12b,id:'minecraft:melon'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:3b,id:'minecraft:stone_axe'},{Slot:12b,id:'minecraft:melon'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:3b,id:'minecraft:iron_axe'},{Slot:12b,id:'minecraft:melon'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:3b,id:'minecraft:diamond_axe'},{Slot:12b,id:'minecraft:melon'}]}"
 				}
 			}
 		},
@@ -725,7 +845,47 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"nbt": "{Items:[{Slot:3b,id:'minecraft:shears'},{Slot:12b,id:'minecraft:dark_oak_wood'}]}"
+					"nbt": "{Items:[{Slot:3b,id:'minecraft:golden_pickaxe'},{Slot:12b,id:'minecraft:glowstone'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:3b,id:'minecraft:wooden_pickaxe'},{Slot:12b,id:'minecraft:glowstone'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:3b,id:'minecraft:stone_pickaxe'},{Slot:12b,id:'minecraft:glowstone'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:3b,id:'minecraft:iron_pickaxe'},{Slot:12b,id:'minecraft:glowstone'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:3b,id:'minecraft:diamond_pickaxe'},{Slot:12b,id:'minecraft:glowstone'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:3b,id:'minecraft:shears'},{Slot:12b,id:'minecraft:pumpkin'}]}"
 				}
 			}
 		}

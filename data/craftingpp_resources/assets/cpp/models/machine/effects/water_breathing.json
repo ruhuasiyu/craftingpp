@@ -1,7 +1,7 @@
 {
     "parent": "cpp:machine/effects/temp",
 	"textures": {
-		"effects": "mob_effect/water_breathing"
+		"layer0": "mob_effect/water_breathing"
 	}
 }
 

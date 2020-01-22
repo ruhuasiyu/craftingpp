@@ -9,6 +9,7 @@ data modify entity @e[type=armor_stand,tag=cpp_block,distance=..0.5,limit=1] Arm
 # 调整头部物
 execute if block ~ ~ ~ acacia_leaves as @e[type=armor_stand,tag=cpp_block,distance=..0.5,limit=1] run function cpp:blocks/put/acacia_leaves1
 execute if block ~ ~ ~ acacia_sapling as @e[type=armor_stand,tag=cpp_block,distance=..0.5,limit=1] run function cpp:blocks/put/acacia_sapling1
+execute if block ~ ~ ~ pumpkin_stem as @e[type=armor_stand,tag=cpp_block,distance=..0.5,limit=1] run function cpp:blocks/put/pumpkin_stem1
 execute if block ~ ~ ~ barrel as @e[type=armor_stand,tag=cpp_block,distance=..0.5,limit=1] run function cpp:blocks/put/barrel1
 execute if block ~ ~ ~ carved_pumpkin as @e[type=armor_stand,tag=cpp_block,distance=..0.5,limit=1] run function cpp:blocks/put/carved_pumpkin1
 execute if block ~ ~ ~ chest as @e[type=armor_stand,tag=cpp_block,distance=..0.5,limit=1] run function cpp:blocks/put/chest1

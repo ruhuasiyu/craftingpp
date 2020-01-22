@@ -1,0 +1,19 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:honey_bottle",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.agentia_of_eyesight\"}',Lore:['[{\"translate\":\"effect.minecraft.night_vision\",\"italic\":\"false\",\"color\":\"blue\"},{\"text\":\" (8:00)\"}]']},id:'cpp:agentia_of_eyesight',CustomModelData:12970109}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

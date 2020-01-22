@@ -18,7 +18,7 @@
 								}
 							],
 							"type": "minecraft:loot_table",
-							"name": "cpp:potions/slow_falling"
+							"name": "cpp:agentia_of_lightness"
 						},
 						{
 							"conditions": [
@@ -32,7 +32,7 @@
 								}
 							],
 							"type": "minecraft:loot_table",
-							"name": "cpp:potions/night_vision"
+							"name": "cpp:agentia_of_eyesight"
 						},
 						{
 							"conditions": [
@@ -46,7 +46,7 @@
 								}
 							],
 							"type": "minecraft:loot_table",
-							"name": "cpp:potions/fire_resistance"
+							"name": "cpp:agentia_of_fire_shield"
 						},
 						{
 							"conditions": [
@@ -60,7 +60,7 @@
 								}
 							],
 							"type": "minecraft:loot_table",
-							"name": "cpp:potions/water_breathing"
+							"name": "cpp:agentia_of_waterless"
 						},
 						{
 							"conditions": [
@@ -74,7 +74,7 @@
 								}
 							],
 							"type": "minecraft:loot_table",
-							"name": "cpp:potions/invisibility"
+							"name": "cpp:agentia_of_transparentness"
 						},
 						{
 							"conditions": [
@@ -88,7 +88,7 @@
 								}
 							],
 							"type": "minecraft:loot_table",
-							"name": "cpp:potions/leaping"
+							"name": "cpp:agentia_of_bounce"
 						},
 						{
 							"conditions": [
@@ -102,7 +102,7 @@
 								}
 							],
 							"type": "minecraft:loot_table",
-							"name": "cpp:potions/swiftness"
+							"name": "cpp:agentia_of_agileness"
 						},
 						{
 							"conditions": [
@@ -116,7 +116,7 @@
 								}
 							],
 							"type": "minecraft:loot_table",
-							"name": "cpp:potions/strength"
+							"name": "cpp:agentia_of_sharpness"
 						},
 						{
 							"conditions": [
@@ -130,7 +130,7 @@
 								}
 							],
 							"type": "minecraft:loot_table",
-							"name": "cpp:potions/regeneration"
+							"name": "cpp:agentia_of_rejuveness"
 						},
 						{
 							"conditions": [
@@ -144,35 +144,7 @@
 								}
 							],
 							"type": "minecraft:loot_table",
-							"name": "cpp:potions/healing"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{id:'minecraft:nautilus_shell'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:loot_table",
-							"name": "cpp:potions/tide"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{tag:{id:'cpp:enchanted_iron'}}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:loot_table",
-							"name": "cpp:potions/chain"
+							"name": "cpp:agentia_of_blood"
 						},
 						{
 							"conditions": [
@@ -186,7 +158,7 @@
 								}
 							],
 							"type": "minecraft:loot_table",
-							"name": "cpp:potions/haste"
+							"name": "cpp:agentia_of_extremeness"
 						},
 						{
 							"conditions": [
@@ -200,7 +172,133 @@
 								}
 							],
 							"type": "minecraft:loot_table",
-							"name": "cpp:potions/resistance"
+							"name": "cpp:agentia_of_shield"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:nautilus_shell'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:agentia_of_tide"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{tag:{id:'cpp:enchanted_iron'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:agentia_of_chain"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{tag:{id:'cpp:wing_of_sky'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:agentia_of_sky"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{tag:{id:'cpp:heart_of_crystal'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:agentia_of_ocean"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{tag:{id:'cpp:limb_of_ridge'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:agentia_of_ridge"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{tag:{id:'cpp:soul_of_dirt'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:agentia_of_dirt"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{tag:{id:'cpp:certification_of_earth'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:agentia_of_earth"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{tag:{id:'cpp:nova_of_fire'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:agentia_of_fire"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{tag:{id:'cpp:spirit_of_life'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:agentia_of_life"
 						}
 					]
 				}

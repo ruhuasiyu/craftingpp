@@ -1,0 +1,314 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:alternatives",
+					"children": [
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,tag:{CustomPotionEffects:[{Id:1b}]}}]} "
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Item:{tag:{display:{Lore:['{\"translate\":\"lore.cpp.attached.speed\"}']},triggerEffect:[{id:'speed'}]}}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,tag:{CustomPotionEffects:[{Id:1b}]}}]} "
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Item:{tag:{display:{Lore:['{\"translate\":\"lore.cpp.attached.speed\"}']},triggerEffect:[{id:'speed'}]}}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,tag:{CustomPotionEffects:[{Id:3b}]}}]} "
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Item:{tag:{display:{Lore:['{\"translate\":\"lore.cpp.attached.haste\"}']},triggerEffect:[{id:'haste'}]}}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,tag:{CustomPotionEffects:[{Id:5b}]}}]} "
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Item:{tag:{display:{Lore:['{\"translate\":\"lore.cpp.attached.strength\"}']},triggerEffect:[{id:'strength'}]}}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,tag:{CustomPotionEffects:[{Id:8b}]}}]} "
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Item:{tag:{display:{Lore:['{\"translate\":\"lore.cpp.attached.jump_boost\"}']},triggerEffect:[{id:'jump_boost'}]}}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,tag:{CustomPotionEffects:[{Id:10b}]}}]} "
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Item:{tag:{display:{Lore:['{\"translate\":\"lore.cpp.attached.regeneration\"}']},triggerEffect:[{id:'regeneration'}]}}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,tag:{CustomPotionEffects:[{Id:11b}]}}]} "
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Item:{tag:{display:{Lore:['{\"translate\":\"lore.cpp.attached.resistance\"}']},triggerEffect:[{id:'resistance'}]}}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,tag:{CustomPotionEffects:[{Id:12b}]}}]} "
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Item:{tag:{display:{Lore:['{\"translate\":\"lore.cpp.attached.fire_resistance\"}']},triggerEffect:[{id:'fire_resistance'}]}}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,tag:{CustomPotionEffects:[{Id:13b}]}}]} "
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Item:{tag:{display:{Lore:['{\"translate\":\"lore.cpp.attached.water_breathing\"}']},triggerEffect:[{id:'water_breathing'}]}}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,tag:{CustomPotionEffects:[{Id:14b}]}}]} "
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Item:{tag:{display:{Lore:['{\"translate\":\"lore.cpp.attached.invisibility\"}']},triggerEffect:[{id:'invisibility'}]}}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,tag:{CustomPotionEffects:[{Id:16b}]}}]} "
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Item:{tag:{display:{Lore:['{\"translate\":\"lore.cpp.attached.night_vision\"}']},triggerEffect:[{id:'night_vision'}]}}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,tag:{CustomPotionEffects:[{Id:23b}]}}]} "
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Item:{tag:{display:{Lore:['{\"translate\":\"lore.cpp.attached.saturation\"}']},triggerEffect:[{id:'saturation'}]}}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,tag:{CustomPotionEffects:[{Id:28b}]}}]} "
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Item:{tag:{display:{Lore:['{\"translate\":\"lore.cpp.attached.slow_falling\"}']},triggerEffect:[{id:'slow_falling'}]}}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,tag:{CustomPotionEffects:[{Id:29b}]}}]} "
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Item:{tag:{display:{Lore:['{\"translate\":\"lore.cpp.attached.conduit_power\"}']},triggerEffect:[{id:'conduit_power'}]}}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,tag:{CustomPotionEffects:[{Id:99b}]}}]} "
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Item:{tag:{display:{Lore:['{\"translate\":\"lore.cpp.attached.chain\"}']},triggerEffect:[{id:'chain'}]}}}"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,38 @@
+{
+	"criteria": {
+		"pumpkin_pie": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:pumpkin_pie"
+				}
+			}
+		},
+		"carrot": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:carrot"
+				}
+			}
+		},
+		"golden_carrot": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:golden_carrot"
+				}
+			}
+		}
+	},
+	"requirements":[
+		[
+			"pumpkin_pie",
+			"carrot",
+			"golden_carrot"
+		]
+	],
+	"rewards":{
+		"function": "cpp:food/neg3"
+	}
+}

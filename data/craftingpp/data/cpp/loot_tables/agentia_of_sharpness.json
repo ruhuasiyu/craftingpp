@@ -1,0 +1,19 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:honey_bottle",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.agentia_of_sharpness\"}',Lore:['[{\"translate\":\"effect.minecraft.strength\",\"italic\":\"false\",\"color\":\"blue\"},{\"text\":\" II (4:00)\"}]','\" \"','{\"translate\":\"potion.whenDrank\",\"italic\":\"false\"}','[{\"text\":\"+3 \",\"italic\":\"false\",\"color\":\"blue\"},{\"translate\":\"attribute.name.generic.attackDamage\"}]']},id:'cpp:agentia_of_sharpness',CustomModelData:12970115}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

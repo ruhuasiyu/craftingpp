@@ -1,0 +1,19 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:carved_pumpkin",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.parrot_head.gray\"}'},id:'cpp:parrot_head.gray',CustomModelData:12970264,dict:['parrot_head']}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

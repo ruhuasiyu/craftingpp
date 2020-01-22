@@ -1,0 +1,76 @@
+{
+	"parent": "minecraft:recipes/root",
+	"rewards": {
+		"recipes": [
+			"minecraft:stone_axe"
+		]
+	},
+	"criteria": {
+		"has_cobblestone": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:cobblestone"
+					}
+				]
+			}
+		},
+		"has_stone": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:stone"
+					}
+				]
+			}
+		},
+		"has_granite": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:granite"
+					}
+				]
+			}
+		},
+		"has_diorite": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:diorite"
+					}
+				]
+			}
+		},
+		"has_andesite": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:andesite"
+					}
+				]
+			}
+		},
+		"has_the_recipe": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "minecraft:stone_axe"
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_cobblestone",
+			"has_stone",
+			"has_granite",
+			"has_diorite",
+			"has_andesite",
+			"has_the_recipe"
+		]
+	]
+}

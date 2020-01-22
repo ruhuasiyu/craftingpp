@@ -1,0 +1,15 @@
+{
+	"parent": "item/generated",
+	"display": {
+		"gui": {
+			"scale": [ 2.375, 2.375, 1 ],
+			"translation": [ 73, -27, -60]
+		},
+		"ground": {
+			"scale": [ 0, 0, 0 ]
+		}
+    },
+    "textures": {
+        "layer0": "cpp:machine/gui/mob_projector5"
+    }
+}

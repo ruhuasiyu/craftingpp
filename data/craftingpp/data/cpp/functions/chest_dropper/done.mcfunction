@@ -1,5 +1,6 @@
-setblock ~ 255 ~ shulker_box
-data modify block ~ 255 ~ Items append from block ~ ~ ~ Items[0]
-loot spawn ~ ~-0.5 ~ mine ~ 255 ~ diamond_pickaxe{isShulkerMarker:1b}
-setblock ~ 255 ~ air
-data remove block ~ ~ ~ Items[0]
+data modify storage cpp:chest_dropper Item set from block ~ ~-255 ~ Items[0]
+data modify storage cpp:chest_dropper Item.Count set value 1b
+data modify entity @s Item set from storage cpp:chest_dropper Item
+tag @s remove cpp_temp
+tp ~ ~-255.3 ~
+execute store result block ~ ~-255 ~ Items[0].Count byte 0.999 run data get block ~ ~-255 ~ Items[0].Count

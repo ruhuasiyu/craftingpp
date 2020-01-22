@@ -1,0 +1,38 @@
+{
+	"criteria": {
+		"dried_kelp": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:dried_kelp"
+				}
+			}
+		},
+		"beetroot": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:beetroot"
+				}
+			}
+		},
+		"potato": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:potato"
+				}
+			}
+		}
+	},
+	"requirements":[
+		[
+			"dried_kelp",
+			"beetroot",
+			"potato"
+		]
+	],
+	"rewards":{
+		"function": "cpp:food/neg1"
+	}
+}

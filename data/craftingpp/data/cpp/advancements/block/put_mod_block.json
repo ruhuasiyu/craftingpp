@@ -1,0 +1,15 @@
+{
+	"criteria": {
+		"machine": {
+			"trigger": "minecraft:placed_block",
+			"conditions": {
+				"item": {
+					"tag":"cpp:blocks"
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "cpp:block/reset"
+	}
+}
