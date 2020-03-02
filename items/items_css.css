@@ -715,7 +715,7 @@ span.ui a.fire, a.fire{
 .witch_spawn_egg                {background-position: -416px -1152px;}
 .wolf_spawn_egg                 {background-position: -448px -1152px;}
 .zombie_spawn_egg               {background-position: -480px -1152px;}
-.zombie_pigman_spawn_egg        {background-position: -512px -1152px;}
+.zombified_piglin_spawn_egg     {background-position: -512px -1152px;}
 .bowl                           {background-position: -576px -1152px;}
 .clock                          {background-position: -640px -1152px;}
 .compass                        {background-position: -672px -1152px;}
@@ -1704,7 +1704,7 @@ span.ui a.fire, a.fire{
 .mob_slime                      {background-position: -160px -1664px;}
 .mob_phantom                    {background-position: -192px -1664px;}
 .mob_polar_bear                 {background-position: -224px -1664px;}
-.mob_zombie_pigman              {background-position: -256px -1664px;}
+.mob_zombified_piglin           {background-position: -256px -1664px;}
 .mob_ghast                      {background-position: -000px -1696px;}
 .mob_magma_cube                 {background-position: -032px -1696px;}
 .mob_blaze                      {background-position: -064px -1696px;}
@@ -1787,7 +1787,7 @@ span.ui a.fire, a.fire{
 .guardian_head                  {background-position: -064px -1952px;}
 .elder_guardian_head            {background-position: -096px -1952px;}
 
-.zombie_pigman_head             {background-position: -128px -1952px;}
+.zombified_piglin_head          {background-position: -128px -1952px;}
 .blaze_head                     {background-position: -160px -1952px;}
 .ghast_head                     {background-position: -192px -1952px;}
 .magma_cube_head                {background-position: -224px -1952px;}
@@ -1852,6 +1852,25 @@ span.ui a.fire, a.fire{
 .character60                    {background-position: -224px -2144px;}
 .character61                    {background-position: -256px -2144px;}
 .character62                    {background-position: -000px -2176px;}
+.calliopsis                     {background-position: -032px -2176px;}
+.cyclamen                       {background-position: -064px -2176px;}
+.iris                           {background-position: -096px -2176px;}
+.lilium_pumilum                 {background-position: -128px -2176px;}
+.snowdrop                       {background-position: -160px -2176px;}
+.narcissus                      {background-position: -192px -2176px;}
+.cole_flower                    {background-position: -224px -2176px;}
+.lupine                         {background-position: -256px -2176px;}
+.crocu                          {background-position: -000px -2208px;}
+.pansy                          {background-position: -032px -2208px;}
+.arabia_speedwell               {background-position: -064px -2208px;}
+.silene_pendula                 {background-position: -096px -2208px;}
+.blue_rose                      {background-position: -128px -2208px;}
+.character63                    {background-position: -160px -2208px;}
+.character64                    {background-position: -192px -2208px;}
+.character65                    {background-position: -224px -2208px;}
+.character66                    {background-position: -256px -2208px;}
+.character67                    {background-position: -000px -2240px;}
+.piglin_head                    {background-position: -032px -2240px;}
 
 .speed               {background-position: -000px -00px;}
 .slowness            {background-position: -018px -00px;}
