@@ -7,10 +7,6 @@
 		{ "predicate": { "custom_model_data": 12970002 }, "model": "cpp:painting/classical_painting"},
 		{ "predicate": { "custom_model_data": 12970003 }, "model": "cpp:image/happiness"},
 		
-		{ "predicate": { "custom_model_data": 12970101 }, "model": "cpp:item_frame/glass"},
-		{ "predicate": { "custom_model_data": 12970201 }, "model": "cpp:item_frame/glass_up"},
-		{ "predicate": { "custom_model_data": 12970301 }, "model": "cpp:item_frame/glass_down"},
-		
 		{ "predicate": { "custom_model_data": 12971001 }, "model": "cpp:tool/firecrackers"},
 		
 		{ "predicate": { "custom_model_data": 12974401 }, "model": "cpp:flag/china_flag" },

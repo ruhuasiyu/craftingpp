@@ -8,10 +8,21 @@
 		{ "predicate": { "custom_model_data": 12970002 }, "model": "cpp:food/baked_carrot"},
 		{ "predicate": { "custom_model_data": 12970003 }, "model": "cpp:food/dumpling"},
 		{ "predicate": { "custom_model_data": 12970004 }, "model": "cpp:food/burger"},
-		{ "predicate": { "custom_model_data": 12970005 }, "model": "cpp:food/cheese"},
-		{ "predicate": { "custom_model_data": 12970006 }, "model": "cpp:food/ketchup"},
+		{ "predicate": { "custom_model_data": 12970005 }, "model": "cpp:food/vegetable_kebab"},
+		{ "predicate": { "custom_model_data": 12970006 }, "model": "cpp:food/cupcake"},
 		{ "predicate": { "custom_model_data": 12970007 }, "model": "cpp:food/pizza"},
 		{ "predicate": { "custom_model_data": 12970008 }, "model": "cpp:food/sushi"},
-		{ "predicate": { "custom_model_data": 12970009 }, "model": "cpp:food/stargazy_pie"}
+		{ "predicate": { "custom_model_data": 12970009 }, "model": "cpp:food/stargazy_pie"},
+		{ "predicate": { "custom_model_data": 12970010 }, "model": "cpp:food/cake_roll"},
+		{ "predicate": { "custom_model_data": 12970011 }, "model": "cpp:food/caramel_pudding"},
+		{ "predicate": { "custom_model_data": 12970012 }, "model": "cpp:food/croissant"},
+		{ "predicate": { "custom_model_data": 12970013 }, "model": "cpp:food/sandwich"},
+		{ "predicate": { "custom_model_data": 12970014 }, "model": "cpp:food/doughnut"},
+		{ "predicate": { "custom_model_data": 12970015 }, "model": "cpp:food/purple_doughnut"},
+		{ "predicate": { "custom_model_data": 12970016 }, "model": "cpp:food/pink_doughnut"},
+		{ "predicate": { "custom_model_data": 12970017 }, "model": "cpp:food/white_doughnut"},
+		{ "predicate": { "custom_model_data": 12970018 }, "model": "cpp:food/blue_doughnut"},
+		{ "predicate": { "custom_model_data": 12970019 }, "model": "cpp:food/green_doughnut"},
+		{ "predicate": { "custom_model_data": 12970020 }, "model": "cpp:food/honey_pancake"}
 	]
 }

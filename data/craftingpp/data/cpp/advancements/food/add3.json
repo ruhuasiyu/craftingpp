@@ -1,0 +1,15 @@
+{
+	"criteria": {
+		"dumpling": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"nbt": "{id:\"cpp:dumpling\"}"
+				}
+			}
+		}
+	},
+	"rewards":{
+		"function": "cpp:food/add3"
+	}
+}

@@ -1,0 +1,19 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:cookie",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.orange_jam\"}'},id:'cpp:orange_jam',CustomModelData:12970104}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

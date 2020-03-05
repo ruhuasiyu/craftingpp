@@ -1,0 +1,13 @@
+{
+	"criteria": {
+		"machine": {
+			"trigger": "minecraft:placed_block",
+			"conditions": {
+				"block": "minecraft:carved_pumpkin"
+			}
+		}
+	},
+	"rewards": {
+		"function": "cpp:block/reset/carved_pumpkin"
+	}
+}

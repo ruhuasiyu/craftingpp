@@ -1,0 +1,19 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type":"minecraft:item",
+					"name": "minecraft:apple",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag":"{display:{Name:'{\"translate\":\"item.cpp.candied_haw\"}'},id:'cpp:candied_haw',CustomModelData:12970103}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

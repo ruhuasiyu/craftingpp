@@ -47,6 +47,22 @@
 					"item": "minecraft:salmon"
 				}
 			}
+		},
+		"yeast_powder": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"nbt": "{id:\"cpp:yeast_powder\"}"
+				}
+			}
+		},
+		"cake_roll": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"nbt": "{id:\"cpp:cake_roll\"}"
+				}
+			}
 		}
 	},
 	"requirements":[
@@ -56,7 +72,9 @@
 			"rabbit",
 			"chicken",
 			"cod",
-			"salmon"
+			"salmon",
+			"yeast_powder",
+			"cake_roll"
 		]
 	],
 	"rewards":{

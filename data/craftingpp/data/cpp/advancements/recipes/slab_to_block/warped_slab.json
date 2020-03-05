@@ -1,0 +1,32 @@
+{
+	"criteria": {
+		"warped_slab": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:warped_slab",
+						"count": {
+							"min": 2
+						}
+					}
+				]
+			}
+		},
+		"has_the_recipe": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "cpp:slab_to_block/warped_slab"
+			}
+		}
+	},
+	"rewards":{
+		"recipes": ["cpp:slab_to_block/warped_slab"]
+	},
+	"requirements": [
+		[
+			"warped_slab",
+			"has_the_recipe"
+		]
+	]
+}

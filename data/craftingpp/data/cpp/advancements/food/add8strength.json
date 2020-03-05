@@ -1,0 +1,47 @@
+{
+	"criteria": {
+		"beef_kebab": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"nbt": "{id:\"cpp:beef_kebab\"}"
+				}
+			}
+		},
+		"lamb_kebab": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"nbt": "{id:\"cpp:lamb_kebab\"}"
+				}
+			}
+		},
+		"chicken_kebab": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"nbt": "{id:\"cpp:chicken_kebab\"}"
+				}
+			}
+		},
+		"pork_kebab": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"nbt": "{id:\"cpp:pork_kebab\"}"
+				}
+			}
+		}
+	},
+	"rewards":{
+		"function": "cpp:food/add8strength"
+	},
+	"requirements": [
+		[
+			"beef_kebab",
+			"lamb_kebab",
+			"chicken_kebab",
+			"pork_kebab"
+		]
+	]
+}

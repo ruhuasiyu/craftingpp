@@ -1,4 +1,4 @@
-# 寻找与cpp:loc_block Item.id 相同的方块，标记为 cpp_loc_block_pos 盔甲架
+# 寻找与 #block_id cppValue 相同的方块，标记为 cpp_loc_block_pos 盔甲架
 # 记录玩家和视线坐标
 execute anchored eyes run summon armor_stand ^ ^ ^ {Tags:["cpp_loc_block_as"],Invulnerable:1b,Invisible:1b,Small:1b,Marker:1b,NoGravity:1b}
 execute store result score #x cppValue run data get entity @e[type=armor_stand,distance=..3,tag=cpp_loc_block_as,limit=1] Pos[0] 100

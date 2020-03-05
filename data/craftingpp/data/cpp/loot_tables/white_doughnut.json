@@ -1,0 +1,19 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:bread",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.white_doughnut\"}'},id:'cpp:white_doughnut',CustomModelData:12970017}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

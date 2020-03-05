@@ -8,6 +8,6 @@
 		}
 	},
 	"rewards": {
-		"function": "cpp:block/snow_block/reset"
+		"function": "cpp:block/reset/snow_block"
 	}
 }

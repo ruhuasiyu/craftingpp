@@ -8,7 +8,7 @@
 			"condition": "minecraft:entity_properties",
 			"entity": "killer",
 			"predicate": {
-				"type": "minecraft:zombie_pigman"
+				"type": "minecraft:zombified_piglin"
 			} 
 		}
 	]

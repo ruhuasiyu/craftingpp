@@ -23,13 +23,31 @@
 					"nbt": "{id:\"cpp:boiled_egg\"}"
 				}
 			}
+		},
+		"butter": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"nbt": "{id:\"cpp:butter\"}"
+				}
+			}
+		},
+		"cheese": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"nbt": "{id:\"cpp:cheese\"}"
+				}
+			}
 		}
 	},
 	"requirements":[
 		[
 			"rotten_flesh",
 			"dumpling",
-			"boiled_egg"
+			"boiled_egg",
+			"butter",
+			"cheese"
 		]
 	],
 	"rewards":{

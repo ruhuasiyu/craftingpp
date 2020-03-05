@@ -1,0 +1,20 @@
+{
+	"criteria": {
+		"vegetable_kebab": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"nbt": "{id:\"cpp:vegetable_kebab\"}"
+				}
+			}
+		}
+	},
+	"rewards":{
+		"function": "cpp:food/add5jump"
+	},
+	"requirements": [
+		[
+			"vegetable_kebab"
+		]
+	]
+}

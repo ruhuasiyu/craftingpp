@@ -23,14 +23,85 @@
 					"nbt": "{id:\"cpp:meat_floss_bread\"}"
 				}
 			}
+		},
+		"caramel_pudding": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"nbt": "{id:\"cpp:caramel_pudding\"}"
+				}
+			}
+		},
+		"doughnut": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"nbt": "{id:\"cpp:doughnut\"}"
+				}
+			}
+		},
+		"purple_doughnut": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"nbt": "{id:\"cpp:purple_doughnut\"}"
+				}
+			}
+		},
+		"pink_doughnut": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"nbt": "{id:\"cpp:pink_doughnut\"}"
+				}
+			}
+		},
+		"white_doughnut": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"nbt": "{id:\"cpp:white_doughnut\"}"
+				}
+			}
+		},
+		"blue_doughnut": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"nbt": "{id:\"cpp:blue_doughnut\"}"
+				}
+			}
+		},
+		"green_doughnut": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"nbt": "{id:\"cpp:green_doughnut\"}"
+				}
+			}
+		},
+		"honey_pancake": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"nbt": "{id:\"cpp:honey_pancake\"}"
+				}
+			}
 		}
 	},
 	"requirements":[
 		[
 			"cooked_porkchop",
 			"cooked_beef",
-			"meat_floss_bread"
-		]
+			"meat_floss_bread",
+			"caramel_pudding",
+			"doughnut",
+			"purple_doughnut",
+			"pink_doughnut",
+			"white_doughnut",
+			"blue_doughnut",
+			"green_doughnut",
+			"honey_pancake"		]
 	],
 	"rewards":{
 		"function": "cpp:food/pos8"

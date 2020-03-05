@@ -312,6 +312,54 @@
 					"nbt": "{Items:[{id:'minecraft:painting'},{tag:{id:'cpp:blackthorn'}},{tag:{id:'cpp:trifolium'}},{tag:{id:'cpp:lycoris_radiata'}}]}"
 				}
 			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{tag:{dict:['salt']}},{id:'minecraft:sugar'},{tag:{id:'cpp:tomato'}},{id:'minecraft:sweet_berries'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{tag:{dict:['salt']}},{id:'minecraft:sugar'},{tag:{id:'cpp:strawberry'}},{id:'minecraft:sweet_berries'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{tag:{dict:['salt']}},{id:'minecraft:sugar'},{tag:{id:'cpp:blueberry'}},{id:'minecraft:sweet_berries'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{tag:{dict:['salt']}},{id:'minecraft:sugar'},{tag:{id:'cpp:orange'}},{id:'minecraft:sweet_berries'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{tag:{dict:['salt']}},{id:'minecraft:sugar'},{tag:{id:'cpp:cherry'}},{id:'minecraft:sweet_berries'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{tag:{dict:['salt']}},{id:'minecraft:sugar'},{id:'minecraft:apple'},{id:'minecraft:sweet_berries'}]}"
+				}
+			}
 		}
 	]
 }

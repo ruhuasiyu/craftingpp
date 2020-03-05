@@ -31,6 +31,7 @@
 		{ "predicate": { "custom_model_data": 12970025 }, "model": "cpp:fruit/citrus"},
 		
 		{ "predicate": { "custom_model_data": 12970100 }, "model": "cpp:food/toffee_apple"},
-		{ "predicate": { "custom_model_data": 12970101 }, "model": "cpp:food/raisin"}
+		{ "predicate": { "custom_model_data": 12970101 }, "model": "cpp:food/raisin"},
+		{ "predicate": { "custom_model_data": 12970102 }, "model": "cpp:food/candied_haw"}
 	]
 }

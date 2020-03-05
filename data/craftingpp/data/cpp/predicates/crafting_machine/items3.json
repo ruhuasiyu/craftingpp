@@ -29,14 +29,6 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"nbt": "{Items:[{tag:{id:'cpp:tomato'}},{tag:{dict:['salt']}},{id:'minecraft:sugar'}]}"
-				}
-			}
-		},
-		{
-			"condition": "minecraft:location_check",
-			"predicate": {
-				"block": {
 					"nbt": "{Items:[{id:'minecraft:wheat'},{id:'minecraft:salmon'},{id:'minecraft:dried_kelp'}]}"
 				}
 			}

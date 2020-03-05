@@ -5,11 +5,11 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:pumpkin_seeds",
+					"name": "minecraft:acacia_sapling",
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"translate\":\"item.cpp.bauhinia\"}'},id:'cpp:bauhinia',CustomModelData:12973090}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.bauhinia\"}'},id:'cpp:bauhinia',CustomModelData:12970070}"
 						}
 					]
 				}

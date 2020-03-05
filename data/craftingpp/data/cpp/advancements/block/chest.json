@@ -1,0 +1,13 @@
+{
+	"criteria": {
+		"machine": {
+			"trigger": "minecraft:placed_block",
+			"conditions": {
+				"block": "minecraft:chest"
+			}
+		}
+	},
+	"rewards": {
+		"function": "cpp:block/reset/chest"
+	}
+}

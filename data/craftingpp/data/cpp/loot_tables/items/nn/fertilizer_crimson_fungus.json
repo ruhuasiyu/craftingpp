@@ -1,0 +1,28 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:crimson_stem",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": 4
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:crimson_fungus"
+				}
+			]
+		}
+	]
+}

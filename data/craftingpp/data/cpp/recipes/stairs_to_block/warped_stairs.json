@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"group": "planks_from_stairs",
+	"pattern": [
+		"##",
+		"##"
+	],
+	"key": {
+		"#": {
+			"item": "minecraft:warped_stairs"
+		}
+	},
+	"result": {
+		"item": "minecraft:warped_planks",
+		"count": 4
+	}
+}

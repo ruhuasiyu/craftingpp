@@ -1,4 +1,3 @@
-# 破坏树苗
-execute unless block ~ ~ ~ acacia_sapling run function cpp:block/break/acacia_sapling
-# 树生长
-execute as @s[tag=!cpp_acacia_sapling] if block ~ ~ ~ acacia_sapling[stage=1] run function cpp:plants/grow
+setblock ~ ~ ~ acacia_sapling
+execute as @s[tag=cpp_crops] run function cpp:plants/crops/grow
+execute as @s[tag=cpp_trees] run function cpp:plants/trees/grow

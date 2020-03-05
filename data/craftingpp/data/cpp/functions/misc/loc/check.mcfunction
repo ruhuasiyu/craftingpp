@@ -1,8 +1,14 @@
-loot replace entity @s weapon.mainhand 1 mine ~ ~ ~ shears{Enchantments:[{id:"minecraft:silk_touch",lvl:1s}]}
-execute store result score @s cppValue run data modify entity @s HandItems[0].id set from storage cpp:loc_block Item.id
-execute if block ~ ~ ~ fire if data storage cpp:loc_block Item{id:"minecraft:fire"} run scoreboard players set @s cppValue 0
-execute if block ~ ~ ~ water if data storage cpp:loc_block Item{id:"minecraft:water"} run scoreboard players set @s cppValue 0
-execute if block ~ ~ ~ lava if data storage cpp:loc_block Item{id:"minecraft:lava"} run scoreboard players set @s cppValue 0
-execute if block ~ ~ ~ barrier if data storage cpp:loc_block Item{id:"minecraft:barrier"} run scoreboard players set @s cppValue 0
-execute if block ~ ~ ~ pumpkin_stem if data storage cpp:loc_block Item{id:"minecraft:pumpkin_seeds"} run scoreboard players set @s cppValue 0
-tag @s[scores={cppValue=0}] add cpp_loc_block_pos_pot
+execute if score #block_id cppValue matches 1 if block ~ ~ ~ acacia_sapling run tag @s add cpp_loc_block_pos_pot
+execute if score #block_id cppValue matches 2 if block ~ ~ ~ acacia_leaves run tag @s add cpp_loc_block_pos_pot
+execute if score #block_id cppValue matches 3 if block ~ ~ ~ barrel run tag @s add cpp_loc_block_pos_pot
+execute if score #block_id cppValue matches 4 if block ~ ~ ~ carved_pumpkin run tag @s add cpp_loc_block_pos_pot
+execute if score #block_id cppValue matches 5 if block ~ ~ ~ chest run tag @s add cpp_loc_block_pos_pot
+execute if score #block_id cppValue matches 6 if block ~ ~ ~ gold_block run tag @s add cpp_loc_block_pos_pot
+execute if score #block_id cppValue matches 7 if block ~ ~ ~ campfire run tag @s add cpp_loc_block_pos_pot
+execute if score #block_id cppValue matches 8 if block ~ ~ ~ blast_furnace run tag @s add cpp_loc_block_pos_pot
+execute if score #block_id cppValue matches 9 if block ~ ~ ~ smoker run tag @s add cpp_loc_block_pos_pot
+execute if score #block_id cppValue matches 10 if block ~ ~ ~ furnace run tag @s add cpp_loc_block_pos_pot
+execute if score #block_id cppValue matches 11 if block ~ ~ ~ brewing_stand run tag @s add cpp_loc_block_pos_pot
+execute if score #block_id cppValue matches 12 if block ~ ~ ~ grass run tag @s add cpp_loc_block_pos_pot
+execute if score #block_id cppValue matches 13 if block ~ ~ ~ snow_block run tag @s add cpp_loc_block_pos_pot
+execute if score #block_id cppValue matches 14 if block ~ ~ ~ fire run tag @s add cpp_loc_block_pos_pot

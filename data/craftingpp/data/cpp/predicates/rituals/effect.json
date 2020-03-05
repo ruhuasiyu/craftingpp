@@ -112,6 +112,14 @@
 					"nbt": "{Items:[{Slot:0b,tag:{CustomPotionEffects:[{Id:99b,Amplifier:0b,Duration:9600}]}},{Slot:2b,tag:{CustomPotionEffects:[{Id:99b,Amplifier:0b,Duration:9600}]}},{Slot:6b,tag:{CustomPotionEffects:[{Id:99b,Amplifier:0b,Duration:9600}]}},{Slot:8b,tag:{CustomPotionEffects:[{Id:99b,Amplifier:0b,Duration:9600}]}}]}"
 				}
 			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:magnet'}},{Slot:2b,tag:{id:'cpp:magnet'}},{Slot:6b,tag:{id:'cpp:magnet'}},{Slot:8b,tag:{id:'cpp:magnet'}}]}"
+				}
+			}
 		}
 	]
 }

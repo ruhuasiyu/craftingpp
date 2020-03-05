@@ -1,0 +1,15 @@
+{
+	"criteria": {
+		"stargazy_pie": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"nbt": "{id:\"cpp:stargazy_pie\"}"
+				}
+			}
+		}
+	},
+	"rewards":{
+		"function": "cpp:food/add11"
+	}
+}

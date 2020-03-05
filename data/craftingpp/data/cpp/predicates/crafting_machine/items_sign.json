@@ -48,6 +48,22 @@
 					"nbt": "{Items:[{id:'minecraft:dark_oak_sign'}]}"
 				}
 			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{id:'minecraft:crimson_sign'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{id:'minecraft:warped_sign'}]}"
+				}
+			}
 		}
 	]
 }

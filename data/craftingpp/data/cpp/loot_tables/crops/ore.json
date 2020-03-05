@@ -4,44 +4,8 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"type":"minecraft:item",
-					"name": "minecraft:diamond_ore",
-					"weight": 1
-				},
-				{
-					"type":"minecraft:item",
-					"name": "minecraft:emerald_ore",
-					"weight": 1
-				},
-				{
-					"type":"minecraft:item",
-					"name": "minecraft:lapis_ore",
-					"weight": 1
-				},
-				{
-					"type":"minecraft:item",
-					"name": "minecraft:redstone_ore",
-					"weight": 5
-				},
-				{
-					"type":"minecraft:item",
-					"name": "minecraft:gold_ore",
-					"weight": 5
-				},
-				{
-					"type":"minecraft:item",
-					"name": "minecraft:nether_quartz_ore",
-					"weight": 23
-				},
-				{
-					"type":"minecraft:item",
-					"name": "minecraft:iron_ore",
-					"weight": 23
-				},
-				{
-					"type":"minecraft:item",
-					"name": "minecraft:coal_ore",
-					"weight": 41
+					"type": "minecraft:loot_table",
+					"name": "cpp:items/ore"
 				}
 			]
 		},
@@ -49,8 +13,8 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "minecraft:item",
-					"name": "minecraft:acacia_sapling",
+					"type": "minecraft:loot_table",
+					"name": "cpp:ore_sapling",
 					"functions": [
 						{
 							"function": "minecraft:set_count",
@@ -58,10 +22,6 @@
 								"min": 0,
 								"max": 3
 							}
-						},
-						{
-							"function": "minecraft:set_nbt",
-							"tag":"{display:{Name:'{\"translate\":\"item.cpp.ore_sapling\"}'},id:'cpp:ore_sapling',CustomModelData:12970112}"
 						}
 					]
 				}

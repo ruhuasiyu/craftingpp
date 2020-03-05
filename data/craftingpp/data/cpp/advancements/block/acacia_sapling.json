@@ -1,0 +1,13 @@
+{
+	"criteria": {
+		"machine": {
+			"trigger": "minecraft:placed_block",
+			"conditions": {
+				"block": "minecraft:acacia_sapling"
+			}
+		}
+	},
+	"rewards": {
+		"function": "cpp:block/reset/acacia_sapling"
+	}
+}

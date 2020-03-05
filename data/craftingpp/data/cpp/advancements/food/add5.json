@@ -1,0 +1,15 @@
+{
+	"criteria": {
+		"sandwich": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"nbt": "{id:\"cpp:sandwich\"}"
+				}
+			}
+		}
+	},
+	"rewards":{
+		"function": "cpp:food/add5"
+	}
+}

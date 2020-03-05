@@ -1,5 +1,14 @@
-function cpp:misc/get_facing
-execute if score @s cppValue matches 0 run summon armor_stand ~ ~ ~ {Invulnerable:1b,Invisible:1b,Small:1b,Marker:1b,NoGravity:1b,DisabledSlots:7967,Tags:["cpp_block","cpp_need_fire","cpp_machine","cpp_barrel"],Rotation:[0.0f,0.0f],Fire:32767s}
-execute if score @s cppValue matches 1 run summon armor_stand ~ ~ ~ {Invulnerable:1b,Invisible:1b,Small:1b,Marker:1b,NoGravity:1b,DisabledSlots:7967,Tags:["cpp_block","cpp_need_fire","cpp_machine","cpp_barrel"],Rotation:[90.0f,0.0f],Fire:32767s}
-execute if score @s cppValue matches 2 run summon armor_stand ~ ~ ~ {Invulnerable:1b,Invisible:1b,Small:1b,Marker:1b,NoGravity:1b,DisabledSlots:7967,Tags:["cpp_block","cpp_need_fire","cpp_machine","cpp_barrel"],Rotation:[180.0f,0.0f],Fire:32767s}
-execute if score @s cppValue matches 3 run summon armor_stand ~ ~ ~ {Invulnerable:1b,Invisible:1b,Small:1b,Marker:1b,NoGravity:1b,DisabledSlots:7967,Tags:["cpp_block","cpp_need_fire","cpp_machine","cpp_barrel"],Rotation:[270.0f,0.0f],Fire:32767s}
+execute if data storage cpp:loc_block Item.tag{id:"cpp:crafting_machine"} run tag @s add cpp_crafting_machine
+execute if data storage cpp:loc_block Item.tag{id:"cpp:all_in_one_machine"} run tag @s add cpp_all_in_one_machine
+execute if data storage cpp:loc_block Item.tag{id:"cpp:trade_machine"} run tag @s add cpp_trade_machine
+execute if data storage cpp:loc_block Item.tag{id:"cpp:mob_projector"} run tag @s add cpp_mob_projector
+execute if data storage cpp:loc_block Item.tag{id:"cpp:golden_anvil"} run tag @s add cpp_golden_anvil
+execute if data storage cpp:loc_block Item.tag{id:"cpp:empty_bookshelf"} run tag @s add cpp_empty_bookshelf
+execute if data storage cpp:loc_block Item.tag{id:"cpp:item_processer"} run tag @s add cpp_item_processer
+execute if data storage cpp:loc_block Item.tag{id:"cpp:dustbin"} run tag @s add cpp_dustbin
+execute if data storage cpp:loc_block Item.tag{id:"cpp:chest_dropper"} run tag @s add cpp_chest_dropper
+execute if data storage cpp:loc_block Item.tag{id:"cpp:portable_crafting_machine"} run tag @s add cpp_crafting_machine
+execute if data storage cpp:loc_block Item.tag{id:"cpp:portable_crafting_machine"} run tag @s add cpp_portable_crafting_machine
+execute store result score @s cppStoredxp run data get storage cpp:loc_block Item.tag.cppStoredxp
+execute store result score @s cppTradeValue run data get storage cpp:loc_block Item.tag.cppTradeValue
+scoreboard players set @s cppTick 0

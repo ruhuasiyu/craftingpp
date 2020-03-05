@@ -7,6 +7,7 @@
 		{ "predicate": { "custom_model_data": 12970001 }, "model": "cpp:food/cooked_horse_meat"},
 		{ "predicate": { "custom_model_data": 12970002 }, "model": "cpp:food/cooked_donkey_meat"},
 		{ "predicate": { "custom_model_data": 12970003 }, "model": "cpp:food/cooked_mule_meat"},
-		{ "predicate": { "custom_model_data": 12970004 }, "model": "cpp:food/cooked_llama_meat"}
+		{ "predicate": { "custom_model_data": 12970004 }, "model": "cpp:food/cooked_llama_meat"},
+		{ "predicate": { "custom_model_data": 12970005 }, "model": "cpp:food/lamb_kebab"}
 	]
 }

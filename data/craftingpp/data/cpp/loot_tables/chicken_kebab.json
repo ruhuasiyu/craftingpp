@@ -1,0 +1,19 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:cooked_chicken",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.chicken_kebab\"}'},id:'cpp:chicken_kebab',CustomModelData:12970003}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

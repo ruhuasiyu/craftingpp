@@ -1,0 +1,19 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:acacia_sapling",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.lilium_pumilum\"}'},id:'cpp:lilium_pumilum',CustomModelData:12970504}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

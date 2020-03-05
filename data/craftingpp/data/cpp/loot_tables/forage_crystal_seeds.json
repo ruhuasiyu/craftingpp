@@ -5,7 +5,7 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:pumpkin_seeds",
+					"name": "minecraft:acacia_sapling",
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",

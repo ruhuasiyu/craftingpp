@@ -111,6 +111,12 @@
 		{ "predicate": { "custom_model_data": 12971058 }, "model": "cpp:character/58"},
 		{ "predicate": { "custom_model_data": 12971059 }, "model": "cpp:character/59"},
 		{ "predicate": { "custom_model_data": 12971060 }, "model": "cpp:character/60"},
-		{ "predicate": { "custom_model_data": 12971061 }, "model": "cpp:character/61"}
+		{ "predicate": { "custom_model_data": 12971061 }, "model": "cpp:character/61"},
+		{ "predicate": { "custom_model_data": 12971062 }, "model": "cpp:character/62"},
+		{ "predicate": { "custom_model_data": 12971063 }, "model": "cpp:character/63"},
+		{ "predicate": { "custom_model_data": 12971064 }, "model": "cpp:character/64"},
+		{ "predicate": { "custom_model_data": 12971065 }, "model": "cpp:character/65"},
+		{ "predicate": { "custom_model_data": 12971066 }, "model": "cpp:character/66"},
+		{ "predicate": { "custom_model_data": 12971067 }, "model": "cpp:character/67"}
 	]
 }

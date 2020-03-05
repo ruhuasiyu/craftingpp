@@ -8,6 +8,6 @@
 		}
 	},
 	"rewards": {
-		"function": "cpp:block/grass/reset"
+		"function": "cpp:block/reset/grass"
 	}
 }

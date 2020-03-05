@@ -1,0 +1,19 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:acacia_sapling",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.blue_rose\"}'},id:'cpp:blue_rose',CustomModelData:12970513}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1852,6 +1852,7 @@ span.ui a.fire, a.fire{
 .character60                    {background-position: -224px -2144px;}
 .character61                    {background-position: -256px -2144px;}
 .character62                    {background-position: -000px -2176px;}
+
 .calliopsis                     {background-position: -032px -2176px;}
 .cyclamen                       {background-position: -064px -2176px;}
 .iris                           {background-position: -096px -2176px;}
@@ -1865,12 +1866,40 @@ span.ui a.fire, a.fire{
 .arabia_speedwell               {background-position: -064px -2208px;}
 .silene_pendula                 {background-position: -096px -2208px;}
 .blue_rose                      {background-position: -128px -2208px;}
+
 .character63                    {background-position: -160px -2208px;}
 .character64                    {background-position: -192px -2208px;}
 .character65                    {background-position: -224px -2208px;}
 .character66                    {background-position: -256px -2208px;}
 .character67                    {background-position: -000px -2240px;}
 .piglin_head                    {background-position: -032px -2240px;}
+
+.strawberry_jam                 {background-position: -064px -2240px;}
+.blueberry_jam                  {background-position: -096px -2240px;}
+.orange_jam                     {background-position: -128px -2240px;}
+.cherry_jam                     {background-position: -160px -2240px;}
+.apple_jam                      {background-position: -192px -2240px;}
+.yeast_powder                   {background-position: -224px -2240px;}
+.butter                         {background-position: -256px -2240px;}
+.candied_haw                    {background-position: -000px -2272px;}
+.cupcake                        {background-position: -032px -2272px;}
+.cake_roll                      {background-position: -064px -2272px;}
+.caramel_pudding                {background-position: -096px -2272px;}
+.croissant                      {background-position: -128px -2272px;}
+.sandwich                       {background-position: -160px -2272px;}
+.doughnut                       {background-position: -192px -2272px;}
+.purple_doughnut                {background-position: -224px -2272px;}
+.pink_doughnut                  {background-position: -256px -2272px;}
+.white_doughnut                 {background-position: -000px -2304px;}
+.blue_doughnut                  {background-position: -032px -2304px;}
+.green_doughnut                 {background-position: -064px -2304px;}
+.honey_pancake                  {background-position: -096px -2304px;}
+.vegetable_kebab                {background-position: -128px -2304px;}
+.bacon                          {background-position: -160px -2304px;}
+.beef_kebab                     {background-position: -192px -2304px;}
+.pork_kebab                     {background-position: -224px -2304px;}
+.lamb_kebab                     {background-position: -256px -2304px;}
+.chicken_kebab                  {background-position: -000px -2336px;}
 
 .speed               {background-position: -000px -00px;}
 .slowness            {background-position: -018px -00px;}

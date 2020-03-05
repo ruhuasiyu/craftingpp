@@ -512,6 +512,14 @@
 					"nbt": "{Items:[{Slot:1b,id:'minecraft:poppy'},{Slot:2b,id:'minecraft:dandelion'},{Slot:3b,id:'minecraft:poppy'},{Slot:10b,id:'minecraft:dandelion'},{Slot:11b,id:'minecraft:stick'},{Slot:12b,id:'minecraft:dandelion'},{Slot:19b,id:'minecraft:poppy'},{Slot:20b,id:'minecraft:dandelion'},{Slot:21b,id:'minecraft:poppy'}]}"
 				}
 			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:1b,id:'minecraft:netherite_scrap'},{Slot:2b,tag:{id:'cpp:moon_shard'}},{Slot:3b,id:'minecraft:netherite_scrap'},{Slot:10b,tag:{id:'cpp:moon_shard'}},{Slot:11b,id:'minecraft:ender_eye'},{Slot:12b,tag:{id:'cpp:moon_shard'}},{Slot:19b,id:'minecraft:netherite_scrap'},{Slot:20b,tag:{id:'cpp:moon_shard'}},{Slot:21b,id:'minecraft:netherite_scrap'}]}"
+				}
+			}
 		}
 	]
 }

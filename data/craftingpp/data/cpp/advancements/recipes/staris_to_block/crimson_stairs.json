@@ -1,0 +1,29 @@
+{
+	"criteria": {
+		"crimson_stairs": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:crimson_stairs"
+					}
+				]
+			}
+		},
+		"has_the_recipe": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "cpp:stairs_to_block/crimson_stairs"
+			}
+		}
+	},
+	"rewards":{
+		"recipes": ["cpp:stairs_to_block/crimson_stairs"]
+	},
+	"requirements": [
+		[
+			"crimson_stairs",
+			"has_the_recipe"
+		]
+	]
+}

@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"translate\":\"item.cpp.fruit_sapling\"}'},id:'cpp:fruit_sapling',CustomModelData:12970111}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.fruit_sapling\"}'},id:'cpp:fruit_sapling',CustomModelData:12971001}"
 						}
 					]
 				}

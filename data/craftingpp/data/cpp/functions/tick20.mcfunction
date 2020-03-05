@@ -1,8 +1,11 @@
+# 世界生成
+execute if score $skyislandMode cppConfig matches 0 at @a[predicate=cpp:in_overworld] run function cpp:generate/check
+
 effect give @a[scores={cppFat=100..}] slowness 8
 effect give @a[scores={cppFat=200..}] slowness 8 1
 effect give @a[scores={cppFat=..-100}] weakness 8 0
 effect give @a[scores={cppFat=..-200}] weakness 8 1
-execute as @a[nbt={Inventory:[{tag:{triggerEffect:[{}]}}]},nbt=!{Inventory:[{tag:{id:"cpp:temperancer"}}]}] run function cpp:rituals/effect/check
+execute as @a[nbt={Inventory:[{tag:{cppStoredEffects:[{}]}}]},nbt=!{Inventory:[{tag:{id:"cpp:temperancer"}}]}] run function cpp:rituals/effect/check
 execute as @a[nbt={Inventory:[{Slot:100b,tag:{id:"cpp:snow_boots"}}]}] at @s run function cpp:decor/snow_boots
 execute as @a[nbt={Inventory:[{Slot:103b,id:"minecraft:carved_pumpkin"}]}] run function cpp:decor/effect_hat
 execute as @a[scores={cppChainTick=1..}] run function cpp:chain/showtime

@@ -1,0 +1,12 @@
+{
+	"condition": "minecraft:entity_properties",
+	"entity": "this",
+	"predicate": {
+		"equipment": {
+			"head":{
+				"item": "minecraft:carved_pumpkin",
+				"nbt": "{cppHatSlot:'hand'}"
+			}
+		}
+	}
+}

@@ -5,11 +5,11 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:pumpkin_seeds",
+					"name": "minecraft:acacia_sapling",
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"translate\":\"item.cpp.lycoris_radiata\"}'},id:'cpp:lycoris_radiata',CustomModelData:12973081}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.lycoris_radiata\"}'},id:'cpp:lycoris_radiata',CustomModelData:12970061}"
 						}
 					]
 				}

@@ -67,7 +67,7 @@
 		{ "predicate": { "custom_model_data": 12970217 }, "model": "cpp:head/fox"},
 		{ "predicate": { "custom_model_data": 12970218 }, "model": "cpp:head/snow_fox"},		
 		{ "predicate": { "custom_model_data": 12970219 }, "model": "cpp:head/vex"},
-		{ "predicate": { "custom_model_data": 12970220 }, "model": "cpp:head/zombie_pigman"},
+		{ "predicate": { "custom_model_data": 12970220 }, "model": "cpp:head/zombified_piglin"},
 		{ "predicate": { "custom_model_data": 12970221 }, "model": "cpp:head/snow_golem"},
 		{ "predicate": { "custom_model_data": 12970222 }, "model": "cpp:head/husk"},
 		{ "predicate": { "custom_model_data": 12970223 }, "model": "cpp:head/enderman"},
@@ -102,6 +102,8 @@
 		{ "predicate": { "custom_model_data": 12970252 }, "model": "cpp:head/dolphin"},
 		{ "predicate": { "custom_model_data": 12970253 }, "model": "cpp:head/zombie_horse"},
 		{ "predicate": { "custom_model_data": 12970254 }, "model": "cpp:head/bee"},
+		{ "predicate": { "custom_model_data": 12970255 }, "model": "cpp:head/piglin"},
+		{ "predicate": { "custom_model_data": 12970256 }, "model": "cpp:head/hoglin"},
 		
 		{ "predicate": { "custom_model_data": 12970260 }, "model": "cpp:head/parrot/parrot0"},
 		{ "predicate": { "custom_model_data": 12970261 }, "model": "cpp:head/parrot/parrot1"},

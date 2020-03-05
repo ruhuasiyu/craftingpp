@@ -1,0 +1,29 @@
+{
+	"criteria": {
+		"warped_planks": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:warped_planks"
+					}
+				]
+			}
+		},
+		"has_the_recipe": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "cpp:stonecutting/warped_stairs"
+			}
+		}
+	},
+	"rewards":{
+		"recipes": ["cpp:stonecutting/warped_stairs"]
+	},
+	"requirements": [
+		[
+			"warped_planks",
+			"has_the_recipe"
+		]
+	]
+}

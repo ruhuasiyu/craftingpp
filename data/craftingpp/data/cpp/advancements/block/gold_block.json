@@ -1,0 +1,13 @@
+{
+	"criteria": {
+		"machine": {
+			"trigger": "minecraft:placed_block",
+			"conditions": {
+				"block": "minecraft:gold_block"
+			}
+		}
+	},
+	"rewards": {
+		"function": "cpp:block/reset/gold_block"
+	}
+}

@@ -1,0 +1,19 @@
+{
+	"replace": false,
+	"values": [
+		"minecraft:dirt",
+		"minecraft:coarse_dirt",
+		"minecraft:grass_path",
+		"minecraft:farmland",
+		"minecraft:podzol",
+		"minecraft:grass_block",
+		"minecraft:mycelium",
+		"minecraft:stone",
+		"minecraft:granite",
+		"minecraft:diorite",
+		"minecraft:andesite",
+		"minecraft:gravel",
+		"minecraft:sand",
+		"minecraft:sandstone"
+	]
+}

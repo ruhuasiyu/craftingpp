@@ -1,0 +1,6 @@
+{
+    "parent": "cpp:plant/plant",
+    "textures": {
+        "crop": "cpp:plant/pansy"
+    }
+}

@@ -1,0 +1,74 @@
+{
+	"criteria": {
+		"toffee_apple": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"nbt": "{id:\"cpp:toffee_apple\"}"
+				}
+			}
+		},
+		"doughnut": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"nbt": "{id:\"cpp:doughnut\"}"
+				}
+			}
+		},
+		"purple_doughnut": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"nbt": "{id:\"cpp:purple_doughnut\"}"
+				}
+			}
+		},
+		"pink_doughnut": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"nbt": "{id:\"cpp:pink_doughnut\"}"
+				}
+			}
+		},
+		"white_doughnut": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"nbt": "{id:\"cpp:white_doughnut\"}"
+				}
+			}
+		},
+		"blue_doughnut": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"nbt": "{id:\"cpp:blue_doughnut\"}"
+				}
+			}
+		},
+		"green_doughnut": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"nbt": "{id:\"cpp:green_doughnut\"}"
+				}
+			}
+		}
+	},
+	"rewards":{
+		"function": "cpp:food/add2speed"
+	},
+	"requirements": [
+		[
+			"toffee_apple",
+			"doughnut",
+			"purple_doughnut",
+			"pink_doughnut",
+			"white_doughnut",
+			"blue_doughnut",
+			"green_doughnut"
+		]
+	]
+}

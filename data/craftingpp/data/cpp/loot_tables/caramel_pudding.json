@@ -1,0 +1,19 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:bread",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.caramel_pudding\"}'},id:'cpp:caramel_pudding',CustomModelData:12970011}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

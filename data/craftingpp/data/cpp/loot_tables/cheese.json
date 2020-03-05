@@ -5,11 +5,11 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:bread",
+					"name": "minecraft:cookie",
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"translate\":\"item.cpp.cheese\"}'},id:'cpp:cheese',CustomModelData:12970005}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.cheese\"}'},id:'cpp:cheese',CustomModelData:12970203}"
 						}
 					]
 				}

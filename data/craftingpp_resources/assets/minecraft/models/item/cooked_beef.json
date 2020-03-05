@@ -4,6 +4,7 @@
         "layer0": "item/cooked_beef"
     },
 	"overrides": [
-		{ "predicate": { "custom_model_data": 12970001 }, "model": "cpp:food/cooked_bear_meat"}
+        { "predicate": { "custom_model_data": 12970001 }, "model": "cpp:food/cooked_bear_meat"},
+        { "predicate": { "custom_model_data": 12970002 }, "model": "cpp:food/beef_kebab"}
 	]
 }

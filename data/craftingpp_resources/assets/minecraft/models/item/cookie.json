@@ -4,6 +4,17 @@
 		"layer0": "item/cookie"
 	},
 	"overrides": [
-		{ "predicate": { "custom_model_data": 12970001 }, "model": "cpp:food/boiled_egg"}
+		{ "predicate": { "custom_model_data": 12970001 }, "model": "cpp:food/boiled_egg"},
+
+		{ "predicate": { "custom_model_data": 12970101 }, "model": "cpp:food/ketchup"},
+		{ "predicate": { "custom_model_data": 12970102 }, "model": "cpp:food/strawberry_jam"},
+		{ "predicate": { "custom_model_data": 12970103 }, "model": "cpp:food/blueberry_jam"},
+		{ "predicate": { "custom_model_data": 12970104 }, "model": "cpp:food/orange_jam"},
+		{ "predicate": { "custom_model_data": 12970105 }, "model": "cpp:food/cherry_jam"},
+		{ "predicate": { "custom_model_data": 12970106 }, "model": "cpp:food/apple_jam"},
+
+		{ "predicate": { "custom_model_data": 12970201 }, "model": "cpp:food/yeast_powder"},
+		{ "predicate": { "custom_model_data": 12970202 }, "model": "cpp:food/butter"},
+		{ "predicate": { "custom_model_data": 12970203 }, "model": "cpp:food/cheese"}
 	]
 }

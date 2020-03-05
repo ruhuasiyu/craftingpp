@@ -53,7 +53,7 @@
 				{ "type": "minecraft:loot_table", "name": "cpp:character/48" },
 				{ "type": "minecraft:loot_table", "name": "cpp:character/49" },
 				{ "type": "minecraft:loot_table", "name": "cpp:character/50" },
-				{ "type": "minecraft:loot_table", "name": "cpp:character/51" }
+				{ "type": "minecraft:loot_table", "name": "cpp:character/51" },
 				{ "type": "minecraft:loot_table", "name": "cpp:character/52" },
 				{ "type": "minecraft:loot_table", "name": "cpp:character/53" },
 				{ "type": "minecraft:loot_table", "name": "cpp:character/54" },
@@ -64,7 +64,12 @@
 				{ "type": "minecraft:loot_table", "name": "cpp:character/59" },
 				{ "type": "minecraft:loot_table", "name": "cpp:character/60" },
 				{ "type": "minecraft:loot_table", "name": "cpp:character/61" },
-				{ "type": "minecraft:loot_table", "name": "cpp:character/62" }
+				{ "type": "minecraft:loot_table", "name": "cpp:character/62" },
+				{ "type": "minecraft:loot_table", "name": "cpp:character/63" },
+				{ "type": "minecraft:loot_table", "name": "cpp:character/64" },
+				{ "type": "minecraft:loot_table", "name": "cpp:character/65" },
+				{ "type": "minecraft:loot_table", "name": "cpp:character/66" },
+				{ "type": "minecraft:loot_table", "name": "cpp:character/67" }
 			]
 		}
 	]

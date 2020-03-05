@@ -1,0 +1,15 @@
+{
+	"criteria": {
+		"bacon": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"nbt": "{id:\"cpp:bacon\"}"
+				}
+			}
+		}
+	},
+	"rewards":{
+		"function": "cpp:food/add2"
+	}
+}

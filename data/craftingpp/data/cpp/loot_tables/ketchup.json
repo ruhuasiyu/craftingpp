@@ -5,11 +5,11 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:bread",
+					"name": "minecraft:cookie",
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"translate\":\"item.cpp.ketchup\"}'},id:'cpp:ketchup',CustomModelData:12970006}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.ketchup\"}'},id:'cpp:ketchup',CustomModelData:12970101}"
 						}
 					]
 				}

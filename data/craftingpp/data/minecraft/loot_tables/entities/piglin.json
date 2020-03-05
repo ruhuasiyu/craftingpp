@@ -1,0 +1,14 @@
+{
+	"type": "minecraft:entity",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:rare_drops/certification_of_earth"
+				}
+			]
+		}
+	]
+}

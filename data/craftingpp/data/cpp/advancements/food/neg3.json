@@ -23,13 +23,22 @@
 					"item": "minecraft:golden_carrot"
 				}
 			}
+		},
+		"vegetable_kebab": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"nbt": "{id:\"cpp:vegetable_kebab\"}"
+				}
+			}
 		}
 	},
 	"requirements":[
 		[
 			"pumpkin_pie",
 			"carrot",
-			"golden_carrot"
+			"golden_carrot",
+			"vegetable_kebab"
 		]
 	],
 	"rewards":{

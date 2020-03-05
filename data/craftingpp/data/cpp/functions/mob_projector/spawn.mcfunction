@@ -32,7 +32,7 @@ execute if score #t cppValue matches 12970802 if score #rand cppValue matches 6.
 execute if score #t cppValue matches 12970802 if score #rand cppValue matches 9..10 run summon minecraft:slime ~ ~-2 ~ {Size:2,PersistenceRequired:1b}
 execute if score #t cppValue matches 12970803 run summon minecraft:phantom ~ ~-2 ~ {PersistenceRequired:1b}
 execute if score #t cppValue matches 12970804 run summon minecraft:polar_bear ~ ~-2 ~ {PersistenceRequired:1b}
-execute if score #t cppValue matches 12970805 run summon minecraft:zombie_pigman ~ ~-2 ~ {PersistenceRequired:1b}
+execute if score #t cppValue matches 12970805 run summon minecraft:zombified_piglin ~ ~-2 ~ {PersistenceRequired:1b}
 execute if score #t cppValue matches 12970806 run summon minecraft:ghast ~ ~-2 ~ {PersistenceRequired:1b}
 execute if score #t cppValue matches 12970807 if score #rand cppValue matches 1..5 run summon minecraft:magma_cube ~ ~-2 ~ {Size:0,PersistenceRequired:1b}
 execute if score #t cppValue matches 12970807 if score #rand cppValue matches 6..8 run summon minecraft:magma_cube ~ ~-2 ~ {Size:1,PersistenceRequired:1b}

@@ -5,11 +5,11 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:pumpkin_seeds",
+					"name": "minecraft:acacia_sapling",
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"translate\":\"item.cpp.wild_lilium\"}'},id:'cpp:wild_lilium',CustomModelData:12973089}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.wild_lilium\"}'},id:'cpp:wild_lilium',CustomModelData:12970069}"
 						}
 					]
 				}

@@ -1,0 +1,47 @@
+{
+	"criteria": {
+		"caramel_pudding": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"nbt": "{id:\"cpp:caramel_pudding\"}"
+				}
+			}
+		},
+		"honey_pancake": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"nbt": "{id:\"cpp:honey_pancake\"}"
+				}
+			}
+		},
+		"meat_floss_bread": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"nbt": "{id:\"cpp:meat_floss_bread\"}"
+				}
+			}
+		},
+		"candied_haw": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"nbt": "{id:\"cpp:candied_haw\"}"
+				}
+			}
+		}
+	},
+	"rewards":{
+		"function": "cpp:food/add5speed"
+	},
+	"requirements": [
+		[
+			"caramel_pudding",
+			"honey_pancake",
+			"meat_floss_bread",
+			"candied_haw"
+		]
+	]
+}

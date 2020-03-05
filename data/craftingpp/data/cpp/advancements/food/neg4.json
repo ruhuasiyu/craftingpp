@@ -31,6 +31,14 @@
 					"item": "minecraft:chorus_fruit"
 				}
 			}
+		},
+		"candied_haw": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"nbt": "{id:\"cpp:candied_haw\"}"
+				}
+			}
 		}
 	},
 	"requirements":[
@@ -38,7 +46,8 @@
 			"apple",
 			"golden_apple",
 			"enchanted_golden_apple",
-			"chorus_fruit"
+			"chorus_fruit",
+			"candied_haw"
 		]
 	],
 	"rewards":{

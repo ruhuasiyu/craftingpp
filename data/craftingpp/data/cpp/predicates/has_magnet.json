@@ -1,0 +1,56 @@
+{
+	"condition": "minecraft:alternative",
+	"terms":[
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"equipment": {
+					"head":{
+						"nbt": "{cppStoredEffects:'magnet'}"
+					}
+				}
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"equipment": {
+					"chest":{
+						"nbt": "{cppStoredEffects:'magnet'}"
+					}
+				}
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"equipment": {
+					"legs":{
+						"nbt": "{cppStoredEffects:'magnet'}"
+					}
+				}
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"equipment": {
+					"feet":{
+						"nbt": "{cppStoredEffects:'magnet'}"
+					}
+				}
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Inventory:[{tag:'id:\"cpp:magnet\"'}]}"
+			}
+		}
+	]
+}

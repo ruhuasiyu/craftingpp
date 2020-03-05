@@ -8,6 +8,6 @@
 		}
 	},
 	"rewards": {
-		"function": "cpp:block/brewing_stand"
+		"function": "cpp:block/reset/brewing_stand"
 	}
 }
