@@ -1,8 +1,7 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:potion",
-			"nbt":"{CustomPotionColor:255}"
+			"item": "minecraft:enchanted_golden_apple"
 		},
 		"title":{
 			"translate": "advancements.cpp.fat.title"
@@ -12,7 +11,7 @@
 		},
 		"frame": "challenge"
 	},
-	"parent": "cpp:all_head",
+	"parent": "cpp:dream_wand",
 	"criteria": {
 		"effect": {
 			"trigger": "minecraft:impossible"

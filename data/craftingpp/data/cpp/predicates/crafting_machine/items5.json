@@ -232,6 +232,24 @@
 					"nbt": "{Items:[{Slot:2b,tag:{id:'cpp:moon_shard'}},{Slot:10b,tag:{id:'cpp:moon_shard'}},{Slot:11b,id:'minecraft:ender_eye'},{Slot:12b,tag:{id:'cpp:moon_shard'}},{Slot:20b,tag:{id:'cpp:moon_shard'}}]}"
 				}
 			}
+		},
+		{
+			"_comment": "蛋糕卷",
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{id:'minecraft:milk_bucket'},{id:'minecraft:sugar'},{id:'minecraft:egg'},{id:'minecraft:wheat'},{tag:{id:'cpp:yeast_powder'}}]}"
+				}
+			}
+		},
+		{
+			"_comment": "蜂蜜煎饼",
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{id:'minecraft:honey_bottle'},{id:'minecraft:egg'},{id:'minecraft:wheat'},{tag:{id:'cpp:butter'}},{tag:{id:'cpp:blueberry'}}]}"
+				}
+			}
 		}
 	]
 }

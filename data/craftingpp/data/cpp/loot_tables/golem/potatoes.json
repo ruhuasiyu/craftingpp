@@ -1,0 +1,66 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"conditions": [
+						{
+							"condition": "minecraft:random_chance",
+							"chance": 0.418300653594771
+						}
+					],
+					"type": "minecraft:item",
+					"name": "minecraft:potato",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 0,
+								"max": 3
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"conditions": [
+				{
+					"condition": "minecraft:random_chance",
+					"chance": 0.008366013071895
+				}
+			],
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:poisonous_potato"
+				}
+			]
+		},
+		{
+			"rolls": 1.0,
+			"conditions": [
+				{
+					"condition": "minecraft:random_chance",
+					"chance": 0.020915032679739
+				}
+			],
+			"entries": [
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:trifolium_seeds"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:cattail_seeds"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:marigold_seeds"
+				}
+			]
+		}
+	]
+}

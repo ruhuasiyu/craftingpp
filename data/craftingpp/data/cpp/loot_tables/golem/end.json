@@ -1,0 +1,144 @@
+{
+	"pools": [
+		{
+			"rolls": 1.0,
+			"entries": [
+				{
+					"type": "minecraft:alternatives",
+					"children": [
+						{
+							"type": "minecraft:loot_table",
+							"name": "cpp:golem_miner",
+							"conditions": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "killer",
+									"predicate": {
+										"nbt": "{Tags:['cpp_golem_miner']}"
+									}
+								}
+							],
+							"functions": [
+								{
+									"function": "minecraft:copy_nbt",
+									"source": "killer",
+									"ops": [
+										{
+											"op": "merge",
+											"source": "HandItems[0].tag.Enchantments[]",
+											"target": "Enchantments[]"
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "minecraft:loot_table",
+							"name": "cpp:golem_farmer",
+							"conditions": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "killer",
+									"predicate": {
+										"nbt": "{Tags:['cpp_golem_farmer']}"
+									}
+								}
+							],
+							"functions": [
+								{
+									"function": "minecraft:copy_nbt",
+									"source": "killer",
+									"ops": [
+										{
+											"op": "merge",
+											"source": "HandItems[0].tag.Enchantments[]",
+											"target": "Enchantments[]"
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "minecraft:loot_table",
+							"name": "cpp:golem_fisher",
+							"conditions": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "killer",
+									"predicate": {
+										"nbt": "{Tags:['cpp_golem_fisher']}"
+									}
+								}
+							],
+							"functions": [
+								{
+									"function": "minecraft:copy_nbt",
+									"source": "killer",
+									"ops": [
+										{
+											"op": "merge",
+											"source": "HandItems[0].tag.Enchantments[]",
+											"target": "Enchantments[]"
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "minecraft:loot_table",
+							"name": "cpp:golem_warrior",
+							"conditions": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "killer",
+									"predicate": {
+										"nbt": "{Tags:['cpp_golem_warrior']}"
+									}
+								}
+							],
+							"functions": [
+								{
+									"function": "minecraft:copy_nbt",
+									"source": "killer",
+									"ops": [
+										{
+											"op": "merge",
+											"source": "HandItems[0].tag.Enchantments[]",
+											"target": "Enchantments[]"
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "minecraft:loot_table",
+							"name": "cpp:golem_herder",
+							"conditions": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "killer",
+									"predicate": {
+										"nbt": "{Tags:['cpp_golem_herder']}"
+									}
+								}
+							],
+							"functions": [
+								{
+									"function": "minecraft:copy_nbt",
+									"source": "killer",
+									"ops": [
+										{
+											"op": "merge",
+											"source": "HandItems[0].tag.Enchantments[]",
+											"target": "Enchantments[]"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

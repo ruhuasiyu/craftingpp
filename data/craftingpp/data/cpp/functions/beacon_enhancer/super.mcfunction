@@ -1,3 +1,5 @@
+advancement grant @a[distance=..16] only cpp:all_band_blocking
+
 execute store result score #pri cppValue run data get block ~ ~-1 ~ Primary
 execute store result score #sec cppValue run data get block ~ ~-1 ~ Secondary
 execute unless score #pri cppValue = #sec cppValue run function cpp:beacon_enhancer/super1

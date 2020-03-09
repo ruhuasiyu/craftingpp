@@ -1,7 +1,7 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:petrified_oak_slab",
+			"item": "minecraft:barrel",
 			"nbt":"{CustomModelData:12970003}"
 		},
 		"title":{

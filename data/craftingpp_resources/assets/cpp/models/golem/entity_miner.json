@@ -1,0 +1,6 @@
+{
+	"parent": "cpp:golem/entity",
+	"textures": {
+		"0": "cpp:golem/entity_miner"
+	}
+}

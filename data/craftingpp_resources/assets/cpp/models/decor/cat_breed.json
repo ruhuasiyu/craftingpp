@@ -5,6 +5,7 @@
 			"rotation": [ 0, 180, 0 ]
 		}
 	},
+    "gui_light": "front",
 	"textures": {
 		"front": "cpp:decor/cat_breed"
 	},

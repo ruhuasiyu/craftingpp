@@ -11,7 +11,7 @@
 			"translate": "advancements.cpp.dark_animal.description"
 		}
 	},
-	"parent": "cpp:root",
+	"parent": "cpp:egg",
 	"criteria": {
 		"dark_animal": {
 			"trigger": "minecraft:player_killed_entity",

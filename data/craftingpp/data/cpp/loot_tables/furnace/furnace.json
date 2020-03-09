@@ -1,0 +1,672 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:alternatives",
+					"children": [
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,id:'minecraft:diamond_sword'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:splint"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,id:'minecraft:diamond_axe'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:splint"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,id:'minecraft:diamond_pickaxe'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:splint"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,id:'minecraft:diamond_shovel'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:splint"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,id:'minecraft:diamond_hoe'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:splint"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,id:'minecraft:diamond_helmet'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:splint"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,id:'minecraft:diamond_chestplate'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:splint"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,id:'minecraft:diamond_leggings'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:splint"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,id:'minecraft:diamond_boots'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:splint"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,id:'minecraft:diamond_horse_armor'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:splint"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:clay_bucket'}}]}"
+										 }
+									 }
+								 }
+							 ],
+							 "type": "minecraft:item",
+							 "name": "minecraft:bucket"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:clay_bucket'}}]}"
+										 }
+									 }
+								 }
+							 ],
+							 "type": "minecraft:item",
+							 "name": "minecraft:bucket"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:lycoris_radiata'}}]}"
+										 }
+									 }
+								 }
+							 ],
+							 "type": "minecraft:item",
+							 "name": "minecraft:red_dye"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:trifolium'}}]}"
+										 }
+									 }
+								 }
+							 ],
+							 "type": "minecraft:item",
+							 "name": "minecraft:white_dye"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:blackthorn'}}]}"
+										 }
+									 }
+								 }
+							 ],
+							 "type": "minecraft:item",
+							 "name": "minecraft:black_dye"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:cattail'}}]}"
+										 }
+									 }
+								 }
+							 ],
+							 "type": "minecraft:item",
+							 "name": "minecraft:yellow_dye"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:marigold'}}]}"
+										 }
+									 }
+								 }
+							 ],
+							 "type": "minecraft:item",
+							 "name": "minecraft:orange_dye"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:hibiscus'}}]}"
+										 }
+									 }
+								 }
+							 ],
+							 "type": "minecraft:item",
+							 "name": "minecraft:pink_dye"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:hyacinth'}}]}"
+										 }
+									 }
+								 }
+							 ],
+							 "type": "minecraft:item",
+							 "name": "minecraft:blue_dye"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:calamus'}}]}"
+										 }
+									 }
+								 }
+							 ],
+							 "type": "minecraft:item",
+							 "name": "minecraft:purple_dye"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:wild_lilium'}}]}"
+										 }
+									 }
+								 }
+							 ],
+							 "type": "minecraft:item",
+							 "name": "minecraft:lime_dye"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:bauhinia'}}]}"
+										 }
+									 }
+								 }
+							 ],
+							 "type": "minecraft:item",
+							 "name": "minecraft:magenta_dye"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:fluffy_grass'}}]}"
+										 }
+									 }
+								 }
+							 ],
+							 "type": "minecraft:item",
+							 "name": "minecraft:feather"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:gerbera'}}]}"
+										 }
+									 }
+								 }
+							 ],
+							 "type": "minecraft:item",
+							 "name": "minecraft:gunpowder"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:esparto'}}]}"
+										 }
+									 }
+								 }
+							 ],
+							 "type": "minecraft:item",
+							 "name": "minecraft:string"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:glow_forsythia'}}]}"
+										 }
+									 }
+								 }
+							 ],
+							 "type": "minecraft:item",
+							 "name": "minecraft:glowstone_dust"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:glazed_shade'}}]}"
+										 }
+									 }
+								 }
+							 ],
+							 "type": "minecraft:item",
+							 "name": "minecraft:prismarine_shard"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:stelera'}}]}"
+										 }
+									 }
+								 }
+							 ],
+							 "type": "minecraft:item",
+							 "name": "minecraft:spider_eye"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:forage_crystal'}}]}"
+										 }
+									 }
+								 }
+							 ],
+							 "type": "minecraft:item",
+							 "name": "minecraft:ghast_tear"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:isorchid'}}]}"
+										 }
+									 }
+								 }
+							 ],
+							 "type": "minecraft:item",
+							 "name": "minecraft:ender_pearl"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:burning_chrysanthe'}}]}"
+										 }
+									 }
+								 }
+							 ],
+							 "type": "minecraft:item",
+							 "name": "minecraft:blaze_powder"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:oxalis'}}]}"
+										 }
+									 }
+								 }
+							 ],
+							 "type": "minecraft:item",
+							 "name": "minecraft:slime_ball"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:raw_rabbit_stew'}}]}"
+										 }
+									 }
+								 }
+							 ],
+							 "type": "minecraft:loot_table",
+							 "name": "cpp:rabbit_stew"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:raw_colorful_vegetable'}}]}"
+										 }
+									 }
+								 }
+							 ],
+							 "type": "minecraft:loot_table",
+							 "name": "cpp:colorful_vegetable"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:raw_braised_pork_with_potatoes'}}]}"
+										 }
+									 }
+								 }
+							 ],
+							 "type": "minecraft:loot_table",
+							 "name": "cpp:braised_pork_with_potatoes"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:raw_braised_beef_with_potatoes'}}]}"
+										 }
+									 }
+								 }
+							 ],
+							 "type": "minecraft:loot_table",
+							 "name": "cpp:braised_beef_with_potatoes"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:grape'}}]}"
+										 }
+									 }
+								 }
+							 ],
+							 "type": "minecraft:loot_table",
+							 "name": "cpp:raisin"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:golden_grape'}}]}"
+										 }
+									 }
+								 }
+							 ],
+							 "type": "minecraft:loot_table",
+							 "name": "cpp:raisin"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,id:'minecraft:egg'}]}"
+										 }
+									 }
+								 }
+							 ],
+							 "type": "minecraft:loot_table",
+							 "name": "cpp:boiled_egg"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,id:'minecraft:carrot'}]}"
+										 }
+									 }
+								 }
+							 ],
+							 "type": "minecraft:loot_table",
+							 "name": "cpp:baked_carrot"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:parrot_meat'}}]}"
+										 }
+									 }
+								 }
+							 ],
+							 "type": "minecraft:loot_table",
+							 "name": "cpp:cooked_parrot_meat"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:horse_meat'}}]}"
+										 }
+									 }
+								 }
+							 ],
+							 "type": "minecraft:loot_table",
+							 "name": "cpp:cooked_horse_meat"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:donkey_meat'}}]}"
+										 }
+									 }
+								 }
+							 ],
+							 "type": "minecraft:loot_table",
+							 "name": "cpp:cooked_donkey_meat"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:mule_meat'}}]}"
+										 }
+									 }
+								 }
+							 ],
+							 "type": "minecraft:loot_table",
+							 "name": "cpp:cooked_mule_meat"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:llama_meat'}}]}"
+										 }
+									 }
+								 }
+							 ],
+							 "type": "minecraft:loot_table",
+							 "name": "cpp:cooked_llama_meat"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:bear_meat'}}]}"
+										 }
+									 }
+								 }
+							 ],
+							 "type": "minecraft:loot_table",
+							 "name": "cpp:cooked_bear_meat"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:0b,id:'minecraft:cooked_porkchop'}]}"
+										 }
+									 }
+								 }
+							 ],
+							 "type": "minecraft:loot_table",
+							 "name": "cpp:bacon"
+						}
+					]
+				}
+			]
+		}
+	]
+}

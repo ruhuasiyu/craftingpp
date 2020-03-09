@@ -1,0 +1,24 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:chest",
+			"nbt":"{CustomModelData:12970001}"
+		},
+		"title":{
+			"translate": "advancements.cpp.broadcast_age.title"
+		},
+		"description": {
+			"translate": "advancements.cpp.broadcast_age.description"
+		},
+		"frame": "challenge"
+	},
+	"parent": "cpp:mob_projector",
+	"criteria": {
+		"impossible": {
+			"trigger": "minecraft:impossible"
+		}
+	},
+	"rewards": {
+		"experience": 500
+	}
+}

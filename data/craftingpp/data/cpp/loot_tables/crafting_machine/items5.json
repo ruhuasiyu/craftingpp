@@ -423,6 +423,36 @@
 									"count": 2
 								}
 							]
+						},
+						{
+							"_comment": "蛋糕卷",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:milk_bucket'},{id:'minecraft:sugar'},{id:'minecraft:egg'},{id:'minecraft:wheat'},{tag:{id:'cpp:yeast_powder'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:cake_roll"
+						},
+						{
+							"_comment": "蜂蜜煎饼",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:honey_bottle'},{id:'minecraft:egg'},{id:'minecraft:wheat'},{tag:{id:'cpp:butter'}},{tag:{id:'cpp:blueberry'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:honey_pancake"
 						}
 					]
 				}

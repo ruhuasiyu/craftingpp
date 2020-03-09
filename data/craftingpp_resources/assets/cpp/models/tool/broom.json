@@ -1,11 +1,12 @@
 {
-    "__comment": "×÷Õß£ºÕÛ¾ı£¬Ê¹ÓÃ MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/) Éú³É",
+    "__comment": "ä½œè€…ï¼šæŠ˜å›ï¼Œä½¿ç”¨ MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/) ç”Ÿæˆ",
     "textures": {
         "0": "cpp:tool/broom_stick",
         "1": "block/hay_block_side",
         "2": "block/hay_block_top",
         "particle": "block/hay_block_top"
     },
+    "gui_light": "front",
     "elements": [
         {
             "name": "Cube",

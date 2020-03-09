@@ -11,7 +11,7 @@
 			"translate": "advancements.cpp.forgive.description"
 		}
 	},
-	"parent": "cpp:root",
+	"parent": "cpp:gardener",
 	"criteria": {
 		"element": {
 			"trigger": "minecraft:impossible"

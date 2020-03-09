@@ -1,0 +1,241 @@
+{
+	"pools": [
+		{
+			"rolls": 1.0,
+			"entries": [
+				{
+					"type": "minecraft:alternatives",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": 2
+						}
+					],
+					"children": [
+						{
+							"type": "minecraft:item",
+							"name": "minecraft:white_wool",
+							"conditions": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "killer",
+									"predicate": {
+										"nbt": "{Color:0b}"
+									}
+								}
+							]
+						},
+						{
+							"type": "minecraft:item",
+							"name": "minecraft:white_wool",
+							"conditions": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "killer",
+									"predicate": {
+										"nbt": "{Color:0b}"
+									}
+								}
+							]
+						},
+						{
+							"type": "minecraft:item",
+							"name": "minecraft:orange_wool",
+							"conditions": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "killer",
+									"predicate": {
+										"nbt": "{Color:1b}"
+									}
+								}
+							]
+						},
+						{
+							"type": "minecraft:item",
+							"name": "minecraft:magenta_wool",
+							"conditions": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "killer",
+									"predicate": {
+										"nbt": "{Color:2b}"
+									}
+								}
+							]
+						},
+						{
+							"type": "minecraft:item",
+							"name": "minecraft:light_blue_wool",
+							"conditions": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "killer",
+									"predicate": {
+										"nbt": "{Color:3b}"
+									}
+								}
+							]
+						},
+						{
+							"type": "minecraft:item",
+							"name": "minecraft:yellow_wool",
+							"conditions": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "killer",
+									"predicate": {
+										"nbt": "{Color:4b}"
+									}
+								}
+							]
+						},
+						{
+							"type": "minecraft:item",
+							"name": "minecraft:lime_wool",
+							"conditions": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "killer",
+									"predicate": {
+										"nbt": "{Color:5b}"
+									}
+								}
+							]
+						},
+						{
+							"type": "minecraft:item",
+							"name": "minecraft:pink_wool",
+							"conditions": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "killer",
+									"predicate": {
+										"nbt": "{Color:6b}"
+									}
+								}
+							]
+						},
+						{
+							"type": "minecraft:item",
+							"name": "minecraft:gray_wool",
+							"conditions": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "killer",
+									"predicate": {
+										"nbt": "{Color:7b}"
+									}
+								}
+							]
+						},
+						{
+							"type": "minecraft:item",
+							"name": "minecraft:light_gray_wool",
+							"conditions": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "killer",
+									"predicate": {
+										"nbt": "{Color:8b}"
+									}
+								}
+							]
+						},
+						{
+							"type": "minecraft:item",
+							"name": "minecraft:cyan_wool",
+							"conditions": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "killer",
+									"predicate": {
+										"nbt": "{Color:9b}"
+									}
+								}
+							]
+						},
+						{
+							"type": "minecraft:item",
+							"name": "minecraft:purple_wool",
+							"conditions": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "killer",
+									"predicate": {
+										"nbt": "{Color:10b}"
+									}
+								}
+							]
+						},
+						{
+							"type": "minecraft:item",
+							"name": "minecraft:blue_wool",
+							"conditions": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "killer",
+									"predicate": {
+										"nbt": "{Color:11b}"
+									}
+								}
+							]
+						},
+						{
+							"type": "minecraft:item",
+							"name": "minecraft:brown_wool",
+							"conditions": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "killer",
+									"predicate": {
+										"nbt": "{Color:12b}"
+									}
+								}
+							]
+						},
+						{
+							"type": "minecraft:item",
+							"name": "minecraft:green_wool",
+							"conditions": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "killer",
+									"predicate": {
+										"nbt": "{Color:13b}"
+									}
+								}
+							]
+						},
+						{
+							"type": "minecraft:item",
+							"name": "minecraft:red_wool",
+							"conditions": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "killer",
+									"predicate": {
+										"nbt": "{Color:14b}"
+									}
+								}
+							]
+						},
+						{
+							"type": "minecraft:item",
+							"name": "minecraft:black_wool",
+							"conditions": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "killer",
+									"predicate": {
+										"nbt": "{Color:15b}"
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

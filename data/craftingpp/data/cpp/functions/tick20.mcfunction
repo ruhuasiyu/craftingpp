@@ -33,15 +33,6 @@ execute as @e[type=minecraft:item_frame,nbt={Item:{tag:{id:"cpp:break_hand"}}}] 
 execute as @e[type=minecraft:item_frame,nbt={Item:{tag:{id:"cpp:smart_hand"}}}] at @s unless entity @e[type=minecraft:armor_stand,distance=..0.01,tag=cpp_smart_hand] run function cpp:item_frame/smart_hand/init
 execute as @e[type=minecraft:item_frame,nbt={Item:{tag:{id:"cpp:angry_hand"}}}] at @s unless entity @e[type=minecraft:armor_stand,distance=..0.01,tag=cpp_angry_hand] run function cpp:item_frame/angry_hand/init
 
-# 勤劳之手
-execute as @e[type=minecraft:armor_stand,tag=cpp_industrious_hand] at @s run function cpp:item_frame/industrious_hand/tick
-# 破坏之手
-execute as @e[type=minecraft:armor_stand,tag=cpp_break_hand] at @s run function cpp:item_frame/break_hand/tick
-# 灵巧之手
-execute as @e[type=minecraft:armor_stand,tag=cpp_smart_hand] at @s run function cpp:item_frame/smart_hand/tick
-# 愤怒之手
-execute as @e[type=minecraft:armor_stand,tag=cpp_angry_hand] at @s run function cpp:item_frame/angry_hand/tick
-# 历练之手
-execute as @e[type=minecraft:armor_stand,tag=cpp_toughen_hand] at @s run function cpp:item_frame/toughen_hand/tick
-
+# 手
+execute as @e[type=item_frame,predicate=cpp:is_hand] at @s run function cpp:golem/hand/type
 schedule function cpp:tick20 20t

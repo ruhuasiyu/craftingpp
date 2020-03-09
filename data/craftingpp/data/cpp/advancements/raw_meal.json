@@ -11,7 +11,7 @@
 			"translate": "advancements.cpp.raw_meal.description"
 		}
 	},
-	"parent": "cpp:doraemon",
+	"parent": "cpp:salt",
 	"criteria": {
 		"raw_braised_beef_with_potatoes": {
 			"trigger": "minecraft:consume_item",

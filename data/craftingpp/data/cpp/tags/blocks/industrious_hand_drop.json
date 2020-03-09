@@ -1,0 +1,16 @@
+{
+	"replace": false,
+	"values": [
+		"minecraft:wheat",
+		"minecraft:beetroots",
+		"minecraft:carrots",
+		"minecraft:potatoes",
+		"minecraft:bamboo",
+		"minecraft:sunflower",
+		"minecraft:lilac",
+		"minecraft:rose_bush",
+		"minecraft:peony",
+		"minecraft:cocoa",
+		"minecraft:sweet_berry_bush"
+	]
+}

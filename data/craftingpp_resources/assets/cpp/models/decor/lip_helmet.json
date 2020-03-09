@@ -4,6 +4,7 @@
         "layer0": "cpp:decor/lip",
         "layer1": "cpp:empty"
     },
+    "gui_light": "front",
 	"display": {
 		"head": {
 			"rotation":  [ 0, 0, 0 ],

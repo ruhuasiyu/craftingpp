@@ -2,6 +2,7 @@
 	"condition": "minecraft:alternative",
 	"terms": [
 		{
+			"_comment": "锁链靴子",
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
@@ -10,6 +11,7 @@
 			}
 		},
 		{
+			"_comment": "锁链靴子",
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
@@ -18,6 +20,7 @@
 			}
 		},
 		{
+			"_comment": "雪地靴",
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
@@ -26,6 +29,7 @@
 			}
 		},
 		{
+			"_comment": "雪地靴",
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
@@ -34,6 +38,7 @@
 			}
 		},
 		{
+			"_comment": "肥料",
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
@@ -42,6 +47,7 @@
 			}
 		},
 		{
+			"_comment": "圣诞花",
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
@@ -50,6 +56,7 @@
 			}
 		},
 		{
+			"_comment": "仰望星空派",
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
@@ -58,6 +65,7 @@
 			}
 		},
 		{
+			"_comment": "新春装饰",
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
@@ -314,6 +322,7 @@
 			}
 		},
 		{
+			"_comment": "番茄酱",
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
@@ -322,6 +331,7 @@
 			}
 		},
 		{
+			"_comment": "草莓果酱",
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
@@ -330,6 +340,7 @@
 			}
 		},
 		{
+			"_comment": "蓝莓果酱",
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
@@ -338,6 +349,7 @@
 			}
 		},
 		{
+			"_comment": "香橙果酱",
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
@@ -346,6 +358,7 @@
 			}
 		},
 		{
+			"_comment": "樱桃果酱",
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
@@ -354,10 +367,20 @@
 			}
 		},
 		{
+			"_comment": "苹果酱",
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
 					"nbt": "{Items:[{tag:{dict:['salt']}},{id:'minecraft:sugar'},{id:'minecraft:apple'},{id:'minecraft:sweet_berries'}]}"
+				}
+			}
+		},
+		{
+			"_comment": "焦糖布丁",
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{id:'minecraft:milk_bucket'},{id:'minecraft:sugar'},{id:'minecraft:egg'},{id:'minecraft:honey_bottle'}]}"
 				}
 			}
 		}

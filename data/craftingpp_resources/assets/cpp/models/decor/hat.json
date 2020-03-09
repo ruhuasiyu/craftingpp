@@ -5,6 +5,7 @@
 			"rotation": [ -90, 0, 0 ]
 		}
 	},
+    "gui_light": "front",
 	"elements": [
 		{
 			"from": [ 0, 0, 0 ],

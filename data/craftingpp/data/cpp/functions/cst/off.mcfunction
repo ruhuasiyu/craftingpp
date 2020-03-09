@@ -19,7 +19,7 @@ execute as @s[nbt={Inventory:[{Slot:-106b,tag:{id:"cpp:compressor"}}]}] at @s ru
 execute as @s[nbt={Inventory:[{Slot:-106b,tag:{id:"cpp:coordinate_recorder",hasRecord:1b}}]},scores={cppSneakTime=1..}] at @s anchored eyes run function cpp:cst/coordinate_recorder_pos
 execute as @s[nbt={Inventory:[{Slot:-106b,tag:{id:"cpp:coordinate_recorder"}}]}] unless entity @s[scores={cppSneakTime=1..}] at @s run function cpp:cst/coordinate_recorder_off
 execute as @s[nbt={Inventory:[{Slot:-106b,tag:{id:"cpp:chest_transporter"}}]}] at @s anchored eyes run function cpp:cst/chest_transporter_ray
-execute as @s[nbt={Inventory:[{Slot:-106b,tag:{id:"cpp:santa_gift"}}]}] at @s anchored eyes run function cpp:cst/santa_gift
+execute as @s[predicate=cpp:offhand_santa_gift] at @s anchored eyes run function cpp:tool/santa_gift
 execute as @s[nbt={Inventory:[{Slot:-106b,tag:{id:"cpp:portable_crafting_table"}}]}] at @s run function cpp:cst/portable_crafting_table
 execute as @s[nbt={Inventory:[{Slot:-106b,tag:{id:"cpp:infinite_bucket"}}]}] unless score @s cppSneakTime matches 1 at @s anchored eyes run function cpp:cst/infinite_bucket
 execute as @s[nbt={Inventory:[{Slot:-106b,tag:{id:"cpp:infinite_bucket"}}]},scores={cppSneakTime=1}] at @s anchored eyes run function cpp:cst/infinite_bucket_put
@@ -27,7 +27,11 @@ execute as @s[nbt={Inventory:[{Slot:-106b,tag:{id:"cpp:temperancer"}}]}] run fun
 execute as @s[tag=!cpp_used,nbt={Inventory:[{Slot:-106b,tag:{id:"cpp:temperancer_closed"}}]}] run function cpp:cst/temperancer_closed
 tag @s remove cpp_used
 
-execute as @s[nbt={Inventory:[{Slot:-106b,tag:{id:"cpp:golem"}}]}] at @s anchored eyes run function cpp:golem/init/type
+execute as @s[nbt={Inventory:[{Slot:-106b,tag:{id:"cpp:golem_miner"}}]}] at @s anchored eyes run function cpp:golem/put/type
+execute as @s[nbt={Inventory:[{Slot:-106b,tag:{id:"cpp:golem_farmer"}}]}] at @s anchored eyes run function cpp:golem/put/type
+execute as @s[nbt={Inventory:[{Slot:-106b,tag:{id:"cpp:golem_fisher"}}]}] at @s anchored eyes run function cpp:golem/put/type
+execute as @s[nbt={Inventory:[{Slot:-106b,tag:{id:"cpp:golem_warrior"}}]}] at @s anchored eyes run function cpp:golem/put/type
+execute as @s[nbt={Inventory:[{Slot:-106b,tag:{id:"cpp:golem_herder"}}]}] at @s anchored eyes run function cpp:golem/put/type
 
 execute as @s[nbt={Inventory:[{Slot:-106b,tag:{id:"cpp:character"}}]}] at @s anchored eyes run function cpp:decor/character_ray
 

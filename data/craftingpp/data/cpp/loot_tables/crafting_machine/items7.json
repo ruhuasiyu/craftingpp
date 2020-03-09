@@ -7,6 +7,7 @@
 					"type": "minecraft:alternatives",
 					"children": [
 						{
+							"_comment": "锁链护腿",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -21,6 +22,7 @@
 							"name": "minecraft:chainmail_leggings"
 						},
 						{
+							"_comment": "紧身皮裤",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -35,6 +37,7 @@
 							"name": "cpp:tight_leather_leggings"
 						},
 						{
+							"_comment": "牛仔裤",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -47,6 +50,21 @@
 							],
 							"type": "minecraft:loot_table",
 							"name": "cpp:blue_jeans"
+						},
+						{
+							"_comment": "冰糖葫芦",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:1b,id:'minecraft:sugar'},{Slot:2b,tag:{id:'cpp:hawthorn'}},{Slot:3b,id:'minecraft:sugar'},{Slot:10b,id:'minecraft:sugar'},{Slot:11b,tag:{id:'cpp:hawthorn'}},{Slot:12b,id:'minecraft:sugar'},{Slot:20b,id:'minecraft:stick'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:candied_haw"
 						}
 					]
 				}

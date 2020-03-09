@@ -7,6 +7,7 @@
 					"type": "minecraft:alternatives",
 					"children": [
 						{
+							"_comment":"经典画作",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -21,6 +22,7 @@
 							"name": "cpp:classical_painting"
 						},
 						{
+							"_comment":"肉松面包",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -35,6 +37,7 @@
 							"name": "cpp:meat_floss_bread"
 						},
 						{
+							"_comment":"烤鸡",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -49,6 +52,7 @@
 							"name": "cpp:christmas_roast_chicken"
 						},
 						{
+							"_comment":"寿司",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -63,6 +67,7 @@
 							"name": "cpp:sushi"
 						},
 						{
+							"_comment":"剪枝器",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -77,6 +82,7 @@
 							"name": "cpp:grafter"
 						},
 						{
+							"_comment":"粘土桶",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -91,6 +97,7 @@
 							"name": "cpp:clay_bucket"
 						},
 						{
+							"_comment":"粘土桶",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -105,6 +112,7 @@
 							"name": "cpp:clay_bucket"
 						},
 						{
+							"_comment":"箱漏",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -117,6 +125,303 @@
 							],
 							"type": "minecraft:loot_table",
 							"name": "cpp:chest_dropper"
+						},
+						{
+							"_comment":"傀儡农民",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{tag:{id:'cpp:industrious_hand'}},{id:'minecraft:shulker_box'},{tag:{id:'cpp:golem'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:golem_farmer"
+						},
+						{
+							"_comment":"傀儡矿工",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{tag:{id:'cpp:break_hand'}},{id:'minecraft:shulker_box'},{tag:{id:'cpp:golem'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:golem_miner"
+						},
+						{
+							"_comment":"傀儡渔夫",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{tag:{id:'cpp:smart_hand'}},{id:'minecraft:shulker_box'},{tag:{id:'cpp:golem'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:golem_fisher"
+						},
+						{
+							"_comment":"傀儡战士",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{tag:{id:'cpp:angry_hand'}},{id:'minecraft:shulker_box'},{tag:{id:'cpp:golem'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:golem_warrior"
+						},
+						{
+							"_comment":"傀儡牧民",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{tag:{id:'cpp:toughen_hand'}},{id:'minecraft:shulker_box'},{tag:{id:'cpp:golem'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:golem_herder"
+						},
+						{
+							"_comment":"酵母粉",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:sugar'},{id:'minecraft:wheat'},{id:'minecraft:nether_wart'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:yeast_powder",
+							"functions": [
+								{
+									"function": "minecraft:set_count",
+									"count": 3
+								}
+							]
+						},
+						{
+							"_comment":"黄油",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:milk_bucket'},{tag:{dict:['salt']}},{id:'minecraft:stick'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:butter",
+							"functions": [
+								{
+									"function": "minecraft:set_count",
+									"count": 3
+								}
+							]
+						},
+						{
+							"_comment":"可颂",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{tag:{id:'cpp:butter'}},{id:'minecraft:wheat'},{tag:{id:'cpp:yeast_powder'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:croissant"
+						},
+						{
+							"_comment":"紫色甜甜圈",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{tag:{id:'cpp:doughnut'}},{id:'minecraft:sugar'},{id:'minecraft:purple_dye'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:purple_doughnut"
+						},
+						{
+							"_comment":"粉色甜甜圈",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{tag:{id:'cpp:doughnut'}},{id:'minecraft:sugar'},{id:'minecraft:pink_dye'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:pink_doughnut"
+						},
+						{
+							"_comment":"白色甜甜圈",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{tag:{id:'cpp:doughnut'}},{id:'minecraft:sugar'},{id:'minecraft:white_dye'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:white_doughnut"
+						},
+						{
+							"_comment":"蓝色甜甜圈",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{tag:{id:'cpp:doughnut'}},{id:'minecraft:sugar'},{id:'minecraft:blue_dye'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:blue_doughnut"
+						},
+						{
+							"_comment":"绿色甜甜圈",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{tag:{id:'cpp:doughnut'}},{id:'minecraft:sugar'},{id:'minecraft:green_dye'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:green_doughnut"
+						},
+						{
+							"_comment":"烤蔬菜串",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:2b,tag:{id:'cpp:baked_carrot'}},{Slot:11b,id:'minecraft:baked_potato'},{Slot:20b,id:'minecraft:stick'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:vegetable_kebab"
+						},
+						{
+							"_comment":"烤蔬菜串",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:11b,tag:{id:'cpp:baked_carrot'}},{Slot:2b,id:'minecraft:baked_potato'},{Slot:20b,id:'minecraft:stick'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:vegetable_kebab"
+						},
+						{
+							"_comment":"烤牛肉串",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:2b,id:'minecraft:cooked_beef'},{Slot:11b,id:'minecraft:cooked_beef'},{Slot:20b,id:'minecraft:stick'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:beef_kebab"
+						},
+						{
+							"_comment":"烤五花肉串",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:2b,id:'minecraft:cooked_porkchop'},{Slot:11b,id:'minecraft:cooked_porkchop'},{Slot:20b,id:'minecraft:stick'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:pork_kebab"
+						},
+						{
+							"_comment":"烤羊肉串",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:2b,id:'minecraft:cooked_mutton'},{Slot:11b,id:'minecraft:cooked_mutton'},{Slot:20b,id:'minecraft:stick'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:lamb_kebab"
+						},
+						{
+							"_comment":"烤鸡肉串",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:2b,id:'minecraft:cooked_chicken'},{Slot:11b,id:'minecraft:cooked_chicken'},{Slot:20b,id:'minecraft:stick'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:chicken_kebab"
 						}
 					]
 				}

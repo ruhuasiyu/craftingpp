@@ -1,0 +1,108 @@
+{
+	"condition": "minecraft:alternative",
+	"terms": [
+		{
+			"condition": "minecraft:inverted",
+			"term": {
+				"condition": "minecraft:alternative",
+				"terms": [
+					{
+						"condition": "minecraft:inverted",
+						"term": {
+							"condition": "minecraft:reference",
+							"name": "cpp:furnace/blast_furnace1"
+						}
+					},
+					{
+						"condition": "minecraft:location_check",
+						"predicate": {
+							"block": {
+								"nbt": "{Items:[{Slot:2b}]}"
+							}
+						}
+					}
+				]
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:0b,id:'minecraft:diamond_sword'},{Slot:2b,tag:{id:'cpp:splint'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:0b,id:'minecraft:diamond_axe'},{Slot:2b,tag:{id:'cpp:splint'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:0b,id:'minecraft:diamond_pickaxe'},{Slot:2b,tag:{id:'cpp:splint'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:0b,id:'minecraft:diamond_shovel'},{Slot:2b,tag:{id:'cpp:splint'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:0b,id:'minecraft:diamond_hoe'},{Slot:2b,tag:{id:'cpp:splint'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:0b,id:'minecraft:diamond_helmet'},{Slot:2b,tag:{id:'cpp:splint'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:0b,id:'minecraft:diamond_chestplate'},{Slot:2b,tag:{id:'cpp:splint'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:0b,id:'minecraft:diamond_leggings'},{Slot:2b,tag:{id:'cpp:splint'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:0b,id:'minecraft:diamond_boots'},{Slot:2b,tag:{id:'cpp:splint'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:0b,id:'minecraft:diamond_horse_armor'},{Slot:2b,tag:{id:'cpp:splint'}}]}"
+				}
+			}
+		}
+	]
+}

@@ -11,7 +11,7 @@
 			"translate": "advancements.cpp.meow.description"
 		}
 	},
-	"parent": "cpp:broom",
+	"parent": "cpp:root",
 	"criteria": {
 		"meow": {
 			"trigger": "minecraft:impossible"

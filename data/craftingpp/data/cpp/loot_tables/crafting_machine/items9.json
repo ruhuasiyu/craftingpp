@@ -598,7 +598,7 @@
 									"condition": "minecraft:location_check",
 									"predicate": {
 										"block": {
-											"nbt": "{Items:[{Slot:1b,tag:{id:'cpp:rare_earth_glass'}},{Slot:2b,tag:{id:'cpp:enderman_head'}},{Slot:3b,tag:{id:'cpp:rare_earth_glass'}},{Slot:10b,tag:{id:'cpp:rare_earth_glass'}},{Slot:11b,id:'minecraft:diamond_hoe'},{Slot:12b,tag:{id:'cpp:rare_earth_glass'}},{Slot:19b,tag:{id:'cpp:reinforced_glass'}},{Slot:20b,id:'minecraft:experience_bottle'},{Slot:21b,tag:{id:'cpp:reinforced_glass'}}]}"
+											"nbt": "{Items:[{Slot:1b,tag:{id:'cpp:rare_earth_glass'}},{Slot:2b,tag:{id:'cpp:enderman_head'}},{Slot:3b,tag:{id:'cpp:rare_earth_glass'}},{Slot:10b,tag:{id:'cpp:rare_earth_glass'}},{Slot:11b,id:'minecraft:netherite_hoe'},{Slot:12b,tag:{id:'cpp:rare_earth_glass'}},{Slot:19b,tag:{id:'cpp:reinforced_glass'}},{Slot:20b,id:'minecraft:experience_bottle'},{Slot:21b,tag:{id:'cpp:reinforced_glass'}}]}"
 										}
 									}
 								}
@@ -643,7 +643,7 @@
 									"condition": "minecraft:location_check",
 									"predicate": {
 										"block": {
-											"nbt": "{Items:[{Slot:1b,tag:{id:'cpp:rare_earth_glass'}},{Slot:2b,tag:{id:'cpp:enderman_head'}},{Slot:3b,tag:{id:'cpp:rare_earth_glass'}},{Slot:10b,tag:{id:'cpp:rare_earth_glass'}},{Slot:11b,id:'minecraft:diamond_sword'},{Slot:12b,tag:{id:'cpp:rare_earth_glass'}},{Slot:19b,tag:{id:'cpp:reinforced_glass'}},{Slot:20b,id:'minecraft:experience_bottle'},{Slot:21b,tag:{id:'cpp:reinforced_glass'}}]}"
+											"nbt": "{Items:[{Slot:1b,tag:{id:'cpp:rare_earth_glass'}},{Slot:2b,tag:{id:'cpp:enderman_head'}},{Slot:3b,tag:{id:'cpp:rare_earth_glass'}},{Slot:10b,tag:{id:'cpp:rare_earth_glass'}},{Slot:11b,id:'minecraft:netherite_sword'},{Slot:12b,tag:{id:'cpp:rare_earth_glass'}},{Slot:19b,tag:{id:'cpp:reinforced_glass'}},{Slot:20b,id:'minecraft:experience_bottle'},{Slot:21b,tag:{id:'cpp:reinforced_glass'}}]}"
 										}
 									}
 								}
@@ -667,7 +667,7 @@
 							"name": "cpp:toughen_hand"
 						},
 						{
-							"_comment":"空白傀儡",
+							"_comment":"傀儡",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -679,7 +679,7 @@
 								}
 							],
 							"type": "minecraft:loot_table",
-							"name": "cpp:empty_golem"
+							"name": "cpp:golem"
 						},
 						{
 							"_comment":"附魔金苹果",
@@ -874,7 +874,7 @@
 							"name": "cpp:temperancer_closed"
 						},
 						{
-							"_comment":"梦之杖",
+							"_comment":"紫色美瞳",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -889,6 +889,7 @@
 							"name": "cpp:purple_eye"
 						},
 						{
+							"_comment":"假睫毛",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -903,6 +904,7 @@
 							"name": "cpp:lash"
 						},
 						{
+							"_comment":"猫胡子",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -917,6 +919,7 @@
 							"name": "cpp:cat_breed"
 						},
 						{
+							"_comment":"黑框眼镜",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -931,6 +934,7 @@
 							"name": "cpp:black_framed_glasses"
 						},
 						{
+							"_comment":"橙框眼镜",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -945,6 +949,7 @@
 							"name": "cpp:orange_framed_glasses"
 						},
 						{
+							"_comment":"愚弄眼镜",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -959,6 +964,7 @@
 							"name": "cpp:joking_glasses"
 						},
 						{
+							"_comment":"小黄人眼罩",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -973,6 +979,7 @@
 							"name": "cpp:minion_goggles"
 						},
 						{
+							"_comment":"胖次",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -987,6 +994,7 @@
 							"name": "cpp:pants"
 						},
 						{
+							"_comment":"冕旒",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -1001,6 +1009,7 @@
 							"name": "cpp:empire_hat"
 						},
 						{
+							"_comment":"烈焰红唇",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -1015,6 +1024,7 @@
 							"name": "cpp:red_lip"
 						},
 						{
+							"_comment":"花环",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -1029,6 +1039,7 @@
 							"name": "cpp:garland"
 						},
 						{
+							"_comment":"日之碎片",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -1041,6 +1052,69 @@
 							],
 							"type": "minecraft:loot_table",
 							"name": "cpp:sun_shard"
+						},
+						{
+							"_comment":"纸杯蛋糕",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:1b,tag:{id:'cpp:cherry'}},{Slot:2b,tag:{id:'cpp:cherry'}},{Slot:3b,tag:{id:'cpp:cherry'}},{Slot:10b,id:'minecraft:paper'},{Slot:11b,id:'minecraft:cake'},{Slot:12b,id:'minecraft:paper'},{Slot:19b,id:'minecraft:paper'},{Slot:20b,id:'minecraft:paper'},{Slot:21b,id:'minecraft:paper'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:cupcake",
+							"functions": [
+								{
+									"function": "minecraft:set_count",
+									"count": 5
+								}
+							]
+						},
+						{
+							"_comment":"甜甜圈",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:1b,id:'minecraft:sugar'},{Slot:2b,id:'minecraft:wheat'},{Slot:3b,id:'minecraft:sugar'},{Slot:10b,id:'minecraft:wheat'},{Slot:11b,tag:{id:'cpp:butter'}},{Slot:12b,id:'minecraft:wheat'},{Slot:19b,id:'minecraft:sugar'},{Slot:20b,id:'minecraft:wheat'},{Slot:21b,id:'minecraft:sugar'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:doughnut",
+							"functions": [
+								{
+									"function": "minecraft:set_count",
+									"count": 2
+								}
+							]
+						},
+						{
+							"_comment":"三明治",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:1b,id:'minecraft:bread'},{Slot:2b,id:'minecraft:bread'},{Slot:3b,id:'minecraft:bread'},{Slot:10b,tag:{id:'cpp:bacon'}},{Slot:11b,tag:{id:'cpp:boiled_egg'}},{Slot:12b,tag:{id:'cpp:bacon'}},{Slot:19b,id:'minecraft:bread'},{Slot:20b,id:'minecraft:bread'},{Slot:21b,id:'minecraft:bread'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:sandwich",
+							"functions": [
+								{
+									"function": "minecraft:set_count",
+									"count": 6
+								}
+							]
 						}
 					]
 				}

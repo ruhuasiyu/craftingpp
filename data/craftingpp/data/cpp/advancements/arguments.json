@@ -1,7 +1,7 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:petrified_oak_slab",
+			"item": "minecraft:barrel",
 			"nbt":"{CustomModelData:12970001}"
 		},
 		"title":{
@@ -11,7 +11,7 @@
 			"translate": "advancements.cpp.arguments.description"
 		}
 	},
-	"parent": "cpp:salt",
+	"parent": "cpp:red_book",
 	"criteria": {
 		"arguments": {
 			"trigger": "minecraft:impossible"

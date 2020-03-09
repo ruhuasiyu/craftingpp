@@ -11,7 +11,7 @@
 			"translate": "advancements.cpp.broom.description"
 		}
 	},
-	"parent": "cpp:forgive",
+	"parent": "cpp:root",
 	"criteria": {
 		"element": {
 			"trigger": "minecraft:impossible"

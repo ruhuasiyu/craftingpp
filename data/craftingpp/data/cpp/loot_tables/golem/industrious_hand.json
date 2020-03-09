@@ -1,0 +1,186 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:alternatives",
+					"children": [
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"block": "minecraft:wheat"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:golem/wheat"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"block": "minecraft:beetroots"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:golem/beetroots"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"block": "minecraft:carrots"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:golem/carrots"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"block": "minecraft:potatoes"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:golem/potatoes"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"block": "minecraft:bamboo"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:bamboo",
+							"functions": [
+								{
+									"function": "minecraft:set_count",
+									"count": {
+										"min": 1,
+										"max": 2
+									}
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"block": "minecraft:sunflower"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:sunflower"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"block": "minecraft:lilac"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:lilac"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"block": "minecraft:rose_bush"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:rose_bush"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"block": "minecraft:peony"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:peony"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"block": "minecraft:cocoa"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:golem/cocoa"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"block": "minecraft:sweet_berry_bush"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:sweet_berries",
+							"functions": [
+								{
+									"function": "minecraft:set_count",
+									"count": {
+										"min": 1,
+										"max": 2
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

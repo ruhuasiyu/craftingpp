@@ -1,2 +1,2 @@
-advancement revoke @s only cpp:system/kill_dragon
+advancement revoke @s only cpp:misc/kill_dragon
 schedule function cpp:adv/drop_dragon_egg 15s

@@ -1,0 +1,56 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:alternatives",
+					"children": [
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"block": "minecraft:grass"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:grass"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"block": "minecraft:fern"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:fern"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"block": "minecraft:seagrass"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:seagrass"
+						}
+					]
+				}
+			]
+		}
+	]
+}

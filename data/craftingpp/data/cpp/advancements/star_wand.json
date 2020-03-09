@@ -12,7 +12,7 @@
 		},
 		"frame": "challenge"
 	},
-	"parent": "cpp:dark_wand",
+	"parent": "cpp:mahoushoujo",
 	"criteria": {
 		"star_wand": {
 			"trigger": "minecraft:inventory_changed",

@@ -26,11 +26,8 @@ div#main_part{
 article{
     margin:2em 3em;
 }
-p{
+p.indent{
     text-indent: 2em;
-}
-p.noindent{
-    text-indent: 0em;
 }
 h1, h2, h3, h4, h5, h6{
     font-family: Tahoma, "Microsoft Yahei", Simsun;
@@ -311,7 +308,7 @@ table.adv .normal{
     background-image:url("gui/normal.png");
 }
 table.adv .goal{
-    background-image:url("gui/normal.png");
+    background-image:url("gui/goal.png");
 }
 table.adv .challenge{
     background-image:url("gui/challenge.png");
@@ -602,7 +599,7 @@ span.ui a.fire, a.fire{
 .glowstone                      {background-position: -288px -992px;}
 .nether_quartz_ore              {background-position: -416px -992px;}
 .netherrack                     {background-position: -480px -992px;}
-.soulsand                       {background-position: -512px -992px;}
+.soul_sand                       {background-position: -512px -992px;}
 .oak_sign                       {background-position: -608px -992px;}
 .torch                          {background-position: -640px -992px;}
 .coal_ore                       {background-position: -672px -992px;}
@@ -1332,7 +1329,7 @@ span.ui a.fire, a.fire{
 .smart_hand                     {background-position: -096px -352px;}
 .angry_hand                     {background-position: -128px -352px;}
 .toughen_hand                   {background-position: -160px -352px;}
-.empty_golem                    {background-position: -192px -352px;}
+.golem                          {background-position: -192px -352px;}
 .golem_farmer                   {background-position: -224px -352px;}
 .golem_miner                    {background-position: -256px -352px;}
 .golem_warrior                  {background-position: -000px -384px;}

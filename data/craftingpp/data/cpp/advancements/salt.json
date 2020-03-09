@@ -11,7 +11,7 @@
 			"translate": "advancements.cpp.salt.description"
 		}
 	},
-	"parent": "cpp:red_book",
+	"parent": "cpp:root",
 	"criteria": {
 		"salt": {
 			"trigger": "minecraft:inventory_changed",

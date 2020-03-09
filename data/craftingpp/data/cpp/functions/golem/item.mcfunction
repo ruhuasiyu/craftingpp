@@ -7,5 +7,3 @@ loot insert ~ 255 ~1 mine ~ 255 ~ diamond_pickaxe{isShulkerMarker:1b}
 data modify entity @s HandItems[1].tag.BlockEntityTag.Items set from block ~ 255 ~1 Items
 kill @e[type=item,distance=..2,nbt=!{Age:0s},nbt=!{Age:1s},limit=1]
 fill ~ 255 ~ ~ 255 ~1 air
-
-

@@ -45,12 +45,17 @@
 		{ "predicate": { "custom_model_data": 12970071 }, "model": "cpp:decor/lip"},
 		{ "predicate": { "custom_model_data": 12970072 }, "model": "cpp:machine/block_breaker"},
 		{ "predicate": { "custom_model_data": 12970073 }, "model": "cpp:machine/fermenter"},
-		
+
 		{ "predicate": { "custom_model_data": 12970121 }, "model": "cpp:golem/industrious_hand"},
 		{ "predicate": { "custom_model_data": 12970122 }, "model": "cpp:golem/break_hand"},
 		{ "predicate": { "custom_model_data": 12970123 }, "model": "cpp:golem/smart_hand"},
 		{ "predicate": { "custom_model_data": 12970124 }, "model": "cpp:golem/angry_hand"},
 		{ "predicate": { "custom_model_data": 12970125 }, "model": "cpp:golem/toughen_hand"},
+		{ "predicate": { "custom_model_data": 12970131 }, "model": "cpp:golem/entity_farmer"},
+		{ "predicate": { "custom_model_data": 12970132 }, "model": "cpp:golem/entity_miner"},
+		{ "predicate": { "custom_model_data": 12970133 }, "model": "cpp:golem/entity_fisher"},
+		{ "predicate": { "custom_model_data": 12970134 }, "model": "cpp:golem/entity_warrior"},
+		{ "predicate": { "custom_model_data": 12970135 }, "model": "cpp:golem/entity_herder"},
 		
 		{ "predicate": { "custom_model_data": 12970401 }, "model": "cpp:machine/mob_projector/sheep"},
 		{ "predicate": { "custom_model_data": 12970402 }, "model": "cpp:machine/mob_projector/cow"},

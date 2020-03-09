@@ -3,10 +3,7 @@
 	"values": [
 		"#cpp:golem_motion_blocks",
 		"#cpp:golem_end",
-		"#cpp:golem_back",
-		"#cpp:golem_switch",
 		"minecraft:chest",
-		"minecraft:dropper",
-		"minecraft:slime_block"
+		"minecraft:trapped_chest"
 	]
 }

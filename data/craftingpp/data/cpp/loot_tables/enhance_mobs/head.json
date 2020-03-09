@@ -5,12 +5,12 @@
 			"entries": [
 				{
 					"type": "minecraft:empty",
-					"weight": 25
+					"weight": 250
 				},
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:leather_helmet",
-					"weight": 20,
+					"weight": 200,
 					"functions": [
 						{
 							"function": "enchant_with_levels",
@@ -32,7 +32,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:iron_helmet",
-					"weight": 20,
+					"weight": 200,
 					"functions": [
 						{
 							"function": "enchant_with_levels",
@@ -54,7 +54,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:golden_helmet",
-					"weight": 15,
+					"weight": 150,
 					"functions": [
 						{
 							"function": "enchant_with_levels",
@@ -76,7 +76,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:chainmail_helmet",
-					"weight": 15,
+					"weight": 150,
 					"functions": [
 						{
 							"function": "enchant_with_levels",
@@ -98,6 +98,28 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:diamond_helmet",
+					"weight": 45,
+					"functions": [
+						{
+							"function": "enchant_with_levels",
+							"treasure": true,
+							"levels": {
+								"min": 10,
+								"max": 30
+							}
+						},
+						{
+							"function": "set_damage",
+							"damage": {
+								"min": 0.01,
+								"max": 0.10
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:netherite_helmet",
 					"weight": 5,
 					"functions": [
 						{

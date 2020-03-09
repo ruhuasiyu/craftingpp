@@ -1,3 +1,3 @@
-loot spawn ~ ~ ~ loot cpp:chests/santa_gift
-replaceitem entity @s[nbt=!{SelectedItem:{tag:{id:"cpp:santa_gift"}}},gamemode=!creative] weapon.offhand air
-replaceitem entity @s[nbt={SelectedItem:{tag:{id:"cpp:santa_gift"}}},gamemode=!creative] weapon.mainhand air
+loot spawn ~ ~ ~ loot cpp:misc/santa_gift
+replaceitem entity @s[predicate=!cpp:mainhand_cst,gamemode=!creative] weapon.offhand air
+replaceitem entity @s[predicate=cpp:mainhand_cst,gamemode=!creative] weapon.mainhand air

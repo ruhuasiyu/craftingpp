@@ -1,11 +1,12 @@
 {
-    "__comment": "×÷Õß£ºÕÛ¾ı£¬Ê¹ÓÃ MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/) Éú³É",
+    "__comment": "ä½œè€…ï¼šæŠ˜å›ï¼Œä½¿ç”¨ MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/) ç”Ÿæˆ",
     "textures": {
         "particle": "cpp:tool/wand/pink",
         "0": "cpp:tool/wand/pink",
         "1": "cpp:tool/wand/color",
         "2": "cpp:tool/wand/wing"
     },
+    "gui_light": "front",
     "elements": [
         {
             "name": "Cube",

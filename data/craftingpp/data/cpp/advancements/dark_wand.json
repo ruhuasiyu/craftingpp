@@ -11,7 +11,7 @@
 			"translate": "advancements.cpp.dark_wand.description"
 		}
 	},
-	"parent": "cpp:mahoushoujo",
+	"parent": "cpp:broom",
 	"criteria": {
 		"dark_wand": {
 			"trigger": "minecraft:inventory_changed",

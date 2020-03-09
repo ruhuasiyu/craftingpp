@@ -7,6 +7,7 @@
 					"type": "minecraft:alternatives",
 					"children": [
 						{
+							"_comment": "锁链靴子",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -21,6 +22,7 @@
 							"name": "minecraft:chainmail_boots"
 						},
 						{
+							"_comment": "锁链靴子",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -35,6 +37,7 @@
 							"name": "minecraft:chainmail_boots"
 						},
 						{
+							"_comment": "雪地靴",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -49,6 +52,7 @@
 							"name": "cpp:snow_boots"
 						},
 						{
+							"_comment": "雪地靴",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -63,6 +67,7 @@
 							"name": "cpp:snow_boots"
 						},
 						{
+							"_comment": "肥料",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -83,6 +88,7 @@
 							]
 						},
 						{
+							"_comment": "圣诞花",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -97,6 +103,7 @@
 							"name": "cpp:poinsettia"
 						},
 						{
+							"_comment": "仰望星空派",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -111,6 +118,7 @@
 							"name": "cpp:stargazy_pie"
 						},
 						{
+							"_comment": "新春装饰",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -779,6 +787,7 @@
 							"name": "cpp:nf_logo"
 						},
 						{
+							"_comment": "番茄酱",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -799,6 +808,7 @@
 							]
 						},
 						{
+							"_comment": "草莓果酱",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -819,6 +829,7 @@
 							]
 						},
 						{
+							"_comment": "蓝莓果酱",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -839,6 +850,7 @@
 							]
 						},
 						{
+							"_comment": "香橙果酱",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -859,6 +871,7 @@
 							]
 						},
 						{
+							"_comment": "樱桃果酱",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -879,6 +892,7 @@
 							]
 						},
 						{
+							"_comment": "苹果酱",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -897,6 +911,21 @@
 									"count": 3
 								}
 							]
+						},
+						{
+							"_comment": "焦糖布丁",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:milk_bucket'},{id:'minecraft:sugar'},{id:'minecraft:egg'},{id:'minecraft:honey_bottle'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:caramel_pudding"
 						}
 					]
 				}

@@ -1,0 +1,22 @@
+{
+	"replace": false,
+	"values": [
+		"minecraft:sugar_cane",
+		"minecraft:cactus",
+		"minecraft:kelp_plant",
+		"minecraft:kelp",
+		"#minecraft:logs",
+		"#minecraft:leaves",
+		"minecraft:pumpkin",
+		"minecraft:melon",
+		"minecraft:bamboo",
+		"minecraft:brown_mushroom_block",
+		"minecraft:red_mushroom_block",
+		"minecraft:mushroom_stem",
+		"minecraft:crimson_stem",
+		"minecraft:warped_stem",
+		"minecraft:nether_wart_block",
+		"minecraft:warped_wart_block",
+		"minecraft:shroomlight"
+	]
+}

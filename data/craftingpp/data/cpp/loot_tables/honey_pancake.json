@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"translate\":\"item.cpp.honey_pancake\"}'},id:'cpp:honey_pancake',CustomModelData:12970020}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.honey_pancake\"}',Lore:['{\"translate\":\"lore.cpp.speed\"}']},id:'cpp:honey_pancake',CustomModelData:12970020}"
 						}
 					]
 				}

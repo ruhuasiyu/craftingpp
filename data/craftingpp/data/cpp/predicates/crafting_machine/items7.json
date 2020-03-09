@@ -2,6 +2,7 @@
 	"condition": "minecraft:alternative",
 	"terms": [
 		{
+			"_comment": "锁链护腿",
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
@@ -10,6 +11,7 @@
 			}
 		},
 		{
+			"_comment": "紧身皮裤",
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
@@ -18,10 +20,20 @@
 			}
 		},
 		{
+			"_comment": "牛仔裤",
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
 					"nbt": "{Items:[{Slot:1b,id:'minecraft:blue_dye'},{Slot:2b,id:'minecraft:blue_dye'},{Slot:3b,id:'minecraft:blue_dye'},{Slot:10b,id:'minecraft:leather'},{Slot:12b,id:'minecraft:leather'},{Slot:19b,id:'minecraft:blue_dye'},{Slot:21b,id:'minecraft:blue_dye'}]}"
+				}
+			}
+		},
+		{
+			"_comment": "冰糖葫芦",
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:1b,id:'minecraft:sugar'},{Slot:2b,tag:{id:'cpp:hawthorn'}},{Slot:3b,id:'minecraft:sugar'},{Slot:10b,id:'minecraft:sugar'},{Slot:11b,tag:{id:'cpp:hawthorn'}},{Slot:12b,id:'minecraft:sugar'},{Slot:20b,id:'minecraft:stick'}]}"
 				}
 			}
 		}

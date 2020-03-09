@@ -6,6 +6,11 @@
 		"breed": "cpp:decor/empire_hat_breed",
 		"pearl": "cpp:decor/empire_hat_pearl"
 	},
+    "display": {
+		"head": {
+			"translation": [ 0, 1, 0 ]
+		}
+    },
 	"elements": [
 		{
 			"from": [ 1.5, 14, -8 ],

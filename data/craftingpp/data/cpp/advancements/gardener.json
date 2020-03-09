@@ -2,7 +2,7 @@
 	"display": {
 		"icon": {
 			"item": "minecraft:acacia_sapling",
-			"nbt":"{CustomModelData:12970111}"
+			"nbt":"{CustomModelData:12971001}"
 		},
 		"title":{
 			"translate": "advancements.cpp.gardener.title"

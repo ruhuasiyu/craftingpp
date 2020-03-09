@@ -8,9 +8,10 @@
 		},
 		"description": {
 			"translate": "advancements.cpp.zombie.description"
-		}
+		},
+		"frame": "challenge"
 	},
-	"parent": "cpp:egg",
+	"parent": "cpp:transporter",
 	"criteria": {
 		"zombie": {
 			"trigger": "minecraft:inventory_changed",
@@ -22,5 +23,8 @@
 				]
 			}
 		}
+	},
+	"rewards":{
+		"experience": 100
 	}
 }

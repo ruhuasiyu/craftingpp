@@ -10,9 +10,9 @@
 		"description": {
 			"translate": "advancements.cpp.mahoushoujo.description"
 		},
-		"frame": "challenge"
+		"frame": "goal"
 	},
-	"parent": "cpp:transporter",
+	"parent": "cpp:dark_wand",
 	"criteria": {
 		"mahoushoujo": {
 			"trigger": "minecraft:inventory_changed",
