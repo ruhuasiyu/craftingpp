@@ -1,2 +1,3 @@
-execute if entity @s[distance=..6] unless block ~ ~ ~ chest positioned ^ ^ ^0.005 anchored feet run function cpp:use_carrot_on_a_stick/tool/chest_transporter_ray
-execute if entity @s[distance=..6] if block ~ ~ ~ chest run function cpp:use_carrot_on_a_stick/tool/chest_transporter
+function cpp:misc/loc_front/pos
+execute at @e[type=armor_stand,distance=..9,tag=cpp_loc_block_pos] if block ~ ~ ~ chest run function cpp:tool/chest_transporter
+kill @e[type=armor_stand,distance=..9,tag=cpp_loc_block_pos] 

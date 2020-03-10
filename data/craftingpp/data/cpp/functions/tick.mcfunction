@@ -39,6 +39,7 @@ execute as @e[type=experience_bottle] at @s run function cpp:xp/throw
 
 # 清理物品
 clear @a #cpp:clear{cppClear:1b}
+
 # 切换帽子模型
 execute as @a[predicate=cpp:hat_mainhand] run function cpp:player/hat_mainhand
 execute as @a[predicate=cpp:hat_offhand] run function cpp:player/hat_offhand
@@ -98,8 +99,8 @@ execute as @a[scores={cppUseFS=1..}] run function cpp:block/reset/fire
 execute as @a[scores={cppTrimChest=1..}] run function cpp:trim/check
 execute as @a[scores={cppTrimShulker=1..}] run function cpp:trim/check
 # 背包整理
-#scoreboard players enable @a cppTrim
-#execute as @a[scores={cppTrim=1..}] run function cpp:trim/player
+scoreboard players enable @a cppTrim
+execute as @a[scores={cppTrim=1..}] run function cpp:trim/player
 
 execute if score $skyislandMode cppConfig matches 1 as @a[scores={cppBsdIntFur=1..}] at @a anchored eyes run function cpp:block_breaker/ray
 

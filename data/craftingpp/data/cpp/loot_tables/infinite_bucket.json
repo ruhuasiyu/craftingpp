@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"translate\":\"item.cpp.infinite_bucket\"}',Lore:['{\"text\":\"水 0\"}','{\"text\":\"熔岩 0\"}']},id:'cpp:infinite_bucket',CustomModelData:12970005}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.infinite_bucket\"}',Lore:['{\"text\":\"水 0\"}','{\"text\":\"熔岩 0\"}']},id:'cpp:infinite_bucket',CustomModelData:12970051}"
 						}
 					]
 				}

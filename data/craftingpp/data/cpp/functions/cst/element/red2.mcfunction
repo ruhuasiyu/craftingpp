@@ -1,5 +1,5 @@
 execute store result score @s cppValue run data get entity @s ArmorItems[3].tag.CustomModelData
-execute if entity @s[scores={cppValue=12973061..12973080}] run setblock ~ ~ ~ air
+execute if entity @s[scores={cppValue=12975061..12975080}] run setblock ~ ~ ~ air
 
 execute if entity @s[nbt={ArmorItems:[{},{},{},{tag:{id:"cpp:lycoris_radiata"}}]}] run summon item ~ ~ ~ {Item:{id:"minecraft:red_dye",Count:1b}}
 execute if entity @s[nbt={ArmorItems:[{},{},{},{tag:{id:"cpp:trifolium"}}]}] run summon item ~ ~ ~ {Item:{id:"minecraft:white_dye",Count:1b}}
@@ -22,4 +22,4 @@ execute if entity @s[nbt={ArmorItems:[{},{},{},{tag:{id:"cpp:isorchid"}}]}] run 
 execute if entity @s[nbt={ArmorItems:[{},{},{},{tag:{id:"cpp:burning_chrysanthe"}}]}] run summon item ~ ~ ~ {Item:{id:"minecraft:blaze_powder",Count:1b}}
 execute if entity @s[nbt={ArmorItems:[{},{},{},{tag:{id:"cpp:oxalis"}}]}] run summon item ~ ~ ~ {Item:{id:"minecraft:slime_ball",Count:1b}}
 
-kill @s[scores={cppValue=12973061..12973080}]
+kill @s[scores={cppValue=12975061..12975080}]

@@ -1,6 +1,6 @@
 execute store result score @s cppValue run data get entity @s ArmorItems[3].tag.CustomModelData
 scoreboard players remove @s[scores={cppValue=12975021..12975040}] cppValue 20
-scoreboard players remove @s[scores={cppValue=12975041..12975060}] cppValue 20
+scoreboard players remove @s[scores={cppValue=12975041..12975060}] cppValue 40
 scoreboard players remove @s cppValue 5000
 execute store result entity @s ArmorItems[3].tag.CustomModelData int 1 run scoreboard players get @s cppValue
 

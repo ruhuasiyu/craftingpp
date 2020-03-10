@@ -2,7 +2,7 @@ advancement grant @s only cpp:elements
 advancement grant @s only cpp:weather
 setblock ~ 255 ~ chest
 loot insert ~ 255 ~ loot cpp:misc/weather
-data modify storage cpp:temp blue_force set from block ~ ~ ~ Items[0]
+data modify storage cpp:temp blue_force set from block ~ 255 ~ Items[0]
 setblock ~ 255 ~ air
 
 execute if data storage cpp:temp blue_force.tag{cppWeatherMarkerId:"thunder"} run weather clear

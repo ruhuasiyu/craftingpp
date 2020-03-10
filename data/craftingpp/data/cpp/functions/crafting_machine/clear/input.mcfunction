@@ -5,6 +5,10 @@ execute if data block ~ ~ ~ Items[{id:"minecraft:milk_bucket"}] run function cpp
 execute if data block ~ ~ ~ Items[{id:"minecraft:potion"}] run function cpp:crafting_machine/clear/potion
 execute if data block ~ ~ ~ Items[{id:"minecraft:honey_bottle"}] run function cpp:crafting_machine/clear/honey_bottle
 execute if data block ~ ~ ~ Items[{Slot:16b,tag:{id:"cpp:golem_farmer"}}] run function cpp:crafting_machine/clear/golem
+execute if data block ~ ~ ~ Items[{Slot:16b,tag:{id:"cpp:golem_miner"}}] run function cpp:crafting_machine/clear/golem
+execute if data block ~ ~ ~ Items[{Slot:16b,tag:{id:"cpp:golem_fisher"}}] run function cpp:crafting_machine/clear/golem
+execute if data block ~ ~ ~ Items[{Slot:16b,tag:{id:"cpp:golem_warrior"}}] run function cpp:crafting_machine/clear/golem
+execute if data block ~ ~ ~ Items[{Slot:16b,tag:{id:"cpp:golem_herder"}}] run function cpp:crafting_machine/clear/golem
 execute if data block ~ ~ ~ Items[{Slot:16b,tag:{dict:["hand"]}}] run data modify block ~ ~ ~ Items[{Slot:16b}].tag.Enchantments set from block ~ ~ ~ Items[{Slot:11b}].tag.Enchantments
 
 

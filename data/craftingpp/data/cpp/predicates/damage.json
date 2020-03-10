@@ -1,0 +1,225 @@
+{
+	"condition": "minecraft:alternative",
+	"terms": [
+		{
+			"condition": "minecraft:inverted",
+			"term": {
+				"condition": "minecraft:alternative",
+				"terms": [
+					{
+						"condition": "minecraft:inverted",
+						"term": {
+							"condition": "minecraft:entity_scores",
+							"entity": "this",
+							"scores": {
+								"cppChainDam": 1
+							}
+						}
+					},
+					{
+						"condition": "minecraft:random_chance",
+						"chance": 0.5
+					}
+				]
+			}
+		},
+		{
+			"condition": "minecraft:inverted",
+			"term": {
+				"condition": "minecraft:alternative",
+				"terms": [
+					{
+						"condition": "minecraft:inverted",
+						"term": {
+							"condition": "minecraft:entity_scores",
+							"entity": "this",
+							"scores": {
+								"cppChainDam": 2
+							}
+						}
+					},
+					{
+						"condition": "minecraft:random_chance",
+						"chance": 0.3333333333
+					}
+				]
+			}
+		},
+		{
+			"condition": "minecraft:inverted",
+			"term": {
+				"condition": "minecraft:alternative",
+				"terms": [
+					{
+						"condition": "minecraft:inverted",
+						"term": {
+							"condition": "minecraft:entity_scores",
+							"entity": "this",
+							"scores": {
+								"cppChainDam": 3
+							}
+						}
+					},
+					{
+						"condition": "minecraft:random_chance",
+						"chance": 0.25
+					}
+				]
+			}
+		},
+		{
+			"condition": "minecraft:inverted",
+			"term": {
+				"condition": "minecraft:alternative",
+				"terms": [
+					{
+						"condition": "minecraft:inverted",
+						"term": {
+							"condition": "minecraft:entity_scores",
+							"entity": "this",
+							"scores": {
+								"cppChainDam": 4
+							}
+						}
+					},
+					{
+						"condition": "minecraft:random_chance",
+						"chance": 0.2
+					}
+				]
+			}
+		},
+		{
+			"condition": "minecraft:inverted",
+			"term": {
+				"condition": "minecraft:alternative",
+				"terms": [
+					{
+						"condition": "minecraft:inverted",
+						"term": {
+							"condition": "minecraft:entity_scores",
+							"entity": "this",
+							"scores": {
+								"cppChainDam": 5
+							}
+						}
+					},
+					{
+						"condition": "minecraft:random_chance",
+						"chance": 0.1666666667
+					}
+				]
+			}
+		},
+		{
+			"condition": "minecraft:inverted",
+			"term": {
+				"condition": "minecraft:alternative",
+				"terms": [
+					{
+						"condition": "minecraft:inverted",
+						"term": {
+							"condition": "minecraft:entity_scores",
+							"entity": "this",
+							"scores": {
+								"cppChainDam": 6
+							}
+						}
+					},
+					{
+						"condition": "minecraft:random_chance",
+						"chance": 0.14285714
+					}
+				]
+			}
+		},
+		{
+			"condition": "minecraft:inverted",
+			"term": {
+				"condition": "minecraft:alternative",
+				"terms": [
+					{
+						"condition": "minecraft:inverted",
+						"term": {
+							"condition": "minecraft:entity_scores",
+							"entity": "this",
+							"scores": {
+								"cppChainDam": 7
+							}
+						}
+					},
+					{
+						"condition": "minecraft:random_chance",
+						"chance": 0.125
+					}
+				]
+			}
+		},
+		{
+			"condition": "minecraft:inverted",
+			"term": {
+				"condition": "minecraft:alternative",
+				"terms": [
+					{
+						"condition": "minecraft:inverted",
+						"term": {
+							"condition": "minecraft:entity_scores",
+							"entity": "this",
+							"scores": {
+								"cppChainDam": 8
+							}
+						}
+					},
+					{
+						"condition": "minecraft:random_chance",
+						"chance": 0.1111111111
+					}
+				]
+			}
+		},
+		{
+			"condition": "minecraft:inverted",
+			"term": {
+				"condition": "minecraft:alternative",
+				"terms": [
+					{
+						"condition": "minecraft:inverted",
+						"term": {
+							"condition": "minecraft:entity_scores",
+							"entity": "this",
+							"scores": {
+								"cppChainDam": 9
+							}
+						}
+					},
+					{
+						"condition": "minecraft:random_chance",
+						"chance": 0.1
+					}
+				]
+			}
+		},
+		{
+			"condition": "minecraft:inverted",
+			"term": {
+				"condition": "minecraft:alternative",
+				"terms": [
+					{
+						"condition": "minecraft:inverted",
+						"term": {
+							"condition": "minecraft:entity_scores",
+							"entity": "this",
+							"scores": {
+								"cppChainDam": 10
+							}
+						}
+					},
+					{
+						"condition": "minecraft:random_chance",
+						"chance": 0.0909090909
+					}
+				]
+			}
+		}
+	]
+}

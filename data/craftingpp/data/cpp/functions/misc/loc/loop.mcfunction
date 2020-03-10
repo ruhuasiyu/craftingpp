@@ -50,6 +50,6 @@ execute if score #sf cppValue matches ..-1 store result entity @e[type=armor_sta
 execute if score #sg cppValue matches ..-1 store result entity @e[type=armor_stand,distance=..9,tag=cpp_loc_block_as,tag=cpp_temp,limit=1] Pos[1] double -0.01 run scoreboard players get #y cppValue
 execute if score #sh cppValue matches ..-1 store result entity @e[type=armor_stand,distance=..9,tag=cpp_loc_block_as,tag=cpp_temp,limit=1] Pos[2] double -0.01 run scoreboard players get #z cppValue
 # 玩家位置是否是特定方块
-execute as @e[type=armor_stand,distance=..9,tag=cpp_loc_block_as,tag=cpp_temp] at @s align xyz positioned ~0.5 ~ ~0.5 unless entity @e[type=armor_stand,distance=..0.5,tag=cpp_block] run function cpp:misc/loc/check
+execute as @e[type=armor_stand,distance=..9,tag=cpp_loc_block_as,tag=cpp_temp] at @s align xyz positioned ~0.5 ~ ~0.5 unless entity @e[type=armor_stand,distance=..0.5,tag=cpp_block] unless block ~ ~ ~ #cpp:fluid run function cpp:misc/loc/check
 # 若未找到，循环
 execute unless entity @e[type=armor_stand,distance=..9,tag=cpp_loc_block_pos_pot] at @e[type=armor_stand,distance=..9,tag=cpp_loc_block_as,tag=cpp_temp] if entity @s[distance=..6] run function cpp:misc/loc/loop

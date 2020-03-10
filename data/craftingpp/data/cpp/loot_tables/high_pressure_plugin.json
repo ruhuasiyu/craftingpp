@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{MachinePlugin:1b,display:{Name:'{\"translate\":\"item.cpp.high_pressure_plugin\"}'},id:'cpp:high_pressure_plugin',CustomModelData:12970103}"
+							"tag": "{cppMachinePlugin:1b,display:{Name:'{\"translate\":\"item.cpp.high_pressure_plugin\"}'},id:'cpp:high_pressure_plugin',CustomModelData:12970103}"
 						}
 					]
 				}

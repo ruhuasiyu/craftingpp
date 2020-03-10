@@ -1,7 +1,4 @@
-tellraw @s ["<",{"selector":"@s"},"> Slonhon Ral!"]
-execute in overworld run tp @s ~ 255 ~
-execute store result score #temp cppValue run spreadplayers ~ ~ 1 10 false @s
-execute if score #temp cppValue matches 0 run fill ~-1 62 ~-1 1 62 1 dirt
+execute store result score #t cppValue run spreadplayers ~ ~ 1 10 false @s
+execute if score #t cppValue matches 0 run fill ~-1 62 ~-1 1 62 1 dirt
 spreadplayers ~ ~ 1 10 false @s
-execute in overworld if data entity @s SpawnX run function cpp:use_carrot_on_a_stick/tool/origin_of_the_world2
-execute unless data entity @s SpawnX run tellraw @s {"translate":"item.cpp.origin_of_the_world.no_spawn"}
+tellraw @s {"translate":"item.cpp.origin_of_the_world.no_spawn"}

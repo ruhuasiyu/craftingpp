@@ -49,7 +49,7 @@
 			"condition": "minecraft:entity_properties",
 			"entity": "this",
 			"predicate": {
-				"nbt": "{Inventory:[{tag:'id:\"cpp:magnet\"'}]}"
+				"nbt": "{Inventory:[{tag:{id:'cpp:magnet'}}]}"
 			}
 		}
 	]

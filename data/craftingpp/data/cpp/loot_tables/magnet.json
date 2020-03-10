@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"translate\":\"item.cpp.magnet\"}'},id:'cpp:magnet',CustomModelData:12970041,Type:0b}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.magnet\"}'},id:'cpp:magnet',CustomModelData:12970041}"
 						}
 					]
 				}

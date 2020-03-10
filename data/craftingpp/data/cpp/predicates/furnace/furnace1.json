@@ -368,6 +368,110 @@
 					"nbt": "{Items:[{Slot:0b,id:'minecraft:cooked_porkchop'}]}"
 				}
 			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:calliopsis'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:cyclamen'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:iris'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:lilium_pumilum'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:snowdrop'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:narcissus'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:cole_flower'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:lupine'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:crocu'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:pansy'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:arabia_speedwell'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:silene_pendula'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:blue_rose'}}]}"
+				}
+			}
 		}
 	]
 }

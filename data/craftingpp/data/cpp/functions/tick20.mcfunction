@@ -25,13 +25,13 @@ scoreboard players operation #leaves_rts cppValue += #rtsno cppValue
 execute if score #leaves_rts cppValue >= $modLeavesThreshold cppConfig as @e[type=armor_stand,tag=cpp_leaves_on_tree,sort=random,limit=1] at @s run function cpp:plants/leaves/type
 
 # 物品展示框
-execute as @e[type=minecraft:item_frame,nbt={Item:{tag:{id:"cpp:magnet"}}}] at @s run function cpp:item_frame/magnet/tick
-execute as @e[type=minecraft:item_frame,nbt={Item:{tag:{id:"cpp:time_checker"}}}] at @s run function cpp:item_frame/time_checker/tick
-execute as @e[type=minecraft:item_frame,nbt={Item:{tag:{id:"cpp:muffler"}}}] at @s as @e[distance=..5] run data merge entity @s {Silent:1b}
+execute as @e[type=item_frame,nbt={Item:{tag:{id:"cpp:magnet"}}}] at @s run function cpp:item_frame/magnet/tick
+execute as @e[type=item_frame,nbt={Item:{tag:{id:"cpp:time_checker"}}}] at @s run function cpp:item_frame/time_checker/tick
+execute as @e[type=item_frame,nbt={Item:{tag:{id:"cpp:muffler"}}}] at @s as @e[distance=..5] run data merge entity @s {Silent:1b}
 
-execute as @e[type=minecraft:item_frame,nbt={Item:{tag:{id:"cpp:break_hand"}}}] at @s unless entity @e[type=minecraft:armor_stand,distance=..0.01,tag=cpp_break_hand] run function cpp:item_frame/break_hand/init
-execute as @e[type=minecraft:item_frame,nbt={Item:{tag:{id:"cpp:smart_hand"}}}] at @s unless entity @e[type=minecraft:armor_stand,distance=..0.01,tag=cpp_smart_hand] run function cpp:item_frame/smart_hand/init
-execute as @e[type=minecraft:item_frame,nbt={Item:{tag:{id:"cpp:angry_hand"}}}] at @s unless entity @e[type=minecraft:armor_stand,distance=..0.01,tag=cpp_angry_hand] run function cpp:item_frame/angry_hand/init
+execute as @e[type=item_frame,nbt={Item:{tag:{id:"cpp:break_hand"}}}] at @s unless entity @e[type=armor_stand,distance=..0.01,tag=cpp_break_hand] run function cpp:item_frame/break_hand/init
+execute as @e[type=item_frame,nbt={Item:{tag:{id:"cpp:smart_hand"}}}] at @s unless entity @e[type=armor_stand,distance=..0.01,tag=cpp_smart_hand] run function cpp:item_frame/smart_hand/init
+execute as @e[type=item_frame,nbt={Item:{tag:{id:"cpp:angry_hand"}}}] at @s unless entity @e[type=armor_stand,distance=..0.01,tag=cpp_angry_hand] run function cpp:item_frame/angry_hand/init
 
 # 手
 execute as @e[type=item_frame,predicate=cpp:is_hand] at @s run function cpp:golem/hand/type

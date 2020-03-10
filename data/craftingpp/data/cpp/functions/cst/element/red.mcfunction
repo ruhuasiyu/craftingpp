@@ -1,2 +1,3 @@
-execute if entity @s[distance=..6] unless block ~ ~ ~ #cpp:red_force_smeltable positioned ^ ^ ^0.005 anchored feet run function cpp:cst/element/red
-execute if entity @s[distance=..6] if block ~ ~ ~ #cpp:red_force_smeltable run function cpp:cst/element/red1
+function cpp:misc/loc_front/pos
+execute at @e[type=armor_stand,distance=..9,tag=cpp_loc_block_pos] if block ~ ~ ~ #cpp:red_force_smeltable run function cpp:cst/element/red1
+kill @e[type=armor_stand,distance=..9,tag=cpp_loc_block_pos] 

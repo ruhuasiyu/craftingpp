@@ -1,0 +1,49 @@
+{
+	"condition": "minecraft:alternative",
+	"terms": [
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"equipment": {
+					"mainhand":{
+						"nbt": "{id:'cpp:magnet'}"
+					}
+				}
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"equipment": {
+					"mainhand":{
+						"nbt": "{id:'cpp:magnet_closed'}"
+					}
+				}
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"equipment": {
+					"mainhand":{
+						"nbt": "{id:'cpp:temperancer'}"
+					}
+				}
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"equipment": {
+					"mainhand":{
+						"nbt": "{id:'cpp:temperancer_closed'}"
+					}
+				}
+			}
+		}
+	]
+}

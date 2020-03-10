@@ -1,0 +1,82 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:alternatives",
+					"children": [
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "this",
+									"predicate": {
+										"equipment": {
+											"mainhand":{
+												"nbt": "{id:'cpp:magnet'}"
+											}
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:magnet_closed"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "this",
+									"predicate": {
+										"equipment": {
+											"mainhand":{
+												"nbt": "{id:'cpp:magnet_closed'}"
+											}
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:magnet"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "this",
+									"predicate": {
+										"equipment": {
+											"mainhand":{
+												"nbt": "{id:'cpp:temperancer'}"
+											}
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:temperancer_closed"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "this",
+									"predicate": {
+										"equipment": {
+											"mainhand":{
+												"nbt": "{id:'cpp:temperancer_closed'}"
+											}
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:temperancer"
+						}
+					]
+				}
+			]
+		}
+	]
+}

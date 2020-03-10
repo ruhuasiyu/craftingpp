@@ -15,9 +15,9 @@
 					},
 					{
 						"condition": "minecraft:location_check",
-						"predicate": {
-							"block": {
-								"nbt": "{Items:[{Slot:2b}]}"
+				"predicate": {
+					"block": {
+						"nbt": "{Items:[{Slot:2b}]}"
 							}
 						}
 					}
@@ -389,6 +389,110 @@
 			"predicate": {
 				"block": {
 					"nbt": "{Items:[{Slot:0b,id:'minecraft:cooked_porkchop'},{Slot:2b,tag:{id:'cpp:bacon'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:calliopsis'}},{Slot:2b,id:'minecraft:yellow_dye'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:cyclamen'}},{Slot:2b,id:'minecraft:magenta_dye'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:iris'}},{Slot:2b,id:'minecraft:blue_dye'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:lilium_pumilum'}},{Slot:2b,id:'minecraft:red_dye'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:snowdrop'}},{Slot:2b,id:'minecraft:white_dye'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:narcissus'}},{Slot:2b,id:'minecraft:light_gray_dye'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:cole_flower'}},{Slot:2b,id:'minecraft:yellow_dye'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:lupine'}},{Slot:2b,id:'minecraft:purple_dye'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:crocu'}},{Slot:2b,id:'minecraft:purple_dye'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:pansy'}},{Slot:2b,id:'minecraft:purple_dye'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:arabia_speedwell'}},{Slot:2b,id:'minecraft:light_blue_dye'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:silene_pendula'}},{Slot:2b,id:'minecraft:pink_dye'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:blue_rose'}},{Slot:2b,id:'minecraft:blue_dye'}]}"
 				}
 			}
 		}

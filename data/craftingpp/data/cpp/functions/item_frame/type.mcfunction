@@ -7,5 +7,7 @@ execute as @s[tag=!cpp_item_frame_show] at @s run function cpp:item_frame/frame
 # 装饰物
 execute as @s[tag=cpp_special_item_frame] run function cpp:item_frame/special
 # 爆竹
-execute as @s[tag=cpp_firecrackers] run function cpp:tool/firecrackers
+execute as @s[tag=cpp_firecrackers] run function cpp:item_frame/firecrackers
+# 磁铁
+execute as @e[type=item_frame,nbt={Item:{tag:{id:"cpp:magnet"}}}] at @s run function cpp:item_frame/magnet/tick
 

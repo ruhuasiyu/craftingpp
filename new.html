@@ -361,9 +361,9 @@
 <li><strong>元素</strong>：包括天、地、山、土、水、火、命七种元素、七类生物、七种稀有掉落物、七种元素之力、七种药水。这些稀有掉落物也用于机器、工具的合成和仪式等。</li>
 <li><strong>经验</strong>：大幅提高了经验的用途，取出经验后使用附魔之瓶可以制作出模组合成器、附魔矿物、各种工具、机器、法杖等，机器和仪式也需要经验。</li>
 <li><strong>机器</strong>：集磨粉炼矿增殖反应晒盐造石造冰于一体的9状态多功能一体机；用于获取绿宝石和附魔之瓶的交易机；代替人力处理物品的物品处理机；召唤生物的生物投影仪；提供正负面效果的信标增强仪；更便捷强大的附魔处理的金砧等。</li>
-<li><strong>傀儡</strong>：科技线的终端，集种田伐木钓鱼杀怪畜牧于一体的傀儡，玩家可以使用方块来规划其行为模式路径。</li>
+<li><strong>傀儡</strong>：科技线的终端，全自动种田伐木钓鱼杀怪畜牧的傀儡。</li>
 <li><strong>研究</strong>：需要玩家测定的矿物熔炼配比参数，需要玩家测定的附魔书仪式物品对应，和20种需要杂交获取的植物，满足你的研究欲望。</li>
-<li><strong>食物装饰</strong>：47种食物、79种头颅、28种头饰服饰、18种春联横批、33种油画水墨画、30种纸片人、17种告示牌、100种称号，以及圣诞树圣诞花等等，装点自己也装点自己的家。</li>
+<li><strong>食物装饰</strong>：39种植物、70种食物、80种头颅、28种头饰服饰、18种春联横批、33种油画水墨画、67种纸片人、17种告示牌、100种称号，装点自己也装点自己的家。</li>
 </ul>
 <p>最新正式版本为v1.9.24，于2019年11月20日发布，支持Minecraft 1.14.x版本。</p>
 <!--<p>最新测试版本为v1.10-m08d23，于2019年8月23日发布，支持Minecraft 1.15快照版本。此次更新旨在支持1.15的新内容蜜蜂，并对原有内容进行了调整。</p>-->
@@ -4222,7 +4222,7 @@
 	</span></td>
 	<td><code>cpp:sun_shard</code><br /><span class="oldversion">1.9.x</span></td>
 </tr>
-<tr><td><a href="#月之碎片">月之碎片</a>+末影之眼</td>
+<tr><td><a href="#月之碎片">月之碎片</a>+末影之眼+狱金碎片</td>
 	<td><span class="ui cm" title="合成器">
 		<a class="netherite_scrap" title="狱金碎片"></a>
 		<a href="#月之碎片" class="ci moon_shard" title="月之碎片"></a>
@@ -4237,7 +4237,6 @@
 	</span></td>
 	<td><code>cpp:sun_shard</code><br /><span class="version">1.10起</span></td>
 </tr>
-
 
 <tr><th>下界之星</th>
 	<td>下界之星+<a href="#日之碎片">日之碎片</a></td>
@@ -5657,7 +5656,7 @@
 		<a class="ci magnet" title="磁铁"></a>
 	</span></td></tr>
 </tbody></table>
-<p>自动将附近物品吸引过来。右击依次切换范围为0/8/16米。若放置放物品展示框，可吸引附近16米的物品到所在处。</p>
+<p>自动将16米内物品吸引过来。右击切换开关。若放置放物品展示框，可吸引附近16米的物品到所在处。</p>
 </tbody></table>
 
 <h3 id="报时器">报时器 <code>cpp:time_checker</code></h3>
@@ -5743,7 +5742,7 @@
 
 <h3 id="压缩器">压缩器 <code>cpp:compressor</code></h3>
 <p>右击可将所指的64个物品压缩，重新扔出压缩后的物品可复原。</p>
-<p>最高可进行八重压缩，相当于1格可存储至多18014398509481984个物品。</p>
+<p>如果用于存储同种物品，一个箱子就可以存储5.84×10<sup>48</sup>个物品。</p>
 <p>放置压缩后的方块将会导致其退化为普通方块。</p>
 <table><thead><tr><th>材料</th><th>合成配方</th></tr></thead><tbody>
 <tr><td><a href="#附魔之瓶">附魔之瓶</a>+<a href="#附魔钻石">附魔钻石</a>+<a href="#附魔金锭">附魔金锭</a>+活塞+<a href="#附魔铁锭">附魔铁锭</a>+<a href="#硅板">硅板</a></td>
@@ -5794,6 +5793,43 @@
 		<a class="ci silicon_plate" title="硅板"></a>
 		<a href="#附魔铁锭" class="ci enchanted_iron" title="附魔铁锭"></a>
 		<a class="ci coordinate_recorder" title="坐标记录仪"></a>
+	</span></td></tr>
+</tbody></table>
+
+<h3 id="无尽桶">无尽桶 <code>cpp:infinite_bucket</code></h3>
+<p>右键收集水和熔岩并存储起来。Shift右键放置水和熔岩，优先放置水。</p>
+<table><thead><tr><th>材料</th><th>合成配方</th></tr></thead><tbody>
+<tr><td><a href="#附魔铁锭">附魔铁锭</a</td>
+	<td><span class="ui cm" title="合成器">
+		<a class="empty"></a>
+		<a class="empty"></a>
+		<a class="empty"></a>
+		<a href="#附魔铁锭" class="ci enchanted_iron" title="附魔铁锭"></a>
+		<a class="empty"></a>
+		<a href="#附魔铁锭" class="ci enchanted_iron" title="附魔铁锭"></a>
+		<a class="empty"></a>
+		<a href="#附魔铁锭" class="ci enchanted_iron" title="附魔铁锭"></a>
+		<a class="empty"></a>
+		<a class="ci infinite_bucket" title="无尽桶"></a>
+	</span></td></tr>
+</tbody></table>
+
+<h3 id="消音器">消音器 <code>cpp:muffler</code></h3>
+<p><span class="version">1.10</span> 右键或放置在物品展示框内时，附近16米内的生物会被永久消声。</p>
+<p><span class="oldversion">1.9.x</span> 附近5米内的生物会被永久消声。</p>
+<table><thead><tr><th>材料</th><th>合成配方</th></tr></thead><tbody>
+<tr><td>铁锭+燧石+湿海绵</td>
+	<td><span class="ui cm" title="合成器">
+		<a class="iron_ingot" title="铁锭"></a>
+		<a class="flint" title="燧石"></a>
+		<a class="iron_ingot" title="铁锭"></a>
+		<a class="iron_ingot" title="铁锭"></a>
+		<a class="wet_sponge" title="湿海绵"></a>
+		<a class="iron_ingot" title="铁锭"></a>
+		<a class="iron_ingot" title="铁锭"></a>
+		<a class="iron_ingot" title="铁锭"></a>
+		<a class="iron_ingot" title="铁锭"></a>
+		<a class="ci muffler" title="消音器"></a>
 	</span></td></tr>
 </tbody></table>
 
@@ -5848,24 +5884,6 @@
 		<a href="#附魔铁锭" class="ci enchanted_iron" title="附魔铁锭"></a>
 		<a class="empty"></a>
 		<a class="ci chest_transporter" title="搬箱器"></a>
-	</span></td></tr>
-</tbody></table>
-
-<h3 id="消音器">消音器 <code>cpp:muffler</code></h3>
-<p><span class="version">1.9起</span> 附近5米内的生物会被永久消声。</p>
-<table><thead><tr><th>材料</th><th>合成配方</th></tr></thead><tbody>
-<tr><td>铁锭+燧石+湿海绵</td>
-	<td><span class="ui cm" title="合成器">
-		<a class="iron_ingot" title="铁锭"></a>
-		<a class="flint" title="燧石"></a>
-		<a class="iron_ingot" title="铁锭"></a>
-		<a class="iron_ingot" title="铁锭"></a>
-		<a class="wet_sponge" title="湿海绵"></a>
-		<a class="iron_ingot" title="铁锭"></a>
-		<a class="iron_ingot" title="铁锭"></a>
-		<a class="iron_ingot" title="铁锭"></a>
-		<a class="iron_ingot" title="铁锭"></a>
-		<a class="ci muffler" title="消音器"></a>
 	</span></td></tr>
 </tbody></table>
 
@@ -7744,8 +7762,8 @@
 </tbody></table>
 
 <!--==================================================================-->
-<h2 id="plants">植物</h2>
-<h3 id="flowers_and_grasses">花草</h3>
+<h2 id="植物">植物</h2>
+<h3 id="花草">花草</h3>
 <p>新增34种花草，天然生成在主世界草方块上。</p>
 <p>前20种花草在合成器中合成为3个对应种子。一共4个生长阶段，成熟后收割可获得相应花草，否则只能获得种子。作物不受时运影响，可用骨粉催熟。每个花草都对应一个实体，大面积种植可能会卡顿。收获成熟的小麦、胡萝卜、马铃薯和甜菜根有5%几率获得六种花草种子，其余花草种子可以通过杂交得到：当一种作物将要生长成熟时，若邻近的花草可杂交，则有5%几率变异为其它花草。</p>
 
@@ -8024,91 +8042,91 @@
 	<th><strong id="波斯菊">波斯菊</strong></th>
 	<td><code>cpp:calliopsis</code></td>
 	<td>-</td>
-	<td><a class="ui slime_ball" title="粘液球"></a></td>
+	<td><a class="ui yellow_dye" title="黄色染料"></a></td>
 	<td><a class="ui icons18 slowness"></a><span class="lore">缓慢 0:05</span></td>
 </tr>
 <tr><td><a class="ui ci cyclamen"></a></td>
 	<th><strong id="仙客来">仙客来</strong></th>
 	<td><code>cpp:cyclamen</code></td>
 	<td>-</td>
-	<td><a class="ui slime_ball" title="粘液球"></a></td>
+	<td><a class="ui magenta_dye" title="品红色染料"></a></td>
 	<td><a class="ui icons18 slowness"></a><span class="lore">缓慢 0:05</span></td>
 </tr>
 <tr><td><a class="ui ci iris"></a></td>
 	<th><strong id="鸢尾">鸢尾</strong></th>
 	<td><code>cpp:iris</code></td>
 	<td>-</td>
-	<td><a class="ui slime_ball" title="粘液球"></a></td>
+	<td><a class="ui blue_dye" title="蓝色染料"></a></td>
 	<td><a class="ui icons18 slowness"></a><span class="lore">缓慢 0:05</span></td>
 </tr>
 <tr><td><a class="ui ci lilium_pumilum"></a></td>
 	<th><strong id="山丹丹">山丹丹</strong></th>
 	<td><code>cpp:lilium_pumilum</code></td>
 	<td>-</td>
-	<td><a class="ui slime_ball" title="粘液球"></a></td>
+	<td><a class="ui red_dye" title="红色染料"></a></td>
 	<td><a class="ui icons18 slowness"></a><span class="lore">缓慢 0:05</span></td>
 </tr>
 <tr><td><a class="ui ci snowdrop"></a></td>
 	<th><strong id="雪滴花">雪滴花</strong></th>
 	<td><code>cpp:snowdrop</code></td>
 	<td>-</td>
-	<td><a class="ui slime_ball" title="粘液球"></a></td>
+	<td><a class="ui white_dye" title="白色染料"></a></td>
 	<td><a class="ui icons18 slowness"></a><span class="lore">缓慢 0:05</span></td>
 </tr>
 <tr><td><a class="ui ci narcissus"></a></td>
 	<th><strong id="水仙">水仙</strong></th>
 	<td><code>cpp:narcissus</code></td>
 	<td>-</td>
-	<td><a class="ui slime_ball" title="粘液球"></a></td>
+	<td><a class="ui light_gray_dye" title="淡灰色染料"></a></td>
 	<td><a class="ui icons18 slowness"></a><span class="lore">缓慢 0:05</span></td>
 </tr>
 <tr><td><a class="ui ci cole_flower"></a></td>
 	<th><strong id="油菜花">油菜花</strong></th>
 	<td><code>cpp:cole_flower</code></td>
 	<td>-</td>
-	<td><a class="ui slime_ball" title="粘液球"></a></td>
+	<td><a class="ui yellow_dye" title="黄色染料"></a></td>
 	<td><a class="ui icons18 slowness"></a><span class="lore">缓慢 0:05</span></td>
 </tr>
 <tr><td><a class="ui ci lupine"></a></td>
 	<th><strong id="鲁冰花">鲁冰花</strong></th>
 	<td><code>cpp:lupine</code></td>
 	<td>-</td>
-	<td><a class="ui slime_ball" title="粘液球"></a></td>
+	<td><a class="ui purple_dye" title="紫色染料"></a></td>
 	<td><a class="ui icons18 slowness"></a><span class="lore">缓慢 0:05</span></td>
 </tr>
 <tr><td><a class="ui ci crocu"></a></td>
 	<th><strong id="番红花">番红花</strong></th>
 	<td><code>cpp:crocu</code></td>
 	<td>-</td>
-	<td><a class="ui slime_ball" title="粘液球"></a></td>
+	<td><a class="ui purple_dye" title="紫色染料"></a></td>
 	<td><a class="ui icons18 slowness"></a><span class="lore">缓慢 0:05</span></td>
 </tr>
 <tr><td><a class="ui ci pansy"></a></td>
 	<th><strong id="三色堇">三色堇</strong></th>
 	<td><code>cpp:pansy</code></td>
 	<td>-</td>
-	<td><a class="ui slime_ball" title="粘液球"></a></td>
+	<td><a class="ui purple_dye" title="紫色染料"></a></td>
 	<td><a class="ui icons18 slowness"></a><span class="lore">缓慢 0:05</span></td>
 </tr>
 <tr><td><a class="ui ci arabia_speedwell"></a></td>
 	<th><strong id="阿拉伯婆婆纳">阿拉伯婆婆纳</strong></th>
 	<td><code>cpp:arabia_speedwell</code></td>
 	<td>-</td>
-	<td><a class="ui slime_ball" title="粘液球"></a></td>
+	<td><a class="ui light_blue_dye" title="淡蓝色染料"></a></td>
 	<td><a class="ui icons18 slowness"></a><span class="lore">缓慢 0:05</span></td>
 </tr>
 <tr><td><a class="ui ci silene_pendula"></a></td>
 	<th><strong id="矮雪轮">矮雪轮</strong></th>
 	<td><code>cpp:silene_pendula</code></td>
 	<td>-</td>
-	<td><a class="ui slime_ball" title="粘液球"></a></td>
+	<td><a class="ui pink_dye" title="粉色染料"></a></td>
 	<td><a class="ui icons18 slowness"></a><span class="lore">缓慢 0:05</span></td>
 </tr>
 <tr><td><a class="ui ci blue_rose"></a></td>
 	<th><strong id="蓝色妖姬">蓝色妖姬</strong></th>
 	<td><code>cpp:blue_rose</code></td>
 	<td>-</td>
-	<td><a class="ui slime_ball" title="粘液球"></a></td>
+	<td><a class="ui blue_dye" title="蓝色染料"></a></td>
 	<td><a class="ui icons18 slowness"></a><span class="lore">缓慢 0:05</span></td></tr>
 </tbody></table>
 

@@ -1,2 +1,2 @@
-execute if entity @s[distance=..6] unless block ^ ^ ^ #cpp:fluid positioned ^ ^ ^-0.005 anchored feet run function cpp:cst/element/green1
-execute if entity @s[distance=..6] if block ^ ^ ^ #cpp:fluid positioned ^ ^ ^0.005 anchored feet run function cpp:cst/element/green
+function cpp:misc/get_front_air
+execute at @e[type=area_effect_cloud,tag=cpp_front_air,distance=..7] run function cpp:cst/element/green1

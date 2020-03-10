@@ -1,12 +1,8 @@
-execute as @s[nbt={SelectedItem:{tag:{id:"cpp:chest_transporter"}}}] store result score #temp cppValue run data get entity @s SelectedItem.tag.Damage
-execute as @s[nbt=!{SelectedItem:{tag:{id:"cpp:chest_transporter"}}}] store result score #temp cppValue run data get entity @s Inventory[{Slot:-106b}].tag.Damage
-scoreboard players add #temp cppValue 1
-
-execute as @s[nbt={SelectedItem:{tag:{id:"cpp:chest_transporter"}}}] store result entity @s SelectedItem.tag.Damage int 1 run scoreboard players get #temp cppValue
-execute as @s[nbt=!{SelectedItem:{tag:{id:"cpp:chest_transporter"}}}] store result entity @s Inventory[{Slot:-106b}].tag.Damage int 1 run scoreboard players get #temp cppValue
-
-execute if score #temp cppValue matches 26.. run replaceitem entity @s[nbt=!{SelectedItem:{tag:{id:"cpp:chest_transporter"}}}] weapon.offhand air
-execute if score #temp cppValue matches 26.. run replaceitem entity @s[nbt={SelectedItem:{tag:{id:"cpp:chest_transporter"}}}] weapon.mainhand air
-
-kill @e[type=item,distance=..2,nbt={Item:{tag:{isRdMark:1b}}},limit=1]
-clear @a firework_star{isRdMark:1b}
+setblock ~ 255 ~ shulker_box
+data remove storage cpp:damage Item.Slot
+data modify block ~ 255 ~ Items[{Slot:0b}] merge from storage cpp:damage Item
+execute as @s[predicate=!cpp:mainhand/carrot_on_a_stick] run loot replace entity @s weapon.offhand mine ~ 255 ~ diamond_pickaxe{isShulkerMarker:1b}
+execute as @s[predicate=cpp:mainhand/carrot_on_a_stick] run loot replace entity @s weapon.mainhand mine ~ 255 ~ diamond_pickaxe{isShulkerMarker:1b}
+setblock ~ 255 ~ air
+execute if score #damage cppValue matches 26.. run replaceitem entity @s[predicate=!cpp:mainhand/carrot_on_a_stick] weapon.offhand air
+execute if score #damage cppValue matches 26.. run replaceitem entity @s[predicate=cpp:mainhand/carrot_on_a_stick] weapon.mainhand air
