@@ -2,7 +2,7 @@
 	"parent": "block/block",
 	"display": {
 		"head": {
-			"scale": [ 0.82, 0.82, 0.82 ]
+			"scale": [ 0.901, 0.901, 0.901 ]
 		},
 		"gui": {
 			"rotation": [ 30, 225, 0 ],

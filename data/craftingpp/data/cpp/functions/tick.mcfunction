@@ -50,12 +50,12 @@ execute as @a[predicate=cpp:broom_hand] run function cpp:player/broom_hand
 execute as @a[predicate=cpp:shooting_star_mainhand] run function cpp:player/shooting_star_mainhand
 execute as @a[predicate=cpp:shooting_star_offhand] run function cpp:player/shooting_star_offhand
 # 称号
-execute as @a[predicate=cpp:mainhand_emerald] run function cpp:decor/mainhand_emerald
+execute as @a[predicate=cpp:mainhand/emerald] run function cpp:decor/mainhand_emerald
 # 随机方块# check 
-execute as @a[predicate=cpp:offhand_shulker_box] if data entity @s Inventory[{Slot:-106b}].tag.BlockEntityTag.Items[0] run function cpp:item/random_block/run
+execute as @a[predicate=cpp:offhand/shulker_box] if data entity @s Inventory[{Slot:-106b}].tag.BlockEntityTag.Items[0] run function cpp:item/random_block/run
 # 替换合成器
-execute as @a[predicate=cpp:mainhand_petrified_oak_slab] unless data entity @s SelectedItem.tag.CustomModelData run function cpp:crafting_machine/replace/main
-execute as @a[predicate=cpp:offhand_petrified_oak_slab] unless data entity @s Inventory[{Slot:-106b}].tag.CustomModelData run function cpp:crafting_machine/replace/off
+execute as @a[predicate=cpp:mainhand/petrified_oak_slab] unless data entity @s SelectedItem.tag.CustomModelData run function cpp:crafting_machine/replace/main
+execute as @a[predicate=cpp:offhand/petrified_oak_slab] unless data entity @s Inventory[{Slot:-106b}].tag.CustomModelData run function cpp:crafting_machine/replace/off
 # 替换纸片人
 
 
@@ -78,7 +78,7 @@ effect give @s[nbt={Inventory:[{Slot:103b,tag:{id:"cpp:glow_hat"}}]}] glowing 5
 execute as @s[nbt={Inventory:[{Slot:103b,tag:{id:"cpp:glass_helmet"}}]}] at @s anchored eyes unless block ~ ~ ~ water run effect give @s water_breathing 5
 execute as @s[nbt={Inventory:[{Slot:103b,tag:{id:"cpp:purple_eye"}}]}] at @s run effect give @e[tag=cpp_wild_grass,distance=..100] glowing 5
 # 附魔之瓶
-execute as @a[predicate=cpp:offhand_hopper] run function cpp:xp/check
+execute as @a[predicate=cpp:offhand/hopper] run function cpp:xp/check
 
 # 返回家
 execute if score $skyislandMode cppConfig matches 1 as @p[gamemode=!creative,distance=..10] run function cpp:misc/home
@@ -87,8 +87,8 @@ execute as @a at @s if block ~ ~ ~ minecraft:heavy_weighted_pressure_plate run f
 # 连环
 #execute as @a[scores={cppChainTick=1..}] at @s anchored eyes run function cpp:chain/type
 # 插火把
-#scoreboard players enable @a cppTorchPeriod
-#execute as @a[scores={cppTorchPeriod=1..}] at @s run function cpp:auto_torch/check
+scoreboard players enable @a cppTorchPeriod
+execute as @a[scores={cppTorchPeriod=1..}] at @s run function cpp:auto_torch/check
 # 下降
 execute as @a[scores={cppSneakTime=1..},nbt={ActiveEffects:[{Id:25b}]}] at @s run function cpp:player/shift
 # 使用胡萝卜钓竿

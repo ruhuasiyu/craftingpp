@@ -1,0 +1,40 @@
+{
+	"condition": "minecraft:alternative",
+	"terms": [
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:3b,id:'minecraft:water_bucket'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:inverted",
+			"term": {
+				"condition": "minecraft:alternative",
+				"terms": [
+					{
+						"condition": "minecraft:inverted",
+						"term": {
+							"condition": "minecraft:location_check",
+							"predicate": {
+								"block": {
+									"nbt": "{Items:[{Slot:3b,tag:{id:'cpp:infinite_bucket'}}]}"
+								}
+							}
+						}
+					},
+					{
+						"condition": "minecraft:location_check",
+						"predicate": {
+							"block": {
+								"nbt": "{Items:[{Slot:3b,tag:{liquid:{water:0}}}]}"
+							}
+						}
+					}
+				]
+			}
+		}
+	]
+}

@@ -4,5 +4,6 @@ data merge entity @s[tag=cpp_dark_animal,type=sheep] {DeathLootTable:"cpp:dark_a
 data merge entity @s[tag=cpp_dark_animal,type=cow] {DeathLootTable:"cpp:dark_animals/cow"}
 data merge entity @s[tag=cpp_dark_animal,type=mooshroom] {DeathLootTable:"cpp:dark_animals/mooshroom"}
 data merge entity @s[tag=cpp_dark_animal,type=pig] {DeathLootTable:"cpp:dark_animals/pig"}
-data merge entity @s[tag=cpp_dark_animal,type=rabbit] {DeathLootTable:"cpp:dark_animals/rabbit"}
+data merge entity @s[tag=cpp_dark_animal,type=rabbit] {DeathLootTable:"cpp:dark_animals/rabbit",RabbitType:99}
+tag @s[tag=cpp_dark_animal,type=rabbit] remove cpp_dark_animal
 tag @s add cpp_dark_animal_checked

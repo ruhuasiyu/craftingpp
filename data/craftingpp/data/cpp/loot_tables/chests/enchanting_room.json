@@ -53,84 +53,36 @@
 					"weight": 10
 				},
 				{
-					"type": "minecraft:item",
-					"name": "minecraft:carrot_on_a_stick",
-					"functions": [
-						{
-							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData:12970040,display:{Name:'{\"translate\":\"item.cpp.ancient_scroll\"}',Lore:['{\"translate\":\"enchantment.cpp.fortune\"}']},id:'cpp:ancient_scroll',StoredEnchantments:[{id:\"minecraft:fortune\",lvl:3s}]}"
-						}
-					]
+					"type": "minecraft:loot_table",
+					"name": "cpp:ancient_scroll.fortune"
 				},
 				{
-					"type": "minecraft:item",
-					"name": "minecraft:carrot_on_a_stick",
-					"functions": [
-						{
-							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData:12970040,display:{Name:'{\"translate\":\"item.cpp.ancient_scroll\"}',Lore:['{\"translate\":\"enchantment.cpp.looting\"}']},id:'cpp:ancient_scroll',StoredEnchantments:[{id:\"minecraft:looting\",lvl:3s}]}"
-						}
-					]
+					"type": "minecraft:loot_table",
+					"name": "cpp:ancient_scroll.looting"
 				},
 				{
-					"type": "minecraft:item",
-					"name": "minecraft:carrot_on_a_stick",
-					"functions": [
-						{
-							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData:12970040,display:{Name:'{\"translate\":\"item.cpp.ancient_scroll\"}',Lore:['{\"translate\":\"enchantment.cpp.sweeping\"}']},id:'cpp:ancient_scroll',StoredEnchantments:[{id:\"minecraft:sweeping\",lvl:3s}]}"
-						}
-					]
+					"type": "minecraft:loot_table",
+					"name": "cpp:ancient_scroll.sweeping"
 				},
 				{
-					"type": "minecraft:item",
-					"name": "minecraft:carrot_on_a_stick",
-					"functions": [
-						{
-							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData:12970040,display:{Name:'{\"translate\":\"item.cpp.ancient_scroll\"}',Lore:['{\"translate\":\"enchantment.cpp.lure\"}']},id:'cpp:ancient_scroll',StoredEnchantments:[{id:\"minecraft:lure\",lvl:3s}]}"
-						}
-					]
+					"type": "minecraft:loot_table",
+					"name": "cpp:ancient_scroll.lure"
 				},
 				{
-					"type": "minecraft:item",
-					"name": "minecraft:carrot_on_a_stick",
-					"functions": [
-						{
-							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData:12970040,display:{Name:'{\"translate\":\"item.cpp.ancient_scroll\"}',Lore:['{\"translate\":\"enchantment.cpp.unbreaking\"}']},id:'cpp:ancient_scroll',StoredEnchantments:[{id:\"minecraft:unbreaking\",lvl:3s}]}"
-						}
-					]
+					"type": "minecraft:loot_table",
+					"name": "cpp:ancient_scroll.unbreaking"
 				},
 				{
-					"type": "minecraft:item",
-					"name": "minecraft:carrot_on_a_stick",
-					"functions": [
-						{
-							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData:12970040,display:{Name:'{\"translate\":\"item.cpp.ancient_scroll\"}',Lore:['{\"translate\":\"enchantment.cpp.respiration\"}']},id:'cpp:ancient_scroll',StoredEnchantments:[{id:\"minecraft:respiration\",lvl:3s}]}"
-						}
-					]
+					"type": "minecraft:loot_table",
+					"name": "cpp:ancient_scroll.respiration"
 				},
 				{
-					"type": "minecraft:item",
-					"name": "minecraft:carrot_on_a_stick",
-					"functions": [
-						{
-							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData:12970040,display:{Name:'{\"translate\":\"item.cpp.ancient_scroll\"}',Lore:['{\"translate\":\"enchantment.cpp.sharpness\"}']},id:'cpp:ancient_scroll',StoredEnchantments:[{id:\"minecraft:sharpness\",lvl:5s}]}"
-						}
-					]
+					"type": "minecraft:loot_table",
+					"name": "cpp:ancient_scroll.sharpness"
 				},
 				{
-					"type": "minecraft:item",
-					"name": "minecraft:carrot_on_a_stick",
-					"functions": [
-						{
-							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData:12970040,display:{Name:'{\"translate\":\"item.cpp.ancient_scroll\"}',Lore:['{\"translate\":\"enchantment.cpp.power\"}']},id:'cpp:ancient_scroll',StoredEnchantments:[{id:\"minecraft:power\",lvl:5s}]}"
-						}
-					]
+					"type": "minecraft:loot_table",
+					"name": "cpp:ancient_scroll.power"
 				}
 			]
 		}

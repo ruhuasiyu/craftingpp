@@ -9,11 +9,50 @@
 						{
 							"conditions": [
 								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:golden_shovel'},{Slot:12b,id:'minecraft:grass_block'}]}"
-										}
+									"condition": "minecraft:inverted",
+									"term": {
+										"condition": "minecraft:alternative",
+										"terms": [
+											{
+												"condition": "minecraft:inverted",
+												"term": {
+													"condition": "minecraft:reference",
+													"name": "cpp:item_processer/tool/shovel"
+												}
+											},
+											{
+												"condition": "minecraft:inverted",
+												"term": {
+													"condition": "minecraft:alternative",
+													"terms": [
+														{
+															"condition": "minecraft:location_check",
+															"predicate": {
+																"block": {
+																	"nbt": "{Items:[{Slot:12b,id:'minecraft:grass_block'}]}"
+																}
+															}
+														},
+														{
+															"condition": "minecraft:location_check",
+															"predicate": {
+																"block": {
+																	"nbt": "{Items:[{Slot:12b,id:'minecraft:mycelium'}]}"
+																}
+															}
+														},
+														{
+															"condition": "minecraft:location_check",
+															"predicate": {
+																"block": {
+																	"nbt": "{Items:[{Slot:12b,id:'minecraft:podzol'}]}"
+																}
+															}
+														}
+													]
+												}
+											}
+										]
 									}
 								}
 							],
@@ -23,277 +62,34 @@
 						{
 							"conditions": [
 								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:wooden_shovel'},{Slot:12b,id:'minecraft:grass_block'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:dirt"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:stone_shovel'},{Slot:12b,id:'minecraft:grass_block'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:dirt"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:iron_shovel'},{Slot:12b,id:'minecraft:grass_block'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:dirt"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:diamond_shovel'},{Slot:12b,id:'minecraft:grass_block'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:dirt"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:golden_shovel'},{Slot:12b,id:'minecraft:mycelium'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:dirt"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:wooden_shovel'},{Slot:12b,id:'minecraft:mycelium'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:dirt"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:stone_shovel'},{Slot:12b,id:'minecraft:mycelium'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:dirt"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:iron_shovel'},{Slot:12b,id:'minecraft:mycelium'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:dirt"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:diamond_shovel'},{Slot:12b,id:'minecraft:mycelium'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:dirt"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:golden_shovel'},{Slot:12b,id:'minecraft:podzol'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:dirt"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:wooden_shovel'},{Slot:12b,id:'minecraft:podzol'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:dirt"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:stone_shovel'},{Slot:12b,id:'minecraft:podzol'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:dirt"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:iron_shovel'},{Slot:12b,id:'minecraft:podzol'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:dirt"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:diamond_shovel'},{Slot:12b,id:'minecraft:podzol'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:dirt"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:golden_shovel'},{Slot:12b,id:'minecraft:gravel'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:flint"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:wooden_shovel'},{Slot:12b,id:'minecraft:gravel'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:flint"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:stone_shovel'},{Slot:12b,id:'minecraft:gravel'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:flint"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:iron_shovel'},{Slot:12b,id:'minecraft:gravel'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:flint"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:diamond_shovel'},{Slot:12b,id:'minecraft:gravel'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:flint"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:golden_shovel'},{Slot:12b,id:'minecraft:clay'}]}"
-										}
+									"condition": "minecraft:inverted",
+									"term": {
+										"condition": "minecraft:alternative",
+										"terms": [
+											{
+												"condition": "minecraft:inverted",
+												"term": {
+													"condition": "minecraft:reference",
+													"name": "cpp:item_processer/tool/shovel"
+												}
+											},
+											{
+												"condition": "minecraft:inverted",
+												"term": {
+													"condition": "minecraft:alternative",
+													"terms": [
+														{
+															"condition": "minecraft:location_check",
+															"predicate": {
+																"block": {
+																	"nbt": "{Items:[{Slot:12b,id:'minecraft:clay'}]}"
+																}
+															}
+														}
+													]
+												}
+											}
+										]
 									}
 								}
 							],
@@ -309,91 +105,71 @@
 						{
 							"conditions": [
 								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:wooden_shovel'},{Slot:12b,id:'minecraft:clay'}]}"
-										}
+									"condition": "minecraft:inverted",
+									"term": {
+										"condition": "minecraft:alternative",
+										"terms": [
+											{
+												"condition": "minecraft:inverted",
+												"term": {
+													"condition": "minecraft:reference",
+													"name": "cpp:item_processer/tool/shovel"
+												}
+											},
+											{
+												"condition": "minecraft:inverted",
+												"term": {
+													"condition": "minecraft:alternative",
+													"terms": [
+														{
+															"condition": "minecraft:location_check",
+															"predicate": {
+																"block": {
+																	"nbt": "{Items:[{Slot:12b,id:'minecraft:gravel'}]}"
+																}
+															}
+														}
+													]
+												}
+											}
+										]
 									}
 								}
 							],
 							"type": "minecraft:item",
-							"name": "minecraft:clay_ball",
-							"functions": [
-								{
-									"function": "minecraft:set_count",
-									"count": 4
-								}
-							]
+							"name": "minecraft:flint"
 						},
 						{
 							"conditions": [
 								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:stone_shovel'},{Slot:12b,id:'minecraft:clay'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:clay_ball",
-							"functions": [
-								{
-									"function": "minecraft:set_count",
-									"count": 4
-								}
-							]
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:iron_shovel'},{Slot:12b,id:'minecraft:clay'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:clay_ball",
-							"functions": [
-								{
-									"function": "minecraft:set_count",
-									"count": 4
-								}
-							]
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:diamond_shovel'},{Slot:12b,id:'minecraft:clay'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:clay_ball",
-							"functions": [
-								{
-									"function": "minecraft:set_count",
-									"count": 4
-								}
-							]
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:golden_shovel'},{Slot:12b,id:'minecraft:snow_block'}]}"
-										}
+									"condition": "minecraft:inverted",
+									"term": {
+										"condition": "minecraft:alternative",
+										"terms": [
+											{
+												"condition": "minecraft:inverted",
+												"term": {
+													"condition": "minecraft:reference",
+													"name": "cpp:item_processer/tool/shovel"
+												}
+											},
+											{
+												"condition": "minecraft:inverted",
+												"term": {
+													"condition": "minecraft:alternative",
+													"terms": [
+														{
+															"condition": "minecraft:location_check",
+															"predicate": {
+																"block": {
+																	"nbt": "{Items:[{Slot:12b,id:'minecraft:snow_block'}]}"
+																}
+															}
+														}
+													]
+												}
+											}
+										]
 									}
 								}
 							],
@@ -409,91 +185,34 @@
 						{
 							"conditions": [
 								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:wooden_shovel'},{Slot:12b,id:'minecraft:snow_block'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:snowball",
-							"functions": [
-								{
-									"function": "minecraft:set_count",
-									"count": 4
-								}
-							]
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:stone_shovel'},{Slot:12b,id:'minecraft:snow_block'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:snowball",
-							"functions": [
-								{
-									"function": "minecraft:set_count",
-									"count": 4
-								}
-							]
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:iron_shovel'},{Slot:12b,id:'minecraft:snow_block'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:snowball",
-							"functions": [
-								{
-									"function": "minecraft:set_count",
-									"count": 4
-								}
-							]
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:diamond_shovel'},{Slot:12b,id:'minecraft:snow_block'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:snowball",
-							"functions": [
-								{
-									"function": "minecraft:set_count",
-									"count": 4
-								}
-							]
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:golden_hoe'},{Slot:12b,id:'minecraft:coarse_dirt'}]}"
-										}
+									"condition": "minecraft:inverted",
+									"term": {
+										"condition": "minecraft:alternative",
+										"terms": [
+											{
+												"condition": "minecraft:inverted",
+												"term": {
+													"condition": "minecraft:reference",
+													"name": "cpp:item_processer/tool/hoe"
+												}
+											},
+											{
+												"condition": "minecraft:inverted",
+												"term": {
+													"condition": "minecraft:alternative",
+													"terms": [
+														{
+															"condition": "minecraft:location_check",
+															"predicate": {
+																"block": {
+																	"nbt": "{Items:[{Slot:12b,id:'minecraft:coarse_dirt'}]}"
+																}
+															}
+														}
+													]
+												}
+											}
+										]
 									}
 								}
 							],
@@ -503,67 +222,34 @@
 						{
 							"conditions": [
 								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:wooden_hoe'},{Slot:12b,id:'minecraft:coarse_dirt'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:dirt"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:stone_hoe'},{Slot:12b,id:'minecraft:coarse_dirt'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:dirt"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:iron_hoe'},{Slot:12b,id:'minecraft:coarse_dirt'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:dirt"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:diamond_hoe'},{Slot:12b,id:'minecraft:coarse_dirt'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:dirt"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:golden_axe'},{Slot:12b,id:'minecraft:melon'}]}"
-										}
+									"condition": "minecraft:inverted",
+									"term": {
+										"condition": "minecraft:alternative",
+										"terms": [
+											{
+												"condition": "minecraft:inverted",
+												"term": {
+													"condition": "minecraft:reference",
+													"name": "cpp:item_processer/tool/axe"
+												}
+											},
+											{
+												"condition": "minecraft:inverted",
+												"term": {
+													"condition": "minecraft:alternative",
+													"terms": [
+														{
+															"condition": "minecraft:location_check",
+															"predicate": {
+																"block": {
+																	"nbt": "{Items:[{Slot:12b,id:'minecraft:melon'}]}"
+																}
+															}
+														}
+													]
+												}
+											}
+										]
 									}
 								}
 							],
@@ -572,98 +258,41 @@
 							"functions": [
 								{
 									"function": "minecraft:set_count",
-									"count": 4
+									"count": 9
 								}
 							]
 						},
 						{
 							"conditions": [
 								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:wooden_axe'},{Slot:12b,id:'minecraft:melon'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:melon_slice",
-							"functions": [
-								{
-									"function": "minecraft:set_count",
-									"count": 4
-								}
-							]
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:stone_axe'},{Slot:12b,id:'minecraft:melon'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:melon_slice",
-							"functions": [
-								{
-									"function": "minecraft:set_count",
-									"count": 4
-								}
-							]
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:iron_axe'},{Slot:12b,id:'minecraft:melon'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:melon_slice",
-							"functions": [
-								{
-									"function": "minecraft:set_count",
-									"count": 4
-								}
-							]
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:diamond_axe'},{Slot:12b,id:'minecraft:melon'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:melon_slice",
-							"functions": [
-								{
-									"function": "minecraft:set_count",
-									"count": 4
-								}
-							]
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:golden_axe'},{Slot:12b,id:'minecraft:oak_log'}]}"
-										}
+									"condition": "minecraft:inverted",
+									"term": {
+										"condition": "minecraft:alternative",
+										"terms": [
+											{
+												"condition": "minecraft:inverted",
+												"term": {
+													"condition": "minecraft:reference",
+													"name": "cpp:item_processer/tool/axe"
+												}
+											},
+											{
+												"condition": "minecraft:inverted",
+												"term": {
+													"condition": "minecraft:alternative",
+													"terms": [
+														{
+															"condition": "minecraft:location_check",
+															"predicate": {
+																"block": {
+																	"nbt": "{Items:[{Slot:12b,id:'minecraft:oak_log'}]}"
+																}
+															}
+														}
+													]
+												}
+											}
+										]
 									}
 								}
 							],
@@ -673,67 +302,34 @@
 						{
 							"conditions": [
 								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:wooden_axe'},{Slot:12b,id:'minecraft:oak_log'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stripped_oak_log"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:stone_axe'},{Slot:12b,id:'minecraft:oak_log'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stripped_oak_log"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:iron_axe'},{Slot:12b,id:'minecraft:oak_log'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stripped_oak_log"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:diamond_axe'},{Slot:12b,id:'minecraft:oak_log'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stripped_oak_log"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:golden_axe'},{Slot:12b,id:'minecraft:spruce_log'}]}"
-										}
+									"condition": "minecraft:inverted",
+									"term": {
+										"condition": "minecraft:alternative",
+										"terms": [
+											{
+												"condition": "minecraft:inverted",
+												"term": {
+													"condition": "minecraft:reference",
+													"name": "cpp:item_processer/tool/axe"
+												}
+											},
+											{
+												"condition": "minecraft:inverted",
+												"term": {
+													"condition": "minecraft:alternative",
+													"terms": [
+														{
+															"condition": "minecraft:location_check",
+															"predicate": {
+																"block": {
+																	"nbt": "{Items:[{Slot:12b,id:'minecraft:spruce_log'}]}"
+																}
+															}
+														}
+													]
+												}
+											}
+										]
 									}
 								}
 							],
@@ -743,67 +339,34 @@
 						{
 							"conditions": [
 								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:wooden_axe'},{Slot:12b,id:'minecraft:spruce_log'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stripped_spruce_log"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:stone_axe'},{Slot:12b,id:'minecraft:spruce_log'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stripped_spruce_log"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:iron_axe'},{Slot:12b,id:'minecraft:spruce_log'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stripped_spruce_log"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:diamond_axe'},{Slot:12b,id:'minecraft:spruce_log'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stripped_spruce_log"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:golden_axe'},{Slot:12b,id:'minecraft:birch_log'}]}"
-										}
+									"condition": "minecraft:inverted",
+									"term": {
+										"condition": "minecraft:alternative",
+										"terms": [
+											{
+												"condition": "minecraft:inverted",
+												"term": {
+													"condition": "minecraft:reference",
+													"name": "cpp:item_processer/tool/axe"
+												}
+											},
+											{
+												"condition": "minecraft:inverted",
+												"term": {
+													"condition": "minecraft:alternative",
+													"terms": [
+														{
+															"condition": "minecraft:location_check",
+															"predicate": {
+																"block": {
+																	"nbt": "{Items:[{Slot:12b,id:'minecraft:birch_log'}]}"
+																}
+															}
+														}
+													]
+												}
+											}
+										]
 									}
 								}
 							],
@@ -813,67 +376,34 @@
 						{
 							"conditions": [
 								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:wooden_axe'},{Slot:12b,id:'minecraft:birch_log'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stripped_birch_log"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:stone_axe'},{Slot:12b,id:'minecraft:birch_log'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stripped_birch_log"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:iron_axe'},{Slot:12b,id:'minecraft:birch_log'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stripped_birch_log"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:diamond_axe'},{Slot:12b,id:'minecraft:birch_log'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stripped_birch_log"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:golden_axe'},{Slot:12b,id:'minecraft:jungle_log'}]}"
-										}
+									"condition": "minecraft:inverted",
+									"term": {
+										"condition": "minecraft:alternative",
+										"terms": [
+											{
+												"condition": "minecraft:inverted",
+												"term": {
+													"condition": "minecraft:reference",
+													"name": "cpp:item_processer/tool/axe"
+												}
+											},
+											{
+												"condition": "minecraft:inverted",
+												"term": {
+													"condition": "minecraft:alternative",
+													"terms": [
+														{
+															"condition": "minecraft:location_check",
+															"predicate": {
+																"block": {
+																	"nbt": "{Items:[{Slot:12b,id:'minecraft:jungle_log'}]}"
+																}
+															}
+														}
+													]
+												}
+											}
+										]
 									}
 								}
 							],
@@ -883,67 +413,34 @@
 						{
 							"conditions": [
 								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:wooden_axe'},{Slot:12b,id:'minecraft:jungle_log'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stripped_jungle_log"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:stone_axe'},{Slot:12b,id:'minecraft:jungle_log'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stripped_jungle_log"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:iron_axe'},{Slot:12b,id:'minecraft:jungle_log'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stripped_jungle_log"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:diamond_axe'},{Slot:12b,id:'minecraft:jungle_log'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stripped_jungle_log"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:golden_axe'},{Slot:12b,id:'minecraft:acacia_log'}]}"
-										}
+									"condition": "minecraft:inverted",
+									"term": {
+										"condition": "minecraft:alternative",
+										"terms": [
+											{
+												"condition": "minecraft:inverted",
+												"term": {
+													"condition": "minecraft:reference",
+													"name": "cpp:item_processer/tool/axe"
+												}
+											},
+											{
+												"condition": "minecraft:inverted",
+												"term": {
+													"condition": "minecraft:alternative",
+													"terms": [
+														{
+															"condition": "minecraft:location_check",
+															"predicate": {
+																"block": {
+																	"nbt": "{Items:[{Slot:12b,id:'minecraft:acacia_log'}]}"
+																}
+															}
+														}
+													]
+												}
+											}
+										]
 									}
 								}
 							],
@@ -953,67 +450,34 @@
 						{
 							"conditions": [
 								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:wooden_axe'},{Slot:12b,id:'minecraft:acacia_log'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stripped_acacia_log"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:stone_axe'},{Slot:12b,id:'minecraft:acacia_log'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stripped_acacia_log"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:iron_axe'},{Slot:12b,id:'minecraft:acacia_log'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stripped_acacia_log"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:diamond_axe'},{Slot:12b,id:'minecraft:acacia_log'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stripped_acacia_log"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:golden_axe'},{Slot:12b,id:'minecraft:dark_oak_log'}]}"
-										}
+									"condition": "minecraft:inverted",
+									"term": {
+										"condition": "minecraft:alternative",
+										"terms": [
+											{
+												"condition": "minecraft:inverted",
+												"term": {
+													"condition": "minecraft:reference",
+													"name": "cpp:item_processer/tool/axe"
+												}
+											},
+											{
+												"condition": "minecraft:inverted",
+												"term": {
+													"condition": "minecraft:alternative",
+													"terms": [
+														{
+															"condition": "minecraft:location_check",
+															"predicate": {
+																"block": {
+																	"nbt": "{Items:[{Slot:12b,id:'minecraft:dark_oak_log'}]}"
+																}
+															}
+														}
+													]
+												}
+											}
+										]
 									}
 								}
 							],
@@ -1023,67 +487,34 @@
 						{
 							"conditions": [
 								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:wooden_axe'},{Slot:12b,id:'minecraft:dark_oak_log'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stripped_dark_oak_log"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:stone_axe'},{Slot:12b,id:'minecraft:dark_oak_log'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stripped_dark_oak_log"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:iron_axe'},{Slot:12b,id:'minecraft:dark_oak_log'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stripped_dark_oak_log"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:diamond_axe'},{Slot:12b,id:'minecraft:dark_oak_log'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stripped_dark_oak_log"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:golden_axe'},{Slot:12b,id:'minecraft:oak_wood'}]}"
-										}
+									"condition": "minecraft:inverted",
+									"term": {
+										"condition": "minecraft:alternative",
+										"terms": [
+											{
+												"condition": "minecraft:inverted",
+												"term": {
+													"condition": "minecraft:reference",
+													"name": "cpp:item_processer/tool/axe"
+												}
+											},
+											{
+												"condition": "minecraft:inverted",
+												"term": {
+													"condition": "minecraft:alternative",
+													"terms": [
+														{
+															"condition": "minecraft:location_check",
+															"predicate": {
+																"block": {
+																	"nbt": "{Items:[{Slot:12b,id:'minecraft:oak_wood'}]}"
+																}
+															}
+														}
+													]
+												}
+											}
+										]
 									}
 								}
 							],
@@ -1093,67 +524,34 @@
 						{
 							"conditions": [
 								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:wooden_axe'},{Slot:12b,id:'minecraft:oak_wood'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stripped_oak_wood"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:stone_axe'},{Slot:12b,id:'minecraft:oak_wood'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stripped_oak_wood"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:iron_axe'},{Slot:12b,id:'minecraft:oak_wood'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stripped_oak_wood"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:diamond_axe'},{Slot:12b,id:'minecraft:oak_wood'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stripped_oak_wood"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:golden_axe'},{Slot:12b,id:'minecraft:spruce_wood'}]}"
-										}
+									"condition": "minecraft:inverted",
+									"term": {
+										"condition": "minecraft:alternative",
+										"terms": [
+											{
+												"condition": "minecraft:inverted",
+												"term": {
+													"condition": "minecraft:reference",
+													"name": "cpp:item_processer/tool/axe"
+												}
+											},
+											{
+												"condition": "minecraft:inverted",
+												"term": {
+													"condition": "minecraft:alternative",
+													"terms": [
+														{
+															"condition": "minecraft:location_check",
+															"predicate": {
+																"block": {
+																	"nbt": "{Items:[{Slot:12b,id:'minecraft:spruce_wood'}]}"
+																}
+															}
+														}
+													]
+												}
+											}
+										]
 									}
 								}
 							],
@@ -1163,67 +561,34 @@
 						{
 							"conditions": [
 								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:wooden_axe'},{Slot:12b,id:'minecraft:spruce_wood'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stripped_spruce_wood"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:stone_axe'},{Slot:12b,id:'minecraft:spruce_wood'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stripped_spruce_wood"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:iron_axe'},{Slot:12b,id:'minecraft:spruce_wood'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stripped_spruce_wood"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:diamond_axe'},{Slot:12b,id:'minecraft:spruce_wood'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stripped_spruce_wood"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:golden_axe'},{Slot:12b,id:'minecraft:birch_wood'}]}"
-										}
+									"condition": "minecraft:inverted",
+									"term": {
+										"condition": "minecraft:alternative",
+										"terms": [
+											{
+												"condition": "minecraft:inverted",
+												"term": {
+													"condition": "minecraft:reference",
+													"name": "cpp:item_processer/tool/axe"
+												}
+											},
+											{
+												"condition": "minecraft:inverted",
+												"term": {
+													"condition": "minecraft:alternative",
+													"terms": [
+														{
+															"condition": "minecraft:location_check",
+															"predicate": {
+																"block": {
+																	"nbt": "{Items:[{Slot:12b,id:'minecraft:birch_wood'}]}"
+																}
+															}
+														}
+													]
+												}
+											}
+										]
 									}
 								}
 							],
@@ -1233,67 +598,34 @@
 						{
 							"conditions": [
 								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:wooden_axe'},{Slot:12b,id:'minecraft:birch_wood'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stripped_birch_wood"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:stone_axe'},{Slot:12b,id:'minecraft:birch_wood'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stripped_birch_wood"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:iron_axe'},{Slot:12b,id:'minecraft:birch_wood'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stripped_birch_wood"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:diamond_axe'},{Slot:12b,id:'minecraft:birch_wood'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stripped_birch_wood"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:golden_axe'},{Slot:12b,id:'minecraft:jungle_wood'}]}"
-										}
+									"condition": "minecraft:inverted",
+									"term": {
+										"condition": "minecraft:alternative",
+										"terms": [
+											{
+												"condition": "minecraft:inverted",
+												"term": {
+													"condition": "minecraft:reference",
+													"name": "cpp:item_processer/tool/axe"
+												}
+											},
+											{
+												"condition": "minecraft:inverted",
+												"term": {
+													"condition": "minecraft:alternative",
+													"terms": [
+														{
+															"condition": "minecraft:location_check",
+															"predicate": {
+																"block": {
+																	"nbt": "{Items:[{Slot:12b,id:'minecraft:jungle_wood'}]}"
+																}
+															}
+														}
+													]
+												}
+											}
+										]
 									}
 								}
 							],
@@ -1303,67 +635,34 @@
 						{
 							"conditions": [
 								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:wooden_axe'},{Slot:12b,id:'minecraft:jungle_wood'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stripped_jungle_wood"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:stone_axe'},{Slot:12b,id:'minecraft:jungle_wood'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stripped_jungle_wood"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:iron_axe'},{Slot:12b,id:'minecraft:jungle_wood'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stripped_jungle_wood"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:diamond_axe'},{Slot:12b,id:'minecraft:jungle_wood'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stripped_jungle_wood"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:golden_axe'},{Slot:12b,id:'minecraft:acacia_wood'}]}"
-										}
+									"condition": "minecraft:inverted",
+									"term": {
+										"condition": "minecraft:alternative",
+										"terms": [
+											{
+												"condition": "minecraft:inverted",
+												"term": {
+													"condition": "minecraft:reference",
+													"name": "cpp:item_processer/tool/axe"
+												}
+											},
+											{
+												"condition": "minecraft:inverted",
+												"term": {
+													"condition": "minecraft:alternative",
+													"terms": [
+														{
+															"condition": "minecraft:location_check",
+															"predicate": {
+																"block": {
+																	"nbt": "{Items:[{Slot:12b,id:'minecraft:acacia_wood'}]}"
+																}
+															}
+														}
+													]
+												}
+											}
+										]
 									}
 								}
 							],
@@ -1373,67 +672,34 @@
 						{
 							"conditions": [
 								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:wooden_axe'},{Slot:12b,id:'minecraft:acacia_wood'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stripped_acacia_wood"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:stone_axe'},{Slot:12b,id:'minecraft:acacia_wood'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stripped_acacia_wood"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:iron_axe'},{Slot:12b,id:'minecraft:acacia_wood'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stripped_acacia_wood"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:diamond_axe'},{Slot:12b,id:'minecraft:acacia_wood'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stripped_acacia_wood"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:golden_axe'},{Slot:12b,id:'minecraft:dark_oak_wood'}]}"
-										}
+									"condition": "minecraft:inverted",
+									"term": {
+										"condition": "minecraft:alternative",
+										"terms": [
+											{
+												"condition": "minecraft:inverted",
+												"term": {
+													"condition": "minecraft:reference",
+													"name": "cpp:item_processer/tool/axe"
+												}
+											},
+											{
+												"condition": "minecraft:inverted",
+												"term": {
+													"condition": "minecraft:alternative",
+													"terms": [
+														{
+															"condition": "minecraft:location_check",
+															"predicate": {
+																"block": {
+																	"nbt": "{Items:[{Slot:12b,id:'minecraft:dark_oak_wood'}]}"
+																}
+															}
+														}
+													]
+												}
+											}
+										]
 									}
 								}
 							],
@@ -1443,67 +709,34 @@
 						{
 							"conditions": [
 								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:wooden_axe'},{Slot:12b,id:'minecraft:dark_oak_wood'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stripped_dark_oak_wood"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:stone_axe'},{Slot:12b,id:'minecraft:dark_oak_wood'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stripped_dark_oak_wood"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:iron_axe'},{Slot:12b,id:'minecraft:dark_oak_wood'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stripped_dark_oak_wood"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:diamond_axe'},{Slot:12b,id:'minecraft:dark_oak_wood'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stripped_dark_oak_wood"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:golden_axe'},{Slot:12b,id:'minecraft:crimson_stem'}]}"
-										}
+									"condition": "minecraft:inverted",
+									"term": {
+										"condition": "minecraft:alternative",
+										"terms": [
+											{
+												"condition": "minecraft:inverted",
+												"term": {
+													"condition": "minecraft:reference",
+													"name": "cpp:item_processer/tool/axe"
+												}
+											},
+											{
+												"condition": "minecraft:inverted",
+												"term": {
+													"condition": "minecraft:alternative",
+													"terms": [
+														{
+															"condition": "minecraft:location_check",
+															"predicate": {
+																"block": {
+																	"nbt": "{Items:[{Slot:12b,id:'minecraft:crimson_stem'}]}"
+																}
+															}
+														}
+													]
+												}
+											}
+										]
 									}
 								}
 							],
@@ -1513,67 +746,34 @@
 						{
 							"conditions": [
 								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:wooden_axe'},{Slot:12b,id:'minecraft:crimson_stem'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stripped_crimson_stem"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:stone_axe'},{Slot:12b,id:'minecraft:crimson_stem'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stripped_crimson_stem"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:iron_axe'},{Slot:12b,id:'minecraft:crimson_stem'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stripped_crimson_stem"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:diamond_axe'},{Slot:12b,id:'minecraft:crimson_stem'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stripped_crimson_stem"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:golden_axe'},{Slot:12b,id:'minecraft:warped_stem'}]}"
-										}
+									"condition": "minecraft:inverted",
+									"term": {
+										"condition": "minecraft:alternative",
+										"terms": [
+											{
+												"condition": "minecraft:inverted",
+												"term": {
+													"condition": "minecraft:reference",
+													"name": "cpp:item_processer/tool/axe"
+												}
+											},
+											{
+												"condition": "minecraft:inverted",
+												"term": {
+													"condition": "minecraft:alternative",
+													"terms": [
+														{
+															"condition": "minecraft:location_check",
+															"predicate": {
+																"block": {
+																	"nbt": "{Items:[{Slot:12b,id:'minecraft:warped_stem'}]}"
+																}
+															}
+														}
+													]
+												}
+											}
+										]
 									}
 								}
 							],
@@ -1583,123 +783,108 @@
 						{
 							"conditions": [
 								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:wooden_axe'},{Slot:12b,id:'minecraft:warped_stem'}]}"
-										}
+									"condition": "minecraft:inverted",
+									"term": {
+										"condition": "minecraft:alternative",
+										"terms": [
+											{
+												"condition": "minecraft:inverted",
+												"term": {
+													"condition": "minecraft:reference",
+													"name": "cpp:item_processer/tool/axe"
+												}
+											},
+											{
+												"condition": "minecraft:inverted",
+												"term": {
+													"condition": "minecraft:alternative",
+													"terms": [
+														{
+															"condition": "minecraft:location_check",
+															"predicate": {
+																"block": {
+																	"nbt": "{Items:[{Slot:12b,id:'minecraft:crimson_hyphae'}]}"
+																}
+															}
+														}
+													]
+												}
+											}
+										]
 									}
 								}
 							],
 							"type": "minecraft:item",
-							"name": "minecraft:stripped_warped_stem"
+							"name": "minecraft:stripped_crimson_hyphae"
 						},
 						{
 							"conditions": [
 								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:stone_axe'},{Slot:12b,id:'minecraft:warped_stem'}]}"
-										}
+									"condition": "minecraft:inverted",
+									"term": {
+										"condition": "minecraft:alternative",
+										"terms": [
+											{
+												"condition": "minecraft:inverted",
+												"term": {
+													"condition": "minecraft:reference",
+													"name": "cpp:item_processer/tool/axe"
+												}
+											},
+											{
+												"condition": "minecraft:inverted",
+												"term": {
+													"condition": "minecraft:alternative",
+													"terms": [
+														{
+															"condition": "minecraft:location_check",
+															"predicate": {
+																"block": {
+																	"nbt": "{Items:[{Slot:12b,id:'minecraft:warped_hyphae'}]}"
+																}
+															}
+														}
+													]
+												}
+											}
+										]
 									}
 								}
 							],
 							"type": "minecraft:item",
-							"name": "minecraft:stripped_warped_stem"
+							"name": "minecraft:stripped_warped_hyphae"
 						},
 						{
 							"conditions": [
 								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:iron_axe'},{Slot:12b,id:'minecraft:warped_stem'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stripped_warped_stem"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:diamond_axe'},{Slot:12b,id:'minecraft:warped_stem'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stripped_warped_stem"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:golden_pickaxe'},{Slot:12b,id:'minecraft:stone'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:cobblestone"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:wooden_pickaxe'},{Slot:12b,id:'minecraft:stone'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:cobblestone"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:stone_pickaxe'},{Slot:12b,id:'minecraft:stone'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:cobblestone"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:iron_pickaxe'},{Slot:12b,id:'minecraft:stone'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:cobblestone"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:diamond_pickaxe'},{Slot:12b,id:'minecraft:stone'}]}"
-										}
+									"condition": "minecraft:inverted",
+									"term": {
+										"condition": "minecraft:alternative",
+										"terms": [
+											{
+												"condition": "minecraft:inverted",
+												"term": {
+													"condition": "minecraft:reference",
+													"name": "cpp:item_processer/tool/pickaxe"
+												}
+											},
+											{
+												"condition": "minecraft:inverted",
+												"term": {
+													"condition": "minecraft:alternative",
+													"terms": [
+														{
+															"condition": "minecraft:location_check",
+															"predicate": {
+																"block": {
+																	"nbt": "{Items:[{Slot:12b,id:'minecraft:stone'}]}"
+																}
+															}
+														}
+													]
+												}
+											}
+										]
 									}
 								}
 							],
@@ -1709,91 +894,34 @@
 						{
 							"conditions": [
 								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:golden_pickaxe'},{Slot:12b,id:'minecraft:glowstone'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:glowstone_dust",
-							"functions": [
-								{
-									"function": "minecraft:set_count",
-									"count": 4
-								}
-							]
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:wooden_pickaxe'},{Slot:12b,id:'minecraft:glowstone'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:glowstone_dust",
-							"functions": [
-								{
-									"function": "minecraft:set_count",
-									"count": 4
-								}
-							]
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:stone_pickaxe'},{Slot:12b,id:'minecraft:glowstone'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:glowstone_dust",
-							"functions": [
-								{
-									"function": "minecraft:set_count",
-									"count": 4
-								}
-							]
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:iron_pickaxe'},{Slot:12b,id:'minecraft:glowstone'}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:glowstone_dust",
-							"functions": [
-								{
-									"function": "minecraft:set_count",
-									"count": 4
-								}
-							]
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:3b,id:'minecraft:diamond_pickaxe'},{Slot:12b,id:'minecraft:glowstone'}]}"
-										}
+									"condition": "minecraft:inverted",
+									"term": {
+										"condition": "minecraft:alternative",
+										"terms": [
+											{
+												"condition": "minecraft:inverted",
+												"term": {
+													"condition": "minecraft:reference",
+													"name": "cpp:item_processer/tool/pickaxe"
+												}
+											},
+											{
+												"condition": "minecraft:inverted",
+												"term": {
+													"condition": "minecraft:alternative",
+													"terms": [
+														{
+															"condition": "minecraft:location_check",
+															"predicate": {
+																"block": {
+																	"nbt": "{Items:[{Slot:12b,id:'minecraft:glowstone'}]}"
+																}
+															}
+														}
+													]
+												}
+											}
+										]
 									}
 								}
 							],

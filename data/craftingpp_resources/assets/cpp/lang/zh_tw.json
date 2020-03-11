@@ -87,6 +87,7 @@
 	"item.cpp.rabbit_head.gold":"§e金色兔頭",
 	"item.cpp.rabbit_head.salt":"§e椒鹽兔頭",
 	"item.cpp.rabbit_head.toast":"§eToast 兔頭",
+	"item.cpp.rabbit_head.killer_bunny":"§e殺手兔頭",
 
 	"item.cpp.wing_of_sky":"§e天空之翼",
 	"item.cpp.heart_of_crystal":"§e水晶之心",
@@ -247,6 +248,8 @@
 	"item.cpp.infinite_bucket":"§r無盡桶",
 	"item.cpp.infinite_bucket.water":"§6水",
 	"item.cpp.infinite_bucket.lava":"§6熔巖",
+	"info.cpp.infinite_bucket.water":"§6已切換為水",
+	"info.cpp.infinite_bucket.lava":"§6已切換為熔巖",
 	"item.cpp.grafter":"§r剪枝器",
 	"item.cpp.glass_pickaxe":"§r玻璃鎬",
 	"item.cpp.chest_transporter":"§r搬箱器",

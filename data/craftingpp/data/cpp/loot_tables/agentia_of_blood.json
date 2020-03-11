@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"translate\":\"item.cpp.agentia_of_blood\"}',Lore:['[{\"translate\":\"effect.minecraft.instant_health\",\"italic\":\"false\",\"color\":\"blue\"},{\"text\":\" III\"}]']},id:'cpp:agentia_of_blood',CustomModelData:12970117}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.agentia_of_blood\"}',Lore:['[{\"translate\":\"effect.minecraft.instant_health\",\"italic\":\"false\",\"color\":\"blue\"},{\"text\":\" III\"}]']},id:'cpp:agentia_of_blood',CustomModelData:12970117,Enchantments:[{lvl:1s,id:'minecraft:binding_curse'}],HideFlags:1}"
 						}
 					]
 				}

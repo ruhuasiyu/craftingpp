@@ -87,6 +87,7 @@
 	"item.cpp.rabbit_head.gold":"§eGold Rabbit Head",
 	"item.cpp.rabbit_head.salt":"§eSalt and Pepper Rabbit Head",
 	"item.cpp.rabbit_head.toast":"§eToast Rabbit Head",
+	"item.cpp.rabbit_head.killer_bunny":"§eThe Killer Bunny's Head",
 	
 	"item.cpp.wing_of_sky":"§eWing of Sky",
 	"item.cpp.heart_of_crystal":"§eHeart of Crystal",
@@ -247,6 +248,8 @@
 	"item.cpp.infinite_bucket":"§rInfinite Bucket",
 	"item.cpp.infinite_bucket.water":"§6Water",
 	"item.cpp.infinite_bucket.lava":"§6Lava",
+	"info.cpp.infinite_bucket.water":"§6Switched to Water",
+	"info.cpp.infinite_bucket.lava":"§6Switched to Lava",
 	"item.cpp.grafter":"§rGrafter",
 	"item.cpp.glass_pickaxe":"§rGlass Pickaxe",
 	"item.cpp.chest_transporter":"§rChest Transporter",

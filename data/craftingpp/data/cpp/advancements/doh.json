@@ -62,18 +62,5 @@
 				}
 			}
 		}
-	},
-	"rewards":{
-		"function": "cpp:food/add2speed"
-	},
-	"requirements": [
-		[
-			"doughnut",
-			"purple_doughnut",
-			"pink_doughnut",
-			"white_doughnut",
-			"blue_doughnut",
-			"green_doughnut"
-		]
-	]
+	}
 }

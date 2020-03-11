@@ -129,6 +129,7 @@
 		{ "predicate": { "custom_model_data": 12970293 }, "model": "cpp:head/rabbit/white_splotched"},
 		{ "predicate": { "custom_model_data": 12970294 }, "model": "cpp:head/rabbit/gold"},
 		{ "predicate": { "custom_model_data": 12970295 }, "model": "cpp:head/rabbit/salt"},
-		{ "predicate": { "custom_model_data": 12970299 }, "model": "cpp:head/rabbit/toast"}		
+		{ "predicate": { "custom_model_data": 12970298 }, "model": "cpp:head/rabbit/killer_bunny"},
+		{ "predicate": { "custom_model_data": 12970299 }, "model": "cpp:head/rabbit/toast"}
 	]
 }

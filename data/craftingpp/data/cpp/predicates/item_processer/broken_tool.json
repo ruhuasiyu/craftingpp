@@ -29,7 +29,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"nbt": "{Items:[{Slot:3b,id:'minecraft:golden_shovel',tag:{Damage:33}}]}"
+					"nbt": "{Items:[{Slot:3b,id:'minecraft:golden_hoe',tag:{Damage:33}}]}"
 				}
 			}
 		},
@@ -61,7 +61,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"nbt": "{Items:[{Slot:3b,id:'minecraft:wooden_shovel',tag:{Damage:60}}]}"
+					"nbt": "{Items:[{Slot:3b,id:'minecraft:wooden_hoe',tag:{Damage:60}}]}"
 				}
 			}
 		},
@@ -93,7 +93,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"nbt": "{Items:[{Slot:3b,id:'minecraft:stone_shovel',tag:{Damage:132}}]}"
+					"nbt": "{Items:[{Slot:3b,id:'minecraft:stone_hoe',tag:{Damage:132}}]}"
 				}
 			}
 		},
@@ -125,7 +125,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"nbt": "{Items:[{Slot:3b,id:'minecraft:iron_shovel',tag:{Damage:251}}]}"
+					"nbt": "{Items:[{Slot:3b,id:'minecraft:iron_hoe',tag:{Damage:251}}]}"
 				}
 			}
 		},
@@ -157,7 +157,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"nbt": "{Items:[{Slot:3b,id:'minecraft:diamond_shovel',tag:{Damage:1562}}]}"
+					"nbt": "{Items:[{Slot:3b,id:'minecraft:diamond_hoe',tag:{Damage:1562}}]}"
 				}
 			}
 		},
@@ -165,7 +165,39 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"nbt": "{Items:[{Slot:3b,id:'minecraft:shears',tag:{Damage:238}}]}"
+					"nbt": "{Items:[{Slot:3b,id:'minecraft:netherite_axe',tag:{Damage:2032}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:3b,id:'minecraft:netherite_shovel',tag:{Damage:2032}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:3b,id:'minecraft:netherite_pickaxe',tag:{Damage:2032}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:3b,id:'minecraft:netherite_hoe',tag:{Damage:2032}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:3b,id:'minecraft:shears',tag:{Damage:239}}]}"
 				}
 			}
 		}

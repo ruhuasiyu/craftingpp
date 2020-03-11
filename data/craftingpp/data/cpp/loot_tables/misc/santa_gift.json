@@ -294,6 +294,38 @@
 							}
 						}
 					]
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:ancient_scroll.fortune"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:ancient_scroll.looting"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:ancient_scroll.sweeping"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:ancient_scroll.lure"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:ancient_scroll.unbreaking"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:ancient_scroll.respiration"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:ancient_scroll.sharpness"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:ancient_scroll.power"
 				}
 			]
 		}

@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"translate\":\"item.cpp.agentia_of_agileness\"}',Lore:['[{\"translate\":\"effect.minecraft.speed\",\"italic\":\"false\",\"color\":\"blue\"},{\"text\":\" II (4:00)\"}]','\" \"','{\"translate\":\"potion.whenDrank\",\"italic\":\"false\"}','[{\"text\":\"+40% \",\"italic\":\"false\",\"color\":\"blue\"},{\"translate\":\"attribute.name.generic.movementSpeed\"}]']},id:'cpp:agentia_of_agileness',CustomModelData:12970114}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.agentia_of_agileness\"}',Lore:['[{\"translate\":\"effect.minecraft.speed\",\"italic\":\"false\",\"color\":\"blue\"},{\"text\":\" II (4:00)\"}]','\" \"','{\"translate\":\"potion.whenDrank\",\"italic\":\"false\"}','[{\"text\":\"+40% \",\"italic\":\"false\",\"color\":\"blue\"},{\"translate\":\"attribute.name.generic.movementSpeed\"}]']},id:'cpp:agentia_of_agileness',CustomModelData:12970114,Enchantments:[{lvl:1s,id:'minecraft:binding_curse'}],HideFlags:1}"
 						}
 					]
 				}

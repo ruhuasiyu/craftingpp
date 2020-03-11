@@ -182,6 +182,19 @@
 							],
 							"type": "minecraft:loot_table",
 							"name": "cpp:rabbit_head.salt"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "this",
+									"predicate": {
+										"nbt": "{RabbitType:99}"
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:rabbit_head.killer_bunny"
 						}
 					]
 				}

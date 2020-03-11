@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"translate\":\"item.cpp.agentia_of_ridge\"}',Lore:['[{\"translate\":\"effect.minecraft.strength\",\"italic\":\"false\",\"color\":\"blue\"},{\"text\":\" II (6:00)\"}]','[{\"translate\":\"effect.minecraft.night_vision\",\"italic\":\"false\",\"color\":\"blue\"},{\"text\":\" (12:00)\"}]','\" \"','{\"translate\":\"potion.whenDrank\",\"italic\":\"false\"}','[{\"text\":\"+3 \",\"italic\":\"false\",\"color\":\"blue\"},{\"translate\":\"attribute.name.generic.attackDamage\"}]']},id:'cpp:agentia_of_ridge',CustomModelData:12970103}"
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.agentia_of_ridge\"}',Lore:['[{\"translate\":\"effect.minecraft.strength\",\"italic\":\"false\",\"color\":\"blue\"},{\"text\":\" II (6:00)\"}]','[{\"translate\":\"effect.minecraft.night_vision\",\"italic\":\"false\",\"color\":\"blue\"},{\"text\":\" (12:00)\"}]','\" \"','{\"translate\":\"potion.whenDrank\",\"italic\":\"false\"}','[{\"text\":\"+3 \",\"italic\":\"false\",\"color\":\"blue\"},{\"translate\":\"attribute.name.generic.attackDamage\"}]']},id:'cpp:agentia_of_ridge',CustomModelData:12970103,Enchantments:[{lvl:1s,id:'minecraft:binding_curse'}],HideFlags:1}"
 						}
 					]
 				}
