@@ -1,0 +1,13 @@
+{
+	"criteria": {
+		"machine": {
+			"trigger": "minecraft:placed_block",
+			"conditions": {
+				"block": "minecraft:oak_wall_sign"
+			}
+		}
+	},
+	"rewards": {
+		"function": "cpp:block/reset/oak_wall_sign"
+	}
+}

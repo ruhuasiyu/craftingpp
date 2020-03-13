@@ -1,9 +1,0 @@
-{
-	"replace": false,
-	"values": [
-		"minecraft:dirt",
-		"minecraft:gravel",
-		"minecraft:sand",
-		"minecraft:soul_sand"
-	]
-}

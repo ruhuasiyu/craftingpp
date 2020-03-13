@@ -1,2 +1,0 @@
-kill @s
-setblock ~ ~ ~ bookshelf

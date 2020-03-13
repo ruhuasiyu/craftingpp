@@ -4,30 +4,38 @@ scoreboard objectives add cppConfig dummy {"translate":"info.cpp.config"}
 scoreboard objectives add cppOutSlots dummy
 scoreboard objectives add cppOutputFace dummy
 # 方块破坏器
-scoreboard objectives add cppBsdIntFur minecraft.custom:minecraft.interact_with_furnace
+scoreboard objectives add cppBsdIntFur custom:interact_with_furnace
 # 使用打火石
-scoreboard objectives add cppUseFS minecraft.used:minecraft.flint_and_steel
+scoreboard objectives add cppUseFS used:flint_and_steel
 # 生命值
 scoreboard objectives add cppHealth health
 # 连锁效果
-scoreboard objectives add cppUseAxe1 minecraft.used:minecraft.diamond_axe
-scoreboard objectives add cppUseAxe2 minecraft.used:minecraft.iron_axe
-scoreboard objectives add cppUseAxe3 minecraft.used:minecraft.golden_axe
-scoreboard objectives add cppUseAxe4 minecraft.used:minecraft.stone_axe
-scoreboard objectives add cppUsePick1 minecraft.used:minecraft.diamond_pickaxe
-scoreboard objectives add cppUsePick2 minecraft.used:minecraft.iron_pickaxe
-scoreboard objectives add cppUsePick3 minecraft.used:minecraft.golden_pickaxe
-scoreboard objectives add cppUsePick4 minecraft.used:minecraft.stone_pickaxe
-scoreboard objectives add cppUseShovel1 minecraft.used:minecraft.diamond_shovel
-scoreboard objectives add cppUseShovel2 minecraft.used:minecraft.iron_shovel
-scoreboard objectives add cppUseShovel3 minecraft.used:minecraft.golden_shovel
-scoreboard objectives add cppUseShovel4 minecraft.used:minecraft.stone_shovel
+scoreboard objectives add cppUseAxe1 used:diamond_axe
+scoreboard objectives add cppUseAxe2 used:iron_axe
+scoreboard objectives add cppUseAxe3 used:golden_axe
+scoreboard objectives add cppUseAxe4 used:stone_axe
+scoreboard objectives add cppUseAxe5 used:netherite_axe
+scoreboard objectives add cppUsePick1 used:diamond_pickaxe
+scoreboard objectives add cppUsePick2 used:iron_pickaxe
+scoreboard objectives add cppUsePick3 used:golden_pickaxe
+scoreboard objectives add cppUsePick4 used:stone_pickaxe
+scoreboard objectives add cppUsePick5 used:netherite_pickaxe
+scoreboard objectives add cppUseShovel1 used:diamond_shovel
+scoreboard objectives add cppUseShovel2 used:iron_shovel
+scoreboard objectives add cppUseShovel3 used:golden_shovel
+scoreboard objectives add cppUseShovel4 used:stone_shovel
+scoreboard objectives add cppUseShovel5 used:netherite_shovel
+scoreboard objectives add cppUseHoe1 used:diamond_hoe
+scoreboard objectives add cppUseHoe2 used:iron_hoe
+scoreboard objectives add cppUseHoe3 used:golden_hoe
+scoreboard objectives add cppUseHoe4 used:stone_hoe
+scoreboard objectives add cppUseHoe5 used:netherite_hoe
 # 按下Shift
-scoreboard objectives add cppSneakTime minecraft.custom:minecraft.sneak_time
+scoreboard objectives add cppSneakTime custom:sneak_time
 # 跳跃
-scoreboard objectives add cppJump minecraft.custom:minecraft.jump
+scoreboard objectives add cppJump custom:jump
 # 使用胡萝卜钓竿
-scoreboard objectives add cppUseCSt minecraft.used:minecraft.carrot_on_a_stick
+scoreboard objectives add cppUseCSt used:carrot_on_a_stick
 # 玩家数字ID
 scoreboard objectives add cppID dummy
 # 玩家等级
@@ -70,8 +78,8 @@ scoreboard objectives add cppTorchPeriod trigger
 scoreboard objectives add cppTorchTick dummy
 # 整理
 scoreboard objectives add cppTrim trigger
-scoreboard objectives add cppTrimChest minecraft.custom:minecraft.open_chest
-scoreboard objectives add cppTrimShulker minecraft.custom:minecraft.open_shulker_box
+scoreboard objectives add cppTrimChest custom:open_chest
+scoreboard objectives add cppTrimShulker custom:open_shulker_box
 # 死亡返回
 scoreboard objectives add cppSpawnX dummy
 scoreboard objectives add cppSpawnZ dummy

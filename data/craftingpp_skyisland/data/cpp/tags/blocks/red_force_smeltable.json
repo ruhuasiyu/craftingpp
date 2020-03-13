@@ -1,8 +1,0 @@
-{
-	"replace": false,
-	"values": [
-		"#cpp:red_force_smeltable1",
-		"#cpp:red_force_smeltable2",
-		"minecraft:acacia_sapling"
-	]
-}

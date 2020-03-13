@@ -2,6 +2,13 @@
 	"condition": "minecraft:alternative",
 	"terms": [
 		{
+			"condition": "minecraft:entity_scores",
+			"entity": "this",
+			"scores": {
+				"cppChainDam": 0
+			}
+		},
+		{
 			"condition": "minecraft:inverted",
 			"term": {
 				"condition": "minecraft:alternative",
@@ -40,7 +47,7 @@
 					},
 					{
 						"condition": "minecraft:random_chance",
-						"chance": 0.3333333333
+						"chance": 0.66666667
 					}
 				]
 			}
@@ -62,7 +69,7 @@
 					},
 					{
 						"condition": "minecraft:random_chance",
-						"chance": 0.25
+						"chance": 0.75
 					}
 				]
 			}
@@ -84,7 +91,7 @@
 					},
 					{
 						"condition": "minecraft:random_chance",
-						"chance": 0.2
+						"chance": 0.8
 					}
 				]
 			}
@@ -106,7 +113,7 @@
 					},
 					{
 						"condition": "minecraft:random_chance",
-						"chance": 0.1666666667
+						"chance": 0.83333333
 					}
 				]
 			}
@@ -128,7 +135,7 @@
 					},
 					{
 						"condition": "minecraft:random_chance",
-						"chance": 0.14285714
+						"chance": 0.85714286
 					}
 				]
 			}
@@ -150,7 +157,7 @@
 					},
 					{
 						"condition": "minecraft:random_chance",
-						"chance": 0.125
+						"chance": 0.875
 					}
 				]
 			}
@@ -172,7 +179,7 @@
 					},
 					{
 						"condition": "minecraft:random_chance",
-						"chance": 0.1111111111
+						"chance": 0.88888889
 					}
 				]
 			}
@@ -194,7 +201,7 @@
 					},
 					{
 						"condition": "minecraft:random_chance",
-						"chance": 0.1
+						"chance": 0.9
 					}
 				]
 			}
@@ -216,7 +223,7 @@
 					},
 					{
 						"condition": "minecraft:random_chance",
-						"chance": 0.0909090909
+						"chance": 0.90909091
 					}
 				]
 			}

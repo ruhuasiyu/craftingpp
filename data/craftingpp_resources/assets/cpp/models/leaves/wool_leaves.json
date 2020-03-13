@@ -1,0 +1,6 @@
+{
+	"parent": "cpp:leaves/temp",
+    "textures": {
+        "0": "cpp:leaves/wool_leaves"
+    }
+}

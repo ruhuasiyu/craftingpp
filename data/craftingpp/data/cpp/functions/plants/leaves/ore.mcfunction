@@ -1,4 +1,4 @@
-loot replace entity @s weapon.mainhand 1 loot cpp:items/ore
+loot replace entity @s weapon.mainhand 1 loot cpp:misc/ore_leaves
 execute as @s[nbt={HandItems:[{id:"minecraft:ancient_debris"},{}]}] run setblock ~ ~ ~ ancient_debris
 execute as @s[nbt={HandItems:[{id:"minecraft:emerald_ore"},{}]}] run setblock ~ ~ ~ emerald_ore
 execute as @s[nbt={HandItems:[{id:"minecraft:diamond_ore"},{}]}] run setblock ~ ~ ~ diamond_ore

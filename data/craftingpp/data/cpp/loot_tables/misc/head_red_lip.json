@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData:12971001,Explosion:{Colors:[I;123456]},display:{Name:'{\"translate\":\"item.cpp.red_lip\"}',color:16711680},id:'cpp:red_lip',HideFlags:63}"
+							"tag": "{CustomModelData:12970071,Explosion:{Colors:[I;123456]},display:{Name:'{\"translate\":\"item.cpp.red_lip\"}',color:16711680},id:'cpp:red_lip',HideFlags:63}"
 						},
 						{
 							"function": "minecraft:copy_nbt",

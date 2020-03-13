@@ -1,3 +1,4 @@
-execute store result score #t cppValue run data get entity @s Item.tag.Damage
-execute store result entity @s Item.tag.Damage int 1 run scoreboard players add #t cppValue 1
-kill @s[predicate=cpp:broken_shears]
+data modify storage cpp:damage Item set from entity @s Item
+function cpp:misc/damage
+data modify entity @s Item set from storage cpp:damage Item
+kill @s[predicate=cpp:item/broken_shears]

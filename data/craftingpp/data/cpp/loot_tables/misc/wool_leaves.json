@@ -1,0 +1,258 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"conditions": [
+				{
+					"condition": "minecraft:random_chance",
+					"chance": 0.05
+				}
+			],
+			"entries": [
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:white_wool"
+				},
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:orange_wool"
+				},
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:magenta_wool"
+				},
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:light_blue_wool"
+				},
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:yellow_wool"
+				},
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:lime_wool"
+				},
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:pink_wool"
+				},
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:gray_wool"
+				},
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:light_gray_wool"
+				},
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:cyan_wool"
+				},
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:purple_wool"
+				},
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:blue_wool"
+				},
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:brown_wool"
+				},
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:green_wool"
+				},
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:red_wool"
+				},
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:black_wool"			
+				},
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:cod"
+				},
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:salmon"
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"conditions": [
+				{
+					"condition": "minecraft:random_chance",
+					"chance": 0.005
+				}
+			],
+			"entries": [
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:white_wool",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag":"{Tags:['cpp_generate_sheep']}"
+						}
+					]
+				},
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:orange_wool",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag":"{Tags:['cpp_generate_sheep']}"
+						}
+					]
+				},
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:magenta_wool",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag":"{Tags:['cpp_generate_sheep']}"
+						}
+					]
+				},
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:light_blue_wool",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag":"{Tags:['cpp_generate_sheep']}"
+						}
+					]
+				},
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:yellow_wool",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag":"{Tags:['cpp_generate_sheep']}"
+						}
+					]
+				},
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:lime_wool",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag":"{Tags:['cpp_generate_sheep']}"
+						}
+					]
+				},
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:pink_wool",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag":"{Tags:['cpp_generate_sheep']}"
+						}
+					]
+				},
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:gray_wool",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag":"{Tags:['cpp_generate_sheep']}"
+						}
+					]
+				},
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:light_gray_wool",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag":"{Tags:['cpp_generate_sheep']}"
+						}
+					]
+				},
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:cyan_wool",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag":"{Tags:['cpp_generate_sheep']}"
+						}
+					]
+				},
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:purple_wool",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag":"{Tags:['cpp_generate_sheep']}"
+						}
+					]
+				},
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:blue_wool",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag":"{Tags:['cpp_generate_sheep']}"
+						}
+					]
+				},
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:brown_wool",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag":"{Tags:['cpp_generate_sheep']}"
+						}
+					]
+				},
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:green_wool",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag":"{Tags:['cpp_generate_sheep']}"
+						}
+					]
+				},
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:red_wool",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag":"{Tags:['cpp_generate_sheep']}"
+						}
+					]
+				},
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:black_wool",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag":"{Tags:['cpp_generate_sheep']}"
+						}
+					]			
+				}
+			]
+		}
+	]
+}

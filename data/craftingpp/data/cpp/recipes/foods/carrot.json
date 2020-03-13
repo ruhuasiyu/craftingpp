@@ -1,9 +1,0 @@
-{
-	"type": "smelting",
-	"ingredient": {
-		"item": "minecraft:carrot"
-	},
-	"result": "minecraft:bread",
-	"experience": 0.35,
-	"cookingtime": 200
-}

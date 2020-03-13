@@ -12,3 +12,5 @@ execute if score #block_id cppValue matches 11 if block ~ ~ ~ brewing_stand run 
 execute if score #block_id cppValue matches 12 if block ~ ~ ~ grass run tag @s add cpp_loc_block_pos_pot
 execute if score #block_id cppValue matches 13 if block ~ ~ ~ snow_block run tag @s add cpp_loc_block_pos_pot
 execute if score #block_id cppValue matches 14 if block ~ ~ ~ fire run tag @s add cpp_loc_block_pos_pot
+execute if score #block_id cppValue matches 15 if block ~ ~ ~ oak_sign run tag @s add cpp_loc_block_pos_pot
+execute if score #block_id cppValue matches 16 if block ~ ~ ~ oak_wall_sign run tag @s add cpp_loc_block_pos_pot

@@ -5,6 +5,6 @@
         "layer1": "item/leather_helmet_overlay"
     },
 	"overrides": [
-		{ "predicate": { "custom_model_data": 12971001 }, "model": "cpp:decor/lip_helmet"}
+		{ "predicate": { "custom_model_data": 12970071 }, "model": "cpp:decor/lip_helmet"}
 	]
 }

@@ -1,0 +1,12 @@
+{
+	"parent": "minecraft:item/handheld",
+	"textures": {
+		"layer0": "minecraft:item/netherite_sword"
+	},
+	"overrides": [
+		{ "predicate": { "custom_model_data": 12970001 }, "model": "cpp:sword/frostmourne"},
+		{ "predicate": { "custom_model_data": 12970002 }, "model": "cpp:sword/ganjiang_moye_sword"},
+		{ "predicate": { "custom_model_data": 12970003 }, "model": "cpp:sword/imperial_sword"},
+		{ "predicate": { "custom_model_data": 12970004 }, "model": "cpp:sword/phoenix_sword"}
+	]
+}

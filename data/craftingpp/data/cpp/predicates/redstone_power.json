@@ -470,10 +470,6 @@
 					}
 				}
 			}
-		},
-		{
-			"condition": "minecraft:reference",
-			"name": "cpp:target_power"
 		}
 	]
 }

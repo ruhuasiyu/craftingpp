@@ -1,7 +1,0 @@
-{
-	"parent": "cpp:head/head_small_template",
-	"textures": {
-		"particle": "entity/zombie_pigman",
-		"layer": "entity/zombie_pigman"
-	}
-}

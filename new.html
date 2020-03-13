@@ -232,7 +232,7 @@
 	<li><a href="#汉堡"><span class="ci" style="background-position: -32px -224px;"></span> 汉堡</a></li>
 	<li><a href="#披萨"><span class="ci" style="background-position: -48px -224px;"></span> 披萨</a></li>
 	<li><a href="#寿司"><span class="ci" style="background-position: -64px -224px;"></span> 寿司</a></li>
-	<li><a href="#三明治"><span class="ci" style="background-position: -40px -1136px;"></span> 三明治</a></li>
+	<li><a href="#三明治"><span class="ci" style="background-position: -80px -1136px;"></span> 三明治</a></li>
 	<li><a href="#仰望星空派"><span class="ci" style="background-position: -80px -224px;"></span> 仰望星空派</a></li>
 	<li><a href="#冷饮"><span class="ci" style="background-position: -128px -352px;"></span> 冷饮</a></li>
 	<li><a href="#水果"><span class="ci" style="background-position: -96px -224px;"></span> 水果</a></li>
@@ -1835,7 +1835,7 @@
 	<td>2</td>
 </tr>
 <tr><td><a class="ui sugar_cane"></a><a href="#肥料" class="ui ci fertilizer"></a></td>
-	<td>可可豆仙人掌甘蔗蘑菇藤蔓<br />地狱疣睡莲花+<a href="#肥料">肥料</a></td>
+	<td>可可豆仙人掌甘蔗蘑菇垂泪藤<br />扭曲藤藤蔓地狱疣睡莲花+<a href="#肥料">肥料</a></td>
 	<td><a class="ui sugar_cane"><span class="stack">4</span></a></td>
 	<td>4 对应植物</td>
 	<td>2</td>
@@ -2301,7 +2301,7 @@
 	<td><a class="ui ci copy_mode"></a></td>
 	<td>消耗5倍价值点复制放入的物品。</td></tr>
 </tbody></table>
-<p>复制模式默认关闭，管理员可通过 <code>/scoreboard players set #doTradeCreate cppValue 1或0</code> 来打开/关闭。</p>
+<p>复制模式默认关闭，管理员可通过 <code>/scoreboard players set $doTradeCreate cppConfig 1或0</code> 来打开/关闭。</p>
 <p>1.9版本则根据输入物品和数量来直接产出绿宝石和附魔之瓶，支持的物品略有差异。</p>
 
 <button style="display:none;cursor:pointer;" onclick="this.style.display='none';this.nextElementSibling.nextElementSibling.style.display='table';this.nextElementSibling.style.display='inline';">显示交易机物品价值表</button>
@@ -2310,128 +2310,238 @@
 <table class="center"><thead><tr><th>价值</th>
 	<th>物品</th>
 </tr></thead><tbody>
-<tr><td>11520</td>
+<tr><td>65536</td>
+	<td class="left">
+		<a class="ui nether_star" title="下界之星"></a>
+		<a class="ui elytra" title="鞘翅"></a>
+		<a class="ui dragon_egg" title="龙蛋"></a>
+	</td>
+</tr>
+<tr><td>16384</td>
+	<td class="left">
+		<a href="#破损的刷怪箱" class="ui ci broken_spawner" title="破损的刷怪箱"></a>
+		<a class="ui diamond_horse_armor" title="钻石马铠"></a>
+		<a class="ui heart_of_the_sea" title="海洋之心"></a>
+		<a class="ui netherite_ingot" title="下堺锭"></a>
+		<a class="ui trident" title="三叉戟"></a>
+		<a class="ui dragon_head" title="龙头"></a>
+	</td>
+</tr>
+<tr><td>8192</td>
 	<td class="left">
 		<a class="ui diamond" title="钻石"></a>
+		<a class="ui music_disc_11" title="唱片"></a>
+		<a class="ui totem_of_undying" title="不死图腾"></a>
 	</td>
 </tr>
 <tr><td>2880</td>
 	<td class="left">
 		<a class="ui emerald" title="绿宝石"></a>
-		<a class="ui ci wing_of_sky" title="天空之翼"></a>
-		<a class="ui ci heart_of_crystal" title="水晶之心"></a>
-		<a class="ui ci limb_of_ridge" title="山脉之肢"></a>
-		<a class="ui ci soul_of_dirt" title="泥土之魂"></a>
-		<a class="ui ci certification_of_earth" title="大地之证"></a>
-		<a class="ui ci nova_of_fire" title="火焰之星"></a>
-		<a class="ui ci spirit_of_life" title="生命之灵"></a>
+		<a href="#天空之翼" class="ui ci wing_of_sky" title="天空之翼"></a>
+		<a href="#水晶之心" class="ui ci heart_of_crystal" title="水晶之心"></a>
+		<a href="#山脉之肢" class="ui ci limb_of_ridge" title="山脉之肢"></a>
+		<a href="#泥土之魂" class="ui ci soul_of_dirt" title="泥土之魂"></a>
+		<a href="#居民之证" class="ui ci certification_of_earth" title="居民之证"></a>
+		<a href="#火焰之星" class="ui ci nova_of_fire" title="火焰之星"></a>
+		<a href="#生命之灵" class="ui ci spirit_of_life" title="生命之灵"></a>
 		<a class="ui lava_bucket" title="熔岩桶"></a>
+		<a class="ui iron_horse_armor" title="铁马铠"></a>
+		<a class="ui golden_horse_armor" title="金马铠"></a>
+		<a class="ui nautilus_shell" title="鹦鹉螺壳"></a>
+		<a class="ui name_tag" title="命名牌"></a>
+		<a href="#黑暗碎片" class="ui ci shard_of_the_darkness" title="黑暗碎片"></a>
 	</td>
 </tr>
 <tr><td>720</td>
 	<td class="left">
-		<a class="ui experience_bottle" title="附魔之瓶"></a>
-		<a class="ui gold_ingot" title="金锭"></a>
+		<a class="ui sponge" title="海绵"></a>
+		<a class="ui crying_obsidian" title="哭泣的黑曜石"></a>
+		<a class="ui scute" title="鳞甲"></a>
 		<a class="ui iron_ingot" title="铁锭"></a>
+		<a class="ui gold_ingot" title="金锭"></a>
 		<a class="ui lapis_lazuli" title="青金石"></a>
 		<a class="ui rabbit_foot" title="兔子腿"></a>
-		<a class="ui scute" title="鳞甲"></a>
 		<a class="ui book" title="书"></a>
 		<a class="ui written_book" title="成书"></a>
 		<a class="ui enchanted_book" title="附魔书"></a>
+		<a class="ui honeycomb" title="蜜脾"></a>
 	</td>
 </tr>
 <tr><td>360</td>
 	<td class="left">
-		<a class="ui pumpkin" title="南瓜"></a>
-		<a class="ui melon" title="西瓜"></a>
-		<a class="ui leather" title="皮革"></a>
+		<a class="ui shulker_shell" title="潜影壳"></a>
 		<a class="ui spider_eye" title="蜘蛛眼"></a>
+		<a class="ui poisonous_potato" title="毒马铃薯"></a>
 		<a class="ui phantom_membrane" title="幻翼膜"></a>
-	</td>
-</tr>
-<tr><td>200</td>
-	<td class="left">
-		<a class="ui cooked_porkchop" title="熟猪排"></a>
-		<a class="ui cooked_chicken" title="熟鸡肉"></a>
-		<a class="ui cooked_beef" title="牛排"></a>
-		<a class="ui cooked_mutton" title="熟羊肉"></a>
-		<a class="ui cooked_rabbit" title="熟兔肉"></a>
+		<a class="ui shroomlight" title="菌光体"></a>
 	</td>
 </tr>
 <tr><td>180</td>
 	<td class="left">
-		<a class="ui glowstone_dust" title="荧石粉"></a>
-		<a class="ui redstone" title="红石"></a>
-		<a class="ui coal" title="煤炭"></a>
-		<a class="ui charcoal" title="木炭"></a>
-		<a class="ui quartz" title="石英"></a>
-		<a class="ui wheat" title="小麦"></a>
-		<a class="ui potato" title="马铃薯"></a>
-		<a class="ui carrot" title="胡萝卜"></a>
-		<a class="ui beetroot" title="甜菜根"></a>
-		<a class="ui nether_wart" title="地狱疣"></a>
-		<a class="ui chorus_fruit" title="紫颂果"></a>
-		<a class="ui porkchop" title="生猪排"></a>
-		<a class="ui chicken" title="生鸡肉"></a>
-		<a class="ui beef" title="生牛肉"></a>
-		<a class="ui mutton" title="生羊肉"></a>
-		<a class="ui rabbit" title="生兔肉"></a>
-		<a class="ui white_wool" title="白色羊毛"></a>
-		<a class="ui string" title="线"></a>
-		<a class="ui bone" title="骨头"></a>
-		<a class="ui ender_pearl" title="末影珍珠"></a>
+		<a class="ui crimson_stem" title="绯红菌柄"></a>
+		<a class="ui warped_stem" title="诡异菌柄"></a>
 		<a class="ui slime_ball" title="粘液球"></a>
-		<a class="ui ghast_tear" title="恶魂之泪"></a>
-		<a class="ui prismarine_crystals" title="海晶砂粒"></a>
-		<a class="ui blaze_rod" title="烈焰棒"></a>
-		<a class="ui bow" title="弓"></a>
-		<a class="ui fishing_rod" title="钓鱼竿"></a>
+		<a class="ui honey_bottle" title="蜂蜜瓶"></a>
+		<a class="ui magma_cream" title="岩浆膏"></a>
 	</td>
 </tr>
-<tr><td>90</td>
+<tr><td>144</td>
 	<td class="left">
-		<a class="ui seagrass" title="海草"></a>
-		<a class="ui kelp" title="海带"></a>
-		<a class="ui sweet_berries" title="甜浆果"></a>
+		<a class="ui melon" title="西瓜"></a>
+		<a class="ui pumpkin" title="南瓜"></a>
+		<a class="ui sea_lantern" title="海晶灯"></a>
+		<a class="ui orange_wool" title="各色羊毛"></a>
+		<a class="ui coal" title="煤炭"></a>
+		<a class="ui charcoal" title="木炭"></a>
+		<a class="ui leather" title="皮革"></a>
+		<a class="ui apple" title="苹果"></a>
+		<a class="ui redstone" title="红石"></a>
+		<a class="ui glowstone_dust" title="荧石粉"></a>
+	</td>
+</tr>
+<tr><td>128</td>
+	<td class="left">
+		<a class="ui obsidian" title="黑曜石"></a>
+		<a class="ui purpur_block" title="紫珀块"></a>
+		<a class="ui nether_wart_block" title="地狱疣块"></a>
+		<a class="ui warped_wart_block" title="诡异疣块"></a>
+		<a class="ui chorus_fruit" title="紫颂花"></a>
+		<a class="ui beef" title="生牛肉"></a>
+		<a class="ui porkchop" title="生猪排"></a>
+		<a class="ui mutton" title="生羊肉"></a>
+		<a class="ui chicken" title="生鸡肉"></a>
+		<a class="ui rabbit" title="生兔肉"></a>
+		<a class="ui cooked_beef" title="牛排"></a>
+		<a class="ui cooked_porkchop" title="熟猪排"></a>
+		<a class="ui cooked_mutton" title="熟羊肉"></a>
+		<a class="ui cooked_chicken" title="熟鸡肉"></a>
+		<a class="ui cooked_rabbit" title="熟兔肉"></a>
+		<a class="ui bow" title="弓"></a>
+		<a class="ui fishing_rod" title="钓鱼竿"></a>
+		<a class="ui crossbow" title="弩"></a>
+		<a class="ui ghast_tear" title="恶魂之泪"></a>
+	</td>
+</tr>
+<tr><td>96</td>
+	<td class="left">
+		<a class="ui tube_coral" title="珊瑚"></a>
+		<a class="ui brain_coral_fan" title="珊瑚扇"></a>
+		<a class="ui string" title="线"></a>
+		<a class="ui feather" title="羽毛"></a>
+		<a class="ui gunpowder" title="火药"></a>
+		<a class="ui wheat" title="小麦"></a>
+		<a class="ui egg" title="鸡蛋"></a>
+		<a class="ui ink_sac" title="墨囊"></a>
+		<a class="ui bone" title="骨头"></a>
+		<a class="ui ender_pearl" title="末影珍珠"></a>
+		<a class="ui blaze_rod" title="烈焰棒"></a>
+		<a class="ui quartz" title="石英"></a>
+		<a class="ui prismarine_crystals" title="海晶砂粒"></a>
+		<a class="ui beetroot" title="甜菜根"></a>
+		<a class="ui chorus_fruit" title="紫颂果"></a>
+		<a class="ui rotten_flesh" title="腐肉"></a>
+	</td>
+</tr>
+<tr><td>72</td>
+	<td class="left">
+		<a class="ui sea_pickle" title="海泡菜"></a>
+		<a class="ui poppy" title="矮花"></a>
+		<a class="ui wither_rose" title="凋零玫瑰"></a>
+		<a class="ui sunflower" title="高花"></a>
+		<a class="ui brown_mushroom" title="棕色蘑菇"></a>
+		<a class="ui red_mushroom" title="红色蘑菇"></a>
+		<a class="ui cactus" title="仙人掌"></a>
 		<a class="ui sugar_cane" title="甘蔗"></a>
-		<a class="ui paper" title="纸"></a>
+		<a class="ui vine" title="藤蔓"></a>
+		<a class="ui lily_pad" title="睡莲"></a>
+		<a class="ui clay_ball" title="粘土球"></a>
+		<a class="ui kelp" title="海带"></a>
+		<a class="ui cocoa_beans" title="可可豆"></a>
+		<a class="ui nether_wart" title="地狱疣"></a>
+		<a class="ui prismarine_shard" title="海晶碎片"></a>
+		<a class="ui sweet_berries" title="甜浆果"></a>
+	</td>
+</tr>
+<tr><td>48</td>
+	<td class="left">
+		<a class="ui blue_ice" title="蓝冰"></a>
+		<a class="ui potato" title="马铃薯"></a>
+		<a class="ui carrot" title="胡萝卜"></a>
+		<a class="ui bowl" title="碗"></a>
+		<a class="ui bamboo" title="竹子"></a>
+		<a class="ui magenta_dye" title="各色染料"></a>
+		<a class="ui arrow" title="箭"></a>
+		<a class="ui rabbit_hide" title="兔子皮"></a>
+		<a class="ui prismarine" title="海晶石"></a>
+		<a class="ui prismarine_bricks" title="海晶砖"></a>
+		<a class="ui dark_prismarine" title="暗海晶石"></a>
 		<a class="ui cod" title="鳕鱼"></a>
 		<a class="ui salmon" title="鲑鱼"></a>
 		<a class="ui tropical_fish" title="热带鱼"></a>
 		<a class="ui pufferfish" title="河豚"></a>
-		<a class="ui egg" title="鸡蛋"></a>
-		<a class="ui feather" title="羽毛"></a>
-		<a class="ui rotten_flesh" title="腐肉"></a>
-		<a class="ui gunpowder" title="火药"></a>
-		<a class="ui blaze_powder" title="烈焰粉"></a>
-		<a class="ui prismarine_shard" title="海晶碎片"></a>
-		<a class="ui flint" title="燧石"></a>
-		<a class="ui glass" title="玻璃"></a>
-		<a class="ui clay_ball" title="粘土球"></a>
 	</td>
 </tr>
-<tr><td>60</td>
+<tr><td>16</td>
 	<td class="left">
-		<a class="ui bamboo" title="竹子"></a>
-		<a class="ui white_dye" title="红色染料"></a>
-		<a class="ui orange_dye" title="橙色染料"></a>
-		<a class="ui magenta_dye" title="品红色染料"></a>
-		<a class="ui light_blue_dye" title="淡蓝色染料"></a>
-		<a class="ui yellow_dye" title="黄色染料"></a>
-		<a class="ui lime_dye" title="黄绿色染料"></a>
-		<a class="ui pink_dye" title="粉色染料"></a>
-		<a class="ui gray_dye" title="灰色染料"></a>
-		<a class="ui light_gray_dye" title="淡灰色染料"></a>
-		<a class="ui cyan_dye" title="青色染料"></a>
-		<a class="ui purple_dye" title="紫色染料"></a>
-		<a class="ui blue_dye" title="蓝色染料"></a>
-		<a class="ui brown_dye" title="棕色染料"></a>
-		<a class="ui green_dye" title="绿色染料"></a>
-		<a class="ui red_dye" title="红色染料"></a>
-		<a class="ui black_dye" title="黑色染料"></a>
-		<a class="ui arrow" title="箭"></a>
-	</td></tr>
+		<a class="ui packed_ice" title="浮冰"></a>
+		<a class="ui weeping_vines" title="垂泪藤"></a>
+		<a class="ui twisting_vines" title="扭曲藤"></a>
+		<a class="ui crimson_fungus" title="绯红菌"></a>
+		<a class="ui warped_fungus" title="诡异菌"></a>
+		<a class="ui melon_slice" title="西瓜片"></a>
+		<a class="ui stick" title="木棍"></a>
+	</td>
+</tr>
+<tr><td>8</td>
+	<td class="left">
+		<a class="ui soul_sand" title="灵魂沙"></a>
+		<a class="ui terracotta" title="陶瓦"></a>
+		<a class="ui orange_terracotta" title="彩色陶瓦"></a>
+		<a class="ui oak_sapling" title="树苗"></a>
+		<a class="ui crimson_roots" title="绯红菌索"></a>
+		<a class="ui warped_roots" title="诡异菌索"></a>
+		<a class="ui nether_sprouts" title="下界苗"></a>
+		<a class="ui wheat_seeds" title="小麦种子"></a>
+		<a class="ui beetroot_seeds" title="甜菜种子"></a>
+	</td>
+</tr>
+<tr><td>4</td>
+	<td class="left">
+		<a class="ui sandstone" title="砂岩"></a>
+		<a class="ui red_sandstone" title="红砂岩"></a>
+		<a class="ui soul_soil" title="灵魂土"></a>
+		<a class="ui magma_block" title="熔岩块"></a>
+		<a class="ui flint" title="燧石"></a>
+		<a class="ui nether_bricks" title="地狱砖块"></a>
+	</td>
+</tr>
+<tr><td>2</td>
+	<td class="left">
+		<a class="ui granite" title="花岗岩"></a>
+		<a class="ui diorite" title="闪长岩"></a>
+		<a class="ui andesite" title="安山岩"></a>
+		<a class="ui crimson_nylium" title="绯红菌岩"></a>
+		<a class="ui warped_nylium" title="诡异菌岩"></a>
+		<a class="ui gravel" title="砂砾"></a>
+		<a class="ui basalt" title="玄武岩"></a>
+	</td>
+</tr>
+<tr><td>1</td>
+	<td class="left">
+		<a class="ui stone" title="石头"></a>
+		<a class="ui dirt" title="泥土"></a>
+		<a class="ui grass_block" title="草方块"></a>
+		<a class="ui cobblestone" title="圆石"></a>
+		<a class="ui smooth_stone" title="平滑石头"></a>
+		<a class="ui netherrack" title="地狱岩"></a>
+		<a class="ui nether_brick" title="地狱砖"></a>
+		<a class="ui sand" title="沙子"></a>
+		<a class="ui red_sand" title="红沙"></a>
+		<a class="ui end_stone" title="末地石"></a>
+		<a class="ui dead_bush" title="枯萎的灌木"></a>
+		<a class="ui snowball" title="雪球"></a>
+	</td>
+</tr>
 </tbody></table>
 
 <h3 id="物品处理机">物品处理机 <code>cpp:item_processer</code></h3>
@@ -2566,7 +2676,7 @@
 	<td><a class="ui emerald" title="绿宝石"><span class="stack">9</span></a></td>
 	<td><a class="ui iron_nugget" title="铁粒"><span class="stack">9</span></a></td>
 	<td><a class="ui gold_nugget" title="金粒"><span class="stack">9</span></a></td>
-	<td></td>
+	<td><a class="ui netherite_ingot" title="下堺锭"><span class="stack">9</span></a></td>
 	<td></td>
 	<td></td>
 	<td></td>
@@ -2587,7 +2697,7 @@
 	<td><a class="ui emerald_block" title="绿宝石块"></a></td>
 	<td><a class="ui iron_ingot" title="铁锭"></a></td>
 	<td><a class="ui gold_ingot" title="金锭"></a></td>
-	<td></td>
+	<td><a class="ui netherite_block" title="下堺块"></a></td>
 	<td></td>
 	<td></td>
 	<td></td>
@@ -2635,6 +2745,53 @@
 	<td></td>
 	<td></td>
 	<td></td>
+</tr>
+
+<tr>
+	<th rowspan="2"><a href="#合成器" class="ui ci crafting_machine" title="合成器"></a></th>
+	<td><a href="#彼岸花" class="ui ci lycoris_radiata" title="彼岸花"></a></td>
+	<td><a href="#白车轴" class="ui ci trifolium" title="白车轴"></a></td>
+	<td><a href="#黑荆棘" class="ui ci blackthorn" title="黑荆棘"></a></td>
+	<td><a href="#香蒲草" class="ui ci cattail" title="香蒲草"></a></td>
+	<td><a href="#金盏花" class="ui ci marigold" title="金盏花"></a></td>
+	<td><a href="#木槿花" class="ui ci hibiscus" title="木槿花"></a></td>
+	<td><a href="#风信子" class="ui ci hyacinth" title="风信子"></a></td>
+	<td><a href="#菖蒲草" class="ui ci calamus" title="菖蒲草"></a></td>
+	<td><a href="#滇百合" class="ui ci wild_lilium" title="滇百合"></a></td>
+	<td><a href="#紫荆花" class="ui ci bauhinia" title="紫荆花"></a></td>
+	<td><a href="#蓬蓬草" class="ui ci fluffy_grass" title="蓬蓬草"></a></td>
+	<td><a href="#大丁草" class="ui ci gerbera" title="大丁草"></a></td>
+	<td><a href="#芦苇草" class="ui ci esparto" title="芦苇草"></a></td>
+	<td><a href="#亮连翘" class="ui ci glow_forsythia" title="亮连翘"></a></td>
+	<td><a href="#碎璃草" class="ui ci glazed_shade" title="碎璃草"></a></td>
+	<td><a href="#狼毒花" class="ui ci stelera" title="狼毒花"></a></td>
+	<td><a href="#牧晶花" class="ui ci forage_crystal" title="牧晶花"></a></td>
+	<td><a href="#异绒兰" class="ui ci isorchid" title="异绒兰"></a></td>
+	<td><a href="#焰光菊" class="ui ci burning_chrysanthe" title="焰光菊"></a></td>
+	<td><a href="#酢浆草" class="ui ci oxalis" title="酢浆草"></a></td>
+</tr>
+
+<tr>
+	<td><a href="#彼岸花种子" class="ui ci lycoris_radiata_seeds" title="彼岸花种子"><span class="stack">3</span></a></td>
+	<td><a href="#白车轴种子" class="ui ci trifolium_seeds" title="白车轴种子"><span class="stack">3</span></a></td>
+	<td><a href="#黑荆棘种子" class="ui ci blackthorn_seeds" title="黑荆棘种子"><span class="stack">3</span></a></td>
+	<td><a href="#香蒲草种子" class="ui ci cattail_seeds" title="香蒲草种子"><span class="stack">3</span></a></td>
+	<td><a href="#金盏花种子" class="ui ci marigold_seeds" title="金盏花种子"><span class="stack">3</span></a></td>
+	<td><a href="#木槿花种子" class="ui ci hibiscus_seeds" title="木槿花种子"><span class="stack">3</span></a></td>
+	<td><a href="#风信子种子" class="ui ci hyacinth_seeds" title="风信子种子"><span class="stack">3</span></a></td>
+	<td><a href="#菖蒲草种子" class="ui ci calamus_seeds" title="菖蒲草种子"><span class="stack">3</span></a></td>
+	<td><a href="#滇百合种子" class="ui ci wild_lilium_seeds" title="滇百合种子"><span class="stack">3</span></a></td>
+	<td><a href="#紫荆花种子" class="ui ci bauhinia_seeds" title="紫荆花种子"><span class="stack">3</span></a></td>
+	<td><a href="#蓬蓬草种子" class="ui ci fluffy_grass_seeds" title="蓬蓬草种子"><span class="stack">3</span></a></td>
+	<td><a href="#大丁草种子" class="ui ci gerbera_seeds" title="大丁草种子"><span class="stack">3</span></a></td>
+	<td><a href="#芦苇草种子" class="ui ci esparto_seeds" title="芦苇草种子"><span class="stack">3</span></a></td>
+	<td><a href="#亮连翘种子" class="ui ci glow_forsythia_seeds" title="亮连翘种子"><span class="stack">3</span></a></td>
+	<td><a href="#碎璃草种子" class="ui ci glazed_shade_seeds" title="碎璃草种子"><span class="stack">3</span></a></td>
+	<td><a href="#狼毒花种子" class="ui ci stelera_seeds" title="狼毒花种子"><span class="stack">3</span></a></td>
+	<td><a href="#牧晶花种子" class="ui ci forage_crystal_seeds" title="牧晶花种子"><span class="stack">3</span></a></td>
+	<td><a href="#异绒兰种子" class="ui ci isorchid_seeds" title="异绒兰种子"><span class="stack">3</span></a></td>
+	<td><a href="#焰光菊种子" class="ui ci burning_chrysanthe_seeds" title="焰光菊种子"><span class="stack">3</span></a></td>
+	<td><a href="#酢浆草种子" class="ui ci oxalis_seeds" title="酢浆草种子"><span class="stack">3</span></a></td>
 </tr>
 
 <tr>
@@ -5503,7 +5660,7 @@
 </tbody></table>
 
 <h3 id="勤劳之手">勤劳之手 <code>cpp:industrious_hand</code></h3>
-<p><span class="version">1.10</span> 放置在物品展示框内时，若上方2格的2米内有骨粉且当前位置为：<br />小麦、甜菜根、胡萝卜、土豆、竹子、向日葵、丁香、玫瑰丛、牡丹、可可豆、甜浆果，会消耗1个骨粉有几率生成相应作物的掉落物；<br />草、蕨、海草，以及2米内有剪刀时，会消耗1个骨粉和剪刀1点耐久并生成相应草的物品。</p>
+<p><span class="version">1.10</span> 放置在物品展示框内时，若上方2格的2米内有骨粉且当前位置为：<br />小麦/甜菜根/胡萝卜/土豆/竹子/向日葵/丁香/玫瑰丛/牡丹/可可豆/甜浆果/海带/垂泪藤/扭曲藤，会消耗1个骨粉有几率生成相应作物的掉落物；<br />草/蕨/海草，以及3米内有剪刀时，会消耗1个骨粉和剪刀1点耐久并生成相应草的物品。</p>
 <table><thead><tr><th>材料</th><th>合成配方</th></tr></thead><tbody>
 <tr><td><a href="#稀土玻璃">稀土玻璃</a>+<a href="#末影人头">末影人头</a>+钻石锄+<a href="#钢化玻璃">钢化玻璃</a></td>
 	<td><span class="ui cm" title="合成器">
@@ -7960,7 +8117,7 @@
 <p>每件物品只可附加一种效果。效果可重复附加，之前的效果将会被覆盖。</p>
 <p>盔甲效果在对应栏位生效，剑和工具在主手生效，每秒消耗1点经验值，重复的效果不会叠加但消耗的经验值会叠加。使用<a href="#节制器">节制器</a>可开启/关闭所有效果。连锁效果无消耗。</p>
 
-<p>连锁效果下，使用斧可以破坏相连的木头、瓜和作物；镐可以破坏相连的矿物和黑曜石；锹可以破坏相连的沙子、红沙、砂砾、粘土块。受附魔影响，工具不会损坏，至少会保留1点耐久。</p>
+<p>连锁效果下，使用斧可以破坏相连的木头/瓜/成熟作物；镐可以破坏相连的矿物/黑曜石；锹可以破坏相连的沙子/红沙/砂砾/粘土块；锄可以破坏相连的干草块/地狱疣块/诡异疣块/菌光体。受附魔影响。工具不会损坏，至少会保留1点耐久。</p>
 
 <h4 id="属性附加">属性附加</h4>
 <ul>
@@ -8207,7 +8364,8 @@
 </tbody></table>
 
 <h3 id="烈焰红唇">烈焰红唇 (Red Lip)</h3>
-<p>烈焰红唇可以通过各种染料在工作台中染色，也可以在合成器中像皮革盔甲一样染色。佩戴后取下需要放在合成器中修复，方可重新染色、佩戴。</p>
+<p>烈焰红唇可以通过各种染料在工作台中染色，也可以在合成器中像皮革盔甲一样染色。</p>
+<p>1.9版本佩戴后取下需要放在合成器中修复，方可重新染色、佩戴。</p>
 <table><thead><tr><th>名称</th>
 	<th>材料</th>
 	<th>合成配方</th>
@@ -8609,7 +8767,7 @@
 意外归来、缠毛线、玩牌者、马克思与恩格斯、自由引导人民、
 拾穗、带珍珠耳环的少女、呐喊、向日葵、苏格拉底之死、
 金色的秋天、星月夜、最后的晚餐、开国大典、落霞孤鹜图、
-竹石图、寒江独钓图、松梅双鹤图。
+竹石图、寒江独钓图、松梅双鹤图、日常三人组、东云研究所、小魔女DoReMi。
 </p>
 
 <table><thead><tr><th>名称</th>
@@ -8678,7 +8836,10 @@
 </tbody></table>
 
 <h3 id="纸片人">纸片人</h3>
-<p>对床shift右键可将图案转移至床上，破坏后可掉落。放置在地面的物品展示框可以展示。一共30种样式，从流浪商人处可购买。包括：</p>
+<p>对床shift右键可将图案转移至床上，破坏后可掉落。</p>
+<p>放置在地面的物品展示框可以展示。</p>
+<p>一共67种样式，从流浪商人处可购买。</p>
+<p>将纸片人重命名为其它名称后，可以在合成器中和绿宝石合成来变更人物。(1.10)</p>
 <table><thead><tr><th>名称</th><th>图案</th><th>战利品表路径</th></tr></thead><tbody>
 <tr><th>樱之宫莓香</th><td><a class="ui ci character01"></a></td><td>cpp:character/01</td></tr>
 <tr><th>日向夏帆</th><td><a class="ui ci character02"></a></td><td>cpp:character/02</td></tr>
@@ -8746,7 +8907,8 @@
 <tr><th>七海千秋</th><td><a class="ui ci character64"></a></td><td>cpp:character/64</td></tr>
 <tr><th>曲林静树</th><td><a class="ui ci character65"></a></td><td>cpp:character/65</td></tr>
 <tr><th>沙耶</th><td><a class="ui ci character66"></a></td><td>cpp:character/66</td></tr>
-<tr><th>射命丸文</th><td><a class="ui ci character67"></a></td><td>cpp:character/67</td></tr></tbody></table>
+<tr><th>射命丸文</th><td><a class="ui ci character67"></a></td><td>cpp:character/67</td></tr>
+</tbody></table>
 
 <h3>旗帜、标志和盾牌图案</h3>
 <table><thead><tr><th>产物</th>

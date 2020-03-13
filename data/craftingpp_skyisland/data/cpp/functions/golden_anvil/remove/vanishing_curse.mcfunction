@@ -1,5 +1,0 @@
-data remove block ~ ~ ~ Items[{Slot:9b}].tag.Enchantments[{id:"minecraft:vanishing_curse"}]
-data modify block ~ ~ ~ Items[{Slot:9b}].Slot set value 16
-execute store result score #temp cppValue run data get block ~ ~ ~ Items[{Slot:11b}].Count
-execute store result block ~ ~ ~ Items[{Slot:11b}].Count byte 1 run scoreboard players remove #temp cppValue 1
-replaceitem block ~ ~ ~ container.13 air

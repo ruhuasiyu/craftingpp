@@ -1,8 +1,0 @@
-{
-	"condition": "minecraft:location_check",
-	"predicate": {
-		"block": {
-			"nbt": "{Items:[{id:'minecraft:wheat'},{id:'minecraft:leather'}]}"
-		}
-	}
-}

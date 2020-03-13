@@ -409,27 +409,47 @@ span.ui a.fire, a.fire{
 	background-image: url("fire.gif");
 	background-size: 32px 32px;
 }
+span.ui a.sea_lantern, a.sea_lantern{
+	background-image: url("sea_lantern.gif");
+	background-size: 32px 32px;
+}
 
 .diamond_horse_armor            {background-position: -896px -000px;}
 
 .golden_horse_armor             {background-position: -032px -032px;}
 .iron_horse_armor               {background-position: -192px -032px;}
 .honey_bottle                   {background-position: -896px -032px;}
+.honeycomb                      {background-position: -928px -032px;}
+.beehive                        {background-position: -960px -032px;}
+.bee_nest                       {background-position: -992px -032px;}
 
+.netherite_block                {background-position: -096px -128px;}
+.netherite_ingot                {background-position: -192px -128px;}
+.basalt                         {background-position: -608px -128px;}
+.crimson_nylium                 {background-position: -640px -128px;}
 .crimson_stem                   {background-position: -672px -128px;}
+.shroomlight                    {background-position: -704px -128px;}
 .soul_soil                      {background-position: -736px -128px;}
+.warped_nylium                  {background-position: -768px -128px;}
 .warped_stem                    {background-position: -800px -128px;}
 .warped_wart_block              {background-position: -832px -128px;}
 .crimson_fungus                 {background-position: -928px -128px;}
 .warped_fungus                  {background-position: -960px -128px;}
+.weeping_vines                  {background-position: -992px -128px;}
 
 .stripped_crimson_stem          {background-position: -448px -160px;}
 .stripped_warped_stem           {background-position: -480px -160px;}
+.crimson_roots                  {background-position: -928px -160px;}
+.nether_sprouts                 {background-position: -960px -160px;}
+.warped_roots                   {background-position: -992px -160px;}
 
+.crying_obsidian                {background-position: -128px -192px;}
 .crimson_hyphae                 {background-position: -160px -192px;}
 .warped_hyphae                  {background-position: -192px -192px;}
 .stripped_crimson_hyphae        {background-position: -160px -192px;}
 .stripped_warped_hyphae         {background-position: -192px -192px;}
+.nether_gold_ore                {background-position: -288px -192px;}
+.twisting_vines                 {background-position: -320px -192px;}
 
 .white_banner_mojang            {background-position: -512px -544px;}
 
@@ -452,6 +472,7 @@ span.ui a.fire, a.fire{
 .milk_bucket                    {background-position: -928px -640px;}
 .water_bucket                   {background-position: -960px -640px;}
 
+.music_disc_11                  {background-position: -000px -672px;}
 .armor_stand                    {background-position: -032px -672px;}
 .painting                       {background-position: -320px -672px;}
 .bone_meal                      {background-position: -480px -672px;}
@@ -558,6 +579,7 @@ span.ui a.fire, a.fire{
 .jungle_planks                  {background-position: -992px -864px;}
 .lapis_block                    {background-position: -096px -896px;}
 .oak_planks                     {background-position: -192px -896px;}
+.purpur_block                   {background-position: -416px -896px;}
 .quartz_slab                    {background-position: -544px -896px;}
 .red_sandstone_slab             {background-position: -608px -896px;}
 .sandstone_slab                 {background-position: -672px -896px;}
@@ -896,7 +918,9 @@ span.ui a.fire, a.fire{
 
 .phantom_membrane               {background-position: -032px -1728px;}
 .potion_of_slow_falling         {background-position: -064px -1728px;}
+.blue_ice                       {background-position: -192px -1728px;}
 .sea_pickle                     {background-position: -224px -1728px;}
+.heart_of_the_sea               {background-position: -416px -1728px;}
 .nautilus_shell                 {background-position: -448px -1728px;}
 
 .seagrass                       {background-position: -384px -2016px;}
@@ -914,7 +938,8 @@ span.ui a.fire, a.fire{
 .blue_dye                       {background-position: -224px -2368px;}
 .brown_dye                      {background-position: -256px -2368px;}
 .white_dye                      {background-position: -288px -2368px;}
-.wither_rose                    {background-position: -640px -2368px;}
+.crossbow                       {background-position: -416px -2368px;}
+.wither_rose                    {background-position: -608px -2368px;}
 .cornflower                     {background-position: -640px -2368px;}
 .lily_of_the_valley             {background-position: -640px -2368px;}
 .suspicious_stew                {background-position: -928px -2368px;}
@@ -1143,6 +1168,7 @@ span.ui a.fire, a.fire{
 .cracked_stone_bricks           {background-position: -000px -3360px;}
 .mossy_stone_bricks             {background-position: -224px -3360px;}
 .podzol                         {background-position: -352px -3360px;}
+.nether_bricks                  {background-position: -768px -3360px;}
 
 .acacia_log                     {background-position: -192px -3392px;}
 .brown_mushroom                 {background-position: -512px -3392px;}

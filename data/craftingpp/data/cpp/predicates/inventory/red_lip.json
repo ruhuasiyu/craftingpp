@@ -1,0 +1,264 @@
+{
+	"condition": "minecraft:alternative",
+	"terms": [
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Inventory:[{Slot:0b,id:'minecraft:firework_star',tag:{id:'cpp:red_lip'}}]}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Inventory:[{Slot:1b,id:'minecraft:firework_star',tag:{id:'cpp:red_lip'}}]}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Inventory:[{Slot:2b,id:'minecraft:firework_star',tag:{id:'cpp:red_lip'}}]}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Inventory:[{Slot:3b,id:'minecraft:firework_star',tag:{id:'cpp:red_lip'}}]}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Inventory:[{Slot:4b,id:'minecraft:firework_star',tag:{id:'cpp:red_lip'}}]}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Inventory:[{Slot:5b,id:'minecraft:firework_star',tag:{id:'cpp:red_lip'}}]}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Inventory:[{Slot:6b,id:'minecraft:firework_star',tag:{id:'cpp:red_lip'}}]}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Inventory:[{Slot:7b,id:'minecraft:firework_star',tag:{id:'cpp:red_lip'}}]}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Inventory:[{Slot:8b,id:'minecraft:firework_star',tag:{id:'cpp:red_lip'}}]}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Inventory:[{Slot:9b,id:'minecraft:firework_star',tag:{id:'cpp:red_lip'}}]}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Inventory:[{Slot:10b,id:'minecraft:firework_star',tag:{id:'cpp:red_lip'}}]}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Inventory:[{Slot:11b,id:'minecraft:firework_star',tag:{id:'cpp:red_lip'}}]}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Inventory:[{Slot:12b,id:'minecraft:firework_star',tag:{id:'cpp:red_lip'}}]}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Inventory:[{Slot:13b,id:'minecraft:firework_star',tag:{id:'cpp:red_lip'}}]}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Inventory:[{Slot:14b,id:'minecraft:firework_star',tag:{id:'cpp:red_lip'}}]}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Inventory:[{Slot:15b,id:'minecraft:firework_star',tag:{id:'cpp:red_lip'}}]}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Inventory:[{Slot:16b,id:'minecraft:firework_star',tag:{id:'cpp:red_lip'}}]}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Inventory:[{Slot:17b,id:'minecraft:firework_star',tag:{id:'cpp:red_lip'}}]}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Inventory:[{Slot:18b,id:'minecraft:firework_star',tag:{id:'cpp:red_lip'}}]}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Inventory:[{Slot:19b,id:'minecraft:firework_star',tag:{id:'cpp:red_lip'}}]}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Inventory:[{Slot:20b,id:'minecraft:firework_star',tag:{id:'cpp:red_lip'}}]}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Inventory:[{Slot:21b,id:'minecraft:firework_star',tag:{id:'cpp:red_lip'}}]}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Inventory:[{Slot:22b,id:'minecraft:firework_star',tag:{id:'cpp:red_lip'}}]}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Inventory:[{Slot:23b,id:'minecraft:firework_star',tag:{id:'cpp:red_lip'}}]}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Inventory:[{Slot:24b,id:'minecraft:firework_star',tag:{id:'cpp:red_lip'}}]}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Inventory:[{Slot:25b,id:'minecraft:firework_star',tag:{id:'cpp:red_lip'}}]}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Inventory:[{Slot:26b,id:'minecraft:firework_star',tag:{id:'cpp:red_lip'}}]}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Inventory:[{Slot:27b,id:'minecraft:firework_star',tag:{id:'cpp:red_lip'}}]}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Inventory:[{Slot:28b,id:'minecraft:firework_star',tag:{id:'cpp:red_lip'}}]}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Inventory:[{Slot:29b,id:'minecraft:firework_star',tag:{id:'cpp:red_lip'}}]}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Inventory:[{Slot:30b,id:'minecraft:firework_star',tag:{id:'cpp:red_lip'}}]}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Inventory:[{Slot:31b,id:'minecraft:firework_star',tag:{id:'cpp:red_lip'}}]}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Inventory:[{Slot:32b,id:'minecraft:firework_star',tag:{id:'cpp:red_lip'}}]}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Inventory:[{Slot:33b,id:'minecraft:firework_star',tag:{id:'cpp:red_lip'}}]}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Inventory:[{Slot:34b,id:'minecraft:firework_star',tag:{id:'cpp:red_lip'}}]}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Inventory:[{Slot:35b,id:'minecraft:firework_star',tag:{id:'cpp:red_lip'}}]}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Inventory:[{Slot:-106b,id:'minecraft:firework_star',tag:{id:'cpp:red_lip'}}]}"
+			}
+		}
+	]
+}

@@ -1,1 +1,0 @@
-scoreboard objectives add cppBsdIntFur minecraft.custom:minecraft.interact_with_furnace

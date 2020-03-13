@@ -177,6 +177,75 @@
 									}
 								}
 							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"block": "minecraft:kelp"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:kelp",
+							"functions": [
+								{
+									"function": "minecraft:set_count",
+									"count": {
+										"min": 5,
+										"max": 7
+									}
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"block": "minecraft:weeping_vines"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:weeping_vines",
+							"functions": [
+								{
+									"function": "minecraft:set_count",
+									"count": {
+										"min": 1,
+										"max": 11
+									}
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"block": "minecraft:twisting_vines"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:twisting_vines",
+							"functions": [
+								{
+									"function": "minecraft:set_count",
+									"count": {
+										"min": 1,
+										"max": 11
+									}
+								}
+							]
 						}
 					]
 				}

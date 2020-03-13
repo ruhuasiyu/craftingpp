@@ -33,6 +33,4 @@ execute as @e[type=item_frame,nbt={Item:{tag:{id:"cpp:break_hand"}}}] at @s unle
 execute as @e[type=item_frame,nbt={Item:{tag:{id:"cpp:smart_hand"}}}] at @s unless entity @e[type=armor_stand,distance=..0.01,tag=cpp_smart_hand] run function cpp:item_frame/smart_hand/init
 execute as @e[type=item_frame,nbt={Item:{tag:{id:"cpp:angry_hand"}}}] at @s unless entity @e[type=armor_stand,distance=..0.01,tag=cpp_angry_hand] run function cpp:item_frame/angry_hand/init
 
-# 手
-execute as @e[type=item_frame,predicate=cpp:is_hand] at @s run function cpp:golem/hand/type
 schedule function cpp:tick20 20t

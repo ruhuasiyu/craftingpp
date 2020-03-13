@@ -1,2 +1,2 @@
-loot spawn ~ ~ ~ mine ~ ~ ~ mainhand
+loot give @s mine ~ ~ ~ mainhand
 setblock ~ ~ ~ air

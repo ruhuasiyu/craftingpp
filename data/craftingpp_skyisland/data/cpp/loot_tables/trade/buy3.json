@@ -1,6 +1,0 @@
-{"pools": [{"rolls": 1,"entries": [
-{"type":"item","name": "minecraft:chorus_fruit",		"functions": [{ "function": "set_count", "count": { "min": 15, "max": 19 }}]},
-{"type":"item","name": "minecraft:redstone",			"functions": [{ "function": "set_count", "count": { "min": 16, "max": 20 }}]},
-{"type":"item","name": "minecraft:ender_pearl",			"functions": [{ "function": "set_count", "count": { "min": 14, "max": 16 }}]},
-{"type":"item","name": "minecraft:spider_eye",			"functions": [{ "function": "set_count", "count": { "min":  8, "max": 12 }}]}
-]}]}

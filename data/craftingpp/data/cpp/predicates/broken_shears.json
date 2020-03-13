@@ -1,7 +1,0 @@
-{
-	"condition": "minecraft:entity_properties",
-	"entity": "this",
-	"predicate": {
-		"nbt": "{Items:{id:'minecraft:shears',tag:{Damage:238}}}"
-	}
-}

@@ -1,0 +1,19 @@
+{
+	"parent": "cpp:machine/machine",
+    "textures": {
+        "particle": "#0",
+        "down": "#0",
+        "up": "#0",
+        "north": "#0",
+        "east": "#0",
+        "south": "#0",
+        "west": "#0"
+    },
+	"display": {
+		"head": {
+			"rotation": [ 0, 0, 0 ],
+			"translation": [ 0, -14.65, 0 ],
+			"scale": [ 2.29, 2.29, 2.29 ]
+		}
+	}
+}

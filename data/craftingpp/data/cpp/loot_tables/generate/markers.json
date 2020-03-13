@@ -80,6 +80,16 @@
 							"tag": "{cppGenerateMarker:1b,CustomModelData:12970000,cppGenerateType:'wool_tree'}"
 						}
 					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:firework_star",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{cppGenerateMarker:1b,CustomModelData:12970000,cppGenerateType:'sakura_tree'}"
+						}
+					]
 				}
 			]
 		},

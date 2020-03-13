@@ -13,6 +13,14 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
+					"nbt": "{Items:[{id:'minecraft:iron_ore'},{id:'minecraft:nether_gold_ore'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
 					"nbt": "{Items:[{id:'minecraft:iron_ore'},{id:'minecraft:coal_ore'}]}"
 				}
 			}
@@ -69,7 +77,23 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
+					"nbt": "{Items:[{id:'minecraft:nether_gold_ore'},{id:'minecraft:coal_ore'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
 					"nbt": "{Items:[{id:'minecraft:gold_ore'},{id:'minecraft:nether_quartz_ore'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{id:'minecraft:nether_gold_ore'},{id:'minecraft:nether_quartz_ore'}]}"
 				}
 			}
 		},
@@ -85,7 +109,23 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
+					"nbt": "{Items:[{id:'minecraft:nether_gold_ore'},{id:'minecraft:diamond_ore'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
 					"nbt": "{Items:[{id:'minecraft:gold_ore'},{id:'minecraft:emerald_ore'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{id:'minecraft:nether_gold_ore'},{id:'minecraft:emerald_ore'}]}"
 				}
 			}
 		},
@@ -101,7 +141,23 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
+					"nbt": "{Items:[{id:'minecraft:nether_gold_ore'},{id:'minecraft:lapis_ore'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
 					"nbt": "{Items:[{id:'minecraft:gold_ore'},{id:'minecraft:redstone_ore'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{id:'minecraft:nether_gold_ore'},{id:'minecraft:redstone_ore'}]}"
 				}
 			}
 		},

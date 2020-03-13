@@ -1,6 +1,0 @@
-{
-    "parent": "cpp:tree/double_plant",
-    "textures": {
-        "crop": "cpp:tree/christmas_tree"
-    }
-}

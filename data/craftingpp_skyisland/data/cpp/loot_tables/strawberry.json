@@ -1,18 +1,0 @@
-{
-	"pools": [
-		{
-			"rolls": 1,
-			"entries": [
-				{
-					"type":"item",
-					"name": "minecraft:apple",
-					"functions": [
-						{
-							"function": "set_nbt",
-							"tag":"{isFruit:1b,id:\"cpp:strawberry\",display:{Name:\"{\\\"translate\\\":\\\"item.cpp.strawberry\\\"}\"},CustomModelData:12970023}"
-						}
-					]				}
-			]
-		}
-	]
-}

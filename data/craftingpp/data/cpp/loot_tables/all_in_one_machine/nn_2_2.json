@@ -420,6 +420,46 @@
 									"condition": "minecraft:location_check",
 									"predicate": {
 										"block": {
+											"nbt": "{Items:[{id:'minecraft:weeping_vines'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:weeping_vines",
+							"functions":[
+								{
+									"function": "minecraft:set_count",
+									"count": 4
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:twisting_vines'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:twisting_vines",
+							"functions":[
+								{
+									"function": "minecraft:set_count",
+									"count": 4
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
 											"nbt": "{Items:[{id:'minecraft:vine'}]}"
 										}
 									}

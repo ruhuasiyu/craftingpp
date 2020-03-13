@@ -6,6 +6,8 @@ execute if predicate cpp:item_processer/tool run function cpp:item_processer/rec
 execute if predicate cpp:item_processer/up/piston if score #temp cppValue matches 4.. if predicate cpp:item_processer/piston4 run function cpp:item_processer/recipes/piston4
 # 合成9物品
 execute if predicate cpp:item_processer/up/piston if score #temp cppValue matches 9.. if predicate cpp:item_processer/piston9 run function cpp:item_processer/recipes/piston9
+# 合成器
+execute if predicate cpp:item_processer/up/crafting_machine if predicate cpp:item_processer/crafting_machine run function cpp:item_processer/recipes/crafting_machine
 # 红色火之力
 execute if predicate cpp:item_processer/up/red_force_of_fire if predicate cpp:item_processer/red_force_of_fire run function cpp:item_processer/recipes/red_force_of_fire
 # 水桶

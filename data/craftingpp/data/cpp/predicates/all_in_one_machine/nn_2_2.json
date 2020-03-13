@@ -69,6 +69,22 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
+					"nbt": "{Items:[{id:'minecraft:weeping_vines'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{id:'minecraft:twisting_vines'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
 					"nbt": "{Items:[{id:'minecraft:vine'}]}"
 				}
 			}

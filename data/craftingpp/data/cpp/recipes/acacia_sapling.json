@@ -1,9 +1,0 @@
-{
-	"type": "smelting",
-	"ingredient": {
-		"item": "minecraft:acacia_sapling"
-	},
-	"result": "minecraft:acacia_sapling",
-	"experience": 0.1,
-	"cookingtime": 201
-}

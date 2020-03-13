@@ -3,7 +3,7 @@ execute if score $doZombieImproving cppConfig matches 1 as @e[type=#cpp:zombies]
 # 动物-黑暗移动
 execute if score $doDarkAnimalSpawning cppConfig matches 1 as @e[type=#cpp:animals,tag=cpp_dark_animal] at @s if entity @a[distance=..16] run function cpp:dark_animals/attract
 # 村民-被绿宝石吸引
-execute as @e[type=#cpp:villagers] at @s if entity @a[distance=1..10,predicate=cpp:hand_emerald_block] run function cpp:misc/attract_villager
+execute as @e[type=#cpp:villagers] at @s if entity @a[distance=1..10,predicate=cpp:hand/emerald_block] run function cpp:misc/attract_villager
 # 龙蛋
 execute as @e[type=item,nbt={Item:{tag:{cppDragon:1b}}}] run function cpp:misc/kill_dragon
 
@@ -24,8 +24,6 @@ execute as @e[type=armor_stand,tag=cpp_furnace] at @s run function cpp:furnace/t
 execute as @e[type=armor_stand,tag=cpp_smoker] at @s run function cpp:smoker/tick
 execute as @e[type=armor_stand,tag=cpp_blast_furnace] at @s run function cpp:blast_furnace/tick
 execute as @e[type=armor_stand,tag=cpp_campfire] at @s run function cpp:campfire/campfire
-# 酿造
-execute as @e[type=armor_stand,tag=cpp_brewing_stand] at @s run function cpp:brewing/tick
 # 纸片人
 execute as @e[type=armor_stand,tag=cpp_character] at @s unless block ~ ~ ~ #minecraft:beds run function cpp:decor/character_break
 # 便携式工作台
@@ -40,52 +38,41 @@ execute as @e[type=experience_bottle] at @s run function cpp:xp/throw
 # 清理物品
 clear @a #cpp:clear{cppClear:1b}
 
-# 切换帽子模型
-execute as @a[predicate=cpp:hat_mainhand] run function cpp:player/hat_mainhand
-execute as @a[predicate=cpp:hat_offhand] run function cpp:player/hat_offhand
-execute as @a[predicate=cpp:hat_head] run function cpp:player/hat_head
 # 扫帚
-execute as @a[predicate=cpp:broom_hand] run function cpp:player/broom_hand
+execute as @a[predicate=cpp:hand/broom] run function cpp:player/broom_hand
 # 流星丸
 execute as @a[predicate=cpp:shooting_star_mainhand] run function cpp:player/shooting_star_mainhand
 execute as @a[predicate=cpp:shooting_star_offhand] run function cpp:player/shooting_star_offhand
 # 称号
 execute as @a[predicate=cpp:mainhand/emerald] run function cpp:decor/mainhand_emerald
-# 随机方块# check 
+# 随机方块
 execute as @a[predicate=cpp:offhand/shulker_box] if data entity @s Inventory[{Slot:-106b}].tag.BlockEntityTag.Items[0] run function cpp:item/random_block/run
 # 替换合成器
 execute as @a[predicate=cpp:mainhand/petrified_oak_slab] unless data entity @s SelectedItem.tag.CustomModelData run function cpp:crafting_machine/replace/main
 execute as @a[predicate=cpp:offhand/petrified_oak_slab] unless data entity @s Inventory[{Slot:-106b}].tag.CustomModelData run function cpp:crafting_machine/replace/off
-# 替换纸片人
-
-
-
-
+# 切换帽子模型
+execute as @a[predicate=cpp:mainhand/hat] run function cpp:player/hat_mainhand
+execute as @a[predicate=cpp:offhand/hat] run function cpp:player/hat_offhand
+execute as @a[predicate=cpp:head/hat] run function cpp:player/hat_head
 # 烈焰红唇
-execute as @s[predicate=cpp:head_red_lip] run function cpp:decor/head_red_lip
-data modify storage cpp:playerbag Items set from entity @s Inventory
-data remove storage cpp:playerbag Items[{Slot:103b}]
-execute if data storage cpp:playerbag Items[{id:"minecraft:firework_star",tag:{id:"cpp:red_lip"}}] run function cpp:decor/bag_red_lip
-
-
-
-
+execute as @a[predicate=cpp:head/red_lip] run function cpp:player/red_lip
+execute as @a[predicate=cpp:inventory/red_lip] run function cpp:player/bag_red_lip
+execute as @a[predicate=cpp:inventory/frostmourne] run function cpp:player/bag_frostmourne
+execute as @a[predicate=cpp:inventory/ganjiang_moye_sword] run function cpp:player/bag_ganjiang_moye_sword
+execute as @a[predicate=cpp:inventory/imperial_sword] run function cpp:player/bag_imperial_sword
+execute as @a[predicate=cpp:inventory/phoenix_sword] run function cpp:player/bag_phoenix_sword
 # 帽子
-advancement grant @s[nbt={Inventory:[{Slot:103b,tag:{id:"cpp:green_hat"}}]}] only cpp:forgive
-advancement grant @s[nbt={Inventory:[{Slot:103b,tag:{id:"cpp:cat_breed"}}]}] only cpp:meow
-# 紫色美瞳
-effect give @s[nbt={Inventory:[{Slot:103b,tag:{id:"cpp:glow_hat"}}]}] glowing 5
-execute as @s[nbt={Inventory:[{Slot:103b,tag:{id:"cpp:glass_helmet"}}]}] at @s anchored eyes unless block ~ ~ ~ water run effect give @s water_breathing 5
-execute as @s[nbt={Inventory:[{Slot:103b,tag:{id:"cpp:purple_eye"}}]}] at @s run effect give @e[tag=cpp_wild_grass,distance=..100] glowing 5
+advancement grant @a[predicate=cpp:head/cat_breed] only cpp:meow
+execute as @a[predicate=cpp:head/purple_eye] at @s run effect give @e[tag=cpp_wild_grass,distance=..100] glowing 5
 # 附魔之瓶
 execute as @a[predicate=cpp:offhand/hopper] run function cpp:xp/check
 
 # 返回家
 execute if score $skyislandMode cppConfig matches 1 as @p[gamemode=!creative,distance=..10] run function cpp:misc/home
 # 体重
-execute as @a at @s if block ~ ~ ~ minecraft:heavy_weighted_pressure_plate run function cpp:misc/fatness
+execute as @a at @s if block ~ ~ ~ heavy_weighted_pressure_plate run function cpp:misc/fatness
 # 连环
-#execute as @a[scores={cppChainTick=1..}] at @s anchored eyes run function cpp:chain/type
+execute as @a[scores={cppChainTick=1..}] at @s anchored eyes run function cpp:chain/type
 # 插火把
 scoreboard players enable @a cppTorchPeriod
 execute as @a[scores={cppTorchPeriod=1..}] at @s run function cpp:auto_torch/check
@@ -110,7 +97,7 @@ scoreboard players reset @a cppSneakTime
 execute as @e[type=item_frame] at @s run function cpp:item_frame/type
 
 ## 物品
-execute as @e[type=item,nbt={PickupDelay:0s}] at @s if entity @a[distance=..16,predicate=cpp:has_magnet] run function cpp:item/magnet
+execute as @e[type=item,nbt={PickupDelay:0s}] at @s if entity @a[distance=..16,predicate=cpp:inventory/magnet] run function cpp:item/magnet
 execute as @e[type=item,nbt={Item:{id:"minecraft:blaze_rod",tag:{display:{}}}}] at @s run function cpp:item/wand_of_the_darkness
 execute as @e[type=item,tag=!cpp_item_checked] run function cpp:item/check
 

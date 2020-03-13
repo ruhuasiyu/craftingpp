@@ -1,18 +1,0 @@
-{
-	"pools": [
-		{
-			"rolls": 1,
-			"entries": [
-				{
-					"type": "item",
-					"name": "minecraft:item_frame",
-					"functions": [
-						{
-							"function": "set_nbt",
-							"tag":"{id:\"cpp:bilibili_logo\",display:{Name:\"{\\\"translate\\\":\\\"item.cpp.bilibili_logo\\\"}\"},CustomModelData:12974406,EntityTag:{Item:{id:'minecraft:item_frame',Count:1b,tag:{CustomModelData:12974406,isMachineBg:1b}},Tags:['cpp_item_frame_flag','cpp_special_item_frame','cpp_bilibili_logo']}}"
-						}
-					]				}
-			]
-		}
-	]
-}

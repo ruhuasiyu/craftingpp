@@ -1,0 +1,19 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:acacia_leaves",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{display:{Name:'{\"translate\":\"item.cpp.sakura_leaves\"}'},id:'cpp:sakura_leaves',CustomModelData:12970104}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

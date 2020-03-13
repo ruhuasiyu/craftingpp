@@ -1,6 +1,0 @@
-{"pools": [{"rolls": 1,"entries": [
-{"type":"item","name": "minecraft:piston",	 		"functions": [{ "function": "set_count", "count": { "min": 4, "max": 6 }}]},
-{"type":"item","name": "minecraft:redstone_lamp", 	"functions": [{ "function": "set_count", "count": { "min": 4, "max": 6 }}]},
-{"type":"item","name": "minecraft:tnt", 			"functions": [{ "function": "set_count", "count": { "min": 4, "max": 6 }}]},
-{"type":"item","name": "minecraft:observer", 		"functions": [{ "function": "set_count", "count": { "min": 4, "max": 6 }}]}
-]}]}

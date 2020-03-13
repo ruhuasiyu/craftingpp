@@ -229,6 +229,20 @@
 							],
 							"type": "minecraft:item",
 							"name": "minecraft:gold_ingot"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:netherite_ingot'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:netherite_block"
 						}
 					]
 				}

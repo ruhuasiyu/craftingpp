@@ -1,8 +1,0 @@
-{"pools": [{"rolls": 1,"entries": [
-{"type":"item","name": "minecraft:oak_log",	 			"functions": [{ "function": "set_count", "count": { "min": 36, "max": 40 }}]},
-{"type":"item","name": "minecraft:spruce_log", 			"functions": [{ "function": "set_count", "count": { "min": 36, "max": 40 }}]},
-{"type":"item","name": "minecraft:birch_log", 			"functions": [{ "function": "set_count", "count": { "min": 36, "max": 40 }}]},
-{"type":"item","name": "minecraft:jungle_log", 			"functions": [{ "function": "set_count", "count": { "min": 36, "max": 40 }}]},
-{"type":"item","name": "minecraft:acacia_log", 			"functions": [{ "function": "set_count", "count": { "min": 36, "max": 40 }}]},
-{"type":"item","name": "minecraft:dark_oak_log",		"functions": [{ "function": "set_count", "count": { "min": 36, "max": 40 }}]}
-]}]}
