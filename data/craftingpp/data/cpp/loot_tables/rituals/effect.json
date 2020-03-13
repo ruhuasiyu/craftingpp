@@ -12,7 +12,7 @@
 									"condition": "minecraft:location_check",
 									"predicate": {
 										"block": {
-											"nbt": "{Items:[{Slot:0b,tag:{CustomPotionEffects:[{Id:1b}]}}]} "
+											"nbt": "{Items:[{tag:{id:'cpp:agentia_of_agileness'}}]}"
 										}
 									}
 								}
@@ -22,7 +22,7 @@
 							"functions": [
 								{
 									"function": "minecraft:set_nbt",
-									"tag": "{Item:{tag:{display:{Lore:['{\"translate\":\"lore.cpp.attached.speed\"}']},cppStoredEffects:[{id:'speed'}]}}}"
+									"tag": "{display:{Lore:['{\"translate\":\"lore.cpp.stored_effects.speed\"}']},cppStoredEffects:[{id:'speed'}]}"
 								}
 							]
 						},
@@ -32,7 +32,7 @@
 									"condition": "minecraft:location_check",
 									"predicate": {
 										"block": {
-											"nbt": "{Items:[{Slot:0b,tag:{CustomPotionEffects:[{Id:1b}]}}]} "
+											"nbt": "{Items:[{tag:{id:'cpp:agentia_of_extremeness'}}]}"
 										}
 									}
 								}
@@ -42,7 +42,7 @@
 							"functions": [
 								{
 									"function": "minecraft:set_nbt",
-									"tag": "{Item:{tag:{display:{Lore:['{\"translate\":\"lore.cpp.attached.speed\"}']},cppStoredEffects:[{id:'speed'}]}}}"
+									"tag": "{display:{Lore:['{\"translate\":\"lore.cpp.stored_effects.haste\"}']},cppStoredEffects:[{id:'haste'}]}"
 								}
 							]
 						},
@@ -52,7 +52,7 @@
 									"condition": "minecraft:location_check",
 									"predicate": {
 										"block": {
-											"nbt": "{Items:[{Slot:0b,tag:{CustomPotionEffects:[{Id:3b}]}}]} "
+											"nbt": "{Items:[{tag:{id:'cpp:agentia_of_sharpness'}}]}"
 										}
 									}
 								}
@@ -62,7 +62,7 @@
 							"functions": [
 								{
 									"function": "minecraft:set_nbt",
-									"tag": "{Item:{tag:{display:{Lore:['{\"translate\":\"lore.cpp.attached.haste\"}']},cppStoredEffects:[{id:'haste'}]}}}"
+									"tag": "{display:{Lore:['{\"translate\":\"lore.cpp.stored_effects.strength\"}']},cppStoredEffects:[{id:'strength'}]}"
 								}
 							]
 						},
@@ -72,7 +72,7 @@
 									"condition": "minecraft:location_check",
 									"predicate": {
 										"block": {
-											"nbt": "{Items:[{Slot:0b,tag:{CustomPotionEffects:[{Id:5b}]}}]} "
+											"nbt": "{Items:[{tag:{id:'cpp:agentia_of_bounce'}}]}"
 										}
 									}
 								}
@@ -82,7 +82,7 @@
 							"functions": [
 								{
 									"function": "minecraft:set_nbt",
-									"tag": "{Item:{tag:{display:{Lore:['{\"translate\":\"lore.cpp.attached.strength\"}']},cppStoredEffects:[{id:'strength'}]}}}"
+									"tag": "{display:{Lore:['{\"translate\":\"lore.cpp.stored_effects.jump_boost\"}']},cppStoredEffects:[{id:'jump_boost'}]}"
 								}
 							]
 						},
@@ -92,7 +92,7 @@
 									"condition": "minecraft:location_check",
 									"predicate": {
 										"block": {
-											"nbt": "{Items:[{Slot:0b,tag:{CustomPotionEffects:[{Id:8b}]}}]} "
+											"nbt": "{Items:[{tag:{id:'cpp:agentia_of_rejuveness'}}]}"
 										}
 									}
 								}
@@ -102,7 +102,7 @@
 							"functions": [
 								{
 									"function": "minecraft:set_nbt",
-									"tag": "{Item:{tag:{display:{Lore:['{\"translate\":\"lore.cpp.attached.jump_boost\"}']},cppStoredEffects:[{id:'jump_boost'}]}}}"
+									"tag": "{display:{Lore:['{\"translate\":\"lore.cpp.stored_effects.regeneration\"}']},cppStoredEffects:[{id:'regeneration'}]}"
 								}
 							]
 						},
@@ -112,7 +112,7 @@
 									"condition": "minecraft:location_check",
 									"predicate": {
 										"block": {
-											"nbt": "{Items:[{Slot:0b,tag:{CustomPotionEffects:[{Id:10b}]}}]} "
+											"nbt": "{Items:[{tag:{id:'cpp:agentia_of_shield'}}]}"
 										}
 									}
 								}
@@ -122,7 +122,7 @@
 							"functions": [
 								{
 									"function": "minecraft:set_nbt",
-									"tag": "{Item:{tag:{display:{Lore:['{\"translate\":\"lore.cpp.attached.regeneration\"}']},cppStoredEffects:[{id:'regeneration'}]}}}"
+									"tag": "{display:{Lore:['{\"translate\":\"lore.cpp.stored_effects.resistance\"}']},cppStoredEffects:[{id:'resistance'}]}"
 								}
 							]
 						},
@@ -132,7 +132,7 @@
 									"condition": "minecraft:location_check",
 									"predicate": {
 										"block": {
-											"nbt": "{Items:[{Slot:0b,tag:{CustomPotionEffects:[{Id:11b}]}}]} "
+											"nbt": "{Items:[{tag:{id:'cpp:agentia_of_fire_shield'}}]}"
 										}
 									}
 								}
@@ -142,7 +142,7 @@
 							"functions": [
 								{
 									"function": "minecraft:set_nbt",
-									"tag": "{Item:{tag:{display:{Lore:['{\"translate\":\"lore.cpp.attached.resistance\"}']},cppStoredEffects:[{id:'resistance'}]}}}"
+									"tag": "{display:{Lore:['{\"translate\":\"lore.cpp.stored_effects.fire_resistance\"}']},cppStoredEffects:[{id:'fire_resistance'}]}"
 								}
 							]
 						},
@@ -152,7 +152,7 @@
 									"condition": "minecraft:location_check",
 									"predicate": {
 										"block": {
-											"nbt": "{Items:[{Slot:0b,tag:{CustomPotionEffects:[{Id:12b}]}}]} "
+											"nbt": "{Items:[{tag:{id:'cpp:agentia_of_waterless'}}]}"
 										}
 									}
 								}
@@ -162,7 +162,7 @@
 							"functions": [
 								{
 									"function": "minecraft:set_nbt",
-									"tag": "{Item:{tag:{display:{Lore:['{\"translate\":\"lore.cpp.attached.fire_resistance\"}']},cppStoredEffects:[{id:'fire_resistance'}]}}}"
+									"tag": "{display:{Lore:['{\"translate\":\"lore.cpp.stored_effects.water_breathing\"}']},cppStoredEffects:[{id:'water_breathing'}]}"
 								}
 							]
 						},
@@ -172,7 +172,7 @@
 									"condition": "minecraft:location_check",
 									"predicate": {
 										"block": {
-											"nbt": "{Items:[{Slot:0b,tag:{CustomPotionEffects:[{Id:13b}]}}]} "
+											"nbt": "{Items:[{tag:{id:'cpp:agentia_of_transparentness'}}]}"
 										}
 									}
 								}
@@ -182,7 +182,7 @@
 							"functions": [
 								{
 									"function": "minecraft:set_nbt",
-									"tag": "{Item:{tag:{display:{Lore:['{\"translate\":\"lore.cpp.attached.water_breathing\"}']},cppStoredEffects:[{id:'water_breathing'}]}}}"
+									"tag": "{display:{Lore:['{\"translate\":\"lore.cpp.stored_effects.invisibility\"}']},cppStoredEffects:[{id:'invisibility'}]}"
 								}
 							]
 						},
@@ -192,7 +192,7 @@
 									"condition": "minecraft:location_check",
 									"predicate": {
 										"block": {
-											"nbt": "{Items:[{Slot:0b,tag:{CustomPotionEffects:[{Id:14b}]}}]} "
+											"nbt": "{Items:[{tag:{id:'cpp:agentia_of_eyesight'}}]}"
 										}
 									}
 								}
@@ -202,7 +202,7 @@
 							"functions": [
 								{
 									"function": "minecraft:set_nbt",
-									"tag": "{Item:{tag:{display:{Lore:['{\"translate\":\"lore.cpp.attached.invisibility\"}']},cppStoredEffects:[{id:'invisibility'}]}}}"
+									"tag": "{display:{Lore:['{\"translate\":\"lore.cpp.stored_effects.night_vision\"}']},cppStoredEffects:[{id:'night_vision'}]}"
 								}
 							]
 						},
@@ -212,7 +212,7 @@
 									"condition": "minecraft:location_check",
 									"predicate": {
 										"block": {
-											"nbt": "{Items:[{Slot:0b,tag:{CustomPotionEffects:[{Id:16b}]}}]} "
+											"nbt": "{Items:[{tag:{id:'cpp:cold_drink'}}]}"
 										}
 									}
 								}
@@ -222,7 +222,7 @@
 							"functions": [
 								{
 									"function": "minecraft:set_nbt",
-									"tag": "{Item:{tag:{display:{Lore:['{\"translate\":\"lore.cpp.attached.night_vision\"}']},cppStoredEffects:[{id:'night_vision'}]}}}"
+									"tag": "{display:{Lore:['{\"translate\":\"lore.cpp.stored_effects.saturation\"}']},cppStoredEffects:[{id:'saturation'}]}"
 								}
 							]
 						},
@@ -232,7 +232,7 @@
 									"condition": "minecraft:location_check",
 									"predicate": {
 										"block": {
-											"nbt": "{Items:[{Slot:0b,tag:{CustomPotionEffects:[{Id:23b}]}}]} "
+											"nbt": "{Items:[{tag:{id:'cpp:agentia_of_lightness'}}]}"
 										}
 									}
 								}
@@ -242,7 +242,7 @@
 							"functions": [
 								{
 									"function": "minecraft:set_nbt",
-									"tag": "{Item:{tag:{display:{Lore:['{\"translate\":\"lore.cpp.attached.saturation\"}']},cppStoredEffects:[{id:'saturation'}]}}}"
+									"tag": "{display:{Lore:['{\"translate\":\"lore.cpp.stored_effects.slow_falling\"}']},cppStoredEffects:[{id:'slow_falling'}]}"
 								}
 							]
 						},
@@ -252,7 +252,7 @@
 									"condition": "minecraft:location_check",
 									"predicate": {
 										"block": {
-											"nbt": "{Items:[{Slot:0b,tag:{CustomPotionEffects:[{Id:28b}]}}]} "
+											"nbt": "{Items:[{tag:{id:'cpp:agentia_of_tide'}}]}"
 										}
 									}
 								}
@@ -262,7 +262,7 @@
 							"functions": [
 								{
 									"function": "minecraft:set_nbt",
-									"tag": "{Item:{tag:{display:{Lore:['{\"translate\":\"lore.cpp.attached.slow_falling\"}']},cppStoredEffects:[{id:'slow_falling'}]}}}"
+									"tag": "{display:{Lore:['{\"translate\":\"lore.cpp.stored_effects.conduit_power\"}']},cppStoredEffects:[{id:'conduit_power'}]}"
 								}
 							]
 						},
@@ -272,7 +272,7 @@
 									"condition": "minecraft:location_check",
 									"predicate": {
 										"block": {
-											"nbt": "{Items:[{Slot:0b,tag:{CustomPotionEffects:[{Id:29b}]}}]} "
+											"nbt": "{Items:[{tag:{id:'cpp:agentia_of_chain'}}]}"
 										}
 									}
 								}
@@ -282,47 +282,7 @@
 							"functions": [
 								{
 									"function": "minecraft:set_nbt",
-									"tag": "{Item:{tag:{display:{Lore:['{\"translate\":\"lore.cpp.attached.conduit_power\"}']},cppStoredEffects:[{id:'conduit_power'}]}}}"
-								}
-							]
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:0b,tag:{CustomPotionEffects:[{Id:99b}]}}]} "
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stone",
-							"functions": [
-								{
-									"function": "minecraft:set_nbt",
-									"tag": "{Item:{tag:{display:{Lore:['{\"translate\":\"lore.cpp.attached.chain\"}']},cppStoredEffects:[{id:'chain'}]}}}"
-								}
-							]
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:0b,tag:{CustomPotionEffects:[{Id:99b}]}}]} "
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:stone",
-							"functions": [
-								{
-									"function": "minecraft:set_nbt",
-									"tag": "{Item:{tag:{display:{Lore:['{\"translate\":\"lore.cpp.stored_effects.magnet\"}']},cppStoredEffects:[{id:'chain'}]}}}"
+									"tag": "{display:{Lore:['{\"translate\":\"lore.cpp.stored_effects.magnet\"}']},cppStoredEffects:[{id:'chain'}]}"
 								}
 							]
 						}

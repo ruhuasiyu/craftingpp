@@ -5,7 +5,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"nbt": "{Items:[{Slot:0b,tag:{CustomPotionEffects:[{Id:1b,Amplifier:1b,Duration:9600}]}},{Slot:2b,tag:{CustomPotionEffects:[{Id:1b,Amplifier:1b,Duration:9600}]}},{Slot:6b,tag:{CustomPotionEffects:[{Id:1b,Amplifier:1b,Duration:9600}]}},{Slot:8b,tag:{CustomPotionEffects:[{Id:1b,Amplifier:1b,Duration:9600}]}}]}"
+					"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:agentia_of_lightness'}},{Slot:2b,tag:{id:'cpp:agentia_of_lightness'}},{Slot:6b,tag:{id:'cpp:agentia_of_lightness'}},{Slot:8b,tag:{id:'cpp:agentia_of_lightness'}}]}"
 				}
 			}
 		},
@@ -13,7 +13,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"nbt": "{Items:[{Slot:0b,tag:{CustomPotionEffects:[{Id:3b,Amplifier:1b,Duration:9600}]}},{Slot:2b,tag:{CustomPotionEffects:[{Id:3b,Amplifier:1b,Duration:9600}]}},{Slot:6b,tag:{CustomPotionEffects:[{Id:3b,Amplifier:1b,Duration:9600}]}},{Slot:8b,tag:{CustomPotionEffects:[{Id:3b,Amplifier:1b,Duration:9600}]}}]}"
+					"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:agentia_of_eyesight'}},{Slot:2b,tag:{id:'cpp:agentia_of_eyesight'}},{Slot:6b,tag:{id:'cpp:agentia_of_eyesight'}},{Slot:8b,tag:{id:'cpp:agentia_of_eyesight'}}]}"
 				}
 			}
 		},
@@ -21,7 +21,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"nbt": "{Items:[{Slot:0b,tag:{CustomPotionEffects:[{Id:5b,Amplifier:1b,Duration:9600}]}},{Slot:2b,tag:{CustomPotionEffects:[{Id:5b,Amplifier:1b,Duration:9600}]}},{Slot:6b,tag:{CustomPotionEffects:[{Id:5b,Amplifier:1b,Duration:9600}]}},{Slot:8b,tag:{CustomPotionEffects:[{Id:5b,Amplifier:1b,Duration:9600}]}}]}"
+					"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:agentia_of_fire_shield'}},{Slot:2b,tag:{id:'cpp:agentia_of_fire_shield'}},{Slot:6b,tag:{id:'cpp:agentia_of_fire_shield'}},{Slot:8b,tag:{id:'cpp:agentia_of_fire_shield'}}]}"
 				}
 			}
 		},
@@ -29,7 +29,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"nbt": "{Items:[{Slot:0b,tag:{CustomPotionEffects:[{Id:8b,Amplifier:1b,Duration:9600}]}},{Slot:2b,tag:{CustomPotionEffects:[{Id:8b,Amplifier:1b,Duration:9600}]}},{Slot:6b,tag:{CustomPotionEffects:[{Id:8b,Amplifier:1b,Duration:9600}]}},{Slot:8b,tag:{CustomPotionEffects:[{Id:8b,Amplifier:1b,Duration:9600}]}}]}"
+					"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:agentia_of_waterless'}},{Slot:2b,tag:{id:'cpp:agentia_of_waterless'}},{Slot:6b,tag:{id:'cpp:agentia_of_waterless'}},{Slot:8b,tag:{id:'cpp:agentia_of_waterless'}}]}"
 				}
 			}
 		},
@@ -37,7 +37,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"nbt": "{Items:[{Slot:0b,tag:{CustomPotionEffects:[{Id:10b,Amplifier:1b,Duration:1800}]}},{Slot:2b,tag:{CustomPotionEffects:[{Id:10b,Amplifier:1b,Duration:1800}]}},{Slot:6b,tag:{CustomPotionEffects:[{Id:10b,Amplifier:1b,Duration:1800}]}},{Slot:8b,tag:{CustomPotionEffects:[{Id:10b,Amplifier:1b,Duration:1800}]}}]}"
+					"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:agentia_of_transparentness'}},{Slot:2b,tag:{id:'cpp:agentia_of_transparentness'}},{Slot:6b,tag:{id:'cpp:agentia_of_transparentness'}},{Slot:8b,tag:{id:'cpp:agentia_of_transparentness'}}]}"
 				}
 			}
 		},
@@ -45,7 +45,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"nbt": "{Items:[{Slot:0b,tag:{CustomPotionEffects:[{Id:11b,Amplifier:1b,Duration:9600}]}},{Slot:2b,tag:{CustomPotionEffects:[{Id:11b,Amplifier:1b,Duration:9600}]}},{Slot:6b,tag:{CustomPotionEffects:[{Id:11b,Amplifier:1b,Duration:9600}]}},{Slot:8b,tag:{CustomPotionEffects:[{Id:11b,Amplifier:1b,Duration:9600}]}}]}"
+					"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:agentia_of_bounce'}},{Slot:2b,tag:{id:'cpp:agentia_of_bounce'}},{Slot:6b,tag:{id:'cpp:agentia_of_bounce'}},{Slot:8b,tag:{id:'cpp:agentia_of_bounce'}}]}"
 				}
 			}
 		},
@@ -53,7 +53,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"nbt": "{Items:[{Slot:0b,tag:{CustomPotionEffects:[{Id:12b,Amplifier:0b,Duration:19200}]}},{Slot:2b,tag:{CustomPotionEffects:[{Id:12b,Amplifier:0b,Duration:19200}]}},{Slot:6b,tag:{CustomPotionEffects:[{Id:12b,Amplifier:0b,Duration:19200}]}},{Slot:8b,tag:{CustomPotionEffects:[{Id:12b,Amplifier:0b,Duration:19200}]}}]}"
+					"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:agentia_of_agileness'}},{Slot:2b,tag:{id:'cpp:agentia_of_agileness'}},{Slot:6b,tag:{id:'cpp:agentia_of_agileness'}},{Slot:8b,tag:{id:'cpp:agentia_of_agileness'}}]}"
 				}
 			}
 		},
@@ -61,7 +61,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"nbt": "{Items:[{Slot:0b,tag:{CustomPotionEffects:[{Id:13b,Amplifier:0b,Duration:19200}]}},{Slot:2b,tag:{CustomPotionEffects:[{Id:13b,Amplifier:0b,Duration:19200}]}},{Slot:6b,tag:{CustomPotionEffects:[{Id:13b,Amplifier:0b,Duration:19200}]}},{Slot:8b,tag:{CustomPotionEffects:[{Id:13b,Amplifier:0b,Duration:19200}]}}]}"
+					"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:agentia_of_sharpness'}},{Slot:2b,tag:{id:'cpp:agentia_of_sharpness'}},{Slot:6b,tag:{id:'cpp:agentia_of_sharpness'}},{Slot:8b,tag:{id:'cpp:agentia_of_sharpness'}}]}"
 				}
 			}
 		},
@@ -69,7 +69,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"nbt": "{Items:[{Slot:0b,tag:{CustomPotionEffects:[{Id:14b,Amplifier:0b,Duration:19200}]}},{Slot:2b,tag:{CustomPotionEffects:[{Id:14b,Amplifier:0b,Duration:19200}]}},{Slot:6b,tag:{CustomPotionEffects:[{Id:14b,Amplifier:0b,Duration:19200}]}},{Slot:8b,tag:{CustomPotionEffects:[{Id:14b,Amplifier:0b,Duration:19200}]}}]}"
+					"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:agentia_of_rejuveness'}},{Slot:2b,tag:{id:'cpp:agentia_of_rejuveness'}},{Slot:6b,tag:{id:'cpp:agentia_of_rejuveness'}},{Slot:8b,tag:{id:'cpp:agentia_of_rejuveness'}}]}"
 				}
 			}
 		},
@@ -77,7 +77,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"nbt": "{Items:[{Slot:0b,tag:{CustomPotionEffects:[{Id:16b,Amplifier:0b,Duration:19200}]}},{Slot:2b,tag:{CustomPotionEffects:[{Id:16b,Amplifier:0b,Duration:19200}]}},{Slot:6b,tag:{CustomPotionEffects:[{Id:16b,Amplifier:0b,Duration:19200}]}},{Slot:8b,tag:{CustomPotionEffects:[{Id:16b,Amplifier:0b,Duration:19200}]}}]}"
+					"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:agentia_of_extremeness'}},{Slot:2b,tag:{id:'cpp:agentia_of_extremeness'}},{Slot:6b,tag:{id:'cpp:agentia_of_extremeness'}},{Slot:8b,tag:{id:'cpp:agentia_of_extremeness'}}]}"
 				}
 			}
 		},
@@ -85,7 +85,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"nbt": "{Items:[{Slot:0b,tag:{CustomPotionEffects:[{Id:23b,Amplifier:3b}]}},{Slot:2b,tag:{CustomPotionEffects:[{Id:23b,Amplifier:3b}]}},{Slot:6b,tag:{CustomPotionEffects:[{Id:23b,Amplifier:3b}]}},{Slot:8b,tag:{CustomPotionEffects:[{Id:23b,Amplifier:3b}]}}]}"
+					"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:agentia_of_shield'}},{Slot:2b,tag:{id:'cpp:agentia_of_shield'}},{Slot:6b,tag:{id:'cpp:agentia_of_shield'}},{Slot:8b,tag:{id:'cpp:agentia_of_shield'}}]}"
 				}
 			}
 		},
@@ -93,7 +93,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"nbt": "{Items:[{Slot:0b,tag:{CustomPotionEffects:[{Id:28b,Amplifier:0b,Duration:9600}]}},{Slot:2b,tag:{CustomPotionEffects:[{Id:28b,Amplifier:0b,Duration:9600}]}},{Slot:6b,tag:{CustomPotionEffects:[{Id:28b,Amplifier:0b,Duration:9600}]}},{Slot:8b,tag:{CustomPotionEffects:[{Id:28b,Amplifier:0b,Duration:9600}]}}]}"
+					"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:agentia_of_tide'}},{Slot:2b,tag:{id:'cpp:agentia_of_tide'}},{Slot:6b,tag:{id:'cpp:agentia_of_tide'}},{Slot:8b,tag:{id:'cpp:agentia_of_tide'}}]}"
 				}
 			}
 		},
@@ -101,7 +101,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"nbt": "{Items:[{Slot:0b,tag:{CustomPotionEffects:[{Id:29b,Amplifier:0b,Duration:9600}]}},{Slot:2b,tag:{CustomPotionEffects:[{Id:29b,Amplifier:0b,Duration:9600}]}},{Slot:6b,tag:{CustomPotionEffects:[{Id:29b,Amplifier:0b,Duration:9600}]}},{Slot:8b,tag:{CustomPotionEffects:[{Id:29b,Amplifier:0b,Duration:9600}]}}]}"
+					"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:agentia_of_chain'}},{Slot:2b,tag:{id:'cpp:agentia_of_chain'}},{Slot:6b,tag:{id:'cpp:agentia_of_chain'}},{Slot:8b,tag:{id:'cpp:agentia_of_chain'}}]}"
 				}
 			}
 		},
@@ -109,15 +109,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"nbt": "{Items:[{Slot:0b,tag:{CustomPotionEffects:[{Id:99b,Amplifier:0b,Duration:9600}]}},{Slot:2b,tag:{CustomPotionEffects:[{Id:99b,Amplifier:0b,Duration:9600}]}},{Slot:6b,tag:{CustomPotionEffects:[{Id:99b,Amplifier:0b,Duration:9600}]}},{Slot:8b,tag:{CustomPotionEffects:[{Id:99b,Amplifier:0b,Duration:9600}]}}]}"
-				}
-			}
-		},
-		{
-			"condition": "minecraft:location_check",
-			"predicate": {
-				"block": {
-					"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:magnet'}},{Slot:2b,tag:{id:'cpp:magnet'}},{Slot:6b,tag:{id:'cpp:magnet'}},{Slot:8b,tag:{id:'cpp:magnet'}}]}"
+					"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:cold_drink'}},{Slot:2b,tag:{id:'cpp:cold_drink'}},{Slot:6b,tag:{id:'cpp:cold_drink'}},{Slot:8b,tag:{id:'cpp:cold_drink'}}]}"
 				}
 			}
 		}
