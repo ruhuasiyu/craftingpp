@@ -33,7 +33,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"nbt": "{Items:[{Slot:1b,tag:{id:'cpp:enchanted_iron'}},{Slot:2b,id:'minecraft:nether_star'},{Slot:3b,tag:{id:'cpp:enchanted_iron'}},{Slot:10b,tag:{id:'cpp:enchanted_iron'}},{Slot:11b,id:'minecraft:barrel'},{Slot:12b,tag:{id:'cpp:enchanted_iron'}},{Slot:19b,id:'minecraft:diamond_block'},{Slot:20b,id:'minecraft:diamond_block'},{Slot:21b,id:'minecraft:diamond_block'}]}"
+					"nbt": "{Items:[{Slot:1b,tag:{id:'cpp:enchanted_diamond'}},{Slot:2b,id:'minecraft:nether_star'},{Slot:3b,tag:{id:'cpp:enchanted_diamond'}},{Slot:10b,tag:{id:'cpp:enchanted_diamond'}},{Slot:11b,id:'minecraft:barrel'},{Slot:12b,tag:{id:'cpp:enchanted_diamond'}},{Slot:19b,id:'minecraft:netherite_block'},{Slot:20b,id:'minecraft:netherite_block'},{Slot:21b,id:'minecraft:netherite_block'}]}"
 				}
 			}
 		},
@@ -402,7 +402,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"nbt": "{Items:[{Slot:1b,id:'minecraft:experience_bottle'},{Slot:2b,id:'minecraft:zombie_head'},{Slot:3b,id:'minecraft:experience_bottle'},{Slot:10b,tag:{id:'cpp:silicon_plate'}},{Slot:11b,id:'minecraft:enchanted_golden_apple'},{Slot:12b,tag:{id:'cpp:silicon_plate'}},{Slot:19b,id:'minecraft:armor_stand'},{Slot:20b,id:'minecraft:diamond_boots'},{Slot:21b,id:'minecraft:armor_stand'}]}"
+					"nbt": "{Items:[{Slot:1b,id:'minecraft:experience_bottle'},{Slot:2b,id:'minecraft:zombie_head'},{Slot:3b,id:'minecraft:experience_bottle'},{Slot:10b,tag:{id:'cpp:silicon_plate'}},{Slot:11b,id:'minecraft:enchanted_golden_apple'},{Slot:12b,tag:{id:'cpp:silicon_plate'}},{Slot:19b,id:'minecraft:armor_stand'},{Slot:20b,id:'minecraft:netherite_boots'},{Slot:21b,id:'minecraft:armor_stand'}]}"
 				}
 			}
 		},

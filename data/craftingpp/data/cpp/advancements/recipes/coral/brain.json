@@ -5,10 +5,7 @@
 			"conditions": {
 				"items": [
 					{
-						"item": "minecraft:brain_coral",
-						"count": {
-							"min": 4
-						}
+						"item": "minecraft:brain_coral"
 					}
 				]
 			}

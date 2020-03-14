@@ -5,10 +5,7 @@
 			"conditions": {
 				"items": [
 					{
-						"item": "minecraft:red_nether_brick_slab",
-						"count": {
-							"min": 2
-						}
+						"item": "minecraft:red_nether_brick_slab"
 					}
 				]
 			}

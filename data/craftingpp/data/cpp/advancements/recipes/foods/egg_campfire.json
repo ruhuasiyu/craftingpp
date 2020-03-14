@@ -1,0 +1,23 @@
+{
+	"criteria": {
+		"egg": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:egg"
+					}
+				]
+			}
+		}
+	},
+	"rewards":{
+		"recipes": ["cpp:foods/egg_campfire"]
+	},
+	"requirements": [
+		[
+			"egg",
+			"has_the_recipe"
+		]
+	]
+}

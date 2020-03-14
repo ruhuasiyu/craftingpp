@@ -402,7 +402,7 @@
 <p><span class="oldversion">1.9.x</span>请打开<code>选项->语言->强制使用Unicode字体：关</code>。</p>
 <ul>
     <li>大部分合成需使用<a href="#合成器">合成器</a>，本页面中所有绿色背景的合成表均为使用合成器的合成配方。模组需要的附魔之瓶可通过副手持有漏斗获取。</li>
-    <li>模组支持英文、简体中文、繁体中文。</li>
+    <li>模组支持英文、简体中文、繁体中文、梗体中文(1.10)。</li>
     <li>空岛模式建议玩家使用自定义超平坦如 <code>minecraft:air;minecraft:mountains;</code> 进入。也可输入下述命令手动开启<code>/scoreboard players set #skyislandMode cppValue 1</code>。</li>
 </ul>
 
@@ -1581,6 +1581,13 @@
 <h4>常温高压</h4>
 <table class="aiom_table">
 <thead><tr><th colspan="2">输入</th><th colspan="2">输出</th><th>经验</th><th>耗时</th></tr></thead><tbody>
+<tr><td><a class="ui ancient_debris"></a><a class="ui flint"></a></td>
+	<td>远古残骸+燧石</td>
+	<td><a class="ui netherite_scrap"><span class="stack">2</span></a></td>
+	<td>2 下堺碎片</td>
+	<td>4</td>
+	<td>10</td>
+</tr>
 <tr><td><a class="ui iron_ore"></a><a class="ui flint"></a></td>
 	<td>铁矿石+燧石</td>
 	<td><a href="#铁粉" class="ui ci iron_dust"><span class="stack">2</span></a><a href="#金粉" class="ui ci gold_dust"><span class="stack">?</span></a></td>
@@ -1590,6 +1597,13 @@
 </tr>
 <tr><td><a class="ui gold_ore"></a><a class="ui flint"></a></td>
 	<td>金矿石+燧石</td>
+	<td><a href="#金粉" class="ui ci gold_dust"><span class="stack">2</span></a><a href="#铁粉" class="ui ci iron_dust"><span class="stack">?</span></a></td>
+	<td>2 <a href="#金粉">金粉</a>+10% <a href="#铁粉">铁粉</a></td>
+	<td>4</td>
+	<td>10</td>
+</tr>
+<tr><td><a class="ui nether_gold_ore"></a><a class="ui flint"></a></td>
+	<td>下堺金矿石+燧石</td>
 	<td><a href="#金粉" class="ui ci gold_dust"><span class="stack">2</span></a><a href="#铁粉" class="ui ci iron_dust"><span class="stack">?</span></a></td>
 	<td>2 <a href="#金粉">金粉</a>+10% <a href="#铁粉">铁粉</a></td>
 	<td>4</td>
@@ -3514,6 +3528,20 @@
 
 <h3 id="信标增强器">信标增强器 <code>cpp:beacon_enhancer</code></h3>
 <table><thead><tr><th>材料</th><th>合成配方</th><th>说明</th></tr></thead><tbody>
+<tr><td><a href="#附魔钻石">附魔钻石</a>+下界之星+木桶+下堺块</td>
+	<td><span class="ui cm" title="合成器">
+		<a href="#附魔铁锭" class="ci enchanted_diamond" title="附魔钻石"></a>
+		<a class="nether_star" title="下界之星"></a>
+		<a href="#附魔铁锭" class="ci enchanted_diamond" title="附魔钻石"></a>
+		<a href="#附魔铁锭" class="ci enchanted_diamond" title="附魔钻石"></a>
+		<a class="ui barrel" title="木桶"></a>
+		<a href="#附魔铁锭" class="ci enchanted_diamond" title="附魔钻石"></a>
+		<a class="netherite_block" title="下堺块"></a>
+		<a class="netherite_block" title="下堺块"></a>
+		<a class="netherite_block" title="下堺块"></a>
+		<a class="ci beacon_enhancer" title="信标增强器"></a>
+	</span></td>
+<td><span class="version">1.10</span></td></tr>
 <tr><td><a href="#附魔铁锭">附魔铁锭</a>+下界之星+木桶+钻石块</td>
 	<td><span class="ui cm" title="合成器">
 		<a href="#附魔铁锭" class="ci enchanted_iron" title="附魔铁锭"></a>
@@ -3526,7 +3554,8 @@
 		<a class="diamond_block" title="钻石块"></a>
 		<a class="diamond_block" title="钻石块"></a>
 		<a class="ci beacon_enhancer" title="信标增强器"></a>
-	</span></td></tr>
+	</span></td>
+<td><span class="oldversion">1.9</span></td></tr>
 </tbody></table>
 
 <img style="height:200px" src="items/screenshots/beacon_enhancer.png" alt="信标增强器 GUI" />
@@ -4043,7 +4072,7 @@
 </tr>
 
 <tr id="月之碎片">
-	<th rowspan="2"><strong>月之碎片</strong></th>
+	<th><strong>月之碎片</strong></th>
 	<td><a href="#铁粉">铁粉</a>+<a href="#金粉">金粉</a>+<a href="#钻石粉">钻石粉</a>+<a href="#绿宝石粉">绿宝石粉</a>+<br />
 		<a href="#石英粉">石英粉</a>+<a href="#碳粉">煤粉</a>+粘液球+恶魂之泪+<br />
 		末影珍珠</td>
@@ -4080,17 +4109,17 @@
 	</span></td>
 	<td><code>cpp:sun_shard</code><br /><span class="oldversion">1.9.x</span></td>
 </tr>
-<tr><td><a href="#月之碎片">月之碎片</a>+末影之眼+狱金碎片</td>
+<tr><td><a href="#月之碎片">月之碎片</a>+末影之眼+下堺碎片</td>
 	<td><span class="ui cm" title="合成器">
-		<a class="netherite_scrap" title="狱金碎片"></a>
+		<a class="netherite_scrap" title="下堺碎片"></a>
 		<a href="#月之碎片" class="ci moon_shard" title="月之碎片"></a>
-		<a class="netherite_scrap" title="狱金碎片"></a>
+		<a class="netherite_scrap" title="下堺碎片"></a>
 		<a href="#月之碎片" class="ci moon_shard" title="月之碎片"></a>
 		<a class="ender_eye" title="末影之眼"></a>
 		<a href="#月之碎片" class="ci moon_shard" title="月之碎片"></a>
-		<a class="netherite_scrap" title="狱金碎片"></a>
+		<a class="netherite_scrap" title="下堺碎片"></a>
 		<a href="#月之碎片" class="ci moon_shard" title="月之碎片"></a>
-		<a class="netherite_scrap" title="狱金碎片"></a>
+		<a class="netherite_scrap" title="下堺碎片"></a>
 		<a class="ci sun_shard" title="日之碎片"></a>
 	</span></td>
 	<td><code>cpp:sun_shard</code><br /><span class="version">1.10</span></td>
@@ -4380,6 +4409,16 @@
 		<a class="red_dye" title="红色染料"></a>
 	</span></td>
 	<td>花卉合成染料的配方均修改为烧炼配方。</td>
+</tr>
+
+<tr><th>下堺锭</th>
+	<td>下堺剑<br />下堺工具<br />下堺盔甲</td>
+	<td><span class="ui fur" title="熔炉或高炉">
+		<a class="netherite_pickaxe" title="下堺剑"></a>
+		<a class="coal" title="燃料"></a>
+		<a class="netherite_ingot" title="下堺锭"></a>
+	</span></td>
+	<td></td>
 </tr>
 
 <tr><th>兔子皮</th>
@@ -5666,6 +5705,7 @@
 
 <h3 id="勤劳之手">勤劳之手 <code>cpp:industrious_hand</code></h3>
 <p><span class="version">1.10</span> 放置在物品展示框内时，若上方2格的2米内有骨粉且当前位置为：<br />小麦/甜菜根/胡萝卜/土豆/竹子/向日葵/丁香/玫瑰丛/牡丹/可可豆/甜浆果/海带/垂泪藤/扭曲藤，会消耗1个骨粉有几率生成相应作物的掉落物；<br />草/蕨/海草，以及3米内有剪刀时，会消耗1个骨粉和剪刀1点耐久并生成相应草的物品。</p>
+<p><span class="oldversion">1.9</span> 使用钻石锄合成。</p>
 <table><thead><tr><th>材料</th><th>合成配方</th></tr></thead><tbody>
 <tr><td><a href="#稀土玻璃">稀土玻璃</a>+<a href="#末影人头">末影人头</a>+钻石锄+<a href="#钢化玻璃">钢化玻璃</a></td>
 	<td><span class="ui cm" title="合成器">
@@ -5673,7 +5713,7 @@
 		<a class="ci enderman_head" title="末影人头"></a>
 		<a class="ci rare_earth_glass" title="稀土玻璃"></a>
 		<a class="ci rare_earth_glass" title="稀土玻璃"></a>
-		<a class="diamond_hoe" title="钻石锄"></a>
+		<a class="netherite_hoe" title="下堺锄"></a>
 		<a class="ci rare_earth_glass" title="稀土玻璃"></a>
 		<a class="ci reinforced_glass" title="钢化玻璃"></a>
 		<a href="#附魔之瓶" class="experience_bottle" title="附魔之瓶"></a>
@@ -5684,6 +5724,7 @@
 
 <h3 id="破坏之手">破坏之手 <code>cpp:break_hand</code></h3>
 <p>放置在物品展示框时，会破坏正上方的方块。</p>
+<p><span class="oldversion">1.9</span> 使用钻石镐合成。</p>
 <table><thead><tr><th>材料</th><th>合成配方</th></tr></thead><tbody>
 <tr><td><a href="#稀土玻璃">稀土玻璃</a>+<a href="#末影人头">末影人头</a>+钻石稿+<a href="#钢化玻璃">钢化玻璃</a></td>
 	<td><span class="ui cm" title="合成器">
@@ -5691,7 +5732,7 @@
 		<a class="ci enderman_head" title="末影人头"></a>
 		<a class="ci rare_earth_glass" title="稀土玻璃"></a>
 		<a class="ci rare_earth_glass" title="稀土玻璃"></a>
-		<a class="diamond_pickaxe" title="钻石镐"></a>
+		<a class="netherite_pickaxe" title="下堺镐"></a>
 		<a class="ci rare_earth_glass" title="稀土玻璃"></a>
 		<a class="ci reinforced_glass" title="钢化玻璃"></a>
 		<a href="#附魔之瓶" class="experience_bottle" title="附魔之瓶"></a>
@@ -5720,6 +5761,7 @@
 
 <h3 id="愤怒之手">愤怒之手 <code>cpp:angry_hand</code></h3>
 <p><span class="version">1.10</span> 放置在物品展示框时，会杀死1.5米内的非boss非玩家生物。不受魔咒加成。</p>
+<p><span class="oldversion">1.9</span> 使用钻石剑合成。</p>
 <table><thead><tr><th>材料</th><th>合成配方</th></tr></thead><tbody>
 <tr><td><a href="#稀土玻璃">稀土玻璃</a>+<a href="#末影人头">末影人头</a>+钻石剑+<a href="#钢化玻璃">钢化玻璃</a></td>
 	<td><span class="ui cm" title="合成器">
@@ -5727,7 +5769,7 @@
 		<a class="ci enderman_head" title="末影人头"></a>
 		<a class="ci rare_earth_glass" title="稀土玻璃"></a>
 		<a class="ci rare_earth_glass" title="稀土玻璃"></a>
-		<a class="diamond_sword" title="钻石剑"></a>
+		<a class="netherite_sword" title="下堺剑"></a>
 		<a class="ci rare_earth_glass" title="稀土玻璃"></a>
 		<a class="ci reinforced_glass" title="钢化玻璃"></a>
 		<a href="#附魔之瓶" class="experience_bottle" title="附魔之瓶"></a>
@@ -5757,7 +5799,24 @@
 <h3 id="傀儡">傀儡</h3>
 <table><thead><tr><th>产物</th><th>材料</th><th>合成配方</th><th>命名空间ID</th><th>说明</th>
 </tr></thead><tbody>	
-<tr><th><strong>傀儡</strong></th>
+<tr><th rowspan="2"><strong>傀儡</strong></th>
+	<td><a href="#附魔之瓶">附魔之瓶</a>+<a href="#僵尸的头">僵尸的头</a>+<a href="#硅板">硅板</a>+<br /><a href="#附魔金苹果">附魔金苹果</a>+盔甲架+下堺靴子</td>
+	<td><span class="ui cm" title="合成器">
+		<a href="#附魔之瓶" class="experience_bottle" title="附魔之瓶"></a>
+		<a href="#僵尸的头" class="zombie_head" title="僵尸的头"></a>
+		<a href="#附魔之瓶" class="experience_bottle" title="附魔之瓶"></a>
+		<a class="ci silicon_plate" title="硅板"></a>
+		<a href="#附魔金苹果" class="golden_apple" title="附魔金苹果"></a>
+		<a class="ci silicon_plate" title="硅板"></a>
+		<a class="armor_stand" title="盔甲架"></a>
+		<a class="netherite_boots" title="下堺靴子"></a>
+		<a class="armor_stand" title="盔甲架"></a>
+		<a class="ci golem" title="傀儡"></a>
+	</span></td>
+	<td><code>cpp:golem</code></td>
+	<td><span class="version">1.10</span></td>
+</tr>
+<tr>
 	<td><a href="#附魔之瓶">附魔之瓶</a>+<a href="#僵尸的头">僵尸的头</a>+<a href="#硅板">硅板</a>+<br /><a href="#附魔金苹果">附魔金苹果</a>+盔甲架+钻石靴子</td>
 	<td><span class="ui cm" title="合成器">
 		<a href="#附魔之瓶" class="experience_bottle" title="附魔之瓶"></a>
@@ -5772,7 +5831,7 @@
 		<a class="ci golem" title="傀儡"></a>
 	</span></td>
 	<td><code>cpp:golem</code></td>
-	<td></td>
+	<td><span class="oldversion">1.9</span></td>
 </tr>
 
 <tr><th><strong id="傀儡农民">傀儡农民</strong><br />
@@ -5869,7 +5928,7 @@
 
 <h3 id="圣诞礼物">圣诞礼物 <code>cpp:santa_gift</code></h3>
 <a class="ui ci santa_gift"></a>
-<p><span class="version">1.10</span>从流浪商人处可购买，打开后可随机获得鞘翅、三叉戟、附魔钻石和狱金盔甲/工具/剑、钻石、狱金锭、金苹果、附魔金苹果、<a href="#上古卷轴">上古卷轴</a>、钻石马铠和种子包。</p>
+<p><span class="version">1.10</span>从流浪商人处可购买，打开后可随机获得鞘翅、三叉戟、附魔钻石和下堺盔甲/工具/剑、钻石、下堺锭、金苹果、附魔金苹果、<a href="#上古卷轴">上古卷轴</a>、钻石马铠和种子包。</p>
 <p><span class="oldversion">1.9.x</span>从流浪商人处可购买，打开后可随机获得鞘翅、三叉戟、附魔钻石盔甲/工具/剑、矿物、金苹果、马铠和种子包。</p>
 
 <h3 id="石制工具">石制工具</h3>
@@ -8158,7 +8217,7 @@
 <p>每件物品只可附加一种效果。效果可重复附加，之前的效果将会被覆盖。</p>
 <p>盔甲效果在对应栏位生效，剑和工具在主手生效，每秒消耗1点经验值，重复的效果不会叠加但消耗的经验值会叠加。使用<a href="#节制器">节制器</a>可开启/关闭所有效果。连锁效果无消耗。</p>
 
-<p>连锁效果下，使用斧可以破坏相连的木头/瓜/成熟作物；镐可以破坏相连的矿物/黑曜石；锹可以破坏相连的沙子/红沙/砂砾/粘土块；1.10的锄可以破坏相连的干草块/地狱疣块/诡异疣块/菌光体。受附魔影响。工具不会损坏，至少会保留1点耐久。</p>
+<p>连锁效果下，使用斧可以破坏相连的木头/瓜/成熟作物；镐可以破坏相连的矿物/黑曜石；锹可以破坏相连的沙子/红沙/砂砾/粘土块；1.10的锄可以破坏相连的干草块/地狱疣块/诡异疣块/菌光体。受附魔影响。工具支持金/石/铁/钻/下堺材质，工具不会完全损坏，至少会保留1点耐久。</p>
 
 <h4 id="属性附加">属性附加</h4>
 <ul>

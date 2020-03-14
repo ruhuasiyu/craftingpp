@@ -17,7 +17,7 @@
 		{
 			"condition": "minecraft:match_tool",
 			"predicate": {
-				"nbt": "{id:\"cpp:glass_pickaxe\"}"
+				"nbt": "{id:'cpp:glass_pickaxe'}"
 			}
 		}
 	]

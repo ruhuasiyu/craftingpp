@@ -1,0 +1,23 @@
+{
+	"criteria": {
+		"apple": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:apple"
+					}
+				]
+			}
+		}
+	},
+	"rewards":{
+		"recipes": ["cpp:foods/apple_campfire"]
+	},
+	"requirements": [
+		[
+			"apple",
+			"has_the_recipe"
+		]
+	]
+}

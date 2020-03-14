@@ -5,10 +5,7 @@
 			"conditions": {
 				"items": [
 					{
-						"item": "minecraft:fire_coral",
-						"count": {
-							"min": 4
-						}
+						"item": "minecraft:fire_coral"
 					}
 				]
 			}

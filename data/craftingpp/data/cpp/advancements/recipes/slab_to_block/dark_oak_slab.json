@@ -5,10 +5,7 @@
 			"conditions": {
 				"items": [
 					{
-						"item": "minecraft:dark_oak_slab",
-						"count": {
-							"min": 2
-						}
+						"item": "minecraft:dark_oak_slab"
 					}
 				]
 			}

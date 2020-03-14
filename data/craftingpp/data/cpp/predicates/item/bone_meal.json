@@ -2,6 +2,6 @@
 	"condition": "minecraft:entity_properties",
 	"entity": "this",
 	"predicate": {
-		"nbt": "{Item:{id:\"minecraft:bone_meal\"}}"
+		"nbt": "{Item:{id:'minecraft:bone_meal'}}"
 	}
 }

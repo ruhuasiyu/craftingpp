@@ -1,5 +1,5 @@
 {
-	"type": "stonecutting",
+	"type": "minecraft:stonecutting",
 	"ingredient": {
 		"item": "minecraft:jungle_planks"
 	},

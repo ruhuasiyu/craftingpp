@@ -5,10 +5,7 @@
 			"conditions": {
 				"items": [
 					{
-						"item": "minecraft:granite_slab",
-						"count": {
-							"min": 2
-						}
+						"item": "minecraft:granite_slab"
 					}
 				]
 			}

@@ -5,10 +5,7 @@
 			"conditions": {
 				"items": [
 					{
-						"item": "minecraft:bubble_coral",
-						"count": {
-							"min": 4
-						}
+						"item": "minecraft:bubble_coral"
 					}
 				]
 			}

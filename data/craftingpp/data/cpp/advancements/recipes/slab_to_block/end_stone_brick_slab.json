@@ -5,10 +5,7 @@
 			"conditions": {
 				"items": [
 					{
-						"item": "minecraft:end_stone_brick_slab",
-						"count": {
-							"min": 2
-						}
+						"item": "minecraft:end_stone_brick_slab"
 					}
 				]
 			}

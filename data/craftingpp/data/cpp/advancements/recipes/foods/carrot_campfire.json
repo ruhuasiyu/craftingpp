@@ -1,0 +1,23 @@
+{
+	"criteria": {
+		"carrot": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:carrot"
+					}
+				]
+			}
+		}
+	},
+	"rewards":{
+		"recipes": ["cpp:foods/carrot_campfire"]
+	},
+	"requirements": [
+		[
+			"carrot",
+			"has_the_recipe"
+		]
+	]
+}

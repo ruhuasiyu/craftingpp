@@ -2,6 +2,6 @@
 	"condition": "minecraft:entity_properties",
 	"entity": "this",
 	"predicate": {
-		"nbt": "{Item:{id:\"minecraft:item_frame\"}}"
+		"nbt": "{Item:{id:'minecraft:item_frame'}}"
 	}
 }

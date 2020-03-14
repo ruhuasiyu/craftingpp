@@ -5,10 +5,7 @@
 			"conditions": {
 				"items": [
 					{
-						"item": "minecraft:tube_coral",
-						"count": {
-							"min": 4
-						}
+						"item": "minecraft:tube_coral"
 					}
 				]
 			}

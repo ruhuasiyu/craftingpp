@@ -1,0 +1,117 @@
+{
+	"criteria": {
+		"netherite_hoe": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:netherite_hoe"
+					}
+				]
+			}
+		},
+		"netherite_axe": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:netherite_axe"
+					}
+				]
+			}
+		},
+		"netherite_pickaxe": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:netherite_pickaxe"
+					}
+				]
+			}
+		},
+		"netherite_sword": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:netherite_sword"
+					}
+				]
+			}
+		},
+		"netherite_shovel": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:netherite_shovel"
+					}
+				]
+			}
+		},
+		"netherite_helmet": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:netherite_helmet"
+					}
+				]
+			}
+		},
+		"netherite_chestplate": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:netherite_chestplate"
+					}
+				]
+			}
+		},
+		"netherite_leggings": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:netherite_leggings"
+					}
+				]
+			}
+		},
+		"netherite_boots": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:netherite_boots"
+					}
+				]
+			}
+		},
+		"has_the_recipe": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "cpp:netherite_ingot_from_blasting"
+			}
+		}
+	},
+	"rewards":{
+		"recipes": ["cpp:netherite_ingot_from_blasting"]
+	},
+	"requirements": [
+		[
+			"netherite_hoe",
+			"netherite_axe",
+			"netherite_pickaxe",
+			"netherite_sword",
+			"netherite_shovel",
+			"netherite_helmet",
+			"netherite_chestplate",
+			"netherite_leggings",
+			"netherite_boots",
+			"has_the_recipe"
+		]
+	]
+}

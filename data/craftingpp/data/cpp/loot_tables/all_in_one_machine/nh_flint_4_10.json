@@ -12,6 +12,26 @@
 									"condition": "minecraft:location_check",
 									"predicate": {
 										"block": {
+											"nbt": "{Items:[{id:'minecraft:ancient_debris'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:netherite_scrap",
+							"functions": [
+								{
+									"function": "minecraft:set_count",
+									"count": 2
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
 											"nbt": "{Items:[{id:'minecraft:iron_ore'}]}"
 										}
 									}
@@ -27,6 +47,20 @@
 									"predicate": {
 										"block": {
 											"nbt": "{Items:[{id:'minecraft:gold_ore'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:all_in_one_machine/items/gold_ore"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:nether_gold_ore'}]}"
 										}
 									}
 								}

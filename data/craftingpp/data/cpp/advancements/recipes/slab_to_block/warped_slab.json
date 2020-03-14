@@ -5,10 +5,7 @@
 			"conditions": {
 				"items": [
 					{
-						"item": "minecraft:warped_slab",
-						"count": {
-							"min": 2
-						}
+						"item": "minecraft:warped_slab"
 					}
 				]
 			}

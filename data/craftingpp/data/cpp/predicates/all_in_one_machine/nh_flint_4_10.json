@@ -5,6 +5,14 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
+					"nbt": "{Items:[{id:'minecraft:ancient_debris'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
 					"nbt": "{Items:[{id:'minecraft:iron_ore'}]}"
 				}
 			}
@@ -14,6 +22,14 @@
 			"predicate": {
 				"block": {
 					"nbt": "{Items:[{id:'minecraft:gold_ore'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{id:'minecraft:nether_gold_ore'}]}"
 				}
 			}
 		},

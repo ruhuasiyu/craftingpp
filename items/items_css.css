@@ -424,7 +424,18 @@ span.ui a.sea_lantern, a.sea_lantern{
 .bee_nest                       {background-position: -992px -032px;}
 
 .netherite_block                {background-position: -096px -128px;}
+.ancient_debris                 {background-position: -160px -128px;}
 .netherite_ingot                {background-position: -192px -128px;}
+.netherite_scrap                {background-position: -224px -128px;}
+.netherite_axe                  {background-position: -256px -128px;}
+.netherite_hoe                  {background-position: -288px -128px;}
+.netherite_pickaxe              {background-position: -320px -128px;}
+.netherite_shovel               {background-position: -352px -128px;}
+.netherite_sword                {background-position: -384px -128px;}
+.netherite_boots                {background-position: -416px -128px;}
+.netherite_chestplate           {background-position: -448px -128px;}
+.netherite_helmet               {background-position: -480px -128px;}
+.netherite_leggings             {background-position: -512px -128px;}
 .basalt                         {background-position: -608px -128px;}
 .crimson_nylium                 {background-position: -640px -128px;}
 .crimson_stem                   {background-position: -672px -128px;}
