@@ -14,9 +14,8 @@
 			"scale":[ 0.4, 0.4, 0.4 ]
 		},
 		"fixed": {
-			"rotation": [ 0, 0, 0 ],
-			"translation": [ 0, 0, 0],
-			"scale":[ 0.8, 0.8, 0.8 ]
+			"translation": [ 0, 0, -6],
+			"scale": [2.667, 2.667, 2.667 ]
 		},
 		"thirdperson_righthand": {
 			"rotation": [ 75, 45, 0 ],

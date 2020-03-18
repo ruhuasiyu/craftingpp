@@ -1,0 +1,29 @@
+{
+	"condition": "minecraft:alternative",
+	"terms": [
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"player": {
+					"level": {
+						"min": 1
+					},
+					"gamemode": "survival"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"player": {
+					"level": {
+						"min": 1
+					},
+					"gamemode": "adventure"
+				}
+			}
+		}
+	]
+}

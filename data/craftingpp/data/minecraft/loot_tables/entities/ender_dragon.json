@@ -6,22 +6,13 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:firework_star",
+					"name": "minecraft:player_head",
 					"functions": [
 						{
-							"function": "minecraft:set_nbt",
-							"tag": "{cppDragon:1b,CustomModelData:12970000}"
+							"function": "minecraft:fill_player_head",
+							"entity": "killer"
 						}
 					]
-				}
-			]
-		},
-		{
-			"rolls": 1,
-			"entries": [
-				{
-					"type": "minecraft:item",
-					"name": "minecraft:dragon_egg"
 				}
 			]
 		}

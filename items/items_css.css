@@ -178,8 +178,11 @@ thead th{
 tbody th{
 	background-color:#ddd;
 }
-table.aiom_table tbody td:first-child, table.aiom_table tbody td:nth-child(3){
+table.aiom_table tbody td:first-child, table.aiom_table tbody td:nth-child(3), table.onlyicons{
 	background-color: #8b8b8b;
+}
+table.onlyicons td{
+	font-size: 32px;
 }
 .smallicons span{
 	display:inline-block;
@@ -301,6 +304,16 @@ span.aiom{
 .aiom a:nth-child(5){top:96px; left: 78px;}
 .aiom a:nth-child(6){top:96px; left:114px;}
 .aiom a:nth-child(7){top:92px; left:240px;}
+span.cycle6{
+	width:272px; height:272px;
+	background-image:url("gui/cycle6.png");
+}
+.cycle6 a:nth-child(1){top: 33px; left: 71px;}
+.cycle6 a:nth-child(2){top: 33px; left:171px;}
+.cycle6 a:nth-child(3){top:119px; left:221px;}
+.cycle6 a:nth-child(4){top:205px; left:171px;}
+.cycle6 a:nth-child(5){top:205px; left: 71px;}
+.cycle6 a:nth-child(6){top:119px; left: 21px;}
 
 table.adv td{
 	height:52px;
@@ -952,7 +965,7 @@ span.ui a.sea_lantern, a.sea_lantern{
 .crossbow                       {background-position: -416px -2368px;}
 .wither_rose                    {background-position: -608px -2368px;}
 .cornflower                     {background-position: -640px -2368px;}
-.lily_of_the_valley             {background-position: -640px -2368px;}
+.lily_of_the_valley             {background-position: -672px -2368px;}
 .suspicious_stew                {background-position: -928px -2368px;}
 
 .barrel                         {background-position: -064px -2432px;}
@@ -1957,6 +1970,8 @@ span.ui a.sea_lantern, a.sea_lantern{
 .mob_dolphin                    {background-position: -096px -2336px;}
 .mob_piglin                     {background-position: -128px -2336px;}
 .mob_hoglin                     {background-position: -160px -2336px;}
+.water                          {background-position: -192px -2336px;}
+.lava                           {background-position: -224px -2336px;}
 
 .speed               {background-position: -000px -00px;}
 .slowness            {background-position: -018px -00px;}

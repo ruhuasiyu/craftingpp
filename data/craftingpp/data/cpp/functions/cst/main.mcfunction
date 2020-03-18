@@ -5,7 +5,7 @@ execute as @s[predicate=cpp:mainhand/orange_force_of_dirt] at @s anchored eyes r
 execute as @s[predicate=cpp:mainhand/yellow_force_of_earth] at @s run function cpp:cst/element/yellow
 execute as @s[predicate=cpp:mainhand/red_force_of_fire] at @s anchored eyes run function cpp:cst/element/red
 execute as @s[predicate=cpp:mainhand/purple_force_of_life] at @s anchored eyes run function cpp:cst/element/purple
-execute as @s[predicate=cpp:mainhand/white_force_of_lightning] run function cpp:cst/element/white
+execute as @s[predicate=cpp:mainhand/white_force_of_lightning] at @s run function cpp:cst/element/white
 execute as @s[predicate=cpp:mainhand/black_force_of_moon] at @s run function cpp:cst/element/black
 
 execute as @s[predicate=cpp:mainhand/portable_crafting_table] at @s anchored eyes run function cpp:tool/portable_crafting_table
@@ -24,14 +24,8 @@ execute as @s[predicate=cpp:mainhand/infinite_bucket] unless score @s cppSneakTi
 execute as @s[predicate=cpp:mainhand/infinite_bucket,scores={cppSneakTime=1}] at @s anchored eyes run function cpp:tool/infinite_bucket_put
 execute as @s[predicate=cpp:mainhand/santa_gift] at @s as @e[distance=..16] run data merge entity @s {Silent:1b}
 
-execute as @s[predicate=cpp:mainhand/golem_miner] at @s anchored eyes run function cpp:golem/put/type
-execute as @s[predicate=cpp:mainhand/golem_farmer] at @s anchored eyes run function cpp:golem/put/type
-execute as @s[predicate=cpp:mainhand/golem_fisher] at @s anchored eyes run function cpp:golem/put/type
-execute as @s[predicate=cpp:mainhand/golem_warrior] at @s anchored eyes run function cpp:golem/put/type
-execute as @s[predicate=cpp:mainhand/golem_herder] at @s anchored eyes run function cpp:golem/put/type
-
+execute as @s[predicate=cpp:mainhand/golem] at @s anchored eyes run function cpp:golem/put/type
 execute as @s[predicate=cpp:mainhand/character] at @s anchored eyes run function cpp:decor/character_ray
-
 execute as @s[predicate=cpp:mainhand/sealing_wand] at @s run function cpp:rituals/init/check_wand
 execute as @s[predicate=cpp:mainhand/star_wand] at @s run function cpp:rituals/init/check_wand
 execute as @s[predicate=cpp:mainhand/dream_wand] at @s run function cpp:rituals/init/check_wand

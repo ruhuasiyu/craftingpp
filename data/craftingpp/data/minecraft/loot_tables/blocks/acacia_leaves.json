@@ -13,7 +13,7 @@
 								{
 									"condition": "minecraft:match_tool",
 									"predicate": {
-										"nbt":"{id:\"cpp:grafter\"}"
+										"nbt":"{id:'cpp:grafter'}"
 									}
 								}
 							],
@@ -21,7 +21,7 @@
 							"functions": [
 								{
 									"function":"minecraft:set_nbt",
-									"tag": "{CustomModelData:12970110,id:\"minecraft:acacia_sapling\"}"
+									"tag": "{CustomModelData:12970110,id:'minecraft:acacia_sapling'}"
 								}
 							]
 						},
@@ -62,7 +62,7 @@
 							"functions": [
 								{
 									"function":"minecraft:set_nbt",
-									"tag": "{CustomModelData:12970110,id:\"minecraft:acacia_sapling\"}"
+									"tag": "{CustomModelData:12970110,id:'minecraft:acacia_sapling'}"
 								}
 							]
 						},

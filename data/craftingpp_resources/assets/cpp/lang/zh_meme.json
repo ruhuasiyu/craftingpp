@@ -213,7 +213,7 @@
 	"item.cpp.purple_force_of_life":"§6紫色命之力",
 	"item.cpp.white_force_of_lightning":"§6白色电之力",
 	"item.cpp.black_force_of_moon":"§6黑色月之力",
-	"item.cpp.elements.fail":"§6[Crafting++]§r 经验不足, 你需要至少%1$s§a点经验来执行该操作",
+	"item.cpp.elements.fail":"§6[Crafting++]§r 经验不足, 你需要至少%1$s§r点经验来执行该操作",
 	"item.cpp.blue_force_of_sky.info":"§6[Crafting++]§r ",
 	"item.cpp.blue_force_of_sky.clear":" 将天气切换为晴天",
 	"item.cpp.blue_force_of_sky.rain":" 将天气切换为雨天",

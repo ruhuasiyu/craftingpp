@@ -166,20 +166,6 @@
 									"condition": "minecraft:location_check",
 									"predicate": {
 										"block": {
-											"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:clay_bucket'}}]}"
-										 }
-									 }
-								 }
-							 ],
-							 "type": "minecraft:item",
-							 "name": "minecraft:bucket"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
 											"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:lycoris_radiata'}}]}"
 										 }
 									 }

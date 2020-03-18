@@ -1,0 +1,8 @@
+{
+	"condition": "minecraft:location_check",
+	"predicate": {
+		"block": {
+			"nbt": "{Items:[{Slot:6b,id:'minecraft:experience_bottle'}] }"
+		}
+	}
+}

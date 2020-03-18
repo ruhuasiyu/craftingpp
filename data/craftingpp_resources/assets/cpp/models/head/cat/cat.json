@@ -8,6 +8,10 @@
 			"rotation": [ 30, 225, 0 ],
 			"translation": [ 0, 0, 0],
 			"scale": [ 0.8, 0.8, 0.8 ]
+		},
+		"fixed": {
+			"translation": [ 0, 0, -6],
+			"scale": [2,2,2 ]
 		}
 	},
 	"elements": [

@@ -1,39 +1,80 @@
 [C]§f============
 [C]§e更多的合成/Crafting++ version 1.10
 [C]§f============
- 
+
 [C]§7数据包设计/Data Pack Designer
-[C]§f          ruhuasiyu          
+[C]§fruhuasiyu
 
 [C]§7资源包设计/Resource Pack Designer
-[C]§f     ruhuasiyu       RubberTree	       XeKr      
-[C]§f        折君           天狼星black            MC先生     
+[C]§fruhuasiyu
+[C]§fRubberTree
+[C]§fXeKr
+[C]§f折君
+[C]§f天狼星black
+[C]§fMC先生
 
 [C]§7平台支持/Platform Support
-[C]§f      Minecraft(我的世界)中文论坛           MC百科      
+[C]§fMinecraft(我的世界)中文论坛
+[C]§fMC百科
 
 [C]§f============
 [C]§e特别感谢/Special Thanks
 [C]§f============
-[C]§f    一米八微笑         明月庄主           Rhythm萱   
-[C]§f    唯一丶为伊          小吴小吴          LIXIAOGANG  
-[C]§f    陌余Oucher         uuu2011       爱发电用户_AU9c 
-[C]§f     火星浮云        这是彩虹糖呢         SPGoding   
-[C]§f   支持国产mod         倪采臣              zzzz      
-[C]§f       折君           Hao_Tian22        Appleeeee    
-[C]§f  爱发电用户_JCmn      落天望月       爱发电用户_4eyN 
-[C]§f      chyx          switefaster           猫君      
+[C]§f一米八微笑
+[C]§f明月庄主
+[C]§fRhythm萱
+[C]§f唯一丶为伊
+[C]§f月下贱影
+[C]§fLIXIAOGANG
+[C]§fSPGoding
+[C]§f陌余Oucher
+[C]§fuuu2011
+[C]§f爱发电用户_AU9c
+[C]§f火星浮云
+[C]§f这是彩虹糖呢
+[C]§f支持国产mod
+[C]§f倪采臣
+[C]§fzzzz
+[C]§f折君
+[C]§fHao_Tian22
+[C]§fAppleeeee
+[C]§f爱发电用户_JCmn
+[C]§f落天望月
+[C]§f爱发电用户_4eyN
+[C]§fchyx
+[C]§fswitefaster
+[C]§f猫君
 
 [C]§7灵感参考/Inspired by
-[C]§f      热力膨胀        植物魔法        深渊国度       
-[C]§f     潘马斯农场          盐             林业         
-[C]§fCommand Block Logic小组   The Command's Power小组
-[C]§f Cherry Blossom V小组     Magic Amateur Group小组
-[C]§f  Nuclear Fusion小组           MCmod百科小组     
-[C]§f     pineapple_        贰逼             ECS        
-[C]§f        pca             玄素           乙烯_中国     
-[C]§f       ⊙v⊙         HerobrineXia        白天        
-[C]§f       苹果果         SorrowRain        Amber      
-[C]§f        匠魂              华乐          Gingerbread     
-[C]§f      森林蝙蝠         mcer            Stark       
-§f    	   yap
+[C]§f热力膨胀
+[C]§f植物魔法
+[C]§f深渊国度
+[C]§f潘马斯农场
+[C]§f盐
+[C]§f林业
+[C]§fCommand Block Logic小组
+[C]§fThe Command's Power小组
+[C]§fCherry Blossom V小组
+[C]§fMagic Amateur Group小组
+[C]§fNuclear Fusion小组
+[C]§fMCmod百科小组
+[C]§fpineapple_
+[C]§f贰逼
+[C]§fECS
+[C]§fpca
+[C]§f玄素
+[C]§f乙烯_中国
+[C]§f⊙v⊙
+[C]§fHerobrineXia
+[C]§f白天
+[C]§f苹果果
+[C]§fSorrowRain
+[C]§fAmber
+[C]§f匠魂
+[C]§f华乐
+[C]§fGingerbread
+[C]§f森林蝙蝠
+[C]§fmcer
+[C]§fStark
+[C]§fyap
+[C]§fLakejason

@@ -1,0 +1,19 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:carrot_on_a_stick",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{display:{Name:'\"ruhuasiyu\"'},id:'cpp:ruhuasiyu',CustomModelData:12970026}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

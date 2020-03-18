@@ -13,6 +13,6 @@ execute as @s[tag=cpp_mob_projector] run function cpp:mob_projector/tick
 execute as @s[tag=cpp_item_processer] run function cpp:item_processer/tick
 execute as @s[tag=cpp_golden_anvil] if entity @a[distance=..7] run function cpp:golden_anvil/tick
 execute as @s[tag=cpp_empty_bookshelf] if entity @a[distance=..32] run function cpp:empty_bookshelf/tick
-execute as @s[tag=cpp_dustbin] run function cpp:dustbin/tick
-execute as @s[tag=cpp_chest_dropper] if data block ~ ~ ~ Items[] run function cpp:chest_dropper/tick
+execute as @s[tag=cpp_dustbin] if predicate cpp:redstone_power run data remove block ~ ~ ~ Items
+execute as @s[tag=cpp_chest_dropper] if data block ~ ~ ~ Items[] if predicate cpp:redstone_power positioned ~ ~255 ~ run function cpp:chest_dropper/check
 execute as @s[tag=cpp_beacon_enhancer] run function cpp:beacon_enhancer/tick

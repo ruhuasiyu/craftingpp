@@ -24,14 +24,8 @@ execute as @s[predicate=cpp:offhand/infinite_bucket] unless score @s cppSneakTim
 execute as @s[predicate=cpp:offhand/infinite_bucket,scores={cppSneakTime=1}] at @s anchored eyes run function cpp:tool/infinite_bucket_put
 execute as @s[predicate=cpp:offhand/santa_gift] at @s as @e[distance=..16] run data merge entity @s {Silent:1b}
 
-execute as @s[predicate=cpp:offhand/golem_miner] at @s anchored eyes run function cpp:golem/put/type
-execute as @s[predicate=cpp:offhand/golem_farmer] at @s anchored eyes run function cpp:golem/put/type
-execute as @s[predicate=cpp:offhand/golem_fisher] at @s anchored eyes run function cpp:golem/put/type
-execute as @s[predicate=cpp:offhand/golem_warrior] at @s anchored eyes run function cpp:golem/put/type
-execute as @s[predicate=cpp:offhand/golem_herder] at @s anchored eyes run function cpp:golem/put/type
-
+execute as @s[predicate=cpp:offhand/golem] at @s anchored eyes run function cpp:golem/put/type
 execute as @s[predicate=cpp:offhand/character] at @s anchored eyes run function cpp:decor/character_ray
-
 execute as @s[predicate=cpp:offhand/sealing_wand] at @s run function cpp:rituals/init/check_wand
 execute as @s[predicate=cpp:offhand/star_wand] at @s run function cpp:rituals/init/check_wand
 execute as @s[predicate=cpp:offhand/dream_wand] at @s run function cpp:rituals/init/check_wand

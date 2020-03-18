@@ -1,0 +1,25 @@
+{
+	"condition": "minecraft:alternative",
+	"terms": [
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"player": {
+					"level": {
+						"min": 2
+					}
+				}
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"player": {
+					"gamemode": "creative"
+				}
+			}
+		}
+	]
+}

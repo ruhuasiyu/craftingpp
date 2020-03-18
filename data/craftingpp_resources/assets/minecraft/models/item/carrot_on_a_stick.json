@@ -20,6 +20,7 @@
 		{ "predicate": { "custom_model_data": 12970023 }, "model": "cpp:golem/golem_fisher"},
 		{ "predicate": { "custom_model_data": 12970024 }, "model": "cpp:golem/golem_warrior"},
 		{ "predicate": { "custom_model_data": 12970025 }, "model": "cpp:golem/golem_herder"},
+		{ "predicate": { "custom_model_data": 12970026 }, "model": "cpp:golem/ruhuasiyu"},
 		
 		{ "predicate": { "custom_model_data": 12970040 }, "model": "cpp:material/ancient_scroll"},
 		{ "predicate": { "custom_model_data": 12970041 }, "model": "cpp:tool/magnet"},
@@ -43,7 +44,7 @@
 		{ "predicate": { "custom_model_data": 12970067 }, "model": "cpp:tool/chest_transporter"},	
 		{ "predicate": { "custom_model_data": 12970068 }, "model": "cpp:tool/portable_crafting_table"},
 		{ "predicate": { "custom_model_data": 12970069 }, "model": "cpp:tool/portable_crafting_machine"},
-		{ "predicate": { "custom_model_data": 12970070 }, "model": "cpp:tool/elder_s_words"},
+		{ "predicate": { "custom_model_data": 12970070 }, "model": "cpp:tool/shooting_star"},
 		
 		{ "predicate": { "custom_model_data": 12970101 }, "model": "cpp:plugin/empty_plugin"},
 		{ "predicate": { "custom_model_data": 12970102 }, "model": "cpp:plugin/low_pressure_plugin"},

@@ -1,4 +1,5 @@
 {
+	"gui_light": "front",
 	"elements": [
 		{
 			"name": "外层",
@@ -326,6 +327,11 @@
 			"rotation": [0, 90, 0],
 			"translation": [0, -24, 0],
 			"scale": [1, 1, 1]
+		},
+		"gui": {
+			"rotation": [0, -90, 0],
+			"translation": [0, -3.4, 0],
+			"scale": [0.48, 0.48, 0.48]
 		}
 	},
 	"groups": [

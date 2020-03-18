@@ -74,7 +74,7 @@
 		{ "predicate": { "custom_model_data": 12970802 }, "model": "cpp:machine/mob_projector/slime"},
 		{ "predicate": { "custom_model_data": 12970803 }, "model": "cpp:machine/mob_projector/phantom"},
 		{ "predicate": { "custom_model_data": 12970804 }, "model": "cpp:machine/mob_projector/polar_bear"},
-		{ "predicate": { "custom_model_data": 12970805 }, "model": "cpp:machine/mob_projector/zombie_pigman"},
+		{ "predicate": { "custom_model_data": 12970805 }, "model": "cpp:machine/mob_projector/piglin"},
 		{ "predicate": { "custom_model_data": 12970806 }, "model": "cpp:machine/mob_projector/ghast"},
 		{ "predicate": { "custom_model_data": 12970807 }, "model": "cpp:machine/mob_projector/magma_cube"},
 		{ "predicate": { "custom_model_data": 12970808 }, "model": "cpp:machine/mob_projector/blaze"},

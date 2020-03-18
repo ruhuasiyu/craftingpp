@@ -41,7 +41,7 @@ scoreboard players operation #x cppValue += #s1 cppValue
 scoreboard players operation #y cppValue += #s2 cppValue
 scoreboard players operation #z cppValue += #s3 cppValue
 # 存储交点
-summon armor_stand ~ ~ ~ {Tags:["cpp_loc_block_as","cpp_temp"],Invulnerable:1b,Small:1b,Marker:1b,NoGravity:1b}
+summon armor_stand ~ ~ ~ {Tags:["cpp_loc_block_as","cpp_temp"],Invulnerable:1b,Invisible:1b,Small:1b,Marker:1b,NoGravity:1b}
 execute if score #sf cppValue matches 0.. store result entity @e[type=armor_stand,distance=..9,tag=cpp_loc_block_as,tag=cpp_temp,limit=1] Pos[0] double 0.01 run scoreboard players get #x cppValue
 execute if score #sg cppValue matches 0.. store result entity @e[type=armor_stand,distance=..9,tag=cpp_loc_block_as,tag=cpp_temp,limit=1] Pos[1] double 0.01 run scoreboard players get #y cppValue
 execute if score #sh cppValue matches 0.. store result entity @e[type=armor_stand,distance=..9,tag=cpp_loc_block_as,tag=cpp_temp,limit=1] Pos[2] double 0.01 run scoreboard players get #z cppValue
