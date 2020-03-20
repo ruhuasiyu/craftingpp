@@ -1,0 +1,7 @@
+{
+	"condition": "minecraft:entity_properties",
+	"entity": "this",
+	"predicate": {
+		"nbt": "{Inventory:[{Slot:2b,tag:{cppClear:1b}}]}"
+	}
+}

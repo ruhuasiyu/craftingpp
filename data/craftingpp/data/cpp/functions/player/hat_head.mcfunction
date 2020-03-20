@@ -4,7 +4,6 @@ data modify block ~ 255 ~ Items[0].tag set from entity @s Inventory[{Slot:103b}]
 execute store result score #temp cppValue run data get block ~ 255 ~ Items[0].tag.CustomModelData
 execute store result block ~ 255 ~ Items[0].tag.CustomModelData int 1 run scoreboard players remove #temp cppValue 100
 data modify block ~ 255 ~ Items[0].tag.cppHatSlot set value "head"
-tellraw @p {"nbt":"Items","block":"~ 255 ~"}
 loot replace entity @s armor.head 1 mine ~ 255 ~ diamond_pickaxe{isShulkerMarker:1b}
 setblock ~ 255 ~ air
 advancement grant @s[predicate=cpp:head/green_hat] only cpp:forgive

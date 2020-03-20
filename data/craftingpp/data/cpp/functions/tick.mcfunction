@@ -41,7 +41,7 @@ execute as @e[type=armor_stand,tag=cpp_golem_herder] at @s run function cpp:gole
 execute as @e[type=experience_bottle] at @s run function cpp:xp/throw
 
 # 清理物品
-clear @a #cpp:clear{cppClear:1b}
+execute as @a[predicate=cpp:inventory/cpp_clear] run function cpp:misc/clear
 # 扫帚
 execute as @a[predicate=cpp:hand/broom] run function cpp:tool/broom
 # 流星丸

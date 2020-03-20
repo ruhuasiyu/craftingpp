@@ -885,6 +885,30 @@
 					"nbt": "{Items:[{Slot:12b,id:'minecraft:stone'}]}"
 				}
 			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:12b,id:'minecraft:ancient_debris'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:12b,id:'minecraft:basalt'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:12b,id:'minecraft:nether_gold_ore'}]}"
+				}
+			}
 		}
 	]	
 }

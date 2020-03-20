@@ -1715,38 +1715,6 @@
 											"condition": "minecraft:location_check",
 											"predicate": {
 												"block": {
-													"nbt": "{Items:[{id:'minecraft:weeping_vines'}]}"
-												}
-											}
-										},
-										{
-											"condition": "minecraft:location_check",
-											"predicate": {
-												"block": {
-													"nbt": "{Items:[{id:'minecraft:twisting_vines'}]}"
-												}
-											}
-										},
-										{
-											"condition": "minecraft:location_check",
-											"predicate": {
-												"block": {
-													"nbt": "{Items:[{id:'minecraft:crimson_fungus'}]}"
-												}
-											}
-										},
-										{
-											"condition": "minecraft:location_check",
-											"predicate": {
-												"block": {
-													"nbt": "{Items:[{id:'minecraft:warped_fungus'}]}"
-												}
-											}
-										},
-										{
-											"condition": "minecraft:location_check",
-											"predicate": {
-												"block": {
 													"nbt": "{Items:[{id:'minecraft:melon_slice'}]}"
 												}
 											}
@@ -1972,7 +1940,7 @@
 											"condition": "minecraft:location_check",
 											"predicate": {
 												"block": {
-													"nbt": "{Items:[{id:'minecraft:crimson_roots'}]}"
+													"nbt": "{Items:[{id:'minecraft:crimson_fungus'}]}"
 												}
 											}
 										},
@@ -1980,15 +1948,7 @@
 											"condition": "minecraft:location_check",
 											"predicate": {
 												"block": {
-													"nbt": "{Items:[{id:'minecraft:warped_roots'}]}"
-												}
-											}
-										},
-										{
-											"condition": "minecraft:location_check",
-											"predicate": {
-												"block": {
-													"nbt": "{Items:[{id:'minecraft:nether_sprouts'}]}"
+													"nbt": "{Items:[{id:'minecraft:warped_fungus'}]}"
 												}
 											}
 										},
@@ -2145,6 +2105,30 @@
 													"nbt": "{Items:[{id:'minecraft:basalt'}]}"
 												}
 											}
+										},
+										{
+											"condition": "minecraft:location_check",
+											"predicate": {
+												"block": {
+													"nbt": "{Items:[{id:'minecraft:crimson_roots'}]}"
+												}
+											}
+										},
+										{
+											"condition": "minecraft:location_check",
+											"predicate": {
+												"block": {
+													"nbt": "{Items:[{id:'minecraft:warped_roots'}]}"
+												}
+											}
+										},
+										{
+											"condition": "minecraft:location_check",
+											"predicate": {
+												"block": {
+													"nbt": "{Items:[{id:'minecraft:nether_sprouts'}]}"
+												}
+											}
 										}
 									]
 								}
@@ -2256,6 +2240,22 @@
 											"predicate": {
 												"block": {
 													"nbt": "{Items:[{id:'minecraft:snowball'}]}"
+												}
+											}
+										},
+										{
+											"condition": "minecraft:location_check",
+											"predicate": {
+												"block": {
+													"nbt": "{Items:[{id:'minecraft:weeping_vines'}]}"
+												}
+											}
+										},
+										{
+											"condition": "minecraft:location_check",
+											"predicate": {
+												"block": {
+													"nbt": "{Items:[{id:'minecraft:twisting_vines'}]}"
 												}
 											}
 										}

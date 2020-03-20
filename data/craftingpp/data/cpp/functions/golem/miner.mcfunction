@@ -11,3 +11,5 @@ execute as @s[scores={cppGolemFace=2}] run tp @s ~-1 ~0 ~0 90 0
 execute as @s[scores={cppGolemFace=3}] run tp @s ~0 ~0 ~-1 180 0
 execute as @s[scores={cppGolemFace=4}] run tp @s ~0 ~1 ~0 0 90
 execute as @s[scores={cppGolemFace=5}] run tp @s ~0 ~-1 ~0 0 -90
+scoreboard players add @s cppTick 1
+execute as @s[scores={cppTick=64..}] run function cpp:golem/move_back
