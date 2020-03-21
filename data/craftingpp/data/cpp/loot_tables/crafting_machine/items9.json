@@ -613,7 +613,7 @@
 									"condition": "minecraft:location_check",
 									"predicate": {
 										"block": {
-											"nbt": "{Items:[{Slot:1b,tag:{id:'cpp:rare_earth_glass'}},{Slot:2b,tag:{id:'cpp:enderman_head'}},{Slot:3b,tag:{id:'cpp:rare_earth_glass'}},{Slot:10b,tag:{id:'cpp:rare_earth_glass'}},{Slot:11b,id:'minecraft:diamond_pickaxe'},{Slot:12b,tag:{id:'cpp:rare_earth_glass'}},{Slot:19b,tag:{id:'cpp:reinforced_glass'}},{Slot:20b,id:'minecraft:experience_bottle'},{Slot:21b,tag:{id:'cpp:reinforced_glass'}}]}"
+											"nbt": "{Items:[{Slot:1b,tag:{id:'cpp:rare_earth_glass'}},{Slot:2b,tag:{id:'cpp:enderman_head'}},{Slot:3b,tag:{id:'cpp:rare_earth_glass'}},{Slot:10b,tag:{id:'cpp:rare_earth_glass'}},{Slot:11b,id:'minecraft:netherite_pickaxe'},{Slot:12b,tag:{id:'cpp:rare_earth_glass'}},{Slot:19b,tag:{id:'cpp:reinforced_glass'}},{Slot:20b,id:'minecraft:experience_bottle'},{Slot:21b,tag:{id:'cpp:reinforced_glass'}}]}"
 										}
 									}
 								}
