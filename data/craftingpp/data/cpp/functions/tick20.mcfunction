@@ -29,8 +29,4 @@ execute as @e[type=item_frame,nbt={Item:{tag:{id:"cpp:magnet"}}}] at @s run func
 execute as @e[type=item_frame,nbt={Item:{tag:{id:"cpp:time_checker"}}}] at @s run function cpp:item_frame/time_checker/tick
 execute as @e[type=item_frame,nbt={Item:{tag:{id:"cpp:muffler"}}}] at @s as @e[distance=..5] run data merge entity @s {Silent:1b}
 
-execute as @e[type=item_frame,nbt={Item:{tag:{id:"cpp:break_hand"}}}] at @s unless entity @e[type=armor_stand,distance=..0.01,tag=cpp_break_hand] run function cpp:item_frame/break_hand/init
-execute as @e[type=item_frame,nbt={Item:{tag:{id:"cpp:smart_hand"}}}] at @s unless entity @e[type=armor_stand,distance=..0.01,tag=cpp_smart_hand] run function cpp:item_frame/smart_hand/init
-execute as @e[type=item_frame,nbt={Item:{tag:{id:"cpp:angry_hand"}}}] at @s unless entity @e[type=armor_stand,distance=..0.01,tag=cpp_angry_hand] run function cpp:item_frame/angry_hand/init
-
 schedule function cpp:tick20 20t
