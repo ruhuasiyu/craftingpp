@@ -2,6 +2,6 @@
     "variants": {
         "type=bottom": { "model": "block/red_nether_brick_slab" },
         "type=top": { "model": "block/red_nether_brick_slab_top" },
-        "type=double": { "model": "modify/red_nether_bricks" }
+        "type=double": { "model": "modify/red_nether_bricks" ,"y":90}
     }
 }

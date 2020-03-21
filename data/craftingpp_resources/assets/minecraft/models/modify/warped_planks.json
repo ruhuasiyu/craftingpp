@@ -1,0 +1,6 @@
+{
+  "parent": "modify/cube_all",
+  "textures": {
+    "all": "block/warped_planks"
+  }
+}

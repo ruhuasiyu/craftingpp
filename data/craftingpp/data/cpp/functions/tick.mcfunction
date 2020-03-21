@@ -30,12 +30,6 @@ execute as @e[type=armor_stand,tag=cpp_portable_crafting_table] at @s run functi
 # 方块破坏器
 execute if score $skyislandMode cppConfig matches 1 as @e[type=armor_stand,tag=cpp_block_breaker] at @s run function cpp:block_breaker/tick
 execute if score $skyislandMode cppConfig matches 1 as @e[type=armor_stand,tag=cpp_fermenter] at @s run function cpp:fermenter/tick
-# 傀儡
-execute as @e[type=armor_stand,tag=cpp_golem_farmer] at @s run function cpp:golem/farmer
-execute as @e[type=armor_stand,tag=cpp_golem_miner] at @s run function cpp:golem/miner
-execute as @e[type=armor_stand,tag=cpp_golem_fisher] at @s run function cpp:golem/fisher
-execute as @e[type=armor_stand,tag=cpp_golem_warrior] at @s run function cpp:golem/warrior
-execute as @e[type=armor_stand,tag=cpp_golem_herder] at @s run function cpp:golem/herder
 
 # 附魔之瓶
 execute as @e[type=experience_bottle] at @s run function cpp:xp/throw
@@ -70,6 +64,8 @@ execute as @a[predicate=cpp:head/purple_eye] at @s run effect give @e[tag=cpp_wi
 execute as @a[predicate=cpp:offhand/hopper] run function cpp:xp/check
 # 返回家
 execute if score $skyislandMode cppConfig matches 1 as @p[gamemode=!creative,distance=..10] run function cpp:misc/home
+execute if score $skyislandMode cppConfig matches 1 run scoreboard players enable @a cppHome
+execute as @a[scores={cppHome=1..}] run function cpp:misc/sethome
 # 体重
 execute as @a at @s if block ~ ~ ~ heavy_weighted_pressure_plate run function cpp:misc/fatness
 # 进度判断
@@ -94,6 +90,8 @@ execute as @a[scores={cppTrim=1..}] run function cpp:trim/player
 # 方块破坏器-互动
 execute if score $skyislandMode cppConfig matches 1 as @a[scores={cppBsdIntFur=1..}] at @a anchored eyes run function cpp:block_breaker/ray
 scoreboard players reset @a cppSneakTime
+# 使用骨粉
+execute if score $skyislandMode cppConfig matches 1 as @a[scores={cppUseBM=1..}] at @a anchored eyes run function cpp:bone_meal/reset
 
 # 物品展示框
 execute as @e[type=item_frame] at @s run function cpp:item_frame/type
@@ -102,3 +100,10 @@ execute as @e[type=item_frame] at @s run function cpp:item_frame/type
 execute as @e[type=item,nbt={PickupDelay:0s}] at @s if entity @a[distance=..16,predicate=cpp:inventory/magnet] run function cpp:item/magnet
 execute as @e[type=item,nbt={Item:{id:"minecraft:blaze_rod",tag:{display:{}}}}] at @s run function cpp:item/wand_of_the_darkness
 execute as @e[type=item,tag=!cpp_item_checked] run function cpp:item/check
+
+# 傀儡
+execute as @e[type=armor_stand,tag=cpp_golem_farmer] at @s run function cpp:golem/farmer
+execute as @e[type=armor_stand,tag=cpp_golem_miner] at @s run function cpp:golem/miner
+execute as @e[type=armor_stand,tag=cpp_golem_fisher] at @s run function cpp:golem/fisher
+execute as @e[type=armor_stand,tag=cpp_golem_warrior] at @s run function cpp:golem/warrior
+execute as @e[type=armor_stand,tag=cpp_golem_herder] at @s run function cpp:golem/herder

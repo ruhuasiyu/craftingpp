@@ -5,6 +5,8 @@ scoreboard objectives add cppOutSlots dummy
 scoreboard objectives add cppOutputFace dummy
 # 方块破坏器
 scoreboard objectives add cppBsdIntFur custom:interact_with_furnace
+# 使用骨粉
+scoreboard objectives setdisplay sidebar cppUseBM
 # 使用打火石
 scoreboard objectives add cppUseFS used:flint_and_steel
 # 生命值
@@ -76,6 +78,8 @@ scoreboard objectives add cppChainDam dummy
 # 自动火把
 scoreboard objectives add cppTorchPeriod trigger
 scoreboard objectives add cppTorchTick dummy
+# 空岛设置家
+scoreboard objectives add cppHome trigger
 # 整理
 scoreboard objectives add cppTrim trigger
 scoreboard objectives add cppTrimChest custom:open_chest

@@ -2,6 +2,6 @@
     "variants": {
         "type=bottom": { "model": "block/spruce_slab" },
         "type=top": { "model": "block/spruce_slab_top" },
-        "type=double": { "model": "modify/spruce_planks" }
+        "type=double": { "model": "modify/spruce_planks" ,"y":90}
     }
 }

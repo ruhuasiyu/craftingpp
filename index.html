@@ -383,9 +383,9 @@
 	</tr>
 	<tr>
 		<td>20w12a</td>
-		<td>测试版 v1.10-0320</td>
-		<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/tree/master/versions/1.10/v1.10-0320.zip">GitHub</a> |
-			<a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.10-0320.zip">官方</a></td>
+		<td>测试版 v1.10-0321</td>
+		<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/tree/master/versions/1.10/v1.10-0321.zip">GitHub</a> |
+			<a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.10-0321.zip">官方</a></td>
 	</tr>
 	<tr>
 		<td>Java版 1.14.x</td>
@@ -402,7 +402,7 @@
 <p><span class="oldversion">1.9.x</span>请打开<code>选项->语言->强制使用Unicode字体：关</code>。</p>
 <ul>
     <li>大部分合成需使用<a href="#合成器">合成器</a>，本页面中所有绿色背景的合成表均为使用合成器的合成配方。模组需要的附魔之瓶可通过副手持有漏斗获取。</li>
-    <li>模组支持英文、简体中文、繁体中文、梗体中文(1.10)。</li>
+    <li>模组支持英文、简体中文、繁体中文。</li>
     <li>空岛模式建议玩家使用自定义超平坦如 <code>minecraft:air;minecraft:mountains;</code> 进入。也可输入下述命令手动开启<code>/scoreboard players set #skyislandMode cppValue 1</code>。</li>
 </ul>
 
@@ -9250,14 +9250,11 @@
 <img style="width:90%" src="items/screenshots/colorful_sign.png" alt="彩色告示牌" />
 
 <h3 id="玻璃物品展示框">玻璃物品展示框</h3>
-		<a class="ui ci glass_item_frame"></a>
-<p>现在物品展示框材质默认为玻璃材质，放入物品后边框会消失。</p>
-<table><thead><tr><th>名称</th>
-	<th>材料</th>
-	<th>合成配方</th></tr></thead>
-<tbody>
-<tr><th>玻璃物品展示框</th>
-	<td>木棍+玻璃板</td>
+<p><span class="version">1.10</span> 物品展示框放入物品后边框会消失。若要显示边框，先放入物品展示框并破坏，再放入其它物品即可。</p>
+<a class="ui ci glass_item_frame"></a>
+<p><span class="oldversion">1.9.x</span> 物品展示框材质为玻璃材质，放入物品后边框会消失。</p>
+<table><thead><tr><th>材料</th><th>合成配方</th></tr></thead><tbody>
+<tr><td>木棍+玻璃板 <span class="oldversion">1.9.x</span></td>
 	<td><span class="ui ct" title="工作台">
 		<a class="stick" title="木棍"></a>
 		<a class="stick" title="木棍"></a>
@@ -9403,6 +9400,7 @@
 <p>方块破坏器下方的伸出的活塞臂收回时，会自动破坏方块破坏器上方的方块，以此实现<strong>自动刷矿</strong>。</p>
 <p>将12个绿宝石块摆成末地传送门框架的形状，然后点火即可得到<strong>末地传送门框架</strong>。</p>
 <p>玩家杀死生物时背包的砂土会变成<strong>灵魂土</strong>。</p>
+<p>在泥土上放置草丛可以得到草方块。</p>
 <p>如果需要前往他人岛屿，让管理员协助你传送过去，然后你使用<code>/trigger cppHome</code>来设置当前位置为你的空岛岛屿。</p>
 
 <h3>1.9 版本空岛</h3>
@@ -9874,7 +9872,7 @@
 		<a href="https://space.bilibili.com/4469715"><img src="items/bilibili.png" alt="哔哩哔哩" /></a>
 </p>
 
-<p>最后更新 2020-03-19</p>
+<p>最后更新 2020-03-21</p>
 </footer>
 
 </article>

@@ -65,6 +65,24 @@
 			}
 		},
 		{
+			"_comment":"无尽桶",
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:1b,tag:{id:'cpp:enchanted_iron'}},{Slot:3b,tag:{id:'cpp:enchanted_iron'}},{Slot:11b,tag:{id:'cpp:enchanted_iron'}}]}"
+				}
+			}
+		},
+		{
+			"_comment":"无尽桶",
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:10b,tag:{id:'cpp:enchanted_iron'}},{Slot:12b,tag:{id:'cpp:enchanted_iron'}},{Slot:20b,tag:{id:'cpp:enchanted_iron'}}]}"
+				}
+			}
+		},
+		{
 			"_comment":"箱漏",
 			"condition": "minecraft:location_check",
 			"predicate": {

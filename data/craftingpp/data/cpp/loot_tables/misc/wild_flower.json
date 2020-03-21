@@ -1,0 +1,57 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:calliopsis"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:cyclamen"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:iris"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:lilium_pumilum"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:snowdrop"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:cole_flower"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:lupine"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:crocu"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:pansy"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:arabia_speedwell"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:silene_pendula"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:blue_rose"
+				}
+			]
+		}
+	]
+}

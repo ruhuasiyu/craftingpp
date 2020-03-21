@@ -2,6 +2,6 @@
     "variants": {
         "type=bottom": { "model": "block/petrified_oak_slab" },
         "type=top": { "model": "block/petrified_oak_slab" },
-        "type=double": { "model": "block/petrified_oak_slab" }
+        "type=double": { "model": "modify/petrified_oak_slab" ,"y":90}
     }
 }

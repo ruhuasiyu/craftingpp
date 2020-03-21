@@ -2,6 +2,6 @@
     "variants": {
         "type=bottom": { "model": "block/brick_slab" },
         "type=top": { "model": "block/brick_slab_top" },
-        "type=double": { "model": "modify/bricks" }
+        "type=double": { "model": "modify/bricks" ,"y":90}
     }
 }
