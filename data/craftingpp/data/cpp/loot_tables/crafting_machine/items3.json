@@ -112,24 +112,32 @@
 							"name": "cpp:clay_bucket"
 						},
 						{
-							"_comment":"无尽桶",
-							"condition": "minecraft:location_check",
-							"predicate": {
-								"block": {
-									"nbt": "{Items:[{Slot:1b,tag:{id:'cpp:enchanted_iron'}},{Slot:3b,tag:{id:'cpp:enchanted_iron'}},{Slot:11b,tag:{id:'cpp:enchanted_iron'}}]}"
+							"_comment":"无尽桶1",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:1b,tag:{id:'cpp:enchanted_iron'}},{Slot:3b,tag:{id:'cpp:enchanted_iron'}},{Slot:11b,tag:{id:'cpp:enchanted_iron'}}]}"
+										}
+									}
 								}
-							},
+							],
 							"type": "minecraft:loot_table",
 							"name": "cpp:infinite_bucket"
 						},
 						{
-							"_comment":"无尽桶",
-							"condition": "minecraft:location_check",
-							"predicate": {
-								"block": {
-									"nbt": "{Items:[{Slot:10b,tag:{id:'cpp:enchanted_iron'}},{Slot:12b,tag:{id:'cpp:enchanted_iron'}},{Slot:20b,tag:{id:'cpp:enchanted_iron'}}]}"
+							"_comment":"无尽桶2",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:10b,tag:{id:'cpp:enchanted_iron'}},{Slot:12b,tag:{id:'cpp:enchanted_iron'}},{Slot:20b,tag:{id:'cpp:enchanted_iron'}}]}"
+										}
+									}
 								}
-							},
+							],
 							"type": "minecraft:loot_table",
 							"name": "cpp:infinite_bucket"
 						},

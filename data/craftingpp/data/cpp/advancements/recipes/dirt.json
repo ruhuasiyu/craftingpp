@@ -1,0 +1,40 @@
+{
+	"criteria": {
+		"cobblestone": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:cobblestone"
+					}
+				]
+			}
+		},
+		"snowball": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:snowball"
+					}
+				]
+			}
+		},
+		"has_the_recipe": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "cpp:dirt"
+			}
+		}
+	},
+	"rewards":{
+		"recipes": ["cpp:dirt"]
+	},
+	"requirements": [
+		[
+			"cobblestone",
+			"snowball",
+			"has_the_recipe"
+		]
+	]
+}

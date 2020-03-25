@@ -124,6 +124,21 @@
 					"name": "cpp:elder_guardian_head"
 				}
 			]
+		},
+		{
+			"conditions": [
+				{
+					"condition": "minecraft:reference",
+					"name": "cpp:rare_drop"
+				}
+			],
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:heart_of_the_sea"
+				}
+			]
 		}
 	]
 }

@@ -1,6 +1,7 @@
 {
 	"values": [
 		"minecraft:bat",
+		"minecraft:bee",
 		"minecraft:cat",
 		"minecraft:chicken",
 		"minecraft:cod",
@@ -34,6 +35,8 @@
 		"minecraft:illusioner",
 		"minecraft:magma_cube",
 		"minecraft:phantom",
+		"minecraft:piglin",
+		"minecraft:hoglin",
 		"minecraft:pillager",
 		"minecraft:ravager",
 		"minecraft:shulker",

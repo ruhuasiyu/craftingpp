@@ -7,6 +7,10 @@
 		"minecraft:farmland",
 		"minecraft:podzol",
 		"minecraft:grass_block",
-		"minecraft:mycelium"
+		"minecraft:mycelium",
+		"minecraft:soul_sand",
+		"minecraft:soul_soil",
+		"minecraft:sand",
+		"minecraft:red_sand"
 	]
 }

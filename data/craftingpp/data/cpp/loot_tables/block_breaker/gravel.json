@@ -4,22 +4,22 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:flint",
 					"weight": 24
 				},
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:coal",
 					"weight": 24
 				},
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:iron_nugget",
 					"weight": 24,
 					"functions":[
 						{
-							"function": "set_count",
+							"function": "minecraft:set_count",
 							"count": {
 								"min": 1,
 								"max": 4
@@ -28,12 +28,12 @@
 					]
 				},
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:gold_nugget",
 					"weight": 16,
 					"functions":[
 						{
-							"function": "set_count",
+							"function": "minecraft:set_count",
 							"count": {
 								"min": 1,
 								"max": 4
@@ -42,21 +42,21 @@
 					]
 				},
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:quartz",
 					"weight": 5
 				},
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:lapis_lazuli",
 					"weight": 5
 				},
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:emerald"
 				},
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:diamond"
 				}
 			]

@@ -24,9 +24,9 @@
 									"source": "killer",
 									"ops": [
 										{
-											"op": "merge",
-											"source": "HandItems[0].tag.Enchantments[]",
-											"target": "Enchantments[]"
+											"op": "replace",
+											"source": "HandItems[0].tag.Enchantments",
+											"target": "Enchantments"
 										}
 									]
 								}
@@ -50,9 +50,9 @@
 									"source": "killer",
 									"ops": [
 										{
-											"op": "merge",
-											"source": "HandItems[0].tag.Enchantments[]",
-											"target": "Enchantments[]"
+											"op": "replace",
+											"source": "HandItems[0].tag.Enchantments",
+											"target": "Enchantments"
 										}
 									]
 								}
@@ -76,9 +76,9 @@
 									"source": "killer",
 									"ops": [
 										{
-											"op": "merge",
-											"source": "HandItems[0].tag.Enchantments[]",
-											"target": "Enchantments[]"
+											"op": "replace",
+											"source": "HandItems[0].tag.Enchantments",
+											"target": "Enchantments"
 										}
 									]
 								}
@@ -102,9 +102,9 @@
 									"source": "killer",
 									"ops": [
 										{
-											"op": "merge",
-											"source": "HandItems[0].tag.Enchantments[]",
-											"target": "Enchantments[]"
+											"op": "replace",
+											"source": "HandItems[0].tag.Enchantments",
+											"target": "Enchantments"
 										}
 									]
 								}
@@ -128,9 +128,9 @@
 									"source": "killer",
 									"ops": [
 										{
-											"op": "merge",
-											"source": "HandItems[0].tag.Enchantments[]",
-											"target": "Enchantments[]"
+											"op": "replace",
+											"source": "HandItems[0].tag.Enchantments",
+											"target": "Enchantments"
 										}
 									]
 								}

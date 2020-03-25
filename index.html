@@ -36,6 +36,8 @@
 	<li><a href="#鸡"><span class="ci" style="background-position: -128px -800px;"></span> 鸡</a></li>
 	<li><a href="#哞菇"><span class="ci" style="background-position: -96px -800px;"></span> 哞菇</a></li>
 	<li><a href="#僵尸猪人"><span class="ci" style="background-position: -128px -832px;"></span> 僵尸猪人</a></li>
+	<li><a href="#远古守卫者"><span class="ci" style="background-position: -48px -864px;"></span> 远古守卫者</a></li>
+	<li><a href="#溺尸"><span class="ci" style="background-position: -48px -624px;"></span> 溺尸</a></li>
 	<li><a href="#钓鱼"><span style="background-position: -352px -592px;"></span> 钓鱼</a></li>
 	<li><a href="#玩家的头"><span class="ci" style="background-position: -48px -1040px;"></span> 玩家的头</a></li>
 	<li><a href="#破损的刷怪箱"><span class="ci" style="background-position: -128px -48px;"></span> 破损的刷怪箱</a></li>
@@ -371,7 +373,6 @@
 
 <h3 id="下载与安装">📦 下载与安装</h3>
 <p>更多版本请<a href="https://github.com/ruhuasiyu/CraftingPlusPlus/tags">前往 github 页面查看</a>。其它链接：<a href="http://home.ustc.edu.cn/~zsxqq/craftingpp">官方主页</a>、<a href="http://www.mcbbs.net/thread-696861-1-1.html">MCBBS 页</a>、<a href="https://www.mcmod.cn/class/1297.html">MC 百科页</a>。</p>
-<p>注意20w11a mc本身有严重bug，请等待新快照再使用。</p>
 <table><thead><tr><th>支持的minecraft版本</th>
 	<th>Crafting++版本</th>
 	<th>下载地址</th></tr></thead>
@@ -383,9 +384,9 @@
 	</tr>
 	<tr>
 		<td>20w12a</td>
-		<td>测试版 v1.10-0323</td>
-		<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/tree/master/versions/1.10/v1.10-0323.zip">GitHub</a> |
-			<a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.10-0323.zip">官方</a></td>
+		<td>测试版 v1.10-0325</td>
+		<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/tree/master/versions/1.10/v1.10-0325.zip">GitHub</a> |
+			<a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.10-0325.zip">官方</a></td>
 	</tr>
 	<tr>
 		<td>Java版 1.14.x</td>
@@ -578,6 +579,7 @@
 
 <h3 id="哞菇">哞菇</h3>
 <p>红色哞菇/棕色哞菇死亡时掉落<code>0~(2+抢夺等级)</code>个红色蘑菇/棕色蘑菇，同时掉落皮革数修改为<code>0~(1+抢夺等级)</code>。</p>
+<p><span class="oldversion">1.9.x</span> 哞菇死亡时将下方泥土变为菌丝。</p>
 
 <h3 id="僵尸猪人">僵尸猪人</h3>
 <p><span class="oldversion">1.9.x</span> 僵尸猪人死亡时掉落<code>0~(1+抢夺等级)</code>生猪排。</p>
@@ -590,6 +592,7 @@
 
 <h3 id="钓鱼">钓鱼</h3>
 <p>有几率掉到宝藏珊瑚、珊瑚扇、湿海绵、鳕鱼头/鲑鱼头/热带鱼头/河豚头、<a href="#水晶之心">水晶之心</a>和垃圾火药/海晶碎片。</p>
+<p><span class="version">1.10</span> 在下界钓鱼有几率钓到垃圾扭曲藤和缠怨藤；在末地钓鱼有几率钓到宝藏潜影壳。</p>
 
 <h3 id="玩家的头">玩家的头</h3>
 <p><span class="version">1.10</span> 玩家被手持抢夺附魔的武器杀死时会掉落头。</p>
@@ -9377,8 +9380,8 @@
 	<td><a class="ui dead_bush" title="枯萎的灌木"><span class="stack">32%</span></a>
 	<a class="ui iron_nugget" title="铁粒"><span class="stack">24% 1~4</span></a>
 	<a class="ui gold_nugget" title="金粒"><span class="stack">16% 1~4</span></a><br />
-	<a class="ui bone_meal" title="骨粉"><span class="stack">?</span></a>
-	<a class="ui redstone" title="红石"><span class="stack">?</span></a>
+	<a class="ui bone_meal" title="骨粉"><span class="stack">10%</span></a>
+	<a class="ui redstone" title="红石"><span class="stack">10%</span></a>
 	<a class="ui gunpowder" title="火药"><span class="stack">6%</span></a>
 	<a class="ui blaze_powder" title="烈焰粉"><span class="stack">2%</span></a></td>
 
@@ -9394,10 +9397,15 @@
 	<a class="ui ci ore_sapling" title="矿石树树苗"><span class="stack">2%</span></a>
 	<a class="ui bamboo" title="竹子"><span class="stack">2%</span></a></td>
 	
-	<td><a class="ui quartz" title="石英"><span class="stack">40%</span></a>
+	<td><a class="ui quartz" title="石英"><span class="stack">45%</span></a>
 	<a class="ui clay_ball" title="粘土球"><span class="stack">20%</span></a>
-	<a class="ui nether_wart" title="地狱疣"><span class="stack">9%</span></a>
+	<a class="ui nether_wart" title="地狱疣"><span class="stack">10%</span></a>
 	<a class="ui blaze_powder" title="烈焰粉"><span class="stack">5%</span></a>
+	<a class="ui weeping_vines" title="扭曲藤"><span class="stack">5%</span></a>
+	<a class="ui twisting_vines" title="缠怨藤"><span class="stack">5%</span></a>
+	<a class="ui crimson_roots" title="绯红菌索"><span class="stack">3%</span></a>
+	<a class="ui warped_roots" title="诡异菌索"><span class="stack">3%</span></a>
+	<a class="ui nether_sprouts" title="下界苗"><span class="stack">3%</span></a>
 	<a class="ui ghast_tear" title="恶魂之泪"><span class="stack">1%</span></a></td>	
 </tr></tbody></table>
 
@@ -9877,7 +9885,7 @@
 		<a href="https://space.bilibili.com/4469715"><img src="items/bilibili.png" alt="哔哩哔哩" /></a>
 </p>
 
-<p>最后更新 2020-03-23</p>
+<p>最后更新 2020-03-25</p>
 </footer>
 
 </article>

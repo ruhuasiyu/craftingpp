@@ -93,7 +93,7 @@
 	]},
 	{"conditions": [{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Item:{id:'minecraft:netherite_boots'}}"}}],"function": "minecraft:set_attributes","modifiers": [
 		{"amount": 3,"name": "cpp_armor","attribute": "generic.armor","operation": "addition","slot": "feet"},
-		{"amount": 2,"name": "cpp_armorToughness","attribute": "generic.armorToughness","operation": "addition","slot": "feet"},
+		{"amount": 3,"name": "cpp_armorToughness","attribute": "generic.armorToughness","operation": "addition","slot": "feet"},
 		{"amount": {"min": 0,"max": 5},"name": "cpp_maxHealth","attribute": "generic.maxHealth","operation": "addition","slot": "feet"},
 		{"amount": {"min": 0.1,"max": 0.4},"name": "cpp_knockbackResistance","attribute": "generic.knockbackResistance","operation": "addition","slot": "feet"},
 		{"amount": {"min": 0,"max": 0.15},"name": "cpp_movementSpeed","attribute": "generic.movementSpeed","operation": "multiply_base","slot": "feet"},
@@ -138,7 +138,7 @@
 	]},
 	{"conditions": [{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Item:{id:'minecraft:netherite_leggings'}}"}}],"function": "minecraft:set_attributes","modifiers": [
 		{"amount": 6,"name": "cpp_armor","attribute": "generic.armor","operation": "addition","slot": "legs"},
-		{"amount": 2,"name": "cpp_armorToughness","attribute": "generic.armorToughness","operation": "addition","slot": "legs"},
+		{"amount": 3,"name": "cpp_armorToughness","attribute": "generic.armorToughness","operation": "addition","slot": "legs"},
 		{"amount": {"min": 0,"max": 5},"name": "cpp_maxHealth","attribute": "generic.maxHealth","operation": "addition","slot": "legs"},
 		{"amount": {"min": 0.1,"max": 0.4},"name": "cpp_knockbackResistance","attribute": "generic.knockbackResistance","operation": "addition","slot": "legs"},
 		{"amount": {"min": 0,"max": 0.15},"name": "cpp_movementSpeed","attribute": "generic.movementSpeed","operation": "multiply_base","slot": "legs"},
@@ -183,7 +183,7 @@
 	]},
 	{"conditions": [{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Item:{id:'minecraft:netherite_chestplate'}}"}}],"function": "minecraft:set_attributes","modifiers": [
 		{"amount": 8,"name": "cpp_armor","attribute": "generic.armor","operation": "addition","slot": "chest"},
-		{"amount": 2,"name": "cpp_armorToughness","attribute": "generic.armorToughness","operation": "addition","slot": "chest"},
+		{"amount": 3,"name": "cpp_armorToughness","attribute": "generic.armorToughness","operation": "addition","slot": "chest"},
 		{"amount": {"min": 0,"max": 5},"name": "cpp_maxHealth","attribute": "generic.maxHealth","operation": "addition","slot": "chest"},
 		{"amount": {"min": 0.1,"max": 0.4},"name": "cpp_knockbackResistance","attribute": "generic.knockbackResistance","operation": "addition","slot": "chest"},
 		{"amount": {"min": 0,"max": 0.15},"name": "cpp_movementSpeed","attribute": "generic.movementSpeed","operation": "multiply_base","slot": "chest"},
@@ -235,7 +235,7 @@
 	]},
 	{"conditions": [{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Item:{id:'minecraft:netherite_helmet'}}"}}],"function": "minecraft:set_attributes","modifiers": [
 		{"amount": 3,"name": "cpp_armor","attribute": "generic.armor","operation": "addition","slot": "head"},
-		{"amount": 2,"name": "cpp_armorToughness","attribute": "generic.armorToughness","operation": "addition","slot": "head"},
+		{"amount": 3,"name": "cpp_armorToughness","attribute": "generic.armorToughness","operation": "addition","slot": "head"},
 		{"amount": {"min": 0,"max": 5},"name": "cpp_maxHealth","attribute": "generic.maxHealth","operation": "addition","slot": "head"},
 		{"amount": {"min": 0.1,"max": 0.4},"name": "cpp_knockbackResistance","attribute": "generic.knockbackResistance","operation": "addition","slot": "head"},
 		{"amount": {"min": 0,"max": 0.15},"name": "cpp_movementSpeed","attribute": "generic.movementSpeed","operation": "multiply_base","slot": "head"},

@@ -50,7 +50,7 @@
 							"name": "minecraft:acacia_leaves"
 						},
 						{
-							"type": "minecraft:item",
+							"type": "minecraft:loot_table",
 							"conditions": [
 								{
 									"condition": "minecraft:table_bonus",
@@ -58,13 +58,7 @@
 									"chances": [0.05, 0.0625, 0.083333336, 0.1]
 								}
 							],
-							"name": "minecraft:acacia_sapling",
-							"functions": [
-								{
-									"function":"minecraft:set_nbt",
-									"tag": "{CustomModelData:12970110,id:'minecraft:acacia_sapling'}"
-								}
-							]
+							"name": "minecraft:acacia_sapling"
 						},
 						{
 							"type": "minecraft:item",

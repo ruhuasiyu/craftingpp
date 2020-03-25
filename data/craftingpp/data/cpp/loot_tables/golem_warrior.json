@@ -4,11 +4,11 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:carrot_on_a_stick",
 					"functions": [
 						{
-							"function": "set_nbt",
+							"function": "minecraft:set_nbt",
 							"tag": "{display:{Name:'{\"translate\":\"item.cpp.golem_warrior\"}'},id:'cpp:golem_warrior',CustomModelData:12970024}"
 						}
 					]

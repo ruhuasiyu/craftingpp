@@ -4,31 +4,37 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "empty",
-					"weight": 25
-				},
-				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:quartz",
-					"weight": 40
+					"weight": 55
 				},
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:clay_ball",
 					"weight": 20
 				},
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:nether_wart",
 					"weight": 9
 				},
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"name": "minecraft:blaze_powder",
 					"weight": 5
 				},
 				{
-					"type": "item",
+					"type": "minecraft:item",
+					"name": "minecraft:twisting_vines",
+					"weight": 5
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:weeping_vines",
+					"weight": 5
+				},
+				{
+					"type": "minecraft:item",
 					"name": "minecraft:ghast_tear"
 				}
 			]

@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"XXX",
+		"X#X",
+		"XXX"
+	],
+	"key": {
+		"#": {
+			"item": "minecraft:snowball"
+		},
+		"X": {
+			"item": "minecraft:cobblestone"
+		}
+	},
+	"result": {
+		"item": "minecraft:dirt",
+		"count": 8
+	}
+}

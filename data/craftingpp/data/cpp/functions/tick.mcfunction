@@ -35,7 +35,7 @@ execute if score $skyislandMode cppConfig matches 1 as @e[type=armor_stand,tag=c
 execute as @e[type=experience_bottle] at @s run function cpp:xp/throw
 
 # 清理物品
-execute as @a[predicate=cpp:inventory/cpp_clear] run function cpp:misc/clear
+clear @a[predicate=cpp:inventory/cpp_clear] #cpp:clear{cppClear:1b}
 # 扫帚
 execute as @a[predicate=cpp:hand/broom] run function cpp:tool/broom
 # 流星丸

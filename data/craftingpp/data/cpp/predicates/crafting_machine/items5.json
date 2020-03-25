@@ -229,7 +229,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"nbt": "{Items:[{Slot:2b,tag:{id:'cpp:moon_shard'}},{Slot:10b,tag:{id:'cpp:moon_shard'}},{Slot:11b,id:'minecraft:ender_eye'},{Slot:12b,tag:{id:'cpp:moon_shard'}},{Slot:20b,tag:{id:'cpp:moon_shard'}}]}"
+					"nbt": "{Items:[{Slot:2b,tag:{id:'cpp:sun_shard'}},{Slot:10b,tag:{id:'cpp:sun_shard'}},{Slot:11b,id:'minecraft:nether_star'},{Slot:12b,tag:{id:'cpp:sun_shard'}},{Slot:20b,tag:{id:'cpp:sun_shard'}}]}"
 				}
 			}
 		},

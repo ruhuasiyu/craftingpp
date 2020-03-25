@@ -8,7 +8,7 @@
 					"name": "minecraft:stone",
 					"functions": [
 						{
-							"function": "set_attributes",
+							"function": "minecraft:set_attributes",
 							"modifiers": [
 								{
 									"name": "head_maxHealth",

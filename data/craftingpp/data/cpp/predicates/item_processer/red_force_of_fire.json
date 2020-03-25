@@ -858,6 +858,54 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
+					"nbt": "{Items:[{Slot:12b,id:'minecraft:coal_ore'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:12b,id:'minecraft:emerald_ore'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:12b,id:'minecraft:diamond_ore'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:12b,id:'minecraft:lapis_ore'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:12b,id:'minecraft:redstone_ore'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:12b,id:'minecraft:nether_quartz_ore'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
 					"nbt": "{Items:[{Slot:12b,id:'minecraft:quartz_block'}]}"
 				}
 			}

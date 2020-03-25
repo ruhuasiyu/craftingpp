@@ -1,9 +1,7 @@
 {
 	"replace": false,
 	"values": [
-		"minecraft:nether_gold_ore",
 		"minecraft:basalt",
-		"minecraft:ancient_debris",
 		"minecraft:sand",
 		"minecraft:red_sand",
 		"#minecraft:logs",
@@ -16,8 +14,6 @@
 		"minecraft:kelp_plant",
 		"minecraft:sea_pickle",
 		"#cpp:terracottas",
-		"minecraft:iron_ore",
-		"minecraft:gold_ore",
 		"minecraft:quartz_block",
 		"minecraft:sandstone",
 		"minecraft:red_sandstone",

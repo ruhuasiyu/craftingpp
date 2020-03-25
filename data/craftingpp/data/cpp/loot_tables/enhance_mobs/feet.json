@@ -13,7 +13,7 @@
 					"weight": 200,
 					"functions": [
 						{
-							"function": "enchant_with_levels",
+							"function": "minecraft:enchant_with_levels",
 							"treasure": true,
 							"levels": {
 								"min": 10,
@@ -21,7 +21,7 @@
 							}
 						},
 						{
-							"function": "set_damage",
+							"function": "minecraft:set_damage",
 							"damage": {
 								"min": 0.01,
 								"max": 0.10
@@ -35,7 +35,7 @@
 					"weight": 200,
 					"functions": [
 						{
-							"function": "enchant_with_levels",
+							"function": "minecraft:enchant_with_levels",
 							"treasure": true,
 							"levels": {
 								"min": 10,
@@ -43,7 +43,7 @@
 							}
 						},
 						{
-							"function": "set_damage",
+							"function": "minecraft:set_damage",
 							"damage": {
 								"min": 0.01,
 								"max": 0.10
@@ -57,7 +57,7 @@
 					"weight": 150,
 					"functions": [
 						{
-							"function": "enchant_with_levels",
+							"function": "minecraft:enchant_with_levels",
 							"treasure": true,
 							"levels": {
 								"min": 10,
@@ -65,7 +65,7 @@
 							}
 						},
 						{
-							"function": "set_damage",
+							"function": "minecraft:set_damage",
 							"damage": {
 								"min": 0.01,
 								"max": 0.10
@@ -79,7 +79,7 @@
 					"weight": 150,
 					"functions": [
 						{
-							"function": "enchant_with_levels",
+							"function": "minecraft:enchant_with_levels",
 							"treasure": true,
 							"levels": {
 								"min": 10,
@@ -87,7 +87,7 @@
 							}
 						},
 						{
-							"function": "set_damage",
+							"function": "minecraft:set_damage",
 							"damage": {
 								"min": 0.01,
 								"max": 0.10
@@ -101,7 +101,7 @@
 					"weight": 45,
 					"functions": [
 						{
-							"function": "enchant_with_levels",
+							"function": "minecraft:enchant_with_levels",
 							"treasure": true,
 							"levels": {
 								"min": 10,
@@ -109,7 +109,7 @@
 							}
 						},
 						{
-							"function": "set_damage",
+							"function": "minecraft:set_damage",
 							"damage": {
 								"min": 0.01,
 								"max": 0.10
@@ -123,7 +123,7 @@
 					"weight": 5,
 					"functions": [
 						{
-							"function": "enchant_with_levels",
+							"function": "minecraft:enchant_with_levels",
 							"treasure": true,
 							"levels": {
 								"min": 10,
@@ -131,7 +131,7 @@
 							}
 						},
 						{
-							"function": "set_damage",
+							"function": "minecraft:set_damage",
 							"damage": {
 								"min": 0.01,
 								"max": 0.10
