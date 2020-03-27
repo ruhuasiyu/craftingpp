@@ -1976,6 +1976,15 @@ span.ui a.sea_lantern, a.sea_lantern{
 .mob_zombie_horse               {background-position: -256px -2336px;}
 .mob_skeleton_horse             {background-position: -000px -2368px;}
 .mob_zombie_pigman              {background-position: -032px -2368px;}
+.sakura_sapling                 {background-position: -064px -2368px;}
+.sakura_leaves                  {background-position: -096px -2368px;}
+.rice                           {background-position: -128px -2368px;}
+.qingtuan                       {background-position: -160px -2368px;}
+.sakura_mochi                   {background-position: -192px -2368px;}
+.rice0                          {background-position: -224px -2368px;}
+.rice1                          {background-position: -256px -2368px;}
+.rice2                          {background-position: -000px -2400px;}
+.rice3                          {background-position: -032px -2400px;}
 
 .speed               {background-position: -000px -00px;}
 .slowness            {background-position: -018px -00px;}
