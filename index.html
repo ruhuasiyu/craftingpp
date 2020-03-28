@@ -24,6 +24,7 @@
 	<li><a href="#水果树"><span class="ci" style="background-position: -48px -352px;"></span> 水果树</a></li>
 	<li><a href="#矿石树"><span class="ci" style="background-position: -80px -352px;"></span> 矿石树</a></li>
 	<li><a href="#羊毛树"><span class="ci" style="background-position: -64px -352px;"></span> 羊毛树</a></li>
+	<li><a href="#羊毛树"><span class="ci" style="background-position: -48px -1184px;"></span> 樱花树</a></li>
 	<li><a href="#死珊瑚扇"><span style="background-position: -64px -1072px;"></span> 死珊瑚扇</a></li>
 	<li><a href="#灌木丛"><span style="background-position: -432px -512px;"></span> 灌木丛</a></li>
 	<li><a href="#死云杉树"><span style="background-position: -288px -1712px;"></span> 死云杉树</a></li>
@@ -382,9 +383,9 @@
 <tbody>
 	<tr>
 		<td>Java版快照 20w13a-20w13b</td>
-		<td>快照 v1.11-0327</td>
-		<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/tree/master/versions/1.11/v1.11-0327.zip">GitHub</a> |
-			<a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.11-0327.zip">官方</a></td>
+		<td>快照 v1.11-0328</td>
+		<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/tree/master/versions/1.11/v1.11-0328.zip">GitHub</a> |
+			<a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.11-0328.zip">官方</a></td>
 	</tr>
 	<tr>
 		<td>Java版 1.15.2</td>
@@ -408,7 +409,7 @@
 <ul>
     <li>大部分合成需使用<a href="#合成器">合成器</a>，本页面中所有绿色背景的合成表均为使用合成器的合成配方。模组需要的附魔之瓶可通过副手持有漏斗获取。</li>
     <li>模组支持英文、简体中文、繁体中文。</li>
-    <li>空岛模式建议玩家使用自定义超平坦如 <code>minecraft:air;minecraft:mountains;</code> 进入。也可输入下述命令手动开启<code>/scoreboard players set #skyislandMode cppValue 1</code>。</li>
+    <li>空岛模式建议玩家使用自定义超平坦如 <code>minecraft:air;minecraft:mountains;</code> 进入。</li>
 </ul>
 
 <h3 id="常见问题">📄 常见问题</h3>
@@ -603,7 +604,8 @@
 
 <h3 id="钓鱼">钓鱼</h3>
 <p>有几率掉到宝藏珊瑚、珊瑚扇、湿海绵、鳕鱼头/鲑鱼头/热带鱼头/河豚头、<a href="#水晶之心">水晶之心</a>和垃圾火药/海晶碎片。</p>
-<p><span class="version">1.10.x起</span> 在下界钓鱼有几率钓到垃圾垂泪藤和缠怨藤；在末地钓鱼有几率钓到宝藏潜影壳。</p>
+<p><span class="oldversion">1.10.x起</span> 在末地钓鱼有几率钓到宝藏潜影壳。</p>
+<p><span class="version">1.11起</span> 在末地钓鱼有几率钓到宝藏潜影壳和紫颂花。</p>
 
 <h3 id="玩家的头">玩家的头</h3>
 <p><span class="version">1.10.x起</span> 玩家被手持抢夺附魔的武器杀死时会掉落头。</p>
@@ -612,6 +614,25 @@
 <h3 id="破损的刷怪笼">破损的刷怪笼 <code>cpp:broken_spawner</code></h3>
 <a class="ui ci broken_spawner"></a>
 <p>使用精准采集附魔的镐子破坏刷怪笼获得，在<a href="#黑暗仪式">黑暗仪式</a>中可以修复为普通刷怪笼。</p>
+
+<table><thead><tr><th>材料</th>
+	<th>合成配方</th>
+</tr></thead><tbody>
+<tr><td><span class="version">1.11起</span> <a href="#黑暗碎片">黑暗碎片</a>+<a href="#日石">日石</a></td>
+	<td>
+	<span class="ui ct" title="合成器">
+	<a class="ci shard_of_the_darkness" title="黑暗碎片"></a>
+	<a class="ci shard_of_the_darkness" title="黑暗碎片"></a>
+	<a class="ci shard_of_the_darkness" title="黑暗碎片"></a>
+	<a class="ci shard_of_the_darkness" title="黑暗碎片"></a>
+	<a class="ci sun_stone" title="日石"></a>
+	<a class="ci shard_of_the_darkness" title="黑暗碎片"></a>
+	<a class="ci shard_of_the_darkness" title="黑暗碎片"></a>
+	<a class="ci shard_of_the_darkness" title="黑暗碎片"></a>
+	<a class="ci shard_of_the_darkness" title="黑暗碎片"></a>
+	<a class="ci broken_spawner" title="破损的刷怪笼"></a>
+	</span></td></tr>
+</tbody></table>
 
 <h3 id="龙蛋">龙蛋</h3>
 <p>末影龙死亡后，会在传送门上方生成，不要求是第一次击杀。<p>
@@ -3910,10 +3931,10 @@
 <tr><th><span class="lore">横扫之刃 III</span></th>
 	<td><code>cpp:ancien_scroll.sweeping</code></td>
 </tr>
-<tr><th><span class="lore">力量 III</span></th>
+<tr><th><span class="lore">力量 V</span></th>
 	<td><code>cpp:ancien_scroll.power</code></td>
 </tr>
-<tr><th><span class="lore">锋利 III</span></th>
+<tr><th><span class="lore">锋利 V</span></th>
 	<td><code>cpp:ancien_scroll.sharpness</code></td></tr>
 </tbody></table>
 <p>在<a href="#附魔室">附魔室</a>箱子中有几率出现，也可以通过打开<a href="#圣诞礼物">圣诞礼物</a>得到(1.10.x起)，一共8种。在<a href="#金砧">金砧</a>中可用于给拥有相同等级相应附魔的物品的附魔等级+1。</p>
@@ -8364,7 +8385,7 @@
 <p>剑(木制除外)、斧(木制除外)、三叉戟可附加属性：</p>
 <ul>
 	<li>攻击速度在原有武器基础上 +0~2</li>
-	<li>攻击伤害在原有武器基础上 +0~8 (覆盖锋利效果)</li>
+	<li>攻击伤害在原有武器基础上 +0~8 (1.9.x-1.10 覆盖锋利效果)</li>
 </ul>
 
 <p>盔甲可附加属性：</p>
@@ -9492,6 +9513,7 @@
 	<a class="ui ci fruit_sapling" title="水果树树苗"><span class="stack">2%</span></a>
 	<a class="ui ci wool_sapling" title="羊毛树树苗"><span class="stack">2%</span></a>
 	<a class="ui ci ore_sapling" title="矿石树树苗"><span class="stack">2%</span></a>
+	<a class="ui ci sakura_sapling" title="樱花树树苗"><span class="stack">2%</span></a>
 	<a class="ui bamboo" title="竹子"><span class="stack">2%</span></a></td>
 	
 	<td><a class="ui quartz" title="石英"><span class="stack">45%</span></a>
@@ -9511,12 +9533,12 @@
 <p>将12个绿宝石块摆成末地传送门框架的形状，然后点火即可得到<strong>末地传送门框架</strong>。</p>
 <p>玩家杀死生物时背包的沙子(1.10.x)/砂土(1.11)会变成灵魂沙(1.10.x)/灵魂土(1.11)。</p>
 <p>在泥土上放置草丛可以得到草方块。</p>
-<p>如果需要前往他人岛屿，让管理员协助你传送过去，然后你使用<code>/trigger cppHome</code>来设置当前位置为你的空岛岛屿。</p>
+<p>使用<code>/trigger cppHome</code>可以返回自己的岛屿(1.11)。如果需要前往他人岛屿，让管理员协助你传送过去，然后你使用<code>/trigger cppSetHome</code>来重新设置自己岛屿位置。</p>
 
 <h3>1.9 版本空岛</h3>
 <p>空岛模式会在y=0处为空气时自动开启，建议玩家使用自定义超平坦如<code>minecraft:air;minecraft:flower_forest;</code>进入。如果需要在普通世界开启本模块，请输入<code>/scoreboard players set #skyislandMode cppValue 1</code>。</p>
 <p>该数据包旨在为空岛玩家提供从泥土到末地的完整科技链。加载后会生成一块基岩和一个箱子，箱子内包含1泥土、1橡树树苗、16骨粉。</p>
-<p>空岛模式下不会生成模组的结构，不同玩家的间距默认为200米。</p>
+<p>空岛模式下不会生成模组的结构，不同玩家的间距默认为1000米。</p>
 <p>玩家破坏树叶会额外掉落骨粉和线。</p>
 <p>在熔炉上方放置雪块可将其变成方块破坏器，之后在其上方放置泥土/砂砾/圆石/石头/沙子/灵魂沙，然后右击方块破坏器可以打碎该方块。掉落物如下：</p>
 <table style="font-size:88%;text-align:center">
@@ -9982,7 +10004,7 @@
 		<a href="https://space.bilibili.com/4469715"><img src="items/bilibili.png" alt="哔哩哔哩" /></a>
 </p>
 
-<p>最后更新 2020-03-27</p>
+<p>最后更新 2020-03-28</p>
 </footer>
 
 </article>
