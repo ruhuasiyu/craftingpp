@@ -909,7 +909,7 @@
 <tr><th><strong id="山脉之肢">山脉之肢</strong></th>
 	<td><a class="ui ci limb_of_ridge"></a></td>
 	<td><code>cpp:limb_of_ridge</code></td>
-	<td>牛/驴/马/骡/羊驼/行商羊驼/哞菇/猪/北极熊/兔子/羊/熊猫/疣猪兽被玩家杀死时，有<code>2.5%+抢夺等级×1%</code>的几率掉落。</td>
+	<td>牛/驴/马/骡/羊驼/行商羊驼/哞菇/猪/北极熊/兔子/羊/熊猫/疣猪兽/炽足兽被玩家杀死时，有<code>2.5%+抢夺等级×1%</code>的几率掉落。</td>
 </tr>
 <tr><th><strong id="泥土之魂">泥土之魂</strong></th>
 	<td><a class="ui ci soul_of_dirt"></a></td>
@@ -7667,7 +7667,7 @@
 <h3 id="花草">花草</h3>
 <p>新增34种花草，天然生成在主世界草方块上。</p>
 <p>前20种花草在合成器中合成为3个对应种子。一共4个生长阶段，成熟后收割可获得相应花草，否则只能获得种子。作物不受时运影响，可用骨粉催熟。每个花草都对应一个实体，大面积种植可能会卡顿。收获成熟的小麦、胡萝卜、马铃薯和甜菜根有5%几率获得六种花草种子，其余花草种子可以通过杂交得到：当一种作物将要生长成熟时，若邻近的花草可杂交，则有5%几率变异为其它花草。</p>
-<p><span class="version">1.10 起</span> 后14种野花在空岛模式下可以通过对草方块使用骨粉得到。</p>
+<p><span class="version">1.10.2 起</span> 后13种野花在空岛模式下可以通过对草方块使用骨粉得到。蓝色妖姬使用玫瑰丛+蓝色染料在合成器合成。</p>
 <p>花草可在熔炉熔炼成其它物品，还可用于合成迷之炖菜，见下表。</p>
 
 <table><thead><tr><th>产物</th>
@@ -7938,96 +7938,78 @@
 	<td><a class="ui slime_ball" title="粘液球"></a></td>
 	<td><a class="ui icons18 slowness"></a><span class="lore">缓慢 0:05</span></td>
 </tr>
+</tbody></table>
+
+<table><thead><tr><th>作物</th>
+	<th>名称</th>
+	<th>命名空间ID</th>
+	<th>熔炼</th>
+</tr></thead><tbody>
 <tr><td><a class="ui ci calliopsis"></a></td>
 	<th><strong id="波斯菊">波斯菊</strong></th>
 	<td><code>cpp:calliopsis</code></td>
-	<td>-</td>
 	<td><a class="ui yellow_dye" title="黄色染料"></a></td>
-	<td>-</td>
 </tr>
 <tr><td><a class="ui ci cyclamen"></a></td>
 	<th><strong id="仙客来">仙客来</strong></th>
 	<td><code>cpp:cyclamen</code></td>
-	<td>-</td>
 	<td><a class="ui magenta_dye" title="品红色染料"></a></td>
-	<td>-</td>
 </tr>
 <tr><td><a class="ui ci iris"></a></td>
 	<th><strong id="鸢尾">鸢尾</strong></th>
 	<td><code>cpp:iris</code></td>
-	<td>-</td>
 	<td><a class="ui blue_dye" title="蓝色染料"></a></td>
-	<td>-</td>
 </tr>
 <tr><td><a class="ui ci lilium_pumilum"></a></td>
 	<th><strong id="山丹丹">山丹丹</strong></th>
 	<td><code>cpp:lilium_pumilum</code></td>
-	<td>-</td>
 	<td><a class="ui red_dye" title="红色染料"></a></td>
-	<td>-</td>
 </tr>
 <tr><td><a class="ui ci snowdrop"></a></td>
 	<th><strong id="雪滴花">雪滴花</strong></th>
 	<td><code>cpp:snowdrop</code></td>
-	<td>-</td>
 	<td><a class="ui white_dye" title="白色染料"></a></td>
-	<td>-</td>
 </tr>
 <tr><td><a class="ui ci narcissus"></a></td>
 	<th><strong id="水仙">水仙</strong></th>
 	<td><code>cpp:narcissus</code></td>
-	<td>-</td>
 	<td><a class="ui light_gray_dye" title="淡灰色染料"></a></td>
-	<td>-</td>
 </tr>
 <tr><td><a class="ui ci cole_flower"></a></td>
 	<th><strong id="油菜花">油菜花</strong></th>
 	<td><code>cpp:cole_flower</code></td>
-	<td>-</td>
 	<td><a class="ui yellow_dye" title="黄色染料"></a></td>
-	<td>-</td>
 </tr>
 <tr><td><a class="ui ci lupine"></a></td>
 	<th><strong id="鲁冰花">鲁冰花</strong></th>
 	<td><code>cpp:lupine</code></td>
-	<td>-</td>
 	<td><a class="ui purple_dye" title="紫色染料"></a></td>
-	<td>-</td>
 </tr>
 <tr><td><a class="ui ci crocu"></a></td>
 	<th><strong id="番红花">番红花</strong></th>
 	<td><code>cpp:crocu</code></td>
-	<td>-</td>
 	<td><a class="ui purple_dye" title="紫色染料"></a></td>
-	<td>-</td>
 </tr>
 <tr><td><a class="ui ci pansy"></a></td>
 	<th><strong id="三色堇">三色堇</strong></th>
 	<td><code>cpp:pansy</code></td>
-	<td>-</td>
 	<td><a class="ui purple_dye" title="紫色染料"></a></td>
-	<td>-</td>
 </tr>
 <tr><td><a class="ui ci arabia_speedwell"></a></td>
 	<th><strong id="阿拉伯婆婆纳">阿拉伯婆婆纳</strong></th>
 	<td><code>cpp:arabia_speedwell</code></td>
-	<td>-</td>
 	<td><a class="ui light_blue_dye" title="淡蓝色染料"></a></td>
-	<td>-</td>
 </tr>
 <tr><td><a class="ui ci silene_pendula"></a></td>
 	<th><strong id="矮雪轮">矮雪轮</strong></th>
 	<td><code>cpp:silene_pendula</code></td>
-	<td>-</td>
 	<td><a class="ui pink_dye" title="粉色染料"></a></td>
-	<td>-</td>
 </tr>
 <tr><td><a class="ui ci blue_rose"></a></td>
 	<th><strong id="蓝色妖姬">蓝色妖姬</strong></th>
 	<td><code>cpp:blue_rose</code></td>
-	<td>-</td>
 	<td><a class="ui blue_dye" title="蓝色染料"></a></td>
-	<td>-</td></tr>
+</tr>
 </tbody></table>
 
 <h3 id="圣诞花">圣诞花 <code>cpp:poinsettia</code></h3>
