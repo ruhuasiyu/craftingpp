@@ -382,16 +382,16 @@
 	<th>下载地址</th></tr></thead>
 <tbody>
 	<tr>
-		<td>Java版快照 20w14a</td>
-		<td>快照 v1.11-0407</td>
-		<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/tree/master/versions/1.11/v1.11-0407.zip">GitHub</a> |
-			<a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.11-0407.zip">官方</a></td>
+		<td>Java版快照 20w15a</td>
+		<td>快照 v1.11-0409</td>
+		<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/tree/master/versions/1.11/v1.11-0409.zip">GitHub</a> |
+			<a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.11-0409.zip">官方</a></td>
 	</tr>
 	<tr>
 		<td>Java版 1.15.2</td>
-		<td>v1.10.2</td>
-		<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/releases/tag/v1.10.2">GitHub</a> |
-			<a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.10.2.zip">官方</a></td>
+		<td>v1.10.3</td>
+		<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/releases/tag/v1.10.3">GitHub</a> |
+			<a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.10.3.zip">官方</a></td>
 	</tr>
 	<tr>
 		<td>Java版 1.14.x</td>
@@ -2646,6 +2646,7 @@
 	<td><a class="ui mycelium" title="菌丝"></a></td>
 	<td><a class="ui podzol" title="灰化土"></a></td>
 	<td><a class="ui gravel" title="砂砾"></a></td>
+	<td><a class="ui gilded_blackstone" title="镶金黑石"></a></td>
 	<td><a class="ui clay" title="粘土块"></a></td>
 	<td><a class="ui snow_block" title="雪块"></a></td>
 	<th rowspan="2"><a class="ui stone_hoe" title="石锄"></a></th>
@@ -2660,12 +2661,12 @@
 	<td></td>
 	<td></td>
 	<td></td>
-	<td></td>
 </tr>
 <tr><td><a class="ui dirt" title="泥土"></a></td>
 	<td><a class="ui dirt" title="泥土"></a></td>
 	<td><a class="ui dirt" title="泥土"></a></td>
 	<td><a class="ui flint" title="燧石"></a></td>
+	<td><a class="ui gold_nugget" title="金粒"><span class="stack">2-5</span></a></td>
 	<td><a class="ui clay_ball" title="粘土球"><span class="stack">4</span></a></td>
 	<td><a class="ui snowball" title="雪球"><span class="stack">4</span></a></td>
 	<td><a class="ui dirt" title="泥土"></a></td>
@@ -2673,7 +2674,6 @@
 	<td><a class="ui glowstone_dust" title="荧石粉"><span class="stack">4</span></a></td>
 	<td colspan="2"><a class="ui carved_pumpkin" title="雕刻过的南瓜"></a>
 		<a class="ui pumpkin_seeds" title="南瓜种子"><span class="stack">4</span></a></td>
-	<td></td>
 	<td></td>
 	<td></td>
 	<td></td>
@@ -5428,7 +5428,7 @@
 	<tr><td><a class="ui dirt" title="橡树树苗"></a>→<a class="ui grass_block" title="草方块"></a>→<a class="ui stone" title="石头"></a>→<a class="ui sand" title="沙子"></a>→<a class="ui red_sand" title="红沙"></a>→<a class="ui gravel" title="砂砾"></a>→<a class="ui podzol" title="灰化土"></a>→<a class="ui mycelium" title="菌丝"></a>→<a class="ui dirt" title="泥土"></a></td></tr>
 	<tr><td><a class="ui ci water" title="水"></a>→<a class="ui ice" title="冰"></a>→<a class="ui ci water" title="水"></a></td></tr>
 	<tr><td><a class="ui ci lava" title="熔岩"></a>→<a class="ui obsidian" title="黑曜石"></a>→<a class="ui ci lava" title="熔岩"></a></td></tr>
-	<tr><td><a class="ui netherrack" title="地狱岩"></a>→<a class="ui crimson_nylium" title="绯红菌岩"></a>→<a class="ui warped_nylium" title="诡异菌岩"></a>→<a class="ui end_stone" title="末地石"></a>→<a class="ui netherrack" title="地狱岩"></a></td></tr>
+	<tr><td><a class="ui netherrack" title="地狱岩"></a>→<a class="ui crimson_nylium" title="绯红菌岩"></a>→<a class="ui warped_nylium" title="诡异菌岩"></a>→<a class="ui blackstone" title="黑石"></a>→<a class="ui end_stone" title="末地石"></a>→<a class="ui netherrack" title="地狱岩"></a></td></tr>
 	</tbody></table>
 <p><span class="oldversion">1.9.x</span> 右击消耗6点生命值恢复10点魔法值。</p>
 
@@ -9386,7 +9386,7 @@
 </tbody></table>
 
 <h3 id="楼梯">楼梯</h3>
-<p>新增17种楼梯回收为原方块。现在可使用切石机切割木板制作楼梯。</p>
+<p>新增36种楼梯回收为原方块。现在可使用切石机切割木板制作楼梯。</p>
 
 <table><thead><tr><th>名称</th>
 	<th>材料</th>
@@ -9409,7 +9409,7 @@
 </tbody></table>
 
 <h3 id="台阶">台阶</h3>
-<p>新增18种台阶回收为原方块。现在可使用切石机切割木板制作台阶。</p>
+<p>新增39种台阶回收为原方块。现在可使用切石机切割木板制作台阶。</p>
 <table><thead><tr><th>名称</th>
 	<th>材料</th>
 	<th>合成配方</th>
@@ -9458,7 +9458,7 @@
 <!--==================================================================-->
 <h2 id="空岛">空岛</h2>
 <h3>1.10.x-1.11版本空岛</h3>
-<p>空岛模式会在y=0处为空气时自动开启，建议玩家使用自定义超平坦如<code>minecraft:air;minecraft:flower_forest;</code>进入。如果需要在普通世界开启本模块，请管理员输入<code>/scoreboard players set $skyislandMode cppConfig 1</code>并移除所有人的进度。空岛模式下不会生成模组的结构，不同玩家的间距默认为1000米。</p>
+<p>空岛模式会在y=0处为空气时自动开启，建议玩家使用自定义超平坦如<code>minecraft:air;minecraft:flower_forest;</code>进入。空岛模式下不会生成模组的结构，不同玩家的间距默认为1000米。</p>
 <p>玩家首次进入时，会生成一块基岩和一个包含1泥土、4橡树树苗、16骨粉的箱子。玩家破坏树叶会掉落骨粉和<strong>线</strong>，然后参考<a href="#其它原版物品">本模组原版物品合成变动</a>，使用线和8木棍合成<strong>雪球</strong>。
 <p>在堆肥桶上方放置雪块可将其变成<strong>发酵桶</strong>，类似于堆肥桶，放入各种植物或食物满了之后，会产出泥土。</p>
 <p>使用雪球和8泥土合成8<strong>圆石</strong>，制作<strong>熔炉</strong>，在熔炉上方放置雪块可将其变成<strong>方块破坏器</strong>，之后在其上方放置泥土/砂砾/圆石/石头/沙子/灵魂沙，然后右击方块破坏器可以打碎该方块。掉落物如下：</p>
@@ -9526,7 +9526,7 @@
 <p>使用<code>/trigger cppHome</code>可以返回自己的岛屿(1.11)。如果需要前往他人岛屿，让管理员协助你传送过去，然后你使用<code>/trigger cppSetHome</code>来重新设置自己岛屿位置。</p>
 
 <h3>1.9 版本空岛</h3>
-<p>空岛模式会在y=0处为空气时自动开启，建议玩家使用自定义超平坦如<code>minecraft:air;minecraft:flower_forest;</code>进入。如果需要在普通世界开启本模块，请输入<code>/scoreboard players set #skyislandMode cppValue 1</code>。</p>
+<p>空岛模式会在y=0处为空气时自动开启，建议玩家使用自定义超平坦如<code>minecraft:air;minecraft:flower_forest;</code>进入。</p>
 <p>该数据包旨在为空岛玩家提供从泥土到末地的完整科技链。加载后会生成一块基岩和一个箱子，箱子内包含1泥土、1橡树树苗、16骨粉。</p>
 <p>空岛模式下不会生成模组的结构，不同玩家的间距默认为1000米。</p>
 <p>玩家破坏树叶会额外掉落骨粉和线。</p>
@@ -9994,7 +9994,7 @@
 		<a href="https://space.bilibili.com/4469715"><img src="items/bilibili.png" alt="哔哩哔哩" /></a>
 </p>
 
-<p>最后更新 2020-04-07</p>
+<p>最后更新 2020-04-09</p>
 </footer>
 
 </article>

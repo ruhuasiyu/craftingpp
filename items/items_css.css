@@ -474,7 +474,10 @@ span.ui a.sea_lantern, a.sea_lantern{
 .stripped_warped_hyphae         {background-position: -192px -192px;}
 .nether_gold_ore                {background-position: -288px -192px;}
 .twisting_vines                 {background-position: -320px -192px;}
-.polished_basalt                 {background-position: -416px -192px;}
+.polished_basalt                {background-position: -416px -192px;}
+
+.blackstone                     {background-position: -096px -256px;}
+.gilded_blackstone              {background-position: -512px -256px;}
 
 .white_banner_mojang            {background-position: -512px -544px;}
 
