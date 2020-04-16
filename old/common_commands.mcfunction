@@ -1,59 +1,59 @@
-================================== ³öÉúµãÃüÁî ==================================
-ÕÙ»½Ìú¿şÀÜ¡¢Ñ©¿şÀÜ¡¢Äñ
+################################## å‡ºç”Ÿç‚¹å‘½ä»¤ ##################################
+#å¬å”¤é“å‚€å„¡ã€é›ªå‚€å„¡ã€é¸Ÿ
 execute @e[tag=vgolem] ~ ~ ~ summon villager_golem
 execute @e[tag=sgolem] ~ ~ ~ summon snowman
 execute @e[tag=bird] ~ ~ ~ summon bat ~ ~ ~ {Silent:1,ActiveEffects:[{Id:14,ShowParticles:0b,Duration:999999}],Passengers:[{id:minecraft:chicken}]}
 
-==================================    ÒøĞĞ    ===================================
-=====	ĞÂÊÖÀñ°ü
-scoreboard objectives add onceGive dummy ĞÂÊÖ½±Àø
-setblock ~ ~ ~ wall_sign 4 replace {Text1:"{\"text\":\"\"}",Text2:"{\"text\":\"ÓÒ»÷ÁìÈ¡ĞÂÊÖÀñ°ü\",\"color\":\"dark_blue\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/setblock ~ ~-4 ~ redstone_torch\"}}",Text3:"{\"text\":\"¹² $100\",\"color\":\"dark_blue\"}",Text4:"{\"text\":\"\"}"}
+##################################    é“¶è¡Œ    ##################################=
+####=	æ–°æ‰‹ç¤¼åŒ…
+scoreboard objectives add onceGive dummy æ–°æ‰‹å¥–åŠ±
+setblock ~ ~ ~ wall_sign 4 replace {Text1:"{\"text\":\"\"}",Text2:"{\"text\":\"å³å‡»é¢†å–æ–°æ‰‹ç¤¼åŒ…\",\"color\":\"dark_blue\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/setblock ~ ~-4 ~ redstone_torch\"}}",Text3:"{\"text\":\"å…± $100\",\"color\":\"dark_blue\"}",Text4:"{\"text\":\"\"}"}
 
 
-setblock ~ ~ ~ wall_sign 4 replace {Text1:"{\"text\":\"\"}",Text2:"{\"text\":\"ÓÒ»÷ÁìÈ¡ĞÂÊÖÀñ°ü\",\"color\":\"dark_blue\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/kill @s\"}}",Text3:"{\"text\":\"¹² 100 ×êÊ¯\",\"color\":\"dark_blue\"}",Text4:"{\"text\":\"\"}"}
+setblock ~ ~ ~ wall_sign 4 replace {Text1:"{\"text\":\"\"}",Text2:"{\"text\":\"å³å‡»é¢†å–æ–°æ‰‹ç¤¼åŒ…\",\"color\":\"dark_blue\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/kill @s\"}}",Text3:"{\"text\":\"å…± 100 é’»çŸ³\",\"color\":\"dark_blue\"}",Text4:"{\"text\":\"\"}"}
 
 
 scoreboard players add @a onceGive 0
 scoreboard players add @p[score_onceGive=0] CK 100
 scoreboard players add @p[score_onceGive=0] onceGive 1
-=====	»»Áã
-summon villager ~ ~.5 ~ {Rotation:[90f,0f],NoAI:true,Invulnerable:true,CustomName:"»»Áã",CustomNameVisible:true,Profession:1,Silent:true,Offers:{Recipes:[
+####=	æ¢é›¶
+summon villager ~ ~.5 ~ {Rotation:[90f,0f],NoAI:true,Invulnerable:true,CustomName:"æ¢é›¶",CustomNameVisible:true,Profession:1,Silent:true,Offers:{Recipes:[
 {maxUses:99999999,rewardExp:0b,buy:{id:minecraft:emerald,Count:9},sell:{id:minecraft:emerald_block,Count:1b}},
 {maxUses:99999999,rewardExp:0b,buy:{id:minecraft:emerald_block,Count:1b},sell:{id:minecraft:emerald,Count:9}},
-{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:emerald,Count:1b},sell:{id:minecraft:paper,Count:10b,tag:{ench:[{id:999}],display:{Name:"Ò»Ôª"}}}},
-{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:paper,Count:10b,tag:{ench:[{id:999}],display:{Name:"Ò»Ôª"}}},sell:{id:minecraft:emerald,Count:1b}}]}}
+{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:emerald,Count:1b},sell:{id:minecraft:paper,Count:10b,tag:{ench:[{id:999}],display:{Name:"ä¸€å…ƒ"}}}},
+{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:paper,Count:10b,tag:{ench:[{id:999}],display:{Name:"ä¸€å…ƒ"}}},sell:{id:minecraft:emerald,Count:1b}}]}}
 
-summon villager ~ ~.5 ~ {Rotation:[90f,0f],NoAI:true,Invulnerable:true,CustomName:"»»Áã",CustomNameVisible:true,Profession:1,Silent:true,Offers:{Recipes:[{maxUses:99999999,rewardExp:0b,buy:{id:"minecraft:emerald",Count:9},sell:{id:"minecraft:emerald_block",Count:1b}},{maxUses:99999999,rewardExp:0b,buy:{id:"minecraft:emerald_block",Count:1b},sell:{id:"minecraft:emerald",Count:9}},{maxUses:99999999,rewardExp:0b,buy:{id:"minecraft:emerald",Count:1b},sell:{id:"minecraft:paper",Count:10b,tag:{ench:[{}],display:{Name:"Ò»Ôª"}}}},{maxUses:99999999,rewardExp:0b,buy:{id:"minecraft:paper",Count:10b,tag:{ench:[{}],display:{Name:"Ò»Ôª"}}},sell:{id:"minecraft:emerald",Count:1b}}]}}
+summon villager ~ ~.5 ~ {Rotation:[90f,0f],NoAI:true,Invulnerable:true,CustomName:"æ¢é›¶",CustomNameVisible:true,Profession:1,Silent:true,Offers:{Recipes:[{maxUses:99999999,rewardExp:0b,buy:{id:"minecraft:emerald",Count:9},sell:{id:"minecraft:emerald_block",Count:1b}},{maxUses:99999999,rewardExp:0b,buy:{id:"minecraft:emerald_block",Count:1b},sell:{id:"minecraft:emerald",Count:9}},{maxUses:99999999,rewardExp:0b,buy:{id:"minecraft:emerald",Count:1b},sell:{id:"minecraft:paper",Count:10b,tag:{ench:[{}],display:{Name:"ä¸€å…ƒ"}}}},{maxUses:99999999,rewardExp:0b,buy:{id:"minecraft:paper",Count:10b,tag:{ench:[{}],display:{Name:"ä¸€å…ƒ"}}},sell:{id:"minecraft:emerald",Count:1b}}]}}
 
-give @p paper 1 0 {ench:[{id:999s}],display:{Name:"Ò»Ôª"}}
+give @p paper 1 0 {ench:[{id:999s}],display:{Name:"ä¸€å…ƒ"}}
 
-=====	´æÇ®(1ÂÌ±¦Ê¯=$10)
+####=	å­˜é’±(1ç»¿å®çŸ³=$10)
 testfor @a[x=209,y=64,z=239,dx=6,dy=6,dz=6]
-tellraw @a[x=209,y=64,z=239,dx=6,dy=6,dz=6] {"text":"Çë½«ÂÌ±¦Ê¯Öğ¸öÍ¶ÖÁ·ÛÉ«ÇøÓò£¬Ã¿¸ö¼ÛÖµ$10\nÇë½«ÂÌ±¦Ê¯¿éÖğ¸öÍ¶ÖÁ×ÏÉ«ÇøÓò£¬Ã¿¸ö¼ÛÖµ$90","color":"yellow"}
+tellraw @a[x=209,y=64,z=239,dx=6,dy=6,dz=6] {"text":"è¯·å°†ç»¿å®çŸ³é€ä¸ªæŠ•è‡³ç²‰è‰²åŒºåŸŸï¼Œæ¯ä¸ªä»·å€¼$10\nè¯·å°†ç»¿å®çŸ³å—é€ä¸ªæŠ•è‡³ç´«è‰²åŒºåŸŸï¼Œæ¯ä¸ªä»·å€¼$90","color":"yellow"}
 tellraw @p {"text":"","color":"yellow"}
 scoreboard players add @p CK 10
 
-=====	È¡Ç®
+####=	å–é’±
 summon falling_block ~ ~2 ~ {Time:1,Block:"minecraft:redstone_block",Passengers:[
 {id:"falling_block",Time:1,Block:"minecraft:activator_rail",Passengers:[
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~ wall_sign 2 replace {
-Text1:\"{\\\"text\\\":\\\"\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"tellraw @p[r=4,score_CK=9] {\\\\\\\"text\\\\\\\":\\\\\\\"Óà¶î²»×ã\\\\\\\",\\\\\\\"color\\\\\\\":\\\\\\\"red\\\\\\\"}\\\"}}\",
-Text2:\"{\\\"text\\\":\\\"¶Ò»»ÂÌ±¦Ê¯\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=10] minecraft:emerald\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text1:\"{\\\"text\\\":\\\"\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"tellraw @p[r=4,score_CK=9] {\\\\\\\"text\\\\\\\":\\\\\\\"ä½™é¢ä¸è¶³\\\\\\\",\\\\\\\"color\\\\\\\":\\\\\\\"red\\\\\\\"}\\\"}}\",
+Text2:\"{\\\"text\\\":\\\"å…‘æ¢ç»¿å®çŸ³\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=10] minecraft:emerald\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$10\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players add @p[r=4,score_CK=9] CK 10 \\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=10] CK 10\\\"}}\"}"},
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~ wall_sign 2 replace {
-Text1:\"{\\\"text\\\":\\\"\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"tellraw @p[r=4,score_CK=89] {\\\\\\\"text\\\\\\\":\\\\\\\"Óà¶î²»×ã\\\\\\\",\\\\\\\"color\\\\\\\":\\\\\\\"red\\\\\\\"}\\\"}}\",
-Text2:\"{\\\"text\\\":\\\"¶Ò»»ÂÌ±¦Ê¯¿é\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=90] minecraft:emerald_block\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text1:\"{\\\"text\\\":\\\"\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"tellraw @p[r=4,score_CK=89] {\\\\\\\"text\\\\\\\":\\\\\\\"ä½™é¢ä¸è¶³\\\\\\\",\\\\\\\"color\\\\\\\":\\\\\\\"red\\\\\\\"}\\\"}}\",
+Text2:\"{\\\"text\\\":\\\"å…‘æ¢ç»¿å®çŸ³å—\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=90] minecraft:emerald_block\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$90\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players add @p[r=4,score_CK=89] CK 90 \\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=90] CK 90\\\"}}\"}"},
 {id:"commandblock_minecart",Command:"setblock ~ ~-1 ~ minecraft:lava 7 replace"},
 {id:"commandblock_minecart",Command:"fill ~ ~ ~ ~ ~-1 ~ minecraft:air 0 replace"}]}]}
-summon falling_block ~ ~2 ~ {Time:1,Block:"minecraft:redstone_block",Passengers:[{id:"falling_block",Time:1,Block:"minecraft:activator_rail",Passengers:[{id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~ wall_sign 2 replace {Text1:\"{\\\"text\\\":\\\"\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"tellraw @p[r=4,score_CK=9] {\\\\\\\"text\\\\\\\":\\\\\\\"Óà¶î²»×ã\\\\\\\",\\\\\\\"color\\\\\\\":\\\\\\\"red\\\\\\\"}\\\"}}\",Text2:\"{\\\"text\\\":\\\"¶Ò»»ÂÌ±¦Ê¯\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=10] minecraft:emerald\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",Text3:\"{\\\"text\\\":\\\"$10\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players add @p[r=4,score_CK=9] CK 10 \\\"},\\\"color\\\":\\\"dark_blue\\\"}\",Text4:\"{\\\"text\\\":\\\"\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=10] CK 10\\\"}}\"}"},{id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~ wall_sign 2 replace {Text1:\"{\\\"text\\\":\\\"\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"tellraw @p[r=4,score_CK=89] {\\\\\\\"text\\\\\\\":\\\\\\\"Óà¶î²»×ã\\\\\\\",\\\\\\\"color\\\\\\\":\\\\\\\"red\\\\\\\"}\\\"}}\",Text2:\"{\\\"text\\\":\\\"¶Ò»»ÂÌ±¦Ê¯¿é\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=90] minecraft:emerald_block\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",Text3:\"{\\\"text\\\":\\\"$90\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players add @p[r=4,score_CK=89] CK 90 \\\"},\\\"color\\\":\\\"dark_blue\\\"}\",Text4:\"{\\\"text\\\":\\\"\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=90] CK 90\\\"}}\"}"},{id:"commandblock_minecart",Command:"setblock ~ ~-1 ~ minecraft:lava 7 replace"},{id:"commandblock_minecart",Command:"fill ~ ~ ~ ~ ~-1 ~ minecraft:air 0 replace"}]}]}
+summon falling_block ~ ~2 ~ {Time:1,Block:"minecraft:redstone_block",Passengers:[{id:"falling_block",Time:1,Block:"minecraft:activator_rail",Passengers:[{id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~ wall_sign 2 replace {Text1:\"{\\\"text\\\":\\\"\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"tellraw @p[r=4,score_CK=9] {\\\\\\\"text\\\\\\\":\\\\\\\"ä½™é¢ä¸è¶³\\\\\\\",\\\\\\\"color\\\\\\\":\\\\\\\"red\\\\\\\"}\\\"}}\",Text2:\"{\\\"text\\\":\\\"å…‘æ¢ç»¿å®çŸ³\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=10] minecraft:emerald\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",Text3:\"{\\\"text\\\":\\\"$10\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players add @p[r=4,score_CK=9] CK 10 \\\"},\\\"color\\\":\\\"dark_blue\\\"}\",Text4:\"{\\\"text\\\":\\\"\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=10] CK 10\\\"}}\"}"},{id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~ wall_sign 2 replace {Text1:\"{\\\"text\\\":\\\"\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"tellraw @p[r=4,score_CK=89] {\\\\\\\"text\\\\\\\":\\\\\\\"ä½™é¢ä¸è¶³\\\\\\\",\\\\\\\"color\\\\\\\":\\\\\\\"red\\\\\\\"}\\\"}}\",Text2:\"{\\\"text\\\":\\\"å…‘æ¢ç»¿å®çŸ³å—\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=90] minecraft:emerald_block\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",Text3:\"{\\\"text\\\":\\\"$90\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players add @p[r=4,score_CK=89] CK 90 \\\"},\\\"color\\\":\\\"dark_blue\\\"}\",Text4:\"{\\\"text\\\":\\\"\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=90] CK 90\\\"}}\"}"},{id:"commandblock_minecart",Command:"setblock ~ ~-1 ~ minecraft:lava 7 replace"},{id:"commandblock_minecart",Command:"fill ~ ~ ~ ~ ~-1 ~ minecraft:air 0 replace"}]}]}
 
 
 setblock ~2 ~-1 ~ wall_sign 2 replace {
-Text1:"{\"text\":\"\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"tellraw @p[r=4,score_CK=9] {\\\"text\\\":\\\"Óà¶î²»×ã\\\",\\\"color\\\":\\\"red\\\"}\"}}",
-Text2:"{\"text\":\"¶Ò»»ÂÌ±¦Ê¯\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"give @p[score_CK_min=10] minecraft:emerald\"},\"color\":\"dark_blue\"}",
+Text1:"{\"text\":\"\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"tellraw @p[r=4,score_CK=9] {\\\"text\\\":\\\"ä½™é¢ä¸è¶³\\\",\\\"color\\\":\\\"red\\\"}\"}}",
+Text2:"{\"text\":\"å…‘æ¢ç»¿å®çŸ³\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"give @p[score_CK_min=10] minecraft:emerald\"},\"color\":\"dark_blue\"}",
 Text3:"{\"text\":\"$10\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"scoreboard players add @p[r=4,score_CK=9] CK 10 \"},\"color\":\"dark_blue\"}",
 Text4:"{\"text\":\"\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"scoreboard players remove @p[score_CK_min=10] CK 10\"}}"}
 
@@ -62,9 +62,9 @@ give @s diamond_helmet 1 0 {AttributeModifiers:[{Operation:0,Amount:3,AttributeN
 
 
 
-=====	ÀûÏ¢ÉèÖÃ
-»ù×¼ÀûÂÊÎª25%%,µİÍÆÔö¼Ó5%%;Ã¿ÈÕÀûÂÊ¡À1%%
-scoreboard objectives add CK dummy ´æ¿î
+####=	åˆ©æ¯è®¾ç½®
+åŸºå‡†åˆ©ç‡ä¸º25%%,é€’æ¨å¢åŠ 5%%;æ¯æ—¥åˆ©ç‡Â±1%%
+scoreboard objectives add CK dummy å­˜æ¬¾
 scoreboard objectives setdisplay sidebar CK
 scoreboard objectives add temp dummy
 scoreboard players set #bankFloatRate1 CK 25
@@ -98,369 +98,369 @@ summon falling_block ~ ~1 ~ {Block:stone,Time:1,Passengers:[{id:minecraft:fallin
 {id:minecraft:commandblock_minecart,Command:scoreboard players operation @a[score_CK=99999,score_CK_min=10000] temp /= #bankRate3 CK},
 {id:minecraft:commandblock_minecart,Command:scoreboard players operation @a[score_CK=999999,score_CK_min=100000] temp /= #bankRate4 CK},
 {id:minecraft:commandblock_minecart,Command:scoreboard players operation @a[score_CK_min=1000000] temp /= #bankRate5 CK},
-{id:minecraft:commandblock_minecart,Command:tellraw @a [{"text":"½ñÈÕ»ù×¼ÀûÂÊÎª£º","color":"yellow"},{"score":{"name":"#bankFloatRate1","objective":"CK"},"color":"gold"},{"text":"%%"}]},
-{id:minecraft:commandblock_minecart,Command:tellraw @a [{"text":"½ñÈÕÀûÏ¢ÒÑ·¢·Å£¬¹²¼Æ£º","color":"yellow"},{"score":{"name":"*","objective":"temp"},"color":"gold"},{"text":"Ôª","color":"yellow"}]},
+{id:minecraft:commandblock_minecart,Command:tellraw @a [{"text":"ä»Šæ—¥åŸºå‡†åˆ©ç‡ä¸ºï¼š","color":"yellow"},{"score":{"name":"#bankFloatRate1","objective":"CK"},"color":"gold"},{"text":"%%"}]},
+{id:minecraft:commandblock_minecart,Command:tellraw @a [{"text":"ä»Šæ—¥åˆ©æ¯å·²å‘æ”¾ï¼Œå…±è®¡ï¼š","color":"yellow"},{"score":{"name":"*","objective":"temp"},"color":"gold"},{"text":"å…ƒ","color":"yellow"}]},
 {id:minecraft:commandblock_minecart,Command:scoreboard players operation @a CK += @a temp},
 {id:minecraft:commandblock_minecart,Command:setblock ~ ~ ~1 command_block 0 replace {Command:fill ~ ~-2 ~-1 ~ ~ ~ air}},
 {id:minecraft:commandblock_minecart,Command:setblock ~ ~-1 ~1 redstone_block},
 {id:minecraft:commandblock_minecart,Command:kill @e[type=commandblock_minecart,r=1]}]}]}]}
 
-====================================ÒÕÊõÊĞ³¡====================================
-====	¶«Õ¹Ìü
-µòÁé
-°ëÉíÏñ
-°¢¶û°ÍÄáÑÇÈË
+####################################è‰ºæœ¯å¸‚åœº####################################
+####	ä¸œå±•å…
+å‡‹çµ
+åŠèº«åƒ
+é˜¿å°”å·´å°¼äºšäºº
 Creebet
-Âş²½Õß
-¿â¶û±´
-Í·¹ÇÓëÃµ¹å
-»ğ²ñ
-Ö²Îï
-Õ¨µ¯
-È¼ÉÕµÄÍ·¹Ç
-ÖíµÄÍ·Ïñ
-Ğé¿Õ
-°¢×ÈÌØ¿Ë2
-¿¾Èâ´®
-³ØÌÁ
-÷¼÷Ã
-ÈÕÂä
-»ÄµØ
-°¢×ÈÌØ¿Ë
-½ğ¸Õ
-´óº£
-¸ñÀ×Ä·
-Ö¸Õë
-±ÈÎäÕß
+æ¼«æ­¥è€…
+åº“å°”è´
+å¤´éª¨ä¸ç«ç‘°
+ç«æŸ´
+æ¤ç‰©
+ç‚¸å¼¹
+ç‡ƒçƒ§çš„å¤´éª¨
+çŒªçš„å¤´åƒ
+è™šç©º
+é˜¿å…¹ç‰¹å…‹2
+çƒ¤è‚‰ä¸²
+æ± å¡˜
+éª·é«…
+æ—¥è½
+è’åœ°
+é˜¿å…¹ç‰¹å…‹
+é‡‘åˆš
+å¤§æµ·
+æ ¼é›·å§†
+æŒ‡é’ˆ
+æ¯”æ­¦è€…
 Stage
 
 testfor @a[x=225,y=63,z=236,dx=50,dy=9,dz=28]
 tellraw @a[x=225,y=63,z=236,dx=50,dy=9,dz=28]
-[{"text":"»¶Ó­À´µ½ÃÀÊõ¹İ£¡\n","color":"yellow"},
-{"text":"¶«Õ¹ÌüÕ¹³öµÄÊÇKristoffer ZetterstrandµÄ×÷Æ·\n","color":"light_purple"},
-{"text":"Î÷Õ¹ÌüÕ¹³öµÄÊÇÒ»Ğ©ÊÀ½çÃû»­\n","color":"light_purple"},
-{"text":"Äú»¹¿ÉÒÔ¹ºÂòËüÃÇµÄ·ÂÖÆÆ·Áô×Å¼ÍÄî","color":"red"}]
+[{"text":"æ¬¢è¿æ¥åˆ°ç¾æœ¯é¦†ï¼\n","color":"yellow"},
+{"text":"ä¸œå±•å…å±•å‡ºçš„æ˜¯Kristoffer Zetterstrandçš„ä½œå“\n","color":"light_purple"},
+{"text":"è¥¿å±•å…å±•å‡ºçš„æ˜¯ä¸€äº›ä¸–ç•Œåç”»\n","color":"light_purple"},
+{"text":"æ‚¨è¿˜å¯ä»¥è´­ä¹°å®ƒä»¬çš„ä»¿åˆ¶å“ç•™ç€çºªå¿µ","color":"red"}]
 summon painting 257 65 251 {Facing:1b,Motive:"Pointer"}
 
-====	Î÷Õ¹Ìü
-×ÔÓÉÒıµ¼ÈËÃñ	Å·ÈÊ¡¤µÂÀ­¿ËÂŞÍß	1830
-ÄªÄÎ»¨Ô°		¿ËÀÍµÂ¡¤ÄªÄÎ		~1870
-ÈÕ³ö¡¤Ó¡Ïó		¿ËÀÍµÂ¡¤ÄªÄÎ		1872
-ÏòÈÕ¿û			ÎÄÉ­ÌØ¡¤ÍşÁ®¡¤èó¸ß	1888
-ĞÇÒ¹			ÎÄÉ­ÌØ¡¤ÍşÁ®¡¤èó¸ß	1889
-ÄÅº°			°®µÂ»ª¡¤ÃÉ¿Ë		1893
-Ê°ËëÕß			ÈÃ¡¤¸¥ÀÊË÷Íß¡¤Ã×ÀÕ	1857
-ÃÉÄÈÀöÉ¯		°ÂÄÉ¶à¡¤´ï¡¤·ÒÆæ	1504
-×îºóµÄÍí²Í		°ÂÄÉ¶à¡¤´ï¡¤·ÒÆæ	1498
-ÂäÏ¼¹ÂğÍÍ¼		ÌÆÒú				Ã÷´ú
-ÖñÊ¯Í¼			¹é×¯				Çå´ú
-´º	2008/03/17
-ÏÄ	2015/05/28
-Çï	2014/11/29
-¶¬	2015/01/28
+####	è¥¿å±•å…
+è‡ªç”±å¼•å¯¼äººæ°‘	æ¬§ä»Â·å¾·æ‹‰å…‹ç½—ç“¦	1830
+è«å¥ˆèŠ±å›­		å…‹åŠ³å¾·Â·è«å¥ˆ		~1870
+æ—¥å‡ºÂ·å°è±¡		å…‹åŠ³å¾·Â·è«å¥ˆ		1872
+å‘æ—¥è‘µ			æ–‡æ£®ç‰¹Â·å¨å»‰Â·æ¢µé«˜	1888
+æ˜Ÿå¤œ			æ–‡æ£®ç‰¹Â·å¨å»‰Â·æ¢µé«˜	1889
+å‘å–Š			çˆ±å¾·åÂ·è’™å…‹		1893
+æ‹¾ç©—è€…			è®©Â·å¼—æœ—ç´¢ç“¦Â·ç±³å‹’	1857
+è’™å¨œä¸½è		å¥¥çº³å¤šÂ·è¾¾Â·èŠ¬å¥‡	1504
+æœ€åçš„æ™šé¤		å¥¥çº³å¤šÂ·è¾¾Â·èŠ¬å¥‡	1498
+è½éœå­¤é¹œå›¾		å”å¯…				æ˜ä»£
+ç«¹çŸ³å›¾			å½’åº„				æ¸…ä»£
+æ˜¥	2008/03/17
+å¤	2015/05/28
+ç§‹	2014/11/29
+å†¬	2015/01/28
 
 setblock ~ ~ ~ wall_sign 3 replace {
-Text1:"{\"text\":\"ÄÅº°\",\"color\":\"dark_blue\"}",
-Text2:"{\"text\":\"×÷Õß£ºµÂÀ­¿ËÂŞÍß\",\"color\":\"dark_purple\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"execute @p[score_CK_min=120] ~ ~ ~ summon area_effect_cloud ~ ~ ~ {Passengers:[
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÄÅº°\\\",Lore:[\\\"1/12\\\"]}},Damage:10000s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÄÅº°\\\",Lore:[\\\"2/12\\\"]}},Damage:10001s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÄÅº°\\\",Lore:[\\\"3/12\\\"]}},Damage:10002s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÄÅº°\\\",Lore:[\\\"4/12\\\"]}},Damage:10003s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÄÅº°\\\",Lore:[\\\"5/12\\\"]}},Damage:10004s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÄÅº°\\\",Lore:[\\\"6/12\\\"]}},Damage:10005s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÄÅº°\\\",Lore:[\\\"7/12\\\"]}},Damage:10006s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÄÅº°\\\",Lore:[\\\"8/12\\\"]}},Damage:10007s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÄÅº°\\\",Lore:[\\\"9/12\\\"]}},Damage:10008s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÄÅº°\\\",Lore:[\\\"10/12\\\"]}},Damage:10009s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÄÅº°\\\",Lore:[\\\"11/12\\\"]}},Damage:10010s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÄÅº°\\\",Lore:[\\\"12/12\\\"]}},Damage:10011s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-]}\"}}",Text3:"{\"text\":\"1893\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"scoreboard players remove @p[score_CK_min=120] CK 120 \"},\"color\":\"dark_purple\"}",Text4:"{\"text\":\"ÊÛ¼Û£º$120\",\"color\":\"dark_blue\"}"}
+Text1:"{\"text\":\"å‘å–Š\",\"color\":\"dark_blue\"}",
+Text2:"{\"text\":\"ä½œè€…ï¼šå¾·æ‹‰å…‹ç½—ç“¦\",\"color\":\"dark_purple\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"execute @p[score_CK_min=120] ~ ~ ~ summon area_effect_cloud ~ ~ ~ {Passengers:[
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"å‘å–Š\\\",Lore:[\\\"1/12\\\"]}},Damage:10000s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"å‘å–Š\\\",Lore:[\\\"2/12\\\"]}},Damage:10001s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"å‘å–Š\\\",Lore:[\\\"3/12\\\"]}},Damage:10002s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"å‘å–Š\\\",Lore:[\\\"4/12\\\"]}},Damage:10003s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"å‘å–Š\\\",Lore:[\\\"5/12\\\"]}},Damage:10004s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"å‘å–Š\\\",Lore:[\\\"6/12\\\"]}},Damage:10005s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"å‘å–Š\\\",Lore:[\\\"7/12\\\"]}},Damage:10006s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"å‘å–Š\\\",Lore:[\\\"8/12\\\"]}},Damage:10007s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"å‘å–Š\\\",Lore:[\\\"9/12\\\"]}},Damage:10008s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"å‘å–Š\\\",Lore:[\\\"10/12\\\"]}},Damage:10009s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"å‘å–Š\\\",Lore:[\\\"11/12\\\"]}},Damage:10010s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"å‘å–Š\\\",Lore:[\\\"12/12\\\"]}},Damage:10011s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+]}\"}}",Text3:"{\"text\":\"1893\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"scoreboard players remove @p[score_CK_min=120] CK 120 \"},\"color\":\"dark_purple\"}",Text4:"{\"text\":\"å”®ä»·ï¼š$120\",\"color\":\"dark_blue\"}"}
 
 setblock ~ ~ ~ wall_sign 2 replace {
-Text1:"{\"text\":\"ÃÉÄÈÀöÉ¯\",\"color\":\"dark_blue\"}",
-Text2:"{\"text\":\"×÷Õß£º´ï¡¤·ÒÆæ\",\"color\":\"dark_purple\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"execute @p[score_CK_min=60] ~ ~ ~ summon area_effect_cloud ~ ~ ~ {Passengers:[
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÃÉÄÈÀöÉ¯\\\",Lore:[\\\"1/6\\\"]}},Damage:10012s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÃÉÄÈÀöÉ¯\\\",Lore:[\\\"2/6\\\"]}},Damage:10013s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÃÉÄÈÀöÉ¯\\\",Lore:[\\\"3/6\\\"]}},Damage:10014s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÃÉÄÈÀöÉ¯\\\",Lore:[\\\"4/6\\\"]}},Damage:10015s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÃÉÄÈÀöÉ¯\\\",Lore:[\\\"5/6\\\"]}},Damage:10016s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÃÉÄÈÀöÉ¯\\\",Lore:[\\\"6/6\\\"]}},Damage:10017s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-]}\"}}",Text3:"{\"text\":\"1504\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"scoreboard players remove @p[score_CK_min=60] CK 60 \"},\"color\":\"dark_purple\"}",Text4:"{\"text\":\"ÊÛ¼Û£º$60\",\"color\":\"dark_blue\"}"}
+Text1:"{\"text\":\"è’™å¨œä¸½è\",\"color\":\"dark_blue\"}",
+Text2:"{\"text\":\"ä½œè€…ï¼šè¾¾Â·èŠ¬å¥‡\",\"color\":\"dark_purple\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"execute @p[score_CK_min=60] ~ ~ ~ summon area_effect_cloud ~ ~ ~ {Passengers:[
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"è’™å¨œä¸½è\\\",Lore:[\\\"1/6\\\"]}},Damage:10012s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"è’™å¨œä¸½è\\\",Lore:[\\\"2/6\\\"]}},Damage:10013s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"è’™å¨œä¸½è\\\",Lore:[\\\"3/6\\\"]}},Damage:10014s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"è’™å¨œä¸½è\\\",Lore:[\\\"4/6\\\"]}},Damage:10015s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"è’™å¨œä¸½è\\\",Lore:[\\\"5/6\\\"]}},Damage:10016s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"è’™å¨œä¸½è\\\",Lore:[\\\"6/6\\\"]}},Damage:10017s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+]}\"}}",Text3:"{\"text\":\"1504\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"scoreboard players remove @p[score_CK_min=60] CK 60 \"},\"color\":\"dark_purple\"}",Text4:"{\"text\":\"å”®ä»·ï¼š$60\",\"color\":\"dark_blue\"}"}
 
 setblock ~ ~ ~ wall_sign 2 replace {
-Text1:"{\"text\":\"×îºóµÄÍí²Í\",\"color\":\"dark_blue\"}",
-Text2:"{\"text\":\"×÷Õß£º´ï¡¤·ÒÆæ\",\"color\":\"dark_purple\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"execute @p[score_CK_min=60] ~ ~ ~ summon area_effect_cloud ~ ~ ~ {Passengers:[
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"×îºóµÄÍí²Í\\\",Lore:[\\\"1/6\\\"]}},Damage:10018s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"×îºóµÄÍí²Í\\\",Lore:[\\\"2/6\\\"]}},Damage:10019s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"×îºóµÄÍí²Í\\\",Lore:[\\\"3/6\\\"]}},Damage:10020s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"×îºóµÄÍí²Í\\\",Lore:[\\\"4/6\\\"]}},Damage:10021s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"×îºóµÄÍí²Í\\\",Lore:[\\\"5/6\\\"]}},Damage:10022s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"×îºóµÄÍí²Í\\\",Lore:[\\\"6/6\\\"]}},Damage:10023s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-]}\"}}",Text3:"{\"text\":\"1498\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"scoreboard players remove @p[score_CK_min=60] CK 60 \"},\"color\":\"dark_purple\"}",Text4:"{\"text\":\"ÊÛ¼Û£º$60\",\"color\":\"dark_blue\"}"}
+Text1:"{\"text\":\"æœ€åçš„æ™šé¤\",\"color\":\"dark_blue\"}",
+Text2:"{\"text\":\"ä½œè€…ï¼šè¾¾Â·èŠ¬å¥‡\",\"color\":\"dark_purple\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"execute @p[score_CK_min=60] ~ ~ ~ summon area_effect_cloud ~ ~ ~ {Passengers:[
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"æœ€åçš„æ™šé¤\\\",Lore:[\\\"1/6\\\"]}},Damage:10018s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"æœ€åçš„æ™šé¤\\\",Lore:[\\\"2/6\\\"]}},Damage:10019s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"æœ€åçš„æ™šé¤\\\",Lore:[\\\"3/6\\\"]}},Damage:10020s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"æœ€åçš„æ™šé¤\\\",Lore:[\\\"4/6\\\"]}},Damage:10021s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"æœ€åçš„æ™šé¤\\\",Lore:[\\\"5/6\\\"]}},Damage:10022s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"æœ€åçš„æ™šé¤\\\",Lore:[\\\"6/6\\\"]}},Damage:10023s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+]}\"}}",Text3:"{\"text\":\"1498\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"scoreboard players remove @p[score_CK_min=60] CK 60 \"},\"color\":\"dark_purple\"}",Text4:"{\"text\":\"å”®ä»·ï¼š$60\",\"color\":\"dark_blue\"}"}
 
 setblock ~ ~ ~ wall_sign 5 replace {
-Text1:"{\"text\":\"ÏòÈÕ¿û\",\"color\":\"dark_blue\"}",
-Text2:"{\"text\":\"×÷Õß£ºÎÄÉ­ÌØ¡¤èó¸ß\",\"color\":\"dark_purple\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"execute @p[score_CK_min=120] ~ ~ ~ summon area_effect_cloud ~ ~ ~ {Passengers:[
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÏòÈÕ¿û\\\",Lore:[\\\"1/12\\\"]}},Damage:10024s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÏòÈÕ¿û\\\",Lore:[\\\"2/12\\\"]}},Damage:10025s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÏòÈÕ¿û\\\",Lore:[\\\"3/12\\\"]}},Damage:10026s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÏòÈÕ¿û\\\",Lore:[\\\"4/12\\\"]}},Damage:10027s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÏòÈÕ¿û\\\",Lore:[\\\"5/12\\\"]}},Damage:10028s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÏòÈÕ¿û\\\",Lore:[\\\"6/12\\\"]}},Damage:10029s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÏòÈÕ¿û\\\",Lore:[\\\"7/12\\\"]}},Damage:10030s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÏòÈÕ¿û\\\",Lore:[\\\"8/12\\\"]}},Damage:10031s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÏòÈÕ¿û\\\",Lore:[\\\"9/12\\\"]}},Damage:10032s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÏòÈÕ¿û\\\",Lore:[\\\"10/12\\\"]}},Damage:10033s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÏòÈÕ¿û\\\",Lore:[\\\"11/12\\\"]}},Damage:10034s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÏòÈÕ¿û\\\",Lore:[\\\"12/12\\\"]}},Damage:10035s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-]}\"}}",Text3:"{\"text\":\"1888\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"scoreboard players remove @p[score_CK_min=120] CK 120 \"},\"color\":\"dark_purple\"}",Text4:"{\"text\":\"ÊÛ¼Û£º$120\",\"color\":\"dark_blue\"}"}
+Text1:"{\"text\":\"å‘æ—¥è‘µ\",\"color\":\"dark_blue\"}",
+Text2:"{\"text\":\"ä½œè€…ï¼šæ–‡æ£®ç‰¹Â·æ¢µé«˜\",\"color\":\"dark_purple\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"execute @p[score_CK_min=120] ~ ~ ~ summon area_effect_cloud ~ ~ ~ {Passengers:[
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"å‘æ—¥è‘µ\\\",Lore:[\\\"1/12\\\"]}},Damage:10024s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"å‘æ—¥è‘µ\\\",Lore:[\\\"2/12\\\"]}},Damage:10025s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"å‘æ—¥è‘µ\\\",Lore:[\\\"3/12\\\"]}},Damage:10026s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"å‘æ—¥è‘µ\\\",Lore:[\\\"4/12\\\"]}},Damage:10027s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"å‘æ—¥è‘µ\\\",Lore:[\\\"5/12\\\"]}},Damage:10028s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"å‘æ—¥è‘µ\\\",Lore:[\\\"6/12\\\"]}},Damage:10029s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"å‘æ—¥è‘µ\\\",Lore:[\\\"7/12\\\"]}},Damage:10030s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"å‘æ—¥è‘µ\\\",Lore:[\\\"8/12\\\"]}},Damage:10031s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"å‘æ—¥è‘µ\\\",Lore:[\\\"9/12\\\"]}},Damage:10032s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"å‘æ—¥è‘µ\\\",Lore:[\\\"10/12\\\"]}},Damage:10033s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"å‘æ—¥è‘µ\\\",Lore:[\\\"11/12\\\"]}},Damage:10034s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"å‘æ—¥è‘µ\\\",Lore:[\\\"12/12\\\"]}},Damage:10035s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+]}\"}}",Text3:"{\"text\":\"1888\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"scoreboard players remove @p[score_CK_min=120] CK 120 \"},\"color\":\"dark_purple\"}",Text4:"{\"text\":\"å”®ä»·ï¼š$120\",\"color\":\"dark_blue\"}"}
 
 setblock ~ ~ ~ wall_sign 2 replace {
-Text1:"{\"text\":\"ÈÕ³ö¡¤Ó¡Ïó\",\"color\":\"dark_blue\"}",
-Text2:"{\"text\":\"×÷Õß£º¿ËÀÍµÂ¡¤ÄªÄÎ\",\"color\":\"dark_purple\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"execute @p[score_CK_min=120] ~ ~ ~ summon area_effect_cloud ~ ~ ~ {Passengers:[
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÈÕ³ö¡¤Ó¡Ïó\\\",Lore:[\\\"1/12\\\"]}},Damage:10036s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÈÕ³ö¡¤Ó¡Ïó\\\",Lore:[\\\"2/12\\\"]}},Damage:10037s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÈÕ³ö¡¤Ó¡Ïó\\\",Lore:[\\\"3/12\\\"]}},Damage:10038s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÈÕ³ö¡¤Ó¡Ïó\\\",Lore:[\\\"4/12\\\"]}},Damage:10039s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÈÕ³ö¡¤Ó¡Ïó\\\",Lore:[\\\"5/12\\\"]}},Damage:10040s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÈÕ³ö¡¤Ó¡Ïó\\\",Lore:[\\\"6/12\\\"]}},Damage:10041s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÈÕ³ö¡¤Ó¡Ïó\\\",Lore:[\\\"7/12\\\"]}},Damage:10042s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÈÕ³ö¡¤Ó¡Ïó\\\",Lore:[\\\"8/12\\\"]}},Damage:10043s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÈÕ³ö¡¤Ó¡Ïó\\\",Lore:[\\\"9/12\\\"]}},Damage:10044s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÈÕ³ö¡¤Ó¡Ïó\\\",Lore:[\\\"10/12\\\"]}},Damage:10045s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÈÕ³ö¡¤Ó¡Ïó\\\",Lore:[\\\"11/12\\\"]}},Damage:10046s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÈÕ³ö¡¤Ó¡Ïó\\\",Lore:[\\\"12/12\\\"]}},Damage:10047s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-]}\"}}",Text3:"{\"text\":\"1872\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"scoreboard players remove @p[score_CK_min=120] CK 120 \"},\"color\":\"dark_purple\"}",Text4:"{\"text\":\"ÊÛ¼Û£º$120\",\"color\":\"dark_blue\"}"}
+Text1:"{\"text\":\"æ—¥å‡ºÂ·å°è±¡\",\"color\":\"dark_blue\"}",
+Text2:"{\"text\":\"ä½œè€…ï¼šå…‹åŠ³å¾·Â·è«å¥ˆ\",\"color\":\"dark_purple\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"execute @p[score_CK_min=120] ~ ~ ~ summon area_effect_cloud ~ ~ ~ {Passengers:[
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"æ—¥å‡ºÂ·å°è±¡\\\",Lore:[\\\"1/12\\\"]}},Damage:10036s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"æ—¥å‡ºÂ·å°è±¡\\\",Lore:[\\\"2/12\\\"]}},Damage:10037s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"æ—¥å‡ºÂ·å°è±¡\\\",Lore:[\\\"3/12\\\"]}},Damage:10038s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"æ—¥å‡ºÂ·å°è±¡\\\",Lore:[\\\"4/12\\\"]}},Damage:10039s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"æ—¥å‡ºÂ·å°è±¡\\\",Lore:[\\\"5/12\\\"]}},Damage:10040s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"æ—¥å‡ºÂ·å°è±¡\\\",Lore:[\\\"6/12\\\"]}},Damage:10041s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"æ—¥å‡ºÂ·å°è±¡\\\",Lore:[\\\"7/12\\\"]}},Damage:10042s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"æ—¥å‡ºÂ·å°è±¡\\\",Lore:[\\\"8/12\\\"]}},Damage:10043s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"æ—¥å‡ºÂ·å°è±¡\\\",Lore:[\\\"9/12\\\"]}},Damage:10044s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"æ—¥å‡ºÂ·å°è±¡\\\",Lore:[\\\"10/12\\\"]}},Damage:10045s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"æ—¥å‡ºÂ·å°è±¡\\\",Lore:[\\\"11/12\\\"]}},Damage:10046s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"æ—¥å‡ºÂ·å°è±¡\\\",Lore:[\\\"12/12\\\"]}},Damage:10047s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+]}\"}}",Text3:"{\"text\":\"1872\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"scoreboard players remove @p[score_CK_min=120] CK 120 \"},\"color\":\"dark_purple\"}",Text4:"{\"text\":\"å”®ä»·ï¼š$120\",\"color\":\"dark_blue\"}"}
 
 setblock ~ ~ ~ wall_sign 2 replace {
-Text1:"{\"text\":\"ÄªÄÎ»¨Ô°\",\"color\":\"dark_blue\"}",
-Text2:"{\"text\":\"×÷Õß£º¿ËÀÍµÂ¡¤ÄªÄÎ\",\"color\":\"dark_purple\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"execute @p[score_CK_min=120] ~ ~ ~ summon area_effect_cloud ~ ~ ~ {Passengers:[
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÄªÄÎ»¨Ô°\\\",Lore:[\\\"1/12\\\"]}},Damage:10048s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÄªÄÎ»¨Ô°\\\",Lore:[\\\"2/12\\\"]}},Damage:10049s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÄªÄÎ»¨Ô°\\\",Lore:[\\\"3/12\\\"]}},Damage:10050s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÄªÄÎ»¨Ô°\\\",Lore:[\\\"4/12\\\"]}},Damage:10051s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÄªÄÎ»¨Ô°\\\",Lore:[\\\"5/12\\\"]}},Damage:10052s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÄªÄÎ»¨Ô°\\\",Lore:[\\\"6/12\\\"]}},Damage:10053s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÄªÄÎ»¨Ô°\\\",Lore:[\\\"7/12\\\"]}},Damage:10054s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÄªÄÎ»¨Ô°\\\",Lore:[\\\"8/12\\\"]}},Damage:10055s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÄªÄÎ»¨Ô°\\\",Lore:[\\\"9/12\\\"]}},Damage:10056s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÄªÄÎ»¨Ô°\\\",Lore:[\\\"10/12\\\"]}},Damage:10057s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÄªÄÎ»¨Ô°\\\",Lore:[\\\"11/12\\\"]}},Damage:10058s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÄªÄÎ»¨Ô°\\\",Lore:[\\\"12/12\\\"]}},Damage:10059s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-]}\"}}",Text3:"{\"text\":\"~1870\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"scoreboard players remove @p[score_CK_min=120] CK 120 \"},\"color\":\"dark_purple\"}",Text4:"{\"text\":\"ÊÛ¼Û£º$120\",\"color\":\"dark_blue\"}"}
+Text1:"{\"text\":\"è«å¥ˆèŠ±å›­\",\"color\":\"dark_blue\"}",
+Text2:"{\"text\":\"ä½œè€…ï¼šå…‹åŠ³å¾·Â·è«å¥ˆ\",\"color\":\"dark_purple\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"execute @p[score_CK_min=120] ~ ~ ~ summon area_effect_cloud ~ ~ ~ {Passengers:[
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"è«å¥ˆèŠ±å›­\\\",Lore:[\\\"1/12\\\"]}},Damage:10048s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"è«å¥ˆèŠ±å›­\\\",Lore:[\\\"2/12\\\"]}},Damage:10049s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"è«å¥ˆèŠ±å›­\\\",Lore:[\\\"3/12\\\"]}},Damage:10050s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"è«å¥ˆèŠ±å›­\\\",Lore:[\\\"4/12\\\"]}},Damage:10051s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"è«å¥ˆèŠ±å›­\\\",Lore:[\\\"5/12\\\"]}},Damage:10052s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"è«å¥ˆèŠ±å›­\\\",Lore:[\\\"6/12\\\"]}},Damage:10053s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"è«å¥ˆèŠ±å›­\\\",Lore:[\\\"7/12\\\"]}},Damage:10054s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"è«å¥ˆèŠ±å›­\\\",Lore:[\\\"8/12\\\"]}},Damage:10055s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"è«å¥ˆèŠ±å›­\\\",Lore:[\\\"9/12\\\"]}},Damage:10056s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"è«å¥ˆèŠ±å›­\\\",Lore:[\\\"10/12\\\"]}},Damage:10057s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"è«å¥ˆèŠ±å›­\\\",Lore:[\\\"11/12\\\"]}},Damage:10058s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"è«å¥ˆèŠ±å›­\\\",Lore:[\\\"12/12\\\"]}},Damage:10059s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+]}\"}}",Text3:"{\"text\":\"~1870\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"scoreboard players remove @p[score_CK_min=120] CK 120 \"},\"color\":\"dark_purple\"}",Text4:"{\"text\":\"å”®ä»·ï¼š$120\",\"color\":\"dark_blue\"}"}
 
 setblock ~ ~ ~ wall_sign 3 replace {
-Text1:"{\"text\":\"´º\",\"color\":\"dark_blue\"}",
-Text2:"{\"text\":\"×÷Õß£ºÎ´Öª\",\"color\":\"dark_purple\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"execute @p[score_CK_min=60] ~ ~ ~ summon area_effect_cloud ~ ~ ~ {Passengers:[
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"´º\\\",Lore:[\\\"1/6\\\"]}},Damage:10060s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"´º\\\",Lore:[\\\"2/6\\\"]}},Damage:10061s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"´º\\\",Lore:[\\\"3/6\\\"]}},Damage:10062s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"´º\\\",Lore:[\\\"4/6\\\"]}},Damage:10063s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"´º\\\",Lore:[\\\"5/6\\\"]}},Damage:10064s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"´º\\\",Lore:[\\\"6/6\\\"]}},Damage:10065s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-]}\"}}",Text3:"{\"text\":\"2008/03/17\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"scoreboard players remove @p[score_CK_min=60] CK 60 \"},\"color\":\"dark_purple\"}",Text4:"{\"text\":\"ÊÛ¼Û£º$60\",\"color\":\"dark_blue\"}"}
+Text1:"{\"text\":\"æ˜¥\",\"color\":\"dark_blue\"}",
+Text2:"{\"text\":\"ä½œè€…ï¼šæœªçŸ¥\",\"color\":\"dark_purple\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"execute @p[score_CK_min=60] ~ ~ ~ summon area_effect_cloud ~ ~ ~ {Passengers:[
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"æ˜¥\\\",Lore:[\\\"1/6\\\"]}},Damage:10060s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"æ˜¥\\\",Lore:[\\\"2/6\\\"]}},Damage:10061s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"æ˜¥\\\",Lore:[\\\"3/6\\\"]}},Damage:10062s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"æ˜¥\\\",Lore:[\\\"4/6\\\"]}},Damage:10063s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"æ˜¥\\\",Lore:[\\\"5/6\\\"]}},Damage:10064s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"æ˜¥\\\",Lore:[\\\"6/6\\\"]}},Damage:10065s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+]}\"}}",Text3:"{\"text\":\"2008/03/17\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"scoreboard players remove @p[score_CK_min=60] CK 60 \"},\"color\":\"dark_purple\"}",Text4:"{\"text\":\"å”®ä»·ï¼š$60\",\"color\":\"dark_blue\"}"}
 
 setblock ~ ~ ~ wall_sign 3 replace {
-Text1:"{\"text\":\"¶¬\",\"color\":\"dark_blue\"}",
-Text2:"{\"text\":\"×÷Õß£ºÈç»¨\",\"color\":\"dark_purple\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"execute @p[score_CK_min=60] ~ ~ ~ summon area_effect_cloud ~ ~ ~ {Passengers:[
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"¶¬\\\",Lore:[\\\"1/6\\\"]}},Damage:10066s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"¶¬\\\",Lore:[\\\"2/6\\\"]}},Damage:10067s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"¶¬\\\",Lore:[\\\"3/6\\\"]}},Damage:10068s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"¶¬\\\",Lore:[\\\"4/6\\\"]}},Damage:10069s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"¶¬\\\",Lore:[\\\"5/6\\\"]}},Damage:10070s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"¶¬\\\",Lore:[\\\"6/6\\\"]}},Damage:10071s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-]}\"}}",Text3:"{\"text\":\"2015/01/28\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"scoreboard players remove @p[score_CK_min=60] CK 60 \"},\"color\":\"dark_purple\"}",Text4:"{\"text\":\"ÊÛ¼Û£º$60\",\"color\":\"dark_blue\"}"}
+Text1:"{\"text\":\"å†¬\",\"color\":\"dark_blue\"}",
+Text2:"{\"text\":\"ä½œè€…ï¼šå¦‚èŠ±\",\"color\":\"dark_purple\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"execute @p[score_CK_min=60] ~ ~ ~ summon area_effect_cloud ~ ~ ~ {Passengers:[
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"å†¬\\\",Lore:[\\\"1/6\\\"]}},Damage:10066s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"å†¬\\\",Lore:[\\\"2/6\\\"]}},Damage:10067s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"å†¬\\\",Lore:[\\\"3/6\\\"]}},Damage:10068s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"å†¬\\\",Lore:[\\\"4/6\\\"]}},Damage:10069s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"å†¬\\\",Lore:[\\\"5/6\\\"]}},Damage:10070s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"å†¬\\\",Lore:[\\\"6/6\\\"]}},Damage:10071s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+]}\"}}",Text3:"{\"text\":\"2015/01/28\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"scoreboard players remove @p[score_CK_min=60] CK 60 \"},\"color\":\"dark_purple\"}",Text4:"{\"text\":\"å”®ä»·ï¼š$60\",\"color\":\"dark_blue\"}"}
 
 setblock ~ ~ ~ wall_sign 3 replace {
-Text1:"{\"text\":\"Çï\",\"color\":\"dark_blue\"}",
-Text2:"{\"text\":\"×÷Õß£ºÈç»¨\",\"color\":\"dark_purple\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"execute @p[score_CK_min=60] ~ ~ ~ summon area_effect_cloud ~ ~ ~ {Passengers:[
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"Çï\\\",Lore:[\\\"1/6\\\"]}},Damage:10072s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"Çï\\\",Lore:[\\\"2/6\\\"]}},Damage:10073s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"Çï\\\",Lore:[\\\"3/6\\\"]}},Damage:10074s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"Çï\\\",Lore:[\\\"4/6\\\"]}},Damage:10075s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"Çï\\\",Lore:[\\\"5/6\\\"]}},Damage:10076s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"Çï\\\",Lore:[\\\"6/6\\\"]}},Damage:10077s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-]}\"}}",Text3:"{\"text\":\"2014/11/29\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"scoreboard players remove @p[score_CK_min=60] CK 60 \"},\"color\":\"dark_purple\"}",Text4:"{\"text\":\"ÊÛ¼Û£º$60\",\"color\":\"dark_blue\"}"}
+Text1:"{\"text\":\"ç§‹\",\"color\":\"dark_blue\"}",
+Text2:"{\"text\":\"ä½œè€…ï¼šå¦‚èŠ±\",\"color\":\"dark_purple\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"execute @p[score_CK_min=60] ~ ~ ~ summon area_effect_cloud ~ ~ ~ {Passengers:[
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ç§‹\\\",Lore:[\\\"1/6\\\"]}},Damage:10072s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ç§‹\\\",Lore:[\\\"2/6\\\"]}},Damage:10073s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ç§‹\\\",Lore:[\\\"3/6\\\"]}},Damage:10074s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ç§‹\\\",Lore:[\\\"4/6\\\"]}},Damage:10075s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ç§‹\\\",Lore:[\\\"5/6\\\"]}},Damage:10076s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ç§‹\\\",Lore:[\\\"6/6\\\"]}},Damage:10077s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+]}\"}}",Text3:"{\"text\":\"2014/11/29\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"scoreboard players remove @p[score_CK_min=60] CK 60 \"},\"color\":\"dark_purple\"}",Text4:"{\"text\":\"å”®ä»·ï¼š$60\",\"color\":\"dark_blue\"}"}
 
 setblock ~ ~ ~ wall_sign 3 replace {
-Text1:"{\"text\":\"ÏÄ\",\"color\":\"dark_blue\"}",
-Text2:"{\"text\":\"×÷Õß£ºÈç»¨\",\"color\":\"dark_purple\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"execute @p[score_CK_min=60] ~ ~ ~ summon area_effect_cloud ~ ~ ~ {Passengers:[
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÏÄ\\\",Lore:[\\\"1/6\\\"]}},Damage:10078s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÏÄ\\\",Lore:[\\\"2/6\\\"]}},Damage:10079s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÏÄ\\\",Lore:[\\\"3/6\\\"]}},Damage:10080s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÏÄ\\\",Lore:[\\\"4/6\\\"]}},Damage:10081s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÏÄ\\\",Lore:[\\\"5/6\\\"]}},Damage:10082s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÏÄ\\\",Lore:[\\\"6/6\\\"]}},Damage:10083s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-]}\"}}",Text3:"{\"text\":\"2015/05/28\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"scoreboard players remove @p[score_CK_min=60] CK 60 \"},\"color\":\"dark_purple\"}",Text4:"{\"text\":\"ÊÛ¼Û£º$60\",\"color\":\"dark_blue\"}"}
+Text1:"{\"text\":\"å¤\",\"color\":\"dark_blue\"}",
+Text2:"{\"text\":\"ä½œè€…ï¼šå¦‚èŠ±\",\"color\":\"dark_purple\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"execute @p[score_CK_min=60] ~ ~ ~ summon area_effect_cloud ~ ~ ~ {Passengers:[
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"å¤\\\",Lore:[\\\"1/6\\\"]}},Damage:10078s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"å¤\\\",Lore:[\\\"2/6\\\"]}},Damage:10079s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"å¤\\\",Lore:[\\\"3/6\\\"]}},Damage:10080s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"å¤\\\",Lore:[\\\"4/6\\\"]}},Damage:10081s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"å¤\\\",Lore:[\\\"5/6\\\"]}},Damage:10082s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"å¤\\\",Lore:[\\\"6/6\\\"]}},Damage:10083s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+]}\"}}",Text3:"{\"text\":\"2015/05/28\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"scoreboard players remove @p[score_CK_min=60] CK 60 \"},\"color\":\"dark_purple\"}",Text4:"{\"text\":\"å”®ä»·ï¼š$60\",\"color\":\"dark_blue\"}"}
 
 setblock ~ ~ ~ wall_sign 5 replace {
-Text1:"{\"text\":\"ĞÇÒ¹\",\"color\":\"dark_blue\"}",
-Text2:"{\"text\":\"×÷Õß£ºÎÄÉ­ÌØ¡¤èó¸ß\",\"color\":\"dark_purple\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"execute @p[score_CK_min=120] ~ ~ ~ summon area_effect_cloud ~ ~ ~ {Passengers:[
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ĞÇÒ¹\\\",Lore:[\\\"1/12\\\"]}},Damage:10084s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ĞÇÒ¹\\\",Lore:[\\\"2/12\\\"]}},Damage:10085s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ĞÇÒ¹\\\",Lore:[\\\"3/12\\\"]}},Damage:10086s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ĞÇÒ¹\\\",Lore:[\\\"4/12\\\"]}},Damage:10087s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ĞÇÒ¹\\\",Lore:[\\\"5/12\\\"]}},Damage:10088s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ĞÇÒ¹\\\",Lore:[\\\"6/12\\\"]}},Damage:10089s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ĞÇÒ¹\\\",Lore:[\\\"7/12\\\"]}},Damage:10090s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ĞÇÒ¹\\\",Lore:[\\\"8/12\\\"]}},Damage:10091s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ĞÇÒ¹\\\",Lore:[\\\"9/12\\\"]}},Damage:10092s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ĞÇÒ¹\\\",Lore:[\\\"10/12\\\"]}},Damage:10093s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ĞÇÒ¹\\\",Lore:[\\\"11/12\\\"]}},Damage:10094s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ĞÇÒ¹\\\",Lore:[\\\"12/12\\\"]}},Damage:10095s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-]}\"}}",Text3:"{\"text\":\"1889\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"scoreboard players remove @p[score_CK_min=120] CK 120 \"},\"color\":\"dark_purple\"}",Text4:"{\"text\":\"ÊÛ¼Û£º$120\",\"color\":\"dark_blue\"}"}
+Text1:"{\"text\":\"æ˜Ÿå¤œ\",\"color\":\"dark_blue\"}",
+Text2:"{\"text\":\"ä½œè€…ï¼šæ–‡æ£®ç‰¹Â·æ¢µé«˜\",\"color\":\"dark_purple\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"execute @p[score_CK_min=120] ~ ~ ~ summon area_effect_cloud ~ ~ ~ {Passengers:[
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"æ˜Ÿå¤œ\\\",Lore:[\\\"1/12\\\"]}},Damage:10084s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"æ˜Ÿå¤œ\\\",Lore:[\\\"2/12\\\"]}},Damage:10085s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"æ˜Ÿå¤œ\\\",Lore:[\\\"3/12\\\"]}},Damage:10086s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"æ˜Ÿå¤œ\\\",Lore:[\\\"4/12\\\"]}},Damage:10087s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"æ˜Ÿå¤œ\\\",Lore:[\\\"5/12\\\"]}},Damage:10088s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"æ˜Ÿå¤œ\\\",Lore:[\\\"6/12\\\"]}},Damage:10089s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"æ˜Ÿå¤œ\\\",Lore:[\\\"7/12\\\"]}},Damage:10090s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"æ˜Ÿå¤œ\\\",Lore:[\\\"8/12\\\"]}},Damage:10091s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"æ˜Ÿå¤œ\\\",Lore:[\\\"9/12\\\"]}},Damage:10092s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"æ˜Ÿå¤œ\\\",Lore:[\\\"10/12\\\"]}},Damage:10093s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"æ˜Ÿå¤œ\\\",Lore:[\\\"11/12\\\"]}},Damage:10094s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"æ˜Ÿå¤œ\\\",Lore:[\\\"12/12\\\"]}},Damage:10095s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+]}\"}}",Text3:"{\"text\":\"1889\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"scoreboard players remove @p[score_CK_min=120] CK 120 \"},\"color\":\"dark_purple\"}",Text4:"{\"text\":\"å”®ä»·ï¼š$120\",\"color\":\"dark_blue\"}"}
 
 setblock ~ ~ ~ wall_sign 2 replace {
-Text1:"{\"text\":\"×ÔÓÉÒıµ¼ÈËÃñ\",\"color\":\"dark_blue\"}",
-Text2:"{\"text\":\"×÷Õß£ºµÂÀ­¿ËÂŞÍß\",\"color\":\"dark_purple\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"execute @p[score_CK_min=60] ~ ~ ~ summon area_effect_cloud ~ ~ ~ {Passengers:[
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"×ÔÓÉÒıµ¼ÈËÃñ\\\",Lore:[\\\"1/6\\\"]}},Damage:10096s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"×ÔÓÉÒıµ¼ÈËÃñ\\\",Lore:[\\\"2/6\\\"]}},Damage:10097s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"×ÔÓÉÒıµ¼ÈËÃñ\\\",Lore:[\\\"3/6\\\"]}},Damage:10098s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"×ÔÓÉÒıµ¼ÈËÃñ\\\",Lore:[\\\"4/6\\\"]}},Damage:10099s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"×ÔÓÉÒıµ¼ÈËÃñ\\\",Lore:[\\\"5/6\\\"]}},Damage:10100s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"×ÔÓÉÒıµ¼ÈËÃñ\\\",Lore:[\\\"6/6\\\"]}},Damage:10101s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-]}\"}}",Text3:"{\"text\":\"1830\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"scoreboard players remove @p[score_CK_min=60] CK 60 \"},\"color\":\"dark_purple\"}",Text4:"{\"text\":\"ÊÛ¼Û£º$60\",\"color\":\"dark_blue\"}"}
+Text1:"{\"text\":\"è‡ªç”±å¼•å¯¼äººæ°‘\",\"color\":\"dark_blue\"}",
+Text2:"{\"text\":\"ä½œè€…ï¼šå¾·æ‹‰å…‹ç½—ç“¦\",\"color\":\"dark_purple\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"execute @p[score_CK_min=60] ~ ~ ~ summon area_effect_cloud ~ ~ ~ {Passengers:[
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"è‡ªç”±å¼•å¯¼äººæ°‘\\\",Lore:[\\\"1/6\\\"]}},Damage:10096s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"è‡ªç”±å¼•å¯¼äººæ°‘\\\",Lore:[\\\"2/6\\\"]}},Damage:10097s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"è‡ªç”±å¼•å¯¼äººæ°‘\\\",Lore:[\\\"3/6\\\"]}},Damage:10098s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"è‡ªç”±å¼•å¯¼äººæ°‘\\\",Lore:[\\\"4/6\\\"]}},Damage:10099s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"è‡ªç”±å¼•å¯¼äººæ°‘\\\",Lore:[\\\"5/6\\\"]}},Damage:10100s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"è‡ªç”±å¼•å¯¼äººæ°‘\\\",Lore:[\\\"6/6\\\"]}},Damage:10101s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+]}\"}}",Text3:"{\"text\":\"1830\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"scoreboard players remove @p[score_CK_min=60] CK 60 \"},\"color\":\"dark_purple\"}",Text4:"{\"text\":\"å”®ä»·ï¼š$60\",\"color\":\"dark_blue\"}"}
 
 setblock ~ ~ ~ wall_sign 3 replace {
-Text1:"{\"text\":\"Ê°ËëÕß\",\"color\":\"dark_blue\"}",
-Text2:"{\"text\":\"×÷Õß£ºÈÃ¡¤Ã×ÀÕ\",\"color\":\"dark_purple\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"execute @p[score_CK_min=60] ~ ~ ~ summon area_effect_cloud ~ ~ ~ {Passengers:[
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"Ê°ËëÕß\\\",Lore:[\\\"1/6\\\"]}},Damage:10102s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"Ê°ËëÕß\\\",Lore:[\\\"2/6\\\"]}},Damage:10103s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"Ê°ËëÕß\\\",Lore:[\\\"3/6\\\"]}},Damage:10104s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"Ê°ËëÕß\\\",Lore:[\\\"4/6\\\"]}},Damage:10105s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"Ê°ËëÕß\\\",Lore:[\\\"5/6\\\"]}},Damage:10106s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"Ê°ËëÕß\\\",Lore:[\\\"6/6\\\"]}},Damage:10107s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-]}\"}}",Text3:"{\"text\":\"1857\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"scoreboard players remove @p[score_CK_min=60] CK 60 \"},\"color\":\"dark_purple\"}",Text4:"{\"text\":\"ÊÛ¼Û£º$60\",\"color\":\"dark_blue\"}"}
+Text1:"{\"text\":\"æ‹¾ç©—è€…\",\"color\":\"dark_blue\"}",
+Text2:"{\"text\":\"ä½œè€…ï¼šè®©Â·ç±³å‹’\",\"color\":\"dark_purple\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"execute @p[score_CK_min=60] ~ ~ ~ summon area_effect_cloud ~ ~ ~ {Passengers:[
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"æ‹¾ç©—è€…\\\",Lore:[\\\"1/6\\\"]}},Damage:10102s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"æ‹¾ç©—è€…\\\",Lore:[\\\"2/6\\\"]}},Damage:10103s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"æ‹¾ç©—è€…\\\",Lore:[\\\"3/6\\\"]}},Damage:10104s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"æ‹¾ç©—è€…\\\",Lore:[\\\"4/6\\\"]}},Damage:10105s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"æ‹¾ç©—è€…\\\",Lore:[\\\"5/6\\\"]}},Damage:10106s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"æ‹¾ç©—è€…\\\",Lore:[\\\"6/6\\\"]}},Damage:10107s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+]}\"}}",Text3:"{\"text\":\"1857\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"scoreboard players remove @p[score_CK_min=60] CK 60 \"},\"color\":\"dark_purple\"}",Text4:"{\"text\":\"å”®ä»·ï¼š$60\",\"color\":\"dark_blue\"}"}
 
 setblock ~ ~ ~ wall_sign 5 replace {
-Text1:"{\"text\":\"ÖñÊ¯Í¼\",\"color\":\"dark_blue\"}",
-Text2:"{\"text\":\"×÷Õß£º¹é×¯\",\"color\":\"dark_purple\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"execute @p[score_CK_min=20] ~ ~ ~ summon area_effect_cloud ~ ~ ~ {Passengers:[
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÖñÊ¯Í¼\\\",Lore:[\\\"1/2\\\"]}},Damage:10110s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ÖñÊ¯Í¼\\\",Lore:[\\\"2/2\\\"]}},Damage:10111s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
-]}\"}}",Text3:"{\"text\":\"Çå´ú\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"scoreboard players remove @p[score_CK_min=20] CK 20 \"},\"color\":\"dark_purple\"}",Text4:"{\"text\":\"ÊÛ¼Û£º$20\",\"color\":\"dark_blue\"}"}
+Text1:"{\"text\":\"ç«¹çŸ³å›¾\",\"color\":\"dark_blue\"}",
+Text2:"{\"text\":\"ä½œè€…ï¼šå½’åº„\",\"color\":\"dark_purple\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"execute @p[score_CK_min=20] ~ ~ ~ summon area_effect_cloud ~ ~ ~ {Passengers:[
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ç«¹çŸ³å›¾\\\",Lore:[\\\"1/2\\\"]}},Damage:10110s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+{Item:{id:\\\"minecraft:filled_map\\\",tag:{HideFlags:32,display:{Name:\\\"ç«¹çŸ³å›¾\\\",Lore:[\\\"2/2\\\"]}},Damage:10111s,Count:1b},id:\\\"minecraft:item\\\",PickupDelay:0},
+]}\"}}",Text3:"{\"text\":\"æ¸…ä»£\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"scoreboard players remove @p[score_CK_min=20] CK 20 \"},\"color\":\"dark_purple\"}",Text4:"{\"text\":\"å”®ä»·ï¼š$20\",\"color\":\"dark_blue\"}"}
 
-======================================Ò©µê======================================
+######################################è¯åº—######################################
 testfor @a[x=279,y=63,z=244,dx=15,dy=8,dz=12]
-tellraw @a[x=279,y=63,z=244,dx=15,dy=8,dz=12] [{"text":"»¶Ó­À´µ½Ò©µê\n","color":"yellow"},
-{"text":"Äú¿ÉÒÔÔÚÕâÖÆ×÷¸ß¼¶Ò©Ë®","color":"light_purple"}]
-summon villager ~ ~1.5 ~ {Rotation:[270f,0f],NoAI:true,Invulnerable:true,CustomName:"Ò©¼ÁÊ¦",CustomNameVisible:true,Profession:true,Silent:true,Offers:{Recipes:[
-{maxUses:99999999,buy:{id:minecraft:potion,Count:1b,tag:{Potion:minecraft:water}},buyB:{id:minecraft:fish,Damage:3s,Count:8b},sell:{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:2970007,display:{Name:"Ë®·ÎÒ©Ë®"},CustomPotionEffects:[{Id:13,Duration:9600}]}}},
-{maxUses:99999999,buy:{id:minecraft:potion,Count:1b,tag:{Potion:minecraft:water}},buyB:{id:minecraft:magma_cream,Count:8b},sell:{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:14719033,display:{Name:"¿¹»ğÒ©Ë®"},CustomPotionEffects:[{Id:12,Duration:9600}]}}},
-{maxUses:99999999,buy:{id:minecraft:potion,Count:1b,tag:{Potion:minecraft:water}},buyB:{id:minecraft:golden_carrot,Count:8b},sell:{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:2039710,display:{Name:"Ò¹ÊÓÒ©Ë®"},CustomPotionEffects:[{Id:16,Duration:9600}]}}},
-{maxUses:99999999,buy:{id:minecraft:potion,Count:1b,tag:{Potion:minecraft:water}},buyB:{id:minecraft:ender_pearl,Count:8b},sell:{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:8225168,display:{Name:"ÒşÉíÒ©Ë®"},CustomPotionEffects:[{Id:14,Duration:9600}]}}},
-{maxUses:99999999,buy:{id:minecraft:potion,Count:1b,tag:{Potion:minecraft:water}},buyB:{id:minecraft:apple,Count:8b},sell:{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:15934242,display:{Name:"±¥ºÍÒ©Ë®"},CustomPotionEffects:[{Id:23,Duration:20}]}}},
-{maxUses:99999999,buy:{id:minecraft:potion,Count:1b,tag:{Potion:minecraft:water}},buyB:{id:minecraft:ghast_tear,Count:8b},sell:{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:13261736,display:{Name:"ÔÙÉúÒ©Ë®"},CustomPotionEffects:[{Id:10,Amplifier:1,Duration:9600}]}}},
-{maxUses:99999999,buy:{id:minecraft:potion,Count:1b,tag:{Potion:minecraft:water}},buyB:{id:minecraft:sugar,Count:8b},sell:{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:8039619,display:{Name:"Ñ¸½İÒ©Ë®"},CustomPotionEffects:[{Id:1,Amplifier:1,Duration:9600}]}}},
-{maxUses:99999999,buy:{id:minecraft:potion,Count:1b,tag:{Potion:minecraft:water}},buyB:{id:minecraft:diamond,Count:8b},sell:{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:14073154,display:{Name:"¼±ÆÈÒ©Ë®"},CustomPotionEffects:[{Id:3,Amplifier:1,Duration:9600}]}}},
-{maxUses:99999999,buy:{id:minecraft:potion,Count:1b,tag:{Potion:minecraft:water}},buyB:{id:minecraft:rabbit_foot,Count:8b},sell:{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:2226763,display:{Name:"ÌøÔ¾Ò©Ë®"},CustomPotionEffects:[{Id:8,Amplifier:1,Duration:9600}]}}},
-{maxUses:99999999,buy:{id:minecraft:potion,Count:1b,tag:{Potion:minecraft:water}},buyB:{id:minecraft:blaze_powder,Count:8b},sell:{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:9511714,display:{Name:"Á¦Á¿Ò©Ë®"},CustomPotionEffects:[{Id:5,Amplifier:2,Duration:9600}]}}},
-{maxUses:99999999,buy:{id:minecraft:potion,Count:1b,tag:{Potion:minecraft:water}},buyB:{id:minecraft:speckled_melon,Count:8b},sell:{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:16262179,display:{Name:"ÖÎÁÆÒ©Ë®"},CustomPotionEffects:[{Id:6,Amplifier:2}]}}},
-{maxUses:99999999,buy:{id:minecraft:potion,Count:1b,tag:{Potion:minecraft:water}},buyB:{id:minecraft:iron_ingot,Count:8b},sell:{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:9913401,display:{Name:"¿¹ĞÔÒ©Ë®"},CustomPotionEffects:[{Id:11,Amplifier:2,Duration:9600}]}}},
-{maxUses:99999999,buy:{id:minecraft:potion,Count:1b,tag:{Potion:minecraft:water}},buyB:{id:minecraft:golden_apple,Count:8b},sell:{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:14841103,display:{Name:"ÌáÉıÒ©Ë®"},CustomPotionEffects:[{Id:21,Amplifier:2,Duration:9600}]}}}
+tellraw @a[x=279,y=63,z=244,dx=15,dy=8,dz=12] [{"text":"æ¬¢è¿æ¥åˆ°è¯åº—\n","color":"yellow"},
+{"text":"æ‚¨å¯ä»¥åœ¨è¿™åˆ¶ä½œé«˜çº§è¯æ°´","color":"light_purple"}]
+summon villager ~ ~1.5 ~ {Rotation:[270f,0f],NoAI:true,Invulnerable:true,CustomName:"è¯å‰‚å¸ˆ",CustomNameVisible:true,Profession:true,Silent:true,Offers:{Recipes:[
+{maxUses:99999999,buy:{id:minecraft:potion,Count:1b,tag:{Potion:minecraft:water}},buyB:{id:minecraft:fish,Damage:3s,Count:8b},sell:{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:2970007,display:{Name:"æ°´è‚ºè¯æ°´"},CustomPotionEffects:[{Id:13,Duration:9600}]}}},
+{maxUses:99999999,buy:{id:minecraft:potion,Count:1b,tag:{Potion:minecraft:water}},buyB:{id:minecraft:magma_cream,Count:8b},sell:{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:14719033,display:{Name:"æŠ—ç«è¯æ°´"},CustomPotionEffects:[{Id:12,Duration:9600}]}}},
+{maxUses:99999999,buy:{id:minecraft:potion,Count:1b,tag:{Potion:minecraft:water}},buyB:{id:minecraft:golden_carrot,Count:8b},sell:{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:2039710,display:{Name:"å¤œè§†è¯æ°´"},CustomPotionEffects:[{Id:16,Duration:9600}]}}},
+{maxUses:99999999,buy:{id:minecraft:potion,Count:1b,tag:{Potion:minecraft:water}},buyB:{id:minecraft:ender_pearl,Count:8b},sell:{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:8225168,display:{Name:"éšèº«è¯æ°´"},CustomPotionEffects:[{Id:14,Duration:9600}]}}},
+{maxUses:99999999,buy:{id:minecraft:potion,Count:1b,tag:{Potion:minecraft:water}},buyB:{id:minecraft:apple,Count:8b},sell:{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:15934242,display:{Name:"é¥±å’Œè¯æ°´"},CustomPotionEffects:[{Id:23,Duration:20}]}}},
+{maxUses:99999999,buy:{id:minecraft:potion,Count:1b,tag:{Potion:minecraft:water}},buyB:{id:minecraft:ghast_tear,Count:8b},sell:{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:13261736,display:{Name:"å†ç”Ÿè¯æ°´"},CustomPotionEffects:[{Id:10,Amplifier:1,Duration:9600}]}}},
+{maxUses:99999999,buy:{id:minecraft:potion,Count:1b,tag:{Potion:minecraft:water}},buyB:{id:minecraft:sugar,Count:8b},sell:{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:8039619,display:{Name:"è¿…æ·è¯æ°´"},CustomPotionEffects:[{Id:1,Amplifier:1,Duration:9600}]}}},
+{maxUses:99999999,buy:{id:minecraft:potion,Count:1b,tag:{Potion:minecraft:water}},buyB:{id:minecraft:diamond,Count:8b},sell:{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:14073154,display:{Name:"æ€¥è¿«è¯æ°´"},CustomPotionEffects:[{Id:3,Amplifier:1,Duration:9600}]}}},
+{maxUses:99999999,buy:{id:minecraft:potion,Count:1b,tag:{Potion:minecraft:water}},buyB:{id:minecraft:rabbit_foot,Count:8b},sell:{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:2226763,display:{Name:"è·³è·ƒè¯æ°´"},CustomPotionEffects:[{Id:8,Amplifier:1,Duration:9600}]}}},
+{maxUses:99999999,buy:{id:minecraft:potion,Count:1b,tag:{Potion:minecraft:water}},buyB:{id:minecraft:blaze_powder,Count:8b},sell:{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:9511714,display:{Name:"åŠ›é‡è¯æ°´"},CustomPotionEffects:[{Id:5,Amplifier:2,Duration:9600}]}}},
+{maxUses:99999999,buy:{id:minecraft:potion,Count:1b,tag:{Potion:minecraft:water}},buyB:{id:minecraft:speckled_melon,Count:8b},sell:{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:16262179,display:{Name:"æ²»ç–—è¯æ°´"},CustomPotionEffects:[{Id:6,Amplifier:2}]}}},
+{maxUses:99999999,buy:{id:minecraft:potion,Count:1b,tag:{Potion:minecraft:water}},buyB:{id:minecraft:iron_ingot,Count:8b},sell:{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:9913401,display:{Name:"æŠ—æ€§è¯æ°´"},CustomPotionEffects:[{Id:11,Amplifier:2,Duration:9600}]}}},
+{maxUses:99999999,buy:{id:minecraft:potion,Count:1b,tag:{Potion:minecraft:water}},buyB:{id:minecraft:golden_apple,Count:8b},sell:{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:14841103,display:{Name:"æå‡è¯æ°´"},CustomPotionEffects:[{Id:21,Amplifier:2,Duration:9600}]}}}
 ]}}
 
-==================================    ³¬ÊĞ    ==================================
-¸ÃÊĞ³¡¿ÉË¢¿¨¹ºÂò¸÷ÀàÎïÆ·£¬ÄÒÀ¨½¨²Ä¡¢Å©Òµ¡¢ÉúÎï¡¢×°±¸µÈ¡£
+##################################    è¶…å¸‚    ##################################
+è¯¥å¸‚åœºå¯åˆ·å¡è´­ä¹°å„ç±»ç‰©å“ï¼Œå›Šæ‹¬å»ºæã€å†œä¸šã€ç”Ÿç‰©ã€è£…å¤‡ç­‰ã€‚
 
 testfor @a[x=205,y=64,z=286,dx=90,dy=8,dz=48]
-tellraw @a[x=205,y=64,z=286,dx=90,dy=8,dz=48] [{"text":"»¶Ó­À´µ½ÊĞ³¡\n","color":"yellow"},
-{"text":"101 ³öÊÛÉ³ÍÁ±ùÑ©              102 ³öÊÛÏÂ½ç¡¢Ä©µØ¡¢ÒÅ¼£½¨²Ä\n","color":"light_purple"},
-{"text":"103 ³öÊÛÊ¯²Ä¡¢¿óÊ¯            104 ³öÊÛÊ÷Ãç\n","color":"green"},
-{"text":"105 ³öÊÛÅ©×÷Îï£¬ÊÕ¹ºÅ©×÷ÎïµÈ  106 ³öÊÛÈ¾ÁÏ£¬DIYÑÌ»¨»ğ¼ıºÍÆìÖÄ\n","color":"red"},
-{"text":"107 ³öÊÛ»¨»Ü                   108-109 ³öÊÛ¡¢ÖÆ×÷¶¯ÎïºÍ¹ÖÎï\n","color":"blue"},
-{"text":"110 ³öÊÛÊ³Îï                   111 ³öÊÛ¡¢ÖÆ×÷ÎäÆ÷¡¢¹¤¾ß¡¢¿ø¼×\n","color":"gold"},
-{"text":"112 ³öÊÛ¹¤¾ß¡¢¸½Ä§Êé\n","color":"light_purple"}]
+tellraw @a[x=205,y=64,z=286,dx=90,dy=8,dz=48] [{"text":"æ¬¢è¿æ¥åˆ°å¸‚åœº\n","color":"yellow"},
+{"text":"101 å‡ºå”®æ²™åœŸå†°é›ª              102 å‡ºå”®ä¸‹ç•Œã€æœ«åœ°ã€é—è¿¹å»ºæ\n","color":"light_purple"},
+{"text":"103 å‡ºå”®çŸ³æã€çŸ¿çŸ³            104 å‡ºå”®æ ‘è‹—\n","color":"green"},
+{"text":"105 å‡ºå”®å†œä½œç‰©ï¼Œæ”¶è´­å†œä½œç‰©ç­‰  106 å‡ºå”®æŸ“æ–™ï¼ŒDIYçƒŸèŠ±ç«ç®­å’Œæ——å¸œ\n","color":"red"},
+{"text":"107 å‡ºå”®èŠ±å‰                   108-109 å‡ºå”®ã€åˆ¶ä½œåŠ¨ç‰©å’Œæ€ªç‰©\n","color":"blue"},
+{"text":"110 å‡ºå”®é£Ÿç‰©                   111 å‡ºå”®ã€åˆ¶ä½œæ­¦å™¨ã€å·¥å…·ã€ç›”ç”²\n","color":"gold"},
+{"text":"112 å‡ºå”®å·¥å…·ã€é™„é­”ä¹¦\n","color":"light_purple"}]
 setblock ~ ~ ~ wall_sign 5 replace {Text1:"{\"text\":\"\"}",
-Text2:"{\"text\":\"¹ºÂòÄñ\",\"color\":\"dark_blue\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"setblock ~ ~-4 ~ redstone_torch\"}}",
+Text2:"{\"text\":\"è´­ä¹°é¸Ÿ\",\"color\":\"dark_blue\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"setblock ~ ~-4 ~ redstone_torch\"}}",
 Text3:"{\"text\":\"$640\",\"color\":\"dark_blue\"}",Text4:"{\"text\":\"\"}"}
 scoreboard players remove @p[score_CK_min=1] CK 1
 
-====	101 É³ÍÁ±ùÑ© 12
-»Ò»¯ÍÁ		dirt:2				1
-²İ·½¿é		grass				1
-¾úË¿		mycelium			10
-Õ³ÍÁ		clay				4
-±ù			ice					1
-¸¡±ù		packed_ice			2
-Ñ©¿é		snow				1
-É°Àù		gravel				2
-É³×Ó		sand				2
-É³Ê¯		sandstone			2
-ºìÉ³		sand:1				4
-ºìÉ³Ê¯		red_sandstone		4
+####	101 æ²™åœŸå†°é›ª 12
+ç°åŒ–åœŸ		dirt:2				1
+è‰æ–¹å—		grass				1
+èŒä¸		mycelium			10
+ç²˜åœŸ		clay				4
+å†°			ice					1
+æµ®å†°		packed_ice			2
+é›ªå—		snow				1
+ç ‚ç ¾		gravel				2
+æ²™å­		sand				2
+æ²™çŸ³		sandstone			2
+çº¢æ²™		sand:1				4
+çº¢æ²™çŸ³		red_sandstone		4
 
 summon falling_block ~ ~2 ~ {Time:1,Block:"minecraft:redstone_block",Passengers:[
 {id:"falling_block",Time:1,Block:"minecraft:activator_rail",Passengers:[
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~ wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂò»Ò»¯ÍÁ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=1] minecraft:dirt 1 2\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°ç°åŒ–åœŸ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=1] minecraft:dirt 1 2\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$1\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=1] CK 1\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~1 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂò²İ·½¿é\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=1] minecraft:grass\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°è‰æ–¹å—\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=1] minecraft:grass\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$1\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=1] CK 1\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~2 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂò¾úË¿\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=10] minecraft:mycelium\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°èŒä¸\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=10] minecraft:mycelium\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$10\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=10] CK 10\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~3 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÕ³ÍÁ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=4] minecraft:clay\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°ç²˜åœŸ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=4] minecraft:clay\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$4\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=4] CK 4\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~4 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂò±ù\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=1] minecraft:ice\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°å†°\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=1] minecraft:ice\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$1\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=1] CK 1\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~5 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂò¸¡±ù\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=2] minecraft:packed_ice\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°æµ®å†°\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=2] minecraft:packed_ice\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$2\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=2] CK 2\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~6 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÑ©¿é\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=1] minecraft:snow\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°é›ªå—\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=1] minecraft:snow\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$1\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=1] CK 1\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~7 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÉ°Àù\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=2] minecraft:gravel\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°ç ‚ç ¾\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=2] minecraft:gravel\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$2\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=2] CK 2\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~8 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÉ³×Ó\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=2] minecraft:sand\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°æ²™å­\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=2] minecraft:sand\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$2\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=2] CK 2\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~9 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÉ³Ê¯\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=2] minecraft:sandstone\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°æ²™çŸ³\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=2] minecraft:sandstone\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$2\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=2] CK 2\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~10 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòºìÉ³\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=4] minecraft:sand 1 1\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°çº¢æ²™\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=4] minecraft:sand 1 1\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$4\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=4] CK 4\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~11 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòºìÉ³Ê¯\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=4] minecraft:red_sandstone\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°çº¢æ²™çŸ³\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=4] minecraft:red_sandstone\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$4\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=4] CK 4\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
@@ -468,75 +468,75 @@ Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 {id:"commandblock_minecart",Command:"fill ~ ~ ~ ~ ~-1 ~ minecraft:air 0 replace"}]}]}
 
 testfor @a[x=285,y=64,z=288,dx=8,dy=5,dz=11]
-tellraw @a[x=285,y=64,z=288,dx=8,dy=5,dz=11]  [{"text":"»¶Ó­¹ºÂòÉ³ÍÁ±ùÑ©\n","color":"yellow"},
-{"text":"»Ò»¯ÍÁ$1¡¢²İ·½¿é$1¡¢¾úË¿$10¡¢Õ³ÍÁ$4¡¢±ù$1¡¢¸¡±ù$2¡¢Ñ©¿é$1\n","color":"light_purple"},
-{"text":"É°Àù$2¡¢É³×Ó/É³Ê¯$2¡¢ºìÉ³/ºìÉ³Ê¯$4","color":"gold"}]
+tellraw @a[x=285,y=64,z=288,dx=8,dy=5,dz=11]  [{"text":"æ¬¢è¿è´­ä¹°æ²™åœŸå†°é›ª\n","color":"yellow"},
+{"text":"ç°åŒ–åœŸ$1ã€è‰æ–¹å—$1ã€èŒä¸$10ã€ç²˜åœŸ$4ã€å†°$1ã€æµ®å†°$2ã€é›ªå—$1\n","color":"light_purple"},
+{"text":"ç ‚ç ¾$2ã€æ²™å­/æ²™çŸ³$2ã€çº¢æ²™/çº¢æ²™çŸ³$4","color":"gold"}]
 
-====	102 ÏÂ½ç¡¢Ä©µØ¡¢ÒÅ¼£½¨²Ä 9
-ÑÒ½¬¿é		magma				10
-Áé»êÉ³		soul_sand			2
-µØÓüÑÒ		netherrack			1
-ºÚÒ«Ê¯		obsidian			16
-Ó©Ê¯		glowstone			4
-Ä©µØÊ¯		end_stone			2
-Ä©µØÊ¯×©	end_bricks			2
-º£¾§ËéÆ¬	prismarine_shard	1
-º£¾§É°Á£	prismarine_crystals	2
+####	102 ä¸‹ç•Œã€æœ«åœ°ã€é—è¿¹å»ºæ 9
+å²©æµ†å—		magma				10
+çµé­‚æ²™		soul_sand			2
+åœ°ç‹±å²©		netherrack			1
+é»‘è€€çŸ³		obsidian			16
+è¤çŸ³		glowstone			4
+æœ«åœ°çŸ³		end_stone			2
+æœ«åœ°çŸ³ç –	end_bricks			2
+æµ·æ™¶ç¢ç‰‡	prismarine_shard	1
+æµ·æ™¶ç ‚ç²’	prismarine_crystals	2
 
 summon falling_block ~ ~2 ~ {Time:1,Block:"minecraft:redstone_block",Passengers:[
 {id:"falling_block",Time:1,Block:"minecraft:activator_rail",Passengers:[
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~ wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÑÒ½¬¿é\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=10] minecraft:magma\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°å²©æµ†å—\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=10] minecraft:magma\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$10\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=10] CK 10\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~1 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÁé»êÉ³\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=2] minecraft:soul_sand\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°çµé­‚æ²™\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=2] minecraft:soul_sand\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$2\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=2] CK 2\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~2 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòµØÓüÑÒ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=1] minecraft:netherrack\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°åœ°ç‹±å²©\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=1] minecraft:netherrack\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$1\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=1] CK 1\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~3 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòºÚÒ«Ê¯\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=16] minecraft:obsidian\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°é»‘è€€çŸ³\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=16] minecraft:obsidian\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$16\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=16] CK 16\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~4 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÓ©Ê¯\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=4] minecraft:glowstone\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°è¤çŸ³\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=4] minecraft:glowstone\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$4\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=4] CK 4\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~5 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÄ©µØÊ¯\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=2] minecraft:end_stone\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°æœ«åœ°çŸ³\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=2] minecraft:end_stone\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$2\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=2] CK 2\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~6 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÄ©µØÊ¯×©\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=2] minecraft:end_bricks\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°æœ«åœ°çŸ³ç –\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=2] minecraft:end_bricks\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$2\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=2] CK 2\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~7 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòº£¾§ËéÆ¬\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=1] minecraft:prismarine_shard\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°æµ·æ™¶ç¢ç‰‡\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=1] minecraft:prismarine_shard\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$1\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=1] CK 1\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~8 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòº£¾§É°Á£\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=2] minecraft:prismarine_crystals\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°æµ·æ™¶ç ‚ç²’\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=2] minecraft:prismarine_crystals\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$2\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=2] CK 2\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
@@ -544,97 +544,97 @@ Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 {id:"commandblock_minecart",Command:"fill ~ ~ ~ ~ ~-1 ~ minecraft:air 0 replace"}]}]}
 
 testfor @a[x=285,y=64,z=302,dx=8,dy=5,dz=8]
-tellraw @a[x=285,y=64,z=302,dx=8,dy=5,dz=8]  [{"text":"»¶Ó­¹ºÂòÏÂ½ç¡¢Ä©µØ¡¢ÒÅ¼£½¨²Ä\n","color":"yellow"},
-{"text":"ÑÒ½¬¿é$10¡¢Áé»êÉ³$2¡¢µØÓüÑÒ$1¡¢ºÚÒ«Ê¯$16¡¢Ó©Ê¯$4\n","color":"light_purple"},
-{"text":"Ä©µØÊ¯/Ä©µØÊ¯×©$2¡¢º£¾§ËéÆ¬$1¡¢º£¾§É°Á£$2","color":"gold"}]
+tellraw @a[x=285,y=64,z=302,dx=8,dy=5,dz=8]  [{"text":"æ¬¢è¿è´­ä¹°ä¸‹ç•Œã€æœ«åœ°ã€é—è¿¹å»ºæ\n","color":"yellow"},
+{"text":"å²©æµ†å—$10ã€çµé­‚æ²™$2ã€åœ°ç‹±å²©$1ã€é»‘è€€çŸ³$16ã€è¤çŸ³$4\n","color":"light_purple"},
+{"text":"æœ«åœ°çŸ³/æœ«åœ°çŸ³ç –$2ã€æµ·æ™¶ç¢ç‰‡$1ã€æµ·æ™¶ç ‚ç²’$2","color":"gold"}]
 
-====	103 Ê¯²ÄºÍ¿óÊ¯ 12
-Ô²Ê¯			cobblestone			1
-Ê¯Í·			stone				1
-Ê¯Ó¢¿é			quartz_block		4
-ÌÙÂû			vine				1
-ÏÂ½çÊ¯Ó¢¿óÊ¯	quartz_ore			10
-Ãº¿óÊ¯			coal_ore			10
-ºìÊ¯¿óÊ¯		redstone_ore		15
-Ìú¿óÊ¯			iron_ore			25
-½ğ¿óÊ¯			gold_ore			36
-ÂÌ±¦Ê¯¿óÊ¯		emerald_ore			35
-Çà½ğÊ¯¿óÊ¯		lapis_ore			75
-×êÊ¯¿óÊ¯		diamond_ore			100
+####	103 çŸ³æå’ŒçŸ¿çŸ³ 12
+åœ†çŸ³			cobblestone			1
+çŸ³å¤´			stone				1
+çŸ³è‹±å—			quartz_block		4
+è—¤è”“			vine				1
+ä¸‹ç•ŒçŸ³è‹±çŸ¿çŸ³	quartz_ore			10
+ç…¤çŸ¿çŸ³			coal_ore			10
+çº¢çŸ³çŸ¿çŸ³		redstone_ore		15
+é“çŸ¿çŸ³			iron_ore			25
+é‡‘çŸ¿çŸ³			gold_ore			36
+ç»¿å®çŸ³çŸ¿çŸ³		emerald_ore			35
+é’é‡‘çŸ³çŸ¿çŸ³		lapis_ore			75
+é’»çŸ³çŸ¿çŸ³		diamond_ore			100
 
 summon falling_block ~ ~2 ~ {Time:1,Block:"minecraft:redstone_block",Passengers:[
 {id:"falling_block",Time:1,Block:"minecraft:activator_rail",Passengers:[
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~ wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÔ²Ê¯\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=1] minecraft:cobblestone\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°åœ†çŸ³\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=1] minecraft:cobblestone\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$1\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=1] CK 1\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~1 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÊ¯Í·\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=1] minecraft:stone\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°çŸ³å¤´\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=1] minecraft:stone\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$1\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=1] CK 1\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~2 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÊ¯Ó¢¿é\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=4] minecraft:quartz_block\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°çŸ³è‹±å—\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=4] minecraft:quartz_block\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$4\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=4] CK 4\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~3 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂò
-ÌÙÂû\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=1] minecraft:vine\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°
+è—¤è”“\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=1] minecraft:vine\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$1\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=1] CK 1\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~4 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÏÂ½çÊ¯Ó¢¿óÊ¯\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=10] minecraft:quartz_ore\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°ä¸‹ç•ŒçŸ³è‹±çŸ¿çŸ³\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=10] minecraft:quartz_ore\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$10\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=10] CK 10\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~5 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÃº¿óÊ¯\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=10] minecraft:coal_ore\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°ç…¤çŸ¿çŸ³\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=10] minecraft:coal_ore\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$10\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=10] CK 10\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~6 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòºìÊ¯¿óÊ¯\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=15] minecraft:redstone_ore\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°çº¢çŸ³çŸ¿çŸ³\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=15] minecraft:redstone_ore\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$15\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=15] CK 15\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~7 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÌú¿óÊ¯\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=25] minecraft:iron_ore\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°é“çŸ¿çŸ³\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=25] minecraft:iron_ore\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$25\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=25] CK 25\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~8 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂò½ğ¿óÊ¯\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=36] minecraft:gold_ore\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°é‡‘çŸ¿çŸ³\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=36] minecraft:gold_ore\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$36\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=36] CK 36\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~9 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÂÌ±¦Ê¯¿óÊ¯\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=35] minecraft:emerald_ore\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°ç»¿å®çŸ³çŸ¿çŸ³\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=35] minecraft:emerald_ore\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$35\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=35] CK 35\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~10 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÇà½ğÊ¯¿óÊ¯\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=75] minecraft:lapis_ore\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°é’é‡‘çŸ³çŸ¿çŸ³\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=75] minecraft:lapis_ore\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$75\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=75] CK 75\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~11 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂò×êÊ¯¿óÊ¯\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=100] minecraft:diamond_ore\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°é’»çŸ³çŸ¿çŸ³\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=100] minecraft:diamond_ore\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$100\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=100] CK 100\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
@@ -642,18 +642,18 @@ Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 {id:"commandblock_minecart",Command:"fill ~ ~ ~ ~ ~-1 ~ minecraft:air 0 replace"}]}]}
 
 testfor @a[x=285,y=64,z=313,dx=8,dy=5,dz=11]
-tellraw @a[x=285,y=64,z=313,dx=8,dy=5,dz=11]  [{"text":"»¶Ó­¹ºÂòÊ¯²ÄºÍ¿óÊ¯\n","color":"yellow"},
-{"text":"Ô²Ê¯$1¡¢Ê¯Í·$1¡¢Ê¯Ó¢¿é$4¡¢ÌÙÂû$1\n","color":"light_purple"},
-{"text":"ÏÂ½çÊ¯Ó¢¿óÊ¯$10¡¢Ãº¿óÊ¯$10¡¢ºìÊ¯¿óÊ¯$15¡¢Ìú¿óÊ¯$25\n","color":"gold"},
-{"text":"½ğ¿óÊ¯$36¡¢ÂÌ±¦Ê¯¿óÊ¯$35¡¢Çà½ğÊ¯¿óÊ¯$75¡¢×êÊ¯¿óÊ¯$100","color":"green"}]
+tellraw @a[x=285,y=64,z=313,dx=8,dy=5,dz=11]  [{"text":"æ¬¢è¿è´­ä¹°çŸ³æå’ŒçŸ¿çŸ³\n","color":"yellow"},
+{"text":"åœ†çŸ³$1ã€çŸ³å¤´$1ã€çŸ³è‹±å—$4ã€è—¤è”“$1\n","color":"light_purple"},
+{"text":"ä¸‹ç•ŒçŸ³è‹±çŸ¿çŸ³$10ã€ç…¤çŸ¿çŸ³$10ã€çº¢çŸ³çŸ¿çŸ³$15ã€é“çŸ¿çŸ³$25\n","color":"gold"},
+{"text":"é‡‘çŸ¿çŸ³$36ã€ç»¿å®çŸ³çŸ¿çŸ³$35ã€é’é‡‘çŸ³çŸ¿çŸ³$75ã€é’»çŸ³çŸ¿çŸ³$100","color":"green"}]
 
-====	104 Ê÷Ãç 6
-ÏğÊ÷Ê÷Ãç      sapling             16
-ÔÆÉ¼Ê÷Ãç      sapling:1           16
-èëÊ÷Ê÷Ãç      sapling:2           16
-´ÔÁÖÊ÷Ãç      sapling:3           16
-½ğºÏ»¶Ê÷Ãç    sapling:4           16
-ÉîÉ«ÏğÊ÷Ê÷Ãç  sapling:5           16
+####	104 æ ‘è‹— 6
+æ©¡æ ‘æ ‘è‹—      sapling             16
+äº‘æ‰æ ‘è‹—      sapling:1           16
+æ¡¦æ ‘æ ‘è‹—      sapling:2           16
+ä¸›æ—æ ‘è‹—      sapling:3           16
+é‡‘åˆæ¬¢æ ‘è‹—    sapling:4           16
+æ·±è‰²æ©¡æ ‘æ ‘è‹—  sapling:5           16
 
 
 summon falling_block ~ ~2 ~ {Time:1,Block:"minecraft:redstone_block",Passengers:[
@@ -661,37 +661,37 @@ summon falling_block ~ ~2 ~ {Time:1,Block:"minecraft:redstone_block",Passengers:
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~ wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÏğÊ÷Ê÷Ãç\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=16] minecraft:sapling\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°æ©¡æ ‘æ ‘è‹—\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=16] minecraft:sapling\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$16\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=16] CK 16\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~1 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÔÆÉ¼Ê÷Ãç\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=16] minecraft:sapling 1 1\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°äº‘æ‰æ ‘è‹—\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=16] minecraft:sapling 1 1\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$16\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=16] CK 16\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~2 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòèëÊ÷Ê÷Ãç\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=16] minecraft:sapling 1 2\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°æ¡¦æ ‘æ ‘è‹—\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=16] minecraft:sapling 1 2\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$16\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=16] CK 16\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~3 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂò´ÔÁÖÊ÷Ãç\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=16] minecraft:sapling 1 3\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°ä¸›æ—æ ‘è‹—\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=16] minecraft:sapling 1 3\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$16\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=16] CK 16\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~4 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂò½ğºÏ»¶Ê÷Ãç\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=16] minecraft:sapling 1 4\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°é‡‘åˆæ¬¢æ ‘è‹—\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=16] minecraft:sapling 1 4\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$16\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=16] CK 16\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~5 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÉîÉ«ÏğÊ÷Ê÷Ãç\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=16] minecraft:sapling 1 5\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°æ·±è‰²æ©¡æ ‘æ ‘è‹—\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=16] minecraft:sapling 1 5\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$16\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=16] CK 16\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
@@ -699,108 +699,108 @@ Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 {id:"commandblock_minecart",Command:"fill ~ ~ ~ ~ ~-1 ~ minecraft:air 0 replace"}]}]}
 
 testfor @a[x=285,y=64,z=327,dx=8,dy=5,dz=5]
-tellraw @a[x=285,y=64,z=327,dx=8,dy=5,dz=5]  [{"text":"»¶Ó­¹ºÂòÊ÷Ãç£¬¼Û¸ñ$16","color":"yellow"}]
+tellraw @a[x=285,y=64,z=327,dx=8,dy=5,dz=5]  [{"text":"æ¬¢è¿è´­ä¹°æ ‘è‹—ï¼Œä»·æ ¼$16","color":"yellow"}]
 
-====	105 Å©×÷Îï 12
-Ğ¡ÂóÖÖ×Ó		wheat_seeds			1
-¿É¿É¶¹			dye:3               5
-ÏÉÈËÕÆ			cactus              16
-×ØÉ«Ä¢¹½		brown_mushroom      16
-ºìÉ«Ä¢¹½		red_mushroom        16
-¸ÊÕá			reeds               320
-ºúÂÜ²·			carrot              320
-ÍÁ¶¹			potato              320
-Ìğ²ËÖÖ×Ó		beetroot_seeds      320
-ÄÏ¹ÏÖÖ×Ó		pumpkin_seeds       320
-Î÷¹ÏÖÖ×Ó		melon_seeds         320
-µØÓüğà			nether_wart         640
-×ÏËÌ»¨			chorus_flower       640
-¹Ç¿é			bone_block			45
+####	105 å†œä½œç‰© 12
+å°éº¦ç§å­		wheat_seeds			1
+å¯å¯è±†			dye:3               5
+ä»™äººæŒ			cactus              16
+æ£•è‰²è˜‘è‡		brown_mushroom      16
+çº¢è‰²è˜‘è‡		red_mushroom        16
+ç”˜è”—			reeds               320
+èƒ¡èåœ			carrot              320
+åœŸè±†			potato              320
+ç”œèœç§å­		beetroot_seeds      320
+å—ç“œç§å­		pumpkin_seeds       320
+è¥¿ç“œç§å­		melon_seeds         320
+åœ°ç‹±ç–£			nether_wart         640
+ç´«é¢‚èŠ±			chorus_flower       640
+éª¨å—			bone_block			45
 
 summon falling_block ~ ~2 ~ {Time:1,Block:"minecraft:redstone_block",Passengers:[
 {id:"falling_block",Time:1,Block:"minecraft:activator_rail",Passengers:[
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~ wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòĞ¡ÂóÖÖ×Ó\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=1] minecraft:wheat_seeds\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°å°éº¦ç§å­\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=1] minecraft:wheat_seeds\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$1\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=1] CK 1\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~-1 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂò¿É¿É¶¹\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:dye 1 3\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°å¯å¯è±†\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:dye 1 3\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$5\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=5] CK 5\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~-2 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÏÉÈËÕÆ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=16] minecraft:cactus\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°ä»™äººæŒ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=16] minecraft:cactus\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$16\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=16] CK 16\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~-3 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂò×ØÉ«Ä¢¹½\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=16] minecraft:brown_mushroom\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°æ£•è‰²è˜‘è‡\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=16] minecraft:brown_mushroom\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$16\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=16] CK 16\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~-4 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòºìÉ«Ä¢¹½\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=16] minecraft:red_mushroom\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°çº¢è‰²è˜‘è‡\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=16] minecraft:red_mushroom\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$16\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=16] CK 16\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~-5 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂò¸ÊÕá\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=320] minecraft:reeds\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°ç”˜è”—\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=320] minecraft:reeds\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$320\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=320] CK 320\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~-6 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòºúÂÜ²·\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=320] minecraft:carrot\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°èƒ¡èåœ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=320] minecraft:carrot\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$320\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=320] CK 320\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~-7 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÍÁ¶¹\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=320] minecraft:potato\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°åœŸè±†\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=320] minecraft:potato\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$320\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=320] CK 320\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~-8 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÌğ²ËÖÖ×Ó\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=320] minecraft:beetroot_seeds\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°ç”œèœç§å­\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=320] minecraft:beetroot_seeds\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$320\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=320] CK 320\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~-9 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÄÏ¹ÏÖÖ×Ó\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=320] minecraft:pumpkin_seeds\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°å—ç“œç§å­\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=320] minecraft:pumpkin_seeds\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$320\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=320] CK 320\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~-10 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÎ÷¹ÏÖÖ×Ó\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=320] minecraft:melon_seeds\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°è¥¿ç“œç§å­\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=320] minecraft:melon_seeds\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$320\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=320] CK 320\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~-11 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòµØÓüğà\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=640] minecraft:nether_wart\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°åœ°ç‹±ç–£\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=640] minecraft:nether_wart\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$640\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=640] CK 640\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~-12 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂò×ÏËÌ»¨\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=640] minecraft:chorus_flower\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°ç´«é¢‚èŠ±\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=640] minecraft:chorus_flower\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$640\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=640] CK 640\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~-18 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂò¹Ç¿é\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=45] minecraft:bone_block\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°éª¨å—\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=45] minecraft:bone_block\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$45\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=45] CK 45\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
@@ -808,9 +808,9 @@ Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 {id:"commandblock_minecart",Command:"fill ~ ~ ~ ~ ~-1 ~ minecraft:air 0 replace"}]}]}
 
 testfor @a[x=267,y=64,z=315,dx=8,dy=5,dz=18]
-tellraw @a[x=267,y=64,z=315,dx=8,dy=5,dz=18]  [{"text":"»¶Ó­¹ºÂòºÍ³öÊÛÅ©×÷Îï\n","color":"yellow"},{"text":"Ğ¡ÂóÖÖ×Ó$1¡¢¿É¿É¶¹$5¡¢ÏÉÈËÕÆ/Ä¢¹½$16¡¢¸ÊÕá$320\n","color":"light_purple"},{"text":"ºúÂÜ²·/ÍÁ¶¹/Ìğ²ËÖÖ×Ó/ÄÏ¹ÏÖÖ×Ó/Î÷¹ÏÖÖ×Ó$320\n","color":"gold"},{"text":"µØÓüğà/×ÏËÌ»¨$640¡¢¹Ç¿é$45\n","color":"green"},{"text":"ÊÕ¹ºĞ¡Âó¡¢ÍÁ¶¹¡¢ºúÂÜ²·µÈÎïÆ·","color":"red"}]
+tellraw @a[x=267,y=64,z=315,dx=8,dy=5,dz=18]  [{"text":"æ¬¢è¿è´­ä¹°å’Œå‡ºå”®å†œä½œç‰©\n","color":"yellow"},{"text":"å°éº¦ç§å­$1ã€å¯å¯è±†$5ã€ä»™äººæŒ/è˜‘è‡$16ã€ç”˜è”—$320\n","color":"light_purple"},{"text":"èƒ¡èåœ/åœŸè±†/ç”œèœç§å­/å—ç“œç§å­/è¥¿ç“œç§å­$320\n","color":"gold"},{"text":"åœ°ç‹±ç–£/ç´«é¢‚èŠ±$640ã€éª¨å—$45\n","color":"green"},{"text":"æ”¶è´­å°éº¦ã€åœŸè±†ã€èƒ¡èåœç­‰ç‰©å“","color":"red"}]
 
-summon villager ~ ~.5 ~ {NoAI:true,Invulnerable:true,CustomName:"ÊÕ¹ºÉÌ",CustomNameVisible:true,Profession:0s,Rotation:[270f,0f],Silent:true,Offers:{Recipes:[
+summon villager ~ ~.5 ~ {NoAI:true,Invulnerable:true,CustomName:"æ”¶è´­å•†",CustomNameVisible:true,Profession:0s,Rotation:[270f,0f],Silent:true,Offers:{Recipes:[
 {maxUses:99999999,buy:{id:minecraft:wheat,Count:18},sell:{id:minecraft:emerald,Count:1}},
 {maxUses:99999999,buy:{id:minecraft:potato,Count:15},sell:{id:minecraft:emerald,Count:1}},
 {maxUses:99999999,buy:{id:minecraft:carrot,Count:15},sell:{id:minecraft:emerald,Count:1}},
@@ -836,120 +836,120 @@ summon villager ~ ~.5 ~ {NoAI:true,Invulnerable:true,CustomName:"ÊÕ¹ºÉÌ",CustomN
 {maxUses:99999999,buy:{id:minecraft:compass,Count: 1},sell:{id:minecraft:emerald,Count:1}},
 {maxUses:99999999,buy:{id:minecraft:nether_star,Count: 1},sell:{id:minecraft:emerald_block,Count:25}}]}}
 
-====	106 È¾ÁÏ 16
-Ä«ÄÒ		dye:0	5
-Ãµ¹åºì		dye:1	5
-ÏÉÈËÕÆÂÌ	dye:2	5
-¿É¿É¶¹		dye:3	5
-Çà½ğÊ¯		dye:4	5
-×ÏÉ«È¾ÁÏ	dye:5	5	×Ï=ºì+À¶
-ÇàÉ«È¾ÁÏ	dye:6	5	Çà=À¶+ÂÌ
-µ­»ÒÉ«È¾ÁÏ	dye:7	5	µ­»Ò=»Ò+°×
-»ÒÉ«È¾ÁÏ	dye:8	5	»Ò=ºÚ+°×
-·ÛºìÉ«È¾ÁÏ	dye:9	5	·Û=ºì+°×
-»ÆÂÌÉ«È¾ÁÏ	dye:10	5	»ÆÂÌ=ÂÌ+°×
-ÆÑ¹«Ó¢»Æ	dye:11	5
-µ­À¶É«È¾ÁÏ	dye:12	5	µ­À¶=À¶+°×
-Æ·ºìÉ«È¾ÁÏ	dye:13	5	Æ·ºì=×Ï+·Û
-³ÈÉ«È¾ÁÏ	dye:14	5	³È=ºì+»Æ
-¹Ç·Û		dye:15	5
+####	106 æŸ“æ–™ 16
+å¢¨å›Š		dye:0	5
+ç«ç‘°çº¢		dye:1	5
+ä»™äººæŒç»¿	dye:2	5
+å¯å¯è±†		dye:3	5
+é’é‡‘çŸ³		dye:4	5
+ç´«è‰²æŸ“æ–™	dye:5	5	ç´«=çº¢+è“
+é’è‰²æŸ“æ–™	dye:6	5	é’=è“+ç»¿
+æ·¡ç°è‰²æŸ“æ–™	dye:7	5	æ·¡ç°=ç°+ç™½
+ç°è‰²æŸ“æ–™	dye:8	5	ç°=é»‘+ç™½
+ç²‰çº¢è‰²æŸ“æ–™	dye:9	5	ç²‰=çº¢+ç™½
+é»„ç»¿è‰²æŸ“æ–™	dye:10	5	é»„ç»¿=ç»¿+ç™½
+è’²å…¬è‹±é»„	dye:11	5
+æ·¡è“è‰²æŸ“æ–™	dye:12	5	æ·¡è“=è“+ç™½
+å“çº¢è‰²æŸ“æ–™	dye:13	5	å“çº¢=ç´«+ç²‰
+æ©™è‰²æŸ“æ–™	dye:14	5	æ©™=çº¢+é»„
+éª¨ç²‰		dye:15	5
 
 summon falling_block ~ ~2 ~ {Time:1,Block:"minecraft:redstone_block",Passengers:[
 {id:"falling_block",Time:1,Block:"minecraft:activator_rail",Passengers:[
 
 {id:"commandblock_minecart",Command:"setblock ~ ~-1 ~2 wall_sign 2 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÄ«ÄÒ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:dye\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°å¢¨å›Š\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:dye\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$5\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=5] CK 5\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~1 ~-1 ~2 wall_sign 2 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÃµ¹åºì\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:dye 1 1\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°ç«ç‘°çº¢\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:dye 1 1\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$5\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=5] CK 5\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~2 wall_sign 2 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÏÉÈËÕÆÂÌ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:dye 1 2\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°ä»™äººæŒç»¿\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:dye 1 2\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$5\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=5] CK 5\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~3 ~-1 ~2 wall_sign 2 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂò¿É¿É¶¹\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:dye 1 3\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°å¯å¯è±†\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:dye 1 3\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$5\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=5] CK 5\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~4 ~-1 ~2 wall_sign 2 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÇà½ğÊ¯\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:dye 1 4\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°é’é‡‘çŸ³\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:dye 1 4\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$5\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=5] CK 5\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~5 ~-1 ~2 wall_sign 2 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂò×ÏÉ«È¾ÁÏ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:dye 1 5\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°ç´«è‰²æŸ“æ–™\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:dye 1 5\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$5\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=5] CK 5\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
-Text4:\"{\\\"text\\\":\\\"×Ï=ºì+À¶\\\",\\\"color\\\":\\\"dark_blue\\\"}\"}"},
+Text4:\"{\\\"text\\\":\\\"ç´«=çº¢+è“\\\",\\\"color\\\":\\\"dark_blue\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~6 ~-1 ~2 wall_sign 2 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÇàÉ«È¾ÁÏ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:dye 1 6\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°é’è‰²æŸ“æ–™\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:dye 1 6\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$5\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=5] CK 5\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
-Text4:\"{\\\"text\\\":\\\"Çà=À¶+ÂÌ\\\",\\\"color\\\":\\\"dark_blue\\\"}\"}"},
+Text4:\"{\\\"text\\\":\\\"é’=è“+ç»¿\\\",\\\"color\\\":\\\"dark_blue\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~7 ~-1 ~2 wall_sign 2 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòµ­»ÒÉ«È¾ÁÏ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:dye 1 7\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°æ·¡ç°è‰²æŸ“æ–™\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:dye 1 7\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$5\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=5] CK 5\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
-Text4:\"{\\\"text\\\":\\\"µ­»Ò=»Ò+°×\\\",\\\"color\\\":\\\"dark_blue\\\"}\"}"},
+Text4:\"{\\\"text\\\":\\\"æ·¡ç°=ç°+ç™½\\\",\\\"color\\\":\\\"dark_blue\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~9 ~-1 ~2 wall_sign 2 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂò»ÒÉ«È¾ÁÏ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:dye 1 8\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°ç°è‰²æŸ“æ–™\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:dye 1 8\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$5\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=5] CK 5\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
-Text4:\"{\\\"text\\\":\\\"»Ò=ºÚ+°×\\\",\\\"color\\\":\\\"dark_blue\\\"}\"}"},
+Text4:\"{\\\"text\\\":\\\"ç°=é»‘+ç™½\\\",\\\"color\\\":\\\"dark_blue\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~10 ~-1 ~2 wall_sign 2 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂò·ÛºìÉ«È¾ÁÏ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:dye 1 9\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°ç²‰çº¢è‰²æŸ“æ–™\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:dye 1 9\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$5\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=5] CK 5\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
-Text4:\"{\\\"text\\\":\\\"·Û=ºì+°×\\\",\\\"color\\\":\\\"dark_blue\\\"}\"}"},
+Text4:\"{\\\"text\\\":\\\"ç²‰=çº¢+ç™½\\\",\\\"color\\\":\\\"dark_blue\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~11 ~-1 ~2 wall_sign 2 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂò»ÆÂÌÉ«È¾ÁÏ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:dye 1 10\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°é»„ç»¿è‰²æŸ“æ–™\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:dye 1 10\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$5\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=5] CK 5\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
-Text4:\"{\\\"text\\\":\\\"»ÆÂÌ=ÂÌ+°×\\\",\\\"color\\\":\\\"dark_blue\\\"}\"}"},
+Text4:\"{\\\"text\\\":\\\"é»„ç»¿=ç»¿+ç™½\\\",\\\"color\\\":\\\"dark_blue\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~12 ~-1 ~2 wall_sign 2 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÆÑ¹«Ó¢»Æ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:dye 1 11\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°è’²å…¬è‹±é»„\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:dye 1 11\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$5\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=5] CK 5\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~13 ~-1 ~2 wall_sign 2 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòµ­À¶É«È¾ÁÏ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:dye 1 12\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°æ·¡è“è‰²æŸ“æ–™\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:dye 1 12\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$5\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=5] CK 5\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
-Text4:\"{\\\"text\\\":\\\"µ­À¶=À¶+°×\\\",\\\"color\\\":\\\"dark_blue\\\"}\"}"},
+Text4:\"{\\\"text\\\":\\\"æ·¡è“=è“+ç™½\\\",\\\"color\\\":\\\"dark_blue\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~14 ~-1 ~2 wall_sign 2 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÆ·ºìÉ«È¾ÁÏ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:dye 1 13\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°å“çº¢è‰²æŸ“æ–™\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:dye 1 13\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$5\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=5] CK 5\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
-Text4:\"{\\\"text\\\":\\\"Æ·ºì=×Ï+·Û\\\",\\\"color\\\":\\\"dark_blue\\\"}\"}"},
+Text4:\"{\\\"text\\\":\\\"å“çº¢=ç´«+ç²‰\\\",\\\"color\\\":\\\"dark_blue\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~15 ~-1 ~2 wall_sign 2 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂò³ÈÉ«È¾ÁÏ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:dye 1 14\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°æ©™è‰²æŸ“æ–™\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:dye 1 14\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$5\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=5] CK 5\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
-Text4:\"{\\\"text\\\":\\\"³È=ºì+»Æ\\\",\\\"color\\\":\\\"dark_blue\\\"}\"}"},
+Text4:\"{\\\"text\\\":\\\"æ©™=çº¢+é»„\\\",\\\"color\\\":\\\"dark_blue\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~16 ~-1 ~2 wall_sign 2 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂò¹Ç·Û\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:dye 1 15\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°éª¨ç²‰\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:dye 1 15\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$5\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=5] CK 5\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
@@ -957,73 +957,73 @@ Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 {id:"commandblock_minecart",Command:"fill ~ ~ ~ ~ ~-1 ~ minecraft:air 0 replace"}]}]}
 
 testfor @a[x=236,y=64,z=315,dx=28,dy=5,dz=9]
-tellraw @a[x=236,y=64,z=315,dx=28,dy=5,dz=9]  [{"text":"»¶Ó­¹ºÂòÈ¾ÁÏ£¬¼Û¸ñ$5\nÄã»¹¿ÉÒÔÔÚ´ËDIYÑÌ»¨»ğ¼ıºÍÆìÖÄ","color":"yellow"}]
+tellraw @a[x=236,y=64,z=315,dx=28,dy=5,dz=9]  [{"text":"æ¬¢è¿è´­ä¹°æŸ“æ–™ï¼Œä»·æ ¼$5\nä½ è¿˜å¯ä»¥åœ¨æ­¤DIYçƒŸèŠ±ç«ç®­å’Œæ——å¸œ","color":"yellow"}]
 
-====	106A DIYÑÌ»¨»ğ¼ı 9
-»ğÒ©			gunpowder		4
-»ğÑæµ¯			fire_charge		10
-½ğÁ£			gold_nugget		4
-Í·Â­			skull:3			100
-ÓğÃ«			feather			4
-×êÊ¯			diamond			40
-Ó©Ê¯·Û			glowstone_dust	1
-Ö½				paper			1
-15É«ÑÌ»¨»ğ¼ı	fireworks       50
+####	106A DIYçƒŸèŠ±ç«ç®­ 9
+ç«è¯			gunpowder		4
+ç«ç„°å¼¹			fire_charge		10
+é‡‘ç²’			gold_nugget		4
+å¤´é¢…			skull:3			100
+ç¾½æ¯›			feather			4
+é’»çŸ³			diamond			40
+è¤çŸ³ç²‰			glowstone_dust	1
+çº¸				paper			1
+15è‰²çƒŸèŠ±ç«ç®­	fireworks       50
 
 summon falling_block ~ ~2 ~ {Time:1,Block:"minecraft:redstone_block",Passengers:[
 {id:"falling_block",Time:1,Block:"minecraft:activator_rail",Passengers:[
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~ wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂò»ğÒ©\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=4] minecraft:gunpowder\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°ç«è¯\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=4] minecraft:gunpowder\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$4\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=4] CK 4\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~1 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂò»ğÑæµ¯\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=10] minecraft:fire_charge\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°ç«ç„°å¼¹\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=10] minecraft:fire_charge\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$10\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=10] CK 10\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~2 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂò½ğÁ£\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=4] minecraft:gold_nugget\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°é‡‘ç²’\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=4] minecraft:gold_nugget\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$4\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=4] CK 4\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~3 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÍ·Â­\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=100] minecraft:skull 1 3\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°å¤´é¢…\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=100] minecraft:skull 1 3\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$100\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=100] CK 100\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~4 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÓğÃ«\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=4] minecraft:feather\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°ç¾½æ¯›\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=4] minecraft:feather\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$4\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=4] CK 4\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~5 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂò×êÊ¯\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=40] minecraft:diamond\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°é’»çŸ³\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=40] minecraft:diamond\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$40\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=40] CK 40\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~6 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÓ©Ê¯·Û\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=1] minecraft:glowstone_dust\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°è¤çŸ³ç²‰\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=1] minecraft:glowstone_dust\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$1\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=1] CK 1\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~7 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÖ½\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=1] minecraft:paper\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°çº¸\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=1] minecraft:paper\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$1\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=1] CK 1\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~8 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂò15É«ÑÌ»¨»ğ¼ı\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=50] minecraft:fireworks 1 0 {Fireworks:{Flight:3b,Explosions:[{Flicker:1b,Trail:1b,Type:1b,Colors:[11743532,2437522,3887386,14602026,14188952,8073150],FadeColors:[15435844,6719955,12801229,2651799,4312372,5320730,3887386,15790320,]}]}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°15è‰²çƒŸèŠ±ç«ç®­\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=50] minecraft:fireworks 1 0 {Fireworks:{Flight:3b,Explosions:[{Flicker:1b,Trail:1b,Type:1b,Colors:[11743532,2437522,3887386,14602026,14188952,8073150],FadeColors:[15435844,6719955,12801229,2651799,4312372,5320730,3887386,15790320,]}]}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$50\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=50] CK 50\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
@@ -1032,72 +1032,72 @@ Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 
 testfor @a[x=259,y=64,z=315,dx=5,dy=5,dz=9]
-tellraw @a[x=259,y=64,z=315,dx=5,dy=5,dz=9]  [{"text":"»¶Ó­DIYÑÌ»¨»ğ¼ı\n","color":"yellow"},
-{"text":"»ğÒ©+Èô¸ÉÈ¾ÁÏ+»ğÑæµ¯/½ğÁ£/Í·Â­/ÓğÃ«+×êÊ¯/Ó©Ê¯·Û=ÑÌ»ğÖ®ĞÇ\n","color":"light_purple"},
-{"text":"ÑÌ»ğÖ®ĞÇ+È¾ÁÏ=±äÉ«µÄÑÌ»ğÖ®ĞÇ\n","color":"gold"},
-{"text":"ÑÌ»ğÖ®ĞÇ+1-3»ğÒ©+Ö½=ÑÌ»¨»ğ¼ı\n","color":"green"},
-{"text":"»ğÑæµ¯/½ğÁ£/Í·Â­/ÓğÃ«¾ö¶¨ĞÎ×´£º´óĞÍÇò×´/ĞÇĞÍ/ÅÀĞĞÕßÁ³ĞÍ/±¬ÁÑĞÍ\n","color":"red"},
-{"text":"×êÊ¯/Ó©Ê¯·Û¾ö¶¨Ğ§¹û£ºÉÁË¸/×Ù¼£\n","color":"blue"}]
+tellraw @a[x=259,y=64,z=315,dx=5,dy=5,dz=9]  [{"text":"æ¬¢è¿DIYçƒŸèŠ±ç«ç®­\n","color":"yellow"},
+{"text":"ç«è¯+è‹¥å¹²æŸ“æ–™+ç«ç„°å¼¹/é‡‘ç²’/å¤´é¢…/ç¾½æ¯›+é’»çŸ³/è¤çŸ³ç²‰=çƒŸç«ä¹‹æ˜Ÿ\n","color":"light_purple"},
+{"text":"çƒŸç«ä¹‹æ˜Ÿ+æŸ“æ–™=å˜è‰²çš„çƒŸç«ä¹‹æ˜Ÿ\n","color":"gold"},
+{"text":"çƒŸç«ä¹‹æ˜Ÿ+1-3ç«è¯+çº¸=çƒŸèŠ±ç«ç®­\n","color":"green"},
+{"text":"ç«ç„°å¼¹/é‡‘ç²’/å¤´é¢…/ç¾½æ¯›å†³å®šå½¢çŠ¶ï¼šå¤§å‹çƒçŠ¶/æ˜Ÿå‹/çˆ¬è¡Œè€…è„¸å‹/çˆ†è£‚å‹\n","color":"red"},
+{"text":"é’»çŸ³/è¤çŸ³ç²‰å†³å®šæ•ˆæœï¼šé—ªçƒ/è¸ªè¿¹\n","color":"blue"}]
 give @p[score_CK_min=50] minecraft:fireworks 1 0 {Fireworks:{Flight:3b,Explosions:[{Flicker:1b,Trail:1b,Type:1b,Colors:[11743532,2437522,3887386,14602026,14188952,8073150],FadeColors:[15435844,6719955,12801229,2651799,4312372,5320730,3887386,15790320,]}]}}
 
-====	106B DIYÆìÖÄ 8
-ÑòÃ«			wool			60/6
-Ä¾¹÷			stick			1
-ÌÙÂû			vine			1
-×©¿é			brick_block		5
-ÅÀĞĞÕßµÄÍ·		skull:4			500
-µòÁé÷¼÷ÃÍ·Â­	skull:1			1000
-±õ¾Õ			red_flower:8	5
-¸½Ä§½ğÆ»¹û		golden_apple:1	3000
+####	106B DIYæ——å¸œ 8
+ç¾Šæ¯›			wool			60/6
+æœ¨æ£			stick			1
+è—¤è”“			vine			1
+ç –å—			brick_block		5
+çˆ¬è¡Œè€…çš„å¤´		skull:4			500
+å‡‹çµéª·é«…å¤´é¢…	skull:1			1000
+æ»¨èŠ			red_flower:8	5
+é™„é­”é‡‘è‹¹æœ		golden_apple:1	3000
 
 summon falling_block ~ ~2 ~ {Time:1,Block:"minecraft:redstone_block",Passengers:[
 {id:"falling_block",Time:1,Block:"minecraft:activator_rail",Passengers:[
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~ wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÑòÃ«\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=60] minecraft:wool 6\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°ç¾Šæ¯›\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=60] minecraft:wool 6\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$60/6\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=60] CK 60\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~1 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÄ¾¹÷\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=1] minecraft:stick\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°æœ¨æ£\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=1] minecraft:stick\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$1\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=1] CK 1\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~2 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÌÙÂû\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=1] minecraft:vine\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°è—¤è”“\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=1] minecraft:vine\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$1\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=1] CK 1\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~3 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂò×©¿é\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:brick_block\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°ç –å—\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:brick_block\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$5\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=5] CK 5\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~4 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÅÀĞĞÕßµÄÍ·\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=500] minecraft:skull 1 4\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°çˆ¬è¡Œè€…çš„å¤´\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=500] minecraft:skull 1 4\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$500\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=500] CK 500\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~5 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòµòÁé÷¼÷ÃÍ·Â­\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=1000] minecraft:skull 1 1\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°å‡‹çµéª·é«…å¤´é¢…\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=1000] minecraft:skull 1 1\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$1000\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=1000] CK 1000\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~6 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂò±õ¾Õ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:red_flower 1 8\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°æ»¨èŠ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:red_flower 1 8\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$5\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=5] CK 5\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~7 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂò¸½Ä§½ğÆ»¹û\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=3000] minecraft:golden_apple 1 1\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°é™„é­”é‡‘è‹¹æœ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=3000] minecraft:golden_apple 1 1\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$3000\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=3000] CK 3000\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
@@ -1106,146 +1106,146 @@ Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 
 testfor @a[x=236,y=64,z=315,dx=5,dy=5,dz=9]
-tellraw @a[x=236,y=64,z=315,dx=5,dy=5,dz=9]  [{"text":"»¶Ó­DIYÆìÖÄ\n","color":"yellow"},
-{"text":"ÆìÖÄÓÉ6ÑòÃ«+Ä¾¹÷ºÏ³É£¬Í¼°¸ËùĞèÈ¾ÁÏÅä·½ÈçÏÂ£º\n","color":"light_purple"},
-{"text":"¶¥µ××óÓÒºáÊúĞ±Ìõ=3¶ÔÓ¦Î»ÖÃÈ¾ÁÏ ÊúÌõÎÆ=×óÉÏ2+ÓÒÉÏ2È¾ÁÏ\n","color":"gold"},
-{"text":"XĞÎ/Ê®×ÖĞÎ=¶ÔÓ¦Î»ÖÃ5È¾ÁÏ      ÖĞ¼äÔ²ĞÎ=ÖĞ¼ä1È¾ÁÏ\n","color":"gold"},
-{"text":"ÁâĞÎ=ÁâĞÎ4È¾ÁÏ                  Èı½ÇĞÎ=¶ÔÓ¦½ÇÂäÎ»ÖÃ3È¾ÁÏ\n","color":"gold"},
-{"text":"°ë±ß=¶ÔÓ¦Î»ÖÃ6È¾ÁÏ              ½ÇÂä·½ĞÎ=¶ÔÓ¦Î»ÖÃ1È¾ÁÏ\n","color":"gold"},
-{"text":"¶¥¡¢µ×Èı½Ç=¶ÔÓ¦Î»ÖÃ3È¾ÁÏ       ¶¥¡¢µ×²¨ÎÆ=¶ÔÓ¦Î»ÖÃ^¡¢VĞÎ3È¾ÁÏ\n","color":"red"},
-{"text":"·½¿ò=·½¿ò8È¾ÁÏ                  ²¨ÎÆ±ß¿ò=ÌÙÂû+È¾ÁÏ\n","color":"red"},
-{"text":"×©ÎÆ=×©¿é+È¾ÁÏ                  ¶¥¡¢µ×ÉîÉ«½¥±ä=µ¹¡¢ÕıÌúËş4È¾ÁÏ\n","color":"blue"},
-{"text":"ÅÀĞĞÕßÍ¼°¸=ÅÀĞĞÕßµÄÍ·+È¾ÁÏ     ÷¼÷ÃÍ¼°¸=µòÁé÷¼÷ÃÍ·Â­+È¾ÁÏ\n","color":"light_purple"},
-{"text":"»¨¶äÍ¼°¸=±õ¾Õ+È¾ÁÏ              Mojang»Õ±ê=¸½Ä§½ğÆ»¹û+È¾ÁÏ","color":"light_purple"}]
+tellraw @a[x=236,y=64,z=315,dx=5,dy=5,dz=9]  [{"text":"æ¬¢è¿DIYæ——å¸œ\n","color":"yellow"},
+{"text":"æ——å¸œç”±6ç¾Šæ¯›+æœ¨æ£åˆæˆï¼Œå›¾æ¡ˆæ‰€éœ€æŸ“æ–™é…æ–¹å¦‚ä¸‹ï¼š\n","color":"light_purple"},
+{"text":"é¡¶åº•å·¦å³æ¨ªç«–æ–œæ¡=3å¯¹åº”ä½ç½®æŸ“æ–™ ç«–æ¡çº¹=å·¦ä¸Š2+å³ä¸Š2æŸ“æ–™\n","color":"gold"},
+{"text":"Xå½¢/åå­—å½¢=å¯¹åº”ä½ç½®5æŸ“æ–™      ä¸­é—´åœ†å½¢=ä¸­é—´1æŸ“æ–™\n","color":"gold"},
+{"text":"è±å½¢=è±å½¢4æŸ“æ–™                  ä¸‰è§’å½¢=å¯¹åº”è§’è½ä½ç½®3æŸ“æ–™\n","color":"gold"},
+{"text":"åŠè¾¹=å¯¹åº”ä½ç½®6æŸ“æ–™              è§’è½æ–¹å½¢=å¯¹åº”ä½ç½®1æŸ“æ–™\n","color":"gold"},
+{"text":"é¡¶ã€åº•ä¸‰è§’=å¯¹åº”ä½ç½®3æŸ“æ–™       é¡¶ã€åº•æ³¢çº¹=å¯¹åº”ä½ç½®^ã€Vå½¢3æŸ“æ–™\n","color":"red"},
+{"text":"æ–¹æ¡†=æ–¹æ¡†8æŸ“æ–™                  æ³¢çº¹è¾¹æ¡†=è—¤è”“+æŸ“æ–™\n","color":"red"},
+{"text":"ç –çº¹=ç –å—+æŸ“æ–™                  é¡¶ã€åº•æ·±è‰²æ¸å˜=å€’ã€æ­£é“å¡”4æŸ“æ–™\n","color":"blue"},
+{"text":"çˆ¬è¡Œè€…å›¾æ¡ˆ=çˆ¬è¡Œè€…çš„å¤´+æŸ“æ–™     éª·é«…å›¾æ¡ˆ=å‡‹çµéª·é«…å¤´é¢…+æŸ“æ–™\n","color":"light_purple"},
+{"text":"èŠ±æœµå›¾æ¡ˆ=æ»¨èŠ+æŸ“æ–™              Mojangå¾½æ ‡=é™„é­”é‡‘è‹¹æœ+æŸ“æ–™","color":"light_purple"}]
 
 give @p banner 1 1 {BlockEntityTag:{Patterns:[{Pattern:sc,Color:11},{Pattern:tr,Color:11},{Pattern:hhb,Color:1},{Pattern:cs,Color:1},{Pattern:vh,Color:1},{Pattern:bo,Color:1}]}}
 setblock ~4 ~2 ~3 wall_sign 4 replace {
-Text1:"{\"text\":\"¶íÂŞË¹¹úÆì\",\"color\":\"dark_purple\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"blockdata ~-3 ~-2 ~-3 {auto:1}\"}}",
-Text2:"{\"text\":\"°×µ×\",\"color\":\"white\"}",
-Text3:"{\"text\":\"ºì×óÊúÌõ\",\"color\":\"white\"}",
-Text4:"{\"text\":\"À¶ÖĞÊúÌõ\",\"color\":\"white\"}"}
+Text1:"{\"text\":\"ä¿„ç½—æ–¯å›½æ——\",\"color\":\"dark_purple\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"blockdata ~-3 ~-2 ~-3 {auto:1}\"}}",
+Text2:"{\"text\":\"ç™½åº•\",\"color\":\"white\"}",
+Text3:"{\"text\":\"çº¢å·¦ç«–æ¡\",\"color\":\"white\"}",
+Text4:"{\"text\":\"è“ä¸­ç«–æ¡\",\"color\":\"white\"}"}
 setblock ~3 ~2 ~3 wall_sign 4 replace {
-Text1:"{\"text\":\"·¨¹ú¹úÆì\",\"color\":\"dark_purple\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"blockdata ~-2 ~-2 ~-3 {auto:1}\"}}",
-Text2:"{\"text\":\"°×µ×\",\"color\":\"white\"}",
-Text3:"{\"text\":\"À¶¶¥ºáÌõ\",\"color\":\"white\"}",
-Text4:"{\"text\":\"ºìµ×ºáÌõ\",\"color\":\"white\"}"}
+Text1:"{\"text\":\"æ³•å›½å›½æ——\",\"color\":\"dark_purple\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"blockdata ~-2 ~-2 ~-3 {auto:1}\"}}",
+Text2:"{\"text\":\"ç™½åº•\",\"color\":\"white\"}",
+Text3:"{\"text\":\"è“é¡¶æ¨ªæ¡\",\"color\":\"white\"}",
+Text4:"{\"text\":\"çº¢åº•æ¨ªæ¡\",\"color\":\"white\"}"}
 setblock ~2 ~2 ~3 wall_sign 4 replace {
-Text1:"{\"text\":\"ÃÀ¹ú¹úÆì\",\"color\":\"dark_purple\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"blockdata ~-1 ~-2 ~-3 {auto:1}\"}}",
-Text2:"{\"text\":\"ºìµ×\",\"color\":\"dark_red\"}",
-Text3:"{\"text\":\"°×ÊúÌõÎÆ\",\"color\":\"dark_red\"}",
-Text4:"{\"text\":\"À¶ÓÒÉÏ·½¿é\",\"color\":\"dark_red\"}"}
+Text1:"{\"text\":\"ç¾å›½å›½æ——\",\"color\":\"dark_purple\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"blockdata ~-1 ~-2 ~-3 {auto:1}\"}}",
+Text2:"{\"text\":\"çº¢åº•\",\"color\":\"dark_red\"}",
+Text3:"{\"text\":\"ç™½ç«–æ¡çº¹\",\"color\":\"dark_red\"}",
+Text4:"{\"text\":\"è“å³ä¸Šæ–¹å—\",\"color\":\"dark_red\"}"}
 setblock ~1 ~2 ~3 wall_sign 4 replace {
-Text1:"{\"text\":\"Ó¢¹ú¹úÆì\",\"color\":\"dark_purple\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"blockdata ~-0 ~-2 ~-3 {auto:1}\"}}",
-Text2:"{\"text\":\"À¶µ×°××óĞ±Ìõ°×ÓÒĞ±Ìõ\",\"color\":\"dark_blue\"}",
-Text3:"{\"text\":\"ºìĞ±Ê®×Ö£¬°×ÖĞºáÌõ\",\"color\":\"dark_blue\"}",
-Text4:"{\"text\":\"°×ÖĞÊúÌõ£¬ºìÕıÊ®×Ö\",\"color\":\"dark_blue\"}"}
+Text1:"{\"text\":\"è‹±å›½å›½æ——\",\"color\":\"dark_purple\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"blockdata ~-0 ~-2 ~-3 {auto:1}\"}}",
+Text2:"{\"text\":\"è“åº•ç™½å·¦æ–œæ¡ç™½å³æ–œæ¡\",\"color\":\"dark_blue\"}",
+Text3:"{\"text\":\"çº¢æ–œåå­—ï¼Œç™½ä¸­æ¨ªæ¡\",\"color\":\"dark_blue\"}",
+Text4:"{\"text\":\"ç™½ä¸­ç«–æ¡ï¼Œçº¢æ­£åå­—\",\"color\":\"dark_blue\"}"}
 setblock ~0 ~2 ~3 wall_sign 4 replace {
-Text1:"{\"text\":\"ÖĞ¹ú¹úÆì\",\"color\":\"dark_purple\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"blockdata ~-4 ~-2 ~-3 {auto:1}\"}}",
-Text2:"{\"text\":\"ºìµ×»ÆÕıÊ®×Ö»ÆÓÒ¶¥·½\",\"color\":\"dark_red\"}",
-Text3:"{\"text\":\"ºì×ó°ë·½ĞÎ£¬ºìÖĞÊúÌõ\",\"color\":\"dark_red\"}",
-Text4:"{\"text\":\"ºìÏÂ°ë·½ĞÎ£¬ºì·½¿ò±ß\",\"color\":\"dark_red\"}"}
+Text1:"{\"text\":\"ä¸­å›½å›½æ——\",\"color\":\"dark_purple\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"blockdata ~-4 ~-2 ~-3 {auto:1}\"}}",
+Text2:"{\"text\":\"çº¢åº•é»„æ­£åå­—é»„å³é¡¶æ–¹\",\"color\":\"dark_red\"}",
+Text3:"{\"text\":\"çº¢å·¦åŠæ–¹å½¢ï¼Œçº¢ä¸­ç«–æ¡\",\"color\":\"dark_red\"}",
+Text4:"{\"text\":\"çº¢ä¸‹åŠæ–¹å½¢ï¼Œçº¢æ–¹æ¡†è¾¹\",\"color\":\"dark_red\"}"}
 
-====	107 »¨»Ü 14
+####	107 èŠ±å‰ 14
 
-ó¿ËÚ          red_flower          5
-À¼»¨          red_flower:1        5
-ÈŞÇò´Ğ        red_flower:2        5
-Üç²İ»¨        red_flower:3        5
-ºìÉ«Óô½ğÏã    red_flower:4        5
-³ÈÉ«Óô½ğÏã    red_flower:5        5
-°×É«Óô½ğÏã    red_flower:6        5
-·ÛÉ«Óô½ğÏã    red_flower:7        5
-±õ¾Õ          red_flower:8        5
-ÆÑ¹«Ó¢        yellow_flower       5
-ÏòÈÕ¿û        double_plant        10
-¶¡Ïã          double_plant:1      10
-Ãµ¹å´Ô        double_plant:4      10
-Äµµ¤          double_plant:5      10
+ç½‚ç²Ÿ          red_flower          5
+å…°èŠ±          red_flower:1        5
+ç»’çƒè‘±        red_flower:2        5
+èŒœè‰èŠ±        red_flower:3        5
+çº¢è‰²éƒé‡‘é¦™    red_flower:4        5
+æ©™è‰²éƒé‡‘é¦™    red_flower:5        5
+ç™½è‰²éƒé‡‘é¦™    red_flower:6        5
+ç²‰è‰²éƒé‡‘é¦™    red_flower:7        5
+æ»¨èŠ          red_flower:8        5
+è’²å…¬è‹±        yellow_flower       5
+å‘æ—¥è‘µ        double_plant        10
+ä¸é¦™          double_plant:1      10
+ç«ç‘°ä¸›        double_plant:4      10
+ç‰¡ä¸¹          double_plant:5      10
 
 summon falling_block ~ ~2 ~ {Time:1,Block:"minecraft:redstone_block",Passengers:[
 {id:"falling_block",Time:1,Block:"minecraft:activator_rail",Passengers:[
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~ wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòó¿ËÚ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:red_flower\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°ç½‚ç²Ÿ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:red_flower\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$5\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=5] CK 5\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~1 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÀ¼»¨\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:red_flower 1 1\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°å…°èŠ±\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:red_flower 1 1\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$5\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=5] CK 5\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~2 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÈŞÇò´Ğ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:red_flower 1 2\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°ç»’çƒè‘±\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:red_flower 1 2\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$5\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=5] CK 5\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~3 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÜç²İ»¨\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:red_flower 1 3\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°èŒœè‰èŠ±\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:red_flower 1 3\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$5\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=5] CK 5\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~4 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòºìÉ«Óô½ğÏã\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:red_flower 1 4\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°çº¢è‰²éƒé‡‘é¦™\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:red_flower 1 4\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$5\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=5] CK 5\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~5 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂò³ÈÉ«Óô½ğÏã\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:red_flower 1 5\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°æ©™è‰²éƒé‡‘é¦™\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:red_flower 1 5\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$5\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=5] CK 5\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~6 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂò°×É«Óô½ğÏã\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:red_flower 1 6\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°ç™½è‰²éƒé‡‘é¦™\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:red_flower 1 6\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$5\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=5] CK 5\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~7 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂò·ÛÉ«Óô½ğÏã\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:red_flower 1 7\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°ç²‰è‰²éƒé‡‘é¦™\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:red_flower 1 7\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$5\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=5] CK 5\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~8 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂò±õ¾Õ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:red_flower 1 8\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°æ»¨èŠ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:red_flower 1 8\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$5\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=5] CK 5\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~9 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÆÑ¹«Ó¢\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:yellow_flower\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°è’²å…¬è‹±\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:yellow_flower\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$5\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=5] CK 5\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~10 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÏòÈÕ¿û\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=10] minecraft:double_plant\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°å‘æ—¥è‘µ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=10] minecraft:double_plant\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$10\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=10] CK 10\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~11 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂò¶¡Ïã\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=10] minecraft:double_plant 1 1\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°ä¸é¦™\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=10] minecraft:double_plant 1 1\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$10\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=10] CK 10\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~12 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÃµ¹å´Ô\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=10] minecraft:double_plant 1 4\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°ç«ç‘°ä¸›\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=10] minecraft:double_plant 1 4\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$10\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=10] CK 10\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~13 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÄµµ¤\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=10] minecraft:double_plant 1 5\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°ç‰¡ä¸¹\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=10] minecraft:double_plant 1 5\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$10\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=10] CK 10\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
@@ -1254,138 +1254,138 @@ Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 
 testfor @a[x=225,y=64,z=315,dx=9,dy=5,dz=18]
-tellraw @a[x=225,y=64,z=315,dx=9,dy=5,dz=18]  [{"text":"»¶Ó­¹ºÂò»¨»Ü£¬Ğ¡ĞÍ»¨$5£¬´óĞÍ»¨$10","color":"yellow"}]
+tellraw @a[x=225,y=64,z=315,dx=9,dy=5,dz=18]  [{"text":"æ¬¢è¿è´­ä¹°èŠ±å‰ï¼Œå°å‹èŠ±$5ï¼Œå¤§å‹èŠ±$10","color":"yellow"}]
 
-====	108 ¶¯Îï 18
-Öí			pig				320
-Ñò			sheep			320
-Å£			cow				320
-¼¦			chicken			320
-ÍÃ×Ó		rabbit			320
-ßè¹½		mooshroom		320
-ÀÇ			wolf			640
-Ã¨			ocelot			640
-Âí			horse			640
-Â¿			donkey			640
-ÑòÍÕ		llama			640
+####	108 åŠ¨ç‰© 18
+çŒª			pig				320
+ç¾Š			sheep			320
+ç‰›			cow				320
+é¸¡			chicken			320
+å…”å­		rabbit			320
+å“è‡		mooshroom		320
+ç‹¼			wolf			640
+çŒ«			ocelot			640
+é©¬			horse			640
+é©´			donkey			640
+ç¾Šé©¼		llama			640
 
-òùòğ		bat				 10
-öÏÓã		squid			 10
-±±¼«ĞÜ		polar_bear		 10
-´åÃñ		villager		 80
+è™è 		bat				 10
+é±¿é±¼		squid			 10
+åŒ—æç†Š		polar_bear		 10
+æ‘æ°‘		villager		 80
 
-Ñ©¿şÀÜ		snowman			 10
-Ìú¿şÀÜ		villager_golem	160
-Äñ			chicken+bat		640
+é›ªå‚€å„¡		snowman			 10
+é“å‚€å„¡		villager_golem	160
+é¸Ÿ			chicken+bat		640
 
 summon falling_block ~ ~2 ~ {Time:1,Block:"minecraft:redstone_block",Passengers:[
 {id:"falling_block",Time:1,Block:"minecraft:activator_rail",Passengers:[
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~ wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÖí\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=320] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:pig}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°çŒª\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=320] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:pig}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$320\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=320] CK 320\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~-1 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÑò\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=320] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:sheep}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°ç¾Š\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=320] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:sheep}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$320\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=320] CK 320\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~-2 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÅ£\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=320] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:cow}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°ç‰›\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=320] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:cow}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$320\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=320] CK 320\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~-3 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂò¼¦\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=320] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:chicken}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°é¸¡\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=320] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:chicken}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$320\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=320] CK 320\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~-4 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÍÃ×Ó\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=320] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:rabbit}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°å…”å­\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=320] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:rabbit}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$320\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=320] CK 320\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~-5 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòßè¹½\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=320] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:mooshroom}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°å“è‡\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=320] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:mooshroom}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$320\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=320] CK 320\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~-6 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÀÇ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=640] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:wolf}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°ç‹¼\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=640] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:wolf}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$640\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=640] CK 640\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~-7 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÃ¨\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=640] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:ocelot}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°çŒ«\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=640] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:ocelot}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$640\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=640] CK 640\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~-8 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÂí\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=640] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:horse}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°é©¬\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=640] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:horse}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$640\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=640] CK 640\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~-9 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÂ¿\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=640] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:donkey}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°é©´\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=640] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:donkey}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$640\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=640] CK 640\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~-10 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÑòÍÕ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=640] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:llama}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°ç¾Šé©¼\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=640] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:llama}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$640\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=640] CK 640\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~-11 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòòùòğ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=10] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:bat}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°è™è \\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=10] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:bat}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$10\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=10] CK 10\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~-12 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòöÏÓã\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=10] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:squid}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°é±¿é±¼\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=10] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:squid}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$10\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=10] CK 10\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~-13 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂò±±¼«ĞÜ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=10] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:polar_bear}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°åŒ—æç†Š\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=10] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:polar_bear}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$10\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=10] CK 10\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~-14 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂò´åÃñ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=80] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:villager}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°æ‘æ°‘\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=80] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:villager}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$80\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=80] CK 80\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~-15 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÑ©¿şÀÜ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=10] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:vex,Health:1,Tags:[\\\\\\\"sgolem\\\\\\\"],Silent:1,LifeTicks:1},display:{Name:\\\\\\\"Éú³É Ñ©¿şÀÜ\\\\\\\"}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°é›ªå‚€å„¡\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=10] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:vex,Health:1,Tags:[\\\\\\\"sgolem\\\\\\\"],Silent:1,LifeTicks:1},display:{Name:\\\\\\\"ç”Ÿæˆ é›ªå‚€å„¡\\\\\\\"}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$10\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=10] CK 10\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~-16 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÌú¿şÀÜ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=160] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:vex,Health:1,Tags:[\\\\\\\"vgolem\\\\\\\"],Silent:1,LifeTicks:1},display:{Name:\\\\\\\"Éú³É Ìú¿şÀÜ\\\\\\\"}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°é“å‚€å„¡\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=160] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:vex,Health:1,Tags:[\\\\\\\"vgolem\\\\\\\"],Silent:1,LifeTicks:1},display:{Name:\\\\\\\"ç”Ÿæˆ é“å‚€å„¡\\\\\\\"}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$160\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=160] CK 160\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~-17 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÄñ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=640] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:vex,Health:1,Tags:[\\\\\\\"bird\\\\\\\"],Silent:1,LifeTicks:1},display:{Name:\\\\\\\"Éú³É Äñ\\\\\\\"}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°é¸Ÿ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=640] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:vex,Health:1,Tags:[\\\\\\\"bird\\\\\\\"],Silent:1,LifeTicks:1},display:{Name:\\\\\\\"ç”Ÿæˆ é¸Ÿ\\\\\\\"}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$640\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=640] CK 640\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
@@ -1393,314 +1393,314 @@ Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 {id:"commandblock_minecart",Command:"fill ~ ~ ~ ~ ~-1 ~ minecraft:air 0 replace"}]}]}
 
 testfor @a[x=206,y=64,z=287,dx=9,dy=5,dz=46]
-tellraw @a[x=206,y=64,z=287,dx=9,dy=5,dz=46]  [{"text":"»¶Ó­¹ºÂò¶¯ÎïºÍË¢¹Öµ°\n","color":"yellow"},
-{"text":"òùòğ/öÏÓã/±±¼«ĞÜ/Ñ©¿şÀÜ/½©Ê¬/ÅÀĞĞÕß/Ö©Öë/¶´Ñ¨Ö©Öë$10\n","color":"light_purple"},
-{"text":"Ê·À³Ä·/Å®Î×/ó¼³æ/½©Ê¬ÖíÈË/ÑÒ½¬¹Ö/ÁÒÑæÈËÄ©Ó°òı/ÊØÎÀÕß$10\n","color":"gold"},
-{"text":"÷¼÷Ã/µòÁã÷¼÷Ã$20¡¢´åÃñ/Ä©Ó°ÈË/»½Ä§Õß/ÎÀµÀÊ¿$80\n","color":"green"},
-{"text":"Ìú¿şÀÜ/¶ñ»ê/Ç±Ó°±´$160¡¢Öí/Ñò/Å£/¼¦/ÍÃ×Ó/ßè¹½$320\n","color":"red"},
-{"text":"ÀÇ/Ã¨/Âí/Â¿/ÑòÍÕ/Äñ/¸ßÑ¹ÅÀĞĞÕß/Ô¶¹ÅÊØÎÀÕß$640\n","color":"blue"},
-{"text":"Äã»¹¿ÉÒÔÔÚ´ËÖÆ×÷Ë¢¹Öµ°","color":"yellow"}]
+tellraw @a[x=206,y=64,z=287,dx=9,dy=5,dz=46]  [{"text":"æ¬¢è¿è´­ä¹°åŠ¨ç‰©å’Œåˆ·æ€ªè›‹\n","color":"yellow"},
+{"text":"è™è /é±¿é±¼/åŒ—æç†Š/é›ªå‚€å„¡/åƒµå°¸/çˆ¬è¡Œè€…/èœ˜è››/æ´ç©´èœ˜è››$10\n","color":"light_purple"},
+{"text":"å²è±å§†/å¥³å·«/è ¹è™«/åƒµå°¸çŒªäºº/å²©æµ†æ€ª/çƒˆç„°äººæœ«å½±è¨/å®ˆå«è€…$10\n","color":"gold"},
+{"text":"éª·é«…/å‡‹é›¶éª·é«…$20ã€æ‘æ°‘/æœ«å½±äºº/å”¤é­”è€…/å«é“å£«$80\n","color":"green"},
+{"text":"é“å‚€å„¡/æ¶é­‚/æ½œå½±è´$160ã€çŒª/ç¾Š/ç‰›/é¸¡/å…”å­/å“è‡$320\n","color":"red"},
+{"text":"ç‹¼/çŒ«/é©¬/é©´/ç¾Šé©¼/é¸Ÿ/é«˜å‹çˆ¬è¡Œè€…/è¿œå¤å®ˆå«è€…$640\n","color":"blue"},
+{"text":"ä½ è¿˜å¯ä»¥åœ¨æ­¤åˆ¶ä½œåˆ·æ€ªè›‹","color":"yellow"}]
 
-give @p[score_CK_min=640] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:creeper,powered:1,display:{Name:["Éú³É ¸ßÑ¹ÅÀĞĞÕß"]}}}
-give @p[score_CK_min=10] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:vex,Health:1,Tags:["sgolem"],Silent:1,LifeTicks:1},display:{Name:"Éú³É Ñ©¿şÀÜ"}}
-give @p[score_CK_min=160] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:vex,Health:1,Tags:["vgolem"],Silent:1,LifeTicks:1},display:{Name:"Éú³É Ìú¿şÀÜ"}}
-give @p[score_CK_min=640] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:vex,Health:1,Tags:["bird"],Silent:1,LifeTicks:1},display:{Name:"Éú³É Äñ"}}
+give @p[score_CK_min=640] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:creeper,powered:1,display:{Name:["ç”Ÿæˆ é«˜å‹çˆ¬è¡Œè€…"]}}}
+give @p[score_CK_min=10] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:vex,Health:1,Tags:["sgolem"],Silent:1,LifeTicks:1},display:{Name:"ç”Ÿæˆ é›ªå‚€å„¡"}}
+give @p[score_CK_min=160] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:vex,Health:1,Tags:["vgolem"],Silent:1,LifeTicks:1},display:{Name:"ç”Ÿæˆ é“å‚€å„¡"}}
+give @p[score_CK_min=640] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:vex,Health:1,Tags:["bird"],Silent:1,LifeTicks:1},display:{Name:"ç”Ÿæˆ é¸Ÿ"}}
 
-====	109 ¹ÖÎï 21
-½©Ê¬		zombie				10
-÷¼÷Ã		skeleton			20
-ÅÀĞĞÕß		creeper				10
-¸ßÑ¹ÅÀĞĞÕß	creeper				640
-Ö©Öë		spider				10
-¶´Ñ¨Ö©Öë	cave_spider			10
-Ê·À³Ä·		slime				10
-Å®Î×		witch				10
-ó¼³æ		silverfish			10
+####	109 æ€ªç‰© 21
+åƒµå°¸		zombie				10
+éª·é«…		skeleton			20
+çˆ¬è¡Œè€…		creeper				10
+é«˜å‹çˆ¬è¡Œè€…	creeper				640
+èœ˜è››		spider				10
+æ´ç©´èœ˜è››	cave_spider			10
+å²è±å§†		slime				10
+å¥³å·«		witch				10
+è ¹è™«		silverfish			10
 
-½©Ê¬ÖíÈË	zombie_pigman		10
-ÑÒ½¬¹Ö		magma_cube			10
-ÁÒÑæÈË		blaze				10
-µòÁã÷¼÷Ã	wither_skeleton		20
-¶ñ»ê		ghast				160
+åƒµå°¸çŒªäºº	zombie_pigman		10
+å²©æµ†æ€ª		magma_cube			10
+çƒˆç„°äºº		blaze				10
+å‡‹é›¶éª·é«…	wither_skeleton		20
+æ¶é­‚		ghast				160
 
-Ä©Ó°ÈË		enderman			80
-Ä©Ó°òı		endermite			10
-Ç±Ó°±´		shulker				160
+æœ«å½±äºº		enderman			80
+æœ«å½±è¨		endermite			10
+æ½œå½±è´		shulker				160
 
-ÊØÎÀÕß		guardian			10
-Ô¶¹ÅÊØÎÀÕß	elder_guardian		640
-»½Ä§Õß		evocation_illager	80
-ÎÀµÀÊ¿		vindication_illager	80
+å®ˆå«è€…		guardian			10
+è¿œå¤å®ˆå«è€…	elder_guardian		640
+å”¤é­”è€…		evocation_illager	80
+å«é“å£«		vindication_illager	80
 
 summon falling_block ~ ~2 ~ {Time:1,Block:"minecraft:redstone_block",Passengers:[
 {id:"falling_block",Time:1,Block:"minecraft:activator_rail",Passengers:[
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~ wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂò½©Ê¬\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=10] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:zombie}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°åƒµå°¸\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=10] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:zombie}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$10\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=10] CK 10\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~1 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂò÷¼÷Ã\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=20] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:skeleton}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°éª·é«…\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=20] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:skeleton}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$20\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=20] CK 20\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~2 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÅÀĞĞÕß\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=10] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:creeper}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°çˆ¬è¡Œè€…\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=10] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:creeper}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$10\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=10] CK 10\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~3 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂò¸ßÑ¹ÅÀĞĞÕß\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=640] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:creeper,powered:1},display:{Name:\\\\\\\"Éú³É ¸ßÑ¹ÅÀĞĞÕß\\\\\\\"}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°é«˜å‹çˆ¬è¡Œè€…\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=640] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:creeper,powered:1},display:{Name:\\\\\\\"ç”Ÿæˆ é«˜å‹çˆ¬è¡Œè€…\\\\\\\"}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$640\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=640] CK 640\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~4 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÖ©Öë\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=10] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:spider}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°èœ˜è››\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=10] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:spider}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$10\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=10] CK 10\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~5 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂò¶´Ñ¨Ö©Öë\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=10] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:cave_spider}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°æ´ç©´èœ˜è››\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=10] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:cave_spider}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$10\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=10] CK 10\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~6 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÊ·À³Ä·\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=10] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:slime}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°å²è±å§†\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=10] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:slime}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$10\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=10] CK 10\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~7 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÅ®Î×\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=10] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:witch}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°å¥³å·«\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=10] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:witch}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$10\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=10] CK 10\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~8 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòó¼³æ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=10] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:silverfish}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°è ¹è™«\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=10] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:silverfish}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$10\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=10] CK 10\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~9 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂò½©Ê¬ÖíÈË\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=10] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:zombie_pigman}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°åƒµå°¸çŒªäºº\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=10] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:zombie_pigman}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$10\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=10] CK 10\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~10 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÑÒ½¬¹Ö\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=10] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:magma_cube}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°å²©æµ†æ€ª\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=10] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:magma_cube}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$10\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=10] CK 10\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~11 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÁÒÑæÈË\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=10] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:blaze}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°çƒˆç„°äºº\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=10] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:blaze}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$10\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=10] CK 10\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~12 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòµòÁã÷¼÷Ã\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=20] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:wither_skeleton}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°å‡‹é›¶éª·é«…\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=20] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:wither_skeleton}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$20\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=20] CK 20\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~13 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂò¶ñ»ê\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=160] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:ghast}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°æ¶é­‚\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=160] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:ghast}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$160\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=160] CK 160\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~14 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÄ©Ó°ÈË\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=80] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:enderman}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°æœ«å½±äºº\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=80] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:enderman}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$80\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=80] CK 80\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~15 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÄ©Ó°òı\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=10] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:endermite}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°æœ«å½±è¨\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=10] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:endermite}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$10\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=10] CK 10\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~16 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÇ±Ó°±´\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=160] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:shulker}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°æ½œå½±è´\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=160] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:shulker}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$160\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=160] CK 160\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~17 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÊØÎÀÕß\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=10] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:guardian}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°å®ˆå«è€…\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=10] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:guardian}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$10\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=10] CK 10\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~18 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÔ¶¹ÅÊØÎÀÕß\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=640] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:elder_guardian}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°è¿œå¤å®ˆå«è€…\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=640] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:elder_guardian}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$640\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=640] CK 640\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~19 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂò»½Ä§Õß\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=80] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:evocation_illager}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°å”¤é­”è€…\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=80] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:evocation_illager}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$80\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=80] CK 80\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~20 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÎÀµÀÊ¿\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=80] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:vindication_illager}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°å«é“å£«\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=80] minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:vindication_illager}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$80\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=80] CK 80\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~ ~-1 ~ minecraft:lava 7 replace"},
 {id:"commandblock_minecart",Command:"fill ~ ~ ~ ~ ~-1 ~ minecraft:air 0 replace"}]}]}
 
-====	110 Ê³Îï 19
-ÇúÆæ		cookie			2/3		2.4
-Æ»¹û		apple			3/2		6.4
-Ìğ²Ë¸ù		beetroot		5		2.2
-Ãæ°ü		bread			3		11
-¿¾ÍÁ¶¹		baked_potato	4		12.2
-ÄÏ¹ÏÅÉ		pumpkin_pie		4		12.8
+####	110 é£Ÿç‰© 19
+æ›²å¥‡		cookie			2/3		2.4
+è‹¹æœ		apple			3/2		6.4
+ç”œèœæ ¹		beetroot		5		2.2
+é¢åŒ…		bread			3		11
+çƒ¤åœŸè±†		baked_potato	4		12.2
+å—ç“œæ´¾		pumpkin_pie		4		12.8
 
-ÊìÓã		cooked_fish		3		11
-ÊìöÙÓã		cooked_fish:1	5		15.6
-ÊìÍÃÈâ		cooked_rabbit	3		11
-ÊìÖíÅÅ		cooked_porkchop	4		12.8
-Êì¼¦Èâ		cooked_chicken	4		13.2
-ÊìÑòÈâ		cooked_mutton	5		15.6
-Å£ÅÅ		cooked_beef		6		20.8
+ç†Ÿé±¼		cooked_fish		3		11
+ç†Ÿé²‘é±¼		cooked_fish:1	5		15.6
+ç†Ÿå…”è‚‰		cooked_rabbit	3		11
+ç†ŸçŒªæ’		cooked_porkchop	4		12.8
+ç†Ÿé¸¡è‚‰		cooked_chicken	4		13.2
+ç†Ÿç¾Šè‚‰		cooked_mutton	5		15.6
+ç‰›æ’		cooked_beef		6		20.8
 
-Ìğ²ËÌÀ		beetroot_soup	3		13.2
-Ä¢¹½ìÒ		mushroom_stew	3		13.2	
-ÍÃÈâìÒ		rabbit_stew		6		22
-µ°¸â		cake			10		16.8
-½ğÆ»¹û		golden_apple	330		13.6
-¸½Ä§½ğÆ»¹û	golden_apple:1	3000	13.6
+ç”œèœæ±¤		beetroot_soup	3		13.2
+è˜‘è‡ç…²		mushroom_stew	3		13.2	
+å…”è‚‰ç…²		rabbit_stew		6		22
+è›‹ç³•		cake			10		16.8
+é‡‘è‹¹æœ		golden_apple	330		13.6
+é™„é­”é‡‘è‹¹æœ	golden_apple:1	3000	13.6
 
 summon falling_block ~ ~2 ~ {Time:1,Block:"minecraft:redstone_block",Passengers:[
 {id:"falling_block",Time:1,Block:"minecraft:activator_rail",Passengers:[
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~ wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÇúÆæ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=2] minecraft:cookie 3\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°æ›²å¥‡\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=2] minecraft:cookie 3\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$2/3\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=2] CK 2\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~1 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÆ»¹û\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=3] minecraft:apple 2\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°è‹¹æœ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=3] minecraft:apple 2\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$3/2\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=3] CK 3\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~2 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÌğ²Ë¸ù\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:beetroot\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°ç”œèœæ ¹\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:beetroot\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$5\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=5] CK 5\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~3 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÃæ°ü\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=3] minecraft:bread\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°é¢åŒ…\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=3] minecraft:bread\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$3\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=3] CK 3\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~4 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂò¿¾ÍÁ¶¹\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=4] minecraft:baked_potato\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°çƒ¤åœŸè±†\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=4] minecraft:baked_potato\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$4\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=4] CK 4\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~5 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÄÏ¹ÏÅÉ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=4] minecraft:pumpkin_pie\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°å—ç“œæ´¾\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=4] minecraft:pumpkin_pie\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$4\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=4] CK 4\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~6 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÊìÓã\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=3] minecraft:cooked_fish\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°ç†Ÿé±¼\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=3] minecraft:cooked_fish\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$3\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=3] CK 3\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~7 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÊìöÙÓã\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:cooked_fish 1 1\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°ç†Ÿé²‘é±¼\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:cooked_fish 1 1\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$5\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=5] CK 5\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~8 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÊìÍÃÈâ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=3] minecraft:cooked_rabbit\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°ç†Ÿå…”è‚‰\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=3] minecraft:cooked_rabbit\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$3\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=3] CK 3\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~9 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÊìÖíÅÅ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=4] minecraft:cooked_porkchop\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°ç†ŸçŒªæ’\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=4] minecraft:cooked_porkchop\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$4\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=4] CK 4\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~10 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÊì¼¦Èâ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=4] minecraft:cooked_chicken\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°ç†Ÿé¸¡è‚‰\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=4] minecraft:cooked_chicken\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$4\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=4] CK 4\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~11 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÊìÑòÈâ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:cooked_mutton\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°ç†Ÿç¾Šè‚‰\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=5] minecraft:cooked_mutton\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$5\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=5] CK 5\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~12 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÅ£ÅÅ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=6] minecraft:cooked_beef\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°ç‰›æ’\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=6] minecraft:cooked_beef\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$6\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=6] CK 6\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~13 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÌğ²ËÌÀ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=3] minecraft:beetroot_soup\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°ç”œèœæ±¤\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=3] minecraft:beetroot_soup\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$3\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=3] CK 3\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~14 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÄ¢¹½ìÒ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=3] minecraft:mushroom_stew\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°è˜‘è‡ç…²\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=3] minecraft:mushroom_stew\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$3\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=3] CK 3\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~15 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÍÃÈâìÒ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=6] minecraft:rabbit_stew\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°å…”è‚‰ç…²\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=6] minecraft:rabbit_stew\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$6\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=6] CK 6\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~16 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòµ°¸â\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=10] minecraft:cake\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°è›‹ç³•\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=10] minecraft:cake\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$10\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=10] CK 10\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~17 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂò½ğÆ»¹û\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=330] minecraft:golden_apple\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°é‡‘è‹¹æœ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=330] minecraft:golden_apple\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$330\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=330] CK 330\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~18 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂò¸½Ä§½ğÆ»¹û\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=3000] minecraft:golden_apple 1 1\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°é™„é­”é‡‘è‹¹æœ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=3000] minecraft:golden_apple 1 1\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$3000\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=3000] CK 3000\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
@@ -1708,183 +1708,183 @@ Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 {id:"commandblock_minecart",Command:"fill ~ ~ ~ ~ ~-1 ~ minecraft:air 0 replace"}]}]}
 
 testfor @a[x=225,y=64,z=287,dx=9,dy=5,dz=18]
-tellraw @a[x=225,y=64,z=287,dx=9,dy=5,dz=18] [{"text":"»¶Ó­¹ºÂòÊ³Îï\n","color":"yellow"}]
+tellraw @a[x=225,y=64,z=287,dx=9,dy=5,dz=18] [{"text":"æ¬¢è¿è´­ä¹°é£Ÿç‰©\n","color":"yellow"}]
 tellraw @a[x=225,y=64,z=287,dx=9,dy=5,dz=18] [
-{"text":"ÇúÆæ      $2/3  ÓĞĞ§Æ·ÖÊ2.4    Æ»¹û      $3/2  ÓĞĞ§Æ·ÖÊ6.4\n","color":"light_purple"},
-{"text":"Ìğ²Ë¸ù    $1/2  ÓĞĞ§Æ·ÖÊ2.2    Ãæ°ü      $3     ÓĞĞ§Æ·ÖÊ11\n","color":"light_purple"},
-{"text":"¿¾ÍÁ¶¹    $4     ÓĞĞ§Æ·ÖÊ12.2   ÄÏ¹ÏÅÉ    $4     ÓĞĞ§Æ·ÖÊ12.8\n","color":"light_purple"},
-{"text":"ÊìÓã      $3     ÓĞĞ§Æ·ÖÊ11     ÊìöÙÓã    $5     ÓĞĞ§Æ·ÖÊ15.6\n","color":"green"},
-{"text":"ÊìÍÃÈâ    $3     ÓĞĞ§Æ·ÖÊ11     ÊìÖíÅÅ    $4     ÓĞĞ§Æ·ÖÊ12.8\n","color":"green"},
-{"text":"Êì¼¦Èâ    $4     ÓĞĞ§Æ·ÖÊ13.2   ÊìÑòÈâ    $5     ÓĞĞ§Æ·ÖÊ15.6\n","color":"green"},
-{"text":"Å£ÅÅ      $6     ÓĞĞ§Æ·ÖÊ20.8\n","color":"green"},
-{"text":"Ìğ²ËÌÀ    $3     ÓĞĞ§Æ·ÖÊ13.2   Ä¢¹½ìÒ    $3     ÓĞĞ§Æ·ÖÊ13.2\n","color":"red"},
-{"text":"ÍÃÈâìÒ    $6     ÓĞĞ§Æ·ÖÊ22     µ°¸â      $10    ÓĞĞ§Æ·ÖÊ16.8\n","color":"red"},
-{"text":"½ğÆ»¹û    $330   ÓĞĞ§Æ·ÖÊ13.6  ¸½Ä§½ğÆ»¹û$3000 ÓĞĞ§Æ·ÖÊ13.6","color":"blue"}]
+{"text":"æ›²å¥‡      $2/3  æœ‰æ•ˆå“è´¨2.4    è‹¹æœ      $3/2  æœ‰æ•ˆå“è´¨6.4\n","color":"light_purple"},
+{"text":"ç”œèœæ ¹    $1/2  æœ‰æ•ˆå“è´¨2.2    é¢åŒ…      $3     æœ‰æ•ˆå“è´¨11\n","color":"light_purple"},
+{"text":"çƒ¤åœŸè±†    $4     æœ‰æ•ˆå“è´¨12.2   å—ç“œæ´¾    $4     æœ‰æ•ˆå“è´¨12.8\n","color":"light_purple"},
+{"text":"ç†Ÿé±¼      $3     æœ‰æ•ˆå“è´¨11     ç†Ÿé²‘é±¼    $5     æœ‰æ•ˆå“è´¨15.6\n","color":"green"},
+{"text":"ç†Ÿå…”è‚‰    $3     æœ‰æ•ˆå“è´¨11     ç†ŸçŒªæ’    $4     æœ‰æ•ˆå“è´¨12.8\n","color":"green"},
+{"text":"ç†Ÿé¸¡è‚‰    $4     æœ‰æ•ˆå“è´¨13.2   ç†Ÿç¾Šè‚‰    $5     æœ‰æ•ˆå“è´¨15.6\n","color":"green"},
+{"text":"ç‰›æ’      $6     æœ‰æ•ˆå“è´¨20.8\n","color":"green"},
+{"text":"ç”œèœæ±¤    $3     æœ‰æ•ˆå“è´¨13.2   è˜‘è‡ç…²    $3     æœ‰æ•ˆå“è´¨13.2\n","color":"red"},
+{"text":"å…”è‚‰ç…²    $6     æœ‰æ•ˆå“è´¨22     è›‹ç³•      $10    æœ‰æ•ˆå“è´¨16.8\n","color":"red"},
+{"text":"é‡‘è‹¹æœ    $330   æœ‰æ•ˆå“è´¨13.6  é™„é­”é‡‘è‹¹æœ$3000 æœ‰æ•ˆå“è´¨13.6","color":"blue"}]
 
-====	111 ÎäÆ÷¡¢¹¤¾ß¡¢¿ø¼× 23
-¹­			bow						30
-¼ı			arrow					8/8
-Ìú¸«		iron_axe				60
-Ìú½£		iron_sword				90
-×êÊ¯¸«		diamond_axe				90
-×êÊ¯½£		diamond_sword			120
-ÌúÇÂ		iron_shovel				50	
-Ìú¸ä		iron_pickaxe			90
-×êÊ¯¸ä		diamond_pickaxe			120
-Æ¤¸ï¿ã×Ó	leather_leggings		20
-Æ¤¸ïÍâÌ×	leather_chestplate		70
-ÌúÍ·¿ø		iron_helmet				40
-ÌúĞØ¼×		iron_chestplate			100
-×êÊ¯ĞØ¼×	diamond_chestplate		160
-Á´¼×Í·¿ø	chainmail_helmet		50
-Á´¼×ĞØ¼×	chainmail_chestplate	110
-Á´¼×»¤ÍÈ	chainmail_leggings		90
-Á´¼×Ñ¥×Ó	chainmail_boots			50
+####	111 æ­¦å™¨ã€å·¥å…·ã€ç›”ç”² 23
+å¼“			bow						30
+ç®­			arrow					8/8
+é“æ–§		iron_axe				60
+é“å‰‘		iron_sword				90
+é’»çŸ³æ–§		diamond_axe				90
+é’»çŸ³å‰‘		diamond_sword			120
+é“é”¹		iron_shovel				50	
+é“é•		iron_pickaxe			90
+é’»çŸ³é•		diamond_pickaxe			120
+çš®é©è£¤å­	leather_leggings		20
+çš®é©å¤–å¥—	leather_chestplate		70
+é“å¤´ç›”		iron_helmet				40
+é“èƒ¸ç”²		iron_chestplate			100
+é’»çŸ³èƒ¸ç”²	diamond_chestplate		160
+é“¾ç”²å¤´ç›”	chainmail_helmet		50
+é“¾ç”²èƒ¸ç”²	chainmail_chestplate	110
+é“¾ç”²æŠ¤è…¿	chainmail_leggings		90
+é“¾ç”²é´å­	chainmail_boots			50
 
-Ê±ÔËIII×êÊ¯¸ä diamond_pickaxe     1998
-Ê±ÔËVÀîÃô¸ä   diamond_pickaxe     8888
-ÇÀ¶áIII×êÊ¯½£ diamond_sword       1998
-ÇÀ¶áV±Ï¸£½£   diamond_sword       6666
-Á¦Á¿X÷è÷ë¹­   bow                 9999
+æ—¶è¿IIIé’»çŸ³é• diamond_pickaxe     1998
+æ—¶è¿Vææ•é•   diamond_pickaxe     8888
+æŠ¢å¤ºIIIé’»çŸ³å‰‘ diamond_sword       1998
+æŠ¢å¤ºVæ¯•ç¦å‰‘   diamond_sword       6666
+åŠ›é‡Xéº’éºŸå¼“   bow                 9999
 
 summon falling_block ~ ~2 ~ {Time:1,Block:"minecraft:redstone_block",Passengers:[
 {id:"falling_block",Time:1,Block:"minecraft:activator_rail",Passengers:[
 
 {id:"commandblock_minecart",Command:"setblock ~ ~-1 ~-2 wall_sign 3 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂò¹­\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=30] minecraft:bow\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°å¼“\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=30] minecraft:bow\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$30\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=30] CK 30\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~1 ~-1 ~-2 wall_sign 3 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂò¼ı\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=8] minecraft:arrow 8\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°ç®­\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=8] minecraft:arrow 8\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$8/8\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=8] CK 8\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~-2 wall_sign 3 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÌú¸«\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=60] minecraft:iron_axe\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°é“æ–§\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=60] minecraft:iron_axe\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$60\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=60] CK 60\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~3 ~-1 ~-2 wall_sign 3 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÌú½£\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=90] minecraft:iron_sword\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°é“å‰‘\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=90] minecraft:iron_sword\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$90\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=90] CK 90\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~4 ~-1 ~-2 wall_sign 3 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂò×êÊ¯¸«\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=90] minecraft:diamond_axe\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°é’»çŸ³æ–§\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=90] minecraft:diamond_axe\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$90\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=90] CK 90\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~5 ~-1 ~-2 wall_sign 3 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂò×êÊ¯½£\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=120] minecraft:diamond_sword\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°é’»çŸ³å‰‘\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=120] minecraft:diamond_sword\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$120\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=120] CK 120\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~6 ~-1 ~-2 wall_sign 3 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÌúÇÂ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=50] minecraft:iron_shovel\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°é“é”¹\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=50] minecraft:iron_shovel\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$50\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=50] CK 50\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~7 ~-1 ~-2 wall_sign 3 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÌú¸ä\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=90] minecraft:iron_pickaxe\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°é“é•\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=90] minecraft:iron_pickaxe\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$90\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=90] CK 90\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~8 ~-1 ~-2 wall_sign 3 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂò×êÊ¯¸ä\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=120] minecraft:diamond_pickaxe\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°é’»çŸ³é•\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=120] minecraft:diamond_pickaxe\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$120\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=120] CK 120\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~9 ~-1 ~-2 wall_sign 3 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÆ¤¸ï¿ã×Ó\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=20] minecraft:leather_leggings\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°çš®é©è£¤å­\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=20] minecraft:leather_leggings\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$20\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=20] CK 20\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~10 ~-1 ~-2 wall_sign 3 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÆ¤¸ïÍâÌ×\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=70] minecraft:leather_chestplate\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°çš®é©å¤–å¥—\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=70] minecraft:leather_chestplate\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$70\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=70] CK 70\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~11 ~-1 ~-2 wall_sign 3 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÌúÍ·¿ø\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=40] minecraft:iron_helmet\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°é“å¤´ç›”\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=40] minecraft:iron_helmet\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$40\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=40] CK 40\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~12 ~-1 ~-2 wall_sign 3 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÌúĞØ¼×\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=100] minecraft:iron_chestplate\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°é“èƒ¸ç”²\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=100] minecraft:iron_chestplate\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$100\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=100] CK 100\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~13 ~-1 ~-2 wall_sign 3 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂò×êÊ¯ĞØ¼×\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=160] minecraft:diamond_chestplate\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°é’»çŸ³èƒ¸ç”²\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=160] minecraft:diamond_chestplate\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$160\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=160] CK 160\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~14 ~-1 ~-2 wall_sign 3 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÁ´¼×Í·¿ø\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=50] minecraft:chainmail_helmet\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°é“¾ç”²å¤´ç›”\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=50] minecraft:chainmail_helmet\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$50\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=50] CK 50\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~15 ~-1 ~-2 wall_sign 3 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÁ´¼×ĞØ¼×\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=110] minecraft:chainmail_chestplate\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°é“¾ç”²èƒ¸ç”²\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=110] minecraft:chainmail_chestplate\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$110\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=110] CK 110\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~16 ~-1 ~-2 wall_sign 3 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÁ´¼×»¤ÍÈ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=90] minecraft:chainmail_leggings\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°é“¾ç”²æŠ¤è…¿\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=90] minecraft:chainmail_leggings\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$90\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=90] CK 90\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~17 ~-1 ~-2 wall_sign 3 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÁ´¼×Ñ¥×Ó\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=50] minecraft:chainmail_boots\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°é“¾ç”²é´å­\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=50] minecraft:chainmail_boots\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$50\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=50] CK 50\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~24 ~-1 ~-2 wall_sign 3 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÊ±ÔËIII×êÊ¯¸ä\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=1998] minecraft:diamond_pickaxe 1 0 {ench:[{id:32,lvl:5},{id:34,lvl:3},{id:35,lvl:3},{id:70,lvl:1}]}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°æ—¶è¿IIIé’»çŸ³é•\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=1998] minecraft:diamond_pickaxe 1 0 {ench:[{id:32,lvl:5},{id:34,lvl:3},{id:35,lvl:3},{id:70,lvl:1}]}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$1998\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=1998] CK 1998\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~25 ~-1 ~-2 wall_sign 3 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÊ±ÔËVÀîÃô¸ä\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=8888] minecraft:diamond_pickaxe 1 0 {ench:[{id:32,lvl:7},{id:35,lvl:5}],display:{Name:\\\\\\\"ÀîÃô¸ä\\\\\\\",Lore:[\\\\\\\"Äã¸Ğ¾õ×Ô¼ºµÄÊÖÍêÈ«²»ÊÜ¿ØÖÆ\\\\\\\"]},Unbreakable:true}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°æ—¶è¿Vææ•é•\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=8888] minecraft:diamond_pickaxe 1 0 {ench:[{id:32,lvl:7},{id:35,lvl:5}],display:{Name:\\\\\\\"ææ•é•\\\\\\\",Lore:[\\\\\\\"ä½ æ„Ÿè§‰è‡ªå·±çš„æ‰‹å®Œå…¨ä¸å—æ§åˆ¶\\\\\\\"]},Unbreakable:true}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$8888\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=8888] CK 8888\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~26 ~-1 ~-2 wall_sign 3 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÇÀ¶áIII×êÊ¯½£\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=1998] minecraft:diamond_sword 1 0 {ench:[{id:16,lvl:5},{id:21,lvl:3},{id:34,lvl:3},{id:70,lvl:1}]}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°æŠ¢å¤ºIIIé’»çŸ³å‰‘\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=1998] minecraft:diamond_sword 1 0 {ench:[{id:16,lvl:5},{id:21,lvl:3},{id:34,lvl:3},{id:70,lvl:1}]}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$1998\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=1998] CK 1998\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~27 ~-1 ~-2 wall_sign 3 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÇÀ¶áV±Ï¸£½£\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=6666] minecraft:diamond_sword 1 0 {AttributeModifiers:[{Operation:0,UUIDLeast:1009,UUIDMost:1009,Amount:30,AttributeName:\\\\\\\"generic.attackDamage\\\\\\\",Name:\\\\\\\"Damage\\\\\\\"},{Operation:1,UUIDLeast:1010,UUIDMost:1010,Amount:0.30,AttributeName:\\\\\\\"generic.attackSpeed\\\\\\\",Name:\\\\\\\"AttackSpeed\\\\\\\"}],ench:[{id:21,lvl:5}],display:{Name:\\\\\\\"±Ï¸£½£\\\\\\\",Lore:[\\\\\\\"+30 ¹¥»÷ÉËº¦\\\\\\\",\\\\\\\"+30% ¹¥»÷ËÙ¶È\\\\\\\",\\\\\\\"´«ËµÖĞ Herobrine ËÀºóµÄµôÂäÎï\\\\\\\"]},HideFlags:2,Unbreakable:true}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°æŠ¢å¤ºVæ¯•ç¦å‰‘\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=6666] minecraft:diamond_sword 1 0 {AttributeModifiers:[{Operation:0,UUIDLeast:1009,UUIDMost:1009,Amount:30,AttributeName:\\\\\\\"generic.attackDamage\\\\\\\",Name:\\\\\\\"Damage\\\\\\\"},{Operation:1,UUIDLeast:1010,UUIDMost:1010,Amount:0.30,AttributeName:\\\\\\\"generic.attackSpeed\\\\\\\",Name:\\\\\\\"AttackSpeed\\\\\\\"}],ench:[{id:21,lvl:5}],display:{Name:\\\\\\\"æ¯•ç¦å‰‘\\\\\\\",Lore:[\\\\\\\"+30 æ”»å‡»ä¼¤å®³\\\\\\\",\\\\\\\"+30% æ”»å‡»é€Ÿåº¦\\\\\\\",\\\\\\\"ä¼ è¯´ä¸­ Herobrine æ­»åçš„æ‰è½ç‰©\\\\\\\"]},HideFlags:2,Unbreakable:true}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$6666\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=6666] CK 6666\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~28 ~-1 ~-2 wall_sign 3 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÁ¦Á¿X÷è÷ë¹­\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=9999] minecraft:bow 1 0 {ench:[{id:48,lvl:10},{id:49,lvl:2},{id:50,lvl:1},{id:51,lvl:1}],display:{Name:\\\\\\\"÷è÷ë¹­\\\\\\\",Lore:[\\\\\\\"Õâ°Ñ¹­ĞèÒªÅä±¸÷è÷ë±ÛÊ¹ÓÃ\\\\\\\"]},Unbreakable:true}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°åŠ›é‡Xéº’éºŸå¼“\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=9999] minecraft:bow 1 0 {ench:[{id:48,lvl:10},{id:49,lvl:2},{id:50,lvl:1},{id:51,lvl:1}],display:{Name:\\\\\\\"éº’éºŸå¼“\\\\\\\",Lore:[\\\\\\\"è¿™æŠŠå¼“éœ€è¦é…å¤‡éº’éºŸè‡‚ä½¿ç”¨\\\\\\\"]},Unbreakable:true}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$9999\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=9999] CK 9999\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
@@ -1897,13 +1897,13 @@ Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 
 testfor @a[x=236,y=64,z=296,dx=29,dy=5,dz=10]
-tellraw @a[x=236,y=64,z=296,dx=29,dy=5,dz=10] [{"text":"»¶Ó­¹ºÂòÎäÆ÷¡¢¹¤¾ß¡¢¿ø¼×\n","color":"yellow"},
-{"text":"¹­$30¡¢¼ı$8/8¡¢Æ¤¸ï¿ã×Ó$20¡¢Æ¤¸ïÍâÌ×$70\n","color":"light_purple"},
-{"text":"Ìú¸«$60¡¢Ìú½£$90¡¢ÌúÇÂ$50$¡¢Ìú¸ä$90¡¢ÌúÍ·¿ø$40¡¢ÌúĞØ¼×$100\n","color":"gold"},
-{"text":"×êÊ¯¸«$90¡¢×êÊ¯½£$120¡¢×êÊ¯¸ä$120¡¢×êÊ¯ĞØ¼×$160\n","color":"green"},
-{"text":"Á´¼×Í·¿ø$50¡¢Á´¼×ĞØ¼×$110¡¢Á´¼×»¤ÍÈ$90¡¢Á´¼×Ñ¥×Ó$50\n","color":"red"},
-{"text":"Ê±ÔËIII×êÊ¯¸ä$1998¡¢Ê±ÔËVÀîÃô¸ä$8888\n","color":"blue"},
-{"text":"ÇÀ¶áIII×êÊ¯½£$1998¡¢ÇÀ¶áV±Ï¸£½£$6666¡¢Á¦Á¿X÷è÷ë¹­$9999","color":"light_purple"}]
+tellraw @a[x=236,y=64,z=296,dx=29,dy=5,dz=10] [{"text":"æ¬¢è¿è´­ä¹°æ­¦å™¨ã€å·¥å…·ã€ç›”ç”²\n","color":"yellow"},
+{"text":"å¼“$30ã€ç®­$8/8ã€çš®é©è£¤å­$20ã€çš®é©å¤–å¥—$70\n","color":"light_purple"},
+{"text":"é“æ–§$60ã€é“å‰‘$90ã€é“é”¹$50$ã€é“é•$90ã€é“å¤´ç›”$40ã€é“èƒ¸ç”²$100\n","color":"gold"},
+{"text":"é’»çŸ³æ–§$90ã€é’»çŸ³å‰‘$120ã€é’»çŸ³é•$120ã€é’»çŸ³èƒ¸ç”²$160\n","color":"green"},
+{"text":"é“¾ç”²å¤´ç›”$50ã€é“¾ç”²èƒ¸ç”²$110ã€é“¾ç”²æŠ¤è…¿$90ã€é“¾ç”²é´å­$50\n","color":"red"},
+{"text":"æ—¶è¿IIIé’»çŸ³é•$1998ã€æ—¶è¿Vææ•é•$8888\n","color":"blue"},
+{"text":"æŠ¢å¤ºIIIé’»çŸ³å‰‘$1998ã€æŠ¢å¤ºVæ¯•ç¦å‰‘$6666ã€åŠ›é‡Xéº’éºŸå¼“$9999","color":"light_purple"}]
 
 give @p[score_CK_min=1998] minecraft:diamond_pickaxe
 give @p[score_CK_min=8888] minecraft:diamond_pickaxe
@@ -1911,92 +1911,92 @@ give @p[score_CK_min=1998] minecraft:diamond_sword
 give @p[score_CK_min=6666] minecraft:diamond_sword
 give @p[score_CK_min=9999] minecraft:bow
 
-summon villager ~ ~.5 ~ {NoAI:true,Invulnerable:true,CustomName:"ÎäÆ÷´óÊ¦",CustomNameVisible:true,Profession:3,Silent:true,Offers:{Recipes:[
+summon villager ~ ~.5 ~ {NoAI:true,Invulnerable:true,CustomName:"æ­¦å™¨å¤§å¸ˆ",CustomNameVisible:true,Profession:3,Silent:true,Offers:{Recipes:[
 {maxUses:99999999,rewardExp:0b,buy:{id:minecraft:coal,       Count:1b},buyB:{id:minecraft:stone,     Count:8b},
-sell:{id:minecraft:coal,Count:1b,tag:{ench:[{id:999}],display:{Name:"¾«ÖÆÃº"},}}},
+sell:{id:minecraft:coal,Count:1b,tag:{ench:[{id:999}],display:{Name:"ç²¾åˆ¶ç…¤"},}}},
 {maxUses:99999999,rewardExp:0b,buy:{id:minecraft:iron_ingot, Count:1b},buyB:{id:minecraft:coal,      Count:8b},
-sell:{id:minecraft:iron_ingot,Count:1b,tag:{ench:[{id:999}],display:{Name:"¾«ÖÆÌú¶§"}}}},
+sell:{id:minecraft:iron_ingot,Count:1b,tag:{ench:[{id:999}],display:{Name:"ç²¾åˆ¶é“é”­"}}}},
 {maxUses:99999999,rewardExp:0b,buy:{id:minecraft:gold_ingot, Count:1b},buyB:{id:minecraft:iron_ingot,Count:8b},
-sell:{id:minecraft:gold_ingot,Count:1b,tag:{ench:[{id:999}],display:{Name:"¾«ÖÆ½ğ¶§"}}}},
+sell:{id:minecraft:gold_ingot,Count:1b,tag:{ench:[{id:999}],display:{Name:"ç²¾åˆ¶é‡‘é”­"}}}},
 {maxUses:99999999,rewardExp:0b,buy:{id:minecraft:diamond,    Count:1b},buyB:{id:minecraft:gold_ingot,Count:8b},
-sell:{id:minecraft:diamond,Count:1b,tag:{ench:[{id:999}],display:{Name:"¾«ÖÆ×êÊ¯"}}}},
+sell:{id:minecraft:diamond,Count:1b,tag:{ench:[{id:999}],display:{Name:"ç²¾åˆ¶é’»çŸ³"}}}},
 {maxUses:99999999,rewardExp:0b,buy:{id:minecraft:nether_star,Count:1b},buyB:{id:minecraft:diamond,   Count:8b},
-sell:{id:minecraft:nether_star,Count:1b,tag:{ench:[{id:999}],display:{Name:"¾«ÖÆÏÂ½çÖ®ĞÇ"}}}},
-{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:coal,		Count:2b,tag:{ench:[{id:999}],display:{Name:"¾«ÖÆÃº"}}},  	 	buyB:{id:minecraft:stick,Count:1b},sell:{id:minecraft:stone_sword,	Count:1b,tag:{AttributeModifiers:[{Operation:0,UUIDLeast:1001,UUIDMost:1001,Amount: 5,AttributeName:"generic.attackDamage",Name:"Damage"},{Operation:1,UUIDLeast:1002,UUIDMost:1002,Amount:0.05,AttributeName:"generic.attackSpeed",Name:"AttackSpeed"}],ench:[{id:21,lvl:1},{id:34,lvl:1},{id:70,lvl:1}],display:{Lore:["+5 ¹¥»÷ÉËº¦","+5% ¹¥»÷ËÙ¶È"]},HideFlags:2}}},
-{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:iron_ingot,	Count:2b,tag:{ench:[{id:999}],display:{Name:"¾«ÖÆÌú¶§"}}},	 	buyB:{id:minecraft:stick,Count:1b},sell:{id:minecraft:stone_sword,	Count:1b,tag:{AttributeModifiers:[{Operation:0,UUIDLeast:1003,UUIDMost:1003,Amount:10,AttributeName:"generic.attackDamage",Name:"Damage"},{Operation:1,UUIDLeast:1004,UUIDMost:1004,Amount:0.10,AttributeName:"generic.attackSpeed",Name:"AttackSpeed"}],ench:[{id:21,lvl:2},{id:34,lvl:2},{id:70,lvl:1}],display:{Lore:["+10 ¹¥»÷ÉËº¦","+10% ¹¥»÷ËÙ¶È"]},HideFlags:2}}},
-{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:gold_ingot,	Count:2b,tag:{ench:[{id:999}],display:{Name:"¾«ÖÆ½ğ¶§"}}},	 	buyB:{id:minecraft:stick,Count:1b},sell:{id:minecraft:iron_sword,	Count:1b,tag:{AttributeModifiers:[{Operation:0,UUIDLeast:1005,UUIDMost:1005,Amount:15,AttributeName:"generic.attackDamage",Name:"Damage"},{Operation:1,UUIDLeast:1006,UUIDMost:1006,Amount:0.15,AttributeName:"generic.attackSpeed",Name:"AttackSpeed"}],ench:[{id:21,lvl:3},{id:34,lvl:3},{id:70,lvl:1}],display:{Lore:["+15 ¹¥»÷ÉËº¦","+15% ¹¥»÷ËÙ¶È"]},HideFlags:2}}},
-{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:diamond,		Count:2b,tag:{ench:[{id:999}],display:{Name:"¾«ÖÆ×êÊ¯"}}},	 	buyB:{id:minecraft:stick,Count:1b},sell:{id:minecraft:iron_sword,	Count:1b,tag:{AttributeModifiers:[{Operation:0,UUIDLeast:1007,UUIDMost:1007,Amount:20,AttributeName:"generic.attackDamage",Name:"Damage"},{Operation:1,UUIDLeast:1008,UUIDMost:1008,Amount:0.20,AttributeName:"generic.attackSpeed",Name:"AttackSpeed"}],ench:[{id:21,lvl:4},{id:34,lvl:4},{id:70,lvl:1}],display:{Lore:["+20 ¹¥»÷ÉËº¦","+20% ¹¥»÷ËÙ¶È"]},HideFlags:2}}},
-{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:nether_star,	Count:2b,tag:{ench:[{id:999}],display:{Name:"¾«ÖÆÏÂ½çÖ®ĞÇ"}}},	buyB:{id:minecraft:stick,Count:1b},sell:{id:minecraft:diamond_sword,	Count:1b,tag:{AttributeModifiers:[{Operation:0,UUIDLeast:1009,UUIDMost:1009,Amount:30,AttributeName:"generic.attackDamage",Name:"Damage"},{Operation:1,UUIDLeast:1010,UUIDMost:1010,Amount:0.30,AttributeName:"generic.attackSpeed",Name:"AttackSpeed"}],ench:[{id:21,lvl:5}],display:{Lore:["+30 ¹¥»÷ÉËº¦","+30% ¹¥»÷ËÙ¶È"]},HideFlags:2,Unbreakable:true}}},
-{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:coal,		Count:3b,tag:{ench:[{id:999}],display:{Name:"¾«ÖÆÃº"}}},		buyB:{id:minecraft:stick,Count:2b},sell:{id:minecraft:stone_axe,		Count:1b,tag:{ench:[{id:21,lvl:1},{id:34,lvl:1},{id:70,lvl:1}]}}},
-{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:iron_ingot,	Count:3b,tag:{ench:[{id:999}],display:{Name:"¾«ÖÆÌú¶§"}}},		buyB:{id:minecraft:stick,Count:2b},sell:{id:minecraft:stone_axe,		Count:1b,tag:{ench:[{id:21,lvl:2},{id:34,lvl:2},{id:70,lvl:1}]}}},
-{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:gold_ingot,	Count:3b,tag:{ench:[{id:999}],display:{Name:"¾«ÖÆ½ğ¶§"}}},		buyB:{id:minecraft:stick,Count:2b},sell:{id:minecraft:iron_axe,		Count:1b,tag:{ench:[{id:21,lvl:3},{id:34,lvl:3},{id:70,lvl:1}]}}},
-{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:diamond,		Count:3b,tag:{ench:[{id:999}],display:{Name:"¾«ÖÆ×êÊ¯"}}},		buyB:{id:minecraft:stick,Count:2b},sell:{id:minecraft:iron_axe,		Count:1b,tag:{ench:[{id:21,lvl:4},{id:34,lvl:4},{id:70,lvl:1}]}}},
-{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:nether_star,	Count:3b,tag:{ench:[{id:999}],display:{Name:"¾«ÖÆÏÂ½çÖ®ĞÇ"}}},	buyB:{id:minecraft:stick,Count:2b},sell:{id:minecraft:diamond_axe,	Count:1b,tag:{ench:[{id:21,lvl:5}],Unbreakable:true}}}
+sell:{id:minecraft:nether_star,Count:1b,tag:{ench:[{id:999}],display:{Name:"ç²¾åˆ¶ä¸‹ç•Œä¹‹æ˜Ÿ"}}}},
+{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:coal,		Count:2b,tag:{ench:[{id:999}],display:{Name:"ç²¾åˆ¶ç…¤"}}},  	 	buyB:{id:minecraft:stick,Count:1b},sell:{id:minecraft:stone_sword,	Count:1b,tag:{AttributeModifiers:[{Operation:0,UUIDLeast:1001,UUIDMost:1001,Amount: 5,AttributeName:"generic.attackDamage",Name:"Damage"},{Operation:1,UUIDLeast:1002,UUIDMost:1002,Amount:0.05,AttributeName:"generic.attackSpeed",Name:"AttackSpeed"}],ench:[{id:21,lvl:1},{id:34,lvl:1},{id:70,lvl:1}],display:{Lore:["+5 æ”»å‡»ä¼¤å®³","+5% æ”»å‡»é€Ÿåº¦"]},HideFlags:2}}},
+{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:iron_ingot,	Count:2b,tag:{ench:[{id:999}],display:{Name:"ç²¾åˆ¶é“é”­"}}},	 	buyB:{id:minecraft:stick,Count:1b},sell:{id:minecraft:stone_sword,	Count:1b,tag:{AttributeModifiers:[{Operation:0,UUIDLeast:1003,UUIDMost:1003,Amount:10,AttributeName:"generic.attackDamage",Name:"Damage"},{Operation:1,UUIDLeast:1004,UUIDMost:1004,Amount:0.10,AttributeName:"generic.attackSpeed",Name:"AttackSpeed"}],ench:[{id:21,lvl:2},{id:34,lvl:2},{id:70,lvl:1}],display:{Lore:["+10 æ”»å‡»ä¼¤å®³","+10% æ”»å‡»é€Ÿåº¦"]},HideFlags:2}}},
+{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:gold_ingot,	Count:2b,tag:{ench:[{id:999}],display:{Name:"ç²¾åˆ¶é‡‘é”­"}}},	 	buyB:{id:minecraft:stick,Count:1b},sell:{id:minecraft:iron_sword,	Count:1b,tag:{AttributeModifiers:[{Operation:0,UUIDLeast:1005,UUIDMost:1005,Amount:15,AttributeName:"generic.attackDamage",Name:"Damage"},{Operation:1,UUIDLeast:1006,UUIDMost:1006,Amount:0.15,AttributeName:"generic.attackSpeed",Name:"AttackSpeed"}],ench:[{id:21,lvl:3},{id:34,lvl:3},{id:70,lvl:1}],display:{Lore:["+15 æ”»å‡»ä¼¤å®³","+15% æ”»å‡»é€Ÿåº¦"]},HideFlags:2}}},
+{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:diamond,		Count:2b,tag:{ench:[{id:999}],display:{Name:"ç²¾åˆ¶é’»çŸ³"}}},	 	buyB:{id:minecraft:stick,Count:1b},sell:{id:minecraft:iron_sword,	Count:1b,tag:{AttributeModifiers:[{Operation:0,UUIDLeast:1007,UUIDMost:1007,Amount:20,AttributeName:"generic.attackDamage",Name:"Damage"},{Operation:1,UUIDLeast:1008,UUIDMost:1008,Amount:0.20,AttributeName:"generic.attackSpeed",Name:"AttackSpeed"}],ench:[{id:21,lvl:4},{id:34,lvl:4},{id:70,lvl:1}],display:{Lore:["+20 æ”»å‡»ä¼¤å®³","+20% æ”»å‡»é€Ÿåº¦"]},HideFlags:2}}},
+{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:nether_star,	Count:2b,tag:{ench:[{id:999}],display:{Name:"ç²¾åˆ¶ä¸‹ç•Œä¹‹æ˜Ÿ"}}},	buyB:{id:minecraft:stick,Count:1b},sell:{id:minecraft:diamond_sword,	Count:1b,tag:{AttributeModifiers:[{Operation:0,UUIDLeast:1009,UUIDMost:1009,Amount:30,AttributeName:"generic.attackDamage",Name:"Damage"},{Operation:1,UUIDLeast:1010,UUIDMost:1010,Amount:0.30,AttributeName:"generic.attackSpeed",Name:"AttackSpeed"}],ench:[{id:21,lvl:5}],display:{Lore:["+30 æ”»å‡»ä¼¤å®³","+30% æ”»å‡»é€Ÿåº¦"]},HideFlags:2,Unbreakable:true}}},
+{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:coal,		Count:3b,tag:{ench:[{id:999}],display:{Name:"ç²¾åˆ¶ç…¤"}}},		buyB:{id:minecraft:stick,Count:2b},sell:{id:minecraft:stone_axe,		Count:1b,tag:{ench:[{id:21,lvl:1},{id:34,lvl:1},{id:70,lvl:1}]}}},
+{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:iron_ingot,	Count:3b,tag:{ench:[{id:999}],display:{Name:"ç²¾åˆ¶é“é”­"}}},		buyB:{id:minecraft:stick,Count:2b},sell:{id:minecraft:stone_axe,		Count:1b,tag:{ench:[{id:21,lvl:2},{id:34,lvl:2},{id:70,lvl:1}]}}},
+{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:gold_ingot,	Count:3b,tag:{ench:[{id:999}],display:{Name:"ç²¾åˆ¶é‡‘é”­"}}},		buyB:{id:minecraft:stick,Count:2b},sell:{id:minecraft:iron_axe,		Count:1b,tag:{ench:[{id:21,lvl:3},{id:34,lvl:3},{id:70,lvl:1}]}}},
+{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:diamond,		Count:3b,tag:{ench:[{id:999}],display:{Name:"ç²¾åˆ¶é’»çŸ³"}}},		buyB:{id:minecraft:stick,Count:2b},sell:{id:minecraft:iron_axe,		Count:1b,tag:{ench:[{id:21,lvl:4},{id:34,lvl:4},{id:70,lvl:1}]}}},
+{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:nether_star,	Count:3b,tag:{ench:[{id:999}],display:{Name:"ç²¾åˆ¶ä¸‹ç•Œä¹‹æ˜Ÿ"}}},	buyB:{id:minecraft:stick,Count:2b},sell:{id:minecraft:diamond_axe,	Count:1b,tag:{ench:[{id:21,lvl:5}],Unbreakable:true}}}
 ]}}
 
 
-give ruhuasiyu minecraft:diamond_sword 1 0 {AttributeModifiers:[{Operation:0,UUIDLeast:1009,UUIDMost:1009,Amount:30,AttributeName:"generic.attackDamage",Name:"Damage"},{Operation:1,UUIDLeast:1010,UUIDMost:1010,Amount:0.30,AttributeName:"generic.attackSpeed",Name:"AttackSpeed"}],ench:[{id:21,lvl:5}],display:{Name:"±Ï¸£½£",Lore:["+30 ¹¥»÷ÉËº¦","+30% ¹¥»÷ËÙ¶È","´«ËµÖĞ Herobrine ËÀºóµÄµôÂäÎï"]},HideFlags:2,Unbreakable:true}
+give ruhuasiyu minecraft:diamond_sword 1 0 {AttributeModifiers:[{Operation:0,UUIDLeast:1009,UUIDMost:1009,Amount:30,AttributeName:"generic.attackDamage",Name:"Damage"},{Operation:1,UUIDLeast:1010,UUIDMost:1010,Amount:0.30,AttributeName:"generic.attackSpeed",Name:"AttackSpeed"}],ench:[{id:21,lvl:5}],display:{Name:"æ¯•ç¦å‰‘",Lore:["+30 æ”»å‡»ä¼¤å®³","+30% æ”»å‡»é€Ÿåº¦","ä¼ è¯´ä¸­ Herobrine æ­»åçš„æ‰è½ç‰©"]},HideFlags:2,Unbreakable:true}
 
 
 
 
-summon villager ~ ~.5 ~ {NoAI:true,Invulnerable:true,CustomName:"¹¤¾ß´óÊ¦",CustomNameVisible:true,Profession:3,Silent:true,Offers:{Recipes:[
-{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:coal,		Count:1b,tag:{ench:[{id:999}],display:{Name:"¾«ÖÆÃº"}}},	buyB:{id:minecraft:stick,Count:2b},sell:{id:minecraft:stone_shovel,Count:1b,tag:{ench:[{id:32,lvl:1},{id:35,lvl:1},{id:34,lvl:1},{id:70,lvl:1}]}}},
-{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:iron_ingot,	Count:1b,tag:{ench:[{id:999}],display:{Name:"¾«ÖÆÌú¶§"}}},	buyB:{id:minecraft:stick,Count:2b},sell:{id:minecraft:stone_shovel,Count:1b,tag:{ench:[{id:32,lvl:2},{id:33,lvl:1},{id:34,lvl:2},{id:70,lvl:1}]}}},
-{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:gold_ingot,	Count:1b,tag:{ench:[{id:999}],display:{Name:"¾«ÖÆ½ğ¶§"}}},	 	buyB:{id:minecraft:stick,Count:2b},sell:{id:minecraft:iron_shovel,Count:1b,tag:{ench:[{id:32,lvl:3},{id:35,lvl:3},{id:34,lvl:3},{id:70,lvl:1}]}}},
-{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:diamond,		Count:1b,tag:{ench:[{id:999}],display:{Name:"¾«ÖÆ×êÊ¯"}}},	 	buyB:{id:minecraft:stick,Count:2b},sell:{id:minecraft:iron_shovel,Count:1b,tag:{ench:[{id:32,lvl:4},{id:33,lvl:1},{id:34,lvl:4},{id:70,lvl:1}]}}},
-{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:nether_star,	Count:1b,tag:{ench:[{id:999}],display:{Name:"¾«ÖÆÏÂ½çÖ®ĞÇ"}}},	buyB:{id:minecraft:stick,Count:2b},sell:{id:minecraft:diamond_shovel,Count:1b,tag:{ench:[{id:32,lvl:5},{id:35,lvl:5}],Unbreakable:true}}},
-{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:coal,		Count:3b,tag:{ench:[{id:999}],display:{Name:"¾«ÖÆÃº"}}},  	 	buyB:{id:minecraft:stick,Count:2b},sell:{id:minecraft:stone_pickaxe,Count:1b,tag:{ench:[{id:32,lvl:1},{id:35,lvl:1},{id:34,lvl:1},{id:70,lvl:1}]}}},
-{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:iron_ingot,	Count:3b,tag:{ench:[{id:999}],display:{Name:"¾«ÖÆÌú¶§"}}},	 	buyB:{id:minecraft:stick,Count:2b},sell:{id:minecraft:stone_pickaxe,Count:1b,tag:{ench:[{id:32,lvl:2},{id:33,lvl:1},{id:34,lvl:2},{id:70,lvl:1}]}}},
-{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:gold_ingot,	Count:3b,tag:{ench:[{id:999}],display:{Name:"¾«ÖÆ½ğ¶§"}}},	 	buyB:{id:minecraft:stick,Count:2b},sell:{id:minecraft:iron_pickaxe,Count:1b,tag:{ench:[{id:32,lvl:3},{id:35,lvl:3},{id:34,lvl:3},{id:70,lvl:1}]}}},
-{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:diamond,		Count:3b,tag:{ench:[{id:999}],display:{Name:"¾«ÖÆ×êÊ¯"}}},	 	buyB:{id:minecraft:stick,Count:2b},sell:{id:minecraft:iron_pickaxe,Count:1b,tag:{ench:[{id:32,lvl:5},{id:33,lvl:1},{id:34,lvl:4},{id:70,lvl:1}]}}},
-{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:nether_star,	Count:3b,tag:{ench:[{id:999}],display:{Name:"¾«ÖÆÏÂ½çÖ®ĞÇ"}}},	buyB:{id:minecraft:stick,Count:2b},sell:{id:minecraft:diamond_pickaxe,Count:1b,tag:{ench:[{id:32,lvl:7},{id:35,lvl:5}],Unbreakable:true}}}
+summon villager ~ ~.5 ~ {NoAI:true,Invulnerable:true,CustomName:"å·¥å…·å¤§å¸ˆ",CustomNameVisible:true,Profession:3,Silent:true,Offers:{Recipes:[
+{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:coal,		Count:1b,tag:{ench:[{id:999}],display:{Name:"ç²¾åˆ¶ç…¤"}}},	buyB:{id:minecraft:stick,Count:2b},sell:{id:minecraft:stone_shovel,Count:1b,tag:{ench:[{id:32,lvl:1},{id:35,lvl:1},{id:34,lvl:1},{id:70,lvl:1}]}}},
+{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:iron_ingot,	Count:1b,tag:{ench:[{id:999}],display:{Name:"ç²¾åˆ¶é“é”­"}}},	buyB:{id:minecraft:stick,Count:2b},sell:{id:minecraft:stone_shovel,Count:1b,tag:{ench:[{id:32,lvl:2},{id:33,lvl:1},{id:34,lvl:2},{id:70,lvl:1}]}}},
+{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:gold_ingot,	Count:1b,tag:{ench:[{id:999}],display:{Name:"ç²¾åˆ¶é‡‘é”­"}}},	 	buyB:{id:minecraft:stick,Count:2b},sell:{id:minecraft:iron_shovel,Count:1b,tag:{ench:[{id:32,lvl:3},{id:35,lvl:3},{id:34,lvl:3},{id:70,lvl:1}]}}},
+{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:diamond,		Count:1b,tag:{ench:[{id:999}],display:{Name:"ç²¾åˆ¶é’»çŸ³"}}},	 	buyB:{id:minecraft:stick,Count:2b},sell:{id:minecraft:iron_shovel,Count:1b,tag:{ench:[{id:32,lvl:4},{id:33,lvl:1},{id:34,lvl:4},{id:70,lvl:1}]}}},
+{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:nether_star,	Count:1b,tag:{ench:[{id:999}],display:{Name:"ç²¾åˆ¶ä¸‹ç•Œä¹‹æ˜Ÿ"}}},	buyB:{id:minecraft:stick,Count:2b},sell:{id:minecraft:diamond_shovel,Count:1b,tag:{ench:[{id:32,lvl:5},{id:35,lvl:5}],Unbreakable:true}}},
+{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:coal,		Count:3b,tag:{ench:[{id:999}],display:{Name:"ç²¾åˆ¶ç…¤"}}},  	 	buyB:{id:minecraft:stick,Count:2b},sell:{id:minecraft:stone_pickaxe,Count:1b,tag:{ench:[{id:32,lvl:1},{id:35,lvl:1},{id:34,lvl:1},{id:70,lvl:1}]}}},
+{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:iron_ingot,	Count:3b,tag:{ench:[{id:999}],display:{Name:"ç²¾åˆ¶é“é”­"}}},	 	buyB:{id:minecraft:stick,Count:2b},sell:{id:minecraft:stone_pickaxe,Count:1b,tag:{ench:[{id:32,lvl:2},{id:33,lvl:1},{id:34,lvl:2},{id:70,lvl:1}]}}},
+{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:gold_ingot,	Count:3b,tag:{ench:[{id:999}],display:{Name:"ç²¾åˆ¶é‡‘é”­"}}},	 	buyB:{id:minecraft:stick,Count:2b},sell:{id:minecraft:iron_pickaxe,Count:1b,tag:{ench:[{id:32,lvl:3},{id:35,lvl:3},{id:34,lvl:3},{id:70,lvl:1}]}}},
+{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:diamond,		Count:3b,tag:{ench:[{id:999}],display:{Name:"ç²¾åˆ¶é’»çŸ³"}}},	 	buyB:{id:minecraft:stick,Count:2b},sell:{id:minecraft:iron_pickaxe,Count:1b,tag:{ench:[{id:32,lvl:5},{id:33,lvl:1},{id:34,lvl:4},{id:70,lvl:1}]}}},
+{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:nether_star,	Count:3b,tag:{ench:[{id:999}],display:{Name:"ç²¾åˆ¶ä¸‹ç•Œä¹‹æ˜Ÿ"}}},	buyB:{id:minecraft:stick,Count:2b},sell:{id:minecraft:diamond_pickaxe,Count:1b,tag:{ench:[{id:32,lvl:7},{id:35,lvl:5}],Unbreakable:true}}}
 ]}}
 
-summon villager ~ ~.5 ~ {NoAI:true,Invulnerable:true,CustomName:"¿ø¼×´óÊ¦",CustomNameVisible:true,Profession:3,Silent:true,Offers:{Recipes:[
-{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:coal,		Count:8b,tag:{ench:[],display:{Name:"¾«ÖÆÃº"}}},		sell:{id:minecraft:leather_chestplate,Count:1b,tag:
+summon villager ~ ~.5 ~ {NoAI:true,Invulnerable:true,CustomName:"ç›”ç”²å¤§å¸ˆ",CustomNameVisible:true,Profession:3,Silent:true,Offers:{Recipes:[
+{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:coal,		Count:8b,tag:{ench:[],display:{Name:"ç²¾åˆ¶ç…¤"}}},		sell:{id:minecraft:leather_chestplate,Count:1b,tag:
 {ench:[{id:minecraft:0,lvl:1},{id:7,lvl:1},{id:34,lvl:1},{id:70,lvl:1}]}}},
-{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:iron_ingot,	Count:8b,tag:{ench:[],display:{Name:"¾«ÖÆÌú¶§"}}},	sell:{id:minecraft:leather_chestplate,Count:1b,tag:
+{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:iron_ingot,	Count:8b,tag:{ench:[],display:{Name:"ç²¾åˆ¶é“é”­"}}},	sell:{id:minecraft:leather_chestplate,Count:1b,tag:
 {ench:[{id:minecraft:0,lvl:2},{id:7,lvl:2},{id:34,lvl:2},{id:70,lvl:1}]}}},
-{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:gold_ingot,	Count:8b,tag:{ench:[],display:{Name:"¾«ÖÆ½ğ¶§"}}},	sell:{id:minecraft:iron_chestplate,Count:1b,tag:
+{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:gold_ingot,	Count:8b,tag:{ench:[],display:{Name:"ç²¾åˆ¶é‡‘é”­"}}},	sell:{id:minecraft:iron_chestplate,Count:1b,tag:
 {ench:[{id:minecraft:0,lvl:3},{id:7,lvl:3},{id:34,lvl:3},{id:70,lvl:1}]}}},
-{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:diamond,		Count:8b,tag:{ench:[],display:{Name:"¾«ÖÆ×êÊ¯"}}},	sell:{id:minecraft:iron_chestplate,Count:1b,tag:
+{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:diamond,		Count:8b,tag:{ench:[],display:{Name:"ç²¾åˆ¶é’»çŸ³"}}},	sell:{id:minecraft:iron_chestplate,Count:1b,tag:
 {ench:[{id:minecraft:0,lvl:4},{id:7,lvl:4},{id:34,lvl:4},{id:70,lvl:1}]}}},
-{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:nether_star,	Count:8b,tag:{ench:[],display:{Name:"¾«ÖÆÏÂ½çÖ®ĞÇ"}}},sell:{id:minecraft:diamond_chestplate,Count:1b,tag:
+{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:nether_star,	Count:8b,tag:{ench:[],display:{Name:"ç²¾åˆ¶ä¸‹ç•Œä¹‹æ˜Ÿ"}}},sell:{id:minecraft:diamond_chestplate,Count:1b,tag:
 {ench:[{id:minecraft:0,lvl:5},{id:7,lvl:5}],Unbreakable:true}}},
-{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:coal,		Count:7b,tag:{ench:[],display:{Name:"¾«ÖÆÃº"}}},		sell:{id:minecraft:leather_leggings,Count:1b,tag:
-{AttributeModifiers:[{Operation:0,UUIDLeast:7,UUIDMost:99,Amount:2,AttributeName:"generic.armorToughness",Name:"Tough"}],ench:[{id:1,lvl:1},{id:34,lvl:1},{id:70,lvl:1}],display:{Lore:["+2 ¿ø¼×ÈÍĞÔ"]},HideFlags:2}}},
-{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:iron_ingot,	Count:7b,tag:{ench:[],display:{Name:"¾«ÖÆÌú¶§"}}},	sell:{id:minecraft:leather_leggings,Count:1b,tag:
-{AttributeModifiers:[{Operation:0,UUIDLeast:7,UUIDMost:99,Amount:4,AttributeName:"generic.armorToughness",Name:"Tough"}],ench:[{id:1,lvl:2},{id:34,lvl:2},{id:70,lvl:1}],display:{Lore:["+4 ¿ø¼×ÈÍĞÔ"]},HideFlags:2}}},
-{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:gold_ingot,	Count:7b,tag:{ench:[],display:{Name:"¾«ÖÆ½ğ¶§"}}},	sell:{id:minecraft:iron_leggings,Count:1b,tag:
-{AttributeModifiers:[{Operation:0,UUIDLeast:7,UUIDMost:99,Amount:6,AttributeName:"generic.armorToughness",Name:"Tough"}],ench:[{id:1,lvl:3},{id:34,lvl:3},{id:70,lvl:1}],display:{Lore:["+6 ¿ø¼×ÈÍĞÔ"]},HideFlags:2}}},
-{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:diamond,		Count:7b,tag:{ench:[],display:{Name:"¾«ÖÆ×êÊ¯"}}},	sell:{id:minecraft:iron_leggings,Count:1b,tag:
-{AttributeModifiers:[{Operation:0,UUIDLeast:7,UUIDMost:99,Amount:8,AttributeName:"generic.armorToughness",Name:"Tough"}],ench:[{id:1,lvl:4},{id:34,lvl:4},{id:70,lvl:1}],display:{Lore:["+8 ¿ø¼×ÈÍĞÔ"]},HideFlags:2}}},
-{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:nether_star,	Count:7b,tag:{ench:[],display:{Name:"¾«ÖÆÏÂ½çÖ®ĞÇ"}}},sell:{id:minecraft:diamond_leggings,Count:1b,tag:
-{AttributeModifiers:[{Operation:0,UUIDLeast:7,UUIDMost:99,Amount:10,AttributeName:"generic.armorToughness",Name:"Tough"}],ench:[{id:1,lvl:10}],display:{Lore:["+10 ¿ø¼×ÈÍĞÔ"]},HideFlags:2,Unbreakable:true}}},
-{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:coal,		Count:5b,tag:{ench:[],display:{Name:"¾«ÖÆÃº"}}},		sell:{id:minecraft:leather_helmet,Count:1b,tag:
+{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:coal,		Count:7b,tag:{ench:[],display:{Name:"ç²¾åˆ¶ç…¤"}}},		sell:{id:minecraft:leather_leggings,Count:1b,tag:
+{AttributeModifiers:[{Operation:0,UUIDLeast:7,UUIDMost:99,Amount:2,AttributeName:"generic.armorToughness",Name:"Tough"}],ench:[{id:1,lvl:1},{id:34,lvl:1},{id:70,lvl:1}],display:{Lore:["+2 ç›”ç”²éŸ§æ€§"]},HideFlags:2}}},
+{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:iron_ingot,	Count:7b,tag:{ench:[],display:{Name:"ç²¾åˆ¶é“é”­"}}},	sell:{id:minecraft:leather_leggings,Count:1b,tag:
+{AttributeModifiers:[{Operation:0,UUIDLeast:7,UUIDMost:99,Amount:4,AttributeName:"generic.armorToughness",Name:"Tough"}],ench:[{id:1,lvl:2},{id:34,lvl:2},{id:70,lvl:1}],display:{Lore:["+4 ç›”ç”²éŸ§æ€§"]},HideFlags:2}}},
+{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:gold_ingot,	Count:7b,tag:{ench:[],display:{Name:"ç²¾åˆ¶é‡‘é”­"}}},	sell:{id:minecraft:iron_leggings,Count:1b,tag:
+{AttributeModifiers:[{Operation:0,UUIDLeast:7,UUIDMost:99,Amount:6,AttributeName:"generic.armorToughness",Name:"Tough"}],ench:[{id:1,lvl:3},{id:34,lvl:3},{id:70,lvl:1}],display:{Lore:["+6 ç›”ç”²éŸ§æ€§"]},HideFlags:2}}},
+{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:diamond,		Count:7b,tag:{ench:[],display:{Name:"ç²¾åˆ¶é’»çŸ³"}}},	sell:{id:minecraft:iron_leggings,Count:1b,tag:
+{AttributeModifiers:[{Operation:0,UUIDLeast:7,UUIDMost:99,Amount:8,AttributeName:"generic.armorToughness",Name:"Tough"}],ench:[{id:1,lvl:4},{id:34,lvl:4},{id:70,lvl:1}],display:{Lore:["+8 ç›”ç”²éŸ§æ€§"]},HideFlags:2}}},
+{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:nether_star,	Count:7b,tag:{ench:[],display:{Name:"ç²¾åˆ¶ä¸‹ç•Œä¹‹æ˜Ÿ"}}},sell:{id:minecraft:diamond_leggings,Count:1b,tag:
+{AttributeModifiers:[{Operation:0,UUIDLeast:7,UUIDMost:99,Amount:10,AttributeName:"generic.armorToughness",Name:"Tough"}],ench:[{id:1,lvl:10}],display:{Lore:["+10 ç›”ç”²éŸ§æ€§"]},HideFlags:2,Unbreakable:true}}},
+{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:coal,		Count:5b,tag:{ench:[],display:{Name:"ç²¾åˆ¶ç…¤"}}},		sell:{id:minecraft:leather_helmet,Count:1b,tag:
 {ench:[{id:4,lvl:1},{id:5,lvl:1},{id:34,lvl:1},{id:70,lvl:1}]}}},
-{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:iron_ingot,	Count:5b,tag:{ench:[],display:{Name:"¾«ÖÆÌú¶§"}}},	sell:{id:minecraft:leather_helmet,Count:1b,tag:
+{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:iron_ingot,	Count:5b,tag:{ench:[],display:{Name:"ç²¾åˆ¶é“é”­"}}},	sell:{id:minecraft:leather_helmet,Count:1b,tag:
 {ench:[{id:4,lvl:2},{id:5,lvl:2},{id:34,lvl:2},{id:70,lvl:1}]}}},
-{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:gold_ingot,	Count:5b,tag:{ench:[],display:{Name:"¾«ÖÆ½ğ¶§"}}},	sell:{id:minecraft:iron_helmet,Count:1b,tag:
+{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:gold_ingot,	Count:5b,tag:{ench:[],display:{Name:"ç²¾åˆ¶é‡‘é”­"}}},	sell:{id:minecraft:iron_helmet,Count:1b,tag:
 {ench:[{id:4,lvl:3},{id:5,lvl:3},{id:6,lvl:1},{id:34,lvl:3},{id:70,lvl:1}]}}},
-{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:diamond,		Count:5b,tag:{ench:[],display:{Name:"¾«ÖÆ×êÊ¯"}}},	sell:{id:minecraft:iron_helmet,Count:1b,tag:
+{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:diamond,		Count:5b,tag:{ench:[],display:{Name:"ç²¾åˆ¶é’»çŸ³"}}},	sell:{id:minecraft:iron_helmet,Count:1b,tag:
 {ench:[{id:4,lvl:4},{id:5,lvl:4},{id:6,lvl:1},{id:34,lvl:4},{id:70,lvl:1}]}}},
-{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:nether_star,	Count:5b,tag:{ench:[],display:{Name:"¾«ÖÆÏÂ½çÖ®ĞÇ"}}},sell:{id:minecraft:diamond_helmet,Count:1b,tag:
+{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:nether_star,	Count:5b,tag:{ench:[],display:{Name:"ç²¾åˆ¶ä¸‹ç•Œä¹‹æ˜Ÿ"}}},sell:{id:minecraft:diamond_helmet,Count:1b,tag:
 {ench:[{id:4,lvl:5},{id:5,lvl:10},{id:6,lvl:1}],Unbreakable:true}}},
-{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:coal,		Count:4b,tag:{ench:[],display:{Name:"¾«ÖÆÃº"}}},		sell:{id:minecraft:leather_boots,Count:1b,tag:
+{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:coal,		Count:4b,tag:{ench:[],display:{Name:"ç²¾åˆ¶ç…¤"}}},		sell:{id:minecraft:leather_boots,Count:1b,tag:
 {ench:[{id:2,lvl:1},{id:3,lvl:1},{id:minecraft:8,lvl:1},{id:34,lvl:1},{id:70,lvl:1}]}}},
-{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:iron_ingot,	Count:4b,tag:{ench:[],display:{Name:"¾«ÖÆÌú¶§"}}},	sell:{id:minecraft:leather_boots,Count:1b,tag:
+{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:iron_ingot,	Count:4b,tag:{ench:[],display:{Name:"ç²¾åˆ¶é“é”­"}}},	sell:{id:minecraft:leather_boots,Count:1b,tag:
 {ench:[{id:2,lvl:2},{id:3,lvl:2},{id:minecraft:9,lvl:1},{id:34,lvl:2},{id:70,lvl:1}]}}},
-{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:gold_ingot,	Count:4b,tag:{ench:[],display:{Name:"¾«ÖÆ½ğ¶§"}}},	sell:{id:minecraft:iron_boots,Count:1b,tag:
+{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:gold_ingot,	Count:4b,tag:{ench:[],display:{Name:"ç²¾åˆ¶é‡‘é”­"}}},	sell:{id:minecraft:iron_boots,Count:1b,tag:
 {ench:[{id:2,lvl:3},{id:3,lvl:3},{id:minecraft:8,lvl:2},{id:34,lvl:3},{id:70,lvl:1}]}}},
-{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:diamond,		Count:4b,tag:{ench:[],display:{Name:"¾«ÖÆ×êÊ¯"}}},	sell:{id:minecraft:iron_boots,Count:1b,tag:
+{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:diamond,		Count:4b,tag:{ench:[],display:{Name:"ç²¾åˆ¶é’»çŸ³"}}},	sell:{id:minecraft:iron_boots,Count:1b,tag:
 {ench:[{id:2,lvl:4},{id:3,lvl:4},{id:minecraft:9,lvl:2},{id:34,lvl:4},{id:70,lvl:1}]}}},
-{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:nether_star,	Count:4b,tag:{ench:[],display:{Name:"¾«ÖÆÏÂ½çÖ®ĞÇ"}}},sell:{id:minecraft:diamond_boots,Count:1b,tag:
+{maxUses:99999999,rewardExp:0b,buy:{id:minecraft:nether_star,	Count:4b,tag:{ench:[],display:{Name:"ç²¾åˆ¶ä¸‹ç•Œä¹‹æ˜Ÿ"}}},sell:{id:minecraft:diamond_boots,Count:1b,tag:
 {ench:[{id:2,lvl:5},{id:3,lvl:5},{id:minecraft:8,lvl:3}],Unbreakable:true,HideFlags:2}}}
 ]}}
 
-summon villager ~ ~.5 ~ {NoAI:true,Invulnerable:true,CustomName:"»ØÊÕÉÌ",CustomNameVisible:true,Profession:0,Silent:true,Offers:{Recipes:[
+summon villager ~ ~.5 ~ {NoAI:true,Invulnerable:true,CustomName:"å›æ”¶å•†",CustomNameVisible:true,Profession:0,Silent:true,Offers:{Recipes:[
 {maxUses:99999999,rewardExp:0b,buy:{id:minecraft:leather_helmet,		Count:1b},sell:{id:minecraft:leather,		Count:2b}},
 {maxUses:99999999,rewardExp:0b,buy:{id:minecraft:leather_chestplate,	Count:1b},sell:{id:minecraft:leather,		Count:4b}},
 {maxUses:99999999,rewardExp:0b,buy:{id:minecraft:leather_leggings,	Count:1b},sell:{id:minecraft:leather,		Count:3b}},
@@ -2040,133 +2040,133 @@ summon villager ~ ~.5 ~ {NoAI:true,Invulnerable:true,CustomName:"»ØÊÕÉÌ",CustomN
 {maxUses:99999999,rewardExp:0b,buy:{id:minecraft:coal,			   Count:64},sell:{id:minecraft:diamond,		Count:1b}}
 ]}}
 
-====	112 ¹¤¾ß 17
-µöÓã¸Í			fishing_rod			20
-¼ôµ¶			shears				30
-Ö¸ÄÏÕë			compass				100
-ÖÓ				clock				100
-ÃüÃûÅÆ			name_tag			200
-¸½Ä§Ö®Æ¿		experience_bottle	30
-Ä©Ó°ÕäÖé		ender_pearl			40
-°°				saddle				80
-²£Á§			glass				2
-Êé¼Ü			bookshelf			30
-ÑòÃ«			wool				10
-ÑÒ½¬Í°			lava_bucket			100
-×êÊ¯Âí¿­		diamond_horse_armor	500
-ÇÊ³á			elytra				1000
-³¤ÕßÊ±ÖÓ		clock				1926
-¿ÕµØÍ¼			map					70
-º£ÑóÌ½ÏÕ¼ÒµØÍ¼	filled_map			2000
+####	112 å·¥å…· 17
+é’“é±¼ç«¿			fishing_rod			20
+å‰ªåˆ€			shears				30
+æŒ‡å—é’ˆ			compass				100
+é’Ÿ				clock				100
+å‘½åç‰Œ			name_tag			200
+é™„é­”ä¹‹ç“¶		experience_bottle	30
+æœ«å½±çç 		ender_pearl			40
+é				saddle				80
+ç»ç’ƒ			glass				2
+ä¹¦æ¶			bookshelf			30
+ç¾Šæ¯›			wool				10
+å²©æµ†æ¡¶			lava_bucket			100
+é’»çŸ³é©¬å‡¯		diamond_horse_armor	500
+é˜ç¿…			elytra				1000
+é•¿è€…æ—¶é’Ÿ		clock				1926
+ç©ºåœ°å›¾			map					70
+æµ·æ´‹æ¢é™©å®¶åœ°å›¾	filled_map			2000
 
 summon falling_block ~ ~2 ~ {Time:1,Block:"minecraft:redstone_block",Passengers:[
 {id:"falling_block",Time:1,Block:"minecraft:activator_rail",Passengers:[
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~ wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòµöÓã¸Í\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=20] minecraft:fishing_rod\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°é’“é±¼ç«¿\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=20] minecraft:fishing_rod\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$20\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=20] CK 20\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~-1 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂò¼ôµ¶\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=30] minecraft:shears\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°å‰ªåˆ€\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=30] minecraft:shears\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$30\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=30] CK 30\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~-2 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÖ¸ÄÏÕë\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=100] minecraft:compass\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°æŒ‡å—é’ˆ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=100] minecraft:compass\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$100\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=100] CK 100\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~-3 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÖÓ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=100] minecraft:clock\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°é’Ÿ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=100] minecraft:clock\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$100\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=100] CK 100\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~-4 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÃüÃûÅÆ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=200] minecraft:name_tag\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°å‘½åç‰Œ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=200] minecraft:name_tag\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$200\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=200] CK 200\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~-5 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂò¸½Ä§Ö®Æ¿\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=30] minecraft:experience_bottle\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°é™„é­”ä¹‹ç“¶\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=30] minecraft:experience_bottle\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$30\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=30] CK 30\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~-6 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÄ©Ó°ÕäÖé\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=40] minecraft:ender_pearl\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°æœ«å½±çç \\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=40] minecraft:ender_pearl\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$40\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=40] CK 40\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~-7 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂò°°\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=80] minecraft:saddle\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°é\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=80] minecraft:saddle\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$80\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=80] CK 80\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~-8 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂò²£Á§\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=2] minecraft:glass\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°ç»ç’ƒ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=2] minecraft:glass\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$2\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=2] CK 2\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~-9 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÊé¼Ü\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=30] minecraft:bookshelf\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°ä¹¦æ¶\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=30] minecraft:bookshelf\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$30\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=30] CK 30\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~-10 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÑòÃ«\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=10] minecraft:wool\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°ç¾Šæ¯›\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=10] minecraft:wool\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$10\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=10] CK 10\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~-11 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÑÒ½¬Í°\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=100] minecraft:lava_bucket\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°å²©æµ†æ¡¶\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=100] minecraft:lava_bucket\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$100\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=100] CK 100\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~-12 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂò×êÊ¯Âí¿­\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=500] minecraft:diamond_horse_armor\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°é’»çŸ³é©¬å‡¯\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=500] minecraft:diamond_horse_armor\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$500\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=500] CK 500\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~-13 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòÇÊ³á\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=1000] minecraft:elytra\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°é˜ç¿…\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=1000] minecraft:elytra\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$1000\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=1000] CK 1000\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~-14 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂò³¤ÕßÊ±ÖÓ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=1926] minecraft:clock 1 0 {AttributeModifiers:[{Operation:1,UUIDLeast:100,UUIDMost:999,Amount:1,AttributeName:\\\\\\\"generic.movementSpeed\\\\\\\",Name:\\\\\\\"Speed\\\\\\\"}], display:{Name:\\\\\\\"³¤ÕßÊ±ÖÓ\\\\\\\",Lore:[\\\\\\\"ËÙ¶È +100%\\\\\\\",\\\\\\\"ÓëÊ±¼äÈüÅÜ\\\\\\\"]},HideFlags:2,ench:[{id:999}]}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°é•¿è€…æ—¶é’Ÿ\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=1926] minecraft:clock 1 0 {AttributeModifiers:[{Operation:1,UUIDLeast:100,UUIDMost:999,Amount:1,AttributeName:\\\\\\\"generic.movementSpeed\\\\\\\",Name:\\\\\\\"Speed\\\\\\\"}], display:{Name:\\\\\\\"é•¿è€…æ—¶é’Ÿ\\\\\\\",Lore:[\\\\\\\"é€Ÿåº¦ +100%\\\\\\\",\\\\\\\"ä¸æ—¶é—´èµ›è·‘\\\\\\\"]},HideFlags:2,ench:[{id:999}]}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$1926\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=1926] CK 1926\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~-15 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂò¿ÕµØÍ¼\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=70] minecraft:map\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°ç©ºåœ°å›¾\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=70] minecraft:map\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$70\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=70] CK 70\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~-16 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòº£ÑóÌ½ÏÕ¼ÒµØÍ¼\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=2000] minecraft:filled_map 1 20001 {Decorations:[{rot:180.0d,x:-3800.0d,z:-5048.0d,id:\\\\\\\"+\\\\\\\",type:9b}],display:{LocName:\\\\\\\"filled_map.monument\\\\\\\",MapColor:3830373}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°æµ·æ´‹æ¢é™©å®¶åœ°å›¾\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=2000] minecraft:filled_map 1 20001 {Decorations:[{rot:180.0d,x:-3800.0d,z:-5048.0d,id:\\\\\\\"+\\\\\\\",type:9b}],display:{LocName:\\\\\\\"filled_map.monument\\\\\\\",MapColor:3830373}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$2000\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=2000] CK 2000\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~-2 ~-1 ~-17 wall_sign 5 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"¹ºÂòº£ÑóÌ½ÏÕ¼ÒµØÍ¼\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=2000] minecraft:filled_map 1 20002 {Decorations:[{rot:180.0d,x:11944.0d,z:-2791.0d,id:\\\\\\\"+\\\\\\\",type:9b}],display:{LocName:\\\\\\\"filled_map.monument\\\\\\\",MapColor:3830373}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°æµ·æ´‹æ¢é™©å®¶åœ°å›¾\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=2000] minecraft:filled_map 1 20002 {Decorations:[{rot:180.0d,x:11944.0d,z:-2791.0d,id:\\\\\\\"+\\\\\\\",type:9b}],display:{LocName:\\\\\\\"filled_map.monument\\\\\\\",MapColor:3830373}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$2000\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=2000] CK 2000\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
@@ -2174,17 +2174,17 @@ Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 {id:"commandblock_minecart",Command:"fill ~ ~ ~ ~ ~-1 ~ minecraft:air 0 replace"}]}]}
 
 testfor @a[x=267,y=64,z=287,dx=9,dy=5,dz=19]
-tellraw @a[x=267,y=64,z=287,dx=9,dy=5,dz=19] [{"text":"»¶Ó­¹ºÂòÎäÆ÷¡¢¹¤¾ß¡¢¿ø¼×\n","color":"yellow"},
-{"text":"²£Á§$2¡¢ÑòÃ«$10¡¢µöÓã¸Í$20¡¢¼ôµ¶/Êé¼Ü/¸½Ä§Ö®Æ¿$30¡¢Ä©Ó°ÕäÖé$40\n","color":"light_purple"},
-{"text":"°°$80¡¢Ö¸ÄÏÕë/ÖÓ/ÑÒ½¬Í°$100¡¢ÃüÃûÅÆ$200¡¢×êÊ¯Âí¿­$500\n","color":"gold"},
-{"text":"ÇÊ³á$1000¡¢³¤ÕßÊ±ÖÓ$1926¡¢¿ÕµØÍ¼$70¡¢º£ÑóÌ½ÏÕ¼ÒµØÍ¼$2000\n","color":"green"},
-{"text":"Äú»¹¿ÉÒÔ¹ºÂò¸½Ä§Êé","color":"red"}]
+tellraw @a[x=267,y=64,z=287,dx=9,dy=5,dz=19] [{"text":"æ¬¢è¿è´­ä¹°æ­¦å™¨ã€å·¥å…·ã€ç›”ç”²\n","color":"yellow"},
+{"text":"ç»ç’ƒ$2ã€ç¾Šæ¯›$10ã€é’“é±¼ç«¿$20ã€å‰ªåˆ€/ä¹¦æ¶/é™„é­”ä¹‹ç“¶$30ã€æœ«å½±çç $40\n","color":"light_purple"},
+{"text":"é$80ã€æŒ‡å—é’ˆ/é’Ÿ/å²©æµ†æ¡¶$100ã€å‘½åç‰Œ$200ã€é’»çŸ³é©¬å‡¯$500\n","color":"gold"},
+{"text":"é˜ç¿…$1000ã€é•¿è€…æ—¶é’Ÿ$1926ã€ç©ºåœ°å›¾$70ã€æµ·æ´‹æ¢é™©å®¶åœ°å›¾$2000\n","color":"green"},
+{"text":"æ‚¨è¿˜å¯ä»¥è´­ä¹°é™„é­”ä¹¦","color":"red"}]
 
-give @p[score_CK_min=1926] minecraft:clock 1 0 {AttributeModifiers:[{Operation:1,UUIDLeast:100,UUIDMost:999,Amount:1,AttributeName:"generic.movementSpeed",Name:"Speed"}], display:{Name:"³¤ÕßÊ±ÖÓ",Lore:["ËÙ¶È +100%","ÓëÊ±¼äÈüÅÜ"]},HideFlags:2,ench:[{id:999}]}
+give @p[score_CK_min=1926] minecraft:clock 1 0 {AttributeModifiers:[{Operation:1,UUIDLeast:100,UUIDMost:999,Amount:1,AttributeName:"generic.movementSpeed",Name:"Speed"}], display:{Name:"é•¿è€…æ—¶é’Ÿ",Lore:["é€Ÿåº¦ +100%","ä¸æ—¶é—´èµ›è·‘"]},HideFlags:2,ench:[{id:999}]}
 give @p[score_CK_min=2000] minecraft:filled_map 1 20001 {Decorations:[{rot:180.0d,x:-3800.0d,z:-5048.0d,id:"+",type:9b}],display:{LocName:"filled_map.monument",MapColor:3830373}}
 give @p[score_CK_min=2000] minecraft:filled_map 1 20002 {Decorations:[{rot:180.0d,x:11944.0d,z:-2791.0d,id:"+",type:9b}],display:{LocName:"filled_map.monument",MapColor:3830373}}
 
-summon villager ~ ~.5 ~ {Rotation:[270f,0f],NoAI:true,Invulnerable:true,CustomName:"Ä§·¨Ê¦",CustomNameVisible:true,Profession:1,Silent:true,Offers:{Recipes:[
+summon villager ~ ~.5 ~ {Rotation:[270f,0f],NoAI:true,Invulnerable:true,CustomName:"é­”æ³•å¸ˆ",CustomNameVisible:true,Profession:1,Silent:true,Offers:{Recipes:[
 {maxUses:99999999,buy:{id:minecraft:emerald,Count:14b},sell:{id:minecraft:enchanted_book,Count:1b,tag:{StoredEnchantments:[{id:0,lvl:4}]}}},
 {maxUses:99999999,buy:{id:minecraft:emerald,Count:14b},sell:{id:minecraft:enchanted_book,Count:1b,tag:{StoredEnchantments:[{id:1,lvl:4}]}}},
 {maxUses:99999999,buy:{id:minecraft:emerald,Count:14b},sell:{id:minecraft:enchanted_book,Count:1b,tag:{StoredEnchantments:[{id:2,lvl:4}]}}},
@@ -2213,23 +2213,23 @@ summon villager ~ ~.5 ~ {Rotation:[270f,0f],NoAI:true,Invulnerable:true,CustomNa
 {maxUses:99999999,buy:{id:minecraft:emerald,Count:11b},sell:{id:minecraft:enchanted_book,Count:1b,tag:{StoredEnchantments:[{id:62,lvl:3}]}}},
 {maxUses:99999999,buy:{id:minecraft:emerald,Count:10b},sell:{id:minecraft:enchanted_book,Count:1b,tag:{StoredEnchantments:[{id:70,lvl:1}]}}}]}}
 
-================================     ±õºş¹ã³¡   ================================
+################################     æ»¨æ¹–å¹¿åœº   ################################
 setblock ~ ~ ~ standing_sign 0 replace {Text1:"{\"text\":\"\"}",
-Text2:"{\"text\":\"ÔĞÓı\",\"color\":\"dark_blue\"}",
-Text3:"{\"text\":\"×÷Õß£ºÈç»¨\",\"color\":\"dark_purple\"}",
+Text2:"{\"text\":\"å­•è‚²\",\"color\":\"dark_blue\"}",
+Text3:"{\"text\":\"ä½œè€…ï¼šå¦‚èŠ±\",\"color\":\"dark_purple\"}",
 Text4:"{\"text\":\"2016/12/15\",\"color\":\"dark_purple\"}"}
 
-================================      Ë¢ÎïÆ·    ================================
-====	Ë¢Ñ©
+################################      åˆ·ç‰©å“    ################################
+####	åˆ·é›ª
 testfor @a[x=315,y=63,z=355,dx=10,dy=5,dz=12]
-tellraw @a[x=315,y=63,z=355,dx=10,dy=5,dz=12] [{"text":"»¶Ó­À´µ½Ë¢Ñ©ÊÒ","color":"yellow"}]
+tellraw @a[x=315,y=63,z=355,dx=10,dy=5,dz=12] [{"text":"æ¬¢è¿æ¥åˆ°åˆ·é›ªå®¤","color":"yellow"}]
 
-====	Ë¢Ê¯
+####	åˆ·çŸ³
 summon item ~1 ~3 ~2 {Item:{id:"minecraft:stone",Count:1b,Damage:0s}}
 testfor @a[x=315,y=63,z=369,dx=10,dy=5,dz=12]
-tellraw @a[x=315,y=63,z=369,dx=10,dy=5,dz=12] [{"text":"»¶Ó­À´µ½Ë¢Ê¯ÊÒ£¬Äã¿ÉÒÔÔÚ´ËË¢Ê¯Í·ºÍÔ²Ê¯¡£","color":"yellow"}]
+tellraw @a[x=315,y=63,z=369,dx=10,dy=5,dz=12] [{"text":"æ¬¢è¿æ¥åˆ°åˆ·çŸ³å®¤ï¼Œä½ å¯ä»¥åœ¨æ­¤åˆ·çŸ³å¤´å’Œåœ†çŸ³ã€‚","color":"yellow"}]
 
-====	Ë¢¼¦
+####	åˆ·é¸¡
 scoreboard players tag @e[type=item,r=10] add feathers {Item:{id:"minecraft:feather",Count:1b,Damage:0s}}
 scoreboard players tag @e[type=item,r=10] add chickens {Item:{id:"minecraft:chicken",Count:1b,Damage:0s}}
 scoreboard players tag @e[type=item,r=10] add eggs {Item:{id:"minecraft:egg",Count:1b,Damage:0s}}
@@ -2237,113 +2237,113 @@ tp @e[tag=eggs] 316 67 387
 tp @e[tag=feathers] 324 66 383
 tp @e[tag=chickens] 324 66 383
 testfor @a[x=315,y=63,z=383,dx=10,dy=5,dz=12]
-tellraw @a[x=315,y=63,z=383,dx=10,dy=5,dz=12] [{"text":"»¶Ó­À´µ½Ë¢¼¦ÊÒ£¬Äã¿ÉÒÔÔÚ´ËË¢¼¦ÈâºÍÓğÃ«¡£","color":"yellow"}]
+tellraw @a[x=315,y=63,z=383,dx=10,dy=5,dz=12] [{"text":"æ¬¢è¿æ¥åˆ°åˆ·é¸¡å®¤ï¼Œä½ å¯ä»¥åœ¨æ­¤åˆ·é¸¡è‚‰å’Œç¾½æ¯›ã€‚","color":"yellow"}]
 
-====	Ë¢¹Ö
+####	åˆ·æ€ª
 testfor @a[x=334,y=63,z=355,dx=5,dy=5,dz=17]
-tellraw @a[x=334,y=63,z=355,dx=5,dy=5,dz=17] [{"text":"»¶Ó­ÔÚ´ËË¢¹ÖÎï£¬ÓÒ»÷¸æÊ¾ÅÆ¼´¿É»ñµÃ¹ÖÎïµôÂäÎï¡£","color":"yellow"}],
-{"text":"½«¹Ç·Û·ÅÖÃÔÚ·¢ÉäÆ÷ÄÚ£¬ÔÙ½«Ê÷ÃçºÍÄ¢¹½ÖÖÖ²ÔÚ²İ·½¿é»ò¾úË¿ÉÏ¼´¿É¡£","color":"light_purple"}],
-{"text":"°°$80¡¢Ö¸ÄÏÕë/ÖÓ/ÑÒ½¬Í°$100¡¢ÃüÃûÅÆ$200¡¢×êÊ¯Âí¿­$500\n","color":"gold"},
-{"text":"ÇÊ³á$1000¡¢³¤ÕßÊ±ÖÓ$1926¡¢¿ÕµØÍ¼$70¡¢º£ÑóÌ½ÏÕ¼ÒµØÍ¼$2000\n","color":"green"},
-{"text":"Äú»¹¿ÉÒÔ¹ºÂò¸½Ä§Êé","color":"red"}]
+tellraw @a[x=334,y=63,z=355,dx=5,dy=5,dz=17] [{"text":"æ¬¢è¿åœ¨æ­¤åˆ·æ€ªç‰©ï¼Œå³å‡»å‘Šç¤ºç‰Œå³å¯è·å¾—æ€ªç‰©æ‰è½ç‰©ã€‚","color":"yellow"}],
+{"text":"å°†éª¨ç²‰æ”¾ç½®åœ¨å‘å°„å™¨å†…ï¼Œå†å°†æ ‘è‹—å’Œè˜‘è‡ç§æ¤åœ¨è‰æ–¹å—æˆ–èŒä¸ä¸Šå³å¯ã€‚","color":"light_purple"}],
+{"text":"é$80ã€æŒ‡å—é’ˆ/é’Ÿ/å²©æµ†æ¡¶$100ã€å‘½åç‰Œ$200ã€é’»çŸ³é©¬å‡¯$500\n","color":"gold"},
+{"text":"é˜ç¿…$1000ã€é•¿è€…æ—¶é’Ÿ$1926ã€ç©ºåœ°å›¾$70ã€æµ·æ´‹æ¢é™©å®¶åœ°å›¾$2000\n","color":"green"},
+{"text":"æ‚¨è¿˜å¯ä»¥è´­ä¹°é™„é­”ä¹¦","color":"red"}]
 
 summon falling_block ~ ~2 ~ {Time:1,Block:"minecraft:redstone_block",Passengers:[
 {id:"falling_block",Time:1,Block:"minecraft:activator_rail",Passengers:[
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~ wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"Ë¢öÏÓã\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"execute @p[score_CK_min=5] ~ ~ ~ summon vex ~ ~ ~ {NoAI:1,Silent:1,DeathLootTable:\\\\\\\"minecraft:entities/squid\\\\\\\",Health:1,LifeTicks:1}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"åˆ·é±¿é±¼\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"execute @p[score_CK_min=5] ~ ~ ~ summon vex ~ ~ ~ {NoAI:1,Silent:1,DeathLootTable:\\\\\\\"minecraft:entities/squid\\\\\\\",Health:1,LifeTicks:1}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$5\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=5] CK 5\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~1 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"Ë¢½©Ê¬\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"execute @p[score_CK_min=5] ~ ~ ~ summon vex ~ ~ ~ {NoAI:1,Silent:1,DeathLootTable:\\\\\\\"minecraft:entities/zombie\\\\\\\",Health:1,LifeTicks:1}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"åˆ·åƒµå°¸\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"execute @p[score_CK_min=5] ~ ~ ~ summon vex ~ ~ ~ {NoAI:1,Silent:1,DeathLootTable:\\\\\\\"minecraft:entities/zombie\\\\\\\",Health:1,LifeTicks:1}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$5\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=5] CK 5\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~2 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"Ë¢÷¼÷Ã\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"execute @p[score_CK_min=5] ~ ~ ~ summon vex ~ ~ ~ {NoAI:1,Silent:1,DeathLootTable:\\\\\\\"minecraft:entities/skeleton\\\\\\\",Health:1,LifeTicks:1}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"åˆ·éª·é«…\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"execute @p[score_CK_min=5] ~ ~ ~ summon vex ~ ~ ~ {NoAI:1,Silent:1,DeathLootTable:\\\\\\\"minecraft:entities/skeleton\\\\\\\",Health:1,LifeTicks:1}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$5\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=5] CK 5\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~3 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"Ë¢ÅÀĞĞÕß\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"execute @p[score_CK_min=5] ~ ~ ~ summon vex ~ ~ ~ {NoAI:1,Silent:1,DeathLootTable:\\\\\\\"minecraft:entities/creeper\\\\\\\",Health:1,LifeTicks:1}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"åˆ·çˆ¬è¡Œè€…\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"execute @p[score_CK_min=5] ~ ~ ~ summon vex ~ ~ ~ {NoAI:1,Silent:1,DeathLootTable:\\\\\\\"minecraft:entities/creeper\\\\\\\",Health:1,LifeTicks:1}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$5\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=5] CK 5\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~4 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"Ë¢Ö©Öë\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"execute @p[score_CK_min=5] ~ ~ ~ summon vex ~ ~ ~ {NoAI:1,Silent:1,DeathLootTable:\\\\\\\"minecraft:entities/spider\\\\\\\",Health:1,LifeTicks:1}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"åˆ·èœ˜è››\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"execute @p[score_CK_min=5] ~ ~ ~ summon vex ~ ~ ~ {NoAI:1,Silent:1,DeathLootTable:\\\\\\\"minecraft:entities/spider\\\\\\\",Health:1,LifeTicks:1}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$5\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=5] CK 5\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~5 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"Ë¢Ê·À³Ä·\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"execute @p[score_CK_min=5] ~ ~ ~ summon vex ~ ~ ~ {NoAI:1,Silent:1,DeathLootTable:\\\\\\\"minecraft:entities/slime\\\\\\\",Health:1,LifeTicks:1}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"åˆ·å²è±å§†\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"execute @p[score_CK_min=5] ~ ~ ~ summon vex ~ ~ ~ {NoAI:1,Silent:1,DeathLootTable:\\\\\\\"minecraft:entities/slime\\\\\\\",Health:1,LifeTicks:1}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$5\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=5] CK 5\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~6 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"Ë¢Å®Î×\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"execute @p[score_CK_min=5] ~ ~ ~ summon vex ~ ~ ~ {NoAI:1,Silent:1,DeathLootTable:\\\\\\\"minecraft:entities/witch\\\\\\\",Health:1,LifeTicks:1}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"åˆ·å¥³å·«\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"execute @p[score_CK_min=5] ~ ~ ~ summon vex ~ ~ ~ {NoAI:1,Silent:1,DeathLootTable:\\\\\\\"minecraft:entities/witch\\\\\\\",Health:1,LifeTicks:1}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$5\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=5] CK 5\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~8 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"Ë¢½©Ê¬ÖíÈË\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"execute @p[score_CK_min=5] ~ ~ ~ summon vex ~ ~ ~ {NoAI:1,Silent:1,DeathLootTable:\\\\\\\"minecraft:entities/zombie_pigman\\\\\\\",Health:1,LifeTicks:1}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"åˆ·åƒµå°¸çŒªäºº\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"execute @p[score_CK_min=5] ~ ~ ~ summon vex ~ ~ ~ {NoAI:1,Silent:1,DeathLootTable:\\\\\\\"minecraft:entities/zombie_pigman\\\\\\\",Health:1,LifeTicks:1}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$5\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=5] CK 5\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~9 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"Ë¢ÑÒ½¬¹Ö\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"execute @p[score_CK_min=5] ~ ~ ~ summon vex ~ ~ ~ {NoAI:1,Silent:1,DeathLootTable:\\\\\\\"minecraft:entities/magma_cube\\\\\\\",Health:1,LifeTicks:1}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"åˆ·å²©æµ†æ€ª\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"execute @p[score_CK_min=5] ~ ~ ~ summon vex ~ ~ ~ {NoAI:1,Silent:1,DeathLootTable:\\\\\\\"minecraft:entities/magma_cube\\\\\\\",Health:1,LifeTicks:1}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$5\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=5] CK 5\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~11 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"Ë¢µòÁã÷¼÷Ã\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"execute @p[score_CK_min=5] ~ ~ ~ summon vex ~ ~ ~ {NoAI:1,Silent:1,DeathLootTable:\\\\\\\"minecraft:entities/wither_skeleton\\\\\\\",Health:1,LifeTicks:1}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"åˆ·å‡‹é›¶éª·é«…\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"execute @p[score_CK_min=5] ~ ~ ~ summon vex ~ ~ ~ {NoAI:1,Silent:1,DeathLootTable:\\\\\\\"minecraft:entities/wither_skeleton\\\\\\\",Health:1,LifeTicks:1}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$5\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=5] CK 5\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~12 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"Ë¢¶ñ»ê\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"execute @p[score_CK_min=80] ~ ~ ~ summon vex ~ ~ ~ {NoAI:1,Silent:1,DeathLootTable:\\\\\\\"minecraft:entities/ghast\\\\\\\",Health:1,LifeTicks:1}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"åˆ·æ¶é­‚\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"execute @p[score_CK_min=80] ~ ~ ~ summon vex ~ ~ ~ {NoAI:1,Silent:1,DeathLootTable:\\\\\\\"minecraft:entities/ghast\\\\\\\",Health:1,LifeTicks:1}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$80\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=80] CK 80\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~14 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"Ë¢Ä©Ó°ÈË\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"execute @p[score_CK_min=40] ~ ~ ~ summon vex ~ ~ ~ {NoAI:1,Silent:1,DeathLootTable:\\\\\\\"minecraft:entities/enderman\\\\\\\",Health:1,LifeTicks:1}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"åˆ·æœ«å½±äºº\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"execute @p[score_CK_min=40] ~ ~ ~ summon vex ~ ~ ~ {NoAI:1,Silent:1,DeathLootTable:\\\\\\\"minecraft:entities/enderman\\\\\\\",Health:1,LifeTicks:1}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$40\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=40] CK 80\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~15 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"Ë¢Ç±Ó°±´\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"execute @p[score_CK_min=80] ~ ~ ~ summon vex ~ ~ ~ {NoAI:1,Silent:1,DeathLootTable:\\\\\\\"minecraft:entities/shulker\\\\\\\",Health:1,LifeTicks:1}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"åˆ·æ½œå½±è´\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"execute @p[score_CK_min=80] ~ ~ ~ summon vex ~ ~ ~ {NoAI:1,Silent:1,DeathLootTable:\\\\\\\"minecraft:entities/shulker\\\\\\\",Health:1,LifeTicks:1}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$80\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=80] CK 80\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~16 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"Ë¢ÊØÎÀÕß\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"execute @p[score_CK_min=5] ~ ~ ~ summon vex ~ ~ ~ {NoAI:1,Silent:1,DeathLootTable:\\\\\\\"minecraft:entities/guardian\\\\\\\",Health:1,LifeTicks:1}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"åˆ·å®ˆå«è€…\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"execute @p[score_CK_min=5] ~ ~ ~ summon vex ~ ~ ~ {NoAI:1,Silent:1,DeathLootTable:\\\\\\\"minecraft:entities/guardian\\\\\\\",Health:1,LifeTicks:1}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$5\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=5] CK 5\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~2 ~-1 ~17 wall_sign 4 replace {
 Text1:\"{\\\"text\\\":\\\"\\\"}\",
-Text2:\"{\\\"text\\\":\\\"Ë¢»½Ä§Õß\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"execute @p[score_CK_min=60] ~ ~ ~ summon vex ~ ~ ~ {NoAI:1,Silent:1,DeathLootTable:\\\\\\\"minecraft:entities/evocation_illager\\\\\\\",Health:1,LifeTicks:1}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"åˆ·å”¤é­”è€…\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"execute @p[score_CK_min=60] ~ ~ ~ summon vex ~ ~ ~ {NoAI:1,Silent:1,DeathLootTable:\\\\\\\"minecraft:entities/evocation_illager\\\\\\\",Health:1,LifeTicks:1}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$60\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=60] CK 60\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 {id:"commandblock_minecart",Command:"setblock ~ ~-1 ~ minecraft:lava 7 replace"},
 {id:"commandblock_minecart",Command:"fill ~ ~ ~ ~ ~-1 ~ minecraft:air 0 replace"}]}]}
 
-====	Ë¢Ä¢¹½¡¢Ä¾Í·
+####	åˆ·è˜‘è‡ã€æœ¨å¤´
 testforblock 335 65 379 sapling
 testforblock 335 65 379 brown_mushroom
 testforblock 335 65 379 red_mushroom
@@ -2352,19 +2352,19 @@ setblock 335 65 379 air 0 destroy
 fill 331 66 375 339 75 383 air 0 destroy
 
 setblock ~ ~ ~ wall_sign 4 replace {Text1:"{\"text\":\"\"}",
-Text2:"{\"text\":\"> Ë¢Ä¾Í· <\",\"color\":\"dark_blue\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"setblock 335 64 379 mycelium\"}}",
-Text3:"{\"text\":\"Ë¢Ä¢¹½\",\"color\":\"black\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"clone ~ ~-3 ~ ~ ~-3 ~ ~ ~ ~\"}}",
+Text2:"{\"text\":\"> åˆ·æœ¨å¤´ <\",\"color\":\"dark_blue\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"setblock 335 64 379 mycelium\"}}",
+Text3:"{\"text\":\"åˆ·è˜‘è‡\",\"color\":\"black\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"clone ~ ~-3 ~ ~ ~-3 ~ ~ ~ ~\"}}",
 Text4:"{\"text\":\"\"}"}
 setblock ~ ~ ~ wall_sign 4 replace {Text1:"{\"text\":\"\"}",
-Text2:"{\"text\":\"Ë¢Ä¾Í·\",\"color\":\"black\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"setblock 335 64 379 grass\"}}",
-Text3:"{\"text\":\"> Ë¢Ä¢¹½ <\",\"color\":\"dark_blue\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"clone ~ ~-2 ~ ~ ~-2 ~ ~ ~ ~\"}}",
+Text2:"{\"text\":\"åˆ·æœ¨å¤´\",\"color\":\"black\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"setblock 335 64 379 grass\"}}",
+Text3:"{\"text\":\"> åˆ·è˜‘è‡ <\",\"color\":\"dark_blue\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"clone ~ ~-2 ~ ~ ~-2 ~ ~ ~ ~\"}}",
 Text4:"{\"text\":\"\"}"}
 
 testfor @a[x=333,y=63,z=374,dx=6,dy=5,dz=10]
-tellraw @a[x=333,y=63,z=374,dx=6,dy=5,dz=10] [{"text":"»¶Ó­À´Ë¢Ä¾Í·ºÍÄ¢¹½¡£","color":"yellow"},
-{"text":"½«¹Ç·Û·ÅÖÃÔÚ·¢ÉäÆ÷ÄÚ£¬ÔÙ½«Ê÷ÃçºÍÄ¢¹½ÖÖÖ²ÔÚ²İ·½¿é»ò¾úË¿ÉÏ¼´¿É¡£","color":"light_purple"}]
+tellraw @a[x=333,y=63,z=374,dx=6,dy=5,dz=10] [{"text":"æ¬¢è¿æ¥åˆ·æœ¨å¤´å’Œè˜‘è‡ã€‚","color":"yellow"},
+{"text":"å°†éª¨ç²‰æ”¾ç½®åœ¨å‘å°„å™¨å†…ï¼Œå†å°†æ ‘è‹—å’Œè˜‘è‡ç§æ¤åœ¨è‰æ–¹å—æˆ–èŒä¸ä¸Šå³å¯ã€‚","color":"light_purple"}]
 
-====	Ë¢Ğ¡Âó¡¢Ìğ²Ë¸ù¡¢ÍÁ¶¹¡¢ºúÂÜ²·
+####	åˆ·å°éº¦ã€ç”œèœæ ¹ã€åœŸè±†ã€èƒ¡èåœ
 testforblock 337 65 387 minecraft:wheat 7
 testforblock 337 65 387 minecraft:potatoes 7
 testforblock 337 65 387 minecraft:carrots 7
@@ -2372,21 +2372,21 @@ testforblock 337 65 387 minecraft:beetroots 3
 setblock 337 65 387 minecraft:air 0 destroy
 
 testfor @a[x=334,y=63,z=386,dx=3,dy=5,dz=3]
-tellraw @a[x=334,y=63,z=386,dx=3,dy=5,dz=3] [{"text":"»¶Ó­À´Ë¢Ğ¡Âó¡¢Ìğ²Ë¸ù¡¢ÍÁ¶¹¡¢ºúÂÜ²·¡£","color":"yellow"},
-{"text":"½«¹Ç·Û·ÅÖÃÔÚ·¢ÉäÆ÷ÄÚ£¬ÔÙ½«×÷ÎïÖÖÖ²ÔÚ¸ûµØÉÏ¼´¿É¡£","color":"light_purple"}]
+tellraw @a[x=334,y=63,z=386,dx=3,dy=5,dz=3] [{"text":"æ¬¢è¿æ¥åˆ·å°éº¦ã€ç”œèœæ ¹ã€åœŸè±†ã€èƒ¡èåœã€‚","color":"yellow"},
+{"text":"å°†éª¨ç²‰æ”¾ç½®åœ¨å‘å°„å™¨å†…ï¼Œå†å°†ä½œç‰©ç§æ¤åœ¨è€•åœ°ä¸Šå³å¯ã€‚","color":"light_purple"}]
 
-====	Ë¢Óã
+####	åˆ·é±¼
 summon vex 339 65 391 {NoAI:1,Silent:1,Tags:["fishbat"],LifeTicks:15000}
 scoreboard players add @e[tag=fishbat] temp 1
 execute @e[tag=fishbat,score_temp_min=300] ~ ~ ~ summon vex ~ ~ ~ {NoAI:1,Silent:1,Health:1,DeathLootTable:"minecraft:gameplay/fishing",Tags:["mobs"],LifeTicks:1}
 scoreboard players remove @e[tag=fishbat] temp 300
 
 testfor @a[x=335,y=63,z=390,dx=4,dy=5,dz=5]
-tellraw @a[x=335,y=63,z=390,dx=4,dy=5,dz=5] [{"text":"»¶Ó­À´µ½Ë¢ÓãÊÒ¡£Äã¿ÉÒÔÔÚ´ËË¢¼¦ÈâºÍÓğÃ«¡£","color":"yellow"},
-{"text":"½«Ö©ÖëÍøÈÓÔÚ³ÈÉ«ÇøÓò¡£Ã¿¸ô15²úÉúÒ»´ÎµöÓãËùµÃ£¬Ã¿¸öÖ©ÖëÍø³ÖĞø50´Î\n","color":"light_purple"}]
+tellraw @a[x=335,y=63,z=390,dx=4,dy=5,dz=5] [{"text":"æ¬¢è¿æ¥åˆ°åˆ·é±¼å®¤ã€‚ä½ å¯ä»¥åœ¨æ­¤åˆ·é¸¡è‚‰å’Œç¾½æ¯›ã€‚","color":"yellow"},
+{"text":"å°†èœ˜è››ç½‘æ‰”åœ¨æ©™è‰²åŒºåŸŸã€‚æ¯éš”15äº§ç”Ÿä¸€æ¬¡é’“é±¼æ‰€å¾—ï¼Œæ¯ä¸ªèœ˜è››ç½‘æŒç»­50æ¬¡\n","color":"light_purple"}]
 
-====	×Ô¶¯»¯Å©³¡
-¸ÃÅ©³¡Éú²úĞ¡Âó¡¢Ìğ²Ë¸ù¡¢ÍÁ¶¹¡¢ºúÂÜ²·¡¢ÄÏ¹Ï¡¢Î÷¹Ï¡¢¸ÊÕá¡¢ÏÉÈËÕÆ¡¢¿É¿É¶¹¡¢µØÓüğà¡£
+####	è‡ªåŠ¨åŒ–å†œåœº
+è¯¥å†œåœºç”Ÿäº§å°éº¦ã€ç”œèœæ ¹ã€åœŸè±†ã€èƒ¡èåœã€å—ç“œã€è¥¿ç“œã€ç”˜è”—ã€ä»™äººæŒã€å¯å¯è±†ã€åœ°ç‹±ç–£ã€‚
 
 clone 350 63 355 385 63 395 350 64 355 filtered move minecraft:wheat 7
 fill 350 63 355 385 63 395 minecraft:wheat 0 keep
@@ -2435,50 +2435,50 @@ tp @e[type=item,tag=nether_wart] 395 66 395
 
 
 
-================================      1.-1     Ä¹µØ    ================================
+################################      1.-1     å¢“åœ°    ################################
 
 
-¿ø¼×¼Ü
+ç›”ç”²æ¶
 summon armor_stand ~-1.8 ~-1.1 ~ {Pose:{Head:[0f,90f,0f]},Small:1,DisabledSlots:1,Invisible:1,NoGravity:1,ArmorItems:[{},{},{},{id:minecraft:lava_bucket}]}
 
 summon armor_stand ~-1 ~-1 ~ {Invisible:1,Marker:1,NoGravity:1,Passengers:[
 {id:minecraft:Villager,Age:-1000000,Invulnerable:true,NoAI:true,Silent:1,ActiveEffects:[{id:14,Duration:9999999,ShowParticles:false}],ArmorItems:[{},{},{},{id:minecraft:saddle}]}]}
 
-³ÉÊé
+æˆä¹¦
 give @p written_book 1 0 {
 AttributeModifiers:[{Operation:0,UUIDLeast:1,UUIDMost:1,Amount:0.025,AttributeName:generic.movementSpeed,Name:Speed}],
-title:"ĞÂÊÖÖ¸Òı",
+title:"æ–°æ‰‹æŒ‡å¼•",
 author:"Stan",
 pages:[
-    1:"{text:'    »¶Ó­À´µ½',"extra":[{text:'ÄÏ·½¹«Ô°',"color":"red"},{text:'£¡ÄãËù',color:black},{text:'ÔÚµÄÎ»ÖÃÎª',color:black},{text:'ÖĞÑë¹ã³¡',color:dark_purple},{text:'£¬ÕâÒ²ÊÇ',color:black},{text:'ÄãµÄ',color:black},{text:'¸´»îµã',color:dark_purple},{text:'¡£¹ã³¡¸½½üÓĞ£º\n',color:black},{text:'1-³¬ÊĞ',color:dark_purple},{text:'³öÊÛ¸÷ÖÖ·½¿éºÍÎïÆ·;',color:black},{text:'2-Åú·¢²¿',color:dark_purple},{text:'ÊÕ¹º¸÷ÖÖÅ©¸±²úÆ·;',color:black},{text:'3-ÒøĞĞ',color:dark_purple},{text:'¿ª»§¡¢´æÈ¡¿îµÈ;\n',color:black},{text:'4-´åÃñ½»Ò×ÖĞĞÄ',color:dark_purple},{text:';\n',color:black},{text:'5-´«ËÍÃÅ',color:dark_purple},{text:'Ç°ÍùÏÂ½çºÍÄ©µØ;\n',color:black},{text:'6-²ÉÊ¯³¡',color:dark_purple},{text:'¿ª²ÉÊ¯Í·;\n',color:black},{text:'7-¹ìµÀ½»Í¨',color:dark_purple},{text:'Àë¿ªÖ÷³ÇÇø;\n',color:black},{text:'ÆäËüÓĞ',color:black},{text:'Ò©µê',color:dark_purple},{text:'¡¢',color:black},{text:'¹«Ô°',color:dark_purple},{text:'¡¢',color:black},{text:'Ğ¡Ñ§',color:dark_purple},{text:'¡¢',color:black},{text:'ÉçÇøÖĞĞÄ',color:dark_purple},{text:'¡¢',color:black},{text:'ÔË¶¯³¡',color:dark_purple},{text:'¡¢',color:black},{text:'¾¯²ì¾Ö',color:dark_purple},{text:'¡¢',color:black},{text:'¾ÓÃñÇø',color:dark_purple},{text:'¡¢',color:black},{text:'Ä¹µØ',color:dark_purple},{text:'µÈµØ¡£\n',color:black}]}",
-    2:"{text:'         Éú´æÖ¸Òı\n\n',color:gold,"extra":[{text:'    ¹ã³¡¸½½ü400Ã×ÄÚ²»ÄÜ½¨ ÔìÓëÆÆ»µ£¬ÇëÔÚ³¬ÊĞ²É¹ºÒ»Ğ©ÎïÆ·ºóÇëÀë¿ªÖ÷³ÇÇøÇ°ÍùÉ³Ê¯ÊÀ½çÉú´æ¡£ÎÒÃÇÒÑ¸øÓëÄã100ÔªÆô¶¯×Ê½ğ£¬Äã¿ÉÒÔ´æÈëÒøĞĞÓÃÓÚÂòÂôÉÌÆ·¡£´æ¿îÈÕÀûÂÊÔÚ25%%×óÓÒ¸¡¶¯£¬Èô´æ¿îÃ¿´ïµ½1000Ôª¡¢10000Ôª¡¢100000Ôª¡¢1000000Ôª£¬ÀûÂÊ»áÏàÓ¦Ôö¼Ó5%%¡£',color:black}]}",
-    3:"{text:'         ¹ØÓÚ²Ù×÷\n\n',"color":"red","extra":[{text:'    Èç¹ûÄãĞèÒªÈ¡¿î¡¢¹ºÂò£¬ ÇëÓÒ»÷ÏàÓ¦µÄÅÆ×Ó£»Èç¹ûÄãĞèÒª´æ¿î£¬ÇëÍ¶ÈëÏàÓ¦»õ±Ò£»Èç¹ûÄãĞèÒª³öÊÛÎïÆ·£¬Çë½«ÎïÆ··ÅÔÚ¿ì½İÀ¸µÄµÚÒ»¸ñ¡£',color:black}]}",
-    4:"{text:'         ÓÎÏ·¹æÔò\n\n',color:dark_purple,"extra":[{text:'    ¹ÖÎïÄÜ·ñÆÆ»µ·½¿é£º·ñ\n    ËÀÍöÊÇ·ñµôÂäÎïÆ·£ºÊÇ\n    ÄÜ·ñÌìÈ»Éú³É¹ÖÎï£º·ñ\n    ÓÎÏ·Ëæ»ú¿ÌµÄËÙ¶È£º10\n    ÇëÎğ³¢ÊÔ½¨ÔìË¢½ğËşºÍË¢ÌúËş£¬ÒòÎªËûÃÇ¶¼ÊÇÎŞĞ§µÄ¡£',color:black}]}"]}
+    1:"{text:'    æ¬¢è¿æ¥åˆ°',"extra":[{text:'å—æ–¹å…¬å›­',"color":"red"},{text:'ï¼ä½ æ‰€',color:black},{text:'åœ¨çš„ä½ç½®ä¸º',color:black},{text:'ä¸­å¤®å¹¿åœº',color:dark_purple},{text:'ï¼Œè¿™ä¹Ÿæ˜¯',color:black},{text:'ä½ çš„',color:black},{text:'å¤æ´»ç‚¹',color:dark_purple},{text:'ã€‚å¹¿åœºé™„è¿‘æœ‰ï¼š\n',color:black},{text:'1-è¶…å¸‚',color:dark_purple},{text:'å‡ºå”®å„ç§æ–¹å—å’Œç‰©å“;',color:black},{text:'2-æ‰¹å‘éƒ¨',color:dark_purple},{text:'æ”¶è´­å„ç§å†œå‰¯äº§å“;',color:black},{text:'3-é“¶è¡Œ',color:dark_purple},{text:'å¼€æˆ·ã€å­˜å–æ¬¾ç­‰;\n',color:black},{text:'4-æ‘æ°‘äº¤æ˜“ä¸­å¿ƒ',color:dark_purple},{text:';\n',color:black},{text:'5-ä¼ é€é—¨',color:dark_purple},{text:'å‰å¾€ä¸‹ç•Œå’Œæœ«åœ°;\n',color:black},{text:'6-é‡‡çŸ³åœº',color:dark_purple},{text:'å¼€é‡‡çŸ³å¤´;\n',color:black},{text:'7-è½¨é“äº¤é€š',color:dark_purple},{text:'ç¦»å¼€ä¸»åŸåŒº;\n',color:black},{text:'å…¶å®ƒæœ‰',color:black},{text:'è¯åº—',color:dark_purple},{text:'ã€',color:black},{text:'å…¬å›­',color:dark_purple},{text:'ã€',color:black},{text:'å°å­¦',color:dark_purple},{text:'ã€',color:black},{text:'ç¤¾åŒºä¸­å¿ƒ',color:dark_purple},{text:'ã€',color:black},{text:'è¿åŠ¨åœº',color:dark_purple},{text:'ã€',color:black},{text:'è­¦å¯Ÿå±€',color:dark_purple},{text:'ã€',color:black},{text:'å±…æ°‘åŒº',color:dark_purple},{text:'ã€',color:black},{text:'å¢“åœ°',color:dark_purple},{text:'ç­‰åœ°ã€‚\n',color:black}]}",
+    2:"{text:'         ç”Ÿå­˜æŒ‡å¼•\n\n',color:gold,"extra":[{text:'    å¹¿åœºé™„è¿‘400ç±³å†…ä¸èƒ½å»º é€ ä¸ç ´åï¼Œè¯·åœ¨è¶…å¸‚é‡‡è´­ä¸€äº›ç‰©å“åè¯·ç¦»å¼€ä¸»åŸåŒºå‰å¾€æ²™çŸ³ä¸–ç•Œç”Ÿå­˜ã€‚æˆ‘ä»¬å·²ç»™ä¸ä½ 100å…ƒå¯åŠ¨èµ„é‡‘ï¼Œä½ å¯ä»¥å­˜å…¥é“¶è¡Œç”¨äºä¹°å–å•†å“ã€‚å­˜æ¬¾æ—¥åˆ©ç‡åœ¨25%%å·¦å³æµ®åŠ¨ï¼Œè‹¥å­˜æ¬¾æ¯è¾¾åˆ°1000å…ƒã€10000å…ƒã€100000å…ƒã€1000000å…ƒï¼Œåˆ©ç‡ä¼šç›¸åº”å¢åŠ 5%%ã€‚',color:black}]}",
+    3:"{text:'         å…³äºæ“ä½œ\n\n',"color":"red","extra":[{text:'    å¦‚æœä½ éœ€è¦å–æ¬¾ã€è´­ä¹°ï¼Œ è¯·å³å‡»ç›¸åº”çš„ç‰Œå­ï¼›å¦‚æœä½ éœ€è¦å­˜æ¬¾ï¼Œè¯·æŠ•å…¥ç›¸åº”è´§å¸ï¼›å¦‚æœä½ éœ€è¦å‡ºå”®ç‰©å“ï¼Œè¯·å°†ç‰©å“æ”¾åœ¨å¿«æ·æ çš„ç¬¬ä¸€æ ¼ã€‚',color:black}]}",
+    4:"{text:'         æ¸¸æˆè§„åˆ™\n\n',color:dark_purple,"extra":[{text:'    æ€ªç‰©èƒ½å¦ç ´åæ–¹å—ï¼šå¦\n    æ­»äº¡æ˜¯å¦æ‰è½ç‰©å“ï¼šæ˜¯\n    èƒ½å¦å¤©ç„¶ç”Ÿæˆæ€ªç‰©ï¼šå¦\n    æ¸¸æˆéšæœºåˆ»çš„é€Ÿåº¦ï¼š10\n    è¯·å‹¿å°è¯•å»ºé€ åˆ·é‡‘å¡”å’Œåˆ·é“å¡”ï¼Œå› ä¸ºä»–ä»¬éƒ½æ˜¯æ— æ•ˆçš„ã€‚',color:black}]}"]}
 give @p written_book 1 0 {
-title:"¹¤¾ßÊé",author:"Ò»Ğ©³£ÓÃµÄÃüÁî",
+title:"å·¥å…·ä¹¦",author:"ä¸€äº›å¸¸ç”¨çš„å‘½ä»¤",
 pages:[
 1:"{text:'\n',color:gold,
-"extra":[{text:'1-Ìî³ä¸½½ü7Ã×Ê¯Í·µØ»ù\n\n',"color":"red","clickEvent":{action:'run_command',value:'/fill ~-7 0 ~-7 ~7 2 ~7 stone 0 keep'},
-"extra":[{text:'2-Ê°ÆğËùÓĞÎïÆ·\n\n',color:blue,"clickEvent":{action:'run_command',value:'/tp @e[type=Item] @p'},
-"extra":[{text:'3-´«ËÍÖÁ³öÉúµã\n\n',color:gold,"clickEvent":{action:'run_command',value:'/tp @p 0 5 5'},
-"extra":[{text:'4-´«ËÍÖÁ¹ÏµØ\n\n',color:gold,"clickEvent":{action:'run_command',value:'/tp @p 63 20 -18'},
-"extra":[{text:'5-´«ËÍÖÁ²ËµØ\n\n',color:gold,"clickEvent":{action:'run_command',value:'/tp @p -63 20 -18'},
-"extra":[{text:'6-´«ËÍÖÁ²Ö¿â\n\n',color:gold,"clickEvent":{action:'run_command',value:'/tp @p -63 5 44'}
+"extra":[{text:'1-å¡«å……é™„è¿‘7ç±³çŸ³å¤´åœ°åŸº\n\n',"color":"red","clickEvent":{action:'run_command',value:'/fill ~-7 0 ~-7 ~7 2 ~7 stone 0 keep'},
+"extra":[{text:'2-æ‹¾èµ·æ‰€æœ‰ç‰©å“\n\n',color:blue,"clickEvent":{action:'run_command',value:'/tp @e[type=Item] @p'},
+"extra":[{text:'3-ä¼ é€è‡³å‡ºç”Ÿç‚¹\n\n',color:gold,"clickEvent":{action:'run_command',value:'/tp @p 0 5 5'},
+"extra":[{text:'4-ä¼ é€è‡³ç“œåœ°\n\n',color:gold,"clickEvent":{action:'run_command',value:'/tp @p 63 20 -18'},
+"extra":[{text:'5-ä¼ é€è‡³èœåœ°\n\n',color:gold,"clickEvent":{action:'run_command',value:'/tp @p -63 20 -18'},
+"extra":[{text:'6-ä¼ é€è‡³ä»“åº“\n\n',color:gold,"clickEvent":{action:'run_command',value:'/tp @p -63 5 44'}
 }]}]}]}]}]}]}",
 2:"{text:'\n',color:gold,
-"extra":[{text:'1-ÊÕĞ¡Âó\n\n',"color":"red","clickEvent":{action:'run_command',value:'/clone ~-10 ~ ~-10 ~10 ~ ~10 ~-10 ~1 ~-10 filtered move minecraft:wheat 7'},
-"extra":[{text:'2-ÊÕÌğ²Ë¸ù\n\n',color:blue,"clickEvent":{action:'run_command',value:'/clone ~-10 ~ ~-10 ~10 ~ ~10 ~-10 ~1 ~-10 filtered move minecraft:beetroots 3'},
-"extra":[{text:'3-½ûÖ¹¹ÖÎïÆÆ»µ·½¿é\n\n',color:blue,"clickEvent":{action:'run_command',value:'/gamerule mobGriefing false'},
-"extra":[{text:'4-ÔÊĞí¹ÖÎïÆÆ»µ·½¿é\n\n',color:blue,"clickEvent":{action:'run_command',value:'/gamerule mobGriefing true'}
+"extra":[{text:'1-æ”¶å°éº¦\n\n',"color":"red","clickEvent":{action:'run_command',value:'/clone ~-10 ~ ~-10 ~10 ~ ~10 ~-10 ~1 ~-10 filtered move minecraft:wheat 7'},
+"extra":[{text:'2-æ”¶ç”œèœæ ¹\n\n',color:blue,"clickEvent":{action:'run_command',value:'/clone ~-10 ~ ~-10 ~10 ~ ~10 ~-10 ~1 ~-10 filtered move minecraft:beetroots 3'},
+"extra":[{text:'3-ç¦æ­¢æ€ªç‰©ç ´åæ–¹å—\n\n',color:blue,"clickEvent":{action:'run_command',value:'/gamerule mobGriefing false'},
+"extra":[{text:'4-å…è®¸æ€ªç‰©ç ´åæ–¹å—\n\n',color:blue,"clickEvent":{action:'run_command',value:'/gamerule mobGriefing true'}
 }]}]}]}]}"]}
 
-©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 
 give @p written_book{
-title:"¹¤¾ßÊé",author:"Ò»Ğ©³£ÓÃµÄÃüÁî",
+title:"å·¥å…·ä¹¦",author:"ä¸€äº›å¸¸ç”¨çš„å‘½ä»¤",
 pages:["{\"text\":\"\\n\",\"color\":\"gold\",
-\"extra\":[{\"text\":\"1-Ìî³ä¸½½ü7Ã×Ê¯Í·µØ»ù\\n\\n\",\"color\":\"red\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/fill ~-7 0 ~-7 ~7 2 ~7 stone 0 keep\"}},{\"text\":\"1-Ìî³ä¸½½ü7Ã×Ê¯Í·µØ»ù\\n\\n\",\"color\":\"red\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/fill ~-7 0 ~-7 ~7 2 ~7 stone 0 keep\"}}]}"]}
+\"extra\":[{\"text\":\"1-å¡«å……é™„è¿‘7ç±³çŸ³å¤´åœ°åŸº\\n\\n\",\"color\":\"red\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/fill ~-7 0 ~-7 ~7 2 ~7 stone 0 keep\"}},{\"text\":\"1-å¡«å……é™„è¿‘7ç±³çŸ³å¤´åœ°åŸº\\n\\n\",\"color\":\"red\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/fill ~-7 0 ~-7 ~7 2 ~7 stone 0 keep\"}}]}"]}
 
 
 
@@ -2493,15 +2493,15 @@ setblock ~ ~-1 ~ minecraft:chest 0 replace {Lock:"potion"}
 summon falling_block ~ ~1 ~ {Block:command_block,Time:1,TileEntityData:{Command:/setblock ~1 ~ ~ wall_sign 5 replace {Text1:"{text:\\\"Click\\\","clickEvent":{action:\\\"run_command\\\",value:\\\"blockdata ~-1 ~ ~ {Command:/replaceitem entity @p slot.hotbar.8 minecraft:diamond 1 0 {display:{Name:\\\u00a7bCBL,Lore:[0:\\\u00a73CommandBlockLogic,1:\\\u00a7eis A,2:\\\u00a72Great Team]}},}\\\"}}"}}}
 give @a chest 1 0 {Lock:cisco}
 give @p chest {}
-¾¯²ì¾Ö{
-ÁìµØ{
-È«½Ó¸ßÆµ
+è­¦å¯Ÿå±€{
+é¢†åœ°{
+å…¨æ¥é«˜é¢‘
 gamemode 0 @a[name=!Dinnerbone,r=55,rm=51,m=2]
 gamemode 2 @a[name=!Dinnerbone,r=50,m=0]
-tell @a[name=!Dinnerbone,r=55,rm=50,m=0] »¶Ó­À´µ½DinnerboneµÄ¼Ò£¬ÇëÎğµÁÇÔÓëÆÆ»µ¡£
-tellraw @a[name=Dinnerbone,r=55,rm=50,m=0] Dinnerbone£¬»¶Ó­»Ø¼Ò£¡
+tell @a[name=!Dinnerbone,r=55,rm=50,m=0] æ¬¢è¿æ¥åˆ°Dinnerboneçš„å®¶ï¼Œè¯·å‹¿ç›—çªƒä¸ç ´åã€‚
+tellraw @a[name=Dinnerbone,r=55,rm=50,m=0] Dinnerboneï¼Œæ¬¢è¿å›å®¶ï¼
 }
-³Í·£{
+æƒ©ç½š{
 testfor @p {Inventory:[{Slot:80b,id:minecraft:leather_helmet,Damage:0s},{Slot:81b,id:minecraft:leather_chestplate,Damage:0s},{Slot:82b,id:minecraft:leather_leggings,Damage:0s},{Slot:83b,id:minecraft:leather_boots,Damage:0s}]}
 replaceitem entity @p slot.hotbar.0 air
 testfor @p {Inventory:[{Slot:0b,id:minecraft:leather_helmet,Damage:0s,Count:1b}]}
@@ -2517,25 +2517,25 @@ kill @e[type=commandblock_minecart]
 
 setblock ~ ~1 ~ minecraft:mob_spawner 0 replace {Entityid:minecraft:Cow,SpawnCount:2b,SpawnRange:6,RequiredPlayerRange:128,Delay:10,MinSpawnDelay:10,MaxSpawnDelay:100,MaxNearbyEntities:20,SpawnPotentials:[{Type:Pig,Weight:1}]}
 
-==================================¿ÉÇÀ¶áÎïÆ·±í==================================
-abandoned_mineshaft - ·ÏÆú¿ó¾®ÖĞÕÒµ½µÄÔËÊä¿ó³µ¡£
-desert_pyramid - É³Ä®ÉñµîµÄ±¦²ØÊÒÀïµÄÏä×Ó¡£
-end_city_treasure - Ä©µØ³ÇÀïµÄÏä×Ó¡£
-igloo_chest - Ñ©ÎİµØÏÂÊÒÀïµÄÏä×Ó¡£
-jungle_temple - ´ÔÁÖÉñÃíÀïµÄÏä×Ó¡£
-nether_bridge - ÏÂ½çÒªÈûÀïµÄÏä×Ó¡£
-simple_dungeon - µØÀÎÀïµÄÏä×Ó¡£
-spawn_bonus_chest - Èç¹û´ò¿ª½±ÀøÏäÑ¡ÏîµÄ»°£¬ĞÂÊÀ½çÉú³ÉÊ±µÄ½±ÀøÏä¡£
-stronghold_corridor - ÒªÈûÌ¨½×¼ÀÌ³ÀïµÄÏä×Ó¡£
-stronghold_crossing - ÒªÈû´¢´æÊÒÀïµÄÏä×Ó¡£
-stronghold_library - ÒªÈûÍ¼Êé¹İÀïµÄÏä×Ó¡£
-village_blacksmith - ´å×¯ÖĞµÄÌú½³ÆÌÀïµÄÏä×Ó¡£
+##################################å¯æŠ¢å¤ºç‰©å“è¡¨##################################
+abandoned_mineshaft - åºŸå¼ƒçŸ¿äº•ä¸­æ‰¾åˆ°çš„è¿è¾“çŸ¿è½¦ã€‚
+desert_pyramid - æ²™æ¼ ç¥æ®¿çš„å®è—å®¤é‡Œçš„ç®±å­ã€‚
+end_city_treasure - æœ«åœ°åŸé‡Œçš„ç®±å­ã€‚
+igloo_chest - é›ªå±‹åœ°ä¸‹å®¤é‡Œçš„ç®±å­ã€‚
+jungle_temple - ä¸›æ—ç¥åº™é‡Œçš„ç®±å­ã€‚
+nether_bridge - ä¸‹ç•Œè¦å¡é‡Œçš„ç®±å­ã€‚
+simple_dungeon - åœ°ç‰¢é‡Œçš„ç®±å­ã€‚
+spawn_bonus_chest - å¦‚æœæ‰“å¼€å¥–åŠ±ç®±é€‰é¡¹çš„è¯ï¼Œæ–°ä¸–ç•Œç”Ÿæˆæ—¶çš„å¥–åŠ±ç®±ã€‚
+stronghold_corridor - è¦å¡å°é˜¶ç¥­å›é‡Œçš„ç®±å­ã€‚
+stronghold_crossing - è¦å¡å‚¨å­˜å®¤é‡Œçš„ç®±å­ã€‚
+stronghold_library - è¦å¡å›¾ä¹¦é¦†é‡Œçš„ç®±å­ã€‚
+village_blacksmith - æ‘åº„ä¸­çš„é“åŒ é“ºé‡Œçš„ç®±å­ã€‚
 
 summon creeper ~ ~1 ~ {DeathLootTable:"minecraft:chests/simple_dungeon",DeathLootTableSeed:123l}
 setblock ~ ~1 ~ minecraft:chest 0 replace {LootTable:"minecraft:chests/end_city_treasure"}
 give @p spawn_egg 1 0 {EntityTag:{id:minecraft:silverfish,DeathLootTable:"minecraft:chests/end_city_treasure"}}
 
-=====================================µ¥Ö¸Áî=====================================
+####################################=å•æŒ‡ä»¤####################################=
 summon falling_block ~ ~1 ~ {Block:stone,Time:1,Passengers:[{id:minecraft:falling_block,Block:redstone_block,Time:1,Passengers:[{id:minecraft:falling_block,Block:activator_rail,Time:1,Passengers:[
 {id:minecraft:commandblock_minecart,Command:setblock ~1 ~-3 ~1 minecraft:repeating_command_block 3},
 {id:minecraft:commandblock_minecart,Command:say 1},
@@ -2543,144 +2543,144 @@ summon falling_block ~ ~1 ~ {Block:stone,Time:1,Passengers:[{id:minecraft:fallin
 {id:minecraft:commandblock_minecart,Command:setblock ~ ~-1 ~1 redstone_block},
 {id:minecraft:commandblock_minecart,Command:kill @e[type=commandblock_minecart,r=1]}]}]}]}
 
-===================================´åÃñ×¨ÒµID===================================
-0	×ØÉ«³¤ÅÛ´åÃñ(Å©Ãñ)
-1	°×É«³¤ÅÛ´åÃñ(Í¼Êé¹ÜÀíÔ±)
-2	×ÏÉ«³¤ÅÛ´åÃñ(ÄÁÊ¦)
-3	ºÚÉ«Î§È¹´åÃñ(Ìú½³)
-4	°×É«Î§È¹´åÃñ(ÍÀ·ò)
-5	ÂÌÉ«³¤ÅÛ(Éµ×Ó)
+##################################=æ‘æ°‘ä¸“ä¸šID##################################=
+0	æ£•è‰²é•¿è¢æ‘æ°‘(å†œæ°‘)
+1	ç™½è‰²é•¿è¢æ‘æ°‘(å›¾ä¹¦ç®¡ç†å‘˜)
+2	ç´«è‰²é•¿è¢æ‘æ°‘(ç‰§å¸ˆ)
+3	é»‘è‰²å›´è£™æ‘æ°‘(é“åŒ )
+4	ç™½è‰²å›´è£™æ‘æ°‘(å± å¤«)
+5	ç»¿è‰²é•¿è¢(å‚»å­)
 entitydata @e {Proffesion:1,Rotation:[270f,0f]}
 
-=====================================Ä§ÖäID=====================================
-0	±£»¤IV
-1	»ğÑæ±£»¤IV
-2	Ë¤Âä±£»¤IV
-3	±¬Õ¨±£»¤IV
-4	µ¯ÉäÎï±£»¤IV
-5	Ë®ÏÂºôÎüIII
-6	Ë®ÏÂËÙ¾ò
-7	¾£¼¬III
-8	Éîº£Ì½Ë÷ÕßIII
-9	±ùËªĞĞÕßII
-10 	°ó¶¨×çÖä
-16	·æÀûV
-17	ÍöÁéÉ±ÊÖV
-18	½ÚÖ«É±ÊÖV
-19	»÷ÍËII
-20	»ğÑæ¸½¼ÓII
-21	ÇÀ¶áIII
-22	ºáÉ¨Ö®ÈĞIII
-32	Ğ§ÂÊV
-33	¾«×¼²É¼¯
-34	ÄÍ¾ÃIII
-35	Ê±ÔËIII
-48	Á¦Á¿V
-49	³å»÷II
-50	»ğÊ¸
-51	ÎŞÏŞ
-61	º£Ö®¾ì¹ËIII
-62	¶üµöIII
-70	¾­ÑéĞŞ²¹
-71 	ÏûÊ§×çÖä
+####################################=é­”å’’ID####################################=
+0	ä¿æŠ¤IV
+1	ç«ç„°ä¿æŠ¤IV
+2	æ‘”è½ä¿æŠ¤IV
+3	çˆ†ç‚¸ä¿æŠ¤IV
+4	å¼¹å°„ç‰©ä¿æŠ¤IV
+5	æ°´ä¸‹å‘¼å¸III
+6	æ°´ä¸‹é€Ÿæ˜
+7	è†æ£˜III
+8	æ·±æµ·æ¢ç´¢è€…III
+9	å†°éœœè¡Œè€…II
+10 	ç»‘å®šè¯…å’’
+16	é”‹åˆ©V
+17	äº¡çµæ€æ‰‹V
+18	èŠ‚è‚¢æ€æ‰‹V
+19	å‡»é€€II
+20	ç«ç„°é™„åŠ II
+21	æŠ¢å¤ºIII
+22	æ¨ªæ‰«ä¹‹åˆƒIII
+32	æ•ˆç‡V
+33	ç²¾å‡†é‡‡é›†
+34	è€ä¹…III
+35	æ—¶è¿III
+48	åŠ›é‡V
+49	å†²å‡»II
+50	ç«çŸ¢
+51	æ— é™
+61	æµ·ä¹‹çœ·é¡¾III
+62	é¥µé’“III
+70	ç»éªŒä¿®è¡¥
+71 	æ¶ˆå¤±è¯…å’’
 
-=====================================×´Ì¬Ğ§¹ûID=====================================
+####################################=çŠ¶æ€æ•ˆæœID####################################=
 
-{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:2970007,display:{Name:"Ë®·ÎÒ©Ë®"},CustomPotionEffects:[{Id:13,Duration:9600}]}}
-{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:14719033,display:{Name:"¿¹»ğÒ©Ë®"},CustomPotionEffects:[{Id:12,Duration:9600}]}}
-{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:2039710,display:{Name:"Ò¹ÊÓÒ©Ë®"},CustomPotionEffects:[{Id:16,Duration:9600}]}}
-{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:8225168,display:{Name:"ÒşÉíÒ©Ë®"},CustomPotionEffects:[{Id:14,Duration:9600}]}}
-{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:15934242,display:{Name:"±¥ºÍÒ©Ë®"},CustomPotionEffects:[{Id:23,Duration:20}]}}
-{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:13261736,display:{Name:"ÔÙÉúÒ©Ë®"},CustomPotionEffects:[{Id:10,Amplifier:1,Duration:9600}]}}
-{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:8039619,display:{Name:"Ñ¸½İÒ©Ë®"},CustomPotionEffects:[{Id:1,Amplifier:1,Duration:9600}]}}
-{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:14073154,display:{Name:"¼±ÆÈÒ©Ë®"},CustomPotionEffects:[{Id:3,Amplifier:1,Duration:9600}]}}
-{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:2226763,display:{Name:"ÌøÔ¾Ò©Ë®"},CustomPotionEffects:[{Id:8,Amplifier:1,Duration:9600}]}}
-{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:9511714,display:{Name:"Á¦Á¿Ò©Ë®"},CustomPotionEffects:[{Id:5,Amplifier:2,Duration:9600}]}}
-{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:16262179,display:{Name:"ÖÎÁÆÒ©Ë®"},CustomPotionEffects:[{Id:6,Amplifier:2}]}}
-{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:9913401,display:{Name:"¿¹ĞÔÒ©Ë®"},CustomPotionEffects:[{Id:11,Amplifier:2,Duration:9600}]}}
-{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:14841103,display:{Name:"ÌáÉıÒ©Ë®"},CustomPotionEffects:[{Id:21,Amplifier:2,Duration:9600}]}}
+{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:2970007,display:{Name:"æ°´è‚ºè¯æ°´"},CustomPotionEffects:[{Id:13,Duration:9600}]}}
+{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:14719033,display:{Name:"æŠ—ç«è¯æ°´"},CustomPotionEffects:[{Id:12,Duration:9600}]}}
+{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:2039710,display:{Name:"å¤œè§†è¯æ°´"},CustomPotionEffects:[{Id:16,Duration:9600}]}}
+{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:8225168,display:{Name:"éšèº«è¯æ°´"},CustomPotionEffects:[{Id:14,Duration:9600}]}}
+{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:15934242,display:{Name:"é¥±å’Œè¯æ°´"},CustomPotionEffects:[{Id:23,Duration:20}]}}
+{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:13261736,display:{Name:"å†ç”Ÿè¯æ°´"},CustomPotionEffects:[{Id:10,Amplifier:1,Duration:9600}]}}
+{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:8039619,display:{Name:"è¿…æ·è¯æ°´"},CustomPotionEffects:[{Id:1,Amplifier:1,Duration:9600}]}}
+{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:14073154,display:{Name:"æ€¥è¿«è¯æ°´"},CustomPotionEffects:[{Id:3,Amplifier:1,Duration:9600}]}}
+{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:2226763,display:{Name:"è·³è·ƒè¯æ°´"},CustomPotionEffects:[{Id:8,Amplifier:1,Duration:9600}]}}
+{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:9511714,display:{Name:"åŠ›é‡è¯æ°´"},CustomPotionEffects:[{Id:5,Amplifier:2,Duration:9600}]}}
+{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:16262179,display:{Name:"æ²»ç–—è¯æ°´"},CustomPotionEffects:[{Id:6,Amplifier:2}]}}
+{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:9913401,display:{Name:"æŠ—æ€§è¯æ°´"},CustomPotionEffects:[{Id:11,Amplifier:2,Duration:9600}]}}
+{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:14841103,display:{Name:"æå‡è¯æ°´"},CustomPotionEffects:[{Id:21,Amplifier:2,Duration:9600}]}}
 
-{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:5859967,display:{Name:"³Ù»ºÒ©Ë®"},CustomPotionEffects:[{Id:2,Amplifier:2,Duration:9600}]}}
-{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:4800791,display:{Name:"ÍÚ¾òÆ£ÀÍÒ©Ë®"},CustomPotionEffects:[{Id:4,Amplifier:2,Duration:9600}]}}
-{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:4393481,display:{Name:"ÉËº¦Ò©Ë®"},CustomPotionEffects:[{Id:7,Amplifier:2,Duration:9600}]}}
-{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:5512521,display:{Name:"·´Î¸Ò©Ë®"},CustomPotionEffects:[{Id:9,Amplifier:2,Duration:9600}]}}
-{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:2039586,display:{Name:"Ê§Ã÷Ò©Ë®"},CustomPotionEffects:[{Id:15,Amplifier:2,Duration:9600}]}}
-{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:5731410,display:{Name:"¼¢¶öÒ©Ë®"},CustomPotionEffects:[{Id:17,Amplifier:2,Duration:9600}]}}
-{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:4672583,display:{Name:"ĞéÈõÒ©Ë®"},CustomPotionEffects:[{Id:18,Amplifier:2,Duration:9600}]}}
-{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:5083440,display:{Name:"¾ç¶¾Ò©Ë®"},CustomPotionEffects:[{Id:19,Amplifier:2,Duration:9600}]}}
-{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:3484199,display:{Name:"µòÁãÒ©Ë®"},CustomPotionEffects:[{Id:20,Amplifier:2,Duration:9600}]}}
-{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:12425542,display:{Name:"·ÇÖŞÒ©Ë®"},CustomPotionEffects:[{Id:27,Amplifier:2,Duration:9600}]}}
-{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:13565951,display:{Name:"Æ®¸¡Ò©Ë®"},CustomPotionEffects:[{Id:25,Amplifier:2,Duration:9600}]}}
-{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:9740385,display:{Name:"·¢¹âÒ©Ë®"},CustomPotionEffects:[{Id:24,Amplifier:2,Duration:9600}]}}
-{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:9740385,display:{Name:"»º½µÒ©Ë®"},CustomPotionEffects:[{Id:28,Amplifier:2,Duration:9600}]}}
+{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:5859967,display:{Name:"è¿Ÿç¼“è¯æ°´"},CustomPotionEffects:[{Id:2,Amplifier:2,Duration:9600}]}}
+{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:4800791,display:{Name:"æŒ–æ˜ç–²åŠ³è¯æ°´"},CustomPotionEffects:[{Id:4,Amplifier:2,Duration:9600}]}}
+{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:4393481,display:{Name:"ä¼¤å®³è¯æ°´"},CustomPotionEffects:[{Id:7,Amplifier:2,Duration:9600}]}}
+{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:5512521,display:{Name:"åèƒƒè¯æ°´"},CustomPotionEffects:[{Id:9,Amplifier:2,Duration:9600}]}}
+{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:2039586,display:{Name:"å¤±æ˜è¯æ°´"},CustomPotionEffects:[{Id:15,Amplifier:2,Duration:9600}]}}
+{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:5731410,display:{Name:"é¥¥é¥¿è¯æ°´"},CustomPotionEffects:[{Id:17,Amplifier:2,Duration:9600}]}}
+{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:4672583,display:{Name:"è™šå¼±è¯æ°´"},CustomPotionEffects:[{Id:18,Amplifier:2,Duration:9600}]}}
+{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:5083440,display:{Name:"å‰§æ¯’è¯æ°´"},CustomPotionEffects:[{Id:19,Amplifier:2,Duration:9600}]}}
+{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:3484199,display:{Name:"å‡‹é›¶è¯æ°´"},CustomPotionEffects:[{Id:20,Amplifier:2,Duration:9600}]}}
+{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:12425542,display:{Name:"éæ´²è¯æ°´"},CustomPotionEffects:[{Id:27,Amplifier:2,Duration:9600}]}}
+{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:13565951,display:{Name:"é£˜æµ®è¯æ°´"},CustomPotionEffects:[{Id:25,Amplifier:2,Duration:9600}]}}
+{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:9740385,display:{Name:"å‘å…‰è¯æ°´"},CustomPotionEffects:[{Id:24,Amplifier:2,Duration:9600}]}}
+{id:minecraft:potion,Count:1b,tag:{CustomPotionColor:9740385,display:{Name:"ç¼“é™è¯æ°´"},CustomPotionEffects:[{Id:28,Amplifier:2,Duration:9600}]}}
 
-===================================   ÑÕÉ«   ===================================
-È¾ÁÏÊı¾İÖµ	È¾ÁÏÃû³Æ	ÑÕÉ«		ÑÕÉ«(RGB)	ÑÕÉ«Ãû		¿ÉÈ¾É«ÎïÆ·Êı¾İÖµ
-0			Ä«ÄÒ		1644825		#191919		ºÚÉ«		15
-1			Ãµ¹åºì		10040115	#993333		ºìÉ«		14
-2			ÏÉÈËÕÆÂÌ	6717235		#667F33		ÂÌÉ«		13
-3			¿É¿É¶¹		6704179		#664C33		×ØÉ«		12
-4			Çà½ğÊ¯		3361970		#334CB2		À¶É«		11
-5			×ÏÉ«È¾ÁÏ	8339378		#7F3FB2		×ÏÉ«		10
-6			ÇàÉ«È¾ÁÏ	5013401		#4C7F99		ÇàÉ«		9
-7			µ­»ÒÉ«È¾ÁÏ	10066329	#999999		µ­»ÒÉ«		8
-8			»ÒÉ«È¾ÁÏ	5000268		#4C4C4C		»ÒÉ«		7
-9			·ÛºìÉ«È¾ÁÏ	15892389	#F27FA5		·ÛºìÉ«		6
-10			»ÆÂÌÉ«È¾ÁÏ	8375321		#7FCC19		»ÆÂÌÉ«		5
-11			ÆÑ¹«Ó¢»Æ	15066419	#E5E533		»ÆÉ«		4
-12			µ­À¶É«È¾ÁÏ	6724056		#6699D8		µ­À¶É«		3
-13			Æ·ºìÉ«È¾ÁÏ	11685080	#B24CD8		Æ·ºìÉ«		2
-14			³ÈÉ«È¾ÁÏ	14188339	#D87F33		³ÈÉ«		1
-15			¹Ç·Û		16777215	#FFFFFF		°×É«		0
+##################################=   é¢œè‰²   ##################################=
+æŸ“æ–™æ•°æ®å€¼	æŸ“æ–™åç§°	é¢œè‰²		é¢œè‰²(RGB)	é¢œè‰²å		å¯æŸ“è‰²ç‰©å“æ•°æ®å€¼
+0			å¢¨å›Š		1644825		#191919		é»‘è‰²		15
+1			ç«ç‘°çº¢		10040115	#993333		çº¢è‰²		14
+2			ä»™äººæŒç»¿	6717235		#667F33		ç»¿è‰²		13
+3			å¯å¯è±†		6704179		#664C33		æ£•è‰²		12
+4			é’é‡‘çŸ³		3361970		#334CB2		è“è‰²		11
+5			ç´«è‰²æŸ“æ–™	8339378		#7F3FB2		ç´«è‰²		10
+6			é’è‰²æŸ“æ–™	5013401		#4C7F99		é’è‰²		9
+7			æ·¡ç°è‰²æŸ“æ–™	10066329	#999999		æ·¡ç°è‰²		8
+8			ç°è‰²æŸ“æ–™	5000268		#4C4C4C		ç°è‰²		7
+9			ç²‰çº¢è‰²æŸ“æ–™	15892389	#F27FA5		ç²‰çº¢è‰²		6
+10			é»„ç»¿è‰²æŸ“æ–™	8375321		#7FCC19		é»„ç»¿è‰²		5
+11			è’²å…¬è‹±é»„	15066419	#E5E533		é»„è‰²		4
+12			æ·¡è“è‰²æŸ“æ–™	6724056		#6699D8		æ·¡è“è‰²		3
+13			å“çº¢è‰²æŸ“æ–™	11685080	#B24CD8		å“çº¢è‰²		2
+14			æ©™è‰²æŸ“æ–™	14188339	#D87F33		æ©™è‰²		1
+15			éª¨ç²‰		16777215	#FFFFFF		ç™½è‰²		0
 
 setblock ~ ~ ~ wall_sign 2 replace {
-Text1:"{\"text\":\"ºÚ\",\"color\":\"black\",\"extra\":[{\"text\":\"ÉîÀ¶\",\"color\":\"dark_blue\"},{\"text\":\"ÉîÂÌ\",\"color\":\"dark_green\"},{\"text\":\"±ÌÂÌ\",\"color\":\"dark_aqua\"},{\"text\":\"Éîºì\",\"color\":\"dark_red\"}]}",
-Text2:"{\"text\":\"Éî×Ï\",\"color\":\"dark_purple\",\"extra\":[{\"text\":\"½ğ\",\"color\":\"gold\"},{\"text\":\"»Ò\",\"color\":\"gray\"},{\"text\":\"Éî»Ò\",\"color\":\"dark_gray\"},{\"text\":\"À¶\",\"color\":\"blue\"}]}",
-Text3:"{\"text\":\"ÂÌ\",\"color\":\"green\",\"extra\":[{\"text\":\"Ë®ÂÌ\",\"color\":\"aqua\"},{\"text\":\"ºì\",\"color\":\"red\"},{\"text\":\"µ­×Ï\",\"color\":\"light_purple\"},{\"text\":\"»Æ\",\"color\":\"yellow\"}]}",
-Text4:"{\"text\":\"°×\",\"color\":\"white\"}"}
+Text1:"{\"text\":\"é»‘\",\"color\":\"black\",\"extra\":[{\"text\":\"æ·±è“\",\"color\":\"dark_blue\"},{\"text\":\"æ·±ç»¿\",\"color\":\"dark_green\"},{\"text\":\"ç¢§ç»¿\",\"color\":\"dark_aqua\"},{\"text\":\"æ·±çº¢\",\"color\":\"dark_red\"}]}",
+Text2:"{\"text\":\"æ·±ç´«\",\"color\":\"dark_purple\",\"extra\":[{\"text\":\"é‡‘\",\"color\":\"gold\"},{\"text\":\"ç°\",\"color\":\"gray\"},{\"text\":\"æ·±ç°\",\"color\":\"dark_gray\"},{\"text\":\"è“\",\"color\":\"blue\"}]}",
+Text3:"{\"text\":\"ç»¿\",\"color\":\"green\",\"extra\":[{\"text\":\"æ°´ç»¿\",\"color\":\"aqua\"},{\"text\":\"çº¢\",\"color\":\"red\"},{\"text\":\"æ·¡ç´«\",\"color\":\"light_purple\"},{\"text\":\"é»„\",\"color\":\"yellow\"}]}",
+Text4:"{\"text\":\"ç™½\",\"color\":\"white\"}"}
 
-¡ì0	ºÚÉ«	black
-¡ì1	ÉîÀ¶É«	dark_blue
-¡ì2	ÉîÂÌÉ«	dark_green
-¡ì3	ºşÀ¶É«	dark_aqua
-¡ì4	ÉîºìÉ«	dark_red
-¡ì5	×ÏÉ«	dark_purple
-¡ì6	½ğÉ«	gold
-¡ì7	»ÒÉ«	gray
-¡ì8	Éî»ÒÉ«	dark_gray
-¡ì9	À¶É«	blue
-¡ìa	ÂÌÉ«	green
-¡ìb	ÌìÀ¶É«	aqua
-¡ìc	ºìÉ«	red
-¡ìd	·ÛÉ«	light_purple
-¡ìe	»ÆÉ«	yellow
-¡ìf	°×É«	white
-¡ìk	Ëæ»ú×Ö·û
-¡ìl	´ÖÌå
-¡ìm	É¾³ıÏß
-¡ìn	ÏÂ»®Ïß
-¡ìo	Ğ±Ìå
-¡ìr	ÖØÖÃÎÄ×ÖÑùÊ½
+Â§0	é»‘è‰²	black
+Â§1	æ·±è“è‰²	dark_blue
+Â§2	æ·±ç»¿è‰²	dark_green
+Â§3	æ¹–è“è‰²	dark_aqua
+Â§4	æ·±çº¢è‰²	dark_red
+Â§5	ç´«è‰²	dark_purple
+Â§6	é‡‘è‰²	gold
+Â§7	ç°è‰²	gray
+Â§8	æ·±ç°è‰²	dark_gray
+Â§9	è“è‰²	blue
+Â§a	ç»¿è‰²	green
+Â§b	å¤©è“è‰²	aqua
+Â§c	çº¢è‰²	red
+Â§d	ç²‰è‰²	light_purple
+Â§e	é»„è‰²	yellow
+Â§f	ç™½è‰²	white
+Â§k	éšæœºå­—ç¬¦
+Â§l	ç²—ä½“
+Â§m	åˆ é™¤çº¿
+Â§n	ä¸‹åˆ’çº¿
+Â§o	æ–œä½“
+Â§r	é‡ç½®æ–‡å­—æ ·å¼
 
-==================================Ê±ÔËĞ§¹û¼Ó³É===================================
-×êÊ¯¡¢Ãº¡¢ÂÌ±¦Ê¯¡¢ÏÂ½çÊ¯Ó¢¡¢Çà½ğÊ¯(6)	(F+1)/2+1/(F+2)
-ºúÂÜ²·¡¢ÍÁ¶¹							(F+5)/2
-ºìÊ¯ 									(F+9)/2
-µØÓüğà									(F+6)/2
+##################################æ—¶è¿æ•ˆæœåŠ æˆ##################################=
+é’»çŸ³ã€ç…¤ã€ç»¿å®çŸ³ã€ä¸‹ç•ŒçŸ³è‹±ã€é’é‡‘çŸ³(6)	(F+1)/2+1/(F+2)
+èƒ¡èåœã€åœŸè±†							(F+5)/2
+çº¢çŸ³ 									(F+9)/2
+åœ°ç‹±ç–£									(F+6)/2
 
 
 summon fireworks_rocket ~ ~2 ~ {LifeTime:30,FireworksItem:{id:minecraft:fireworks,Count:1b,tag:{Fireworks:{Flight:3b,Explosions:[{Flicker:1,Trail:1,Type:1,Colors:[11743532,2437522,3887386,14602026,14188952,8073150],FadeColors:[15435844,6719955,12801229,2651799,4312372,5320730,3887386,15790320]}]}}}}
 
 
 
-Text2:\"{\\\"text\\\":\\\"¹ºÂò15É«ÑÌ»¨»ğ¼ı\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=50] minecraft:fireworks 1 0 {Fireworks:{Flight:3b,Explosions:[{Flicker:1b,Trail:1b,Type:1b,Colors:[],FadeColors:[,]}]}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
+Text2:\"{\\\"text\\\":\\\"è´­ä¹°15è‰²çƒŸèŠ±ç«ç®­\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"give @p[score_CK_min=50] minecraft:fireworks 1 0 {Fireworks:{Flight:3b,Explosions:[{Flicker:1b,Trail:1b,Type:1b,Colors:[],FadeColors:[,]}]}}\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text3:\"{\\\"text\\\":\\\"$50\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"scoreboard players remove @p[score_CK_min=50] CK 50\\\"},\\\"color\\\":\\\"dark_blue\\\"}\",
 Text4:\"{\\\"text\\\":\\\"\\\"}\"}"},
 
 
 
 
-ÌìºÚ·ÅÑÌ»¨
+å¤©é»‘æ”¾çƒŸèŠ±
 summon falling_block ~ ~1 ~ {Block:stone,Time:1,Passengers:[{id:falling_block,Block:redstone_block,Time:1,Passengers:[{id:falling_block,Block:activator_rail,Time:1,Passengers:[{id:commandblock_minecart,Command:execute @a ~5 ~ ~ summon fireworks_rocket ~ ~ ~ {LifeTime:30,FireworksItem:{id:minecraft:fireworks,Count:1b,tag:{Fireworks:{Explosions:[{Flicker:1,Trail:1,Type:1,Colors:[16711680,255],FadeColors:[16711935]}]}}}}},{id:commandblock_minecart,Command:execute @a ~-5 ~ ~ summon fireworks_rocket ~ ~ ~ {LifeTime:30,FireworksItem:{id:minecraft:fireworks,Count:1b,tag:{Fireworks:{Explosions:[{Flicker:1,Trail:1,Type:1,Colors:[16711680,255],FadeColors:[16711935]}]}}}}},{id:commandblock_minecart,Command:execute @a ~ ~ ~5 summon fireworks_rocket ~ ~ ~ {LifeTime:30,FireworksItem:{id:minecraft:fireworks,Count:1b,tag:{Fireworks:{Explosions:[{Flicker:1,Trail:1,Type:1,Colors:[16711680,255],FadeColors:[16711935]}]}}}}},{id:commandblock_minecart,Command:execute @a ~ ~ ~-5 summon fireworks_rocket ~ ~ ~ {LifeTime:30,FireworksItem:{id:minecraft:fireworks,Count:1b,tag:{Fireworks:{Explosions:[{Flicker:1,Trail:1,Type:1,Colors:[16711680,255],FadeColors:[16711935]}]}}}}},{id:commandblock_minecart,Command:setblock ~ ~ ~1 command_block 0 replace {Command:fill ~ ~-2 ~-1 ~ ~ ~ air}},{id:commandblock_minecart,Command:setblock ~ ~-1 ~1 redstone_block},{id:commandblock_minecart,Command:kill @e[type=commandblock_minecart,r=5]}]}]}]}
 
 summon falling_block ~ ~1 ~ {Block:stone,Time:1,Passengers:[{id:minecraft:falling_block,Block:redstone_block,Time:1,Passengers:[{id:minecraft:falling_block,Block:activator_rail,Time:1,Passengers:[
@@ -2702,40 +2702,40 @@ summon falling_block ~ ~1 ~ {Block:stone,Time:1,Passengers:[{id:minecraft:fallin
 
 
 give @p written_book 1 0 {
-title:"¹¤¾ßÊé",author:"Ò»Ğ©³£ÓÃµÄÃüÁî",AttributeModifiers:[{Operation:1,UUIDLeast:100,UUIDMost:999,Amount:3,AttributeName:"generic.movementSpeed",Name:"Speed"}],HideFlags:2,
+title:"å·¥å…·ä¹¦",author:"ä¸€äº›å¸¸ç”¨çš„å‘½ä»¤",AttributeModifiers:[{Operation:1,UUIDLeast:100,UUIDMost:999,Amount:3,AttributeName:"generic.movementSpeed",Name:"Speed"}],HideFlags:2,
 pages:[
 1:"{'text':'\n','color':'gold','extra':[
-{'text':'Æ½É½ ','color':'dark_blue','clickEvent':{action:'run_command',value:'/fill ~-15 ~ ~-15 ~15 ~30 ~15 air'}},
-{'text':'ÌîÍÁ ','color':'dark_blue','clickEvent':{action:'run_command',value:'/fill ~-5 ~-1 ~-5 ~5 ~-30 ~5 grass'}},
-{'text':'ÅÅÊ¯ ','color':'dark_blue','clickEvent':{action:'run_command',value:'/fill ~-15 ~-1 ~-15 ~15 ~-1 ~15 grass 0 replace stone'}},
-{'text':'ÌîÉ³\n','color':'dark_blue','clickEvent':{action:'run_command',value:'/fill ~-15 ~-1 ~-15 ~15 ~-1 ~15 sand 0 replace sandstone'}},
+{'text':'å¹³å±± ','color':'dark_blue','clickEvent':{action:'run_command',value:'/fill ~-15 ~ ~-15 ~15 ~30 ~15 air'}},
+{'text':'å¡«åœŸ ','color':'dark_blue','clickEvent':{action:'run_command',value:'/fill ~-5 ~-1 ~-5 ~5 ~-30 ~5 grass'}},
+{'text':'æ’çŸ³ ','color':'dark_blue','clickEvent':{action:'run_command',value:'/fill ~-15 ~-1 ~-15 ~15 ~-1 ~15 grass 0 replace stone'}},
+{'text':'å¡«æ²™\n','color':'dark_blue','clickEvent':{action:'run_command',value:'/fill ~-15 ~-1 ~-15 ~15 ~-1 ~15 sand 0 replace sandstone'}},
 
-{'text':'Ïò¶«ÌîµÆ ','color':'red','clickEvent':{action:'run_command',value:'/fill ~ 62 ~ ~30 62 ~ sea_lantern'}},
-{'text':'Ïò¶«ÌîÊ÷Ò¶\n','color':'red','clickEvent':{action:'run_command',value:'/fill ~ 63 ~ ~30 63 ~ leaves 6'}},
-{'text':'Ïò¶«ÌîÌ¨½× ','color':'red','clickEvent':{action:'run_command',value:'/fill ~ 63 ~ ~30 63 ~ purpur_slab'}},
-{'text':'Ïò¶«ÌîÊ¯Â·\n\n','color':'red','clickEvent':{action:'run_command',value:'/fill ~ 62 ~-2 ~30 62 ~2 double_stone_slab'}},
+{'text':'å‘ä¸œå¡«ç¯ ','color':'red','clickEvent':{action:'run_command',value:'/fill ~ 62 ~ ~30 62 ~ sea_lantern'}},
+{'text':'å‘ä¸œå¡«æ ‘å¶\n','color':'red','clickEvent':{action:'run_command',value:'/fill ~ 63 ~ ~30 63 ~ leaves 6'}},
+{'text':'å‘ä¸œå¡«å°é˜¶ ','color':'red','clickEvent':{action:'run_command',value:'/fill ~ 63 ~ ~30 63 ~ purpur_slab'}},
+{'text':'å‘ä¸œå¡«çŸ³è·¯\n\n','color':'red','clickEvent':{action:'run_command',value:'/fill ~ 62 ~-2 ~30 62 ~2 double_stone_slab'}},
 
-{'text':'ÏòÎ÷ÌîµÆ ','color':'red','clickEvent':{action:'run_command',value:'/fill ~ 62 ~ ~-30 62 ~ sea_lantern'}},
-{'text':'ÏòÎ÷ÌîÊ÷Ò¶\n','color':'red','clickEvent':{action:'run_command',value:'/fill ~ 63 ~ ~-30 63 ~ leaves 6'}},
-{'text':'ÏòÎ÷ÌîÌ¨½× ','color':'red','clickEvent':{action:'run_command',value:'/fill ~ 63 ~ ~-30 63 ~ purpur_slab'}},
-{'text':'ÏòÎ÷ÌîÊ¯Â·\n\n','color':'red','clickEvent':{action:'run_command',value:'/fill ~ 62 ~-2 ~-30 62 ~2 double_stone_slab'}},
+{'text':'å‘è¥¿å¡«ç¯ ','color':'red','clickEvent':{action:'run_command',value:'/fill ~ 62 ~ ~-30 62 ~ sea_lantern'}},
+{'text':'å‘è¥¿å¡«æ ‘å¶\n','color':'red','clickEvent':{action:'run_command',value:'/fill ~ 63 ~ ~-30 63 ~ leaves 6'}},
+{'text':'å‘è¥¿å¡«å°é˜¶ ','color':'red','clickEvent':{action:'run_command',value:'/fill ~ 63 ~ ~-30 63 ~ purpur_slab'}},
+{'text':'å‘è¥¿å¡«çŸ³è·¯\n\n','color':'red','clickEvent':{action:'run_command',value:'/fill ~ 62 ~-2 ~-30 62 ~2 double_stone_slab'}},
 
-{'text':'ÏòÄÏÌîµÆ ','color':'red','clickEvent':{action:'run_command',value:'/fill ~ 62 ~ ~ 62 ~30 sea_lantern'}},
-{'text':'ÏòÄÏÌîÊ÷Ò¶\n','color':'red','clickEvent':{action:'run_command',value:'/fill ~ 63 ~ ~ 63 ~30 leaves 6'}},
-{'text':'ÏòÄÏÌîÌ¨½× ','color':'red','clickEvent':{action:'run_command',value:'/fill ~ 63 ~ ~ 63 ~30 purpur_slab'}},
-{'text':'ÏòÄÏÌîÊ¯Â·\n\n','color':'red','clickEvent':{action:'run_command',value:'/fill ~-2 62 ~ ~2 62 ~30 double_stone_slab'}},
+{'text':'å‘å—å¡«ç¯ ','color':'red','clickEvent':{action:'run_command',value:'/fill ~ 62 ~ ~ 62 ~30 sea_lantern'}},
+{'text':'å‘å—å¡«æ ‘å¶\n','color':'red','clickEvent':{action:'run_command',value:'/fill ~ 63 ~ ~ 63 ~30 leaves 6'}},
+{'text':'å‘å—å¡«å°é˜¶ ','color':'red','clickEvent':{action:'run_command',value:'/fill ~ 63 ~ ~ 63 ~30 purpur_slab'}},
+{'text':'å‘å—å¡«çŸ³è·¯\n\n','color':'red','clickEvent':{action:'run_command',value:'/fill ~-2 62 ~ ~2 62 ~30 double_stone_slab'}},
 
-{'text':'Ïò±±ÌîµÆ ','color':'red','clickEvent':{action:'run_command',value:'/fill ~ 62 ~ ~ 62 ~-30 sea_lantern'}},
-{'text':'Ïò±±ÌîÊ÷Ò¶\n','color':'red','clickEvent':{action:'run_command',value:'/fill ~ 63 ~ ~ 63 ~-30 leaves 6'}},
-{'text':'Ïò±±ÌîÌ¨½× ','color':'red','clickEvent':{action:'run_command',value:'/fill ~ 63 ~ ~ 63 ~-30 purpur_slab'}},
-{'text':'Ïò±±ÌîÊ¯Â·\n\n','color':'red','clickEvent':{action:'run_command',value:'/fill ~-2 62 ~ ~2 62 ~-30 double_stone_slab'}}
+{'text':'å‘åŒ—å¡«ç¯ ','color':'red','clickEvent':{action:'run_command',value:'/fill ~ 62 ~ ~ 62 ~-30 sea_lantern'}},
+{'text':'å‘åŒ—å¡«æ ‘å¶\n','color':'red','clickEvent':{action:'run_command',value:'/fill ~ 63 ~ ~ 63 ~-30 leaves 6'}},
+{'text':'å‘åŒ—å¡«å°é˜¶ ','color':'red','clickEvent':{action:'run_command',value:'/fill ~ 63 ~ ~ 63 ~-30 purpur_slab'}},
+{'text':'å‘åŒ—å¡«çŸ³è·¯\n\n','color':'red','clickEvent':{action:'run_command',value:'/fill ~-2 62 ~ ~2 62 ~-30 double_stone_slab'}}
 ]}",
 2:"{'text':'\n','color':'gold','extra':[
-{'text':'Ç°Íù¹ã³¡\n','color':'ÉîÂÌÉ«','clickEvent':{action:'run_command',value:'/tp 175 68 212'}},
-{'text':'Ç°ÍùÊĞ³¡\n','color':'ÉîÂÌÉ«','clickEvent':{action:'run_command',value:'/tp 250 65 310'}}
+{'text':'å‰å¾€å¹¿åœº\n','color':'æ·±ç»¿è‰²','clickEvent':{action:'run_command',value:'/tp 175 68 212'}},
+{'text':'å‰å¾€å¸‚åœº\n','color':'æ·±ç»¿è‰²','clickEvent':{action:'run_command',value:'/tp 250 65 310'}}
 ]}",
-3:"{\"text\":\"ÉîÀ¶É«\",\"color\":\"dark_blue\",\"extra\":[{\"text\":\"ÉîÂÌÉ«\",\"color\":\"dark_green\"},{\"text\":\"±ÌÂÌÉ«\",\"color\":\"dark_aqua\"},{\"text\":\"ÉîºìÉ«\",\"color\":\"dark_red\"},{\"text\":\"Éî×ÏÉ«\",\"color\":\"dark_purple\"},{\"text\":\"½ğÉ«\",\"color\":\"gold\"},{\"text\":\"»ÒÉ«\",\"color\":\"gray\"},{\"text\":\"Éî»ÒÉ«\",\"color\":\"dark_gray\"},{\"text\":\"À¶É«\",\"color\":\"blue\"},{\"text\":\"ÂÌÉ«\",\"color\":\"green\"}
-,{\"text\":\"Ë®ÂÌÉ«\",\"color\":\"aqua\"},{\"text\":\"ºìÉ«\",\"color\":\"red\"},{\"text\":\"µ­×ÏÉ«\",\"color\":\"light_purple\"},{\"text\":\"»ÆÉ«\",\"color\":\"yellow\"}]}"
+3:"{\"text\":\"æ·±è“è‰²\",\"color\":\"dark_blue\",\"extra\":[{\"text\":\"æ·±ç»¿è‰²\",\"color\":\"dark_green\"},{\"text\":\"ç¢§ç»¿è‰²\",\"color\":\"dark_aqua\"},{\"text\":\"æ·±çº¢è‰²\",\"color\":\"dark_red\"},{\"text\":\"æ·±ç´«è‰²\",\"color\":\"dark_purple\"},{\"text\":\"é‡‘è‰²\",\"color\":\"gold\"},{\"text\":\"ç°è‰²\",\"color\":\"gray\"},{\"text\":\"æ·±ç°è‰²\",\"color\":\"dark_gray\"},{\"text\":\"è“è‰²\",\"color\":\"blue\"},{\"text\":\"ç»¿è‰²\",\"color\":\"green\"}
+,{\"text\":\"æ°´ç»¿è‰²\",\"color\":\"aqua\"},{\"text\":\"çº¢è‰²\",\"color\":\"red\"},{\"text\":\"æ·¡ç´«è‰²\",\"color\":\"light_purple\"},{\"text\":\"é»„è‰²\",\"color\":\"yellow\"}]}"
 ]}
 
 
@@ -2745,40 +2745,40 @@ pages:[
 
 
 give @p written_book 1 0 {
-title:"¹¤¾ßÊé",author:"Ò»Ğ©³£ÓÃµÄÃüÁî",
+title:"å·¥å…·ä¹¦",author:"ä¸€äº›å¸¸ç”¨çš„å‘½ä»¤",
 pages:[
 1:"{'text':'\n','color':'gold','extra':[
-{'text':'Æ½É½ ','color':'dark_blue','clickEvent':{action:'run_command',value:'/fill ~-15 ~ ~-15 ~15 ~30 ~15 air'}},
-{'text':'ÌîÍÁ ','color':'dark_blue','clickEvent':{action:'run_command',value:'/fill ~-5 ~-1 ~-5 ~5 ~-30 ~5 grass'}},
-{'text':'ÅÅÊ¯ ','color':'dark_blue','clickEvent':{action:'run_command',value:'/fill ~-15 ~-1 ~-15 ~15 ~-1 ~15 grass 0 replace stone'}},
-{'text':'ÌîÉ³\n','color':'dark_blue','clickEvent':{action:'run_command',value:'/fill ~-15 ~-1 ~-15 ~15 ~-1 ~15 sand 0 replace sandstone'}},
+{'text':'å¹³å±± ','color':'dark_blue','clickEvent':{action:'run_command',value:'/fill ~-15 ~ ~-15 ~15 ~30 ~15 air'}},
+{'text':'å¡«åœŸ ','color':'dark_blue','clickEvent':{action:'run_command',value:'/fill ~-5 ~-1 ~-5 ~5 ~-30 ~5 grass'}},
+{'text':'æ’çŸ³ ','color':'dark_blue','clickEvent':{action:'run_command',value:'/fill ~-15 ~-1 ~-15 ~15 ~-1 ~15 grass 0 replace stone'}},
+{'text':'å¡«æ²™\n','color':'dark_blue','clickEvent':{action:'run_command',value:'/fill ~-15 ~-1 ~-15 ~15 ~-1 ~15 sand 0 replace sandstone'}},
 
-{'text':'Ïò¶«ÌîµÆ ','color':'red','clickEvent':{action:'run_command',value:'/fill ~ 62 ~ ~30 62 ~ sea_lantern'}},
-{'text':'Ïò¶«ÌîÊ÷Ò¶\n','color':'red','clickEvent':{action:'run_command',value:'/fill ~ 63 ~ ~30 63 ~ leaves 6'}},
-{'text':'Ïò¶«ÌîÌ¨½× ','color':'red','clickEvent':{action:'run_command',value:'/fill ~ 63 ~ ~30 63 ~ purpur_slab'}},
-{'text':'Ïò¶«ÌîÊ¯Â·\n\n','color':'red','clickEvent':{action:'run_command',value:'/fill ~ 62 ~-2 ~30 62 ~2 double_stone_slab'}},
+{'text':'å‘ä¸œå¡«ç¯ ','color':'red','clickEvent':{action:'run_command',value:'/fill ~ 62 ~ ~30 62 ~ sea_lantern'}},
+{'text':'å‘ä¸œå¡«æ ‘å¶\n','color':'red','clickEvent':{action:'run_command',value:'/fill ~ 63 ~ ~30 63 ~ leaves 6'}},
+{'text':'å‘ä¸œå¡«å°é˜¶ ','color':'red','clickEvent':{action:'run_command',value:'/fill ~ 63 ~ ~30 63 ~ purpur_slab'}},
+{'text':'å‘ä¸œå¡«çŸ³è·¯\n\n','color':'red','clickEvent':{action:'run_command',value:'/fill ~ 62 ~-2 ~30 62 ~2 double_stone_slab'}},
 
-{'text':'ÏòÎ÷ÌîµÆ ','color':'red','clickEvent':{action:'run_command',value:'/fill ~ 62 ~ ~-30 62 ~ sea_lantern'}},
-{'text':'ÏòÎ÷ÌîÊ÷Ò¶\n','color':'red','clickEvent':{action:'run_command',value:'/fill ~ 63 ~ ~-30 63 ~ leaves 6'}},
-{'text':'ÏòÎ÷ÌîÌ¨½× ','color':'red','clickEvent':{action:'run_command',value:'/fill ~ 63 ~ ~-30 63 ~ purpur_slab'}},
-{'text':'ÏòÎ÷ÌîÊ¯Â·\n\n','color':'red','clickEvent':{action:'run_command',value:'/fill ~ 62 ~-2 ~-30 62 ~2 double_stone_slab'}},
+{'text':'å‘è¥¿å¡«ç¯ ','color':'red','clickEvent':{action:'run_command',value:'/fill ~ 62 ~ ~-30 62 ~ sea_lantern'}},
+{'text':'å‘è¥¿å¡«æ ‘å¶\n','color':'red','clickEvent':{action:'run_command',value:'/fill ~ 63 ~ ~-30 63 ~ leaves 6'}},
+{'text':'å‘è¥¿å¡«å°é˜¶ ','color':'red','clickEvent':{action:'run_command',value:'/fill ~ 63 ~ ~-30 63 ~ purpur_slab'}},
+{'text':'å‘è¥¿å¡«çŸ³è·¯\n\n','color':'red','clickEvent':{action:'run_command',value:'/fill ~ 62 ~-2 ~-30 62 ~2 double_stone_slab'}},
 
-{'text':'ÏòÄÏÌîµÆ ','color':'red','clickEvent':{action:'run_command',value:'/fill ~ 62 ~ ~ 62 ~30 sea_lantern'}},
-{'text':'ÏòÄÏÌîÊ÷Ò¶\n','color':'red','clickEvent':{action:'run_command',value:'/fill ~ 63 ~ ~ 63 ~30 leaves 6'}},
-{'text':'ÏòÄÏÌîÌ¨½× ','color':'red','clickEvent':{action:'run_command',value:'/fill ~ 63 ~ ~ 63 ~30 purpur_slab'}},
-{'text':'ÏòÄÏÌîÊ¯Â·\n\n','color':'red','clickEvent':{action:'run_command',value:'/fill ~-2 62 ~ ~2 62 ~30 double_stone_slab'}},
+{'text':'å‘å—å¡«ç¯ ','color':'red','clickEvent':{action:'run_command',value:'/fill ~ 62 ~ ~ 62 ~30 sea_lantern'}},
+{'text':'å‘å—å¡«æ ‘å¶\n','color':'red','clickEvent':{action:'run_command',value:'/fill ~ 63 ~ ~ 63 ~30 leaves 6'}},
+{'text':'å‘å—å¡«å°é˜¶ ','color':'red','clickEvent':{action:'run_command',value:'/fill ~ 63 ~ ~ 63 ~30 purpur_slab'}},
+{'text':'å‘å—å¡«çŸ³è·¯\n\n','color':'red','clickEvent':{action:'run_command',value:'/fill ~-2 62 ~ ~2 62 ~30 double_stone_slab'}},
 
-{'text':'Ïò±±ÌîµÆ ','color':'red','clickEvent':{action:'run_command',value:'/fill ~ 62 ~ ~ 62 ~-30 sea_lantern'}},
-{'text':'Ïò±±ÌîÊ÷Ò¶\n','color':'red','clickEvent':{action:'run_command',value:'/fill ~ 63 ~ ~ 63 ~-30 leaves 6'}},
-{'text':'Ïò±±ÌîÌ¨½× ','color':'red','clickEvent':{action:'run_command',value:'/fill ~ 63 ~ ~ 63 ~-30 purpur_slab'}},
-{'text':'Ïò±±ÌîÊ¯Â·\n\n','color':'red','clickEvent':{action:'run_command',value:'/fill ~-2 62 ~ ~2 62 ~-30 double_stone_slab'}}
+{'text':'å‘åŒ—å¡«ç¯ ','color':'red','clickEvent':{action:'run_command',value:'/fill ~ 62 ~ ~ 62 ~-30 sea_lantern'}},
+{'text':'å‘åŒ—å¡«æ ‘å¶\n','color':'red','clickEvent':{action:'run_command',value:'/fill ~ 63 ~ ~ 63 ~-30 leaves 6'}},
+{'text':'å‘åŒ—å¡«å°é˜¶ ','color':'red','clickEvent':{action:'run_command',value:'/fill ~ 63 ~ ~ 63 ~-30 purpur_slab'}},
+{'text':'å‘åŒ—å¡«çŸ³è·¯\n\n','color':'red','clickEvent':{action:'run_command',value:'/fill ~-2 62 ~ ~2 62 ~-30 double_stone_slab'}}
 ]}",
 2:"{'text':'\n','color':'gold','extra':[
-{'text':'Ç°Íù¹ã³¡\n','color':'ÉîÂÌÉ«','clickEvent':{action:'run_command',value:'/tp 175 68 212'}},
-{'text':'Ç°ÍùÊĞ³¡\n','color':'ÉîÂÌÉ«','clickEvent':{action:'run_command',value:'/tp 250 65 310'}}
+{'text':'å‰å¾€å¹¿åœº\n','color':'æ·±ç»¿è‰²','clickEvent':{action:'run_command',value:'/tp 175 68 212'}},
+{'text':'å‰å¾€å¸‚åœº\n','color':'æ·±ç»¿è‰²','clickEvent':{action:'run_command',value:'/tp 250 65 310'}}
 ]}",
-3:"{\"text\":\"ÉîÀ¶É«\",\"color\":\"dark_blue\",\"extra\":[{\"text\":\"ÉîÂÌÉ«\",\"color\":\"dark_green\"},{\"text\":\"±ÌÂÌÉ«\",\"color\":\"dark_aqua\"},{\"text\":\"ÉîºìÉ«\",\"color\":\"dark_red\"},{\"text\":\"Éî×ÏÉ«\",\"color\":\"dark_purple\"},{\"text\":\"½ğÉ«\",\"color\":\"gold\"},{\"text\":\"»ÒÉ«\",\"color\":\"gray\"},{\"text\":\"Éî»ÒÉ«\",\"color\":\"dark_gray\"},{\"text\":\"À¶É«\",\"color\":\"blue\"},{\"text\":\"ÂÌÉ«\",\"color\":\"green\"}
-,{\"text\":\"Ë®ÂÌÉ«\",\"color\":\"aqua\"},{\"text\":\"ºìÉ«\",\"color\":\"red\"},{\"text\":\"µ­×ÏÉ«\",\"color\":\"light_purple\"},{\"text\":\"»ÆÉ«\",\"color\":\"yellow\"}]}"
+3:"{\"text\":\"æ·±è“è‰²\",\"color\":\"dark_blue\",\"extra\":[{\"text\":\"æ·±ç»¿è‰²\",\"color\":\"dark_green\"},{\"text\":\"ç¢§ç»¿è‰²\",\"color\":\"dark_aqua\"},{\"text\":\"æ·±çº¢è‰²\",\"color\":\"dark_red\"},{\"text\":\"æ·±ç´«è‰²\",\"color\":\"dark_purple\"},{\"text\":\"é‡‘è‰²\",\"color\":\"gold\"},{\"text\":\"ç°è‰²\",\"color\":\"gray\"},{\"text\":\"æ·±ç°è‰²\",\"color\":\"dark_gray\"},{\"text\":\"è“è‰²\",\"color\":\"blue\"},{\"text\":\"ç»¿è‰²\",\"color\":\"green\"}
+,{\"text\":\"æ°´ç»¿è‰²\",\"color\":\"aqua\"},{\"text\":\"çº¢è‰²\",\"color\":\"red\"},{\"text\":\"æ·¡ç´«è‰²\",\"color\":\"light_purple\"},{\"text\":\"é»„è‰²\",\"color\":\"yellow\"}]}"
 ]}
 
 
@@ -2798,7 +2798,7 @@ pages:[
 
 
 
-give @p minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:horse,display:{Name:["Éú³É ½©Ê¬ÏİÚåÂí"]},DeathLootTable:"user:horsezombie"}}
+give @p minecraft:spawn_egg 1 0 {EntityTag:{id:minecraft:horse,display:{Name:["ç”Ÿæˆ åƒµå°¸é™·é˜±é©¬"]},DeathLootTable:"user:horsezombie"}}
 
 
 
@@ -2816,31 +2816,31 @@ entitydata @e[tag=horsezombie] {Item:{tag:{drop:""}}}
 
 
 setblock ~ ~ ~ wall_sign 4 replace {
-Text1:"{\"text\":\"µÚ1ĞĞ\",\"color\":\"dark_blue\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/say 1\"}}",
-Text2:"{\"text\":\"µÚ2ĞĞ\",\"color\":\"dark_red\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/say 2\"}}",
-Text3:"{\"text\":\"µÚ3ĞĞ\",\"color\":\"blue\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/say 3\"}}",
-Text4:"{\"text\":\"µÚ4ĞĞ\",\"color\":\"red\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/say 4\"}}"
+Text1:"{\"text\":\"ç¬¬1è¡Œ\",\"color\":\"dark_blue\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/say 1\"}}",
+Text2:"{\"text\":\"ç¬¬2è¡Œ\",\"color\":\"dark_red\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/say 2\"}}",
+Text3:"{\"text\":\"ç¬¬3è¡Œ\",\"color\":\"blue\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/say 3\"}}",
+Text4:"{\"text\":\"ç¬¬4è¡Œ\",\"color\":\"red\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/say 4\"}}"
 }
 
 
 give @p written_book{
-title:"¹¤¾ßÊé",author:"×÷ÕßµÄÃû×Ö",
+title:"å·¥å…·ä¹¦",author:"ä½œè€…çš„åå­—",
 pages:[
-"{'text':'Ò»±¾ÉñÆæµÄÊé\\n','color':'gold','extra':[
-{'text':'·­µ½µÚ2Ò³\\n','color':'dark_blue','clickEvent':{action:'change_page',value:'2'}},
-{'text':'·­µ½µÚ3Ò³\\n','color':'dark_blue','clickEvent':{action:'change_page',value:'3'}},
-{'text':'·­µ½µÚ4Ò³\\n','color':'dark_blue','clickEvent':{action:'change_page',value:'4'}}
+"{'text':'ä¸€æœ¬ç¥å¥‡çš„ä¹¦\\n','color':'gold','extra':[
+{'text':'ç¿»åˆ°ç¬¬2é¡µ\\n','color':'dark_blue','clickEvent':{action:'change_page',value:'2'}},
+{'text':'ç¿»åˆ°ç¬¬3é¡µ\\n','color':'dark_blue','clickEvent':{action:'change_page',value:'3'}},
+{'text':'ç¿»åˆ°ç¬¬4é¡µ\\n','color':'dark_blue','clickEvent':{action:'change_page',value:'4'}}
 ]}",
 "{'text':'\\n','color':'gold','extra':[
-{'text':'Ëµ1\\n','color':'dark_blue','clickEvent':{action:'run_command',value:'/say 1'}},
-{'text':'Ëµ2','color':'dark_blue','clickEvent':{action:'run_command',value:'/say 2'}}
+{'text':'è¯´1\\n','color':'dark_blue','clickEvent':{action:'run_command',value:'/say 1'}},
+{'text':'è¯´2','color':'dark_blue','clickEvent':{action:'run_command',value:'/say 2'}}
 ]}",
 "{'text':'\\n','color':'gold','extra':[
-{'text':'Ç°Íù(0,70,0)\\n','color':'ÉîÂÌÉ«','clickEvent':{action:'run_command',value:'/tp 0 70 0'}},
-{'text':'×ÔÉ±\\n','color':'ÉîÂÌÉ«','clickEvent':{action:'run_command',value:'/kill'}}
+{'text':'å‰å¾€(0,70,0)\\n','color':'æ·±ç»¿è‰²','clickEvent':{action:'run_command',value:'/tp 0 70 0'}},
+{'text':'è‡ªæ€\\n','color':'æ·±ç»¿è‰²','clickEvent':{action:'run_command',value:'/kill'}}
 ]}",
-"{'text':'ÉîÀ¶É«','color':'dark_blue','extra':[{'text':'ÉîÂÌÉ«','color':'dark_green'},{'text':'±ÌÂÌÉ«','color':'dark_aqua'},{'text':'ÉîºìÉ«','color':'dark_red'},{'text':'Éî×ÏÉ«','color':'dark_purple'},{'text':'½ğÉ«','color':'gold'},{'text':'»ÒÉ«','color':'gray'},{'text':'Éî»ÒÉ«','color':'dark_gray'},{'text':'À¶É«','color':'blue'},{'text':'ÂÌÉ«','color':'green'}
-,{'text':'Ë®ÂÌÉ«','color':'aqua'},{'text':'ºìÉ«','color':'red'},{'text':'µ­×ÏÉ«','color':'light_purple'},{'text':'»ÆÉ«','color':'yellow'}]}"
+"{'text':'æ·±è“è‰²','color':'dark_blue','extra':[{'text':'æ·±ç»¿è‰²','color':'dark_green'},{'text':'ç¢§ç»¿è‰²','color':'dark_aqua'},{'text':'æ·±çº¢è‰²','color':'dark_red'},{'text':'æ·±ç´«è‰²','color':'dark_purple'},{'text':'é‡‘è‰²','color':'gold'},{'text':'ç°è‰²','color':'gray'},{'text':'æ·±ç°è‰²','color':'dark_gray'},{'text':'è“è‰²','color':'blue'},{'text':'ç»¿è‰²','color':'green'}
+,{'text':'æ°´ç»¿è‰²','color':'aqua'},{'text':'çº¢è‰²','color':'red'},{'text':'æ·¡ç´«è‰²','color':'light_purple'},{'text':'é»„è‰²','color':'yellow'}]}"
 ]}
 
 
@@ -2863,7 +2863,7 @@ pages:[
 desert
 1127 126
 
-´å×¯
+æ‘åº„
 53 2
 69 -16
 54 35
@@ -2882,20 +2882,11 @@ Spider
 
 
 
-give @p minecraft:paper 1 0 {display:{Name:"UHC Run - 1v1",Lore:["","Modo: ¡î Fantasy ¡î","Estado: Cargando¡­","Jugadores: 0/18","","iClick para entrar!"]}}
+give @p minecraft:paper 1 0 {display:{Name:"UHC Run - 1v1",Lore:["","Modo: â˜† Fantasy â˜†","Estado: Cargandoâ€¦","Jugadores: 0/18","","iClick para entrar!"]}}
 
 
 
-¡ìr¡ì6UHC Run ¡ì7- ¡ì51v1¡ìr
-
-
-
-
-
-
-
-
-{EntityTag:{id:minecraft:vex,Health:1,Tags:[\"bird\"],Silent:1,LifeTicks:1},display:{Name:\"¡ìrÉú³É Äñ\"}}"},"text":"¹ºÂòÄñ"}
+Â§rÂ§6UHC Run Â§7- Â§51v1Â§r
 
 
 
@@ -2903,7 +2894,16 @@ give @p minecraft:paper 1 0 {display:{Name:"UHC Run - 1v1",Lore:["","Modo: ¡î Fa
 
 
 
-give @p minecraft:leather_leggings 1 0 {AttributeModifiers:[{Operation:0,UUIDLeast:3001,UUIDMost:3001,Amount:8,AttributeName:"generic.armor",Name:"Armor"},{Operation:0,UUIDLeast:4001,UUIDMost:4001,Amount:2,AttributeName:"generic.armorToughness",Name:"Tough"}],ench:[{id:1,lvl:1},{id:34,lvl:1},{id:70,lvl:1}],display:{Lore:["+2 ¿ø¼×ÈÍĞÔ"]},HideFlags:2}
+
+{EntityTag:{id:minecraft:vex,Health:1,Tags:[\"bird\"],Silent:1,LifeTicks:1},display:{Name:\"Â§rç”Ÿæˆ é¸Ÿ\"}}"},"text":"è´­ä¹°é¸Ÿ"}
+
+
+
+
+
+
+
+give @p minecraft:leather_leggings 1 0 {AttributeModifiers:[{Operation:0,UUIDLeast:3001,UUIDMost:3001,Amount:8,AttributeName:"generic.armor",Name:"Armor"},{Operation:0,UUIDLeast:4001,UUIDMost:4001,Amount:2,AttributeName:"generic.armorToughness",Name:"Tough"}],ench:[{id:1,lvl:1},{id:34,lvl:1},{id:70,lvl:1}],display:{Lore:["+2 ç›”ç”²éŸ§æ€§"]},HideFlags:2}
 
 
 
@@ -2912,7 +2912,7 @@ give @p minecraft:leather_leggings 1 0 {AttributeModifiers:[{Operation:0,UUIDLea
 
 
 
-give @p minecraft:leather_leggings 1 0 {AttributeModifiers:[{Operation:0,UUIDLeast:4001,UUIDMost:4001,Amount:2,AttributeName:"generic.armorToughness",Name:"Tough"}],ench:[{id:1,lvl:1},{id:34,lvl:1},{id:70,lvl:1}],display:{Lore:["+2 ¿ø¼×ÈÍĞÔ"]},HideFlags:2}
+give @p minecraft:leather_leggings 1 0 {AttributeModifiers:[{Operation:0,UUIDLeast:4001,UUIDMost:4001,Amount:2,AttributeName:"generic.armorToughness",Name:"Tough"}],ench:[{id:1,lvl:1},{id:34,lvl:1},{id:70,lvl:1}],display:{Lore:["+2 ç›”ç”²éŸ§æ€§"]},HideFlags:2}
 
 
 
@@ -2940,33 +2940,33 @@ testfor @e[score_test_min=29]
 
 
 
-/give @p skull 1 3 {display:{Name:"Dog"},SkullOwner:{Id:"fa5d3210-6e39-47ca-adb4-a3b2f0f966d9",Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjlkMWQzMTEzZWM0M2FjMjk2MWRkNTlmMjgxNzVmYjQ3MTg4NzNjNmM0NDhkZmNhODcyMjMxN2Q2NyJ9fX0="}]}},AttributeModifiers:[{Slot:"head",Operation:1,UUIDLeast:1009,UUIDMost:1009,Amount:0.1,AttributeName:"generic.movementSpeed",Name:"Speed"}],ench:[{id:71,lvl:1}],display:{Name:"¹·Í·",Lore:["ÓëÊ±¼äÈüÅÜ"]}}
+/give @p skull 1 3 {display:{Name:"Dog"},SkullOwner:{Id:"fa5d3210-6e39-47ca-adb4-a3b2f0f966d9",Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjlkMWQzMTEzZWM0M2FjMjk2MWRkNTlmMjgxNzVmYjQ3MTg4NzNjNmM0NDhkZmNhODcyMjMxN2Q2NyJ9fX0="}]}},AttributeModifiers:[{Slot:"head",Operation:1,UUIDLeast:1009,UUIDMost:1009,Amount:0.1,AttributeName:"generic.movementSpeed",Name:"Speed"}],ench:[{id:71,lvl:1}],display:{Name:"ç‹—å¤´",Lore:["ä¸æ—¶é—´èµ›è·‘"]}}
 
 
-/entitydata @e[r=1] {display:{Name:"Dog"},AttributeModifiers:[{Slot:"head",Operation:1,UUIDLeast:1009,UUIDMost:1009,Amount:0.1,AttributeName:"generic.movementSpeed",Name:"Speed"}],ench:[{id:71,lvl:1}],display:{Name:"¹·Í·",Lore:["ÓëÊ±¼äÈüÅÜ"]}}
+/entitydata @e[r=1] {display:{Name:"Dog"},AttributeModifiers:[{Slot:"head",Operation:1,UUIDLeast:1009,UUIDMost:1009,Amount:0.1,AttributeName:"generic.movementSpeed",Name:"Speed"}],ench:[{id:71,lvl:1}],display:{Name:"ç‹—å¤´",Lore:["ä¸æ—¶é—´èµ›è·‘"]}}
 
 
 ,HideFlags:2}
 
 
 
-tellraw maifueller {"text":"×¥µ½ÄãÁË¡­¡­","color":"gold"}
+tellraw maifueller {"text":"æŠ“åˆ°ä½ äº†â€¦â€¦","color":"gold"}
 
 
 
-tellraw @p {"text":"\½¨ÉèÖĞ¡­¡­¾´ÇëÆÚ´ı","color":"gold"}
-
-
-
-
-
-/give @p skull 1 3 {display:{Name:"Dog"},SkullOwner:{Id:"fa5d3210-6e39-47ca-adb4-a3b2f0f966d9",Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjlkMWQzMTEzZWM0M2FjMjk2MWRkNTlmMjgxNzVmYjQ3MTg4NzNjNmM0NDhkZmNhODcyMjMxN2Q2NyJ9fX0="}]}},AttributeModifiers:[{Slot:"head",Operation:1,UUIDLeast:1009,UUIDMost:1009,Amount:0.1,AttributeName:"generic.movementSpeed",Name:"Speed"}],ench:[{id:71,lvl:1}],display:{Name:"¹·Í·",Lore:["ÓëÊ±¼äÈüÅÜ"]}}
+tellraw @p {"text":"\å»ºè®¾ä¸­â€¦â€¦æ•¬è¯·æœŸå¾…","color":"gold"}
 
 
 
 
 
-tellraw ruhuasiyu {"text":"µã»÷´Ë´¦¿É»ñµÃ±¦ÏäÒ»¸ö¡­¡­","color":"gold","clickEvent":{"action":"run_command","value":"/give ruhuasiyu chest 1 0"}}
+/give @p skull 1 3 {display:{Name:"Dog"},SkullOwner:{Id:"fa5d3210-6e39-47ca-adb4-a3b2f0f966d9",Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjlkMWQzMTEzZWM0M2FjMjk2MWRkNTlmMjgxNzVmYjQ3MTg4NzNjNmM0NDhkZmNhODcyMjMxN2Q2NyJ9fX0="}]}},AttributeModifiers:[{Slot:"head",Operation:1,UUIDLeast:1009,UUIDMost:1009,Amount:0.1,AttributeName:"generic.movementSpeed",Name:"Speed"}],ench:[{id:71,lvl:1}],display:{Name:"ç‹—å¤´",Lore:["ä¸æ—¶é—´èµ›è·‘"]}}
+
+
+
+
+
+tellraw ruhuasiyu {"text":"ç‚¹å‡»æ­¤å¤„å¯è·å¾—å®ç®±ä¸€ä¸ªâ€¦â€¦","color":"gold","clickEvent":{"action":"run_command","value":"/give ruhuasiyu chest 1 0"}}
 
 
 
@@ -2980,9 +2980,9 @@ tellraw ruhuasiyu {"text":"µã»÷´Ë´¦¿É»ñµÃ±¦ÏäÒ»¸ö¡­¡­","color":"gold","clickEven
 
 
 /scoreboard players set #ten kills 10
-/scoreboard players operation #Byushu kills = À¶¶Ó kills
+/scoreboard players operation #Byushu kills = è“é˜Ÿ kills
 /scoreboard players operation #Byushu kills %= #ten kills
-/scoreboard players operation #Bshang kills = À¶¶Ó kills
+/scoreboard players operation #Bshang kills = è“é˜Ÿ kills
 /scoreboard players operation #Bshang kills -= #Byushu kills
 /scoreboard players operation #Bshang kills /= #ten kills
 
@@ -2993,14 +2993,14 @@ tellraw ruhuasiyu {"text":"µã»÷´Ë´¦¿É»ñµÃ±¦ÏäÒ»¸ö¡­¡­","color":"gold","clickEven
 
 
 
-setblock ~ ~ ~ wall_sign 5 replace {Text1:"{\"text\":\"\"}",Text2:"{\"text\":\"¡¾ÍÁÇòÖÂ´Ç¡¿\",\"color\":\"dark_blue\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/tellraw @a {\\\"text\\\":\\\"[world] <\u00a76ÖÁ×ğÉÁÁÁ·şÖ÷Í·ÏÎ>-<\u00a7czzzz_ustc> »¶Ó­´ó¼ÒÀ´²Î¼ÓÎÒÃÇUSTC-MinecraftÎåÖÜÄ¿µÄpvp»î¶¯£¡\\\"}\"}}",
+setblock ~ ~ ~ wall_sign 5 replace {Text1:"{\"text\":\"\"}",Text2:"{\"text\":\"ã€åœŸçƒè‡´è¾ã€‘\",\"color\":\"dark_blue\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/tellraw @a {\\\"text\\\":\\\"[world] <\u00a76è‡³å°Šé—ªäº®æœä¸»å¤´è¡”>-<\u00a7czzzz_ustc> æ¬¢è¿å¤§å®¶æ¥å‚åŠ æˆ‘ä»¬USTC-Minecraftäº”å‘¨ç›®çš„pvpæ´»åŠ¨ï¼\\\"}\"}}",
 Text3:"{\"text\":\"\",\"color\":\"black\"}",Text4:"{\"text\":\"\"}"}
 
 
 
 
-tellraw @a [{"text":"¹§Ï²","color":"gold"},{"selector":"@p[r=2,c=-1]","color":"aqua"},{"text":"Íê³ÉÈÎÎñ³õ¼¶Ä¤·¨Ê¦²¢»ñµÃ½±ÕÂ!","color":"gold"}]
-tellraw @a [{"text":"¹§Ï²","color":"gold"},{"selector":"@p[r=2,c=-1]","color":"aqua"},{"text":"Íê³ÉÈÎÎñÖĞ¼¶Ä¤·¨Ê¦²¢»ñµÃ½±ÕÂ!","color":"gold"}]
+tellraw @a [{"text":"æ­å–œ","color":"gold"},{"selector":"@p[r=2,c=-1]","color":"aqua"},{"text":"å®Œæˆä»»åŠ¡åˆçº§è†œæ³•å¸ˆå¹¶è·å¾—å¥–ç« !","color":"gold"}]
+tellraw @a [{"text":"æ­å–œ","color":"gold"},{"selector":"@p[r=2,c=-1]","color":"aqua"},{"text":"å®Œæˆä»»åŠ¡ä¸­çº§è†œæ³•å¸ˆå¹¶è·å¾—å¥–ç« !","color":"gold"}]
 
 
 
@@ -3010,7 +3010,7 @@ tellraw @a [{"text":"¹§Ï²","color":"gold"},{"selector":"@p[r=2,c=-1]","color":"a
 
 summon villager 127 65.5 -173 {NoGravity:1,NoAI:1,Invulnerable:1,ActiveEffects:[{Id:14,ShowParticles:0b,Duration:9999999}],ArmorItems:[{},{},{},{id:"minecraft:dragon_egg",Count:1b,Damage:0s}]}
 
-summon villager ~ ~ ~ {ArmorItems:[{},{},{},{id:"minecraft:player_head",Count:1b,tag:{SkullOwner:{Id:"a60c9655-b7eb-47ca-91c0-7851e4bd8274",Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzhhYzE5OGI4ODUwMWM5NDhhOTMzZDUyYjExMzNlM2Y2NTAyY2M1ZmY1YWNlM2Q1YzYwYWNlYjU0NDk3NzZkIn19fQ=="}]}}}}]}
+summon villager ~ ~ ~ {ArmorItems:[{},{},{},{id:"minecraft:player_head",Count:1b,tag:{SkullOwner:{Id:"a60c9655-b7eb-47ca-91c0-7851e4bd8274",Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzhhYzE5OGI4ODUwMWM5NDhhOTMzZDUyYjExMzNlM2Y2NTAyY2M1ZmY1YWNlM2Q1YzYwYWNlYjU0NDk3NzZkIn19fQ##"}]}}}}]}
 
 
 give ruhuasiyu minecraft:tipped_arrow 64 0 {CustomPotionEffects:[
@@ -3020,7 +3020,7 @@ give ruhuasiyu minecraft:tipped_arrow 64 0 {CustomPotionEffects:[
 {Id:19,Amplifier:2,Duration:8000}]
 }
 
-/give @p skull 1 3 {display:{Name:"Santa Claus"},SkullOwner:{Id:"a60c9655-b7eb-47ca-91c0-7851e4bd8274",Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzhhYzE5OGI4ODUwMWM5NDhhOTMzZDUyYjExMzNlM2Y2NTAyY2M1ZmY1YWNlM2Q1YzYwYWNlYjU0NDk3NzZkIn19fQ=="}]}}}
+/give @p skull 1 3 {display:{Name:"Santa Claus"},SkullOwner:{Id:"a60c9655-b7eb-47ca-91c0-7851e4bd8274",Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzhhYzE5OGI4ODUwMWM5NDhhOTMzZDUyYjExMzNlM2Y2NTAyY2M1ZmY1YWNlM2Q1YzYwYWNlYjU0NDk3NzZkIn19fQ##"}]}}}
 
 give ruhuasiyu minecraft:tipped_arrow 64 0 {CustomPotionEffects:[
 {Id:6,Amplifier:2,Duration:8000},
@@ -3036,7 +3036,7 @@ give ruhuasiyu minecraft:fireworks 1 0 {Fireworks:{Flight:4b,Explosions:[{Flicke
 
 
 testfor @a[x=115,y=63,z=208,dx=30,dy=15,dz=20]
-tellraw @p {"text":"»¶Ó­À´µ½ruhuasiyuµÄ¼Ò!","color":"yellow"}
+tellraw @p {"text":"æ¬¢è¿æ¥åˆ°ruhuasiyuçš„å®¶!","color":"yellow"}
 
 
 
@@ -3047,7 +3047,7 @@ summon villager ~ ~ ~ {NoGravity:1,NoAI:1,ArmorItems:[{},{},{},{id:"minecraft:da
 
 entitydata @e[r=2] {OwnerUUID:1b26ddd5-1e2d-31ca-b17f-a511f522bf75}
 
-give ruhuasiyu minecraft:spawn_egg 1 0 {display:{Name:"¿óÎïÌ½²âÆ÷"},EntityTag:{id:minecraft:mooshroom,Tags:["findore2"],NoAI:1,Silent:1,ActiveEffects:[{Id:14,Duration:9,ShowParticles:0b}],DeathLootTable:minecraft:empty},ench:[{id:999}]}
+give ruhuasiyu minecraft:spawn_egg 1 0 {display:{Name:"çŸ¿ç‰©æ¢æµ‹å™¨"},EntityTag:{id:minecraft:mooshroom,Tags:["findore2"],NoAI:1,Silent:1,ActiveEffects:[{Id:14,Duration:9,ShowParticles:0b}],DeathLootTable:minecraft:empty},ench:[{id:999}]}
 
 
 
@@ -3061,13 +3061,13 @@ execute @e[r=5] ~ ~ ~ tp @e[r=1] ~ ~ ~0.1 ~0.1 ~ ~
 
 
 
-setblock 322 66 -228 standing_sign 0 replace {Text1:"{\"text\":\"Intel Pentyum\",\"color\":\"dark_blue\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"tellraw @p {\\\"text\\\":\\\"µÆ,µÈµÆµÈµÆ\\\",\\\"color\\\":\\\"gold\\\"}\"}}",Text2:"{\"text\":\"inside\",\"color\":\"dark_blue\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"\"}}",Text3:"{\"text\":\"\",\"color\":\"dark_blue\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"\"}}",Text4:"{\"text\":\"\"}"}
+setblock 322 66 -228 standing_sign 0 replace {Text1:"{\"text\":\"Intel Pentyum\",\"color\":\"dark_blue\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"tellraw @p {\\\"text\\\":\\\"ç¯,ç­‰ç¯ç­‰ç¯\\\",\\\"color\\\":\\\"gold\\\"}\"}}",Text2:"{\"text\":\"inside\",\"color\":\"dark_blue\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"\"}}",Text3:"{\"text\":\"\",\"color\":\"dark_blue\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"\"}}",Text4:"{\"text\":\"\"}"}
 
 
 
 
 \\\u00a79
-setblock ~ ~ ~1 wall_sign 3 replace {Text1:"{\"text\":\"aaa\",\"color\":\"dark_blue\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"blockdata ~ ~ ~-1 {auto:0b,Command:give ruhuasiyu minecraft:potion 1 0 {CustomPotionColor:5083440,display:{Name:\\\"\u00a7r¾ç¶¾Ò©Ë®\\\",Lore:[\\\"\u00a7cÖĞ¶¾ (8:00)\\\"]},CustomPotionEffects:[{Id:21,Duration:9600}],HideFlags:63}}\"}}",Text2:"{\"text\":\"aaa\",\"color\":\"dark_blue\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"blockdata ~ ~ ~-1 {auto:1b}\"}}",Text3:"{\"text\":\"aaa\",\"color\":\"dark_blue\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"blockdata ~ ~ ~-1 {auto:0b}\"}}",Text4:"{\"text\":\"\"}"}
+setblock ~ ~ ~1 wall_sign 3 replace {Text1:"{\"text\":\"aaa\",\"color\":\"dark_blue\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"blockdata ~ ~ ~-1 {auto:0b,Command:give ruhuasiyu minecraft:potion 1 0 {CustomPotionColor:5083440,display:{Name:\\\"\u00a7rå‰§æ¯’è¯æ°´\\\",Lore:[\\\"\u00a7cä¸­æ¯’ (8:00)\\\"]},CustomPotionEffects:[{Id:21,Duration:9600}],HideFlags:63}}\"}}",Text2:"{\"text\":\"aaa\",\"color\":\"dark_blue\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"blockdata ~ ~ ~-1 {auto:1b}\"}}",Text3:"{\"text\":\"aaa\",\"color\":\"dark_blue\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"blockdata ~ ~ ~-1 {auto:0b}\"}}",Text4:"{\"text\":\"\"}"}
 
 
 
@@ -3079,7 +3079,7 @@ Text2:"{\"text\":\"\"}",Text3:"{\"text\":\"\"}",Text4:"{\"text\":\"\"}"}
 
 
 give @p written_book{
-title:"ĞÂÊÖÖ¸Òı",
+title:"æ–°æ‰‹æŒ‡å¼•",
 author:"Stan",
 pages:[
 "{\"text\":\"\\ufb00\\ufb01\\ufb02\\ufb03\\ufb04\\ufb05\\ufb06\\ufb07\\ufb08\",\"color\":\"white\"}"]}

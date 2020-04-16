@@ -477,7 +477,14 @@ span.ui a.sea_lantern, a.sea_lantern{
 .polished_basalt                {background-position: -416px -192px;}
 
 .blackstone                     {background-position: -096px -256px;}
+.chiesled_nether_bricks         {background-position: -382px -256px;}
+.cracked_nether_bricks          {background-position: -448px -256px;}
+.cracked_polished_blackstone_bricks{background-position: -480px -256px;}
 .gilded_blackstone              {background-position: -512px -256px;}
+.polished_blackstone_bricks     {background-position: -544px -256px;}
+.polished_blackstone_bricks     {background-position: -576px -256px;}
+
+.chain                          {background-position: -32px -288px;}
 
 .white_banner_mojang            {background-position: -512px -544px;}
 
