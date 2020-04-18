@@ -365,7 +365,7 @@
 </pre>
 <p>主要内容有</p>
 <ul>
-<li><strong>元素</strong>：包括天、地、山、土、水、火、命七种元素、七类生物、七种稀有掉落物、七种元素之力、七种药水。这些稀有掉落物也用于机器、工具的合成和仪式等。</li>
+<li><strong>元素</strong>：包括天、地、山、土、水、火、命七种元素、七类生物、七种稀有掉落物、七种元素之力、七种药剂。这些稀有掉落物也用于机器、工具的合成和仪式等。</li>
 <li><strong>经验</strong>：大幅提高了经验的用途，取出经验后使用附魔之瓶可以制作出模组合成器、附魔矿物、各种工具、机器、法杖等，机器和仪式也需要经验。</li>
 <li><strong>机器</strong>：集磨粉炼矿增殖反应晒盐造石造冰于一体的9状态多功能一体机；用于获取绿宝石和附魔之瓶的交易机；代替人力处理物品的物品处理机；召唤生物的生物投影仪；提供正负面效果的信标增强仪；更便捷强大的附魔处理的金砧等。</li>
 <li><strong>傀儡</strong>：科技线的终端，全自动种田伐木钓鱼杀怪畜牧的傀儡。</li>
@@ -383,15 +383,15 @@
 <tbody>
 	<tr>
 		<td>Java版快照 20w16a</td>
-		<td>快照 v1.11-0416</td>
-		<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/tree/master/versions/1.11/v1.11-0416.zip">GitHub</a> |
-			<a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.11-0416.zip">官方</a></td>
+		<td>快照 v1.11-0418</td>
+		<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/tree/master/versions/1.11/v1.11-0418.zip">GitHub</a> |
+			<a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.11-0418.zip">官方</a></td>
 	</tr>
 	<tr>
 		<td>Java版 1.15.2</td>
-		<td>v1.10.4</td>
-		<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/releases/tag/v1.10.4">GitHub</a> |
-			<a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.10.4.zip">官方</a></td>
+		<td>v1.10.5</td>
+		<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/releases/tag/v1.10.5">GitHub</a> |
+			<a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.10.5.zip">官方</a></td>
 	</tr>
 	<tr>
 		<td>Java版 1.14.x</td>
@@ -541,14 +541,20 @@
 <p>僵尸和骷髅将有更高的几率生成时身穿盔甲、手持武器或能够射出药箭。</p>
 <p>僵尸能破坏遇到的火把、灯笼、末地烛和海泡菜，让你的光照防御变得脆弱无比。</p>
 <p>苦力怕爆炸前的引线时间变得更短，有几率变异为高压苦力怕，想要近程搏斗几无可能。</p>
+<p class="note">使用命令<code>scoreboard players set $doZombieImproving cppConfig 0或1</code>来关闭/开启增强僵尸、僵尸村民和尸壳功能。</p>
+<p class="note">使用命令<code>scoreboard players set $doSkeletonImproving cppConfig 0或1</code>来关闭/开启增强骷髅和流浪者功能。</p>
+<p class="note">使用命令<code>scoreboard players set $doWitherSkeletonImproving cppConfig 0或1</code>来关闭/开启增强凋灵骷髅功能。</p>
+<p class="note">使用命令<code>scoreboard players set $doCreeperImproving cppConfig 0或1</code>来关闭/开启增强爬行者功能。</p>
 <figure>
 <img style="height:250px" src="items/screenshots/enhanced_mobs.png" alt="加强后的僵尸、骷髅和高压苦力怕" />
 <figcaption>图 加强后的僵尸、骷髅和高压苦力怕</figcaption>
 </figure>
 
+
 <h3 id="黑暗碎片">黑暗碎片 <code>cpp:shard_of_the_darkness</code></h3>
 		<a class="ui ci shard_of_the_darkness"></a>
 <p>部分动物因接触黑暗力量的大脑发生了异变，其头部会持续发出黑色颗粒效果，并会靠近和攻击玩家。黑暗动物被玩家杀死后掉落黑暗碎片。</p>
+<p class="note">使用命令<code>scoreboard players set $doDarkAnimalSpawning cppConfig 0或1</code>来关闭/开启生成黑暗生物功能，注意关闭会导致无法使用<a href="#黑暗仪式">黑暗仪式</a>来修复<a href="#破损刷怪笼">破损刷怪笼</a>。</p>
 
 <table><thead><tr><th>生物类别</th>
 	<th>攻击方式</th>
@@ -607,7 +613,7 @@
 <p><span class="oldversion">1.10 起</span> 有几率得到垃圾海泡菜，在末地钓鱼有几率钓到宝藏潜影壳和紫颂花。</p>
 
 <h3 id="玩家的头">玩家的头</h3>
-<p><span class="version">1.10 起</span> 玩家被手持抢夺附魔的武器杀死时会掉落头。</p>
+<p><span class="version">1.10 起</span> 玩家杀死末影龙会掉落自身的头。</p>
 <p><span class="oldversion">1.9.x</span> 玩家死亡后掉落自身的头。</p>
 
 <h3 id="破损的刷怪笼">破损的刷怪笼 <code>cpp:broken_spawner</code></h3>
@@ -1425,6 +1431,7 @@
 </figure>
 <p>方块性质同木桶。放置后右键打开，将物品放入左侧九宫格输入栏即可自动合成出产物，在玩家取走右侧输出栏内的物品前，不会进行下一次的合成。</p>
 <p><span class="version">1.10 起</span> 合成器被原版红石元件强充能时会停止工作。任何尝试放入容器非物品栏的物品会被返回到最近的玩家背包内。下方为输出方向按钮，使用左键或Q键切换，若输出方向有<abbr title="漏斗、投掷器、发射器、箱子、木桶、潜影盒">容器</abbr>且容器不满时，会将输出栏物品转移到容器中。</p>
+<p class="note">合成器的函数接口<code>function #cpp:crafting_machine</code>调用于<code>cpp/functions/crafting_machine/type.mcfunction</code>。配方按物品数量分类，位于<code>cpp/predicates/crafting_machine</code>和<code>cpp/loot_tables/crafting_machine</code>。</p>
 
 <h3 id="多功能一体机">多功能一体机 <code>cpp:all_in_one_machine</code></h3>
 <table><thead><tr><th>材料</th><th>合成配方</th>
@@ -1454,6 +1461,9 @@
 <p>每次使用需要一定的时间和经验值，经验值通过在右上方方格放入附魔之瓶来存入。左侧为压力、温度、输出方向按钮，使用左键或Q键切换。切换到合适的压力和温度后，将材料放入上方2格输入栏，则会开始进行工作。配方是无序的，2种材料顺序可以交换。工作时，中间的进度条会显示进度，同时机器的外观也会变为动态。</p>
 
 <p>默认情形机器只能使用常压常温模式，玩家需要使用插件Shift右键机器来解锁相应模式，包括：<a href="#低温插件">低温插件</a>、<a href="#低压插件">低压插件</a>、<a href="#高温插件">高温插件</a>、<a href="#高压插件">高压插件</a>。</p>
+
+<p class="note">使用命令<code>scoreboard players set $allInOneMachinePeriod cppConfig 1200</code>来修改机器速度，数值约小速度越快，默认为1200。</p>
+<p class="note">多功能一体机的函数接口<code>function #cpp:all_in_one_machine</code>调用于<code>cpp/functions/all_in_one_machine/type.mcfunction</code>。配方按模式、经验、时长分类，位于<code>cpp/predicates/all_in_one_machine</code>和<code>cpp/loot_tables/all_in_one_machine</code>。</p>
 
 <h4>高温高压</h4>
 <p>可以将两种不同的矿石混合烧炼并提高产出，不同的搭配拥有不同的倍率，倍率在模组首次加载时被确定，需要玩家测量参数以确定最佳组合。倍率为1.0~4.0倍，其中红石的基准数量为5，青金石的基准数量为6。支持煤矿石/铁矿石/金矿石(下界金矿石)/红石矿石/青金石矿石/绿宝石矿石/钻石矿石/下界石英矿石。</p>
@@ -2366,7 +2376,8 @@
 	<td><a class="ui ci copy_mode"></a></td>
 	<td>消耗5倍价值点复制放入的物品。</td></tr>
 </tbody></table>
-<p>复制模式默认关闭，管理员可通过 <code>/scoreboard players set $doTradeCreate cppConfig 1或0</code> 来打开/关闭。</p>
+<p class="note">复制模式默认关闭，管理员可通过 <code>/scoreboard players set $doTradeCreate cppConfig 1或0</code> 来打开/关闭。</p>
+<p class="note">交易机的物品价值表位于<code>cpp/loot_tables/trade_machine/type.json</code>。</p>
 <p>1.9版本则根据输入物品和数量来直接产出绿宝石和附魔之瓶，支持的物品略有差异。</p>
 
 <button style="display:none;cursor:pointer;" onclick="this.style.display='none';this.nextElementSibling.nextElementSibling.style.display='table';this.nextElementSibling.style.display='inline';">显示交易机物品价值表</button>
@@ -2631,6 +2642,7 @@
 
 <p>左上方放入工具，左侧放入材料，机器会以每刻1次的速度工作。下方为输出方向按钮，使用左键或Q键切换。右侧方格为输出栏，当右侧输出栏中有物品时，机器会停止工作。若输出方向有<abbr title="漏斗、投掷器、发射器、箱子、木桶、潜影盒">容器</abbr>且容器有空栏位时，会将右侧输出栏内的物品转移到容器中。</p>
 <p>每次工作时，工具若有耐久会消耗1点耐久，否则不会被消耗。工具可以是原版任意材质。</p>
+<p class="note">物品处理器的函数接口<code>function #cpp:item_processer</code>调用于<code>cpp/functions/item_processer/type.mcfunction</code>。配方按工具分类，位于<code>cpp/predicates/item_processer</code>和<code>cpp/loot_tables/item_processer</code>。</p>
 <p><span class="version">1.9.x</span> 配方略有差异。</p>
 
 <p>水桶/熔岩桶/空桶可以被合理的<a href="#无尽桶">无尽桶</a>代替，其中水桶+无尽桶会一次性把熔岩全部变成黑曜石。</p>
@@ -3144,6 +3156,8 @@
 <p>生物投影仪性质同木桶。生物投影仪被原版红石元件强充能时会停止工作。对已放置的生物投影仪按下右键会打开 GUI，任何尝试放入容器非物品栏的物品会被返回到最近的玩家背包内。</p>
 
 <p>每次使用需要一定经验值，经验值通过在右上方方格放入附魔之瓶来存入。将材料放入中间3个方格，则会开始进行工作。最上方栏位必须为鸡蛋，其它2种材料顺序可以交换。当材料合适时，左侧会显示生物图案，累计达到10秒后会在下方两米处生成相应生物。</p>
+<p class="note">使用命令<code>scoreboard players set $MobProjectorPeriod cppConfig 2400</code>来修改生成速度，数值约小速度越快，默认为2400。</p>
+<p class="note">生物投影仪配方按物品生成对应分数，然后按分数来召唤生物，配方位于<code>cpp/loot_tables/mob_projector/type.json</code>，召唤的函数位于<code>cpp/functions/mob_projector/spawn.mcfunction</code>。</p>
 
 <button style="display:none;cursor:pointer;" onclick="this.style.display='none';this.nextElementSibling.nextElementSibling.style.display='table';this.nextElementSibling.style.display='inline';">显示生物投影仪配方表</button>
 <button onclick="this.style.display='none';this.nextElementSibling.style.display='none';this.previousElementSibling.style.display='inline';">隐藏生物投影仪配方表</button>
@@ -3648,6 +3662,7 @@
 <img style="height:200px" src="items/screenshots/golden_anvil.png" alt="金砧 GUI" />
 <p><span class="version">1.10 起</span> 金砧性质同木桶。对已放置的金砧按下右键会打开 GUI，任何尝试放入容器非物品栏的物品会被返回到最近的玩家背包内。</p>
 <p>左侧依次放入已附魔物品、牺牲材料和64个附魔之瓶，则机器会自动从右侧得到处理过的物品。</p>
+<p class="note">金砧的函数接口<code>function #cpp:golden_anvil</code>调用于<code>cpp/functions/golden_anvil/tick.mcfunction</code>。</p>
 <table><thead><tr><th>效果</th>
 	<th colspan="3">输入材料</th>
 </tr></thead><tbody>
@@ -8094,6 +8109,7 @@
 <p><span class="oldversion">1.9.x</span> 水果树下会随机长出除香橼外的所有水果，破坏相邻的树叶即可掉落。只有下方为空气的树叶下方才能长出。</p>
 <p>矿石树树叶一定时间后会转化为矿石。</p>
 <p>破坏羊毛树树叶掉落羊毛树树苗、羊毛、鱼或羊。</p>
+<p class="note">使用命令<code>scoreboard players set $modTreeAgeMax cppConfig 2</code>来修改树的生长阶段数，默认为2。使用命令<code>scoreboard players set $modLeavesThreshold cppConfig 3600</code>来修改树叶的转化速度，数值越小速度越快，默认为3600。</p>
 
 
 <!--==================================================================-->
@@ -8185,6 +8201,7 @@
 <p><span class="oldversion">1.9.x</span> 玩家出生点附近自然生成，无法手动破坏，无掉落。可令32米内的玩家每秒回复1点魔法值，上限30点。</p>
 
 <h3 id="魔法仪式">魔法仪式</h3>
+<p class="note">使用命令<code>scoreboard players set $ritualsTime cppConfig 1200</code>来修改仪式耗时，数值越小速度越快，默认为1200。仪式的配方位于<code>cpp:predicates/rituals</code>和<code>cpp:loot_tables/rituals</code>，其中在<code>cpp:loot_tables/rituals/attr.json</code>中修改可附加属性的物品和属性范围。</p>
 <p>在地面摆出如下形状，然后在青金石上方放置发射器，并在发射器上方放置物品展示框。将材料放入发射器，将待处理的物品放入物品展示框，使用魔杖shift右击并等待即可。</p>
 <p><span class="ui dp">
 		<a class="emerald_block" title="绿宝石块"></a>
@@ -9512,6 +9529,7 @@
 <p>玩家杀死生物时背包的沙子(1.10.x)/砂土(1.11)会变成灵魂沙(1.10.x)/灵魂土(1.11)。</p>
 <p>在泥土上放置草丛可以得到草方块。</p>
 <p>使用<code>/trigger cppHome</code>可以返回自己的岛屿。如果需要前往他人岛屿，让管理员协助你传送过去，然后你使用<code>/trigger cppSetHome</code>来重新设置自己岛屿位置。</p>
+<p class="note">使用命令<code>scoreboard players set $skyislandDistance cppConfig 1000</code>来修改不同空岛的距离。</p>
 
 <h3>1.9 版本空岛</h3>
 <p>空岛模式会在y=0处为空气时自动开启，建议玩家使用自定义超平坦如<code>minecraft:air;minecraft:flower_forest;</code>进入。</p>
@@ -9982,7 +10000,7 @@
 		<a href="https://space.bilibili.com/4469715"><img src="items/bilibili.png" alt="哔哩哔哩" /></a>
 </p>
 
-<p>最后更新 2020-04-16</p>
+<p>最后更新 2020-04-18</p>
 </footer>
 
 </article>

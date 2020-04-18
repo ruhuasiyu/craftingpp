@@ -152,7 +152,7 @@ figure{
 	text-indent: 0;
 	margin-left:0;
 }
-figcaption{
+figcaption, p.note{
 	font-family: 楷体, SFMono-Regular,Consolas,"Liberation Mono",Menlo,monospace,Courier;
 }
 figure img{
