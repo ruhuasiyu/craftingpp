@@ -406,14 +406,6 @@ em{
 }
 
 /*物品 */
-span.ui a.magma_block, a.magma_block{
-	background-image: url("magma_block.gif");
-	background-size: 32px 32px;
-}
-span.ui a.prismarine, a.prismarine{
-	background-image: url("prismarine.gif");
-	background-size: 32px 32px;
-}
 span.ui a.xp_orb, a.xp_orb{
 	background-image: url("xp_orb.gif");
 	background-size: 32px 32px;
@@ -422,10 +414,10 @@ span.ui a.fire, a.fire{
 	background-image: url("fire.gif");
 	background-size: 32px 32px;
 }
-span.ui a.sea_lantern, a.sea_lantern{
-	background-image: url("sea_lantern.gif");
-	background-size: 32px 32px;
-}
+
+
+
+
 
 .diamond_horse_armor            {background-position: -896px -000px;}
 
@@ -1995,6 +1987,11 @@ span.ui a.sea_lantern, a.sea_lantern{
 .rice1                          {background-position: -256px -2368px;}
 .rice2                          {background-position: -000px -2400px;}
 .rice3                          {background-position: -032px -2400px;}
+.enchanted_golden_apple         {background-position: -064px -2400px;}
+.magma_block                    {background-position: -096px -2400px;}
+.prismarine                     {background-position: -128px -2400px;}
+.sea_lantern                    {background-position: -160px -2400px;}
+.blackstone_plugin              {background-position: -192px -2400px;}
 
 .speed               {background-position: -000px -00px;}
 .slowness            {background-position: -018px -00px;}
