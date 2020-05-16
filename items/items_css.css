@@ -70,6 +70,7 @@ a{
 }
 a:hover{
 	color:#d25349;
+	text-decoration: underline;
 }
 strong{
 	color:blue;
