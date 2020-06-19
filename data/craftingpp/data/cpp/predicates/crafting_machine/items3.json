@@ -33,7 +33,25 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"nbt": "{Items:[{id:'minecraft:wheat'},{id:'minecraft:salmon'},{id:'minecraft:dried_kelp'}]}"
+					"nbt": "{Items:[{tag:{id:'cpp:rice'}},{id:'minecraft:salmon'},{id:'minecraft:dried_kelp'}]}"
+				}
+			}
+		},
+		{
+			"_comment":"樱饼",
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{tag:{id:'cpp:sakura_leaves'}},{id:'minecraft:sugar'},{tag:{id:'cpp:rice'}}]}"
+				}
+			}
+		},
+		{
+			"_comment":"青团",
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{tag:{id:'cpp:rice'}},{id:'minecraft:green_dye'},{id:'minecraft:sugar'}]}"
 				}
 			}
 		},
@@ -61,24 +79,6 @@
 			"predicate": {
 				"block": {
 					"nbt": "{Items:[{Slot:10b,id:'minecraft:clay_ball'},{Slot:12b,id:'minecraft:clay_ball'},{Slot:20b,id:'minecraft:clay_ball'}]}"
-				}
-			}
-		},
-		{
-			"_comment":"无尽桶",
-			"condition": "minecraft:location_check",
-			"predicate": {
-				"block": {
-					"nbt": "{Items:[{Slot:1b,tag:{id:'cpp:enchanted_iron'}},{Slot:3b,tag:{id:'cpp:enchanted_iron'}},{Slot:11b,tag:{id:'cpp:enchanted_iron'}}]}"
-				}
-			}
-		},
-		{
-			"_comment":"无尽桶",
-			"condition": "minecraft:location_check",
-			"predicate": {
-				"block": {
-					"nbt": "{Items:[{Slot:10b,tag:{id:'cpp:enchanted_iron'}},{Slot:12b,tag:{id:'cpp:enchanted_iron'}},{Slot:20b,tag:{id:'cpp:enchanted_iron'}}]}"
 				}
 			}
 		},

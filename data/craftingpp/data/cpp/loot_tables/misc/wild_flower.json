@@ -46,10 +46,6 @@
 				{
 					"type": "minecraft:loot_table",
 					"name": "cpp:silene_pendula"
-				},
-				{
-					"type": "minecraft:loot_table",
-					"name": "cpp:blue_rose"
 				}
 			]
 		}

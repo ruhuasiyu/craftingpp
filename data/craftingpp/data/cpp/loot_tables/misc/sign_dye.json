@@ -1,0 +1,337 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:alternatives",
+					"children": [
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "this",
+									"predicate": {
+										"nbt": "{Item:{id:'minecraft:white_dye'}}"
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{cppDyeId:0}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "this",
+									"predicate": {
+										"nbt": "{Item:{id:'minecraft:orange_dye'}}"
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{cppDyeId:1}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "this",
+									"predicate": {
+										"nbt": "{Item:{id:'minecraft:magenta_dye'}}"
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{cppDyeId:2}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "this",
+									"predicate": {
+										"nbt": "{Item:{id:'minecraft:light_blue_dye'}}"
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{cppDyeId:3}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "this",
+									"predicate": {
+										"nbt": "{Item:{id:'minecraft:yellow_dye'}}"
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{cppDyeId:4}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "this",
+									"predicate": {
+										"nbt": "{Item:{id:'minecraft:lime_dye'}}"
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{cppDyeId:5}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "this",
+									"predicate": {
+										"nbt": "{Item:{id:'minecraft:pink_dye'}}"
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{cppDyeId:6}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "this",
+									"predicate": {
+										"nbt": "{Item:{id:'minecraft:gray_dye'}}"
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{cppDyeId:7}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "this",
+									"predicate": {
+										"nbt": "{Item:{id:'minecraft:light_gray_dye'}}"
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{cppDyeId:8}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "this",
+									"predicate": {
+										"nbt": "{Item:{id:'minecraft:cyan_dye'}}"
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{cppDyeId:9}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "this",
+									"predicate": {
+										"nbt": "{Item:{id:'minecraft:purple_dye'}}"
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{cppDyeId:10}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "this",
+									"predicate": {
+										"nbt": "{Item:{id:'minecraft:blue_dye'}}"
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{cppDyeId:11}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "this",
+									"predicate": {
+										"nbt": "{Item:{id:'minecraft:brown_dye'}}"
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{cppDyeId:12}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "this",
+									"predicate": {
+										"nbt": "{Item:{id:'minecraft:green_dye'}}"
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{cppDyeId:13}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "this",
+									"predicate": {
+										"nbt": "{Item:{id:'minecraft:red_dye'}}"
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{cppDyeId:14}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "this",
+									"predicate": {
+										"nbt": "{Item:{id:'minecraft:black_dye'}}"
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{cppDyeId:15}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "this",
+									"predicate": {
+										"nbt": "{Item:{id:'minecraft:glass_pane'}}"
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{cppDyeId:16}"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

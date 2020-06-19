@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"translate\":\"item.cpp.agentia_of_extremeness\"}',Lore:['[{\"translate\":\"effect.minecraft.haste\",\"italic\":\"false\",\"color\":\"blue\"},{\"text\":\" II (4:00)\"}]']},id:'cpp:agentia_of_extremeness',CustomModelData:12970118,Enchantments:[{lvl:1s,id:'minecraft:binding_curse'}],HideFlags:1}"
+							"tag": "{display:{Name:'{\"italic\":false,\"translate\":\"item.cpp.agentia_of_extremeness\"}',Lore:['[{\"italic\":false,\"translate\":\"effect.minecraft.haste\",\"color\":\"blue\"},{\"text\":\" II (4:00)\"}]']},id:'cpp:agentia_of_extremeness',CustomModelData:12970118,Enchantments:[{lvl:1s,id:'minecraft:binding_curse'}],HideFlags:1}"
 						}
 					]
 				}

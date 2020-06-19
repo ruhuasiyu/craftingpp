@@ -1,0 +1,29 @@
+{
+	"criteria": {
+		"suspicious_stew": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:suspicious_stew"
+					}
+				]
+			}
+		},
+		"has_the_recipe": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "cpp:foods/suspicious_stew_campfire"
+			}
+		}
+	},
+	"rewards":{
+		"recipes": ["cpp:foods/suspicious_stew_campfire"]
+	},
+	"requirements": [
+		[
+			"suspicious_stew",
+			"has_the_recipe"
+		]
+	]
+}

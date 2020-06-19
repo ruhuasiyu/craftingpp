@@ -12,6 +12,104 @@
 									"condition": "minecraft:location_check",
 									"predicate": {
 										"block": {
+											"nbt": "{Items:[{tag:{id:'cpp:wing_of_sky'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:agentia_of_sky"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{tag:{id:'cpp:heart_of_crystal'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:agentia_of_ocean"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{tag:{id:'cpp:limb_of_ridge'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:agentia_of_ridge"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{tag:{id:'cpp:soul_of_dirt'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:agentia_of_dirt"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{tag:{id:'cpp:certification_of_earth'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:agentia_of_earth"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{tag:{id:'cpp:nova_of_fire'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:agentia_of_fire"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{tag:{id:'cpp:spirit_of_life'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:agentia_of_life"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
 											"nbt": "{Items:[{id:'minecraft:phantom_membrane'}]}"
 										}
 									}
@@ -201,104 +299,6 @@
 							],
 							"type": "minecraft:loot_table",
 							"name": "cpp:agentia_of_chain"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{tag:{id:'cpp:wing_of_sky'}}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:loot_table",
-							"name": "cpp:agentia_of_sky"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{tag:{id:'cpp:heart_of_crystal'}}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:loot_table",
-							"name": "cpp:agentia_of_ocean"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{tag:{id:'cpp:limb_of_ridge'}}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:loot_table",
-							"name": "cpp:agentia_of_ridge"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{tag:{id:'cpp:soul_of_dirt'}}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:loot_table",
-							"name": "cpp:agentia_of_dirt"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{tag:{id:'cpp:certification_of_earth'}}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:loot_table",
-							"name": "cpp:agentia_of_earth"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{tag:{id:'cpp:nova_of_fire'}}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:loot_table",
-							"name": "cpp:agentia_of_fire"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{tag:{id:'cpp:spirit_of_life'}}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:loot_table",
-							"name": "cpp:agentia_of_life"
 						}
 					]
 				}

@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"translate\":\"item.cpp.minion_goggles\"}'},id:'cpp:minion_goggles',CustomModelData:12970125,cppHatSlot:'hand'}"
+							"tag": "{display:{Name:'{\"italic\":false,\"translate\":\"item.cpp.minion_goggles\"}'},id:'cpp:minion_goggles',CustomModelData:12970125,cppHatSlot:'hand'}"
 						}
 					]
 				}

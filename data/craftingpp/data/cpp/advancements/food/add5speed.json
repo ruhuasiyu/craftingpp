@@ -4,7 +4,7 @@
 			"trigger": "minecraft:consume_item",
 			"conditions": {
 				"item": {
-					"nbt": "{id:\"cpp:caramel_pudding\"}"
+					"nbt": "{id:'cpp:caramel_pudding'}"
 				}
 			}
 		},
@@ -12,7 +12,7 @@
 			"trigger": "minecraft:consume_item",
 			"conditions": {
 				"item": {
-					"nbt": "{id:\"cpp:honey_pancake\"}"
+					"nbt": "{id:'cpp:honey_pancake'}"
 				}
 			}
 		},
@@ -20,7 +20,7 @@
 			"trigger": "minecraft:consume_item",
 			"conditions": {
 				"item": {
-					"nbt": "{id:\"cpp:meat_floss_bread\"}"
+					"nbt": "{id:'cpp:meat_floss_bread'}"
 				}
 			}
 		},
@@ -28,7 +28,7 @@
 			"trigger": "minecraft:consume_item",
 			"conditions": {
 				"item": {
-					"nbt": "{id:\"cpp:candied_haw\"}"
+					"nbt": "{id:'cpp:candied_haw'}"
 				}
 			}
 		}

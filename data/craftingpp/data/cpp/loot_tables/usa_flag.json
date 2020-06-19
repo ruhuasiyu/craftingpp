@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag":"{display:{Name:'{\"translate\":\"item.cpp.usa_flag\"}'},id:'cpp:usa_flag',CustomModelData:12974402,EntityTag:{Item:{id:'minecraft:item_frame',Count:1b,tag:{CustomModelData:12974402,cppClear:1b}},Tags:['cpp_item_frame_flag','cpp_special_item_frame','cpp_usa_flag']}}"
+							"tag":"{display:{Name:'{\"italic\":false,\"translate\":\"item.cpp.usa_flag\"}'},id:'cpp:usa_flag',CustomModelData:12974402,EntityTag:{Item:{id:'minecraft:item_frame',Count:1b,tag:{CustomModelData:12974402,cpp_clear:1b}},Tags:['cpp_item_frame_flag','cpp_special_item_frame','cpp_usa_flag']}}"
 						}
 					]
 				}

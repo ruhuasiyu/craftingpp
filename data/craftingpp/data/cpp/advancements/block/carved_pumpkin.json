@@ -1,6 +1,6 @@
 {
 	"criteria": {
-		"machine": {
+		"carved_pumpkin": {
 			"trigger": "minecraft:placed_block",
 			"conditions": {
 				"block": "minecraft:carved_pumpkin"

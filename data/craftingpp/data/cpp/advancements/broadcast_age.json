@@ -1,8 +1,8 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:chest",
-			"nbt":"{CustomModelData:12970001}"
+			"item": "minecraft:petrified_oak_slab",
+			"nbt":"{CustomModelData:12970005}"
 		},
 		"title":{
 			"translate": "advancements.cpp.broadcast_age.title"

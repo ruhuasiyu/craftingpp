@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"translate\":\"item.cpp.muffler\"}'},id:'cpp:muffler',CustomModelData:12970050}"
+							"tag": "{display:{Name:'{\"italic\":false,\"translate\":\"item.cpp.muffler\"}'},id:'cpp:muffler',CustomModelData:12970050}"
 						}
 					]
 				}

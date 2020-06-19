@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"translate\":\"item.cpp.industrious_hand\"}'},id:'cpp:industrious_hand',CustomModelData:12970121,dict:['hand']}"
+							"tag": "{display:{Name:'{\"italic\":false,\"translate\":\"item.cpp.industrious_hand\"}'},id:'cpp:industrious_hand',CustomModelData:12970121,dict:['hand']}"
 						}
 					]
 				}

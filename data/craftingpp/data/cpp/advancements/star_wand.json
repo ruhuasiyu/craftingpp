@@ -19,7 +19,7 @@
 			"conditions":{
 				"items":[
 					{
-						"nbt":"{id:\"cpp:star_wand\"}"
+						"nbt":"{id:'cpp:star_wand'}"
 					}
 				]
 			}

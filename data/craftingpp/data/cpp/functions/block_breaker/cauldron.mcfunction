@@ -1,2 +1,2 @@
-execute if entity @e[type=item,distance=..1,nbt={Item:{id:"minecraft:cobblestone",Count:4b}}] run function cpp:block_breaker/lava
-execute if entity @e[type=item,distance=..1,nbt={Item:{id:"minecraft:snowball",Count:4b}}] run function cpp:block_breaker/water
+execute if entity @e[type=item,distance=..1,predicate=cpp:item/cobblestone4] run function cpp:block_breaker/lava
+execute if entity @e[type=item,distance=..1,predicate=cpp:item/snowball4] run function cpp:block_breaker/water

@@ -1,0 +1,19 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:petrified_oak_slab",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{display:{Name:'{\"italic\":false,\"translate\":\"item.cpp.sakura_sapling\"}'},id:'cpp:sakura_sapling',CustomModelData:12972004,cpp_tag:['trees','plants','+4000']}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

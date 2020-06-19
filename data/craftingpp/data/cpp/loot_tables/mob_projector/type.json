@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{cppClear:1b,display:{Name:'{\"translate\":\"item.cpp.mob_projector\"}'},CustomModelData:12970000}"
+							"tag": "{cpp_clear:1b,display:{Name:'{\"italic\":false,\"translate\":\"item.cpp.mob_projector\"}'},CustomModelData:12970000}"
 						},
 						{
 							"conditions": [
@@ -620,6 +620,20 @@
 							],
 							"function": "minecraft:set_nbt",
 							"tag": "{cppMobProjWork:1b,cppMobProjXp:8,CustomModelData:12970811}"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:warped_fungus'},{id:'minecraft:string'}]}"
+										}
+									}
+								}
+							],
+							"function": "minecraft:set_nbt",
+							"tag": "{cppMobProjWork:1b,cppMobProjXp:8,CustomModelData:12970812}"
 						},
 						{
 							"conditions": [

@@ -1,9 +1,7 @@
-fill ~-16 0 ~-16 ~15 0 ~15 air
-fill ~-16 1 ~-16 ~15 1 ~15 bedrock
-# 全区块生成: 苦力怕刷怪笼
-execute if predicate cpp:creeper_dungeon run function cpp:generate/structures/creeper_dungeon
+summon area_effect_cloud ~32 0 ~32 {Age:0,Duration:2147483647,Tags:["cpp_aec_marker","cpp_chunk","cpp_temp"]}
+execute as @e[type=area_effect_cloud,tag=cpp_temp] run function cpp:generate/aec
 # 扩散生成
-loot spawn ~ ~ ~ loot cpp:generate/markers
-execute store result score #t cppValue run spreadplayers ~ ~ 0 15 false @e[type=item,nbt={Item:{tag:{cppGenerateMarker:1b}}}]
-execute as @e[type=item,nbt={Item:{tag:{cppGenerateMarker:1b}}}] at @s if block ~ ~-1 ~ grass run tp ~ ~-1 ~
-execute as @e[type=item,nbt={Item:{tag:{cppGenerateMarker:1b}}}] at @s run function cpp:generate/build
+loot spawn ~ ~ ~ loot cpp:misc/generate
+execute store result score #t cppValue run spreadplayers ~ ~ 0 15 false @e[type=item,nbt={Item:{tag:{cpp_generate_marker:1b}}}]
+execute as @e[type=item,nbt={Item:{tag:{cpp_generate_marker:1b}}}] at @s if block ~ ~-1 ~ #cpp:replacable run tp ~ ~-1 ~
+execute as @e[type=item,nbt={Item:{tag:{cpp_generate_marker:1b}}}] at @s run function cpp:generate/build

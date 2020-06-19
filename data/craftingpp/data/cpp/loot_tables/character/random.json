@@ -66,10 +66,7 @@
 				{ "type": "minecraft:loot_table", "name": "cpp:character/61" },
 				{ "type": "minecraft:loot_table", "name": "cpp:character/62" },
 				{ "type": "minecraft:loot_table", "name": "cpp:character/63" },
-				{ "type": "minecraft:loot_table", "name": "cpp:character/64" },
-				{ "type": "minecraft:loot_table", "name": "cpp:character/65" },
-				{ "type": "minecraft:loot_table", "name": "cpp:character/66" },
-				{ "type": "minecraft:loot_table", "name": "cpp:character/67" }
+				{ "type": "minecraft:loot_table", "name": "cpp:character/64" }
 			]
 		}
 	]

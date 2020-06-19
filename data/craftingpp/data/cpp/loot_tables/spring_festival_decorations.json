@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"translate\":\"item.cpp.spring_festival_decorations\"}'},id:'cpp:spring_festival_decorations',CustomModelData:12970003,EntityTag:{Item:{id:'minecraft:firework_star',Count:1b,tag:{CustomModelData:12974101,cppClear:1b}},Tags:['cpp_item_frame_spring_festival_decorations','cpp_special_item_frame']}}"
+							"tag": "{display:{Name:'{\"italic\":false,\"translate\":\"item.cpp.spring_festival_decorations\"}'},id:'cpp:spring_festival_decorations',CustomModelData:12970003,EntityTag:{Item:{id:'minecraft:firework_star',Count:1b,tag:{CustomModelData:12974101,cpp_clear:1b}},invisible:1b,Tags:['cpp_item_frame_spring_festival_decorations','cpp_special_item_frame']}}"
 						}
 					]
 				}

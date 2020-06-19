@@ -225,6 +225,14 @@
 											"condition": "minecraft:location_check",
 											"predicate": {
 												"block": {
+													"nbt": "{Items:[{id:'minecraft:music_disc_pigstep'}]}"
+												}
+											}
+										},
+										{
+											"condition": "minecraft:location_check",
+											"predicate": {
+												"block": {
 													"nbt": "{Items:[{id:'minecraft:totem_of_undying'}]}"
 												}
 											}
@@ -246,14 +254,6 @@
 								{
 									"condition": "minecraft:alternative",
 									"terms": [
-										{
-											"condition": "minecraft:location_check",
-											"predicate": {
-												"block": {
-													"nbt": "{Items:[{id:'minecraft:emerald'}]}"
-												}
-											}
-										},
 										{
 											"condition": "minecraft:location_check",
 											"predicate": {
@@ -367,6 +367,31 @@
 								{
 									"function": "minecraft:set_nbt",
 									"tag": "{cppTradeValue:2880}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:alternative",
+									"terms": [
+										{
+											"condition": "minecraft:location_check",
+											"predicate": {
+												"block": {
+													"nbt": "{Items:[{id:'minecraft:emerald'}]}"
+												}
+											}
+										}
+									]
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{cppTradeValue:2048}"
 								}
 							]
 						},

@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"translate\":\"item.cpp.red_force_of_fire\"}'},id:'cpp:red_force_of_fire',CustomModelData:12970006}"
+							"tag": "{display:{Name:'{\"italic\":false,\"translate\":\"item.cpp.red_force_of_fire\"}'},id:'cpp:red_force_of_fire',CustomModelData:12970006}"
 						}
 					]
 				}

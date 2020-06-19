@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"translate\":\"item.cpp.quartz_dust\"}'},id:'cpp:quartz_dust',CustomModelData:12970046,dict:['quartz_dust']}"
+							"tag": "{display:{Name:'{\"italic\":false,\"translate\":\"item.cpp.quartz_dust\"}'},id:'cpp:quartz_dust',CustomModelData:12970046,dict:['quartz_dust']}"
 						}
 					]
 				}

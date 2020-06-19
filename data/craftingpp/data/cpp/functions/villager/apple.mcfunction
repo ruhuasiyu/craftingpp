@@ -1,0 +1,2 @@
+execute if data entity @s Offers.Recipes[{sell:{id:"minecraft:apple"}}] run data modify entity @s Offers.Recipes[{sell:{id:"minecraft:apple"}}].sell.tag merge value {id:"minecraft:apple"}
+tag @s add cpp_villager_modified

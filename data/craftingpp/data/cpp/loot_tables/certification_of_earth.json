@@ -5,11 +5,11 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:rabbit_foot",
+					"name": "minecraft:firework_star",
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"translate\":\"item.cpp.certification_of_earth\"}'},id:'cpp:certification_of_earth',CustomModelData:12970005}"
+							"tag": "{display:{Name:'{\"italic\":false,\"translate\":\"item.cpp.certification_of_earth\"}'},id:'cpp:certification_of_earth',CustomModelData:12970105}"
 						}
 					]
 				}

@@ -5,11 +5,11 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:gold_block",
+					"name": "minecraft:petrified_oak_slab",
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"translate\":\"item.cpp.sun_stone\"}'},id:'cpp:sun_stone',CustomModelData:12970002}"
+							"tag": "{display:{Name:'{\"italic\":false,\"translate\":\"item.cpp.sun_stone\"}'},id:'cpp:sun_stone',CustomModelData:12970202,cpp_tag:['need_fire','gold_block']}"
 						}
 					]
 				}

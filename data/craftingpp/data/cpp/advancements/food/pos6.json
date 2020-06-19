@@ -28,7 +28,7 @@
 			"trigger": "minecraft:consume_item",
 			"conditions": {
 				"item": {
-					"nbt": "{id:\"cpp:raw_braised_beef_with_potatoes\"}"
+					"nbt": "{id:'cpp:raw_braised_beef_with_potatoes'}"
 				}
 			}
 		},
@@ -36,7 +36,7 @@
 			"trigger": "minecraft:consume_item",
 			"conditions": {
 				"item": {
-					"nbt": "{id:\"cpp:raw_rabbit_stew\"}"
+					"nbt": "{id:'cpp:raw_rabbit_stew'}"
 				}
 			}
 		},
@@ -44,7 +44,7 @@
 			"trigger": "minecraft:consume_item",
 			"conditions": {
 				"item": {
-					"nbt": "{id:\"cpp:raw_braised_pork_with_potatoes\"}"
+					"nbt": "{id:'cpp:raw_braised_pork_with_potatoes'}"
 				}
 			}
 		},
@@ -52,7 +52,7 @@
 			"trigger": "minecraft:consume_item",
 			"conditions": {
 				"item": {
-					"nbt": "{id:\"cpp:braised_beef_with_potatoes\"}"
+					"nbt": "{id:'cpp:braised_beef_with_potatoes'}"
 				}
 			}
 		},
@@ -60,7 +60,7 @@
 			"trigger": "minecraft:consume_item",
 			"conditions": {
 				"item": {
-					"nbt": "{id:\"cpp:rabbit_stew\"}"
+					"nbt": "{id:'cpp:rabbit_stew'}"
 				}
 			}
 		},
@@ -68,7 +68,7 @@
 			"trigger": "minecraft:consume_item",
 			"conditions": {
 				"item": {
-					"nbt": "{id:\"cpp:braised_pork_with_potatoes\"}"
+					"nbt": "{id:'cpp:braised_pork_with_potatoes'}"
 				}
 			}
 		},
@@ -76,7 +76,7 @@
 			"trigger": "minecraft:consume_item",
 			"conditions": {
 				"item": {
-					"nbt": "{id:\"cpp:fish_and_chips\"}"
+					"nbt": "{id:'cpp:fish_and_chips'}"
 				}
 			}
 		}

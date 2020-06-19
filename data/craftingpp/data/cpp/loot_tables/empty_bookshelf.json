@@ -5,11 +5,11 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:barrel",
+					"name": "minecraft:petrified_oak_slab",
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"translate\":\"item.cpp.empty_bookshelf\"}'},id:'cpp:empty_bookshelf',CustomModelData:12970010}"
+							"tag": "{display:{Name:'{\"italic\":false,\"translate\":\"item.cpp.empty_bookshelf\"}'},id:'cpp:empty_bookshelf',CustomModelData:12970010,cpp_tag:['machine','need_fire','barrel']}"
 						}
 					]
 				}

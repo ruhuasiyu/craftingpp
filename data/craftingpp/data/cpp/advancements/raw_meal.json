@@ -17,7 +17,7 @@
 			"trigger": "minecraft:consume_item",
 			"conditions": {
 				"item": {
-					"nbt":"{id:\"cpp:raw_braised_beef_with_potatoes\"}"
+					"nbt":"{id:'cpp:raw_braised_beef_with_potatoes'}"
 				}
 			}
 		},
@@ -25,7 +25,7 @@
 			"trigger": "minecraft:consume_item",
 			"conditions": {
 				"item": {
-					"nbt":"{id:\"cpp:raw_braised_pork_with_potatoes\"}"
+					"nbt":"{id:'cpp:raw_braised_pork_with_potatoes'}"
 				}
 			}
 		},
@@ -33,7 +33,7 @@
 			"trigger": "minecraft:consume_item",
 			"conditions": {
 				"item": {
-					"nbt":"{id:\"cpp:raw_colorful_vegetable\"}"
+					"nbt":"{id:'cpp:raw_colorful_vegetable'}"
 				}
 			}
 		}

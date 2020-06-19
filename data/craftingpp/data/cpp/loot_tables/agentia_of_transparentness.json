@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"translate\":\"item.cpp.agentia_of_transparentness\"}',Lore:['[{\"translate\":\"effect.minecraft.invisibility\",\"italic\":\"false\",\"color\":\"blue\"},{\"text\":\" (8:00)\"}]']},id:'cpp:agentia_of_transparentness',CustomModelData:12970112,Enchantments:[{lvl:1s,id:'minecraft:binding_curse'}],HideFlags:1}"
+							"tag": "{display:{Name:'{\"italic\":false,\"translate\":\"item.cpp.agentia_of_transparentness\"}',Lore:['[{\"italic\":false,\"translate\":\"effect.minecraft.invisibility\",\"color\":\"blue\"},{\"text\":\" (8:00)\"}]']},id:'cpp:agentia_of_transparentness',CustomModelData:12970112,Enchantments:[{lvl:1s,id:'minecraft:binding_curse'}],HideFlags:1}"
 						}
 					]
 				}

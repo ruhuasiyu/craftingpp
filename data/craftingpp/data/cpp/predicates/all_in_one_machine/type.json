@@ -5,7 +5,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"nbt": "{Items:[{Slot:3b},{Slot:4b},{Slot:21b,tag:{cppClear:1b}},{Slot:22b,tag:{cppClear:1b}}]}"
+					"nbt": "{Items:[{Slot:3b},{Slot:4b},{Slot:21b,tag:{cpp_clear:1b}},{Slot:22b,tag:{cpp_clear:1b}}]}"
 				}
 			}
 		}

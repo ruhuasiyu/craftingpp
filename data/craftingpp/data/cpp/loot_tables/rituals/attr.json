@@ -1,252 +1,252 @@
 {"pools": [{"rolls": 1,"entries": [{"type": "minecraft:item","name": "minecraft:stone","functions": [
 
 	{"conditions": [{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Item:{id:'minecraft:wooden_sword'}}"}}],"function": "minecraft:set_attributes","modifiers": [
-		{"amount": {"min": -2.4,"max": -0.4},"name": "cpp_attackSpeed","attribute": "generic.attackSpeed","operation": "addition","slot": "mainhand"},
-		{"amount": {"min": 3,"max": 11},"name": "cpp_attackDamage","attribute": "generic.attackDamage","operation": "addition","slot": "mainhand"}
+		{"amount": {"min": -2.4,"max": -0.4},"name": "cpp_attack_speed","attribute": "generic.attack_speed","operation": "addition","slot": "mainhand"},
+		{"amount": {"min": 3,"max": 11},"name": "cpp_attack_damage","attribute": "generic.attack_damage","operation": "addition","slot": "mainhand"}
 	]},
 	{"conditions": [{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Item:{id:'minecraft:golden_sword'}}"}}],"function": "minecraft:set_attributes","modifiers": [
-		{"amount": {"min": -2.4,"max": -0.4},"name": "cpp_attackSpeed","attribute": "generic.attackSpeed","operation": "addition","slot": "mainhand"},
-		{"amount": {"min": 3,"max": 11},"name": "cpp_attackDamage","attribute": "generic.attackDamage","operation": "addition","slot": "mainhand"}
+		{"amount": {"min": -2.4,"max": -0.4},"name": "cpp_attack_speed","attribute": "generic.attack_speed","operation": "addition","slot": "mainhand"},
+		{"amount": {"min": 3,"max": 11},"name": "cpp_attack_damage","attribute": "generic.attack_damage","operation": "addition","slot": "mainhand"}
 	]},
 	{"conditions": [{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Item:{id:'minecraft:stone_sword'}}"}}],"function": "minecraft:set_attributes","modifiers": [
-		{"amount": {"min": -2.4,"max": -0.4},"name": "cpp_attackSpeed","attribute": "generic.attackSpeed","operation": "addition","slot": "mainhand"},
-		{"amount": {"min": 4,"max": 12},"name": "cpp_attackDamage","attribute": "generic.attackDamage","operation": "addition","slot": "mainhand"}
+		{"amount": {"min": -2.4,"max": -0.4},"name": "cpp_attack_speed","attribute": "generic.attack_speed","operation": "addition","slot": "mainhand"},
+		{"amount": {"min": 4,"max": 12},"name": "cpp_attack_damage","attribute": "generic.attack_damage","operation": "addition","slot": "mainhand"}
 	]},
 	{"conditions": [{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Item:{id:'minecraft:iron_sword'}}"}}],"function": "minecraft:set_attributes","modifiers": [
-		{"amount": {"min": -2.4,"max": -0.4},"name": "cpp_attackSpeed","attribute": "generic.attackSpeed","operation": "addition","slot": "mainhand"},
-		{"amount": {"min": 5,"max": 13},"name": "cpp_attackDamage","attribute": "generic.attackDamage","operation": "addition","slot": "mainhand"}
+		{"amount": {"min": -2.4,"max": -0.4},"name": "cpp_attack_speed","attribute": "generic.attack_speed","operation": "addition","slot": "mainhand"},
+		{"amount": {"min": 5,"max": 13},"name": "cpp_attack_damage","attribute": "generic.attack_damage","operation": "addition","slot": "mainhand"}
 	]},
 	{"conditions": [{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Item:{id:'minecraft:diamond_sword'}}"}}],"function": "minecraft:set_attributes","modifiers": [
-		{"amount": {"min": -2.4,"max": -0.4},"name": "cpp_attackSpeed","attribute": "generic.attackSpeed","operation": "addition","slot": "mainhand"},
-		{"amount": {"min": 6,"max": 14},"name": "cpp_attackDamage","attribute": "generic.attackDamage","operation": "addition","slot": "mainhand"}
+		{"amount": {"min": -2.4,"max": -0.4},"name": "cpp_attack_speed","attribute": "generic.attack_speed","operation": "addition","slot": "mainhand"},
+		{"amount": {"min": 6,"max": 14},"name": "cpp_attack_damage","attribute": "generic.attack_damage","operation": "addition","slot": "mainhand"}
 	]},
 	{"conditions": [{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Item:{id:'minecraft:netherite_sword'}}"}}],"function": "minecraft:set_attributes","modifiers": [
-		{"amount": {"min": -2.4,"max": -0.4},"name": "cpp_attackSpeed","attribute": "generic.attackSpeed","operation": "addition","slot": "mainhand"},
-		{"amount": {"min": 7,"max": 15},"name": "cpp_attackDamage","attribute": "generic.attackDamage","operation": "addition","slot": "mainhand"}
+		{"amount": {"min": -2.4,"max": -0.4},"name": "cpp_attack_speed","attribute": "generic.attack_speed","operation": "addition","slot": "mainhand"},
+		{"amount": {"min": 7,"max": 15},"name": "cpp_attack_damage","attribute": "generic.attack_damage","operation": "addition","slot": "mainhand"}
 	]},
 
 	{"conditions": [{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Item:{id:'minecraft:wooden_axe'}}"}}],"function": "minecraft:set_attributes","modifiers": [
-		{"amount": {"min": -3.2,"max": -1.2},"name": "cpp_attackSpeed","attribute": "generic.attackSpeed","operation": "addition","slot": "mainhand"},
-		{"amount": {"min": 6,"max": 14},"name": "cpp_attackDamage","attribute": "generic.attackDamage","operation": "addition","slot": "mainhand"}
+		{"amount": {"min": -3.2,"max": -1.2},"name": "cpp_attack_speed","attribute": "generic.attack_speed","operation": "addition","slot": "mainhand"},
+		{"amount": {"min": 6,"max": 14},"name": "cpp_attack_damage","attribute": "generic.attack_damage","operation": "addition","slot": "mainhand"}
 	]},
 	{"conditions": [{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Item:{id:'minecraft:golden_axe'}}"}}],"function": "minecraft:set_attributes","modifiers": [
-		{"amount": {"min": -3.0,"max": -1.0},"name": "cpp_attackSpeed","attribute": "generic.attackSpeed","operation": "addition","slot": "mainhand"},
-		{"amount": {"min": 6,"max": 14},"name": "cpp_attackDamage","attribute": "generic.attackDamage","operation": "addition","slot": "mainhand"}
+		{"amount": {"min": -3.0,"max": -1.0},"name": "cpp_attack_speed","attribute": "generic.attack_speed","operation": "addition","slot": "mainhand"},
+		{"amount": {"min": 6,"max": 14},"name": "cpp_attack_damage","attribute": "generic.attack_damage","operation": "addition","slot": "mainhand"}
 	]},
 	{"conditions": [{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Item:{id:'minecraft:stone_axe'}}"}}],"function": "minecraft:set_attributes","modifiers": [
-		{"amount": {"min": -3.2,"max": -1.2},"name": "cpp_attackSpeed","attribute": "generic.attackSpeed","operation": "addition","slot": "mainhand"},
-		{"amount": {"min": 8,"max": 16},"name": "cpp_attackDamage","attribute": "generic.attackDamage","operation": "addition","slot": "mainhand"}
+		{"amount": {"min": -3.2,"max": -1.2},"name": "cpp_attack_speed","attribute": "generic.attack_speed","operation": "addition","slot": "mainhand"},
+		{"amount": {"min": 8,"max": 16},"name": "cpp_attack_damage","attribute": "generic.attack_damage","operation": "addition","slot": "mainhand"}
 	]},
 	{"conditions": [{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Item:{id:'minecraft:iron_axe'}}"}}],"function": "minecraft:set_attributes","modifiers": [
-		{"amount": {"min": -3.1,"max": -1.1},"name": "cpp_attackSpeed","attribute": "generic.attackSpeed","operation": "addition","slot": "mainhand"},
-		{"amount": {"min": 8,"max": 16},"name": "cpp_attackDamage","attribute": "generic.attackDamage","operation": "addition","slot": "mainhand"}
+		{"amount": {"min": -3.1,"max": -1.1},"name": "cpp_attack_speed","attribute": "generic.attack_speed","operation": "addition","slot": "mainhand"},
+		{"amount": {"min": 8,"max": 16},"name": "cpp_attack_damage","attribute": "generic.attack_damage","operation": "addition","slot": "mainhand"}
 	]},
 	{"conditions": [{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Item:{id:'minecraft:diamond_axe'}}"}}],"function": "minecraft:set_attributes","modifiers": [
-		{"amount": {"min": -3.0,"max": -1.0},"name": "cpp_attackSpeed","attribute": "generic.attackSpeed","operation": "addition","slot": "mainhand"},
-		{"amount": {"min": 8,"max": 16},"name": "cpp_attackDamage","attribute": "generic.attackDamage","operation": "addition","slot": "mainhand"}
+		{"amount": {"min": -3.0,"max": -1.0},"name": "cpp_attack_speed","attribute": "generic.attack_speed","operation": "addition","slot": "mainhand"},
+		{"amount": {"min": 8,"max": 16},"name": "cpp_attack_damage","attribute": "generic.attack_damage","operation": "addition","slot": "mainhand"}
 	]},
 	{"conditions": [{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Item:{id:'minecraft:netherite_axe'}}"}}],"function": "minecraft:set_attributes","modifiers": [
-		{"amount": {"min": -3.0,"max": -1.0},"name": "cpp_attackSpeed","attribute": "generic.attackSpeed","operation": "addition","slot": "mainhand"},
-		{"amount": {"min": 9,"max": 17},"name": "cpp_attackDamage","attribute": "generic.attackDamage","operation": "addition","slot": "mainhand"}
+		{"amount": {"min": -3.0,"max": -1.0},"name": "cpp_attack_speed","attribute": "generic.attack_speed","operation": "addition","slot": "mainhand"},
+		{"amount": {"min": 9,"max": 17},"name": "cpp_attack_damage","attribute": "generic.attack_damage","operation": "addition","slot": "mainhand"}
 	]},
 
 	{"conditions": [{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Item:{id:'minecraft:trident'}}"}}],"function": "minecraft:set_attributes","modifiers": [
-		{"amount": {"min": -2.9,"max": -0.9},"name": "cpp_attackSpeed","attribute": "generic.attackSpeed","operation": "addition","slot": "mainhand"},
-		{"amount": {"min": 8,"max": 16},"name": "cpp_attackDamage","attribute": "generic.attackDamage","operation": "addition","slot": "mainhand"}
+		{"amount": {"min": -2.9,"max": -0.9},"name": "cpp_attack_speed","attribute": "generic.attack_speed","operation": "addition","slot": "mainhand"},
+		{"amount": {"min": 8,"max": 16},"name": "cpp_attack_damage","attribute": "generic.attack_damage","operation": "addition","slot": "mainhand"}
 	]},
 
 	{"conditions": [{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Item:{id:'minecraft:leather_boots'}}"}}],"function": "minecraft:set_attributes","modifiers": [
 		{"amount": 1,"name": "cpp_armor","attribute": "generic.armor","operation": "addition","slot": "feet"},
-		{"amount": {"min": 0,"max": 5},"name": "cpp_maxHealth","attribute": "generic.maxHealth","operation": "addition","slot": "feet"},
-		{"amount": {"min": 0,"max": 0.3},"name": "cpp_knockbackResistance","attribute": "generic.knockbackResistance","operation": "addition","slot": "feet"},
-		{"amount": {"min": 0,"max": 0.15},"name": "cpp_movementSpeed","attribute": "generic.movementSpeed","operation": "multiply_base","slot": "feet"},
+		{"amount": {"min": 0,"max": 5},"name": "cpp_max_health","attribute": "generic.max_health","operation": "addition","slot": "feet"},
+		{"amount": {"min": 0,"max": 0.3},"name": "cpp_knockback_resistance","attribute": "generic.knockback_resistance","operation": "addition","slot": "feet"},
+		{"amount": {"min": 0,"max": 0.15},"name": "cpp_movement_speed","attribute": "generic.movement_speed","operation": "multiply_base","slot": "feet"},
 		{"amount": {"min": 0,"max": 2},"name": "cpp_luck","attribute": "generic.luck","operation": "addition","slot": "feet"}
 	]},
 	{"conditions": [{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Item:{id:'minecraft:golden_boots'}}"}}],"function": "minecraft:set_attributes","modifiers": [
 		{"amount": 1,"name": "cpp_armor","attribute": "generic.armor","operation": "addition","slot": "feet"},
-		{"amount": {"min": 0,"max": 5},"name": "cpp_maxHealth","attribute": "generic.maxHealth","operation": "addition","slot": "feet"},
-		{"amount": {"min": 0,"max": 0.3},"name": "cpp_knockbackResistance","attribute": "generic.knockbackResistance","operation": "addition","slot": "feet"},
-		{"amount": {"min": 0,"max": 0.15},"name": "cpp_movementSpeed","attribute": "generic.movementSpeed","operation": "multiply_base","slot": "feet"},
+		{"amount": {"min": 0,"max": 5},"name": "cpp_max_health","attribute": "generic.max_health","operation": "addition","slot": "feet"},
+		{"amount": {"min": 0,"max": 0.3},"name": "cpp_knockback_resistance","attribute": "generic.knockback_resistance","operation": "addition","slot": "feet"},
+		{"amount": {"min": 0,"max": 0.15},"name": "cpp_movement_speed","attribute": "generic.movement_speed","operation": "multiply_base","slot": "feet"},
 		{"amount": {"min": 0,"max": 2},"name": "cpp_luck","attribute": "generic.luck","operation": "addition","slot": "feet"}
 	]},
 	{"conditions": [{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Item:{id:'minecraft:chainmail_boots'}}"}}],"function": "minecraft:set_attributes","modifiers": [
 		{"amount": 1,"name": "cpp_armor","attribute": "generic.armor","operation": "addition","slot": "feet"},
-		{"amount": {"min": 0,"max": 5},"name": "cpp_maxHealth","attribute": "generic.maxHealth","operation": "addition","slot": "feet"},
-		{"amount": {"min": 0,"max": 0.3},"name": "cpp_knockbackResistance","attribute": "generic.knockbackResistance","operation": "addition","slot": "feet"},
-		{"amount": {"min": 0,"max": 0.15},"name": "cpp_movementSpeed","attribute": "generic.movementSpeed","operation": "multiply_base","slot": "feet"},
+		{"amount": {"min": 0,"max": 5},"name": "cpp_max_health","attribute": "generic.max_health","operation": "addition","slot": "feet"},
+		{"amount": {"min": 0,"max": 0.3},"name": "cpp_knockback_resistance","attribute": "generic.knockback_resistance","operation": "addition","slot": "feet"},
+		{"amount": {"min": 0,"max": 0.15},"name": "cpp_movement_speed","attribute": "generic.movement_speed","operation": "multiply_base","slot": "feet"},
 		{"amount": {"min": 0,"max": 2},"name": "cpp_luck","attribute": "generic.luck","operation": "addition","slot": "feet"}
 	]},
 	{"conditions": [{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Item:{id:'minecraft:iron_boots'}}"}}],"function": "minecraft:set_attributes","modifiers": [
 		{"amount": 2,"name": "cpp_armor","attribute": "generic.armor","operation": "addition","slot": "feet"},
-		{"amount": {"min": 0,"max": 5},"name": "cpp_maxHealth","attribute": "generic.maxHealth","operation": "addition","slot": "feet"},
-		{"amount": {"min": 0,"max": 0.3},"name": "cpp_knockbackResistance","attribute": "generic.knockbackResistance","operation": "addition","slot": "feet"},
-		{"amount": {"min": 0,"max": 0.15},"name": "cpp_movementSpeed","attribute": "generic.movementSpeed","operation": "multiply_base","slot": "feet"},
+		{"amount": {"min": 0,"max": 5},"name": "cpp_max_health","attribute": "generic.max_health","operation": "addition","slot": "feet"},
+		{"amount": {"min": 0,"max": 0.3},"name": "cpp_knockback_resistance","attribute": "generic.knockback_resistance","operation": "addition","slot": "feet"},
+		{"amount": {"min": 0,"max": 0.15},"name": "cpp_movement_speed","attribute": "generic.movement_speed","operation": "multiply_base","slot": "feet"},
 		{"amount": {"min": 0,"max": 2},"name": "cpp_luck","attribute": "generic.luck","operation": "addition","slot": "feet"}
 	]},
 	{"conditions": [{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Item:{id:'minecraft:diamond_boots'}}"}}],"function": "minecraft:set_attributes","modifiers": [
 		{"amount": 3,"name": "cpp_armor","attribute": "generic.armor","operation": "addition","slot": "feet"},
-		{"amount": 2,"name": "cpp_armorToughness","attribute": "generic.armorToughness","operation": "addition","slot": "feet"},
-		{"amount": {"min": 0,"max": 5},"name": "cpp_maxHealth","attribute": "generic.maxHealth","operation": "addition","slot": "feet"},
-		{"amount": {"min": 0,"max": 0.3},"name": "cpp_knockbackResistance","attribute": "generic.knockbackResistance","operation": "addition","slot": "feet"},
-		{"amount": {"min": 0,"max": 0.15},"name": "cpp_movementSpeed","attribute": "generic.movementSpeed","operation": "multiply_base","slot": "feet"},
+		{"amount": 2,"name": "cpp_armor_toughness","attribute": "generic.armor_toughness","operation": "addition","slot": "feet"},
+		{"amount": {"min": 0,"max": 5},"name": "cpp_max_health","attribute": "generic.max_health","operation": "addition","slot": "feet"},
+		{"amount": {"min": 0,"max": 0.3},"name": "cpp_knockback_resistance","attribute": "generic.knockback_resistance","operation": "addition","slot": "feet"},
+		{"amount": {"min": 0,"max": 0.15},"name": "cpp_movement_speed","attribute": "generic.movement_speed","operation": "multiply_base","slot": "feet"},
 		{"amount": {"min": 0,"max": 2},"name": "cpp_luck","attribute": "generic.luck","operation": "addition","slot": "feet"}
 	]},
 	{"conditions": [{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Item:{id:'minecraft:netherite_boots'}}"}}],"function": "minecraft:set_attributes","modifiers": [
 		{"amount": 3,"name": "cpp_armor","attribute": "generic.armor","operation": "addition","slot": "feet"},
-		{"amount": 3,"name": "cpp_armorToughness","attribute": "generic.armorToughness","operation": "addition","slot": "feet"},
-		{"amount": {"min": 0,"max": 5},"name": "cpp_maxHealth","attribute": "generic.maxHealth","operation": "addition","slot": "feet"},
-		{"amount": {"min": 0.1,"max": 0.4},"name": "cpp_knockbackResistance","attribute": "generic.knockbackResistance","operation": "addition","slot": "feet"},
-		{"amount": {"min": 0,"max": 0.15},"name": "cpp_movementSpeed","attribute": "generic.movementSpeed","operation": "multiply_base","slot": "feet"},
+		{"amount": 3,"name": "cpp_armor_toughness","attribute": "generic.armor_toughness","operation": "addition","slot": "feet"},
+		{"amount": {"min": 0,"max": 5},"name": "cpp_max_health","attribute": "generic.max_health","operation": "addition","slot": "feet"},
+		{"amount": {"min": 0.1,"max": 0.4},"name": "cpp_knockback_resistance","attribute": "generic.knockback_resistance","operation": "addition","slot": "feet"},
+		{"amount": {"min": 0,"max": 0.15},"name": "cpp_movement_speed","attribute": "generic.movement_speed","operation": "multiply_base","slot": "feet"},
 		{"amount": {"min": 0,"max": 2},"name": "cpp_luck","attribute": "generic.luck","operation": "addition","slot": "feet"}
 	]},
 
 	{"conditions": [{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Item:{id:'minecraft:leather_leggings'}}"}}],"function": "minecraft:set_attributes","modifiers": [
 		{"amount": 2,"name": "cpp_armor","attribute": "generic.armor","operation": "addition","slot": "legs"},
-		{"amount": {"min": 0,"max": 5},"name": "cpp_maxHealth","attribute": "generic.maxHealth","operation": "addition","slot": "legs"},
-		{"amount": {"min": 0,"max": 0.3},"name": "cpp_knockbackResistance","attribute": "generic.knockbackResistance","operation": "addition","slot": "legs"},
-		{"amount": {"min": 0,"max": 0.15},"name": "cpp_movementSpeed","attribute": "generic.movementSpeed","operation": "multiply_base","slot": "legs"},
+		{"amount": {"min": 0,"max": 5},"name": "cpp_max_health","attribute": "generic.max_health","operation": "addition","slot": "legs"},
+		{"amount": {"min": 0,"max": 0.3},"name": "cpp_knockback_resistance","attribute": "generic.knockback_resistance","operation": "addition","slot": "legs"},
+		{"amount": {"min": 0,"max": 0.15},"name": "cpp_movement_speed","attribute": "generic.movement_speed","operation": "multiply_base","slot": "legs"},
 		{"amount": {"min": 0,"max": 2},"name": "cpp_luck","attribute": "generic.luck","operation": "addition","slot": "legs"}
 	]},
 	{"conditions": [{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Item:{id:'minecraft:golden_leggings'}}"}}],"function": "minecraft:set_attributes","modifiers": [
 		{"amount": 3,"name": "cpp_armor","attribute": "generic.armor","operation": "addition","slot": "legs"},
-		{"amount": {"min": 0,"max": 5},"name": "cpp_maxHealth","attribute": "generic.maxHealth","operation": "addition","slot": "legs"},
-		{"amount": {"min": 0,"max": 0.3},"name": "cpp_knockbackResistance","attribute": "generic.knockbackResistance","operation": "addition","slot": "legs"},
-		{"amount": {"min": 0,"max": 0.15},"name": "cpp_movementSpeed","attribute": "generic.movementSpeed","operation": "multiply_base","slot": "legs"},
+		{"amount": {"min": 0,"max": 5},"name": "cpp_max_health","attribute": "generic.max_health","operation": "addition","slot": "legs"},
+		{"amount": {"min": 0,"max": 0.3},"name": "cpp_knockback_resistance","attribute": "generic.knockback_resistance","operation": "addition","slot": "legs"},
+		{"amount": {"min": 0,"max": 0.15},"name": "cpp_movement_speed","attribute": "generic.movement_speed","operation": "multiply_base","slot": "legs"},
 		{"amount": {"min": 0,"max": 2},"name": "cpp_luck","attribute": "generic.luck","operation": "addition","slot": "legs"}
 	]},
 	{"conditions": [{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Item:{id:'minecraft:chainmail_leggings'}}"}}],"function": "minecraft:set_attributes","modifiers": [
 		{"amount": 4,"name": "cpp_armor","attribute": "generic.armor","operation": "addition","slot": "legs"},
-		{"amount": {"min": 0,"max": 5},"name": "cpp_maxHealth","attribute": "generic.maxHealth","operation": "addition","slot": "legs"},
-		{"amount": {"min": 0,"max": 0.3},"name": "cpp_knockbackResistance","attribute": "generic.knockbackResistance","operation": "addition","slot": "legs"},
-		{"amount": {"min": 0,"max": 0.15},"name": "cpp_movementSpeed","attribute": "generic.movementSpeed","operation": "multiply_base","slot": "legs"},
+		{"amount": {"min": 0,"max": 5},"name": "cpp_max_health","attribute": "generic.max_health","operation": "addition","slot": "legs"},
+		{"amount": {"min": 0,"max": 0.3},"name": "cpp_knockback_resistance","attribute": "generic.knockback_resistance","operation": "addition","slot": "legs"},
+		{"amount": {"min": 0,"max": 0.15},"name": "cpp_movement_speed","attribute": "generic.movement_speed","operation": "multiply_base","slot": "legs"},
 		{"amount": {"min": 0,"max": 2},"name": "cpp_luck","attribute": "generic.luck","operation": "addition","slot": "legs"}
 	]},
 	{"conditions": [{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Item:{id:'minecraft:iron_leggings'}}"}}],"function": "minecraft:set_attributes","modifiers": [
 		{"amount": 5,"name": "cpp_armor","attribute": "generic.armor","operation": "addition","slot": "legs"},
-		{"amount": {"min": 0,"max": 5},"name": "cpp_maxHealth","attribute": "generic.maxHealth","operation": "addition","slot": "legs"},
-		{"amount": {"min": 0,"max": 0.3},"name": "cpp_knockbackResistance","attribute": "generic.knockbackResistance","operation": "addition","slot": "legs"},
-		{"amount": {"min": 0,"max": 0.15},"name": "cpp_movementSpeed","attribute": "generic.movementSpeed","operation": "multiply_base","slot": "legs"},
+		{"amount": {"min": 0,"max": 5},"name": "cpp_max_health","attribute": "generic.max_health","operation": "addition","slot": "legs"},
+		{"amount": {"min": 0,"max": 0.3},"name": "cpp_knockback_resistance","attribute": "generic.knockback_resistance","operation": "addition","slot": "legs"},
+		{"amount": {"min": 0,"max": 0.15},"name": "cpp_movement_speed","attribute": "generic.movement_speed","operation": "multiply_base","slot": "legs"},
 		{"amount": {"min": 0,"max": 2},"name": "cpp_luck","attribute": "generic.luck","operation": "addition","slot": "legs"}
 	]},
 	{"conditions": [{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Item:{id:'minecraft:diamond_leggings'}}"}}],"function": "minecraft:set_attributes","modifiers": [
 		{"amount": 6,"name": "cpp_armor","attribute": "generic.armor","operation": "addition","slot": "legs"},
-		{"amount": 2,"name": "cpp_armorToughness","attribute": "generic.armorToughness","operation": "addition","slot": "legs"},
-		{"amount": {"min": 0,"max": 5},"name": "cpp_maxHealth","attribute": "generic.maxHealth","operation": "addition","slot": "legs"},
-		{"amount": {"min": 0,"max": 0.3},"name": "cpp_knockbackResistance","attribute": "generic.knockbackResistance","operation": "addition","slot": "legs"},
-		{"amount": {"min": 0,"max": 0.15},"name": "cpp_movementSpeed","attribute": "generic.movementSpeed","operation": "multiply_base","slot": "legs"},
+		{"amount": 2,"name": "cpp_armor_toughness","attribute": "generic.armor_toughness","operation": "addition","slot": "legs"},
+		{"amount": {"min": 0,"max": 5},"name": "cpp_max_health","attribute": "generic.max_health","operation": "addition","slot": "legs"},
+		{"amount": {"min": 0,"max": 0.3},"name": "cpp_knockback_resistance","attribute": "generic.knockback_resistance","operation": "addition","slot": "legs"},
+		{"amount": {"min": 0,"max": 0.15},"name": "cpp_movement_speed","attribute": "generic.movement_speed","operation": "multiply_base","slot": "legs"},
 		{"amount": {"min": 0,"max": 2},"name": "cpp_luck","attribute": "generic.luck","operation": "addition","slot": "legs"}
 	]},
 	{"conditions": [{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Item:{id:'minecraft:netherite_leggings'}}"}}],"function": "minecraft:set_attributes","modifiers": [
 		{"amount": 6,"name": "cpp_armor","attribute": "generic.armor","operation": "addition","slot": "legs"},
-		{"amount": 3,"name": "cpp_armorToughness","attribute": "generic.armorToughness","operation": "addition","slot": "legs"},
-		{"amount": {"min": 0,"max": 5},"name": "cpp_maxHealth","attribute": "generic.maxHealth","operation": "addition","slot": "legs"},
-		{"amount": {"min": 0.1,"max": 0.4},"name": "cpp_knockbackResistance","attribute": "generic.knockbackResistance","operation": "addition","slot": "legs"},
-		{"amount": {"min": 0,"max": 0.15},"name": "cpp_movementSpeed","attribute": "generic.movementSpeed","operation": "multiply_base","slot": "legs"},
+		{"amount": 3,"name": "cpp_armor_toughness","attribute": "generic.armor_toughness","operation": "addition","slot": "legs"},
+		{"amount": {"min": 0,"max": 5},"name": "cpp_max_health","attribute": "generic.max_health","operation": "addition","slot": "legs"},
+		{"amount": {"min": 0.1,"max": 0.4},"name": "cpp_knockback_resistance","attribute": "generic.knockback_resistance","operation": "addition","slot": "legs"},
+		{"amount": {"min": 0,"max": 0.15},"name": "cpp_movement_speed","attribute": "generic.movement_speed","operation": "multiply_base","slot": "legs"},
 		{"amount": {"min": 0,"max": 2},"name": "cpp_luck","attribute": "generic.luck","operation": "addition","slot": "legs"}
 	]},
 
 	{"conditions": [{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Item:{id:'minecraft:leather_chestplate'}}"}}],"function": "minecraft:set_attributes","modifiers": [
 		{"amount": 3,"name": "cpp_armor","attribute": "generic.armor","operation": "addition","slot": "chest"},
-		{"amount": {"min": 0,"max": 5},"name": "cpp_maxHealth","attribute": "generic.maxHealth","operation": "addition","slot": "chest"},
-		{"amount": {"min": 0,"max": 0.3},"name": "cpp_knockbackResistance","attribute": "generic.knockbackResistance","operation": "addition","slot": "chest"},
-		{"amount": {"min": 0,"max": 0.15},"name": "cpp_movementSpeed","attribute": "generic.movementSpeed","operation": "multiply_base","slot": "chest"},
+		{"amount": {"min": 0,"max": 5},"name": "cpp_max_health","attribute": "generic.max_health","operation": "addition","slot": "chest"},
+		{"amount": {"min": 0,"max": 0.3},"name": "cpp_knockback_resistance","attribute": "generic.knockback_resistance","operation": "addition","slot": "chest"},
+		{"amount": {"min": 0,"max": 0.15},"name": "cpp_movement_speed","attribute": "generic.movement_speed","operation": "multiply_base","slot": "chest"},
 		{"amount": {"min": 0,"max": 2},"name": "cpp_luck","attribute": "generic.luck","operation": "addition","slot": "chest"}
 	]},
 	{"conditions": [{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Item:{id:'minecraft:golden_chestplate'}}"}}],"function": "minecraft:set_attributes","modifiers": [
 		{"amount": 5,"name": "cpp_armor","attribute": "generic.armor","operation": "addition","slot": "chest"},
-		{"amount": {"min": 0,"max": 5},"name": "cpp_maxHealth","attribute": "generic.maxHealth","operation": "addition","slot": "chest"},
-		{"amount": {"min": 0,"max": 0.3},"name": "cpp_knockbackResistance","attribute": "generic.knockbackResistance","operation": "addition","slot": "chest"},
-		{"amount": {"min": 0,"max": 0.15},"name": "cpp_movementSpeed","attribute": "generic.movementSpeed","operation": "multiply_base","slot": "chest"},
+		{"amount": {"min": 0,"max": 5},"name": "cpp_max_health","attribute": "generic.max_health","operation": "addition","slot": "chest"},
+		{"amount": {"min": 0,"max": 0.3},"name": "cpp_knockback_resistance","attribute": "generic.knockback_resistance","operation": "addition","slot": "chest"},
+		{"amount": {"min": 0,"max": 0.15},"name": "cpp_movement_speed","attribute": "generic.movement_speed","operation": "multiply_base","slot": "chest"},
 		{"amount": {"min": 0,"max": 2},"name": "cpp_luck","attribute": "generic.luck","operation": "addition","slot": "chest"}
 	]},
 	{"conditions": [{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Item:{id:'minecraft:chainmail_chestplate'}}"}}],"function": "minecraft:set_attributes","modifiers": [
 		{"amount": 5,"name": "cpp_armor","attribute": "generic.armor","operation": "addition","slot": "chest"},
-		{"amount": {"min": 0,"max": 5},"name": "cpp_maxHealth","attribute": "generic.maxHealth","operation": "addition","slot": "chest"},
-		{"amount": {"min": 0,"max": 0.3},"name": "cpp_knockbackResistance","attribute": "generic.knockbackResistance","operation": "addition","slot": "chest"},
-		{"amount": {"min": 0,"max": 0.15},"name": "cpp_movementSpeed","attribute": "generic.movementSpeed","operation": "multiply_base","slot": "chest"},
+		{"amount": {"min": 0,"max": 5},"name": "cpp_max_health","attribute": "generic.max_health","operation": "addition","slot": "chest"},
+		{"amount": {"min": 0,"max": 0.3},"name": "cpp_knockback_resistance","attribute": "generic.knockback_resistance","operation": "addition","slot": "chest"},
+		{"amount": {"min": 0,"max": 0.15},"name": "cpp_movement_speed","attribute": "generic.movement_speed","operation": "multiply_base","slot": "chest"},
 		{"amount": {"min": 0,"max": 2},"name": "cpp_luck","attribute": "generic.luck","operation": "addition","slot": "chest"}
 	]},
 	{"conditions": [{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Item:{id:'minecraft:iron_chestplate'}}"}}],"function": "minecraft:set_attributes","modifiers": [
 		{"amount": 6,"name": "cpp_armor","attribute": "generic.armor","operation": "addition","slot": "chest"},
-		{"amount": {"min": 0,"max": 5},"name": "cpp_maxHealth","attribute": "generic.maxHealth","operation": "addition","slot": "chest"},
-		{"amount": {"min": 0,"max": 0.3},"name": "cpp_knockbackResistance","attribute": "generic.knockbackResistance","operation": "addition","slot": "chest"},
-		{"amount": {"min": 0,"max": 0.15},"name": "cpp_movementSpeed","attribute": "generic.movementSpeed","operation": "multiply_base","slot": "chest"},
+		{"amount": {"min": 0,"max": 5},"name": "cpp_max_health","attribute": "generic.max_health","operation": "addition","slot": "chest"},
+		{"amount": {"min": 0,"max": 0.3},"name": "cpp_knockback_resistance","attribute": "generic.knockback_resistance","operation": "addition","slot": "chest"},
+		{"amount": {"min": 0,"max": 0.15},"name": "cpp_movement_speed","attribute": "generic.movement_speed","operation": "multiply_base","slot": "chest"},
 		{"amount": {"min": 0,"max": 2},"name": "cpp_luck","attribute": "generic.luck","operation": "addition","slot": "chest"}
 	]},
 	{"conditions": [{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Item:{id:'minecraft:diamond_chestplate'}}"}}],"function": "minecraft:set_attributes","modifiers": [
 		{"amount": 8,"name": "cpp_armor","attribute": "generic.armor","operation": "addition","slot": "chest"},
-		{"amount": 2,"name": "cpp_armorToughness","attribute": "generic.armorToughness","operation": "addition","slot": "chest"},
-		{"amount": {"min": 0,"max": 5},"name": "cpp_maxHealth","attribute": "generic.maxHealth","operation": "addition","slot": "chest"},
-		{"amount": {"min": 0,"max": 0.3},"name": "cpp_knockbackResistance","attribute": "generic.knockbackResistance","operation": "addition","slot": "chest"},
-		{"amount": {"min": 0,"max": 0.15},"name": "cpp_movementSpeed","attribute": "generic.movementSpeed","operation": "multiply_base","slot": "chest"},
+		{"amount": 2,"name": "cpp_armor_toughness","attribute": "generic.armor_toughness","operation": "addition","slot": "chest"},
+		{"amount": {"min": 0,"max": 5},"name": "cpp_max_health","attribute": "generic.max_health","operation": "addition","slot": "chest"},
+		{"amount": {"min": 0,"max": 0.3},"name": "cpp_knockback_resistance","attribute": "generic.knockback_resistance","operation": "addition","slot": "chest"},
+		{"amount": {"min": 0,"max": 0.15},"name": "cpp_movement_speed","attribute": "generic.movement_speed","operation": "multiply_base","slot": "chest"},
 		{"amount": {"min": 0,"max": 2},"name": "cpp_luck","attribute": "generic.luck","operation": "addition","slot": "chest"}
 	]},
 	{"conditions": [{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Item:{id:'minecraft:netherite_chestplate'}}"}}],"function": "minecraft:set_attributes","modifiers": [
 		{"amount": 8,"name": "cpp_armor","attribute": "generic.armor","operation": "addition","slot": "chest"},
-		{"amount": 3,"name": "cpp_armorToughness","attribute": "generic.armorToughness","operation": "addition","slot": "chest"},
-		{"amount": {"min": 0,"max": 5},"name": "cpp_maxHealth","attribute": "generic.maxHealth","operation": "addition","slot": "chest"},
-		{"amount": {"min": 0.1,"max": 0.4},"name": "cpp_knockbackResistance","attribute": "generic.knockbackResistance","operation": "addition","slot": "chest"},
-		{"amount": {"min": 0,"max": 0.15},"name": "cpp_movementSpeed","attribute": "generic.movementSpeed","operation": "multiply_base","slot": "chest"},
+		{"amount": 3,"name": "cpp_armor_toughness","attribute": "generic.armor_toughness","operation": "addition","slot": "chest"},
+		{"amount": {"min": 0,"max": 5},"name": "cpp_max_health","attribute": "generic.max_health","operation": "addition","slot": "chest"},
+		{"amount": {"min": 0.1,"max": 0.4},"name": "cpp_knockback_resistance","attribute": "generic.knockback_resistance","operation": "addition","slot": "chest"},
+		{"amount": {"min": 0,"max": 0.15},"name": "cpp_movement_speed","attribute": "generic.movement_speed","operation": "multiply_base","slot": "chest"},
 		{"amount": {"min": 0,"max": 2},"name": "cpp_luck","attribute": "generic.luck","operation": "addition","slot": "chest"}
 	]},
 
 	{"conditions": [{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Item:{id:'minecraft:elytra'}}"}}],"function": "minecraft:set_attributes","modifiers": [
-		{"amount": {"min": 0,"max": 5},"name": "cpp_maxHealth","attribute": "generic.maxHealth","operation": "addition","slot": "chest"},
-		{"amount": {"min": 0,"max": 0.3},"name": "cpp_knockbackResistance","attribute": "generic.knockbackResistance","operation": "addition","slot": "chest"},
-		{"amount": {"min": 0,"max": 0.15},"name": "cpp_movementSpeed","attribute": "generic.movementSpeed","operation": "multiply_base","slot": "chest"},
+		{"amount": {"min": 0,"max": 5},"name": "cpp_max_health","attribute": "generic.max_health","operation": "addition","slot": "chest"},
+		{"amount": {"min": 0,"max": 0.3},"name": "cpp_knockback_resistance","attribute": "generic.knockback_resistance","operation": "addition","slot": "chest"},
+		{"amount": {"min": 0,"max": 0.15},"name": "cpp_movement_speed","attribute": "generic.movement_speed","operation": "multiply_base","slot": "chest"},
 		{"amount": {"min": 0,"max": 2},"name": "cpp_luck","attribute": "generic.luck","operation": "addition","slot": "chest"}
 	]},
 
 	{"conditions": [{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Item:{id:'minecraft:leather_helmet'}}"}}],"function": "minecraft:set_attributes","modifiers": [
 		{"amount": 1,"name": "cpp_armor","attribute": "generic.armor","operation": "addition","slot": "head"},
-		{"amount": {"min": 0,"max": 5},"name": "cpp_maxHealth","attribute": "generic.maxHealth","operation": "addition","slot": "head"},
-		{"amount": {"min": 0,"max": 0.3},"name": "cpp_knockbackResistance","attribute": "generic.knockbackResistance","operation": "addition","slot": "head"},
-		{"amount": {"min": 0,"max": 0.15},"name": "cpp_movementSpeed","attribute": "generic.movementSpeed","operation": "multiply_base","slot": "head"},
+		{"amount": {"min": 0,"max": 5},"name": "cpp_max_health","attribute": "generic.max_health","operation": "addition","slot": "head"},
+		{"amount": {"min": 0,"max": 0.3},"name": "cpp_knockback_resistance","attribute": "generic.knockback_resistance","operation": "addition","slot": "head"},
+		{"amount": {"min": 0,"max": 0.15},"name": "cpp_movement_speed","attribute": "generic.movement_speed","operation": "multiply_base","slot": "head"},
 		{"amount": {"min": 0,"max": 2},"name": "cpp_luck","attribute": "generic.luck","operation": "addition","slot": "head"}
 	]},
 	{"conditions": [{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Item:{id:'minecraft:golden_helmet'}}"}}],"function": "minecraft:set_attributes","modifiers": [
 		{"amount": 2,"name": "cpp_armor","attribute": "generic.armor","operation": "addition","slot": "head"},
-		{"amount": {"min": 0,"max": 5},"name": "cpp_maxHealth","attribute": "generic.maxHealth","operation": "addition","slot": "head"},
-		{"amount": {"min": 0,"max": 0.3},"name": "cpp_knockbackResistance","attribute": "generic.knockbackResistance","operation": "addition","slot": "head"},
-		{"amount": {"min": 0,"max": 0.15},"name": "cpp_movementSpeed","attribute": "generic.movementSpeed","operation": "multiply_base","slot": "head"},
+		{"amount": {"min": 0,"max": 5},"name": "cpp_max_health","attribute": "generic.max_health","operation": "addition","slot": "head"},
+		{"amount": {"min": 0,"max": 0.3},"name": "cpp_knockback_resistance","attribute": "generic.knockback_resistance","operation": "addition","slot": "head"},
+		{"amount": {"min": 0,"max": 0.15},"name": "cpp_movement_speed","attribute": "generic.movement_speed","operation": "multiply_base","slot": "head"},
 		{"amount": {"min": 0,"max": 2},"name": "cpp_luck","attribute": "generic.luck","operation": "addition","slot": "head"}
 	]},
 	{"conditions": [{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Item:{id:'minecraft:chainmail_helmet'}}"}}],"function": "minecraft:set_attributes","modifiers": [
 		{"amount": 2,"name": "cpp_armor","attribute": "generic.armor","operation": "addition","slot": "head"},
-		{"amount": {"min": 0,"max": 5},"name": "cpp_maxHealth","attribute": "generic.maxHealth","operation": "addition","slot": "head"},
-		{"amount": {"min": 0,"max": 0.3},"name": "cpp_knockbackResistance","attribute": "generic.knockbackResistance","operation": "addition","slot": "head"},
-		{"amount": {"min": 0,"max": 0.15},"name": "cpp_movementSpeed","attribute": "generic.movementSpeed","operation": "multiply_base","slot": "head"},
+		{"amount": {"min": 0,"max": 5},"name": "cpp_max_health","attribute": "generic.max_health","operation": "addition","slot": "head"},
+		{"amount": {"min": 0,"max": 0.3},"name": "cpp_knockback_resistance","attribute": "generic.knockback_resistance","operation": "addition","slot": "head"},
+		{"amount": {"min": 0,"max": 0.15},"name": "cpp_movement_speed","attribute": "generic.movement_speed","operation": "multiply_base","slot": "head"},
 		{"amount": {"min": 0,"max": 2},"name": "cpp_luck","attribute": "generic.luck","operation": "addition","slot": "head"}
 	]},
 	{"conditions": [{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Item:{id:'minecraft:iron_helmet'}}"}}],"function": "minecraft:set_attributes","modifiers": [
 		{"amount": 2,"name": "cpp_armor","attribute": "generic.armor","operation": "addition","slot": "head"},
-		{"amount": {"min": 0,"max": 5},"name": "cpp_maxHealth","attribute": "generic.maxHealth","operation": "addition","slot": "head"},
-		{"amount": {"min": 0,"max": 0.3},"name": "cpp_knockbackResistance","attribute": "generic.knockbackResistance","operation": "addition","slot": "head"},
-		{"amount": {"min": 0,"max": 0.15},"name": "cpp_movementSpeed","attribute": "generic.movementSpeed","operation": "multiply_base","slot": "head"},
+		{"amount": {"min": 0,"max": 5},"name": "cpp_max_health","attribute": "generic.max_health","operation": "addition","slot": "head"},
+		{"amount": {"min": 0,"max": 0.3},"name": "cpp_knockback_resistance","attribute": "generic.knockback_resistance","operation": "addition","slot": "head"},
+		{"amount": {"min": 0,"max": 0.15},"name": "cpp_movement_speed","attribute": "generic.movement_speed","operation": "multiply_base","slot": "head"},
 		{"amount": {"min": 0,"max": 2},"name": "cpp_luck","attribute": "generic.luck","operation": "addition","slot": "head"}
 	]},
 	{"conditions": [{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Item:{id:'minecraft:diamond_helmet'}}"}}],"function": "minecraft:set_attributes","modifiers": [
 		{"amount": 3,"name": "cpp_armor","attribute": "generic.armor","operation": "addition","slot": "head"},
-		{"amount": 2,"name": "cpp_armorToughness","attribute": "generic.armorToughness","operation": "addition","slot": "head"},
-		{"amount": {"min": 0,"max": 5},"name": "cpp_maxHealth","attribute": "generic.maxHealth","operation": "addition","slot": "head"},
-		{"amount": {"min": 0,"max": 0.3},"name": "cpp_knockbackResistance","attribute": "generic.knockbackResistance","operation": "addition","slot": "head"},
-		{"amount": {"min": 0,"max": 0.15},"name": "cpp_movementSpeed","attribute": "generic.movementSpeed","operation": "multiply_base","slot": "head"},
+		{"amount": 2,"name": "cpp_armor_toughness","attribute": "generic.armor_toughness","operation": "addition","slot": "head"},
+		{"amount": {"min": 0,"max": 5},"name": "cpp_max_health","attribute": "generic.max_health","operation": "addition","slot": "head"},
+		{"amount": {"min": 0,"max": 0.3},"name": "cpp_knockback_resistance","attribute": "generic.knockback_resistance","operation": "addition","slot": "head"},
+		{"amount": {"min": 0,"max": 0.15},"name": "cpp_movement_speed","attribute": "generic.movement_speed","operation": "multiply_base","slot": "head"},
 		{"amount": {"min": 0,"max": 2},"name": "cpp_luck","attribute": "generic.luck","operation": "addition","slot": "head"}
 	]},
 	{"conditions": [{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Item:{id:'minecraft:netherite_helmet'}}"}}],"function": "minecraft:set_attributes","modifiers": [
 		{"amount": 3,"name": "cpp_armor","attribute": "generic.armor","operation": "addition","slot": "head"},
-		{"amount": 3,"name": "cpp_armorToughness","attribute": "generic.armorToughness","operation": "addition","slot": "head"},
-		{"amount": {"min": 0,"max": 5},"name": "cpp_maxHealth","attribute": "generic.maxHealth","operation": "addition","slot": "head"},
-		{"amount": {"min": 0.1,"max": 0.4},"name": "cpp_knockbackResistance","attribute": "generic.knockbackResistance","operation": "addition","slot": "head"},
-		{"amount": {"min": 0,"max": 0.15},"name": "cpp_movementSpeed","attribute": "generic.movementSpeed","operation": "multiply_base","slot": "head"},
+		{"amount": 3,"name": "cpp_armor_toughness","attribute": "generic.armor_toughness","operation": "addition","slot": "head"},
+		{"amount": {"min": 0,"max": 5},"name": "cpp_max_health","attribute": "generic.max_health","operation": "addition","slot": "head"},
+		{"amount": {"min": 0.1,"max": 0.4},"name": "cpp_knockback_resistance","attribute": "generic.knockback_resistance","operation": "addition","slot": "head"},
+		{"amount": {"min": 0,"max": 0.15},"name": "cpp_movement_speed","attribute": "generic.movement_speed","operation": "multiply_base","slot": "head"},
 		{"amount": {"min": 0,"max": 2},"name": "cpp_luck","attribute": "generic.luck","operation": "addition","slot": "head"}
 	]},
 	
 	{"conditions": [{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Item:{id:'minecraft:turtle_helmet'}}"}}],"function": "minecraft:set_attributes","modifiers": [
 		{"amount": 2,"name": "cpp_armor","attribute": "generic.armor","operation": "addition","slot": "head"},
-		{"amount": {"min": 0,"max": 5},"name": "cpp_maxHealth","attribute": "generic.maxHealth","operation": "addition","slot": "head"},
-		{"amount": {"min": 0,"max": 0.3},"name": "cpp_knockbackResistance","attribute": "generic.knockbackResistance","operation": "addition","slot": "head"},
-		{"amount": {"min": 0,"max": 0.15},"name": "cpp_movementSpeed","attribute": "generic.movementSpeed","operation": "multiply_base","slot": "head"},
+		{"amount": {"min": 0,"max": 5},"name": "cpp_max_health","attribute": "generic.max_health","operation": "addition","slot": "head"},
+		{"amount": {"min": 0,"max": 0.3},"name": "cpp_knockback_resistance","attribute": "generic.knockback_resistance","operation": "addition","slot": "head"},
+		{"amount": {"min": 0,"max": 0.15},"name": "cpp_movement_speed","attribute": "generic.movement_speed","operation": "multiply_base","slot": "head"},
 		{"amount": {"min": 0,"max": 2},"name": "cpp_luck","attribute": "generic.luck","operation": "addition","slot": "head"}
 	]},
 	
@@ -259,9 +259,9 @@
 		{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Item:{id:'minecraft:creeper_head'}}"}},
 		{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Item:{id:'minecraft:dragon_head'}}"}}
 	]}],"function": "minecraft:set_attributes","modifiers": [
-		{"amount": {"min": 0,"max": 5},"name": "cpp_maxHealth","attribute": "generic.maxHealth","operation": "addition","slot": "head"},
-		{"amount": {"min": 0,"max": 0.3},"name": "cpp_knockbackResistance","attribute": "generic.knockbackResistance","operation": "addition","slot": "head"},
-		{"amount": {"min": 0,"max": 0.15},"name": "cpp_movementSpeed","attribute": "generic.movementSpeed","operation": "multiply_base","slot": "head"},
+		{"amount": {"min": 0,"max": 5},"name": "cpp_max_health","attribute": "generic.max_health","operation": "addition","slot": "head"},
+		{"amount": {"min": 0,"max": 0.3},"name": "cpp_knockback_resistance","attribute": "generic.knockback_resistance","operation": "addition","slot": "head"},
+		{"amount": {"min": 0,"max": 0.15},"name": "cpp_movement_speed","attribute": "generic.movement_speed","operation": "multiply_base","slot": "head"},
 		{"amount": {"min": 0,"max": 2},"name": "cpp_luck","attribute": "generic.luck","operation": "addition","slot": "head"}
 	]}
 

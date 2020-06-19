@@ -1,5 +1,6 @@
 execute as @s[predicate=cpp:offhand/blue_force_of_sky] run function cpp:cst/element/blue
-execute as @s[predicate=cpp:offhand/green_force_of_water] at @s anchored eyes run function cpp:cst/element/green
+execute as @s[predicate=cpp:offhand/green_force_of_water] unless score @s cppSneakTime matches 1 at @s anchored eyes run function cpp:cst/element/green
+execute as @s[predicate=cpp:offhand/green_force_of_water,scores={cppSneakTime=1}] at @s anchored eyes run function cpp:cst/element/green_put
 execute as @s[predicate=cpp:offhand/cyan_force_of_mountain] at @s run function cpp:cst/element/cyan
 execute as @s[predicate=cpp:offhand/orange_force_of_dirt] at @s anchored eyes run function cpp:cst/element/orange
 execute as @s[predicate=cpp:offhand/yellow_force_of_earth] at @s run function cpp:cst/element/yellow
@@ -20,8 +21,6 @@ execute as @s[predicate=cpp:offhand/coordinate_recorder1,scores={cppSneakTime=1.
 execute as @s[predicate=cpp:offhand/coordinate_recorder] unless entity @s[scores={cppSneakTime=1..}] at @s run function cpp:tool/coordinate_recorder_off
 execute as @s[predicate=cpp:offhand/chest_transporter] at @s anchored eyes run function cpp:tool/chest_transporter_ray
 execute as @s[predicate=cpp:offhand/santa_gift] at @s anchored eyes run function cpp:tool/santa_gift
-execute as @s[predicate=cpp:offhand/infinite_bucket] unless score @s cppSneakTime matches 1 at @s anchored eyes run function cpp:tool/infinite_bucket
-execute as @s[predicate=cpp:offhand/infinite_bucket,scores={cppSneakTime=1}] at @s anchored eyes run function cpp:tool/infinite_bucket_put
 execute as @s[predicate=cpp:offhand/santa_gift] at @s as @e[distance=..16] run data merge entity @s {Silent:1b}
 
 execute as @s[predicate=cpp:offhand/golem] at @s anchored eyes run function cpp:golem/put/type

@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"translate\":\"item.cpp.shard_of_the_darkness\"}'},id:'cpp:shard_of_the_darkness',CustomModelData:12970008}"
+							"tag": "{display:{Name:'{\"italic\":false,\"translate\":\"item.cpp.shard_of_the_darkness\"}'},id:'cpp:shard_of_the_darkness',CustomModelData:12970008}"
 						}
 					]
 				}

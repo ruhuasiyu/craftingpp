@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"translate\":\"item.cpp.cyan_force_of_mountain\"}'},id:'cpp:cyan_force_of_mountain',CustomModelData:12970003}"
+							"tag": "{display:{Name:'{\"italic\":false,\"translate\":\"item.cpp.cyan_force_of_mountain\"}'},id:'cpp:cyan_force_of_mountain',CustomModelData:12970003}"
 						}
 					]
 				}

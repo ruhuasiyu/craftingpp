@@ -5,11 +5,11 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:acacia_leaves",
+					"name": "minecraft:petrified_oak_slab",
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"translate\":\"item.cpp.wool_leaves\"}'},id:'cpp:wool_leaves',CustomModelData:12970103}"
+							"tag": "{display:{Name:'{\"italic\":false,\"translate\":\"item.cpp.wool_leaves\"}'},id:'cpp:wool_leaves',CustomModelData:12970303,cpp_tag:['leaves']}"
 						}
 					]
 				}

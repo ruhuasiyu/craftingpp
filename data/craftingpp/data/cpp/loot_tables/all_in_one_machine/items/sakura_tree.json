@@ -1,0 +1,40 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type":"minecraft:loot_table",
+					"name": "cpp:cherry",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 2,
+								"max": 4
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:sakura_sapling",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count":{
+								"min": 0,
+								"max": 3
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

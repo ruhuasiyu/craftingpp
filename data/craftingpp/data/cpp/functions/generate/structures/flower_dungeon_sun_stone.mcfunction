@@ -1,0 +1,2 @@
+setblock ~ ~ ~ gold_block
+summon armor_stand ~ ~-0.5 ~ {Invulnerable:1b,Invisible:1b,Small:1b,Marker:1b,NoGravity:1b,DisabledSlots:7967,ArmorItems:[{},{},{},{id: "minecraft:petrified_oak_slab", Count: 1b, tag: {cpp_tag: ["need_fire", "gold_block"], id: "cpp:sun_stone", CustomModelData: 12970202, display: {Name: '{"italic":false,"translate":"item.cpp.sun_stone"}'}}}],Tags:["cpp_gold_block","cpp_need_fire","cpp_block","cpp_sun_stone"],Fire:32767s}

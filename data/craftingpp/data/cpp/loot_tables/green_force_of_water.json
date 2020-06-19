@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"translate\":\"item.cpp.green_force_of_water\"}'},id:'cpp:green_force_of_water',CustomModelData:12970002}"
+							"tag": "{display:{Name:'{\"italic\":false,\"translate\":\"item.cpp.green_force_of_water\"}',Lore:['[{\"color\":\"green\",\"italic\":false,\"translate\":\"block.minecraft.water\"},{\"text\":\" ∞\"}]','[{\"color\":\"red\",\"italic\":false,\"translate\":\"block.minecraft.lava\"},{\"text\":\" 0\"}]']},id:'cpp:green_force_of_water',CustomModelData:12970002,cppLiquid:{type:0,lava:0}}"
 						}
 					]
 				}

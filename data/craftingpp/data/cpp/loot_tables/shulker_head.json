@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"translate\":\"item.cpp.shulker_head\"}'},id:'cpp:shulker_head',CustomModelData:12970248}"
+							"tag": "{display:{Name:'{\"italic\":false,\"translate\":\"item.cpp.shulker_head\"}'},id:'cpp:shulker_head',CustomModelData:12970248}"
 						}
 					]
 				}

@@ -22,7 +22,7 @@
 							"functions": [
 								{
 									"function": "minecraft:set_nbt",
-									"tag": "{display:{Lore:['{\"translate\":\"lore.cpp.stored_effects.speed\"}']},cppStoredEffects:[{id:'speed'}]}"
+									"tag": "{display:{Lore:['{\"italic\":false,\"translate\":\"lore.cpp.stored_effects.speed\"}']},cppStoredEffects:[{id:'speed'}]}"
 								}
 							]
 						},
@@ -42,7 +42,7 @@
 							"functions": [
 								{
 									"function": "minecraft:set_nbt",
-									"tag": "{display:{Lore:['{\"translate\":\"lore.cpp.stored_effects.haste\"}']},cppStoredEffects:[{id:'haste'}]}"
+									"tag": "{display:{Lore:['{\"italic\":false,\"translate\":\"lore.cpp.stored_effects.haste\"}']},cppStoredEffects:[{id:'haste'}]}"
 								}
 							]
 						},
@@ -62,7 +62,7 @@
 							"functions": [
 								{
 									"function": "minecraft:set_nbt",
-									"tag": "{display:{Lore:['{\"translate\":\"lore.cpp.stored_effects.strength\"}']},cppStoredEffects:[{id:'strength'}]}"
+									"tag": "{display:{Lore:['{\"italic\":false,\"translate\":\"lore.cpp.stored_effects.strength\"}']},cppStoredEffects:[{id:'strength'}]}"
 								}
 							]
 						},
@@ -82,7 +82,7 @@
 							"functions": [
 								{
 									"function": "minecraft:set_nbt",
-									"tag": "{display:{Lore:['{\"translate\":\"lore.cpp.stored_effects.jump_boost\"}']},cppStoredEffects:[{id:'jump_boost'}]}"
+									"tag": "{display:{Lore:['{\"italic\":false,\"translate\":\"lore.cpp.stored_effects.jump_boost\"}']},cppStoredEffects:[{id:'jump_boost'}]}"
 								}
 							]
 						},
@@ -102,7 +102,7 @@
 							"functions": [
 								{
 									"function": "minecraft:set_nbt",
-									"tag": "{display:{Lore:['{\"translate\":\"lore.cpp.stored_effects.regeneration\"}']},cppStoredEffects:[{id:'regeneration'}]}"
+									"tag": "{display:{Lore:['{\"italic\":false,\"translate\":\"lore.cpp.stored_effects.regeneration\"}']},cppStoredEffects:[{id:'regeneration'}]}"
 								}
 							]
 						},
@@ -122,7 +122,7 @@
 							"functions": [
 								{
 									"function": "minecraft:set_nbt",
-									"tag": "{display:{Lore:['{\"translate\":\"lore.cpp.stored_effects.resistance\"}']},cppStoredEffects:[{id:'resistance'}]}"
+									"tag": "{display:{Lore:['{\"italic\":false,\"translate\":\"lore.cpp.stored_effects.resistance\"}']},cppStoredEffects:[{id:'resistance'}]}"
 								}
 							]
 						},
@@ -142,7 +142,7 @@
 							"functions": [
 								{
 									"function": "minecraft:set_nbt",
-									"tag": "{display:{Lore:['{\"translate\":\"lore.cpp.stored_effects.fire_resistance\"}']},cppStoredEffects:[{id:'fire_resistance'}]}"
+									"tag": "{display:{Lore:['{\"italic\":false,\"translate\":\"lore.cpp.stored_effects.fire_resistance\"}']},cppStoredEffects:[{id:'fire_resistance'}]}"
 								}
 							]
 						},
@@ -162,7 +162,7 @@
 							"functions": [
 								{
 									"function": "minecraft:set_nbt",
-									"tag": "{display:{Lore:['{\"translate\":\"lore.cpp.stored_effects.water_breathing\"}']},cppStoredEffects:[{id:'water_breathing'}]}"
+									"tag": "{display:{Lore:['{\"italic\":false,\"translate\":\"lore.cpp.stored_effects.water_breathing\"}']},cppStoredEffects:[{id:'water_breathing'}]}"
 								}
 							]
 						},
@@ -182,7 +182,7 @@
 							"functions": [
 								{
 									"function": "minecraft:set_nbt",
-									"tag": "{display:{Lore:['{\"translate\":\"lore.cpp.stored_effects.invisibility\"}']},cppStoredEffects:[{id:'invisibility'}]}"
+									"tag": "{display:{Lore:['{\"italic\":false,\"translate\":\"lore.cpp.stored_effects.invisibility\"}']},cppStoredEffects:[{id:'invisibility'}]}"
 								}
 							]
 						},
@@ -202,7 +202,7 @@
 							"functions": [
 								{
 									"function": "minecraft:set_nbt",
-									"tag": "{display:{Lore:['{\"translate\":\"lore.cpp.stored_effects.night_vision\"}']},cppStoredEffects:[{id:'night_vision'}]}"
+									"tag": "{display:{Lore:['{\"italic\":false,\"translate\":\"lore.cpp.stored_effects.night_vision\"}']},cppStoredEffects:[{id:'night_vision'}]}"
 								}
 							]
 						},
@@ -222,7 +222,7 @@
 							"functions": [
 								{
 									"function": "minecraft:set_nbt",
-									"tag": "{display:{Lore:['{\"translate\":\"lore.cpp.stored_effects.saturation\"}']},cppStoredEffects:[{id:'saturation'}]}"
+									"tag": "{display:{Lore:['{\"italic\":false,\"translate\":\"lore.cpp.stored_effects.saturation\"}']},cppStoredEffects:[{id:'saturation'}]}"
 								}
 							]
 						},
@@ -242,7 +242,7 @@
 							"functions": [
 								{
 									"function": "minecraft:set_nbt",
-									"tag": "{display:{Lore:['{\"translate\":\"lore.cpp.stored_effects.slow_falling\"}']},cppStoredEffects:[{id:'slow_falling'}]}"
+									"tag": "{display:{Lore:['{\"italic\":false,\"translate\":\"lore.cpp.stored_effects.slow_falling\"}']},cppStoredEffects:[{id:'slow_falling'}]}"
 								}
 							]
 						},
@@ -262,7 +262,7 @@
 							"functions": [
 								{
 									"function": "minecraft:set_nbt",
-									"tag": "{display:{Lore:['{\"translate\":\"lore.cpp.stored_effects.conduit_power\"}']},cppStoredEffects:[{id:'conduit_power'}]}"
+									"tag": "{display:{Lore:['{\"italic\":false,\"translate\":\"lore.cpp.stored_effects.conduit_power\"}']},cppStoredEffects:[{id:'conduit_power'}]}"
 								}
 							]
 						},
@@ -282,7 +282,7 @@
 							"functions": [
 								{
 									"function": "minecraft:set_nbt",
-									"tag": "{display:{Lore:['{\"translate\":\"lore.cpp.stored_effects.magnet\"}']},cppStoredEffects:[{id:'chain'}]}"
+									"tag": "{display:{Lore:['{\"italic\":false,\"translate\":\"lore.cpp.stored_effects.chain\"}']},cppStoredEffects:[{id:'chain'}]}"
 								}
 							]
 						}

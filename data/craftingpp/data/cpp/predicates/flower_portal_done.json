@@ -1,0 +1,110 @@
+[
+	{
+		"condition": "minecraft:location_check",
+		"predicate": {
+			"block": {
+				"block": "minecraft:end_gateway"
+			}
+		}
+	},
+	{
+		"condition": "minecraft:location_check",
+		"offsetX": 2,
+		"offsetZ": 2,
+		"predicate": {
+			"block": {
+				"tag": "minecraft:tall_flowers",
+				"state": {
+					"half": "lower"
+				}
+			}
+		}
+	},
+	{
+		"condition": "minecraft:location_check",
+		"offsetX": 2,
+		"offsetZ": -2,
+		"predicate": {
+			"block": {
+				"tag": "minecraft:tall_flowers",
+				"state": {
+					"half": "lower"
+				}
+			}
+		}
+	},
+	{
+		"condition": "minecraft:location_check",
+		"offsetX": -2,
+		"offsetZ": 2,
+		"predicate": {
+			"block": {
+				"tag": "minecraft:tall_flowers",
+				"state": {
+					"half": "lower"
+				}
+			}
+		}
+	},
+	{
+		"condition": "minecraft:location_check",
+		"offsetX": -2,
+		"offsetZ": -2,
+		"predicate": {
+			"block": {
+				"tag": "minecraft:tall_flowers",
+				"state": {
+					"half": "lower"
+				}
+			}
+		}
+	},
+	{
+		"condition": "minecraft:location_check",
+		"offsetX": 3,
+		"predicate": {
+			"block": {
+				"tag": "minecraft:tall_flowers",
+				"state": {
+					"half": "lower"
+				}
+			}
+		}
+	},
+	{
+		"condition": "minecraft:location_check",
+		"offsetX": -3,
+		"predicate": {
+			"block": {
+				"tag": "minecraft:tall_flowers",
+				"state": {
+					"half": "lower"
+				}
+			}
+		}
+	},
+	{
+		"condition": "minecraft:location_check",
+		"offsetZ": 3,
+		"predicate": {
+			"block": {
+				"tag": "minecraft:tall_flowers",
+				"state": {
+					"half": "lower"
+				}
+			}
+		}
+	},
+	{
+		"condition": "minecraft:location_check",
+		"offsetZ": -3,
+		"predicate": {
+			"block": {
+				"tag": "minecraft:tall_flowers",
+				"state": {
+					"half": "lower"
+				}
+			}
+		}
+	}
+]

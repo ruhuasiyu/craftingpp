@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"translate\":\"item.cpp.cat_head.british_shorthair\"}'},id:'cpp:cat_head.british_shorthair',CustomModelData:12970274,dict:['cat_head']}"
+							"tag": "{display:{Name:'{\"italic\":false,\"translate\":\"item.cpp.cat_head.british_shorthair\"}'},id:'cpp:cat_head.british_shorthair',CustomModelData:12970274,dict:['cat_head']}"
 						}
 					]
 				}

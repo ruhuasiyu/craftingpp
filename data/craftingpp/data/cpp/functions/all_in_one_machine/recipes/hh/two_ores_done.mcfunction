@@ -1,3 +1,4 @@
+advancement grant @a[distance=..6] only cpp:arguments
 execute if block ~ ~ ~ barrel{Items:[{id:"minecraft:iron_ore"},{id:"minecraft:gold_ore"}]} run function cpp:all_in_one_machine/recipes/hh/iron_ore_gold_ore_done
 execute if block ~ ~ ~ barrel{Items:[{id:"minecraft:iron_ore"},{id:"minecraft:nether_gold_ore"}]} run function cpp:all_in_one_machine/recipes/hh/iron_ore_gold_ore_done
 execute if block ~ ~ ~ barrel{Items:[{id:"minecraft:iron_ore"},{id:"minecraft:coal_ore"}]} run function cpp:all_in_one_machine/recipes/hh/iron_ore_coal_ore_done

@@ -1,0 +1,7 @@
+{
+	"condition": "minecraft:entity_properties",
+	"entity": "this",
+	"predicate": {
+		"nbt": "{Item:{tag:{cpp_leaves_fast_decay_marker:1b}}}"
+	}
+}

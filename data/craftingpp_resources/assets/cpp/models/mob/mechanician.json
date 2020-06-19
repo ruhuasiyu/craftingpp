@@ -774,7 +774,7 @@
 	"display": {
 		"head": {
 			"rotation":  [ 0, 0, 0 ],
-			"translation":  [ 0, -4.8, 0 ],
+			"translation":  [ 0, 0, 0 ],
 			"scale":  [ 1, 1, 1 ]
 		}
 	}

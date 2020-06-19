@@ -1,0 +1,29 @@
+{
+	"criteria": {
+		"blackstone_slab": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:blackstone_slab"
+					}
+				]
+			}
+		},
+		"has_the_recipe": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "cpp:slab_to_block/blackstone_slab"
+			}
+		}
+	},
+	"rewards":{
+		"recipes": ["cpp:slab_to_block/blackstone_slab"]
+	},
+	"requirements": [
+		[
+			"blackstone_slab",
+			"has_the_recipe"
+		]
+	]
+}

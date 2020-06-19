@@ -18,7 +18,7 @@
 			"conditions":{
 				"items":[
 					{
-						"nbt":"{id:\"cpp:elder_s_words\"}"
+						"nbt":"{id:'cpp:elder_s_words'}"
 					}
 				]
 			}

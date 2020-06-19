@@ -119,7 +119,7 @@
 			}
 		},
 		{
-			"_comment":"黑曜石插件",
+			"_comment":"黑石插件",
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
@@ -646,6 +646,15 @@
 			"predicate": {
 				"block": {
 					"nbt": "{Items:[{Slot:1b,id:'minecraft:bread'},{Slot:2b,id:'minecraft:bread'},{Slot:3b,id:'minecraft:bread'},{Slot:10b,tag:{id:'cpp:bacon'}},{Slot:11b,tag:{id:'cpp:boiled_egg'}},{Slot:12b,tag:{id:'cpp:bacon'}},{Slot:19b,id:'minecraft:bread'},{Slot:20b,id:'minecraft:bread'},{Slot:21b,id:'minecraft:bread'}]}"
+				}
+			}
+		},
+		{
+			"_comment":"破损刷怪笼",
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{Slot:1b,tag:{id:'cpp:shard_of_the_darkness'}},{Slot:2b,tag:{id:'cpp:shard_of_the_darkness'}},{Slot:3b,tag:{id:'cpp:shard_of_the_darkness'}},{Slot:10b,tag:{id:'cpp:shard_of_the_darkness'}},{Slot:11b,tag:{id:'cpp:sun_stone'}},{Slot:12b,tag:{id:'cpp:shard_of_the_darkness'}},{Slot:19b,tag:{id:'cpp:shard_of_the_darkness'}},{Slot:20b,tag:{id:'cpp:shard_of_the_darkness'}},{Slot:21b,tag:{id:'cpp:shard_of_the_darkness'}}]}"
 				}
 			}
 		}

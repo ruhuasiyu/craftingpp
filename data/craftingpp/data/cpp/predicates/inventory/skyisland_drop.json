@@ -1,0 +1,7 @@
+{
+	"condition": "minecraft:entity_properties",
+	"entity": "this",
+	"predicate": {
+		"nbt": "{Inventory:[{tag:{cpp_skyisland_drop:1b}}]}"
+	}
+}

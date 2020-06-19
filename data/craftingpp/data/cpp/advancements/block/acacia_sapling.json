@@ -1,6 +1,6 @@
 {
 	"criteria": {
-		"machine": {
+		"acacia_sapling": {
 			"trigger": "minecraft:placed_block",
 			"conditions": {
 				"block": "minecraft:acacia_sapling"

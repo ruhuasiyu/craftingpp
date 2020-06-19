@@ -1,6 +1,6 @@
-loot spawn ~ -1 ~ loot cpp:misc/random
-execute positioned ~ -1 ~ store result score #rand cppValue run data get entity @e[type=item,nbt={Item:{tag:{randomMarker:1b}}},limit=1,distance=..1] Item.tag.AttributeModifiers[0].Amount 1048575
-execute positioned ~ -1 ~ run kill @e[type=item,nbt={Item:{tag:{randomMarker:1b}}},limit=1,distance=..1]
+summon area_effect_cloud ~ 0 ~ {Tags:["cpp_random"]}
+execute store result score #rand cppValue run data get entity @e[tag=cpp_random,limit=1,type=area_effect_cloud] UUID[0]
+kill @e[tag=cpp_random,type=area_effect_cloud]
 scoreboard players operation #random_interval cppValue = #random_max cppValue
 scoreboard players operation #random_interval cppValue -= #random_min cppValue
 scoreboard players add #random_interval cppValue 1

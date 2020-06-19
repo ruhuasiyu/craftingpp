@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"translate\":\"item.cpp.zombie_horse_head\"}'},id:'cpp:zombie_horse_head',CustomModelData:12970253}"
+							"tag": "{display:{Name:'{\"italic\":false,\"translate\":\"item.cpp.zombie_horse_head\"}'},id:'cpp:zombie_horse_head',CustomModelData:12970253}"
 						}
 					]
 				}

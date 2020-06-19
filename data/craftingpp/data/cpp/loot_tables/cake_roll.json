@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"translate\":\"item.cpp.cake_roll\"}'},id:'cpp:cake_roll',CustomModelData:12970010}"
+							"tag": "{display:{Name:'{\"italic\":false,\"translate\":\"item.cpp.cake_roll\"}'},id:'cpp:cake_roll',CustomModelData:12970010}"
 						}
 					]
 				}

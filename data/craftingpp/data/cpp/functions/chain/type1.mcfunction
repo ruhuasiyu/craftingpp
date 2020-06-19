@@ -29,3 +29,4 @@ setblock ~ 255 ~ shulker_box
 data modify block ~ 255 ~ Items[{Slot:0b}] merge from entity @s SelectedItem
 execute store result block ~ 255 ~ Items[0].tag.Damage int 1 run scoreboard players get #damage cppValue
 loot replace entity @s weapon.mainhand 1 mine ~ 255 ~ diamond_pickaxe{isShulkerMarker:1b}
+setblock ~ 255 ~ air

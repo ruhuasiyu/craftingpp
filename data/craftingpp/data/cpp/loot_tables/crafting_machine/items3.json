@@ -58,13 +58,43 @@
 									"condition": "minecraft:location_check",
 									"predicate": {
 										"block": {
-											"nbt": "{Items:[{id:'minecraft:wheat'},{id:'minecraft:salmon'},{id:'minecraft:dried_kelp'}]}"
+											"nbt": "{Items:[{tag:{id:'cpp:rice'}},{id:'minecraft:salmon'},{id:'minecraft:dried_kelp'}]}"
 										}
 									}
 								}
 							],
 							"type": "minecraft:loot_table",
 							"name": "cpp:sushi"
+						},
+						{
+							"_comment":"樱饼",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{tag:{id:'cpp:sakura_leaves'}},{id:'minecraft:sugar'},{tag:{id:'cpp:rice'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:sakura_mochi"
+						},
+						{
+							"_comment":"青团",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{tag:{id:'cpp:rice'}},{id:'minecraft:green_dye'},{id:'minecraft:sugar'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:qingtuan"
 						},
 						{
 							"_comment":"剪枝器",
@@ -110,36 +140,6 @@
 							],
 							"type": "minecraft:loot_table",
 							"name": "cpp:clay_bucket"
-						},
-						{
-							"_comment":"无尽桶1",
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:1b,tag:{id:'cpp:enchanted_iron'}},{Slot:3b,tag:{id:'cpp:enchanted_iron'}},{Slot:11b,tag:{id:'cpp:enchanted_iron'}}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:loot_table",
-							"name": "cpp:infinite_bucket"
-						},
-						{
-							"_comment":"无尽桶2",
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:10b,tag:{id:'cpp:enchanted_iron'}},{Slot:12b,tag:{id:'cpp:enchanted_iron'}},{Slot:20b,tag:{id:'cpp:enchanted_iron'}}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:loot_table",
-							"name": "cpp:infinite_bucket"
 						},
 						{
 							"_comment":"箱漏",

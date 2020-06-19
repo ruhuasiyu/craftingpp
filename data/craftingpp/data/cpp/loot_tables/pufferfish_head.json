@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"translate\":\"item.cpp.pufferfish_head\"}'},id:'cpp:pufferfish_head',CustomModelData:12970242}"
+							"tag": "{display:{Name:'{\"italic\":false,\"translate\":\"item.cpp.pufferfish_head\"}'},id:'cpp:pufferfish_head',CustomModelData:12970242}"
 						}
 					]
 				}

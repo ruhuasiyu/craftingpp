@@ -1,0 +1,29 @@
+{
+	"criteria": {
+		"chain": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:chain"
+					}
+				]
+			}
+		},
+		"has_the_recipe": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "cpp:chainmail/boots"
+			}
+		}
+	},
+	"rewards":{
+		"recipes": ["cpp:chainmail/boots"]
+	},
+	"requirements": [
+		[
+			"chain",
+			"has_the_recipe"
+		]
+	]
+}

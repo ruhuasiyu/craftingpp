@@ -1,0 +1,7 @@
+{
+    "parent": "cpp:sign/standing_sign",
+    "textures": {
+        "particle": "cpp:sign/pink",
+        "texture": "cpp:sign/pink"
+    }
+}

@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"translate\":\"item.cpp.black_force_of_moon\"}'},id:'cpp:black_force_of_moon',CustomModelData:12970009}"
+							"tag": "{display:{Name:'{\"italic\":false,\"translate\":\"item.cpp.black_force_of_moon\"}'},id:'cpp:black_force_of_moon',CustomModelData:12970009}"
 						}
 					]
 				}

@@ -5,11 +5,11 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:acacia_sapling",
+					"name": "minecraft:petrified_oak_slab",
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"translate\":\"item.cpp.hyacinth\"}'},id:'cpp:hyacinth',CustomModelData:12970067}"
+							"tag": "{display:{Name:'{\"italic\":false,\"translate\":\"item.cpp.hyacinth\"}'},id:'cpp:hyacinth',CustomModelData:12971067,cpp_tag:['plants','crops','+4000']}"
 						}
 					]
 				}

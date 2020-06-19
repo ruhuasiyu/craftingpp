@@ -1,0 +1,6 @@
+{
+    "parent": "cpp:image/spring_couplets",
+    "textures": {
+        "layer0": "cpp:image/spring_couplets18"
+    }
+}

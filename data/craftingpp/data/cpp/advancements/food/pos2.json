@@ -52,7 +52,7 @@
 			"trigger": "minecraft:consume_item",
 			"conditions": {
 				"item": {
-					"nbt": "{id:\"cpp:yeast_powder\"}"
+					"nbt": "{id:'cpp:yeast_powder'}"
 				}
 			}
 		},
@@ -60,7 +60,7 @@
 			"trigger": "minecraft:consume_item",
 			"conditions": {
 				"item": {
-					"nbt": "{id:\"cpp:cake_roll\"}"
+					"nbt": "{id:'cpp:cake_roll'}"
 				}
 			}
 		}

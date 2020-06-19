@@ -4,7 +4,7 @@
 			"trigger": "minecraft:consume_item",
 			"conditions": {
 				"item": {
-					"nbt": "{id:\"cpp:christmas_roast_chicken\"}"
+					"nbt": "{id:'cpp:christmas_roast_chicken'}"
 				}
 			}
 		}

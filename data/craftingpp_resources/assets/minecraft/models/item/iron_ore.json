@@ -1,0 +1,6 @@
+{
+	"parent": "minecraft:block/iron_ore",
+	"overrides": [
+		{ "predicate": { "custom_model_data": 12970000 }, "model": "cpp:empty"}
+	]
+}

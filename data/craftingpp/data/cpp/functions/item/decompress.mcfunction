@@ -1,7 +1,7 @@
 data modify storage cpp:compressor Item set from entity @s Item
 data modify storage cpp:compressor Item.Count set value 64b
-execute store result score #t cppValue run data get storage cpp:compressor Item.tag.cppCompressedLevel
-execute store result storage cpp:compressor Item.tag.cppCompressedLevel short 1 run scoreboard players remove #t cppValue 1
+execute store result score #t cppValue run data get storage cpp:compressor Item.tag.cpp_compressed_level
+execute store result storage cpp:compressor Item.tag.cpp_compressed_level short 1 run scoreboard players remove #t cppValue 1
 execute if score #t cppValue matches 0 run function cpp:item/decompress0
 
 setblock ~ 255 ~ oak_sign

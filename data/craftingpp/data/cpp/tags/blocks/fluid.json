@@ -7,6 +7,7 @@
 		"minecraft:bubble_column",
 		"minecraft:water",
 		"minecraft:lava",
-		"minecraft:fire"
+		"minecraft:fire",
+		"minecraft:soul_fire"
 	]
 }

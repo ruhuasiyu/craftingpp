@@ -10,6 +10,6 @@
 		{ "predicate": { "custom_model_data": 12970004 }, "model": "cpp:material/soul_of_dirt"},
 		{ "predicate": { "custom_model_data": 12970005 }, "model": "cpp:material/certification_of_earth"},
 		{ "predicate": { "custom_model_data": 12970006 }, "model": "cpp:material/limb_of_ridge"},
-		{ "predicate": { "custom_model_data": 12970007 }, "model": "cpp:material/spirit_of_life"}		
+		{ "predicate": { "custom_model_data": 12970007 }, "model": "cpp:material/spirit_of_life"}
 	]
 }

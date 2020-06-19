@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag":"{display:{Lore:['{\"translate\":\"item.cpp.bilibili_logo\"}']},id:'cpp:shield_bilibili',CustomModelData:12970006}"
+							"tag":"{display:{Lore:['{\"italic\":false,\"translate\":\"item.cpp.bilibili_logo\"}']},id:'cpp:shield_bilibili',CustomModelData:12970006}"
 						}
 					]
 				}

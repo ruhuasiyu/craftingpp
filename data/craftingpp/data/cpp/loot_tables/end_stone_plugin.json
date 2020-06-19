@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"translate\":\"item.cpp.end_stone_plugin\"}'},id:'cpp:end_stone_plugin',CustomModelData:12970110}"
+							"tag": "{display:{Name:'{\"italic\":false,\"translate\":\"item.cpp.end_stone_plugin\"}'},id:'cpp:end_stone_plugin',CustomModelData:12970110}"
 						}
 					]
 				}

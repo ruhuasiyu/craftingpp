@@ -78,7 +78,12 @@
 			"conditions": [
 				{
 					"condition": "minecraft:reference",
-					"name": "cpp:rare_drop"
+					"name": "cpp:killed_by_player"
+				},
+				{
+					"condition": "minecraft:random_chance_with_looting",
+					"chance": 0.0053125,
+					"looting_multiplier": 0.000625
 				}
 			],
 			"rolls": 1,
@@ -86,6 +91,23 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:trident"
+				}
+			],
+			"functions": [
+				{
+					"function": "minecraft:enchant_with_levels",
+					"treasure": true,
+					"levels": {
+						"min": 10,
+						"max": 30
+					}
+				},
+				{
+					"function": "minecraft:set_damage",
+					"damage": {
+						"min": 0.01,
+						"max": 0.10
+					}
 				}
 			]
 		}

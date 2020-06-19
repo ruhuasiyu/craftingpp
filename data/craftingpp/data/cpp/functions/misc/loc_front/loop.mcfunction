@@ -1,4 +1,4 @@
-tag @e[type=armor_stand,distance=..0.01,tag=cpp_loc_block_as,tag=cpp_temp] remove cpp_temp
+tag @e[type=area_effect_cloud,distance=..0.01,tag=cpp_loc_block_as,tag=cpp_temp] remove cpp_temp
 # 计算三交点参数
 scoreboard players operation #t1 cppValue = #x cppValue
 scoreboard players operation #t1 cppValue *= #-1 cppValue
@@ -41,15 +41,15 @@ scoreboard players operation #x cppValue += #s1 cppValue
 scoreboard players operation #y cppValue += #s2 cppValue
 scoreboard players operation #z cppValue += #s3 cppValue
 # 存储交点
-summon armor_stand ~ ~ ~ {Tags:["cpp_loc_block_as","cpp_temp"],Invulnerable:1b,Invisible:1b,Small:1b,Marker:1b,NoGravity:1b}
-execute if score #sf cppValue matches 0.. store result entity @e[type=armor_stand,distance=..9,tag=cpp_loc_block_as,tag=cpp_temp,limit=1] Pos[0] double 0.01 run scoreboard players get #x cppValue
-execute if score #sg cppValue matches 0.. store result entity @e[type=armor_stand,distance=..9,tag=cpp_loc_block_as,tag=cpp_temp,limit=1] Pos[1] double 0.01 run scoreboard players get #y cppValue
-execute if score #sh cppValue matches 0.. store result entity @e[type=armor_stand,distance=..9,tag=cpp_loc_block_as,tag=cpp_temp,limit=1] Pos[2] double 0.01 run scoreboard players get #z cppValue
+summon area_effect_cloud ~ ~ ~ {Tags:["cpp_loc_block_as","cpp_temp"]}
+execute if score #sf cppValue matches 0.. store result entity @e[type=area_effect_cloud,distance=..9,tag=cpp_loc_block_as,tag=cpp_temp,limit=1] Pos[0] double 0.01 run scoreboard players get #x cppValue
+execute if score #sg cppValue matches 0.. store result entity @e[type=area_effect_cloud,distance=..9,tag=cpp_loc_block_as,tag=cpp_temp,limit=1] Pos[1] double 0.01 run scoreboard players get #y cppValue
+execute if score #sh cppValue matches 0.. store result entity @e[type=area_effect_cloud,distance=..9,tag=cpp_loc_block_as,tag=cpp_temp,limit=1] Pos[2] double 0.01 run scoreboard players get #z cppValue
 # 根据朝向符号调整坐标
-execute if score #sf cppValue matches ..-1 store result entity @e[type=armor_stand,distance=..9,tag=cpp_loc_block_as,tag=cpp_temp,limit=1] Pos[0] double -0.01 run scoreboard players get #x cppValue
-execute if score #sg cppValue matches ..-1 store result entity @e[type=armor_stand,distance=..9,tag=cpp_loc_block_as,tag=cpp_temp,limit=1] Pos[1] double -0.01 run scoreboard players get #y cppValue
-execute if score #sh cppValue matches ..-1 store result entity @e[type=armor_stand,distance=..9,tag=cpp_loc_block_as,tag=cpp_temp,limit=1] Pos[2] double -0.01 run scoreboard players get #z cppValue
+execute if score #sf cppValue matches ..-1 store result entity @e[type=area_effect_cloud,distance=..9,tag=cpp_loc_block_as,tag=cpp_temp,limit=1] Pos[0] double -0.01 run scoreboard players get #x cppValue
+execute if score #sg cppValue matches ..-1 store result entity @e[type=area_effect_cloud,distance=..9,tag=cpp_loc_block_as,tag=cpp_temp,limit=1] Pos[1] double -0.01 run scoreboard players get #y cppValue
+execute if score #sh cppValue matches ..-1 store result entity @e[type=area_effect_cloud,distance=..9,tag=cpp_loc_block_as,tag=cpp_temp,limit=1] Pos[2] double -0.01 run scoreboard players get #z cppValue
 # 玩家位置是否是特定方块
-execute as @e[type=armor_stand,distance=..9,tag=cpp_loc_block_as,tag=cpp_temp] at @s unless block ~ ~ ~ #cpp:fluid run tag @s add cpp_loc_block_pos_pot
+execute as @e[type=area_effect_cloud,distance=..9,tag=cpp_loc_block_as,tag=cpp_temp] at @s unless block ~ ~ ~ #cpp:fluid run tag @s add cpp_loc_block_pos_pot
 # 若未找到，循环
-execute unless entity @e[type=armor_stand,distance=..9,tag=cpp_loc_block_pos_pot] at @e[type=armor_stand,distance=..9,tag=cpp_loc_block_as,tag=cpp_temp] if entity @s[distance=..6] run function cpp:misc/loc_front/loop
+execute unless entity @e[type=area_effect_cloud,distance=..9,tag=cpp_loc_block_pos_pot] at @e[type=area_effect_cloud,distance=..9,tag=cpp_loc_block_as,tag=cpp_temp] if entity @s[distance=..6] run function cpp:misc/loc_front/loop

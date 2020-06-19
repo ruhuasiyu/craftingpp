@@ -1,6 +1,6 @@
 {
 	"criteria": {
-		"put_furnace": {
+		"blast_furnace": {
 			"trigger": "minecraft:placed_block",
 			"conditions": {
 				"block": "minecraft:blast_furnace"

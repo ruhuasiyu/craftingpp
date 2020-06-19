@@ -1,7 +1,6 @@
 {
 	"replace": false,
 	"values": [
-		"minecraft:basalt",
 		"minecraft:sand",
 		"minecraft:red_sand",
 		"#minecraft:logs",
@@ -32,6 +31,8 @@
 		"minecraft:pink_tulip",
 		"minecraft:wither_rose",
 		"minecraft:potatoes",
-		"minecraft:beetroots"
+		"minecraft:beetroots",
+		"minecraft:polished_blackstone_bricks",
+		"minecraft:nether_bricks"
 	]
 }

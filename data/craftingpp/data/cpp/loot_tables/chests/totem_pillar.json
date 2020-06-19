@@ -43,14 +43,10 @@
 					"quality": 1
 				},
 				{
-					"type": "minecraft:item",
-					"name": "minecraft:bread",
+					"type": "minecraft:loot_table",
+					"name": "cpp:meat_floss_bread",
 					"weight": 10,
 					"functions": [
-						{
-							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"translate\":\"item.cpp.meat_floss_bread\"}',Lore:['{\"translate\":\"lore.cpp.speed\"}']},id:'cpp:meat_floss_bread',CustomModelData:12970001}"
-						},
 						{
 							"function": "minecraft:set_count",
 							"count": {
@@ -61,14 +57,10 @@
 					]
 				},
 				{
-					"type": "minecraft:item",
-					"name": "minecraft:apple",
+					"type": "minecraft:loot_table",
+					"name": "cpp:toffee_apple",
 					"weight": 10,
 					"functions": [
-						{
-							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"translate\":\"item.cpp.toffee_apple\"}',Lore:['{\"translate\":\"lore.cpp.speed\"}']},id:'cpp:toffee_apple',CustomModelData:12970100}"
-						},
 						{
 							"function": "minecraft:set_count",
 							"count": {

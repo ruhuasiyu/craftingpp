@@ -88,7 +88,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData:12971000,cppClear:1b,cppLeavesFastDecayMarker:1b}"
+							"tag": "{CustomModelData:12971000,cpp_clear:1b,cpp_leaves_fast_decay_marker:1b}"
 						}
 					]
 				}

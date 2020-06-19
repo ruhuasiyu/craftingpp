@@ -6,6 +6,3 @@ execute store result block ~ 255 ~ Items[0].tag.CustomModelData int 1 run scoreb
 data modify block ~ 255 ~ Items[0].tag.cppHatSlot set value "head"
 loot replace entity @s armor.head 1 mine ~ 255 ~ diamond_pickaxe{isShulkerMarker:1b}
 setblock ~ 255 ~ air
-advancement grant @s[predicate=cpp:head/green_hat] only cpp:forgive
-effect give @s[predicate=cpp:head/glow_hat] glowing 5
-execute as @s[predicate=cpp:head/glass_helmet] at @s anchored eyes unless block ~ ~ ~ water run effect give @s water_breathing 5

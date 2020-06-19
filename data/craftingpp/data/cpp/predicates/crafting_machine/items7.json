@@ -2,15 +2,6 @@
 	"condition": "minecraft:alternative",
 	"terms": [
 		{
-			"_comment": "锁链护腿",
-			"condition": "minecraft:location_check",
-			"predicate": {
-				"block": {
-					"nbt": "{Items:[{Slot:1b,tag:{id:'cpp:iron_chain'}},{Slot:2b,tag:{id:'cpp:iron_chain'}},{Slot:3b,tag:{id:'cpp:iron_chain'}},{Slot:10b,tag:{id:'cpp:iron_chain'}},{Slot:12b,tag:{id:'cpp:iron_chain'}},{Slot:19b,tag:{id:'cpp:iron_chain'}},{Slot:21b,tag:{id:'cpp:iron_chain'}}]}"
-				}
-			}
-		},
-		{
 			"_comment": "紧身皮裤",
 			"condition": "minecraft:location_check",
 			"predicate": {

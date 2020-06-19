@@ -1,5 +1,5 @@
 [C]§f============
-[C]§e更多的合成/Crafting++ version 1.10
+[C]§e更多的合成/Crafting++ version 1.11
 [C]§f============
 
 [C]§7数据包设计/Data Pack Designer
@@ -8,10 +8,8 @@
 [C]§7资源包设计/Resource Pack Designer
 [C]§fruhuasiyu
 [C]§fRubberTree
-[C]§fXeKr
 [C]§f折君
-[C]§f天狼星black
-[C]§fMC先生
+[C]§fXeKr
 
 [C]§7平台支持/Platform Support
 [C]§fMinecraft(我的世界)中文论坛
@@ -35,6 +33,7 @@
 [C]§f支持国产mod
 [C]§f倪采臣
 [C]§fzzzz
+[C]§f空白
 [C]§f折君
 [C]§fHao_Tian22
 [C]§fAppleeeee
@@ -78,3 +77,5 @@
 [C]§fStark
 [C]§fyap
 [C]§fLakejason
+[C]§f天狼星black
+[C]§fMC先生

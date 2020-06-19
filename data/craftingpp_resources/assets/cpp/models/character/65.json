@@ -1,6 +1,0 @@
-{
-	"parent": "cpp:character/temp",
-	"textures": {
-		"layer0": "cpp:character/65"
-	}
-}

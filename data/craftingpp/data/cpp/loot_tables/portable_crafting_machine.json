@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"translate\":\"item.cpp.portable_crafting_machine\"}'},id:'cpp:portable_crafting_machine',CustomModelData:12970069}"
+							"tag": "{display:{Name:'{\"italic\":false,\"translate\":\"item.cpp.portable_crafting_machine\"}'},id:'cpp:portable_crafting_machine',CustomModelData:12970069}"
 						}
 					]					
 				}

@@ -1,8 +1,8 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:acacia_sapling",
-			"nbt":"{CustomModelData:12971001}"
+			"item": "minecraft:petrified_oak_slab",
+			"nbt":"{CustomModelData:12972001}"
 		},
 		"title":{
 			"translate": "advancements.cpp.gardener.title"
@@ -18,13 +18,16 @@
 			"conditions": {
 				"items": [
 					{
-						"nbt": "{id:\"cpp:wool_sapling\"}"
+						"nbt": "{id:'cpp:wool_sapling'}"
 					},
 					{
-						"nbt": "{id:\"cpp:fruit_sapling\"}"
+						"nbt": "{id:'cpp:fruit_sapling'}"
 					},
 					{
-						"nbt": "{id:\"cpp:ore_sapling\"}"
+						"nbt": "{id:'cpp:ore_sapling'}"
+					},
+					{
+						"nbt": "{id:'cpp:sakura_sapling'}"
 					}
 				]
 			}

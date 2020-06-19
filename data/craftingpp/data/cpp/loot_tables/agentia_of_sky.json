@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"translate\":\"item.cpp.agentia_of_sky\"}',Lore:['[{\"translate\":\"effect.minecraft.speed\",\"italic\":\"false\",\"color\":\"blue\"},{\"text\":\" II (6:00)\"}]','[{\"translate\":\"effect.minecraft.slow_falling\",\"italic\":\"false\",\"color\":\"blue\"},{\"text\":\" (6:00)\"}]','\" \"','{\"translate\":\"potion.whenDrank\",\"italic\":\"false\"}','[{\"text\":\"+40% \",\"italic\":\"false\",\"color\":\"blue\"},{\"translate\":\"attribute.name.generic.movementSpeed\"}]']},id:'cpp:agentia_of_sky',CustomModelData:12970101,Enchantments:[{lvl:1s,id:'minecraft:binding_curse'}],HideFlags:1}"
+							"tag": "{display:{Name:'{\"italic\":false,\"translate\":\"item.cpp.agentia_of_sky\"}',Lore:['[{\"italic\":false,\"translate\":\"effect.minecraft.speed\",\"color\":\"blue\"},{\"text\":\" II (6:00)\"}]','[{\"italic\":false,\"translate\":\"effect.minecraft.slow_falling\",\"color\":\"blue\"},{\"text\":\" (6:00)\"}]','\" \"','{\"italic\":false,\"translate\":\"potion.whenDrank\"}','[{\"text\":\"+40% \",\"color\":\"blue\"},{\"italic\":false,\"translate\":\"attribute.name.generic.movementSpeed\"}]']},id:'cpp:agentia_of_sky',CustomModelData:12970101,Enchantments:[{lvl:1s,id:'minecraft:binding_curse'}],HideFlags:1}"
 						}
 					]
 				}

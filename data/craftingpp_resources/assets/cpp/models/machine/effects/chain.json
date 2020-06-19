@@ -1,0 +1,7 @@
+{
+    "parent": "cpp:machine/effects/temp",
+	"textures": {
+		"layer0": "cpp:machine/mob_effect/chain"
+	}
+}
+

@@ -2,24 +2,6 @@
 	"condition": "minecraft:alternative",
 	"terms": [
 		{
-			"_comment": "锁链靴子",
-			"condition": "minecraft:location_check",
-			"predicate": {
-				"block": {
-					"nbt": "{Items:[{Slot:1b,tag:{id:'cpp:iron_chain'}},{Slot:3b,tag:{id:'cpp:iron_chain'}},{Slot:10b,tag:{id:'cpp:iron_chain'}},{Slot:12b,tag:{id:'cpp:iron_chain'}}]}"
-				}
-			}
-		},
-		{
-			"_comment": "锁链靴子",
-			"condition": "minecraft:location_check",
-			"predicate": {
-				"block": {
-					"nbt": "{Items:[{Slot:10b,tag:{id:'cpp:iron_chain'}},{Slot:12b,tag:{id:'cpp:iron_chain'}},{Slot:19b,tag:{id:'cpp:iron_chain'}},{Slot:21b,tag:{id:'cpp:iron_chain'}}]}"
-				}
-			}
-		},
-		{
 			"_comment": "雪地靴",
 			"condition": "minecraft:location_check",
 			"predicate": {
@@ -371,7 +353,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"nbt": "{Items:[{tag:{dict:['salt']}},{id:'minecraft:sugar'},{id:'minecraft:apple'},{id:'minecraft:sweet_berries'}]}"
+					"nbt": "{Items:[{tag:{dict:['salt']}},{id:'minecraft:sugar'},{tag:{id:'minecraft:apple'}},{id:'minecraft:sweet_berries'}]}"
 				}
 			}
 		},

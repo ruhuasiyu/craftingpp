@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"translate\":\"item.cpp.netherrack_plugin\"}'},id:'cpp:netherrack_plugin',CustomModelData:12970109}"
+							"tag": "{display:{Name:'{\"italic\":false,\"translate\":\"item.cpp.netherrack_plugin\"}'},id:'cpp:netherrack_plugin',CustomModelData:12970109}"
 						}
 					]
 				}

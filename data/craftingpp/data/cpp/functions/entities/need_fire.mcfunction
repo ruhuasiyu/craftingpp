@@ -8,7 +8,7 @@ execute as @e[type=armor_stand,tag=cpp_campfire] run function cpp:campfire/campf
 # 酿造
 execute as @e[type=armor_stand,tag=cpp_brewing_stand] run function cpp:brewing_stand/brewing_stand
 # 纸片人
-execute as @e[type=armor_stand,tag=cpp_character] unless block ~ ~ ~ #minecraft:beds run function cpp:decor/character_break
+execute as @e[type=armor_stand,tag=cpp_character] unless block ~ ~ ~ #beds run function cpp:decor/character_break
 # 机器
 execute as @e[type=armor_stand,tag=cpp_machine] run function cpp:entities/machine
 # 便携式工作台

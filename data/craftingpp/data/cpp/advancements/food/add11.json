@@ -4,7 +4,7 @@
 			"trigger": "minecraft:consume_item",
 			"conditions": {
 				"item": {
-					"nbt": "{id:\"cpp:stargazy_pie\"}"
+					"nbt": "{id:'cpp:stargazy_pie'}"
 				}
 			}
 		}

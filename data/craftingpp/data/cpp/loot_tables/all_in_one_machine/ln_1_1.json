@@ -52,6 +52,26 @@
 									"condition": "minecraft:location_check",
 									"predicate": {
 										"block": {
+											"nbt": "{Items:[{tag:{id:'cpp:blackstone_plugin'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:blackstone",
+							"functions":[
+								{
+									"function": "minecraft:set_count",
+									"count": 4
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
 											"nbt": "{Items:[{tag:{id:'cpp:netherrack_plugin'}}]}"
 										}
 									}
@@ -79,6 +99,26 @@
 							],
 							"type": "minecraft:item",
 							"name": "minecraft:end_stone"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:blue_ice'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:basalt",
+							"functions":[
+								{
+									"function": "minecraft:set_count",
+									"count": 3
+								}
+							]
 						}
 					]
 				}

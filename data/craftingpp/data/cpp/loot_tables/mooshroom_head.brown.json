@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"translate\":\"item.cpp.mooshroom_head.brown\"}'},id:'cpp:mooshroom_head.brown',CustomModelData:12970205,dict:['mooshroom_head']}"
+							"tag": "{display:{Name:'{\"italic\":false,\"translate\":\"item.cpp.mooshroom_head.brown\"}'},id:'cpp:mooshroom_head.brown',CustomModelData:12970205,dict:['mooshroom_head']}"
 						}
 					]
 				}

@@ -5,11 +5,11 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:acacia_sapling",
+					"name": "minecraft:petrified_oak_slab",
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"translate\":\"item.cpp.wild_lilium\"}'},id:'cpp:wild_lilium',CustomModelData:12970069}"
+							"tag": "{display:{Name:'{\"italic\":false,\"translate\":\"item.cpp.wild_lilium\"}'},id:'cpp:wild_lilium',CustomModelData:12971069,cpp_tag:['plants','crops','+4000']}"
 						}
 					]
 				}

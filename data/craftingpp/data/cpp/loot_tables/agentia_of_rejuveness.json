@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"translate\":\"item.cpp.agentia_of_rejuveness\"}',Lore:['[{\"translate\":\"effect.minecraft.regeneration\",\"italic\":\"false\",\"color\":\"blue\"},{\"text\":\" II (2:00)\"}]']},id:'cpp:agentia_of_rejuveness',CustomModelData:12970116,Enchantments:[{lvl:1s,id:'minecraft:binding_curse'}],HideFlags:1}"
+							"tag": "{display:{Name:'{\"italic\":false,\"translate\":\"item.cpp.agentia_of_rejuveness\"}',Lore:['[{\"italic\":false,\"translate\":\"effect.minecraft.regeneration\",\"color\":\"blue\"},{\"text\":\" II (2:00)\"}]']},id:'cpp:agentia_of_rejuveness',CustomModelData:12970116,Enchantments:[{lvl:1s,id:'minecraft:binding_curse'}],HideFlags:1}"
 						}
 					]
 				}

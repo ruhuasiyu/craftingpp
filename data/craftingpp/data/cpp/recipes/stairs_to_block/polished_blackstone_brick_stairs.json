@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"group": "planks_from_stairs",
+	"pattern": [
+		"##",
+		"##"
+	],
+	"key": {
+		"#": {
+			"item": "minecraft:polished_blackstone_brick_stairs"
+		}
+	},
+	"result": {
+		"item": "minecraft:polished_blackstone_bricks",
+		"count": 4
+	}
+}

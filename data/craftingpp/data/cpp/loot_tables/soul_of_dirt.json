@@ -5,11 +5,11 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:rabbit_foot",
+					"name": "minecraft:firework_star",
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"translate\":\"item.cpp.soul_of_dirt\"}'},id:'cpp:soul_of_dirt',CustomModelData:12970004}"
+							"tag": "{display:{Name:'{\"italic\":false,\"translate\":\"item.cpp.soul_of_dirt\"}'},id:'cpp:soul_of_dirt',CustomModelData:12970104}"
 						}
 					]
 				}

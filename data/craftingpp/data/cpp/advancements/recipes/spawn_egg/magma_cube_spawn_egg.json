@@ -1,0 +1,29 @@
+{
+	"criteria": {
+		"dragon_egg": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:dragon_egg"
+					}
+				]
+			}
+		},
+		"has_the_recipe": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "cpp:spawn_egg/magma_cube_spawn_egg"
+			}
+		}
+	},
+	"rewards":{
+		"recipes": ["cpp:spawn_egg/magma_cube_spawn_egg"]
+	},
+	"requirements": [
+		[
+			"dragon_egg",
+			"has_the_recipe"
+		]
+	]
+}

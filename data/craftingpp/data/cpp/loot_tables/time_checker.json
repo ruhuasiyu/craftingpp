@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"translate\":\"item.cpp.time_checker\"}'},id:'cpp:time_checker',CustomModelData:12970043}"
+							"tag": "{display:{Name:'{\"italic\":false,\"translate\":\"item.cpp.time_checker\"}'},id:'cpp:time_checker',CustomModelData:12970043}"
 						}
 					]
 				}

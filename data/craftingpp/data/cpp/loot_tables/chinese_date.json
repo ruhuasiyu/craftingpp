@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag":"{display:{Name:'{\"translate\":\"item.cpp.chinese_date\"}'},id:'cpp:chinese_date',CustomModelData:12970005}"
+							"tag":"{display:{Name:'{\"italic\":false,\"translate\":\"item.cpp.chinese_date\"}'},id:'cpp:chinese_date',CustomModelData:12970005}"
 						}
 					]
 				}

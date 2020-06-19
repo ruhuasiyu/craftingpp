@@ -11,6 +11,7 @@
 		"minecraft:redstone_ore",
 		"minecraft:lapis_ore",
 		"minecraft:glowstone",
-		"minecraft:obsidian"
+		"minecraft:obsidian",
+		"minecraft:ancient_debris"
 	]
 }

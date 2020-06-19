@@ -29,7 +29,7 @@
 		{ "predicate": { "custom_model_data": 12970023 }, "model": "cpp:fruit/strawberry"},
 		{ "predicate": { "custom_model_data": 12970024 }, "model": "cpp:fruit/tomato"},
 		{ "predicate": { "custom_model_data": 12970025 }, "model": "cpp:fruit/citrus"},
-		
+
 		{ "predicate": { "custom_model_data": 12970100 }, "model": "cpp:food/toffee_apple"},
 		{ "predicate": { "custom_model_data": 12970101 }, "model": "cpp:food/raisin"},
 		{ "predicate": { "custom_model_data": 12970102 }, "model": "cpp:food/candied_haw"}

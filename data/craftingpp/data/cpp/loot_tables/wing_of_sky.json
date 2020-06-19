@@ -5,11 +5,11 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:rabbit_foot",
+					"name": "minecraft:firework_star",
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"translate\":\"item.cpp.wing_of_sky\"}'},id:'cpp:wing_of_sky',CustomModelData:12970001}"
+							"tag": "{display:{Name:'{\"italic\":false,\"translate\":\"item.cpp.wing_of_sky\"}'},id:'cpp:wing_of_sky',CustomModelData:12970101}"
 						}
 					]
 				}

@@ -1,7 +1,5 @@
 {
-    "parent": "block/cube_all",
     "textures": {
-        "particle": "cpp:empty",
-        "all": "cpp:empty"
+        "particle": "block/acacia_sapling"
     }
 }

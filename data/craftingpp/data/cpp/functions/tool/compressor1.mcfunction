@@ -1,8 +1,8 @@
 data modify storage cpp:compressor Item set from entity @s Item
 
 data modify storage cpp:compressor Item.Count set value 1b
-execute store result score #t cppValue run data get storage cpp:compressor Item.tag.cppCompressedLevel
-execute store result storage cpp:compressor Item.tag.cppCompressedLevel short 1 run scoreboard players add #t cppValue 1
+execute store result score #t cppValue run data get storage cpp:compressor Item.tag.cpp_compressed_level
+execute store result storage cpp:compressor Item.tag.cpp_compressed_level short 1 run scoreboard players add #t cppValue 1
 execute if score #t cppValue matches 1 run data modify storage cpp:compressor Item.tag.cppStoreHideFlags set value 0b
 execute if score #t cppValue matches 1 run data modify storage cpp:compressor Item.tag.cppStoreHideFlags set from storage cpp:compressor Item.tag.HideFlags
 execute if score #t cppValue matches 1 run data modify storage cpp:compressor Item.tag.HideFlags set value 63b

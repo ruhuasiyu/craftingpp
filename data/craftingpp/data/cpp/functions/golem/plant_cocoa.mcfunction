@@ -6,7 +6,7 @@ data modify block ~ 255 ~ Items append from storage cpp:golem Item
 data modify entity @s HandItems[1].tag.BlockEntityTag.Items set from block ~ 255 ~ Items
 setblock ~ 255 ~ air
 
-execute if block ~1 ~ ~ #minecraft:jungle_logs run setblock ~ ~ ~ cocoa[facing=east]
-execute if block ~ ~ ~ #cpp:air if block ~-1 ~ ~ #minecraft:jungle_logs run setblock ~ ~ ~ cocoa[facing=west]
-execute if block ~ ~ ~ #cpp:air if block ~ ~ ~1 #minecraft:jungle_logs run setblock ~ ~ ~ cocoa[facing=south]
-execute if block ~ ~ ~ #cpp:air if block ~ ~ ~-1 #minecraft:jungle_logs run setblock ~ ~ ~ cocoa[facing=north]
+execute if block ~1 ~ ~ #jungle_logs run setblock ~ ~ ~ cocoa[facing=east]
+execute if block ~ ~ ~ #cpp:air if block ~-1 ~ ~ #jungle_logs run setblock ~ ~ ~ cocoa[facing=west]
+execute if block ~ ~ ~ #cpp:air if block ~ ~ ~1 #jungle_logs run setblock ~ ~ ~ cocoa[facing=south]
+execute if block ~ ~ ~ #cpp:air if block ~ ~ ~-1 #jungle_logs run setblock ~ ~ ~ cocoa[facing=north]

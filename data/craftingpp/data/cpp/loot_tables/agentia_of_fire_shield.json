@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"translate\":\"item.cpp.agentia_of_fire_shield\"}',Lore:['[{\"translate\":\"effect.minecraft.fire_resistance\",\"italic\":\"false\",\"color\":\"blue\"},{\"text\":\" (8:00)\"}]']},id:'cpp:agentia_of_fire_shield',CustomModelData:12970110,Enchantments:[{lvl:1s,id:'minecraft:binding_curse'}],HideFlags:1}"
+							"tag": "{display:{Name:'{\"italic\":false,\"translate\":\"item.cpp.agentia_of_fire_shield\"}',Lore:['[{\"italic\":false,\"translate\":\"effect.minecraft.fire_resistance\",\"color\":\"blue\"},{\"text\":\" (8:00)\"}]']},id:'cpp:agentia_of_fire_shield',CustomModelData:12970110,Enchantments:[{lvl:1s,id:'minecraft:binding_curse'}],HideFlags:1}"
 						}
 					]
 				}

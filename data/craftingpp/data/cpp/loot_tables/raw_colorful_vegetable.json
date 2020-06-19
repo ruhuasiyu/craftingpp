@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"translate\":\"item.cpp.raw_colorful_vegetable\"}'},id:'cpp:raw_colorful_vegetable',CustomModelData:12970001,Effects:[{EffectDuration:4,EffectId:23b}]}"
+							"tag": "{display:{Name:'{\"italic\":false,\"translate\":\"item.cpp.raw_colorful_vegetable\"}'},id:'cpp:raw_colorful_vegetable',CustomModelData:12970001,Effects:[{EffectDuration:4,EffectId:23b}]}"
 						}
 					]
 				}

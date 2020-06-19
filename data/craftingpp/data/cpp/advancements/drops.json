@@ -18,7 +18,7 @@
 			"conditions": {
 				"items": [
 					{
-						"nbt":"{id:\"cpp:wing_of_sky\"}"
+						"nbt":"{id:'cpp:wing_of_sky'}"
 					}
 				]
 			}
@@ -28,7 +28,7 @@
 			"conditions": {
 				"items": [
 					{
-						"nbt":"{id:\"cpp:heart_of_crystal\"}"
+						"nbt":"{id:'cpp:heart_of_crystal'}"
 					}
 				]
 			}
@@ -38,7 +38,7 @@
 			"conditions": {
 				"items": [
 					{
-						"nbt":"{id:\"cpp:nova_of_fire\"}"
+						"nbt":"{id:'cpp:nova_of_fire'}"
 					}
 				]
 			}
@@ -48,7 +48,7 @@
 			"conditions": {
 				"items": [
 					{
-						"nbt":"{id:\"cpp:soul_of_dirt\"}"
+						"nbt":"{id:'cpp:soul_of_dirt'}"
 					}
 				]
 			}
@@ -58,7 +58,7 @@
 			"conditions": {
 				"items": [
 					{
-						"nbt":"{id:\"cpp:certification_of_earth\"}"
+						"nbt":"{id:'cpp:certification_of_earth'}"
 					}
 				]
 			}
@@ -68,7 +68,7 @@
 			"conditions": {
 				"items": [
 					{
-						"nbt":"{id:\"cpp:limb_of_ridge\"}"
+						"nbt":"{id:'cpp:limb_of_ridge'}"
 					}
 				]
 			}
@@ -78,7 +78,7 @@
 			"conditions": {
 				"items": [
 					{
-						"nbt":"{id:\"cpp:spirit_of_life\"}"
+						"nbt":"{id:'cpp:spirit_of_life'}"
 					}
 				]
 			}

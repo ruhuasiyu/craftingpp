@@ -4,7 +4,8 @@ execute if predicate cpp:furnace/burntime0 if predicate cpp:furnace/item1 run fu
 execute as @s[tag=!cpp_check_fuel] if predicate cpp:furnace/burntime0 if predicate cpp:furnace/item1 run function cpp:furnace/fuel_use
 # 进度
 execute unless predicate cpp:furnace/burntime0 store result block ~ ~ ~ CookTime short 1 run scoreboard players add @s cppTick 1
-execute if score @s cppTick matches 200.. run function cpp:furnace/done
+execute if score @s cppTick matches 199.. run function cpp:furnace/done
+
 # 停止
 execute if predicate cpp:furnace/burntime0 run scoreboard players reset @s cppTick
 # 发光

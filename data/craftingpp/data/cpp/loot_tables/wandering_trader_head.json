@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"translate\":\"item.cpp.wandering_trader_head\"}'},id:'cpp:wandering_trader_head',CustomModelData:12970216}"
+							"tag": "{display:{Name:'{\"italic\":false,\"translate\":\"item.cpp.wandering_trader_head\"}'},id:'cpp:wandering_trader_head',CustomModelData:12970216}"
 						}
 					]
 				}

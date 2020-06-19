@@ -1,0 +1,133 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:lycoris_radiata_seeds"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:trifolium_seeds"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:blackthorn_seeds"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:cattail_seeds"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:marigold_seeds"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:hibiscus_seeds"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:hyacinth_seeds"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:calamus_seeds"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:wild_lilium_seeds"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:bauhinia_seeds"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:fluffy_grass_seeds"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:gerbera_seeds"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:esparto_seeds"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:glow_forsythia_seeds"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:glazed_shade_seeds"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:stelera_seeds"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:forage_crystal_seeds"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:isorchid_seeds"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:burning_chrysanthe_seeds"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:oxalis_seeds"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:calliopsis"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:cyclamen"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:iris"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:lilium_pumilum"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:snowdrop"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:cole_flower"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:lupine"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:crocu"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:pansy"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:arabia_speedwell"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:silene_pendula"
+				}
+			]
+		}
+	]
+}

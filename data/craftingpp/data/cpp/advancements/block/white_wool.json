@@ -1,0 +1,13 @@
+{
+	"criteria": {
+		"white_wool": {
+			"trigger": "minecraft:placed_block",
+			"conditions": {
+				"block": "minecraft:white_wool"
+			}
+		}
+	},
+	"rewards": {
+		"function": "cpp:block/reset/white_wool"
+	}
+}

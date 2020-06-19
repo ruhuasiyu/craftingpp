@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"translate\":\"item.cpp.agentia_of_bounce\"}',Lore:['[{\"translate\":\"effect.minecraft.jump_boost\",\"italic\":\"false\",\"color\":\"blue\"},{\"text\":\" II (4:00)\"}]']},id:'cpp:agentia_of_bounce',CustomModelData:12970113,Enchantments:[{lvl:1s,id:'minecraft:binding_curse'}],HideFlags:1}"
+							"tag": "{display:{Name:'{\"italic\":false,\"translate\":\"item.cpp.agentia_of_bounce\"}',Lore:['[{\"italic\":false,\"translate\":\"effect.minecraft.jump_boost\",\"color\":\"blue\"},{\"text\":\" II (4:00)\"}]']},id:'cpp:agentia_of_bounce',CustomModelData:12970113,Enchantments:[{lvl:1s,id:'minecraft:binding_curse'}],HideFlags:1}"
 						}
 					]
 				}

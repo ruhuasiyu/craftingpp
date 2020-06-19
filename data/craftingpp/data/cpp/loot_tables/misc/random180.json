@@ -1,0 +1,30 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:stone",
+					"functions": [
+						{
+							"function": "minecraft:set_attributes",
+							"modifiers": [
+								{
+									"slot": "mainhand",
+									"name": "random_luck",
+									"attribute": "generic.luck",
+									"operation": "addition",
+									"amount": {
+										"min": 0,
+										"max": 180
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

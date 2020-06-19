@@ -1,6 +1,6 @@
 {
 	"criteria": {
-		"put_furnace": {
+		"smoker": {
 			"trigger": "minecraft:placed_block",
 			"conditions": {
 				"block": "minecraft:smoker"

@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"translate\":\"item.cpp.enchanted_gold\"}'},id:'cpp:enchanted_gold',CustomModelData:12970022}"
+							"tag": "{display:{Name:'{\"italic\":false,\"translate\":\"item.cpp.enchanted_gold\"}'},id:'cpp:enchanted_gold',CustomModelData:12970022}"
 						}
 					]
 				}

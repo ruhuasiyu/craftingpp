@@ -1,9 +1,9 @@
 {
 	"criteria": {
-		"put_campfire": {
+		"campfire": {
 			"trigger": "minecraft:placed_block",
 			"conditions": {
-				"block": "minecraft:campfire"
+				"tag": "minecraft:campfires"
 			}
 		}
 	},

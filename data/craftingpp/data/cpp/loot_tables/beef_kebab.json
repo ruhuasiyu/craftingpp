@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"translate\":\"item.cpp.beef_kebab\"}',Lore:['{\"translate\":\"lore.cpp.strength\"}']},id:'cpp:beef_kebab',CustomModelData:12970002}"
+							"tag": "{display:{Name:'{\"italic\":false,\"translate\":\"item.cpp.beef_kebab\"}',Lore:['{\"italic\":false,\"translate\":\"lore.cpp.strength\"}']},id:'cpp:beef_kebab',CustomModelData:12970002}"
 						}
 					]
 				}

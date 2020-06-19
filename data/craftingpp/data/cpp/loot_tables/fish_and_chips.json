@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"translate\":\"item.cpp.fish_and_chips\"}',Lore:['{\"translate\":\"lore.cpp.speed\"}']},id:'cpp:fish_and_chips',CustomModelData:12970009,Effects:[{EffectDuration:600,EffectId:1b},{EffectDuration:10,EffectId:23b}]}"
+							"tag": "{display:{Name:'{\"italic\":false,\"translate\":\"item.cpp.fish_and_chips\"}',Lore:['{\"italic\":false,\"translate\":\"lore.cpp.speed\"}']},id:'cpp:fish_and_chips',CustomModelData:12970009,Effects:[{EffectDuration:600,EffectId:1b},{EffectDuration:10,EffectId:23b}]}"
 						}
 					]
 				}

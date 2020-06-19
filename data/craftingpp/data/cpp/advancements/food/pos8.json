@@ -20,7 +20,7 @@
 			"trigger": "minecraft:consume_item",
 			"conditions": {
 				"item": {
-					"nbt": "{id:\"cpp:meat_floss_bread\"}"
+					"nbt": "{id:'cpp:meat_floss_bread'}"
 				}
 			}
 		},
@@ -28,7 +28,7 @@
 			"trigger": "minecraft:consume_item",
 			"conditions": {
 				"item": {
-					"nbt": "{id:\"cpp:caramel_pudding\"}"
+					"nbt": "{id:'cpp:caramel_pudding'}"
 				}
 			}
 		},
@@ -36,7 +36,7 @@
 			"trigger": "minecraft:consume_item",
 			"conditions": {
 				"item": {
-					"nbt": "{id:\"cpp:doughnut\"}"
+					"nbt": "{id:'cpp:doughnut'}"
 				}
 			}
 		},
@@ -44,7 +44,7 @@
 			"trigger": "minecraft:consume_item",
 			"conditions": {
 				"item": {
-					"nbt": "{id:\"cpp:purple_doughnut\"}"
+					"nbt": "{id:'cpp:purple_doughnut'}"
 				}
 			}
 		},
@@ -52,7 +52,7 @@
 			"trigger": "minecraft:consume_item",
 			"conditions": {
 				"item": {
-					"nbt": "{id:\"cpp:pink_doughnut\"}"
+					"nbt": "{id:'cpp:pink_doughnut'}"
 				}
 			}
 		},
@@ -60,7 +60,7 @@
 			"trigger": "minecraft:consume_item",
 			"conditions": {
 				"item": {
-					"nbt": "{id:\"cpp:white_doughnut\"}"
+					"nbt": "{id:'cpp:white_doughnut'}"
 				}
 			}
 		},
@@ -68,7 +68,7 @@
 			"trigger": "minecraft:consume_item",
 			"conditions": {
 				"item": {
-					"nbt": "{id:\"cpp:blue_doughnut\"}"
+					"nbt": "{id:'cpp:blue_doughnut'}"
 				}
 			}
 		},
@@ -76,7 +76,7 @@
 			"trigger": "minecraft:consume_item",
 			"conditions": {
 				"item": {
-					"nbt": "{id:\"cpp:green_doughnut\"}"
+					"nbt": "{id:'cpp:green_doughnut'}"
 				}
 			}
 		},
@@ -84,7 +84,7 @@
 			"trigger": "minecraft:consume_item",
 			"conditions": {
 				"item": {
-					"nbt": "{id:\"cpp:honey_pancake\"}"
+					"nbt": "{id:'cpp:honey_pancake'}"
 				}
 			}
 		}

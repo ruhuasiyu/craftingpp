@@ -1,10 +1,10 @@
 {
 	"criteria": {
-		"meat_floss_bread": {
+		"citrus": {
 			"trigger": "minecraft:consume_item",
 			"conditions": {
 				"item": {
-					"nbt": "{id:\"cpp:citrus\"}"
+					"nbt": "{id:'cpp:citrus'}"
 				}
 			}
 		}

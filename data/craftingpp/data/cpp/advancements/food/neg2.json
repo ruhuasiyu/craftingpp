@@ -36,7 +36,7 @@
 			"trigger": "minecraft:consume_item",
 			"conditions": {
 				"item": {
-					"nbt": "{id:\"cpp:raw_colorful_vegetable\"}"
+					"nbt": "{id:'cpp:raw_colorful_vegetable'}"
 				}
 			}
 		}

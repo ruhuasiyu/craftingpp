@@ -8,12 +8,12 @@
 					"name": "minecraft:stone",
 					"functions": [
 						{
-							"function": "set_attributes",
+							"function": "minecraft:set_attributes",
 							"modifiers": [
 								{
 									"slot": "mainhand",
-									"name": "random_attackDamage",
-									"attribute": "generic.attackDamage",
+									"name": "random_luck",
+									"attribute": "generic.luck",
 									"operation": "addition",
 									"amount": {
 										"min": 0,
@@ -21,10 +21,6 @@
 									}
 								}
 							]
-						},
-						{
-							"function": "set_nbt",
-							"tag": "{randomMarker:1b}"
 						}
 					]
 				}

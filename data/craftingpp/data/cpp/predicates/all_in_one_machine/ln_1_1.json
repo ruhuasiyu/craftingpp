@@ -21,6 +21,14 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
+					"nbt": "{Items:[{tag:{id:'cpp:blackstone_plugin'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
 					"nbt": "{Items:[{tag:{id:'cpp:netherrack_plugin'}}]}"
 				}
 			}
@@ -30,6 +38,14 @@
 			"predicate": {
 				"block": {
 					"nbt": "{Items:[{tag:{id:'cpp:end_stone_plugin'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{id:'minecraft:blue_ice'}]}"
 				}
 			}
 		}

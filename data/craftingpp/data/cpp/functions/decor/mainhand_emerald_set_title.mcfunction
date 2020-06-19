@@ -98,6 +98,6 @@ team join cppTitle97 @s[scores={cppTitle=97}]
 team join cppTitle98 @s[scores={cppTitle=98}]
 team join cppTitle99 @s[scores={cppTitle=99}]
 team join cppTitle100 @s[scores={cppTitle=100}]
+team leave @s[scores={cppTitle=101}]
 scoreboard players reset @s cppTitle
-
 replaceitem entity @s[gamemode=!creative] weapon.mainhand air

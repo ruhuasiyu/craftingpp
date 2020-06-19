@@ -1,2 +1,2 @@
-execute unless block ~ ~ ~ campfire run kill @s
-execute if block ~ ~ ~ campfire[lit=true]{Items:[{}]} run function cpp:campfire/check
+execute unless block ~ ~ ~ #campfires run kill @s
+execute if block ~ ~ ~ #campfires[lit=true]{Items:[{}]} run function cpp:campfire/check

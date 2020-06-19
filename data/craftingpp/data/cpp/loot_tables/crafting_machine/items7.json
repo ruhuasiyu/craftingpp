@@ -7,21 +7,6 @@
 					"type": "minecraft:alternatives",
 					"children": [
 						{
-							"_comment": "锁链护腿",
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:1b,tag:{id:'cpp:iron_chain'}},{Slot:2b,tag:{id:'cpp:iron_chain'}},{Slot:3b,tag:{id:'cpp:iron_chain'}},{Slot:10b,tag:{id:'cpp:iron_chain'}},{Slot:12b,tag:{id:'cpp:iron_chain'}},{Slot:19b,tag:{id:'cpp:iron_chain'}},{Slot:21b,tag:{id:'cpp:iron_chain'}}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:chainmail_leggings"
-						},
-						{
 							"_comment": "紧身皮裤",
 							"conditions": [
 								{

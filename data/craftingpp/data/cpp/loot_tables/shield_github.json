@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag":"{display:{Lore:['{\"translate\":\"item.cpp.github_logo\"}']},id:'cpp:shield_github',CustomModelData:12970007}"
+							"tag":"{display:{Lore:['{\"italic\":false,\"translate\":\"item.cpp.github_logo\"}']},id:'cpp:shield_github',CustomModelData:12970007}"
 						}
 					]
 				}

@@ -1,0 +1,9 @@
+{
+	"type": "minecraft:campfire_cooking",
+	"ingredient": {
+		"item": "minecraft:suspicious_stew"
+	},
+	"result": "minecraft:suspicious_stew",
+	"experience": 0.35,
+	"cookingtime": 600
+}

@@ -5,11 +5,11 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:acacia_sapling",
+					"name": "minecraft:petrified_oak_slab",
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"translate\":\"item.cpp.gerbera\"}'},id:'cpp:gerbera',CustomModelData:12970072}"
+							"tag": "{display:{Name:'{\"italic\":false,\"translate\":\"item.cpp.gerbera\"}'},id:'cpp:gerbera',CustomModelData:12971072,cpp_tag:['plants','crops','+4000']}"
 						}
 					]
 				}

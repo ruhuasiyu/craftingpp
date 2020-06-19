@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"translate\":\"item.cpp.braised_pork_with_potatoes\"}',Lore:['{\"translate\":\"lore.cpp.strength\"}']},id:'cpp:braised_pork_with_potatoes',CustomModelData:12970004,Effects:[{EffectDuration:600,EffectId:5b},{EffectDuration:10,EffectId:23b}]}"
+							"tag": "{display:{Name:'{\"italic\":false,\"translate\":\"item.cpp.braised_pork_with_potatoes\"}',Lore:['{\"italic\":false,\"translate\":\"lore.cpp.strength\"}']},id:'cpp:braised_pork_with_potatoes',CustomModelData:12970004,Effects:[{EffectDuration:600,EffectId:5b},{EffectDuration:10,EffectId:23b}]}"
 						}
 					]
 				}

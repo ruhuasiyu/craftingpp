@@ -1,0 +1,2 @@
+execute if data entity @s Offers.Recipes[{sell:{id:"minecraft:rabbit_stew"}}] run data modify entity @s Offers.Recipes[{sell:{id:"minecraft:rabbit_stew"}}].sell set value {id: "minecraft:suspicious_stew", Count: 1b, tag: {id: "cpp:rabbit_stew", Effects: [{EffectId: 5b, EffectDuration: 600}, {EffectId: 23b, EffectDuration: 10}], CustomModelData: 12970008, display: {Lore: ['{"italic":false,"translate":"lore.cpp.strength"}'], Name: '{"italic":false,"translate":"item.cpp.rabbit_stew"}'}}}
+tag @s add cpp_villager_modified

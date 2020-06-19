@@ -15,7 +15,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData:12970000,cppSkyislandDrop:1b,cppSkyislandDropId:\"minecraft:bone_meal\"}"
+							"tag": "{CustomModelData:12970000,cpp_skyisland_drop:1b,cpp_clear:1b,cpp_skyisland_dropId:'minecraft:bone_meal'}"
 						}
 					]
 				},
@@ -31,7 +31,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData:12970000,cppSkyislandDrop:1b,cppSkyislandDropId:\"minecraft:string\"}"
+							"tag": "{CustomModelData:12970000,cpp_skyisland_drop:1b,cpp_clear:1b,cpp_skyisland_dropId:'minecraft:string'}"
 						}
 					]
 				}

@@ -4,7 +4,7 @@ execute store result score #t2 cppValue run data remove storage cpp:temp Items[{
 
 data modify storage cpp:dist Item set value {id:"minecraft:bucket",Count:1b}
 execute store result storage cpp:dist Item.Count byte 1 run scoreboard players operation #t1 cppValue += #t2 cppValue
-function cpp:dist
+function cpp:dist/machine
 data remove storage cpp:dist Item
 
 execute as @s[tag=!cpp_dist_success] run data remove block ~ ~ ~ Items[{id:"minecraft:milk_bucket",Count:1b}].tag

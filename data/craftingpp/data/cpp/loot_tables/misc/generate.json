@@ -1,0 +1,374 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"conditions":[
+				{
+					"condition": "minecraft:random_chance",
+					"chance": 0.006
+				},
+				{
+					"condition": "minecraft:location_check",
+					"predicate": {
+						"dimension": "minecraft:overworld"
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:firework_star",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{cpp_generate_marker:1b,cpp_clear:1b,CustomModelData:12970000,cpp_generate_type:'enchanting_room'}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"conditions":[
+				{
+					"condition": "minecraft:random_chance",
+					"chance": 0.006
+				},
+				{
+					"condition": "minecraft:alternative",
+					"terms": [
+						{
+							"condition": "minecraft:location_check",
+							"predicate": {
+								"dimension": "minecraft:overworld"
+							}
+						},
+						{
+							"condition": "minecraft:location_check",
+							"predicate": {
+								"dimension": "minecraft:the_nether"
+							}
+						}						
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:firework_star",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{cpp_generate_marker:1b,cpp_clear:1b,CustomModelData:12970000,cpp_generate_type:'totem_pillar'}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"conditions":[
+				{
+					"condition": "minecraft:random_chance",
+					"chance": 0.09
+				},
+				{
+					"condition": "minecraft:alternative",
+					"terms": [
+						{
+							"condition": "minecraft:location_check",
+							"predicate": {
+								"dimension": "minecraft:overworld"
+							}
+						},
+						{
+							"condition": "minecraft:location_check",
+							"predicate": {
+								"dimension": "cpp:flower"
+							}
+						}						
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:firework_star",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{cpp_generate_marker:1b,cpp_clear:1b,CustomModelData:12970000,cpp_generate_type:'fruit_tree'}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:firework_star",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{cpp_generate_marker:1b,cpp_clear:1b,CustomModelData:12970000,cpp_generate_type:'ore_tree'}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:firework_star",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{cpp_generate_marker:1b,cpp_clear:1b,CustomModelData:12970000,cpp_generate_type:'wool_tree'}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:firework_star",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{cpp_generate_marker:1b,cpp_clear:1b,CustomModelData:12970000,cpp_generate_type:'sakura_tree'}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"conditions":[
+				{
+					"condition": "minecraft:random_chance",
+					"chance": 0.15
+				},
+				{
+					"condition": "minecraft:alternative",
+					"terms": [
+						{
+							"condition": "minecraft:location_check",
+							"predicate": {
+								"biome": "minecraft:desert"
+							}
+						},
+						{
+							"condition": "minecraft:location_check",
+							"predicate": {
+								"biome": "minecraft:desert_hills"
+							}
+						},
+						{
+							"condition": "minecraft:location_check",
+							"predicate": {
+								"biome": "minecraft:desert_lakes"
+							}
+						},
+						{
+							"condition": "minecraft:location_check",
+							"predicate": {
+								"biome": "minecraft:badlands"
+							}
+						},
+						{
+							"condition": "minecraft:location_check",
+							"predicate": {
+								"biome": "minecraft:badlands_plateau"
+							}
+						},
+						{
+							"condition": "minecraft:location_check",
+							"predicate": {
+								"biome": "minecraft:modified_badlands_plateau"
+							}
+						},
+						{
+							"condition": "minecraft:location_check",
+							"predicate": {
+								"biome": "minecraft:wooded_badlands_plateau"
+							}
+						},
+						{
+							"condition": "minecraft:location_check",
+							"predicate": {
+								"biome": "minecraft:modified_wooded_badlands_plateau"
+							}
+						},
+						{
+							"condition": "minecraft:location_check",
+							"predicate": {
+								"biome": "minecraft:eroded_badlands"
+							}
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:firework_star",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{cpp_generate_marker:1b,cpp_clear:1b,CustomModelData:12970000,cpp_generate_type:'dead_coral_fan'}"
+						},
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 1,
+								"max": 5
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"conditions":[
+				{
+					"condition": "minecraft:random_chance",
+					"chance": 0.1
+				},
+				{
+					"condition": "minecraft:alternative",
+					"terms": [
+						{
+							"condition": "minecraft:location_check",
+							"predicate": {
+								"dimension": "minecraft:overworld"
+							}
+						},
+						{
+							"condition": "minecraft:location_check",
+							"predicate": {
+								"dimension": "cpp:flower"
+							}
+						}						
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:firework_star",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{cpp_generate_marker:1b,cpp_clear:1b,CustomModelData:12970000,cpp_generate_type:'small_bush'}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"conditions":[
+				{
+					"condition": "minecraft:random_chance",
+					"chance": 0.08
+				},
+				{
+					"condition": "minecraft:alternative",
+					"terms": [
+						{
+							"condition": "minecraft:location_check",
+							"predicate": {
+								"biome": "minecraft:taiga"
+							}
+						},
+						{
+							"condition": "minecraft:location_check",
+							"predicate": {
+								"biome": "minecraft:taiga_hills"
+							}
+						},
+						{
+							"condition": "minecraft:location_check",
+							"predicate": {
+								"biome": "minecraft:taiga_mountains"
+							}
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:firework_star",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{cpp_generate_marker:1b,cpp_clear:1b,CustomModelData:12970000,cpp_generate_type:'dead_spruce'}"
+						},
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 1,
+								"max": 4
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"conditions":[
+				{
+					"condition": "minecraft:random_chance",
+					"chance": 0.04
+				},
+				{
+					"condition": "minecraft:location_check",
+					"predicate": {
+						"dimension": "minecraft:overworld"
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:firework_star",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{cpp_generate_marker:1b,cpp_clear:1b,CustomModelData:12970000,cpp_generate_type:'crops'}"
+						},
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 1,
+								"max": 4
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"conditions":[
+				{
+					"condition": "minecraft:random_chance",
+					"chance": 0.4
+				},
+				{
+					"condition": "minecraft:location_check",
+					"predicate": {
+						"dimension": "cpp:flower"
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:firework_star",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{cpp_generate_marker:1b,cpp_clear:1b,CustomModelData:12970000,cpp_generate_type:'modcrops'}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

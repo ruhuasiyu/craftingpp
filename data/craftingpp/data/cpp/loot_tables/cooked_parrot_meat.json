@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"translate\":\"item.cpp.cooked_parrot_meat\"}'},id:'cpp:cooked_parrot_meat',CustomModelData:12970001}"
+							"tag": "{display:{Name:'{\"italic\":false,\"translate\":\"item.cpp.cooked_parrot_meat\"}'},id:'cpp:cooked_parrot_meat',CustomModelData:12970001}"
 						}
 					]
 				}

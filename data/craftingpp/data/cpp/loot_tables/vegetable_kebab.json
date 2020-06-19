@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"translate\":\"item.cpp.vegetable_kebab\"}',Lore:['{\"translate\":\"lore.cpp.leap\"}']},id:'cpp:vegetable_kebab',CustomModelData:12970005}"
+							"tag": "{display:{Name:'{\"italic\":false,\"translate\":\"item.cpp.vegetable_kebab\"}',Lore:['{\"italic\":false,\"translate\":\"lore.cpp.leap\"}']},id:'cpp:vegetable_kebab',CustomModelData:12970005}"
 						}
 					]
 				}

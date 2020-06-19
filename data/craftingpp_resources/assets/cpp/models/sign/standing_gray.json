@@ -1,0 +1,7 @@
+{
+    "parent": "cpp:sign/standing_sign",
+    "textures": {
+        "particle": "cpp:sign/gray",
+        "texture": "cpp:sign/gray"
+    }
+}

@@ -17,7 +17,7 @@
 			"trigger": "minecraft:player_killed_entity",
 			"conditions": {
 				"entity": {
-					"nbt":"{Tags:[\"cpp_dark_animal\"]}"
+					"nbt":"{Tags:['cpp_dark_animal']}"
 				}
 			}
 		}

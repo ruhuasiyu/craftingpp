@@ -11,8 +11,8 @@
 							"function": "minecraft:set_attributes",
 							"modifiers": [
 								{
-									"name": "head_maxHealth",
-									"attribute": "generic.maxHealth",
+									"name": "head_max_health",
+									"attribute": "generic.max_health",
 									"operation": "addition",
 									"amount": {
 										"min": 0,

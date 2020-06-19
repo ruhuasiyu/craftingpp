@@ -9,51 +9,37 @@
 						{
 							"conditions": [
 								{
-									"condition": "minecraft:inverted",
-									"term": {
-										"condition": "minecraft:alternative",
-										"terms": [
-											{
-												"condition": "minecraft:inverted",
-												"term": {
-													"condition": "minecraft:reference",
-													"name": "cpp:item_processer/tool/shovel"
-												}
-											},
-											{
-												"condition": "minecraft:inverted",
-												"term": {
-													"condition": "minecraft:alternative",
-													"terms": [
-														{
-															"condition": "minecraft:location_check",
-															"predicate": {
-																"block": {
-																	"nbt": "{Items:[{Slot:12b,id:'minecraft:grass_block'}]}"
-																}
-															}
-														},
-														{
-															"condition": "minecraft:location_check",
-															"predicate": {
-																"block": {
-																	"nbt": "{Items:[{Slot:12b,id:'minecraft:mycelium'}]}"
-																}
-															}
-														},
-														{
-															"condition": "minecraft:location_check",
-															"predicate": {
-																"block": {
-																	"nbt": "{Items:[{Slot:12b,id:'minecraft:podzol'}]}"
-																}
-															}
-														}
-													]
+									"condition": "minecraft:reference",
+									"name": "cpp:item_processer/tool/shovel"
+								},
+								{
+									"condition": "minecraft:alternative",
+									"terms": [
+										{
+											"condition": "minecraft:location_check",
+											"predicate": {
+												"block": {
+													"nbt": "{Items:[{Slot:12b,id:'minecraft:grass_block'}]}"
 												}
 											}
-										]
-									}
+										},
+										{
+											"condition": "minecraft:location_check",
+											"predicate": {
+												"block": {
+													"nbt": "{Items:[{Slot:12b,id:'minecraft:mycelium'}]}"
+												}
+											}
+										},
+										{
+											"condition": "minecraft:location_check",
+											"predicate": {
+												"block": {
+													"nbt": "{Items:[{Slot:12b,id:'minecraft:podzol'}]}"
+												}
+											}
+										}
+									]
 								}
 							],
 							"type": "minecraft:item",
@@ -62,34 +48,15 @@
 						{
 							"conditions": [
 								{
-									"condition": "minecraft:inverted",
-									"term": {
-										"condition": "minecraft:alternative",
-										"terms": [
-											{
-												"condition": "minecraft:inverted",
-												"term": {
-													"condition": "minecraft:reference",
-													"name": "cpp:item_processer/tool/shovel"
-												}
-											},
-											{
-												"condition": "minecraft:inverted",
-												"term": {
-													"condition": "minecraft:alternative",
-													"terms": [
-														{
-															"condition": "minecraft:location_check",
-															"predicate": {
-																"block": {
-																	"nbt": "{Items:[{Slot:12b,id:'minecraft:clay'}]}"
-																}
-															}
-														}
-													]
-												}
-											}
-										]
+									"condition": "minecraft:reference",
+									"name": "cpp:item_processer/tool/shovel"
+								},
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:12b,id:'minecraft:clay'}]}"
+										}
 									}
 								}
 							],
@@ -105,34 +72,15 @@
 						{
 							"conditions": [
 								{
-									"condition": "minecraft:inverted",
-									"term": {
-										"condition": "minecraft:alternative",
-										"terms": [
-											{
-												"condition": "minecraft:inverted",
-												"term": {
-													"condition": "minecraft:reference",
-													"name": "cpp:item_processer/tool/shovel"
-												}
-											},
-											{
-												"condition": "minecraft:inverted",
-												"term": {
-													"condition": "minecraft:alternative",
-													"terms": [
-														{
-															"condition": "minecraft:location_check",
-															"predicate": {
-																"block": {
-																	"nbt": "{Items:[{Slot:12b,id:'minecraft:gravel'}]}"
-																}
-															}
-														}
-													]
-												}
-											}
-										]
+									"condition": "minecraft:reference",
+									"name": "cpp:item_processer/tool/shovel"
+								},
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:12b,id:'minecraft:gravel'}]}"
+										}
 									}
 								}
 							],
@@ -142,34 +90,43 @@
 						{
 							"conditions": [
 								{
-									"condition": "minecraft:inverted",
-									"term": {
-										"condition": "minecraft:alternative",
-										"terms": [
-											{
-												"condition": "minecraft:inverted",
-												"term": {
-													"condition": "minecraft:reference",
-													"name": "cpp:item_processer/tool/shovel"
-												}
-											},
-											{
-												"condition": "minecraft:inverted",
-												"term": {
-													"condition": "minecraft:alternative",
-													"terms": [
-														{
-															"condition": "minecraft:location_check",
-															"predicate": {
-																"block": {
-																	"nbt": "{Items:[{Slot:12b,id:'minecraft:snow_block'}]}"
-																}
-															}
-														}
-													]
-												}
-											}
-										]
+									"condition": "minecraft:reference",
+									"name": "cpp:item_processer/tool/pickaxe"
+								},
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:12b,id:'minecraft:gilded_blackstone'}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:gold_nugget",
+							"functions": [
+								{
+									"function": "minecraft:set_count",
+									"count": {
+										"min": 2.0,
+										"max": 5.0,
+										"type": "minecraft:uniform"
+									}
+							 	}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:reference",
+									"name": "cpp:item_processer/tool/shovel"
+								},
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:12b,id:'minecraft:snow_block'}]}"
+										}
 									}
 								}
 							],
@@ -185,34 +142,15 @@
 						{
 							"conditions": [
 								{
-									"condition": "minecraft:inverted",
-									"term": {
-										"condition": "minecraft:alternative",
-										"terms": [
-											{
-												"condition": "minecraft:inverted",
-												"term": {
-													"condition": "minecraft:reference",
-													"name": "cpp:item_processer/tool/hoe"
-												}
-											},
-											{
-												"condition": "minecraft:inverted",
-												"term": {
-													"condition": "minecraft:alternative",
-													"terms": [
-														{
-															"condition": "minecraft:location_check",
-															"predicate": {
-																"block": {
-																	"nbt": "{Items:[{Slot:12b,id:'minecraft:coarse_dirt'}]}"
-																}
-															}
-														}
-													]
-												}
-											}
-										]
+									"condition": "minecraft:reference",
+									"name": "cpp:item_processer/tool/hoe"
+								},
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:12b,id:'minecraft:coarse_dirt'}]}"
+										}
 									}
 								}
 							],
@@ -222,34 +160,15 @@
 						{
 							"conditions": [
 								{
-									"condition": "minecraft:inverted",
-									"term": {
-										"condition": "minecraft:alternative",
-										"terms": [
-											{
-												"condition": "minecraft:inverted",
-												"term": {
-													"condition": "minecraft:reference",
-													"name": "cpp:item_processer/tool/axe"
-												}
-											},
-											{
-												"condition": "minecraft:inverted",
-												"term": {
-													"condition": "minecraft:alternative",
-													"terms": [
-														{
-															"condition": "minecraft:location_check",
-															"predicate": {
-																"block": {
-																	"nbt": "{Items:[{Slot:12b,id:'minecraft:melon'}]}"
-																}
-															}
-														}
-													]
-												}
-											}
-										]
+									"condition": "minecraft:reference",
+									"name": "cpp:item_processer/tool/axe"
+								},
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:12b,id:'minecraft:melon'}]}"
+										}
 									}
 								}
 							],
@@ -265,34 +184,15 @@
 						{
 							"conditions": [
 								{
-									"condition": "minecraft:inverted",
-									"term": {
-										"condition": "minecraft:alternative",
-										"terms": [
-											{
-												"condition": "minecraft:inverted",
-												"term": {
-													"condition": "minecraft:reference",
-													"name": "cpp:item_processer/tool/axe"
-												}
-											},
-											{
-												"condition": "minecraft:inverted",
-												"term": {
-													"condition": "minecraft:alternative",
-													"terms": [
-														{
-															"condition": "minecraft:location_check",
-															"predicate": {
-																"block": {
-																	"nbt": "{Items:[{Slot:12b,id:'minecraft:oak_log'}]}"
-																}
-															}
-														}
-													]
-												}
-											}
-										]
+									"condition": "minecraft:reference",
+									"name": "cpp:item_processer/tool/axe"
+								},
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:12b,id:'minecraft:oak_log'}]}"
+										}
 									}
 								}
 							],
@@ -302,34 +202,15 @@
 						{
 							"conditions": [
 								{
-									"condition": "minecraft:inverted",
-									"term": {
-										"condition": "minecraft:alternative",
-										"terms": [
-											{
-												"condition": "minecraft:inverted",
-												"term": {
-													"condition": "minecraft:reference",
-													"name": "cpp:item_processer/tool/axe"
-												}
-											},
-											{
-												"condition": "minecraft:inverted",
-												"term": {
-													"condition": "minecraft:alternative",
-													"terms": [
-														{
-															"condition": "minecraft:location_check",
-															"predicate": {
-																"block": {
-																	"nbt": "{Items:[{Slot:12b,id:'minecraft:spruce_log'}]}"
-																}
-															}
-														}
-													]
-												}
-											}
-										]
+									"condition": "minecraft:reference",
+									"name": "cpp:item_processer/tool/axe"
+								},
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:12b,id:'minecraft:spruce_log'}]}"
+										}
 									}
 								}
 							],
@@ -339,34 +220,15 @@
 						{
 							"conditions": [
 								{
-									"condition": "minecraft:inverted",
-									"term": {
-										"condition": "minecraft:alternative",
-										"terms": [
-											{
-												"condition": "minecraft:inverted",
-												"term": {
-													"condition": "minecraft:reference",
-													"name": "cpp:item_processer/tool/axe"
-												}
-											},
-											{
-												"condition": "minecraft:inverted",
-												"term": {
-													"condition": "minecraft:alternative",
-													"terms": [
-														{
-															"condition": "minecraft:location_check",
-															"predicate": {
-																"block": {
-																	"nbt": "{Items:[{Slot:12b,id:'minecraft:birch_log'}]}"
-																}
-															}
-														}
-													]
-												}
-											}
-										]
+									"condition": "minecraft:reference",
+									"name": "cpp:item_processer/tool/axe"
+								},
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:12b,id:'minecraft:birch_log'}]}"
+										}
 									}
 								}
 							],
@@ -376,34 +238,15 @@
 						{
 							"conditions": [
 								{
-									"condition": "minecraft:inverted",
-									"term": {
-										"condition": "minecraft:alternative",
-										"terms": [
-											{
-												"condition": "minecraft:inverted",
-												"term": {
-													"condition": "minecraft:reference",
-													"name": "cpp:item_processer/tool/axe"
-												}
-											},
-											{
-												"condition": "minecraft:inverted",
-												"term": {
-													"condition": "minecraft:alternative",
-													"terms": [
-														{
-															"condition": "minecraft:location_check",
-															"predicate": {
-																"block": {
-																	"nbt": "{Items:[{Slot:12b,id:'minecraft:jungle_log'}]}"
-																}
-															}
-														}
-													]
-												}
-											}
-										]
+									"condition": "minecraft:reference",
+									"name": "cpp:item_processer/tool/axe"
+								},
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:12b,id:'minecraft:jungle_log'}]}"
+										}
 									}
 								}
 							],
@@ -413,34 +256,15 @@
 						{
 							"conditions": [
 								{
-									"condition": "minecraft:inverted",
-									"term": {
-										"condition": "minecraft:alternative",
-										"terms": [
-											{
-												"condition": "minecraft:inverted",
-												"term": {
-													"condition": "minecraft:reference",
-													"name": "cpp:item_processer/tool/axe"
-												}
-											},
-											{
-												"condition": "minecraft:inverted",
-												"term": {
-													"condition": "minecraft:alternative",
-													"terms": [
-														{
-															"condition": "minecraft:location_check",
-															"predicate": {
-																"block": {
-																	"nbt": "{Items:[{Slot:12b,id:'minecraft:acacia_log'}]}"
-																}
-															}
-														}
-													]
-												}
-											}
-										]
+									"condition": "minecraft:reference",
+									"name": "cpp:item_processer/tool/axe"
+								},
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:12b,id:'minecraft:acacia_log'}]}"
+										}
 									}
 								}
 							],
@@ -450,34 +274,15 @@
 						{
 							"conditions": [
 								{
-									"condition": "minecraft:inverted",
-									"term": {
-										"condition": "minecraft:alternative",
-										"terms": [
-											{
-												"condition": "minecraft:inverted",
-												"term": {
-													"condition": "minecraft:reference",
-													"name": "cpp:item_processer/tool/axe"
-												}
-											},
-											{
-												"condition": "minecraft:inverted",
-												"term": {
-													"condition": "minecraft:alternative",
-													"terms": [
-														{
-															"condition": "minecraft:location_check",
-															"predicate": {
-																"block": {
-																	"nbt": "{Items:[{Slot:12b,id:'minecraft:dark_oak_log'}]}"
-																}
-															}
-														}
-													]
-												}
-											}
-										]
+									"condition": "minecraft:reference",
+									"name": "cpp:item_processer/tool/axe"
+								},
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:12b,id:'minecraft:dark_oak_log'}]}"
+										}
 									}
 								}
 							],
@@ -487,34 +292,15 @@
 						{
 							"conditions": [
 								{
-									"condition": "minecraft:inverted",
-									"term": {
-										"condition": "minecraft:alternative",
-										"terms": [
-											{
-												"condition": "minecraft:inverted",
-												"term": {
-													"condition": "minecraft:reference",
-													"name": "cpp:item_processer/tool/axe"
-												}
-											},
-											{
-												"condition": "minecraft:inverted",
-												"term": {
-													"condition": "minecraft:alternative",
-													"terms": [
-														{
-															"condition": "minecraft:location_check",
-															"predicate": {
-																"block": {
-																	"nbt": "{Items:[{Slot:12b,id:'minecraft:oak_wood'}]}"
-																}
-															}
-														}
-													]
-												}
-											}
-										]
+									"condition": "minecraft:reference",
+									"name": "cpp:item_processer/tool/axe"
+								},
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:12b,id:'minecraft:oak_wood'}]}"
+										}
 									}
 								}
 							],
@@ -524,34 +310,15 @@
 						{
 							"conditions": [
 								{
-									"condition": "minecraft:inverted",
-									"term": {
-										"condition": "minecraft:alternative",
-										"terms": [
-											{
-												"condition": "minecraft:inverted",
-												"term": {
-													"condition": "minecraft:reference",
-													"name": "cpp:item_processer/tool/axe"
-												}
-											},
-											{
-												"condition": "minecraft:inverted",
-												"term": {
-													"condition": "minecraft:alternative",
-													"terms": [
-														{
-															"condition": "minecraft:location_check",
-															"predicate": {
-																"block": {
-																	"nbt": "{Items:[{Slot:12b,id:'minecraft:spruce_wood'}]}"
-																}
-															}
-														}
-													]
-												}
-											}
-										]
+									"condition": "minecraft:reference",
+									"name": "cpp:item_processer/tool/axe"
+								},
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:12b,id:'minecraft:spruce_wood'}]}"
+										}
 									}
 								}
 							],
@@ -561,34 +328,15 @@
 						{
 							"conditions": [
 								{
-									"condition": "minecraft:inverted",
-									"term": {
-										"condition": "minecraft:alternative",
-										"terms": [
-											{
-												"condition": "minecraft:inverted",
-												"term": {
-													"condition": "minecraft:reference",
-													"name": "cpp:item_processer/tool/axe"
-												}
-											},
-											{
-												"condition": "minecraft:inverted",
-												"term": {
-													"condition": "minecraft:alternative",
-													"terms": [
-														{
-															"condition": "minecraft:location_check",
-															"predicate": {
-																"block": {
-																	"nbt": "{Items:[{Slot:12b,id:'minecraft:birch_wood'}]}"
-																}
-															}
-														}
-													]
-												}
-											}
-										]
+									"condition": "minecraft:reference",
+									"name": "cpp:item_processer/tool/axe"
+								},
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:12b,id:'minecraft:birch_wood'}]}"
+										}
 									}
 								}
 							],
@@ -598,34 +346,15 @@
 						{
 							"conditions": [
 								{
-									"condition": "minecraft:inverted",
-									"term": {
-										"condition": "minecraft:alternative",
-										"terms": [
-											{
-												"condition": "minecraft:inverted",
-												"term": {
-													"condition": "minecraft:reference",
-													"name": "cpp:item_processer/tool/axe"
-												}
-											},
-											{
-												"condition": "minecraft:inverted",
-												"term": {
-													"condition": "minecraft:alternative",
-													"terms": [
-														{
-															"condition": "minecraft:location_check",
-															"predicate": {
-																"block": {
-																	"nbt": "{Items:[{Slot:12b,id:'minecraft:jungle_wood'}]}"
-																}
-															}
-														}
-													]
-												}
-											}
-										]
+									"condition": "minecraft:reference",
+									"name": "cpp:item_processer/tool/axe"
+								},
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:12b,id:'minecraft:jungle_wood'}]}"
+										}
 									}
 								}
 							],
@@ -635,34 +364,15 @@
 						{
 							"conditions": [
 								{
-									"condition": "minecraft:inverted",
-									"term": {
-										"condition": "minecraft:alternative",
-										"terms": [
-											{
-												"condition": "minecraft:inverted",
-												"term": {
-													"condition": "minecraft:reference",
-													"name": "cpp:item_processer/tool/axe"
-												}
-											},
-											{
-												"condition": "minecraft:inverted",
-												"term": {
-													"condition": "minecraft:alternative",
-													"terms": [
-														{
-															"condition": "minecraft:location_check",
-															"predicate": {
-																"block": {
-																	"nbt": "{Items:[{Slot:12b,id:'minecraft:acacia_wood'}]}"
-																}
-															}
-														}
-													]
-												}
-											}
-										]
+									"condition": "minecraft:reference",
+									"name": "cpp:item_processer/tool/axe"
+								},
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:12b,id:'minecraft:acacia_wood'}]}"
+										}
 									}
 								}
 							],
@@ -672,34 +382,15 @@
 						{
 							"conditions": [
 								{
-									"condition": "minecraft:inverted",
-									"term": {
-										"condition": "minecraft:alternative",
-										"terms": [
-											{
-												"condition": "minecraft:inverted",
-												"term": {
-													"condition": "minecraft:reference",
-													"name": "cpp:item_processer/tool/axe"
-												}
-											},
-											{
-												"condition": "minecraft:inverted",
-												"term": {
-													"condition": "minecraft:alternative",
-													"terms": [
-														{
-															"condition": "minecraft:location_check",
-															"predicate": {
-																"block": {
-																	"nbt": "{Items:[{Slot:12b,id:'minecraft:dark_oak_wood'}]}"
-																}
-															}
-														}
-													]
-												}
-											}
-										]
+									"condition": "minecraft:reference",
+									"name": "cpp:item_processer/tool/axe"
+								},
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:12b,id:'minecraft:dark_oak_wood'}]}"
+										}
 									}
 								}
 							],
@@ -709,34 +400,15 @@
 						{
 							"conditions": [
 								{
-									"condition": "minecraft:inverted",
-									"term": {
-										"condition": "minecraft:alternative",
-										"terms": [
-											{
-												"condition": "minecraft:inverted",
-												"term": {
-													"condition": "minecraft:reference",
-													"name": "cpp:item_processer/tool/axe"
-												}
-											},
-											{
-												"condition": "minecraft:inverted",
-												"term": {
-													"condition": "minecraft:alternative",
-													"terms": [
-														{
-															"condition": "minecraft:location_check",
-															"predicate": {
-																"block": {
-																	"nbt": "{Items:[{Slot:12b,id:'minecraft:crimson_stem'}]}"
-																}
-															}
-														}
-													]
-												}
-											}
-										]
+									"condition": "minecraft:reference",
+									"name": "cpp:item_processer/tool/axe"
+								},
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:12b,id:'minecraft:crimson_stem'}]}"
+										}
 									}
 								}
 							],
@@ -746,34 +418,15 @@
 						{
 							"conditions": [
 								{
-									"condition": "minecraft:inverted",
-									"term": {
-										"condition": "minecraft:alternative",
-										"terms": [
-											{
-												"condition": "minecraft:inverted",
-												"term": {
-													"condition": "minecraft:reference",
-													"name": "cpp:item_processer/tool/axe"
-												}
-											},
-											{
-												"condition": "minecraft:inverted",
-												"term": {
-													"condition": "minecraft:alternative",
-													"terms": [
-														{
-															"condition": "minecraft:location_check",
-															"predicate": {
-																"block": {
-																	"nbt": "{Items:[{Slot:12b,id:'minecraft:warped_stem'}]}"
-																}
-															}
-														}
-													]
-												}
-											}
-										]
+									"condition": "minecraft:reference",
+									"name": "cpp:item_processer/tool/axe"
+								},
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:12b,id:'minecraft:warped_stem'}]}"
+										}
 									}
 								}
 							],
@@ -783,34 +436,15 @@
 						{
 							"conditions": [
 								{
-									"condition": "minecraft:inverted",
-									"term": {
-										"condition": "minecraft:alternative",
-										"terms": [
-											{
-												"condition": "minecraft:inverted",
-												"term": {
-													"condition": "minecraft:reference",
-													"name": "cpp:item_processer/tool/axe"
-												}
-											},
-											{
-												"condition": "minecraft:inverted",
-												"term": {
-													"condition": "minecraft:alternative",
-													"terms": [
-														{
-															"condition": "minecraft:location_check",
-															"predicate": {
-																"block": {
-																	"nbt": "{Items:[{Slot:12b,id:'minecraft:crimson_hyphae'}]}"
-																}
-															}
-														}
-													]
-												}
-											}
-										]
+									"condition": "minecraft:reference",
+									"name": "cpp:item_processer/tool/axe"
+								},
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:12b,id:'minecraft:crimson_hyphae'}]}"
+										}
 									}
 								}
 							],
@@ -820,34 +454,15 @@
 						{
 							"conditions": [
 								{
-									"condition": "minecraft:inverted",
-									"term": {
-										"condition": "minecraft:alternative",
-										"terms": [
-											{
-												"condition": "minecraft:inverted",
-												"term": {
-													"condition": "minecraft:reference",
-													"name": "cpp:item_processer/tool/axe"
-												}
-											},
-											{
-												"condition": "minecraft:inverted",
-												"term": {
-													"condition": "minecraft:alternative",
-													"terms": [
-														{
-															"condition": "minecraft:location_check",
-															"predicate": {
-																"block": {
-																	"nbt": "{Items:[{Slot:12b,id:'minecraft:warped_hyphae'}]}"
-																}
-															}
-														}
-													]
-												}
-											}
-										]
+									"condition": "minecraft:reference",
+									"name": "cpp:item_processer/tool/axe"
+								},
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:12b,id:'minecraft:warped_hyphae'}]}"
+										}
 									}
 								}
 							],
@@ -857,34 +472,15 @@
 						{
 							"conditions": [
 								{
-									"condition": "minecraft:inverted",
-									"term": {
-										"condition": "minecraft:alternative",
-										"terms": [
-											{
-												"condition": "minecraft:inverted",
-												"term": {
-													"condition": "minecraft:reference",
-													"name": "cpp:item_processer/tool/pickaxe"
-												}
-											},
-											{
-												"condition": "minecraft:inverted",
-												"term": {
-													"condition": "minecraft:alternative",
-													"terms": [
-														{
-															"condition": "minecraft:location_check",
-															"predicate": {
-																"block": {
-																	"nbt": "{Items:[{Slot:12b,id:'minecraft:stone'}]}"
-																}
-															}
-														}
-													]
-												}
-											}
-										]
+									"condition": "minecraft:reference",
+												"name": "cpp:item_processer/tool/pickaxe"
+								},
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:12b,id:'minecraft:stone'}]}"
+										}
 									}
 								}
 							],
@@ -894,34 +490,15 @@
 						{
 							"conditions": [
 								{
-									"condition": "minecraft:inverted",
-									"term": {
-										"condition": "minecraft:alternative",
-										"terms": [
-											{
-												"condition": "minecraft:inverted",
-												"term": {
-													"condition": "minecraft:reference",
-													"name": "cpp:item_processer/tool/pickaxe"
-												}
-											},
-											{
-												"condition": "minecraft:inverted",
-												"term": {
-													"condition": "minecraft:alternative",
-													"terms": [
-														{
-															"condition": "minecraft:location_check",
-															"predicate": {
-																"block": {
-																	"nbt": "{Items:[{Slot:12b,id:'minecraft:glowstone'}]}"
-																}
-															}
-														}
-													]
-												}
-											}
-										]
+									"condition": "minecraft:reference",
+									"name": "cpp:item_processer/tool/pickaxe"
+								},
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:12b,id:'minecraft:glowstone'}]}"
+										}
 									}
 								}
 							],
@@ -933,6 +510,37 @@
 									"count": 4
 								}
 							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:reference",
+									"name": "cpp:item_processer/tool/pickaxe"
+								},
+								{
+									"condition": "minecraft:alternative",
+									"terms": [
+										{
+											"condition": "minecraft:location_check",
+											"predicate": {
+												"block": {
+													"nbt": "{Items:[{Slot:12b,id:'minecraft:crimson_nylium'}]}"
+												}
+											}
+										},
+										{
+											"condition": "minecraft:location_check",
+											"predicate": {
+												"block": {
+													"nbt": "{Items:[{Slot:12b,id:'minecraft:warped_nylium'}]}"
+												}
+											}
+										}
+									]
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:netherrack"
 						},
 						{
 							"conditions": [

@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData:12970040,display:{Name:'{\"translate\":\"item.cpp.ancient_scroll\"}',Lore:['{\"translate\":\"enchantment.cpp.respiration\"}']},id:'cpp:ancient_scroll.respiration',dict:['ancient_scroll']}"
+							"tag": "{CustomModelData:12970040,display:{Name:'{\"italic\":false,\"translate\":\"item.cpp.ancient_scroll\"}',Lore:['{\"italic\":false,\"translate\":\"enchantment.cpp.respiration\"}']},id:'cpp:ancient_scroll.respiration',dict:['ancient_scroll']}"
 						}
 					]
 				}

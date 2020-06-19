@@ -1,0 +1,19 @@
+{
+	"condition": "minecraft:alternative",
+	"terms":[
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Inventory:[{tag:{id:'cpp:elder_s_words'}}]}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{EnderItems:[{tag:{id:'cpp:elder_s_words'}}]}"
+			}
+		}
+	]
+}

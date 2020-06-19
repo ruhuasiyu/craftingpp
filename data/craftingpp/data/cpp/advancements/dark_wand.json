@@ -18,7 +18,7 @@
 			"conditions":{
 				"items":[
 					{
-						"nbt":"{id:\"cpp:wand_of_the_darkness\"}"
+						"nbt":"{id:'cpp:wand_of_the_darkness'}"
 					}
 				]
 			}

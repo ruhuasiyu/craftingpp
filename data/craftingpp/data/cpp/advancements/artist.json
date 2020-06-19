@@ -18,7 +18,7 @@
 			"conditions": {
 				"items": [
 					{
-						"nbt": "{id:\"cpp:classical_painting\"}"
+						"nbt": "{id:'cpp:classical_painting'}"
 					}
 				]
 			}

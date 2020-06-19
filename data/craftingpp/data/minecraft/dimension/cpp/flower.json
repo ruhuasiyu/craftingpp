@@ -1,0 +1,65 @@
+{
+	"type": "cpp:flower",
+	"generator": {
+		"type": "minecraft:noise",
+		"seed": 20200602,
+        "settings": {
+			"bedrock_roof_position":256,
+			"bedrock_floor_position": 0,
+			"sea_level": 63,
+			"disable_mob_generation": true,
+			"default_block": {
+				"Name": "minecraft:dirt"
+			},
+			"default_fluid": {
+				"Name": "minecraft:water",
+				"Properties": {
+					"level": "7"
+				}
+			},
+			"noise": {
+				"top_slide": {
+					"target": 0,
+					"size": 1,
+					"offset": 1
+				},
+				"bottom_slide": {
+					"target": 0,
+					"size": 1,
+					"offset": 1
+				},
+				"sampling": {
+					"xz_scale": 0.01,
+					"xz_factor": 1.0,
+					"y_scale": 0.01,
+					"y_factor": 1.0
+				},
+				"size_vertical": 1,
+				"size_horizontal": 1,
+				"height": 128,
+				"density_factor": 1.0,
+				"density_offset": 0.0,
+				"simplex_surface_noise": false
+			},
+			"structures": {
+				"structures": {
+					"mineshaft": {
+						"spacing": 2000,
+						"separation": 1000,
+						"salt": 20200602
+					},
+					"ruined_portal": {
+						"spacing": 2000,
+						"separation": 1000,
+						"salt": 20200602
+					}
+				}
+			}
+		},
+        "biome_source": {
+			"biome": "minecraft:flower_forest",
+			"type": "minecraft:fixed",
+			"seed": 20200602
+		}
+	}
+}

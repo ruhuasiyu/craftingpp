@@ -19,7 +19,7 @@
 			"conditions":{
 				"items":[
 					{
-						"nbt":"{id:\"cpp:dream_wand\"}"
+						"nbt":"{id:'cpp:dream_wand'}"
 					}
 				]
 			}

@@ -325,6 +325,14 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
+					"nbt": "{Items:[{tag:{id:'cpp:sakura_sapling'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
 					"nbt": "{Items:[{id:'minecraft:oak_sapling'}]}"
 				}
 			}
@@ -357,7 +365,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"nbt": "{Items:[{id:'minecraft:acacia_sapling'}]}"
+					"nbt": "{Items:[{tag:{id:'minecraft:acacia_sapling'}}]}"
 				}
 			}
 		},

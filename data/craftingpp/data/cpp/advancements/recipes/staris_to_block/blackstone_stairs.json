@@ -1,0 +1,29 @@
+{
+	"criteria": {
+		"blackstone_stairs": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:blackstone_stairs"
+					}
+				]
+			}
+		},
+		"has_the_recipe": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "cpp:stairs_to_block/blackstone_stairs"
+			}
+		}
+	},
+	"rewards":{
+		"recipes": ["cpp:stairs_to_block/blackstone_stairs"]
+	},
+	"requirements": [
+		[
+			"blackstone_stairs",
+			"has_the_recipe"
+		]
+	]
+}

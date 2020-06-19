@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"translate\":\"item.cpp.break_hand\"}'},id:'cpp:break_hand',CustomModelData:12970122,dict:['hand']}"
+							"tag": "{display:{Name:'{\"italic\":false,\"translate\":\"item.cpp.break_hand\"}'},id:'cpp:break_hand',CustomModelData:12970122,dict:['hand']}"
 						}
 					]
 				}

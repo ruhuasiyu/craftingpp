@@ -5,7 +5,7 @@
 			"entries": [
 				{
 					"type": "minecraft:empty",
-					"weight": 12
+					"weight": 10
 				},
 				{
 					"type": "minecraft:item",
@@ -60,6 +60,11 @@
 				{
 					"type": "minecraft:loot_table",
 					"name": "cpp:wool_sapling",
+					"weight": 2
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "cpp:sakura_sapling",
 					"weight": 2
 				}
 			]

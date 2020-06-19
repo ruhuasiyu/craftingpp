@@ -1,16 +1,15 @@
-data merge entity @s {ArmorItems:[{},{},{},{id:"minecraft:carved_pumpkin",Count:1b,tag:{CustomModelData:12970051}}],ArmorDropChances:[-1.0f,-1.0f,-1.0f,-1.0f]}
+data merge entity @s {ArmorDropChances:[-1.0f,-1.0f,-1.0f,-1.0f]}
+loot replace entity @s armor.head 1 loot cpp:trade/hat
+
+execute if data entity @s Offers.Recipes[{sell:{id:"minecraft:apple"}}] run data modify entity @s Offers.Recipes[{sell:{id:"minecraft:apple"}}].sell.tag merge value {id:"minecraft:apple"}
+execute if data entity @s Offers.Recipes[{sell:{id:"minecraft:acacia_sapling"}}] run data modify entity @s Offers.Recipes[{sell:{id:"minecraft:acacia_sapling"}}].sell.tag merge value {CustomModelData:12971000,id:"minecraft:acacia_sapling"}
+
 data modify entity @s Offers.Recipes prepend value {buy:{id:"minecraft:stone",Count:64b},sell:{id:"minecraft:emerald",Count:1b},maxUses:12}
 data modify entity @s Offers.Recipes prepend value {buy:{id:"minecraft:stone",Count:64b},sell:{id:"minecraft:emerald",Count:1b},maxUses:12}
 data modify entity @s Offers.Recipes prepend value {buy:{id:"minecraft:stone",Count:64b},sell:{id:"minecraft:emerald",Count:1b},maxUses:12}
 data modify entity @s Offers.Recipes append value {buy:{id:"minecraft:emerald",Count:64b},sell:{id:"minecraft:stone",Count:1b},maxUses:12}
 data modify entity @s Offers.Recipes append value {buy:{id:"minecraft:emerald",Count:64b},sell:{id:"minecraft:stone",Count:1b},maxUses:6}
-data modify entity @s Offers.Recipes append value {buy:{id:"minecraft:firework_star",Count:1b,tag:{display:{Name:"{\"translate\":\"item.cpp.moon_shard\"}"},id:"cpp:moon_shard",CustomModelData:12970027}},sell:{id:"minecraft:carrot_on_a_stick",Count:1b},maxUses:3}
-
-# 修改帽子
-scoreboard players set #random_min cppValue 12970051
-scoreboard players set #random_max cppValue 12970058
-function cpp:random
-execute store result entity @s ArmorItems[3].tag.CustomModelData int 1 run scoreboard players get #rand cppValue
+data modify entity @s Offers.Recipes append value {buy:{id:"minecraft:firework_star",Count:1b,tag:{display:{Name:'{"italic":false,"translate":"item.cpp.moon_shard"}'},id:"cpp:moon_shard",CustomModelData:12970027}},sell:{id:"minecraft:carrot_on_a_stick",Count:1b},maxUses:3}
 
 # 修改交易
 loot replace entity @s weapon.mainhand 1 loot cpp:trade/buy1

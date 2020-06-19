@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"translate\":\"item.cpp.golem_warrior\"}'},id:'cpp:golem_warrior',CustomModelData:12970024}"
+							"tag": "{display:{Name:'{\"italic\":false,\"translate\":\"item.cpp.golem_warrior\"}'},id:'cpp:golem_warrior',CustomModelData:12970024}"
 						}
 					]
 				}

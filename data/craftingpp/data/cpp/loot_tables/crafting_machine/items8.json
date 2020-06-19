@@ -12,20 +12,6 @@
 									"condition": "minecraft:location_check",
 									"predicate": {
 										"block": {
-											"nbt": "{Items:[{Slot:1b,tag:{id:'cpp:iron_chain'}},{Slot:3b,tag:{id:'cpp:iron_chain'}},{Slot:10b,tag:{id:'cpp:iron_chain'}},{Slot:11b,tag:{id:'cpp:iron_chain'}},{Slot:12b,tag:{id:'cpp:iron_chain'}},{Slot:19b,tag:{id:'cpp:iron_chain'}},{Slot:20b,tag:{id:'cpp:iron_chain'}},{Slot:21b,tag:{id:'cpp:iron_chain'}}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:item",
-							"name": "minecraft:chainmail_chestplate"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
 											"nbt": "{Items:[{Slot:1b,id:'minecraft:brown_dye'},{Slot:3b,id:'minecraft:brown_dye'},{Slot:10b,id:'minecraft:leather'},{Slot:11b,id:'minecraft:leather'},{Slot:12b,id:'minecraft:leather'},{Slot:19b,id:'minecraft:leather'},{Slot:20b,id:'minecraft:leather'},{Slot:21b,id:'minecraft:leather'}]}"
 										}
 									}

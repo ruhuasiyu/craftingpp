@@ -33,7 +33,6 @@
 		{ "predicate": { "custom_model_data": 12970048 }, "model": "cpp:tool/coordinate_recorder"},
 		{ "predicate": { "custom_model_data": 12970049 }, "model": "cpp:tool/santa_gift"},
 		{ "predicate": { "custom_model_data": 12970050 }, "model": "cpp:tool/muffler"},
-		{ "predicate": { "custom_model_data": 12970051 }, "model": "cpp:tool/infinite_bucket"},
 		
 		{ "predicate": { "custom_model_data": 12970061 }, "model": "cpp:tool/elder_s_words"},		
 		{ "predicate": { "custom_model_data": 12970062 }, "model": "cpp:tool/sealing_wand"},
@@ -53,7 +52,7 @@
 		{ "predicate": { "custom_model_data": 12970105 }, "model": "cpp:plugin/high_temperature_plugin"},
 		{ "predicate": { "custom_model_data": 12970106 }, "model": "cpp:plugin/cobblestone_plugin"},
 		{ "predicate": { "custom_model_data": 12970107 }, "model": "cpp:plugin/stone_plugin"},
-		{ "predicate": { "custom_model_data": 12970108 }, "model": "cpp:plugin/obsidian_plugin"},
+		{ "predicate": { "custom_model_data": 12970108 }, "model": "cpp:plugin/blackstone_plugin"},
 		{ "predicate": { "custom_model_data": 12970109 }, "model": "cpp:plugin/netherrack_plugin"},
 		{ "predicate": { "custom_model_data": 12970110 }, "model": "cpp:plugin/end_stone_plugin"},
 		
@@ -120,9 +119,6 @@
 		{ "predicate": { "custom_model_data": 12971061 }, "model": "cpp:character/61"},
 		{ "predicate": { "custom_model_data": 12971062 }, "model": "cpp:character/62"},
 		{ "predicate": { "custom_model_data": 12971063 }, "model": "cpp:character/63"},
-		{ "predicate": { "custom_model_data": 12971064 }, "model": "cpp:character/64"},
-		{ "predicate": { "custom_model_data": 12971065 }, "model": "cpp:character/65"},
-		{ "predicate": { "custom_model_data": 12971066 }, "model": "cpp:character/66"},
-		{ "predicate": { "custom_model_data": 12971067 }, "model": "cpp:character/67"}
+		{ "predicate": { "custom_model_data": 12971064 }, "model": "cpp:character/64"}
 	]
 }

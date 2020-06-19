@@ -5,13 +5,7 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:barrel",
-					"functions": [
-						{
-							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"translate\":\"block.minecraft.petrified_oak_slab\"}'},id:'cpp:crafting_machine',CustomModelData:12970000}"
-						}
-					]
+					"name": "minecraft:petrified_oak_slab"
 				}
 			]
 		}

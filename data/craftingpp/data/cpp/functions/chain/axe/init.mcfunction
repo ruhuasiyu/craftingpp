@@ -2,9 +2,8 @@ execute as @s[scores={cppUseAxe1=1..}] run scoreboard players set #max_durality 
 execute as @s[scores={cppUseAxe2=1..}] run scoreboard players set #max_durality cppValue 250
 execute as @s[scores={cppUseAxe3=1..}] run scoreboard players set #max_durality cppValue 32
 execute as @s[scores={cppUseAxe4=1..}] run scoreboard players set #max_durality cppValue 131
-execute as @s[scores={cppUseAxe4=1..}] run scoreboard players set #max_durality cppValue 2031
-execute if score #damage cppValue < #max_durality cppValue at @e[type=item,nbt={Age:0s},distance=..6,sort=nearest,limit=1] run function cpp:chain/axe/mark
-execute if score #damage cppValue < #max_durality cppValue at @e[type=item,nbt={Age:1s},distance=..6,sort=nearest,limit=1] run function cpp:chain/axe/mark
+execute as @s[scores={cppUseAxe5=1..}] run scoreboard players set #max_durality cppValue 2031
+execute at @e[type=item,predicate=cpp:item/age0,distance=..6,sort=nearest,limit=1] run function cpp:chain/axe/mark
 
 scoreboard players reset @s cppUseAxe1
 scoreboard players reset @s cppUseAxe2

@@ -12,7 +12,7 @@
 			"trigger": "minecraft:consume_item",
 			"conditions": {
 				"item": {
-					"nbt": "{id:\"cpp:dumpling\"}"
+					"nbt": "{id:'cpp:dumpling'}"
 				}
 			}
 		},
@@ -20,7 +20,7 @@
 			"trigger": "minecraft:consume_item",
 			"conditions": {
 				"item": {
-					"nbt": "{id:\"cpp:boiled_egg\"}"
+					"nbt": "{id:'cpp:boiled_egg'}"
 				}
 			}
 		},
@@ -28,7 +28,7 @@
 			"trigger": "minecraft:consume_item",
 			"conditions": {
 				"item": {
-					"nbt": "{id:\"cpp:butter\"}"
+					"nbt": "{id:'cpp:butter'}"
 				}
 			}
 		},
@@ -36,7 +36,7 @@
 			"trigger": "minecraft:consume_item",
 			"conditions": {
 				"item": {
-					"nbt": "{id:\"cpp:cheese\"}"
+					"nbt": "{id:'cpp:cheese'}"
 				}
 			}
 		}

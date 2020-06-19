@@ -4,7 +4,7 @@
 			"trigger": "minecraft:consume_item",
 			"conditions": {
 				"item": {
-					"nbt": "{id:\"cpp:beef_kebab\"}"
+					"nbt": "{id:'cpp:beef_kebab'}"
 				}
 			}
 		},
@@ -12,7 +12,7 @@
 			"trigger": "minecraft:consume_item",
 			"conditions": {
 				"item": {
-					"nbt": "{id:\"cpp:lamb_kebab\"}"
+					"nbt": "{id:'cpp:lamb_kebab'}"
 				}
 			}
 		},
@@ -20,7 +20,7 @@
 			"trigger": "minecraft:consume_item",
 			"conditions": {
 				"item": {
-					"nbt": "{id:\"cpp:chicken_kebab\"}"
+					"nbt": "{id:'cpp:chicken_kebab'}"
 				}
 			}
 		},
@@ -28,7 +28,7 @@
 			"trigger": "minecraft:consume_item",
 			"conditions": {
 				"item": {
-					"nbt": "{id:\"cpp:pork_kebab\"}"
+					"nbt": "{id:'cpp:pork_kebab'}"
 				}
 			}
 		}

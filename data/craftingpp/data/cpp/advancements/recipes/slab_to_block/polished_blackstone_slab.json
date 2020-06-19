@@ -1,0 +1,29 @@
+{
+	"criteria": {
+		"polished_blackstone_slab": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:polished_blackstone_slab"
+					}
+				]
+			}
+		},
+		"has_the_recipe": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "cpp:slab_to_block/polished_blackstone_slab"
+			}
+		}
+	},
+	"rewards":{
+		"recipes": ["cpp:slab_to_block/polished_blackstone_slab"]
+	},
+	"requirements": [
+		[
+			"polished_blackstone_slab",
+			"has_the_recipe"
+		]
+	]
+}

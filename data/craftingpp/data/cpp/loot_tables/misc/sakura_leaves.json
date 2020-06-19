@@ -1,0 +1,19 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"conditions": [
+				{
+					"condition": "minecraft:random_chance",
+					"chance": 0.1
+				}
+			],
+			"entries": [
+				{
+					"type":"minecraft:loot_table",
+					"name":"cpp:cherry"
+				}
+			]
+		}
+	]
+}

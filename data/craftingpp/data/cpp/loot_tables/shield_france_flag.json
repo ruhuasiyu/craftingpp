@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag":"{display:{Lore:['{\"translate\":\"item.cpp.france_flag\"}']},id:'cpp:shield_france_flag',CustomModelData:12970005}"
+							"tag":"{display:{Lore:['{\"italic\":false,\"translate\":\"item.cpp.france_flag\"}']},id:'cpp:shield_france_flag',CustomModelData:12970005}"
 						}
 					]
 				}

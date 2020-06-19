@@ -1,13 +1,7 @@
 {
 	"replace": false,
 	"values": [
-		"minecraft:air",
-		"minecraft:cave_air",
-		"minecraft:void_air",
-		"minecraft:bubble_column",
-		"minecraft:water",
-		"minecraft:lava",
-		"minecraft:fire",
+		"#cpp:fluid",
 		"#minecraft:saplings",
 		"minecraft:grass",
 		"minecraft:fern",
