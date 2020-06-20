@@ -474,10 +474,10 @@ span.ui a.fire, a.fire{
 .cracked_nether_bricks              {background-position: -448px -256px;}
 .cracked_polished_blackstone_bricks {background-position: -480px -256px;}
 .gilded_blackstone                  {background-position: -512px -256px;}
-.polished_blackstone_bricks         {background-position: -544px -256px;}
+.polished_blackstone                {background-position: -544px -256px;}
 .polished_blackstone_bricks         {background-position: -576px -256px;}
 
-.chain                              {background-position: -32px -288px;}
+.chain                              {background-position: -032px -288px;}
 
 .white_banner_mojang                {background-position: -512px -544px;}
 
@@ -975,6 +975,7 @@ span.ui a.fire, a.fire{
 .barrel                             {background-position: -064px -2432px;}
 .stone_slab                         {background-position: -224px -2432px;}
 .sweet_berries                      {background-position: -768px -2432px;}
+.composter                          {background-position: -864px -2432px;}
 
 .chainmail_boots                    {background-position: -256px -2464px;}
 .chainmail_chestplate               {background-position: -288px -2464px;}
@@ -2216,6 +2217,9 @@ span.ui a.fire, a.fire{
 .sea_lantern                        {background-position: -160px -2400px;}
 .blackstone_plugin                  {background-position: -192px -2400px;}
 .mob_strider                        {background-position: -224px -2400px;}
+.artemisia_argyi                    {background-position: -256px -2400px;}
+.zongzi                             {background-position: -000px -2432px;}
+.sachet                             {background-position: -032px -2432px;}
 
 .speed                   {background-position: -000px -00px;}
 .slowness                {background-position: -018px -00px;}
