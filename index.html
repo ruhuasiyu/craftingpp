@@ -384,7 +384,12 @@
 	<th>下载地址</th></tr></thead>
 <tbody>
 	<tr>
-		<td rowspan="2">Java版 1.16-rc1</td>
+		<td rowspan="3">Java版 1.16-rc1</td>
+		<td>快照 v1.11-0621</td>
+		<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/tree/master/versions/1.11/v1.11-0621.zip">GitHub</a> |
+			<a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.11-0621.zip">官方</a></td>
+	</tr>
+	<tr>
 		<td>快照 v1.11-0620</td>
 		<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/tree/master/versions/1.11/v1.11-0620.zip">GitHub</a> |
 			<a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.11-0620.zip">官方</a></td>
@@ -661,7 +666,7 @@
 <table><thead><tr><th>材料</th>
 	<th>合成配方</th>
 </tr></thead><tbody>
-<tr><td><span class="version">1.10 起</span> <a href="#黑暗碎片">黑暗碎片</a>+<a href="#日石">日石</a></td>
+<tr><td><span class="oldversion">1.10</span> <a href="#黑暗碎片">黑暗碎片</a>+<a href="#日石">日石</a></td>
 	<td>
 	<span class="ui ct" title="合成器">
 	<a class="ci shard_of_the_darkness" title="黑暗碎片"></a>
@@ -2153,8 +2158,8 @@
 	<td>4</td>
 	<td>10</td>
 </tr>
-<tr><td><a href="#泥土之魂" class="ui ci certification_of_earth"></a><a class="ui water_bottle"></a></td>
-	<td><a href="#泥土之魂">泥土之魂</a>+粗制的药水</td>
+<tr><td><a href="#大地之证" class="ui ci certification_of_earth"></a><a class="ui water_bottle"></a></td>
+	<td><a href="#大地之证">大地之证</a>+粗制的药水</td>
 	<td><a href="#大地药剂" class="ui ci agentia_of_earth"></a></td>
 	<td><a href="#大地药剂">大地药剂</a> <span class="version">1.10 起</span> <br /><span class="lore"><a class="ui icons18 jump_boost"></a>跳跃提升 II 6:00<br /><a class="ui icons18 haste"></a>急迫 II 6:00</span></td>
 	<td>4</td>
@@ -3688,8 +3693,9 @@
 
 <p>信标增强器性质同箱子。信标增强器被原版红石元件强充能时会停止工作。</p>
 <p>信标增强器下方为激活的信标才会工作。左侧按钮用于选择对玩家生效的正面状态效果，右侧按钮用于选择对非玩家生物生效的负面状态效果，最右侧按钮用于选择负面状态效果对所有非玩家生物还是仅怪物生效，使用左键或Q键切换。对村民无效。</p>
-<p>对玩家生效的正面状态效果包括：抗火、夜视、水下呼吸、隐身、饱和、连锁(1.10起)，对非玩家生物生效的负面状态效果包括：虚弱、缓慢、发光、中毒、凋零、吸引(1.10起)。影响范围基于下方的信标等级，为半径=10×(等级+1)的球形区域。</p>
-<p><span class="version">1.10 起</span> 放置/破坏信标增强仪可以添加/取消当前区块常加载。对已放置的信标增强器按下右键会打开 GUI，任何尝试放入容器非物品栏的物品会被返回到最近的玩家背包内。如果下方信标的下方3×3区域为X形的5个日石和4个月石，则信标和信标增强仪的效果范围提升至全地图(吸引范围128米)！吸引的效果是将附近的生物传送至信标增强仪上方。</p>
+<p>对玩家生效的正面状态效果包括：抗火、夜视、水下呼吸、隐身、饱和、连锁(1.10起)，对非玩家生物生效的负面状态效果包括：虚弱、缓慢、发光、中毒、凋零、吸引(将附近的生物传送至信标增强仪上方，1.10起)。影响范围基于下方的信标等级，为半径=10×(等级+1)的球形区域。</p>
+<p><span class="version">1.11</span> 放置/破坏信标增强仪可以添加/取消当前区块常加载。对已放置的信标增强器按下右键会打开 GUI，任何尝试放入容器非物品栏的物品会被返回到最近的玩家背包内。如果下方信标的下方3×3区域为X形的5个日石和4个月石，则信标和信标增强仪的正面效果范围提升至全地图，负面提升至128米。</p>
+<p><span class="oldversion">1.10.x</span> 放置/破坏信标增强仪可以添加/取消当前区块常加载。对已放置的信标增强器按下右键会打开 GUI，任何尝试放入容器非物品栏的物品会被返回到最近的玩家背包内。如果下方信标的下方3×3区域为X形的5个日石和4个月石，则信标和信标增强仪的效果范围提升至全地图(吸引范围128米)。</p>
 <p><span class="oldversion">1.9.x</span> 若下方为4级信标，每秒恢复64米内玩家1点魔法值，上限60点。若信标矿物块塔的顶层为X形的5个日石和4个月石，则额外每秒恢复128米内玩家1点魔法值，上限100点。</p>
 
 <h3 id="金砧">金砧 <code>cpp:golden_anvil</code></h3>
@@ -9204,9 +9210,9 @@
 <p>放置后，右键可按次序切换图案。包括：
 无名女郎、罗纳河上的星空、蒙娜丽莎、梦、日出印象、
 舞蹈教室、吹笛少年、塔希提岛的牧歌、劳动归来、春光、
-吻、红磨坊舞会、松树林之晨、画家母亲肖像、暴风雨、
+吻、红磨坊的舞会、松树林之晨、画家母亲肖像、暴风雨、
 意外归来、缠毛线、玩牌者、马克思与恩格斯、自由引导人民、
-拾穗、带珍珠耳环的少女、呐喊、向日葵、苏格拉底之死、
+拾穗者、带珍珠耳环的少女、呐喊、向日葵、苏格拉底之死、
 金色的秋天、星月夜、最后的晚餐、开国大典、列宁宣布苏维埃政权成立、
 竹石图、寒江独钓图、松梅双鹤图、落霞孤鹜图、松下鸣琴图、
 洛神赋图（局部）、步辇图（局部）、千里江山图（局部）、唐宫仕女图（局部）、汉宫春晓图（局部）、
