@@ -252,13 +252,13 @@
 									"condition": "minecraft:location_check",
 									"predicate": {
 										"block": {
-											"nbt": "{Items:[{tag:{id:'cpp:blue_rose'}}]}"
+											"nbt": "{Items:[{tag:{id:'cpp:artemisia_argyi'}}]}"
 										}
 									}
 								}
 							],
 							"type": "minecraft:loot_table",
-							"name": "cpp:blue_rose",
+							"name": "cpp:artemisia_argyi",
 							"functions":[
 								{
 									"function": "minecraft:set_count",

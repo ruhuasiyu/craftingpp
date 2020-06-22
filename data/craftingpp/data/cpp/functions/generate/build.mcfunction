@@ -1,8 +1,9 @@
 # 附魔室
 execute as @s[nbt={Item:{tag:{cpp_generate_type:"enchanting_room"}}}] if score #t cppValue matches 1.. run function cpp:generate/structures/enchanting_room
 # 图腾柱
-execute as @s[nbt={Item:{tag:{cpp_generate_type:"totem_pillar"}}},predicate=cpp:in_overworld] run function cpp:generate/structures/totem_pillar
-execute as @s[nbt={Item:{tag:{cpp_generate_type:"totem_pillar"}}},predicate=cpp:in_the_nether] run function cpp:generate/structures/totem_pillar_nether
+execute as @s[nbt={Item:{tag:{cpp_generate_type:"tp_overworld"}}}] run function cpp:generate/structures/tp_overworld
+execute as @s[nbt={Item:{tag:{cpp_generate_type:"tp_the_nether"}}}] run function cpp:generate/structures/tp_the_nether
+execute as @s[nbt={Item:{tag:{cpp_generate_type:"tp_flower"}}}] run function cpp:generate/structures/tp_flower
 # 树
 execute as @s[nbt={Item:{tag:{cpp_generate_type:"fruit_tree"}}}] if block ~ ~-1 ~ #cpp:sapling_plantable_on align xyz positioned ~0.5 ~ ~0.5 run function cpp:plants/trees/fruit0
 execute as @s[nbt={Item:{tag:{cpp_generate_type:"ore_tree"}}}] if block ~ ~-1 ~ #cpp:sapling_plantable_on align xyz positioned ~0.5 ~ ~0.5 run function cpp:plants/trees/ore0
@@ -15,7 +16,7 @@ execute as @s[nbt={Item:{tag:{cpp_generate_type:"small_bush"}}}] if block ~ ~-1 
 # 死云杉树
 execute as @s[nbt={Item:{tag:{cpp_generate_type:"dead_spruce"}}}] if block ~ ~-1 ~ #cpp:sapling_plantable_on run function cpp:generate/structures/dead_spruce
 # 农作物
-execute as @s[nbt={Item:{tag:{cpp_generate_type:"crops"}}}] if block ~ ~-1 ~ minecraft:grass_block run function cpp:generate/structures/crops
+execute as @s[nbt={Item:{tag:{cpp_generate_type:"crops"}}}] if block ~ ~-1 ~ grass_block run function cpp:generate/structures/crops
 # 花草
-execute as @s[nbt={Item:{tag:{cpp_generate_type:"modcrops"}}}] if block ~ ~-1 ~ #cpp:sapling_plantable_on run function cpp:generate/structures/modcrops
+execute as @s[nbt={Item:{tag:{cpp_generate_type:"modcrops"}}}] run function cpp:generate/structures/modcrops
 kill @s

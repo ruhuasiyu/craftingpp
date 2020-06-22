@@ -1,0 +1,7 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"particle": "cpp:particle/rubbertree",
+		"layer0": "cpp:particle/rubbertree"
+	}
+}

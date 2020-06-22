@@ -2,10 +2,20 @@
 	"condition": "minecraft:alternative",
 	"terms": [
 		{
+			"_comment": "搬箱器",
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
 					"nbt": "{Items:[{Slot:1b,id:'minecraft:stick'},{Slot:3b,id:'minecraft:stick'},{Slot:10b,id:'minecraft:stick'},{Slot:12b,id:'minecraft:stick'},{Slot:11b,tag:{id:'cpp:enchanted_iron'}},{Slot:20b,tag:{id:'cpp:enchanted_iron'}}]}"
+				}
+			}
+		},
+		{
+			"_comment": "香囊",
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{id:'minecraft:red_wool'},{id:'minecraft:string'},{id:'minecraft:redstone'},{id:'minecraft:lilac'},{tag:{id:'cpp:artemisia_argyi'}},{tag:{id:'cpp:calamus'}}]}"
 				}
 			}
 		}

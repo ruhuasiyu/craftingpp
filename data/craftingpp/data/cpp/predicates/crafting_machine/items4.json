@@ -56,6 +56,7 @@
 			}
 		},
 		{
+			"_comment": "花草合成迷之炖菜",
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
@@ -216,6 +217,7 @@
 			}
 		},
 		{
+			"_comment": "旗帜",
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
@@ -256,6 +258,7 @@
 			}
 		},
 		{
+			"_comment": "标志",
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {

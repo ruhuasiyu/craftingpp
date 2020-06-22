@@ -84,8 +84,9 @@
 		{ "predicate": { "custom_model_data": 12971510 }, "model": "cpp:crop/pansy"},
 		{ "predicate": { "custom_model_data": 12971511 }, "model": "cpp:crop/arabia_speedwell"},
 		{ "predicate": { "custom_model_data": 12971512 }, "model": "cpp:crop/silene_pendula"},
+		{ "predicate": { "custom_model_data": 12971513 }, "model": "cpp:crop/artemisia_argyi"},
 
-		{ "predicate": { "custom_model_data": 12971601 }, "model":"cpp:crop/poinsettia"},
+		{ "predicate": { "custom_model_data": 12971601 }, "model": "cpp:crop/poinsettia"},
 		{ "predicate": { "custom_model_data": 12971602 }, "model": "cpp:crop/christmas_tree"},
 		{ "predicate": { "custom_model_data": 12971603 }, "model": "cpp:crop/blue_rose"},
 
@@ -195,6 +196,7 @@
 		{ "predicate": { "custom_model_data": 12975510 }, "model": "cpp:plant/pansy"},
 		{ "predicate": { "custom_model_data": 12975511 }, "model": "cpp:plant/arabia_speedwell"},
 		{ "predicate": { "custom_model_data": 12975512 }, "model": "cpp:plant/silene_pendula"},
+		{ "predicate": { "custom_model_data": 12975513 }, "model": "cpp:plant/artemisia_argyi"},
 
 		{ "predicate": { "custom_model_data": 12975601 }, "model": "cpp:plant/poinsettia"},
 		{ "predicate": { "custom_model_data": 12975602 }, "model": "cpp:plant/christmas_tree"},

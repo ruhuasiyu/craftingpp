@@ -1,6 +1,7 @@
 {
     "parent": "item/handheld",
     "textures": {
+		"particle": "cpp:tool/chest_transporter",
         "layer0": "cpp:tool/chest_transporter"
     }
 }

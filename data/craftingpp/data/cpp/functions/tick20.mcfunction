@@ -54,4 +54,6 @@ execute at @e[type=item_frame,predicate=cpp:item/muffler] as @e[distance=..5] ru
 # 告示牌
 execute as @e[type=item,predicate=cpp:item/sign_dye] at @s align xyz positioned ~0.5 ~ ~0.5 if block ~ ~ ~ #signs run function cpp:item/dye_sign/check
 
+execute as @e[type=area_effect_cloud,tag=cpp_dragon_egg] at @s if block ~1 ~-3 ~ end_portal run function cpp:adv/kill_dragon_done
+
 schedule function cpp:tick20 20t

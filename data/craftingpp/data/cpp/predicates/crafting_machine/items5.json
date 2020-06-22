@@ -2,6 +2,7 @@
 	"condition": "minecraft:alternative",
 	"terms": [
 		{
+			"_comment": "酸水",
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
@@ -10,6 +11,7 @@
 			}
 		},
 		{
+			"_comment": "碱水",
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
@@ -18,6 +20,7 @@
 			}
 		},
 		{
+			"_comment": "生缤纷菜蔬",
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
@@ -26,6 +29,7 @@
 			}
 		},
 		{
+			"_comment": "生土豆排骨",
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
@@ -34,6 +38,7 @@
 			}
 		},
 		{
+			"_comment": "生土豆牛肉",
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
@@ -42,6 +47,7 @@
 			}
 		},
 		{
+			"_comment": "生兔肉煲",
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
@@ -50,6 +56,7 @@
 			}
 		},
 		{
+			"_comment": "炸鱼薯条",
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
@@ -58,6 +65,7 @@
 			}
 		},
 		{
+			"_comment": "汉堡",
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
@@ -66,6 +74,7 @@
 			}
 		},
 		{
+			"_comment": "披萨",
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
@@ -74,6 +83,7 @@
 			}
 		},
 		{
+			"_comment": "玻璃镐",
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
@@ -82,6 +92,7 @@
 			}
 		},
 		{
+			"_comment": "扫帚",
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
@@ -90,6 +101,7 @@
 			}
 		},
 		{
+			"_comment": "荧光帽",
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
@@ -98,6 +110,7 @@
 			}
 		},
 		{
+			"_comment": "荧光帽",
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
@@ -106,6 +119,7 @@
 			}
 		},
 		{
+			"_comment": "原谅帽",
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
@@ -114,6 +128,7 @@
 			}
 		},
 		{
+			"_comment": "原谅帽",
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
@@ -122,6 +137,7 @@
 			}
 		},
 		{
+			"_comment": "非酋帽",
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
@@ -130,6 +146,7 @@
 			}
 		},
 		{
+			"_comment": "非酋帽",
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
@@ -138,6 +155,7 @@
 			}
 		},
 		{
+			"_comment": "护士帽",
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
@@ -146,6 +164,7 @@
 			}
 		},
 		{
+			"_comment": "护士帽",
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
@@ -154,6 +173,7 @@
 			}
 		},
 		{
+			"_comment": "玻璃头盔",
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
@@ -162,6 +182,7 @@
 			}
 		},
 		{
+			"_comment": "玻璃头盔",
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
@@ -170,6 +191,7 @@
 			}
 		},
 		{
+			"_comment": "钢粉",
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
@@ -178,6 +200,7 @@
 			}
 		},
 		{
+			"_comment": "磁铁",
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
@@ -186,6 +209,7 @@
 			}
 		},
 		{
+			"_comment": "报时器",
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
@@ -194,6 +218,7 @@
 			}
 		},
 		{
+			"_comment": "时间调节器",
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
@@ -202,6 +227,7 @@
 			}
 		},
 		{
+			"_comment": "世界之源",
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
@@ -210,6 +236,7 @@
 			}
 		},
 		{
+			"_comment": "日之碎片复制下界之星",
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {

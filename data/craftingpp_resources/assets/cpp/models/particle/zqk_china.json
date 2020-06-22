@@ -1,0 +1,7 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"particle": "item/pufferfish",
+		"layer0": "item/pufferfish"
+	}
+}

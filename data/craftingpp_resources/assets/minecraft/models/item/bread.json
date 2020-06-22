@@ -25,6 +25,7 @@
 		{ "predicate": { "custom_model_data": 12970019 }, "model": "cpp:food/green_doughnut"},
 		{ "predicate": { "custom_model_data": 12970020 }, "model": "cpp:food/honey_pancake"},
 		{ "predicate": { "custom_model_data": 12970021 }, "model": "cpp:food/qingtuan"},
-		{ "predicate": { "custom_model_data": 12970022 }, "model": "cpp:food/sakura_mochi"}
+		{ "predicate": { "custom_model_data": 12970022 }, "model": "cpp:food/sakura_mochi"},
+		{ "predicate": { "custom_model_data": 12970023 }, "model": "cpp:food/zongzi"}
 	]
 }

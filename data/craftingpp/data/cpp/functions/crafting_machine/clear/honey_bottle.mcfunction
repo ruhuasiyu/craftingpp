@@ -1,6 +1,6 @@
-data modify storage cpp:temp Items set from block ~ ~ ~ Items
-execute store result score #t1 cppValue run data remove storage cpp:temp Items[{id:"minecraft:honey_bottle",Count:1b}]
-execute store result score #t2 cppValue run data remove storage cpp:temp Items[{id:"minecraft:honey_bottle"}]
+data modify storage cpp:cm_replace Items set from block ~ ~ ~ Items
+execute store result score #t1 cppValue run data remove storage cpp:cm_replace Items[{id:"minecraft:honey_bottle",Count:1b}]
+execute store result score #t2 cppValue run data remove storage cpp:cm_replace Items[{id:"minecraft:honey_bottle"}]
 
 data modify storage cpp:dist Item set value {id:"minecraft:glass_bottle",Count:1b}
 execute store result storage cpp:dist Item.Count byte 1 run scoreboard players operation #t1 cppValue += #t2 cppValue

@@ -1,6 +1,7 @@
 {
     "parent": "item/generated",
     "textures": {
+		"particle": "cpp:tool/coordinate_recorder",
         "layer0": "cpp:tool/coordinate_recorder"
     }
 }

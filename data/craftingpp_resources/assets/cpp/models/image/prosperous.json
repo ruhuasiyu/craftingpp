@@ -3,7 +3,8 @@
     "display": {
         "fixed": {
             "rotation": [ 0, 180, 0 ],
-            "scale": [ 2, 2, 3 ]
+            "translation": [ 0, 0, -1 ],
+            "scale": [ 2, 2, 2 ]
         }
     },
     "textures": {

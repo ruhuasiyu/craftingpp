@@ -740,13 +740,13 @@
 									"condition": "minecraft:location_check",
 									"predicate": {
 										"block": {
-											"nbt": "{Items:[{Slot:12b,tag:{id:'cpp:blue_rose'}}]}"
+											"nbt": "{Items:[{Slot:12b,tag:{id:'cpp:artemisia_argyi'}}]}"
 										}
 									}
 								}
 							],
 							"type": "minecraft:item",
-							"name": "minecraft:blue_dye"
+							"name": "minecraft:green_dye"
 						},
 						{
 							"conditions": [

@@ -2,6 +2,7 @@
 	"condition": "minecraft:alternative",
 	"terms": [
 		{
+			"_comment": "皮夹克",
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
@@ -10,6 +11,7 @@
 			}
 		},
 		{
+			"_comment": "红色外套",
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {

@@ -7,6 +7,7 @@
 					"type": "minecraft:alternatives",
 					"children": [
 						{
+							"_comment": "搬箱器",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -19,6 +20,21 @@
 							],
 							"type": "minecraft:loot_table",
 							"name": "cpp:chest_transporter"
+						},
+						{
+							"_comment": "香囊",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:'minecraft:red_wool'},{id:'minecraft:string'},{id:'minecraft:redstone'},{id:'minecraft:lilac'},{tag:{id:'cpp:artemisia_argyi'}},{tag:{id:'cpp:calamus'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:sachet"
 						}
 					]
 				}

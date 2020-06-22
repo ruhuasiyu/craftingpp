@@ -20,7 +20,6 @@
 		{ "predicate": { "custom_model_data": 12970023 }, "model": "cpp:golem/golem_fisher"},
 		{ "predicate": { "custom_model_data": 12970024 }, "model": "cpp:golem/golem_warrior"},
 		{ "predicate": { "custom_model_data": 12970025 }, "model": "cpp:golem/golem_herder"},
-		{ "predicate": { "custom_model_data": 12970026 }, "model": "cpp:golem/ruhuasiyu"},
 		
 		{ "predicate": { "custom_model_data": 12970040 }, "model": "cpp:material/ancient_scroll"},
 		{ "predicate": { "custom_model_data": 12970041 }, "model": "cpp:tool/magnet"},
@@ -33,6 +32,7 @@
 		{ "predicate": { "custom_model_data": 12970048 }, "model": "cpp:tool/coordinate_recorder"},
 		{ "predicate": { "custom_model_data": 12970049 }, "model": "cpp:tool/santa_gift"},
 		{ "predicate": { "custom_model_data": 12970050 }, "model": "cpp:tool/muffler"},
+		{ "predicate": { "custom_model_data": 12970051 }, "model": "cpp:tool/sachet"},
 		
 		{ "predicate": { "custom_model_data": 12970061 }, "model": "cpp:tool/elder_s_words"},		
 		{ "predicate": { "custom_model_data": 12970062 }, "model": "cpp:tool/sealing_wand"},

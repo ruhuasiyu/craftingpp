@@ -653,7 +653,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"nbt": "{Items:[{tag:{id:'cpp:blue_rose'}}]}"
+					"nbt": "{Items:[{tag:{id:'cpp:artemisia_argyi'}}]}"
 				}
 			}
 		}

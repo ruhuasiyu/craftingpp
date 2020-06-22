@@ -418,6 +418,11 @@
 		{ "predicate": { "custom_model_data": 12975214 }, "model": "cpp:sign/standing_green"},
 		{ "predicate": { "custom_model_data": 12975215 }, "model": "cpp:sign/standing_red"},
 		{ "predicate": { "custom_model_data": 12975216 }, "model": "cpp:sign/standing_black"},
-		{ "predicate": { "custom_model_data": 12975217 }, "model": "cpp:sign/standing_glass"}
+		{ "predicate": { "custom_model_data": 12975217 }, "model": "cpp:sign/standing_glass"},
+
+		{ "predicate": { "custom_model_data": 12979001 }, "model": "cpp:particle/ruhuasiyu"},
+		{ "predicate": { "custom_model_data": 12979002 }, "model": "cpp:particle/rubbertree"},
+		{ "predicate": { "custom_model_data": 12979003 }, "model": "cpp:particle/xe_kr"},
+		{ "predicate": { "custom_model_data": 12979004 }, "model": "cpp:particle/zqk_china"}
 	]
 }

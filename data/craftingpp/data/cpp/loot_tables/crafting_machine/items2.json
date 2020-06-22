@@ -7,6 +7,7 @@
 					"type": "minecraft:alternatives",
 					"children": [
 						{
+							"_comment": "奶酪",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -21,6 +22,7 @@
 							"name": "cpp:cheese"
 						},
 						{
+							"_comment": "便携式工作台",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -35,12 +37,13 @@
 							"name": "cpp:portable_crafting_table"
 						},
 						{
+							"_comment": "便携式合成器",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
 									"predicate": {
 										"block": {
-											"nbt": "{Items:[{id:'minecraft:experience_bottle'},{tag:{id:'cpp:crafting_machine'}}]}"
+											"nbt": "{Items:[{id:'minecraft:experience_bottle'},{id:'minecraft:petrified_oak_slab'}]}"
 										}
 									}
 								}
@@ -49,6 +52,7 @@
 							"name": "cpp:portable_crafting_machine"
 						},
 						{
+							"_comment": "盾牌图案",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -203,6 +207,7 @@
 							"name": "cpp:shield_nf"
 						},
 						{
+							"_comment": "纸片人重命名",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -1099,6 +1104,7 @@
 							"name": "cpp:character/64"
 						},
 						{
+							"_comment": "蓝色妖姬",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -1111,6 +1117,21 @@
 							],
 							"type": "minecraft:loot_table",
 							"name": "cpp:blue_rose"
+						},
+						{
+							"_comment": "粽子",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{tag:{id:'cpp:esparto'}},{tag:{id:'cpp:rice'}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "cpp:zongzi"
 						}
 					]
 				}

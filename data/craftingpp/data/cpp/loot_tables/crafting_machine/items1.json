@@ -7,6 +7,7 @@
 					"type": "minecraft:alternatives",
 					"children": [
 						{
+							"_comment": "煤粒",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -27,6 +28,7 @@
 							]
 						},
 						{
+							"_comment": "煤粒",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -47,6 +49,7 @@
 							]
 						},
 						{
+							"_comment": "月之碎片",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -67,6 +70,7 @@
 							]
 						},
 						{
+							"_comment": "日之碎片",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -87,6 +91,7 @@
 							]
 						},
 						{
+							"_comment": "花草种子",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",

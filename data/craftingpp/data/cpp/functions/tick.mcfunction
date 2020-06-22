@@ -19,6 +19,11 @@ execute as @a[predicate=cpp:inventory/frostmourne] run function cpp:player/bag_f
 execute as @a[predicate=cpp:inventory/ganjiang_moye_sword] run function cpp:player/bag_ganjiang_moye_sword
 execute as @a[predicate=cpp:inventory/imperial_sword] run function cpp:player/bag_imperial_sword
 execute as @a[predicate=cpp:inventory/phoenix_sword] run function cpp:player/bag_phoenix_sword
+# 移动
+execute if score $doDarkAnimalSpawning cppConfig matches 1 at @a as @e[type=#cpp:animals,tag=cpp_dark_animal,distance=..16] at @s run function cpp:dark_animals/attract
+execute at @a[predicate=cpp:hand/emerald_block] as @e[type=#cpp:villagers,distance=1..10] at @s run function cpp:misc/attract_villager
+execute at @a[predicate=cpp:inventory/magnet] as @e[type=item,predicate=cpp:item/pickable,distance=..16] at @s run function cpp:item/magnet
+execute at @a[predicate=cpp:inventory/sachet] as @e[type=#cpp:arthropod,distance=..16] at @s run function cpp:misc/exclude_arthropod
 # 附魔之瓶
 execute as @a[predicate=cpp:offhand/hopper] run function cpp:xp/check
 # 连环
@@ -41,10 +46,6 @@ scoreboard players reset @a cppSneakTime
 
 # 僵尸破坏火把/灯笼/海泡菜/末地烛
 execute if score $doZombieImproving cppConfig matches 1 at @e[type=#cpp:zombies] run function cpp:enhance_mobs/zombie_break
-# 黑暗动物移动
-execute if score $doDarkAnimalSpawning cppConfig matches 1 as @e[type=#cpp:animals,tag=cpp_dark_animal] at @s if entity @a[distance=..16] run function cpp:dark_animals/attract
-# 村民被绿宝石块吸引
-execute as @e[type=#cpp:villagers] at @s if entity @a[distance=1..10,predicate=cpp:hand/emerald_block] run function cpp:misc/attract_villager
 
 # 附魔之瓶
 execute as @e[type=experience_bottle] at @s run function cpp:xp/throw
@@ -52,16 +53,15 @@ execute as @e[type=experience_bottle] at @s run function cpp:xp/throw
 execute as @e[type=item_frame] at @s run function cpp:item_frame/type
 # 物品
 execute as @e[type=item,tag=!cpp_item_checked] run function cpp:item/check
-execute as @e[type=item,predicate=cpp:item/pickable] at @s if entity @a[distance=..16,predicate=cpp:inventory/magnet] run function cpp:item/magnet
 execute as @e[type=item,predicate=cpp:item/named_blaze_rod] at @s run function cpp:item/wand_of_the_darkness
 
 # 盔甲架
 # 花世界传送门
 execute as @e[type=area_effect_cloud,tag=cpp_flower_portal] at @s unless predicate cpp:flower_portal_done run function cpp:misc/flower_portal
 # 烧炼
-execute as @e[type=area_effect_cloud,tag=cpp_furnace] at @s run function cpp:furnace/tick
-execute as @e[type=area_effect_cloud,tag=cpp_smoker] at @s run function cpp:smoker/tick
-execute as @e[type=area_effect_cloud,tag=cpp_blast_furnace] at @s run function cpp:blast_furnace/tick
+execute as @e[type=armor_stand,tag=cpp_furnace] at @s run function cpp:furnace/tick
+execute as @e[type=armor_stand,tag=cpp_smoker] at @s run function cpp:smoker/tick
+execute as @e[type=armor_stand,tag=cpp_blast_furnace] at @s run function cpp:blast_furnace/tick
 execute as @e[type=area_effect_cloud,tag=cpp_campfire] at @s run function cpp:campfire/campfire
 # 机器
 execute as @e[type=armor_stand,tag=cpp_machine] at @s run function cpp:block/machine

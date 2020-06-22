@@ -2,6 +2,7 @@
 	"condition": "minecraft:alternative",
 	"terms": [
 		{
+			"_comment": "奶酪",
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
@@ -10,6 +11,7 @@
 			}
 		},
 		{
+			"_comment": "便携式工作台",
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
@@ -18,14 +20,16 @@
 			}
 		},
 		{
+			"_comment": "便携式合成器",
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"nbt": "{Items:[{id:'minecraft:experience_bottle'},{tag:{id:'cpp:crafting_machine'}}]}"
+					"nbt": "{Items:[{id:'minecraft:experience_bottle'},{id:'minecraft:petrified_oak_slab'}]}"
 				}
 			}
 		},
 		{
+			"_comment": "盾牌图案",
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
@@ -114,6 +118,7 @@
 			}
 		},
 		{
+			"_comment": "纸片人重命名",
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
@@ -626,10 +631,20 @@
 			}
 		},
 		{
+			"_comment": "蓝色妖姬",
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
 					"nbt": "{Items:[{id:'minecraft:blue_dye'},{id:'minecraft:rose_bush'}]}"
+				}
+			}
+		},
+		{
+			"_comment": "粽子",
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{tag:{id:'cpp:esparto'}},{tag:{id:'cpp:rice'}}]}"
 				}
 			}
 		}

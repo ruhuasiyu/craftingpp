@@ -13,6 +13,6 @@ execute if entity @s[nbt={ArmorItems:[{},{},{},{tag:{id:"cpp:crocu"}}]}] run sum
 execute if entity @s[nbt={ArmorItems:[{},{},{},{tag:{id:"cpp:pansy"}}]}] run summon item ~ ~ ~ {Item:{id:"minecraft:purple_dye",Count:1b}}
 execute if entity @s[nbt={ArmorItems:[{},{},{},{tag:{id:"cpp:arabia_speedwell"}}]}] run summon item ~ ~ ~ {Item:{id:"minecraft:light_blue_dye",Count:1b}}
 execute if entity @s[nbt={ArmorItems:[{},{},{},{tag:{id:"cpp:silene_pendula"}}]}] run summon item ~ ~ ~ {Item:{id:"minecraft:pink_dye",Count:1b}}
-execute if entity @s[nbt={ArmorItems:[{},{},{},{tag:{id:"cpp:blue_rose"}}]}] run summon item ~ ~ ~ {Item:{id:"minecraft:blue_dye",Count:1b}}
+execute if entity @s[nbt={ArmorItems:[{},{},{},{tag:{id:"cpp:artemisia_argyi"}}]}] run summon item ~ ~ ~ {Item:{id:"minecraft:green_dye",Count:1b}}
 
 kill @s[scores={cppValue=12975501..12975513}]

@@ -1,25 +1,25 @@
 {
-  "type": "minecraft:fishing",
-  "pools": [
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:loot_table",
-          "weight": 2,
-          "name": "minecraft:gameplay/fishing/junk"
-        },
-        {
-          "type": "minecraft:loot_table",
-          "weight": 13,
-          "name": "minecraft:gameplay/fishing/treasure"
-        },
-        {
-          "type": "minecraft:loot_table",
-          "weight": 81,
-          "name": "minecraft:gameplay/fishing/fish"
-        }
-      ]
-    }
-  ]
+	"type": "minecraft:fishing",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:loot_table",
+					"weight": 2,
+					"name": "minecraft:gameplay/fishing/junk"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"weight": 13,
+					"name": "minecraft:gameplay/fishing/treasure"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"weight": 81,
+					"name": "minecraft:gameplay/fishing/fish"
+				}
+			]
+		}
+	]
 }

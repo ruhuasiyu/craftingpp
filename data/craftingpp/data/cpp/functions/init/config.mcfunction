@@ -1,6 +1,6 @@
 # 是否为空岛模式
 scoreboard players set $skyislandMode cppConfig 0
-execute if block ~ 1 ~ minecraft:air run scoreboard players set $skyislandMode cppConfig 1
+execute if block ~ 1 ~ air run scoreboard players set $skyislandMode cppConfig 1
 # 是否加强僵尸、僵尸村民和尸壳
 scoreboard players set $doZombieImproving cppConfig 1
 # 是否加强骷髅和流浪者

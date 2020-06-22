@@ -1115,21 +1115,6 @@
 									"count": 6
 								}
 							]
-						},
-						{
-							"_comment":"破损刷怪笼",
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{Slot:1b,tag:{id:'cpp:shard_of_the_darkness'}},{Slot:2b,tag:{id:'cpp:shard_of_the_darkness'}},{Slot:3b,tag:{id:'cpp:shard_of_the_darkness'}},{Slot:10b,tag:{id:'cpp:shard_of_the_darkness'}},{Slot:11b,tag:{id:'cpp:sun_stone'}},{Slot:12b,tag:{id:'cpp:shard_of_the_darkness'}},{Slot:19b,tag:{id:'cpp:shard_of_the_darkness'}},{Slot:20b,tag:{id:'cpp:shard_of_the_darkness'}},{Slot:21b,tag:{id:'cpp:shard_of_the_darkness'}}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:loot_table",
-							"name": "cpp:broken_spawner"
 						}
 					]
 				}

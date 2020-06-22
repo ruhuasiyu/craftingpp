@@ -1,6 +1,7 @@
 {
 	"__comment": "作者：折君，使用 MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/) 生成",
 	"textures": {
+		"particle": "cpp:tool/elder_s_words",
 		"0": "cpp:tool/elder_s_words"
 	},
 	"elements": [

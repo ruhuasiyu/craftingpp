@@ -103,6 +103,7 @@
 							"name": "cpp:spring_festival_decorations"
 						},
 						{
+							"_comment": "花草合成迷之炖菜",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -603,6 +604,7 @@
 							]
 						},
 						{
+							"_comment": "旗帜",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -673,6 +675,7 @@
 							"name": "cpp:uk_flag"
 						},
 						{
+							"_comment": "标志",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",

@@ -35,21 +35,10 @@
 					"chance": 0.006
 				},
 				{
-					"condition": "minecraft:alternative",
-					"terms": [
-						{
-							"condition": "minecraft:location_check",
-							"predicate": {
-								"dimension": "minecraft:overworld"
-							}
-						},
-						{
-							"condition": "minecraft:location_check",
-							"predicate": {
-								"dimension": "minecraft:the_nether"
-							}
-						}						
-					]
+					"condition": "minecraft:location_check",
+					"predicate": {
+						"dimension": "minecraft:overworld"
+					}
 				}
 			],
 			"entries": [
@@ -59,7 +48,61 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{cpp_generate_marker:1b,cpp_clear:1b,CustomModelData:12970000,cpp_generate_type:'totem_pillar'}"
+							"tag": "{cpp_generate_marker:1b,cpp_clear:1b,CustomModelData:12970000,cpp_generate_type:'tp_overworld'}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"conditions":[
+				{
+					"condition": "minecraft:random_chance",
+					"chance": 0.006
+				},
+				{
+					"condition": "minecraft:location_check",
+					"predicate": {
+						"dimension": "minecraft:the_nether"
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:firework_star",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{cpp_generate_marker:1b,cpp_clear:1b,CustomModelData:12970000,cpp_generate_type:'tp_the_nether'}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"conditions":[
+				{
+					"condition": "minecraft:random_chance",
+					"chance": 0.006
+				},
+				{
+					"condition": "minecraft:location_check",
+					"predicate": {
+						"dimension": "cpp:flower"
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:firework_star",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{cpp_generate_marker:1b,cpp_clear:1b,CustomModelData:12970000,cpp_generate_type:'tp_flower'}"
 						}
 					]
 				}
@@ -348,7 +391,7 @@
 			"conditions":[
 				{
 					"condition": "minecraft:random_chance",
-					"chance": 0.4
+					"chance": 0.5
 				},
 				{
 					"condition": "minecraft:location_check",

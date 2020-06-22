@@ -7,6 +7,7 @@
 					"type": "minecraft:alternatives",
 					"children": [
 						{
+							"_comment": "酸水",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -21,6 +22,7 @@
 							"name": "cpp:acid"
 						},
 						{
+							"_comment": "碱水",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -35,6 +37,7 @@
 							"name": "cpp:soda_water"
 						},
 						{
+							"_comment": "生缤纷菜蔬",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -49,6 +52,7 @@
 							"name": "cpp:raw_colorful_vegetable"
 						},
 						{
+							"_comment": "生土豆排骨",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -63,6 +67,7 @@
 							"name": "cpp:raw_braised_pork_with_potatoes"
 						},
 						{
+							"_comment": "生土豆牛肉",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -77,6 +82,7 @@
 							"name": "cpp:raw_braised_beef_with_potatoes"
 						},
 						{
+							"_comment": "生兔肉煲",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -91,6 +97,7 @@
 							"name": "cpp:raw_rabbit_stew"
 						},
 						{
+							"_comment": "炸鱼薯条",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -105,6 +112,7 @@
 							"name": "cpp:fish_and_chips"
 						},
 						{
+							"_comment": "汉堡",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -119,6 +127,7 @@
 							"name": "cpp:burger"
 						},
 						{
+							"_comment": "披萨",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -139,6 +148,7 @@
 							]
 						},
 						{
+							"_comment": "玻璃镐",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -153,6 +163,7 @@
 							"name": "cpp:glass_pickaxe"
 						},
 						{
+							"_comment": "扫帚",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -167,6 +178,7 @@
 							"name": "cpp:broom"
 						},
 						{
+							"_comment": "荧光帽",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -181,6 +193,7 @@
 							"name": "cpp:glow_hat"
 						},
 						{
+							"_comment": "荧光帽",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -195,6 +208,7 @@
 							"name": "cpp:glow_hat"
 						},
 						{
+							"_comment": "原谅帽",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -209,6 +223,7 @@
 							"name": "cpp:green_hat"
 						},
 						{
+							"_comment": "原谅帽",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -223,6 +238,7 @@
 							"name": "cpp:green_hat"
 						},
 						{
+							"_comment": "非酋帽",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -237,6 +253,7 @@
 							"name": "cpp:black_hat"
 						},
 						{
+							"_comment": "非酋帽",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -251,6 +268,7 @@
 							"name": "cpp:black_hat"
 						},
 						{
+							"_comment": "护士帽",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -265,6 +283,7 @@
 							"name": "cpp:nurse_hat"
 						},
 						{
+							"_comment": "护士帽",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -279,6 +298,7 @@
 							"name": "cpp:nurse_hat"
 						},
 						{
+							"_comment": "玻璃头盔",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -293,6 +313,7 @@
 							"name": "cpp:glass_helmet"
 						},
 						{
+							"_comment": "玻璃头盔",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -307,6 +328,7 @@
 							"name": "cpp:glass_helmet"
 						},
 						{
+							"_comment": "钢粉",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -321,6 +343,7 @@
 							"name": "cpp:steel_dust"
 						},
 						{
+							"_comment": "磁铁",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -335,6 +358,7 @@
 							"name": "cpp:magnet"
 						},
 						{
+							"_comment": "报时器",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -349,6 +373,7 @@
 							"name": "cpp:time_checker"
 						},
 						{
+							"_comment": "时间调节器",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -363,6 +388,7 @@
 							"name": "cpp:time_conditioner"
 						},
 						{
+							"_comment": "世界之源",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",
@@ -377,6 +403,7 @@
 							"name": "cpp:origin_of_the_world"
 						},
 						{
+							"_comment": "日之碎片复制下界之星",
 							"conditions": [
 								{
 									"condition": "minecraft:location_check",

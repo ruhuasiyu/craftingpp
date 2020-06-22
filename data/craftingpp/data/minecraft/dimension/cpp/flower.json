@@ -3,7 +3,7 @@
 	"generator": {
 		"type": "minecraft:noise",
 		"seed": 20200602,
-        "settings": {
+		"settings": {
 			"bedrock_roof_position":256,
 			"bedrock_floor_position": 0,
 			"sea_level": 63,
@@ -56,7 +56,7 @@
 				}
 			}
 		},
-        "biome_source": {
+		"biome_source": {
 			"biome": "minecraft:flower_forest",
 			"type": "minecraft:fixed",
 			"seed": 20200602

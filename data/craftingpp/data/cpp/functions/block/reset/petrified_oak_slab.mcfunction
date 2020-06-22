@@ -1,6 +1,6 @@
 advancement revoke @s only cpp:block/petrified_oak_slab
-execute as @s[predicate=cpp:mainhand/petrified_oak_slab] run data modify storage cpp:temp block set from entity @s SelectedItem
-execute as @s[predicate=!cpp:mainhand/petrified_oak_slab] run data modify storage cpp:temp block set from entity @s Inventory[{Slot:-106b}]
+execute as @s[predicate=cpp:mainhand/petrified_oak_slab] run data modify storage cpp:block Item set from entity @s SelectedItem
+execute as @s[predicate=!cpp:mainhand/petrified_oak_slab] run data modify storage cpp:block Item set from entity @s Inventory[{Slot:-106b}]
 
 execute store result score #facing cppValue run data get entity @s Rotation[0]
 scoreboard players add #facing cppValue 225

@@ -15,12 +15,12 @@
 					},
 					{
 						"condition": "minecraft:location_check",
-				"predicate": {
-					"block": {
-						"nbt": "{Items:[{Slot:2b}]}"
+						"predicate": {
+							"block": {
+								"nbt": "{Items:[{Slot:2b}]}"
 							}
 						}
-					}
+					}							
 				]
 			}
 		},
@@ -492,7 +492,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:blue_rose'}},{Slot:2b,id:'minecraft:blue_dye'}]}"
+					"nbt": "{Items:[{Slot:0b,tag:{id:'cpp:artemisia_argyi'}},{Slot:2b,id:'minecraft:green_dye'}]}"
 				}
 			}
 		}

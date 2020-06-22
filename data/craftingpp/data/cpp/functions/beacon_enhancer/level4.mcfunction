@@ -1,5 +1,3 @@
-execute positioned ~ ~-2 ~ if entity @e[tag=cpp_sun_stone,distance=..0.5] positioned ~1 ~ ~1 if entity @e[tag=cpp_sun_stone,distance=..0.5] positioned ~ ~ ~-2 if entity @e[tag=cpp_sun_stone,distance=..0.5] positioned ~-2 ~ ~ if entity @e[tag=cpp_sun_stone,distance=..0.5] positioned ~ ~ ~2 if entity @e[tag=cpp_sun_stone,distance=..0.5] positioned ~1 ~ ~ if entity @e[tag=cpp_moon_stone,distance=..0.5] positioned ~ ~ ~-2 if entity @e[tag=cpp_moon_stone,distance=..0.5] positioned ~1 ~ ~1 if entity @e[tag=cpp_moon_stone,distance=..0.5] positioned ~-2 ~ ~ if entity @e[tag=cpp_moon_stone,distance=..0.5] at @s run function cpp:beacon_enhancer/super
-
 execute as @s[scores={cppPlayerEff=1}] run effect give @a[distance=..50] fire_resistance 17
 execute as @s[scores={cppPlayerEff=2}] run effect give @a[distance=..50] water_breathing 17
 execute as @s[scores={cppPlayerEff=3}] run effect give @a[distance=..50] night_vision 17
