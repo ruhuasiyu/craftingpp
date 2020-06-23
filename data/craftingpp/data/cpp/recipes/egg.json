@@ -1,15 +1,15 @@
 {
 	"type": "minecraft:crafting_shaped",
 	"pattern": [
-		"XXX",
-		"X#X",
-		"XXX"
+		"sss",
+		"ses",
+		"sss"
 	],
 	"key": {
-		"#": {
+		"e": {
 			"item": "minecraft:emerald"
 		},
-		"X": {
+		"s": {
 			"item": "minecraft:snowball"
 		}
 	},

@@ -1,0 +1,19 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:bread",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{display:{Name:'{\"italic\":false,\"translate\":\"item.cpp.zongzi\"}',Lore:['{\"italic\":false,\"translate\":\"item.cpp.zongzi.salt\"}']},id:'cpp:zongzi',CustomModelData:12970023}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

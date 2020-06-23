@@ -1,0 +1,20 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:petrified_oak_slab",
+			"nbt":"{CustomModelData:12971502}"
+		},
+		"title":{
+			"translate": "advancements.cpp.flower_world.title"
+		},
+		"description": {
+			"translate": "advancements.cpp.flower_world.description"
+		}
+	},
+	"parent": "cpp:forgive",
+	"criteria": {
+		"flower_world": {
+			"trigger": "minecraft:impossible"
+		}
+	}
+}

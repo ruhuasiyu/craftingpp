@@ -1,12 +1,12 @@
 {
 	"type": "minecraft:crafting_shaped",
 	"pattern": [
-		" # ",
-		"#e#",
-		" # "
+		" d ",
+		"ded",
+		" d "
 	],
 	"key": {
-		"#": {
+		"d": {
 			"item": "minecraft:dragon_head"
 		},
 		"e": {

@@ -261,6 +261,54 @@
 					"nbt": "{Items:[{Slot:2b,id:'minecraft:cooked_chicken'},{Slot:11b,id:'minecraft:cooked_chicken'},{Slot:20b,id:'minecraft:stick'}]}"
 				}
 			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{tag:{id:'cpp:esparto'}},{tag:{id:'cpp:rice'}},{tag:{id:'cpp:boiled_egg'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{tag:{id:'cpp:esparto'}},{tag:{id:'cpp:rice'}},{tag:{id:'cpp:chinese_date'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{tag:{id:'cpp:esparto'}},{tag:{id:'cpp:rice'}},{id:'minecraft:cooked_porkchop'}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{tag:{id:'cpp:esparto'}},{tag:{id:'cpp:rice'}},{tag:{dict:['salt']}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{tag:{id:'cpp:esparto'}},{tag:{id:'cpp:rice'}},{tag:{id:'cpp:soda_water'}}]}"
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"nbt": "{Items:[{tag:{id:'cpp:esparto'}},{tag:{id:'cpp:rice'}},{id:'minecraft:honey_bottle'}]}"
+				}
+			}
 		}
 	]
 }

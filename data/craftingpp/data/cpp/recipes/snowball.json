@@ -1,15 +1,15 @@
 {
 	"type": "minecraft:crafting_shaped",
 	"pattern": [
-		"XXX",
-		"X#X",
-		"XXX"
+		"ttt",
+		"tst",
+		"ttt"
 	],
 	"key": {
-		"#": {
+		"s": {
 			"item": "minecraft:string"
 		},
-		"X": {
+		"t": {
 			"item": "minecraft:stick"
 		}
 	},

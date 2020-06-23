@@ -372,7 +372,7 @@
 <li>机器——集磨粉炼矿增殖反应晒盐造石造冰于一体的9状态多功能一体机；用于获取绿宝石和附魔之瓶的交易机；代替人力处理物品的物品处理机；召唤生物的生物投影仪；提供正负面效果的信标增强仪；更便捷强大的附魔处理的金砧等。</li>
 <li>傀儡——科技线的终端，全自动种田伐木钓鱼杀怪畜牧的傀儡。</li>
 <li>研究——需要玩家测定的矿物熔炼配比参数，需要玩家测定的附魔书仪式物品对应，和20种需要杂交获取的植物，满足你的研究欲望。</li>
-<li>食物装饰——40种植物、76种食物、79种头颅、22种头饰服饰、18种春联横批、36种油画水墨画、67种纸片人、17种告示牌、100种称号，装点自己也装点自己的家。</li>
+<li>食物装饰——41种植物、77种食物、79种头颅、21种头饰服饰、40种新春装饰、50种经典画作、64种纸片人、17种告示牌、100种称号，装点自己也装点自己的家。</li>
 </ul>
 <p style="display: none;">本模组即将完结，以后应该只会修复bug和优化内容，不会再有大的更新。如遇到Minecraft命令机制大改或新生物等内容，我还是会及时更新代码并支持新的内容。感谢大家一直以来的支持和帮助！</p>
 <p>如有任何意见建议，欢迎在<a href="https://jq.qq.com/?_wv=1027&k=5tPH7m7">QQ群 455270603</a>(入群答案发酵桶)反馈、<a href="http://www.mcbbs.net/thread-696861-1-1.html">在论坛回复</a>或<a href="http://www.mcbbs.net/home.php?mod=spacecp&ac=pm&touid=975525">私信我</a>、<a href="https://github.com/ruhuasiyu/craftingpp/issues/new">发起issue</a>，请在反馈时提供游戏版本和模组版本。</p>
@@ -385,6 +385,11 @@
 <tbody>
 	<tr>
 		<td rowspan="3">Java版 1.16-rc1</td>
+		<td>快照 v1.11-0623</td>
+		<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/tree/master/versions/1.11/v1.11-0623.zip">GitHub</a> |
+			<a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.11-0623.zip">官方</a></td>
+	</tr>
+	<tr>
 		<td>快照 v1.11-0622</td>
 		<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/tree/master/versions/1.11/v1.11-0622.zip">GitHub</a> |
 			<a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.11-0622.zip">官方</a></td>
@@ -393,11 +398,6 @@
 		<td>快照 v1.11-0620</td>
 		<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/tree/master/versions/1.11/v1.11-0620.zip">GitHub</a> |
 			<a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.11-0620.zip">官方</a></td>
-	</tr>
-	<tr>
-		<td>快照 v1.11-0619</td>
-		<td><a href="https://github.com/ruhuasiyu/CraftingPlusPlus/tree/master/versions/1.11/v1.11-0619.zip">GitHub</a> |
-			<a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.11-0619.zip">官方</a></td>
 	</tr>
 	<tr><td colspan="3"></td></tr>
 	<tr>
@@ -7188,7 +7188,7 @@
 	</span></td>
 	<td><span class="version">1.10 起</span><br /><code>cpp:sakura_mochi</code></td>
 </tr>
-<tr><th><strong id="粽子">粽子</strong><br />
+<tr><th rowspan="2"><strong id="粽子">粽子</strong><br />
 		<a class="ui icons18 hunger" title="5"></a><a class="ui icons18 hunger" title="5"></a><a class="ui icons18 hunger_half" title="5"></a></th>
 	<td><a href="#芦苇草">芦苇草</a>+<a href="#稻谷">稻谷</a></td>
 	<td><span class="ui cm" title="合成器">
@@ -7205,6 +7205,33 @@
 		<span class="shapeless" title="此配方是无形的，材料可以以任何排列方式放置在合成格内。"></span>
 	</span></td>
 	<td><span class="version">1.11</span><br /><code>cpp:zongzi</code></td>
+</tr>
+<tr><td>
+	<a href="#芦苇草">芦苇草</a>+<a href="#稻谷">稻谷</a>+<a href="#煮鸡蛋">煮鸡蛋</a><br />
+	<a href="#芦苇草">芦苇草</a>+<a href="#稻谷">稻谷</a>+<a href="#枣">枣</a><br />
+	<a href="#芦苇草">芦苇草</a>+<a href="#稻谷">稻谷</a>+熟猪排<br />
+	<a href="#芦苇草">芦苇草</a>+<a href="#稻谷">稻谷</a>+<a href="#盐">盐</a><br />
+	<a href="#芦苇草">芦苇草</a>+<a href="#稻谷">稻谷</a>+<a href="#碱水">碱水</a><br />
+	<a href="#芦苇草">芦苇草</a>+<a href="#稻谷">稻谷</a>+蜂蜜瓶</td>
+	<td><span class="ui cm" title="合成器">
+		<a class="ci esparto" title="芦苇草"></a>
+		<a class="ci rice" title="稻谷"></a>
+		<a class="ci chinese_date" title="枣"></a>
+		<a class="empty"></a>
+		<a class="empty"></a>
+		<a class="empty"></a>
+		<a class="empty"></a>
+		<a class="empty"></a>
+		<a class="empty"></a>
+		<a class="ci zongzi" title="粽子"></a>
+		<span class="shapeless" title="此配方是无形的，材料可以以任何排列方式放置在合成格内。"></span>
+	</span></td>
+	<td>蛋黄馅 <code>cpp:zongzi.boiled_egg</code><br />
+		蜜枣馅 <code>cpp:zongzi.chinese_date</code><br />
+		猪肉馅 <code>cpp:zongzi.cooked_porkchop</code><br />
+		咸味 <code>cpp:zongzi.salt</code><br />
+		碱水味 <code>cpp:zongzi.soda_water</code><br />
+		甜味 <code>cpp:zongzi.honey_bottle</code></td>
 </tr>
 <tr><th><strong id="三明治">三明治</strong><br />
 		<a class="ui icons18 hunger" title="10"></a><a class="ui icons18 hunger" title="10"></a><a class="ui icons18 hunger" title="10"></a><a class="ui icons18 hunger" title="10"></a><a class="ui icons18 hunger" title="10"></a><br />
@@ -9869,6 +9896,13 @@
 	<td>剪刀手·爱德华</td>
 	<td>cpp:forgive</td>
 </tr>
+<tr><td><span class="ui normal"><a class="ci cyclamen"></a></span></td>
+<th>世外桃源</th>
+	<td>进入花花世界</td>
+	<td>—</td>
+	<td style="color:green;">当然是选择原谅她啦！</td>
+	<td>cpp:flower_world</td>
+</tr>
 
 <tr><td><span class="ui normal"><a class="emerald"></a></span></td>
 <th>装完逼还想跑？</th>
@@ -9999,7 +10033,7 @@
 	<a href="https://space.bilibili.com/4469715"><img src="items/bilibili.png" alt="哔哩哔哩" /></a>
 </p>
 
-<p>最后更新 2020-06-22</p>
+<p>最后更新 2020-06-23</p>
 </footer>
 
 </article>

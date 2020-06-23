@@ -2,11 +2,11 @@
 	"type": "minecraft:crafting_shaped",
 	"group": "stairs_to_block",
 	"pattern": [
-		"##",
-		"##"
+		"ss",
+		"ss"
 	],
 	"key": {
-		"#": {
+		"s": {
 			"item": "minecraft:polished_diorite_stairs"
 		}
 	},

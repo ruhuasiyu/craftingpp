@@ -2,11 +2,11 @@
 	"type": "minecraft:crafting_shaped",
 	"group": "planks_from_stairs",
 	"pattern": [
-		"##",
-		"##"
+		"ss",
+		"ss"
 	],
 	"key": {
-		"#": {
+		"s": {
 			"item": "minecraft:dark_oak_stairs"
 		}
 	},
