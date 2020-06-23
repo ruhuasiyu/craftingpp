@@ -2,9 +2,9 @@
 	"type": "cpp:flower",
 	"generator": {
 		"type": "minecraft:noise",
-		"seed": 20200602,
+		"seed": 0,
 		"settings": {
-			"bedrock_roof_position":256,
+			"bedrock_roof_position": -10,
 			"bedrock_floor_position": 0,
 			"sea_level": 63,
 			"disable_mob_generation": true,
@@ -19,39 +19,42 @@
 			},
 			"noise": {
 				"top_slide": {
-					"target": 0,
-					"size": 1,
-					"offset": 1
+					"target": -10,
+					"size": 3,
+					"offset": 0
 				},
 				"bottom_slide": {
-					"target": 0,
-					"size": 1,
-					"offset": 1
+					"target": -30,
+					"size": 0,
+					"offset": 0
 				},
 				"sampling": {
-					"xz_scale": 0.01,
-					"xz_factor": 1.0,
-					"y_scale": 0.01,
-					"y_factor": 1.0
+					"xz_scale": 1.0,
+					"xz_factor": 80.0,
+					"y_scale": 1.0,
+					"y_factor": 160.0
 				},
-				"size_vertical": 1,
+				"size_vertical": 2,
 				"size_horizontal": 1,
-				"height": 128,
+				"height": 256,
 				"density_factor": 1.0,
-				"density_offset": 0.0,
-				"simplex_surface_noise": false
+				"density_offset": -0.46875,
+				"random_density_offset": true,
+				"simplex_surface_noise": true,
+				"island_noise_override": false,
+				"amplified": false
 			},
 			"structures": {
 				"structures": {
 					"mineshaft": {
 						"spacing": 2000,
 						"separation": 1000,
-						"salt": 20200602
+						"salt": 0
 					},
 					"ruined_portal": {
 						"spacing": 2000,
 						"separation": 1000,
-						"salt": 20200602
+						"salt": 0
 					}
 				}
 			}
@@ -59,7 +62,7 @@
 		"biome_source": {
 			"biome": "minecraft:flower_forest",
 			"type": "minecraft:fixed",
-			"seed": 20200602
+			"seed": 0
 		}
 	}
 }
