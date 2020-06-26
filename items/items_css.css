@@ -2220,6 +2220,12 @@ span.ui a.fire, a.fire{
 .artemisia_argyi                    {background-position: -256px -2400px;}
 .zongzi                             {background-position: -000px -2432px;}
 .sachet                             {background-position: -032px -2432px;}
+.zongzi_boiled_egg                  {background-position: -064px -2432px;}
+.zongzi_chinese_date                {background-position: -096px -2432px;}
+.zongzi_cooked_porkchop             {background-position: -128px -2432px;}
+.zongzi_salt                        {background-position: -160px -2432px;}
+.zongzi_soda_water                  {background-position: -192px -2432px;}
+.zongzi_honey_bottle                {background-position: -224px -2432px;}
 
 .speed                   {background-position: -000px -00px;}
 .slowness                {background-position: -018px -00px;}
