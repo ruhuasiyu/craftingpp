@@ -1,0 +1,475 @@
+{
+	"condition": "minecraft:alternative",
+	"terms": [
+		{
+			"condition": "minecraft:location_check",
+			"offsetY": -1,
+			"predicate": {
+				"block": {
+					"block": "minecraft:lever",
+					"state": {
+						"powered": true,
+						"face": "ceiling"
+					}
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"offsetY": 1,
+			"predicate": {
+				"block": {
+					"block": "minecraft:lever",
+					"state": {
+						"powered": true,
+						"face": "floor"
+					}
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"offsetX": 1,
+			"predicate": {
+				"block": {
+					"block": "minecraft:lever",
+					"state": {
+						"powered": true,
+						"face": "wall",
+						"facing": "east"
+					}
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"offsetX": -1,
+			"predicate": {
+				"block": {
+					"block": "minecraft:lever",
+					"state": {
+						"powered": true,
+						"face": "wall",
+						"facing": "west"
+					}
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"offsetZ": 1,
+			"predicate": {
+				"block": {
+					"block": "minecraft:lever",
+					"state": {
+						"powered": true,
+						"face": "wall",
+						"facing": "south"
+					}
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"offsetZ": -1,
+			"predicate": {
+				"block": {
+					"block": "minecraft:lever",
+					"state": {
+						"powered": true,
+						"face": "wall",
+						"facing": "north"
+					}
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"offsetY": -1,
+			"predicate": {
+				"block": {
+					"tag": "minecraft:buttons",
+					"state": {
+						"powered": true,
+						"face": "ceiling"
+					}
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"offsetY": 1,
+			"predicate": {
+				"block": {
+					"tag": "minecraft:buttons",
+					"state": {
+						"powered": true,
+						"face": "floor"
+					}
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"offsetX": 1,
+			"predicate": {
+				"block": {
+					"tag": "minecraft:buttons",
+					"state": {
+						"powered": true,
+						"face": "wall",
+						"facing": "east"
+					}
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"offsetX": -1,
+			"predicate": {
+				"block": {
+					"tag": "minecraft:buttons",
+					"state": {
+						"powered": true,
+						"face": "wall",
+						"facing": "west"
+					}
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"offsetZ": 1,
+			"predicate": {
+				"block": {
+					"tag": "minecraft:buttons",
+					"state": {
+						"powered": true,
+						"face": "wall",
+						"facing": "south"
+					}
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"offsetZ": -1,
+			"predicate": {
+				"block": {
+					"tag": "minecraft:buttons",
+					"state": {
+						"powered": true,
+						"face": "wall",
+						"facing": "north"
+					}
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"offsetY": -1,
+			"predicate": {
+				"block": {
+					"block": "minecraft:redstone_torch",
+					"state": {
+						"lit": true
+					}
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"offsetY": -1,
+			"predicate": {
+				"block": {
+					"block": "minecraft:redstone_wall_torch",
+					"state": {
+						"lit": true
+					}
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"offsetY": -1,
+			"predicate": {
+				"block": {
+					"block": "minecraft:observer",
+					"state": {
+						"powered": true,
+						"facing": "down"
+					}
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"offsetY": 1,
+			"predicate": {
+				"block": {
+					"block": "minecraft:observer",
+					"state": {
+						"powered": true,
+						"facing": "up"
+					}
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"offsetX": 1,
+			"predicate": {
+				"block": {
+					"block": "minecraft:observer",
+					"state": {
+						"powered": true,
+						"facing": "east"
+					}
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"offsetX": -1,
+			"predicate": {
+				"block": {
+					"block": "minecraft:observer",
+					"state": {
+						"powered": true,
+						"facing": "west"
+					}
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"offsetZ": 1,
+			"predicate": {
+				"block": {
+					"block": "minecraft:observer",
+					"state": {
+						"powered": true,
+						"facing": "south"
+					}
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"offsetZ": -1,
+			"predicate": {
+				"block": {
+					"block": "minecraft:observer",
+					"state": {
+						"powered": true,
+						"facing": "north"
+					}
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"offsetX": 1,
+			"predicate": {
+				"block": {
+					"block": "minecraft:repeater",
+					"state": {
+						"powered": true,
+						"facing": "east"
+					}
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"offsetX": -1,
+			"predicate": {
+				"block": {
+					"block": "minecraft:repeater",
+					"state": {
+						"powered": true,
+						"facing": "west"
+					}
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"offsetZ": 1,
+			"predicate": {
+				"block": {
+					"block": "minecraft:repeater",
+					"state": {
+						"powered": true,
+						"facing": "south"
+					}
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"offsetZ": -1,
+			"predicate": {
+				"block": {
+					"block": "minecraft:repeater",
+					"state": {
+						"powered": true,
+						"facing": "north"
+					}
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"offsetX": 1,
+			"predicate": {
+				"block": {
+					"block": "minecraft:comparator",
+					"state": {
+						"powered": true,
+						"facing": "east"
+					}
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"offsetX": -1,
+			"predicate": {
+				"block": {
+					"block": "minecraft:comparator",
+					"state": {
+						"powered": true,
+						"facing": "west"
+					}
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"offsetZ": 1,
+			"predicate": {
+				"block": {
+					"block": "minecraft:comparator",
+					"state": {
+						"powered": true,
+						"facing": "south"
+					}
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"offsetZ": -1,
+			"predicate": {
+				"block": {
+					"block": "minecraft:comparator",
+					"state": {
+						"powered": true,
+						"facing": "north"
+					}
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"offsetX": 1,
+			"predicate": {
+				"block": {
+					"block": "minecraft:tripwire_hook",
+					"state": {
+						"powered": true,
+						"facing": "east"
+					}
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"offsetX": -1,
+			"predicate": {
+				"block": {
+					"block": "minecraft:tripwire_hook",
+					"state": {
+						"powered": true,
+						"facing": "west"
+					}
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"offsetZ": 1,
+			"predicate": {
+				"block": {
+					"block": "minecraft:tripwire_hook",
+					"state": {
+						"powered": true,
+						"facing": "south"
+					}
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"offsetZ": -1,
+			"predicate": {
+				"block": {
+					"block": "minecraft:tripwire_hook",
+					"state": {
+						"powered": true,
+						"facing": "north"
+					}
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"offsetY": 1,
+			"predicate": {
+				"block": {
+					"tag": "minecraft:wooden_pressure_plates",
+					"state": {
+						"powered": true
+					}
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"offsetY": 1,
+			"predicate": {
+				"block": {
+					"block": "minecraft:stone_pressure_plate",
+					"state": {
+						"powered": true
+					}
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"offsetY": 1,
+			"predicate": {
+				"block": {
+					"block": "minecraft:light_weighted_pressure_plate",
+					"state": {
+						"powered": true
+					}
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"offsetY": 1,
+			"predicate": {
+				"block": {
+					"block": "minecraft:heavy_weighted_pressure_plate",
+					"state": {
+						"powered": true
+					}
+				}
+			}
+		}
+	]
+}

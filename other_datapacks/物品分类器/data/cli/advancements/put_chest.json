@@ -1,0 +1,13 @@
+{
+	"criteria": {
+		"chest": {
+			"trigger": "minecraft:placed_block",
+			"conditions": {
+				"block": "minecraft:chest"
+			}
+		}
+	},
+	"rewards": {
+		"function": "cli:put_chest"
+	}
+}

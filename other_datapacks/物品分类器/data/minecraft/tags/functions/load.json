@@ -1,0 +1,6 @@
+{
+	"values": [
+		"cli:load",
+		"container:load"
+	]
+}

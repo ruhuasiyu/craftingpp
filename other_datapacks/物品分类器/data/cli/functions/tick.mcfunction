@@ -1,0 +1,1 @@
+execute as @e[type=armor_stand,tag=cli_glass] at @s run function cli:astick

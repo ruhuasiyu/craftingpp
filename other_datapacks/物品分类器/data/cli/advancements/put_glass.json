@@ -1,0 +1,13 @@
+{
+	"criteria": {
+		"diamond_block": {
+			"trigger": "minecraft:placed_block",
+			"conditions": {
+				"block": "minecraft:light_blue_stained_glass"
+			}
+		}
+	},
+	"rewards": {
+		"function": "cli:put_glass"
+	}
+}

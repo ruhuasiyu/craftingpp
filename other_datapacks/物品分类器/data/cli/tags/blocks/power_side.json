@@ -1,0 +1,8 @@
+{
+	"values": [
+		"minecraft:observer",
+		"minecraft:repeater",
+		"minecraft:comparator",
+		"minecraft:tripwire_hook"
+	]
+}
