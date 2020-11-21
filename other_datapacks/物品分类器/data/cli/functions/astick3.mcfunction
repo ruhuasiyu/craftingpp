@@ -1,3 +1,5 @@
-tag @s add cli_item_frame
-execute as @e[type=armor_stand,tag=cli_source,distance=..25] run function cli:astick4
-tag @s remove cli_item_frame
+execute if block ~ ~ ~ #cli:chests[type=left,facing=east] positioned ~ ~ ~1 run function cli:astick4
+execute if block ~ ~ ~ #cli:chests[type=left,facing=west] positioned ~ ~ ~-1 run function cli:astick4
+execute if block ~ ~ ~ #cli:chests[type=left,facing=south] positioned ~-1 ~ ~ run function cli:astick4
+execute if block ~ ~ ~ #cli:chests[type=left,facing=north] positioned ~1 ~ ~ run function cli:astick4
+execute unless block ~ ~ ~ #cli:chests[type=left] run function cli:astick4

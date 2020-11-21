@@ -1,3 +1,3 @@
-execute if block ~ ~ ~ #container:all run function cli:dist_pos
-execute unless entity @e[type=area_effect_cloud,tag=cli_dist_pos] run function cli:astick9
-execute at @e[type=area_effect_cloud,tag=cli_dist_pos] run function cli:dist
+function cli:astick3
+execute store result score #temp2 clivalue run data get block ~ ~1 ~ Items
+execute if score #temp2 clivalue = #temp1 clivalue run function cli:astick9

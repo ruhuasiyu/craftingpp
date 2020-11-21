@@ -1,8 +1,0 @@
-{
-	"replace": false,
-	"values": [
-		"minecraft:hopper",
-		"#container:slots9",
-		"#container:slots27"
-	]
-}

@@ -1,0 +1,12 @@
+{
+	"replace": false,
+	"values": [
+		"minecraft:chest",
+		"minecraft:trapped_chest",
+		{ "id": "stonechest:chest_andesite", "required": false},
+		{ "id": "stonechest:chest_cobblestone", "required": false},
+		{ "id": "stonechest:chest_diorite", "required": false},
+		{ "id": "stonechest:chest_granite", "required": false},
+		{ "id": "stonechest:chest_stone", "required": false}
+	]
+}

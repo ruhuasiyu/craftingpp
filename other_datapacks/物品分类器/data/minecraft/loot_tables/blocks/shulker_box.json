@@ -14,7 +14,7 @@
 								{
 									"condition": "minecraft:match_tool",
 									"predicate": {
-										"nbt":"{isShulkerMarker:1b}"
+										"nbt":"{drop_content:1b}"
 									}
 								}
 							]

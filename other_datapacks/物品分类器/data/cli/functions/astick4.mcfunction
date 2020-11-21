@@ -1,6 +1,6 @@
-data modify entity @s HandItems[0] set value {id:"minecraft:structure_void",Count:1b}
-data modify entity @s HandItems[0].id set from entity @e[type=item_frame,tag=cli_item_frame,limit=1] Item.id
-execute at @s store result score @s clivalue run data modify entity @s HandItems[0].id set from block ~ ~1 ~ Items[0].id
-execute at @s unless data block ~ ~1 ~ Items[] run scoreboard players set @s clivalue 1
-execute if score @s clivalue matches 0 run function cli:dist
-data remove entity @s HandItems[0]
+clone ~ ~ ~ ~ ~ ~ ~ 255 ~
+execute store result score #t cppValue run data get block ~ 255 ~ Items
+loot insert ~ 255 ~ loot entities/evoker
+execute store result score #s cppValue run data get block ~ 255 ~ Items
+setblock ~ 255 ~ air
+execute unless score #t cppValue = #s cppValue as @e[type=armor_stand,tag=cli_source,distance=..25,limit=1] run function cli:astick5
