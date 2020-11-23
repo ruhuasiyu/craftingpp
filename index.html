@@ -87,6 +87,7 @@
 	<li><a href="#黑曜石插件"><span class="ci" style="background-position: -80px -16px;"></span> 黑曜石插件</a></li>
 	<li><a href="#下界岩插件"><span class="ci" style="background-position: -48px -720px;"></span> 下界岩插件</a></li>
 	<li><a href="#末地石插件"><span class="ci" style="background-position: -64px -720px;"></span> 末地石插件</a></li>
+	<li><a href="#玄武岩插件"><span class="ci" style="background-position: -112px -1232px;"></span> 玄武岩插件</a></li>
 </ul></li>
 <li class="up3"><a href="#材料"><span class="ci" style="background-position: -48px -64px;"></span> 材料</a><ul>
 	<li><a href="#上古卷轴"><span class="ci" style="background-position: -0px -64px;"></span> 上古卷轴</a></li>
@@ -382,18 +383,18 @@
 <tbody>
 	<tr>
 		<td rowspan="2">Java版 20w46a</td>
-		<td>v1.12-1121</td>
-		<td><a href="https://gitee.com/zhangshenxing/CraftingPlusPlus/releases/v1.12-1121">Gitee</a> |
-			<a href="https://github.com/ruhuasiyu/CraftingPlusPlus/releases/tag/v1.12-1121">GitHub</a> |
-			<a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.12-1121.zip">其它</a></td>
+		<td>v1.12-1123</td>
+		<td><a href="https://gitee.com/zhangshenxing/CraftingPlusPlus/releases/v1.12-1123">Gitee</a> |
+			<a href="https://github.com/ruhuasiyu/CraftingPlusPlus/releases/tag/v1.12-1123">GitHub</a> |
+			<a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.12-1123.zip">其它</a></td>
 	</tr>
 	<tr><td colspan="3"></td></tr>
 	<tr>
 		<td rowspan="2">Java版 1.16.2-1.16.4</td>
-		<td>v1.11.2-1119</td>
-		<td><a href="https://gitee.com/zhangshenxing/CraftingPlusPlus/releases/v1.11.2-1119">Gitee</a> |
-			<a href="https://github.com/ruhuasiyu/CraftingPlusPlus/releases/tag/v1.11.2-1119">GitHub</a> |
-			<a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.11.2-1119.zip">其它</a></td>
+		<td>v1.11.2-1123</td>
+		<td><a href="https://gitee.com/zhangshenxing/CraftingPlusPlus/releases/v1.11.2-1123">Gitee</a> |
+			<a href="https://github.com/ruhuasiyu/CraftingPlusPlus/releases/tag/v1.11.2-1123">GitHub</a> |
+			<a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.11.2-1123.zip">其它</a></td>
 	</tr>
 	<tr><td colspan="2"></td></tr>
 	<tr>
@@ -2225,7 +2226,14 @@
 	<td>1</td>
 </tr>
 <tr><td><a class="ui lava_bucket"></a><a class="ui blue_ice"></a></td>
-	<td>熔岩桶+蓝冰</td>
+	<td>熔岩桶+蓝冰 <span class="oldversion">1.11-1.11.1</span></td>
+	<td><a class="ui basalt"><span class="stack">3</span></a></td>
+	<td>3 玄武岩</td>
+	<td>1</td>
+	<td>1</td>
+</tr>
+<tr><td><a class="ui lava_bucket"></a><a href="#玄武岩插件" class="ui ci basalt_plugin"></a></td>
+	<td>熔岩桶+<a href="#玄武岩插件">玄武岩插件</a> <span class="version">1.11.2起</span></td>
 	<td><a class="ui basalt"><span class="stack">3</span></a></td>
 	<td>3 玄武岩</td>
 	<td>1</td>
@@ -2298,6 +2306,9 @@
 	<td><a class="ui ci burn_mode"></a></td>
 	<td>将放入的物品变为价值点。</td>
 </tr>
+<tr><th>修复模式</th>
+	<td><a class="ui ci mend_mode"></a></td>
+	<td>消耗30价值点修复1点耐久。</td></tr>
 <tr><th>复制模式</th>
 	<td><a class="ui ci copy_mode"></a></td>
 	<td>消耗5倍价值点复制放入的物品。</td></tr>
@@ -2313,7 +2324,7 @@
 </tr></thead><tbody>
 <tr><td>65536</td>
 	<td class="left">
-		<a class="ui nether_star" title="下界之星"></a>
+		<a class="ui ci nether_star" title="下界之星"></a>
 		<a class="ui elytra" title="鞘翅"></a>
 		<a class="ui dragon_egg" title="龙蛋"></a>
 	</td>
@@ -2660,6 +2671,51 @@
 	<td><a class="ui stripped_warped_stem" title="去皮诡异菌柄"></a></td>
 	<td><a class="ui stripped_crimson_hyphae" title="去皮绯红菌核"></a></td>
 	<td><a class="ui stripped_warped_hyphae" title="去皮诡异菌核"></a></td>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<th rowspan="2"><a class="ui ci grafter" href="#剪枝器" title="剪枝器"></a></th>
+	<td><a class="ui oak_leaves" title="橡树树叶"></a></td>
+	<td><a class="ui spruce_leaves" title="云杉树叶"></a></td>
+	<td><a class="ui birch_leaves" title="白桦树叶"></a></td>
+	<td><a class="ui jungle_leaves" title="丛林树叶"></a></td>
+	<td><a class="ui acacia_leaves" title="金合欢树叶"></a></td>
+	<td><a class="ui dark_oak_leaves" title="深色橡树树叶"></a></td>
+	<td><a class="ui nether_wart_block" title="下界疣块"></a></td>
+	<td><a class="ui warped_wart_block" title="诡异疣块"></a></td>
+	<td><a class="ui brown_mushroom_block" title="棕色蘑菇方块"></a></td>
+	<td><a class="ui red_mushroom_block" title="红色蘑菇方块"></a></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td><a class="ui oak_sapling" title="橡树树苗"></a></td>
+	<td><a class="ui spruce_sapling" title="云杉树苗"></a></td>
+	<td><a class="ui birch_sapling" title="白桦树苗"></a></td>
+	<td><a class="ui jungle_sapling" title="丛林树苗"></a></td>
+	<td><a class="ui acacia_sapling" title="金合欢树苗"></a></td>
+	<td><a class="ui dark_oak_sapling" title="深色橡树树苗"></a></td>
+	<td><a class="ui crimson_fungus" title="绯红菌"></a></td>
+	<td><a class="ui warped_fungus" title="诡异菌"></a></td>
+	<td><a class="ui brown_mushroom" title="棕色蘑菇"></a></td>
+	<td><a class="ui red_mushroom" title="红色蘑菇"></a></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
 	<td></td>
 	<td></td>
 	<td></td>
@@ -3537,7 +3593,7 @@
 <tr><td><a href="#附魔钻石">附魔钻石</a>+下界之星+木桶+下界合金块</td>
 	<td><span class="ui cm" title="合成器">
 		<a href="#附魔铁锭" class="ci enchanted_diamond" title="附魔钻石"></a>
-		<a class="nether_star" title="下界之星"></a>
+		<a class="ci nether_star" title="下界之星"></a>
 		<a href="#附魔铁锭" class="ci enchanted_diamond" title="附魔钻石"></a>
 		<a href="#附魔铁锭" class="ci enchanted_diamond" title="附魔钻石"></a>
 		<a class="ui barrel" title="木桶"></a>
@@ -3551,7 +3607,7 @@
 <tr><td><a href="#附魔铁锭">附魔铁锭</a>+下界之星+木桶+钻石块</td>
 	<td><span class="ui cm" title="合成器">
 		<a href="#附魔铁锭" class="ci enchanted_iron" title="附魔铁锭"></a>
-		<a class="nether_star" title="下界之星"></a>
+		<a class="ci nether_star" title="下界之星"></a>
 		<a href="#附魔铁锭" class="ci enchanted_iron" title="附魔铁锭"></a>
 		<a href="#附魔铁锭" class="ci enchanted_iron" title="附魔铁锭"></a>
 		<a class="ui barrel" title="木桶"></a>
@@ -3845,7 +3901,25 @@
 		<a class="ci end_stone_plugin" title="末地石插件"></a>
 	</span></td>
 	<td><code>cpp:end_stone_plugin</code><br />
-		用于<a href="#多功能一体机">多功能一体机</a>低温常压模式下制造末地石。</td></tr>
+		用于<a href="#多功能一体机">多功能一体机</a>低温常压模式下制造末地石。</td>
+</tr>
+<tr><th><strong id="玄武岩插件">玄武岩插件</strong></th>
+	<td><a href="#附魔之瓶">附魔之瓶</a>+<a href="#附魔钻石">附魔钻石</a>+<a href="#附魔金锭">附魔金锭</a>+<a href="#空白插件">空白插件</a>+<a href="#附魔铁锭">附魔铁锭</a>+蓝冰</td>
+	<td><span class="ui cm" title="合成器">
+		<a href="#附魔之瓶" class="experience_bottle" title="附魔之瓶"></a>
+		<a href="#附魔钻石" class="ci enchanted_diamond" title="附魔钻石"></a>
+		<a href="#附魔之瓶" class="experience_bottle" title="附魔之瓶"></a>
+		<a href="#附魔金锭" class="ci enchanted_gold" title="附魔金锭"></a>
+		<a href="#空白插件" class="ci empty_plugin" title="空白插件"></a>
+		<a href="#附魔金锭" class="ci enchanted_gold" title="附魔金锭"></a>
+		<a href="#附魔铁锭" class="ci enchanted_iron" title="附魔铁锭"></a>
+		<a class="blue_ice" title="蓝冰"></a>
+		<a href="#附魔铁锭" class="ci enchanted_iron" title="附魔铁锭"></a>
+		<a class="ci basalt_plugin" title="玄武岩插件"></a>
+	</span></td>
+	<td><span class="version">1.11.2起</span><br /><code>cpp:basalt_plugin</code><br />
+		用于<a href="#多功能一体机">多功能一体机</a>低温常压模式下制造玄武岩。</td>
+</tr>
 </tbody></table>
 
 
@@ -3853,33 +3927,33 @@
 <h2 id="材料">材料</h2>
 <h3 id="上古卷轴">上古卷轴</h3>
 		<a class="ui ci ancient_scroll" title="上古卷轴"></a>
-<p>矿物辞典为<code>dict:['ancien_scroll']</code>。</p>
+<p>矿物辞典为<code>dict:['ancient_scroll']</code>。</p>
 <table><thead><tr><th>所含附魔</th>
 	<th>命名空间ID</th>
 </tr></thead><tbody>
 <tr><th><span class="lore">时运 III</span></th>
-	<td><code>cpp:ancien_scroll.fortune</code></td>
+	<td><code>cpp:ancient_scroll.fortune</code></td>
 </tr>
 <tr><th><span class="lore">抢夺 III</span></th>
-	<td><code>cpp:ancien_scroll.looting</code></td>
+	<td><code>cpp:ancient_scroll.looting</code></td>
 </tr>
 <tr><th><span class="lore">水下呼吸 III</span></th>
-	<td><code>cpp:ancien_scroll.respiration</code></td>
+	<td><code>cpp:ancient_scroll.respiration</code></td>
 </tr>
 <tr><th><span class="lore">饵钓 III</span></th>
-	<td><code>cpp:ancien_scroll.lure</code></td>
+	<td><code>cpp:ancient_scroll.lure</code></td>
 </tr>
 <tr><th><span class="lore">耐久 III</span></th>
-	<td><code>cpp:ancien_scroll.unbreaking</code></td>
+	<td><code>cpp:ancient_scroll.unbreaking</code></td>
 </tr>
 <tr><th><span class="lore">横扫之刃 III</span></th>
-	<td><code>cpp:ancien_scroll.sweeping</code></td>
+	<td><code>cpp:ancient_scroll.sweeping</code></td>
 </tr>
 <tr><th><span class="lore">力量 V</span></th>
-	<td><code>cpp:ancien_scroll.power</code></td>
+	<td><code>cpp:ancient_scroll.power</code></td>
 </tr>
 <tr><th><span class="lore">锋利 V</span></th>
-	<td><code>cpp:ancien_scroll.sharpness</code></td></tr>
+	<td><code>cpp:ancient_scroll.sharpness</code></td></tr>
 </tbody></table>
 <p>在<a href="#附魔室">附魔室</a>箱子中有几率出现，一共8种。在<a href="#金砧">金砧</a>中可用于给拥有相同等级相应附魔的物品的附魔等级+1。</p>
 <p>可以通过打开<a href="#圣诞礼物">圣诞礼物</a>得到。</p>
@@ -4080,7 +4154,27 @@
 </tr>
 
 <tr id="月之碎片">
-	<th><strong>月之碎片</strong></th>
+	<th rowspan="2"><strong>月之碎片</strong></th>
+	<td><a href="#铁粉">铁粉</a>+<a href="#金粉">金粉</a>+<a href="#钻石粉">钻石粉</a>+<a href="#绿宝石粉">绿宝石粉</a>+<br />
+		<a href="#石英粉">石英粉</a>+<a href="#碳粉">煤粉</a>+粘液球+恶魂之泪+<br />
+		末影珍珠</td>
+	<td><span class="ui cm" title="合成器">
+		<a href="#铁粉" class="ci iron_dust" title="铁粉"></a>
+		<a href="#金粉" class="ci gold_dust" title="金粉"></a>
+		<a href="#钻石粉" class="ci diamond_dust" title="钻石粉"></a>
+		<a href="#绿宝石粉" class="ci emerald_dust" title="绿宝石粉"></a>
+		<a href="#石英粉" class="ci quartz_dust" title="石英粉"></a>
+		<a href="#碳粉" class="ci carbon_dust" title="煤粉"></a>
+		<a href="#铜粉" class="ci copper_dust" title="铜粉"></a>
+		<a class="netherite_scrap" title="下界合金碎片"></a>
+		<a class="amethyst_shard" title="紫水晶碎片"></a>
+		<a class="ci moon_shard" title="月之碎片"></a>
+		<span class="shapeless" title="此配方是无形的，材料可以以任何排列方式放置在合成格内。"></span>
+	</span></td>
+	<td><code>cpp:moon_shard</code><br/><span class="version">1.12</span></td>
+</tr>
+
+<tr id="月之碎片">
 	<td><a href="#铁粉">铁粉</a>+<a href="#金粉">金粉</a>+<a href="#钻石粉">钻石粉</a>+<a href="#绿宝石粉">绿宝石粉</a>+<br />
 		<a href="#石英粉">石英粉</a>+<a href="#碳粉">煤粉</a>+粘液球+恶魂之泪+<br />
 		末影珍珠</td>
@@ -4097,7 +4191,7 @@
 		<a class="ci moon_shard" title="月之碎片"></a>
 		<span class="shapeless" title="此配方是无形的，材料可以以任何排列方式放置在合成格内。"></span>
 	</span></td>
-	<td><code>cpp:moon_shard</code></td>
+	<td><code>cpp:moon_shard</code><br/><span class="oldversion">1.10-1.11.1</span></td>
 </tr>
 
 <tr id="日之碎片">
@@ -4115,7 +4209,7 @@
 		<a class="empty"></a>
 		<a class="ci sun_shard" title="日之碎片"></a>
 	</span></td>
-	<td><code>cpp:sun_shard</code><br /><span class="oldversion">1.10.x</span></td>
+	<td><code>cpp:sun_shard</code><br /><span class="oldversion">1.10.x</span><span class="version">1.12</span></td>
 </tr>
 <tr><td><a href="#月之碎片">月之碎片</a>+末影之眼+下界合金碎片</td>
 	<td><span class="ui cm" title="合成器">
@@ -4130,7 +4224,7 @@
 		<a class="netherite_scrap" title="下界合金碎片"></a>
 		<a class="ci sun_shard" title="日之碎片"></a>
 	</span></td>
-	<td><code>cpp:sun_shard</code><br /><span class="version">1.11起</span></td>
+	<td><code>cpp:sun_shard</code><br /><span class="version">1.11</span></td>
 </tr>
 
 <tr><th>下界之星</th>
@@ -4140,12 +4234,12 @@
 		<a href="#日之碎片" class="ci sun_shard" title="日之碎片"></a>
 		<a class="empty"></a>
 		<a href="#日之碎片" class="ci sun_shard" title="日之碎片"></a>
-		<a class="nether_star" title="下界之星"></a>
+		<a class="ci nether_star" title="下界之星"></a>
 		<a href="#日之碎片" class="ci sun_shard" title="日之碎片"></a>
 		<a class="empty"></a>
 		<a href="#日之碎片" class="ci sun_shard" title="日之碎片"></a>
 		<a class="empty"></a>
-		<a class="nether_star" title="恶魂之泪"><span class="stack">2</span></a>
+		<a class="ci nether_star" title="恶魂之泪"><span class="stack">2</span></a>
 	</span></td>
 	<td></td>
 </tr>
@@ -4634,7 +4728,7 @@
 		<a class="empty"></a>
 		<a class="ci xp1" title="1点经验 2.5秒"></a>
 	</span></td>
-	<td rowspan="3"><code>cpp:copper_dust</code><br />
+	<td rowspan="2"><code>cpp:copper_dust</code><br />
 		<code>dict:["copper_dust"]</code></td>
 </tr>
 <tr><td>铜矿石+燧石</td>
@@ -5255,7 +5349,7 @@
 		<a class="emerald" title="绿宝石"></a>
 		<a class="white_dye" title="白色染料"></a>
 		<a class="emerald" title="绿宝石"></a>
-		<a class="nether_star" title="下界之星"></a>
+		<a class="ci nether_star" title="下界之星"></a>
 		<a class="emerald" title="绿宝石"></a>
 		<a class="white_dye" title="白色染料"></a>
 		<a class="emerald" title="绿宝石"></a>
@@ -5284,8 +5378,7 @@
 
 <img style="height:220px" src="items/screenshots/red_force_of_fire.png" alt="红色火之力" /> <img style="height:220px" src="items/screenshots/blue_force_of_sky.png" alt="经验不足" />
 
-<h3 id="便携式工作台">便携式工作台</h3>
-<p class="noindent">命名空间ID <code>cpp:portable_crafting_table</code></p>
+<h3 id="便携式工作台">便携式工作台 <code>cpp:portable_crafting_table</code></h3>
 <table><thead><tr><th>材料</th><th>合成配方</th></tr></thead><tbody>
 <tr><td>工作台+附魔之瓶</td>
 	<td><span class="ui cm" title="合成器">
@@ -5304,8 +5397,7 @@
 </tbody></table>
 <p>右击可放置一个工作台，玩家离开后会自动消失。</p>
 
-<h3 id="便携式合成器">便携式合成器</h3>
-<p class="noindent">命名空间ID <code>cpp:portable_crafting_machine</code></p>
+<h3 id="便携式合成器">便携式合成器 <code>cpp:portable_crafting_machine</code></h3>
 <table><thead><tr><th>材料</th><th>合成配方</th></tr></thead><tbody>
 <tr><td><a href="#合成器">合成器</a>+附魔之瓶</td>
 	<td><span class="ui cm" title="合成器">
@@ -5324,8 +5416,7 @@
 </tbody></table>
 <p>右击可放置一个<a href="#合成器">合成器</a>，玩家离开后会自动消失（包括其中的物品也会消失）。</p>
 
-<h3 id="磁铁">磁铁</h3>
-<p class="noindent">命名空间ID <code>cpp:magnet</code></p>
+<h3 id="磁铁">磁铁 <code>cpp:magnet</code></h3>
 <table><thead><tr><th>材料</th><th>合成配方</th></tr></thead><tbody>
 <tr><td><a href="#附魔铁锭">附魔铁锭</a>+红石</td>
 	<td><span class="ui cm" title="合成器">
@@ -5509,7 +5600,7 @@
 </tbody></table>
 
 <h3 id="剪枝器">剪枝器 <code>cpp:grafter</code></h3>
-<p>破坏树叶必定掉落树苗，破坏下界疣/诡异疣块可以得到绯红菌/诡异菌。每次使用消耗2点耐久，共132点耐久。</p>
+<p>破坏树叶必定掉落树苗，破坏下界疣块/诡异疣块/棕色蘑菇方块/红色蘑菇方块可以得到绯红菌/诡异菌/棕色蘑菇/红色蘑菇。每次使用消耗2点耐久，共132点耐久。</p>
 <table><thead><tr><th>材料</th><th>合成配方</th></tr></thead><tbody>
 <tr><td><a href="#附魔铁锭">附魔铁锭</a>+木棍</td>
 	<td><span class="ui cm" title="合成器">
@@ -7935,9 +8026,10 @@
 <table><thead><tr><th>产物</th>
 	<th>材料</th>
 	<th>合成配方</th>
+	<th>命名空间ID</th>
 </tr></thead><tbody>		
 <tr id="封印之杖">
-	<th><strong>封印之杖 (Sealing Wand)</strong><br />
+	<th><strong>封印之杖</strong><br />
 魔法等级: 1</th>
 	<td><a href="#附魔铁锭">附魔铁锭</a>+<a href="#附魔金锭">附魔金锭</a>+木棍</td>
 	<td><span class="ui cm" title="合成器">
@@ -7952,10 +8044,11 @@
 		<a href="#附魔铁锭" class="ci enchanted_iron" title="附魔铁锭"></a>
 		<a class="ci sealing_wand" title="封印之杖"></a>
 	</span></td>
+	<td><code>cpp:sealing_wand</code></td>
 </tr>
 
 <tr id="星之杖">
-	<th><strong>星之杖 (Star Wand)</strong><br />
+	<th><strong>星之杖</strong><br />
 魔法等级: 2</th>
 	<td><a href="#月之碎片">月之碎片</a>+<a href="#日之碎片">日之碎片</a>+<a href="#封印之杖">封印之杖</a></td>
 	<td><span class="ui cm" title="合成器">
@@ -7970,28 +8063,30 @@
 		<a href="#月之碎片" class="ci moon_shard" title="月之碎片"></a>
 		<a class="ci star_wand" title="星之杖"></a>
 	</span></td>
+	<td><code>cpp:star_wand</code></td>
 </tr>
 
 <tr id="梦之杖">
-	<th><strong>梦之杖 (Dream Wand)</strong><br />
+	<th><strong>梦之杖</strong><br />
 魔法等级: 3</th>
 	<td>下界之星+<a href="#龙蛋">龙蛋</a>+<a href="#星之杖">星之杖</a></td>
 	<td><span class="ui cm" title="合成器">
-		<a class="nether_star" title="下界之星"></a>
+		<a class="ci nether_star" title="下界之星"></a>
 		<a href="#龙蛋" class="dragon_egg" title="龙蛋"></a>
-		<a class="nether_star" title="下界之星"></a>
+		<a class="ci nether_star" title="下界之星"></a>
 		<a href="#龙蛋" class="dragon_egg" title="龙蛋"></a>
 		<a href="#星之杖" class="ci star_wand" title="星之杖"></a>
 		<a href="#龙蛋" class="dragon_egg" title="龙蛋"></a>
-		<a class="nether_star" title="下界之星"></a>
+		<a class="ci nether_star" title="下界之星"></a>
 		<a href="#龙蛋" class="dragon_egg" title="龙蛋"></a>
-		<a class="nether_star" title="下界之星"></a>
+		<a class="ci nether_star" title="下界之星"></a>
 		<a class="ci dream_wand" title="梦之杖"></a>
 	</span></td>
+	<td><code>cpp:dream_wand</code></td>
 </tr>
 
 <tr id="节制器">
-	<th><strong>节制器 (Temperancer)</strong><br />
+	<th><strong>节制器</strong><br />
 右击可开启/关闭。</th>
 	<td>石头+附魔之瓶</td>
 	<td><span class="ui cm" title="合成器">
@@ -8005,7 +8100,9 @@
 		<a class="stone" title="石头"></a>
 		<a class="stone" title="石头"></a>
 		<a class="ci temperancer_closed" title="节制器"></a>
-	</span></td></tr>
+	</span></td>
+	<td><code>cpp:temperancer</code></td>
+</tr>
 </tbody></table>
 
 <h3 id="黑暗魔杖">黑暗魔杖 <code>cpp:wand_of_the_darkness</code></h3>
@@ -8354,7 +8451,7 @@
 </td></tr>
 </tbody></table>
 
-<h3 id="皮革盔甲染色">皮革盔甲染色 (Dyed Leather Armors)</h3>
+<h3 id="皮革盔甲染色">皮革盔甲染色</h3>
 <p>使用黑色染料可将盔甲颜色变为纯黑色#000000，使用红色染料/绿色染料/蓝色染料可将其红色/绿色/蓝色分别加深1个单位，即RGB值增加#010000/#000100/#000001，可以一次增加多个相同染料。</p>
 <table><thead><tr><th>产物</th>
 	<th>材料</th>
@@ -8379,7 +8476,7 @@
 	</span></td></tr>
 </tbody></table>
 
-<h3 id="烈焰红唇">烈焰红唇 (Red Lip)</h3>
+<h3 id="烈焰红唇">烈焰红唇 <code>cpp:red_lip</code></h3>
 <p>烈焰红唇可以通过各种染料在工作台中染色，也可以在合成器中像皮革盔甲一样染色。</p>
 <table><thead><tr><th>名称</th>
 	<th>材料</th>
@@ -8773,7 +8870,7 @@
 		<a class="ui icons18 speed"></a><span class="lore">速度 (0:05)</span></td></tr>
 </tbody></table>
 
-<h3 id="经典画作">经典画作</h3>
+<h3 id="经典画作">经典画作 <code>cpp:classical_painting</code></h3>
 		<a class="ui ci classical_painting"></a>
 <p>放置后，右键可按次序切换图案。包括：
 无名女郎、罗纳河上的星空、蒙娜丽莎、梦、日出印象、
@@ -8808,7 +8905,7 @@
 	</span></td></tr>
 </tbody></table>
 
-<h3 id="新春装饰">新春装饰</h3>
+<h3 id="新春装饰">新春装饰 <code>cpp:spring_festival_decorations</code></h3>
 <a class="ui ci spring_festival_decorations"></a>
 <p>放置后，右键可按次序切换图案。包括<br />
 日出江花红胜火 春来江水绿如蓝<br />
@@ -8934,6 +9031,7 @@
 <table><thead><tr><th>产物</th>
 	<th>材料</th>
 	<th>合成配方</th>
+	<th>命名空间ID</th>
 </tr></thead><tbody>	
 <tr id="旗帜">
 	<th>中国国旗<br />
@@ -8959,6 +9057,13 @@
 		<a class="ci china_flag" title="中国国旗"></a>
 		<span class="shapeless" title="此配方是无形的，材料可以以任何排列方式放置在合成格内。"></span>
 	</span></td>
+	<td>
+		<code>cpp:china_flag</code><br/>
+		<code>cpp:usa_flag</code><br/>
+		<code>cpp:russia_flag</code><br/>
+		<code>cpp:uk_flag</code><br/>
+		<code>cpp:france_flag</code>
+	</td>
 </tr>
 
 <tr id="标志">
@@ -8987,6 +9092,14 @@
 		<a class="ci bilibili_logo" title="哔哩哔哩标志"></a>
 		<span class="shapeless" title="此配方是无形的，材料可以以任何排列方式放置在合成格内。"></span>
 	</span></td>
+	<td>
+		<code>cpp:bilibili_logo</code><br/>
+		<code>cpp:github_logo</code><br/>
+		<code>cpp:mcmod_logo</code><br/>
+		<code>cpp:tcp_logo</code><br/>
+		<code>cpp:cbl_logo</code><br/>
+		<code>cpp:nf_logo</code>
+	</td>
 </tr>
 
 <tr id="盾牌图案">
@@ -9013,6 +9126,13 @@
 		<a class="ci shield_china_flag" title="盾牌(中国国旗)"></a>
 		<span class="shapeless" title="此配方是无形的，材料可以以任何排列方式放置在合成格内。"></span>
 	</span></td>
+	<td>
+		<code>cpp:shield_china_flag</code><br/>
+		<code>cpp:shield_usa_flag</code><br/>
+		<code>cpp:shield_russia_flag</code><br/>
+		<code>cpp:shield_uk_flag</code><br/>
+		<code>cpp:shield_france_flag</code>
+	</td>
 </tr>
 
 <tr><th>盾牌(哔哩哔哩标志)<br />
@@ -9039,7 +9159,16 @@
 		<a class="empty"></a>
 		<a class="ci shield_bilibili" title="盾牌(哔哩哔哩标志)"></a>
 		<span class="shapeless" title="此配方是无形的，材料可以以任何排列方式放置在合成格内。"></span>
-	</span></td></tr>
+	</span></td>
+	<td>
+		<code>cpp:shield_bilibili</code><br/>
+		<code>cpp:shield_github</code><br/>
+		<code>cpp:shield_mcmod</code><br/>
+		<code>cpp:shield_tcp</code><br/>
+		<code>cpp:shield_cbl</code><br/>
+		<code>cpp:shield_nf</code>
+	</td>
+</tr>
 </tbody></table>
 
 <h3 id="彩色告示牌">彩色告示牌</h3>
@@ -9560,7 +9689,7 @@
 	<a href="https://space.bilibili.com/4469715"><img src="items/bilibili.png" alt="哔哩哔哩" /></a>
 </p>
 
-<p>最后更新 2020-11-21</p>
+<p>最后更新 2020-11-23</p>
 </footer>
 
 </article>

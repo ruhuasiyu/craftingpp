@@ -622,7 +622,6 @@ span.ui a.fire, a.fire{
 .hay_block                          {background-position: -832px -864px;}
 .iron_bars                          {background-position: -864px -864px;}
 .jungle_planks                      {background-position: -992px -864px;}
-.lapis_block                        {background-position: -096px -896px;}
 .oak_planks                         {background-position: -192px -896px;}
 .purpur_block                       {background-position: -416px -896px;}
 .slime_block                        {background-position: -736px -896px;}
@@ -647,7 +646,6 @@ span.ui a.fire, a.fire{
 .dirt                               {background-position: -576px -960px;}
 .granite                            {background-position: -608px -960px;}
 .grass_block                        {background-position: -640px -960px;}
-.gravel                             {background-position: -672px -960px;}
 .terracotta                         {background-position: -704px -960px;}
 .ice                                {background-position: -736px -960px;}
 .spawner                            {background-position: -768px -960px;}
@@ -823,8 +821,7 @@ span.ui a.fire, a.fire{
 .wooden_sword                       {background-position: -384px -1280px;}
 
 .potion_of_water_breathing          {background-position: -064px -1344px;}
-.grass_path                         {background-position: -096px -1344px;}
-.nether_wart_block                  {background-position: -672px -1344px;}
+.dirt_path                         {background-position: -096px -1344px;}
 .bone_block                         {background-position: -736px -1344px;}
 .donkey_spawn_egg                   {background-position: -832px -1344px;}
 .elder_guardian_spawn_egg           {background-position: -864px -1344px;}
@@ -1120,6 +1117,8 @@ span.ui a.fire, a.fire{
 .hay_block                          {background-position: -992px -3232px;}
 
 .jungle_wood                        {background-position: -192px -3264px;}
+.lapis_block                        {background-position: -256px -3264px;}
+.nether_wart_block                  {background-position: -544px -3264px;}
 .oak_wood                           {background-position: -704px -3264px;}
 
 .red_nether_brick_slab              {background-position: -000px -3296px;}
@@ -1192,7 +1191,7 @@ span.ui a.fire, a.fire{
 .dark_prismarine                    {background-position: -032px -3360px;}
 .diorite                            {background-position: -064px -3360px;}
 .granite                            {background-position: -096px -3360px;}
-.andesite                           {background-position: -128px -3360px;}
+.gravel                             {background-position: -128px -3360px;}
 .ice                                {background-position: -160px -3360px;}
 .mossy_cobblestone                  {background-position: -192px -3360px;}
 .mossy_stone_bricks                 {background-position: -224px -3360px;}
@@ -1354,7 +1353,6 @@ span.ui a.fire, a.fire{
 .nether_brick                       {background-position: -992px -3488px;}
 
 .quartz                             {background-position: -000px -3520px;}
-.nether_star                        {background-position: -032px -3520px;}
 .paper                              {background-position: -064px -3520px;}
 .chorus_fruit_popped                {background-position: -096px -3520px;}
 .prismarine_crystals                {background-position: -128px -3520px;}
@@ -2197,6 +2195,9 @@ span.ui a.fire, a.fire{
 .assorted_root_candy                {background-position: -128px -2464px;}
 .netherite_mushroom_stew            {background-position: -160px -2464px;}
 .double_color_vine_salad            {background-position: -192px -2464px;}
+.basalt_plugin                      {background-position: -224px -2464px;}
+.nether_star                        {background-position: -256px -2464px;}
+.mend_mode                          {background-position: -000px -2496px;}
 
 .speed                   {background-position: -000px -00px;}
 .slowness                {background-position: -018px -00px;}
