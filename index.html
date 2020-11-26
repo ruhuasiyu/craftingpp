@@ -383,7 +383,7 @@
 	<th>下载地址</th></tr></thead>
 <tbody>
 	<tr>
-		<td rowspan="2">Java版 20w46a</td>
+		<td rowspan="2">Java版 20w46a-20w48a</td>
 		<td>v1.12-1124</td>
 		<td><a href="https://gitee.com/zhangshenxing/CraftingPlusPlus/releases/v1.12-1124">Gitee</a> |
 			<a href="https://github.com/ruhuasiyu/CraftingPlusPlus/releases/tag/v1.12-1124">GitHub</a> |
@@ -5848,11 +5848,11 @@
 		<a class="ci golem_farmer" title="傀儡农民"></a>
 		<span class="shapeless" title="此配方是无形的，材料可以以任何排列方式放置在合成格内。"></span>
 	</span></td>
-	<td><code>cpp:industrious_hand</code><br />
-<code>cpp:break_hand</code><br />
-<code>cpp:smart_hand</code><br />
-<code>cpp:angry_hand</code><br />
-<code>cpp:toughen_hand</code></td>
+	<td><code>cpp:golem_farmer</code><br />
+<code>cpp:golem_miner</code><br />
+<code>cpp:golem_fisher</code><br />
+<code>cpp:golem_warrior</code><br />
+<code>cpp:golem_herder</code></td>
 </tr>
 </tbody></table>
 
@@ -6185,7 +6185,7 @@
 </tr>
 
 <tr><th><strong id="拔丝苹果">拔丝苹果</strong><br />
-		<a class="ui icons18 hunger" title="6"></a><a class="ui icons18 hunger" title="6"></a><a class="ui icons18 hunger" title="6"></a><br />
+		<a class="ui icons18 hunger" title="5"></a><a class="ui icons18 hunger" title="5"></a><a class="ui icons18 hunger_half" title="5"></a><br />
 		<a class="ui icons18 speed"></a><span class="lore">速度 30秒</span></th>
 	<td>糖+苹果</td>
 	<td><span class="ui cm" title="合成器">
@@ -6518,7 +6518,7 @@
 		<a class="empty"></a>
 		<a class="ci vegetable_kebab" title="蔬菜串"></a>
 	</span></td>
-	<td><code>cpp:vegetable_kebab</code> 烤胡萝卜和烤马铃薯位置可交换。</td>
+	<td><code>cpp:vegetable_kebab</code><br/>烤胡萝卜和烤马铃薯位置可交换。</td>
 </tr>
 
 <tr><th><strong id="烤牛肉串">烤牛肉串</strong><br />
@@ -9036,20 +9036,58 @@
 <tr><th>小鸟游雏田</th><td><a class="ui ci character49"></a></td><td>cpp:character/49</td></tr>
 <tr><th>五十岚阳菜</th><td><a class="ui ci character50"></a></td><td>cpp:character/50</td></tr>
 <tr><th>凉宫杏树</th><td><a class="ui ci character51"></a></td><td>cpp:character/51</td></tr>
-<tr><th>绊爱</th><td><a class="ui ci character52"></a></td><td>cpp:character/52</td></tr>
-<tr><th>本间向日葵</th><td><a class="ui ci character53"></a></td><td>cpp:character/53</td></tr>
-<tr><th>神楽めあ</th><td><a class="ui ci character54"></a></td><td>cpp:character/54</td></tr>
-<tr><th>湊あくあ</th><td><a class="ui ci character55"></a></td><td>cpp:character/55</td></tr>
-<tr><th>新科娘</th><td><a class="ui ci character56"></a></td><td>cpp:character/56</td></tr>
-<tr><th>森永みう</th><td><a class="ui ci character57"></a></td><td>cpp:character/57</td></tr>
-<tr><th>白上吹雪</th><td><a class="ui ci character58"></a></td><td>cpp:character/58</td></tr>
-<tr><th>白咲花</th><td><a class="ui ci character59"></a></td><td>cpp:character/59</td></tr>
-<tr><th>星野日向</th><td><a class="ui ci character60"></a></td><td>cpp:character/60</td></tr>
-<tr><th>姬坂乃爱</th><td><a class="ui ci character61"></a></td><td>cpp:character/61</td></tr>
-<tr><th>祢豆子</th><td><a class="ui ci character62"></a></td><td>cpp:character/62</td></tr>
-<tr><th>木下优子</th><td><a class="ui ci character63"></a></td><td>cpp:character/63</td></tr>
-<tr><th>七海千秋</th><td><a class="ui ci character64"></a></td><td>cpp:character/64</td></tr>
-<tr><th>绯赤艾莉欧<span class="version">1.12起</span></th><td><a class="ui ci character65"></a></td><td>cpp:character/65</td></tr>
+<tr><th>白咲花</th><td><a class="ui ci character52"></a></td><td>cpp:character/52</td></tr>
+<tr><th>星野日向</th><td><a class="ui ci character53"></a></td><td>cpp:character/53</td></tr>
+<tr><th>姬坂乃爱</th><td><a class="ui ci character54"></a></td><td>cpp:character/54</td></tr>
+<tr><th>祢豆子</th><td><a class="ui ci character55"></a></td><td>cpp:character/55</td></tr>
+<tr><th>木下优子</th><td><a class="ui ci character56"></a></td><td>cpp:character/56</td></tr>
+<tr><th>七海千秋</th><td><a class="ui ci character57"></a></td><td>cpp:character/57</td></tr>
+<tr><th>绯赤艾莉欧</th><td><a class="ui ci character58"></a></td><td>cpp:character/58</td></tr>
+<tr><th>上白泽慧音</th><td><a class="ui ci character59"></a></td><td>cpp:character/59</td></tr>
+<tr><th>东风谷早苗</th><td><a class="ui ci character60"></a></td><td>cpp:character/60</td></tr>
+<tr><th>丰聪耳神子</th><td><a class="ui ci character61"></a></td><td>cpp:character/61</td></tr>
+<tr><th>伊吹萃香</th><td><a class="ui ci character62"></a></td><td>cpp:character/62</td></tr>
+<tr><th>依神紫苑</th><td><a class="ui ci character63"></a></td><td>cpp:character/63</td></tr>
+<tr><th>八云紫</th><td><a class="ui ci character64"></a></td><td>cpp:character/64</td></tr>
+<tr><th>八云蓝</th><td><a class="ui ci character65"></a></td><td>cpp:character/65</td></tr>
+<tr><th>八坂神奈子</th><td><a class="ui ci character66"></a></td><td>cpp:character/66</td></tr>
+<tr><th>八意永琳</th><td><a class="ui ci character67"></a></td><td>cpp:character/67</td></tr>
+<tr><th>十六夜咲夜</th><td><a class="ui ci character68"></a></td><td>cpp:character/68</td></tr>
+<tr><th>博丽灵梦</th><td><a class="ui ci character69"></a></td><td>cpp:character/69</td></tr>
+<tr><th>古明地恋</th><td><a class="ui ci character70"></a></td><td>cpp:character/70</td></tr>
+<tr><th>古明地觉</th><td><a class="ui ci character71"></a></td><td>cpp:character/71</td></tr>
+<tr><th>四季映姬·亚玛萨那度</th><td><a class="ui ci character72"></a></td><td>cpp:character/72</td></tr>
+<tr><th>因幡帝</th><td><a class="ui ci character73"></a></td><td>cpp:character/73</td></tr>
+<tr><th>多多良小伞</th><td><a class="ui ci character74"></a></td><td>cpp:character/74</td></tr>
+<tr><th>宇佐见莲子</th><td><a class="ui ci character75"></a></td><td>cpp:character/75</td></tr>
+<tr><th>射命丸文</th><td><a class="ui ci character76"></a></td><td>cpp:character/76</td></tr>
+<tr><th>小野冢小町</th><td><a class="ui ci character77"></a></td><td>cpp:character/77</td></tr>
+<tr><th>帕秋莉·诺蕾姬</th><td><a class="ui ci character78"></a></td><td>cpp:character/78</td></tr>
+<tr><th>梅露兰·普莉兹姆利巴</th><td><a class="ui ci character79"></a></td><td>cpp:character/79</td></tr>
+<tr><th>橙</th><td><a class="ui ci character80"></a></td><td>cpp:character/80</td></tr>
+<tr><th>比那名居天子</th><td><a class="ui ci character81"></a></td><td>cpp:character/81</td></tr>
+<tr><th>河城荷取</th><td><a class="ui ci character82"></a></td><td>cpp:character/82</td></tr>
+<tr><th>泄矢诹访子</th><td><a class="ui ci character83"></a></td><td>cpp:character/83</td></tr>
+<tr><th>爱丽丝·玛格特洛依德</th><td><a class="ui ci character84"></a></td><td>cpp:character/84</td></tr>
+<tr><th>犬走椛</th><td><a class="ui ci character85"></a></td><td>cpp:character/85</td></tr>
+<tr><th>露娜萨·普莉兹姆利巴</th><td><a class="ui ci character86"></a></td><td>cpp:character/86</td></tr>
+<tr><th>秦心</th><td><a class="ui ci character87"></a></td><td>cpp:character/87</td></tr>
+<tr><th>红美铃</th><td><a class="ui ci character88"></a></td><td>cpp:character/88</td></tr>
+<tr><th>纯狐</th><td><a class="ui ci character89"></a></td><td>cpp:character/89</td></tr>
+<tr><th>芙兰朵露·斯卡雷特</th><td><a class="ui ci character90"></a></td><td>cpp:character/90</td></tr>
+<tr><th>莉莉卡·普莉兹姆利巴</th><td><a class="ui ci character91"></a></td><td>cpp:character/91</td></tr>
+<tr><th>蓬莱山辉夜</th><td><a class="ui ci character92"></a></td><td>cpp:character/92</td></tr>
+<tr><th>蕾米莉亚·斯卡雷特</th><td><a class="ui ci character93"></a></td><td>cpp:character/93</td></tr>
+<tr><th>藤原妹红</th><td><a class="ui ci character94"></a></td><td>cpp:character/94</td></tr>
+<tr><th>西行寺幽幽子</th><td><a class="ui ci character95"></a></td><td>cpp:character/95</td></tr>
+<tr><th>铃仙·优昙华院·因幡</th><td><a class="ui ci character96"></a></td><td>cpp:character/96</td></tr>
+<tr><th>键山雏</th><td><a class="ui ci character97"></a></td><td>cpp:character/97</td></tr>
+<tr><th>雾雨魔理沙</th><td><a class="ui ci character98"></a></td><td>cpp:character/98</td></tr>
+<tr><th>琪露诺</th><td><a class="ui ci character99"></a></td><td>cpp:character/99</td></tr>
+<tr><th>露米娅</th><td><a class="ui ci character100"></a></td><td>cpp:character/100</td></tr>
+<tr><th>风见幽香</th><td><a class="ui ci character101"></a></td><td>cpp:character/101</td></tr>
+<tr><th>鬼人正邪</th><td><a class="ui ci character102"></a></td><td>cpp:character/102</td></tr>
+<tr><th>魂魄妖梦</th><td><a class="ui ci character103"></a></td><td>cpp:character/103</td></tr>
 </tbody></table>
 
 <h3>旗帜、标志和盾牌图案</h3>
@@ -9714,7 +9752,7 @@
 	<a href="https://space.bilibili.com/4469715"><img src="items/bilibili.png" alt="哔哩哔哩" /></a>
 </p>
 
-<p>最后更新 2020-11-23</p>
+<p>最后更新 2020-11-26</p>
 </footer>
 
 </article>
