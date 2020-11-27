@@ -10,6 +10,10 @@
 html{
 	font-family: "Microsoft Yahei", Tahoma;
 }
+div.test img{
+	height:128px;
+	width: 64px;
+}
 body{
 	margin: 0;
 }
@@ -1808,19 +1812,19 @@ span.ui a.xp_orb, a.xp_orb{
 .mcmod_logo                         {background-position: -224px -1152px;}
 .tcp_logo                           {background-position: -256px -1152px;}
 .cbl_logo                           {background-position: -000px -1184px;}
-.roost                              {background-position: -032px -1184px;}
+.character104                       {background-position: -032px -1184px;}
 .crafting_machine                   {background-position: -064px -1184px;}
-.summon_wind                        {background-position: -096px -1184px;}
-.summon_fire                        {background-position: -128px -1184px;}
-.summon_thunder                     {background-position: -160px -1184px;}
-.summon_rain                        {background-position: -192px -1184px;}
-.summon_spirit                      {background-position: -224px -1184px;}
-.catalytic_wind                     {background-position: -256px -1184px;}
-.catalytic_fire                     {background-position: -000px -1216px;}
-.catalytic_thunder                  {background-position: -032px -1216px;}
-.catalytic_spirit                   {background-position: -064px -1216px;}
-.catalytic_rain                     {background-position: -096px -1216px;}
-.catalytic_earth                    {background-position: -128px -1216px;}
+.character105                       {background-position: -096px -1184px;}
+.character106                       {background-position: -128px -1184px;}
+.character107                       {background-position: -160px -1184px;}
+.character108                       {background-position: -192px -1184px;}
+.character109                       {background-position: -224px -1184px;}
+.character110                       {background-position: -256px -1184px;}
+.character111                       {background-position: -000px -1216px;}
+.character112                       {background-position: -032px -1216px;}
+.character113                       {background-position: -064px -1216px;}
+.character114                       {background-position: -096px -1216px;}
+.character115                       {background-position: -128px -1216px;}
 .portable_crafting_machine          {background-position: -160px -1216px;}
 .character01                        {background-position: -192px -1216px;}
 .character02                        {background-position: -224px -1216px;}
@@ -2222,6 +2226,8 @@ span.ui a.xp_orb, a.xp_orb{
 .character102                       {background-position: -224px -2592px;}
 .character103                       {background-position: -256px -2592px;}
 .character86                        {background-position: -000px -2624px;}
+.character116                       {background-position: -032px -2624px;}
+.character117                       {background-position: -064px -2624px;}
 
 .speed                   {background-position: -000px -00px;}
 .slowness                {background-position: -018px -00px;}
