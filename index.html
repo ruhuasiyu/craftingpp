@@ -390,19 +390,19 @@
 	<th>下载地址</th></tr></thead>
 <tbody>
 	<tr>
-		<td rowspan="2">Java版 20w49a</td>
-		<td>v1.12-1212</td>
-		<td><a href="https://gitee.com/zhangshenxing/CraftingPlusPlus/releases/v1.12-1212">Gitee</a> |
-			<a href="https://github.com/ruhuasiyu/CraftingPlusPlus/releases/tag/v1.12-1212">GitHub</a> |
-			<a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.12-1212.zip">其它</a></td>
+		<td rowspan="2">Java版 20w51a</td>
+		<td>v1.12-1221</td>
+		<td><a href="https://gitee.com/zhangshenxing/CraftingPlusPlus/releases/v1.12-1221">Gitee</a> |
+			<a href="https://github.com/ruhuasiyu/CraftingPlusPlus/releases/tag/v1.12-1221">GitHub</a> |
+			<a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.12-1221.zip">其它</a></td>
 	</tr>
 	<tr><td colspan="3"></td></tr>
 	<tr>
 		<td rowspan="2">Java版 1.16.2-1.16.4</td>
-		<td>v1.11.2-1210</td>
-		<td><a href="https://gitee.com/zhangshenxing/CraftingPlusPlus/releases/v1.11.2-1210">Gitee</a> |
-			<a href="https://github.com/ruhuasiyu/CraftingPlusPlus/releases/tag/v1.11.2-1210">GitHub</a> |
-			<a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.11.2-1210.zip">其它</a></td>
+		<td>v1.11.2-1221</td>
+		<td><a href="https://gitee.com/zhangshenxing/CraftingPlusPlus/releases/v1.11.2-1221">Gitee</a> |
+			<a href="https://github.com/ruhuasiyu/CraftingPlusPlus/releases/tag/v1.11.2-1221">GitHub</a> |
+			<a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.11.2-1221.zip">其它</a></td>
 	</tr>
 	<tr><td colspan="2"></td></tr>
 	<tr>
@@ -913,7 +913,7 @@
 <tr><th><strong id="水晶之心">水晶之心</strong></th>
 	<td><a class="ui ci heart_of_crystal"></a></td>
 	<td><code>cpp:heart_of_crystal</code></td>
-	<td>溺尸/远古守卫者/守卫者/鱿鱼/海龟/海豚/鱼被玩家杀死时，有<code>2.5%+抢夺等级×1%</code>的几率掉落。钓鱼亦有几率获得。</td>
+	<td>溺尸/远古守卫者/守卫者/鱿鱼/海龟/海豚/鱼/美西螈被玩家杀死时，有<code>2.5%+抢夺等级×1%</code>的几率掉落。钓鱼亦有几率获得。</td>
 </tr>
 <tr><th><strong id="山脉之肢">山脉之肢</strong></th>
 	<td><a class="ui ci limb_of_ridge"></a></td>
@@ -2114,7 +2114,7 @@
 <tr><td><a href="#泥土之魂" class="ui ci soul_of_dirt"></a><a class="ui water_bottle"></a></td>
 	<td><a href="#泥土之魂">泥土之魂</a>+粗制的药水</td>
 	<td><a href="#泥土药剂" class="ui ci agentia_of_dirt"></a></td>
-	<td><a href="#泥土药剂">泥土药剂</a> <br /><span class="lore"><a class="ui icons18 invisibility"></a>隐身 12:00<br />连环 12:00</span></td>
+	<td><a href="#泥土药剂">泥土药剂</a> <br /><span class="lore"><a class="ui icons18 invisibility"></a>隐身 12:00<br />连锁 12:00</span></td>
 	<td>4</td>
 	<td>10</td>
 </tr>
@@ -2271,8 +2271,8 @@
 	<figcaption>图 交易机机器界面</figcaption>
 </figure>
 
-<h4>1.12 版本</h4>
-<p>交易机拥有两种模式，点击上方按钮切换。每次工作完成后需要一段时间的冷却才可在此工作。</p>
+<h4>1.11.2 版本起</h4>
+<p>交易机拥有两种模式，点击上方按钮切换。每次工作完成后需要一段时间的冷却才再次工作。</p>
 <p>第一种模式可将左侧栏位物品转化为价值点，价值点达到2048时会产出一个绿宝石和7点经验。每产出10个绿宝石，会产出一个<a href="#交易插件">交易插件</a>。</p>
 
 <button style="display:none;cursor:pointer;" onclick="this.style.display='none';this.nextElementSibling.nextElementSibling.style.display='table';this.nextElementSibling.style.display='inline';">显示交易机物品价值表</button>
@@ -2847,7 +2847,7 @@
 
 <p class="note">收购模式的物品价值表位于<code>cpp/loot_tables/trade_machine/buy.json</code>。所有的交易插件位于<code>cpp/loot_tables/trade_plugin.json</code>，相应产物记录在<code>cpp/loot_tables/trade_machine/sell</code>。</p>
 
-<h4>1.12 之前的版本</h4>
+<h4>1.11.2 之前的版本</h4>
 <p>左侧放入材料，机器会以每刻1次的速度工作。上方为选择模式按钮，下方为输出方向按钮，使用左键或Q键切换。右侧方格为输出栏，当输出栏中有物品时，机器会停止工作。若输出方向有<abbr title="漏斗、投掷器、发射器、箱子、木桶、潜影盒">容器</abbr>且容器有空栏位时，会将右侧输出栏内的物品转移到容器中。一共有4种模式：</p>
 <table><thead><tr><th>模式</th>
 	<th>图标</th>
@@ -4002,6 +4002,14 @@
 		<a class="ui xp_orb" title="经验"><span class="stack">32</span></a>
 	</td>
 </tr>
+<tr><td>美西螈</td>
+	<td><a class="ui ci mob_axolotl" title="美西螈"></a></td>
+	<td><a class="ui egg" title="鸡蛋"></a>
+		<a class="ui tropical_fish" title="热带鱼"></a>
+		<a href="#骷髅头颅" class="ui skeleton_skull" title="骷髅头颅"></a>
+		<a class="ui xp_orb" title="经验"><span class="stack">32</span></a>
+	</td>
+</tr>
 <tr><td>鲑鱼</td>
 	<td><a class="ui ci mob_salmon" title="鲑鱼"></a></td>
 	<td><a class="ui egg" title="鸡蛋"></a>
@@ -4105,7 +4113,7 @@
 	<figcaption>图 金砧机器界面</figcaption>
 </figure>
 
-<h4>1.12 版本</h4>
+<h4>1.11.2 版本起</h4>
 <p>上方放入物品，则机器会自动消耗相应经验从下方得到处理过的物品。</p>
 <table><thead><tr><th colspan="2">输入材料</th><th>效果</th><th>消耗经验</th>
 </tr></thead><tbody>
@@ -4118,7 +4126,7 @@
 </tbody></table>
 <p>支持移除<a href="https://www.mcmod.cn/class/2135.html" title="随机附魔">随机附魔</a>的4种诅咒魔咒和<a href="#https://www.mcmod.cn/class/2025.html" title="万象">万象</a>的2种诅咒魔咒。</p>
 
-<h4>1.12 之前的版本</h4>
+<h4>1.11.2 之前的版本</h4>
 <p>左侧依次放入已附魔物品、牺牲材料和64个附魔之瓶，则机器会自动从右侧得到处理过的物品。</p>
 <table><thead><tr><th>效果</th>
 	<th colspan="3">输入材料</th>
@@ -4163,11 +4171,11 @@
 	<img style="height:200px" src="items/screenshots/color_palette.png" alt="调色板界面" />
 	<figcaption>图 调色板界面</figcaption>
 </figure>
-<p><span class="version">1.12</span> 右上方放入待染色的物品，下方16个栏位放入染料，上方为调整颜色的选项，右下方为染色后的预览，点击右方“确定染色”按钮，则会消耗相应的染料对物品进行染色，可以一次性染色多个物品。</p>
+<p><span class="version">1.11.2</span> 右上方放入待染色的物品，下方16个栏位放入染料，上方为调整颜色的选项，右下方为染色后的预览，点击右方“确定染色”按钮，则会消耗相应的染料对物品进行染色，可以一次性染色多个物品。</p>
 <p>如果右上方放入的是皮革制品，则皮革制品颜色会被修改为上方6个选项对应的十六进制表达的颜色。染色会消耗离该颜色最接近的1个染料。</p>
 <p>如果右上方放入的是烟火之星，则上方6个选项对应的十六进制表达的颜色会被追加到烟火之星爆炸时的颜色。染色会消耗离该颜色最接近的1个染料。</p>
 <p>如果右上方放入的是热带鱼桶，则上方2个选项可以选择热带鱼的身体颜色。染色会消耗相应的2个染料。</p>
-<p>如果右上方放入的是羊毛、玻璃等物品，则上方1个选项可以选择相应方块的颜色。染色会消耗相应的1个染料。</p>
+<p>如果右上方放入的是羊毛/玻璃/玻璃板/蜡烛/潜影盒/混凝土/混凝土粉末/陶瓦/带釉陶瓦/旗帜/地毯/<a href="https://www.mcmod.cn/item/160960.html" title="微光蘑菇">微光蘑菇</a>，则上方1个选项可以选择相应方块的颜色。染色会消耗相应的1个染料。</p>
 <p>如果右上方放入的是<a href="#染色棒" title="染色棒">染色棒</a>，则上方1个选项可以选择染色棒的颜色。染色会消耗相应的1个染料。</p>
 
 <h3 id="垃圾桶">垃圾桶 <code>cpp:dustbin</code></h3>
@@ -4433,7 +4441,7 @@
 	<td><span class="version">1.12起</span><br /><code>cpp:mending_plugin</code><br />
 		用于<a href="#金砧">金砧</a>修复物品耐久。</td>
 </tr>
-<tr><th><strong id="无线插件">无线插件</strong></th>
+<tr><th rowspan="2"><strong id="无线插件">无线插件</strong></th>
 	<td><a href="#附魔之瓶">附魔之瓶</a>+<a href="#附魔钻石">附魔钻石</a>+<a href="#附魔金锭">附魔金锭</a>+<a href="#空白插件">空白插件</a>+紫水晶碎片+<a href="#生命之灵">生命之灵</a></td>
 	<td><span class="ui cm" title="合成器">
 		<a href="#附魔之瓶" class="experience_bottle" title="附魔之瓶"></a>
@@ -4447,7 +4455,24 @@
 		<a class="amethyst_shard" title="紫水晶碎片"></a>
 		<a class="ci wifi_plugin" title="无线插件"></a>
 	</span></td>
-	<td><span class="version">1.12起</span><br /><code>cpp:wifi_plugin</code><br />
+	<td><span class="version">1.12</span><br /><code>cpp:wifi_plugin</code><br />
+		用于机器无线输入经验值和<a href="#金砧">金砧</a>无线修复物品耐久。</td>
+</tr>
+<tr>
+	<td><a href="#附魔之瓶">附魔之瓶</a>+<a href="#附魔钻石">附魔钻石</a>+<a href="#附魔金锭">附魔金锭</a>+<a href="#空白插件">空白插件</a>+末影珍珠+<a href="#生命之灵">生命之灵</a></td>
+	<td><span class="ui cm" title="合成器">
+		<a href="#附魔之瓶" class="experience_bottle" title="附魔之瓶"></a>
+		<a href="#附魔钻石" class="ci enchanted_diamond" title="附魔钻石"></a>
+		<a href="#附魔之瓶" class="experience_bottle" title="附魔之瓶"></a>
+		<a href="#附魔金锭" class="ci enchanted_gold" title="附魔金锭"></a>
+		<a href="#空白插件" class="ci empty_plugin" title="空白插件"></a>
+		<a href="#附魔金锭" class="ci enchanted_gold" title="附魔金锭"></a>
+		<a class="ender_pearl" title="末影珍珠"></a>
+		<a href="#生命之灵" class="ci spirit_of_life" title="生命之灵"></a>
+		<a class="ender_pearl" title="末影珍珠"></a>
+		<a class="ci wifi_plugin" title="无线插件"></a>
+	</span></td>
+	<td><span class="version">1.11.2</span><br /><code>cpp:wifi_plugin</code><br />
 		用于机器无线输入经验值和<a href="#金砧">金砧</a>无线修复物品耐久。</td>
 </tr>
 </tbody></table>
@@ -4686,7 +4711,7 @@
 </tr>
 
 <tr id="月之碎片">
-	<th rowspan="2"><strong>月之碎片</strong></th>
+	<th rowspan="3"><strong>月之碎片</strong></th>
 	<td><a href="#铁粉">铁粉</a>+<a href="#金粉">金粉</a>+<a href="#钻石粉">钻石粉</a>+<a href="#绿宝石粉">绿宝石粉</a>+<br />
 		<a href="#石英粉">石英粉</a>+<a href="#碳粉">碳粉</a>+<a href="#铜粉">铜粉</a>+下界合金碎片<br/>+紫水晶碎片</td>
 	<td><span class="ui cm" title="合成器">
@@ -4704,8 +4729,25 @@
 	</span></td>
 	<td><code>cpp:moon_shard</code><br/><span class="version">1.12</span></td>
 </tr>
-
-<tr id="月之碎片">
+<tr>
+	<td><a href="#铁粉">铁粉</a>+<a href="#金粉">金粉</a>+<a href="#钻石粉">钻石粉</a>+<a href="#绿宝石粉">绿宝石粉</a>+<br />
+		<a href="#石英粉">石英粉</a>+<a href="#碳粉">碳粉</a>+荧石粉+下界合金碎<br />片+末影珍珠</td>
+	<td><span class="ui cm" title="合成器">
+		<a href="#铁粉" class="ci iron_dust" title="铁粉"></a>
+		<a href="#金粉" class="ci gold_dust" title="金粉"></a>
+		<a href="#钻石粉" class="ci diamond_dust" title="钻石粉"></a>
+		<a href="#绿宝石粉" class="ci emerald_dust" title="绿宝石粉"></a>
+		<a href="#石英粉" class="ci quartz_dust" title="石英粉"></a>
+		<a href="#碳粉" class="ci carbon_dust" title="碳粉"></a>
+		<a class="glowstone_dust" title="荧石粉"></a>
+		<a class="netherite_scrap" title="下界合金碎片"></a>
+		<a class="ender_pearl" title="末影珍珠"></a>
+		<a class="ci moon_shard" title="月之碎片"></a>
+		<span class="shapeless" title="此配方是无形的，材料可以以任何排列方式放置在合成格内。"></span>
+	</span></td>
+	<td><code>cpp:moon_shard</code><br/><span class="version">1.11.2</span></td>
+</tr>
+<tr>
 	<td><a href="#铁粉">铁粉</a>+<a href="#金粉">金粉</a>+<a href="#钻石粉">钻石粉</a>+<a href="#绿宝石粉">绿宝石粉</a>+<br />
 		<a href="#石英粉">石英粉</a>+<a href="#碳粉">碳粉</a>+粘液球+恶魂之泪+<br />
 		末影珍珠</td>
@@ -4740,7 +4782,7 @@
 		<a class="empty"></a>
 		<a class="ci sun_shard" title="日之碎片"></a>
 	</span></td>
-	<td><code>cpp:sun_shard</code><br /><span class="oldversion">1.10.x</span><span class="version">1.12</span></td>
+	<td><code>cpp:sun_shard</code><br /><span class="oldversion">1.10.x</span><span class="version">1.11.2起</span></td>
 </tr>
 <tr><td><a href="#月之碎片">月之碎片</a>+末影之眼+下界合金碎片</td>
 	<td><span class="ui cm" title="合成器">
@@ -4863,7 +4905,7 @@
 </tbody></table>
 
 <h3 id="热带鱼桶染色">热带鱼桶染色</h3>
-<p><span class="oldversion">1.10-1.11.2</span> 通过搭配不同材料合成，可以改变热带鱼桶的热带鱼颜色和类型。花纹材料和尺寸材料对应的鱼类型为：
+<p><span class="oldversion">1.10-1.11.1</span> 通过搭配不同材料合成，可以改变热带鱼桶的热带鱼颜色和类型。花纹材料和尺寸材料对应的鱼类型为：
 <table class="center"><tbody>
 <tr><td><a class="ui glowstone_dust"></a><a class="ui iron_nugget"></a></td>
 	<td><a class="ui diamond"></a><a class="ui iron_nugget"></a></td>
@@ -5721,7 +5763,7 @@
 <h2 id="工具">工具</h2>
 
 <h3 id="蓝色天之力">蓝色天之力 <code>cpp:blue_force_of_sky</code></h3>
-<p>右击消耗玩家7点经验依次切换为晴天/下雨天/雷雨天。</p>
+<p>右击消耗玩家16点经验依次切换为晴天/下雨天/雷雨天。</p>
 <table><thead><tr><th>材料</th><th>合成配方</th></tr></thead><tbody>
 <tr><td>蓝色染料+煤炭+<a href="#天空之翼">天空之翼</a></td>
 	<td><span class="ui cm" title="合成器">
@@ -5739,7 +5781,8 @@
 </tr></tbody></table>
 
 <h3 id="绿色水之力">绿色水之力 <code>cpp:green_force_of_water</code></h3>
-<p><span class="version">1.11起</span> 右键收集水和熔岩并存储起来。Shift右键放置水和熔岩，对着空气Shift右键切换放置何种液体。默认拥有无限水。<em>Surrare Lilpana!</em></p>
+<p><span class="version">1.12</span> 可以和炼药锅交互了。<em>Surrare Lilpana!</em></p>
+<p><span class="version">1.11起</span> 右键收集水和熔岩并存储起来。Shift右键放置水和熔岩，对着空气Shift右键切换放置何种液体。默认拥有无限水。</p>
 <p><span class="oldversion">1.10</span> 右击放置一格水，在下界亦可正常使用。</p>
 
 <table><thead><tr><th>材料</th><th>合成配方</th></tr></thead><tbody>
@@ -5759,7 +5802,13 @@
 </tr></tbody></table>
 
 <h3 id="青色山之力">青色山之力 <code>cpp:cyan_force_of_mountain</code></h3>
-<p>右击消耗玩家7点经验，将9×9区域内高于玩家的土石沙下界岩黑石清除，低于玩家的空气填充为泥土。</p>
+<p><span class="version">1.11.2起</span> 现在只需要4点经验了。现在拥有两种模式，Shift右键切换。</p>
+	<ul>
+		<li>横向，沿玩家朝向对齐的坐标轴破坏1米宽、32米长、cppLevel米高的区域内的相应方块。</li>
+		<li>纵向，沿玩家朝向对齐的坐标轴破坏1米宽、cppLevel米长、32米高的区域内的相应方块。</li>
+	</ul>
+<p>cppLevel初始为2，最大为32，玩家每使用该物品cppLevel^2次，cppLevel数值加1。</p>
+<p><span class="oldversion">1.10-1.11.1</span> 右击消耗玩家7点经验，将9×9区域内高于玩家的土石沙下界岩黑石清除，低于玩家的空气填充为泥土。</p>
 <table><thead><tr><th>材料</th><th>合成配方</th></tr></thead><tbody>
 <tr><td>青色染料+铁锭+<a href="#山脉之肢">山脉之肢</a></td>
 	<td><span class="ui cm" title="合成器">
@@ -5890,7 +5939,7 @@
 </tr></tbody></table>
 
 <h3 id="黑色月之力">黑色月之力 <code>cpp:black_force_of_moon</code></h3>
-<p>右击消耗玩家40点经验并在前方铺设泥土道路。</p>
+<p>右击消耗玩家16(1.11.2起)/40点经验并在前方铺设泥土道路。</p>
 <table><thead><tr><th>材料</th><th>合成配方</th></tr></thead><tbody>
 <tr><td>黑色染料+荧石粉+<a href="#龙蛋">龙蛋</a></td>
 	<td><span class="ui cm" title="合成器">
@@ -6008,7 +6057,7 @@
 </tbody></table>
 
 <h3 id="世界之源">世界之源 <code>cpp:origin_of_the_world</code></h3>
-<p>右击消耗20点经验返回复活点，若无复活点则返回出生的附近。<em>Slonhon Ral!</em></p>
+<p>右击消耗32(1.11.2起)/40点经验返回复活点，若无复活点则返回出生的附近。<em>Slonhon Ral!</em></p>
 <table><thead><tr><th>材料</th><th>合成配方</th></tr></thead><tbody>
 <tr><td><a href="#天空之翼">天空之翼</a>+<a href="#山脉之肢">山脉之肢</a>+红石</td>
 	<td><span class="ui cm" title="合成器">
@@ -6152,7 +6201,7 @@
 		<a class="ci dye_stick" title="染色棒"></a>
 	</span></td></tr>
 </tbody></table>
-<p><span class="version">1.12起</span> 右键方块来染色，可以染色告示牌。在<a href="#调色板" title="调色板">调色板</a>中修改颜色。</p>
+<p><span class="version">1.11.2起</span> 右键告示牌/羊毛/玻璃/玻璃板/蜡烛/潜影盒/混凝土/混凝土粉末/陶瓦/带釉陶瓦/旗帜/地毯来染色。在<a href="#调色板" title="调色板">调色板</a>中修改颜色。</p>
 
 <h3 id="剪枝器">剪枝器 <code>cpp:grafter</code></h3>
 <table><thead><tr><th>材料</th><th>合成配方</th></tr></thead><tbody>
@@ -6191,7 +6240,7 @@
 </tbody></table>
 
 <h3 id="搬箱器">搬箱器 <code>cpp:chest_transporter</code></h3>
-<p>Shift右键破坏箱子，箱子内的物品会保留。共26点耐久。</p>
+<p>Shift右键破坏容器，容器内的物品会保留。共26点耐久。</p>
 <table><thead><tr><th>材料</th><th>合成配方</th></tr></thead><tbody>
 <tr><td>木棍+<a href="#附魔铁锭">附魔铁锭</a></td>
 	<td><span class="ui cm" title="合成器">
@@ -6338,7 +6387,7 @@
 </tbody></table>
 
 <h3 id="历练之手">历练之手 <code>cpp:toughen_hand</code></h3>
-<p>放置在物品展示框内时，将附近的鸡蛋砸掉并为16米内的羊剪毛。</p>
+<p>放置在物品展示框内时，将收集附近的鸡蛋并为16米内的羊剪毛。</p>
 <table><thead><tr><th>材料</th><th>合成配方</th></tr></thead><tbody>
 <tr><td><a href="#稀土玻璃">稀土玻璃</a>+<a href="#末影人头">末影人头</a>+栓绳+<a href="#钢化玻璃">钢化玻璃</a></td>
 	<td><span class="ui cm" title="合成器">
@@ -8047,7 +8096,7 @@
 <tr><th><strong id="泥土药剂">泥土药剂</strong><br />
 		<a class="ui icons18 hunger" title="6"></a><a class="ui icons18 hunger" title="6"></a><a class="ui icons18 hunger" title="6"></a><br />
 		<span class="lore"><a class="ui icons18 invisibility"></a>隐身 12:00<br />
-		连环 12:00</span></th>
+		连锁 12:00</span></th>
 	<td><a href="#泥土之魂">泥土之魂</a>+粗制的药水</td>
 	<td><span class="ui aiom" title="多功能一体机">
 		<a class="ci normal_case" title="常温"></a>
@@ -8116,6 +8165,7 @@
 <p>前20种花草在合成器中合成为3个对应种子。一共4个生长阶段，成熟后收割可获得相应花草，否则只能获得种子。作物不受时运影响，可用骨粉催熟。每个花草都对应一个实体，大面积种植可能会卡顿。收获成熟的小麦、胡萝卜、马铃薯和甜菜根有5%几率获得六种花草种子，其余花草种子可以通过杂交得到：当一种作物将要生长成熟时，若邻近的花草可杂交，则有5%几率变异为其它花草。</p>
 <p><span class="version">1.10.x</span> 后13种野花在空岛模式下可以通过对草方块使用骨粉得到。</p>
 <p>花草可在熔炉熔炼成其它物品，还可用于合成迷之炖菜，见下表。</p>
+<p><span class="version">1.11.2起</span>可以放入花盆。</p>
 
 <table><thead><tr><th>产物</th>
 	<th>材料</th>
@@ -8248,7 +8298,7 @@
 		<a class="ui ci wild_lilium"></a>
 	</td>
 	<th><strong id="滇百合">滇百合</strong></th>
-	<td><code>cpp:wild Lilium</code></td>
+	<td><code>cpp:wild_lilium</code></td>
 	<td>香蒲草+金盏花</td>
 	<td><a class="ui lime_dye" title="黄绿色染料"></a></td>
 	<td><a class="ui icons18 poison"></a><span class="lore">中毒 0:05</span></td>
@@ -8460,6 +8510,7 @@
 </tbody></table>
 
 <h3 id="蓝色妖姬">蓝色妖姬 <code>cpp:blue_rose</code></h3>
+<p><span class="version">1.11.2起</span>可以放入花盆。</p>
 <table><thead><tr><th>材料</th>
 	<th>合成配方</th>
 </tr></thead><tbody>	
@@ -8480,6 +8531,7 @@
 </tbody></table>
 
 <h3 id="圣诞花">圣诞花 <code>cpp:poinsettia</code></h3>
+<p><span class="version">1.11.2起</span>可以放入花盆。</p>
 <table><thead><tr><th>材料</th>
 	<th>合成配方</th>
 </tr></thead><tbody>	
@@ -8500,6 +8552,7 @@
 </tbody></table>
 
 <h3 id="圣诞树">圣诞树 <code>cpp:christmas_tree</code></h3>
+<p><span class="version">1.11.2起</span>可以放入花盆。</p>
 <table><thead><tr><th>材料</th>
 	<th>合成配方</th>
 </tr></thead><tbody>	
@@ -8570,6 +8623,7 @@
 	<td><code>cpp:sakura_leaves</code></td></tr>
 </tbody></table>
 
+<p><span class="version">1.11.2起</span>可以放入花盆。</p>
 <p>树苗种下后可用骨粉催熟。每个树叶都对应一个实体，大面积种植可能会卡顿。</p>
 <p>水果树下会随机掉落除香橼外的所有<a href="#水果">水果</a>。破坏樱花树树叶掉落樱花树树苗、<a href="#樱桃">樱桃</a>。</p>
 <p>矿石树树叶一定时间后会转化为矿石。</p>
@@ -8786,7 +8840,7 @@
 <p>每件物品只可附加一种效果。效果可重复附加，之前的效果将会被覆盖。</p>
 <p>盔甲效果在对应栏位生效，剑和工具在主手生效，每秒消耗1点经验值，重复的效果不会叠加但消耗的经验值会叠加。使用<a href="#节制器">节制器</a>可开启/关闭所有效果。连锁效果无消耗。</p>
 
-<p>连锁效果下，使用斧可以破坏相连的木头/瓜/成熟作物；镐可以破坏相连的矿物/黑曜石；锹可以破坏相连的沙子/红沙/砂砾/粘土块；锄可以破坏相连的干草块/下界疣块/诡异疣块/菌光体。受附魔影响。工具支持金/石/铁/钻/下界合金材质，工具不会完全损坏，至少会保留1点耐久。</p>
+<p>连锁效果下，使用斧可以破坏相连的木头/瓜/成熟作物；镐可以破坏相连的矿物/黑曜石；锹可以破坏相连的沙子/红沙/砂砾/粘土块；锄可以破坏相连的干草块/下界疣块/诡异疣块/菌光体。受附魔影响。工具支持金/石/铁/钻/下界合金材质，工具不会完全损坏，至少会保留1点耐久。支持植物魔法和通用机械的工具。</p>
 
 <h4 id="属性附加">属性附加</h4>
 <ul>
@@ -8821,6 +8875,7 @@
 	<li>幸运 +0~2</li>
 </ul>
 <p>属性可重新附加，之前的属性将会被覆盖。</p>
+<p><span class="version">1.11.2</span> 属性附加支持模组物品，这些模组包括：植物魔法、通用机械工具。</p>
 
 <figure>
 	<img style="width:48%" src="items/screenshots/rituals.png" alt="仪式执行中" />
@@ -9037,7 +9092,7 @@
 </tbody></table>
 
 <h3 id="皮革盔甲染色">皮革盔甲染色</h3>
-<p><span class="oldversion">1.10-1.11.2</span> 使用黑色染料可将盔甲颜色变为纯黑色#000000，使用红色染料/绿色染料/蓝色染料可将其红色/绿色/蓝色分别加深1个单位，即RGB值增加#010000/#000100/#000001，可以一次增加多个相同染料。</p>
+<p><span class="oldversion">1.10-1.11.1</span> 使用黑色染料可将盔甲颜色变为纯黑色#000000，使用红色染料/绿色染料/蓝色染料可将其红色/绿色/蓝色分别加深1个单位，即RGB值增加#010000/#000100/#000001，可以一次增加多个相同染料。</p>
 <table><thead><tr><th>产物</th>
 	<th>材料</th>
 	<th>合成配方</th>
@@ -9493,24 +9548,18 @@
 <h3 id="新春装饰">新春装饰 <code>cpp:spring_festival_decorations</code></h3>
 <a class="ui ci spring_festival_decorations"></a>
 <p>放置后，右键可按次序切换图案。包括<br />
-日出江花红胜火 春来江水绿如蓝<br />
-爆竹声声辞旧岁 春联户户迎新春<br />
-一年四季行好运 八方财宝进家门<br />
-迎新春吉祥如意 贺佳节富贵平安<br />
-旧岁又添几个喜 新年更上一层楼<br />
-绿竹别其三分景 红梅正报万家春<br />
-天增岁月人增寿 春满乾坤福满楼<br />
-喜居宝地千年旺 福照家门万事兴<br />
-一世良缘天地久 百年佳偶共天长<br />
-寒食雨传百五日 花信风来廿四春<br />
-端午粽香闻千载 楚时忠誉传万年<br />
-金鸡啼明天破晓 嫦娥起舞月高悬<br />
-鸟语花香 万象更新<br />
-四季平安 国泰民安<br />
-辞旧迎新 春回大地<br />
-四季长安 喜迎新春<br />
-天作之合 万古流芳<br />
-节序天中 万家团圆<br />
+日出江花红胜火 春来江水绿如蓝 鸟语花香<br />
+爆竹声声辞旧岁 春联户户迎新春 万象更新<br />
+一年四季行好运 八方财宝进家门 四季平安<br />
+迎新春吉祥如意 贺佳节富贵平安 国泰民安<br />
+旧岁又添几个喜 新年更上一层楼 辞旧迎新<br />
+绿竹别其三分景 红梅正报万家春 春回大地<br />
+天增岁月人增寿 春满乾坤福满楼 四季长安<br />
+喜居宝地千年旺 福照家门万事兴 喜迎新春<br />
+一世良缘天地久 百年佳偶共天长 天作之合<br />
+寒食雨传百五日 花信风来廿四春 万古流芳<br />
+端午粽香闻千载 楚时忠誉传万年 节序天中<br />
+金鸡啼明天破晓 嫦娥起舞月高悬 万家团圆<br />
 春 福 五谷丰登 六畜兴旺
 </p>
 <figure>
@@ -9943,7 +9992,8 @@
 <p><span class="oldversion">1.10</span> 使用命令<code>/trigger cppTrim</code>来整理自己背包(不含快捷栏)。</p>
 
 <h3 id="自动插火把">自动插火把</h3>
-<p>使用指令<code>/trigger cppAutoTorch set 刻数</code>，可以设定每隔一段时间自动插一根火把。设置为0取消自动插火把功能。</p>
+<p><span class="version">1.11.2起</span>使用指令<code>/trigger cppTorchPeriod set 间隔</code>，会在离玩家最近的四个XZ坐标为 cppTorchPeriod 的整数倍的位置放置火把。设置为0取消自动插火把功能。</p>
+<p><span class="oldversion">1.9-1.11.1</span>使用指令<code>/trigger cppTorchPeriod set 刻数</code>，可以设定每隔一段时间自动插一根火把。设置为0取消自动插火把功能。</p>
 
 <h3 id="竖纹方块">竖纹方块</h3>
 <p>部分方块双台阶材质修改为竖纹。</p>
@@ -10325,9 +10375,46 @@
 	<td>cpp:doh</td>
 </tr>
 
-</tbody></table>
+ </tbody></table>
 
+<table style="border:1px solid #aaa;border-collapse:collapse;" align="left">
+	<thead style="border:1px solid #aaa;border-collapse:collapse;">
+		<tr><th style="text-align: center;background-color: #505050;color:white;border:1px solid #aaa;border-collapse:collapse;width:10%;">版本</th><th style="text-align: center;background-color: #505050;color:white;border:1px solid #aaa;border-collapse:collapse;width:90%;">变动</th></tr>
+	</thead>
+	<tbody style="border:1px solid #aaa;border-collapse:collapse;">
+		<tr><th style="text-align: center;background-color: #dddddd;border:1px solid #aaa;border-collapse:collapse;" rowspan="2">1.9.3</th><td style="border:1px solid #aaa;border-collapse:collapse;">加入了自动插火把功能。</td></tr>
+		<tr><td style="border:1px solid #aaa;border-collapse:collapse;">使用指令 /trigger cppAutoTorch set <刻数> 来设置，每隔一段时间自动插一根火把。设置为0取消自动插火把功能。</td></tr>
+		<tr><th style="text-align: center;background-color: #dddddd;border:1px solid #aaa;border-collapse:collapse;" rowspan="2">1.9.11</th><td style="border:1px solid #aaa;border-collapse:collapse;">修复了自动插火把无效的问题。</td></tr>
+		<tr><td style="border:1px solid #aaa;border-collapse:collapse;">现在创造模式自动插火把不会消耗，但背包内至少要有火把。</td></tr>
+		<tr><th style="text-align: center;background-color: #dddddd;border:1px solid #aaa;border-collapse:collapse;">1.11.2</th><td style="border:1px solid #aaa;border-collapse:collapse;">重新设计，现在会在离玩家最近的四个XZ坐标为 cppTorchPeriod 的整数倍的位置放置火把。</td></tr>
+	</tbody>
+</table>
+<!--
+
+<table style="border:1px solid #aaa;border-collapse:collapse;" align="left">
+	<thead style="border:1px solid #aaa;border-collapse:collapse;">
+		<tr><th style="text-align: center;background-color: #505050;color:white;border:1px solid #aaa;border-collapse:collapse;width:20%;">物品</th><th style="text-align: center;background-color: #505050;color:white;border:1px solid #aaa;border-collapse:collapse;width:20%;">堆叠数</th><th style="text-align: center;background-color: #505050;color:white;border:1px solid #aaa;border-collapse:collapse;width:20%;">权重</th><th style="text-align: center;background-color: #505050;color:white;border:1px solid #aaa;border-collapse:collapse;width:20%;">品质</th></tr>
+	</thead>
+	<tbody style="border:1px solid #aaa;border-collapse:collapse;">
+		<tr><td style="border:1px solid #aaa;border-collapse:collapse;text-align: center;">泥土之魂</td><td style="border:1px solid #aaa;border-collapse:collapse;text-align: center;">1</td><td style="border:1px solid #aaa;border-collapse:collapse;text-align: center;">1/100</td><td style="border:1px solid #aaa;border-collapse:collapse;text-align: center;">2</td></tr>
+		<tr><td style="border:1px solid #aaa;border-collapse:collapse;text-align: center;">火焰之星</td><td style="border:1px solid #aaa;border-collapse:collapse;text-align: center;">1</td><td style="border:1px solid #aaa;border-collapse:collapse;text-align: center;">1/100</td><td style="border:1px solid #aaa;border-collapse:collapse;text-align: center;">2</td></tr>
+		<tr><td style="border:1px solid #aaa;border-collapse:collapse;text-align: center;">山脉之肢</td><td style="border:1px solid #aaa;border-collapse:collapse;text-align: center;">1</td><td style="border:1px solid #aaa;border-collapse:collapse;text-align: center;">1/100</td><td style="border:1px solid #aaa;border-collapse:collapse;text-align: center;">2</td></tr>
+		<tr><td style="border:1px solid #aaa;border-collapse:collapse;text-align: center;">附魔金苹果</td><td style="border:1px solid #aaa;border-collapse:collapse;text-align: center;">1</td><td style="border:1px solid #aaa;border-collapse:collapse;text-align: center;">3/100</td><td style="border:1px solid #aaa;border-collapse:collapse;text-align: center;">1</td></tr>
+		<tr><td style="border:1px solid #aaa;border-collapse:collapse;text-align: center;">附魔铁锭</td><td style="border:1px solid #aaa;border-collapse:collapse;text-align: center;">1</td><td style="border:1px solid #aaa;border-collapse:collapse;text-align: center;">7/100</td><td style="border:1px solid #aaa;border-collapse:collapse;text-align: center;">1</td></tr>
+		<tr><td style="border:1px solid #aaa;border-collapse:collapse;text-align: center;">附魔金锭</td><td style="border:1px solid #aaa;border-collapse:collapse;text-align: center;">1</td><td style="border:1px solid #aaa;border-collapse:collapse;text-align: center;">7/100</td><td style="border:1px solid #aaa;border-collapse:collapse;text-align: center;">1</td></tr>
+		<tr><td style="border:1px solid #aaa;border-collapse:collapse;text-align: center;">肉松面包</td><td style="border:1px solid #aaa;border-collapse:collapse;text-align: center;">1-5</td><td style="border:1px solid #aaa;border-collapse:collapse;text-align: center;">10/100</td><td style="border:1px solid #aaa;border-collapse:collapse;text-align: center;">0</td></tr>
+		<tr><td style="border:1px solid #aaa;border-collapse:collapse;text-align: center;">拔丝苹果</td><td style="border:1px solid #aaa;border-collapse:collapse;text-align: center;">1-5</td><td style="border:1px solid #aaa;border-collapse:collapse;text-align: center;">10/100</td><td style="border:1px solid #aaa;border-collapse:collapse;text-align: center;">0</td></tr>
+		<tr><td style="border:1px solid #aaa;border-collapse:collapse;text-align: center;">煤炭</td><td style="border:1px solid #aaa;border-collapse:collapse;text-align: center;">1-5</td><td style="border:1px solid #aaa;border-collapse:collapse;text-align: center;">12/100</td><td style="border:1px solid #aaa;border-collapse:collapse;text-align: center;">-1</td></tr>
+		<tr><td style="border:1px solid #aaa;border-collapse:collapse;text-align: center;">骨头</td><td style="border:1px solid #aaa;border-collapse:collapse;text-align: center;">1-9</td><td style="border:1px solid #aaa;border-collapse:collapse;text-align: center;">12/100</td><td style="border:1px solid #aaa;border-collapse:collapse;text-align: center;">-2</td></tr>
+		<tr><td style="border:1px solid #aaa;border-collapse:collapse;text-align: center;">火药</td><td style="border:1px solid #aaa;border-collapse:collapse;text-align: center;">1-9</td><td style="border:1px solid #aaa;border-collapse:collapse;text-align: center;">12/100</td><td style="border:1px solid #aaa;border-collapse:collapse;text-align: center;">-2</td></tr>
+		<tr><td style="border:1px solid #aaa;border-collapse:collapse;text-align: center;">腐肉</td><td style="border:1px solid #aaa;border-collapse:collapse;text-align: center;">1-9</td><td style="border:1px solid #aaa;border-collapse:collapse;text-align: center;">12/100</td><td style="border:1px solid #aaa;border-collapse:collapse;text-align: center;">-2</td></tr>
+		<tr><td style="border:1px solid #aaa;border-collapse:collapse;text-align: center;">线</td><td style="border:1px solid #aaa;border-collapse:collapse;text-align: center;">1-9</td><td style="border:1px solid #aaa;border-collapse:collapse;text-align: center;">12/100</td><td style="border:1px solid #aaa;border-collapse:collapse;text-align: center;">-2</td></tr>
+	</tbody>
+</table>
+
+	 -->
 </div>
+
 
 
 
@@ -10344,7 +10431,7 @@
 	<a href="https://space.bilibili.com/4469715"><img src="items/bilibili.png" alt="哔哩哔哩" /></a>
 </p>
 
-<p>最后更新 2020-12-12</p>
+<p>最后更新 2020-12-21</p>
 </footer>
 
 </article>
