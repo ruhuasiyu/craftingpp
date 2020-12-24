@@ -5,6 +5,7 @@ This is a datapack of minecraft, including a resourcepack.
 It adds a lot of items, materials, tools, decorations, etc.
 This project is licensed under the terms of the GNU General Public License v3.0.
 It supports English, but there is no wiki in English. You can find the recipes on the webpage.
+[wiki](https://ruhuasiyu.github.io/CraftingPlusPlus/en) (translation in progress)
 
 这是Minecraft原版模组，包括数百种物品、材料、工具、装饰等，以及新的村民交易和空岛系统。该项目采用 GNU General Public License v3.0 协议。
 
