@@ -2261,6 +2261,11 @@ span.ui a.xp_orb, a.xp_orb{
 .wifi_plugin                        {background-position: -256px -2624px;}
 .dye_stick                          {background-position: -000px -2656px;}
 .mob_axolotl                        {background-position: -032px -2656px;}
+.vaccine_of_poison                  {background-position: -064px -2656px;}
+.vaccine_of_blindness               {background-position: -096px -2656px;}
+.vaccine_of_mining_fatigue          {background-position: -128px -2656px;}
+.vaccine_of_wither                  {background-position: -160px -2656px;}
+.vaccine_of_darkness                {background-position: -192px -2656px;}
 
 .speed                   {background-position: -000px -00px;}
 .slowness                {background-position: -018px -00px;}
