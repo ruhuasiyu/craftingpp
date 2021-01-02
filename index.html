@@ -361,7 +361,7 @@
 </ul></nav>
 
 <div id="main_part">
-		<a href="../CraftingPlusPlus/index.html" id="banner"><img src="items/screenshots/banner.png" alt="更多的合成 Crafting++" style="width:100%;"/></a>
+<a href="../CraftingPlusPlus/index.html" id="banner"><img src="items/screenshots/banner.png" alt="更多的合成 Crafting++" style="width:100%;"/></a>
 
 <article>
 <h1 id="简介">更多的合成 Crafting++</h1>
@@ -631,7 +631,7 @@
 </figure>
 
 <h3 id="羊">羊</h3>
-<p><span class="version">1.12</span> 命名为jeb_的羊会掉落随机颜色的羊毛。</p>
+<p><span class="version">1.11.2起</span> 命名为jeb_的羊会掉落随机颜色的羊毛。</p>
 
 <h3 id="鸡">鸡</h3>
 <p>死亡时若着火不再掉落羽毛。死亡后额外掉落<code>0~1+0.5×抢夺等级</code>个鸡蛋。</p>
@@ -3605,7 +3605,7 @@
 	<td></td>
 </tr>
 </tbody></table>
-<p><span class="version">1.12</span>支持自然灵气的植物学家工具、科技复兴的青铜/红宝石/蓝宝石/橄榄石工具、神秘遗物的以太工具和行刑者之斧。</p>
+<p><span class="version">1.11.2起</span>支持<a href="https://www.mcmod.cn/class/1547.html">自然灵气</a>的植物学家工具、<a href="https://www.mcmod.cn/class/558.html">科技复兴</a>的青铜/红宝石/蓝宝石/橄榄石工具、<a href="https://www.mcmod.cn/class/2239.html">神秘遗物</a>的以太工具和行刑者之斧。</p>
 <p class="note">物品处理器的函数接口<code>function #cpp:item_processer</code>调用于<code>cpp/functions/item_processer/type.mcfunction</code>。配方按工具分类，位于<code>cpp/predicates/item_processer</code>和<code>cpp/loot_tables/item_processer</code>。</p>
 
 <h3 id="生物投影仪">生物投影仪 <code>cpp:mob_projector</code></h3>
@@ -3969,11 +3969,11 @@
 		<a class="ui xp_orb" title="经验"><span class="stack">32</span></a>
 	</td>
 </tr>
-<tr><td> 僵尸马(10%)</td>
+<tr><td>僵尸马(10%)</td>
 	<td><a class="ui ci mob_zombie_horse" title="僵尸马"></a></td>
 </tr>
-<tr><td> 骷髅马(10%)</td>
-	<td><a class="ui ci mob_skeleton_horse" title="僵尸马"></a></td>
+<tr><td>骷髅马(10%)</td>
+	<td><a class="ui ci mob_skeleton_horse" title="骷髅马"></a></td>
 </tr>
 <tr><td>驴</td>
 	<td><a class="ui ci mob_donkey" title="驴"></a></td>
@@ -4164,7 +4164,7 @@
 <tr><td>有诅咒魔咒的盔甲或工具</td><td><a href="#附魔金苹果">附魔金苹果</a></td><td>移除所有诅咒魔咒</td><td>256</td></tr>
 <tr><td>拥有与上古卷轴同等级魔咒的盔甲或工具</td><td><a href="#上古卷轴">上古卷轴</a></td><td>魔咒等级+1</td><td>512</td></tr>
 </tbody></table>
-<p>支持移除<a href="https://www.mcmod.cn/class/2135.html" title="随机附魔">随机附魔</a>的4种诅咒魔咒和<a href="#https://www.mcmod.cn/class/2025.html" title="万象">万象</a>的2种诅咒魔咒。</p>
+<p>支持移除<a href="https://www.mcmod.cn/class/2135.html" title="随机附魔">随机附魔</a>的4种诅咒魔咒和<a href="https://www.mcmod.cn/class/2025.html" title="万象">万象</a>的2种诅咒魔咒。</p>
 
 <h4>1.11.2 之前的版本</h4>
 <p>左侧依次放入已附魔物品、牺牲材料和64个附魔之瓶，则机器会自动从右侧得到处理过的物品。</p>
@@ -4478,7 +4478,7 @@
 		<a class="anvil" title="铁砧"></a>
 		<a class="ci mending_plugin" title="修复插件"></a>
 	</span></td>
-	<td><span class="version">1.12起</span><br /><code>cpp:mending_plugin</code><br />
+	<td><span class="version">1.11.2起</span><br /><code>cpp:mending_plugin</code><br />
 		用于<a href="#金砧">金砧</a>修复物品耐久。</td>
 </tr>
 <tr><th rowspan="2"><strong id="无线插件">无线插件</strong></th>
@@ -4495,7 +4495,7 @@
 		<a class="amethyst_shard" title="紫水晶碎片"></a>
 		<a class="ci wifi_plugin" title="无线插件"></a>
 	</span></td>
-	<td><span class="version">1.12</span><br /><code>cpp:wifi_plugin</code><br />
+	<td><span class="version">1.11.2起</span><br /><code>cpp:wifi_plugin</code><br />
 		用于机器无线输入经验值和<a href="#金砧">金砧</a>无线修复物品耐久。</td>
 </tr>
 <tr>
@@ -4512,13 +4512,13 @@
 		<a class="ender_pearl" title="末影珍珠"></a>
 		<a class="ci wifi_plugin" title="无线插件"></a>
 	</span></td>
-	<td><span class="version">1.11.2</span><br /><code>cpp:wifi_plugin</code><br />
+	<td><span class="version">1.11.2起</span><br /><code>cpp:wifi_plugin</code><br />
 		用于机器无线输入经验值和<a href="#金砧">金砧</a>无线修复物品耐久。</td>
 </tr>
 </tbody></table>
 
 <h3 id="交易插件">交易插件</h3>
-<p><span class="version">1.12起</span> 交易插件通过在交易机进行交易达到一定次数得到，用于在交易机中进行物品的购买。具体见<a href="#交易机">交易机</a>。</p>
+<p><span class="version">1.11.2起</span> 交易插件通过在交易机进行交易达到一定次数得到，用于在交易机中进行物品的购买。具体见<a href="#交易机">交易机</a>。</p>
 
 <!--==================================================================-->
 <h2 id="材料">材料</h2>
@@ -6589,16 +6589,16 @@
 	<td>南瓜派 胡萝卜 金胡萝卜 蛋糕卷 蛋黄粽子</td>
 </tr>
 <tr><td>-2</td>
-	<td>西瓜片 曲奇 毒马铃薯 甜浆果 果酱 甜味粽子 烤菌光片 什锦菌索</td>
+	<td>西瓜片 曲奇 毒马铃薯 甜浆果 果酱 甜味粽子 烤菌光片 什锦菌索糖</td>
 </tr>
 <tr><td>-1</td>
 	<td>干海带 甜菜根 马铃薯 饺子</td>
 </tr>
 <tr><td>0</td>
-	<td>生土豆排骨 炸鱼薯条 汉堡/披萨/寿司/仰望星空派 酵母粉</td>
+	<td>生土豆排骨 炸鱼薯条 汉堡 披萨 寿司 仰望星空派 酵母粉</td>
 </tr>
 <tr><td>+1</td>
-	<td>小丑鱼 河豚</td>
+	<td>热带鱼 河豚</td>
 </tr>
 <tr><td>+2</td>
 	<td>蜘蛛眼 生羊肉 生兔肉 生鸡肉 生鳕鱼 生鲑鱼 煮鸡蛋 黄油 奶酪</td>
@@ -8842,16 +8842,16 @@
 <p class="note">使用命令<code>scoreboard players set $ritualsTime cppConfig 1200</code>来修改仪式耗时，数值越小速度越快，默认为1200。仪式的配方位于<code>cpp:predicates/rituals</code>和<code>cpp:loot_tables/rituals</code>，其中在<code>cpp:loot_tables/rituals/attr.json</code>中修改可附加属性的物品和属性范围。</p>
 <p>在地面摆出如下形状，然后在青金石上方放置发射器，并在发射器上方放置物品展示框。将材料放入发射器，将待处理的物品放入物品展示框，使用魔杖shift右击并等待即可。</p>
 <p><span class="ui dp">
-		<a class="emerald_block" title="绿宝石块"></a>
-		<a class="gold_block" title="金块"></a>
-		<a class="emerald_block" title="绿宝石块"></a>
-		<a class="gold_block" title="金块"></a>
-		<a class="lapis_block" title="青金石块"></a>
-		<a class="gold_block" title="金块"></a>
-		<a class="emerald_block" title="绿宝石块"></a>
-		<a class="gold_block" title="金块"></a>
-		<a class="emerald_block" title="绿宝石块"></a>
-	</span></p>
+	<a class="emerald_block" title="绿宝石块"></a>
+	<a class="gold_block" title="金块"></a>
+	<a class="emerald_block" title="绿宝石块"></a>
+	<a class="gold_block" title="金块"></a>
+	<a class="lapis_block" title="青金石块"></a>
+	<a class="gold_block" title="金块"></a>
+	<a class="emerald_block" title="绿宝石块"></a>
+	<a class="gold_block" title="金块"></a>
+	<a class="emerald_block" title="绿宝石块"></a>
+</span></p>
 
 <h4 id="附魔书制作">附魔书制作</h4>
 <p></p>
@@ -8882,16 +8882,16 @@
 <li> 消耗材料：药剂+<a href="#附魔之瓶">附魔之瓶</a>+<a href="#天空之翼">稀有掉落物</a></li>
 </ul>
 <p><span class="ui dp">
-		<a class="ci agentia_of_bounce" title="抗火药水"></a>
-		<a class="experience_bottle" title="附魔之瓶"><span class="stack">16</span></a>
-		<a class="ci agentia_of_bounce" title="抗火药水"></a>
-		<a class="experience_bottle" title="附魔之瓶"><span class="stack">16</span></a>
-		<a href="#天空之翼" class="ci wing_of_sky" title="稀有掉落物"></a>
-		<a class="experience_bottle" title="附魔之瓶"><span class="stack">16</span></a>
-		<a class="ci agentia_of_bounce" title="抗火药水"></a>
-		<a class="experience_bottle" title="附魔之瓶"><span class="stack">16</span></a>
-		<a class="ci agentia_of_bounce" title="抗火药水"></a>
-	</span></p>
+	<a class="ci agentia_of_bounce" title="抗火药水"></a>
+	<a class="experience_bottle" title="附魔之瓶"><span class="stack">16</span></a>
+	<a class="ci agentia_of_bounce" title="抗火药水"></a>
+	<a class="experience_bottle" title="附魔之瓶"><span class="stack">16</span></a>
+	<a href="#天空之翼" class="ci wing_of_sky" title="稀有掉落物"></a>
+	<a class="experience_bottle" title="附魔之瓶"><span class="stack">16</span></a>
+	<a class="ci agentia_of_bounce" title="抗火药水"></a>
+	<a class="experience_bottle" title="附魔之瓶"><span class="stack">16</span></a>
+	<a class="ci agentia_of_bounce" title="抗火药水"></a>
+</span></p>
 
 <table><thead><tr><th>状态效果</th>
 	<th>所需药剂</th>
@@ -8957,7 +8957,7 @@
 <p>每件物品只可附加一种效果。效果可重复附加，之前的效果将会被覆盖。</p>
 <p>盔甲效果在对应栏位生效，剑和工具在主手生效，每秒消耗1点经验值，重复的效果不会叠加但消耗的经验值会叠加。使用<a href="#节制器">节制器</a>可开启/关闭所有效果。连锁效果无消耗。</p>
 
-<p>连锁效果下，使用斧可以破坏相连的木头/瓜/成熟作物；镐可以破坏相连的矿物/黑曜石；锹可以破坏相连的沙子/红沙/砂砾/粘土块；锄可以破坏相连的干草块/下界疣块/诡异疣块/菌光体。受附魔影响。工具支持金/石/铁/钻/下界合金材质，工具不会完全损坏，至少会保留1点耐久。支持植物魔法和通用机械的工具。</p>
+<p>连锁效果下，使用斧可以破坏相连的木头/瓜/成熟作物；镐可以破坏相连的矿物/黑曜石；锹可以破坏相连的沙子/红沙/砂砾/粘土块；锄可以破坏相连的干草块/下界疣块/诡异疣块/菌光体。受附魔影响。工具不会完全损坏，至少会保留1点耐久。支持植物魔法和通用机械的工具。</p>
 
 <h4 id="属性附加">属性附加</h4>
 <ul>
@@ -8967,16 +8967,16 @@
 <li>消耗材料：金锭+<a href="#附魔之瓶">附魔之瓶</a>+<a href="#天空之翼">稀有掉落物</a></li>
 </ul>
 <p><span class="ui dp">
-		<a class="gold_ingot" title="金锭"></a>
-		<a class="experience_bottle" title="附魔之瓶"><span class="stack">16</span></a>
-		<a class="gold_ingot" title="金锭"></a>
-		<a class="experience_bottle" title="附魔之瓶"><span class="stack">16</span></a>
-		<a href="#天空之翼" class="ci wing_of_sky" title="稀有掉落物"></a>
-		<a class="experience_bottle" title="附魔之瓶"><span class="stack">16</span></a>
-		<a class="gold_ingot" title="金锭"></a>
-		<a class="experience_bottle" title="附魔之瓶"><span class="stack">16</span></a>
-		<a class="gold_ingot" title="金锭"></a>
-	</span></p>
+	<a class="gold_ingot" title="金锭"></a>
+	<a class="experience_bottle" title="附魔之瓶"><span class="stack">16</span></a>
+	<a class="gold_ingot" title="金锭"></a>
+	<a class="experience_bottle" title="附魔之瓶"><span class="stack">16</span></a>
+	<a href="#天空之翼" class="ci wing_of_sky" title="稀有掉落物"></a>
+	<a class="experience_bottle" title="附魔之瓶"><span class="stack">16</span></a>
+	<a class="gold_ingot" title="金锭"></a>
+	<a class="experience_bottle" title="附魔之瓶"><span class="stack">16</span></a>
+	<a class="gold_ingot" title="金锭"></a>
+</span></p>
 <p>剑斧锹镐锄和三叉戟可附加属性：</p>
 <ul>
 	<li>攻击速度在原有武器基础上 +0~2</li>
@@ -9004,7 +9004,7 @@
 </figure>
 
 <h3 id="远古仪式">远古仪式</h3>
-<p>在地面摆出如下形状，然后在基岩上方放置发射器，并在发射器上方放置物品展示框。将材料放入发射器，将待处理的物品放入物品展示框，使用黑暗魔杖shift右击并等待即可。</p>
+<p>在地面摆出如下形状，然后在基岩上方放置发射器，并在发射器上方放置物品展示框。将材料放入发射器，将待处理的物品放入物品展示框，使用魔杖shift右击并等待即可。</p>
 <p><span class="ui dp">
 	<a class="obsidian" title="黑曜石"></a>
 	<a class="ci magma_block" title="熔岩块"></a>
@@ -9998,7 +9998,7 @@
 <a class="ui ci black_sign"></a>
 <a class="ui ci glass_sign"></a>
 
-<p><span class="version">1.11起</span> 移除了合成配方，改成向告示牌扔出染料/玻璃板来改变其材质。</p>
+<p><span class="oldversion">1.11.1</span> 移除了合成配方，改成向告示牌扔出染料/玻璃板来改变其材质。</p>
 <table><thead><tr><th>名称</th>
 	<th>材料</th>
 	<th>合成配方</th></tr></thead>

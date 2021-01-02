@@ -657,6 +657,16 @@ span.ui a.xp_orb, a.xp_orb{
 .sticky_piston                      {background-position: -832px -928px;}
 .stone_button                       {background-position: -864px -928px;}
 
+.creeper_head                       {background-position: -096px -960px;}
+.dragon_head                        {background-position: -128px -960px;}
+.player_head                        {background-position: -160px -960px;}
+.skeleton_skull                     {background-position: -192px -960px;}
+.wither_skeleton_skull              {background-position: -224px -960px;}
+.zombie_head                        {background-position: -256px -960px;}
+.andesite                           {background-position: -288px -960px;}
+.bedrock                            {background-position: -320px -960px;}
+.clay                               {background-position: -384px -960px;}
+.coarse_dirt                        {background-position: -416px -960px;}
 .cracked_stone_bricks               {background-position: -480px -960px;}
 .dark_prismarine                    {background-position: -512px -960px;}
 .diorite                            {background-position: -544px -960px;}
@@ -669,18 +679,7 @@ span.ui a.xp_orb, a.xp_orb{
 .mycelium                           {background-position: -864px -960px;}
 .obsidian                           {background-position: -896px -960px;}
 .packed_ice                         {background-position: -928px -960px;}
-.shield                             {background-position: -992px -960px;}
 
-.creeper_head                       {background-position: -096px -960px;}
-.dragon_head                        {background-position: -128px -960px;}
-.player_head                        {background-position: -160px -960px;}
-.skeleton_skull                     {background-position: -192px -960px;}
-.wither_skeleton_skull              {background-position: -224px -960px;}
-.zombie_head                        {background-position: -256px -960px;}
-.andesite                           {background-position: -288px -960px;}
-.bedrock                            {background-position: -320px -960px;}
-.clay                               {background-position: -384px -960px;}
-.coarse_dirt                        {background-position: -416px -960px;}
 .cobweb                             {background-position: -448px -960px;}
 .prismarine_bricks                  {background-position: -000px -992px;}
 .red_sand                           {background-position: -032px -992px;}
@@ -837,7 +836,7 @@ span.ui a.xp_orb, a.xp_orb{
 .wooden_sword                       {background-position: -384px -1280px;}
 
 .potion_of_water_breathing          {background-position: -064px -1344px;}
-.dirt_path                         {background-position: -096px -1344px;}
+.dirt_path                          {background-position: -096px -1344px;}
 .bone_block                         {background-position: -736px -1344px;}
 .donkey_spawn_egg                   {background-position: -832px -1344px;}
 .elder_guardian_spawn_egg           {background-position: -864px -1344px;}
@@ -1005,6 +1004,7 @@ span.ui a.xp_orb, a.xp_orb{
 .leather_helmet                     {background-position: -608px -2496px;}
 .leather_leggings                   {background-position: -640px -2496px;}
 .leather_chestplate                 {background-position: -672px -2496px;}
+.shield                             {background-position: -960px -2496px;}
 
 .banner_blue_mojang                 {background-position: -384px -2592px;}
 
