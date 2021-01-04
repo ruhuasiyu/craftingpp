@@ -288,6 +288,7 @@ nav ul ul:nth-child(7){
 	<li><a href="#Cold Drink"><span class="ci" style="background-position: -128px -352px;"></span> Cold Drink</a></li>
 	<li><a href="#Fruits"><span class="ci" style="background-position: -96px -224px;"></span> Fruits</a></li>
 	<li><a href="#Agentia"><span class="ci" style="background-position: -128px -768px;"></span> Agentia</a></li>
+	<li><a href="#Vaccine"><span class="ci" style="background-position: -32px -1328px;"></span> Vaccine</a></li>
 </ul></li>
 <li class="up5"><a href="#Plants"><span class="ci" style="background-position: -80px -272px;"></span> Plants</a><ul>
 	<li><a href="#Lycoris Radiata"><span class="ci" style="background-position: -80px -272px;"></span> Lycoris Radiata</a></li>
@@ -422,17 +423,17 @@ nav ul ul:nth-child(7){
 <tbody>
 	<tr>
 		<td>Java 20w51a</td>
-		<td>v1.12-0102</td>
-		<td><a href="https://gitee.com/zhangshenxing/CraftingPlusPlus/releases/v1.12-0102">Gitee</a> |
-			<a href="https://github.com/ruhuasiyu/CraftingPlusPlus/releases/tag/v1.12-0102">GitHub</a> |
-			<a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.12-0102.zip">Others</a></td>
+		<td>v1.12-0104</td>
+		<td><a href="https://gitee.com/zhangshenxing/CraftingPlusPlus/releases/v1.12-0104">Gitee</a> |
+			<a href="https://github.com/ruhuasiyu/CraftingPlusPlus/releases/tag/v1.12-0104">GitHub</a> |
+			<a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.12-0104.zip">Others</a></td>
 	</tr>
 	<tr>
 		<td>Java 1.16.2-1.16.4</td>
-		<td>v1.11.2-0102</td>
-		<td><a href="https://gitee.com/zhangshenxing/CraftingPlusPlus/releases/v1.11.2-0102">Gitee</a> |
-			<a href="https://github.com/ruhuasiyu/CraftingPlusPlus/releases/tag/v1.11.2-0102">GitHub</a> |
-			<a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.11.2-0102.zip">Others</a></td>
+		<td>v1.11.2-0104</td>
+		<td><a href="https://gitee.com/zhangshenxing/CraftingPlusPlus/releases/v1.11.2-0104">Gitee</a> |
+			<a href="https://github.com/ruhuasiyu/CraftingPlusPlus/releases/tag/v1.11.2-0104">GitHub</a> |
+			<a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.11.2-0104.zip">Others</a></td>
 	</tr>
 </tbody></table>
 
@@ -5721,7 +5722,8 @@ nav ul ul:nth-child(7){
 		<a class="ci dye_stick" title="Dye Stick"></a>
 	</span></td></tr>
 </tbody></table>
-<p> Right click to dye signs/Wool/Glass/Glass Pane/蜡烛/Shulker Box/混凝土/混凝土粉末/陶瓦/带釉陶瓦/Flags/地毯来染色. modified in <a href="#Color Palette" title="Color Palette">Color Palette</a>. </p>
+<p>Right click to bleach glasses, glass panes, candles, shulker boxes, terracottas; clear the text color of signs. Shift right click to clear the color of signs.</p>
+<p>Dyed in the <a href="#Color Palette" title="Color Palette">Color Palette</a>. Then right click to dye wools, glasses, glass panes, candles, shulker boxes, concretes, concrete powders, terracottas, glazed terracottas,, banners, carpets; dye the text of signs. Shift right click to dye signs.</p>
 
 <h3 id="Grafter">Grafter <code>cpp:grafter</code></h3>
 <table><thead><tr><th>Ingredients</th><th>Crafting Recipes</th></tr></thead><tbody>
@@ -7629,13 +7631,13 @@ nav ul ul:nth-child(7){
 </tbody></table>
 
 <h3 id="Vaccine">Vaccine</h3>
-<p>Vaccine用于预防负面效果，拥有poison、Blindness、Mining Fatigue、wither、黑暗的五种. 服用后效果持续3小时，黑暗Vaccine则为12小时. 效果持续时间内如果拥有相应负面状态效果，则会在1 second内清除之. 黑暗Vaccine会免疫黑暗Raw 物的攻击，但如果附近其他玩家引起了黑暗Pig的爆炸仍然会被波及. </p>
-<p>在All-in-one MachineNormal TemperatureLow Pressure模式下制作，消耗8 xp and 60 second时间. </p>
-<p>食用金胡萝卜会显示当前存在的Vaccine效果. </p>
-<table><thead><tr><th>名称</th>
-	<th>材料</th>
-	<th>配方</th>
-	<th>命名空间ID</th>
+<p>Vaccine is used to avoid bad effects, it has 5 types: poison, blindness, mining fatigue, wither, darkness. It lasts 3 hours, vaccine of darkness lasts 10 hours. When it works, the corresponding bad effect will be cleared instantly. The vaccine of darkness makes that the dark animals ignore you. </p>
+<p>Created by the all-in-one machine in normal temperature, low pressure mode. Cunsume 8 xp and 1 minute. </p>
+<p>If you are on the heavy weighted pressure plate, it will tell the rest time of vaccines. </p>
+<table><thead><tr><th>Name</th>
+	<th>Ingredients</th>
+	<th>Recipes</th>
+	<th>Namespace ID</th>
 </tr></thead><tbody>
 <tr><th><strong id="poisonVaccine">Vaccine</strong><br /><span class="lore">免疫 <a class="ui icons18 poison"></a>poison(3:00:00)</span></th>
 	<td><a href="#Ammonia Refrigerant">Ammonia Refrigerant</a>+egg</td>
@@ -9408,7 +9410,7 @@ Nichijou; Puella Magi Madoka Magica; Little Witch DoReMi; Little Witch Academia;
 <h2 id="Skyisland">Skyisland</h2>
 <p>Skyisland Mode会在y=0处为air时自动开启, 建议玩家使用自定义超平坦如<code>minecraft:air;minecraft:flower_forest;</code>进入. Skyisland Mode下主世界不会Raw 成模组的结构, 不同玩家的间距默认为1000米. </p>
 <p>玩家首次进入时, 会Raw 成一块Bedrock and 一个包含1Dirt, 4Oak Sapling, 16Bone Meal的Chest. The leaves will drop bone meal and strings, 然后参考<a href="#Other Vanilla Items">本模组原版Item合成变动</a>, use strings and 8 sticks to craft snowball. 
-<p>默认不Raw 成单独的岛屿, Input<code>\trigger cppIsland</code> to generate your island.</p>
+<p>默认不Raw 成单独的岛屿, Input<code>/trigger cppIsland</code> to generate your island.</p>
 <p>Place a snow block on a composter to change it to a <strong>fermenter</strong>. Like the composter, put into plants or foods to get dirt. Put grass on a dirt to get a grass block.</p>
 
 <p>Use snowball and 8 dirt craft 8 Cobblestone. Then craft a furnace, place a snow block on a furnace to change it to a <strong>block breaker</strong>. Then place block on it and right click the block breaker to break the block. The block will drop: </p>
@@ -9831,7 +9833,7 @@ Nichijou; Puella Magi Madoka Magica; Little Witch DoReMi; Little Witch Academia;
 	<a href="https://space.bilibili.com/4469715"><img src="items/bilibili.png" alt="哔哩哔哩" /></a>
 </p>
 
-<p>Last Updated 2020-01-02</p>
+<p>Last Updated 2020-01-04</p>
 </footer>
 
 </article>

@@ -391,17 +391,17 @@
 <tbody>
 	<tr>
 		<td>Java版 20w51a</td>
-		<td>v1.12-0102</td>
-		<td><a href="https://gitee.com/zhangshenxing/CraftingPlusPlus/releases/v1.12-0102">Gitee</a> |
-			<a href="https://github.com/ruhuasiyu/CraftingPlusPlus/releases/tag/v1.12-0102">GitHub</a> |
-			<a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.12-0102.zip">其它</a></td>
+		<td>v1.12-0104</td>
+		<td><a href="https://gitee.com/zhangshenxing/CraftingPlusPlus/releases/v1.12-0104">Gitee</a> |
+			<a href="https://github.com/ruhuasiyu/CraftingPlusPlus/releases/tag/v1.12-0104">GitHub</a> |
+			<a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.12-0104.zip">其它</a></td>
 	</tr>
 	<tr>
 		<td>Java版 1.16.2-1.16.4</td>
-		<td>v1.11.2-0102</td>
-		<td><a href="https://gitee.com/zhangshenxing/CraftingPlusPlus/releases/v1.11.2-0102">Gitee</a> |
-			<a href="https://github.com/ruhuasiyu/CraftingPlusPlus/releases/tag/v1.11.2-0102">GitHub</a> |
-			<a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.11.2-0102.zip">其它</a></td>
+		<td>v1.11.2-0104</td>
+		<td><a href="https://gitee.com/zhangshenxing/CraftingPlusPlus/releases/v1.11.2-0104">Gitee</a> |
+			<a href="https://github.com/ruhuasiyu/CraftingPlusPlus/releases/tag/v1.11.2-0104">GitHub</a> |
+			<a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.11.2-0104.zip">其它</a></td>
 	</tr>
 	<tr><td colspan="3"></td></tr>
 	<tr>
@@ -6226,7 +6226,7 @@
 </tbody></table>
 
 <h3 id="染色棒">染色棒 <code>cpp:dye_stick</code></h3>
-<table><thead><tr><th>材料</th><th>合成配方</th></tr></thead><tbody>
+<table><thead><tr><th>材料</th><th>合成配方</th><th>说明</th></tr></thead><tbody>
 <tr><td>红色染料+绿色染料+蓝色染料</td>
 	<td><span class="ui cm" title="合成器">
 		<a class="empty"></a>
@@ -6239,9 +6239,9 @@
 		<a class="empty"></a>
 		<a class="empty"></a>
 		<a class="ci dye_stick" title="染色棒"></a>
-	</span></td></tr>
+	</span></td><td>该配方材料顺序任意。该配方可以水平翻转。</td></tr>
 </tbody></table>
-<p><span class="version">1.11.2起</span> 右键告示牌/羊毛/玻璃/玻璃板/蜡烛/潜影盒/混凝土/混凝土粉末/陶瓦/带釉陶瓦/旗帜/地毯来染色。在<a href="#调色板" title="调色板">调色板</a>中修改颜色。</p>
+<p><span class="version">1.11.2起</span> 右键玻璃/玻璃板/蜡烛/潜影盒/陶瓦来清除方块颜色，右键告示牌来清除告示牌文字颜色，Shift右键染色过的告示牌来清除告示牌的颜色。在<a href="#调色板" title="调色板">调色板</a>中修改颜色后，右键羊毛/玻璃/玻璃板/蜡烛/潜影盒/混凝土/混凝土粉末/陶瓦/带釉陶瓦/旗帜/地毯来染色，右键告示牌来染色告示牌文字，Shift右键告示牌来<a href="#彩色告示牌">染色告示牌</a>。</p>
 
 <h3 id="剪枝器">剪枝器 <code>cpp:grafter</code></h3>
 <table><thead><tr><th>材料</th><th>合成配方</th></tr></thead><tbody>
@@ -8199,9 +8199,9 @@
 </tbody></table>
 
 <h3 id="疫苗">疫苗</h3>
-<p><span class="version">1.11.2起</span> 疫苗用于预防负面效果，拥有中毒、失明、挖掘疲劳、凋零、黑暗的五种。服用后效果持续3小时，黑暗疫苗则为12小时。效果持续时间内如果拥有相应负面状态效果，则会在1秒内清除之。黑暗疫苗会免疫黑暗生物的攻击，但如果附近其他玩家引起了黑暗猪的爆炸仍然会被波及。</p>
+<p><span class="version">1.11.2起</span> 疫苗用于预防负面效果，拥有中毒、失明、挖掘疲劳、凋零、黑暗的五种。服用后效果持续3小时，黑暗疫苗则为10小时。效果持续时间内如果拥有相应负面状态效果，则会在1秒内清除之。黑暗疫苗会免疫黑暗生物的攻击，但如果附近其他玩家引起了黑暗猪的爆炸仍然会被波及。</p>
 <p>在多功能一体机常温低压模式下制作，消耗8点经验和60秒时间。</p>
-<p>食用金胡萝卜会显示当前存在的疫苗效果。</p>
+<p>使用测重压力板(重质)可以显示当前存在的疫苗效果和时长。</p>
 <table><thead><tr><th>名称</th>
 	<th>材料</th>
 	<th>配方</th>
@@ -9998,6 +9998,7 @@
 <a class="ui ci black_sign"></a>
 <a class="ui ci glass_sign"></a>
 
+<p><span class="oldversion">1.11.2起</span> 使用<a href="#染色棒">染色棒</a>来改变告示牌颜色。</p>
 <p><span class="oldversion">1.11.1</span> 移除了合成配方，改成向告示牌扔出染料/玻璃板来改变其材质。</p>
 <table><thead><tr><th>名称</th>
 	<th>材料</th>
@@ -10127,7 +10128,7 @@
 <h2 id="空岛">空岛</h2>
 <p>空岛模式会在y=0处为空气时自动开启，建议玩家使用自定义超平坦如<code>minecraft:air;minecraft:flower_forest;</code>进入。空岛模式下主世界不会生成模组的结构，不同玩家的间距默认为1000米。</p>
 <p>玩家首次进入时，会生成一块基岩和一个包含1泥土、4橡树树苗、16骨粉的箱子。玩家破坏树叶会掉落骨粉和线，然后参考<a href="#其它原版物品">本模组原版物品合成变动</a>，使用线和8木棍合成雪球。
-<p><span class="version">1.11.2起</span> 默认不生成单独的岛屿，输入<code>\trigger cppIsland</code>来生成。</p>
+<p><span class="version">1.11.2起</span> 默认不生成单独的岛屿，输入<code>/trigger cppIsland</code>来生成。</p>
 <p>在堆肥桶上方放置雪块可将其变成<strong>发酵桶</strong>，类似于堆肥桶，放入各种植物或食物满了之后，会产出泥土。在泥土上放置草丛可以得到草方块。</p>
 
 <p>使用雪球和8泥土合成8圆石，制作熔炉，在熔炉上方放置雪块可将其变成<strong>方块破坏器</strong>，之后在其上方放置方块并右击方块破坏器可以打碎该方块。掉落物如下：</p>
@@ -10508,7 +10509,7 @@
 	<a href="https://space.bilibili.com/4469715"><img src="items/bilibili.png" alt="哔哩哔哩" /></a>
 </p>
 
-<p>最后更新 2021-01-02</p>
+<p>最后更新 2021-01-04</p>
 </footer>
 
 </article>

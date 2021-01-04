@@ -1,6 +1,5 @@
 <img src="https://zhangshenxing.gitee.io/craftingplusplus/items/screenshots/banner.png" width="80%">
 
-# 简介
 This is a datapack of minecraft, including a resourcepack.
 It adds a lot of items, materials, tools, decorations, etc.
 This project is licensed under the terms of the GNU General Public License v3.0.
