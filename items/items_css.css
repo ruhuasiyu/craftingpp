@@ -203,7 +203,7 @@ table.onlyicons td{
 }
 .smallicons span.ci{
 	background-image: url("colorful_items.png");
-	background-size:144px 1344px;
+	background-size:144px 1408px;
 }
 .smallicons span.icons18{
 	background-image: url("icons18.png");
@@ -231,7 +231,7 @@ span.ui a, a.ui{
 }
 span.ui a.ci, a.ci{
 	background-image: url("colorful_items.png");
-	background-size: 288px 2688px;
+	background-size: 288px 2816px;
 }
 span.ui a.icons18, a.icons18{
 	background-image: url("icons18.png");
@@ -2266,6 +2266,14 @@ span.ui a.xp_orb, a.xp_orb{
 .vaccine_of_mining_fatigue          {background-position: -128px -2656px;}
 .vaccine_of_wither                  {background-position: -160px -2656px;}
 .vaccine_of_darkness                {background-position: -192px -2656px;}
+.block_breaker                      {background-position: -224px -2656px;}
+.fermenter                          {background-position: -256px -2656px;}
+.glow_squid_head                    {background-position: -000px -2688px;}
+.axolotl_head_lucy                  {background-position: -032px -2688px;}
+.axolotl_head_wild                  {background-position: -064px -2688px;}
+.axolotl_head_gold                  {background-position: -096px -2688px;}
+.axolotl_head_cyan                  {background-position: -128px -2688px;}
+.axolotl_head_blue                  {background-position: -160px -2688px;}
 
 .speed                   {background-position: -000px -00px;}
 .slowness                {background-position: -018px -00px;}

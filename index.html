@@ -300,7 +300,7 @@
 	<li><a href="#矿石树树苗"><span class="ci" style="background-position: -32px -352px;"></span> 矿石树树苗</a></li>
 	<li><a href="#樱花树树苗"><span class="ci" style="background-position: -32px -1184px;"></span> 樱花树树苗</a></li>
 </ul></li>
-<li class="up5"><a href="#仪式和魔法"><span class="ci" style="background-position: -32px -368px;"></span> 仪式和魔法</a><ul>
+<li class="up5"><a href="#仪式"><span class="ci" style="background-position: -32px -368px;"></span> 仪式</a><ul>
 	<li><a href="#封印之杖"><span class="ci" style="background-position: -0px -368px;"></span> 封印之杖</a> </li>
 	<li><a href="#星之杖"><span class="ci" style="background-position: -16px -368px;"></span> 星之杖</a> </li>
 	<li><a href="#梦之杖"><span class="ci" style="background-position: -32px -368px;"></span> 梦之杖</a> </li>
@@ -390,18 +390,18 @@
 	<th>下载地址</th></tr></thead>
 <tbody>
 	<tr>
-		<td>Java版 20w51a</td>
-		<td>v1.12-0115</td>
-		<td><a href="https://gitee.com/zhangshenxing/CraftingPlusPlus/releases/v1.12-0115">Gitee</a> |
-			<a href="https://github.com/ruhuasiyu/CraftingPlusPlus/releases/tag/v1.12-0115">GitHub</a> |
-			<a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.12-0115.zip">其它</a></td>
+		<td>Java版 21w03a</td>
+		<td>v1.12-0121</td>
+		<td><a href="https://gitee.com/zhangshenxing/CraftingPlusPlus/releases/v1.12-0121">Gitee</a> |
+			<a href="https://github.com/ruhuasiyu/CraftingPlusPlus/releases/tag/v1.12-0121">GitHub</a> |
+			<a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.12-0121.zip">其它</a></td>
 	</tr>
 	<tr>
 		<td>Java版 1.16.2-1.16.4</td>
-		<td>v1.11.2-0115</td>
-		<td><a href="https://gitee.com/zhangshenxing/CraftingPlusPlus/releases/v1.11.2-0115">Gitee</a> |
-			<a href="https://github.com/ruhuasiyu/CraftingPlusPlus/releases/tag/v1.11.2-0115">GitHub</a> |
-			<a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.11.2-0115.zip">其它</a></td>
+		<td>v1.11.2-0121</td>
+		<td><a href="https://gitee.com/zhangshenxing/CraftingPlusPlus/releases/v1.11.2-0121">Gitee</a> |
+			<a href="https://github.com/ruhuasiyu/CraftingPlusPlus/releases/tag/v1.11.2-0121">GitHub</a> |
+			<a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.11.2-0121.zip">其它</a></td>
 	</tr>
 	<tr><td colspan="3"></td></tr>
 	<tr>
@@ -918,7 +918,7 @@
 <tr><th><strong id="水晶之心">水晶之心</strong></th>
 	<td><a class="ui ci heart_of_crystal"></a></td>
 	<td><code>cpp:heart_of_crystal</code></td>
-	<td>溺尸/远古守卫者/守卫者/鱿鱼/海龟/海豚/鱼/美西螈被玩家杀死时，有<code>2.5%+抢夺等级×1%</code>的几率掉落。钓鱼亦有几率获得。</td>
+	<td>溺尸/远古守卫者/守卫者/鱿鱼/海龟/海豚/鱼/美西螈/发光鱿鱼被玩家杀死时，有<code>2.5%+抢夺等级×1%</code>的几率掉落。钓鱼亦有几率获得。</td>
 </tr>
 <tr><th><strong id="山脉之肢">山脉之肢</strong></th>
 	<td><a class="ui ci limb_of_ridge"></a></td>
@@ -990,6 +990,11 @@
 	<td><a class="ui ci squid_head"></a></td>
 	<td><code>cpp:squid_head</code></td>
 	<td>鱿鱼被玩家杀死时，有<code>2.5%+抢夺等级×1%</code>的几率掉落。</td>
+</tr>
+<tr><th><strong id="荧光鱿鱼头">荧光鱿鱼头</strong></th>
+	<td><a class="ui ci glow_squid_head"></a></td>
+	<td><code>cpp:glow_squid_head</code></td>
+	<td>荧光鱿鱼被玩家杀死时，有<code>2.5%+抢夺等级×1%</code>的几率掉落。</td>
 </tr>
 <tr><th><strong id="鳕鱼头">鳕鱼头</strong></th>
 	<td><a class="ui ci cod_head"></a></td>
@@ -1356,6 +1361,31 @@
 	<td><a class="ui ci rabbit_head_toast"></a></td>
 	<td><code>cpp:rabbit_head.toast</code></td>
 	<td>Toast 兔被玩家杀死时，有<code>2.5%+抢夺等级×1%</code>的几率掉落。<br />矿物辞典 <code>dict:["rabbit_head"]</code></td>
+</tr>
+<tr><th><strong id="粉红色美西螈头">粉红色美西螈头</strong></th>
+	<td><a class="ui ci axolotl_head_lucy"></a></td>
+	<td><code>cpp:axolotl_head.lucy</code></td>
+	<td>粉红色美西螈被玩家杀死时，有<code>2.5%+抢夺等级×1%</code>的几率掉落。<br />矿物辞典 <code>dict:["axolotl_head"]</code></td>
+</tr>
+<tr><th><strong id="棕色美西螈头">棕色美西螈头</strong></th>
+	<td><a class="ui ci axolotl_head_wild"></a></td>
+	<td><code>cpp:axolotl_head.wild</code></td>
+	<td>棕色美西螈被玩家杀死时，有<code>2.5%+抢夺等级×1%</code>的几率掉落。<br />矿物辞典 <code>dict:["axolotl_head"]</code></td>
+</tr>
+<tr><th><strong id="金色美西螈头">金色美西螈头</strong></th>
+	<td><a class="ui ci axolotl_head_gold"></a></td>
+	<td><code>cpp:axolotl_head.gold</code></td>
+	<td>金色美西螈被玩家杀死时，有<code>2.5%+抢夺等级×1%</code>的几率掉落。<br />矿物辞典 <code>dict:["axolotl_head"]</code></td>
+</tr>
+<tr><th><strong id="青色美西螈头">青色美西螈头</strong></th>
+	<td><a class="ui ci axolotl_head_cyan"></a></td>
+	<td><code>cpp:axolotl_head.cyan</code></td>
+	<td>青色美西螈被玩家杀死时，有<code>2.5%+抢夺等级×1%</code>的几率掉落。<br />矿物辞典 <code>dict:["axolotl_head"]</code></td>
+</tr>
+<tr><th><strong id="蓝色美西螈头">蓝色美西螈头</strong></th>
+	<td><a class="ui ci axolotl_head_blue"></a></td>
+	<td><code>cpp:axolotl_head.blue</code></td>
+	<td>蓝色美西螈被玩家杀死时，有<code>2.5%+抢夺等级×1%</code>的几率掉落。<br />矿物辞典 <code>dict:["axolotl_head"]</code></td>
 </tr>
 <tr><th><strong id="生鹦鹉肉">生鹦鹉肉</strong></th>
 	<td><a class="ui ci parrot_meat"></a></td>
@@ -8752,7 +8782,7 @@
 
 
 <!--==================================================================-->
-<h2 id="仪式和魔法">仪式和魔法</h2>
+<h2 id="仪式">仪式</h2>
 <p>魔杖配方中的两种材料位置可互换。</p>
 
 <table><thead><tr><th>产物</th>
@@ -8762,7 +8792,7 @@
 </tr></thead><tbody>		
 <tr id="封印之杖">
 	<th><strong>封印之杖</strong><br />
-魔法等级: 1</th>
+法杖等级: 1</th>
 	<td><a href="#附魔铁锭">附魔铁锭</a>+<a href="#附魔金锭">附魔金锭</a>+木棍</td>
 	<td><span class="ui cm" title="合成器">
 		<a href="#附魔铁锭" class="ci enchanted_iron" title="附魔铁锭"></a>
@@ -8781,7 +8811,7 @@
 
 <tr id="星之杖">
 	<th><strong>星之杖</strong><br />
-魔法等级: 2</th>
+法杖等级: 2</th>
 	<td><a href="#月之碎片">月之碎片</a>+<a href="#日之碎片">日之碎片</a>+<a href="#封印之杖">封印之杖</a></td>
 	<td><span class="ui cm" title="合成器">
 		<a href="#月之碎片" class="ci moon_shard" title="月之碎片"></a>
@@ -8800,7 +8830,7 @@
 
 <tr id="梦之杖">
 	<th><strong>梦之杖</strong><br />
-魔法等级: 3</th>
+法杖等级: 3</th>
 	<td>下界之星+<a href="#龙蛋">龙蛋</a>+<a href="#星之杖">星之杖</a></td>
 	<td><span class="ui cm" title="合成器">
 		<a class="ci nether_star" title="下界之星"></a>
@@ -8859,7 +8889,7 @@
 <h4 id="附魔书制作">附魔书制作</h4>
 <p></p>
 <ul>
-<li>魔杖等级：至少1级</li>
+<li>法杖等级：至少1级</li>
 <li>附加物：书</li>
 <li>时长：60秒</li>
 <li>消耗材料：青金石+<a href="#附魔之瓶">附魔之瓶</a>+<a href="#天空之翼">稀有掉落物</a></li>
@@ -8875,14 +8905,14 @@
 		<a href="#天空之翼" class="ci soul_of_dirt" title="稀有掉落物"></a>
 		<a class="experience_bottle" title="附魔之瓶"><span class="stack">16</span></a>
 	</span></p>
-<p>可制作除诅咒外的36种(<span class="oldversion">1.10.x</span> 35种)魔咒的最高等级附魔书。每种组合(共49种)对应一种魔咒，该对应关系在模组首次载入时被决定。</p>
+<p>可制作38种魔咒的最高等级附魔书。每种组合(共49种)对应一种魔咒，该对应关系在模组首次载入时被决定。</p>
 
 <h4 id="效果附加">效果附加</h4>
 <ul>
-<li>魔杖等级：至少2级</li>
+<li>法杖等级：至少2级</li>
 <li>附加物：任意物品</li>
 <li>时长：60秒</li>
-<li> 消耗材料：药剂+<a href="#附魔之瓶">附魔之瓶</a>+<a href="#天空之翼">稀有掉落物</a></li>
+<li>消耗材料：药剂+<a href="#附魔之瓶">附魔之瓶</a>+<a href="#天空之翼">稀有掉落物</a></li>
 </ul>
 <p><span class="ui dp">
 	<a class="ci agentia_of_bounce" title="抗火药水"></a>
@@ -8970,7 +9000,7 @@
 
 <h4 id="属性附加">属性附加</h4>
 <ul>
-<li>魔杖等级：至少3级</li>
+<li>法杖等级：至少3级</li>
 <li>附加物：可佩戴的物品和武器</li>
 <li>时长：60秒</li>
 <li>消耗材料：金锭+<a href="#附魔之瓶">附魔之瓶</a>+<a href="#天空之翼">稀有掉落物</a></li>
@@ -9028,7 +9058,7 @@
 
 <h4 id="黑暗召唤">黑暗召唤</h4>
 <ul>
-<li>魔杖等级：黑暗魔杖</li>
+<li>法杖等级：黑暗魔杖</li>
 <li>附加物：<a href="#破损刷怪笼">破损刷怪笼</a></li>
 <li>时长：60秒</li>
 <li>消耗材料：<a href="#黑暗碎片">黑暗碎片</a>+<a href="#天空之翼">稀有掉落物</a></li>
@@ -9049,7 +9079,7 @@
 
 <h4 id="光明修复">光明修复</h4>
 <ul>
-<li>魔杖等级：至少2级</li>
+<li>法杖等级：至少2级</li>
 <li>附加物：紫水晶块</li>
 <li>时长：60秒</li>
 <li>消耗材料：紫水晶碎片+<a href="#水晶之星">水晶之星</a></li>
@@ -10519,7 +10549,7 @@
 	<a href="https://space.bilibili.com/4469715"><img src="items/bilibili.png" alt="哔哩哔哩" /></a>
 </p>
 
-<p>最后更新 2021-01-15</p>
+<p>最后更新 2021-01-21</p>
 </footer>
 
 </article>
