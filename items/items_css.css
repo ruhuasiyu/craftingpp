@@ -489,13 +489,20 @@ span.ui a.xp_orb, a.xp_orb{
 .amethyst_shard                     {background-position: -288px -384px;}
 .amethyst_block                     {background-position: -352px -384px;}
 .budding_amethyst                   {background-position: -448px -384px;}
+.candle                             {background-position: -480px -384px;}
 .copper_block                       {background-position: -512px -384px;}
+.cut_copper                         {background-position: -544px -384px;}
+.cut_copper_slab                    {background-position: -576px -384px;}
+.cut_copper_stairs                  {background-position: -608px -384px;}
+.cyan_candle                        {background-position: -640px -384px;}
 .lightly_weathered_copper_block     {background-position: -832px -384px;}
+.lightly_weathered_cut_copper       {background-position: -864px -384px;}
+.lightly_weathered_cut_copper_slab  {background-position: -896px -384px;}
 .lightly_weathered_cut_copper_stairs{background-position: -928px -384px;}
 
 .semi_weathered_cut_copper_slab     {background-position: -192px -416px;}
 .semi_weathered_copper_block        {background-position: -224px -416px;}
-.semi_weathered_cut_copper_block    {background-position: -256px -416px;}
+.semi_weathered_cut_copper          {background-position: -256px -416px;}
 .semi_weathered_copper_stairs       {background-position: -288px -416px;}
 .spyglass                           {background-position: -352px -416px;}
 .bundle                             {background-position: -384px -416px;}
@@ -508,6 +515,9 @@ span.ui a.xp_orb, a.xp_orb{
 .white_candle                       {background-position: -640px -416px;}
 .yellow_candle                      {background-position: -672px -416px;}
 .weathered_copper_block             {background-position: -768px -416px;}
+.weathered_cut_copper               {background-position: -800px -416px;}
+.weathered_cut_copper_slab          {background-position: -832px -416px;}
+.weathered_cut_copper_stairs        {background-position: -864px -416px;}
 
 .copper_ore                         {background-position: -0px -448px;}
 .copper_ingot                       {background-position: -32px -448px;}
@@ -2274,6 +2284,7 @@ span.ui a.xp_orb, a.xp_orb{
 .axolotl_head_gold                  {background-position: -096px -2688px;}
 .axolotl_head_cyan                  {background-position: -128px -2688px;}
 .axolotl_head_blue                  {background-position: -160px -2688px;}
+.mob_glow_squid                     {background-position: -192px -2688px;}
 
 .speed                   {background-position: -000px -00px;}
 .slowness                {background-position: -018px -00px;}
