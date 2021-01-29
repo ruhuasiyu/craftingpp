@@ -391,17 +391,17 @@
 <tbody>
 	<tr>
 		<td>Java版 21w03a</td>
-		<td>v1.12-0125</td>
-		<td><a href="https://gitee.com/zhangshenxing/CraftingPlusPlus/releases/v1.12-0125">Gitee</a> |
-			<a href="https://github.com/ruhuasiyu/CraftingPlusPlus/releases/tag/v1.12-0125">GitHub</a> |
-			<a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.12-0125.zip">其它</a></td>
+		<td>v1.12-0129</td>
+		<td><a href="https://gitee.com/zhangshenxing/CraftingPlusPlus/releases/v1.12-0129">Gitee</a> |
+			<a href="https://github.com/ruhuasiyu/CraftingPlusPlus/releases/tag/v1.12-0129">GitHub</a> |
+			<a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.12-0129.zip">其它</a></td>
 	</tr>
 	<tr>
 		<td>Java版 1.16.2-1.16.5</td>
-		<td>v1.11.2-0125</td>
-		<td><a href="https://gitee.com/zhangshenxing/CraftingPlusPlus/releases/v1.11.2-0125">Gitee</a> |
-			<a href="https://github.com/ruhuasiyu/CraftingPlusPlus/releases/tag/v1.11.2-0125">GitHub</a> |
-			<a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.11.2-0125.zip">其它</a></td>
+		<td>v1.11.2-0129</td>
+		<td><a href="https://gitee.com/zhangshenxing/CraftingPlusPlus/releases/v1.11.2-0129">Gitee</a> |
+			<a href="https://github.com/ruhuasiyu/CraftingPlusPlus/releases/tag/v1.11.2-0129">GitHub</a> |
+			<a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.11.2-0129.zip">其它</a></td>
 	</tr>
 	<tr><td colspan="3"></td></tr>
 	<tr>
@@ -4164,6 +4164,7 @@
 <p>信标增强器被原版红石元件强充能时会停止工作。信标增强器下方为激活的信标才会工作。左侧按钮用于选择对玩家生效的正面状态效果，右侧按钮用于选择对非玩家生物生效的负面状态效果，最右侧按钮用于选择负面状态效果对所有非玩家生物还是仅怪物生效，使用左键或Q键切换。对村民无效。</p>
 <p>对玩家生效的正面状态效果包括：抗火、夜视、水下呼吸、隐身、饱和、连锁，对非玩家生物生效的负面状态效果包括：虚弱、缓慢、发光、中毒、凋零、吸引(将附近的生物传送至信标增强器上方)。影响范围基于下方的信标等级，为半径=10×(等级+1)的球形区域。</p>
 <p>对已放置的信标增强器按下右键会打开机器界面，任何尝试放入容器非物品栏的物品会被返回到最近的玩家背包内。如果下方信标的下方3×3区域为X形的5个日石和4个月石，则信标和信标增强器的正面效果范围提升至全地图，负面提升至128米。</p>
+<p>吸引模式注意及时处理生物，否则可能引起苦力怕爆炸等后果导致损失。</p>
 <p><span class="oldversion">1.10.x-1.11.1</span> 放置/破坏信标增强器可以添加/取消当前区块常加载。</p>
 <p><span class="oldversion">1.10.x</span> 如果下方信标的下方3×3区域为X形的5个日石和4个月石，则信标和信标增强器的效果范围提升至全地图(吸引范围128米)。</p>
 
@@ -6434,7 +6435,7 @@
 </tbody></table>
 
 <h3 id="灵巧之手">灵巧之手 <code>cpp:smart_hand</code></h3>
-<p>放置在物品展示框且所在位置为水时，会每隔5-45秒钓一次鱼。不受魔咒加成。</p>
+<p>放置在物品展示框且所在位置为水时，会每隔5-45秒钓一次鱼。不受魔咒加成。1米内有掉落物时将停止工作以避免产生大量实体。</p>
 <table><thead><tr><th>材料</th><th>合成配方</th></tr></thead><tbody>
 <tr><td><a href="#稀土玻璃">稀土玻璃</a>+<a href="#末影人头">末影人头</a>+钓鱼竿+<a href="#钢化玻璃">钢化玻璃</a></td>
 	<td><span class="ui cm" title="合成器">
@@ -6452,7 +6453,7 @@
 </tbody></table>
 
 <h3 id="愤怒之手">愤怒之手 <code>cpp:angry_hand</code></h3>
-<p>放置在物品展示框时，会杀死1.5米内的非boss非玩家生物。不受魔咒加成。</p>
+<p>放置在物品展示框时，会杀死1.5米内的非boss非玩家生物。不受魔咒加成。1米内有掉落物时将停止工作以避免产生大量实体。</p>
 <p><span class="oldversion">1.10.x</span> 使用钻石剑合成。</p>
 <table><thead><tr><th>材料</th><th>合成配方</th></tr></thead><tbody>
 <tr><td><a href="#稀土玻璃">稀土玻璃</a>+<a href="#末影人头">末影人头</a>+下界合金剑+<a href="#钢化玻璃">钢化玻璃</a></td>
@@ -6471,7 +6472,7 @@
 </tbody></table>
 
 <h3 id="历练之手">历练之手 <code>cpp:toughen_hand</code></h3>
-<p>放置在物品展示框内时，将收集附近的鸡蛋并为16米内的羊剪毛。</p>
+<p>放置在物品展示框内时，将收集附近的鸡蛋并为16米内的羊剪毛。1米内有掉落物时将停止工作以避免产生大量实体。</p>
 <table><thead><tr><th>材料</th><th>合成配方</th></tr></thead><tbody>
 <tr><td><a href="#稀土玻璃">稀土玻璃</a>+<a href="#末影人头">末影人头</a>+栓绳+<a href="#钢化玻璃">钢化玻璃</a></td>
 	<td><span class="ui cm" title="合成器">
@@ -6557,9 +6558,9 @@
 <p></p>
 <ul><li>傀儡农民：内部拥有27格存储，会尝试捡起遇到的物品和遇到的陷阱箱物品，尝试将物品放入遇到的箱子内。破坏接触的<abbr title="树叶、木头、西瓜、南瓜、蘑菇方块、甘蔗、竹子、菌光体、菌柄、下界疣块、诡异疣块">农业方块</abbr>、成熟的<abbr title="小麦、甜菜根、胡萝卜、马铃薯、甜浆果丛">作物</abbr>并消耗背包物品来补种。连续移动64米而没有遇到功能方块时，会掉头移动。</li>
 <li>傀儡矿工：内部拥有27格存储，会尝试捡起遇到的物品和遇到的陷阱箱物品，尝试将物品放入遇到的箱子内。杀破坏接触的除控制方块外的所有方块。支持魔咒。连续移动64米而没有遇到功能方块时，会掉头移动。</li>
-<li>傀儡渔夫：对着水放置，当所在位置不是水时掉落。接触水时会开始钓鱼，时长5-45秒，支持魔咒。钓鱼会积累经验并存储为附魔之瓶。</li>
-<li>傀儡战士：对着方块放置，当所在位置下方是空气时掉落。杀死1.5米内的非boss非玩家生物，支持魔咒。杀死生物会积累经验并存储为附魔之瓶。</li>
-<li>傀儡牧民：对着方块放置，当所在位置下方是空气时掉落。繁殖16米内的成年动物；将附近的鸡蛋砸掉；为16米内的羊剪毛；上方为红色羊毛/粉色羊毛/品红色羊毛时，会在附近动物达到24/48/96个或更多时杀死多余的成年动物。</li></ul>
+<li>傀儡渔夫：对着水放置，当所在位置不是水时掉落。接触水时会开始钓鱼，时长5-45秒，支持魔咒。钓鱼会积累经验并存储为附魔之瓶。1米内有掉落物时将停止工作以避免产生大量实体。</li>
+<li>傀儡战士：对着方块放置，当所在位置下方是空气时掉落。杀死1.5米内的非boss非玩家生物，支持魔咒。杀死生物会积累经验并存储为附魔之瓶。1米内有掉落物时将停止工作以避免产生大量实体。</li>
+<li>傀儡牧民：对着方块放置，当所在位置下方是空气时掉落。繁殖16米内的成年动物；将附近的鸡蛋砸掉；为16米内的羊剪毛；上方为红色羊毛/粉色羊毛/品红色羊毛时，会在附近动物达到24/48/96个或更多时杀死多余的成年动物。1米内有掉落物时将停止工作以避免产生大量实体。</li></ul>
 
 <h3 id="圣诞礼物">圣诞礼物 <code>cpp:santa_gift</code></h3>
 <a class="ui ci santa_gift"></a>
@@ -10560,7 +10561,7 @@
 	<a href="https://space.bilibili.com/4469715"><img src="items/bilibili.png" alt="哔哩哔哩" /></a>
 </p>
 
-<p>最后更新 2021-01-25</p>
+<p>最后更新 2021-01-29</p>
 </footer>
 
 </article>
