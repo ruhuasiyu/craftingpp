@@ -1,34 +1,30 @@
 @font-face{
-	font-family:Minecraft;
-	src:url("items/minecraft.eot"),url("items/minecraft.woff") format("woff");
-}
-@font-face{
-	font-family:Minecraft;
-	src:url("items/minecraft.eot"),url("items/minecraft.woff") format("woff");
+	font-family: Minecraft;
+	src: url("minecraft.woff") format("woff");
 }
 /* 布局 */
 html{
 	font-family: "Microsoft Yahei", Tahoma;
 }
 div.test img{
-	height:128px;
+	height: 128px;
 	width: 64px;
 }
 body{
 	margin: 0;
 }
 nav{
-	position:fixed;
-	height:100%;
+	position: fixed;
+	height: 100%;
 	width: 12%;
-	top:0;     left:0;
+	top: 0; left: 0;
 }
 div#main_part{
 	width: 88%;
 	float: right;
 }
 article{
-	margin:2em 3em;
+	margin: 2em 3em;
 }
 p.indent{
 	text-indent: 2em;
@@ -37,25 +33,38 @@ h1, h2, h3, h4, h5, h6{
 	font-family: Tahoma, "Microsoft Yahei", Simsun;
 }
 h1{
-	color:blue;
 	text-align: center;
 	font-size: 200%;
 	padding: 1em 0 0.3em;
 }
 h2{
-	color:blue;
-	border-bottom:solid 2px grey;
+	border-bottom: solid 2px grey;
 	padding: 30px 0 5px;
 }
 h3{
-	color:blue;
 	font-size: 120%;
 }
 h4{
 	font-size: 110%;
 	display: inline;
 }
-
+code{
+	color: black;
+	font-weight: normal;
+	font-size: 100%;
+	background-color: #fff;
+	font-family: Courier New, 楷体;
+}
+footer{
+	margin: 10px auto 5px;
+}
+footer p{
+	text-align: center;
+	font-size: 85%;
+}
+footer img{
+	height: 30px;
+}
 /* 颜色 */
 body{
 	background-color: #eee;
@@ -69,15 +78,12 @@ nav, nav ul ul li{
 nav li:hover{
 	background-color: #000;
 }
-a{
-	color: hsl(126,90%,19%);
-}
 a:hover{
-	color:#d25349;
+	color: #d25349;
 	text-decoration: underline;
 }
-strong{
-	color:blue;
+h1, h2, h3, strong{
+	color: blue;
 }
 /* 导航 */
 nav{
@@ -86,8 +92,8 @@ nav{
 	z-index: 10;
 }
 nav a, nav a:hover{
-	color:white;
-	text-decoration:none;
+	color: #fff;
+	text-decoration: none;
 	text-shadow: 0 2px 0 rgba(0, 0, 0, 0.25);
 }
 nav ul{
@@ -98,7 +104,7 @@ nav ul{
 }
 nav a{
 	display: block;
-	height:100%; width:100%;
+	height: 100%; width: 100%;
 	padding: 6px 2px 6px 16px;
 }
 nav ul li:hover > ul{
@@ -106,7 +112,7 @@ nav ul li:hover > ul{
 }
 nav ul ul{
 	width: 100%;
-	margin-left:100%;
+	margin-left: 100%;
 	margin-top: -2.04em;
 	padding: 0;
 	top: auto;
@@ -116,52 +122,52 @@ nav ul ul{
 	z-index: 9;
 }
 nav ul ul:nth-child(3){
-	margin-left:200%;
+	margin-left: 200%;
 }
 nav ul ul:nth-child(4){
-	margin-left:300%;
+	margin-left: 300%;
 }
 nav ul ul:nth-child(5){
-	margin-left:400%;
+	margin-left: 400%;
 }
 nav ul ul:nth-child(6){
-	margin-left:500%;
+	margin-left: 500%;
 }
 nav ul ul:nth-child(7){
-	margin-left:600%;
+	margin-left: 600%;
 }
 nav ul li.up1 ul{
-	margin-top:-4.08em;
+	margin-top: -4.08em;
 }
 nav ul li.up2 ul{
-	margin-top:-6.12em;
+	margin-top: -6.12em;
 }
 nav ul li.up3 ul{
-	margin-top:-8.16em;
+	margin-top: -8.16em;
 }
 nav ul li.up4 ul{
-	margin-top:-10.2em;
+	margin-top: -10.2em;
 }
 nav ul li.up5 ul{
-	margin-top:-12.24em;
+	margin-top: -12.24em;
 }
 nav ul li.up6 ul{
-	margin-top:-14.28em;
+	margin-top: -14.28em;
 }
 nav ul li.up7 ul{
-	margin-top:-16.32em;
+	margin-top: -16.32em;
 }
 nav ul li.up8 ul{
-	margin-top:-18.36em;
+	margin-top: -18.36em;
 }
 nav ul li.up9 ul{
-	margin-top:-20.4em;
+	margin-top: -20.4em;
 }
 /* 图片 */
 figure{
-	text-align:left;
+	text-align: left;
 	text-indent: 0;
-	margin-left:0;
+	margin-left: 0;
 }
 figcaption, p.note{
 	font-family: 楷体, SFMono-Regular,Consolas,"Liberation Mono",Menlo,monospace,Courier;
@@ -173,21 +179,21 @@ figure img{
 /* 表格 */
 table{
 	margin: 20px 0;
-	background-color:#fff;
-	border-collapse:collapse;
+	background-color: #fff;
+	border-collapse: collapse;
 }
 th, td{
-	border:1px solid #aaa;
-	padding:0.2em 0.4em;
-	vertical-align:middle;
+	border: 1px solid #aaa;
+	padding: 0.2em 0.4em;
+	vertical-align: middle;
 }
 thead th{
 	background: #505050;
-	font-weight:bold;
-	color: white;
+	font-weight: bold;
+	color: #fff;
 }
 tbody th{
-	background-color:#ddd;
+	background-color: #ddd;
 }
 table.aiom_table tbody td:first-child, table.aiom_table tbody td:nth-child(3), table.onlyicons{
 	background-color: #8b8b8b;
@@ -195,39 +201,68 @@ table.aiom_table tbody td:first-child, table.aiom_table tbody td:nth-child(3), t
 table.onlyicons td{
 	font-size: 32px;
 }
+table.adv td{
+	height: 52px;
+	width: 52px;
+	font-size: 90%;
+}
+table.adv .normal{
+	background-image: url("gui/normal.png");
+}
+table.adv .goal{
+	background-image: url("gui/goal.png");
+}
+table.adv .challenge{
+	background-image: url("gui/challenge.png");
+}
+table.adv span{
+	width: 52px; height: 52px;
+}
+table.adv span.ui a{
+	left: 10px; top: 10px;
+}
+table.block_breaker{
+	margin: 20px 0px;
+	background-color: #999;
+	border-collapse: collapse;
+}
+table.block_breaker td,table.block_breaker th{
+	border: 1px solid #fff;
+}
+/* 图标 */
 .smallicons span{
-	display:inline-block;
-	width:16px; height:16px;
-	background-image:url("invsprite.png");
-	background-size:512px 1824px;
+	display: inline-block;
+	width: 16px; height: 16px;
+	background-image: url("invsprite.png");
+	background-size: 512px 1824px;
 }
 .smallicons span.ci{
 	background-image: url("colorful_items.png");
-	background-size:144px 1408px;
+	background-size: 144px 1408px;
 }
 .smallicons span.icons18{
 	background-image: url("icons18.png");
 	background-size: 160px 64px;
 }
 span.ui{
-	display:inline-block;
-	position:relative;
+	display: inline-block;
+	position: relative;
 }
 span.ui a{
-	position:absolute;
+	position: absolute;
 }
 a.ui{
-	position:relative;
+	position: relative;
 }
 span.ui a, a.ui{
-	background-image:url("invsprite.png");
+	background-image: url("invsprite.png");
 	background-size: 1024px 3648px;
-	display:inline-block;
-	width:32px; height:32px;
-	color:#FFF;
-	text-shadow:2px 2px 0 #3F3F3F;
-	filter: DropShadow (color="#3F3F3F",offx="2",offy="2");
-	-webkit-filter: DropShadow (color="#3F3F3F",offx="2",offy="2");
+	display: inline-block;
+	width: 32px; height: 32px;
+	color: #fff;
+	text-shadow: 2px 2px 0 #3f3f3f;
+	filter: DropShadow (color="#3f3f3f",offx="2",offy="2");
+	-webkit-filter: DropShadow (color="#3f3f3f",offx="2",offy="2");
 }
 span.ui a.ci, a.ci{
 	background-image: url("colorful_items.png");
@@ -236,149 +271,93 @@ span.ui a.ci, a.ci{
 span.ui a.icons18, a.icons18{
 	background-image: url("icons18.png");
 	background-size: 180px 72px;
-	width:18px; height:18px;
+	width: 18px; height: 18px;
 }
 .shapeless{
 	position: absolute;
-	top:16px; right:16px;
-	display:block;
-	width:19px; height:15px;
-	background-image:url("normalshapeless.png");
+	top: 16px; right: 16px;
+	display: block;
+	width: 19px; height: 15px;
+	background-image: url("normalshapeless.png");
 }
 .stack{
-	position:absolute;
+	position: absolute;
 	font-family: Minecraft, sans-serif !important;
-	right:0;
-	bottom:0;
+	right: 0;
+	bottom: 0;
 }
 /* 工作台 */
 .ct{
-	height:136px; width:260px;
-	background-image:url("gui/ct.png");
+	height: 136px; width: 260px;
+	background-image: url("gui/ct.png");
 }
-.ct > a:nth-child(1){top:16px; left: 16px;}
-.ct > a:nth-child(2){top:16px; left: 52px;}
-.ct > a:nth-child(3){top:16px; left: 88px;}
-.ct > a:nth-child(4){top:52px; left: 16px;}
-.ct > a:nth-child(5){top:52px; left: 52px;}
-.ct > a:nth-child(6){top:52px; left: 88px;}
-.ct > a:nth-child(7){top:88px; left: 16px;}
-.ct > a:nth-child(8){top:88px; left: 52px;}
-.ct > a:nth-child(9){top:88px; left: 88px;}
-.ct > a:nth-child(10){top:52px; left:204px;}
+.ct > a:nth-child(1){top: 16px; left: 16px;}
+.ct > a:nth-child(2){top: 16px; left: 52px;}
+.ct > a:nth-child(3){top: 16px; left: 88px;}
+.ct > a:nth-child(4){top: 52px; left: 16px;}
+.ct > a:nth-child(5){top: 52px; left: 52px;}
+.ct > a:nth-child(6){top: 52px; left: 88px;}
+.ct > a:nth-child(7){top: 88px; left: 16px;}
+.ct > a:nth-child(8){top: 88px; left: 52px;}
+.ct > a:nth-child(9){top: 88px; left: 88px;}
+.ct > a:nth-child(10){top: 52px; left: 204px;}
 /* 合成器 */
-.cm{
-	height:136px; width:260px;
-	background-image:url("gui/cm.png");
+span.cm{
+	height: 136px; width: 260px;
+	background-image: url("gui/cm.png");
 }
-.cm > a:nth-child(1){top:16px; left: 16px;}
-.cm > a:nth-child(2){top:16px; left: 52px;}
-.cm > a:nth-child(3){top:16px; left: 88px;}
-.cm > a:nth-child(4){top:52px; left: 16px;}
-.cm > a:nth-child(5){top:52px; left: 52px;}
-.cm > a:nth-child(6){top:52px; left: 88px;}
-.cm > a:nth-child(7){top:88px; left: 16px;}
-.cm > a:nth-child(8){top:88px; left: 52px;}
-.cm > a:nth-child(9){top:88px; left: 88px;}
-.cm > a:nth-child(10){top:52px; left:204px;}
+span.cm > a:nth-child(1){top: 16px; left: 16px;}
+span.cm > a:nth-child(2){top: 16px; left: 52px;}
+span.cm > a:nth-child(3){top: 16px; left: 88px;}
+span.cm > a:nth-child(4){top: 52px; left: 16px;}
+span.cm > a:nth-child(5){top: 52px; left: 52px;}
+span.cm > a:nth-child(6){top: 52px; left: 88px;}
+span.cm > a:nth-child(7){top: 88px; left: 16px;}
+span.cm > a:nth-child(8){top: 88px; left: 52px;}
+span.cm > a:nth-child(9){top: 88px; left: 88px;}
+span.cm > a:nth-child(10){top: 52px; left: 204px;}
 /* 发射器 */
 span.dp{
-	height:136px; width:136px;
-	background-image:url("gui/dp.png");
+	height: 136px; width: 136px;
+	background-image: url("gui/dp.png");
 }
-.dp > a:nth-child(1){top:16px; left: 16px;}
-.dp > a:nth-child(2){top:16px; left: 52px;}
-.dp > a:nth-child(3){top:16px; left: 88px;}
-.dp > a:nth-child(4){top:52px; left: 16px;}
-.dp > a:nth-child(5){top:52px; left: 52px;}
-.dp > a:nth-child(6){top:52px; left: 88px;}
-.dp > a:nth-child(7){top:88px; left: 16px;}
-.dp > a:nth-child(8){top:88px; left: 52px;}
-.dp > a:nth-child(9){top:88px; left: 88px;}
+span.dp > a:nth-child(1){top: 16px; left: 16px;}
+span.dp > a:nth-child(2){top: 16px; left: 52px;}
+span.dp > a:nth-child(3){top: 16px; left: 88px;}
+span.dp > a:nth-child(4){top: 52px; left: 16px;}
+span.dp > a:nth-child(5){top: 52px; left: 52px;}
+span.dp > a:nth-child(6){top: 52px; left: 88px;}
+span.dp > a:nth-child(7){top: 88px; left: 16px;}
+span.dp > a:nth-child(8){top: 88px; left: 52px;}
+span.dp > a:nth-child(9){top: 88px; left: 88px;}
 /* 熔炉 */
 span.fur{
-	height:136px; width:192px;
-	background-image:url("gui/fur.png");
+	height: 136px; width: 192px;
+	background-image: url("gui/fur.png");
 }
-.fur > a:nth-child(1){top:16px; left: 16px;}
-.fur > a:nth-child(2){top:88px; left: 16px;}
-.fur > a:nth-child(3){top:52px; left:136px;}
+span.fur > a:nth-child(1){top: 16px; left: 16px;}
+span.fur > a:nth-child(2){top: 88px; left: 16px;}
+span.fur > a:nth-child(3){top: 52px; left: 136px;}
 /* 多功能一体机 */
 span.aiom{
-	width:352px; height:182px;
-	background-image:url("gui/aiom.png");
+	width: 352px; height: 182px;
+	background-image: url("gui/aiom.png");
 }
-.aiom a:nth-child(1){top: 36px; left: 52px;}
-.aiom a:nth-child(2){top: 72px; left: 52px;}
-.aiom a:nth-child(3){top: 36px; left:124px;}
-.aiom a:nth-child(4){top: 36px; left:160px;}
-.aiom a:nth-child(5){top:108px; left:124px;}
-.aiom a:nth-child(6){top:108px; left:160px;}
-.aiom a:nth-child(7){top:104px; left:304px;}
-span.cycle6{
-	width:272px; height:272px;
-	background-image:url("gui/cycle6.png");
-}
-.cycle6 a:nth-child(1){top: 33px; left: 71px;}
-.cycle6 a:nth-child(2){top: 33px; left:171px;}
-.cycle6 a:nth-child(3){top:119px; left:221px;}
-.cycle6 a:nth-child(4){top:205px; left:171px;}
-.cycle6 a:nth-child(5){top:205px; left: 71px;}
-.cycle6 a:nth-child(6){top:119px; left: 21px;}
-
-table.adv td{
-	height:52px;
-	width:52px;
-	font-size:90%;
-}
-table.adv .normal{
-	background-image:url("gui/normal.png");
-}
-table.adv .goal{
-	background-image:url("gui/goal.png");
-}
-table.adv .challenge{
-	background-image:url("gui/challenge.png");
-}
-table.adv span{
-	width: 52px; height: 52px;
-}
-table.adv span.ui a{
-	left:10px; top:10px;
-}
-table.block_breaker{
-	margin: 20px 0px;
-	background-color:#999;
-	border-collapse:collapse;
-}
-table.block_breaker td,table.block_breaker th{
-	border: 1px solid #fff;
-}
-
-footer{
-	margin:10px auto 5px;
-}
-footer p{
-	text-align:center;
-	font-size:85%;
-}
-footer img{
-	height:30px;
-}
-code{
-	color:black;
-	font-weight: normal;
-	font-size:100%;
-	background-color:white;
-	font-family: Courier New, 楷体;
-}
+span.aiom a:nth-child(1){top: 36px; left: 52px;}
+span.aiom a:nth-child(2){top: 72px; left: 52px;}
+span.aiom a:nth-child(3){top: 36px; left: 124px;}
+span.aiom a:nth-child(4){top: 36px; left: 160px;}
+span.aiom a:nth-child(5){top: 108px; left: 124px;}
+span.aiom a:nth-child(6){top: 108px; left: 160px;}
+span.aiom a:nth-child(7){top: 104px; left: 304px;}
+/* 脚注 */
 /* 版本提示 */
 span.version, span.oldversion{
 	display: inline-block;
-	height:20px;
+	height: 20px;
 	font-size: 70%;
-	border-radius:5px;
-	padding:2px 5px 0px;
+	border-radius: 5px;
+	padding: 2px 5px 0px;
 	text-shadow: 1px 1px 1px #000;
 	color: gold;
 	text-indent: 0;
@@ -390,30 +369,30 @@ span.oldversion{
 	background-color: #666;
 }
 span.version:before, span.oldversion:before{ 
-	content:"版本 ";
+	content: "版本 ";
 	color: #ccccff;
 }
 a{
-	text-decoration:none;
-	font-weight:bold;
+	text-decoration: none;
+	font-weight: bold;
 }
 abbr{
-	cursor:help;
+	cursor: help;
 }
 em{
-	font-style:italic;
+	font-style: italic;
 }
 .center{
-	text-align:center;
+	text-align: center;
 }
 .center img{
-	height:210px;
+	height: 210px;
 }
 .lore{
-	color:purple;
+	color: purple;
 }
 .left{
-	text-align:left;
+	text-align: left;
 }
 
 /*物品 */
@@ -495,15 +474,15 @@ span.ui a.xp_orb, a.xp_orb{
 .cut_copper_slab                    {background-position: -576px -384px;}
 .cut_copper_stairs                  {background-position: -608px -384px;}
 .cyan_candle                        {background-position: -640px -384px;}
-.lightly_weathered_copper_block     {background-position: -832px -384px;}
-.lightly_weathered_cut_copper       {background-position: -864px -384px;}
-.lightly_weathered_cut_copper_slab  {background-position: -896px -384px;}
-.lightly_weathered_cut_copper_stairs{background-position: -928px -384px;}
+.exposed_copper_block               {background-position: -832px -384px;}
+.exposed_cut_copper                 {background-position: -864px -384px;}
+.exposed_cut_copper_slab            {background-position: -896px -384px;}
+.exposed_cut_copper_stairs          {background-position: -928px -384px;}
 
-.semi_weathered_cut_copper_slab     {background-position: -192px -416px;}
-.semi_weathered_copper_block        {background-position: -224px -416px;}
-.semi_weathered_cut_copper          {background-position: -256px -416px;}
-.semi_weathered_copper_stairs       {background-position: -288px -416px;}
+.weathered_cut_copper_slab          {background-position: -192px -416px;}
+.weathered_copper_block             {background-position: -224px -416px;}
+.weathered_cut_copper               {background-position: -256px -416px;}
+.weathered_copper_stairs            {background-position: -288px -416px;}
 .spyglass                           {background-position: -352px -416px;}
 .bundle                             {background-position: -384px -416px;}
 .tinted_glass                       {background-position: -448px -416px;}
@@ -514,10 +493,10 @@ span.ui a.xp_orb, a.xp_orb{
 .pointed_dripstone                  {background-position: -608px -416px;}
 .white_candle                       {background-position: -640px -416px;}
 .yellow_candle                      {background-position: -672px -416px;}
-.weathered_copper_block             {background-position: -768px -416px;}
-.weathered_cut_copper               {background-position: -800px -416px;}
-.weathered_cut_copper_slab          {background-position: -832px -416px;}
-.weathered_cut_copper_stairs        {background-position: -864px -416px;}
+.oxidized_copper_block             {background-position: -768px -416px;}
+.oxidized_cut_copper               {background-position: -800px -416px;}
+.oxidized_cut_copper_slab          {background-position: -832px -416px;}
+.oxidized_cut_copper_stairs        {background-position: -864px -416px;}
 
 .copper_ore                         {background-position: -0px -448px;}
 .copper_ingot                       {background-position: -32px -448px;}
@@ -902,36 +881,36 @@ span.ui a.xp_orb, a.xp_orb{
 
 .white_carpet                       {background-position: -064px -1632px;}
 
-.dried_kelp_block                   {background-position:-128px -1664px;}
-.stripped_acacia_log                {background-position:-160px -1664px;}
-.stripped_birch_log                 {background-position:-192px -1664px;}
-.stripped_dark_oak_log              {background-position:-224px -1664px;}
-.stripped_jungle_log                {background-position:-256px -1664px;}
-.stripped_oak_log                   {background-position:-288px -1664px;}
-.stripped_spruce_log                {background-position:-320px -1664px;}
-.pumpkin                            {background-position:-352px -1664px;}
-.turtle_helmet                      {background-position:-512px -1664px;}
-.dried_kelp                         {background-position:-544px -1664px;}
-.kelp                               {background-position:-576px -1664px;}
-.scute                              {background-position:-608px -1664px;}
-.tropical_fish_bucket               {background-position:-640px -1664px;}
-.cod_bucket                         {background-position:-672px -1664px;}
-.pufferfish_bucket                  {background-position:-704px -1664px;}
-.salmon_bucket                      {background-position:-736px -1664px;}
-.tropical_fish                      {background-position:-768px -1664px;}
-.cooked_cod                         {background-position:-800px -1664px;}
-.cooked_salmon                      {background-position:-832px -1664px;}
-.pufferfish                         {background-position:-864px -1664px;}
-.cod                                {background-position:-896px -1664px;}
-.salmon                             {background-position:-928px -1664px;}
-.tube_coral_block                   {background-position:-288px -1696px;}
-.brain_coral_block                  {background-position:-320px -1696px;}
-.bubble_coral_block                 {background-position:-352px -1696px;}
-.fire_coral_block                   {background-position:-384px -1696px;}
-.horn_coral_block                   {background-position:-416px -1696px;}
-.tube_coral                         {background-position:-448px -1696px;}
-.trident                            {background-position:-608px -1696px;}
-.brain_coral_fan                    {background-position:-832px -1696px;}
+.dried_kelp_block                   {background-position: -128px -1664px;}
+.stripped_acacia_log                {background-position: -160px -1664px;}
+.stripped_birch_log                 {background-position: -192px -1664px;}
+.stripped_dark_oak_log              {background-position: -224px -1664px;}
+.stripped_jungle_log                {background-position: -256px -1664px;}
+.stripped_oak_log                   {background-position: -288px -1664px;}
+.stripped_spruce_log                {background-position: -320px -1664px;}
+.pumpkin                            {background-position: -352px -1664px;}
+.turtle_helmet                      {background-position: -512px -1664px;}
+.dried_kelp                         {background-position: -544px -1664px;}
+.kelp                               {background-position: -576px -1664px;}
+.scute                              {background-position: -608px -1664px;}
+.tropical_fish_bucket               {background-position: -640px -1664px;}
+.cod_bucket                         {background-position: -672px -1664px;}
+.pufferfish_bucket                  {background-position: -704px -1664px;}
+.salmon_bucket                      {background-position: -736px -1664px;}
+.tropical_fish                      {background-position: -768px -1664px;}
+.cooked_cod                         {background-position: -800px -1664px;}
+.cooked_salmon                      {background-position: -832px -1664px;}
+.pufferfish                         {background-position: -864px -1664px;}
+.cod                                {background-position: -896px -1664px;}
+.salmon                             {background-position: -928px -1664px;}
+.tube_coral_block                   {background-position: -288px -1696px;}
+.brain_coral_block                  {background-position: -320px -1696px;}
+.bubble_coral_block                 {background-position: -352px -1696px;}
+.fire_coral_block                   {background-position: -384px -1696px;}
+.horn_coral_block                   {background-position: -416px -1696px;}
+.tube_coral                         {background-position: -448px -1696px;}
+.trident                            {background-position: -608px -1696px;}
+.brain_coral_fan                    {background-position: -832px -1696px;}
 
 .phantom_membrane                   {background-position: -032px -1728px;}
 .potion_of_slow_falling             {background-position: -064px -1728px;}
