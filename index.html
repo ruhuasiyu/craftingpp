@@ -384,25 +384,32 @@
 <p>如有任何意见建议，欢迎在<a href="https://jq.qq.com/?_wv=1027&k=5tPH7m7">QQ群 642167529</a>(入群答案纸片人)反馈、<a href="http://www.mcbbs.net/thread-696861-1-1.html">在论坛回复</a>或<a href="http://www.mcbbs.net/home.php?mod=spacecp&ac=pm&touid=975525">私信我</a>、<a href="https://github.com/ruhuasiyu/CraftingPlusPlus/issues/new">发起issue</a>、<a href="https://gitee.com/zhangshenxing/CraftingPlusPlus/issues/new">发起issue</a>，请在反馈时提供游戏版本和模组版本。</p>
 
 <h3 id="下载与安装">📦 下载与安装</h3>
-<p>其它链接<a href="http://www.mcbbs.net/thread-696861-1-1.html">MCBBS 页</a>、<a href="https://www.mcmod.cn/class/1297.html">MC 百科页</a>未必能及时更新。本页面仅包含v1.10及以上版本的内容。</p>
+<p>其它链接<a href="http://www.mcbbs.net/thread-696861-1-1.html">MCBBS 页</a>、<a href="https://www.mcmod.cn/class/1297.html">MC 百科页</a>未必能及时更新。本页面仅包含v1.10及以上版本的内容。如果不能下载，请进群下载。</p>
 <table><thead><tr><th>支持的minecraft版本</th>
 	<th>Crafting++版本</th>
 	<th>下载地址</th><th>实现与安装方式</th></tr></thead>
 <tbody>
+	<tr>
+		<td>Java版 21w07a</td>
+		<td>v1.12-0220</td>
+		<td><a href="https://gitee.com/zhangshenxing/CraftingPlusPlus/releases/v1.12-0220">Gitee</a> |
+			<a href="https://github.com/ruhuasiyu/CraftingPlusPlus/releases/tag/v1.12-0220">GitHub</a> |
+			<a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.12-0220.zip">其它</a></td>
+		<td rowspan="5">为数据包和资源包二合一</td>
+	</tr>
 	<tr>
 		<td>Java版 21w05b</td>
 		<td>v1.12-0209</td>
 		<td><a href="https://gitee.com/zhangshenxing/CraftingPlusPlus/releases/v1.12-0209">Gitee</a> |
 			<a href="https://github.com/ruhuasiyu/CraftingPlusPlus/releases/tag/v1.12-0209">GitHub</a> |
 			<a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.12-0209.zip">其它</a></td>
-		<td rowspan="4">为数据包和资源包二合一</td>
 	</tr>
 	<tr>
 		<td>Java版 1.16.2-1.16.5</td>
-		<td>v1.11.2-0209</td>
-		<td><a href="https://gitee.com/zhangshenxing/CraftingPlusPlus/releases/v1.11.2-0209">Gitee</a> |
-			<a href="https://github.com/ruhuasiyu/CraftingPlusPlus/releases/tag/v1.11.2-0209">GitHub</a> |
-			<a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.11.2-0209.zip">其它</a></td>
+		<td>v1.11.2-0220</td>
+		<td><a href="https://gitee.com/zhangshenxing/CraftingPlusPlus/releases/v1.11.2-0220">Gitee</a> |
+			<a href="https://github.com/ruhuasiyu/CraftingPlusPlus/releases/tag/v1.11.2-0220">GitHub</a> |
+			<a href="http://home.ustc.edu.cn/~zsxqq/craftingpp/v1.11.2-0220.zip">其它</a></td>
 	</tr>
 	<tr>
 		<td>Java版 1.16-1.16.1</td>
@@ -3261,11 +3268,9 @@
 	<td><a class="ui crimson_nylium" title="绯红菌岩"></a></td>
 	<td><a class="ui warped_nylium" title="诡异菌岩"></a></td>
 	<td><a class="ui glowstone" title="荧石"></a></td>
-	<th rowspan="2"><a class="ui shears" title="剪刀"></a></th>
-	<td colspan="2"><a class="ui pumpkin" title="南瓜"></a></td>
-	<td></td>
-	<td></td>
-	<td></td>
+	<th rowspan="2"><a class="ui firework_rocket" title="具有烟火之星效果的烟花火箭"></a></th>
+	<td><a class="ui firework_rocket" title="相同高度的烟花火箭"></a></td>
+	<td rowspan="2" colspan="4">二者高度若相同则<br/>可复制烟火之星效果</td>
 </tr>
 <tr><td><a class="ui dirt" title="泥土"></a></td>
 	<td><a class="ui dirt" title="泥土"></a></td>
@@ -3279,11 +3284,7 @@
 	<td><a class="ui netherrack" title="下界岩"></a></td>
 	<td><a class="ui netherrack" title="下界岩"></a></td>
 	<td><a class="ui glowstone_dust" title="荧石粉"><span class="stack">4</span></a></td>
-	<td colspan="2"><a class="ui carved_pumpkin" title="雕刻过的南瓜"></a>
-		<a class="ui pumpkin_seeds" title="南瓜种子"><span class="stack">4</span></a></td>
-	<td></td>
-	<td></td>
-	<td></td>
+	<td><a class="ui firework_rocket" title="复制烟火之星效果后的烟花火箭"></a></td>
 </tr>
 <tr>
 	<th rowspan="2"><a class="ui stone_axe" title="斧"></a></th>
@@ -3304,9 +3305,8 @@
 	<td><a class="ui warped_stem" title="诡异菌柄"></a></td>
 	<td><a class="ui crimson_hyphae" title="绯红菌核"></a></td>
 	<td><a class="ui warped_hyphae" title="诡异菌核"></a></td>
-	<td></td>
-	<td></td>
-	<td></td>
+	<th rowspan="2"><a class="ui shears" title="剪刀"></a></th>
+	<td colspan="2"><a class="ui pumpkin" title="南瓜"></a></td>
 </tr>
 <tr><td><a class="ui melon_slice" title="西瓜片"><span class="stack">9</span></a></td>
 	<td><a class="ui stripped_oak_log" title="去皮橡木原木"></a></td>
@@ -3325,9 +3325,8 @@
 	<td><a class="ui stripped_warped_stem" title="去皮诡异菌柄"></a></td>
 	<td><a class="ui stripped_crimson_hyphae" title="去皮绯红菌核"></a></td>
 	<td><a class="ui stripped_warped_hyphae" title="去皮诡异菌核"></a></td>
-	<td></td>
-	<td></td>
-	<td></td>
+	<td colspan="2"><a class="ui carved_pumpkin" title="雕刻过的南瓜"></a>
+		<a class="ui pumpkin_seeds" title="南瓜种子"><span class="stack">4</span></a></td>
 </tr>
 <tr>
 	<th rowspan="2"><a class="ui ci grafter" href="#剪枝器" title="剪枝器"></a></th>
@@ -4226,10 +4225,13 @@
 <tr><td><a href="#属性附加">附加了属性</a>的物品</td><td>纸</td><td>移除附加的属性</td><td>0</td></tr>
 <tr><td><a href="#修复插件">修复插件</a></td><td>破损的工具</td><td>恢复2点耐久</td><td>1</td></tr>
 <tr><td><a href="#修复插件">修复插件</a></td><td><a href="#无线插件">无线插件</a></td><td>恢复附近32米内玩家的手持物或盔甲2点耐久</td><td>1</td></tr>
+<tr><td>模组物品或重命名过的物品</td><td>染料</td><td>染色该物品名称</td><td>16</td></tr>
 <tr><td>附魔物品</td><td>书</td><td>转移魔咒至书</td><td>128</td></tr>
 <tr><td>有惩罚等级的盔甲或工具</td><td><a href="#月之碎片">月之碎片</a></td><td>移除惩罚等级</td><td>256</td></tr>
 <tr><td>有诅咒魔咒的盔甲或工具</td><td><a href="#附魔金苹果">附魔金苹果</a></td><td>移除所有诅咒魔咒</td><td>256</td></tr>
 <tr><td>拥有与上古卷轴同等级魔咒的盔甲或工具</td><td><a href="#上古卷轴">上古卷轴</a></td><td>魔咒等级+1</td><td>512</td></tr>
+<tr><td>本模组<a href="#烈焰红唇">头饰</a></td><td><a href="#属性附加">附加了属性</a>的头盔</td><td>转移属性至头饰</td><td>512</td></tr>
+<tr><td>鞘翅</td><td><a href="#属性附加">附加了属性</a>的胸甲</td><td>转移属性至鞘翅</td><td>512</td></tr>
 </tbody></table>
 <p>支持移除<a href="https://www.mcmod.cn/class/2135.html" title="随机附魔">随机附魔</a>的4种诅咒魔咒和<a href="https://www.mcmod.cn/class/2025.html" title="万象">万象</a>的2种诅咒魔咒。</p>
 
@@ -9320,13 +9322,13 @@
 	</span></td></tr>
 </tbody></table>
 
-<h3 id="烈焰红唇">烈焰红唇 <code>cpp:red_lip</code></h3>
-<p>烈焰红唇可以通过各种染料在工作台中染色，也可以在合成器中像皮革盔甲一样染色。</p>
 <table><thead><tr><th>名称</th>
 	<th>材料</th>
 	<th>合成配方</th>
+	<th>命名空间ID</th>
 </tr></thead><tbody>
-<tr><th>烈焰红唇</th>
+
+<tr id="烈焰红唇"><th><strong>烈焰红唇</strong></th>
 	<td>红石粉+岩浆膏</td>
 	<td><span class="ui cm" title="合成器">
 		<a class="redstone" title="红石粉"></a>
@@ -9339,14 +9341,9 @@
 		<a class="redstone" title="红石粉"></a>
 		<a class="redstone" title="红石粉"></a>
 		<a class="ci red_lip" title="烈焰红唇"></a>
-	</span></td></tr>
-</tbody></table>
-
-<table><thead><tr><th>名称</th>
-	<th>材料</th>
-	<th>合成配方</th>
-	<th>命名空间ID</th>
-</tr></thead><tbody>
+	</span></td>
+	<td><code>cpp:red_lip</code></td>
+</tr>
 
 <tr id="紫色美瞳">
 	<th><strong>紫色美瞳</strong></th>
@@ -10595,7 +10592,7 @@
 	<a href="https://space.bilibili.com/4469715"><img src="items/bilibili.png" alt="哔哩哔哩" /></a>
 </p>
 
-<p>最后更新 2021-02-09</p>
+<p>最后更新 2021-02-20</p>
 </footer>
 
 </article>
